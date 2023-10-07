@@ -43,17 +43,17 @@
     minimumPlayers: 15
   - type: BreakerFlipRule
 
-- type: entity
-  id: BureaucraticError
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-bureaucratic-error-announcement
-    minimumPlayers: 25
-    weight: 5
-    duration: 1
-  - type: BureaucraticErrorRule
+# - type: entity
+  # id: BureaucraticError
+  # parent: BaseGameRule
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # startAnnouncement: station-event-bureaucratic-error-announcement
+    # minimumPlayers: 25
+    # weight: 5
+    # duration: 1
+  # - type: BureaucraticErrorRule
 
 - type: entity
   parent: BaseGameRule
@@ -66,45 +66,45 @@
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
-- type: entity
-  parent: BaseGameRule
-  id: DragonSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 5
-    duration: 1
-    earliestStart: 45
-    reoccurrenceDelay: 60
-    minimumPlayers: 20
-  - type: RandomSpawnRule
-    prototype: SpawnPointGhostDragon
+# - type: entity
+  # parent: BaseGameRule
+  # id: DragonSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 5
+    # duration: 1
+    # earliestStart: 45
+    # reoccurrenceDelay: 60
+    # minimumPlayers: 20
+  # - type: RandomSpawnRule
+    # prototype: SpawnPointGhostDragon
 
-- type: entity
-  parent: BaseGameRule
-  id: NinjaSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 10
-    duration: 1
-    earliestStart: 30
-    reoccurrenceDelay: 60
-    minimumPlayers: 40
-  - type: NinjaSpawnRule
+# - type: entity
+  # parent: BaseGameRule
+  # id: NinjaSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 10
+    # duration: 1
+    # earliestStart: 30
+    # reoccurrenceDelay: 60
+    # minimumPlayers: 40
+  # - type: NinjaSpawnRule
 
-- type: entity
-  parent: BaseGameRule
-  id: RevenantSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 7.5
-    duration: 1
-    earliestStart: 45
-    minimumPlayers: 20
-  - type: RandomSpawnRule
-    prototype: MobRevenant
+# - type: entity
+  # parent: BaseGameRule
+  # id: RevenantSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 7.5
+    # duration: 1
+    # earliestStart: 45
+    # minimumPlayers: 20
+  # - type: RandomSpawnRule
+    # prototype: MobRevenant
 
 - type: entity
   id: FalseAlarm
@@ -330,34 +330,34 @@
     - id: MobClownSpider
       prob: 0.05
 
-- type: entity
-  id: ZombieOutbreak
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    earliestStart: 50
-    weight: 5
-    duration: 1
-  - type: ZombieRule
-    minStartDelay: 0 #let them know immediately
-    maxStartDelay: 10
-    maxInitialInfected: 3 #fewer zombies
-    minInitialInfectedGrace: 300 #less time to prepare
-    maxInitialInfectedGrace: 450
+# - type: entity
+  # id: ZombieOutbreak
+  # parent: BaseGameRule
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # earliestStart: 50
+    # weight: 5
+    # duration: 1
+  # - type: ZombieRule
+    # minStartDelay: 0 #let them know immediately
+    # maxStartDelay: 10
+    # maxInitialInfected: 3 #fewer zombies
+    # minInitialInfectedGrace: 300 #less time to prepare
+    # maxInitialInfectedGrace: 450
 
-- type: entity
-  id: LoneOpsSpawn
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    earliestStart: 45
-    weight: 5
-    minimumPlayers: 10
-    reoccurrenceDelay: 30
-    duration: 1
-  - type: LoneOpsSpawnRule
+# - type: entity
+  # id: LoneOpsSpawn
+  # parent: BaseGameRule
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # earliestStart: 45
+    # weight: 5
+    # minimumPlayers: 10
+    # reoccurrenceDelay: 30
+    # duration: 1
+  # - type: LoneOpsSpawnRule
 
 - type: entity
   id: MassHallucinations
