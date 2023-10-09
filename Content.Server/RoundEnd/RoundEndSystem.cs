@@ -8,6 +8,8 @@ using Content.Server.Chat.Systems;
 using Content.Server.GameTicking;
 using Content.Server.Shuttles.Systems;
 using Content.Server.Station.Systems;
+using Content.Server.Voting;
+using Content.Server.Voting.Managers;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Robust.Shared.Audio;
@@ -34,6 +36,7 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly GameTicker _gameTicker = default!;
         [Dependency] private readonly EmergencyShuttleSystem _shuttle = default!;
         [Dependency] private readonly StationSystem _stationSystem = default!;
+        [Dependency] private readonly IVoteManager _voteManager = default!;
 
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 
@@ -288,13 +291,54 @@ namespace Content.Server.RoundEnd
             {
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
-                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                    RunRestartVote();
                     AutoCalledBefore = true;
                 }
 
                 // Always reset auto-call in case of a recall.
                 SetAutoCallTime();
             }
+        }
+        public void RunRestartVote()
+        {
+            var options = new VoteOptions
+            {
+                InitiatorText = ("shuttle-vote-user"),
+                Title = Loc.GetString("shuttle-vote-title"),
+                Options =
+                {
+                    (Loc.GetString("ui-vote-restart-yes"), "yes"),
+                    (Loc.GetString("ui-vote-restart-no"), "no"),
+                    (Loc.GetString("ui-vote-restart-abstain"), "abstain")
+                },
+                Duration = TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerRestart))
+            };
+
+            var vote = _voteManager.CreateVote(options);
+
+            vote.OnFinished += (_, _) =>
+            {
+                var votesYes = vote.VotesPerOption["yes"];
+                var votesNo = vote.VotesPerOption["no"];
+                var total = votesYes + votesNo;
+
+                var ratioRequired = _cfg.GetCVar(CCVars.VoteRestartRequiredRatio);
+                if (total > 0 && votesYes / (float) total >= ratioRequired)
+                {
+                    _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Round end shuttle vote succeded: {votesYes}/{votesNo}");
+                    // TODO: Add .loc files n make an unrecallable shuttle
+                    _chatManager.DispatchServerAnnouncement(Loc.GetString("Vote succeeded, round end shuttle enroute"));
+					// This is kinda cursed but whatever, stops a recall
+					_cfg.SetCVar(CCVars.EmergencyRecallTurningPoint, 0f);
+					
+                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                }
+                else
+                {
+                    _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Restart vote failed: {votesYes}/{votesNo}");
+                }
+            };
+
         }
     }
 
