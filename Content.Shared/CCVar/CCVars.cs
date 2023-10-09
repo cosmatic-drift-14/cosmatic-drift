@@ -318,6 +318,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<float> RoundRestartTime =
             CVarDef.Create("game.round_restart_time", 120f, CVar.SERVERONLY);
 
+        /// <summary>
+        /// Respawn time, how long the player has to wait in seconds after death.
+        /// </summary>
+        public static readonly CVarDef<float> RespawnTime =
+            CVarDef.Create("game.respawn_time", 300.0f, CVar.SERVER | CVar.REPLICATED);
+
         /*
          * Discord
          */
