@@ -477,6 +477,9 @@
   id: ForceNoFixRotations # fixrotations command WON'T target this
 
 - type: Tag
+  id: Fruit
+
+- type: Tag
   id: Galaxythistle
 
 - type: Tag
@@ -596,6 +599,9 @@
 - type: Tag
   id: Hotsauce
 
+- type: Tag
+  id: Igniter
+
 - type: Tag #Drop this innate tool instead of deleting it.
   id: InnateDontDelete
 
@@ -710,6 +716,9 @@
   id: Matchstick
 
 - type: Tag
+  id: Meat
+
+- type: Tag
   id: Medkit
 
 - type: Tag
@@ -784,6 +793,9 @@
 
 - type: Tag
   id: Pig
+
+- type: Tag
+  id: Pill
 
 - type: Tag
   id: PillCanister
