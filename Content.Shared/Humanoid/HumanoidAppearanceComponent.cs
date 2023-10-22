@@ -82,6 +82,11 @@ public sealed partial class HumanoidAppearanceComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
     public Color? CachedFacialHairColor;
+
+    /// <summary>
+    ///     The height of this humanoid.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadOnly)] public float Height = 1f;
 }
 
 [DataDefinition]

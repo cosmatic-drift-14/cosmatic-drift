@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
@@ -12,6 +13,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
+    [Dependency] private readonly IEntityManager _entityManager = default!;
 
     public override void Initialize()
     {
@@ -120,6 +122,10 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         var speciesPrototype = _prototypeManager.Index<SpeciesPrototype>(profile.Species);
         var markings = new MarkingSet(speciesPrototype.MarkingPoints, _markingManager, _prototypeManager);
 
+        // Set the size
+        var height = Math.Clamp(MathF.Round(profile.Height, 1), speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // should NOT be locked, at all
+        Comp<SpriteComponent>(uid).Scale = new Vector2(speciesPrototype.ScaleWidth ? height : speciesPrototype.DefaultHeight, height);
+
         // Add markings that doesn't need coloring. We store them until we add all other markings that doesn't need it.
         var markingFColored = new Dictionary<Marking, MarkingPrototype>();
         foreach (var marking in profile.Appearance.Markings)
@@ -194,6 +200,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.Species = profile.Species;
         humanoid.SkinColor = profile.Appearance.SkinColor;
         humanoid.EyeColor = profile.Appearance.EyeColor;
+        humanoid.Height = profile.Height;
 
         UpdateSprite(humanoid, Comp<SpriteComponent>(uid));
     }
