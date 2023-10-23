@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Linq;
 using System.Numerics;
 using Content.Client.Humanoid;
@@ -75,6 +76,7 @@ namespace Content.Client.Preferences.UI
         private SingleMarkingPicker _hairPicker => CHairStylePicker;
         private SingleMarkingPicker _facialHairPicker => CFacialHairPicker;
         private EyeColorPicker _eyesPicker => CEyeColorPicker;
+        private LineEdit _heightPicker => CHeight;
 
         private TabContainer _tabContainer => CTabContainer;
         private BoxContainer _jobList => CJobList;
@@ -104,6 +106,8 @@ namespace Content.Client.Preferences.UI
         private MarkingSet _markingSet = new(); // storing this here feels iffy but a few things need it this high up
 
         public event Action<HumanoidCharacterProfile, int>? OnProfileChanged;
+
+        private float _defaultHeight = 1f;
 
         public HumanoidProfileEditor(IClientPreferencesManager preferencesManager, IPrototypeManager prototypeManager,
             IEntityManager entityManager, IConfigurationManager configurationManager)
@@ -190,6 +194,35 @@ namespace Content.Client.Preferences.UI
             };
 
             #endregion Species
+
+            #region Height
+
+
+            _heightPicker.OnTextChanged += args =>
+            {
+                if (Profile is null || !float.TryParse(args.Text, out var newHeight))
+                    return;
+
+                var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+
+                if (newHeight < prototype.MinHeight)
+                    newHeight = prototype.MinHeight;
+
+                if (newHeight > prototype.MaxHeight)
+                    newHeight = prototype.MaxHeight;
+
+                CHeightLabel.Text = MathF.Round(newHeight, 1).ToString("G");
+                SetProfileHeight(MathF.Round(newHeight, 1));
+            };
+
+            CHeightReset.OnPressed += _ =>
+            {
+                _heightPicker.Text = _defaultHeight.ToString(CultureInfo.InvariantCulture);
+                CHeightLabel.Text = _defaultHeight.ToString(CultureInfo.InvariantCulture);
+                SetProfileHeight(_defaultHeight);
+            };
+
+            #endregion Height
 
             #region Skin
 
@@ -786,6 +819,12 @@ namespace Content.Client.Preferences.UI
             IsDirty = true;
         }
 
+        private void SetProfileHeight(float height)
+        {
+            Profile = Profile?.WithHeight(height);
+            IsDirty = true;
+        }
+
         public void Save()
         {
             IsDirty = false;
@@ -961,6 +1000,21 @@ namespace Content.Client.Preferences.UI
             _backpackButton.SelectId((int) Profile.Backpack);
         }
 
+        private void UpdateHeightControls()
+        {
+            if (Profile == null)
+            {
+                return;
+            }
+
+            var species = _speciesList.Find(x => x.ID == Profile.Species);
+            if (species != null)
+                _defaultHeight = species.DefaultHeight;
+
+            _heightPicker.Text = Profile.Height.ToString();
+            CHeightLabel.Text = Profile.Height.ToString();
+        }
+
         private void UpdateHairPickers()
         {
             if (Profile == null)
@@ -1111,6 +1165,7 @@ namespace Content.Client.Preferences.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
+            UpdateHeightControls();
 
             _preferenceUnavailableButton.SelectId((int) Profile.PreferenceUnavailable);
         }
