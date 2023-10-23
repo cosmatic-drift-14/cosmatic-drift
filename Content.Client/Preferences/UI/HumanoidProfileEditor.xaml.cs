@@ -1010,6 +1010,9 @@ namespace Content.Client.Preferences.UI
             var species = _speciesList.Find(x => x.ID == Profile.Species);
             if (species != null)
                 _defaultHeight = species.DefaultHeight;
+
+            _heightPicker.Text = Profile.Height.ToString();
+            CHeightLabel.Text = Profile.Height.ToString();
         }
 
         private void UpdateHairPickers()
