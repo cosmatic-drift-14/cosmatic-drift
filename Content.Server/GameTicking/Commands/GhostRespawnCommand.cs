@@ -3,14 +3,13 @@ using Content.Server.Mind;
 using Content.Shared.Administration;
 using Content.Shared.Ghost;
 using Content.Shared.CCVar;
-using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Timing;
 
-namespace Content.Server.Commands;
+namespace Content.Server.GameTicking.Commands;
 
-[AnyCommand()]
+[AnyCommand]
 public sealed class GhostRespawnCommand : IConsoleCommand
 {
     [Dependency] private readonly IGameTiming _gameTiming = default!;
@@ -48,7 +47,7 @@ public sealed class GhostRespawnCommand : IConsoleCommand
         }
 
         var mindSystem = _entityManager.EntitySysManager.GetEntitySystem<MindSystem>();
-        if (!mindSystem.TryGetMind(shell.Player, out _, out _))
+        if (!mindSystem.TryGetMind(shell.Player.UserId, out _, out _))
         {
             shell.WriteLine("You have no mind.");
             return;
@@ -63,6 +62,7 @@ public sealed class GhostRespawnCommand : IConsoleCommand
         }
 
         var gameTicker = _entityManager.EntitySysManager.GetEntitySystem<GameTicker>();
-        gameTicker.Respawn((IPlayerSession) shell.Player);
+
+        gameTicker.Respawn(shell.Player);
     }
 }
