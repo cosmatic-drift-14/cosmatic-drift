@@ -22,3 +22,18 @@
     - type: LizardAccent
     - type: ReplacementAccent
       accent: dwarf
+
+- type: trait
+  id: ReptillianAccent
+  name: trait-reptile-accent-name
+  description: trait-reptile-accent-desc
+  components:
+    - type: LizardAccent
+    
+- type: trait
+  id: DwarvenAccent
+  name: trait-dwarf-accent-name
+  description: trait-dwarf-accent-desc
+  components:
+    - type: ReplacementAccent
+      accent: dwarf

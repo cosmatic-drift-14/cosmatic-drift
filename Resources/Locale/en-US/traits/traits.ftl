@@ -37,3 +37,9 @@ trait-frontal-lisp-desc = You thpeak with a lithp
 
 trait-socialanxiety-name = Social Anxiety
 trait-socialanxiety-desc = You are anxious when you speak and stutter.
+
+trait-reptile-accent-name = Reptillian Accent
+trait-reptile-accent-desc = Your accent mirrorsss that of the reptilliansss.
+
+trait-dwarf-accent-name = Dwarven Accent
+trait-dwarf-accent-desc = Your accent mirrors that of the dwarves.
