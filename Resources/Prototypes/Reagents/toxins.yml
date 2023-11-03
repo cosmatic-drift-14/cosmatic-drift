@@ -264,13 +264,6 @@
   plantMetabolism:
   - !type:PlantAdjustMutationLevel
     amount: 1
-  metabolisms:
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Radiation: 3
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -282,6 +275,14 @@
           types:
             Radiation: 0.5
             Cellular: 0.25
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: 3
+
 
 - type: reagent
   id: HeartbreakerToxin
