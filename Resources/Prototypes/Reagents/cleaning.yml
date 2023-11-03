@@ -7,6 +7,16 @@
   color: "#a1000b"
   boilingPoint: 111.0
   meltingPoint: -5.0
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.1
   metabolisms:
     Poison:
       effects:
