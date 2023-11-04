@@ -700,3 +700,202 @@
   completetime: 3.2
   materials:
     Cloth: 500
+
+# Started Adding Here
+- type: latheRecipe
+  id: ClothingNeckCloakQm
+  result: ClothingNeckCloakQm
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingHeadHatQMsoftFlipped
+  result: ClothingHeadHatQMsoftFlipped
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatQMsoft
+  result: ClothingHeadHatQMsoft
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitCapFormal
+  result: ClothingUniformJumpsuitCapFormal
+  completetime: 2.5
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtCapFormalDress
+  result: ClothingUniformJumpskirtCapFormalDress
+  completetime: 2.5
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingNeckCloakCapFormal
+  result: ClothingNeckCloakCapFormal
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakCap
+  result: ClothingNeckCloakCap
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatCaptain
+  result: ClothingHeadHatCaptain
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatCapcap
+  result: ClothingHeadHatCapcap
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakHop
+  result: ClothingNeckCloakHop
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatHopcap
+  result: ClothingHeadHatHopcap
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakCe
+  result: ClothingNeckCloakCe
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingCloakCmo
+  result: ClothingCloakCmo
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakRd
+  result: ClothingNeckCloakRd
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakHos
+  result: ClothingNeckCloakHos
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatBeretEngineering
+  result: ClothingHeadHatBeretEngineering
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatBeretCmo
+  result: ClothingHeadHatBeretCmo
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatBeretRND
+  result: ClothingHeadHatBeretRND
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatBeretHoS
+  result: ClothingHeadHatBeretHoS
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingHeadHatHoshat
+  result: ClothingHeadHatHoshat
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHosFormal
+  result: ClothingUniformJumpskirtHosFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHoSParadeMale
+  result: ClothingUniformJumpskirtHoSParadeMale
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHoSBlue
+  result: ClothingUniformJumpsuitHoSBlue
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHosFormal
+  result: ClothingUniformJumpsuitHosFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHoSGrey
+  result: ClothingUniformJumpsuitHoSGrey
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHoSParadeMale
+  result: ClothingUniformJumpsuitHoSParadeMale
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100

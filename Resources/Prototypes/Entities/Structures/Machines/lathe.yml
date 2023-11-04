@@ -816,6 +816,32 @@
       - ClothingOuterWinterSci
       - ClothingOuterWinterRobo
       - ClothingOuterWinterSec
+      - ClothingNeckCloakQm # Started Adding Here
+      - ClothingHeadHatQMsoftFlipped
+      - ClothingHeadHatQMsoft
+      - ClothingUniformJumpsuitCapFormal
+      - ClothingUniformJumpskirtCapFormalDress
+      - ClothingNeckCloakCapFormal
+      - ClothingNeckCloakCap
+      - ClothingHeadHatCaptain
+      - ClothingHeadHatCapcap
+      - ClothingNeckCloakHop
+      - ClothingHeadHatHopcap
+      - ClothingNeckCloakCe
+      - ClothingCloakCmo
+      - ClothingNeckCloakRd
+      - ClothingNeckCloakHos
+      - ClothingHeadHatBeretEngineering
+      - ClothingHeadHatBeretCmo
+      - ClothingHeadHatBeretRND
+      - ClothingHeadHatBeretHoS
+      - ClothingHeadHatHoshat
+      - ClothingUniformJumpskirtHosFormal
+      - ClothingUniformJumpskirtHoSParadeMale
+      - ClothingUniformJumpsuitHoSBlue
+      - ClothingUniformJumpsuitHosFormal
+      - ClothingUniformJumpsuitHoSGrey
+      - ClothingUniformJumpsuitHoSParadeMale
   - type: MaterialStorage
     whitelist:
       tags:
