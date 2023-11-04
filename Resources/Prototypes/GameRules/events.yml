@@ -61,7 +61,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 10
+    weight: 3
     duration: 1
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
@@ -72,7 +72,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 0
+    weight: 1
     duration: 1
     earliestStart: 45
     reoccurrenceDelay: 60
@@ -99,7 +99,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 7.5
+    weight: 5
     duration: 1
     earliestStart: 45
     minimumPlayers: 20
