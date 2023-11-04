@@ -414,6 +414,36 @@
       - id: BookSecretDocuments
 
 - type: entity
+  id: LockerHeadOfSecurityFilled
+  suffix: Filled
+  parent: LockerHeadOfSecurity
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesHudSecurity
+      - id: WeaponDisabler
+      - id: ClothingHeadHatBeretHoS
+      - id: ClothingHeadHatHoshat
+      - id: ClothingNeckCloakHos
+      - id: ClothingOuterCoatHoSTrench
+      - id: ClothingUniformJumpskirtHoSAlt
+      - id: ClothingUniformJumpsuitHoSAlt
+      - id: ClothingBeltSecurityFilled
+      - id: ClothingHeadsetAltSecurity
+      - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
+      - id: CigarGoldCase
+        prob: 0.50
+      - id: DoorRemoteSecurity
+      - id: ClothingUniformJumpskirtHosFormal
+      - id: ClothingUniformJumpsuitHosFormal
+      - id: RubberStampHos
+      - id: SecurityTechFabCircuitboard
+      - id: BoxEncryptionKeySecurity
+      - id: HoloprojectorSecurity
+      - id: BookSecretDocuments
+
+- type: entity
   id: LockerHeadOfSecurityFilledCosmetic
   suffix: Cosmetic
   parent: LockerHeadOfSecurity
@@ -433,9 +463,11 @@
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingOuterWinterHoS
       - id: ClothingShoesBootsJack
+      - id: ClothingUniformJumpskirtHoS
       - id: ClothingUniformJumpskirtHoSAlt
       - id: ClothingUniformJumpskirtHosFormal
       - id: ClothingUniformJumpskirtHoSParadeMale
+      - id: ClothingUniformJumpsuitHoS
       - id: ClothingUniformJumpsuitHoSAlt
       - id: ClothingUniformJumpsuitHoSBlue
       - id: ClothingUniformJumpsuitHosFormal
