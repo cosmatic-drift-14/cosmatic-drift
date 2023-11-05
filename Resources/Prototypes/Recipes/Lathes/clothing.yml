@@ -701,7 +701,6 @@
   materials:
     Cloth: 500
 
-# Started Adding Here
 - type: latheRecipe
   id: ClothingNeckCloakQm
   result: ClothingNeckCloakQm
