@@ -189,7 +189,7 @@
         damage:
           types:
             Caustic: 0.15
-            Cellular: 0.05
+            Cellular: 0.05 # probably causes cancer, safety not guaranteed.
   metabolisms:
     Poison:
       effects:
