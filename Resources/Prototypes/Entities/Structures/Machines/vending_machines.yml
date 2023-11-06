@@ -1373,7 +1373,6 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    screenState: screen
     ejectDelay: 5
     soundVend: /Audio/Machines/circuitprinter.ogg
   - type: Advertise
