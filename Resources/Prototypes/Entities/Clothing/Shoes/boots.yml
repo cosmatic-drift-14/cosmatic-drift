@@ -11,7 +11,7 @@
   - type: Matchbox
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesBaseButcherable
   id: ClothingShoesBootsJack
   name: jackboots
   description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
