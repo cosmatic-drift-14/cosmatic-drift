@@ -30,7 +30,7 @@
     prototypes:
       - MobCockroach
     rarePrototypes:
-      - MobMothroach
+      - Mobmothroach
     rareChance: 0.03
 
 - type: entity
