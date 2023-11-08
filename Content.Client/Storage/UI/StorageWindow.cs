@@ -1,5 +1,4 @@
 using System.Numerics;
-using Content.Client.Items.Systems;
 using Content.Client.Message;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
@@ -24,7 +23,6 @@ namespace Content.Client.Storage.UI
         private readonly IEntityManager _entityManager;
 
         private readonly SharedStorageSystem _storage;
-        private readonly ItemSystem _item;
 
         private readonly RichTextLabel _information;
         public readonly ContainerButton StorageContainerButton;
@@ -36,7 +34,6 @@ namespace Content.Client.Storage.UI
         {
             _entityManager = entityManager;
             _storage = _entityManager.System<SharedStorageSystem>();
-            _item = _entityManager.System<ItemSystem>();
             SetSize = new Vector2(240, 320);
             Title = Loc.GetString("comp-storage-window-title");
             RectClipContent = true;
@@ -72,7 +69,7 @@ namespace Content.Client.Storage.UI
             _information.SetMessage(Loc.GetString("comp-storage-window-weight",
                 ("weight", 0),
                 ("maxWeight", 0),
-                ("size", _item.GetItemSizeLocale(SharedStorageSystem.DefaultStorageMaxItemSize))));
+                ("size", SharedItemSystem.GetItemSizeLocale(ItemSize.Normal))));
 
             vBox.AddChild(_information);
 
@@ -120,14 +117,14 @@ namespace Content.Client.Storage.UI
                 _information.SetMarkup(Loc.GetString("comp-storage-window-weight",
                     ("weight", _storage.GetCumulativeItemSizes(uid, uid.Comp)),
                     ("maxWeight", uid.Comp.MaxTotalWeight),
-                    ("size", _item.GetItemSizeLocale(_storage.GetMaxItemSize((uid, uid.Comp))))));
+                    ("size", SharedItemSystem.GetItemSizeLocale(_storage.GetMaxItemSize((uid, uid.Comp))))));
             }
             else
             {
                 _information.SetMarkup(Loc.GetString("comp-storage-window-slots",
                     ("itemCount", uid.Comp.Container.ContainedEntities.Count),
                     ("maxCount", uid.Comp.MaxSlots),
-                    ("size", _item.GetItemSizeLocale(_storage.GetMaxItemSize((uid, uid.Comp))))));
+                    ("size", SharedItemSystem.GetItemSizeLocale(_storage.GetMaxItemSize((uid, uid.Comp))))));
             }
         }
 
@@ -170,7 +167,7 @@ namespace Content.Client.Storage.UI
                         {
                             Align = Label.AlignMode.Right,
                             Text = item?.Size != null
-                                ? $"{_item.GetItemSizeWeight(item.Size)}"
+                                ? $"{SharedItemSystem.GetItemSizeWeight(item.Size)}"
                                 : Loc.GetString("comp-storage-no-item-size")
                         }
                     }

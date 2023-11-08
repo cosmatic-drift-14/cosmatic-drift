@@ -202,6 +202,7 @@
       - state: equipped-FEET
         offset: "0, -0.04"
   - type: Item
+    size: 10
     sprite: Clothing/Shoes/Specific/skates.rsi
   - type: ClothingSpeedModifier
     walkModifier: 1.3
