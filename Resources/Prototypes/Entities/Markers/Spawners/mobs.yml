@@ -33,7 +33,7 @@
       - MobCockroach
     rarePrototypes:
       - MobMothroach
-    rareChance: 0.1
+    rareChance: 0.03
 
 - type: entity
   name: HoP Corgi Spawner
