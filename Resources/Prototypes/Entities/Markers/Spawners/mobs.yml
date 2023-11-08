@@ -19,7 +19,7 @@
 
 - type: entity
   name: Roach Spawner
-  id: SpawnMobCritter
+  id: SpawnMobRoach
   parent: MarkerBase
   components:
   - type: Sprite
