@@ -87,14 +87,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: Crowbar
-    - id: Wrench
-    - id: Screwdriver
-    - id: Wirecutter
-    - id: Welder
-    - id: Multitool
-    - id: ClothingHandsGlovesCombat
-    - id: ClothingMaskGasSyndicate
+      - id: ClothingBeltUtilityEngineering
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingMaskGasSyndicate
 
 - type: entity
   id: ToolboxGoldFilled

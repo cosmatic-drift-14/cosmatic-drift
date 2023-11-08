@@ -8,7 +8,7 @@
     sprite: Objects/Specific/Hydroponics/pumpkin.rsi
     state: carved
   - type: Item
-    size: Normal
+    size: 10
   - type: Construction
     graph: PumpkinAddLight
     node: start
