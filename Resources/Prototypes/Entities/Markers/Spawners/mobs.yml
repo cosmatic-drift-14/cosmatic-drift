@@ -25,8 +25,6 @@
   - type: Sprite
     layers:
       - state: green
-      - sprite: Mobs/Animals/mouse.rsi #Make This
-        state: icon-2
       - state: ai
   - type: ConditionalSpawner
     prototypes:
