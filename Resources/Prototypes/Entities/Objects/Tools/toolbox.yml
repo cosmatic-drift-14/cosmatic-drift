@@ -12,7 +12,7 @@
     maxItemSize: Normal
     maxTotalWeight: 14
   - type: Item
-    size: Ginormous
+    size: Huge
   - type: ItemCooldown
   - type: MeleeWeapon
     damage:
@@ -116,9 +116,8 @@
   - type: Item
     sprite: Objects/Tools/Toolboxes/toolbox_syn.rsi
   - type: Storage
-    maxItemSize: Huge
-    maxSlots: 8
-    maxTotalWeight: 32
+    maxItemSize: Large
+    maxTotalWeight: 28
   - type: MeleeWeapon
     damage:
       types:

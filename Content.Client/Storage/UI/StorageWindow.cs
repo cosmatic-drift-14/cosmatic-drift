@@ -67,8 +67,7 @@ namespace Content.Client.Storage.UI
                 VerticalAlignment = VAlignment.Center
             };
             _information.SetMessage(Loc.GetString("comp-storage-window-weight",
-                ("weight", 0),
-                ("maxWeight", 0),
+                ("percent", 0),
                 ("size", SharedItemSystem.GetItemSizeLocale(ItemSize.Normal))));
 
             vBox.AddChild(_information);

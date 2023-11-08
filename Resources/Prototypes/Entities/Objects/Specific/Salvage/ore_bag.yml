@@ -14,9 +14,9 @@
     slots:
     - belt
   - type: Item
-    size: Ginormous
+    size: Huge
   - type: Storage
-    maxSlots: 10
+    maxSlots: 5
     maxItemSize: Normal
     quickInsert: true
     areaInsert: true

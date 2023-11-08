@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared.ActionBlocker;
 using Content.Shared.CombatMode;
@@ -472,34 +473,31 @@ public abstract class SharedStorageSystem : EntitySystem
             return false;
         }
 
-        if (!_stackQuery.TryGetComponent(insertEnt, out var stack) || !HasSpaceInStacks(uid, stack.StackTypeId))
+        if (item.Size > GetMaxItemSize((uid, storageComp)))
         {
-            if (item.Size > GetMaxItemSize((uid, storageComp)))
-            {
-                reason = "comp-storage-too-big";
-                return false;
-            }
+            reason = "comp-storage-too-big";
+            return false;
+        }
 
-            if (TryComp<StorageComponent>(insertEnt, out var insertStorage)
-                && GetMaxItemSize((insertEnt, insertStorage)) >= GetMaxItemSize((uid, storageComp)))
-            {
-                reason = "comp-storage-too-big";
-                return false;
-            }
+        if (TryComp<StorageComponent>(insertEnt, out var insertStorage)
+            && GetMaxItemSize((insertEnt, insertStorage)) >= GetMaxItemSize((uid, storageComp)))
+        {
+            reason = "comp-storage-too-big";
+            return false;
+        }
 
-            if (storageComp.MaxSlots != null)
-            {
-                if (storageComp.Container.ContainedEntities.Count >= storageComp.MaxSlots)
-                {
-                    reason = "comp-storage-insufficient-capacity";
-                    return false;
-                }
-            }
-            else if (SharedItemSystem.GetItemSizeWeight(item.Size) + GetCumulativeItemSizes(uid, storageComp) > storageComp.MaxTotalWeight)
+        if (storageComp.MaxSlots != null)
+        {
+            if (storageComp.Container.ContainedEntities.Count >= storageComp.MaxSlots)
             {
                 reason = "comp-storage-insufficient-capacity";
                 return false;
             }
+        }
+        else if (SharedItemSystem.GetItemSizeWeight(item.Size) + GetCumulativeItemSizes(uid, storageComp) > storageComp.MaxTotalWeight)
+        {
+            reason = "comp-storage-insufficient-capacity";
+            return false;
         }
 
         reason = null;
@@ -556,7 +554,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
             foreach (var ent in storageComp.Container.ContainedEntities)
             {
-                if (!_stackQuery.TryGetComponent(ent, out var containedStack))
+                if (!_stackQuery.TryGetComponent(ent, out var containedStack) || !insertStack.StackTypeId.Equals(containedStack.StackTypeId))
                     continue;
 
                 if (!_stack.TryAdd(insertEnt, ent, insertStack, containedStack))
@@ -573,23 +571,17 @@ public abstract class SharedStorageSystem : EntitySystem
             }
 
             // Still stackable remaining
-            if (toInsertCount > 0)
+            if (insertStack.Count > 0)
             {
                 // Try to insert it as a new stack.
                 if (!CanInsert(uid, insertEnt, out _, storageComp) ||
                     !storageComp.Container.Insert(insertEnt))
                 {
-                    UpdateUI(uid, storageComp);
-
                     // If we also didn't do any stack fills above then just end
                     // otherwise play sound and update UI anyway.
                     if (toInsertCount == insertStack.Count)
                         return false;
                 }
-            }
-            else
-            {
-                UpdateUI(uid, storageComp);
             }
         }
         // Non-stackable but no insertion for reasons.
@@ -665,32 +657,11 @@ public abstract class SharedStorageSystem : EntitySystem
         //todo maybe this shouldn't be authoritative over weight? idk.
         if (uid.Comp.MaxSlots != null)
         {
-            return uid.Comp.Container.ContainedEntities.Count < uid.Comp.MaxSlots || HasSpaceInStacks(uid);
+            return uid.Comp.Container.ContainedEntities.Count < uid.Comp.MaxSlots;
+
         }
 
-        return GetCumulativeItemSizes(uid, uid.Comp) < uid.Comp.MaxTotalWeight || HasSpaceInStacks(uid);
-    }
-
-    private bool HasSpaceInStacks(Entity<StorageComponent?> uid, string? stackType = null)
-    {
-        if (!Resolve(uid, ref uid.Comp))
-            return false;
-
-        foreach (var contained in uid.Comp.Container.ContainedEntities)
-        {
-            if (!_stackQuery.TryGetComponent(contained, out var stack))
-                continue;
-
-            if (stackType != null && !stack.StackTypeId.Equals(stackType))
-                continue;
-
-            if (_stack.GetAvailableSpace(stack) == 0)
-                continue;
-
-            return true;
-        }
-
-        return false;
+        return GetCumulativeItemSizes(uid, uid.Comp) < uid.Comp.MaxTotalWeight;
     }
 
     /// <summary>
@@ -726,9 +697,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
         // if there is no max item size specified, the value used
         // is one below the item size of the storage entity, clamped at ItemSize.Tiny
-        var sizes = Enum.GetValues<ItemSize>().ToList();
-        var currentSizeIndex = sizes.IndexOf(item.Size);
-        return sizes[Math.Max(currentSizeIndex - 1, 0)];
+        return (ItemSize) Math.Max((int) item.Size - 1, 1);
     }
 
     public FixedPoint2 GetStorageFillPercentage(Entity<StorageComponent?> uid)
