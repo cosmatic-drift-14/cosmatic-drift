@@ -1405,3 +1405,14 @@
       - state: equipped-INNERCLOTHING-jumpsuit
       - state: equipped-INNERCLOTHING-shirt
         color: "#b30000"
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitWaiter
+  name: waiter jumpsuit
+  description: A pristine waiter suit, ready to serve you.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/waiter.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/waiter.rsi
