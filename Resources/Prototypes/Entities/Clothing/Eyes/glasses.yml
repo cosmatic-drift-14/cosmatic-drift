@@ -172,9 +172,6 @@
     sprite: Clothing/Eyes/Glasses/aviators.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/aviators.rsi
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
     
 #Make a scanner category when these actually function and we get the trayson
 - type: entity
