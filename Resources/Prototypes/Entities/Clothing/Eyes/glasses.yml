@@ -162,6 +162,17 @@
   - type: EyeProtection
     protectionTime: 5
 
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesAviator
+  name: aviators glasses
+  description: Glasses made for combat, to protect the eyes from bright blinding flashes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/aviators.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/aviators.rsi
+
 #Make a scanner category when these actually function and we get the trayson
 - type: entity
   parent: ClothingEyesBase
