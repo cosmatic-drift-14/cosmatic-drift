@@ -782,6 +782,14 @@
       - ClothingUniformJumpskirtBrigmedic
       - ClothingUniformJumpsuitWarden
       - ClothingUniformJumpskirtWarden
+      - ClothingUniformJumpskirtHosFormal
+      - ClothingUniformJumpskirtHoSParadeMale
+      - ClothingUniformJumpsuitHoSBlue
+      - ClothingUniformJumpsuitHosFormal
+      - ClothingUniformJumpsuitHoSGrey
+      - ClothingUniformJumpsuitHoSParadeMale
+      - ClothingUniformJumpsuitCapFormal
+      - ClothingUniformJumpskirtCapFormalDress
       - ClothingOuterWinterCap
       - ClothingOuterWinterCE
       - ClothingOuterWinterCMO
@@ -816,32 +824,24 @@
       - ClothingOuterWinterSci
       - ClothingOuterWinterRobo
       - ClothingOuterWinterSec
-      - ClothingNeckCloakQm
-      - ClothingHeadHatQMsoftFlipped
-      - ClothingHeadHatQMsoft
-      - ClothingUniformJumpsuitCapFormal
-      - ClothingUniformJumpskirtCapFormalDress
-      - ClothingNeckCloakCapFormal
-      - ClothingNeckCloakCap
-      - ClothingHeadHatCaptain
-      - ClothingHeadHatCapcap
       - ClothingNeckCloakHop
-      - ClothingHeadHatHopcap
+      - ClothingNeckCloakQm
       - ClothingNeckCloakCe
       - ClothingCloakCmo
       - ClothingNeckCloakRd
       - ClothingNeckCloakHos
+      - ClothingNeckCloakCapFormal
+      - ClothingNeckCloakCap
       - ClothingHeadHatBeretEngineering
       - ClothingHeadHatBeretCmo
       - ClothingHeadHatBeretRND
       - ClothingHeadHatBeretHoS
       - ClothingHeadHatHoshat
-      - ClothingUniformJumpskirtHosFormal
-      - ClothingUniformJumpskirtHoSParadeMale
-      - ClothingUniformJumpsuitHoSBlue
-      - ClothingUniformJumpsuitHosFormal
-      - ClothingUniformJumpsuitHoSGrey
-      - ClothingUniformJumpsuitHoSParadeMale
+      - ClothingHeadHatHopcap
+      - ClothingHeadHatQMsoftFlipped
+      - ClothingHeadHatQMsoft
+      - ClothingHeadHatCaptain
+      - ClothingHeadHatCapcap
   - type: MaterialStorage
     whitelist:
       tags:
