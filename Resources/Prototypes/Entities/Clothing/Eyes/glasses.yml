@@ -166,7 +166,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesAviator
   name: aviators glasses
-  description: Glasses made for combat, to protect the eyes from bright blinding flashes.
+  description: A set of glasses designed to be worn under headgear and other equipment.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/aviators.rsi
