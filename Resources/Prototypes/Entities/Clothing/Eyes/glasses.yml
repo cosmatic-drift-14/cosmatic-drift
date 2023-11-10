@@ -165,7 +165,7 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesAviator
-  name: aviators glasses
+  name: aviator glasses
   description: A set of glasses designed to be worn under headgear and other equipment.
   components:
   - type: Sprite
