@@ -81,9 +81,10 @@
         prob: 0.5
 
 - type: entity
-  parent: ToolboxSyndicate
   id: ToolboxSyndicateFilled
+  name: suspicious toolbox
   suffix: Filled
+  parent: ToolboxSyndicate
   components:
   - type: StorageFill
     contents:

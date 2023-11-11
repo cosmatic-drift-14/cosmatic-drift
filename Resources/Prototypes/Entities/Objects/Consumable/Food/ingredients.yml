@@ -32,7 +32,7 @@
     damageContainer: Inorganic
   - type: Spillable
     solution: food
-  - type: TrashOnSolutionEmpty
+  - type: TrashOnEmpty
     solution: food
 
 - type: entity

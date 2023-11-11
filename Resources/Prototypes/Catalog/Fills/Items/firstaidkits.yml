@@ -46,11 +46,9 @@
       - id: Bloodpack
       - id: SyringeTranexamicAcid
       - id: PillIron
-        amount: 3
+        amount: 5
       - id: PillBicaridine
-        amount: 3
-      - id: PillCopper
-        amount: 3
+        amount: 5
 
 - type: entity
   id: MedkitToxinFilled

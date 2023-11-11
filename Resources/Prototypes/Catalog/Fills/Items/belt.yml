@@ -37,9 +37,7 @@
       - id: JawsOfLife
       - id: WelderExperimental
       - id: Multitool
-      - id: HolofanProjector
-      - id: GasAnalyzer
-      - id: trayScanner
+      - id: CableApcStack
 
 - type: entity
   id: ClothingBeltSecurityFilled

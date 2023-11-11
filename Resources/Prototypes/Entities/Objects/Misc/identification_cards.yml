@@ -216,10 +216,8 @@
   components:
     - type: Sprite
       layers:
-        - state: silver
+        - state: default
         - state: idquartermaster
-    - type: Item
-      heldPrefix: silver
     - type: PresetIdCard
       job: Quartermaster
 
@@ -618,19 +616,6 @@
   - type: Sprite
     layers:
     - state: syndie
-  - type: Access
-    tags:
-    - NuclearOperative
-    - SyndicateAgent
-
-- type: entity
-  parent: IDCardStandard
-  id: PirateIDCard
-  name: pirate ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: pirate
   - type: Access
     tags:
     - NuclearOperative

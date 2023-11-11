@@ -1,6 +1,8 @@
 ﻿using System.Linq;
 using Content.Shared.Ghost;
 using Content.Shared.Mind;
+using NUnit.Framework.Interfaces;
+using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
@@ -122,7 +124,7 @@ public sealed partial class MindTests
     [Test]
     public async Task TestVisitingReconnect()
     {
-        await using var pair = await SetupPair(true);
+        await using var pair = await SetupPair();
         var entMan = pair.Server.ResolveDependency<IEntityManager>();
         var mindSys = entMan.System<SharedMindSystem>();
         var mind = GetMind(pair);

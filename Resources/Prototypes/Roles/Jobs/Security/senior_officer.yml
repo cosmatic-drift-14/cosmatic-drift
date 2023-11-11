@@ -37,7 +37,7 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHatBeretSecurity
+    head: ClothingHeadHatBeret
     outerClothing: ClothingOuterArmorBasic
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity

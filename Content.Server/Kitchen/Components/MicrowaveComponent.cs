@@ -1,5 +1,4 @@
 using Content.Shared.Construction.Prototypes;
-using Content.Shared.DeviceLinking;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
@@ -37,9 +36,6 @@ namespace Content.Server.Kitchen.Components
 
         [ViewVariables]
         public bool Broken;
-
-        [DataField, ViewVariables(VVAccess.ReadWrite)]
-        public ProtoId<SinkPortPrototype> OnPort = "On";
 
         /// <summary>
         /// This is a fixed offset of 5.

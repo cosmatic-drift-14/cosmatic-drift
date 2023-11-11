@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
 using Content.Server.Administration.Logs;
@@ -50,7 +49,8 @@ namespace Content.Server.Chat.Managers
         private bool _oocEnabled = true;
         private bool _adminOocEnabled = true;
 
-        private readonly Dictionary<NetUserId, ChatUser> _players = new();
+        public Dictionary<ICommonSession, int> SenderKeys { get; } = new();
+        public Dictionary<ICommonSession, HashSet<NetEntity>> SenderEntities { get; } = new();
 
         public void Initialize()
         {
@@ -79,24 +79,11 @@ namespace Content.Server.Chat.Managers
 
         public void DeleteMessagesBy(ICommonSession player)
         {
-            if (!_players.TryGetValue(player.UserId, out var user))
-                return;
+            var key = SenderKeys.GetValueOrDefault(player);
+            var entities = SenderEntities.GetValueOrDefault(player) ?? new HashSet<NetEntity>();
+            var msg = new MsgDeleteChatMessagesBy { Key = key, Entities = entities };
 
-            var msg = new MsgDeleteChatMessagesBy { Key = user.Key, Entities = user.Entities };
             _netManager.ServerSendToAll(msg);
-        }
-
-        [return: NotNullIfNotNull(nameof(author))]
-        public ChatUser? EnsurePlayer(NetUserId? author)
-        {
-            if (author == null)
-                return null;
-
-            ref var user = ref CollectionsMarshal.GetValueRefOrAddDefault(_players, author.Value, out var exists);
-            if (!exists || user == null)
-                user = new ChatUser(_players.Count);
-
-            return user;
         }
 
         #region Server Announcements
@@ -227,8 +214,12 @@ namespace Content.Server.Chat.Managers
                 wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", patronColor),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
             }
 
+            ref var key = ref CollectionsMarshal.GetValueRefOrAddDefault(SenderKeys, player, out var exists);
+            if (!exists)
+                key = SenderKeys.Count;
+
             //TODO: player.Name color, this will need to change the structure of the MsgChatMessage
-            ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);
+            ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, senderKey: key);
             _mommiLink.SendOOCMessage(player.Name, message);
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"OOC from {player:Player}: {message}");
         }
@@ -246,6 +237,10 @@ namespace Content.Server.Chat.Managers
                                             ("adminChannelName", Loc.GetString("chat-manager-admin-channel-name")),
                                             ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
 
+            ref var key = ref CollectionsMarshal.GetValueRefOrAddDefault(SenderKeys, player, out var exists);
+            if (!exists)
+                key = SenderKeys.Count;
+
             foreach (var client in clients)
             {
                 var isSource = client != player.ConnectedClient;
@@ -256,8 +251,7 @@ namespace Content.Server.Chat.Managers
                     false,
                     client,
                     audioPath: isSource ? _netConfigManager.GetClientCVar(client, CCVars.AdminChatSoundPath) : default,
-                    audioVolume: isSource ? _netConfigManager.GetClientCVar(client, CCVars.AdminChatSoundVolume) : default,
-                    author: player.UserId);
+                    audioVolume: isSource ? _netConfigManager.GetClientCVar(client, CCVars.AdminChatSoundVolume) : default, senderKey: key);
             }
 
             _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
@@ -267,13 +261,9 @@ namespace Content.Server.Chat.Managers
 
         #region Utility
 
-        public void ChatMessageToOne(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, INetChannel client, Color? colorOverride = null, bool recordReplay = false, string? audioPath = null, float audioVolume = 0, NetUserId? author = null)
+        public void ChatMessageToOne(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, INetChannel client, Color? colorOverride = null, bool recordReplay = false, string? audioPath = null, float audioVolume = 0, int? senderKey = null)
         {
-            var user = author == null ? null : EnsurePlayer(author);
-            var netSource = _entityManager.GetNetEntity(source);
-            user?.AddEntity(netSource);
-
-            var msg = new ChatMessage(channel, message, wrappedMessage, netSource, user?.Key, hideChat, colorOverride, audioPath, audioVolume);
+            var msg = new ChatMessage(channel, message, wrappedMessage, _entityManager.GetNetEntity(source), senderKey, hideChat, colorOverride, audioPath, audioVolume);
             _netManager.ServerSendMessage(new MsgChatMessage() { Message = msg }, client);
 
             if (!recordReplay)
@@ -286,16 +276,12 @@ namespace Content.Server.Chat.Managers
             }
         }
 
-        public void ChatMessageToMany(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, bool recordReplay, IEnumerable<INetChannel> clients, Color? colorOverride = null, string? audioPath = null, float audioVolume = 0, NetUserId? author = null)
-            => ChatMessageToMany(channel, message, wrappedMessage, source, hideChat, recordReplay, clients.ToList(), colorOverride, audioPath, audioVolume, author);
+        public void ChatMessageToMany(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, bool recordReplay, IEnumerable<INetChannel> clients, Color? colorOverride = null, string? audioPath = null, float audioVolume = 0)
+            => ChatMessageToMany(channel, message, wrappedMessage, source, hideChat, recordReplay, clients.ToList(), colorOverride, audioPath, audioVolume);
 
-        public void ChatMessageToMany(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, bool recordReplay, List<INetChannel> clients, Color? colorOverride = null, string? audioPath = null, float audioVolume = 0, NetUserId? author = null)
+        public void ChatMessageToMany(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, bool recordReplay, List<INetChannel> clients, Color? colorOverride = null, string? audioPath = null, float audioVolume = 0)
         {
-            var user = author == null ? null : EnsurePlayer(author);
-            var netSource = _entityManager.GetNetEntity(source);
-            user?.AddEntity(netSource);
-
-            var msg = new ChatMessage(channel, message, wrappedMessage, netSource, user?.Key, hideChat, colorOverride, audioPath, audioVolume);
+            var msg = new ChatMessage(channel, message, wrappedMessage, _entityManager.GetNetEntity(source), null, hideChat, colorOverride, audioPath, audioVolume);
             _netManager.ServerSendToMany(new MsgChatMessage() { Message = msg }, clients);
 
             if (!recordReplay)
@@ -323,13 +309,9 @@ namespace Content.Server.Chat.Managers
             ChatMessageToMany(channel, message, wrappedMessage, source, hideChat, recordReplay, clients, colorOverride, audioPath, audioVolume);
         }
 
-        public void ChatMessageToAll(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, bool recordReplay, Color? colorOverride = null, string? audioPath = null, float audioVolume = 0, NetUserId? author = null)
+        public void ChatMessageToAll(ChatChannel channel, string message, string wrappedMessage, EntityUid source, bool hideChat, bool recordReplay, Color? colorOverride = null, string? audioPath = null, float audioVolume = 0, int? senderKey = null)
         {
-            var user = author == null ? null : EnsurePlayer(author);
-            var netSource = _entityManager.GetNetEntity(source);
-            user?.AddEntity(netSource);
-
-            var msg = new ChatMessage(channel, message, wrappedMessage, netSource, user?.Key, hideChat, colorOverride, audioPath, audioVolume);
+            var msg = new ChatMessage(channel, message, wrappedMessage, _entityManager.GetNetEntity(source), senderKey, hideChat, colorOverride, audioPath, audioVolume);
             _netManager.ServerSendToAll(new MsgChatMessage() { Message = msg });
 
             if (!recordReplay)

@@ -18,7 +18,6 @@ using Content.Shared.Strip;
 using Content.Shared.Strip.Components;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
-using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Strip
@@ -221,7 +220,6 @@ namespace Content.Server.Strip
             var doAfterArgs = new DoAfterArgs(EntityManager, user, ev.Time, new AwaitedDoAfterEvent(), null, target: target, used: held)
             {
                 ExtraCheck = Check,
-                Hidden = ev.Stealth,
                 AttemptFrequency = AttemptFrequency.EveryTick,
                 BreakOnDamage = true,
                 BreakOnTargetMove = true,
@@ -295,7 +293,6 @@ namespace Content.Server.Strip
             var doAfterArgs = new DoAfterArgs(EntityManager, user, ev.Time, new AwaitedDoAfterEvent(), null, target: target, used: held)
             {
                 ExtraCheck = Check,
-                Hidden = ev.Stealth,
                 AttemptFrequency = AttemptFrequency.EveryTick,
                 BreakOnDamage = true,
                 BreakOnTargetMove = true,
@@ -310,7 +307,7 @@ namespace Content.Server.Strip
             if (result != DoAfterStatus.Finished) return;
 
             _handsSystem.TryDrop(user, checkActionBlocker: false, handsComp: userHands);
-            _handsSystem.TryPickup(target, held, handName, checkActionBlocker: false, animateUser: !ev.Stealth, animate: !ev.Stealth, handsComp: hands);
+            _handsSystem.TryPickup(target, held, handName, checkActionBlocker: false, animateUser: true, handsComp: hands);
             _adminLogger.Add(LogType.Stripping, LogImpact.Medium, $"{ToPrettyString(user):user} has placed the item {ToPrettyString(held):item} in {ToPrettyString(target):target}'s hands");
             // hand update will trigger strippable update
         }
@@ -356,7 +353,6 @@ namespace Content.Server.Strip
             var doAfterArgs = new DoAfterArgs(EntityManager, user, ev.Time, new AwaitedDoAfterEvent(), null, target: target, used: item)
             {
                 ExtraCheck = Check,
-                Hidden = ev.Stealth,
                 AttemptFrequency = AttemptFrequency.EveryTick,
                 BreakOnDamage = true,
                 BreakOnTargetMove = true,
@@ -392,7 +388,7 @@ namespace Content.Server.Strip
             // Raise a dropped event, so that things like gas tank internals properly deactivate when stripping
             RaiseLocalEvent(item, new DroppedEvent(user), true);
 
-            _handsSystem.PickupOrDrop(user, item, animateUser: !ev.Stealth, animate: !ev.Stealth);
+            _handsSystem.PickupOrDrop(user, item);
             _adminLogger.Add(LogType.Stripping, LogImpact.Medium, $"{ToPrettyString(user):user} has stripped the item {ToPrettyString(item):item} from {ToPrettyString(target):target}");
 
         }
@@ -433,7 +429,6 @@ namespace Content.Server.Strip
             var doAfterArgs = new DoAfterArgs(EntityManager, user, ev.Time, new AwaitedDoAfterEvent(), null, target: target, used: item)
             {
                 ExtraCheck = Check,
-                Hidden = ev.Stealth,
                 AttemptFrequency = AttemptFrequency.EveryTick,
                 BreakOnDamage = true,
                 BreakOnTargetMove = true,
@@ -443,7 +438,7 @@ namespace Content.Server.Strip
                 DuplicateCondition = DuplicateConditions.SameTool
             };
 
-            if (!ev.Stealth && Check() && _handsSystem.TryGetHand(target, handName, out var handSlot, hands) && handSlot.HeldEntity != null)
+            if (Check() && _handsSystem.TryGetHand(target, handName, out var handSlot, hands) && handSlot.HeldEntity != null)
             {
                 _popup.PopupEntity(
                     Loc.GetString("strippable-component-alert-owner",
@@ -460,7 +455,7 @@ namespace Content.Server.Strip
                 return;
 
             _handsSystem.TryDrop(target, item, checkActionBlocker: false, handsComp: hands);
-            _handsSystem.PickupOrDrop(user, item, animateUser: !ev.Stealth, animate: !ev.Stealth, handsComp: userHands);
+            _handsSystem.PickupOrDrop(user, item, handsComp: userHands);
             // hand update will trigger strippable update
             _adminLogger.Add(LogType.Stripping, LogImpact.Medium,
                 $"{ToPrettyString(user):user} has stripped the item {ToPrettyString(item):item} from {ToPrettyString(target):target}");

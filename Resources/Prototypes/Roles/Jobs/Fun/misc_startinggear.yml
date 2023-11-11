@@ -103,7 +103,8 @@
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
     mask: ClothingMaskGasSyndicate
-    eyes: ClothingEyesHudSyndicate
+    # eyes: Night Vision Goggles whenever they're made
+    eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitSyndie
@@ -123,7 +124,8 @@
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
     mask: ClothingMaskGasSyndicate
-    eyes: ClothingEyesHudSyndicate
+    # eyes: Night Vision Goggles whenever they're made
+    eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitSyndieCommander
@@ -145,7 +147,7 @@
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperativeMedic
     mask: ClothingMaskGasSyndicate
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesHudMedical
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitMedic

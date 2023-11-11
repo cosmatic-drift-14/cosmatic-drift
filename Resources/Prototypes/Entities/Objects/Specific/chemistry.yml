@@ -330,7 +330,7 @@
     solution: injector
   - type: Spillable
     solution: injector
-  - type: TrashOnSolutionEmpty
+  - type: TrashOnEmpty
     solution: injector
   - type: Appearance
   - type: SolutionContainerVisuals

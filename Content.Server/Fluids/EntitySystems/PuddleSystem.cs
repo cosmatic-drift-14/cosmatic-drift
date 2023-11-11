@@ -63,9 +63,9 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     private const string Slime = "Slime";
 
     [ValidatePrototypeId<ReagentPrototype>]
-    private const string CopperBlood = "CopperBlood";
+    private const string SpiderBlood = "SpiderBlood";
 
-    private static string[] _standoutReagents = new[] { Blood, Slime, CopperBlood };
+    private static string[] _standoutReagents = new[] { Blood, Slime, SpiderBlood };
 
     public static float PuddleVolume = 1000;
 
@@ -373,7 +373,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             {
                 args.PushMarkup(Loc.GetString("puddle-component-examine-evaporating"));
             }
-            else if (solution?.GetTotalPrototypeQuantity(EvaporationReagents) > FixedPoint2.Zero)
+            else if (solution?.ContainsPrototype(EvaporationReagent) == true)
             {
                 args.PushMarkup(Loc.GetString("puddle-component-examine-evaporating-partial"));
             }
@@ -602,7 +602,16 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         if (tileReact)
         {
             // First, do all tile reactions
-            DoTileReactions(tileRef, solution);
+            for (var i = solution.Contents.Count - 1; i >= 0; i--)
+            {
+                var (reagent, quantity) = solution.Contents[i];
+                var proto = _prototypeManager.Index<ReagentPrototype>(reagent.Prototype);
+                var removed = proto.ReactionTile(tileRef, quantity);
+                if (removed <= FixedPoint2.Zero)
+                    continue;
+
+                solution.RemoveReagent(reagent, removed);
+            }
         }
 
         // Tile reactions used up everything.
@@ -650,21 +659,6 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     }
 
     #endregion
-
-    public void DoTileReactions(TileRef tileRef, Solution solution)
-    {
-        for (var i = solution.Contents.Count - 1; i >= 0; i--)
-        {
-
-            var (reagent, quantity) = solution.Contents[i];
-            var proto = _prototypeManager.Index<ReagentPrototype>(reagent.Prototype);
-            var removed = proto.ReactionTile(tileRef, quantity);
-            if (removed <= FixedPoint2.Zero)
-                continue;
-
-            solution.RemoveReagent(reagent, removed);
-        }
-    }
 
     /// <summary>
     /// Tries to get the relevant puddle entity for a tile.
