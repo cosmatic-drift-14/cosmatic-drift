@@ -1,14 +1,9 @@
 ﻿whitelist-not-whitelisted = You are not whitelisted.
 
 # proper handling for having a min/max or not
-whitelist-playercount-invalid = {$min ->
-    [0] The whitelist for this server only applies below {$max} players.
-    *[other] The whitelist for this server only applies above {$min} {$max ->
-        [2147483647] -> players, so you may be able to join later.
-       *[other] -> players and below {$max} players, so you may be able to join later.
-    }
-}
-whitelist-not-whitelisted-rp = You are not whitelisted. To become whitelisted, visit our Discord (which can be found at https://spacestation14.io) and check the #rp-whitelist channel.
+whitelist-openslots-full = There are also {$openslots} non-whitelist slots on the server, however they are currently full. You may attempt to rejoin later and see if a slot has opened. 
+
+whitelist-not-whitelisted-rp = You are not whitelisted. To become whitelisted, visit our Discord (which can be found in the server's hub description) and check the #whitelist-requests channel.
 
 cmd-whitelistadd-desc = Adds the player with the given username to the server whitelist.
 cmd-whitelistadd-help = Usage: whitelistadd <username>
