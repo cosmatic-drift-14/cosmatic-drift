@@ -1,4 +1,4 @@
-﻿using System.Collections.Immutable;
+using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -153,18 +153,25 @@ namespace Content.Server.Connection
             }
 
             if (_cfg.GetCVar(CCVars.WhitelistEnabled))
-            {
-                var min = _cfg.GetCVar(CCVars.WhitelistMinPlayers);
-                var max = _cfg.GetCVar(CCVars.WhitelistMaxPlayers);
-                var playerCountValid = _plyMgr.PlayerCount >= min && _plyMgr.PlayerCount < max;
+            { 
+                var connectedPlayers = _plyMgr.Sessions;
+                var whitelistedPlayers = connectedPlayers.Length;
+                // Track how many whitelisted players there are. This might be a shit way of doing it but oh well.
+                foreach(var player in connectedPlayers)
+                {
+                    if (await _db.GetWhitelistStatusAsync(userId) == false && adminData is null)
+                        whitelistedPlayers--;
+                }
 
-                if (playerCountValid && await _db.GetWhitelistStatusAsync(userId) == false
-                                     && adminData is null)
+                var openSlots = _cfg.GetCVar(CCVars.WhitelistOpenSlots);
+                var playerCountValid = openSlots < (_plyMgr.PlayerCount - whitelistedPlayers);
+                if (playerCountValid && await _db.GetWhitelistStatusAsync(userId) == false && adminData is null)
                 {
                     var msg = Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason));
                     // was the whitelist playercount changed?
-                    if (min > 0 || max < int.MaxValue)
-                        msg += "\n" + Loc.GetString("whitelist-playercount-invalid", ("min", min), ("max", max));
+                    if (openSlots > 0)
+                        msg += "\n" + Loc.GetString("whitelist-playercount-invalid", ("openslots", openSlots));
+
                     return (ConnectionDenyReason.Whitelist, msg, null);
                 }
             }
