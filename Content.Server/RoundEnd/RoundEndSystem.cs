@@ -322,8 +322,7 @@ namespace Content.Server.RoundEnd
                 var votesNo = vote.VotesPerOption["no"];
                 var total = votesYes + votesNo;
 
-                var ratioRequired = _cfg.GetCVar(CCVars.VoteRestartRequiredRatio);
-                if (total > 0 && votesYes / (float) total >= ratioRequired)
+                if (total > 0 && votesYes > votesNo)
                 {
                     _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Round end shuttle vote succeded: {votesYes}/{votesNo}");
                     // TODO: Add .loc files n make an unrecallable shuttle
