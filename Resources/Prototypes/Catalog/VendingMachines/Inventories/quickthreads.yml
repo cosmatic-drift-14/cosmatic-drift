@@ -5,6 +5,7 @@
     ClothingUniformJumpsuitLawyerBlack: 2
     ClothingUniformJumpsuitChef: 2
     ClothingUniformJumpsuitLoungewear: 2
+    ClothingUniformJumpsuitWaiter: 2
     ClothingUniformJumpsuitDetective: 2
     ClothingUniformJumpsuitJournalist: 2
     ClothingUniformJumpsuitPsychologist: 2
@@ -22,6 +23,8 @@
     ClothingUniformJumpskirtDetectiveGrey: 2
     ClothingUniformJumpskirtLibrarian: 2
     ClothingUniformJumpskirtCurator: 2
+    ClothingUniformJumpsuitPajamaBlue: 2
+    ClothingUniformJumpsuitPajamaRed: 2
     ClothingOuterApronBar: 2
     ClothingOuterApronChef: 2
     ClothingOuterApronBotanist: 2
@@ -52,3 +55,4 @@
     ClothingHandsGlovesColorWhite: 2
     ClothingNeckTieDet: 2
     ClothingNeckTieRed: 2
+    ClothingEyesGlassesAviator: 4
