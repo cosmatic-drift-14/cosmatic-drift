@@ -412,6 +412,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ClothingOuterWinterArmoredHoS
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -442,6 +443,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ClothingOuterWinterArmoredHoS
 
 - type: entity
   id: LockerHeadOfSecurityFilledCosmetic
@@ -462,6 +464,7 @@
       - id: ClothingNeckMantleHOS
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingOuterWinterHoS
+      - id: ClothingOuterWinterArmoredHoS
       - id: ClothingShoesBootsJack
       - id: ClothingUniformJumpskirtHoS
       - id: ClothingUniformJumpskirtHoSAlt
