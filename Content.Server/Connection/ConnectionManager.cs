@@ -159,7 +159,7 @@ namespace Content.Server.Connection
                 // Track how many whitelisted players there are. This might be a shit way of doing it but oh well.
                 foreach(var player in connectedPlayers)
                 {
-                    if (await _db.GetWhitelistStatusAsync(userId) == false && adminData is null)
+                    if (await _db.GetWhitelistStatusAsync(player.UserId) == false)
                         whitelistedPlayers--;
                 }
 
