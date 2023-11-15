@@ -651,6 +651,9 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> CombatModeIndicatorsPointShow =
             CVarDef.Create("hud.combat_mode_indicators_point_show", true, CVar.ARCHIVE | CVar.CLIENTONLY);
 
+        public static readonly CVarDef<bool> LoocAboveHeadShow =
+            CVarDef.Create("hud.show_looc_above_head", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+
         public static readonly CVarDef<float> HudHeldItemOffset =
             CVarDef.Create("hud.held_item_offset", 28f, CVar.ARCHIVE | CVar.CLIENTONLY);
 
@@ -1524,6 +1527,7 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float>
             SalvageExpeditionDuration = CVarDef.Create("salvage.expedition_duration", 900f, CVar.REPLICATED);
+
 
         /// <summary>
         /// Cooldown for missions.
