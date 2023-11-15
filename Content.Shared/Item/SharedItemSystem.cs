@@ -79,18 +79,6 @@ public abstract class SharedItemSystem : EntitySystem
         args.Handled = _handsSystem.TryPickup(args.User, uid, animateUser: false);
     }
 
-    protected virtual void OnStackCountChanged(EntityUid uid, ItemComponent component, StackCountChangedEvent args)
-    {
-        if (!TryComp<StackComponent>(uid, out var stack))
-            return;
-
-        if (!_prototype.TryIndex<StackPrototype>(stack.StackTypeId, out var stackProto) ||
-            stackProto.ItemSize is not { } size)
-            return;
-
-        SetSize(uid, args.NewCount * size, component);
-    }
-
     private void OnHandleState(EntityUid uid, ItemComponent component, ref ComponentHandleState args)
     {
         if (args.Current is not ItemComponentState state)
