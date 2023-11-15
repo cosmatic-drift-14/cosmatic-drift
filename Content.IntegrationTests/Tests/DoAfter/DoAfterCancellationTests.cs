@@ -61,6 +61,10 @@ public sealed class DoAfterCancellationTests : InteractionTest
         AssertPrototype(WallConstruction.Girder);
 
         await Interact(Steel, 5);
+        await Interact(Weld);
+        await CancelDoAfters();
+        AssertPrototype(WallConstruction.Girder);
+        await Interact(Weld);
         AssertPrototype(WallConstruction.WallSolid);
     }
 
