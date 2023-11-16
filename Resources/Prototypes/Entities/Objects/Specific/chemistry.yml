@@ -187,15 +187,7 @@
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Item
-<<<<<<< HEAD
-<<<<<<< HEAD
-    size: Normal
-=======
     size: 10
->>>>>>> parent of 0c329ed661 (Storage Standardization [Take 2] (#21270))
-=======
-    size: 10
->>>>>>> parent of 0c329ed661 (Storage Standardization [Take 2] (#21270))
     sprite: Objects/Specific/Chemistry/beaker_large.rsi
   - type: SolutionContainerManager
     solutions:
