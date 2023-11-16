@@ -180,13 +180,14 @@ namespace Content.Server.Chemistry.EntitySystems
             var user = message.Session.AttachedEntity;
             var maybeContainer = _itemSlotsSystem.GetItemOrNull(chemMaster, SharedChemMaster.OutputSlotName);
             if (maybeContainer is not { Valid: true } container
-                || !TryComp(container, out StorageComponent? storage))
+                || !TryComp(container, out StorageComponent? storage)
+                || storage.Container is null)
             {
                 return; // output can't fit pills
             }
 
             // Ensure the number is valid.
-            if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
+            if (message.Number == 0 || message.Number > storage.StorageCapacityMax - storage.StorageUsed)
                 return;
 
             // Ensure the amount is valid.
@@ -347,14 +348,17 @@ namespace Content.Server.Chemistry.EntitySystems
             if (!TryComp(container, out StorageComponent? storage))
                 return null;
 
-            var pills = storage.Container.ContainedEntities.Select((Func<EntityUid, (string, FixedPoint2 quantity)>) (pill =>
+            var pills = storage.Container?.ContainedEntities.Select((Func<EntityUid, (string, FixedPoint2 quantity)>) (pill =>
             {
                 _solutionContainerSystem.TryGetSolution(pill, SharedChemMaster.PillSolutionName, out var solution);
                 var quantity = solution?.Volume ?? FixedPoint2.Zero;
                 return (Name(pill), quantity);
             })).ToList();
 
-            return new ContainerInfo(name, _storageSystem.GetCumulativeItemSizes(container.Value, storage), storage.MaxTotalWeight)
+            if (pills == null)
+                return null;
+
+            return new ContainerInfo(name, storage.StorageUsed, storage.StorageCapacityMax)
             {
                 Entities = pills
             };

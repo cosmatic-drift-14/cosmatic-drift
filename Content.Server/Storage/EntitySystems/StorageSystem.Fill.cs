@@ -38,11 +38,10 @@ public sealed partial class StorageSystem
             if (entityStorageComp != null && EntityStorage.Insert(ent, uid, entityStorageComp))
                 continue;
 
-            var reason = string.Empty;
-            if (storageComp != null && Insert(uid, ent, out _, out reason, storageComp: storageComp, playSound: false))
+            if (storageComp != null && Insert(uid, ent, out _, storageComp: storageComp, playSound: false))
                 continue;
 
-            Log.Error($"Tried to StorageFill {item} inside {ToPrettyString(uid)} but can't. Reason: {Loc.GetString(reason ?? "no reason.")}");
+            Log.Error($"Tried to StorageFill {item} inside {ToPrettyString(uid)} but can't.");
             EntityManager.DeleteEntity(ent);
         }
     }
