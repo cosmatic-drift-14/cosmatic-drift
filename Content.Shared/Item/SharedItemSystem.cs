@@ -6,14 +6,12 @@ using Content.Shared.Verbs;
 using Content.Shared.Examine;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Item;
 
 public abstract class SharedItemSystem : EntitySystem
 {
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private   readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private   readonly SharedCombatModeSystem _combatMode = default!;
     [Dependency] protected readonly SharedContainerSystem Container = default!;
@@ -33,7 +31,7 @@ public abstract class SharedItemSystem : EntitySystem
 
     #region Public API
 
-    public void SetSize(EntityUid uid, int size, ItemComponent? component = null)
+    public void SetSize(EntityUid uid, ItemSize size, ItemComponent? component = null)
     {
         if (!Resolve(uid, ref component, false))
             return;
@@ -127,7 +125,7 @@ public abstract class SharedItemSystem : EntitySystem
     private void OnExamine(EntityUid uid, ItemComponent component, ExaminedEvent args)
     {
         args.PushMarkup(Loc.GetString("item-component-on-examine-size",
-            ("size", component.Size)));
+            ("size", GetItemSizeLocale(component.Size))));
     }
 
     /// <summary>
@@ -139,5 +137,17 @@ public abstract class SharedItemSystem : EntitySystem
     /// </remarks>
     public virtual void VisualsChanged(EntityUid owner)
     {
+    }
+
+    [PublicAPI]
+    public static string GetItemSizeLocale(ItemSize size)
+    {
+        return Robust.Shared.Localization.Loc.GetString($"item-component-size-{size.ToString()}");
+    }
+
+    [PublicAPI]
+    public static int GetItemSizeWeight(ItemSize size)
+    {
+        return (int) size;
     }
 }

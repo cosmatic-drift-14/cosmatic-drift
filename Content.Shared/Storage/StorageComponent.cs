@@ -20,6 +20,26 @@ namespace Content.Shared.Storage
         [ViewVariables]
         public Container Container = default!;
 
+        /// <summary>
+        /// A limit for the cumulative ItemSize weights that can be inserted in this storage.
+        /// If MaxSlots is not null, then this is ignored.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+        public int MaxTotalWeight;
+
+        /// <summary>
+        /// The maximum size item that can be inserted into this storage,
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+        [Access(typeof(SharedStorageSystem))]
+        public ItemSize? MaxItemSize;
+
+        /// <summary>
+        /// The max number of entities that can be inserted into this storage.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+        public int? MaxSlots;
+
         // TODO: Make area insert its own component.
         [DataField("quickInsert")]
         public bool QuickInsert; // Can insert storables by "attacking" them with the storage entity

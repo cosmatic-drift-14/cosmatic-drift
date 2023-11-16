@@ -1,5 +1,5 @@
 using System.Numerics;
-using Robust.Client.GameObjects;
+using Content.Client.Message;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
@@ -23,7 +23,9 @@ namespace Content.Client.Storage.UI
     {
         private readonly IEntityManager _entityManager;
 
-        private readonly Label _information;
+        private readonly SharedStorageSystem _storage;
+
+        private readonly RichTextLabel _information;
         public readonly ContainerButton StorageContainerButton;
         public readonly ListContainer EntityList;
         private readonly StyleBoxFlat _hoveredBox = new() { BackgroundColor = Color.Black.WithAlpha(0.35f) };
@@ -32,6 +34,7 @@ namespace Content.Client.Storage.UI
         public StorageWindow(IEntityManager entityManager)
         {
             _entityManager = entityManager;
+            _storage = _entityManager.System<SharedStorageSystem>();
             SetSize = new Vector2(240, 320);
             Title = Loc.GetString("comp-storage-window-title");
             RectClipContent = true;
@@ -65,6 +68,10 @@ namespace Content.Client.Storage.UI
                 Text = Loc.GetString("comp-storage-window-volume", ("itemCount", 0), ("usedVolume", 0), ("maxVolume", 0)),
                 VerticalAlignment = VAlignment.Center
             };
+            _information.SetMessage(Loc.GetString("comp-storage-window-weight",
+                ("weight", 0),
+                ("maxWeight", 0),
+                ("size", SharedItemSystem.GetItemSizeLocale(ItemSize.Normal))));
 
             vBox.AddChild(_information);
 
@@ -104,12 +111,17 @@ namespace Content.Client.Storage.UI
             // Sets information about entire storage container current capacity
             if (component.StorageCapacityMax != 0)
             {
-                _information.Text = Loc.GetString("comp-storage-window-volume", ("itemCount", storedCount),
-                    ("usedVolume", component.StorageUsed), ("maxVolume", component.StorageCapacityMax));
+                _information.SetMarkup(Loc.GetString("comp-storage-window-weight",
+                    ("weight", _storage.GetCumulativeItemSizes(uid, uid.Comp)),
+                    ("maxWeight", uid.Comp.MaxTotalWeight),
+                    ("size", SharedItemSystem.GetItemSizeLocale(_storage.GetMaxItemSize((uid, uid.Comp))))));
             }
             else
             {
-                _information.Text = Loc.GetString("comp-storage-window-volume-unlimited", ("itemCount", storedCount));
+                _information.SetMarkup(Loc.GetString("comp-storage-window-slots",
+                    ("itemCount", uid.Comp.Container.ContainedEntities.Count),
+                    ("maxCount", uid.Comp.MaxSlots),
+                    ("size", SharedItemSystem.GetItemSizeLocale(_storage.GetMaxItemSize((uid, uid.Comp))))));
             }
         }
 
@@ -152,7 +164,9 @@ namespace Content.Client.Storage.UI
                         new Label
                         {
                             Align = Label.AlignMode.Right,
-                            Text = size.ToString() ?? Loc.GetString("comp-storage-no-item-size"),
+                            Text = item?.Size != null
+                                ? $"{SharedItemSystem.GetItemSizeWeight(item.Size)}"
+                                : Loc.GetString("comp-storage-no-item-size")
                         }
                     }
             });

@@ -46,6 +46,8 @@ public abstract class SharedStorageSystem : EntitySystem
     private EntityQuery<StackComponent> _stackQuery;
     private EntityQuery<TransformComponent> _xformQuery;
 
+    public const ItemSize DefaultStorageMaxItemSize = ItemSize.Normal;
+
     /// <inheritdoc />
     public override void Initialize()
     {
@@ -469,15 +471,14 @@ public abstract class SharedStorageSystem : EntitySystem
 
         if (!_stackQuery.TryGetComponent(insertEnt, out var stack) || !HasSpaceInStacks(uid, stack.StackTypeId))
         {
-            var maxSize = _item.GetSizePrototype(GetMaxItemSize((uid, storageComp)));
-            if (_item.GetSizePrototype(item.Size) > maxSize)
+            if (item.Size > GetMaxItemSize((uid, storageComp)))
             {
                 reason = "comp-storage-too-big";
                 return false;
             }
 
             if (TryComp<StorageComponent>(insertEnt, out var insertStorage)
-                && _item.GetSizePrototype(GetMaxItemSize((insertEnt, insertStorage))) >= maxSize)
+                && GetMaxItemSize((insertEnt, insertStorage)) >= GetMaxItemSize((uid, storageComp)))
             {
                 reason = "comp-storage-too-big";
                 return false;
@@ -491,7 +492,7 @@ public abstract class SharedStorageSystem : EntitySystem
                     return false;
                 }
             }
-            else if (_item.GetItemSizeWeight(item.Size) + GetCumulativeItemSizes(uid, storageComp) > storageComp.MaxTotalWeight)
+            else if (SharedItemSystem.GetItemSizeWeight(item.Size) + GetCumulativeItemSizes(uid, storageComp) > storageComp.MaxTotalWeight)
             {
                 reason = "comp-storage-insufficient-capacity";
                 return false;
@@ -634,7 +635,7 @@ public abstract class SharedStorageSystem : EntitySystem
     /// <returns>true if inserted, false otherwise</returns>
     public bool PlayerInsertEntityInWorld(EntityUid uid, EntityUid player, EntityUid toInsert, StorageComponent? storageComp = null)
     {
-        if (!Resolve(uid, ref storageComp) || !_sharedInteractionSystem.InRangeUnobstructed(player, uid))
+        if (!Resolve(uid, ref uid.Comp) || !_sharedInteractionSystem.InRangeUnobstructed(player, uid))
             return false;
 
         if (!Insert(uid, toInsert, out _, user: player, storageComp))
@@ -697,13 +698,13 @@ public abstract class SharedStorageSystem : EntitySystem
         {
             if (!_itemQuery.TryGetComponent(item, out var itemComp))
                 continue;
-            sum += _item.GetItemSizeWeight(itemComp.Size);
+            sum += SharedItemSystem.GetItemSizeWeight(itemComp.Size);
         }
 
         return sum;
     }
 
-    public ProtoId<ItemSizePrototype> GetMaxItemSize(Entity<StorageComponent?> uid)
+    public ItemSize GetMaxItemSize(Entity<StorageComponent?> uid)
     {
         if (!Resolve(uid, ref uid.Comp))
             return DefaultStorageMaxItemSize;
@@ -714,14 +715,12 @@ public abstract class SharedStorageSystem : EntitySystem
 
         if (!_itemQuery.TryGetComponent(uid, out var item))
             return DefaultStorageMaxItemSize;
-        var size = _item.GetSizePrototype(item.Size);
 
         // if there is no max item size specified, the value used
         // is one below the item size of the storage entity, clamped at ItemSize.Tiny
-        var sizes = _prototype.EnumeratePrototypes<ItemSizePrototype>().ToList();
-        sizes.Sort();
-        var currentSizeIndex = sizes.IndexOf(size);
-        return sizes[Math.Max(currentSizeIndex - 1, 0)].ID;
+        var sizes = Enum.GetValues<ItemSize>().ToList();
+        var currentSizeIndex = sizes.IndexOf(item.Size);
+        return sizes[Math.Max(currentSizeIndex - 1, 0)];
     }
 
     public FixedPoint2 GetStorageFillPercentage(Entity<StorageComponent?> uid)
