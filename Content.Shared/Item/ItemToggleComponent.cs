@@ -20,11 +20,11 @@ public sealed partial class ItemToggleComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("offSize")]
-    public ItemSize OffSize = ItemSize.Small;
+    public int OffSize = 1;
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("onSize")]
-    public ItemSize OnSize = ItemSize.Huge;
+    public int OnSize = 9999;
 }
 
 [ByRefEvent]

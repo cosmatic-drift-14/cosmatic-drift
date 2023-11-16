@@ -119,49 +119,6 @@ public sealed class StatValuesCommand : IConsoleCommand
         return state;
     }
 
-    private StatValuesEuiMessage GetItem()
-    {
-        var values = new List<string[]>();
-        var metaQuery = _entManager.GetEntityQuery<MetaDataComponent>();
-        var itemQuery = _entManager.GetEntityQuery<ItemComponent>();
-        var items = new HashSet<string>(1024);
-        var ents = _entManager.GetEntities().ToArray();
-
-        foreach (var entity in ents)
-        {
-            if (!metaQuery.TryGetComponent(entity, out var meta))
-                continue;
-
-            var id = meta.EntityPrototype?.ID;
-
-            // We'll add it even if we don't have it so we don't have to raise the event again because this is probably faster.
-            if (id == null || !items.Add(id))
-                continue;
-
-            if (!itemQuery.TryGetComponent(entity, out var itemComp))
-                continue;
-
-            values.Add(new[]
-            {
-                id,
-                $"{SharedItemSystem.GetItemSizeLocale(itemComp.Size)}",
-            });
-        }
-
-        var state = new StatValuesEuiMessage
-        {
-            Title = Loc.GetString("stat-item-values"),
-            Headers = new List<string>
-            {
-                Loc.GetString("stat-item-id"),
-                Loc.GetString("stat-item-price"),
-            },
-            Values = values,
-        };
-
-        return state;
-    }
-
     private StatValuesEuiMessage GetMelee()
     {
         var values = new List<string[]>();
