@@ -98,15 +98,7 @@ public sealed class EnergySwordSystem : EntitySystem
     {
         if (TryComp(uid, out ItemComponent? item))
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
             _item.SetSize(uid, 5, item);
-=======
-            _item.SetSize(uid, ItemSize.Small, item);
->>>>>>> parent of 4729024d3e (Convert ItemSize to prototypes (#21481))
-=======
-            _item.SetSize(uid, 5, item);
->>>>>>> parent of 0c329ed661 (Storage Standardization [Take 2] (#21270))
         }
 
         if (TryComp<DisarmMalusComponent>(uid, out var malus))
@@ -133,15 +125,7 @@ public sealed class EnergySwordSystem : EntitySystem
     {
         if (TryComp(uid, out ItemComponent? item))
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
             _item.SetSize(uid, 9999, item);
-=======
-            _item.SetSize(uid, ItemSize.Huge, item);
->>>>>>> parent of 4729024d3e (Convert ItemSize to prototypes (#21481))
-=======
-            _item.SetSize(uid, 9999, item);
->>>>>>> parent of 0c329ed661 (Storage Standardization [Take 2] (#21270))
         }
 
         if (comp.IsSharp)
