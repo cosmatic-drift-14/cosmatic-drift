@@ -83,8 +83,6 @@ public abstract class SharedItemSystem : EntitySystem
 
     protected virtual void OnStackCountChanged(EntityUid uid, ItemComponent component, StackCountChangedEvent args)
     {
-<<<<<<< HEAD
-=======
         if (!TryComp<StackComponent>(uid, out var stack))
             return;
 
@@ -93,7 +91,6 @@ public abstract class SharedItemSystem : EntitySystem
             return;
 
         SetSize(uid, args.NewCount * size, component);
->>>>>>> parent of 0c329ed661 (Storage Standardization [Take 2] (#21270))
     }
 
     private void OnHandleState(EntityUid uid, ItemComponent component, ref ComponentHandleState args)
