@@ -38,7 +38,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Storage
-    storageCapacityMax: 50
+    capacity: 50
     whitelist:
       tags:
         - Folder
