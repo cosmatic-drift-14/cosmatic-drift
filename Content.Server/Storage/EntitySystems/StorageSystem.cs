@@ -90,7 +90,7 @@ public sealed partial class StorageSystem : SharedStorageSystem
         if (!_uiSystem.IsUiOpen(uid, args.UiKey))
         {
             storageComp.IsUiOpen = false;
-            UpdateAppearance((uid, storageComp, null));
+            UpdateStorageVisualization(uid, storageComp);
 
             if (storageComp.StorageCloseSound is not null)
                 Audio.Play(storageComp.StorageCloseSound, Filter.Pvs(uid, entityManager: EntityManager), uid, true, storageComp.StorageCloseSound.Params);
