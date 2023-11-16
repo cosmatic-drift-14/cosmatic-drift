@@ -1,7 +1,6 @@
 using Content.Shared.Item;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Weapons.Melee.ItemToggle;
 
@@ -22,11 +21,11 @@ public sealed partial class ItemToggleComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("offSize")]
-    public ProtoId<ItemSizePrototype> OffSize = "Small";
+    public ItemSize OffSize = ItemSize.Small;
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("onSize")]
-    public ProtoId<ItemSizePrototype> OnSize = "Huge";
+    public ItemSize OnSize = ItemSize.Huge;
 }
 
 [ByRefEvent]

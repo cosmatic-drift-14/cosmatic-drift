@@ -127,7 +127,6 @@ public sealed class StatValuesCommand : IConsoleCommand
     private StatValuesEuiMessage GetItem()
     {
         var values = new List<string[]>();
-        var itemSystem = _entManager.System<ItemSystem>();
         var metaQuery = _entManager.GetEntityQuery<MetaDataComponent>();
         var itemQuery = _entManager.GetEntityQuery<ItemComponent>();
         var items = new HashSet<string>(1024);
@@ -150,7 +149,7 @@ public sealed class StatValuesCommand : IConsoleCommand
             values.Add(new[]
             {
                 id,
-                $"{itemSystem.GetItemSizeLocale(itemComp.Size)}",
+                $"{SharedItemSystem.GetItemSizeLocale(itemComp.Size)}",
             });
         }
 

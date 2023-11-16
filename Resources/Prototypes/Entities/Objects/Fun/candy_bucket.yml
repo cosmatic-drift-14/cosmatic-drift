@@ -13,7 +13,7 @@
     threshold: 1
   - type: Item
     heldPrefix: empty
-    size: Normal
+    size: 20
   - type: Appearance
   - type: GenericVisualizer
     visuals:
