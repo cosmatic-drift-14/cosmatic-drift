@@ -306,7 +306,6 @@
   components:
   - type: StorageFill
     contents:
-      - id: SyndiHypo
       - id: BoxSurvivalSyndicate
       - id: SawAdvanced
       - id: Cautery
