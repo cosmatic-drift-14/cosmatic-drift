@@ -47,7 +47,7 @@ entities:
     components:
     - name: CentCom Downstairs
       type: MetaData
-    - parent: invalid
+    - parent: 1
       type: Transform
     - chunks:
         -1,-1:
