@@ -522,7 +522,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
             foreach (var ent in storageComp.Container.ContainedEntities)
             {
-                if (!_stackQuery.TryGetComponent(ent, out var containedStack) || !insertStack.StackTypeId.Equals(containedStack.StackTypeId))
+                if (!_stackQuery.TryGetComponent(ent, out var containedStack))
                     continue;
 
                 if (!_stack.TryAdd(insertEnt, ent, insertStack, containedStack))
@@ -539,18 +539,24 @@ public abstract class SharedStorageSystem : EntitySystem
             }
 
             // Still stackable remaining
-            if (insertStack.Count > 0)
+            if (toInsertCount > 0)
             {
                 // Try to insert it as a new stack.
                 if (TryComp(insertEnt, out ItemComponent? itemComp) &&
                     itemComp.Size > storageComp.StorageCapacityMax - storageComp.StorageUsed ||
                     !storageComp.Container.Insert(insertEnt))
                 {
+                    UpdateUI(uid, storageComp);
+
                     // If we also didn't do any stack fills above then just end
                     // otherwise play sound and update UI anyway.
                     if (toInsertCount == insertStack.Count)
                         return false;
                 }
+            }
+            else
+            {
+                UpdateUI(uid, storageComp);
             }
         }
         // Non-stackable but no insertion for reasons.
