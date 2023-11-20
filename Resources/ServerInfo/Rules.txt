@@ -13,11 +13,7 @@
 
 [color=#7ade00]03.[/color] This is an English only server, as we can not moderate other languages speaking in anything but English will usually lead to a single warning, then ban if you do not cease.
 
-<<<<<<< HEAD
 [color=#7ade00]04.[/color] Absolutely no bigotry. This covers ableism, homophobia, racism, sexism, speciesism, and hate speech as a whole. If it's to the point where it makes someone uncomfortable and they ahelp you or an admin finds an issue with it, you will answer for it.
-=======
-[color=#a4885c]02.[/color] Absolutely no hate speech, slurs, bigotry, racism, specism (demeaning other characters in-game due to their in-game race), sexism, disability-related or anything even remotely similar. (YOU WILL GET PERMABANNED)
->>>>>>> upstream/master
 
 [color=#7ade00]05.[/color] No sexual content, disgusting RP or gross statements. This is not an 18+ server. This means no erotic roleplay, emotes and messages that are sexual in nature, or overtly disgusting things no one wants to hear. Includes "technically not NSFW" jokes.
 
@@ -40,7 +36,7 @@
 
 - Try your best not to negatively affect SSD players. Stealing from them or killing them is not allowed, but things like moving them to a safe spot or security finishing out a search is fine.
 
-[color=#7ade00]09.[/color] You are playing a high roleplay server, speak and act like a human being. You are held up to a high level or roleplay, this does not mean you need to have entirely documented lore for your character or constantly emote out actions, but you're expected to actively engage in roleplay when it comes up.
+[color=#7ade00]09.[/color] You are playing a high roleplay server, speak and act like a human being. You are held up to a high level of roleplay, this does not mean you need to have entirely documented lore for your character or constantly emote out actions, but you're expected to actively engage in roleplay when it comes up.
 - Do not use text speech like "omg", or "XD".
 - Referring to gamey terms like "admins", or "RNG" is a no go.
 - Do not use emotes to bypass chat filters and generally try to be at least medium effort with them, don't do things like, "John Doe motions with his hands to signal syndicate agents west of you."
@@ -66,7 +62,7 @@
 [color=#7ade00]14.[/color] Full continuity of your character and events that happen to them is expected. All rounds are canonical unless stated otherwise by an admin.
 - You are allowed to recall past shifts in any manner, unless it violates New Life rule.
 - Punishments you receive will be enforced to carry out in-character throughout rounds. If your character gets demoted you're expected to stay out of that job until a reasonable amount of time has passed or you get rehired in-game.
-- Your characters should generally be contained in one or two jobs max at any given point, they can change departments but this shouldn't happen constantly.
+- Your characters should generally hold no more than two departmental jobs and a service side job in-character. You may swap departments from time to time so long as it doesn't happen constantly.
 - Permanent death is not required, as there's off-site DNA storages for all crewmembers.
 
 [color=#7ade00]15.[/color] Stay within your job, reasonable knowledge and abilities. Referred to as metagaming.
