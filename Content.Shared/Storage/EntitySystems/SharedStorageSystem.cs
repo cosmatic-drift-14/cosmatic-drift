@@ -522,7 +522,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
             foreach (var ent in storageComp.Container.ContainedEntities)
             {
-                if (!_stackQuery.TryGetComponent(ent, out var containedStack))
+                if (!_stackQuery.TryGetComponent(ent, out var containedStack) || !insertStack.StackTypeId.Equals(containedStack.StackTypeId))
                     continue;
 
                 if (!_stack.TryAdd(insertEnt, ent, insertStack, containedStack))
@@ -553,10 +553,6 @@ public abstract class SharedStorageSystem : EntitySystem
                     if (toInsertCount == insertStack.Count)
                         return false;
                 }
-            }
-            else
-            {
-                UpdateUI(uid, storageComp);
             }
         }
         // Non-stackable but no insertion for reasons.
