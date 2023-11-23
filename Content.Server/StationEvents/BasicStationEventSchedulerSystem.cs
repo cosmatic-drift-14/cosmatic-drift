@@ -57,8 +57,8 @@ namespace Content.Server.StationEvents
         /// </summary>
         private void ResetTimer(BasicStationEventSchedulerComponent component)
         {
-            // 5 - 25 minutes. TG does 3-10 but that's pretty frequent
-            component.TimeUntilNextEvent = _random.Next(300, 1500);
+            // 15 - 25 minutes. Upstream does 5-25 but this is hopefully, on average, longer.
+            component.TimeUntilNextEvent = _random.Next(900, 1500);
         }
     }
 
