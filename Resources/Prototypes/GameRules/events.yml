@@ -178,7 +178,8 @@
       path: /Audio/Announcements/attention.ogg
     startDelay: 10
     earliestStart: 30
-    weight: 8
+    weight: 4
+    minimumPlayers: 30
     duration: 50
   - type: VentCrittersRule
     entries:
@@ -297,7 +298,6 @@
       path: /Audio/Announcements/attention.ogg
     startDelay: 10
     earliestStart: 15
-    minimumPlayers: 15
     weight: 5
     duration: 60
   - type: VentCrittersRule
