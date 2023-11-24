@@ -162,14 +162,8 @@ namespace Content.Server.Stack
                 return;
             }
 
-            if (Split(uid, amount, userTransform.Coordinates, stack) is not {} split)
+            if (Split(uid, amount, userTransform.Coordinates, stack) is not { } split)
                 return;
-
-            if (_container.TryGetContainingContainer(uid, out var container) &&
-                TryComp<StorageComponent>(container.Owner, out var storage))
-            {
-                _storage.UpdateUI(container.Owner, storage);
-            }
 
             Hands.PickupOrDrop(userUid, split);
 
