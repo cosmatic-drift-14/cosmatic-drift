@@ -46379,6 +46379,13 @@ entities:
     - pos: -37.5,4.5
       parent: 2
       type: Transform
+- proto: VendingMachineSyndieDrobe
+  entities:
+  - uid: 8735
+    components:
+    - pos: -2.5,38.5
+      parent: 2
+      type: Transform
 - proto: VendingMachineTheater
   entities:
   - uid: 411
