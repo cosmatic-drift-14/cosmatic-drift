@@ -174,7 +174,7 @@
   slippery: true
   desc: reagent-desc-razorium
   physicalDesc: reagent-physical-desc-reflective
-  flavor: flavor-complex-sharp
+  flavor: sharp
   color: "#e3fffb"
   reactiveEffects:
     Acidic:
