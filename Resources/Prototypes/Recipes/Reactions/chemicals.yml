@@ -386,3 +386,14 @@
       amount: 1
   products:
     SodiumCarbonate: 4
+
+- type: reaction
+  id: Razorium
+  impact: Medium
+  reactants:
+    Bicaridine:
+      amount: 2
+    Dermaline:
+      amount: 1
+  products:
+    Razorium: 0.5
