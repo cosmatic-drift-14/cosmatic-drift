@@ -217,4 +217,3 @@ flavor-complex-bee = unbeelievable
 flavor-complex-sax = like jazz
 flavor-complex-bottledlightning = like lightning in a bottle
 flavor-complex-punishment = like punishment
-flavor-complex-razor = like you just swallowed broken glass
