@@ -934,3 +934,19 @@
         - !type:ReagentThreshold
           min: 30
         probability: 0.02
+
+- type: reagent
+  id: Lacerinol
+  name: reagent-name-lacerinol
+  group: Medicine
+  desc: reagent-desc-lacerinol
+  physicalDesc: reagent-physical-desc-viscous
+  flavor: syrupy
+  color: "#283332"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Slash: -3
