@@ -950,3 +950,10 @@
         damage:
           types:
             Slash: -3
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Blunt: 3
