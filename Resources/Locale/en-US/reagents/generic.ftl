@@ -8,3 +8,4 @@ generic-reagent-effect-nauseous = You feel nauseous.
 generic-reagent-effect-parched = You feel parched.
 generic-reagent-effect-thirsty = You feel thirsty.
 generic-reagent-effect-slicing-insides = You feel an incredibly sharp pain inside you!
+generic-reagent-effect-sluggish = You feel sluggish.

@@ -139,3 +139,30 @@
       - !type:AdjustReagent
         reagent: Nutriment
         amount: 0.1
+        
+- type: reagent
+  id: Agitaseptici
+  name: reagent-name-agitaseptici
+  group: Biological
+  desc: reagent-desc-agitaseptici
+  physicalDesc: reagent-physical-desc-alive
+  flavor: bitter
+  color: "#ad9279"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.01 # Very slow acting
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.05 # Not super dangerous, but inconvenient. Get it out of your bloodstream.
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-nauseous"]
+        probability: 0.02
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-sluggish"]
+        probability: 0.02
