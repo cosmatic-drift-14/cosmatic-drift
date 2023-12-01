@@ -420,3 +420,16 @@
       amount: 1
   products:
     Puncturase: 2
+
+- type: reaction
+  id: Bruizine
+  impact: Medium
+  reactants:
+    Bicaridine:
+      amount: 1
+    Lithium:
+      amount: 0.9
+    Sugar:
+      amount: 1
+  products:
+    Bruizine: 2
