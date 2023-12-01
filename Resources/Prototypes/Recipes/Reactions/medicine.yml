@@ -408,3 +408,15 @@
       amount: 1
   products:
     Lacerinol: 2
+
+- type: reaction
+  id: Puncturase
+  impact: Medium
+  minTemp: 365
+  reactants:
+    Bicaridine:
+      amount: 1
+    Carbon:
+      amount: 1
+  products:
+    Puncturase: 2
