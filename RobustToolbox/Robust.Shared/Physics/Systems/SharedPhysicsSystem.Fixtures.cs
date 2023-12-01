@@ -1,0 +1,182 @@
+using Robust.Shared.GameObjects;
+using Robust.Shared.IoC;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Dynamics;
+using Robust.Shared.Utility;
+
+namespace Robust.Shared.Physics.Systems;
+
+public abstract partial class SharedPhysicsSystem
+{
+    [Dependency] private readonly FixtureSystem _fixtures = default!;
+
+    public void SetDensity(EntityUid uid, string fixtureId, Fixture fixture, float value, bool update = true, FixturesComponent? manager = null)
+    {
+        DebugTools.Assert(value >= 0f);
+
+        if (fixture.Density.Equals(value))
+            return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        fixture.Density = value;
+
+        if (update)
+            _fixtures.FixtureUpdate(uid, manager: manager);
+    }
+
+    public void SetFriction(EntityUid uid, string fixtureId, Fixture fixture, float value, bool update = true, FixturesComponent? manager = null)
+    {
+        DebugTools.Assert(value >= 0f);
+
+        if (fixture.Friction.Equals(value))
+            return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        fixture.Friction = value;
+
+        if (update)
+            _fixtures.FixtureUpdate(uid, manager: manager);
+    }
+
+    public void SetHard(EntityUid uid, Fixture fixture, bool value, FixturesComponent? manager = null)
+    {
+        if (fixture.Hard.Equals(value))
+            return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        fixture.Hard = value;
+        _fixtures.FixtureUpdate(uid, manager: manager);
+        WakeBody(uid);
+    }
+
+    public void SetRestitution(EntityUid uid, Fixture fixture, float value, bool update = true, FixturesComponent? manager = null)
+    {
+        DebugTools.Assert(value >= 0f);
+
+        if (fixture.Restitution.Equals(value))
+            return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        fixture.Restitution = value;
+
+        if (update)
+            _fixtures.FixtureUpdate(uid, manager: manager);
+    }
+
+    #region Collision Masks & Layers
+
+    public void AddCollisionMask(EntityUid uid, string fixtureId, Fixture fixture, int mask, FixturesComponent? manager = null, PhysicsComponent? body = null)
+    {
+        if ((fixture.CollisionMask & mask) == mask) return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        DebugTools.Assert(manager.Fixtures.ContainsKey(fixtureId));
+        fixture.CollisionMask |= mask;
+
+        if (body != null || TryComp(uid, out body))
+        {
+            _fixtures.FixtureUpdate(uid, manager: manager, body: body);
+        }
+
+        _broadphase.Refilter(uid, fixture);
+    }
+
+    public void SetCollisionMask(EntityUid uid, string fixtureId, Fixture fixture, int mask, FixturesComponent? manager = null, PhysicsComponent? body = null)
+    {
+        if (fixture.CollisionMask == mask) return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        DebugTools.Assert(manager.Fixtures.ContainsKey(fixtureId));
+        fixture.CollisionMask = mask;
+
+        if (body != null || TryComp(uid, out body))
+        {
+            _fixtures.FixtureUpdate(uid, manager: manager, body: body);
+        }
+
+        _broadphase.Refilter(uid, fixture);
+    }
+
+    public void RemoveCollisionMask(EntityUid uid, string fixtureId, Fixture fixture, int mask, FixturesComponent? manager = null, PhysicsComponent? body = null)
+    {
+        if ((fixture.CollisionMask & mask) == 0x0) return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        DebugTools.Assert(manager.Fixtures.ContainsKey(fixtureId));
+        fixture.CollisionMask &= ~mask;
+
+        if (body != null || TryComp(uid, out body))
+        {
+            _fixtures.FixtureUpdate(uid, manager: manager, body: body);
+        }
+
+        _broadphase.Refilter(uid, fixture);
+    }
+
+    public void AddCollisionLayer(EntityUid uid, string fixtureId, Fixture fixture, int layer, FixturesComponent? manager = null, PhysicsComponent? body = null)
+    {
+        if ((fixture.CollisionLayer & layer) == layer) return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        DebugTools.Assert(manager.Fixtures.ContainsKey(fixtureId));
+        fixture.CollisionLayer |= layer;
+
+        if (body != null || TryComp(uid, out body))
+        {
+            _fixtures.FixtureUpdate(uid, manager: manager, body: body);
+        }
+
+        _broadphase.Refilter(uid, fixture);
+    }
+
+    public void SetCollisionLayer(EntityUid uid, string fixtureId, Fixture fixture, int layer, FixturesComponent? manager = null, PhysicsComponent? body = null)
+    {
+        if (fixture.CollisionLayer.Equals(layer))
+            return;
+
+        if (!Resolve(uid, ref manager))
+            return;
+
+        fixture.CollisionLayer = layer;
+
+        if (body != null || TryComp(uid, out body))
+        {
+            _fixtures.FixtureUpdate(uid, manager: manager, body: body);
+        }
+
+        _broadphase.Refilter(uid, fixture);
+    }
+
+    public void RemoveCollisionLayer(EntityUid uid, string fixtureId, Fixture fixture, int layer, FixturesComponent? manager = null, PhysicsComponent? body = null)
+    {
+        if ((fixture.CollisionLayer & layer) == 0x0 || !Resolve(uid, ref manager)) return;
+
+        DebugTools.Assert(manager.Fixtures.ContainsKey(fixtureId));
+        fixture.CollisionLayer &= ~layer;
+
+        if (body != null || TryComp(uid, out body))
+        {
+            _fixtures.FixtureUpdate(uid, manager: manager, body: body);
+        }
+
+        _broadphase.Refilter(uid, fixture);
+    }
+
+    #endregion
+}

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>SpaceWizards.Lidgren.Network</AssemblyName>
+
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefaultItemExcludes>Lidgren.Network/**/*</DefaultItemExcludes>
+    <DefineConstants>$(DefineConstants);USE_RELEASE_STATISTICS</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <SkipRobustAnalyzer>true</SkipRobustAnalyzer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Lidgren.Network\Lidgren.Network\**\*.cs">
+     <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Remove="Lidgren.Network\Lidgren.Network\obj\**\*.cs" />
+  </ItemGroup>
+
+  <Import Project="../MSBuild/Robust.Properties.targets" />
+</Project>
