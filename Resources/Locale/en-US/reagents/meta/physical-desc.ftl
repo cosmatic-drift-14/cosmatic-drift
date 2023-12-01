@@ -88,5 +88,3 @@ reagent-physical-desc-exotic-smelling = exotic smelling
 reagent-physical-desc-energizing = energizing
 reagent-physical-desc-exhilarating = exhilarating
 reagent-physical-desc-vibrant = vibrant
-reagent-physical-desc-reflective = reflective
-reagent-physical-desc-alive = alive
