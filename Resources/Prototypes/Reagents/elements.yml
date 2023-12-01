@@ -39,6 +39,16 @@
       amount: -3
     - !type:PlantAdjustHealth
       amount: -1
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.25
   metabolisms:
     Poison:
       effects:
@@ -62,9 +72,21 @@
       metabolismRate: 0.1
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: false
         damage:
           types:
             Poison: 0.1
+    Medicine:
+      effects:
+      - !type:ModifyBloodLevel
+        condition:
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: true
+        amount: 4
 
 - type: reagent
   id: Fluorine
@@ -85,6 +107,16 @@
       amount: -4
     - !type:PlantAdjustHealth
       amount: -2
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.75
   metabolisms:
     Poison:
       effects:
@@ -93,6 +125,7 @@
           types:
             Caustic: 0.5
             Poison: 0.5
+  
 - type: reagent
   id: Gold
   name: reagent-name-gold
@@ -125,6 +158,24 @@
   color: "#BC8A00"
   boilingPoint: 184.3
   meltingPoint: 113.7
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.5
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 0.5
+            Poison: 0.25
 
 - type: reagent
   id: Iron
@@ -137,9 +188,24 @@
   boilingPoint: 2862.0
   meltingPoint: 1538.0
   metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: true
+        damage:
+          types:
+            Poison: 0.1
     Medicine:
       effects:
       - !type:ModifyBloodLevel
+        condition:
+        - !type:OrganType
+          type: Arachnid
+          shouldHave: false
         amount: 4
 
 - type: reagent
@@ -152,6 +218,16 @@
   color: "#c6c8cc"
   meltingPoint: 180.5
   boilingPoint: 1330.0
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.25 # Don't touch liquid lithium.
   metabolisms:
     Poison:
       metabolismRate: 0.1
@@ -159,7 +235,8 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.05
+            Poison: 0.03
+            Cautic: 0.01
       - !type:Emote
         emote: Scream
         probability: 0.05
@@ -179,13 +256,30 @@
   color: "#929296"
   meltingPoint: -38.83
   boilingPoint: 356.73
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Poison: 0.1
   metabolisms:
     Poison:
+      metabolismRate: 0.1
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 1
+            Poison: 0.06
+      - !type:Emote
+        emote: Scream
+        probability: 0.05
+      - !type:Emote
+        emote: Laugh
+        probability: 0.05
 
 - type: reagent
   id: Potassium
@@ -306,6 +400,16 @@
   - !type:PlantAdjustMutationMod
     prob: 0.2
     amount: 0.1
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Radiation: 0.25
   metabolisms:
     Poison:
       effects:

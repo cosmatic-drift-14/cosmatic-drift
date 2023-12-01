@@ -7,6 +7,16 @@
   color: "#a1000b"
   boilingPoint: 111.0
   meltingPoint: -5.0
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.1
   metabolisms:
     Poison:
       effects:
@@ -37,6 +47,62 @@
   tileReactions:
     - !type:CleanTileReaction {}
     - !type:CleanDecalsReaction {}
+
+- type: reagent
+  id: SoapReagent
+  name: reagent-name-soap
+  desc: reagent-desc-soap
+  physicalDesc: reagent-physical-desc-soapy
+  flavor: clean
+  color: "#c8dfc9"
+  recognizable: true
+  boilingPoint: 100.0
+  meltingPoint: 60.0
+  metabolisms:
+    Food:
+      effects:
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        probability: 0.20
+    Drink:
+      effects:
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        probability: 0.20
+
+- type: reagent
+  id: SoapyWater
+  parent: Water
+  name: reagent-name-soapy-water
+  desc: reagent-desc-soapy-water
+  physicalDesc: reagent-physical-desc-soapy
+  flavor: clean
+  color: "#9ec8dc"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        probability: 0.10
+        thirstAmount: -5.0
+        hungerAmount: -5.0
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: .8
+  tileReactions:
+    - !type:CleanDecalsReaction
+      cleanCost: 5
+    - !type:ExtinguishTileReaction { }
+    - !type:SpillIfPuddlePresentTileReaction { }
 
 - type: reagent
   id: SpaceLube

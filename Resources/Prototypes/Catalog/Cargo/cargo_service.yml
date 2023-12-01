@@ -114,7 +114,7 @@
     sprite: Clothing/Head/Hoods/Bio/janitor.rsi
     state: icon
   product: CrateJanitorBiosuit
-  cost: 800
+  cost: 900
   category: Service
   group: market  
 
@@ -135,5 +135,15 @@
     state: icon-cold
   product: FoodCartCold
   cost: 2000
+  category: Service
+  group: market
+
+- type: cargoProduct
+  id: ServiceAnimalCarrier
+  icon: 
+    sprite: Objects/Storage/petcarrier.rsi
+    state: icon
+  product: PetCarrier
+  cost: 500
   category: Service
   group: market
