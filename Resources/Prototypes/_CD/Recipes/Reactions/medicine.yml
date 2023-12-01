@@ -1,7 +1,7 @@
 - type: reaction
   id: Lacerinol
   impact: Medium
-  minTemp: 365
+  minTemp: 335
   reactants:
     Bicaridine:
       amount: 1
@@ -13,7 +13,7 @@
 - type: reaction
   id: Puncturase
   impact: Medium
-  minTemp: 365
+  minTemp: 335
   reactants:
     Bicaridine:
       amount: 1
