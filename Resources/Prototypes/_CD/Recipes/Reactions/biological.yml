@@ -1,0 +1,65 @@
+- type: reaction
+  id: InfectLacerinol
+  impact: Medium
+  reactants:
+    Lacerinol:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    Agitaseptici: 1.5
+
+- type: reaction
+  id: InfectPuncturase
+  impact: Medium
+  reactants:
+    Puncturase:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    Agitaseptici: 1.5
+
+- type: reaction
+  id: InfectBruizine
+  impact: Medium
+  reactants:
+    Bruizine:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    Agitaseptici: 1.5
+
+- type: reaction
+  id: BruizineLacerinol
+  impact: Medium
+  reactants:
+    Lacerinol:
+      amount: 1
+    Bruizine:
+      amount: 1
+  products:
+    Agitaseptici: 1.5
+
+- type: reaction
+  id: BruizinePuncturase
+  impact: Medium
+  reactants:
+    Puncturase:
+      amount: 1
+    Bruizine:
+      amount: 1
+  products:
+    Agitaseptici: 1.5
+
+- type: reaction
+  id: PuncturaseLacerinol
+  impact: Medium
+  reactants:
+    Lacerinol:
+      amount: 1
+    Puncturase:
+      amount: 1
+  products:
+    Agitaseptici: 1.5
