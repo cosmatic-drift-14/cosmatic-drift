@@ -29,6 +29,7 @@
   text: "/ServerInfo/Guidebook/Medical/Chemist.xml"
   children:
   - Medicine
+  - AdvancedBruteMedication
   - Botanicals
 
 - type: guideEntry
@@ -42,3 +43,8 @@
   name: guide-entry-botanicals
   text: "/ServerInfo/Guidebook/Medical/Botanicals.xml"
   filterEnabled: True
+
+- type: guideEntry
+  id: AdvancedBruteMedication
+  name: guide-entry-brute
+  text: "/ServerInfo/Guidebook/Medical/AdvancedBrute.xml"
