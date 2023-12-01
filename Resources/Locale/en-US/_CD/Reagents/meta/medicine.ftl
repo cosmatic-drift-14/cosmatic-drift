@@ -6,6 +6,3 @@ reagent-desc-puncturase = A fizzy chemical that helps rebuild trauma caused by p
 
 reagent-name-bruizine = bruizine
 reagent-desc-bruizine = Originally developed as a cough medicine, it turns out this chemical is wildly effective at treating blunt force trauma.
-
-reagent-name-agitaseptici = agitaseptici
-reagent-desc-agitaseptici = An odd species of space bacterium that is incredibly resilient. It thrives off of certain mixtures of medication.
