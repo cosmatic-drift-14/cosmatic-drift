@@ -89,9 +89,5 @@ reagent-physical-desc-exotic-smelling = exotic smelling
 reagent-physical-desc-energizing = energizing
 reagent-physical-desc-exhilarating = exhilarating
 reagent-physical-desc-vibrant = vibrant
-<<<<<<< HEAD
-=======
-reagent-physical-desc-reflective = reflective
-reagent-physical-desc-alive = alive
 reagent-physical-desc-fluffy = fluffy
->>>>>>> 72697267deb61d9396dc3fbfcc4d1d5a5d1a6424
+
