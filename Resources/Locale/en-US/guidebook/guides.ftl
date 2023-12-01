@@ -30,6 +30,7 @@ guide-entry-medical = Medical
 guide-entry-medicaldoctor = Medical Doctor
 guide-entry-chemist = Chemist
 guide-entry-medicine = Medicine
+guide-entry-brute = Advanced Brute Medication
 guide-entry-botanicals = Botanicals
 guide-entry-cloning = Cloning
 guide-entry-cryogenics = Cryogenics
@@ -56,3 +57,5 @@ guide-entry-minor-antagonists = Minor Antagonists
 guide-entry-space-ninja = Space Ninja
 
 guide-entry-writing = Writing
+
+guide-entry-cryosleep = Cryosleep

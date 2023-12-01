@@ -63,6 +63,7 @@ reagent-physical-desc-sticky = sticky
 reagent-physical-desc-bubbly = bubbly
 reagent-physical-desc-rocky = rocky
 reagent-physical-desc-lemony-fresh = lemony fresh
+reagent-physical-desc-soapy = soapy
 reagent-physical-desc-crisp = crisp
 reagent-physical-desc-citric = citric
 reagent-physical-desc-acidic = acidic
@@ -88,3 +89,9 @@ reagent-physical-desc-exotic-smelling = exotic smelling
 reagent-physical-desc-energizing = energizing
 reagent-physical-desc-exhilarating = exhilarating
 reagent-physical-desc-vibrant = vibrant
+<<<<<<< HEAD
+=======
+reagent-physical-desc-reflective = reflective
+reagent-physical-desc-alive = alive
+reagent-physical-desc-fluffy = fluffy
+>>>>>>> 72697267deb61d9396dc3fbfcc4d1d5a5d1a6424

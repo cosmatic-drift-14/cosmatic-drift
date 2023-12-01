@@ -120,10 +120,10 @@
         ignoreResistances: false
         damage:
           types:
-            Caustic: 0.5
+            Caustic: 2.5 # Having a beaker of acid thrown at your face will definitely hurt a lot. Be careful when slipping in puddles too, silly.
       - !type:Emote
         emote: Scream
-        probability: 0.3
+        probability: 0.9 # Good luck NOT screaming.
   metabolisms:
     Poison:
       metabolismRate : 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
@@ -182,10 +182,10 @@
         ignoreResistances: false
         damage:
           types:
-            Caustic: 0.3
+            Caustic: 2
       - !type:Emote
         emote: Scream
-        probability: 0.2
+        probability: 0.8
   metabolisms:
     Poison:
       metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
@@ -230,10 +230,10 @@
         ignoreResistances: false
         damage:
           types:
-            Caustic: 0.1
+            Caustic: 1.5
       - !type:Emote
         emote: Scream
-        probability: 0.1
+        probability: 0.5
   metabolisms:
     Poison:
       metabolismRate: 3.00 # Okay damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
@@ -264,6 +264,17 @@
   plantMetabolism:
   - !type:PlantAdjustMutationLevel
     amount: 1
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Radiation: 0.5
+            Cellular: 0.25
   metabolisms:
     Poison:
       effects:
@@ -271,6 +282,7 @@
         damage:
           types:
             Radiation: 3
+
 
 - type: reagent
   id: HeartbreakerToxin
@@ -395,11 +407,12 @@
   color: "#D6CE7B"
   metabolisms:
     Poison:
+      metabolismRate: 0.09
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 6
+            Poison: 1
 
 - type: reagent
   id: VentCrud
@@ -442,19 +455,34 @@
   flavor: bitter
   color: "#FFFFE5"
   metabolisms:
-    Poison:
+    Food:
       effects:
+      - !type:PopupMessage
+        conditions:
+          - !type:OrganType
+            type: Human
+        reagent: Protein
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.5
+      - !type:ChemVomit
+        probability: 0.1
+        conditions:
+          - !type:OrganType
+            type: Human
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Human
         damage:
           types:
-            Poison: 2
+            Poison: 1
       - !type:AdjustReagent
         conditions:
         - !type:OrganType
-          type: Animal
+          type: Human
+          shouldHave: false
         reagent: Protein
         amount: 0.5
 

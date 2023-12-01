@@ -61,6 +61,16 @@
       amount: 4
     - !type:PlantAdjustPests
       amount: -6
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.5 # You are a pest as well.
   metabolisms:
     Medicine:
       effects:
@@ -169,6 +179,17 @@
       amount: 4
     - !type:PlantAdjustWeeds
       amount: -6
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.15
+            Cellular: 0.05 # probably causes cancer, safety not guaranteed.
   metabolisms:
     Poison:
       effects:
@@ -195,6 +216,16 @@
     amount: 1
   - !type:PlantAdjustHealth
     amount: 0.5
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.25
   metabolisms:
     Poison:
       effects:
