@@ -1,0 +1,35 @@
+<Document>
+
+# Razorium
+When treating a patient who has brute and burn damage, watch out! Using Bicaridine and Dermaline at the same time will cause them to react and form Razorium.
+<GuideReagentEmbed Reagent="Razorium"/>
+To avoid this, either verify that the Bicaridine has left the patient's system before injected Dermaline (and vice versa), or use specialized brute medication.
+# Specialized Brute Chemicals
+
+Luckily for you, Nanotrasen's greatest scientists have synthesized three brute chemicals that don't react with much! Each one heals a specific damage subtype!
+
+<GuideReagentEmbed Reagent="Bruizine"/>
+<GuideReagentEmbed Reagent="Puncturase"/>
+<GuideReagentEmbed Reagent="Lacerinol"/>
+
+# Bacterial Contamination
+
+[color=red]USE CAUTION[/color] when using the aforementioned specialized brute chemicals. Should one mix together with a different type of brute chemical, the resulting mixture will culture a dangerous bacteria known as Agitaseptici.
+<GuideReagentEmbed Reagent="Agitaseptici"/>
+To avoid this, make sure the patient is done metabolizing one brute medication before giving them another. Keep an eye on the rate their health is changing.
+
+## Some examples of mixtures that culture Agitaseptici are as follows:
+Bicaridine and Puncturase
+Puncturase and Lacerinol
+Bruizine and Bicaridine
+Lacerinol and Bruizine
+
+Please note that [bold]any[/bold] combination of these 4 chemicals will likely culture Agitaseptici.
+
+# Dealing with infection
+
+So, you messed up and got your patient infected with Agitaseptici. It'll be in their bloodstream for a while, so prescribe them some poison medication or use charcoal to get it out.
+<GuideReagentEmbed Reagent="Charcoal"/>
+<GuideReagentEmbed Reagent="Dylovene"/>
+
+</Document>
