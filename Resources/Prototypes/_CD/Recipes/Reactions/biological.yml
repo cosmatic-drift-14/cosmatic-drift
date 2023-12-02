@@ -114,7 +114,7 @@
     Quantaformis:
       amount: 30 
     BananaHonk:
-      amount: 30 # draw in a creature from another dimension, mad scientist type stuff
+      amount: 20 # draw in a creature from another dimension, mad scientist type stuff
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobBehonkerPyro
