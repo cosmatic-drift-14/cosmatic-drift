@@ -67,3 +67,19 @@
         damage:
           types:
             Poison: 4
+
+- type: reagent
+  id: PutridEnzyme
+  name: reagent-name-putridenzyme 
+  group: Medicine
+  desc: reagent-desc-putridenzyme
+  physicalDesc: reagent-physical-desc-putrid
+  flavor: sweet
+  color: "#1e1f1d"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        time: 20.0
+        type: Remove

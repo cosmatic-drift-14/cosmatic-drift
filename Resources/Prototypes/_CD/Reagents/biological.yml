@@ -8,7 +8,7 @@
   color: "#ad9279"
   metabolisms:
     Poison:
-      metabolismRate: 0.01 # Very slow acting
+      metabolismRate: 0.01 # persists for a long time, slowly dying out
       effects:
       - !type:HealthChange
         damage:
@@ -24,3 +24,64 @@
         visualType: Large
         messages: [ "generic-reagent-effect-sluggish"]
         probability: 0.02
+      - !type:AdjustReagent
+        reagent: PutrescamoebaEggs # feeds on amoeba and their eggs, this particualr species of amoeba dies too quickly for it to be worth removing them as well
+        amount: -1
+
+- type: reagent
+  id: Putrescamoeba
+  name: reagent-name-putrescamoeba
+  group: Biological
+  desc: reagent-desc-putrescamoeba
+  physicalDesc: reagent-physical-desc-alive
+  flavor: sweet
+  color: "#364a32"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:AdjustReagent
+        reagent: PutrescamoebaEggs # lays eggs and dies
+        amount: 0.25
+
+- type: reagent
+  id: PutrescamoebaEggs
+  name: reagent-name-eggsputrescamoeba
+  group: Biological
+  desc: reagent-desc-eggsputrescamoeba
+  physicalDesc: reagent-physical-desc-thick
+  flavor: sweet
+  color: "#273624"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.01 # persists for a long time, slowly dying out
+      effects:
+      - !type:SatiateThirst
+        factor: -2.0 # makes the host thirsty in hopes that they will drink water
+
+- type: reagent
+  id: Quantaformis
+  name: reagent-name-quantaformis
+  group: Biological
+  desc: reagent-desc-quantaformis
+  physicalDesc: reagent-physical-desc-alivebio
+  flavor: sweet
+  color: "#fc037b"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.01 # persists for a long time, slowly dying out
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 0.02 # Very slowly degrades your DNA
+            Brute: -0.01
+            Burn: -0.01 # restores your body over time, at a cost
+            Poison: -0.01
+      - !type:AdjustReagent
+        reagent: Quantaformis # must be removed or it will sustain itself permanently
+        amount: 0.01
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-whispers"]
+        probability: 0.03
