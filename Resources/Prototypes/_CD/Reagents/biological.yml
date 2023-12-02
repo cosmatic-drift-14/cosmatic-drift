@@ -74,9 +74,9 @@
         damage:
           types:
             Cellular: 0.02 # Very slowly degrades your DNA
-            Brute: -0.01
-            Burn: -0.01 # restores your body over time, at a cost
-            Poison: -0.01
+            Brute: -0.02
+            Burn: -0.02 # restores your body over time, at a cost
+            Poison: -0.02
       - !type:AdjustReagent
         reagent: Quantaformis # must be removed or it will sustain itself permanently
         amount: 0.01
