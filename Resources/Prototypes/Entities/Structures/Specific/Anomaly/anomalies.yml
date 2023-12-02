@@ -354,6 +354,7 @@
     - FoamingAgent
     - BuzzochloricBees
     - RobustHarvest
+    - Razorium
     usefulChemicals:
     - Cryptobiolin
     - Dylovene
@@ -387,6 +388,7 @@
     - CogChamp
     - Honk
     - Carpetium
+    - Quantaformis
   - type: Drink
     solution: anomaly
   - type: DrainableSolution

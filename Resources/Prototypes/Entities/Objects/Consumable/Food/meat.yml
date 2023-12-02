@@ -450,7 +450,7 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
-        - ReagentId: Toxin
+        - ReagentId: Putrescamoeba
           Quantity: 4
         - ReagentId: Fat
           Quantity: 4

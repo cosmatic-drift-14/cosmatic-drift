@@ -30,6 +30,7 @@
   children:
   - Medicine
   - AdvancedBruteMedication
+  - AmoebasAndYou
   - Botanicals
 
 - type: guideEntry
@@ -48,3 +49,8 @@
   id: AdvancedBruteMedication
   name: guide-entry-brute
   text: "/ServerInfo/Guidebook/Medical/AdvancedBrute.xml"
+
+- type: guideEntry
+  id: AmoebasAndYou
+  name: guide-entry-amoeba
+  text: "/ServerInfo/Guidebook/Medical/Amoebas.xml"

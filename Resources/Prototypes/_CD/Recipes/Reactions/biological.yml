@@ -1,5 +1,5 @@
 - type: reaction
-  id: InfectLacerinol
+  id: InfectLacerinol # mixing any two brute medications will culture Agitaseptici
   impact: Medium
   reactants:
     Lacerinol:
@@ -10,7 +10,7 @@
     Agitaseptici: 1.5
 
 - type: reaction
-  id: InfectPuncturase
+  id: InfectPuncturase # mixing any two brute medications will culture Agitaseptici
   impact: Medium
   reactants:
     Puncturase:
@@ -21,7 +21,7 @@
     Agitaseptici: 1.5
 
 - type: reaction
-  id: InfectBruizine
+  id: InfectBruizine # mixing any two brute medications will culture Agitaseptici
   impact: Medium
   reactants:
     Bruizine:
@@ -32,7 +32,7 @@
     Agitaseptici: 1.5
 
 - type: reaction
-  id: BruizineLacerinol
+  id: BruizineLacerinol # mixing any two brute medications will culture Agitaseptici
   impact: Medium
   reactants:
     Lacerinol:
@@ -43,7 +43,7 @@
     Agitaseptici: 1.5
 
 - type: reaction
-  id: BruizinePuncturase
+  id: BruizinePuncturase # mixing any two brute medications will culture Agitaseptici
   impact: Medium
   reactants:
     Puncturase:
@@ -54,7 +54,7 @@
     Agitaseptici: 1.5
 
 - type: reaction
-  id: PuncturaseLacerinol
+  id: PuncturaseLacerinol # mixing any two brute medications will culture Agitaseptici
   impact: Medium
   reactants:
     Lacerinol:
@@ -63,3 +63,117 @@
       amount: 1
   products:
     Agitaseptici: 1.5
+
+- type: reaction
+  id: Putrescamoeba
+  impact: Medium
+  reactants:
+    PutrescamoebaEggs:
+      amount: 1
+    Water:
+      amount: 5 # water hatches the eggs
+  effects:
+  - !type:PopupMessage
+    messages: [ "generic-reagent-effect-bubbleswithin" ]
+    type: Local
+    visualType: SmallCaution
+  products:
+    Putrescamoeba: 2
+
+- type: reaction
+  id: PutridEnzyme
+  impact: Medium
+  quantized: true
+  reactants:
+    Putrescamoeba:
+      amount: 50 # requires a stable culture
+      catalyst: true
+    Nutriment:
+      amount: 10
+  products:
+    PutridEnzyme: 5
+
+- type: reaction
+  id: QuantumLuminousObject # plasma is experimental, not a good idea to mix it with experimental microbes
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 5 
+    Plasma:
+      amount: 5 # turns plasma into something dangerous
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: MobLuminousObject
+
+- type: reaction
+  id: QuantumBehonker # only a mad scientist would ever do this, or the clown. probably the clown
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 30 
+    BananaHonk:
+      amount: 30 # draw in a creature from another dimension, mad scientist type stuff
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: MobBehonkerPyro
+
+- type: reaction
+  id: QuantumPlasma # turns a small amount of uranium liquid into a stack of plasma, quantaformis is rare enough for this to be fine 
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 20 
+    Uranium:
+      amount: 30 # alchemy in the 26th century
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: SheetPlasma
+  
+- type: reaction
+  id: QuantumCarp # creates a dehydrated carp if more carpotoxin is used than quantaformis
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 15 
+    CarpoToxin:
+      amount: 20 # fish
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: DehydratedSpaceCarp
+
+- type: reaction
+  id: QuantumCarpOverload # creates a live carp if more quantiformis is used than carpotoxin
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 20 
+    CarpoToxin:
+      amount: 15 # you messed up the fish
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: MobCarpMagic
+
+- type: reaction
+  id: QuantumExplosion1 # causes an explosion when combined with a strong bacteria
+  impact: Medium
+  reactants:
+    Quantaformis:
+      amount: 1 
+    Agitaseptici:
+      amount: 1 # bacterial warfare
+  effects:
+  - !type:ExplosionReactionEffect
+    explosionType: Default
+    maxIntensity: 1
+    intensityPerUnit: 3
+    intensitySlope: 0.5
+    maxTotalIntensity: 15
+  - !type:PopupMessage
+    messages: [ "clf3-explosion" ] # CLF3 explains it pretty well
+    type: Pvs
+    visualType: LargeCaution
