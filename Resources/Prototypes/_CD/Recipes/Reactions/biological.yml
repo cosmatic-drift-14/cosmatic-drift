@@ -99,9 +99,9 @@
   quantized: true
   reactants:
     Quantaformis:
-      amount: 5 
+      amount: 15 
     Plasma:
-      amount: 5 # turns plasma into something dangerous
+      amount: 10 # turns plasma into something dangerous
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobLuminousObject
