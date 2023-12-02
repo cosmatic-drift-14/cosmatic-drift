@@ -93,15 +93,19 @@
   products:
     PutridEnzyme: 5
 
+# Quantaformis Reactions: The theme of this chemical is 'alien optimization.'
+# When adding a reaction, try to make it sort of a monkey's paw kind of deal, take the chemicals used and make them into a "better version" of them.
+# Try to stick to this theme so that other things in the future can still have a niche.
+
 - type: reaction
-  id: QuantumLuminousObject # plasma is experimental, not a good idea to mix it with experimental microbes
+  id: QuantumLuminousObject # The superior form of plasma: energy.
   impact: Medium
   quantized: true
   reactants:
     Quantaformis:
       amount: 15 
     Plasma:
-      amount: 10 # turns plasma into something dangerous
+      amount: 10 
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobLuminousObject
@@ -111,14 +115,14 @@
     visualType: LargeCaution
 
 - type: reaction
-  id: QuantumBehonker # only a mad scientist would ever do this, or the clown. probably the clown
+  id: QuantumBehonker # A more powerful act of clownage than Bananas or Honking
   impact: Medium
   quantized: true
   reactants:
     Quantaformis:
       amount: 30 
     BananaHonk:
-      amount: 20 # draw in a creature from another dimension, mad scientist type stuff
+      amount: 20 
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobBehonkerPyro
@@ -128,24 +132,24 @@
     visualType: LargeCaution
 
 - type: reaction
-  id: QuantumPlasma # turns a small amount of uranium liquid into a stack of plasma, quantaformis is rare enough for this to be fine 
+  id: QuantumPlasma # Plasma, the superior form of Uranium. Try combining it with Quantaformis again.
   impact: Medium
   quantized: true
   reactants:
     Quantaformis:
       amount: 20 
     Uranium:
-      amount: 30 # alchemy in the 26th century
+      amount: 30 
   effects:
   - !type:CreateEntityReactionEffect
     entity: SheetPlasma
   - !type:PopupMessage
     messages: [ "quanta-effect-uranium" ] 
     type: Pvs
-    visualType: LargeCaution
+    visualType: Large
 
 - type: reaction
-  id: QuantumCarp # creates a dehydrated carp if more carpotoxin is used than quantaformis
+  id: QuantumCarp # A semi-alive carp, better than just the carp's toxin, but not enough quantaformis to foster a living being.
   impact: Medium
   quantized: true
   reactants:
@@ -162,14 +166,14 @@
     visualType: LargeCaution
 
 - type: reaction
-  id: QuantumCarpOverload # creates a live carp if more quantiformis is used than carpotoxin
+  id: QuantumCarpOverload # See above, but enough quantaformis to make something even better, a living, magical carp.
   impact: Medium
   quantized: true
   reactants:
     Quantaformis:
       amount: 20 
     CarpoToxin:
-      amount: 15 # you messed up the fish
+      amount: 15 
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobCarpMagic
@@ -179,7 +183,7 @@
     visualType: LargeCaution
 
 - type: reaction
-  id: QuantumExplosion1 # causes an explosion when combined with a strong bacteria
+  id: QuantumExplosion1 # Has rivalry with other bacteria. In the eyes of this microbe, the superior rival is a dead one.
   impact: Medium
   reactants:
     Quantaformis:
@@ -197,3 +201,21 @@
     messages: [ "quanta-effect-explosion" ] 
     type: Pvs
     visualType: LargeCaution
+
+- type: reaction
+  id: QuantumUranium # Uranium is superior to Radium.
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 20 
+    Radium:
+      amount: 30 
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: SheetUranium
+  - !type:PopupMessage
+    messages: [ "quanta-effect-uranium" ] 
+    type: Pvs
+    visualType: Large
+
