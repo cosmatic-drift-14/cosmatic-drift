@@ -105,6 +105,10 @@
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobLuminousObject
+  - !type:PopupMessage
+    messages: [ "quanta-effect-luminousplasma" ] 
+    type: Pvs
+    visualType: LargeCaution
 
 - type: reaction
   id: QuantumBehonker # only a mad scientist would ever do this, or the clown. probably the clown
@@ -118,6 +122,10 @@
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobBehonkerPyro
+  - !type:PopupMessage
+    messages: [ "quanta-effect-behonker" ] 
+    type: Pvs
+    visualType: LargeCaution
 
 - type: reaction
   id: QuantumPlasma # turns a small amount of uranium liquid into a stack of plasma, quantaformis is rare enough for this to be fine 
@@ -131,7 +139,11 @@
   effects:
   - !type:CreateEntityReactionEffect
     entity: SheetPlasma
-  
+  - !type:PopupMessage
+    messages: [ "quanta-effect-uranium" ] 
+    type: Pvs
+    visualType: LargeCaution
+
 - type: reaction
   id: QuantumCarp # creates a dehydrated carp if more carpotoxin is used than quantaformis
   impact: Medium
@@ -144,6 +156,10 @@
   effects:
   - !type:CreateEntityReactionEffect
     entity: DehydratedSpaceCarp
+  - !type:PopupMessage
+    messages: [ "quanta-effect-carp" ] 
+    type: Pvs
+    visualType: LargeCaution
 
 - type: reaction
   id: QuantumCarpOverload # creates a live carp if more quantiformis is used than carpotoxin
@@ -157,6 +173,10 @@
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobCarpMagic
+  - !type:PopupMessage
+    messages: [ "quanta-effect-carpoverload" ] 
+    type: Pvs
+    visualType: LargeCaution
 
 - type: reaction
   id: QuantumExplosion1 # causes an explosion when combined with a strong bacteria
@@ -174,6 +194,6 @@
     intensitySlope: 0.5
     maxTotalIntensity: 15
   - !type:PopupMessage
-    messages: [ "clf3-explosion" ] # CLF3 explains it pretty well
+    messages: [ "quanta-effect-explosion" ] 
     type: Pvs
     visualType: LargeCaution
