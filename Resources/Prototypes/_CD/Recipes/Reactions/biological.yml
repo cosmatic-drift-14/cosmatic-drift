@@ -221,3 +221,53 @@
     type: Pvs
     visualType: Large
 
+- type: reaction
+  id: QuantumArtifact # A full artifact is better than a ground up one.
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 15
+    Artifexium:
+      amount: 25
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: VariedXenoArtifactItem
+  - !type:PopupMessage
+    messages: [ "quanta-effect-artifact" ] 
+    type: Pvs
+    visualType: Large
+
+- type: reaction
+  id: QuantumSyndicateBomb # A real bomb is better than a copycat drink.
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 20
+    SyndicateBomb:
+      amount: 30
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: ExGrenade
+  - !type:PopupMessage
+    messages: [ "quanta-effect-syndicatebomb" ] 
+    type: Pvs
+    visualType: LargeCaution
+
+- type: reaction
+  id: QuantumMeat # "Living" meat is better than dead meat.
+  impact: Medium
+  quantized: true
+  reactants:
+    Quantaformis:
+      amount: 20
+    UncookedAnimalProteins:
+      amount: 3 # enough for 1 ground up mouse
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: FleshKudzu
+  - !type:PopupMessage
+    messages: [ "quanta-effect-meat" ] 
+    type: Pvs
+    visualType: LargeCaution
