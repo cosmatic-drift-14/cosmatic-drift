@@ -41,7 +41,7 @@
       effects:
       - !type:AdjustReagent
         reagent: PutrescamoebaEggs # lays eggs and dies
-        amount: 0.25
+        amount: 0.5
 
 - type: reagent
   id: PutrescamoebaEggs
