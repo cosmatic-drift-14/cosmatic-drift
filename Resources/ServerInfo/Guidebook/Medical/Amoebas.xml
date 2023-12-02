@@ -1,10 +1,10 @@
 <Document>
 
-  # Amoebas
-  During your time serving aboard the station, you may come across patients with strange, persistent symptoms. While many things could cause this, one culprit is the amoeba. Amoebas are versatile little critters that can be either helpful or harmful. Often times, they are parasitic.
+  # Space Amoebas
+  During your time serving aboard the station you may come across patients with strange, persistent symptoms. While many things could cause this, one culprit is the amoeba. Amoebas are versatile little critters that can be either helpful or harmful. Often times, they are parasitic.
   One example of a parasitic amoeba is the [color=red]putrescamoeba[/color]
   <GuideReagentEmbed Reagent="Putrescamoeba"/>
-  Amoebas like the putrescamoeba will often remain relatively harmless until they make their way into their host. For the putrescamoeba, this happens when someone eats rotten meat they're inhabiting. Unlike most planetary amoebas, space amoeba have abandoned mitosis in favor of egg-laying. Once inside their host, most amoebas will [color=orange]immediately proceed to lay their eggs and die.[/color]
+  Amoebas like the putrescamoeba will often remain relatively harmless until they make their way into their host. For the putrescamoeba, this happens when someone eats rotten meat they're inhabiting. Space amoebas differ compared to the single-celled organisms they evolved from, Unlike most planetary amoebas, space amoeba have abandoned mitosis in favor of egg-laying. Once inside their host, most amoebas will [color=orange]immediately proceed to lay their eggs and die.[/color]
   <GuideReagentEmbed Reagent="PutrescamoebaEggs"/>
   Amoeba eggs typically evolve to be efficient at well... hatching, aiming to urge their host to give them what they need in a myriad of ways. Some may encourage their host with benefits, while others will try to take it by force.
 
@@ -12,5 +12,5 @@
 
   Amoeba, like many microbes, have several properties that may be worth experimenting with. While you can kill and remove amoeba from a patient by force using [color=green]charcoal[/color] or [color=yellow]certain species of bacteria[/color], it may very well be worth it to safely extract the amoeba.
   <GuideReagentEmbed Reagent="Ipecac"/>
-  One way to extract amoeba from a host is to have the host vomit them up. One could also search for the amoeba in their natural habitat, and bring them into a lab. Once secured, it may be wise to culture amoeba, as many can be used to produce [color=green]complex medicines and chemicals[/color] that have previously been undiscovered.
+  One way to extract amoeba from a host is to have the host vomit them up. One could also search for the amoeba in their natural habitat, and bring them into a lab. Once secured, it may be wise to culture amoebas, as many can be used to produce [color=green]complex medicines and chemicals[/color] that have previously been undiscovered.
 </Document>
