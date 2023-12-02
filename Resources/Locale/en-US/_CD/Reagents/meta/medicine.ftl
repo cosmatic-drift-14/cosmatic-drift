@@ -9,3 +9,4 @@ reagent-desc-bruizine = Originally developed as a cough medicine, it turns out t
 
 reagent-name-putridenzyme = putrid enzyme
 reagent-desc-putridenzyme = A strange byproduct produced by larger cultures of putrescamoeba when given nutriment. It seems to actively fight against the effects of hallucinations without harming the consumer.
+

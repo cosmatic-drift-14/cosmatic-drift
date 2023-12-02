@@ -13,10 +13,10 @@
       effects:
       - !type:HealthChange
         scaleByQuantity: false
-        ignoreResistances: false
+        ignoreResistances: true
         damage:
           types:
-            Slash: 20.0
+            Slash: 7.5
       - !type:Emote
         emote: Scream
         probability: 0.8
