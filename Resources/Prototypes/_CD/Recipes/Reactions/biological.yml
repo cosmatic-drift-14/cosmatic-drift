@@ -96,6 +96,8 @@
 # Quantaformis Reactions: The theme of this chemical is 'alien optimization.'
 # When adding a reaction, try to make it sort of a monkey's paw kind of deal, take the chemicals used and make them into a "better version" of them.
 # Try to stick to this theme so that other things in the future can still have a niche.
+# Reaction name should begin with "Quantum" and ideally should have a custom popup effect from quantaformis.ftl
+# If the reaction is "bad" use visualType LargeCaution. Else, use Large.
 
 - type: reaction
   id: QuantumLuminousObject # The superior form of plasma: energy.
@@ -120,9 +122,9 @@
   quantized: true
   reactants:
     Quantaformis:
-      amount: 30 
+      amount: 45 
     BananaHonk:
-      amount: 20 
+      amount: 5
   effects:
   - !type:CreateEntityReactionEffect
     entity: MobBehonkerPyro
@@ -166,7 +168,7 @@
     visualType: LargeCaution
 
 - type: reaction
-  id: QuantumCarpOverload # See above, but enough quantaformis to make something even better, a living, magical carp.
+  id: QuantumCarpOverload # See above, but enough quantaformis to make something even better: a living, magical carp.
   impact: Medium
   quantized: true
   reactants:
