@@ -74,7 +74,7 @@
       amount: 5 # water hatches the eggs
   effects:
   - !type:PopupMessage
-    messages: [ "generic-reagent-effect-bubbleswithin" ]
+    messages: [ "generic-reagent-effect-lurch" ]
     type: Local
     visualType: SmallCaution
   products:
