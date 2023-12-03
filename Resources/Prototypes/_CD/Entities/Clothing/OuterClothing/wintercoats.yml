@@ -6,9 +6,9 @@
   description: A sturdy, winter coat designed for the lonely and cold shifts.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/WinterCoats/coatarmoredhos.rsi
+    sprite: _CD/Clothing/OuterClothing/WinterCoats/coatarmoredhos.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/WinterCoats/coatarmoredhos.rsi
+    sprite: _CD/Clothing/OuterClothing/WinterCoats/coatarmoredhos.rsi
   - type: Armor
     modifiers:
       coefficients:
