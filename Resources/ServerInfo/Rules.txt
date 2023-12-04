@@ -23,7 +23,7 @@
 
 [color=#7ade00]07.[/color] Intentionally using, or abusing exploits, bugs, and external programs is not allowed.
 - From the moment you learn it's a bug you're expected to report it and never intentionally use it again.
-- External programs are things such as autoclickers, marcos, and such.
+- External programs are things such as autoclickers, macros, and such.
 
 [color=#ffe600]General Etiquette.[/color]
 
