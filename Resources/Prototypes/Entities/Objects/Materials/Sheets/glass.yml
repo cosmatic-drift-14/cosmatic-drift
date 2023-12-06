@@ -182,10 +182,8 @@
   - type: Stack
     stackType: ReinforcedGlass
     count: 1
-<<<<<<< HEAD
   - type: Item
     size: 1
-=======
   - type: Extractable
     grindableSolutionName: rglass
   - type: SolutionContainerManager
@@ -198,7 +196,6 @@
           Quantity: 11
         - ReagentId: Carbon
           Quantity: 1
->>>>>>> c01be828eed174b56f8e793cedc230f5d1e48a0b
 
 - type: entity
   parent: SheetGlassBase
@@ -262,10 +259,8 @@
   - type: Stack
     stackType: PlasmaGlass
     count: 1
-<<<<<<< HEAD
   - type: Item
     size: 1
-=======
   - type: Extractable
     grindableSolutionName: pglass
   - type: SolutionContainerManager
@@ -276,7 +271,6 @@
           Quantity: 22
         - ReagentId: Plasma
           Quantity: 10
->>>>>>> c01be828eed174b56f8e793cedc230f5d1e48a0b
 
 - type: entity
   parent: SheetPGlass
