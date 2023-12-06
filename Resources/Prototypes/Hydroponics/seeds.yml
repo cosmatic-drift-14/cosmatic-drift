@@ -427,8 +427,8 @@
       Max: 5
       PotencyDivisor: 20
     SpaceLube:
-      Min: 1
-      Max: 10
+      Min: 5
+      Max: 15
       PotencyDivisor: 10
     Vitamin:
       Min: 1
@@ -1027,8 +1027,8 @@
       PotencyDivisor: 10
     Omnizine: # Don't kill me
       Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Max: 3
+      PotencyDivisor: 35
     SpaceDrugs:
       Min: 1
       Max: 5
@@ -1163,8 +1163,8 @@
   chemicals:
     Nutriment:
       Min: 1
-      Max: 3
-      PotencyDivisor: 25
+      Max: 2
+      PotencyDivisor: 50
 
 - type: seed
   id: koibean
