@@ -107095,13 +107095,6 @@ entities:
     - pos: -33.249187,38.611046
       parent: 2
       type: Transform
-<<<<<<< HEAD
-    - count: 15
-      type: Stack
-    - size: 15
-      type: Item
-=======
->>>>>>> 645b5289b13465082336c97b9cd11d2cf0dfd145
 - proto: SheetPlasma
   entities:
   - uid: 2055
@@ -107194,15 +107187,6 @@ entities:
     - pos: 13.535873,34.51549
       parent: 2
       type: Transform
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - count: 20
-      type: Stack
-    - size: 20
-      type: Item
-=======
->>>>>>> 645b5289b13465082336c97b9cd11d2cf0dfd145
-=======
 - proto: SheetUranium
   entities:
   - uid: 20347
@@ -107210,7 +107194,6 @@ entities:
     - pos: 6.5942326,-13.459567
       parent: 2
       type: Transform
->>>>>>> ed5dc3a91f5cb82b8e94d920c26d16bc1ce8c1fe
 - proto: Shovel
   entities:
   - uid: 5268
