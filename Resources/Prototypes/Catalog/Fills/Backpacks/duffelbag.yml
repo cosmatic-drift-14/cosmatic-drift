@@ -288,12 +288,12 @@
   id: ClothingBackpackDuffelSyndicateOperative
   name: operative duffelbag
   components:
-    - type: StorageFill
-      contents:
-        - id: BoxSurvivalSyndicate
-        - id: WeaponPistolViper
-        - id: PinpointerNuclear
-        - id: MicroBombImplanter
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSyndicate
+      - id: WeaponPistolViper
+      - id: PinpointerNuclear
+      - id: DeathAcidifierImplanter
 
 
 - type: entity
@@ -302,18 +302,18 @@
   name: operative medic duffelbag
   description: A large duffel bag for holding extra medical supplies.
   components:
-    - type: StorageFill
-      contents:
-        - id: BoxSurvivalSyndicate
-        - id: SawAdvanced
-        - id: Cautery
-        - id: CombatKnife
-        - id: WeaponPistolViper
-        - id: PinpointerNuclear
-        - id: HandheldHealthAnalyzer
-        - id: CombatMedipen
-        - id: MicroBombImplanter
-        - id: SyndiHypo
+  - type: StorageFill
+    contents:
+      - id: SyndiHypo
+      - id: BoxSurvivalSyndicate
+      - id: SawAdvanced
+      - id: Cautery
+      - id: CombatKnife
+      - id: WeaponPistolViper
+      - id: PinpointerNuclear
+      - id: HandheldHealthAnalyzer
+      - id: CombatMedipen
+      - id: DeathAcidifierImplanter
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
