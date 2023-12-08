@@ -44,7 +44,11 @@
 	  "directions": 4
 	},
 	{
-	  "name": "gauze_rightleg",
+	  "name": "gauze_upperleg_r",
+	  "directions": 4
+	},
+	{
+	  "name": "gauze_lowerleg_r",
 	  "directions": 4
 	},
 	{

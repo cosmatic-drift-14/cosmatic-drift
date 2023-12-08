@@ -16,22 +16,25 @@ marking-GauzeShoulder = Gauze Shoulder
 marking-GauzeStomach-gauze_abdomen = Gauze Stomach Wrap
 marking-GauzeStomach = Gauze Stomach Wrap
 
-marking-GauzeUpperArmRight-gauze_upperarm_r = Upper Arm Wrap
-marking-GauzeUpperArmRight = Upper Arm Wrap
+marking-GauzeUpperArmRight-gauze_upperarm_r = Gauze Forearm Wrap (Right)
+marking-GauzeUpperArmRight = Gauze Forearm Wrap (Right)
 
-marking-GauzeLowerArmRight-gauze_lowerarm_r = Lower Arm Wrap
-marking-GauzeLowerArmRight = Lower Arm Wrap
+marking-GauzeLowerArmRight-gauze_lowerarm_r = Gauze Wrist Wrap (Right)
+marking-GauzeLowerArmRight = Gauze Wrist Wrap (Right)
 
-marking-GauzeLeftArm-gauze_leftarm = Gauze Arm Wrap
-marking-GauzeLeftArm = Gauze Arm Wrap
+marking-GauzeLeftArm-gauze_leftarm = Gauze Arm Wrap (Left)
+marking-GauzeLeftArm = Gauze Arm Wrap (Left)
 
-marking-GauzeLowerLegLeft-gauze_lowerleg_l = Lower Leg Wrap
-marking-GauzeLowerLegLeft = Lower Leg Wrap
+marking-GauzeLowerLegLeft-gauze_lowerleg_l = Gauze Ankle Wrap (Left)
+marking-GauzeLowerLegLeft = Gauze Ankle Wrap (Left)
 
 
-marking-GauzeUpperLegLeft-gauze_upperleg_l = Upper Leg Wrap
-marking-GauzeUpperLegLeft = Upper Leg Wrap
+marking-GauzeUpperLegLeft-gauze_upperleg_l = Gauze Thigh Wrap (Left)
+marking-GauzeUpperLegLeft = Gauze Thigh Wrap (Left)
 
-marking-GauzeRightLeg-gauze_rightleg = Gauze Leg Wrap
-marking-GauzeRightLeg = Gauze Leg Wrap
+marking-GauzeLowerLegRight-gauze_lowerleg_r = Gauze Ankle Wrap (Right)
+marking-GauzeLowerLegRight = Gauze Ankle Wrap (Right)
 
+
+marking-GauzeUpperLegRight-gauze_upperleg_r = Gauze Leg Wrap (Right)
+marking-GauzeUpperLegRight = Gauze Leg Wrap (Right)
