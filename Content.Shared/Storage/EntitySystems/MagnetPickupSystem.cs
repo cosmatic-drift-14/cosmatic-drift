@@ -65,10 +65,6 @@ public sealed class MagnetPickupSystem : EntitySystem
             if ((slotDef.SlotFlags & comp.SlotFlags) == 0x0)
                 continue;
 
-            // No space
-            if (!_storage.HasSpace((uid, storage)))
-                continue;
-
             var parentUid = xform.ParentUid;
             var playedSound = false;
             var finalCoords = xform.Coordinates;

@@ -1459,6 +1459,9 @@
     sprite: Clothing/Uniforms/Jumpsuit/pajama_red.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/pajama_red.rsi
+  
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitFamilyGuy
   name: familiar garbs
   description: Makes you remember the time you did something funny.

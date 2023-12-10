@@ -204,13 +204,15 @@ public sealed class ClientClothingSystem : ClothingSystem
 
     public void InitClothing(EntityUid uid, InventoryComponent component)
     {
-        if (!TryComp(uid, out SpriteComponent? sprite))
+        if (!TryComp(uid, out SpriteComponent? sprite) || !_inventorySystem.TryGetSlots(uid, out var slots))
             return;
 
-        var enumerator = _inventorySystem.GetSlotEnumerator((uid, component));
-        while (enumerator.NextItem(out var item, out var slot))
+        foreach (var slot in slots)
         {
-            RenderEquipment(uid, item, slot.Name, component, sprite);
+            if (!_inventorySystem.TryGetSlotContainer(uid, slot.Name, out var containerSlot, out _, component) ||
+                !containerSlot.ContainedEntity.HasValue) continue;
+
+            RenderEquipment(uid, containerSlot.ContainedEntity.Value, slot.Name, component, sprite);
         }
     }
 
