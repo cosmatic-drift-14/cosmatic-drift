@@ -202,9 +202,9 @@ public sealed class ClientClothingSystem : ClothingSystem
         revealedLayers.Clear();
     }
 
-    public void InitClothing(EntityUid uid, InventoryComponent? component = null, SpriteComponent? sprite = null)
+    public void InitClothing(EntityUid uid, InventoryComponent component)
     {
-        if (!Resolve(uid, ref sprite, ref component) || !_inventorySystem.TryGetSlots(uid, out var slots, component))
+        if (!TryComp(uid, out SpriteComponent? sprite) || !_inventorySystem.TryGetSlots(uid, out var slots))
             return;
 
         foreach (var slot in slots)
