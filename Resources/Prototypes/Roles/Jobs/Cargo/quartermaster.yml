@@ -17,6 +17,7 @@
   - Quartermaster
   - Maintenance
   - Command
+  - Brig
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

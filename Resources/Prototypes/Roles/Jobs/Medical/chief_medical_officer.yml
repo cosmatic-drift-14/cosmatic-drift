@@ -20,6 +20,7 @@
   - Maintenance
   - Chemistry
   - ChiefMedicalOfficer
+  - Brig
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
