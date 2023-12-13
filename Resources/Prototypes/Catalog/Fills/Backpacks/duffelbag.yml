@@ -36,14 +36,16 @@
   name: syndicate surgical duffel bag
   description: A large duffel bag containing a full suite of surgical tools.
   components:
-    - type: StorageFill
-      contents:
-        - id: Hemostat
-        - id: SawAdvanced
-        - id: Drill
-        - id: Cautery
-        - id: Retractor
-        - id: ScalpelAdvanced
+  - type: StorageFill
+    contents:
+      - id: Hemostat
+      - id: SawAdvanced
+      - id: Drill
+      - id: Cautery
+      - id: Retractor
+      - id: ScalpelAdvanced
+      - id: ClothingHandsGlovesNitrile
+      - id: EmergencyRollerBedSpawnFolded
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -321,6 +323,7 @@
   name: medical bundle
   description: "All you need to get your comrades back in the fight."
   components:
+<<<<<<< HEAD
     - type: StorageFill
       contents:
         - id: MedkitCombatFilled
@@ -330,3 +333,14 @@
         - id: ClothingHandsGlovesLatex
         - id: SyringeTranexamicAcid
         - id: SyringeHyronalin
+=======
+  - type: StorageFill
+    contents:
+      - id: MedkitCombatFilled
+      - id: Defibrillator
+      - id: CombatMedipen
+        amount: 3
+      - id: ClothingHandsGlovesNitrile
+      - id: SyringeTranexamicAcid
+      - id: SyringeHyronalin
+>>>>>>> 1f700d9c9fc545a32552d301aac7d15fd330af5f
