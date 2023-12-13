@@ -413,20 +413,6 @@ public sealed class ArrivalsSystem : EntitySystem
             EnsureComp<PreventPilotComponent>(id);
         }
 
-        // Setup planet arrivals if relevant
-        if (_cfgManager.GetCVar(CCVars.ArrivalsPlanet))
-        {
-            var template = _random.Pick(_arrivalsBiomeOptions);
-            _biomes.EnsurePlanet(mapUid, _protoManager.Index(template));
-            var restricted = new RestrictedRangeComponent
-            {
-                Range = 32f
-            };
-            AddComp(mapUid, restricted);
-        }
-
-        _mapManager.DoMapInitialize(mapId);
-
         // Handle roundstart stations.
         var query = AllEntityQuery<StationArrivalsComponent>();
 
