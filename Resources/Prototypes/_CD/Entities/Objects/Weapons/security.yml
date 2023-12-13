@@ -1,0 +1,53 @@
+- type: entity
+  name: telescopic baton
+  parent: BaseItem
+  id: Telescopicbaton
+  description: A colapseable baton for incapacitating people with. Actively harming with this is considered bad tone.
+
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Weapons/Melee/telebaton.rsi
+    layers:
+    - state: telebaton_off
+      map: [ "enum.ToggleVisuals.Layer" ]
+
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 7
+    bluntStaminaDamageFactor: 2.0
+    angle: 60
+    animation: WeaponArcSlash
+
+  - type: StaminaDamageOnHit
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg #I want to change the hit sounds to not be electric
+
+  - type: StaminaDamageOnCollide
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg #I want to change the hit sounds to not be electric
+
+  - type: ItemCooldown
+  - type: Item
+    heldPrefix: off
+    size: 20
+
+  - type: Clothing
+    sprite: _CD/Objects/Weapons/Melee/telebaton.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Appearance
+
+  - type: GenericVisualizer
+    visuals:
+     enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: telebaton_on}
+          False: {state: telebaton_off}
+
+  - type: StaticPrice
+    price: 100
+  - type: DisarmMalus
+  malus: 0.225

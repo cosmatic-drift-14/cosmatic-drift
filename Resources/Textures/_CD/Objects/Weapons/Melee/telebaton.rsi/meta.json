@@ -1,0 +1,37 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/commit/84223c65f5caf667a84f3c0f49bc2a41cdc6c4e3",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "telebaton-off"
+      },
+      {
+        "name": "telebaton-on"
+      },
+      {
+        "name": "equipped-BELT",
+        "directions": 4
+      },
+      {
+        "name": "telebaton-on-inhand-right",
+        "directions": 4
+      },
+      {
+        "name": "telebaton-on-inhand-left",
+        "directions": 4
+      },
+      {
+        "name": "telebaton-off-inhand-right",
+        "directions": 4
+      },
+      {
+        "name": "telebaton-off-inhand-left",
+        "directions": 4
+      }
+    ]
+  }
