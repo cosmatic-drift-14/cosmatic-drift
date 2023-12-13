@@ -323,17 +323,6 @@
   name: medical bundle
   description: "All you need to get your comrades back in the fight."
   components:
-<<<<<<< HEAD
-    - type: StorageFill
-      contents:
-        - id: MedkitCombatFilled
-        - id: Defibrillator
-        - id: CombatMedipen
-          amount: 3
-        - id: ClothingHandsGlovesLatex
-        - id: SyringeTranexamicAcid
-        - id: SyringeHyronalin
-=======
   - type: StorageFill
     contents:
       - id: MedkitCombatFilled
@@ -343,4 +332,3 @@
       - id: ClothingHandsGlovesNitrile
       - id: SyringeTranexamicAcid
       - id: SyringeHyronalin
->>>>>>> 1f700d9c9fc545a32552d301aac7d15fd330af5f
