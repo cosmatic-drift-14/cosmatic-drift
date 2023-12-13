@@ -12,7 +12,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 
-namespace Content.Server._CD_.Stunnable
+namespace Content.Server._CD_.Stunnable.Telebaton
 {
     public sealed class TelebatonSystem : SharedTelebatonSystem
     {
@@ -20,7 +20,6 @@ namespace Content.Server._CD_.Stunnable
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
         [Dependency] private readonly SharedPopupSystem _popup = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
-
         public override void Initialize()
         {
             base.Initialize();
@@ -31,7 +30,7 @@ namespace Content.Server._CD_.Stunnable
         }
 
 //I'm not sure if I need this, I think I'll need to rework it, but ye
-         private void OnStaminaHitAttempt(EntityUid uid, TelebatonComponent component, ref StaminaDamageOnHitAttemptEvent args)
+private void OnStaminaHitAttempt(EntityUid uid, TelebatonComponent component, ref StaminaDamageOnHitAttemptEvent args)
         {
             if (!component.Activated ||
                 !TryComp<BatteryComponent>(uid, out var battery) || !_battery.TryUseCharge(uid, component.EnergyPerUse, battery))
@@ -40,7 +39,6 @@ namespace Content.Server._CD_.Stunnable
                 return;
             }
         }
-
         private void OnUseInHand(EntityUid uid, TelebatonComponent comp, UseInHandEvent args)
         {
             if (comp.Activated)
@@ -52,7 +50,6 @@ namespace Content.Server._CD_.Stunnable
                 TurnOn(uid, comp, args.User);
             }
         }
-
         private void TurnOff(EntityUid uid, TelebatonComponent comp)
         {
             if (!comp.Activated)
@@ -67,10 +64,9 @@ namespace Content.Server._CD_.Stunnable
 
             _audio.PlayPvs(comp.SparksSound, uid, AudioHelpers.WithVariation(0.25f));
 
-            comp.Activated = false;
-            Dirty(uid, comp);
+/*             comp.Activated = false;
+            Dirty(uid, comp); */
         }
-
         private void TurnOn(EntityUid uid, TelebatonComponent comp, EntityUid user)
         {
             if (EntityManager.TryGetComponent<AppearanceComponent>(uid, out var appearance) &&
@@ -79,12 +75,11 @@ namespace Content.Server._CD_.Stunnable
                 _item.SetHeldPrefix(uid, "on", item);
                 _appearance.SetData(uid, ToggleVisuals.Toggled, true, appearance);
             }
-
+/* 
             _audio.PlayPvs(comp.SparksSound, uid, AudioHelpers.WithVariation(0.25f));
             comp.Activated = true;
-            Dirty(uid, comp);
+            Dirty(uid, comp); */
         }
-
         private void OnExamined(EntityUid uid, TelebatonComponent comp, ExaminedEvent args) //I may remove this and its dependency since I can't but .ftl's in the namespace.
         {
             var msg = comp.Activated

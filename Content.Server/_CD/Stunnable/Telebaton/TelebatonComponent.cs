@@ -2,7 +2,7 @@ using Content.Shared.Stunnable;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 
-namespace Content.Server._CD.Stunnable;
+namespace Content.Server._CD.Stunnable.Telebaton;
 
 [RegisterComponent, NetworkedComponent]
 [AutoGenerateComponentState]
