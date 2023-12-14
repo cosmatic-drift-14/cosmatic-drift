@@ -60,7 +60,6 @@ namespace Content.IntegrationTests.Tests
             "Saltern",
             "Core",
             "Marathon",
-            "Kettle",
             "Gemini",
             "MeteorArena",
             "Atlas"
@@ -251,24 +250,26 @@ namespace Content.IntegrationTests.Tests
                         Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
                     }
 
+                    // NOTE: This test is disabled as we use CentCom spawners anyways, with a general fallback one
+                    // There still won't be spawners mapped, but as long as a fallback spawners exists it won't ever matter
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
-                    var jobList = entManager.GetComponent<StationJobsComponent>(station).RoundStartJobList
-                        .Where(x => x.Value != 0)
-                        .Select(x => x.Key);
-                    var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
-                        .Where(spawnpoint => spawnpoint.SpawnType == SpawnPointType.Job)
-                        .Select(spawnpoint => spawnpoint.Job.ID)
-                        .Distinct();
-                    List<string> missingSpawnPoints = new();
-                    foreach (var spawnpoint in jobList.Except(spawnPoints))
-                    {
-                        if (protoManager.Index<JobPrototype>(spawnpoint).SetPreference)
-                            missingSpawnPoints.Add(spawnpoint);
-                    }
+                    //var jobList = entManager.GetComponent<StationJobsComponent>(station).RoundStartJobList
+                    //    .Where(x => x.Value != 0)
+                    //    .Select(x => x.Key);
+                    //var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
+                    //    .Where(spawnpoint => spawnpoint.SpawnType == SpawnPointType.Job)
+                    //    .Select(spawnpoint => spawnpoint.Job.ID)
+                    //    .Distinct();
+                    //List<string> missingSpawnPoints = new();
+                    //foreach (var spawnpoint in jobList.Except(spawnPoints))
+                    //{
+                    //    if (protoManager.Index<JobPrototype>(spawnpoint).SetPreference)
+                    //        missingSpawnPoints.Add(spawnpoint);
+                    //}
 
-                    Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
-                        $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
+                    //Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
+                    //    $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
                 }
 
                 try

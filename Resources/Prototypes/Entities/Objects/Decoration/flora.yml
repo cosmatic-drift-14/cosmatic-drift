@@ -428,6 +428,9 @@
       # - id: PresentRandomInsane
       #   prob: 0.10
       #   orGroup: present
+      - id: PresentRandomCash
+        prob: 0.20
+        orGroup: present
     receivedPopup: christmas-tree-got-gift
     deniedPopup: christmas-tree-no-gift
     requiredHoliday: FestiveSeason
