@@ -1,0 +1,81 @@
+- type: decal
+  id: tile_diagonal
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal
+
+- type: decal
+  id: tile_diagonal_flipped
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_flipped
+
+- type: decal
+  id: tile_diagonal_corner
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner
+
+- type: decal
+  id: tile_diagonal_corner_90
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner_90
+
+- type: decal
+  id: tile_diagonal_corner_180
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner_180
+
+- type: decal
+  id: tile_diagonal_corner_270
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner_270
+    
+## Diagonal Minitile ##
+
+- type: decal
+  id: minitile_diagonal
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal
+
+- type: decal
+  id: minitile_diagonal90
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal_90
+
+- type: decal
+  id: minitile_diagonal180
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal_180
+
+- type: decal
+  id: minitile_diagonal270
+  tags: ["station","overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal_270
