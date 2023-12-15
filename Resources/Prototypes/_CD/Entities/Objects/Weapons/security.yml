@@ -1,53 +1,64 @@
-- type: entity
-  name: telescopic baton
+  - type: entity
   parent: BaseItem
   id: Telescopicbaton
+  name: telescopic baton
   description: A colapseable baton for incapacitating people with. Actively harming with this is considered bad tone.
-
-  components:
-  - type: Sprite
+  - type: Item
+    size: 20
     sprite: _CD/Objects/Weapons/Melee/telebaton.rsi
-    layers:
-    - state: telebaton_off
-      map: [ "enum.ToggleVisuals.Layer" ]
-
+  components:
+  - type: EnergySword
+    litDamageBonus:
+        types:
+            Slash: 15
+            Heat: 15
+            Structural: 4
+            Blunt: -4.5
+    litDisarmMalus: 0.255
   - type: MeleeWeapon
     wideAnimationRotation: -135
+    attackRate: 1
+    soundHit:
+      path: _CD/Audio/Weapons/Telebaton/batonextend.ogg
     damage:
       types:
-        Blunt: 7
-    bluntStaminaDamageFactor: 2.0
-    angle: 60
+        Blunt: 4.5
+        #bluntStaminaDamageFactor: 2.0
     animation: WeaponArcSlash
-
-  - type: StaminaDamageOnHit
-    damage: 35
-    sound: /Audio/Weapons/egloves.ogg #I want to change the hit sounds to not be electric
-
-  - type: StaminaDamageOnCollide
-    damage: 35
-    sound: /Audio/Weapons/egloves.ogg #I want to change the hit sounds to not be electric
-
-  - type: ItemCooldown
-  - type: Item
-    heldPrefix: off
-    size: 20
-
   - type: Clothing
     sprite: _CD/Objects/Weapons/Melee/telebaton.rsi
     quickEquip: false
     slots:
     - Belt
-  - type: Appearance
-
-  - type: GenericVisualizer
-    visuals:
-     enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
-          True: {state: telebaton_on}
-          False: {state: telebaton_off}
-
+  - type: UseDelay
+    delay: 1.0
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: DisarmMalus
+    malus: 0.2
   - type: StaticPrice
     price: 100
-  - type: DisarmMalus
-  malus: 0.225
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/e_sword.rsi
+    layers:
+      - state: e_sword
+      - state: e_sword_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
