@@ -69,13 +69,12 @@
 
 - type: reaction
   id: Equilibrazine
-  quantized: true
   reactants:
     FluorosulfuricAcid:
-      amount: 25
+      amount: 2
     Sigynate:
-      amount: 25
+      amount: 2
     Sugar:
       amount: 1
   products:
-    Equilibrazine: 50
+    Equilibrazine: 5
