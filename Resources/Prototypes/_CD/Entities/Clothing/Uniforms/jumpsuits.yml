@@ -9,3 +9,26 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/waiter.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/waiter.rsi
+
+#Pajama's
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPajamaBlue
+  name: blue pajamas
+  description: Made for true eepers.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/pajama_blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/pajama_blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPajamaRed
+  name: red pajamas
+  description: Made for true eepers.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/pajama_red.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/pajama_red.rsi
