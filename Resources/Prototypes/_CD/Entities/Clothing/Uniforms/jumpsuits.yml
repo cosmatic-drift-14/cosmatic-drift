@@ -1,0 +1,11 @@
+#Waiter Jumpsuit
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitWaiter
+  name: waiter jumpsuit
+  description: A pristine waiter suit, ready to serve you.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/waiter.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/waiter.rsi
