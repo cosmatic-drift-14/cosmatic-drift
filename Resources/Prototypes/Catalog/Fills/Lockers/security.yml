@@ -50,6 +50,24 @@
       - id: ClothingEyesHudSecurity
 
 - type: entity
+  id: LockerWardenFilledCosmetic
+  suffix: Cosmetic
+  parent: LockerWarden
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingHeadHatWarden
+      - id: ClothingHeadHatBeretWarden
+      - id: ClothingBeltSecurityFilled
+      - id: Flash
+      - id: ClothingEyesGlassesSecurity
+      - id: ClothingShoesBootsJack
+      - id: ClothingOuterCoatWarden
+      - id: ClothingOuterWinterWarden
+      - id: ClothingEyesHudSecurity
+
+- type: entity
   id: LockerSecurityFilled
   suffix: Filled
   parent: LockerSecurity
@@ -126,6 +144,22 @@
       - id: BoxForensicPad
       - id: DrinkDetFlask
       - id: ClothingHandsGlovesForensic
+
+- type: entity
+  id: LockerDetectiveFilledCosmetic
+  suffix: Cosmetic
+  parent: LockerDetective
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesHudSecurity
+        prob: 0.3
+      - id: ClothingHeadHatFedoraBrown
+      - id: ClothingNeckTieDet
+      - id: ClothingOuterVestDetective
+      - id: ClothingOuterCoatDetective
+      - id: FlashlightSeclite
+      - id: DrinkDetFlask
 
 - type: entity
   id: ClosetBombFilled
