@@ -65,7 +65,7 @@
     Nitrogen:
       amount: 1.8
   products:
-    Neurozenium: 4
+    Tranquinase: 4
 
 - type: reaction
   id: Equilibrazine
