@@ -615,7 +615,7 @@
           max: 5 # maximum addiction severity for this reagent
         - !type:ReagentThreshold
           min: 9
-        reagent: Addictine
+        reagent: Addictine # add
         amount: 0.1
       - !type:PopupMessage
         type: Local
