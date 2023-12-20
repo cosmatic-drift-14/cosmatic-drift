@@ -22,11 +22,10 @@
   - type: StorageFill
     contents:
       - id: Beaker
-        amount: 2
+        amount: 1
       - id: Dropper
       # It would be cool to have special "syndicate" chemical analysis goggles
       - id: ClothingEyesGlassesChemical
       - id: VestineChemistryVial
-        amount: 2
-      - id: BaseChemistryEmptyVial
+        amount: 1
       - id: SyringeStimulants
