@@ -251,12 +251,13 @@
   name: syndicate EVA bundle
   description: "Contains the Syndicate approved EVA suit."
   components:
-    - type: StorageFill
-      contents:
-        - id: ClothingHeadHelmetSyndicate
-        - id: ClothingOuterHardsuitSyndicate
-        - id: ClothingMaskGasSyndicate
-        - id: DoubleEmergencyOxygenTankFilled
+  - type: StorageFill
+    contents:
+      - id: ClothingHeadHelmetSyndicate
+      - id: ClothingOuterHardsuitSyndicate
+      - id: ClothingMaskGasSyndicate
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -294,7 +295,7 @@
     contents:
       - id: BoxSurvivalSyndicate
       - id: WeaponPistolViper
-      - id: PinpointerNuclear
+      - id: PinpointerSyndicateNuclear
       - id: DeathAcidifierImplanter
 
 
@@ -312,7 +313,7 @@
       - id: Cautery
       - id: CombatKnife
       - id: WeaponPistolViper
-      - id: PinpointerNuclear
+      - id: PinpointerSyndicateNuclear
       - id: HandheldHealthAnalyzer
       - id: CombatMedipen
       - id: DeathAcidifierImplanter
