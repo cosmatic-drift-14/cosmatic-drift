@@ -335,6 +335,13 @@
         emote: Yawn
         showInChat: true
         probability: 0.02
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
+          min: 1
+        reagent: Tranquinase
+        amount: 0.1
       - !type:MovespeedModifier
         walkSpeedModifier: 0.8
         sprintSpeedModifier: 0.8
