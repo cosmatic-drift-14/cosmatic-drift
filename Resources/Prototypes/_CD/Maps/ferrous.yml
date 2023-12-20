@@ -1,7 +1,7 @@
 - type: gameMap
   id: Ferrous
   mapName: 'Ferrous'
-  mapPath: /_CD/Maps/ferrous.yml
+  mapPath: _CD/Maps/ferrous.yml
   minPlayers: 20
   stations:
     Ferrous:
