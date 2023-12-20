@@ -10427,7 +10427,7 @@ entities:
       pos: -44.5,27.5
       parent: 2
       type: Transform
-    - secondsUntilStateChange: -18508.188
+    - secondsUntilStateChange: -18536.732
       state: Opening
       type: Door
   - uid: 8418
@@ -64751,6 +64751,18 @@ entities:
   - uid: 7452
     components:
     - pos: 10.5,7.5
+      parent: 2
+      type: Transform
+- proto: SpawnPointLatejoin
+  entities:
+  - uid: 12114
+    components:
+    - pos: 44.5,-0.5
+      parent: 2
+      type: Transform
+  - uid: 12115
+    components:
+    - pos: 44.5,-1.5
       parent: 2
       type: Transform
 - proto: SpawnPointObserver
