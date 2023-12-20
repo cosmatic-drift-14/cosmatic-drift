@@ -244,7 +244,7 @@
         emote: Laugh
         probability: 0.05
 
-  # TODO: cause confusion and some brain damage
+  # TODO: cause some brain damage when woundmed, and generally reduce the stutter/scrambledaccent unless high doses
 
 - type: reagent
   id: Mercury
@@ -256,30 +256,16 @@
   color: "#929296"
   meltingPoint: -38.83
   boilingPoint: 356.73
-  reactiveEffects:
-    Acidic:
-      methods: [ Touch ]
-      effects:
-      - !type:HealthChange
-        scaleByQuantity: true
-        ignoreResistances: false
-        damage:
-          types:
-            Poison: 0.1
   metabolisms:
     Poison:
-      metabolismRate: 0.1
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.06
-      - !type:Emote
-        emote: Scream
-        probability: 0.05
-      - !type:Emote
-        emote: Laugh
-        probability: 0.05
+            Poison: 1
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: ScrambledAccent
 
 - type: reagent
   id: Potassium
