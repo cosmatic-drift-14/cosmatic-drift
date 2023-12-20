@@ -107,6 +107,10 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+  - type: Item
+    size: 30
+    sprite: Objects/Weapons/Guns/Shotguns/inhands_64x.rsi
+    heldPrefix: db
   - type: Gun
     fireRate: 2
   - type: BallisticAmmoProvider
@@ -130,25 +134,22 @@
   name: Enforcer
   parent: BaseWeaponShotgun
   id: WeaponShotgunEnforcer
-  description: A next-generation Frozen Star shotgun. Uses .50 shotgun shells.
+  description: A premium combat shotgun based on the Kammerer design, featuring an upgraded clip capacity. .50 shotgun shells.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/inhands_64x.rsi
+    heldPrefix: enforcer
   - type: BallisticAmmoProvider
   
 - type: entity
-  name: Enforcer
-  parent: BaseWeaponShotgun
+  parent: WeaponShotgunEnforcer
   id: WeaponShotgunEnforcerRubber
-  description: A next-generation Frozen Star shotgun. Uses .50 shotgun shells.
   suffix: Non-Lethal
   components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: BallisticAmmoProvider
     proto: ShellShotgunBeanbag
   
@@ -158,6 +159,10 @@
   id: WeaponShotgunKammerer
   description: When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds. Uses .50 shotgun shells.
   components:
+  - type: Item
+    size: 30
+    sprite: Objects/Weapons/Guns/Shotguns/inhands_64x.rsi
+    heldPrefix: pump
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
   - type: Clothing
@@ -180,6 +185,8 @@
     sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
   - type: Item
     size: 10
+    sprite: Objects/Weapons/Guns/Shotguns/inhands_64x.rsi
+    heldPrefix: sawn
   - type: Gun
     fireRate: 4
   - type: BallisticAmmoProvider
@@ -254,6 +261,8 @@
     sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
   - type: Item
     size: 75
+    sprite: Objects/Weapons/Guns/Shotguns/inhands_64x.rsi
+    heldPrefix: improvised
   - type: Gun
     fireRate: 4 #No reason to stifle the firerate since you have to manually reload every time anyways.
   - type: BallisticAmmoProvider

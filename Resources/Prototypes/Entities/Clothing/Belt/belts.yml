@@ -169,6 +169,7 @@
       components:
         - Stunbaton
         - FlashOnTrigger
+        - SmokeOnTrigger
         - Flash
         - Handcuff
         - RangedMagazine
@@ -183,6 +184,10 @@
         whitelist:
           components:
           - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
 
@@ -368,6 +373,7 @@
       components:
         - Stunbaton
         - FlashOnTrigger
+        - SmokeOnTrigger
         - Flash
         - Handcuff
   - type: ItemMapper
@@ -380,6 +386,10 @@
         whitelist:
           components:
           - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
 
