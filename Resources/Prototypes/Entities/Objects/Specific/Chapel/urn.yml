@@ -5,8 +5,7 @@
   id: Urn
   components:
   - type: Storage
-    grid:
-      - 0,0,0,1
+    capacity: 10
   - type: UserInterface
     interfaces:
     - key: enum.StorageUiKey.Key
@@ -15,5 +14,5 @@
     sprite: Objects/Specific/Chapel/chaplainurn.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 30
     sprite: Objects/Specific/Chapel/chaplainurn.rsi

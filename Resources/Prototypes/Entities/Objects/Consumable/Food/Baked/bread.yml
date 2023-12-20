@@ -803,7 +803,7 @@
     defaultRotation: 0
     horizontalRotation: 0
   - type: Item
-    size: Ginormous
+    size: 250
   - type: GhostRole
     prob: 1
     name: ghost-role-information-BreadDog-name

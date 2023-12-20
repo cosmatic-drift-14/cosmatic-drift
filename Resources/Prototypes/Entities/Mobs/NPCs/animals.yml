@@ -105,7 +105,7 @@
       Dead:
         Base: dead
   - type: Item
-    size: Tiny
+    size: 5
   - type: Tag
     tags:
     - Bee
