@@ -10427,7 +10427,7 @@ entities:
       pos: -44.5,27.5
       parent: 2
       type: Transform
-    - secondsUntilStateChange: -18501.387
+    - secondsUntilStateChange: -18508.188
       state: Opening
       type: Door
   - uid: 8418
