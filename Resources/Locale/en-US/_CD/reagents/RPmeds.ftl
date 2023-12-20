@@ -58,3 +58,32 @@ reagent-effect-anxietymed-strong6 = You feel quite calm.
 reagent-effect-anxietymed-strong7 = You feel like you can take on the world!
 
 reagent-effect-anxietymed-fade = The calming effects start to fade...
+
+reagent-effect-medaddiction-1 = You're yearning for another high.
+reagent-effect-medaddiction-2 = You really need some more drugs.
+reagent-effect-medaddiction-3 = You feel empty. Find another fix.
+reagent-effect-medaddiction-4 = Go get some drugs, you can quit later.
+reagent-effect-medaddiction-5 = You feel desperate for your next high.
+reagent-effect-medaddiction-6 = You can feel your hands shaking.
+reagent-effect-medaddiction-7 = You could use another hit right now
+reagent-effect-medaddiction-8 = One more fix couldn't hurt, right?
+
+reagent-effect-painkiller-mild1 = Your body hurts a bit less.
+reagent-effect-painkiller-mild2 = You feel a little bit dizzy.
+reagent-effect-painkiller-mild3 = You feel a tiny bit numb.
+reagent-effect-painkiller-mild4 = Any pain you had has faded slightly.
+
+
+reagent-effect-painkiller-normal1 = Any pain you had has faded significantly.
+reagent-effect-painkiller-normal2 = You feel dizzy.
+reagent-effect-painkiller-normal3 = Your entire body goes numb briefly.
+reagent-effect-painkiller-normal4 = You feel your pain fade somewhat.
+
+reagent-effect-painkiller-strong1 = You forgot what pain feels like.
+reagent-effect-painkiller-strong2 = You can't see straight.
+reagent-effect-painkiller-strong3 = You feel a sense of deep nostalgia.
+reagent-effect-painkiller-strong4 = Your entire body feels numb.
+reagent-effect-painkiller-strong5 = You hardly feel anything at all.
+reagent-effect-painkiller-strong6 = Any pain you were feeling is gone.
+
+reagent-effect-painkiller-fade = The painkiller's effects start to fade...

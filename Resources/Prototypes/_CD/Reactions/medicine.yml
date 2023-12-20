@@ -78,3 +78,47 @@
       amount: 1
   products:
     Equilibrazine: 5
+
+- type: reaction
+  id: Stubantazine
+  reactants:
+    Bicaridine:
+      amount: 1
+    Lithium:
+      amount: 1
+    Oil:
+      amount: 1
+  products:
+    Stubantazine: 3
+
+- type: reaction
+  id: Soretizone
+  minTemp: 340
+  reactants:
+    Bicaridine:
+      amount: 1
+    Phenol:
+      amount: 1
+    Iron:
+      amount: 1
+    TableSalt:
+      amount: 1
+      catalyst: true
+  products:
+    Soretizone: 3
+
+- type: reaction
+  id: Agonolexyne
+  minTemp: 350
+  reactants:
+    Bicaridine:
+      amount: 1
+    SulfuricAcid:
+      amount: 1
+    Sodium:
+      amount: 1
+    Plasma:
+      amount: 1
+      catalyst: true
+  products:
+    Agonolexyne: 3
