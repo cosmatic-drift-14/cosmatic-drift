@@ -1,3 +1,17 @@
+# Regular Spawn Points (for CD exclusive jobs)
+- type: entity
+  id: SpawnPointPrisoner # Likely unused, but good to have
+  parent: SpawnPointJobBase
+  name: prisoner
+  components:
+  - type: SpawnPoint
+    job_id: Prisoner
+  - type: Sprite
+    layers:
+      - state: green
+      - state: prisoner
+
+# Arrivals Spawn Points
 # Base
 
 - type: entity
@@ -263,3 +277,19 @@
     layers:
       - state: green
       - state: warden
+
+# Wildcards
+
+- type: entity
+  id: ArrivalsSpawnPointPrisoner
+  parent: ArrivalsSpawnPointJobBase
+  suffix: prisoner
+  components:
+  - type: ArrivalsSpawnPoint
+    jobs:
+      - Prisoner
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _CD/Markers/jobs.rsi
+      - state: prisoner

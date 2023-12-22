@@ -29,6 +29,7 @@
   - Reporter
   - Zookeeper
   - ServiceWorker
+  - Prisoner # Custom role
 
 - type: department
   id: Command
