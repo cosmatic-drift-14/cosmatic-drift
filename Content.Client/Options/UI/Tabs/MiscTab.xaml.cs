@@ -28,7 +28,7 @@ namespace Content.Client.Options.UI.Tabs
             FancySpeechBubblesCheckBox.OnToggled += OnCheckBoxToggled;
             FancyNameBackgroundsCheckBox.OnToggled += OnCheckBoxToggled;
             // ToggleWalk.OnToggled += OnCheckBoxToggled;
-            StaticStorageUI.OnToggled += OnCheckBoxToggled;
+            // StaticStorageUI.OnToggled += OnCheckBoxToggled;
 
             DiscordRich.Pressed = _cfg.GetCVar(CVars.DiscordEnabled);
             ShowLoocAboveHeadCheckBox.Pressed = _cfg.GetCVar(CCVars.LoocAboveHeadShow);
