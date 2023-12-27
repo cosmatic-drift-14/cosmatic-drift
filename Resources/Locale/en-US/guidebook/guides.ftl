@@ -60,3 +60,4 @@ guide-entry-space-ninja = Space Ninja
 guide-entry-writing = Writing
 
 guide-entry-cryosleep = Cryosleep
+guide-entry-glossary = Glossary
