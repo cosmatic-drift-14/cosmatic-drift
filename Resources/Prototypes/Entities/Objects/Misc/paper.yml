@@ -641,6 +641,8 @@
     damage:
       types:
         Blunt: 10
+  - type: StealTarget
+    stealGroup: BoxFolderQmClipboard
 
 # Stamps
 - type: entity
@@ -664,6 +666,8 @@
     state: stamp-mime
   - type: Item
     size: 3
+  - type: StealTarget
+    stealGroup: Stamp
 
 - type: entity
   name: alternate rubber stamp
