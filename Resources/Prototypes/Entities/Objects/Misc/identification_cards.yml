@@ -458,6 +458,8 @@
   - type: Access
     groups:
     - AllAccess
+    tags:
+    - CentralCommand
 
 - type: entity
   parent: CentcomIDCard
