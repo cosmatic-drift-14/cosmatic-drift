@@ -478,7 +478,6 @@
         path: /Audio/Weapons/telescopicoff.ogg
         params:
           volume: -5
-      offSize: 10
     - type: ItemToggleDisarmMalus
       activatedDisarmMalus: 0.6
     - type: ItemToggleSize
