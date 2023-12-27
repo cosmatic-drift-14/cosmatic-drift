@@ -10,6 +10,7 @@
   - Antagonists
   - Writing
   - Cryosleep
+  - Glossary
 
 - type: guideEntry
   id: Writing
@@ -17,6 +18,13 @@
   text: "/ServerInfo/Guidebook/Writing.xml"
 
 - type: guideEntry
+  id: Glossary
+  name: guide-entry-glossary
+  text: "/ServerInfo/Guidebook/Glossary.xml"
+  
+- type: guideEntry
   id: Cryosleep
   name: guide-entry-cryosleep
   text: "/ServerInfo/Guidebook/Cryosleep.xml"
+
+

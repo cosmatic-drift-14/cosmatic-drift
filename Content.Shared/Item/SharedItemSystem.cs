@@ -29,6 +29,8 @@ public abstract class SharedItemSystem : EntitySystem
         SubscribeLocalEvent<ItemComponent, ComponentHandleState>(OnHandleState);
 
         SubscribeLocalEvent<ItemComponent, ExaminedEvent>(OnExamine);
+
+        SubscribeLocalEvent<ItemToggleSizeComponent, ItemToggleSizeUpdateEvent>(OnItemToggle);
     }
 
     #region Public API
@@ -147,5 +149,33 @@ public abstract class SharedItemSystem : EntitySystem
     /// </remarks>
     public virtual void VisualsChanged(EntityUid owner)
     {
+    }
+
+    /// <summary>
+    /// Used to update the Item component on item toggle (specifically size).
+    /// </summary>
+    private void OnItemToggle(EntityUid uid, ItemToggleSizeComponent itemToggleSize, ItemToggleSizeUpdateEvent args)
+    {
+        if (!TryComp(uid, out ItemComponent? item))
+            return;
+
+        if (args.Activated)
+        {
+            if (itemToggleSize.ActivatedSize != null)
+            {
+                // Set the deactivated size to the default item's size before it gets changed.
+                itemToggleSize.DeactivatedSize ??= item.Size;
+                SetSize(uid, (int) itemToggleSize.ActivatedSize, item);
+            }
+        }
+        else
+        {
+            if (itemToggleSize.DeactivatedSize != null)
+            {
+                SetSize(uid, (int) itemToggleSize.DeactivatedSize, item);
+            }
+        }
+
+        Dirty(uid, item);
     }
 }

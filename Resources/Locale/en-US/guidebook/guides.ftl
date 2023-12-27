@@ -46,7 +46,7 @@ guide-entry-machine-upgrading = Machine Upgrading
 guide-entry-robotics = Robotics
 guide-entry-cyborgs = Cyborgs
 guide-entry-security = Security
-guide-entry-dna = DNA
+guide-entry-forensics = Forensics
 guide-entry-defusal = Large Bomb Defusal
 
 guide-entry-antagonists = Antagonists
@@ -60,3 +60,4 @@ guide-entry-space-ninja = Space Ninja
 guide-entry-writing = Writing
 
 guide-entry-cryosleep = Cryosleep
+guide-entry-glossary = Glossary

@@ -1,5 +1,3 @@
-
-
 - type: latheRecipe
   id: ClothingUniformJumpsuitColorGrey # Tide
   result: ClothingUniformJumpsuitColorGrey
@@ -37,6 +35,23 @@
     Durathread: 100
 
 - type: latheRecipe
+  id: ClothingUniformJumpsuitCapFormal
+  result: ClothingUniformJumpsuitCapFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtCapFormalDress
+  result: ClothingUniformJumpskirtCapFormalDress
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
   id: ClothingUniformJumpskirtCaptain
   result: ClothingUniformJumpskirtCaptain
   completetime: 4
@@ -64,6 +79,46 @@
   completetime: 4
   materials:
     Cloth: 500 #It's armored but I don't want to include durathread for a non-head
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitCentcomAgent
+  result: ClothingUniformJumpsuitCentcomAgent
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitCentcomFormal
+  result: ClothingUniformJumpsuitCentcomFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtCentcomFormalDress
+  result: ClothingUniformJumpskirtCentcomFormalDress
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitCentcomOfficer
+  result: ClothingUniformJumpsuitCentcomOfficer
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitCentcomOfficial
+  result: ClothingUniformJumpsuitCentcomOfficial
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
 
 - type: latheRecipe
   id: ClothingUniformJumpsuitChiefEngineer
@@ -221,6 +276,22 @@
     Durathread: 100
 
 - type: latheRecipe
+  id: ClothingUniformJumpsuitHosFormal
+  result: ClothingUniformJumpsuitHosFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHosFormal
+  result: ClothingUniformJumpskirtHosFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
   id: ClothingUniformJumpsuitHoSParadeMale
   result: ClothingUniformJumpsuitHoSParadeMale
   completetime: 5
@@ -231,6 +302,22 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoSAlt
   result: ClothingUniformJumpsuitHoSAlt
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHoSBlue
+  result: ClothingUniformJumpsuitHoSBlue
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHoSGrey
+  result: ClothingUniformJumpsuitHoSGrey
   completetime: 4
   materials:
     Cloth: 300
@@ -324,6 +411,20 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitMusician
   result: ClothingUniformJumpsuitMusician
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitOperative
+  result: ClothingUniformJumpsuitOperative
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtOperative
+  result: ClothingUniformJumpskirtOperative
   completetime: 4
   materials:
     Cloth: 300
@@ -443,6 +544,41 @@
     Cloth: 300
 
 - type: latheRecipe
+  id: ClothingUniformJumpsuitSyndieFormal
+  result: ClothingUniformJumpsuitSyndieFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtSyndieFormalDress
+  result: ClothingUniformJumpskirtSyndieFormalDress
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitPyjamaSyndicateBlack
+  result: ClothingUniformJumpsuitPyjamaSyndicateBlack
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitPyjamaSyndicatePink
+  result: ClothingUniformJumpsuitPyjamaSyndicatePink
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitPyjamaSyndicateRed
+  result: ClothingUniformJumpsuitPyjamaSyndicateRed
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
   id: ClothingUniformJumpsuitWarden
   result: ClothingUniformJumpsuitWarden
   completetime: 4
@@ -467,6 +603,14 @@
 - type: latheRecipe
   id: ClothingOuterWinterCE
   result: ClothingOuterWinterCE
+  completetime: 3.2
+  materials:
+    Cloth: 300
+    Durathread: 300
+
+- type: latheRecipe
+  id: ClothingOuterWinterCentcom
+  result: ClothingOuterWinterCentcom
   completetime: 3.2
   materials:
     Cloth: 300
@@ -732,22 +876,6 @@
     Cloth: 150
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitCapFormal
-  result: ClothingUniformJumpsuitCapFormal
-  completetime: 2.5
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
-  id: ClothingUniformJumpskirtCapFormalDress
-  result: ClothingUniformJumpskirtCapFormalDress
-  completetime: 2.5
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
   id: ClothingNeckCloakCapFormal
   result: ClothingNeckCloakCapFormal
   completetime: 2.8
@@ -860,14 +988,6 @@
     Cloth: 150
 
 - type: latheRecipe
-  id: ClothingUniformJumpskirtHosFormal
-  result: ClothingUniformJumpskirtHosFormal
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
   id: ClothingUniformJumpskirtHoSParadeMale
   result: ClothingUniformJumpskirtHoSParadeMale
   completetime: 4
@@ -876,25 +996,15 @@
     Durathread: 100
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitHoSBlue
-  result: ClothingUniformJumpsuitHoSBlue
-  completetime: 4
+  id: ClothingOuterWinterSyndie
+  result: ClothingOuterWinterSyndie
+  completetime: 3.2
   materials:
-    Cloth: 300
-    Durathread: 100
+    Cloth: 500
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitHosFormal
-  result: ClothingUniformJumpsuitHosFormal
-  completetime: 4
+  id: ClothingOuterWinterSyndieCap
+  result: ClothingOuterWinterSyndieCap
+  completetime: 3.2
   materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
-  id: ClothingUniformJumpsuitHoSGrey
-  result: ClothingUniformJumpsuitHoSGrey
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
+    Cloth: 500
