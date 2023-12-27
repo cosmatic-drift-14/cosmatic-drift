@@ -1,5 +1,3 @@
-
-
 - type: latheRecipe
   id: ClothingUniformJumpsuitColorGrey # Tide
   result: ClothingUniformJumpsuitColorGrey
@@ -878,22 +876,6 @@
     Cloth: 150
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitCapFormal
-  result: ClothingUniformJumpsuitCapFormal
-  completetime: 2.5
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
-  id: ClothingUniformJumpskirtCapFormalDress
-  result: ClothingUniformJumpskirtCapFormalDress
-  completetime: 2.5
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
   id: ClothingNeckCloakCapFormal
   result: ClothingNeckCloakCapFormal
   completetime: 2.8
@@ -1006,14 +988,6 @@
     Cloth: 150
 
 - type: latheRecipe
-  id: ClothingUniformJumpskirtHosFormal
-  result: ClothingUniformJumpskirtHosFormal
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
   id: ClothingUniformJumpskirtHoSParadeMale
   result: ClothingUniformJumpskirtHoSParadeMale
   completetime: 4
@@ -1022,28 +996,6 @@
     Durathread: 100
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitHoSBlue
-  result: ClothingUniformJumpsuitHoSBlue
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
-  id: ClothingUniformJumpsuitHosFormal
-  result: ClothingUniformJumpsuitHosFormal
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
-
-- type: latheRecipe
-  id: ClothingUniformJumpsuitHoSGrey
-  result: ClothingUniformJumpsuitHoSGrey
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
   id: ClothingOuterWinterSyndie
   result: ClothingOuterWinterSyndie
   completetime: 3.2

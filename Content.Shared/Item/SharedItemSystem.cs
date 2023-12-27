@@ -165,14 +165,14 @@ public abstract class SharedItemSystem : EntitySystem
             {
                 // Set the deactivated size to the default item's size before it gets changed.
                 itemToggleSize.DeactivatedSize ??= item.Size;
-                SetSize(uid, itemToggleSize.ActivatedSize, item);
+                SetSize(uid, (int) itemToggleSize.ActivatedSize, item);
             }
         }
         else
         {
             if (itemToggleSize.DeactivatedSize != null)
             {
-                SetSize(uid, itemToggleSize.DeactivatedSize, item);
+                SetSize(uid, (int) itemToggleSize.DeactivatedSize, item);
             }
         }
 

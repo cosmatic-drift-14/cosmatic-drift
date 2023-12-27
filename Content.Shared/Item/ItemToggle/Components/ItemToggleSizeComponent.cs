@@ -16,13 +16,13 @@ public sealed partial class ItemToggleSizeComponent : Component
     ///     Item's size when activated
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
-    public ProtoId<ItemSizePrototype>? ActivatedSize = null;
+    public int? ActivatedSize = null;
 
     /// <summary>
     ///     Item's size when deactivated. If none is mentioned, it uses the item's default size instead.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
-    public ProtoId<ItemSizePrototype>? DeactivatedSize = null;
+    public int? DeactivatedSize = null;
 }
 
 /// <summary>

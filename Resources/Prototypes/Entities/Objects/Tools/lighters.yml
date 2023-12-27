@@ -15,7 +15,7 @@
         types:
             Heat: 1
   - type: ItemToggleSize
-    activatedSize: Small
+    activatedSize: 5
   - type: ItemToggleHot
   - type: Sprite
     sprite: Objects/Tools/lighters.rsi

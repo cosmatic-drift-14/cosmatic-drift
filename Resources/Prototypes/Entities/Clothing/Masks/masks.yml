@@ -24,7 +24,7 @@
   description: A standard issue Security gas mask.
   components:
   - type: Item
-    size: Tiny
+    size: 5
   - type: Sprite
     sprite: Clothing/Mask/gassecurity.rsi
   - type: Clothing
@@ -123,7 +123,7 @@
   description: A close-fitting sterile mask that can be connected to an air supply.
   components:
   - type: Item
-    size: Tiny
+    size: 5
   - type: Sprite
     sprite: Clothing/Mask/medical.rsi
   - type: Clothing
@@ -142,7 +142,7 @@
   description: A medical mask with a small layer of protection against damage and viruses, similar to the one used in the medical units of the first corporate war.
   components:
   - type: Item
-    size: Tiny
+    size: 5
   - type: Sprite
     sprite: Clothing/Mask/medicalsecurity.rsi
   - type: Clothing
@@ -162,7 +162,7 @@
   description: Might as well keep this on 24/7.
   components:
   - type: Item
-    size: Tiny
+    size: 5
   - type: Sprite
     sprite: Clothing/Mask/breath.rsi
   - type: Clothing
@@ -268,7 +268,7 @@
   description: To stop that awful noise.
   components:
   - type: Item
-    size: Tiny
+    size: 5
   - type: Sprite
     sprite: Clothing/Mask/muzzle.rsi
   - type: Clothing

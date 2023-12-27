@@ -404,7 +404,7 @@
   description: An alcoholic beverage made from malted grains, hops, yeast, and water.
   components:
   - type: Item
-    size: Small
+    size: 5
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -422,7 +422,7 @@
   description: A true dorf's drink of choice.
   components:
   - type: Item
-    size: Small
+    size: 5
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -440,7 +440,7 @@
   description: Simple clean water of unknown origin. You think that maybe you dont want to know it.
   components:
   - type: Item
-    size: Small
+    size: 5
   - type: SolutionContainerManager
     solutions:
       drink:

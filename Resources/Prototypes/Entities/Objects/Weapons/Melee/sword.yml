@@ -188,6 +188,6 @@
       reflectProb: .25
       spread: 90
     - type: Item
-      size: Ginormous
+      size: 300
       sprite: Objects/Weapons/Melee/Throngler-in-hand.rsi
     - type: DisarmMalus
