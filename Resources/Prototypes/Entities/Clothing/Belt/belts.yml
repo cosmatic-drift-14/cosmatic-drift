@@ -627,6 +627,8 @@
     size: 70
   - type: Storage
     capacity: 70
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
 
 - type: entity
   parent: ClothingBeltBase
