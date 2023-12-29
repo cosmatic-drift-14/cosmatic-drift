@@ -13,3 +13,5 @@
     stateDoorClosed: lostandfound_door
   - type: AccessReader
     access: [["HeadOfPersonnel"]]
+  - type: GuideHelp
+    guides: [Cryosleep]
