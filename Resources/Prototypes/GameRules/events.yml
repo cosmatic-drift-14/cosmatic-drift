@@ -69,19 +69,19 @@
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
-- type: entity
-  parent: BaseGameRule
-  id: DragonSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 1
-    duration: 1
-    earliestStart: 45
-    reoccurrenceDelay: 60
-    minimumPlayers: 20
-  - type: RandomSpawnRule
-    prototype: SpawnPointGhostDragon
+# - type: entity
+  # parent: BaseGameRule
+  # id: DragonSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 1
+    # duration: 1
+    # earliestStart: 45
+    # reoccurrenceDelay: 60
+    # minimumPlayers: 20
+  # - type: RandomSpawnRule
+    # prototype: SpawnPointGhostDragon
 
 # - type: entity
   # parent: BaseGameRule
@@ -428,20 +428,20 @@
     sounds:
       collection: Paracusia
 
-- type: entity
-  id: ImmovableRodSpawn
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-immovable-rod-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 1
-    duration: 1
-    earliestStart: 45
-    minimumPlayers: 20
-  - type: ImmovableRodRule
+# - type: entity
+  # id: ImmovableRodSpawn
+  # parent: BaseGameRule
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # startAnnouncement: station-event-immovable-rod-start-announcement
+    # startAudio:
+      # path: /Audio/Announcements/attention.ogg
+    # weight: 1
+    # duration: 1
+    # earliestStart: 45
+    # minimumPlayers: 20
+  # - type: ImmovableRodRule
 
 - type: entity
   noSpawn: true
