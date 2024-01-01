@@ -1,9 +1,9 @@
 thief-backpack-window-title = Thief toolbox
 
-thief-backpack-window-description = 
-    This toolbox is filled with unspecified contents. 
-    Now you need to remember what you put in it. 
-    Choose up to two different sets from the list.
+thief-backpack-window-description =
+    This toolbox is filled with unspecified contents.
+    Now you need to remember what you put in it.
+    Choose 2 different sets from the list.
 
 thief-backpack-window-selected = Kits selected: ({$selectedCount}/{$maxCount})
 
@@ -27,17 +27,18 @@ thief-backpack-category-tools-description =
     Includes two C4s, a multitool, jaws of life, 
     a pair of advanced welder meson glasses and some insulated gloves.
 
-thief-backpack-category-chemistry-name = Chemistry kit
-thief-backpack-category-chemistry-description = 
-    A set for those who love to improve their body. 
-    It includes a storage implanter, 
-    a dna scrambler implanter, 
-    and a set of chemicals for a rainy day.
+thief-backpack-category-chemistry-name = chemistry kit
+thief-backpack-category-chemistry-description =
+    A set for those who love to improve their body.
+    It includes a storage implanter,
+    a DNA scrambler implanter,
+    a set of chemicals for a rainy day,
+    and omega soap.
 
-thief-backpack-category-syndie-name = Syndie kit
-thief-backpack-category-syndie-description = 
-    A set of items from a syndicate agent you've robbed 
-    in the past. Includes an Agent ID card, a syndicate pAI,
+thief-backpack-category-syndie-name = syndie kit
+thief-backpack-category-syndie-description =
+    A set of items from a syndicate agent you've robbed
+    in the past. Includes an Agent ID card, Emag, a syndicate pAI,
     and some strange red crystals.
 
 thief-backpack-category-sleeper-name = Sleepwalker's kit
@@ -50,13 +51,13 @@ thief-backpack-category-sleeper-description =
 thief-backpack-category-communicator-name = Communicator's kit
 thief-backpack-category-communicator-description = 
     A communication enthusiast's kit. Includes a master key
-    for all station channels, a radio jammer, a portable 
+    for all station channels, a cybersun pen, a portable
     crew monitor, a voice chameleon mask and lots of money for business deals.
 
-thief-backpack-category-smuggler-name = Smuggler's kit
-thief-backpack-category-smuggler-description = 
-    A kit for those who like to have big pockets. 
-    Includes a fulton beacon, ten fultons 
-    and an invisible crate. You can't move in them, 
+thief-backpack-category-smuggler-name = smuggler's kit
+thief-backpack-category-smuggler-description =
+    A kit for those who like to have big pockets.
+    Includes a fulton beacon, ten fultons, 3 smoke grenades
+    and an invisible crate. You can't move in them,
     but you can quickly hide or carry valuable loot.
     This kit also has a cool void cloak to go along with it.
