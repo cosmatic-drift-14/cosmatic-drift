@@ -452,8 +452,5 @@
     weight: 8
     earliestStart: 20
     reoccurrenceDelay: 60
-    startAnnouncement: station-event-ion-storm-start-announcement
-    startAudio:
-      path: /Audio/Announcements/ion_storm.ogg
     duration: 1
   - type: IonStormRule
