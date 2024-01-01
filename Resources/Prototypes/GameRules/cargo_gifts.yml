@@ -4,7 +4,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 10
+    weight: 5
     startDelay: 10
     duration: 120
     earliestStart: 20
@@ -24,7 +24,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      weight: 6
+      weight: 2
       startDelay: 10
       duration: 240
       minimumPlayers: 50
@@ -44,7 +44,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      weight: 4
+      weight: 5
       startDelay: 10
       duration: 240
       earliestStart: 30
@@ -67,7 +67,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      weight: 4
+      weight: 6
       startDelay: 10
       duration: 120
       minimumPlayers: 40
@@ -132,7 +132,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      weight: 6
+      weight: 7
       startDelay: 10
       duration: 120
       earliestStart: 10
@@ -154,7 +154,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      weight: 3
+      weight: 5
       startDelay: 10
       duration: 120
       earliestStart: 20
@@ -195,7 +195,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      weight: 4
+      weight: 5
       startDelay: 10
       duration: 120
       earliestStart: 20
