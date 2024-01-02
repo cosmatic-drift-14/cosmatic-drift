@@ -58,7 +58,7 @@
   description: Unwrap this to get a kobold cube.
   components:
   - type: Item
-    size: Tiny
+    size: 5
   - type: SpawnItemsOnUse
     items:
       - id: KoboldCube

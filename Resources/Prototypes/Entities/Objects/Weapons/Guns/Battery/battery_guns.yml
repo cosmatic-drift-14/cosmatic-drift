@@ -384,7 +384,7 @@
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
   components:
   - type: Item
-    size: Large
+    size: 50
   - type: Tag
     tags:
       - Taser

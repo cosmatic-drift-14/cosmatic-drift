@@ -18,7 +18,7 @@
     sprite: Objects/Misc/stamps.rsi
     state: stamp-mime
   - type: Item
-    size: Tiny
+    size: 3
   - type: StealTarget
     stealGroup: Stamp
 

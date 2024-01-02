@@ -14,6 +14,7 @@ using System.Linq;
 using Content.Shared.Humanoid;
 using Content.Server.Antag;
 using Robust.Server.Audio;
+using Content.Shared.Random;
 
 namespace Content.Server.GameTicking.Rules;
 

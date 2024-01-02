@@ -33,7 +33,7 @@
     - key: enum.NavMapBeaconUiKey.Key
       type: NavMapBeaconBoundUserInterface
   - type: Item
-    size: Small
+    size: 15
   - type: SubFloorHide
   - type: Anchorable
   - type: Construction
@@ -101,7 +101,7 @@
   description: A flatpack used for constructing a station beacon.
   components:
   - type: Item
-    size: Small
+    size: 5
     sprite: Objects/Devices/station_beacon.rsi
   - type: Sprite
     sprite: Objects/Devices/station_beacon.rsi

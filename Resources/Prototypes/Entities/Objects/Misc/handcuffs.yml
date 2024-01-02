@@ -31,8 +31,6 @@
   id: Cablecuffs
   parent: Handcuffs
   components:
-  - type: Item
-    size: 5
   - type: Handcuff
     breakoutTime: 15
     cuffedRSI: Objects/Misc/cablecuffs.rsi
@@ -54,6 +52,7 @@
     graph: makeshifthandcuffs
     node: cuffscable
   - type: Item
+    size: 5
     inhandVisuals:
       left:
         - state: inhand-left

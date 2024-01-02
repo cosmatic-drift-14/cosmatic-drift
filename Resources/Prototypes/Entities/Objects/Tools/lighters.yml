@@ -155,10 +155,10 @@
         types:
             Heat: 1
   - type: ItemToggleSize
-    activatedSize: Small
+    activatedSize: 5
   - type: ItemToggleHot
   - type: Item
-    size: Tiny
+    size: 1
     sprite: Objects/Tools/lighters.rsi
     heldPrefix: zippo
   - type: Appearance
