@@ -13,7 +13,6 @@
     PackPaperRollingFilters: 3
     CheapLighter: 4
     Lighter: 3
-    FlippoLighter: 2
-    FlippoEngravedLighter: 1
+    FlippoLighter: 3
   emaggedInventory:
     CigPackSyndicate: 1
