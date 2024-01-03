@@ -95,6 +95,5 @@ marking-LizardHornsFloppyKoboldEars = Lizard Ears (Floppy Kobold)
 marking-LizardChestUnderbelly-body_underbelly = Lizard Chest (Underbelly)
 marking-LizardChestUnderbelly = Lizard Chest (Underbelly)
 
-<#-- _CD but also not :godo: -->
 marking-LizardChestWings1-body_dragonwings = Draconic Wings
 marking-LizardChestWings1 = Draconic Wings
