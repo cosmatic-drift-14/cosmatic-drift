@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "body_dragonwings"
+      "name": "body_dragonwings",
       "directions": 4
     }
   ]
