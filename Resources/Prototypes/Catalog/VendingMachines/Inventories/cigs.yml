@@ -12,6 +12,8 @@
     Matchbox: 5
     PackPaperRollingFilters: 3
     CheapLighter: 4
-    Lighter: 1
+    Lighter: 3
+    FlippoLighter: 2
+    FlippoEngravedLighter: 1
   emaggedInventory:
     CigPackSyndicate: 1
