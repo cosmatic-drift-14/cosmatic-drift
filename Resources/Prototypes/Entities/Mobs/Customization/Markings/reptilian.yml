@@ -292,7 +292,7 @@
 
 - type: marking
   id: LizardChestDragonwings
-  bodyPart: Chest
+  bodyPart: Tail
   markingCategory: Chest
   speciesRestriction: [Reptilian]
   sprites:
