@@ -9,6 +9,7 @@
   "states": [
     {
       "name": "body_dragonwings"
+      "directions": 4
     }
   ]
 }
