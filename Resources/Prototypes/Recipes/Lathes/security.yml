@@ -535,3 +535,12 @@
   materials:
     Plastic: 950
     Uranium: 95
+
+#CD Recipies
+- type: latheRecipe
+  id: TelescopicBaton
+  result: TelescopicBaton
+  completetime: 3
+  materials: #Will need to balance these values
+    Plastic: 20
+    Steel: 500

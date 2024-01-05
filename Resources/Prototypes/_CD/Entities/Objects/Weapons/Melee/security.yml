@@ -1,0 +1,57 @@
+- type: entity
+  name: telescopic baton
+  parent: BaseItem
+  id: TelescopicBaton
+  description: A dangerous, slightly outdated, telescopic baton. Its still functional, though not entirely harmless.
+  components:
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_CD/Weapons/batonextend.ogg
+    soundDeactivate:
+      path: /Audio/_CD/Weapons/batonextend.ogg
+  - type: ItemToggleDisarmMalus
+    activatedDisarmMalus: 0.255 # Identical To Stunbaton.
+  - type: ItemToggleSize
+    activatedSize: 50
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/_CD/Weapons/throwhard.ogg # Need to find a sound.
+    activatedSoundOnHitNoDamage:
+      path: /Audio/_CD/Weapons/throwhard.ogg # Need to find a sound.
+    activatedSoundOnSwing:
+      path: /Audio/_CD/Weapons/throwhard.ogg # Need to find a sound.
+    activatedDamage:
+        types:
+            Brute: 5
+  - type: Sprite
+    sprite: _CD/Objects/Weapons/Melee/e_sword.rsi
+    layers:
+      - state: e_sword
+      - state: e_sword_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 4.5
+  - type: Item
+    size: 5
+    sprite: _CD/Objects/Weapons/Melee/e_sword-inhands.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: DisarmMalus
+    malus: 0 # No reason to give it more malus when not active IMO.
