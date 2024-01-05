@@ -2,7 +2,7 @@
   name: telescopic baton
   parent: BaseItem
   id: TelescopicBaton
-  description: A dangerous, slightly outdated, telescopic baton. Its still functional, though not entirely harmless.
+  description: A mildly dangerous, slightly outdated, telescopic baton. Its still functional, though not entirely harmless.
   components:
   - type: ItemToggle
     soundActivate:
@@ -15,19 +15,19 @@
     activatedSize: 50
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
-      path: /Audio/_CD/Weapons/throwhard.ogg # Need to find a sound.
+      path: /Audio/_CD/Weapons/batonextend.ogg # Need to find a sound.
     activatedSoundOnHitNoDamage:
-      path: /Audio/_CD/Weapons/throwhard.ogg # Need to find a sound.
+      path: /Audio/_CD/Weapons/batonextend.ogg # Need to find a sound.
     activatedSoundOnSwing:
-      path: /Audio/_CD/Weapons/throwhard.ogg # Need to find a sound.
+      path: /Audio/_CD/Weapons/batonextend.ogg # Need to find a sound.
     activatedDamage:
         types:
             Brute: 5
   - type: Sprite
-    sprite: _CD/Objects/Weapons/Melee/e_sword.rsi
+    sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
     layers:
-      - state: e_sword
-      - state: e_sword_blade
+      - state: telebaton
+      - state: telebaton_blade
         color: "#FFFFFF"
         visible: false
         shader: unshaded
@@ -40,7 +40,7 @@
         Blunt: 4.5
   - type: Item
     size: 5
-    sprite: _CD/Objects/Weapons/Melee/e_sword-inhands.rsi
+    sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton-inhands.rsi
   - type: UseDelay
     delay: 1.0
   - type: Appearance
