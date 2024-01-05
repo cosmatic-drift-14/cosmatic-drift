@@ -1,0 +1,8 @@
+- type: marking
+  id: LizardChestDragonwings
+  bodyPart: Tail
+  markingCategory: Chest
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
+    state: body_dragonwings

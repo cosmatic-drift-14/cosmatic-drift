@@ -94,6 +94,3 @@ marking-LizardHornsFloppyKoboldEars = Lizard Ears (Floppy Kobold)
 
 marking-LizardChestUnderbelly-body_underbelly = Lizard Chest (Underbelly)
 marking-LizardChestUnderbelly = Lizard Chest (Underbelly)
-
-marking-LizardChestDragonwings-body_dragonwings = Draconic Wings
-marking-LizardChestDragonwings = Draconic Wings
