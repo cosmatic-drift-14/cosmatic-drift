@@ -1,4 +1,9 @@
 - files: ["batonextend.ogg"]
-  license: "CC-BY-SA-3.0"
+  license: "GNU AGPL v3"
   copyright: "Taken from tgstation."
   source: "https://github.com/tgstation/tgstation/commits/master/sound/weapons/batonextend.ogg, Commit:https://github.com/tgstation/tgstation/commit/d4f678a1772007ff8d7eddd21cf7218c8e07bfc0"
+
+- files: ["block_shield.ogg"]
+  license: "GNU AGPL v3"
+  copyright: "Taken from tgstation."
+  source: "https://github.com/tgstation/tgstation/blob/master/sound/weapons/block_shield.ogg, Commit:https://github.com/tgstation/tgstation/commit/a4822c165b06c437ca3c18e1aa654a6af1d02eea"

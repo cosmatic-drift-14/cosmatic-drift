@@ -10,39 +10,38 @@
     soundDeactivate:
       path: /Audio/_CD/Weapons/batonextend.ogg
   - type: ItemToggleDisarmMalus
-    activatedDisarmMalus: 0.255 # Identical To Stunbaton.
+    activatedDisarmMalus: 0.255
   - type: ItemToggleSize
-    activatedSize: 50
+    activatedSize: 20
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
-      path: /Audio/_CD/Weapons/batonextend.ogg # Need to find a sound.
+      path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
     activatedSoundOnHitNoDamage:
-      path: /Audio/_CD/Weapons/batonextend.ogg # Need to find a sound.
+      path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
     activatedSoundOnSwing:
-      path: /Audio/_CD/Weapons/batonextend.ogg # Need to find a sound.
+      path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
     activatedDamage:
         types:
-            Brute: 5
+            Blunt: 8 #This is one unit more than the stun baton normally does.
   - type: Sprite
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
     layers:
       - state: telebaton
       - state: telebaton_blade
-        color: "#FFFFFF"
         visible: false
         shader: unshaded
         map: [ "blade" ]
-  - type: MeleeWeapon
+  - type: MeleeWeapon #Required Comp, best I can do is make it deal no damage.
     wideAnimationRotation: -135
     attackRate: 1
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 0
   - type: Item
-    size: 5
+    size: 10
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton-inhands.rsi
   - type: UseDelay
-    delay: 1.0
+    delay: 0.75
   - type: Appearance
   - type: ToggleableLightVisuals
     spriteLayer: blade
@@ -53,5 +52,15 @@
       right:
       - state: inhand-right-blade
         shader: unshaded
-  - type: DisarmMalus
-    malus: 0 # No reason to give it more malus when not active IMO.
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+      - SecBeltEquip
+
+  #I think I'll need this for belt sprite
+  - type: Clothing
+    sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
+    quickEquip: false
+    slots:
+    - Belt
