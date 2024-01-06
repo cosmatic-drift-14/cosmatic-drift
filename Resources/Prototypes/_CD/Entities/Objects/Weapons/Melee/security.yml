@@ -22,7 +22,7 @@
       path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
     activatedDamage:
         types:
-            Blunt: 8 #This is one unit more than the stun baton normally does.
+            blunt: 8 #This is one unit more than the stun baton normally does.
   - type: Sprite
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
     layers:
@@ -36,7 +36,7 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 0
+        blunt: 0
   - type: Item
     size: 10
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton-inhands.rsi
@@ -57,10 +57,3 @@
   - type: Tag
     tags:
       - SecBeltEquip
-
-  #I think I'll need this for belt sprite
-  - type: Clothing
-    sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
-    quickEquip: false
-    slots:
-    - Belt
