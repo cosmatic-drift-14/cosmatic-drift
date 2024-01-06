@@ -37,6 +37,7 @@
     damage:
       types:
         Blunt: 0
+    bluntStaminaDamageFactor: 3.2
   - type: Item
     size: 10
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton-inhands.rsi
