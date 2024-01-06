@@ -74,7 +74,7 @@ entities:
           version: 6
         0,-1:
           ind: 0,-1
-          tiles: eQAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAHQAAAAADHQAAAAABHQAAAAACeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAOgAAAAAAWQAAAAABWQAAAAADOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAeQAAAAAAHQAAAAACHQAAAAACHQAAAAABHQAAAAAAHQAAAAACHQAAAAAAHQAAAAABeQAAAAAAOgAAAAAAWQAAAAADWQAAAAAAWQAAAAAAWQAAAAADWQAAAAAAOgAAAAAAWQAAAAACHQAAAAAAHQAAAAABHQAAAAABHQAAAAADHQAAAAABHQAAAAABHQAAAAAAeQAAAAAAOgAAAAAAWQAAAAAAWQAAAAAAWQAAAAADWQAAAAAAWQAAAAACOgAAAAAAWQAAAAACHQAAAAADHQAAAAABHQAAAAADHQAAAAACHQAAAAACHQAAAAABHQAAAAAAeQAAAAAAOgAAAAAAWQAAAAADWQAAAAAAWQAAAAACWQAAAAABWQAAAAADOgAAAAAAeQAAAAAAHQAAAAABHQAAAAADHQAAAAACHQAAAAADHQAAAAABHQAAAAADHQAAAAAAeQAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAeQAAAAAAHQAAAAADHQAAAAADHQAAAAADHQAAAAABHQAAAAACHQAAAAADHQAAAAADeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAHQAAAAABHQAAAAABHQAAAAACHQAAAAAAHQAAAAADHQAAAAAAdgAAAAACdgAAAAABdgAAAAABeQAAAAAAdgAAAAABdgAAAAAAdgAAAAADdgAAAAABdgAAAAACeQAAAAAAHQAAAAADHQAAAAACHQAAAAABHQAAAAAAHQAAAAAAHQAAAAADdgAAAAACdgAAAAAAEwAAAAACdgAAAAAAdgAAAAADdgAAAAACEwAAAAACdgAAAAADdgAAAAABeQAAAAAAHQAAAAAAHQAAAAACHQAAAAABHQAAAAAAHQAAAAAAHQAAAAAAEwAAAAABdgAAAAABdgAAAAABEwAAAAAAEwAAAAAFEwAAAAAFdgAAAAAAdgAAAAABdgAAAAACeQAAAAAAHQAAAAAAHQAAAAAAHQAAAAAAHQAAAAABHQAAAAABHQAAAAABdgAAAAABdgAAAAABdgAAAAABdgAAAAABdgAAAAACdgAAAAAAdgAAAAADdgAAAAACdgAAAAACeQAAAAAAHQAAAAAAHQAAAAACHQAAAAABHQAAAAADHQAAAAAAHQAAAAADdgAAAAABdgAAAAACdgAAAAAAdgAAAAABEwAAAAADdgAAAAAAdgAAAAADdgAAAAAAdgAAAAACeQAAAAAAHQAAAAACHQAAAAACHQAAAAADHQAAAAACHQAAAAACHQAAAAADdgAAAAADdgAAAAABdgAAAAAAdgAAAAAAdgAAAAADdgAAAAAAEwAAAAAEEwAAAAABdgAAAAADeQAAAAAAHQAAAAADHQAAAAADHQAAAAADHQAAAAADHQAAAAACHQAAAAAAdgAAAAABeQAAAAAAeQAAAAAAdwAAAAABdwAAAAAAdgAAAAACEwAAAAAGdgAAAAADdgAAAAAAdgAAAAACHQAAAAABHQAAAAABHQAAAAADHQAAAAACHQAAAAAAHQAAAAADHQAAAAACeQAAAAAAeQAAAAAAdwAAAAABdwAAAAAAdgAAAAACEwAAAAAGdgAAAAAAdgAAAAAAdgAAAAADHQAAAAADHQAAAAABHQAAAAADHQAAAAAAHQAAAAABHQAAAAAAHQAAAAABeQAAAAAAeQAAAAAAdwAAAAADdwAAAAABEwAAAAACEwAAAAAGdwAAAAAAdwAAAAADeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAWQAAAAABeQAAAAAAeQAAAAAAeQAAAAAAaQAAAAAA
+          tiles: eQAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAHQAAAAADHQAAAAABHQAAAAACeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAOgAAAAAAWQAAAAABWQAAAAADOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAeQAAAAAAHQAAAAACHQAAAAACHQAAAAABHQAAAAAAHQAAAAACHQAAAAAAHQAAAAABeQAAAAAAOgAAAAAAWQAAAAADWQAAAAAAWQAAAAAAWQAAAAADWQAAAAAAOgAAAAAAWQAAAAACHQAAAAAAHQAAAAABHQAAAAABHQAAAAADHQAAAAABHQAAAAABHQAAAAAAeQAAAAAAOgAAAAAAWQAAAAAAWQAAAAAAWQAAAAADWQAAAAAAWQAAAAACOgAAAAAAWQAAAAACHQAAAAADHQAAAAABHQAAAAADHQAAAAACHQAAAAACHQAAAAABHQAAAAAAeQAAAAAAOgAAAAAAWQAAAAADWQAAAAAAWQAAAAACWQAAAAABWQAAAAADOgAAAAAAOgAAAAAAHQAAAAABHQAAAAADHQAAAAACHQAAAAADHQAAAAABHQAAAAADHQAAAAAAeQAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAOgAAAAAAeQAAAAAAHQAAAAADHQAAAAADHQAAAAADHQAAAAABHQAAAAACHQAAAAADHQAAAAADeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAHQAAAAABHQAAAAABHQAAAAACHQAAAAAAHQAAAAADHQAAAAAAdgAAAAACdgAAAAABdgAAAAABeQAAAAAAdgAAAAABdgAAAAAAdgAAAAADdgAAAAABdgAAAAACeQAAAAAAHQAAAAADHQAAAAACHQAAAAABHQAAAAAAHQAAAAAAHQAAAAADdgAAAAACdgAAAAAAEwAAAAACdgAAAAAAdgAAAAADdgAAAAACEwAAAAACdgAAAAADdgAAAAABeQAAAAAAHQAAAAAAHQAAAAACHQAAAAABHQAAAAAAHQAAAAAAHQAAAAAAEwAAAAABdgAAAAABdgAAAAABEwAAAAAAEwAAAAAFEwAAAAAFdgAAAAAAdgAAAAABdgAAAAACeQAAAAAAHQAAAAAAHQAAAAAAHQAAAAAAHQAAAAABHQAAAAABHQAAAAABdgAAAAABdgAAAAABdgAAAAABdgAAAAABdgAAAAACdgAAAAAAdgAAAAADdgAAAAACdgAAAAACeQAAAAAAHQAAAAAAHQAAAAACHQAAAAABHQAAAAADHQAAAAAAHQAAAAADdgAAAAABdgAAAAACdgAAAAAAdgAAAAABEwAAAAADdgAAAAAAdgAAAAADdgAAAAAAdgAAAAACeQAAAAAAHQAAAAACHQAAAAACHQAAAAADHQAAAAACHQAAAAACHQAAAAADdgAAAAADdgAAAAABdgAAAAAAdgAAAAAAdgAAAAADdgAAAAAAEwAAAAAEEwAAAAABdgAAAAADeQAAAAAAHQAAAAADHQAAAAADHQAAAAADHQAAAAADHQAAAAACHQAAAAAAdgAAAAABeQAAAAAAeQAAAAAAdwAAAAABdwAAAAAAdgAAAAACEwAAAAAGdgAAAAADdgAAAAAAdgAAAAACHQAAAAABHQAAAAABHQAAAAADHQAAAAACHQAAAAAAHQAAAAADHQAAAAACeQAAAAAAeQAAAAAAdwAAAAABdwAAAAAAdgAAAAACEwAAAAAGdgAAAAAAdgAAAAAAdgAAAAADHQAAAAADHQAAAAABHQAAAAADHQAAAAAAHQAAAAABHQAAAAAAHQAAAAABeQAAAAAAeQAAAAAAdwAAAAADdwAAAAABEwAAAAACEwAAAAAGdwAAAAAAdwAAAAADeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAWQAAAAABeQAAAAAAeQAAAAAAeQAAAAAAaQAAAAAA
           version: 6
         0,1:
           ind: 0,1
@@ -7457,10 +7457,6 @@ entities:
       pos: 47.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 722
-      - 756
-      type: DeviceNetwork
     - devices:
       - 9493
       - 9494
@@ -7478,21 +7474,14 @@ entities:
       - 722
       - 756
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 2524
     components:
     - rot: 3.141592653589793 rad
       pos: 40.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 3261
-      - 3259
-      - 3217
-      - 3218
-      - 3263
-      - 3262
-      - 3260
-      type: DeviceNetwork
     - devices:
       - 3261
       - 3259
@@ -7502,23 +7491,14 @@ entities:
       - 3262
       - 3260
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 6801
     components:
     - rot: 1.5707963267948966 rad
       pos: -20.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9258
-      - 9265
-      - 9264
-      - 9246
-      - 9270
-      - 6740
-      - 9269
-      - 9268
-      - 9267
-      type: DeviceNetwork
     - devices:
       - 9258
       - 9265
@@ -7530,29 +7510,14 @@ entities:
       - 9268
       - 9267
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8445
     components:
     - rot: 3.141592653589793 rad
       pos: -63.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8329
-      - 8447
-      - 8322
-      - 8321
-      - 8448
-      - 8330
-      - 8454
-      - 8455
-      - 8446
-      - 8451
-      - 8450
-      - 8449
-      - 8452
-      - 8453
-      - 8456
-      type: DeviceNetwork
     - devices:
       - 8329
       - 8447
@@ -7570,20 +7535,14 @@ entities:
       - 8453
       - 8456
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8457
     components:
     - rot: 3.141592653589793 rad
       pos: -59.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8458
-      - 8409
-      - 8408
-      - 8456
-      - 8452
-      - 8453
-      type: DeviceNetwork
     - devices:
       - 8458
       - 8409
@@ -7592,19 +7551,14 @@ entities:
       - 8452
       - 8453
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8459
     components:
     - rot: -1.5707963267948966 rad
       pos: -56.5,6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8460
-      - 8455
-      - 8454
-      - 8304
-      - 8288
-      type: DeviceNetwork
     - devices:
       - 8460
       - 8455
@@ -7612,20 +7566,13 @@ entities:
       - 8304
       - 8288
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8489
     components:
     - pos: 15.5,33.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8491
-      - 8494
-      - 8492
-      - 8493
-      - 7084
-      - 8490
-      - 7083
-      type: DeviceNetwork
     - devices:
       - 8491
       - 8494
@@ -7635,15 +7582,14 @@ entities:
       - 8490
       - 7083
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8497
     components:
     - rot: 3.141592653589793 rad
       pos: 22.5,29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8726
-      type: DeviceNetwork
     - devices:
       - 8496
       - 7072
@@ -7654,21 +7600,14 @@ entities:
       - 8498
       - 8499
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8504
     components:
     - rot: -1.5707963267948966 rad
       pos: 20.5,24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8506
-      - 8501
-      - 8502
-      - 8503
-      - 8505
-      - 8498
-      - 8499
-      type: DeviceNetwork
     - devices:
       - 8506
       - 8501
@@ -7678,25 +7617,14 @@ entities:
       - 8498
       - 8499
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8507
     components:
     - rot: -1.5707963267948966 rad
       pos: 16.5,24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6984
-      - 6999
-      - 2765
-      - 8494
-      - 8513
-      - 8511
-      - 8512
-      - 7000
-      - 6983
-      - 8509
-      - 8510
-      type: DeviceNetwork
     - devices:
       - 6984
       - 6999
@@ -7710,41 +7638,27 @@ entities:
       - 8509
       - 8510
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8516
     components:
     - pos: 9.5,29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8515
-      - 8510
-      - 7035
-      - 4558
-      type: DeviceNetwork
     - devices:
       - 8515
       - 8510
       - 7035
       - 4558
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8847
     components:
     - rot: 1.5707963267948966 rad
       pos: -26.5,-34.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8846
-      - 6566
-      - 6560
-      - 8844
-      - 8841
-      - 8842
-      - 8845
-      - 8843
-      - 8839
-      - 8840
-      type: DeviceNetwork
     - devices:
       - 8846
       - 6566
@@ -7757,33 +7671,13 @@ entities:
       - 8839
       - 8840
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8888
     components:
     - pos: -27.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9318
-      - 9324
-      - 9317
-      - 9316
-      - 9315
-      - 9326
-      - 9327
-      - 9319
-      - 9330
-      - 9331
-      - 9325
-      - 9328
-      - 9329
-      - 9321
-      - 9322
-      - 9323
-      - 9320
-      - 9294
-      - 9293
-      - 9292
-      type: DeviceNetwork
     - devices:
       - 9318
       - 9324
@@ -7806,18 +7700,13 @@ entities:
       - 9293
       - 9292
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8891
     components:
     - pos: -26.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8892
-      - 8839
-      - 8840
-      - 8894
-      - 8893
-      type: DeviceNetwork
     - devices:
       - 8892
       - 8839
@@ -7825,24 +7714,13 @@ entities:
       - 8894
       - 8893
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8895
     components:
     - pos: -28.5,-21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8830
-      - 8829
-      - 8897
-      - 8894
-      - 8893
-      - 8896
-      - 8899
-      - 8898
-      - 8902
-      - 8901
-      - 8900
-      type: DeviceNetwork
     - devices:
       - 8830
       - 8829
@@ -7856,55 +7734,28 @@ entities:
       - 8901
       - 8900
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8903
     components:
     - rot: 3.141592653589793 rad
       pos: -25.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6492
-      - 8904
-      - 8902
-      - 6481
-      type: DeviceNetwork
     - devices:
       - 6492
       - 8904
       - 8902
       - 6481
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9005
     components:
     - rot: 3.141592653589793 rad
       pos: 10.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9008
-      - 8988
-      - 8987
-      - 9009
-      - 9010
-      - 9011
-      - 8517
-      - 8518
-      - 8502
-      - 8501
-      - 8513
-      - 8512
-      - 8986
-      - 8985
-      - 9006
-      - 9012
-      - 9013
-      - 9014
-      - 8991
-      - 8990
-      - 9007
-      - 9016
-      - 6905
-      type: DeviceNetwork
     - devices:
       - 9008
       - 8988
@@ -7930,32 +7781,13 @@ entities:
       - 9016
       - 6905
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9073
     components:
     - pos: -52.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9045
-      - 9044
-      - 9027
-      - 9028
-      - 9030
-      - 9029
-      - 9031
-      - 9032
-      - 9034
-      - 9035
-      - 9036
-      - 9037
-      - 9076
-      - 9026
-      - 9075
-      - 8451
-      - 8450
-      - 8449
-      - 9033
-      type: DeviceNetwork
     - devices:
       - 8449
       - 8450
@@ -7977,18 +7809,13 @@ entities:
       - 9045
       - 9033
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9080
     components:
     - pos: -52.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9083
-      - 9079
-      - 7626
-      - 7610
-      - 9082
-      type: DeviceNetwork
     - devices:
       - 9083
       - 9079
@@ -7996,24 +7823,13 @@ entities:
       - 7610
       - 9082
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9081
     components:
     - pos: -55.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9083
-      - 9077
-      - 7654
-      - 7652
-      - 7593
-      - 9078
-      - 9084
-      - 9030
-      - 9029
-      - 9028
-      - 9027
-      type: DeviceNetwork
     - devices:
       - 9083
       - 9077
@@ -8027,20 +7843,13 @@ entities:
       - 9028
       - 9027
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9210
     components:
     - pos: -44.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9207
-      - 9204
-      - 9208
-      - 9170
-      - 8005
-      - 9206
-      - 9209
-      type: DeviceNetwork
     - devices:
       - 9207
       - 9204
@@ -8050,35 +7859,26 @@ entities:
       - 9206
       - 9209
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9212
     components:
     - pos: -45.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9037
-      - 9211
-      - 9208
-      - 9175
-      type: DeviceNetwork
     - devices:
       - 9037
       - 9211
       - 9208
       - 9175
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9232
     components:
     - pos: -48.5,20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9237
-      - 9236
-      - 8133
-      - 8134
-      - 9238
-      type: DeviceNetwork
     - devices:
       - 9237
       - 9236
@@ -8086,19 +7886,14 @@ entities:
       - 8134
       - 9238
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9247
     components:
     - rot: -1.5707963267948966 rad
       pos: -30.5,-9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9248
-      - 9242
-      - 9249
-      - 6827
-      - 6828
-      type: DeviceNetwork
     - devices:
       - 9248
       - 9242
@@ -8106,31 +7901,26 @@ entities:
       - 6827
       - 6828
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9251
     components:
     - pos: -36.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9239
-      - 6846
-      - 6847
-      - 9250
-      type: DeviceNetwork
     - devices:
       - 9239
       - 6846
       - 6847
       - 9250
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9253
     components:
     - pos: -25.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 10903
-      type: DeviceNetwork
     - devices:
       - 9250
       - 9261
@@ -8147,37 +7937,27 @@ entities:
       - 9258
       - 10903
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9262
     components:
     - rot: -1.5707963267948966 rad
       pos: -25.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9244
-      - 9255
-      - 6811
-      - 6812
-      type: DeviceNetwork
     - devices:
       - 9244
       - 9255
       - 6811
       - 6812
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9263
     components:
     - pos: -24.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9264
-      - 9265
-      - 9245
-      - 9257
-      - 6751
-      - 6756
-      type: DeviceNetwork
     - devices:
       - 9264
       - 9265
@@ -8186,40 +7966,27 @@ entities:
       - 6751
       - 6756
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9266
     components:
     - rot: -1.5707963267948966 rad
       pos: -24.5,-10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9243
-      - 9254
-      - 6826
-      - 6825
-      type: DeviceNetwork
     - devices:
       - 9243
       - 9254
       - 6826
       - 6825
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9277
     components:
     - pos: -18.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8900
-      - 8901
-      - 9273
-      - 8834
-      - 8835
-      - 9278
-      - 9276
-      - 9275
-      - 9274
-      type: DeviceNetwork
     - devices:
       - 8900
       - 8901
@@ -8231,18 +7998,13 @@ entities:
       - 9275
       - 9274
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9281
     components:
     - pos: -15.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6435
-      - 6470
-      - 9273
-      - 9279
-      - 9280
-      type: DeviceNetwork
     - devices:
       - 6435
       - 6470
@@ -8250,27 +8012,14 @@ entities:
       - 9279
       - 9280
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9282
     components:
     - rot: -1.5707963267948966 rad
       pos: -5.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9284
-      - 9289
-      - 9290
-      - 9291
-      - 6402
-      - 6407
-      - 9283
-      - 9274
-      - 9275
-      - 9285
-      - 9286
-      - 9288
-      - 9287
-      type: DeviceNetwork
     - devices:
       - 9284
       - 9289
@@ -8286,23 +8035,13 @@ entities:
       - 9288
       - 9287
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9298
     components:
     - pos: -7.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9295
-      - 9296
-      - 9302
-      - 9304
-      - 9297
-      - 9286
-      - 9285
-      - 9292
-      - 9293
-      - 9294
-      type: DeviceNetwork
     - devices:
       - 9295
       - 9296
@@ -8315,34 +8054,22 @@ entities:
       - 9293
       - 9294
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9356
     components:
     - rot: -1.5707963267948966 rad
       pos: -12.5,-8.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9363
     components:
     - rot: -1.5707963267948966 rad
       pos: -12.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9269
-      - 9268
-      - 9267
-      - 9354
-      - 9359
-      - 9360
-      - 9361
-      - 9358
-      - 9357
-      - 9353
-      - 9321
-      - 9323
-      - 9322
-      - 9362
-      type: DeviceNetwork
     - devices:
       - 9269
       - 9268
@@ -8359,24 +8086,14 @@ entities:
       - 9322
       - 9362
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9434
     components:
     - rot: -1.5707963267948966 rad
       pos: -42.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9430
-      - 9433
-      - 9432
-      - 9431
-      - 9315
-      - 9316
-      - 9317
-      - 9033
-      - 9032
-      - 9031
-      type: DeviceNetwork
     - devices:
       - 9430
       - 9433
@@ -8389,25 +8106,14 @@ entities:
       - 9032
       - 9031
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9477
     components:
     - rot: 1.5707963267948966 rad
       pos: 21.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9478
-      - 9457
-      - 9458
-      - 9459
-      - 9454
-      - 9453
-      - 9479
-      - 9460
-      - 9011
-      - 9010
-      - 9009
-      type: DeviceNetwork
     - devices:
       - 9478
       - 9457
@@ -8421,33 +8127,13 @@ entities:
       - 9010
       - 9009
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9524
     components:
     - pos: 26.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9486
-      - 9487
-      - 9488
-      - 9489
-      - 9490
-      - 9491
-      - 9483
-      - 9482
-      - 9480
-      - 9457
-      - 9458
-      - 9459
-      - 9485
-      - 9484
-      - 9481
-      - 9492
-      - 9493
-      - 9494
-      - 9495
-      - 9525
-      type: DeviceNetwork
     - devices:
       - 9486
       - 9487
@@ -8470,31 +8156,13 @@ entities:
       - 9495
       - 9525
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9548
     components:
     - pos: -35.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9034
-      - 9035
-      - 9036
-      - 9537
-      - 9552
-      - 9553
-      - 9545
-      - 9546
-      - 9547
-      - 9544
-      - 9543
-      - 9542
-      - 9554
-      - 9555
-      - 9538
-      - 9541
-      - 9540
-      - 9539
-      type: DeviceNetwork
     - devices:
       - 9034
       - 9035
@@ -8515,39 +8183,13 @@ entities:
       - 9540
       - 9539
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9576
     components:
     - pos: -16.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9541
-      - 9540
-      - 9539
-      - 9567
-      - 9566
-      - 9571
-      - 9570
-      - 9565
-      - 9568
-      - 9574
-      - 9575
-      - 9563
-      - 9564
-      - 9361
-      - 9360
-      - 9359
-      - 9561
-      - 9562
-      - 9560
-      - 9559
-      - 9573
-      - 9569
-      - 9572
-      - 9558
-      - 9557
-      - 9556
-      type: DeviceNetwork
     - devices:
       - 9541
       - 9540
@@ -8576,34 +8218,14 @@ entities:
       - 9557
       - 9556
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9588
     components:
     - rot: -1.5707963267948966 rad
       pos: 6.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9558
-      - 9557
-      - 9556
-      - 9586
-      - 9589
-      - 9592
-      - 9593
-      - 9581
-      - 9582
-      - 9590
-      - 9583
-      - 9584
-      - 9585
-      - 9595
-      - 9591
-      - 9594
-      - 9587
-      - 9012
-      - 9014
-      - 9013
-      type: DeviceNetwork
     - devices:
       - 9558
       - 9557
@@ -8626,26 +8248,13 @@ entities:
       - 9014
       - 9013
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9599
     components:
     - pos: 11.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9596
-      - 9597
-      - 9598
-      - 61
-      - 2986
-      - 3177
-      - 9583
-      - 9584
-      - 9585
-      - 9600
-      - 9488
-      - 9487
-      - 9486
-      type: DeviceNetwork
     - devices:
       - 9596
       - 9597
@@ -8661,21 +8270,13 @@ entities:
       - 9487
       - 9486
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9613
     components:
     - pos: -40.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9545
-      - 9546
-      - 9614
-      - 7966
-      - 7957
-      - 9611
-      - 9610
-      - 9612
-      type: DeviceNetwork
     - devices:
       - 9545
       - 9546
@@ -8686,24 +8287,14 @@ entities:
       - 9610
       - 9612
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9621
     components:
     - rot: 3.141592653589793 rad
       pos: -28.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9544
-      - 9543
-      - 9542
-      - 7974
-      - 9620
-      - 7960
-      - 9617
-      - 9616
-      - 9619
-      - 9618
-      type: DeviceNetwork
     - devices:
       - 9544
       - 9543
@@ -8716,14 +8307,13 @@ entities:
       - 9619
       - 9618
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9637
     components:
     - pos: -33.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 10949
-      type: DeviceNetwork
     - devices:
       - 9209
       - 9638
@@ -8743,27 +8333,13 @@ entities:
       - 9635
       - 10949
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9657
     components:
     - pos: -39.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9633
-      - 9634
-      - 9237
-      - 9652
-      - 9654
-      - 9655
-      - 9653
-      - 9635
-      - 9636
-      - 9644
-      - 9651
-      - 9650
-      - 9649
-      - 9648
-      type: DeviceNetwork
     - devices:
       - 9633
       - 9634
@@ -8780,14 +8356,13 @@ entities:
       - 9649
       - 9648
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9659
     components:
     - pos: -44.5,29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 12686
-      type: DeviceNetwork
     - devices:
       - 8202
       - 9660
@@ -8803,22 +8378,13 @@ entities:
       - 12682
       - 12686
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9672
     components:
     - pos: 4.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9669
-      - 9670
-      - 9671
-      - 9674
-      - 9673
-      - 9582
-      - 9581
-      - 7183
-      - 7182
-      type: DeviceNetwork
     - devices:
       - 9669
       - 9670
@@ -8830,37 +8396,13 @@ entities:
       - 7183
       - 7182
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9688
     components:
     - pos: 8.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9678
-      - 8196
-      - 8182
-      - 9679
-      - 9680
-      - 9681
-      - 9781
-      - 9682
-      - 7218
-      - 7219
-      - 9687
-      - 9756
-      - 9684
-      - 9685
-      - 9686
-      - 9683
-      - 7197
-      - 7196
-      - 9780
-      - 61
-      - 2986
-      - 3177
-      - 9670
-      - 9671
-      type: DeviceNetwork
     - devices:
       - 9678
       - 8196
@@ -8887,24 +8429,13 @@ entities:
       - 9670
       - 9671
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9785
     components:
     - pos: 31.5,-9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9684
-      - 9685
-      - 9686
-      - 9786
-      - 9787
-      - 9782
-      - 9784
-      - 9783
-      - 9526
-      - 9527
-      - 9528
-      type: DeviceNetwork
     - devices:
       - 9684
       - 9685
@@ -8918,21 +8449,14 @@ entities:
       - 9527
       - 9528
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9788
     components:
     - rot: 1.5707963267948966 rad
       pos: 0.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9790
-      - 7249
-      - 7250
-      - 9789
-      - 8196
-      - 9678
-      - 8182
-      type: DeviceNetwork
     - devices:
       - 9790
       - 7249
@@ -8942,21 +8466,14 @@ entities:
       - 9678
       - 8182
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9793
     components:
     - rot: 3.141592653589793 rad
       pos: -12.5,36.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9798
-      - 9794
-      - 9795
-      - 9796
-      - 9797
-      - 1665
-      - 1666
-      type: DeviceNetwork
     - devices:
       - 9798
       - 9794
@@ -8966,27 +8483,14 @@ entities:
       - 1665
       - 1666
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9803
     components:
     - rot: -1.5707963267948966 rad
       pos: -10.5,27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9804
-      - 9805
-      - 9806
-      - 1709
-      - 6249
-      - 9811
-      - 9807
-      - 9809
-      - 9810
-      - 9808
-      - 9812
-      - 9814
-      - 9813
-      type: DeviceNetwork
     - devices:
       - 9804
       - 9805
@@ -9002,43 +8506,14 @@ entities:
       - 9814
       - 9813
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9817
     components:
     - rot: 3.141592653589793 rad
       pos: -12.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9804
-      - 9805
-      - 9806
-      - 9838
-      - 9837
-      - 9821
-      - 9822
-      - 9823
-      - 9836
-      - 9834
-      - 9827
-      - 9828
-      - 9818
-      - 9829
-      - 6386
-      - 6259
-      - 9830
-      - 9831
-      - 9819
-      - 9832
-      - 9820
-      - 9825
-      - 9824
-      - 9843
-      - 9842
-      - 9841
-      - 9840
-      - 9839
-      - 9835
-      type: DeviceNetwork
     - devices:
       - 9804
       - 9805
@@ -9070,20 +8545,13 @@ entities:
       - 9839
       - 9835
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9857
     components:
     - pos: -6.5,24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9838
-      - 9839
-      - 9858
-      - 9859
-      - 9850
-      - 9844
-      - 9851
-      type: DeviceNetwork
     - devices:
       - 9838
       - 9839
@@ -9093,6 +8561,8 @@ entities:
       - 9844
       - 9851
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: AirCanister
   entities:
   - uid: 3609
@@ -9100,12 +8570,13 @@ entities:
     - pos: -31.5,-9.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: AirlockArmoryGlassLocked
   entities:
   - uid: 1039
     components:
-    - rot: 1.5707963267948966 rad
-      pos: -14.5,16.5
+    - pos: -14.5,16.5
       parent: 2
       type: Transform
 - proto: AirlockAssembly
@@ -9152,6 +8623,20 @@ entities:
   - uid: 8821
     components:
     - pos: -20.5,-30.5
+      parent: 2
+      type: Transform
+- proto: AirlockBarLocked
+  entities:
+  - uid: 17
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 22.5,-3.5
+      parent: 2
+      type: Transform
+  - uid: 72
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 22.5,-8.5
       parent: 2
       type: Transform
 - proto: AirlockBrigGlassLocked
@@ -10336,6 +9821,11 @@ entities:
     - pos: -40.5,22.5
       parent: 2
       type: Transform
+  - uid: 1150
+    components:
+    - pos: -44.5,27.5
+      parent: 2
+      type: Transform
   - uid: 1186
     components:
     - pos: -41.5,22.5
@@ -10375,15 +9865,6 @@ entities:
       pos: -38.5,30.5
       parent: 2
       type: Transform
-  - uid: 7815
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: -44.5,27.5
-      parent: 2
-      type: Transform
-    - secondsUntilStateChange: -29850.303
-      state: Opening
-      type: Door
   - uid: 8418
     components:
     - pos: -60.5,5.5
@@ -10595,20 +10076,6 @@ entities:
       pos: 16.5,-15.5
       parent: 2
       type: Transform
-- proto: AirlockServiceLocked
-  entities:
-  - uid: 9791
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 22.5,-8.5
-      parent: 2
-      type: Transform
-  - uid: 9792
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 22.5,-3.5
-      parent: 2
-      type: Transform
 - proto: AirlockShuttle
   entities:
   - uid: 12215
@@ -10636,88 +10103,58 @@ entities:
       pos: 15.5,23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
   - uid: 3259
     components:
     - rot: 3.141592653589793 rad
       pos: 40.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
   - uid: 3260
     components:
     - rot: 3.141592653589793 rad
       pos: 44.5,-19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
   - uid: 8446
     components:
     - rot: 3.141592653589793 rad
       pos: -57.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
   - uid: 8447
     components:
     - rot: 3.141592653589793 rad
       pos: -67.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
   - uid: 8448
     components:
     - rot: 3.141592653589793 rad
       pos: -67.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
   - uid: 8458
     components:
     - rot: 3.141592653589793 rad
       pos: -58.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8457
-      type: DeviceNetwork
   - uid: 8460
     components:
     - rot: -1.5707963267948966 rad
       pos: -60.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8459
-      type: DeviceNetwork
   - uid: 8490
     components:
     - pos: 13.5,30.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      type: DeviceNetwork
   - uid: 8491
     components:
     - pos: 14.5,26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      type: DeviceNetwork
   - uid: 8496
     components:
     - pos: 24.5,30.5
@@ -10729,207 +10166,131 @@ entities:
       pos: 18.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      - 8519
-      type: DeviceNetwork
   - uid: 8506
     components:
     - rot: -1.5707963267948966 rad
       pos: 18.5,20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      - 8519
-      type: DeviceNetwork
   - uid: 8509
     components:
     - rot: -1.5707963267948966 rad
       pos: 9.5,24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
   - uid: 8515
     components:
     - rot: -1.5707963267948966 rad
       pos: 8.5,27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8516
-      type: DeviceNetwork
   - uid: 8726
     components:
     - rot: -1.5707963267948966 rad
       pos: 19.5,28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8497
-      type: DeviceNetwork
   - uid: 8845
     components:
     - pos: -24.5,-30.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
   - uid: 8846
     components:
     - pos: -24.5,-36.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
   - uid: 8892
     components:
     - pos: -25.5,-27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8891
-      type: DeviceNetwork
   - uid: 8896
     components:
     - pos: -36.5,-22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      type: DeviceNetwork
   - uid: 8897
     components:
     - pos: -22.5,-23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      type: DeviceNetwork
   - uid: 8904
     components:
     - rot: 3.141592653589793 rad
       pos: -26.5,-18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8903
-      type: DeviceNetwork
   - uid: 9006
     components:
     - rot: 3.141592653589793 rad
       pos: 5.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 9007
     components:
     - rot: 3.141592653589793 rad
       pos: 3.5,28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 9008
     components:
     - rot: 3.141592653589793 rad
       pos: 23.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 9075
     components:
     - pos: -55.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      type: DeviceNetwork
   - uid: 9076
     components:
     - pos: -43.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      type: DeviceNetwork
   - uid: 9077
     components:
     - pos: -56.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9081
-      type: DeviceNetwork
   - uid: 9078
     components:
     - pos: -50.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9081
-      type: DeviceNetwork
   - uid: 9079
     components:
     - pos: -53.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9080
-      type: DeviceNetwork
   - uid: 9204
     components:
     - rot: 1.5707963267948966 rad
       pos: -47.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      type: DeviceNetwork
   - uid: 9206
     components:
     - rot: 1.5707963267948966 rad
       pos: -42.5,12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      type: DeviceNetwork
   - uid: 9211
     components:
     - pos: -45.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9212
-      type: DeviceNetwork
   - uid: 9238
     components:
     - pos: -46.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9232
-      type: DeviceNetwork
   - uid: 9239
     components:
     - pos: -36.5,-4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9251
-      type: DeviceNetwork
   - uid: 9240
     components:
     - pos: -32.5,-4.5
@@ -10945,170 +10306,110 @@ entities:
     - pos: -32.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9247
-      type: DeviceNetwork
   - uid: 9243
     components:
     - pos: -28.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9266
-      type: DeviceNetwork
   - uid: 9244
     components:
     - pos: -29.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9262
-      type: DeviceNetwork
   - uid: 9245
     components:
     - pos: -22.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9263
-      type: DeviceNetwork
   - uid: 9246
     components:
     - pos: -18.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      type: DeviceNetwork
   - uid: 9278
     components:
     - pos: -17.5,-22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      type: DeviceNetwork
   - uid: 9279
     components:
     - pos: -20.5,-27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9281
-      type: DeviceNetwork
   - uid: 9283
     components:
     - rot: -1.5707963267948966 rad
       pos: -13.5,-22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9284
     components:
     - rot: -1.5707963267948966 rad
       pos: -7.5,-26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9297
     components:
     - rot: -1.5707963267948966 rad
       pos: -9.5,-18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      type: DeviceNetwork
   - uid: 9324
     components:
     - pos: -44.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
   - uid: 9325
     components:
     - pos: -14.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
   - uid: 9353
     components:
     - rot: 3.141592653589793 rad
       pos: -14.5,-10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      type: DeviceNetwork
   - uid: 9354
     components:
     - rot: 3.141592653589793 rad
       pos: -14.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      type: DeviceNetwork
   - uid: 9430
     components:
     - pos: -44.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9434
-      type: DeviceNetwork
   - uid: 9431
     components:
     - pos: -44.5,-10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9434
-      type: DeviceNetwork
   - uid: 9478
     components:
     - rot: 1.5707963267948966 rad
       pos: 23.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      type: DeviceNetwork
   - uid: 9479
     components:
     - rot: 1.5707963267948966 rad
       pos: 23.5,12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      type: DeviceNetwork
   - uid: 9480
     components:
     - rot: 1.5707963267948966 rad
       pos: 16.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9481
     components:
     - rot: 1.5707963267948966 rad
       pos: 36.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9533
     components:
     - rot: -1.5707963267948966 rad
@@ -11133,94 +10434,61 @@ entities:
       pos: -40.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
   - uid: 9538
     components:
     - rot: -1.5707963267948966 rad
       pos: -27.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
   - uid: 9567
     components:
     - pos: -24.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9568
     components:
     - pos: -14.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9569
     components:
     - pos: -5.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9589
     components:
     - rot: -1.5707963267948966 rad
       pos: -1.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
   - uid: 9590
     components:
     - rot: -1.5707963267948966 rad
       pos: 4.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
   - uid: 9591
     components:
     - rot: -1.5707963267948966 rad
       pos: 4.5,12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
   - uid: 9598
     components:
     - rot: -1.5707963267948966 rad
       pos: 10.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      type: DeviceNetwork
   - uid: 9614
     components:
     - pos: -37.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9613
-      type: DeviceNetwork
   - uid: 9620
     components:
     - pos: -31.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
   - uid: 9638
     components:
     - pos: -39.5,12.5
@@ -11236,17 +10504,11 @@ entities:
     - pos: -40.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9653
     components:
     - pos: -33.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9660
     components:
     - pos: -41.5,26.5
@@ -11267,141 +10529,91 @@ entities:
     - pos: 3.5,0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      type: DeviceNetwork
   - uid: 9674
     components:
     - pos: 5.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      type: DeviceNetwork
   - uid: 9756
     components:
     - pos: 24.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      type: DeviceNetwork
   - uid: 9780
     components:
     - pos: 10.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9781
     components:
     - pos: 10.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9782
     components:
     - pos: 31.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
   - uid: 9789
     components:
     - rot: 1.5707963267948966 rad
       pos: 7.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9788
-      type: DeviceNetwork
   - uid: 9790
     components:
     - rot: 1.5707963267948966 rad
       pos: 2.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9788
-      type: DeviceNetwork
   - uid: 9798
     components:
     - rot: 3.141592653589793 rad
       pos: -12.5,41.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
   - uid: 9811
     components:
     - rot: -1.5707963267948966 rad
       pos: -12.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9812
     components:
     - rot: -1.5707963267948966 rad
       pos: -12.5,31.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9818
     components:
     - rot: 3.141592653589793 rad
       pos: -18.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9819
     components:
     - rot: 3.141592653589793 rad
       pos: -9.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9820
     components:
     - rot: 3.141592653589793 rad
       pos: -4.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9821
     components:
     - rot: 3.141592653589793 rad
       pos: -12.5,20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9844
     components:
     - rot: 1.5707963267948966 rad
       pos: -6.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9857
-      type: DeviceNetwork
 - proto: AltarSpawner
   entities:
   - uid: 2289
@@ -11491,221 +10703,301 @@ entities:
   entities:
   - uid: 474
     components:
+    - name: '[Arrivals] Primary'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 47.5,-8.5
       parent: 2
       type: Transform
   - uid: 585
     components:
+    - name: '[Arrivals] Security Checkpoint'
+      type: MetaData
     - pos: 37.5,1.5
       parent: 2
       type: Transform
   - uid: 823
     components:
+    - name: '[Service] Janitorial'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: 8.5,5.5
       parent: 2
       type: Transform
   - uid: 1328
     components:
+    - name: '[Service] Storage'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 17.5,-17.5
       parent: 2
       type: Transform
   - uid: 1329
     components:
+    - name: '[Service] Kitchen'
+      type: MetaData
     - rot: 1.5707963267948966 rad
       pos: 5.5,-18.5
       parent: 2
       type: Transform
   - uid: 1332
     components:
+    - name: '[Service] Seating'
+      type: MetaData
     - pos: 20.5,-8.5
       parent: 2
       type: Transform
   - uid: 1450
     components:
+    - name: '[Service] Botany'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: 2.5,-21.5
       parent: 2
       type: Transform
   - uid: 1471
     components:
+    - name: '[Service] Bar Closet'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 25.5,-5.5
       parent: 2
       type: Transform
   - uid: 1598
     components:
+    - name: '[Security] Permanent Confinement'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -10.5,39.5
       parent: 2
       type: Transform
   - uid: 1714
     components:
+    - name: '[Security] Entry Way'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -9.5,9.5
       parent: 2
       type: Transform
   - uid: 1751
     components:
+    - name: '[Security] Armory'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -7.5,24.5
       parent: 2
       type: Transform
   - uid: 1809
     components:
+    - name: '[Security] Locker Room'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -2.5,21.5
       parent: 2
       type: Transform
   - uid: 1847
     components:
+    - name: '[Security] Internal Desk'
+      type: MetaData
     - pos: -9.5,18.5
       parent: 2
       type: Transform
   - uid: 1848
     components:
+    - name: "[Security] HoS's Office"
+      type: MetaData
     - pos: -17.5,24.5
       parent: 2
       type: Transform
   - uid: 1849
     components:
+    - name: "[Security] Warden's Office"
+      type: MetaData
     - pos: -17.5,18.5
       parent: 2
       type: Transform
   - uid: 1918
     components:
+    - name: '[Security] Legal Offices'
+      type: MetaData
     - pos: -19.5,9.5
       parent: 2
       type: Transform
   - uid: 1929
     components:
+    - name: '[Security]  Cellblock'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -2.5,14.5
       parent: 2
       type: Transform
   - uid: 2385
     components:
+    - name: '[Service] Chapel'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: 37.5,-19.5
       parent: 2
       type: Transform
   - uid: 2484
     components:
+    - name: '[Arrivals] Observatory'
+      type: MetaData
     - pos: 42.5,-18.5
       parent: 2
       type: Transform
   - uid: 2763
     components:
+    - name: '[Service] Bar'
+      type: MetaData
     - pos: 16.5,-3.5
       parent: 2
       type: Transform
   - uid: 2829
     components:
+    - name: "[Command] Captain's Office"
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 26.5,23.5
       parent: 2
       type: Transform
   - uid: 2830
     components:
+    - name: '[Command] Bridge'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: 17.5,26.5
       parent: 2
       type: Transform
   - uid: 2943
     components:
+    - name: '[Command] Vault'
+      type: MetaData
     - pos: 30.5,19.5
       parent: 2
       type: Transform
   - uid: 2975
     components:
+    - name: "[Command] HoP's Office"
+      type: MetaData
     - pos: 15.5,25.5
       parent: 2
       type: Transform
   - uid: 2988
     components:
+    - name: '[Command] EVA'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 10.5,27.5
       parent: 2
       type: Transform
   - uid: 4864
     components:
+    - name: '[Science] Anomaly Lab'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -24.5,-9.5
       parent: 2
       type: Transform
   - uid: 4976
     components:
+    - name: '[Engineering] Gravity'
+      type: MetaData
     - pos: -32.5,-25.5
       parent: 2
       type: Transform
   - uid: 4988
     components:
+    - name: '[Engineering] Secure Telecomms'
+      type: MetaData
     - rot: 1.5707963267948966 rad
       pos: -35.5,-32.5
       parent: 2
       type: Transform
   - uid: 5023
     components:
+    - name: '[Engineering] Telecomms'
+      type: MetaData
     - pos: -28.5,-29.5
       parent: 2
       type: Transform
   - uid: 5037
     components:
+    - name: "[Science] Research Director's Office"
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -19.5,-12.5
       parent: 2
       type: Transform
   - uid: 5047
     components:
+    - name: '[Engineering] AME'
+      type: MetaData
     - pos: -20.5,-24.5
       parent: 2
       type: Transform
   - uid: 5175
     components:
+    - name: '[Evacuation] Medical Checkpoint'
+      type: MetaData
     - pos: -60.5,11.5
       parent: 2
       type: Transform
   - uid: 5176
     components:
+    - name: '[Evacuation] Security Checkpoint'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -58.5,-2.5
       parent: 2
       type: Transform
   - uid: 5177
     components:
+    - name: '[Cargo] Intake'
+      type: MetaData
     - pos: -52.5,-2.5
       parent: 2
       type: Transform
   - uid: 5178
     components:
+    - name: "[Cargo] Quartermaster's Office"
+      type: MetaData
     - pos: -51.5,-9.5
       parent: 2
       type: Transform
   - uid: 5179
     components:
+    - name: '[Cargo] Salvage'
+      type: MetaData
     - rot: 1.5707963267948966 rad
       pos: -57.5,-17.5
       parent: 2
       type: Transform
   - uid: 5212
     components:
+    - name: '[Evacuation] Main Power'
+      type: MetaData
     - pos: -63.5,12.5
       parent: 2
       type: Transform
   - uid: 5257
     components:
+    - name: '[Medical] Upper Hallway'
+      type: MetaData
     - pos: -33.5,22.5
       parent: 2
       type: Transform
   - uid: 5258
     components:
+    - name: '[Medical] Chemistry'
+      type: MetaData
     - pos: -36.5,10.5
       parent: 2
       type: Transform
   - uid: 5260
     components:
+    - name: '[Medical] Operating Room'
+      type: MetaData
     - pos: -44.5,20.5
       parent: 2
       type: Transform
@@ -11715,172 +11007,256 @@ entities:
       type: Apc
   - uid: 5308
     components:
+    - name: '[Engineering] Lobby'
+      type: MetaData
     - pos: -8.5,-24.5
       parent: 2
       type: Transform
   - uid: 5309
     components:
+    - name: "[Engineering] CE's Office"
+      type: MetaData
     - pos: -14.5,-16.5
       parent: 2
       type: Transform
   - uid: 5310
     components:
+    - name: '[Engineering] Locker Room'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -24.5,-20.5
       parent: 2
       type: Transform
   - uid: 5397
     components:
+    - name: '[Science] Xenoarch'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -32.5,-12.5
       parent: 2
       type: Transform
   - uid: 5404
     components:
+    - name: '[Science] Lobby'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -21.5,-3.5
       parent: 2
       type: Transform
   - uid: 5405
     components:
+    - name: '[Science] Robotics'
+      type: MetaData
     - rot: 1.5707963267948966 rad
       pos: -31.5,-1.5
       parent: 2
       type: Transform
   - uid: 5407
     components:
+    - name: '[Science] Break Room'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -34.5,-3.5
       parent: 2
       type: Transform
   - uid: 5479
     components:
+    - name: '[Service] Library'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 6.5,-7.5
       parent: 2
       type: Transform
   - uid: 5526
     components:
+    - name: '[Service] Disposals'
+      type: MetaData
     - pos: 18.5,-24.5
       parent: 2
       type: Transform
   - uid: 5540
     components:
+    - name: "[Service] Chaplin's Office"
+      type: MetaData
     - pos: 34.5,-19.5
       parent: 2
       type: Transform
   - uid: 5542
     components:
+    - name: '[Service] Theatre'
+      type: MetaData
     - pos: 15.5,10.5
       parent: 2
       type: Transform
   - uid: 6095
     components:
+    - name: '[Medical] Mourge'
+      type: MetaData
     - pos: -42.5,15.5
       parent: 2
       type: Transform
   - uid: 6156
     components:
+    - name: '[Medical] Lower Hallway'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -30.5,9.5
       parent: 2
       type: Transform
   - uid: 7299
     components:
+    - name: '[Engineering] Lower Atmospherics'
+      type: MetaData
     - pos: -21.5,-34.5
       parent: 2
       type: Transform
   - uid: 7658
     components:
+    - name: '[Service] Maintenence Bar'
+      type: MetaData
     - pos: -6.5,-8.5
       parent: 2
       type: Transform
   - uid: 7754
     components:
+    - name: "[Medical] CMO's Office"
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -45.5,27.5
       parent: 2
       type: Transform
   - uid: 7756
     components:
+    - name: '[Medical] Shuttle Hallway'
+      type: MetaData
     - pos: -36.5,30.5
       parent: 2
       type: Transform
   - uid: 7826
     components:
+    - name: '[Medical] Equipment Room'
+      type: MetaData
     - pos: -42.5,33.5
       parent: 2
       type: Transform
   - uid: 7827
     components:
+    - name: '[Medical] Paramedic Room'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: -33.5,29.5
       parent: 2
       type: Transform
   - uid: 7828
     components:
+    - name: '[Medical] Virology Cell'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -30.5,28.5
       parent: 2
       type: Transform
   - uid: 8775
     components:
+    - name: '[Engineering] Techvault'
+      type: MetaData
     - pos: 27.5,12.5
       parent: 2
       type: Transform
   - uid: 9177
     components:
+    - name: '[Medical] Psychology'
+      type: MetaData
     - pos: -44.5,9.5
       parent: 2
       type: Transform
   - uid: 9366
     components:
+    - name: '[South West] Science Front'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -12.5,-3.5
       parent: 2
       type: Transform
   - uid: 9376
     components:
+    - name: '[South] Lower Hallway'
+      type: MetaData
     - pos: -40.5,-12.5
       parent: 2
       type: Transform
   - uid: 9435
     components:
+    - name: '[South West] Arcade Hallway'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: -42.5,-2.5
       parent: 2
       type: Transform
   - uid: 9461
     components:
+    - name: '[North East] Techvault Hallway'
+      type: MetaData
     - rot: 1.5707963267948966 rad
       pos: 21.5,10.5
       parent: 2
       type: Transform
   - uid: 9496
     components:
+    - name: '[East] Theater Hallway'
+      type: MetaData
     - pos: 20.5,5.5
       parent: 2
       type: Transform
   - uid: 11858
     components:
+    - name: '[North] Command Hallway'
+      type: MetaData
     - rot: 3.141592653589793 rad
       pos: 7.5,15.5
       parent: 2
       type: Transform
   - uid: 12267
     components:
+    - name: '[South West] Security Hallway'
+      type: MetaData
     - pos: -15.5,5.5
       parent: 2
       type: Transform
   - uid: 12347
     components:
+    - name: '[West] Cargo Hallway'
+      type: MetaData
     - pos: -53.5,5.5
       parent: 2
       type: Transform
   - uid: 12379
     components:
+    - name: '[Central] Primary Hallway'
+      type: MetaData
     - rot: -1.5707963267948966 rad
       pos: 14.5,1.5
+      parent: 2
+      type: Transform
+- proto: ArrivalsShuttleTimer
+  entities:
+  - uid: 12746
+    components:
+    - pos: 18.5,33.5
+      parent: 2
+      type: Transform
+  - uid: 12747
+    components:
+    - pos: 24.5,33.5
+      parent: 2
+      type: Transform
+  - uid: 12748
+    components:
+    - pos: 47.5,-10.5
+      parent: 2
+      type: Transform
+  - uid: 12749
+    components:
+    - pos: 47.5,-1.5
       parent: 2
       type: Transform
 - proto: ArtifactAnalyzerMachineCircuitboard
@@ -12456,6 +11832,13 @@ entities:
     - pos: 0.46908394,-0.57070374
       parent: 2
       type: Transform
+- proto: BooksBag
+  entities:
+  - uid: 12745
+    components:
+    - pos: 4.505878,-6.6049967
+      parent: 2
+      type: Transform
 - proto: BookSecurity
   entities:
   - uid: 1155
@@ -12513,11 +11896,6 @@ entities:
   - uid: 3443
     components:
     - pos: 3.5,-8.5
-      parent: 2
-      type: Transform
-  - uid: 5991
-    components:
-    - pos: 0.5,-7.5
       parent: 2
       type: Transform
   - uid: 8500
@@ -14081,11 +13459,6 @@ entities:
   - uid: 1827
     components:
     - pos: -9.5,20.5
-      parent: 2
-      type: Transform
-  - uid: 1828
-    components:
-    - pos: -9.5,19.5
       parent: 2
       type: Transform
   - uid: 1829
@@ -18678,6 +18051,11 @@ entities:
     - pos: 4.5,17.5
       parent: 2
       type: Transform
+  - uid: 7815
+    components:
+    - pos: -43.5,25.5
+      parent: 2
+      type: Transform
   - uid: 7860
     components:
     - pos: -45.5,27.5
@@ -18855,17 +18233,17 @@ entities:
       type: Transform
   - uid: 7907
     components:
-    - pos: -44.5,27.5
+    - pos: -43.5,26.5
       parent: 2
       type: Transform
   - uid: 7908
     components:
-    - pos: -44.5,26.5
+    - pos: -43.5,27.5
       parent: 2
       type: Transform
   - uid: 7909
     components:
-    - pos: -44.5,25.5
+    - pos: -8.5,20.5
       parent: 2
       type: Transform
   - uid: 7910
@@ -19726,6 +19104,11 @@ entities:
   - uid: 10836
     components:
     - pos: -6.5,-8.5
+      parent: 2
+      type: Transform
+  - uid: 10904
+    components:
+    - pos: 17.5,-4.5
       parent: 2
       type: Transform
   - uid: 11652
@@ -22236,6 +21619,91 @@ entities:
   - uid: 12677
     components:
     - pos: -68.5,10.5
+      parent: 2
+      type: Transform
+  - uid: 12739
+    components:
+    - pos: 18.5,-4.5
+      parent: 2
+      type: Transform
+  - uid: 12753
+    components:
+    - pos: -20.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12754
+    components:
+    - pos: -21.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12756
+    components:
+    - pos: -19.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12757
+    components:
+    - pos: -18.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12794
+    components:
+    - pos: -6.5,-28.5
+      parent: 2
+      type: Transform
+  - uid: 12795
+    components:
+    - pos: -6.5,-29.5
+      parent: 2
+      type: Transform
+  - uid: 12796
+    components:
+    - pos: -5.5,-29.5
+      parent: 2
+      type: Transform
+  - uid: 12797
+    components:
+    - pos: -4.5,-29.5
+      parent: 2
+      type: Transform
+  - uid: 12798
+    components:
+    - pos: -3.5,-29.5
+      parent: 2
+      type: Transform
+  - uid: 12799
+    components:
+    - pos: -2.5,-29.5
+      parent: 2
+      type: Transform
+  - uid: 12800
+    components:
+    - pos: -2.5,-30.5
+      parent: 2
+      type: Transform
+  - uid: 12802
+    components:
+    - pos: -1.5,-30.5
+      parent: 2
+      type: Transform
+  - uid: 12803
+    components:
+    - pos: -0.5,-30.5
+      parent: 2
+      type: Transform
+  - uid: 12804
+    components:
+    - pos: 0.5,-30.5
+      parent: 2
+      type: Transform
+  - uid: 12805
+    components:
+    - pos: 0.5,-31.5
+      parent: 2
+      type: Transform
+  - uid: 12806
+    components:
+    - pos: 0.5,-32.5
       parent: 2
       type: Transform
 - proto: CableHV
@@ -24813,6 +24281,26 @@ entities:
   - uid: 11525
     components:
     - pos: 22.5,-1.5
+      parent: 2
+      type: Transform
+  - uid: 12801
+    components:
+    - pos: -0.5,-32.5
+      parent: 2
+      type: Transform
+  - uid: 12807
+    components:
+    - pos: -1.5,-32.5
+      parent: 2
+      type: Transform
+  - uid: 12808
+    components:
+    - pos: -2.5,-32.5
+      parent: 2
+      type: Transform
+  - uid: 12809
+    components:
+    - pos: -3.5,-32.5
       parent: 2
       type: Transform
 - proto: CableMV
@@ -29402,6 +28890,56 @@ entities:
     - pos: 14.5,28.5
       parent: 2
       type: Transform
+  - uid: 12761
+    components:
+    - pos: -4.5,-11.5
+      parent: 2
+      type: Transform
+  - uid: 12762
+    components:
+    - pos: -4.5,-10.5
+      parent: 2
+      type: Transform
+  - uid: 12763
+    components:
+    - pos: -4.5,-9.5
+      parent: 2
+      type: Transform
+  - uid: 12764
+    components:
+    - pos: -4.5,-8.5
+      parent: 2
+      type: Transform
+  - uid: 12765
+    components:
+    - pos: -4.5,-7.5
+      parent: 2
+      type: Transform
+  - uid: 12766
+    components:
+    - pos: -4.5,-6.5
+      parent: 2
+      type: Transform
+  - uid: 12767
+    components:
+    - pos: -4.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12768
+    components:
+    - pos: -5.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12769
+    components:
+    - pos: -6.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12770
+    components:
+    - pos: -7.5,-5.5
+      parent: 2
+      type: Transform
 - proto: CableTerminal
   entities:
   - uid: 3140
@@ -29461,6 +28999,8 @@ entities:
     - pos: -13.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: CarpetBlack
   entities:
   - uid: 10478
@@ -31354,6 +30894,11 @@ entities:
       pos: -28.5,-24.5
       parent: 2
       type: Transform
+  - uid: 12810
+    components:
+    - pos: -8.5,14.5
+      parent: 2
+      type: Transform
 - proto: ChairWood
   entities:
   - uid: 393
@@ -32131,6 +31676,34 @@ entities:
     - pos: 21.5,-2.5
       parent: 2
       type: Transform
+- proto: ClosetWallEmergencyFilledRandom
+  entities:
+  - uid: 12781
+    components:
+    - pos: 23.5,-25.5
+      parent: 2
+      type: Transform
+  - uid: 12784
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -1.5,-14.5
+      parent: 2
+      type: Transform
+- proto: ClosetWallFireFilledRandom
+  entities:
+  - uid: 12785
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -2.5,-14.5
+      parent: 2
+      type: Transform
+- proto: ClosetWallMaintenanceFilledRandom
+  entities:
+  - uid: 12775
+    components:
+    - pos: 17.5,-25.5
+      parent: 2
+      type: Transform
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 9220
@@ -32352,6 +31925,11 @@ entities:
       pos: -19.5,21.5
       parent: 2
       type: Transform
+  - uid: 1400
+    components:
+    - pos: 0.5,0.5
+      parent: 2
+      type: Transform
   - uid: 2109
     components:
     - rot: 3.141592653589793 rad
@@ -32564,12 +32142,6 @@ entities:
   - uid: 2753
     components:
     - pos: 23.5,32.5
-      parent: 2
-      type: Transform
-  - uid: 3445
-    components:
-    - rot: 3.141592653589793 rad
-      pos: 2.5,-8.5
       parent: 2
       type: Transform
   - uid: 3550
@@ -33147,6 +32719,18 @@ entities:
     - pos: -11.5,-9.5
       parent: 2
       type: Transform
+- proto: CrateArtifactContainer
+  entities:
+  - uid: 9763
+    components:
+    - pos: -28.5,-11.5
+      parent: 2
+      type: Transform
+  - uid: 9767
+    components:
+    - pos: -33.5,-7.5
+      parent: 2
+      type: Transform
 - proto: CrateCoffin
   entities:
   - uid: 2360
@@ -33419,6 +33003,8 @@ entities:
     - pos: -37.5,16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: CrystalSpawner
   entities:
   - uid: 3284
@@ -33539,7 +33125,7 @@ entities:
     - pos: -8.5,19.5
       parent: 2
       type: Transform
-  - uid: 1150
+  - uid: 1828
     components:
     - pos: -9.5,19.5
       parent: 2
@@ -33554,6 +33140,13 @@ entities:
   - uid: 649
     components:
     - pos: 38.549805,-1.0203607
+      parent: 2
+      type: Transform
+- proto: DiceBag
+  entities:
+  - uid: 12744
+    components:
+    - pos: 3.3704612,-6.00083
       parent: 2
       type: Transform
 - proto: DisposalBend
@@ -33574,6 +33167,18 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: 18.5,29.5
+      parent: 2
+      type: Transform
+  - uid: 3042
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 2.5,-6.5
+      parent: 2
+      type: Transform
+  - uid: 3685
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 2.5,-2.5
       parent: 2
       type: Transform
   - uid: 3739
@@ -33608,6 +33213,12 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: 23.5,-26.5
+      parent: 2
+      type: Transform
+  - uid: 4771
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 0.5,-6.5
       parent: 2
       type: Transform
   - uid: 4783
@@ -33782,17 +33393,6 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: 2.5,-11.5
-      parent: 2
-      type: Transform
-  - uid: 9761
-    components:
-    - rot: 3.141592653589793 rad
-      pos: 3.5,-2.5
-      parent: 2
-      type: Transform
-  - uid: 9762
-    components:
-    - pos: 3.5,0.5
       parent: 2
       type: Transform
   - uid: 9779
@@ -34212,6 +33812,12 @@ entities:
     components:
     - rot: -1.5707963267948966 rad
       pos: 37.5,-24.5
+      parent: 2
+      type: Transform
+  - uid: 3445
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 1.5,-6.5
       parent: 2
       type: Transform
   - uid: 3736
@@ -34986,6 +34592,11 @@ entities:
       pos: 18.5,28.5
       parent: 2
       type: Transform
+  - uid: 8824
+    components:
+    - pos: 2.5,-5.5
+      parent: 2
+      type: Transform
   - uid: 8825
     components:
     - rot: 1.5707963267948966 rad
@@ -35705,42 +35316,6 @@ entities:
     components:
     - rot: 3.141592653589793 rad
       pos: 10.5,-10.5
-      parent: 2
-      type: Transform
-  - uid: 9763
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 1.5,0.5
-      parent: 2
-      type: Transform
-  - uid: 9764
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 2.5,0.5
-      parent: 2
-      type: Transform
-  - uid: 9765
-    components:
-    - rot: 3.141592653589793 rad
-      pos: 3.5,-0.5
-      parent: 2
-      type: Transform
-  - uid: 9766
-    components:
-    - rot: 3.141592653589793 rad
-      pos: 3.5,-1.5
-      parent: 2
-      type: Transform
-  - uid: 9767
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 4.5,-2.5
-      parent: 2
-      type: Transform
-  - uid: 9768
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 5.5,-2.5
       parent: 2
       type: Transform
   - uid: 9769
@@ -36860,6 +36435,34 @@ entities:
       pos: -8.5,8.5
       parent: 2
       type: Transform
+  - uid: 12776
+    components:
+    - pos: 2.5,-4.5
+      parent: 2
+      type: Transform
+  - uid: 12777
+    components:
+    - pos: 2.5,-3.5
+      parent: 2
+      type: Transform
+  - uid: 12778
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 3.5,-2.5
+      parent: 2
+      type: Transform
+  - uid: 12779
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 4.5,-2.5
+      parent: 2
+      type: Transform
+  - uid: 12780
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: 5.5,-2.5
+      parent: 2
+      type: Transform
 - proto: DisposalPipeBroken
   entities:
   - uid: 9913
@@ -37049,12 +36652,6 @@ entities:
       pos: 12.5,-16.5
       parent: 2
       type: Transform
-  - uid: 9760
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 0.5,0.5
-      parent: 2
-      type: Transform
   - uid: 9918
     components:
     - pos: -34.5,-17.5
@@ -37106,11 +36703,22 @@ entities:
       pos: 20.5,1.5
       parent: 2
       type: Transform
+  - uid: 12774
+    components:
+    - rot: 3.141592653589793 rad
+      pos: 0.5,-7.5
+      parent: 2
+      type: Transform
 - proto: DisposalUnit
   entities:
   - uid: 101
     components:
     - pos: 20.5,1.5
+      parent: 2
+      type: Transform
+  - uid: 245
+    components:
+    - pos: 0.5,-7.5
       parent: 2
       type: Transform
   - uid: 426
@@ -37171,11 +36779,6 @@ entities:
   - uid: 3859
     components:
     - pos: -23.5,-30.5
-      parent: 2
-      type: Transform
-  - uid: 4771
-    components:
-    - pos: 0.5,0.5
       parent: 2
       type: Transform
   - uid: 4797
@@ -37360,7 +36963,7 @@ entities:
       type: Transform
   - uid: 11564
     components:
-    - pos: 17.426823,-3.5943956
+    - pos: 17.381138,-3.4452395
       parent: 2
       type: Transform
 - proto: DrinkShotGlass
@@ -38376,6 +37979,9 @@ entities:
     - pos: -10.5,44.5
       parent: 2
       type: Transform
+    - destinationAddress: Perma
+      name: Perma
+      type: FaxMachine
   - uid: 2111
     components:
     - pos: 14.5,33.5
@@ -38530,14 +38136,6 @@ entities:
       pos: 20.5,23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8505
-      - 8506
-      - 8499
-      - 8502
-      - 8501
-      - 8498
-      type: DeviceNetwork
     - devices:
       - 8505
       - 8506
@@ -38546,30 +38144,13 @@ entities:
       - 8501
       - 8498
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9074
     components:
     - pos: -47.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8449
-      - 8450
-      - 8451
-      - 9075
-      - 9026
-      - 9076
-      - 9037
-      - 9036
-      - 9035
-      - 9034
-      - 9032
-      - 9031
-      - 9029
-      - 9030
-      - 9028
-      - 9027
-      - 9033
-      type: DeviceNetwork
     - devices:
       - 8449
       - 8450
@@ -38589,33 +38170,14 @@ entities:
       - 9027
       - 9033
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 9689
     components:
     - rot: -1.5707963267948966 rad
       pos: 14.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 3177
-      - 2986
-      - 61
-      - 9780
-      - 9670
-      - 9671
-      - 9781
-      - 8182
-      - 8196
-      - 9678
-      - 9679
-      - 9680
-      - 9681
-      - 9682
-      - 9687
-      - 9684
-      - 9685
-      - 9686
-      - 9683
-      type: DeviceNetwork
     - devices:
       - 3177
       - 2986
@@ -38637,6 +38199,8 @@ entities:
       - 9686
       - 9683
       type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: FireAxeCabinetFilled
   entities:
   - uid: 2758
@@ -38657,136 +38221,84 @@ entities:
     - pos: 14.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      - 8507
-      type: DeviceNetwork
   - uid: 8498
     components:
     - rot: 3.141592653589793 rad
       pos: 18.5,26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      - 8519
-      type: DeviceNetwork
   - uid: 8499
     components:
     - rot: 3.141592653589793 rad
       pos: 19.5,26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      - 8519
-      type: DeviceNetwork
   - uid: 8512
     components:
     - rot: -1.5707963267948966 rad
       pos: 9.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      - 9005
-      type: DeviceNetwork
   - uid: 8844
     components:
     - pos: -24.5,-37.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
   - uid: 8898
     components:
     - pos: -36.5,-21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      type: DeviceNetwork
   - uid: 9016
     components:
     - rot: 3.141592653589793 rad
       pos: 3.5,29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 9026
     components:
     - rot: 1.5707963267948966 rad
       pos: -50.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      type: DeviceNetwork
   - uid: 9207
     components:
     - rot: 1.5707963267948966 rad
       pos: -48.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      type: DeviceNetwork
   - uid: 9208
     components:
     - rot: 1.5707963267948966 rad
       pos: -46.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      - 9212
-      type: DeviceNetwork
   - uid: 9209
     components:
     - rot: 1.5707963267948966 rad
       pos: -41.5,12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      type: DeviceNetwork
   - uid: 9236
     components:
     - pos: -49.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9232
-      type: DeviceNetwork
   - uid: 9237
     components:
     - pos: -43.5,16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9232
-      - 9657
-      type: DeviceNetwork
   - uid: 9254
     components:
     - pos: -28.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9266
-      type: DeviceNetwork
   - uid: 9255
     components:
     - pos: -30.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9262
-      type: DeviceNetwork
   - uid: 9261
     components:
     - rot: 3.141592653589793 rad
@@ -38799,86 +38311,56 @@ entities:
       pos: -17.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      type: DeviceNetwork
   - uid: 9280
     components:
     - pos: -20.5,-30.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9281
-      type: DeviceNetwork
   - uid: 9289
     components:
     - rot: -1.5707963267948966 rad
       pos: -5.5,-26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9318
     components:
     - pos: -41.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
   - uid: 9319
     components:
     - pos: -39.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
   - uid: 9320
     components:
     - pos: -4.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
   - uid: 9362
     components:
     - rot: 1.5707963267948966 rad
       pos: -12.5,-5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      type: DeviceNetwork
   - uid: 9460
     components:
     - rot: -1.5707963267948966 rad
       pos: 25.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      type: DeviceNetwork
   - uid: 9491
     components:
     - rot: 3.141592653589793 rad
       pos: 18.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9492
     components:
     - rot: 3.141592653589793 rad
       pos: 36.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9529
     components:
     - pos: 38.5,-8.5
@@ -38890,49 +38372,31 @@ entities:
       pos: -32.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
   - uid: 9566
     components:
     - pos: -24.5,6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9586
     components:
     - pos: -1.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
   - uid: 9587
     components:
     - pos: 6.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
   - uid: 9600
     components:
     - pos: 9.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      type: DeviceNetwork
   - uid: 9669
     components:
     - pos: -1.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      type: DeviceNetwork
   - uid: 9675
     components:
     - pos: 14.5,-2.5
@@ -38944,55 +38408,35 @@ entities:
       pos: 22.5,-8.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9687
     components:
     - rot: -1.5707963267948966 rad
       pos: 24.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9808
     components:
     - rot: -1.5707963267948966 rad
       pos: -10.5,28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9827
     components:
     - rot: 1.5707963267948966 rad
       pos: -20.5,12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9828
     components:
     - rot: 1.5707963267948966 rad
       pos: -20.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 10949
     components:
     - pos: -26.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9637
-      type: DeviceNetwork
 - proto: FirelockEdge
   entities:
   - uid: 3261
@@ -39001,9 +38445,6 @@ entities:
       pos: 39.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
 - proto: FirelockGlass
   entities:
   - uid: 61
@@ -39011,583 +38452,340 @@ entities:
     - pos: 11.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 2986
     components:
     - pos: 10.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 3177
     components:
     - pos: 9.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 3262
     components:
     - rot: -1.5707963267948966 rad
       pos: 43.5,-18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
   - uid: 3263
     components:
     - rot: -1.5707963267948966 rad
       pos: 44.5,-18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
   - uid: 6905
     components:
     - rot: 3.141592653589793 rad
       pos: 5.5,27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 8182
     components:
     - rot: -1.5707963267948966 rad
       pos: 8.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      - 9788
-      type: DeviceNetwork
   - uid: 8196
     components:
     - rot: -1.5707963267948966 rad
       pos: 8.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      - 9788
-      type: DeviceNetwork
   - uid: 8449
     components:
     - rot: 3.141592653589793 rad
       pos: -56.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 9074
-      - 9073
-      type: DeviceNetwork
   - uid: 8450
     components:
     - rot: 3.141592653589793 rad
       pos: -56.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 9074
-      - 9073
-      type: DeviceNetwork
   - uid: 8451
     components:
     - rot: 3.141592653589793 rad
       pos: -56.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 9074
-      - 9073
-      type: DeviceNetwork
   - uid: 8452
     components:
     - rot: 3.141592653589793 rad
       pos: -59.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 8457
-      type: DeviceNetwork
   - uid: 8453
     components:
     - rot: 3.141592653589793 rad
       pos: -60.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 8457
-      type: DeviceNetwork
   - uid: 8454
     components:
     - rot: 3.141592653589793 rad
       pos: -61.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 8459
-      type: DeviceNetwork
   - uid: 8455
     components:
     - rot: 3.141592653589793 rad
       pos: -60.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 8459
-      type: DeviceNetwork
   - uid: 8456
     components:
     - rot: 3.141592653589793 rad
       pos: -57.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      - 8457
-      type: DeviceNetwork
   - uid: 8492
     components:
     - pos: 16.5,27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      type: DeviceNetwork
   - uid: 8493
     components:
     - pos: 16.5,28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      type: DeviceNetwork
   - uid: 8501
     components:
     - rot: 3.141592653589793 rad
       pos: 18.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      - 8519
-      - 9005
-      type: DeviceNetwork
   - uid: 8502
     components:
     - rot: 3.141592653589793 rad
       pos: 19.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      - 8519
-      - 9005
-      type: DeviceNetwork
   - uid: 8503
     components:
     - rot: 3.141592653589793 rad
       pos: 20.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8504
-      type: DeviceNetwork
   - uid: 8510
     components:
     - rot: -1.5707963267948966 rad
       pos: 8.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      - 8516
-      type: DeviceNetwork
   - uid: 8511
     components:
     - rot: -1.5707963267948966 rad
       pos: 10.5,23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
   - uid: 8513
     components:
     - rot: -1.5707963267948966 rad
       pos: 14.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      - 9005
-      type: DeviceNetwork
   - uid: 8517
     components:
     - pos: 25.5,16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 8518
     components:
     - pos: 25.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
   - uid: 8839
     components:
     - pos: -25.5,-29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      - 8891
-      type: DeviceNetwork
   - uid: 8840
     components:
     - pos: -24.5,-29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      - 8891
-      type: DeviceNetwork
   - uid: 8841
     components:
     - pos: -22.5,-35.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
   - uid: 8842
     components:
     - pos: -22.5,-36.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
   - uid: 8843
     components:
     - pos: -26.5,-32.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
   - uid: 8893
     components:
     - pos: -25.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8891
-      - 8895
-      type: DeviceNetwork
   - uid: 8894
     components:
     - pos: -24.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8891
-      - 8895
-      type: DeviceNetwork
   - uid: 8899
     components:
     - pos: -33.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      type: DeviceNetwork
   - uid: 8900
     components:
     - pos: -21.5,-23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      - 9277
-      type: DeviceNetwork
   - uid: 8901
     components:
     - pos: -21.5,-22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      - 9277
-      type: DeviceNetwork
   - uid: 8902
     components:
     - pos: -23.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      - 8903
-      type: DeviceNetwork
   - uid: 9009
     components:
     - rot: 3.141592653589793 rad
       pos: 22.5,14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      - 9477
-      type: DeviceNetwork
   - uid: 9010
     components:
     - rot: 3.141592653589793 rad
       pos: 23.5,14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      - 9477
-      type: DeviceNetwork
   - uid: 9011
     components:
     - rot: 3.141592653589793 rad
       pos: 24.5,14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      - 9477
-      type: DeviceNetwork
   - uid: 9012
     components:
     - rot: 3.141592653589793 rad
       pos: 5.5,14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      - 9588
-      type: DeviceNetwork
   - uid: 9013
     components:
     - rot: 3.141592653589793 rad
       pos: 4.5,14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      - 9588
-      type: DeviceNetwork
   - uid: 9014
     components:
     - rot: 3.141592653589793 rad
       pos: 3.5,14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      - 9588
-      type: DeviceNetwork
   - uid: 9027
     components:
     - rot: 1.5707963267948966 rad
       pos: -51.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9081
-      type: DeviceNetwork
   - uid: 9028
     components:
     - rot: 1.5707963267948966 rad
       pos: -50.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9081
-      type: DeviceNetwork
   - uid: 9029
     components:
     - rot: 1.5707963267948966 rad
       pos: -48.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9081
-      type: DeviceNetwork
   - uid: 9030
     components:
     - rot: 1.5707963267948966 rad
       pos: -47.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9081
-      type: DeviceNetwork
   - uid: 9031
     components:
     - rot: 1.5707963267948966 rad
       pos: -45.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9434
-      type: DeviceNetwork
   - uid: 9032
     components:
     - rot: 1.5707963267948966 rad
       pos: -44.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9434
-      type: DeviceNetwork
   - uid: 9033
     components:
     - rot: 1.5707963267948966 rad
       pos: -43.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9073
-      - 9074
-      - 9434
-      type: DeviceNetwork
   - uid: 9034
     components:
     - rot: 1.5707963267948966 rad
       pos: -42.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9548
-      type: DeviceNetwork
   - uid: 9035
     components:
     - rot: 1.5707963267948966 rad
       pos: -42.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9548
-      type: DeviceNetwork
   - uid: 9036
     components:
     - rot: 1.5707963267948966 rad
       pos: -42.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9548
-      type: DeviceNetwork
   - uid: 9037
     components:
     - rot: 1.5707963267948966 rad
       pos: -43.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9074
-      - 9073
-      - 9212
-      type: DeviceNetwork
   - uid: 9082
     components:
     - pos: -49.5,-17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9080
-      type: DeviceNetwork
   - uid: 9083
     components:
     - pos: -56.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9080
-      - 9081
-      type: DeviceNetwork
   - uid: 9084
     components:
     - pos: -50.5,-9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9081
-      type: DeviceNetwork
   - uid: 9248
     components:
     - rot: -1.5707963267948966 rad
       pos: -34.5,-9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9247
-      type: DeviceNetwork
   - uid: 9249
     components:
     - rot: -1.5707963267948966 rad
       pos: -32.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9247
-      type: DeviceNetwork
   - uid: 9250
     components:
     - rot: -1.5707963267948966 rad
       pos: -34.5,-4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9251
-      type: DeviceNetwork
   - uid: 9256
     components:
     - pos: -20.5,-7.5
@@ -39598,420 +38796,257 @@ entities:
     - pos: -22.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9263
-      type: DeviceNetwork
   - uid: 9258
     components:
     - pos: -18.5,-4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      type: DeviceNetwork
   - uid: 9264
     components:
     - pos: -20.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9263
-      - 6801
-      type: DeviceNetwork
   - uid: 9265
     components:
     - pos: -20.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9263
-      - 6801
-      type: DeviceNetwork
   - uid: 9267
     components:
     - rot: -1.5707963267948966 rad
       pos: -16.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      - 9363
-      type: DeviceNetwork
   - uid: 9268
     components:
     - rot: -1.5707963267948966 rad
       pos: -16.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      - 9363
-      type: DeviceNetwork
   - uid: 9269
     components:
     - rot: -1.5707963267948966 rad
       pos: -16.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      - 9363
-      type: DeviceNetwork
   - uid: 9273
     components:
     - rot: 1.5707963267948966 rad
       pos: -19.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      - 9281
-      type: DeviceNetwork
   - uid: 9274
     components:
     - rot: 1.5707963267948966 rad
       pos: -14.5,-23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      - 9282
-      type: DeviceNetwork
   - uid: 9275
     components:
     - rot: 1.5707963267948966 rad
       pos: -14.5,-22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      - 9282
-      type: DeviceNetwork
   - uid: 9285
     components:
     - rot: -1.5707963267948966 rad
       pos: -11.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      - 9298
-      type: DeviceNetwork
   - uid: 9286
     components:
     - rot: -1.5707963267948966 rad
       pos: -10.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      - 9298
-      type: DeviceNetwork
   - uid: 9287
     components:
     - rot: -1.5707963267948966 rad
       pos: -7.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9288
     components:
     - rot: -1.5707963267948966 rad
       pos: -6.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9290
     components:
     - rot: -1.5707963267948966 rad
       pos: -6.5,-28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9291
     components:
     - rot: -1.5707963267948966 rad
       pos: -7.5,-28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
   - uid: 9292
     components:
     - rot: -1.5707963267948966 rad
       pos: -10.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      - 8888
-      type: DeviceNetwork
   - uid: 9293
     components:
     - rot: -1.5707963267948966 rad
       pos: -9.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      - 8888
-      type: DeviceNetwork
   - uid: 9294
     components:
     - rot: -1.5707963267948966 rad
       pos: -8.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      - 8888
-      type: DeviceNetwork
   - uid: 9295
     components:
     - rot: -1.5707963267948966 rad
       pos: -7.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      type: DeviceNetwork
   - uid: 9296
     components:
     - rot: -1.5707963267948966 rad
       pos: -6.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      type: DeviceNetwork
   - uid: 9315
     components:
     - pos: -45.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      - 9434
-      type: DeviceNetwork
   - uid: 9316
     components:
     - pos: -44.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      - 9434
-      type: DeviceNetwork
   - uid: 9317
     components:
     - pos: -43.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      - 9434
-      type: DeviceNetwork
   - uid: 9321
     components:
     - pos: -15.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      - 9363
-      type: DeviceNetwork
   - uid: 9322
     components:
     - pos: -14.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      - 9363
-      type: DeviceNetwork
   - uid: 9323
     components:
     - pos: -13.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      - 9363
-      type: DeviceNetwork
   - uid: 9359
     components:
     - rot: 1.5707963267948966 rad
       pos: -15.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      - 9576
-      type: DeviceNetwork
   - uid: 9360
     components:
     - rot: 1.5707963267948966 rad
       pos: -14.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      - 9576
-      type: DeviceNetwork
   - uid: 9361
     components:
     - rot: 1.5707963267948966 rad
       pos: -13.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      - 9576
-      type: DeviceNetwork
   - uid: 9457
     components:
     - rot: -1.5707963267948966 rad
       pos: 22.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      - 9524
-      type: DeviceNetwork
   - uid: 9458
     components:
     - rot: -1.5707963267948966 rad
       pos: 23.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      - 9524
-      type: DeviceNetwork
   - uid: 9459
     components:
     - rot: -1.5707963267948966 rad
       pos: 24.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      - 9524
-      type: DeviceNetwork
   - uid: 9486
     components:
     - rot: 3.141592653589793 rad
       pos: 14.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      - 9599
-      type: DeviceNetwork
   - uid: 9487
     components:
     - rot: 3.141592653589793 rad
       pos: 14.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      - 9599
-      type: DeviceNetwork
   - uid: 9488
     components:
     - rot: 3.141592653589793 rad
       pos: 14.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      - 9599
-      type: DeviceNetwork
   - uid: 9489
     components:
     - rot: 3.141592653589793 rad
       pos: 15.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9490
     components:
     - rot: 3.141592653589793 rad
       pos: 16.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9493
     components:
     - rot: 3.141592653589793 rad
       pos: 38.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9494
     components:
     - rot: 3.141592653589793 rad
       pos: 38.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9495
     components:
     - rot: 3.141592653589793 rad
       pos: 38.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9525
     components:
     - pos: 36.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
   - uid: 9526
     components:
     - pos: 38.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
   - uid: 9527
     components:
     - pos: 38.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
   - uid: 9528
     components:
     - pos: 38.5,-10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
   - uid: 9530
     components:
     - pos: 38.5,-1.5
@@ -40028,340 +39063,207 @@ entities:
       pos: -26.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9576
-      type: DeviceNetwork
   - uid: 9540
     components:
     - rot: -1.5707963267948966 rad
       pos: -26.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9576
-      type: DeviceNetwork
   - uid: 9541
     components:
     - rot: -1.5707963267948966 rad
       pos: -26.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9576
-      type: DeviceNetwork
   - uid: 9542
     components:
     - rot: -1.5707963267948966 rad
       pos: -30.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9621
-      type: DeviceNetwork
   - uid: 9543
     components:
     - rot: -1.5707963267948966 rad
       pos: -31.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9621
-      type: DeviceNetwork
   - uid: 9544
     components:
     - rot: -1.5707963267948966 rad
       pos: -32.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9621
-      type: DeviceNetwork
   - uid: 9545
     components:
     - rot: -1.5707963267948966 rad
       pos: -38.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9613
-      type: DeviceNetwork
   - uid: 9546
     components:
     - rot: -1.5707963267948966 rad
       pos: -37.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      - 9613
-      type: DeviceNetwork
   - uid: 9556
     components:
     - pos: -3.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      - 9588
-      type: DeviceNetwork
   - uid: 9557
     components:
     - pos: -3.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      - 9588
-      type: DeviceNetwork
   - uid: 9558
     components:
     - pos: -3.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      - 9588
-      type: DeviceNetwork
   - uid: 9559
     components:
     - pos: -10.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9560
     components:
     - pos: -9.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9561
     components:
     - pos: -10.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9562
     components:
     - pos: -8.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9563
     components:
     - pos: -12.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9564
     components:
     - pos: -13.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9565
     components:
     - pos: -17.5,5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
   - uid: 9581
     components:
     - pos: 2.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      - 9672
-      type: DeviceNetwork
   - uid: 9582
     components:
     - pos: 3.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      - 9672
-      type: DeviceNetwork
   - uid: 9583
     components:
     - pos: 6.5,2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      - 9599
-      type: DeviceNetwork
   - uid: 9584
     components:
     - pos: 6.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      - 9599
-      type: DeviceNetwork
   - uid: 9585
     components:
     - pos: 6.5,4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      - 9599
-      type: DeviceNetwork
   - uid: 9610
     components:
     - pos: -38.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9613
-      type: DeviceNetwork
   - uid: 9611
     components:
     - pos: -39.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9613
-      type: DeviceNetwork
   - uid: 9612
     components:
     - pos: -37.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9613
-      type: DeviceNetwork
   - uid: 9616
     components:
     - pos: -32.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
   - uid: 9617
     components:
     - pos: -31.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
   - uid: 9618
     components:
     - pos: -28.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
   - uid: 9619
     components:
     - pos: -27.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
   - uid: 9633
     components:
     - rot: 3.141592653589793 rad
       pos: -40.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9634
     components:
     - rot: 3.141592653589793 rad
       pos: -39.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9635
     components:
     - rot: 3.141592653589793 rad
       pos: -32.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9636
     components:
     - rot: 3.141592653589793 rad
       pos: -31.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9644
     components:
     - pos: -33.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9648
     components:
     - pos: -41.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9649
     components:
     - pos: -40.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9650
     components:
     - pos: -35.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9651
     components:
     - pos: -34.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
   - uid: 9663
     components:
     - pos: -45.5,28.5
@@ -40397,268 +39299,165 @@ entities:
     - pos: 6.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9671
     components:
     - pos: 6.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9678
     components:
     - rot: -1.5707963267948966 rad
       pos: 8.5,-13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      - 9788
-      type: DeviceNetwork
   - uid: 9679
     components:
     - rot: -1.5707963267948966 rad
       pos: 9.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9680
     components:
     - rot: -1.5707963267948966 rad
       pos: 10.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9681
     components:
     - rot: -1.5707963267948966 rad
       pos: 11.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9682
     components:
     - rot: -1.5707963267948966 rad
       pos: 16.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      type: DeviceNetwork
   - uid: 9684
     components:
     - rot: -1.5707963267948966 rad
       pos: 26.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      - 9785
-      type: DeviceNetwork
   - uid: 9685
     components:
     - rot: -1.5707963267948966 rad
       pos: 26.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      - 9785
-      type: DeviceNetwork
   - uid: 9686
     components:
     - rot: -1.5707963267948966 rad
       pos: 26.5,-10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      - 9689
-      - 9785
-      type: DeviceNetwork
   - uid: 9786
     components:
     - pos: 27.5,-13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
   - uid: 9787
     components:
     - pos: 28.5,-13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
   - uid: 9794
     components:
     - rot: 3.141592653589793 rad
       pos: -13.5,39.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
   - uid: 9795
     components:
     - rot: 3.141592653589793 rad
       pos: -11.5,39.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
   - uid: 9796
     components:
     - rot: 3.141592653589793 rad
       pos: -9.5,40.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
   - uid: 9797
     components:
     - rot: 3.141592653589793 rad
       pos: -9.5,43.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
   - uid: 9804
     components:
     - rot: -1.5707963267948966 rad
       pos: -13.5,23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      - 9817
-      type: DeviceNetwork
   - uid: 9805
     components:
     - rot: -1.5707963267948966 rad
       pos: -12.5,23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      - 9817
-      type: DeviceNetwork
   - uid: 9806
     components:
     - rot: -1.5707963267948966 rad
       pos: -11.5,23.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      - 9817
-      type: DeviceNetwork
   - uid: 9807
     components:
     - rot: -1.5707963267948966 rad
       pos: -10.5,26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9809
     components:
     - rot: -1.5707963267948966 rad
       pos: -15.5,26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9810
     components:
     - rot: -1.5707963267948966 rad
       pos: -15.5,27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9813
     components:
     - rot: -1.5707963267948966 rad
       pos: -13.5,33.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9814
     components:
     - rot: -1.5707963267948966 rad
       pos: -11.5,33.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
   - uid: 9829
     components:
     - rot: 1.5707963267948966 rad
       pos: -17.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9830
     components:
     - rot: 1.5707963267948966 rad
       pos: -13.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9831
     components:
     - rot: 1.5707963267948966 rad
       pos: -10.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9832
     components:
     - rot: 1.5707963267948966 rad
       pos: -8.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9833
     components:
     - rot: 1.5707963267948966 rad
@@ -40671,108 +39470,70 @@ entities:
       pos: -10.5,16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9835
     components:
     - rot: 1.5707963267948966 rad
       pos: -6.5,16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9836
     components:
     - rot: 1.5707963267948966 rad
       pos: -14.5,16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9837
     components:
     - rot: 1.5707963267948966 rad
       pos: -14.5,20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9838
     components:
     - rot: 1.5707963267948966 rad
       pos: -10.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      - 9857
-      type: DeviceNetwork
   - uid: 9839
     components:
     - rot: 1.5707963267948966 rad
       pos: -4.5,18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      - 9857
-      type: DeviceNetwork
   - uid: 9840
     components:
     - rot: 1.5707963267948966 rad
       pos: -2.5,16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9841
     components:
     - rot: 1.5707963267948966 rad
       pos: -2.5,12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9842
     components:
     - rot: 1.5707963267948966 rad
       pos: -2.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9843
     components:
     - rot: 1.5707963267948966 rad
       pos: -2.5,6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
   - uid: 9858
     components:
     - pos: -2.5,20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9857
-      type: DeviceNetwork
   - uid: 9859
     components:
     - pos: -2.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9857
-      type: DeviceNetwork
 - proto: Fireplace
   entities:
   - uid: 2182
@@ -41016,6 +39777,8 @@ entities:
       pos: -35.5,15.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
 - proto: GasFilterFlipped
@@ -41028,6 +39791,8 @@ entities:
       pos: -14.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#FF1212FF'
       type: AtmosPipeColor
   - uid: 4509
@@ -41038,6 +39803,8 @@ entities:
       pos: -12.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#FF1212FF'
       type: AtmosPipeColor
   - uid: 4510
@@ -41048,6 +39815,8 @@ entities:
       pos: -6.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#FF1212FF'
       type: AtmosPipeColor
   - uid: 4511
@@ -41058,6 +39827,8 @@ entities:
       pos: -10.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#FF1212FF'
       type: AtmosPipeColor
   - uid: 4516
@@ -41068,6 +39839,8 @@ entities:
       pos: -8.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#FF1212FF'
       type: AtmosPipeColor
   - uid: 4517
@@ -41078,6 +39851,8 @@ entities:
       pos: -4.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#FF1212FF'
       type: AtmosPipeColor
 - proto: GasMinerCarbonDioxide
@@ -41088,6 +39863,8 @@ entities:
       pos: -7.5,-41.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasMinerNitrogenStation
   entities:
   - uid: 3884
@@ -41096,6 +39873,8 @@ entities:
       pos: -3.5,-41.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasMinerNitrousOxide
   entities:
   - uid: 4172
@@ -41104,6 +39883,8 @@ entities:
       pos: -11.5,-41.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasMinerOxygenStation
   entities:
   - uid: 3883
@@ -41112,6 +39893,8 @@ entities:
       pos: -5.5,-41.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasMinerWaterVapor
   entities:
   - uid: 4166
@@ -41120,6 +39903,8 @@ entities:
       pos: -9.5,-41.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasMixerFlipped
   entities:
   - uid: 4087
@@ -41127,6 +39912,8 @@ entities:
     - pos: -3.5,-35.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasOutletInjector
   entities:
   - uid: 4111
@@ -41135,36 +39922,48 @@ entities:
       pos: -7.5,-42.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4139
     components:
     - rot: -1.5707963267948966 rad
       pos: -5.5,-42.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4142
     components:
     - rot: -1.5707963267948966 rad
       pos: -3.5,-42.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4161
     components:
     - rot: -1.5707963267948966 rad
       pos: -13.5,-42.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4178
     components:
     - rot: -1.5707963267948966 rad
       pos: -9.5,-42.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4181
     components:
     - rot: -1.5707963267948966 rad
       pos: -11.5,-42.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasPassiveVent
   entities:
   - uid: 3680
@@ -41173,60 +39972,80 @@ entities:
       pos: -36.5,-7.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4512
     components:
     - rot: 3.141592653589793 rad
       pos: -11.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4513
     components:
     - rot: 3.141592653589793 rad
       pos: -9.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4514
     components:
     - rot: 3.141592653589793 rad
       pos: -5.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4518
     components:
     - rot: 3.141592653589793 rad
       pos: -7.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4519
     components:
     - rot: 3.141592653589793 rad
       pos: -13.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4520
     components:
     - rot: 3.141592653589793 rad
       pos: -3.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4971
     components:
     - rot: 3.141592653589793 rad
       pos: -15.5,-39.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4972
     components:
     - rot: -1.5707963267948966 rad
       pos: -0.5,-38.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 10333
     components:
     - rot: 3.141592653589793 rad
       pos: -19.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasPipeBend
   entities:
   - uid: 584
@@ -41879,14 +40698,6 @@ entities:
       type: Transform
     - color: '#990000FF'
       type: AtmosPipeColor
-  - uid: 6832
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -32.5,-8.5
-      parent: 2
-      type: Transform
-    - color: '#0055CCFF'
-      type: AtmosPipeColor
   - uid: 6868
     components:
     - pos: 3.5,15.5
@@ -42479,6 +41290,16 @@ entities:
       type: Transform
     - color: '#990000FF'
       type: AtmosPipeColor
+  - uid: 12782
+    components:
+    - pos: -37.5,-2.5
+      parent: 2
+      type: Transform
+  - uid: 12786
+    components:
+    - pos: -36.5,-3.5
+      parent: 2
+      type: Transform
 - proto: GasPipeFourway
   entities:
   - uid: 1720
@@ -48712,14 +47533,6 @@ entities:
       type: Transform
     - color: '#0055CCFF'
       type: AtmosPipeColor
-  - uid: 6848
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: -37.5,-5.5
-      parent: 2
-      type: Transform
-    - color: '#990000FF'
-      type: AtmosPipeColor
   - uid: 6849
     components:
     - rot: 1.5707963267948966 rad
@@ -48727,14 +47540,6 @@ entities:
       parent: 2
       type: Transform
     - color: '#990000FF'
-      type: AtmosPipeColor
-  - uid: 6850
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: -36.5,-4.5
-      parent: 2
-      type: Transform
-    - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6851
     components:
@@ -54096,6 +52901,23 @@ entities:
       pos: -1.5,-30.5
       parent: 2
       type: Transform
+  - uid: 12783
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -37.5,-4.5
+      parent: 2
+      type: Transform
+  - uid: 12787
+    components:
+    - pos: -37.5,-3.5
+      parent: 2
+      type: Transform
+  - uid: 12788
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -37.5,-3.5
+      parent: 2
+      type: Transform
 - proto: GasPipeTJunction
   entities:
   - uid: 718
@@ -55020,6 +53842,12 @@ entities:
       type: Transform
     - color: '#990000FF'
       type: AtmosPipeColor
+  - uid: 6832
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -32.5,-8.5
+      parent: 2
+      type: Transform
   - uid: 6838
     components:
     - pos: -32.5,-4.5
@@ -55731,6 +54559,18 @@ entities:
       type: Transform
     - color: '#990000FF'
       type: AtmosPipeColor
+  - uid: 9761
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -36.5,-4.5
+      parent: 2
+      type: Transform
+  - uid: 9762
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -37.5,-5.5
+      parent: 2
+      type: Transform
   - uid: 9799
     components:
     - rot: -1.5707963267948966 rad
@@ -55763,18 +54603,24 @@ entities:
       pos: -32.5,-11.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 3673
     components:
     - rot: 3.141592653589793 rad
       pos: -33.5,-11.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 6863
     components:
     - rot: 1.5707963267948966 rad
       pos: -12.5,-18.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9303
@@ -55783,6 +54629,8 @@ entities:
       pos: -12.5,-19.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
 - proto: GasPressurePump
@@ -55793,11 +54641,15 @@ entities:
       pos: -32.5,-10.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 3630
     components:
     - pos: -33.5,-10.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4523
     components:
     - name: Oxygen Pump
@@ -55806,6 +54658,8 @@ entities:
       pos: -5.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 4525
@@ -55816,6 +54670,8 @@ entities:
       pos: -13.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4528
     components:
     - name: N2 Pump
@@ -55824,6 +54680,8 @@ entities:
       pos: -3.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 4534
@@ -55832,6 +54690,8 @@ entities:
       pos: -5.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 4538
@@ -55842,6 +54702,8 @@ entities:
       pos: -11.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4543
     components:
     - name: Water Vapor Pump
@@ -55850,12 +54712,16 @@ entities:
       pos: -9.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4544
     components:
     - rot: -1.5707963267948966 rad
       pos: -5.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 4548
@@ -55866,12 +54732,16 @@ entities:
       pos: -7.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 8045
     components:
     - rot: -1.5707963267948966 rad
       pos: -32.5,16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 10328
@@ -55879,24 +54749,32 @@ entities:
     - pos: -17.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 10329
     components:
     - rot: 3.141592653589793 rad
       pos: -19.5,-36.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 11746
     components:
     - rot: 1.5707963267948966 rad
       pos: -2.5,-31.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 11747
     components:
     - rot: -1.5707963267948966 rad
       pos: -2.5,-33.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasThermoMachineFreezer
   entities:
   - uid: 8057
@@ -55905,12 +54783,16 @@ entities:
       pos: -37.5,14.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 10305
     components:
     - rot: 1.5707963267948966 rad
       pos: -8.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasThermoMachineHeater
   entities:
   - uid: 10304
@@ -55919,6 +54801,8 @@ entities:
       pos: -8.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasValve
   entities:
   - uid: 3935
@@ -55929,6 +54813,8 @@ entities:
       type: Transform
     - open: False
       type: GasValve
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 4970
     components:
     - rot: -1.5707963267948966 rad
@@ -55937,6 +54823,8 @@ entities:
       type: Transform
     - open: False
       type: GasValve
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasVentPump
   entities:
   - uid: 566
@@ -55945,6 +54833,8 @@ entities:
       pos: 35.5,-1.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 756
@@ -55952,9 +54842,8 @@ entities:
     - pos: 45.5,-3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 501
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 770
@@ -55962,6 +54851,8 @@ entities:
     - pos: 43.5,-3.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 843
@@ -55969,6 +54860,8 @@ entities:
     - pos: 9.5,8.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 1666
@@ -55977,9 +54870,8 @@ entities:
       pos: -13.5,43.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 1709
@@ -55988,9 +54880,8 @@ entities:
       pos: -13.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 1741
@@ -55999,6 +54890,8 @@ entities:
       pos: -18.5,26.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 1750
@@ -56007,6 +54900,8 @@ entities:
       pos: -8.5,26.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 3218
@@ -56015,9 +54910,8 @@ entities:
       pos: 47.5,-22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 3620
@@ -56026,12 +54920,16 @@ entities:
       pos: -36.5,-9.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 6219
     components:
     - rot: 1.5707963267948966 rad
       pos: -18.5,16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6220
@@ -56040,6 +54938,8 @@ entities:
       pos: -8.5,15.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6253
@@ -56048,6 +54948,8 @@ entities:
       pos: -0.5,16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6259
@@ -56055,9 +54957,8 @@ entities:
     - pos: -15.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6262
@@ -56065,6 +54966,8 @@ entities:
     - pos: -20.5,9.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6277
@@ -56073,6 +54976,8 @@ entities:
       pos: -14.5,8.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6284
@@ -56081,6 +54986,8 @@ entities:
       pos: -18.5,20.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6384
@@ -56089,6 +54996,8 @@ entities:
       pos: -5.5,6.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6402
@@ -56096,9 +55005,8 @@ entities:
     - pos: -11.5,-26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6441
@@ -56107,6 +55015,8 @@ entities:
       pos: -15.5,-18.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6470
@@ -56115,9 +55025,8 @@ entities:
       pos: -18.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9281
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6492
@@ -56126,9 +55035,8 @@ entities:
       pos: -27.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8903
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6503
@@ -56137,6 +55045,8 @@ entities:
       pos: -34.5,-25.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6540
@@ -56145,6 +55055,8 @@ entities:
       pos: -34.5,-31.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6555
@@ -56152,6 +55064,8 @@ entities:
     - pos: -28.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6560
@@ -56160,9 +55074,8 @@ entities:
       pos: -25.5,-36.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6572
@@ -56171,6 +55084,8 @@ entities:
       pos: -21.5,-31.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6740
@@ -56178,9 +55093,8 @@ entities:
     - pos: -17.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6756
@@ -56188,9 +55102,8 @@ entities:
     - pos: -23.5,0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9263
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6784
@@ -56199,6 +55112,8 @@ entities:
       pos: -18.5,-11.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6793
@@ -56207,6 +55122,8 @@ entities:
       pos: -23.5,-9.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6811
@@ -56215,9 +55132,8 @@ entities:
       pos: -26.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9262
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6826
@@ -56226,9 +55142,8 @@ entities:
       pos: -29.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9266
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6827
@@ -56237,9 +55152,8 @@ entities:
       pos: -31.5,-8.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9247
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6847
@@ -56248,9 +55162,8 @@ entities:
       pos: -38.5,-4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9251
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6950
@@ -56259,6 +55172,8 @@ entities:
       pos: 31.5,16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6970
@@ -56267,6 +55182,8 @@ entities:
       pos: 24.5,21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6971
@@ -56275,6 +55192,8 @@ entities:
       pos: 25.5,24.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 6999
@@ -56282,9 +55201,8 @@ entities:
     - pos: 13.5,24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7000
@@ -56293,9 +55211,8 @@ entities:
       pos: 7.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7035
@@ -56304,9 +55221,8 @@ entities:
       pos: 9.5,26.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8516
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7063
@@ -56315,6 +55231,8 @@ entities:
       pos: 21.5,27.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7072
@@ -56322,6 +55240,8 @@ entities:
     - pos: 25.5,32.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7084
@@ -56330,9 +55250,8 @@ entities:
       pos: 13.5,29.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7183
@@ -56341,9 +55260,8 @@ entities:
       pos: 0.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7197
@@ -56352,9 +55270,8 @@ entities:
       pos: 14.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7209
@@ -56363,6 +55280,8 @@ entities:
       pos: 21.5,-7.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7218
@@ -56371,9 +55290,8 @@ entities:
       pos: 19.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7250
@@ -56382,9 +55300,8 @@ entities:
       pos: 1.5,-12.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9788
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7267
@@ -56393,6 +55310,8 @@ entities:
       pos: 6.5,-16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7286
@@ -56401,6 +55320,8 @@ entities:
       pos: 4.5,-17.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7593
@@ -56409,9 +55330,8 @@ entities:
       pos: -48.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9081
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7598
@@ -56420,6 +55340,8 @@ entities:
       pos: -52.5,-11.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7610
@@ -56428,9 +55350,8 @@ entities:
       pos: -50.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9080
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7614
@@ -56439,6 +55360,8 @@ entities:
       pos: -48.5,-16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7654
@@ -56447,9 +55370,8 @@ entities:
       pos: -57.5,-8.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9081
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7960
@@ -56458,9 +55380,8 @@ entities:
       pos: -29.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7966
@@ -56469,9 +55390,8 @@ entities:
       pos: -40.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9613
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 7991
@@ -56480,6 +55400,8 @@ entities:
       pos: -30.5,11.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8067
@@ -56488,6 +55410,8 @@ entities:
       pos: -43.5,26.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8074
@@ -56496,6 +55420,8 @@ entities:
       pos: -47.5,28.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8076
@@ -56504,6 +55430,8 @@ entities:
       pos: -37.5,26.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8086
@@ -56512,6 +55440,8 @@ entities:
       pos: -37.5,31.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8093
@@ -56520,6 +55450,8 @@ entities:
       pos: -31.5,30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8096
@@ -56528,6 +55460,8 @@ entities:
       pos: -32.5,25.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8113
@@ -56535,6 +55469,8 @@ entities:
     - pos: -39.5,29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8133
@@ -56542,9 +55478,8 @@ entities:
     - pos: -47.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9232
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8211
@@ -56552,6 +55487,8 @@ entities:
     - pos: 14.5,-17.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8219
@@ -56560,6 +55497,8 @@ entities:
       pos: 26.5,-15.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8242
@@ -56568,6 +55507,8 @@ entities:
       pos: 32.5,-21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8244
@@ -56576,6 +55517,8 @@ entities:
       pos: 36.5,-21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8261
@@ -56583,6 +55526,8 @@ entities:
     - pos: 34.5,-16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8288
@@ -56590,9 +55535,8 @@ entities:
     - pos: -59.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8459
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8321
@@ -56601,9 +55545,8 @@ entities:
       pos: -67.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8322
@@ -56612,9 +55555,8 @@ entities:
       pos: -67.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8408
@@ -56623,9 +55565,8 @@ entities:
       pos: -59.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8457
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8814
@@ -56634,6 +55575,8 @@ entities:
       pos: 26.5,8.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8830
@@ -56642,9 +55585,8 @@ entities:
       pos: -28.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8835
@@ -56652,9 +55594,8 @@ entities:
     - pos: -19.5,-21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8985
@@ -56662,9 +55603,8 @@ entities:
     - pos: 6.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8988
@@ -56672,9 +55612,8 @@ entities:
     - pos: 21.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 8990
@@ -56683,9 +55622,8 @@ entities:
       pos: 3.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9044
@@ -56693,9 +55631,8 @@ entities:
     - pos: -51.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9073
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9170
@@ -56704,9 +55641,8 @@ entities:
       pos: -43.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9175
@@ -56715,9 +55651,8 @@ entities:
       pos: -47.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9212
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9260
@@ -56726,6 +55661,8 @@ entities:
       pos: -27.5,-5.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9304
@@ -56734,9 +55671,8 @@ entities:
       pos: -5.5,-18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9327
@@ -56745,9 +55681,8 @@ entities:
       pos: -37.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9329
@@ -56756,9 +55691,8 @@ entities:
       pos: -11.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9331
@@ -56767,9 +55701,8 @@ entities:
       pos: -26.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9358
@@ -56778,9 +55711,8 @@ entities:
       pos: -14.5,-5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9433
@@ -56789,9 +55721,8 @@ entities:
       pos: -44.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9434
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9454
@@ -56800,9 +55731,8 @@ entities:
       pos: 23.5,9.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9483
@@ -56810,9 +55740,8 @@ entities:
     - pos: 20.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9484
@@ -56820,9 +55749,8 @@ entities:
     - pos: 35.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9553
@@ -56830,9 +55758,8 @@ entities:
     - pos: -38.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9555
@@ -56840,9 +55767,8 @@ entities:
     - pos: -28.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9571
@@ -56850,9 +55776,8 @@ entities:
     - pos: -22.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9573
@@ -56860,9 +55785,8 @@ entities:
     - pos: -6.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9574
@@ -56870,9 +55794,8 @@ entities:
     - pos: -13.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9592
@@ -56880,9 +55803,8 @@ entities:
     - pos: -0.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9595
@@ -56891,9 +55813,8 @@ entities:
       pos: 5.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9596
@@ -56902,9 +55823,8 @@ entities:
       pos: 8.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9655
@@ -56913,9 +55833,8 @@ entities:
       pos: -36.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9703
@@ -56924,6 +55843,8 @@ entities:
       pos: 10.5,-21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9784
@@ -56931,9 +55852,8 @@ entities:
     - pos: 32.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9822
@@ -56942,9 +55862,8 @@ entities:
       pos: -12.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9825
@@ -56953,9 +55872,8 @@ entities:
       pos: -6.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 9850
@@ -56964,9 +55882,8 @@ entities:
       pos: -5.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9857
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 10334
@@ -56975,15 +55892,16 @@ entities:
       pos: -17.5,-40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 10903
     components:
     - rot: 3.141592653589793 rad
       pos: -18.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9253
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 12682
@@ -56991,6 +55909,8 @@ entities:
     - pos: -37.5,29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
   - uid: 12684
@@ -56998,8 +55918,26 @@ entities:
     - pos: -42.5,30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
+  - uid: 12790
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -38.5,-3.5
+      parent: 2
+      type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
+  - uid: 12791
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -33.5,-8.5
+      parent: 2
+      type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GasVentScrubber
   entities:
   - uid: 505
@@ -57008,6 +55946,8 @@ entities:
       pos: 34.5,-1.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 722
@@ -57016,9 +55956,8 @@ entities:
       pos: 45.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 501
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 755
@@ -57027,6 +55966,8 @@ entities:
       pos: 43.5,-7.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 844
@@ -57035,6 +55976,8 @@ entities:
       pos: 8.5,8.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 1665
@@ -57043,9 +55986,8 @@ entities:
       pos: -14.5,42.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9793
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 1703
@@ -57054,6 +55996,8 @@ entities:
       pos: -6.5,40.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 1704
@@ -57062,6 +56006,8 @@ entities:
       pos: -6.5,43.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 1740
@@ -57070,6 +56016,8 @@ entities:
       pos: -18.5,27.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 1749
@@ -57078,6 +56026,8 @@ entities:
       pos: -8.5,28.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 3217
@@ -57086,9 +56036,8 @@ entities:
       pos: 44.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 2524
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 4558
@@ -57097,9 +56046,8 @@ entities:
       pos: 9.5,28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8516
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6249
@@ -57108,9 +56056,8 @@ entities:
       pos: -11.5,27.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9803
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6292
@@ -57119,6 +56066,8 @@ entities:
       pos: -11.5,6.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6372
@@ -57127,6 +56076,8 @@ entities:
       pos: 0.5,6.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6373
@@ -57135,6 +56086,8 @@ entities:
       pos: 0.5,9.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6374
@@ -57143,6 +56096,8 @@ entities:
       pos: 0.5,12.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6383
@@ -57150,6 +56105,8 @@ entities:
     - pos: 0.5,16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6386
@@ -57157,9 +56114,8 @@ entities:
     - pos: -16.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6399
@@ -57168,6 +56124,8 @@ entities:
       pos: -20.5,6.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6407
@@ -57176,9 +56134,8 @@ entities:
       pos: -11.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9282
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6435
@@ -57187,9 +56144,8 @@ entities:
       pos: -17.5,-25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9281
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6440
@@ -57198,6 +56154,8 @@ entities:
       pos: -15.5,-19.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6481
@@ -57205,9 +56163,8 @@ entities:
     - pos: -26.5,-20.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8903
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6507
@@ -57216,6 +56173,8 @@ entities:
       pos: -34.5,-26.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6539
@@ -57224,6 +56183,8 @@ entities:
       pos: -34.5,-33.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6549
@@ -57232,6 +56193,8 @@ entities:
       pos: -28.5,-34.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6566
@@ -57240,9 +56203,8 @@ entities:
       pos: -23.5,-36.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8847
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6573
@@ -57251,6 +56213,8 @@ entities:
       pos: -21.5,-32.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6733
@@ -57259,6 +56223,8 @@ entities:
       pos: -18.5,21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6751
@@ -57266,9 +56232,8 @@ entities:
     - pos: -22.5,0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9263
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6783
@@ -57277,6 +56242,8 @@ entities:
       pos: -18.5,-10.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6797
@@ -57285,6 +56252,8 @@ entities:
       pos: -23.5,-6.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6812
@@ -57293,9 +56262,8 @@ entities:
       pos: -26.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9262
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6825
@@ -57304,9 +56272,8 @@ entities:
       pos: -29.5,-8.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9266
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6828
@@ -57315,9 +56282,8 @@ entities:
       pos: -31.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9247
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6846
@@ -57326,9 +56292,8 @@ entities:
       pos: -38.5,-5.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9251
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6949
@@ -57337,6 +56302,8 @@ entities:
       pos: 31.5,17.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6966
@@ -57344,6 +56311,8 @@ entities:
     - pos: 21.5,24.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6967
@@ -57352,6 +56321,8 @@ entities:
       pos: 24.5,20.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6983
@@ -57360,9 +56331,8 @@ entities:
       pos: 8.5,22.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6984
@@ -57370,9 +56340,8 @@ entities:
     - pos: 12.5,25.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8507
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 6997
@@ -57381,6 +56350,8 @@ entities:
       pos: 13.5,22.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7065
@@ -57389,6 +56360,8 @@ entities:
       pos: 21.5,28.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7071
@@ -57396,6 +56369,8 @@ entities:
     - pos: 17.5,32.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7083
@@ -57404,9 +56379,8 @@ entities:
       pos: 13.5,31.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8489
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7182
@@ -57415,9 +56389,8 @@ entities:
       pos: 0.5,-1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9672
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7196
@@ -57426,9 +56399,8 @@ entities:
       pos: 14.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7219
@@ -57437,9 +56409,8 @@ entities:
       pos: 21.5,-15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9688
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7224
@@ -57448,6 +56419,8 @@ entities:
       pos: 21.5,-5.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7249
@@ -57456,9 +56429,8 @@ entities:
       pos: 1.5,-13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9788
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7269
@@ -57467,6 +56439,8 @@ entities:
       pos: 6.5,-17.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7294
@@ -57474,6 +56448,8 @@ entities:
     - pos: 4.5,-18.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7616
@@ -57481,6 +56457,8 @@ entities:
     - pos: -47.5,-16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7626
@@ -57488,9 +56466,8 @@ entities:
     - pos: -52.5,-16.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9080
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7652
@@ -57499,9 +56476,8 @@ entities:
       pos: -54.5,-4.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9081
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7957
@@ -57510,9 +56486,8 @@ entities:
       pos: -40.5,6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9613
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 7974
@@ -57521,9 +56496,8 @@ entities:
       pos: -33.5,7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9621
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8005
@@ -57532,9 +56506,8 @@ entities:
       pos: -42.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9210
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8020
@@ -57543,6 +56516,8 @@ entities:
       pos: -27.5,18.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8021
@@ -57551,6 +56526,8 @@ entities:
       pos: -27.5,21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8022
@@ -57559,6 +56536,8 @@ entities:
       pos: -27.5,15.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8134
@@ -57566,9 +56545,8 @@ entities:
     - pos: -45.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9232
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8157
@@ -57577,6 +56555,8 @@ entities:
       pos: -33.5,10.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8201
@@ -57585,6 +56565,8 @@ entities:
       pos: -42.5,30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8202
@@ -57593,6 +56575,8 @@ entities:
       pos: -40.5,26.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8210
@@ -57601,6 +56585,8 @@ entities:
       pos: 14.5,-20.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8217
@@ -57609,6 +56595,8 @@ entities:
       pos: 18.5,-19.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8218
@@ -57616,6 +56604,8 @@ entities:
     - pos: 18.5,-17.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8220
@@ -57624,6 +56614,8 @@ entities:
       pos: 26.5,-16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8241
@@ -57632,6 +56624,8 @@ entities:
       pos: 30.5,-21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8243
@@ -57640,6 +56634,8 @@ entities:
       pos: 35.5,-21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8260
@@ -57647,6 +56643,8 @@ entities:
     - pos: 33.5,-16.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8304
@@ -57654,9 +56652,8 @@ entities:
     - pos: -58.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8459
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8329
@@ -57665,9 +56662,8 @@ entities:
       pos: -67.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8330
@@ -57676,9 +56672,8 @@ entities:
       pos: -67.5,11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8445
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8409
@@ -57687,9 +56682,8 @@ entities:
       pos: -57.5,-0.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8457
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8774
@@ -57698,6 +56692,8 @@ entities:
       pos: 26.5,6.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8829
@@ -57706,9 +56702,8 @@ entities:
       pos: -29.5,-24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8895
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8834
@@ -57716,9 +56711,8 @@ entities:
     - pos: -18.5,-21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9277
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8986
@@ -57727,9 +56721,8 @@ entities:
       pos: 7.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8987
@@ -57738,9 +56731,8 @@ entities:
       pos: 20.5,17.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 8991
@@ -57749,9 +56741,8 @@ entities:
       pos: 3.5,24.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9005
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9045
@@ -57760,9 +56751,8 @@ entities:
       pos: -50.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9073
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9259
@@ -57770,6 +56760,8 @@ entities:
     - pos: -26.5,-4.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9270
@@ -57778,9 +56770,8 @@ entities:
       pos: -19.5,-2.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 6801
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9302
@@ -57788,9 +56779,8 @@ entities:
     - pos: -7.5,-18.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9298
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9326
@@ -57798,9 +56788,8 @@ entities:
     - pos: -38.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9328
@@ -57808,9 +56797,8 @@ entities:
     - pos: -12.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9330
@@ -57818,9 +56806,8 @@ entities:
     - pos: -27.5,-14.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 8888
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9357
@@ -57829,9 +56816,8 @@ entities:
       pos: -14.5,-6.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9363
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9432
@@ -57840,9 +56826,8 @@ entities:
       pos: -44.5,-7.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9434
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9453
@@ -57851,9 +56836,8 @@ entities:
       pos: 23.5,10.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9477
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9482
@@ -57862,9 +56846,8 @@ entities:
       pos: 21.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9485
@@ -57873,9 +56856,8 @@ entities:
       pos: 34.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9524
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9552
@@ -57884,9 +56866,8 @@ entities:
       pos: -39.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9554
@@ -57895,9 +56876,8 @@ entities:
       pos: -29.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9548
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9570
@@ -57906,9 +56886,8 @@ entities:
       pos: -21.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9572
@@ -57917,9 +56896,8 @@ entities:
       pos: -4.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9575
@@ -57928,9 +56906,8 @@ entities:
       pos: -12.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9576
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9593
@@ -57939,9 +56916,8 @@ entities:
       pos: 0.5,3.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9594
@@ -57950,9 +56926,8 @@ entities:
       pos: 4.5,13.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9588
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9597
@@ -57961,9 +56936,8 @@ entities:
       pos: 12.5,1.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9599
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9654
@@ -57972,9 +56946,8 @@ entities:
       pos: -38.5,19.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9657
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9702
@@ -57983,6 +56956,8 @@ entities:
       pos: 11.5,-21.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9783
@@ -57991,9 +56966,8 @@ entities:
       pos: 33.5,-11.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9785
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9823
@@ -58002,9 +56976,8 @@ entities:
       pos: -12.5,15.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9824
@@ -58013,9 +56986,8 @@ entities:
       pos: -6.5,8.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9817
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 9851
@@ -58024,9 +56996,8 @@ entities:
       pos: -7.5,21.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9857
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 12686
@@ -58034,9 +57005,8 @@ entities:
     - pos: -35.5,28.5
       parent: 2
       type: Transform
-    - ShutdownSubscribers:
-      - 9659
-      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
   - uid: 12692
@@ -58045,8 +57015,18 @@ entities:
       pos: -31.5,25.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
     - color: '#990000FF'
       type: AtmosPipeColor
+  - uid: 12789
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -38.5,-2.5
+      parent: 2
+      type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: GravityGenerator
   entities:
   - uid: 3988
@@ -59803,6 +58783,21 @@ entities:
     - pos: -34.5,33.5
       parent: 2
       type: Transform
+  - uid: 12741
+    components:
+    - pos: -2.5,7.5
+      parent: 2
+      type: Transform
+  - uid: 12742
+    components:
+    - pos: -2.5,10.5
+      parent: 2
+      type: Transform
+  - uid: 12743
+    components:
+    - pos: -2.5,13.5
+      parent: 2
+      type: Transform
 - proto: GrilleBroken
   entities:
   - uid: 10206
@@ -60515,6 +59510,13 @@ entities:
     - pos: -2.532669,-21.54439
       parent: 2
       type: Transform
+- proto: LargeBeaker
+  entities:
+  - uid: 12752
+    components:
+    - pos: -37.557747,15.54635
+      parent: 2
+      type: Transform
 - proto: Lighter
   entities:
   - uid: 1212
@@ -60991,11 +59993,6 @@ entities:
     - pos: 55.5,26.5
       parent: 2
       type: Transform
-  - uid: 10671
-    components:
-    - pos: -28.5,-11.5
-      parent: 2
-      type: Transform
   - uid: 10950
     components:
     - pos: -25.5,10.5
@@ -61148,6 +60145,11 @@ entities:
   - uid: 4650
     components:
     - pos: -49.5,10.5
+      parent: 2
+      type: Transform
+  - uid: 9760
+    components:
+    - pos: 15.5,-27.5
       parent: 2
       type: Transform
   - uid: 10940
@@ -61739,6 +60741,8 @@ entities:
     - pos: -13.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: NitrousOxideCanister
   entities:
   - uid: 4553
@@ -61746,6 +60750,8 @@ entities:
     - pos: -11.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: NitrousOxideTankFilled
   entities:
   - uid: 9221
@@ -61830,11 +60836,15 @@ entities:
     - pos: -31.5,-10.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 5557
     components:
     - pos: -11.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: PaperBin10
   entities:
   - uid: 2235
@@ -62048,6 +61058,8 @@ entities:
     - pos: -12.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: PlasticFlapsAirtightClear
   entities:
   - uid: 4749
@@ -62182,6 +61194,13 @@ entities:
     components:
     - rot: 3.141592653589793 rad
       pos: 20.5,19.5
+      parent: 2
+      type: Transform
+- proto: PosterLegitJustAWeekAway
+  entities:
+  - uid: 12792
+    components:
+    - pos: -46.5,20.5
       parent: 2
       type: Transform
 - proto: PosterLegitObey
@@ -62462,6 +61481,12 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: -37.5,-8.5
+      parent: 2
+      type: Transform
+  - uid: 6850
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: 27.5,30.5
       parent: 2
       type: Transform
   - uid: 7100
@@ -63670,6 +62695,12 @@ entities:
       pos: -54.5,-19.5
       parent: 2
       type: Transform
+  - uid: 12793
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -18.5,-32.5
+      parent: 2
+      type: Transform
 - proto: PoweredlightEmpty
   entities:
   - uid: 7690
@@ -64522,6 +63553,28 @@ entities:
       pos: 42.5,7.5
       parent: 2
       type: Transform
+  - uid: 12758
+    components:
+    - pos: -17.5,-5.5
+      parent: 2
+      type: Transform
+  - uid: 12771
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -6.5,-10.5
+      parent: 2
+      type: Transform
+  - uid: 12772
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -11.5,-10.5
+      parent: 2
+      type: Transform
+  - uid: 12773
+    components:
+    - pos: -9.5,-7.5
+      parent: 2
+      type: Transform
 - proto: Protolathe
   entities:
   - uid: 3651
@@ -64811,6 +63864,13 @@ entities:
     components:
     - rot: -1.5707963267948966 rad
       pos: -36.5,-8.5
+      parent: 2
+      type: Transform
+- proto: RandomBoard
+  entities:
+  - uid: 12811
+    components:
+    - pos: 26.5,6.5
       parent: 2
       type: Transform
 - proto: RandomDrinkBottle
@@ -66365,6 +65425,21 @@ entities:
       pos: 47.5,1.5
       parent: 2
       type: Transform
+  - uid: 9768
+    components:
+    - pos: -2.5,10.5
+      parent: 2
+      type: Transform
+  - uid: 9791
+    components:
+    - pos: -2.5,7.5
+      parent: 2
+      type: Transform
+  - uid: 9792
+    components:
+    - pos: -2.5,13.5
+      parent: 2
+      type: Transform
   - uid: 9933
     components:
     - rot: 1.5707963267948966 rad
@@ -66728,6 +65803,13 @@ entities:
     components:
     - rot: -1.5707963267948966 rad
       pos: 1.5339191,-33.24858
+      parent: 2
+      type: Transform
+- proto: ShipBattlemap
+  entities:
+  - uid: 6848
+    components:
+    - pos: 0.5216999,-1.3882813
       parent: 2
       type: Transform
 - proto: Shiv
@@ -68012,6 +67094,13 @@ entities:
     - pos: 5.5,-5.5
       parent: 2
       type: Transform
+- proto: SpawnMobAlexander
+  entities:
+  - uid: 12740
+    components:
+    - pos: 11.5,-18.5
+      parent: 2
+      type: Transform
 - proto: SpawnMobBandito
   entities:
   - uid: 3536
@@ -68431,26 +67520,36 @@ entities:
     - pos: -9.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 5558
     components:
     - pos: -10.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 5559
     components:
     - pos: -10.5,-29.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 5560
     components:
     - pos: -9.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 11623
     components:
     - pos: 22.5,-0.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: SubstationBasic
   entities:
   - uid: 587
@@ -69499,11 +68598,6 @@ entities:
     - pos: -17.5,13.5
       parent: 2
       type: Transform
-  - uid: 470
-    components:
-    - pos: -31.5,21.5
-      parent: 2
-      type: Transform
   - uid: 512
     components:
     - rot: 3.141592653589793 rad
@@ -70300,11 +69394,6 @@ entities:
       pos: 26.5,6.5
       parent: 2
       type: Transform
-  - uid: 8824
-    components:
-    - pos: -32.5,21.5
-      parent: 2
-      type: Transform
   - uid: 8978
     components:
     - pos: 6.5,34.5
@@ -70345,6 +69434,16 @@ entities:
   - uid: 9225
     components:
     - pos: -48.5,19.5
+      parent: 2
+      type: Transform
+  - uid: 9764
+    components:
+    - pos: -33.5,21.5
+      parent: 2
+      type: Transform
+  - uid: 9766
+    components:
+    - pos: -32.5,21.5
       parent: 2
       type: Transform
   - uid: 10102
@@ -70598,6 +69697,11 @@ entities:
     components:
     - rot: -1.5707963267948966 rad
       pos: -29.5,-24.5
+      parent: 2
+      type: Transform
+  - uid: 12755
+    components:
+    - pos: -31.5,21.5
       parent: 2
       type: Transform
 - proto: TableCarpet
@@ -71381,6 +70485,8 @@ entities:
     - pos: -0.5,-32.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: TegCirculator
   entities:
   - uid: 3947
@@ -71727,6 +70833,13 @@ entities:
     - pos: -18.294281,-11.485404
       parent: 2
       type: Transform
+- proto: ToyFigurineSpaceDragon
+  entities:
+  - uid: 5991
+    components:
+    - pos: 4.0321155,-5.409116
+      parent: 2
+      type: Transform
 - proto: ToyFigurineWarden
   entities:
   - uid: 1018
@@ -72055,6 +71168,13 @@ entities:
     - pos: 21.5,-20.5
       parent: 2
       type: Transform
+- proto: VendingMachineChemDrobe
+  entities:
+  - uid: 12751
+    components:
+    - pos: -42.5,17.5
+      parent: 2
+      type: Transform
 - proto: VendingMachineChemicals
   entities:
   - uid: 3813
@@ -72089,6 +71209,13 @@ entities:
   - uid: 2665
     components:
     - pos: 17.5,22.5
+      parent: 2
+      type: Transform
+- proto: VendingMachineCuraDrobe
+  entities:
+  - uid: 470
+    components:
+    - pos: 2.5,-8.5
       parent: 2
       type: Transform
 - proto: VendingMachineDetDrobe
@@ -72147,6 +71274,11 @@ entities:
       type: Transform
 - proto: VendingMachineMedical
   entities:
+  - uid: 9765
+    components:
+    - pos: -42.5,19.5
+      parent: 2
+      type: Transform
   - uid: 10636
     components:
     - pos: -34.5,10.5
@@ -72159,9 +71291,9 @@ entities:
       type: Transform
 - proto: VendingMachineMediDrobe
   entities:
-  - uid: 1400
+  - uid: 12750
     components:
-    - pos: -33.5,21.5
+    - pos: -42.5,18.5
       parent: 2
       type: Transform
 - proto: VendingMachineNutri
@@ -72183,6 +71315,13 @@ entities:
   - uid: 7742
     components:
     - pos: 3.359583,-20.408134
+      parent: 2
+      type: Transform
+- proto: VendingMachineRoboDrobe
+  entities:
+  - uid: 12759
+    components:
+    - pos: -28.5,-2.5
       parent: 2
       type: Transform
 - proto: VendingMachineRobotics
@@ -72262,7 +71401,7 @@ entities:
     - pos: -11.5,-0.5
       parent: 2
       type: Transform
-  - uid: 3685
+  - uid: 12760
     components:
     - pos: -17.5,-6.5
       parent: 2
@@ -72298,12 +71437,6 @@ entities:
   - uid: 14
     components:
     - pos: 0.5,8.5
-      parent: 2
-      type: Transform
-  - uid: 17
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -2.5,10.5
       parent: 2
       type: Transform
   - uid: 18
@@ -72349,11 +71482,6 @@ entities:
     - pos: -2.5,8.5
       parent: 2
       type: Transform
-  - uid: 72
-    components:
-    - pos: -2.5,7.5
-      parent: 2
-      type: Transform
   - uid: 77
     components:
     - pos: 11.5,34.5
@@ -72372,11 +71500,6 @@ entities:
   - uid: 242
     components:
     - pos: 1.5,14.5
-      parent: 2
-      type: Transform
-  - uid: 245
-    components:
-    - pos: -2.5,13.5
       parent: 2
       type: Transform
   - uid: 246
@@ -83947,6 +83070,11 @@ entities:
     - pos: 17.5,-2.5
       parent: 2
       type: Transform
+  - uid: 10671
+    components:
+    - pos: 15.5,19.5
+      parent: 2
+      type: Transform
   - uid: 10674
     components:
     - pos: 11.5,14.5
@@ -84368,14 +83496,6 @@ entities:
     - pos: -54.5,5.5
       parent: 2
       type: Transform
-- proto: WallSolidDiagonal
-  entities:
-  - uid: 3042
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: 15.5,19.5
-      parent: 2
-      type: Transform
 - proto: WallSolidRust
   entities:
   - uid: 2437
@@ -84743,6 +83863,8 @@ entities:
     - pos: -12.5,-30.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
 - proto: WeaponCapacitorRecharger
   entities:
   - uid: 1016

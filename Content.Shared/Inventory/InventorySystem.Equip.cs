@@ -187,7 +187,7 @@ public abstract partial class InventorySystem
             return false;
         }
 
-        if (!slotContainer.Insert(itemUid))
+        if (!_containerSystem.Insert(itemUid, slotContainer))
         {
             if(!silent && _gameTiming.IsFirstTimePredicted)
                 _popup.PopupCursor(Loc.GetString("inventory-component-can-unequip-cannot"));
@@ -369,7 +369,7 @@ public abstract partial class InventorySystem
             }
         }
 
-        if (!slotContainer.Remove(removedItem.Value, force: force))
+        if (!_containerSystem.Remove(removedItem.Value, slotContainer, force: force))
             return false;
 
         // TODO: Inventory needs a hot cleanup hoo boy

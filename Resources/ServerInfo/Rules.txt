@@ -29,7 +29,8 @@
 
 [color=#7ade00]08.[/color] Don't be a huge dick, try not to over escalate. You're playing a roleplaying game with several other people. Don't actively make other people's lives hell for your own enjoyment, or generally grief. Usually referred to as self-antaging.
 - Leeway is obviously granted for antagonist roles. But try to drive the round with roleplay as best as you can.
-- Some leeway is also granted in the case of players wanting to roleplay out minor crimes. But the line here is drawn when it becomes over the top, uninteresting, and/or the issue is repeated even after in-character punishment. It is always safer to ahelp for permission before you do it.
+- Some leeway is also granted in the case of players wanting to roleplay out minor crimes. But the line here is drawn when it becomes over the top, uninteresting, or the issue is repeated even after in-character punishment. It is always safer to ahelp for permission before you do it.
+- The arrivals station is entirely off-limits, do not grief, attack others, or otherwise do antagonistic acts on the terminal, even as an antagonist.
 - For both of these it is a good rule of thumb to avoid intentionally permanently removing someone from the round unless in pursuit of an objective.
 - If you're starting a social fight or such, try your best attempt to bring the person to medical if either party enters crit.
 
@@ -42,35 +43,40 @@
 - Do not use emotes to bypass chat filters and generally try to be at least medium effort with them, don't do things like, "John Doe motions with his hands to signal syndicate agents west of you."
 - Don't respond to events in a highly unbelievable manner, try to stick to how your character would react.
 
-[color=#7ade00]10.[/color] Your character name should be believable and realistic.
+[color=#7ade00]10.[/color] Do not disconnect, ghost, suicide, or otherwise intentionally permanently remove yourself from the round as important roles or while facing in-character punishment such as jail time without ahelping before hand. You don't need a response back, but failure to do so will result in consequences.
+- This does not apply to cryo.
+
+
+[color=#7ade00]11.[/color] Your character name should be believable and realistic.
 - Your character name should not mimic popular real life or fictional people. Even if it's "clever" plays on them, like "White Walter."
 - Your character's name can't be phonetic word plays, like, "Mike Oxlong" or "Ben Dover."
 - Your name shouldn't be overly dumb or gamey either, like, "John Graytide."
 - Names should not include titles, such as, "Doctor", "Sergeant", or "Father."
 
-[color=#7ade00]11.[/color] Do not prepare items or locations for "just in case" purposes. Referred to as powergaming. Standard Operating Procedure dictates how areas should be locked down and what gear should be held during any given circumstance. Minor things like getting a crowbar on round start is fine, seeking out weapons is not.
+[color=#7ade00]12.[/color] Do not prepare items or locations for "just in case" purposes. Referred to as powergaming. Standard Operating Procedure dictates how areas should be locked down and what gear should be held during any given circumstance. Minor things like getting a crowbar on round start is fine, seeking out weapons is not.
 
 [color=#ffe600]Roleplay Focused.[/color]
 
-[color=#7ade00]12.[/color] While this is HRP, avoid abandoning your job entirely for no good reason. You can focus on and off of work or ask the Head of Personnel to clock you out if you plan to be away for quite some time. Don't spend the entire round away from your job while on duty and your department needs you.
+[color=#7ade00]13.[/color] While this is HRP, avoid abandoning your job entirely for no good reason. You can focus on and off of work or ask the Head of Personnel to clock you out if you plan to be away for quite some time. Don't spend the entire round away from your job while on duty and your department needs you.
 
-[color=#7ade00]13.[/color] This server uses a New Life rule. You can not remember any events that happen while you're in an unconscious state or as a ghost.
+[color=#7ade00]14.[/color] This server uses a New Life rule. You can not remember any events that happen while you're in an unconscious state or as a ghost.
 - If you enter a dead state and get defibbed back to life you forget all the events that led up to your death. (This is the basic type of memory loss for anything else that is not specified)
 - If you enter a dead state and get cloned back to life you forget all the events since your last DNA storage, or more exactly, since the shift started.
 - If you use the respawn button to go back to the lobby and choose to play a new character, you forget everything that you saw as that past character. Effectively a new slate for the round.
 
-[color=#7ade00]14.[/color] Full continuity of your character and events that happen to them is expected. All rounds are canonical unless stated otherwise by an admin.
+[color=#7ade00]15.[/color] Full continuity of your character and events that happen to them is expected. All rounds are canonical unless stated otherwise by an admin.
 - You are allowed to recall past shifts in any manner, unless it violates New Life rule.
 - Punishments you receive will be enforced and carried out in-character throughout rounds. If your character gets demoted, you're expected to stay out of that job until a reasonable amount of time has passed, or you get rehired in-game.
 - Your characters should generally hold no more than two departmental jobs and a service side job in-character. You may swap departments from time to time so long as it doesn't happen constantly.
 - Permanent death is not required, as there's off-site DNA storages for all crewmembers.
 
-[color=#7ade00]15.[/color] Stay within your job, reasonable knowledge, and abilities. Referred to as metagaming.
+[color=#7ade00]16.[/color] Stay within your job, reasonable knowledge, and abilities. Referred to as metagaming.
 - Unless your character has a past in the type of work they shouldn't know how to do jobs outside of theirs.
-- Do not do other people's jobs for them, only play the role you signed up for. If you want to play a different job ask the Head of Personnel for a job change. Exceptions can be made for if no active staff exist for a department, if it is reasonable for your character to know how to.
+- Do not do other people's jobs for them, only play the role you signed up for. If you want to play a different job ask the Head of Personnel for a job change. Exceptions can be made for if no active staff exist for a department.
 - Basic crew should not be knowledgeable on most non-NT technology and items, unless they've experienced it in-character. Security and command may have some leeway within reason.
 
-[color=#7ade00]16.[/color] Command and security are expected to be competent, lawful, and follow procedure.
+[color=#7ade00]17.[/color] Command and security are expected to be competent, lawful, and follow procedure.
 - Neither roles should be grossly incompetent at their job or in their judgment. You are held to higher standards and are usually looked up to be good at your work, a role model, and reflection of your department, act like it.
 - You shouldn't be knowingly breaking the law consistently as a command or security member.
 - Command staff should know Standard Operating Procedure and follow it to the best of their abilities. Security should know both Standard Operating Procedure, Space Law, follow it, and enforce it to the best of their abilities. Failure to do so is likely to result in role bans.
+- (We currently use Wizard's Den Space Law and SOP you can find those at https://wiki.spacestation14.io/wiki)

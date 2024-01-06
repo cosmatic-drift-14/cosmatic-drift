@@ -306,7 +306,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
     private void OnWindowOpened()
     {
         if (ActionButton != null)
-            ActionButton.Pressed = true;
+            ActionButton.SetClickPressed(true);
 
         SearchAndDisplay();
     }
@@ -314,7 +314,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
     private void OnWindowClosed()
     {
         if (ActionButton != null)
-            ActionButton.Pressed = false;
+            ActionButton.SetClickPressed(false);
     }
 
     public void OnStateExited(GameplayState state)

@@ -7,6 +7,7 @@ While some stations come equipped with a Cryosleep Casket your most reliable way
 
 <Box>
 <GuideEntityEmbed Entity="MachineCryoSleepPod" Caption="Cryosleep Casket"/>
+<GuideEntityEmbed Entity="LockerLostAndFound" Caption="Lost And Found Locker"/>
 </Box>
 
 Upon returning to Central Command, the cryosleep chambers can easily be found by following the signs labeled "Cryo". Once there, you can insert yourself into a Cryosleep Casket, safely storing your body until your next shift.
