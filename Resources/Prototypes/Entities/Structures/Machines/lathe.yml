@@ -651,6 +651,7 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
+      - TelescopicBaton #CD Item
   - type: MaterialStorage
     whitelist:
       tags:

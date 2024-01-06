@@ -1,0 +1,59 @@
+- type: entity
+  name: telescopic baton
+  parent: BaseItem
+  id: TelescopicBaton
+  description: A mildly dangerous, slightly outdated, telescopic baton. Its still functional, though not entirely harmless.
+  components:
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_CD/Weapons/batonextend.ogg
+    soundDeactivate:
+      path: /Audio/_CD/Weapons/batonextend.ogg
+  - type: ItemToggleDisarmMalus
+    activatedDisarmMalus: 0.255
+  - type: ItemToggleSize
+    activatedSize: 20
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
+    activatedSoundOnHitNoDamage:
+      path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
+    activatedSoundOnSwing:
+      path: /Audio/_CD/Weapons/block_shield.ogg # Need to find a sound.
+    activatedDamage:
+        types:
+            blunt: 8 #This is one unit more than the stun baton normally does.
+  - type: Sprite
+    sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
+    layers:
+      - state: telebaton
+      - state: telebaton_blade
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: MeleeWeapon #Required Comp, best I can do is make it deal no damage.
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        blunt: 0
+  - type: Item
+    size: 10
+    sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton-inhands.rsi
+  - type: UseDelay
+    delay: 0.75
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+      - SecBeltEquip

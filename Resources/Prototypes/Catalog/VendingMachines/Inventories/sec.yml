@@ -15,6 +15,7 @@
     RiotShield: 2
     RiotLaserShield: 2
     RiotBulletShield: 2
+    TelescopicBaton: 3 #CD Item - 3 seems like a good ammount for testing while roundstart.
   # security officers need to follow a diet regimen!
   contrabandInventory:
     FoodDonutHomer: 12
