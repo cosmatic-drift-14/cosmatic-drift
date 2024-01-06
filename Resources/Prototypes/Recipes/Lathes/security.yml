@@ -536,6 +536,15 @@
     Plastic: 950
     Uranium: 95
 
+- type: latheRecipe
+  id: WeaponDisablerSMG
+  result: WeaponDisablerSMG
+  completetime: 6
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+
 #CD Recipies
 - type: latheRecipe
   id: TelescopicBaton
