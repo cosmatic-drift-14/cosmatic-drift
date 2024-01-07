@@ -1,28 +1,28 @@
 ### Messages to be used with RP-based medication.
 
-reagent-effect-antidepressant-mild1 = You feel like things aren't so bad. 
-reagent-effect-antidepressant-mild2 = The world seems a bit brighter. 
+reagent-effect-antidepressant-mild1 = You feel like things aren't so bad.
+reagent-effect-antidepressant-mild2 = The world seems a bit brighter.
 reagent-effect-antidepressant-mild3 = You feel a bit better about yourself.
 reagent-effect-antidepressant-mild4 = You feel slightly motivated.
 
-reagent-effect-antidepressant-normal1 = You feel pretty alright. 
-reagent-effect-antidepressant-normal2 = You find it hard to focus. 
+reagent-effect-antidepressant-normal1 = You feel pretty alright.
+reagent-effect-antidepressant-normal2 = You find it hard to focus.
 reagent-effect-antidepressant-normal3 = You feel purposeful.
 reagent-effect-antidepressant-normal4 = You feel motivated.
 
-reagent-effect-antidepressant-normaloverdose1 = You feel irrationally angry. 
+reagent-effect-antidepressant-normaloverdose1 = You feel irrationally angry.
 reagent-effect-antidepressant-normaloverdose2 = Everyone is out to get you!
 
-reagent-effect-antidepressant-strong1 = You feel a sense of great joy deep down. 
+reagent-effect-antidepressant-strong1 = You feel a sense of great joy deep down.
 reagent-effect-antidepressant-strong2 = You space out for a moment.
 reagent-effect-antidepressant-strong3 = You feel good about yourself.
 reagent-effect-antidepressant-strong4 = You feel a sense of great purpose.
 
-reagent-effect-antidepressant-strongoverdose1 = You're gonna die! YOU'RE GONNA DIE! 
-reagent-effect-antidepressant-strongoverdose2 = Run! RUN! HIDE! 
+reagent-effect-antidepressant-strongoverdose1 = You're gonna die! YOU'RE GONNA DIE!
+reagent-effect-antidepressant-strongoverdose2 = Run! RUN! HIDE!
 reagent-effect-antidepressant-strongoverdose3 = They're after you. THEY'LL KILL YOU.
 reagent-effect-antidepressant-strongoverdose4 = They're all plotting against you.
-reagent-effect-antidepressant-strongoverdose5 = Watch your back, BEHIND YOU! 
+reagent-effect-antidepressant-strongoverdose5 = Watch your back, BEHIND YOU!
 reagent-effect-antidepressant-strongoverdose6 = You won't last the shift.
 reagent-effect-antidepressant-strongoverdose7 = Shut up. SHUT UP. SHUT UP!
 reagent-effect-antidepressant-strongoverdose8 = Get away. GET AWAY! IT'S GONNA EXPLODE!
@@ -87,3 +87,11 @@ reagent-effect-painkiller-strong5 = You hardly feel anything at all.
 reagent-effect-painkiller-strong6 = Any pain you were feeling is gone.
 
 reagent-effect-painkiller-fade = The painkiller's effects start to fade...
+
+reagent-effect-antipsych-normal1 = You gain a sense of clarity.
+reagent-effect-antipsych-normal2 = You feel your mind has somewhat calmed.
+reagent-effect-antipsych-normal3 = Your sanitiy seems to improve.
+reagent-effect-antipsych-normal4 = You space out for a moment.
+reagent-effect-antipsych-normal5 = You feel a bit drowsy.
+
+reagent-effect-antipsych-fade = The anti-psychotic's effects start to fade...
