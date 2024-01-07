@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
+using Content.Client._CD.Records.UI;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI;
 using Content.Client.Message;
@@ -109,6 +110,8 @@ namespace Content.Client.Preferences.UI
         public event Action<HumanoidCharacterProfile, int>? OnProfileChanged;
 
         private float _defaultHeight = 1f;
+
+        private readonly RecordEditorGui _recordsTab = new RecordEditorGui();
 
         public HumanoidProfileEditor(IClientPreferencesManager preferencesManager, IPrototypeManager prototypeManager,
             IEntityManager entityManager, IConfigurationManager configurationManager)
@@ -509,6 +512,13 @@ namespace Content.Client.Preferences.UI
             CMarkings.OnMarkingRankChange += OnMarkingChange;
 
             #endregion Markings
+
+            #region Records
+
+            _tabContainer.AddChild(_recordsTab);
+            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+
+            #endregion Records
 
             #region FlavorText
 
@@ -1212,6 +1222,7 @@ namespace Content.Client.Preferences.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
             UpdateHeightControls();
+            _recordsTab.Update(Profile);
 
             _preferenceUnavailableButton.SelectId((int) Profile.PreferenceUnavailable);
         }

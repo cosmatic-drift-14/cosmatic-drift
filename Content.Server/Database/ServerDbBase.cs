@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Shared._CD.Records;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
@@ -208,6 +209,9 @@ namespace Content.Server.Database
                 }
             }
 
+            var cdRecords = profile.CDCharacterRecords?.Deserialize<CharacterRecords>()
+                            ?? CharacterRecords.DefaultRecords();
+
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
@@ -232,7 +236,8 @@ namespace Content.Server.Database
                 jobs,
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToList(),
-                traits.ToList()
+                traits.ToList(),
+                cdRecords
             );
         }
 
@@ -284,6 +289,8 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait {TraitName = t})
             );
+
+            profile.CDCharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
 
             return profile;
         }

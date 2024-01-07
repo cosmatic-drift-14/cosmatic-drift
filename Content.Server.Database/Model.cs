@@ -346,6 +346,9 @@ namespace Content.Server.Database
 
         [Column("pref_unavailable")] public DbPreferenceUnavailableMode PreferenceUnavailable { get; set; }
 
+        [Column("cd_character_records", TypeName = "jsonb")]
+        public JsonDocument? CDCharacterRecords { get; set; }
+
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
     }

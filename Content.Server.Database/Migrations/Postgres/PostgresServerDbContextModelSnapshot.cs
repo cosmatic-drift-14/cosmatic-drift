@@ -733,6 +733,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("backpack");
 
+                    b.Property<JsonDocument>("CDCharacterRecords")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("cd_character_records");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")
@@ -777,8 +781,8 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("hair_name");
-						
-					b.Property<float>("Height")
+
+                    b.Property<float>("Height")
                         .HasColumnType("real")
                         .HasColumnName("height");
 
