@@ -58,6 +58,9 @@ public sealed class ParacusiaSystem : SharedParacusiaSystem
         var timeInterval = _random.NextFloat(paracusia.MinTimeBetweenIncidents, paracusia.MaxTimeBetweenIncidents);
         paracusia.NextIncidentTime += TimeSpan.FromSeconds(timeInterval);
 
+        if (_timing.CurTime <= paracusia.IncidentsDelayedUntil)
+            return;
+
         // Offset position where the sound is played
         var randomOffset =
             new Vector2

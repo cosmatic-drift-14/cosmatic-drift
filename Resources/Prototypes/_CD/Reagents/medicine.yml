@@ -730,6 +730,10 @@
           - "reagent-effect-antipsych-normal4"
           - "reagent-effect-antipsych-normal5"
         probability: 0.085
+      - !type:ResetParacusia
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
       - !type:MovespeedModifier
         probability: 0.3
         conditions:
