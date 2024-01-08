@@ -30,3 +30,6 @@ reagent-desc-agonolexyne = An incredibly potent and fast acting opioid invented 
 
 reagent-name-saprodipine = Saprodipine
 reagent-desc-saprodipine = A commonly used anti-psychotic with minimal side-effects. Typically used to treat hallucinations. Side effects include fatigue.
+
+reagent-name-rememberium = Rememberium
+reagent-desc-rememberium = A somewhat addictive chemical used to treat amnesia. Not effective on cloning related memory loss. Incompatible with alcohol and generally dangerous if improperly used.

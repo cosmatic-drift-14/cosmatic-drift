@@ -133,3 +133,15 @@
       amount: 1
   products:
     Saprodipine: 2
+
+- type: reaction
+  id: Rememberium
+  reactants:
+    Neurozenium:
+      amount: 1
+    MindbreakerToxin:
+      amount: 1
+    Cryptobiolin:
+      amount: 1
+  products:
+    Rememberium: 3
