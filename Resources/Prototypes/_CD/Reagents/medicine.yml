@@ -486,7 +486,7 @@
           reagent: Agonolexyne
           max: 0.01
         - !type:ReagentThreshold
-          reagent: Exoprodol
+          reagent: Rememberium
           max: 0.01
       - !type:AdjustReagent
         reagent: Charcoal # purges bloodstream cleaners
@@ -510,7 +510,7 @@
           reagent: Agonolexyne
           max: 0.01
         - !type:ReagentThreshold
-          reagent: Exoprodol
+          reagent: Rememberium
           max: 0.01
 
 - type: reagent
@@ -784,10 +784,10 @@
             max: 0.1
 
 - type: reagent
-  id: Exoprodol
-  name: reagent-name-exoprodol
+  id: Rememberium
+  name: reagent-name-rememberium
   group: Medicine
-  desc: reagent-desc-exoprodol
+  desc: reagent-desc-rememberium
   physicalDesc: reagent-physical-desc-fizzy-and-creamy
   flavor: medicine
   color: "#FAE0BA"
@@ -828,7 +828,7 @@
         - !type:ReagentThreshold
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
-        reagent: Exoprodol
+        reagent: Rememberium
         amount: 0.02
       - !type:AdjustReagent
         probablity: 0.8 # Chance of Addiction rising per tick

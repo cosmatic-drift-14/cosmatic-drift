@@ -135,7 +135,7 @@
     Saprodipine: 2
 
 - type: reaction
-  id: Exoprodol
+  id: Rememberium
   reactants:
     Neurozenium:
       amount: 1
@@ -144,4 +144,4 @@
     Cryptobiolin:
       amount: 1
   products:
-    Exoprodol: 3
+    Rememberium: 3
