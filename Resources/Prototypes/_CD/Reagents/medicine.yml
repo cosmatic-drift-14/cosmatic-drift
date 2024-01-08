@@ -710,9 +710,9 @@
 
 - type: reagent
   id: Saprodipine
-  name: reagent-name-saphrodipine
+  name: reagent-name-saprodipine
   group: Medicine
-  desc: reagent-desc-saphrodipine
+  desc: reagent-desc-saprodipine
   physicalDesc: reagent-physical-desc-foamy
   flavor: medicine
   color: "#45B1A7"
@@ -730,6 +730,23 @@
           - "reagent-effect-antipsych-normal4"
           - "reagent-effect-antipsych-normal5"
         probability: 0.085
+        conditions:
+        - !type:ReagentThreshold
+          max: 10.1
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages:
+          - "reagent-effect-anxietymed-normaloverdose1" # overdose makes you tired and forgetful
+          - "reagent-effect-anxietymed-normaloverdose2"
+          - "reagent-effect-anxietymed-normaloverdose3"
+          - "reagent-effect-anxietymed-normaloverdose4"
+          - "reagent-effect-anxietymed-normaloverdose5"
+          - "reagent-effect-anxietymed-normaloverdose6"
+        probability: 0.06
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.1
       - !type:ResetParacusia
         conditions:
         - !type:ReagentThreshold

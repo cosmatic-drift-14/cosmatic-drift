@@ -90,7 +90,7 @@ reagent-effect-painkiller-fade = The painkiller's effects start to fade...
 
 reagent-effect-antipsych-normal1 = You gain a sense of clarity.
 reagent-effect-antipsych-normal2 = You feel your mind has somewhat calmed.
-reagent-effect-antipsych-normal3 = Your sanitiy seems to improve.
+reagent-effect-antipsych-normal3 = Your sanity seems to improve.
 reagent-effect-antipsych-normal4 = You space out for a moment.
 reagent-effect-antipsych-normal5 = You feel a bit drowsy.
 
