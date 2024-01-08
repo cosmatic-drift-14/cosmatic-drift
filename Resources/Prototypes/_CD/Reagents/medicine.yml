@@ -87,7 +87,7 @@
         - !type:ReagentThreshold
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
-        reagent: Neurozenium 
+        reagent: Neurozenium
         amount: 0.15
       - !type:AdjustReagent
         conditions:
@@ -163,10 +163,10 @@
           min: 5.1
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold 
+        - !type:ReagentThreshold
           min: 5.1
         key: SeeingRainbows # hallucinations set in after 40 seconds, meaning ~0.40u overdose untreated.
-        component: SeeingRainbows 
+        component: SeeingRainbows
         type: Add
         time: 1.1
         refresh: false
@@ -175,7 +175,7 @@
         - !type:ReagentThreshold
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
-        reagent: Blissifylovene 
+        reagent: Blissifylovene
         amount: 0.15
       - !type:AdjustReagent
         conditions:
@@ -476,7 +476,7 @@
           - "reagent-effect-medaddiction-8"
         probability: 0.08
         conditions:
-        - !type:ReagentThreshold # the following three chemicals are addictive, and thus will counteract cravings.
+        - !type:ReagentThreshold # the following four chemicals are addictive, and thus will counteract cravings.
           reagent: Blissifylovene
           max: 0.01
         - !type:ReagentThreshold
@@ -484,6 +484,9 @@
           max: 0.01
         - !type:ReagentThreshold
           reagent: Agonolexyne
+          max: 0.01
+        - !type:ReagentThreshold
+          reagent: Rememberium
           max: 0.01
       - !type:AdjustReagent
         reagent: Charcoal # purges bloodstream cleaners
@@ -497,7 +500,7 @@
         conditions:
         - !type:ReagentThreshold
           max: 1.0 # it gets worse before the addiction ends.
-        - !type:ReagentThreshold # the following three chemicals are addictive, and thus will counteract cravings.
+        - !type:ReagentThreshold # the following four chemicals are addictive, and thus will counteract cravings.
           reagent: Blissifylovene
           max: 0.01
         - !type:ReagentThreshold
@@ -505,6 +508,9 @@
           max: 0.01
         - !type:ReagentThreshold
           reagent: Agonolexyne
+          max: 0.01
+        - !type:ReagentThreshold
+          reagent: Rememberium
           max: 0.01
 
 - type: reagent
@@ -536,7 +542,7 @@
       - !type:SatiateHunger # causes digestion inefficiency during overdose
         factor: -1.2
         conditions:
-          - !type:ReagentThreshold 
+          - !type:ReagentThreshold
             min: 14
       - !type:ChemVomit
         probability: 0.8
@@ -547,7 +553,7 @@
       - !type:SatiateHunger # causes digestion inefficiency if you drink alcohol
         factor: -2.0
         conditions:
-          - !type:ReagentThreshold 
+          - !type:ReagentThreshold
             reagent: Ethanol
             min: 2
       - !type:PopupMessage
@@ -707,4 +713,139 @@
         conditions:
           - !type:ReagentThreshold
             max: 0.1
-          
+
+- type: reagent
+  id: Saprodipine
+  name: reagent-name-saprodipine
+  group: Medicine
+  desc: reagent-desc-saprodipine
+  physicalDesc: reagent-physical-desc-foamy
+  flavor: medicine
+  color: "#45B1A7"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.01
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages:
+          - "reagent-effect-antipsych-normal1"
+          - "reagent-effect-antipsych-normal2"
+          - "reagent-effect-antipsych-normal3"
+          - "reagent-effect-antipsych-normal4"
+          - "reagent-effect-antipsych-normal5"
+        probability: 0.085
+        conditions:
+        - !type:ReagentThreshold
+          max: 10.1
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages:
+          - "reagent-effect-anxietymed-normaloverdose1" # overdose makes you tired and forgetful
+          - "reagent-effect-anxietymed-normaloverdose2"
+          - "reagent-effect-anxietymed-normaloverdose3"
+          - "reagent-effect-anxietymed-normaloverdose4"
+          - "reagent-effect-anxietymed-normaloverdose5"
+          - "reagent-effect-anxietymed-normaloverdose6"
+        probability: 0.06
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.1
+      - !type:ResetParacusia
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+      - !type:MovespeedModifier
+        probability: 0.3
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.1 # Slight overdose slows you down a bit
+        walkSpeedModifier: 0.85
+        sprintSpeedModifier: 0.75
+      - !type:GenericStatusEffect
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          min: 20 # taking far too much has a chance to knock you out
+        key: ForcedSleep
+        component: ForcedSleeping
+        refresh: false
+        type: Add
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "reagent-effect-antipsych-fade" # A decent chance to notify the player when their meds run out
+        probability: 0.5
+        conditions:
+          - !type:ReagentThreshold
+            max: 0.1
+
+- type: reagent
+  id: Rememberium
+  name: reagent-name-rememberium
+  group: Medicine
+  desc: reagent-desc-rememberium
+  physicalDesc: reagent-physical-desc-fizzy-and-creamy
+  flavor: medicine
+  color: "#FAE0BA"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.01
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages:
+          - "reagent-effect-anti-amnesia-normal1"
+          - "reagent-effect-anti-amnesia-normal2"
+          - "reagent-effect-anti-amnesia-normal3"
+          - "reagent-effect-anti-amnesia-normal4"
+        probability: 0.085
+      - !type:HealthChange # poisons you on OD
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        damage:
+          types:
+            Poison: 1.0
+      - !type:Paralyze
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Saprodipine # wildly incompatible with antipsychotic medications.
+          min: 5
+      - !type:AdjustReagent
+        reagent: Saprodipine # purges Saprodipine so paralysis isn't too long
+        amount: -0.2
+      - !type:Drunk # OD causes drunkeness
+        conditions:
+          - !type:ReagentThreshold
+            min: 5
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
+          min: 1
+        reagent: Rememberium
+        amount: 0.02
+      - !type:AdjustReagent
+        probablity: 0.8 # Chance of Addiction rising per tick
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 10 # maximum addiction severity for this reagent. A moderate amount of addictiveness.
+        - !type:ReagentThreshold
+          min: 4
+        reagent: Addictine
+        amount: 0.2
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "reagent-effect-anti-amnesia-fade" # A decent chance to notify the player when their meds run out
+        probability: 0.5
+        conditions:
+          - !type:ReagentThreshold
+            max: 0.1

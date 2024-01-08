@@ -122,3 +122,26 @@
       catalyst: true
   products:
     Agonolexyne: 3
+
+- type: reaction
+  id: Saprodipine
+  minTemp: 350
+  reactants:
+    Stellibinin:
+      amount: 1
+    Synaptizine:
+      amount: 1
+  products:
+    Saprodipine: 2
+
+- type: reaction
+  id: Rememberium
+  reactants:
+    Neurozenium:
+      amount: 1
+    MindbreakerToxin:
+      amount: 1
+    Cryptobiolin:
+      amount: 1
+  products:
+    Rememberium: 3

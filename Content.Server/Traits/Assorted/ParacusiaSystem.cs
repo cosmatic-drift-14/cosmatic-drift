@@ -1,10 +1,13 @@
 using Content.Shared.Traits.Assorted;
 using Robust.Shared.Audio;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Traits.Assorted;
 
 public sealed class ParacusiaSystem : SharedParacusiaSystem
 {
+    [Dependency] private readonly IGameTiming _timing = default!;
+
     public void SetSounds(EntityUid uid, SoundSpecifier sounds, ParacusiaComponent? component = null)
     {
         if (!Resolve(uid, ref component))
@@ -34,5 +37,16 @@ public sealed class ParacusiaSystem : SharedParacusiaSystem
         }
         component.MaxSoundDistance = maxSoundDistance;
         Dirty(component);
+    }
+
+    public void SetIncidentDelay(EntityUid uid, TimeSpan delayTime, ParacusiaComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+        {
+            return;
+        }
+
+        component.IncidentsDelayedUntil = _timing.CurTime + delayTime;
+        Dirty(uid, component);
     }
 }
