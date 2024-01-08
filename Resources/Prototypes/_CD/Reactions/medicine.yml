@@ -122,3 +122,14 @@
       catalyst: true
   products:
     Agonolexyne: 3
+
+- type: reaction
+  id: Saprodipine
+  minTemp: 350
+  reactants:
+    Stellibinin:
+      amount: 1
+    Synaptizine:
+      amount: 1
+  products:
+    Saprodipine: 2
