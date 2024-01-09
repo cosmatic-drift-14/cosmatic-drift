@@ -75,7 +75,70 @@
 
 # Civilian
 
-# TODO: Put stuff here. Probably not as important.
+- type: entity
+  id: ArrivalsSpawnPointBartender
+  parent: ArrivalsSpawnPointJobBase
+  suffix: bartender
+  components:
+  - type: ArrivalsSpawnPoint
+    jobs:
+      - Bartender
+  - type: Sprite
+    layers:
+      - state: green
+      - state: bartender
+
+- type: entity
+  id: ArrivalsSpawnPointClown
+  parent: ArrivalsSpawnPointJobBase
+  suffix: clown
+  components:
+  - type: ArrivalsSpawnPoint
+    jobs:
+      - Clown
+  - type: Sprite
+    layers:
+      - state: green
+      - state: clown
+
+- type: entity
+  id: ArrivalsSpawnPointLibrarian
+  parent: ArrivalsSpawnPointJobBase
+  suffix: librarian
+  components:
+  - type: ArrivalsSpawnPoint
+    jobs:
+      - Librarian
+  - type: Sprite
+    layers:
+      - state: green
+      - state: librarian
+
+- type: entity
+  id: ArrivalsSpawnPointMime
+  parent: ArrivalsSpawnPointJobBase
+  suffix: mime
+  components:
+  - type: ArrivalsSpawnPoint
+    jobs:
+      - Mime
+  - type: Sprite
+    layers:
+      - state: green
+      - state: mime
+
+- type: entity
+  id: ArrivalsSpawnPointMusician
+  parent: ArrivalsSpawnPointJobBase
+  suffix: musician
+  components:
+  - type: ArrivalsSpawnPoint
+    jobs:
+      - Musician
+  - type: Sprite
+    layers:
+      - state: green
+      - state: musician
 
 # Command
 
