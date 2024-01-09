@@ -106,6 +106,12 @@ public sealed partial class MeleeWeaponComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public bool SwingLeft;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    // [DataField("StaminaDamageOnHit")]
+    public DamageSpecifier StaminaDamageOnHit = default!;
 
     // Sounds
 

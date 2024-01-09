@@ -23,6 +23,8 @@
     activatedDamage:
         types:
             Blunt: 8 #This is one unit more than the stun baton normally does.
+    activatedStaminaDamageOnHit:
+      damage: 100 #Set to 100 to debug, real value will be 25.
   - type: Sprite
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton.rsi
     layers:
@@ -36,8 +38,7 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 0
-    bluntStaminaDamageFactor: 3.2
+        Blunt: 0  
   - type: Item
     size: 10
     sprite: _CD/Objects/Weapons/TelescopicBaton/telescopicbaton-inhands.rsi

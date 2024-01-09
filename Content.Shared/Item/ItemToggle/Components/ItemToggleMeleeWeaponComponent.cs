@@ -62,6 +62,12 @@ public sealed partial class ItemToggleMeleeWeaponComponent : Component
     public DamageSpecifier? DeactivatedDamage = null;
 
     /// <summary>
+    /// Stamina damage done by this item when activated.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public DamageSpecifier? ActivatedStaminaDamageOnHit = default;
+
+    /// <summary>
     ///     Does this become hidden when deactivated
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]

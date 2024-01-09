@@ -878,6 +878,12 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                 meleeWeapon.Damage = itemToggleMelee.ActivatedDamage;
             }
 
+            if (itemToggleMelee.ActivatedStaminaDamageOnHit != null)
+            {
+                itemToggleMelee.ActivatedStaminaDamageOnHit ??= meleeWeapon.StaminaDamageOnHit;
+                meleeWeapon.StaminaDamageOnHit = itemToggleMelee.ActivatedStaminaDamageOnHit;
+            }
+
             meleeWeapon.HitSound = itemToggleMelee.ActivatedSoundOnHit;
 
             if (itemToggleMelee.ActivatedSoundOnHitNoDamage != null)
