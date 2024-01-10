@@ -10,6 +10,8 @@ using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Timing;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -22,6 +24,8 @@ public sealed partial class StorageSystem : SharedStorageSystem
     [Dependency] private readonly IAdminManager _admin = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly UseDelaySystem _useDelay = default!;
 
     public override void Initialize()
     {
@@ -114,12 +118,12 @@ public sealed partial class StorageSystem : SharedStorageSystem
             return;
 
         // prevent spamming bag open / honkerton honk sound
-        silent |= TryComp<UseDelayComponent>(uid, out var useDelay) && UseDelay.ActiveDelay(uid, useDelay);
+        silent |= TryComp<UseDelayComponent>(uid, out var useDelay) && _useDelay.IsDelayed((uid, useDelay));
         if (!silent)
         {
-            Audio.PlayPvs(storageComp.StorageOpenSound, uid);
+            _audio.PlayPvs(storageComp.StorageOpenSound, uid);
             if (useDelay != null)
-                UseDelay.BeginDelay(uid, useDelay);
+                _useDelay.TryResetDelay((uid, useDelay));
         }
 
         Log.Debug($"Storage (UID {uid}) \"used\" by player session (UID {player.PlayerSession.AttachedEntity}).");

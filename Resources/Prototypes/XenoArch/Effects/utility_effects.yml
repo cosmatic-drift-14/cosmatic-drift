@@ -125,7 +125,7 @@
     components:
     - Item
   permanentComponents:
-  - type: ItemCooldown
+  - type: UseDelay
   - type: MeleeWeapon
     damage:
       types:
