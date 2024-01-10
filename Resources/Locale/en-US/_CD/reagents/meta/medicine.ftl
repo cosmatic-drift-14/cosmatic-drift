@@ -17,7 +17,7 @@ reagent-name-equilibrazine = Equilibrazine
 reagent-desc-equilibrazine = A Nanotrasen engineered chemical recipe designed to keep workers working with only small doses. It didn't make the cut, but it functions as a potent treatment for anxiety and panic attacks. Can be taken fine with alcohol, but is wildly incompatible with most antidepressants.
 
 reagent-name-addictine = addictine
-reagent-desc-addictine = A chemical produced by the body when metabolizing certain medications. Causes symptoms of withdrawl. Neutralizes bloodstream cleansers like charcoal and ipecac. 
+reagent-desc-addictine = A chemical produced by the body when metabolizing certain medications. Causes symptoms of withdrawl. Neutralizes bloodstream cleansers like charcoal and ipecac.
 
 reagent-name-stubantazine = Stubantazine
 reagent-desc-stubantazine = A mild painkiller commonly used to treat brief stents of pain, though it lasts a little while for good measure. Overdose or consumption of alcohol may cause vomiting and digestion inefficiency.
@@ -27,3 +27,6 @@ reagent-desc-soretizone = A fairly effective painkiller developed to treat chron
 
 reagent-name-agonolexyne = Agonolexyne
 reagent-desc-agonolexyne = An incredibly potent and fast acting opioid invented to speed up the application of painkillers during surgery. Stops you from feeling pain (or really anything at all). Interacts poorly with alcohol. Known to be very addictive. Overdose may relax the lungs to the point of non-function.
+
+reagent-name-saprodipine = Saprodipine
+reagent-desc-saprodipine = A commonly used anti-psychotic with minimal side-effects. Typically used to treat hallucinations. Side effects include fatigue.
