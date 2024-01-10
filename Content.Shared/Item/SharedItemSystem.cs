@@ -128,8 +128,9 @@ public abstract class SharedItemSystem : EntitySystem
 
     private void OnExamine(EntityUid uid, ItemComponent component, ExaminedEvent args)
     {
+        // show at end of message generally
         args.PushMarkup(Loc.GetString("item-component-on-examine-size",
-            ("size", component.Size)));
+            ("size", component.Size)), priority: -1);
     }
 
     /// <summary>
