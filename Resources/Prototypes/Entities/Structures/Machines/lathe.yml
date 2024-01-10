@@ -936,6 +936,7 @@
       - ClothingUniformJumpsuitHoSParadeMale
       - ClothingUniformJumpsuitCapFormal
       - ClothingUniformJumpskirtCapFormalDress
+      # Winter outfits
       - ClothingOuterWinterCap
       - ClothingOuterWinterCE
       - ClothingOuterWinterCMO
@@ -988,6 +989,10 @@
       - ClothingHeadHatQMsoft
       - ClothingHeadHatCaptain
       - ClothingHeadHatCapcap
+      # Ties
+      - ClothingNeckTieRed
+      - ClothingNeckTieDet
+      - ClothingNeckTieSci
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
