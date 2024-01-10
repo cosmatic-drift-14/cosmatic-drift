@@ -357,6 +357,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<float> RespawnTime =
             CVarDef.Create("game.respawn_time", 300.0f, CVar.SERVER | CVar.REPLICATED);
 
+        /// <summary>
+        /// The prototype to use for secret weights. 
+        /// </summary>
+        public static readonly CVarDef<string> SecretWeightPrototype =
+            CVarDef.Create("game.secret_weight_prototype", "Secret", CVar.SERVERONLY);
+
         /*
          * Discord
          */
