@@ -121,20 +121,6 @@
 - type: playTimeTracker
   id: JobSecurityOfficer
 
-# CDAddedSeniorRoles - These are kept where they are for alphabetization.
-- type: playTimeTracker
-  id: JobSeniorEngineer
-
-- type: playTimeTracker
-  id: JobSeniorOfficer
-
-- type: playTimeTracker
-  id: JobSeniorPhysician
-
-- type: playTimeTracker
-  id: JobSeniorResearcher
-# End of CDAddedSeniorRoles
-
 - type: playTimeTracker
   id: JobServiceWorker
 
