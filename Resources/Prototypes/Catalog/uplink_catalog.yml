@@ -1098,7 +1098,7 @@
     whitelist:
     - Zookeeper
     - Scientist
-    - SeniorResearcher
+    - SeniorResearcher #CD Role
     - ResearchDirector
     - Chef
 
