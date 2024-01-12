@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtLuxurySec
+  name: luxurious securty dress
+  description: Made of an expensive material, feels like heaven to touch.
+  components:
+    - type: Sprite
+      sprite: Clothing/Uniforms/Jumpskirt/luxury_sec.rsi
+    - type: Clothing
+      sprite: Clothing/Uniforms/Jumpskirt/luxury_sec.rsi

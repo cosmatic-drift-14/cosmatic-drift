@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsSecHeel
+  name: low-drag heels
+  description: Made of a low-drag, high traction material, useless since they are heels.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/heels-sec.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/heels-sec.rsi
