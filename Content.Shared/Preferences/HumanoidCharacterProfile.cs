@@ -25,7 +25,7 @@ namespace Content.Shared.Preferences
     public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     {
         public const int MaxNameLength = 32;
-        public const int MaxDescLength = 512;
+        public const int MaxDescLength = 1024; // CosmaticDrift-LargerCharacterDescriptions // Was 512
 
         private readonly Dictionary<string, JobPriority> _jobPriorities;
         private readonly List<string> _antagPreferences;
