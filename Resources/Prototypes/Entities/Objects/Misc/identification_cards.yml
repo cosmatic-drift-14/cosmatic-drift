@@ -645,10 +645,10 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
-    - JobIconSeniorPhysician #CD Added Senior Roles - Can we namespace these?
-    - JobIconSeniorOfficer
-    - JobIconSeniorEngineer
-    - JobIconSeniorResearcher
+    - JobIconSeniorPhysician #CD Role
+    - JobIconSeniorOfficer #CD Role
+    - JobIconSeniorEngineer #CD Role
+    - JobIconSeniorResearcher #CD Role
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
     inHandsOnly: true
