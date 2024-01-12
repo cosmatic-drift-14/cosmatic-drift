@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingShoesBaseButcherable
-  id: ClothingShoesGrayskates
+  id: ClothingShoesGraySkates
   name: gray roller skates
   description: "Get your skates on!"
   components:

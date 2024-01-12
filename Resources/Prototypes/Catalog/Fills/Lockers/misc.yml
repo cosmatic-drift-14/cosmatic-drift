@@ -132,7 +132,7 @@
           prob: 0.2
         - id: ClothingShoesSkates
           prob: 0.1
-        - id: ClothingShoesGrayskates #_CD item
+        - id: ClothingShoesGraySkates #_CD item
           prob: 0.1
         - id: ClothingHandsGlovesColorYellow
           prob: 0.05
