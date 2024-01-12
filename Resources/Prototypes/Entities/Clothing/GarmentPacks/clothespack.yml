@@ -8,7 +8,7 @@
     size: 10
   - type: Tag
   - type: Sprite
-    sprite: _CD/Clothing/GarmenPacks/debugpack.rsi
+    sprite: _CD/Clothing/GarmentPacks/debugpack.rsi
     state: icon
   - type: SpawnItemsOnUse
     items:
