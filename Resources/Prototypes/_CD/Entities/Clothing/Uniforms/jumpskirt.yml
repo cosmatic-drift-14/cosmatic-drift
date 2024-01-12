@@ -1,10 +1,10 @@
 - type: entity
   parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtLuxurySec
-  name: luxurious securty dress
-  description: Made of an expensive material, feels like heaven to touch.
+  id: ClothingUniformJumpskirtSpecalistMaid
+  name: luxurious maid dress
+  description: Originally made for servants of CEOs, its made of an expensive material.
   components:
     - type: Sprite
-      sprite: Clothing/Uniforms/Jumpskirt/luxury_sec.rsi
+      sprite: Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
     - type: Clothing
-      sprite: Clothing/Uniforms/Jumpskirt/luxury_sec.rsi
+      sprite: Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
