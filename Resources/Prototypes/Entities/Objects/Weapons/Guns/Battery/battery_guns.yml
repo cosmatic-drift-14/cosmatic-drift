@@ -210,6 +210,8 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+  - type: StaticPrice
+    price: 420
   - type: Gun
     selectedMode: SemiAuto
     availableModes:
@@ -227,6 +229,8 @@
   - type: HitscanBatteryAmmoProvider
     proto: RedLaserPractice
     fireCost: 62.5
+  - type: StaticPrice
+    price: 300
 
 - type: entity
   name: pulse pistol
@@ -472,6 +476,8 @@
     magState: mag
     steps: 5
     zeroVisible: true
+  - type: StaticPrice
+    price: 260
 
 - type: entity
   name: practice disabler
@@ -492,6 +498,8 @@
       quickEquip: false
       slots:
         - Belt
+    - type: StaticPrice
+      price: 100
     - type: ProjectileBatteryAmmoProvider
       proto: BulletDisablerPractice
       fireCost: 100
@@ -646,6 +654,8 @@
   - type: Construction
     graph: UpgradeWeaponPistolCHIMP
     node: start
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   name: experimental C.H.I.M.P. handcannon
