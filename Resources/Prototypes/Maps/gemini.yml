@@ -39,7 +39,7 @@
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ]
-            Chemist: [ 2, 3 ]
+            Chemist: [ 2, 2 ]
             Paramedic: [ 2, 2 ]
             MedicalDoctor: [ 3, 5 ]
             MedicalIntern: [ 8, 8 ]
