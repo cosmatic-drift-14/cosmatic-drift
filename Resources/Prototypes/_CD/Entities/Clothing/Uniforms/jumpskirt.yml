@@ -2,7 +2,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtStylizedMaid
   name: stylized maid dress
-  description: "Maid" for servants of the wealthy, its made of an expensive material.
+  description: Maid for servants of the wealthy, its made of an expensive material.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/stylized_maid.rsi
