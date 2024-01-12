@@ -1,10 +1,18 @@
 - type: entity
-  parent: ClothingShoesBaseButcherable
-  id: ClothingShoesBootsLuxuryHeels
+  parent: ClothingShoesStorageBase
+  id: ClothingShoesLuxuryHeelBoots
   name: low-drag heels
-  description: Made of a low-drag, high traction material, useless since they are heels.
+  description: Made of advanced low-drag high traction material, perfect for combat if not for the 4 inch heels.
   components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 6
   - type: Sprite
-    sprite: _CD/Clothing/Shoes/Boots/heels-lux.rsi
+    sprite: _CD/Clothing/Shoes/Boots/lowdrag-heels.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Shoes/Boots/heels-lux.rsi
+    sprite: _CD/Clothing/Shoes/Boots/lowdrag-heels.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - Knife
