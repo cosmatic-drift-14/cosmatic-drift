@@ -5,6 +5,6 @@
   description: Originally made for servants of CEOs, its made of an expensive material.
   components:
     - type: Sprite
-      sprite: Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
+      sprite: _CD/Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
     - type: Clothing
-      sprite: Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
+      sprite: _CD/Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
