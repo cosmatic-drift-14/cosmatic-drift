@@ -1,0 +1,19 @@
+- type: entity
+  id: BaseClothesPack
+  parent: BaseItem
+  name: generic garment pack
+  description: VACUUMED TIDESUIT LETS FUCKING GOOOOOOOOOOOOO
+  components:
+  - type: Item
+    size: 10
+  - type: Tag
+  - type: Sprite
+    sprite: _CD/Clothing/GarmenPacks/debugpack.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingUniformJumpsuitAncient
+      - id: ClothingShoesColorBlack
+      - id: ClothingMaskGas
+    sound:
+      path: /Audio/Effects/unwrap.ogg
