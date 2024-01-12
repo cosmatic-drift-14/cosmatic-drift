@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtSpecalistMaid
-  name: luxurious maid dress
-  description: Originally made for servants of CEOs, its made of an expensive material.
+  name: stylized maid dress
+  description: 'Maid' for servants of the wealthy, its made of an expensive material.
   components:
     - type: Sprite
       sprite: _CD/Clothing/Uniforms/Jumpskirt/luxury_maid.rsi
