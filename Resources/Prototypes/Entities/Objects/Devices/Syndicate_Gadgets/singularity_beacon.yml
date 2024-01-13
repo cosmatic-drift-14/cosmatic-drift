@@ -9,7 +9,7 @@
     layers:
     - state: icon
   - type: Item
-    size: Huge
+    size: 90
   - type: Fixtures
     fixtures:
       fix1:

@@ -953,13 +953,6 @@
     Durathread: 150
 
 - type: latheRecipe
-  id: ClothingHeadHatBeretEngineering
-  result: ClothingHeadHatBeretEngineering
-  completetime: 2.5
-  materials:
-    Cloth: 150
-
-- type: latheRecipe
   id: ClothingHeadHatBeretCmo
   result: ClothingHeadHatBeretCmo
   completetime: 2.5
@@ -1010,38 +1003,6 @@
     Cloth: 500
 
 - type: latheRecipe
-  id: ClothingHeadHatCaptain
-  result: ClothingHeadHatCaptain
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
-  id: ClothingHeadHatCapcap
-  result: ClothingHeadHatCapcap
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
-  id: ClothingHeadHatBeretHoS
-  result: ClothingHeadHatBeretHoS
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
-  id: ClothingHeadHatHoshat
-  result: ClothingHeadHatHoshat
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
   id: ClothingHeadHatWarden
   result: ClothingHeadHatWarden
   completetime: 2
@@ -1058,40 +1019,8 @@
     Durathread: 50
 
 - type: latheRecipe
-  id: ClothingHeadHatHopcap
-  result: ClothingHeadHatHopcap
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
-  id: ClothingHeadHatQMsoft
-  result: ClothingHeadHatQMsoft
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
-  id: ClothingHeadHatBeretRND
-  result: ClothingHeadHatBeretRND
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
   id: ClothingHeadHatBeretEngineering
   result: ClothingHeadHatBeretEngineering
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
-
-- type: latheRecipe
-  id: ClothingHeadHatBeretCmo
-  result: ClothingHeadHatBeretCmo
   completetime: 2
   materials:
     Cloth: 100

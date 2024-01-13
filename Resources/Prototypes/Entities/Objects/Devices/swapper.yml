@@ -10,7 +10,7 @@
     - state: icon
       map: ["base"]
   - type: Item
-    size: Small
+    size: 15
   - type: Appearance
   - type: SwapTeleporter
     teleporterWhitelist:

@@ -13,9 +13,6 @@
     contents:
       - id: MonkeyCubeWrapped
         amount: 6
-  - type: Storage
-    grid:
-    - 0,0,2,1
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: box

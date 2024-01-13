@@ -124,7 +124,7 @@
   description: A foggy brown bottle with a faded label depicting a mop. It comes full of murky... vintage.
   components:
   - type: Item
-    size: Small
+    size: 5
   - type: SolutionContainerManager
     solutions:
       drink:

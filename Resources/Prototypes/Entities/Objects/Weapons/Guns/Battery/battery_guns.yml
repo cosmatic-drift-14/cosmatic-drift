@@ -350,7 +350,7 @@
   description: A portable particle decelerator capable of decomposing a tesla or singularity.
   components:
     - type: Item
-      size: Ginormous
+      size: 200
     - type: MultiHandedItem
     - type: ClothingSpeedModifier
       walkModifier: 0.6
