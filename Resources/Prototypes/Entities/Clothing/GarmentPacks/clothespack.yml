@@ -1,8 +1,8 @@
 - type: entity
+  suffix: DEBUG
   id: BaseClothesPack
   parent: BaseItem
-  name: generic garment pack
-  description: debug and parent
+  name: debug garment pack
   components:
   - type: Item
     size: 10
