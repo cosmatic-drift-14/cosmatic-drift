@@ -7590,6 +7590,18 @@ entities:
       type: DeviceList
     - joinedGrid: 2
       type: AtmosDevice
+  - uid: 3524
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -21.5,-8.5
+      parent: 2
+      type: Transform
+    - devices:
+      - 5440
+      - 11025
+      type: DeviceList
+    - joinedGrid: 2
+      type: AtmosDevice
   - uid: 6801
     components:
     - rot: 1.5707963267948966 rad
@@ -8633,19 +8645,6 @@ entities:
       - 9850
       - 9844
       - 9851
-      type: DeviceList
-    - joinedGrid: 2
-      type: AtmosDevice
-  - uid: 11025
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: -21.5,-8.5
-      parent: 2
-      type: Transform
-    - devices:
-      - 12852
-      - 11000
-      - 6793
       type: DeviceList
     - joinedGrid: 2
       type: AtmosDevice
@@ -10161,11 +10160,12 @@ entities:
       type: Transform
 - proto: AirlockResearchDirectorLocked
   entities:
-  - uid: 3524
+  - uid: 11000
     components:
     - flags: PvsPriority
       type: MetaData
-    - pos: -21.5,-9.5
+    - rot: -1.5707963267948966 rad
+      pos: -21.5,-9.5
       parent: 2
       type: Transform
 - proto: AirlockSalvageGlassLocked
@@ -11850,9 +11850,13 @@ entities:
   entities:
   - uid: 12866
     components:
-    - pos: 20.451284,14.26887
-      parent: 2
+    - flags: InContainer
+      type: MetaData
+    - parent: 12865
       type: Transform
+    - canCollide: False
+      type: Physics
+    - type: InsideEntityStorage
 - proto: BedsheetCMO
   entities:
   - uid: 11261
@@ -11926,9 +11930,13 @@ entities:
   entities:
   - uid: 12860
     components:
-    - pos: 20.63184,14.824426
-      parent: 2
+    - flags: InContainer
+      type: MetaData
+    - parent: 12859
       type: Transform
+    - canCollide: False
+      type: Physics
+    - type: InsideEntityStorage
 - proto: BedsheetQM
   entities:
   - uid: 7455
@@ -27968,11 +27976,6 @@ entities:
     - pos: -18.5,-5.5
       parent: 2
       type: Transform
-  - uid: 5440
-    components:
-    - pos: -21.5,-9.5
-      parent: 2
-      type: Transform
   - uid: 5441
     components:
     - pos: -24.5,-9.5
@@ -38984,16 +38987,6 @@ entities:
     - pos: -26.5,11.5
       parent: 2
       type: Transform
-  - uid: 12852
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: -21.5,-9.5
-      parent: 2
-      type: Transform
-    - configurators:
-      deviceLists:
-      - 11025
-      type: DeviceNetwork
 - proto: FirelockEdge
   entities:
   - uid: 3261
@@ -41241,6 +41234,14 @@ entities:
     components:
     - rot: 3.141592653589793 rad
       pos: -19.5,-10.5
+      parent: 2
+      type: Transform
+    - color: '#990000FF'
+      type: AtmosPipeColor
+  - uid: 6793
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -22.5,-8.5
       parent: 2
       type: Transform
     - color: '#990000FF'
@@ -55786,19 +55787,6 @@ entities:
       type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
-  - uid: 6793
-    components:
-    - rot: 1.5707963267948966 rad
-      pos: -23.5,-9.5
-      parent: 2
-      type: Transform
-    - deviceLists:
-      - 11025
-      type: DeviceNetwork
-    - joinedGrid: 2
-      type: AtmosDevice
-    - color: '#0055CCFF'
-      type: AtmosPipeColor
   - uid: 6811
     components:
     - rot: -1.5707963267948966 rad
@@ -56596,6 +56584,19 @@ entities:
       type: AtmosDevice
     - color: '#0055CCFF'
       type: AtmosPipeColor
+  - uid: 11025
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -23.5,-9.5
+      parent: 2
+      type: Transform
+    - deviceLists:
+      - 3524
+      type: DeviceNetwork
+    - joinedGrid: 2
+      type: AtmosDevice
+    - color: '#0055CCFF'
+      type: AtmosPipeColor
   - uid: 12682
     components:
     - pos: -37.5,29.5
@@ -56732,6 +56733,19 @@ entities:
       pos: 9.5,28.5
       parent: 2
       type: Transform
+    - joinedGrid: 2
+      type: AtmosDevice
+    - color: '#990000FF'
+      type: AtmosPipeColor
+  - uid: 5440
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -23.5,-8.5
+      parent: 2
+      type: Transform
+    - deviceLists:
+      - 3524
+      type: DeviceNetwork
     - joinedGrid: 2
       type: AtmosDevice
     - color: '#990000FF'
@@ -57700,19 +57714,6 @@ entities:
       type: Transform
     - deviceLists:
       - 2648
-      type: DeviceNetwork
-    - joinedGrid: 2
-      type: AtmosDevice
-    - color: '#990000FF'
-      type: AtmosPipeColor
-  - uid: 11000
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -22.5,-8.5
-      parent: 2
-      type: Transform
-    - deviceLists:
-      - 11025
       type: DeviceNetwork
     - joinedGrid: 2
       type: AtmosDevice
@@ -60431,6 +60432,7 @@ entities:
           occludes: True
           ents:
           - 12858
+          - 12866
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -60607,6 +60609,17 @@ entities:
         - 0
         - 0
       type: EntityStorage
+    - containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 12860
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+      type: ContainerContainer
 - proto: LockerParamedicFilled
   entities:
   - uid: 7747
