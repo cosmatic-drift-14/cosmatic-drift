@@ -11850,13 +11850,9 @@ entities:
   entities:
   - uid: 12866
     components:
-    - flags: InContainer
-      type: MetaData
-    - parent: 12865
+    - pos: 20.451284,14.26887
+      parent: 2
       type: Transform
-    - canCollide: False
-      type: Physics
-    - type: InsideEntityStorage
 - proto: BedsheetCMO
   entities:
   - uid: 11261
@@ -11930,13 +11926,9 @@ entities:
   entities:
   - uid: 12860
     components:
-    - flags: InContainer
-      type: MetaData
-    - parent: 12859
+    - pos: 20.63184,14.824426
+      parent: 2
       type: Transform
-    - canCollide: False
-      type: Physics
-    - type: InsideEntityStorage
 - proto: BedsheetQM
   entities:
   - uid: 7455
@@ -40265,9 +40257,13 @@ entities:
   entities:
   - uid: 12858
     components:
-    - pos: 20.470167,14.672701
-      parent: 2
+    - flags: InContainer
+      type: MetaData
+    - parent: 12865
       type: Transform
+    - canCollide: False
+      type: Physics
+    - type: InsideEntityStorage
 - proto: FoodPieBananaCream
   entities:
   - uid: 12790
@@ -60435,7 +60431,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 12866
+          - 12858
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -60612,17 +60608,6 @@ entities:
         - 0
         - 0
       type: EntityStorage
-    - containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 12860
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-      type: ContainerContainer
 - proto: LockerParamedicFilled
   entities:
   - uid: 7747
