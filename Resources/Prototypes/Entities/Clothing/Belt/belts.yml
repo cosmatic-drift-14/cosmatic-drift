@@ -29,6 +29,8 @@
         - HolofanProjector
         - Multitool
         - AppraisalTool
+        - JawsOfLife
+        - GPS
       components:
         - SprayPainter
         - NetworkConfigurator
@@ -449,6 +451,7 @@
         - Radio
         - Sidearm
         - MagazinePistol
+        - MagazineMagnum
       components:
         - Stunbaton
         - FlashOnTrigger
