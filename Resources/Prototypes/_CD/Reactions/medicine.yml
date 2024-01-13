@@ -135,7 +135,7 @@
     Saprodipine: 2
 
 - type: reaction
-  id: Rememberium
+  id: Cortexene
   reactants:
     Neurozenium:
       amount: 1
@@ -144,4 +144,4 @@
     Cryptobiolin:
       amount: 1
   products:
-    Rememberium: 3
+    Cortexene: 3
