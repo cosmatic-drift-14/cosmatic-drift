@@ -12,20 +12,4 @@
   - type: Item
     size: 30
   - type: Storage
-    capacity: 30
-    whitelist:
-      tags:
-        - KitchenKnife
-        - Cleaver
-        - RollingPin
-        - Bottle
-        - Spray
-        - Syringe
-        - CigPack
-        - SecBeltEquip
-        - Sidearm
-        - MagazinePistol
-      components:
-        - Stunbaton
-        - Flash
-        - Handcuff
+    capacity: 20
