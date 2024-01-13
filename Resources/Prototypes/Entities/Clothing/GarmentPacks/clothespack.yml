@@ -2,7 +2,7 @@
   id: BaseClothesPack
   parent: BaseItem
   name: generic garment pack
-  description: VACUUMED TIDESUIT LETS FUCKING GOOOOOOOOOOOOO
+  description: debug and parent
   components:
   - type: Item
     size: 10
@@ -12,8 +12,8 @@
     state: icon
   - type: SpawnItemsOnUse
     items:
-      - id: ClothingUniformJumpsuitAncient
-      - id: ClothingShoesColorBlack
-      - id: ClothingMaskGas
+      - id: ClothingNeckCloakAdmin
+      - id: ClothingUniformJumpsuitCentcomOfficial
+      - id: PlushieLizard
     sound:
       path: /Audio/Effects/unwrap.ogg
