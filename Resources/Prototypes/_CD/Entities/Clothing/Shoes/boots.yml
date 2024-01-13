@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesBaseButcherable
   id: ClothingShoesLuxuryHeelBoots
   name: low-drag heels
   description: Made of advanced low-drag high traction material, perfect for combat if not for the 4 inch heels.
