@@ -38990,8 +38990,6 @@ entities:
       pos: -21.5,-9.5
       parent: 2
       type: Transform
-    - configurators:
-      - invalid
       deviceLists:
       - 11025
       type: DeviceNetwork
