@@ -815,18 +815,10 @@
 - type: entity
   parent: FloorTileItemGCircuit
   id: FloorTileItemGCircuit4
-  suffix: 4
-  components:
-  - type: Stack
-    count: 4
 
 - type: entity
   parent: FloorTileItemBCircuit
   id: FloorTileItemBCircuit4
-  suffix: 4
-  components:
-  - type: Stack
-    count: 4
 
 # Terrain
 - type: entity

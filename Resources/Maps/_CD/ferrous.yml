@@ -66266,7 +66266,6 @@ entities:
         797:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
   - uid: 911
     components:
     - pos: -18.5,9.5

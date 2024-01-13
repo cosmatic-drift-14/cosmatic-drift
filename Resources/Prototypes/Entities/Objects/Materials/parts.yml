@@ -120,8 +120,4 @@
 - type: entity
   parent: FloorTileItemSteel
   id: FloorTileItemSteelLingering0
-  suffix: Lingering, 0
-  components:
-  - type: Stack
-    lingering: true
-    count: 0
+  suffix: Lingering
