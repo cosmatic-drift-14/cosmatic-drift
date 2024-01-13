@@ -216,7 +216,7 @@
   idPrefix: CC
   entries:
   - name: bounty-item-handcuffs
-    amount: 5
+    amount: 8
     whitelist:
       components:
       - Handcuff
@@ -318,7 +318,7 @@
   description: bounty-description-pen
   entries:
   - name: bounty-item-pen
-    amount: 5
+    amount: 8
     whitelist:
       tags:
       - Pen
