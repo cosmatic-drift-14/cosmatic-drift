@@ -133,3 +133,15 @@
       amount: 1
   products:
     Saprodipine: 2
+
+- type: reaction
+  id: Cortexene
+  reactants:
+    Neurozenium:
+      amount: 1
+    MindbreakerToxin:
+      amount: 1
+    Cryptobiolin:
+      amount: 1
+  products:
+    Cortexene: 3
