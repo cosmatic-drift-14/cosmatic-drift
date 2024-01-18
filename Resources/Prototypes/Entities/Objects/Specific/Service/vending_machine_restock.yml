@@ -135,6 +135,7 @@
     - ViroDrobeInventory
     - WinterDrobeInventory
     - CuraDrobeInventory
+    - QuickThreadsInventory #CD Inventory
   - type: Sprite
     layers:
     - state: base
