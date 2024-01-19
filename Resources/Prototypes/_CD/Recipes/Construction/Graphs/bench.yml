@@ -76,3 +76,47 @@
             - material: Steel
               amount: 1
               doAfter: 1
+
+    - node: rattyMiddle
+      entity: RattySofaMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: rattyLeft
+      entity: RattySofaLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: rattyRight
+      entity: RattySofaRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: rattyCorner
+      entity: RattySofaCorner
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+          steps:
+            - tool: Screwing
+              doAfter: 1
