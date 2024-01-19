@@ -1,0 +1,68 @@
+- type: construction
+  name: sofa
+  id: RattySofaMiddle
+  graph: Seat
+  startNode: start
+  targetNode: rattyMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa
+  id: RattySofaRight
+  graph: Seat
+  startNode: start
+  targetNode: rattyRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa
+  id: RattySofaLeft
+  graph: Seat
+  startNode: start
+  targetNode: rattyLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa
+  id: RattySofaCorner
+  graph: Seat
+  startNode: start
+  targetNode: rattyCorner
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: corner
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+

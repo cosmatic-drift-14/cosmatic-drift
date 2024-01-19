@@ -1,0 +1,78 @@
+- type: constructionGraph
+  id: Bench
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: rattyLeft
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: rattyMiddle
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: rattyRight
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: rattyCorner
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: corpLeft
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: corpMiddle
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: corpRight
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: corpCorner
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: pewLeft
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 1
+        - to: pewMiddle
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 1
+        - to: pewRight
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 1
+        - to: steelbenchLeft
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+        - to: steelbenchMiddle
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+        - to: steelbenchRight
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
