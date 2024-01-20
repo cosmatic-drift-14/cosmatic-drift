@@ -23,6 +23,7 @@ public sealed partial class RecordEditorGui : Control
         {
             if (!int.TryParse(args.Text, out var newHeight))
                 return;
+            UpdateImperialHeight(newHeight);
             UpdateRecords(_records.WithHeight(newHeight));
         };
 
@@ -30,6 +31,7 @@ public sealed partial class RecordEditorGui : Control
         {
             if (!int.TryParse(args.Text, out var newWeight))
                 return;
+            UpdateImperialWeight(newWeight);
             UpdateRecords(_records.WithWeight(newWeight));
         };
 
@@ -146,7 +148,9 @@ public sealed partial class RecordEditorGui : Control
     private void UpdateWidgets()
     {
         HeightEdit.SetText(_records.Height.ToString());
+        UpdateImperialHeight(_records.Height);
         WeightEdit.SetText(_records.Weight.ToString());
+        UpdateImperialWeight(_records.Weight);
         ContactNameEdit.SetText(_records.EmergencyContactName);
         ContactNumberEdit.SetText(_records.EmergencyContactNumber);
 
@@ -158,5 +162,16 @@ public sealed partial class RecordEditorGui : Control
         AllergiesEdit.SetText(_records.Allergies);
         DrugAllergiesEdit.SetText(_records.DrugAllergies);
         PostmortemEdit.SetText(_records.PostmortemInstructions);
+    }
+
+    private void UpdateImperialHeight(int newHeight)
+    {
+        int heightIn = (int) Math.Round(newHeight * 0.3937007874 /* cm to in*/);
+        HeightImperialLabel.Text = $"({heightIn / 12}'{heightIn % 12}'')";
+    }
+    private void UpdateImperialWeight(int newWeight)
+    {
+        int weightLbs = (int) Math.Round(newWeight * 2.2046226218);
+        WeightImperialLabel.Text = $"({weightLbs} lbs)";
     }
 }

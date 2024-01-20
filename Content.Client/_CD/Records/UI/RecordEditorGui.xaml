@@ -4,25 +4,20 @@
          <ScrollContainer VerticalExpand="True">
              <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="10">
                  <!-- Row 1: Height, Weight, Work auth -->
-                 <BoxContainer Orientation="Horizontal">
-                     <BoxContainer HorizontalExpand="True">
+                 <GridContainer Columns="2">
+                     <BoxContainer HorizontalExpand="True" SeparationOverride="2">
                          <Label Text="{Loc 'humanoid-profile-editor-cd-records-height'}" />
                          <Control HorizontalExpand="True" MinSize="5 0" />
                          <LineEdit Name="HeightEdit" HorizontalAlignment="Right" MinSize="60 0" />
+                         <Label Name="HeightImperialLabel" MinWidth="60" />
                      </BoxContainer>
-                     <Control HorizontalExpand="True" MinSize = "5 0" />
-                     <BoxContainer HorizontalExpand="True">
+                     <BoxContainer HorizontalExpand="True" SeparationOverride="2">
                          <Label Text="{Loc 'humanoid-profile-editor-cd-records-weight'}" />
                          <Control HorizontalExpand="True" MinSize="5 0" />
                          <LineEdit Name="WeightEdit" HorizontalAlignment="Right" MinSize="60 0" />
+                         <Label Name="WeightImperialLabel" MinWidth="70"/>
                      </BoxContainer>
-                     <Control HorizontalExpand="True" MinSize = "5 0" />
-                     <BoxContainer HorizontalExpand="True">
-                         <Label Text="{Loc 'humanoid-profile-editor-cd-records-work-authorization'}" />
-                         <Control HorizontalExpand="True" MinSize="5 0" />
-                         <CheckBox Name="WorkAuthCheckBox" HorizontalAlignment="Right"/>
-                     </BoxContainer>
-                 </BoxContainer>
+                 </GridContainer>
                  <!-- Row 2-3: emergency contact -->
                  <BoxContainer Orientation="Horizontal">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-name'}" />
@@ -35,7 +30,14 @@
                      <LineEdit Name="ContactNumberEdit" HorizontalAlignment="Right" MinSize="270 0"/>
                  </BoxContainer>
                  <Control MinSize="0 20"/>
-                 <!-- Row 4-5: Security stuff -->
+                 <!-- Row 4: Employment stuff -->
+                 <BoxContainer HorizontalExpand="True">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-work-authorization'}" />
+                     <Control HorizontalExpand="True" MinSize="5 0" />
+                     <CheckBox Name="WorkAuthCheckBox" HorizontalAlignment="Right"/>
+                 </BoxContainer>
+                 <Control MinSize="0 20"/>
+                 <!-- Row 5-6: Security stuff -->
                  <BoxContainer Orientation="Horizontal">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-sec-clearance'}" />
                      <Control HorizontalExpand="True" />
@@ -47,7 +49,7 @@
                      <LineEdit Name="IdentifyingFeaturesEdit" HorizontalAlignment="Right" MinSize="350 0"/>
                  </BoxContainer>
                  <Control MinSize="0 20"/>
-                 <!-- Row 6-9: Medical stuff -->
+                 <!-- Row 7-10: Medical stuff -->
                  <BoxContainer Orientation="Horizontal">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-allergies'}" />
                      <Control HorizontalExpand="True" />
