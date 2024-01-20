@@ -29,6 +29,8 @@ humanoid-profile-editor-cd-records-postmortem = Postmortem Instructions
 humanoid-profile-editor-cd-records-add-entry = Add Entry
 humanoid-profile-editor-cd-records-edit-entry = Edit Entry
 humanoid-profile-editor-cd-records-remove-entry = Remove Entry
+humanoid-profile-editor-cd-records-up = Up
+humanoid-profile-editor-cd-records-down = Down
 
 cd-records-entry-edit-popup-title = Edit Entry
 cd-records-entry-edit-popup-save = Save

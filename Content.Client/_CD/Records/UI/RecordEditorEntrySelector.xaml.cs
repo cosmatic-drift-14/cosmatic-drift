@@ -50,6 +50,30 @@ public sealed partial class RecordEditorEntrySelector : Control
             OnUpdateEntries?.Invoke(new RecordEditorEntryUpdateArgs(_entries));
         };
 
+        UpButton.OnPressed += _ =>
+        {
+            if (!EntrySelector.GetSelected().Any())
+                return;
+            int idx = EntrySelector.IndexOf(EntrySelector.GetSelected().First());
+            if (idx < 1)
+                return;
+            (_entries[idx], _entries[idx - 1]) = (_entries[idx - 1], _entries[idx]);
+            (EntrySelector[idx], EntrySelector[idx - 1]) = (EntrySelector[idx - 1], EntrySelector[idx]);
+            OnUpdateEntries?.Invoke(new RecordEditorEntryUpdateArgs(_entries));
+        };
+
+        DownButton.OnPressed += _ =>
+        {
+            if (!EntrySelector.GetSelected().Any())
+                return;
+            int idx = EntrySelector.IndexOf(EntrySelector.GetSelected().First());
+            if (idx >= EntrySelector.Count - 1)
+                return;
+            (_entries[idx], _entries[idx + 1]) = (_entries[idx + 1], _entries[idx]);
+            (EntrySelector[idx], EntrySelector[idx + 1]) = (EntrySelector[idx + 1], EntrySelector[idx]);
+            OnUpdateEntries?.Invoke(new RecordEditorEntryUpdateArgs(_entries));
+        };
+
         _popup.SaveButton.OnPressed += _ =>
         {
             if (_editIdx >= _entries.Count)
