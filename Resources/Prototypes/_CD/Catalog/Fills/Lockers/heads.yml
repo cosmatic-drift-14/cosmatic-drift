@@ -127,7 +127,7 @@
       - id: CigarGoldCase
         prob: 0.50
       - id: ClothingBeltSecurityWebbing
-      - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesGlassesSunglasses
       - id: ClothingEyesHudSecurity
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatHoshat
