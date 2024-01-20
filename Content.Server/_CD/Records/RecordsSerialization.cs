@@ -80,7 +80,6 @@ public static class RecordsSerialization
             emergencyContactName: DeserializeString(e, nameof(def.EmergencyContactName), def.EmergencyContactName),
             emergencyContactNumber: DeserializeString(e, nameof(def.EmergencyContactNumber), def.EmergencyContactNumber),
             hasWorkAuthorization: DeserializeBool(e, nameof(def.HasWorkAuthorization), def.HasWorkAuthorization),
-            securityClearance: (CharacterRecords.ClearanceLevel) DeserializeInt(e, nameof(def.SecurityClearance), (int) def.SecurityClearance),
             identifyingFeatures: DeserializeString(e, nameof(def.IdentifyingFeatures), def.IdentifyingFeatures),
             allergies: DeserializeString(e, nameof(def.Allergies), def.Allergies), drugAllergies: DeserializeString(e, nameof(def.DrugAllergies), def.DrugAllergies),
             postmortemInstructions: DeserializeString(e, nameof(def.PostmortemInstructions), def.PostmortemInstructions),

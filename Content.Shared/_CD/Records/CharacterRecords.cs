@@ -28,7 +28,6 @@ public sealed class CharacterRecords
     public bool HasWorkAuthorization { get; private set; }
 
     // Security
-    public ClearanceLevel SecurityClearance { get; private set; }
     public string IdentifyingFeatures { get; private set; }
 
     // Medical
@@ -41,15 +40,6 @@ public sealed class CharacterRecords
     public List<RecordEntry> MedicalEntries { get; private set; }
     public List<RecordEntry> SecurityEntries { get; private set; }
     public List<RecordEntry> EmploymentEntries { get; private set; }
-
-    [Serializable, NetSerializable]
-    public enum ClearanceLevel
-    {
-        Standard,
-        Security,
-        Command,
-        HighCommand,
-    }
 
     [Serializable, NetSerializable]
     public sealed class RecordEntry
@@ -85,7 +75,6 @@ public sealed class CharacterRecords
         int height, int weight,
         string emergencyContactName,
         string emergencyContactNumber,
-        ClearanceLevel securityClearance,
         string identifyingFeatures,
         string allergies, string drugAllergies,
         string postmortemInstructions,
@@ -96,7 +85,6 @@ public sealed class CharacterRecords
         Weight = weight;
         EmergencyContactName = emergencyContactName;
         EmergencyContactNumber = emergencyContactNumber;
-        SecurityClearance = securityClearance;
         IdentifyingFeatures = identifyingFeatures;
         Allergies = allergies;
         DrugAllergies = drugAllergies;
@@ -113,7 +101,6 @@ public sealed class CharacterRecords
         EmergencyContactName = other.EmergencyContactName;
         EmergencyContactNumber = other.EmergencyContactNumber;
         HasWorkAuthorization = other.HasWorkAuthorization;
-        SecurityClearance = other.SecurityClearance;
         IdentifyingFeatures = other.IdentifyingFeatures;
         Allergies = other.Allergies;
         DrugAllergies = other.DrugAllergies;
@@ -130,7 +117,6 @@ public sealed class CharacterRecords
             height: 170, weight: 70,
             emergencyContactName: "",
             emergencyContactNumber: "",
-            securityClearance: ClearanceLevel.Standard,
             identifyingFeatures: "",
             allergies: "None",
             drugAllergies: "None",
@@ -149,7 +135,6 @@ public sealed class CharacterRecords
                    && EmergencyContactName == other.EmergencyContactName
                    && EmergencyContactNumber == other.EmergencyContactNumber
                    && HasWorkAuthorization == other.HasWorkAuthorization
-                   && SecurityClearance == other.SecurityClearance
                    && IdentifyingFeatures == other.IdentifyingFeatures
                    && Allergies == other.Allergies
                    && DrugAllergies == other.DrugAllergies
@@ -203,15 +188,6 @@ public sealed class CharacterRecords
         EmergencyContactName =
             ClampString(EmergencyContactName, HumanoidCharacterProfile.MaxNameLength);
         EmergencyContactNumber = ClampString(EmergencyContactNumber, TextShortLen);
-        // HumanoidCharacterProfile does this for all of it's enums so I assume we also need to
-        SecurityClearance = SecurityClearance switch
-        {
-            ClearanceLevel.Standard => ClearanceLevel.Standard,
-            ClearanceLevel.Security => ClearanceLevel.Security,
-            ClearanceLevel.Command => ClearanceLevel.Command,
-            ClearanceLevel.HighCommand => ClearanceLevel.HighCommand,
-            _ => ClearanceLevel.Standard
-        };
         IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
         Allergies = ClampString(Allergies, TextMedLen);
         DrugAllergies = ClampString(DrugAllergies, TextMedLen);
@@ -244,10 +220,6 @@ public sealed class CharacterRecords
     public CharacterRecords WithWorkAuth(string number)
     {
         return new(this) { EmergencyContactNumber = number };
-    }
-    public CharacterRecords WithSecurityClearance(ClearanceLevel level)
-    {
-        return new(this) { SecurityClearance = level };
     }
     public CharacterRecords WithIdentifyingFeatures(string feat)
     {

@@ -58,26 +58,6 @@ public sealed partial class RecordEditorGui : Control
 
         #region Security
 
-        SecurityClearanceSelector.AddItem(
-            Loc.GetString("humanoid-profile-editor-cd-records-sec-clearance-standard"),
-            (int)CharacterRecords.ClearanceLevel.Standard);
-        SecurityClearanceSelector.AddItem(
-            Loc.GetString("humanoid-profile-editor-cd-records-sec-clearance-sec"),
-            (int)CharacterRecords.ClearanceLevel.Security);
-        SecurityClearanceSelector.AddItem(
-            Loc.GetString("humanoid-profile-editor-cd-records-sec-clearance-command"),
-            (int)CharacterRecords.ClearanceLevel.Command);
-        SecurityClearanceSelector.AddItem(
-            Loc.GetString("humanoid-profile-editor-cd-records-sec-clearance-high-command"),
-            (int)CharacterRecords.ClearanceLevel.HighCommand);
-
-        SecurityClearanceSelector.OnItemSelected += args =>
-        {
-            SecurityClearanceSelector.SelectId(args.Id);
-            UpdateRecords(
-                _records.WithSecurityClearance((CharacterRecords.ClearanceLevel) args.Id));
-        };
-
         IdentifyingFeaturesEdit.OnTextChanged += args =>
         {
             UpdateRecords(_records.WithIdentifyingFeatures(args.Text));
@@ -156,7 +136,6 @@ public sealed partial class RecordEditorGui : Control
 
         WorkAuthCheckBox.Pressed = _records.HasWorkAuthorization;
 
-        SecurityClearanceSelector.SelectId((int)_records.SecurityClearance);
         IdentifyingFeaturesEdit.SetText(_records.IdentifyingFeatures);
 
         AllergiesEdit.SetText(_records.Allergies);

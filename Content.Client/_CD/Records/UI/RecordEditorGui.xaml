@@ -3,7 +3,7 @@
     <BoxContainer Orientation="Vertical">
          <ScrollContainer VerticalExpand="True">
              <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="10">
-                 <!-- Row 1: Height, Weight, Work auth -->
+                 <!-- Height, Weight -->
                  <GridContainer Columns="2">
                      <BoxContainer HorizontalExpand="True" SeparationOverride="2">
                          <Label Text="{Loc 'humanoid-profile-editor-cd-records-height'}" />
@@ -18,7 +18,7 @@
                          <Label Name="WeightImperialLabel" MinWidth="70"/>
                      </BoxContainer>
                  </GridContainer>
-                 <!-- Row 2-3: emergency contact -->
+                 <!-- Emergency Contact -->
                  <BoxContainer Orientation="Horizontal">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-name'}" />
                      <Control HorizontalExpand="True" />
@@ -30,26 +30,21 @@
                      <LineEdit Name="ContactNumberEdit" HorizontalAlignment="Right" MinSize="270 0"/>
                  </BoxContainer>
                  <Control MinSize="0 20"/>
-                 <!-- Row 4: Employment stuff -->
+                 <!-- Employment stuff -->
                  <BoxContainer HorizontalExpand="True">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-work-authorization'}" />
                      <Control HorizontalExpand="True" MinSize="5 0" />
                      <CheckBox Name="WorkAuthCheckBox" HorizontalAlignment="Right"/>
                  </BoxContainer>
                  <Control MinSize="0 20"/>
-                 <!-- Row 5-6: Security stuff -->
-                 <BoxContainer Orientation="Horizontal">
-                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-sec-clearance'}" />
-                     <Control HorizontalExpand="True" />
-                     <OptionButton Name="SecurityClearanceSelector" HorizontalAlignment="Right"/>
-                 </BoxContainer>
+                 <!-- Security stuff -->
                  <BoxContainer Orientation="Horizontal">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-identifying-features'}" />
                      <Control HorizontalExpand="True" />
                      <LineEdit Name="IdentifyingFeaturesEdit" HorizontalAlignment="Right" MinSize="350 0"/>
                  </BoxContainer>
                  <Control MinSize="0 20"/>
-                 <!-- Row 7-10: Medical stuff -->
+                 <!-- Medical stuff -->
                  <BoxContainer Orientation="Horizontal">
                      <Label Text="{Loc 'humanoid-profile-editor-cd-records-allergies'}" />
                      <Control HorizontalExpand="True" />
