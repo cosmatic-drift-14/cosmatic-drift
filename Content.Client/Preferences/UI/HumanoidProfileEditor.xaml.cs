@@ -8,6 +8,7 @@ using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
+using Content.Shared._CD.Records;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
@@ -111,7 +112,7 @@ namespace Content.Client.Preferences.UI
 
         private float _defaultHeight = 1f;
 
-        private readonly RecordEditorGui _recordsTab = new RecordEditorGui();
+        private readonly RecordEditorGui _recordsTab;
 
         public HumanoidProfileEditor(IClientPreferencesManager preferencesManager, IPrototypeManager prototypeManager,
             IEntityManager entityManager, IConfigurationManager configurationManager)
@@ -515,6 +516,7 @@ namespace Content.Client.Preferences.UI
 
             #region Records
 
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords);
             _tabContainer.AddChild(_recordsTab);
             _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
@@ -677,6 +679,14 @@ namespace Content.Client.Preferences.UI
             {
                 UpdateJobPriorities();
             }
+        }
+
+        private void UpdateProfileRecords(CharacterRecords records)
+        {
+            if (Profile is null)
+                return;
+            Profile = Profile.WithCDCharacterRecords(records);
+            IsDirty = true;
         }
 
         private void OnFlavorTextChange(string content)

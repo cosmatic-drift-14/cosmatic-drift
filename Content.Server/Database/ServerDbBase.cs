@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server._CD.Records;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Shared._CD.Records;
@@ -209,8 +210,9 @@ namespace Content.Server.Database
                 }
             }
 
-            var cdRecords = profile.CDCharacterRecords?.Deserialize<CharacterRecords>()
-                            ?? CharacterRecords.DefaultRecords();
+            var cdRecords = profile.CDCharacterRecords != null
+                ? RecordsSerialization.DeserializeJson(profile.CDCharacterRecords)
+                : CharacterRecords.DefaultRecords();
 
             return new HumanoidCharacterProfile(
                 profile.CharacterName,

@@ -358,6 +358,11 @@ namespace Content.Shared.Preferences
             return new(this, _jobPriorities, _antagPreferences, list);
         }
 
+        public HumanoidCharacterProfile WithCDCharacterRecords(CharacterRecords records)
+        {
+            return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
+        }
+
         public string Summary =>
             Loc.GetString(
                 "humanoid-character-profile-summary",
@@ -548,6 +553,8 @@ namespace Content.Shared.Preferences
 
             _traitPreferences.Clear();
             _traitPreferences.AddRange(traits);
+
+            CDCharacterRecords?.EnsureValid();
         }
 
         // sorry this is kind of weird and duplicated,

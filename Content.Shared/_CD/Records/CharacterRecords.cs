@@ -1,18 +1,25 @@
 using System.Linq;
+using Content.Shared.Preferences;
 using Robust.Shared.Serialization;
+using Robust.Shared.Utility;
 
 namespace Content.Shared._CD.Records;
 
 [Serializable, NetSerializable]
 public sealed class CharacterRecords
 {
+    private const int TextShortLen = 32;
+    private const int TextMedLen = 128;
+    private const int TextVeryLargeLen = 512;
 
     /* Basic info */
 
     // Additional data is fetched from the Profile
 
     // All
+    public const int MaxHeight = 500;
     public int Height { get; private set; }
+    public const int MaxWeight = 300;
     public int Weight { get; private set; }
     public string EmergencyContactName { get; private set; }
     public string EmergencyContactNumber { get; private set; }
@@ -31,9 +38,9 @@ public sealed class CharacterRecords
     // history, prescriptions, etc. would be a record below
 
     // "incidents"
-    public List<Record> Medical { get; private set; }
-    public List<Record> Security { get; private set; }
-    public List<Record> Employment { get; private set; }
+    public List<RecordEntry> MedicalEntries { get; private set; }
+    public List<RecordEntry> SecurityEntries { get; private set; }
+    public List<RecordEntry> EmploymentEntries { get; private set; }
 
     [Serializable, NetSerializable]
     public enum ClearanceLevel
@@ -45,7 +52,7 @@ public sealed class CharacterRecords
     }
 
     [Serializable, NetSerializable]
-    public sealed class Record
+    public sealed class RecordEntry
     {
         public string Title { get; private set; }
         // players involved, can be left blank (or with a generic "CentCom" etc.) for backstory related issues
@@ -53,16 +60,23 @@ public sealed class CharacterRecords
         // Longer description of events.
         public string Description { get; private set; }
 
-        public Record(string title, string involved, string desc)
+        public RecordEntry(string title, string involved, string desc)
         {
             Title = title;
             Involved = involved;
             Description = desc;
         }
 
-        public bool MemberwiseEquals(Record other)
+        public bool MemberwiseEquals(RecordEntry other)
         {
             return Title == other.Title && Involved == other.Involved && Description == other.Description;
+        }
+
+        public void EnsureValid()
+        {
+            Title = ClampString(Title, TextMedLen);
+            Involved = ClampString(Involved, TextMedLen);
+            Description = ClampString(Description, TextVeryLargeLen);
         }
     }
 
@@ -75,7 +89,7 @@ public sealed class CharacterRecords
         string identifyingFeatures,
         string allergies, string drugAllergies,
         string postmortemInstructions,
-        List<Record> medical, List<Record> security, List<Record> employment)
+        List<RecordEntry> medicalEntries, List<RecordEntry> securityEntries, List<RecordEntry> employmentEntries)
     {
         HasWorkAuthorization = hasWorkAuthorization;
         Height = height;
@@ -87,9 +101,26 @@ public sealed class CharacterRecords
         Allergies = allergies;
         DrugAllergies = drugAllergies;
         PostmortemInstructions = postmortemInstructions;
-        Medical = medical;
-        Security = security;
-        Employment = employment;
+        MedicalEntries = medicalEntries;
+        SecurityEntries = securityEntries;
+        EmploymentEntries = employmentEntries;
+    }
+
+    public CharacterRecords(CharacterRecords other)
+    {
+        Height = other.Height;
+        Weight = other.Weight;
+        EmergencyContactName = other.EmergencyContactName;
+        EmergencyContactNumber = other.EmergencyContactNumber;
+        HasWorkAuthorization = other.HasWorkAuthorization;
+        SecurityClearance = other.SecurityClearance;
+        IdentifyingFeatures = other.IdentifyingFeatures;
+        Allergies = other.Allergies;
+        DrugAllergies = other.DrugAllergies;
+        PostmortemInstructions = other.PostmortemInstructions;
+        MedicalEntries = new List<RecordEntry>(other.MedicalEntries);
+        SecurityEntries = new List<RecordEntry>(other.SecurityEntries);
+        EmploymentEntries = new List<RecordEntry>(other.EmploymentEntries);
     }
 
     public static CharacterRecords DefaultRecords()
@@ -104,9 +135,9 @@ public sealed class CharacterRecords
             allergies: "None",
             drugAllergies: "None",
             postmortemInstructions: "Return home",
-            medical: new List<Record>(),
-            security: new List<Record>(),
-            employment: new List<Record>()
+            medicalEntries: new List<RecordEntry>(),
+            securityEntries: new List<RecordEntry>(),
+            employmentEntries: new List<RecordEntry>()
         );
     }
 
@@ -125,25 +156,125 @@ public sealed class CharacterRecords
                    && PostmortemInstructions == other.PostmortemInstructions;
         if (!test)
             return false;
-        if (Medical.Count != other.Medical.Count)
+        if (MedicalEntries.Count != other.MedicalEntries.Count)
             return false;
-        if (Security.Count != other.Security.Count)
+        if (SecurityEntries.Count != other.SecurityEntries.Count)
             return false;
-        if (Employment.Count != other.Employment.Count)
+        if (EmploymentEntries.Count != other.EmploymentEntries.Count)
             return false;
-        if (Medical.Where((t, i) => !t.MemberwiseEquals(other.Medical[i])).Any())
+        if (MedicalEntries.Where((t, i) => !t.MemberwiseEquals(other.MedicalEntries[i])).Any())
         {
             return false;
         }
-        if (Security.Where((t, i) => !t.MemberwiseEquals(other.Security[i])).Any())
+        if (SecurityEntries.Where((t, i) => !t.MemberwiseEquals(other.SecurityEntries[i])).Any())
         {
             return false;
         }
-        if (Employment.Where((t, i) => !t.MemberwiseEquals(other.Employment[i])).Any())
+        if (EmploymentEntries.Where((t, i) => !t.MemberwiseEquals(other.EmploymentEntries[i])).Any())
         {
             return false;
         }
 
         return true;
+    }
+
+    private static string ClampString(string str, int maxLen)
+    {
+        // We call RemoveMarkup because wizden does that for flavour text
+        if (str.Length > maxLen)
+        {
+            return FormattedMessage.RemoveMarkup(str)[..maxLen];
+        }
+        return FormattedMessage.RemoveMarkup(str);
+    }
+
+    private static void EnsureValidEntries(List<RecordEntry> entries)
+    {
+        foreach (var entry in entries)
+        {
+            entry.EnsureValid();
+        }
+    }
+
+    public void EnsureValid()
+    {
+        Height = Math.Clamp(Height, 0, MaxHeight);
+        Weight = Math.Clamp(Weight, 0, MaxWeight);
+        EmergencyContactName =
+            ClampString(EmergencyContactName, HumanoidCharacterProfile.MaxNameLength);
+        EmergencyContactNumber = ClampString(EmergencyContactNumber, TextShortLen);
+        // HumanoidCharacterProfile does this for all of it's enums so I assume we also need to
+        SecurityClearance = SecurityClearance switch
+        {
+            ClearanceLevel.Standard => ClearanceLevel.Standard,
+            ClearanceLevel.Security => ClearanceLevel.Security,
+            ClearanceLevel.Command => ClearanceLevel.Command,
+            ClearanceLevel.HighCommand => ClearanceLevel.HighCommand,
+            _ => ClearanceLevel.Standard
+        };
+        IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
+        Allergies = ClampString(Allergies, TextMedLen);
+        DrugAllergies = ClampString(DrugAllergies, TextMedLen);
+        PostmortemInstructions = ClampString(PostmortemInstructions, TextMedLen);
+
+        EnsureValidEntries(EmploymentEntries);
+        EnsureValidEntries(MedicalEntries);
+        EnsureValidEntries(SecurityEntries);
+    }
+    public CharacterRecords WithHeight(int height)
+    {
+        return new(this) { Height = height };
+    }
+    public CharacterRecords WithWeight(int weight)
+    {
+        return new(this) { Weight = weight };
+    }
+    public CharacterRecords WithWorkAuth(bool auth)
+    {
+        return new(this) { HasWorkAuthorization = auth };
+    }
+    public CharacterRecords WithContactName(string name)
+    {
+        return new(this) { EmergencyContactName = name};
+    }
+    public CharacterRecords WithContactNumber(string number)
+    {
+        return new(this) { EmergencyContactNumber = number};
+    }
+    public CharacterRecords WithWorkAuth(string number)
+    {
+        return new(this) { EmergencyContactNumber = number };
+    }
+    public CharacterRecords WithSecurityClearance(ClearanceLevel level)
+    {
+        return new(this) { SecurityClearance = level };
+    }
+    public CharacterRecords WithIdentifyingFeatures(string feat)
+    {
+        return new(this) { IdentifyingFeatures = feat};
+    }
+    public CharacterRecords WithAllergies(string s)
+    {
+        return new(this) { Allergies = s };
+    }
+    public CharacterRecords WithDrugAllergies(string s)
+    {
+        return new(this) { DrugAllergies = s };
+    }
+    public CharacterRecords WithPostmortemInstructions(string s)
+    {
+        return new(this) { PostmortemInstructions = s};
+    }
+    public CharacterRecords WithEmploymentEntries(List<RecordEntry> entries)
+    {
+        return new(this) { EmploymentEntries = entries};
+    }
+    public CharacterRecords WithMedicalEntries(List<RecordEntry> entries)
+    {
+        return new(this) { MedicalEntries = entries};
+    }
+    public CharacterRecords WithSecurityEntries(List<RecordEntry> entries)
+    {
+        return new(this) { SecurityEntries = entries};
     }
 }

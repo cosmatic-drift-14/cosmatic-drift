@@ -1,5 +1,76 @@
-<Control xmlns="https://spacestation14.io">
-    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-        <TextEdit Name="TempRecordTextInput" Access="Public" MinSize="220 100" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
+<Control xmlns="https://spacestation14.io"
+         xmlns:cdrecords="clr-namespace:Content.Client._CD.Records.UI">
+    <BoxContainer Orientation="Vertical">
+         <ScrollContainer VerticalExpand="True">
+             <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="10">
+                 <!-- Row 1: Height, Weight, Work auth -->
+                 <BoxContainer Orientation="Horizontal">
+                     <BoxContainer HorizontalExpand="True">
+                         <Label Text="{Loc 'humanoid-profile-editor-cd-records-height'}" />
+                         <Control HorizontalExpand="True" MinSize="5 0" />
+                         <LineEdit Name="HeightEdit" HorizontalAlignment="Right" MinSize="60 0" />
+                     </BoxContainer>
+                     <Control HorizontalExpand="True" MinSize = "5 0" />
+                     <BoxContainer HorizontalExpand="True">
+                         <Label Text="{Loc 'humanoid-profile-editor-cd-records-weight'}" />
+                         <Control HorizontalExpand="True" MinSize="5 0" />
+                         <LineEdit Name="WeightEdit" HorizontalAlignment="Right" MinSize="60 0" />
+                     </BoxContainer>
+                     <Control HorizontalExpand="True" MinSize = "5 0" />
+                     <BoxContainer HorizontalExpand="True">
+                         <Label Text="{Loc 'humanoid-profile-editor-cd-records-work-authorization'}" />
+                         <Control HorizontalExpand="True" MinSize="5 0" />
+                         <CheckBox Name="WorkAuthCheckBox" HorizontalAlignment="Right"/>
+                     </BoxContainer>
+                 </BoxContainer>
+                 <!-- Row 2-3: emergency contact -->
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-name'}" />
+                     <Control HorizontalExpand="True" />
+                     <LineEdit Name="ContactNameEdit" HorizontalAlignment="Right" MinSize="270 0"/>
+                 </BoxContainer>
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-number'}" />
+                     <Control HorizontalExpand="True" />
+                     <LineEdit Name="ContactNumberEdit" HorizontalAlignment="Right" MinSize="270 0"/>
+                 </BoxContainer>
+                 <Control MinSize="0 20"/>
+                 <!-- Row 4-5: Security stuff -->
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-sec-clearance'}" />
+                     <Control HorizontalExpand="True" />
+                     <OptionButton Name="SecurityClearanceSelector" HorizontalAlignment="Right"/>
+                 </BoxContainer>
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-identifying-features'}" />
+                     <Control HorizontalExpand="True" />
+                     <LineEdit Name="IdentifyingFeaturesEdit" HorizontalAlignment="Right" MinSize="350 0"/>
+                 </BoxContainer>
+                 <Control MinSize="0 20"/>
+                 <!-- Row 6-9: Medical stuff -->
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-allergies'}" />
+                     <Control HorizontalExpand="True" />
+                     <LineEdit Name="AllergiesEdit" HorizontalAlignment="Right" MinSize="350 0"/>
+                 </BoxContainer>
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-drug-allergies'}" />
+                     <Control HorizontalExpand="True" />
+                     <LineEdit Name="DrugAllergiesEdit" HorizontalAlignment="Right" MinSize="350 0"/>
+                 </BoxContainer>
+                 <BoxContainer Orientation="Horizontal">
+                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-postmortem'}" />
+                     <Control HorizontalExpand="True" />
+                     <LineEdit Name="PostmortemEdit" HorizontalAlignment="Right" MinSize="350 0"/>
+                 </BoxContainer>
+                 <Control MinSize="0 20"/>
+                 <!-- Note editor -->
+                 <TabContainer Name="EntryEditorTabs" VerticalExpand="True" HorizontalExpand="True" Margin="10">
+                     <cdrecords:RecordEditorEntrySelector Name="EmploymentEntrySelector"/>
+                     <cdrecords:RecordEditorEntrySelector Name="MedicalEntrySelector"/>
+                     <cdrecords:RecordEditorEntrySelector Name="SecurityEntrySelector"/>
+                 </TabContainer>
+             </BoxContainer>
+         </ScrollContainer>
     </BoxContainer>
 </Control>
