@@ -1,14 +1,14 @@
 - type: entity
   suffix: DEBUG
-  id: BaseClothesPack
+  id: BaseGarmentBag
   parent: BaseItem
-  name: debug garment pack
+  name: debug garment bag
   components:
   - type: Item
     size: 10
   - type: Tag
   - type: Sprite
-    sprite: _CD/Clothing/GarmentPacks/debugpack.rsi
+    sprite: _CD/Objects/Misc/GarmentBags/debug.rsi
     state: icon
   - type: SpawnItemsOnUse
     items:
