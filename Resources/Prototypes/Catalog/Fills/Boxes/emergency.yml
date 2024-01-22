@@ -8,7 +8,6 @@
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
@@ -27,7 +26,6 @@
     contents:
       - id: ClothingMaskBreath
       - id: ExtendedEmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
@@ -47,7 +45,6 @@
     contents:
       - id: ClothingMaskGasSecurity
       - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
@@ -87,7 +84,6 @@
     contents:
       - id: ClothingMaskBreathMedical
       - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
@@ -112,7 +108,6 @@
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyFunnyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
@@ -130,7 +125,6 @@
     contents:
       - id: ClothingMaskGasSyndicate
       - id: ExtendedEmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
