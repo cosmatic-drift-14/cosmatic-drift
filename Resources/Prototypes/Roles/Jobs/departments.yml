@@ -11,6 +11,7 @@
   id: Civilian
   description: department-Civilian-description
   color: "#9FED58"
+  weight: -10
   roles:
   - Bartender
   - Borg
@@ -45,6 +46,7 @@
   - ResearchDirector
   - Quartermaster
   primary: false
+  weight: 100
 
 - type: department
   id: Engineering
@@ -74,6 +76,7 @@
   id: Security
   description: department-Security-description
   color: "#DE3A3A"
+  weight: 20
   roles:
   - HeadOfSecurity
   - SecurityCadet
@@ -96,6 +99,7 @@
   id: Specific
   description: department-Specific-description
   color: "#9FED58"
+  weight: 10
   roles:
   - Boxer
   - Reporter
