@@ -57,6 +57,11 @@ public sealed class CharacterRecords
             Description = desc;
         }
 
+        public RecordEntry(RecordEntry other)
+        : this(other.Title, other.Involved, other.Description)
+        {
+        }
+
         public bool MemberwiseEquals(RecordEntry other)
         {
             return Title == other.Title && Involved == other.Involved && Description == other.Description;
@@ -105,9 +110,9 @@ public sealed class CharacterRecords
         Allergies = other.Allergies;
         DrugAllergies = other.DrugAllergies;
         PostmortemInstructions = other.PostmortemInstructions;
-        MedicalEntries = new List<RecordEntry>(other.MedicalEntries);
-        SecurityEntries = new List<RecordEntry>(other.SecurityEntries);
-        EmploymentEntries = new List<RecordEntry>(other.EmploymentEntries);
+        MedicalEntries = other.MedicalEntries.Select(x => new RecordEntry(x)).ToList();
+        SecurityEntries = other.SecurityEntries.Select(x => new RecordEntry(x)).ToList();
+        EmploymentEntries = other.EmploymentEntries.Select(x => new RecordEntry(x)).ToList();
     }
 
     public static CharacterRecords DefaultRecords()
