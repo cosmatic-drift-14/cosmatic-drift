@@ -292,7 +292,7 @@
 - type: entity
   parent: BaseComputer
   id: ComputerCriminalRecords
-  name: criminal records computer
+  name: security records computer
   description: This can be used to access security records.
   components:
   - type: Sprite
@@ -325,17 +325,9 @@
 - type: entity
   parent: BaseComputer
   id: ComputerStationRecords
-  name: station records computer
-  description: This can be used to check station records.
+  name: employment records computer
+  description: This can be used to check employment records.
   components:
-    # FIXME BEFORE COMMITING
-    #- type: GeneralStationRecordConsole
-    #- type: UserInterface
-    #  interfaces:
-    #    - key: enum.GeneralStationRecordConsoleKey.Key
-    #      type: GeneralStationRecordConsoleBoundUserInterface
-    #- type: ActivatableUI
-    #  key: enum.GeneralStationRecordConsoleKey.Key
   - type: PointLight
     radius: 1.5
     energy: 1.6
