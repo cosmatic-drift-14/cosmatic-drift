@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesGraySkates
+  name: gray roller skates
+  description: "Get your skates on!"
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Shoes/Specific/grayskates.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Shoes/Specific/grayskates.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        offset: "0, -0.04"
+  - type: Item
+    size: 10
+    sprite: _CD/Clothing/Shoes/Specific/grayskates.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+  - type: Skates
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSkates
