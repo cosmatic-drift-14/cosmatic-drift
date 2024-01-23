@@ -1,4 +1,5 @@
 using Content.Server.Radio.EntitySystems;
+using Content.Server.Station.Systems;
 using Content.Shared.Radio;
 using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
@@ -20,7 +21,9 @@ public sealed partial class NotifyDepartmentSpecial : JobSpecial
         var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
         var radio = entMan.System<RadioSystem>();
         var channel = prototypeManager.Index<RadioChannelPrototype>(RadioChannelKey);
+        var stationSystem = entMan.System<StationSystem>();
+        var station = stationSystem.GetOwningStation(mob);
 
-        radio.SendRadioMessage(mob, Loc.GetString(NotifyTextKey), channel, mob);
+        radio.SendRadioMessage(station ?? mob, Loc.GetString(NotifyTextKey), channel, mob);
     }
 }
