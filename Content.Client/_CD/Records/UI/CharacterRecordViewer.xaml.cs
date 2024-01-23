@@ -76,6 +76,16 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
         };
 
         OnClose += () => _entryView.Close();
+
+        RecordEntryViewType.AddItem(Loc.GetString("department-Security"));
+        RecordEntryViewType.AddItem(Loc.GetString("department-Medical"));
+        RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-employment"));
+        RecordEntryViewType.OnItemSelected += args =>
+        {
+            RecordEntryViewType.SelectId(args.Id);
+            // This is a hack to get the server to send us another packet with the new entries
+            OnFiltersChanged?.Invoke(_filterType, RecordFiltersValue.Text);
+        };
     }
 
     // If we are using wizden's class we might as well use their localization.
@@ -86,6 +96,7 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
 
     public void UpdateState(CharacterRecordConsoleState state)
     {
+        RecordEntryViewType.Visible = false;
         _type = state.ConsoleType;
         if (state.RecordListing == null)
         {
@@ -125,6 +136,12 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
                 RecordFilterType.Visible = true;
 
                 Title = Loc.GetString("cd-character-records-viewer-title-sec");
+                break;
+            case RecordConsoleType.Admin:
+                RecordFilterType.Visible = true;
+                Title = "Admin records console";
+                RecordEntryViewType.Visible = true;
+
                 break;
         }
 
@@ -178,6 +195,23 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
             case RecordConsoleType.Security:
                 SetEntries(cr.SecurityEntries);
                 UpdateRecordBoxSecurity(record);
+                break;
+            case RecordConsoleType.Admin:
+                UpdateRecordBoxEmployment(record);
+                UpdateRecordBoxMedical(record);
+                UpdateRecordBoxSecurity(record);
+                switch ((RecordConsoleType) RecordEntryViewType.SelectedId)
+                {
+                case RecordConsoleType.Employment:
+                    SetEntries(cr.EmploymentEntries);
+                    break;
+                case RecordConsoleType.Medical:
+                    SetEntries(cr.MedicalEntries);
+                    break;
+                case RecordConsoleType.Security:
+                    SetEntries(cr.SecurityEntries);
+                    break;
+                }
                 break;
         }
     }

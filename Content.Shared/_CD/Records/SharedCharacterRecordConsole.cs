@@ -12,7 +12,7 @@ public enum CharacterRecordConsoleKey : byte
 [Serializable, NetSerializable]
 public enum RecordConsoleType : byte
 {
-    Security, Medical, Employment
+    Security, Medical, Employment, Admin
 }
 
 [Serializable, NetSerializable]
