@@ -145,12 +145,11 @@ public sealed partial class RecordEditorGui : Control
 
     private void UpdateImperialHeight(int newHeight)
     {
-        int heightIn = (int) Math.Round(newHeight * 0.3937007874 /* cm to in*/);
-        HeightImperialLabel.Text = $"({heightIn / 12}'{heightIn % 12}'')";
+        HeightImperialLabel.Text = UnitConversion.GetImperialDisplayLength(newHeight);
     }
+
     private void UpdateImperialWeight(int newWeight)
     {
-        int weightLbs = (int) Math.Round(newWeight * 2.2046226218);
-        WeightImperialLabel.Text = $"({weightLbs} lbs)";
+        WeightImperialLabel.Text = UnitConversion.GetImperialDisplayMass(newWeight);
     }
 }

@@ -7,5 +7,5 @@ namespace Content.Server._CD.Records;
 public sealed partial class CharacterRecordsComponent : Component
 {
     [ViewVariables(VVAccess.ReadOnly)]
-    public Dictionary<EntityUid, CharacterRecords> Records = new();
+    public Dictionary<EntityUid, FullCharacterRecords> Records = new();
 }
