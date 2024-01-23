@@ -26,7 +26,7 @@ humanoid-profile-editor-cd-records-remove-entry = Remove Entry
 humanoid-profile-editor-cd-records-up = Up
 humanoid-profile-editor-cd-records-down = Down
 
-cd-records-entry-edit-popup-title = Edit Entry
+cd-records-entry-edit-popup-title = View/Edit Entry
 cd-records-entry-edit-popup-save = Save
 
 cd-records-entry-edit-popup-title-placeholder = Entry Title

@@ -17,6 +17,10 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
     private GeneralStationRecordFilterType _filterType;
 
     private RecordConsoleType? _type;
+
+    private RecordEntryEditPopup _entryView = new(true);
+    private List<CharacterRecords.RecordEntry>? _entries;
+
     public CharacterRecordViewer()
     {
         RobustXamlLoader.Load(this);
@@ -61,6 +65,17 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
             _filterType = type;
             RecordFilterType.SelectId(eventArgs.Id);
         };
+
+        RecordEntryViewButton.OnPressed += _ =>
+        {
+            if (_entries == null || !RecordEntryList.GetSelected().Any())
+                return;
+            int idx = RecordEntryList.IndexOf(RecordEntryList.GetSelected().First());
+            _entryView.SetContents(_entries[idx]);
+            _entryView.Open();
+        };
+
+        OnClose += () => _entryView.Close();
     }
 
     // If we are using wizden's class we might as well use their localization.
@@ -153,14 +168,27 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
         switch (_type)
         {
             case RecordConsoleType.Employment:
+                SetEntries(cr.EmploymentEntries);
                 UpdateRecordBoxEmployment(record);
                 break;
             case RecordConsoleType.Medical:
+                SetEntries(cr.MedicalEntries);
                 UpdateRecordBoxMedical(record);
                 break;
             case RecordConsoleType.Security:
+                SetEntries(cr.SecurityEntries);
                 UpdateRecordBoxSecurity(record);
                 break;
+        }
+    }
+
+    private void SetEntries(List<CharacterRecords.RecordEntry> entries)
+    {
+        _entries = entries;
+        RecordEntryList.Clear();
+        foreach (var entry in entries)
+        {
+            RecordEntryList.AddItem(entry.Title);
         }
     }
 

@@ -16,3 +16,5 @@ cd-character-records-viewer-record-sec-dna = DNA:
 cd-character-records-viewer-unknown = ERROR UNKNOWN
 
 cd-character-records-viewer-record-med-sex = Sex:
+
+cd-character-records-viewer-view-entry = View
