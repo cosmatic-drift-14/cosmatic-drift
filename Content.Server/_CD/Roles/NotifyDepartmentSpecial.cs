@@ -21,9 +21,12 @@ public sealed partial class NotifyDepartmentSpecial : JobSpecial
         var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
         var radio = entMan.System<RadioSystem>();
         var channel = prototypeManager.Index<RadioChannelPrototype>(RadioChannelKey);
-        var stationSystem = entMan.System<StationSystem>();
-        var station = stationSystem.GetOwningStation(mob);
+        var stationManager = entMan.System<StationSystem>();
 
-        radio.SendRadioMessage(station ?? mob, Loc.GetString(NotifyTextKey), channel, mob);
+        // Notify people on all stations.
+        foreach (var station in stationManager.GetStations())
+        {
+            radio.SendRadioMessage(station, Loc.GetString(NotifyTextKey), channel, mob);
+        }
     }
 }
