@@ -9,29 +9,18 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class RecordEntryEditPopup : DefaultWindow
 {
-    public RecordEntryEditPopup(bool readOnly = false)
+    public RecordEntryEditPopup()
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
 
-        if (!readOnly)
-        {
-            DescriptionEdit.Placeholder =
-                new Rope.Leaf(Loc.GetString("cd-records-entry-edit-popup-description-placeholder"));
+        DescriptionEdit.Placeholder =
+            new Rope.Leaf(Loc.GetString("cd-records-entry-edit-popup-description-placeholder"));
 
-            SaveButton.OnPressed += _ =>
-            {
-                Close();
-            };
-        }
-        else
+        SaveButton.OnPressed += _ =>
         {
-            SaveButton.Visible = false;
-            TitleEdit.Editable = false;
-            InvolvedEdit.Editable = false;
-            DescriptionEdit.Editable = false;
-        }
-
+            Close();
+        };
     }
 
     public CharacterRecords.RecordEntry GetContents()

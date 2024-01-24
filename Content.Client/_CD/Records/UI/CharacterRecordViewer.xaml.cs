@@ -18,7 +18,7 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
 
     private RecordConsoleType? _type;
 
-    private RecordEntryEditPopup _entryView = new(true);
+    private RecordViewEntryPopup _entryView = new();
     private List<CharacterRecords.RecordEntry>? _entries;
 
     public CharacterRecordViewer()

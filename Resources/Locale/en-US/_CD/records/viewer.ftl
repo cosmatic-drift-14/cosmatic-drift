@@ -18,3 +18,7 @@ cd-character-records-viewer-unknown = ERROR UNKNOWN
 cd-character-records-viewer-record-med-sex = Sex:
 
 cd-character-records-viewer-view-entry = View
+cd-records-entry-view-popup-title = View Entry
+
+cd-character-records-entry-view-title = Title:
+cd-character-records-entry-view-involved = Involved:
