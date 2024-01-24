@@ -62,7 +62,16 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
                 return true;
             })
-            .Select(r => (_entityManager.GetNetEntity(r.Key), $"{r.Value.Name} ({r.Value.JobTitle})"))
+            .Select(r =>
+            {
+                var netEnt = _entityManager.GetNetEntity(r.Key);
+                if (console.ConsoleType == RecordConsoleType.Admin)
+                {
+                    return (netEnt, $"{r.Value.Name} ({netEnt}, {r.Value.JobTitle}");
+                }
+
+                return (netEnt, $"{r.Value.Name} ({r.Value.JobTitle})");
+            })
             .ToDictionary();
 
         var record = console.Selected == null ? null : characterRecords[_entityManager.GetEntity(console.Selected.Value)];

@@ -255,3 +255,8 @@ public sealed class CharacterRecords
         return new(this) { SecurityEntries = entries};
     }
 }
+
+public enum CharacterRecordType : byte
+{
+    Employment, Medical, Security
+}

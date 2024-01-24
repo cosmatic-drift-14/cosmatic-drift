@@ -1,5 +1,6 @@
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
+using Content.Server.Station.Systems;
 using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
 using Content.Shared._CD.Records;
@@ -13,6 +14,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly StationSystem _stationSystem = default!;
 
     public override void Initialize()
     {
@@ -58,8 +60,6 @@ public sealed class CharacterRecordsSystem : EntitySystem
             dna: dnaComponent?.DNA);
         AddRecord(args.Station, args.Mob, records);
 
-        RaiseLocalEvent(args.Station, new CharacterRecordsModifiedEvent(args.Mob, records));
-
         // We don't delete records after a character has joined unless an admin requests it.
     }
 
@@ -70,16 +70,61 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
         recordsDb.Records.Add(player, records);
 
+        RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
         return true;
     }
 
-    // TODO: Admin tools for removing records
-    public bool RemoveRecord(EntityUid station, EntityUid player, CharacterRecordsComponent? recordsDb = null)
+    public void DelEntry(EntityUid station, EntityUid player, CharacterRecordType ty, int idx, CharacterRecordsComponent? recordsDb = null)
     {
         if (!Resolve(station, ref recordsDb))
-            return false;
+            return;
 
-        return recordsDb.Records.Remove(player);
+        if (!recordsDb.Records.ContainsKey(player))
+            return;
+
+        var cr = recordsDb.Records[player].CharacterRecords;
+
+        switch (ty)
+        {
+            case CharacterRecordType.Employment:
+                cr.EmploymentEntries.RemoveAt(idx);
+                break;
+            case CharacterRecordType.Medical:
+                cr.MedicalEntries.RemoveAt(idx);
+                break;
+            case CharacterRecordType.Security:
+                cr.SecurityEntries.RemoveAt(idx);
+                break;
+        }
+
+        RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
+    }
+
+    public void ResetRecord(EntityUid station, EntityUid player, CharacterRecordsComponent? recordsDb = null)
+    {
+        if (!Resolve(station, ref recordsDb))
+            return;
+
+        if (!recordsDb.Records.ContainsKey(player))
+            return;
+
+        var records = CharacterRecords.DefaultRecords();
+        recordsDb.Records[player].CharacterRecords = records;
+        RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
+    }
+
+    public void DeleteAllRecords(EntityUid player)
+    {
+        foreach (var station in _stationSystem.GetStations())
+        {
+            CharacterRecordsComponent? recordsDb = null;
+            if (!Resolve(station, ref recordsDb))
+            {
+                continue;
+            }
+
+            recordsDb.Records.Remove(player);
+        }
     }
 
     public IDictionary<EntityUid, FullCharacterRecords> QueryRecords(EntityUid station, CharacterRecordsComponent? recordsDb = null)
@@ -93,12 +138,8 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
 public sealed class CharacterRecordsModifiedEvent : EntityEventArgs
 {
-    public EntityUid Player;
-    public FullCharacterRecords NewRecords;
 
-    public CharacterRecordsModifiedEvent(EntityUid player, FullCharacterRecords newRecords)
+    public CharacterRecordsModifiedEvent()
     {
-        Player = player;
-        NewRecords = newRecords;
     }
 }

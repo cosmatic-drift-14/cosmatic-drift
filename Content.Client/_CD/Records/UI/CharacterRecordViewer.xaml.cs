@@ -203,26 +203,28 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
                 switch ((RecordConsoleType) RecordEntryViewType.SelectedId)
                 {
                 case RecordConsoleType.Employment:
-                    SetEntries(cr.EmploymentEntries);
+                    SetEntries(cr.EmploymentEntries, true);
                     break;
                 case RecordConsoleType.Medical:
-                    SetEntries(cr.MedicalEntries);
+                    SetEntries(cr.MedicalEntries, true);
                     break;
                 case RecordConsoleType.Security:
-                    SetEntries(cr.SecurityEntries);
+                    SetEntries(cr.SecurityEntries, true);
                     break;
                 }
                 break;
         }
     }
 
-    private void SetEntries(List<CharacterRecords.RecordEntry> entries)
+    private void SetEntries(List<CharacterRecords.RecordEntry> entries, bool addIndex = false)
     {
         _entries = entries;
         RecordEntryList.Clear();
+        var i = 0;
         foreach (var entry in entries)
         {
-            RecordEntryList.AddItem(entry.Title);
+            RecordEntryList.AddItem(addIndex ? $"({i.ToString()}) " + entry.Title : entry.Title);
+            ++i;
         }
     }
 
