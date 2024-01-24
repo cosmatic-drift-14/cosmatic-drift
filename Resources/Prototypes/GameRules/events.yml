@@ -180,30 +180,30 @@
   - type: MeteorSwarmRule
 
 # - type: entity
-  # id: MouseMigration
-  # parent: BaseGameRule
-  # noSpawn: true
-  # components:
-  # - type: StationEvent
-    # startAnnouncement: station-event-vent-creatures-start-announcement
-    # startAudio:
-      # path: /Audio/Announcements/attention.ogg
-    # startDelay: 10
-    # earliestStart: 30
-    # weight: 4
-    # minimumPlayers: 30
-    # duration: 50
-  # - type: VentCrittersRule
-    # entries:
-    # - id: MobMouse
-      # prob: 0.02
-    # - id: MobMouse1
-      # prob: 0.02
-    # - id: MobMouse2
-      # prob: 0.02
-    # specialEntries:
-    # - id: SpawnPointGhostRatKing
-      # prob: 0.005
+#   id: MouseMigration
+#   parent: BaseGameRule
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     startAnnouncement: station-event-vent-creatures-start-announcement
+#     startAudio:
+#       path: /Audio/Announcements/attention.ogg
+#     startDelay: 10
+#     earliestStart: 30
+#     minimumPlayers: 35
+#     weight: 5
+#     duration: 50
+#   - type: VentCrittersRule
+#     entries:
+#     - id: MobMouse
+#       prob: 0.02
+#     - id: MobMouse1
+#       prob: 0.02
+#     - id: MobMouse2
+#       prob: 0.02
+#     specialEntries:
+#     - id: SpawnPointGhostRatKing
+#       prob: 0.005
 
 - type: entity
   id: CockroachMigration
