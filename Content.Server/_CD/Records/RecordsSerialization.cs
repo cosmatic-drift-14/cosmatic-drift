@@ -78,7 +78,6 @@ public static class RecordsSerialization
             height: DeserializeInt(e, nameof(def.Height), def.Height),
             weight: DeserializeInt(e, nameof(def.Weight), def.Weight),
             emergencyContactName: DeserializeString(e, nameof(def.EmergencyContactName), def.EmergencyContactName),
-            emergencyContactNumber: DeserializeString(e, nameof(def.EmergencyContactNumber), def.EmergencyContactNumber),
             hasWorkAuthorization: DeserializeBool(e, nameof(def.HasWorkAuthorization), def.HasWorkAuthorization),
             identifyingFeatures: DeserializeString(e, nameof(def.IdentifyingFeatures), def.IdentifyingFeatures),
             allergies: DeserializeString(e, nameof(def.Allergies), def.Allergies), drugAllergies: DeserializeString(e, nameof(def.DrugAllergies), def.DrugAllergies),

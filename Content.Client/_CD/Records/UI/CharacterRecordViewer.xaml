@@ -61,11 +61,6 @@
                                 <Control HorizontalExpand="True" />
                                 <Label Name="RecordContainerContactName" Align="Right" />
                             </BoxContainer>
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-number'}"/>
-                                <Control HorizontalExpand="True" />
-                                <Label Name="RecordContainerContactNumber" Align="Right" />
-                            </BoxContainer>
                         </BoxContainer>
                         <!-- Employment -->
                         <BoxContainer Name="RecordContainerEmployment" Orientation="Vertical" HorizontalExpand="True" Visible="False" >

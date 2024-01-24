@@ -40,11 +40,6 @@ public sealed partial class RecordEditorGui : Control
             UpdateRecords(_records.WithContactName(args.Text));
         };
 
-        ContactNumberEdit.OnTextChanged += args =>
-        {
-            UpdateRecords(_records.WithContactNumber(args.Text));
-        };
-
         #endregion
 
         #region Employment
@@ -132,7 +127,6 @@ public sealed partial class RecordEditorGui : Control
         WeightEdit.SetText(_records.Weight.ToString());
         UpdateImperialWeight(_records.Weight);
         ContactNameEdit.SetText(_records.EmergencyContactName);
-        ContactNumberEdit.SetText(_records.EmergencyContactNumber);
 
         WorkAuthCheckBox.Pressed = _records.HasWorkAuthorization;
 

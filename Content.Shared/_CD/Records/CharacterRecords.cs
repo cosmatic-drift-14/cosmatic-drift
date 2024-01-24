@@ -8,7 +8,6 @@ namespace Content.Shared._CD.Records;
 [Serializable, NetSerializable]
 public sealed class CharacterRecords
 {
-    private const int TextShortLen = 32;
     private const int TextMedLen = 128;
     private const int TextVeryLargeLen = 512;
 
@@ -22,7 +21,6 @@ public sealed class CharacterRecords
     public const int MaxWeight = 300;
     public int Weight { get; private set; }
     public string EmergencyContactName { get; private set; }
-    public string EmergencyContactNumber { get; private set; }
 
     // Employment
     public bool HasWorkAuthorization { get; private set; }
@@ -79,7 +77,6 @@ public sealed class CharacterRecords
         bool hasWorkAuthorization,
         int height, int weight,
         string emergencyContactName,
-        string emergencyContactNumber,
         string identifyingFeatures,
         string allergies, string drugAllergies,
         string postmortemInstructions,
@@ -89,7 +86,6 @@ public sealed class CharacterRecords
         Height = height;
         Weight = weight;
         EmergencyContactName = emergencyContactName;
-        EmergencyContactNumber = emergencyContactNumber;
         IdentifyingFeatures = identifyingFeatures;
         Allergies = allergies;
         DrugAllergies = drugAllergies;
@@ -104,7 +100,6 @@ public sealed class CharacterRecords
         Height = other.Height;
         Weight = other.Weight;
         EmergencyContactName = other.EmergencyContactName;
-        EmergencyContactNumber = other.EmergencyContactNumber;
         HasWorkAuthorization = other.HasWorkAuthorization;
         IdentifyingFeatures = other.IdentifyingFeatures;
         Allergies = other.Allergies;
@@ -121,7 +116,6 @@ public sealed class CharacterRecords
             hasWorkAuthorization: true,
             height: 170, weight: 70,
             emergencyContactName: "",
-            emergencyContactNumber: "",
             identifyingFeatures: "",
             allergies: "None",
             drugAllergies: "None",
@@ -138,7 +132,6 @@ public sealed class CharacterRecords
         var test = Height == other.Height
                    && Weight == other.Weight
                    && EmergencyContactName == other.EmergencyContactName
-                   && EmergencyContactNumber == other.EmergencyContactNumber
                    && HasWorkAuthorization == other.HasWorkAuthorization
                    && IdentifyingFeatures == other.IdentifyingFeatures
                    && Allergies == other.Allergies
@@ -192,7 +185,6 @@ public sealed class CharacterRecords
         Weight = Math.Clamp(Weight, 0, MaxWeight);
         EmergencyContactName =
             ClampString(EmergencyContactName, HumanoidCharacterProfile.MaxNameLength);
-        EmergencyContactNumber = ClampString(EmergencyContactNumber, TextShortLen);
         IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
         Allergies = ClampString(Allergies, TextMedLen);
         DrugAllergies = ClampString(DrugAllergies, TextMedLen);
@@ -217,14 +209,6 @@ public sealed class CharacterRecords
     public CharacterRecords WithContactName(string name)
     {
         return new(this) { EmergencyContactName = name};
-    }
-    public CharacterRecords WithContactNumber(string number)
-    {
-        return new(this) { EmergencyContactNumber = number};
-    }
-    public CharacterRecords WithWorkAuth(string number)
-    {
-        return new(this) { EmergencyContactNumber = number };
     }
     public CharacterRecords WithIdentifyingFeatures(string feat)
     {

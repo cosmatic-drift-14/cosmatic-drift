@@ -24,11 +24,6 @@
                      <Control HorizontalExpand="True" />
                      <LineEdit Name="ContactNameEdit" HorizontalAlignment="Right" MinSize="270 0"/>
                  </BoxContainer>
-                 <BoxContainer Orientation="Horizontal">
-                     <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-number'}" />
-                     <Control HorizontalExpand="True" />
-                     <LineEdit Name="ContactNumberEdit" HorizontalAlignment="Right" MinSize="270 0"/>
-                 </BoxContainer>
                  <Control MinSize="0 20"/>
                  <!-- Employment stuff -->
                  <BoxContainer HorizontalExpand="True">

@@ -5,7 +5,6 @@ humanoid-profile-editor-cd-records-tab = Records
 humanoid-profile-editor-cd-records-height = Height (cm):
 humanoid-profile-editor-cd-records-weight = Weight (kg):
 humanoid-profile-editor-cd-records-contact-name = Emergency Contact:
-humanoid-profile-editor-cd-records-contact-number = Emergency Contact Number:
 
 # Employment
 humanoid-profile-editor-cd-records-employment = Employment

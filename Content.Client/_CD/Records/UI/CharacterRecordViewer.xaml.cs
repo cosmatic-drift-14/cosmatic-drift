@@ -176,7 +176,6 @@ public sealed partial class CharacterRecordViewer : DefaultWindow
         RecordContainerHeight.Text = cr.Height + " " + UnitConversion.GetImperialDisplayLength(cr.Height);
         RecordContainerWeight.Text = cr.Weight + " " + UnitConversion.GetImperialDisplayMass(cr.Weight);
         RecordContainerContactName.Text = cr.EmergencyContactName;
-        RecordContainerContactNumber.Text = cr.EmergencyContactNumber;
 
         RecordContainerEmployment.Visible = false;
         RecordContainerMedical.Visible = false;
