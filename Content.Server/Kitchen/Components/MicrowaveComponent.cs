@@ -77,7 +77,7 @@ namespace Content.Server.Kitchen.Components
         public int Capacity = 10;
 
         [DataField, ViewVariables(VVAccess.ReadWrite)]
-        public ProtoId<ItemSizePrototype> MaxItemSize = "Normal";
+        public int MaxItemSize = 50;
 
         /// <summary>
         /// How frequently the microwave can malfunction.

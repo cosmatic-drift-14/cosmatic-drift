@@ -299,7 +299,7 @@ namespace Content.Server.Kitchen.EntitySystems
             if (TryComp<ItemComponent>(args.Used, out var item))
             {
                 // check if size of an item you're trying to put in is too big
-                if (_item.GetSizePrototype(item.Size) > _item.GetSizePrototype(ent.Comp.MaxItemSize))
+                if (item.Size > ent.Comp.MaxItemSize)
                 {
                     _popupSystem.PopupEntity(Loc.GetString("microwave-component-interact-item-too-big", ("item", args.Used)), ent, args.User);
                     return;

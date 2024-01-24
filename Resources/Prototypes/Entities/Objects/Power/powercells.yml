@@ -276,7 +276,7 @@
   parent: BasePowerCell
   components:
   - type: Item
-    size: Ginormous
+    size: 200
   - type: MultiHandedItem
   - type: SolutionContainerManager
     solutions:
