@@ -461,7 +461,7 @@
   id: IonStorm
   components:
   - type: StationEvent
-    weight: 8
+    weight: 11
     earliestStart: 20
     reoccurrenceDelay: 60
     duration: 1
