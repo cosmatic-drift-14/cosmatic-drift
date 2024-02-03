@@ -524,6 +524,8 @@
     prototype: Mothroach
   - type: TypingIndicator
     proto: moth
+  - type: Puller
+    needsHands: true
   - type: Destructible
     thresholds:
     - trigger:
@@ -1336,6 +1338,8 @@
       Male: UnisexReptilian
       Female: UnisexReptilian
       Unsexed: UnisexReptilian
+  - type: TypingIndicator
+    proto: lizard
   - type: InteractionPopup
     successChance: 0.9
     interactSuccessString: petting-success-monkey

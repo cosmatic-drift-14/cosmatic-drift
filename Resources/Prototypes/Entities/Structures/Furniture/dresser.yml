@@ -25,7 +25,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
-    capacity: 50
+    capacity: 80
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

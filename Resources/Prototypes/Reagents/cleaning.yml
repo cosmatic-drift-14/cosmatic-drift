@@ -120,6 +120,7 @@
       paralyzeTime: 3
       launchForwardsMultiplier: 2
       requiredSlipSpeed: 1
+      superSlippery: true
 
 - type: reagent
   id: SpaceGlue
@@ -157,3 +158,7 @@
         type: Add
         time: 5
         refresh: false
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 6

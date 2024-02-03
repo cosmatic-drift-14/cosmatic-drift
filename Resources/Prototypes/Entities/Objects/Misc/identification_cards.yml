@@ -645,6 +645,7 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
+    - JobIconVisitor
     - JobIconSeniorPhysician #CD Role
     - JobIconSeniorOfficer #CD Role
     - JobIconSeniorEngineer #CD Role
