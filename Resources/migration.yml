@@ -165,6 +165,9 @@ CryogenicSleepUnit: MachineCryoSleepPod
 CryogenicSleepUnitSpawner: MachineCryoSleepPod
 CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
 
+# 2024-01-28
+FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
+
 # 2024-01-31
 HandheldCrewMonitorEmpty: null
 HandheldCrewMonitor: null
