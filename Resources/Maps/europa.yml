@@ -72565,16 +72565,8 @@ entities:
     - type: Transform
       pos: -0.91612613,39.598057
       parent: 1
-<<<<<<< HEAD
-      type: Transform
-    - count: 15
-      type: Stack
-    - size: 30
-      type: Item
-=======
     - type: Stack
       count: 15
->>>>>>> ca61cf8116815be912762c327d849af0d3ffefa0
 - proto: StoolBar
   entities:
   - uid: 921
