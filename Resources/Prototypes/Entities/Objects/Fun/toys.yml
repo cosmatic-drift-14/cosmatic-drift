@@ -1274,7 +1274,6 @@
     state: icon-off
   - type: Item
     sprite: Objects/Fun/newton_cradle.rsi
-    storedRotation: -90
   - type: Appearance
   - type: GenericVisualizer
     visuals:

@@ -236,8 +236,7 @@
     state: icon
   - type: Item
     sprite: Clothing/Head/Misc/waterdroplet.rsi
-    size: Tiny
-    storedRotation: -90
+    size: 5
   - type: Clothing
     slots:
     - HEAD
