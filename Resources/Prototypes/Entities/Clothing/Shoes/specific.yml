@@ -212,7 +212,7 @@
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesSkates
   name: roller skates
-  description: "Get your skates on!"
+  description: "Get your skates on, Honk!"
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Specific/skates.rsi

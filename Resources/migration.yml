@@ -123,6 +123,7 @@ DrinkGoldschlagerBottleFull: DrinkGildlagerBottleFull
 DrinkGoldschlagerGlass: DrinkGildlagerGlass
 
 # 2024-01-07
+ClosetBase: ClosetSteelBase
 MonkeyCubeBox: VariantCubeBox
 
 # 2024-01-08
@@ -149,3 +150,32 @@ TransmitterSubspaceStockPart: null
 
 # 2024-01-10
 ClothingHeadHatHoodRad: null
+
+# 2024-01-12
+SpaceMedipen: null
+
+# 2024-01-18
+ClothingHeadHelmetVoidParamed: null
+
+# 2024-01-19
+DefaultStationBeaconTeslaEngine: null
+
+# 2024-01-23 CD Change, replacing upstream cryopods with our own
+CryogenicSleepUnit: MachineCryoSleepPod
+CryogenicSleepUnitSpawner: MachineCryoSleepPod
+CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
+
+# 2024-01-28
+FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
+
+# 2024-01-31
+HandheldCrewMonitorEmpty: null
+HandheldCrewMonitor: null
+SpyCrewMonitor: null
+SpyCrewMonitorEmpty: null
+SyndiCrewMonitor: null
+SyndiCrewMonitorEmpty: null
+
+# 2024-02-01
+YellowOxygenTank: OxygenTank
+YellowOxygenTankFilled: OxygenTankFilled

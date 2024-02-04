@@ -17,8 +17,7 @@
     quickEquip: false
     slots:
       - Belt
-  - type: TilePrying
-  - type: LatticeCutting
+  - type: ToolTileCompatible
   - type: Tool
     qualities:
       - Prying
@@ -59,6 +58,11 @@
     state: syn_jaws_pry
   - type: Item
     size: 35
+    inhandVisuals:
+      left:
+      - state: syn_inhand-left
+      right:
+      - state: syn_inhand-right
   - type: Tool
     qualities:
       - Prying

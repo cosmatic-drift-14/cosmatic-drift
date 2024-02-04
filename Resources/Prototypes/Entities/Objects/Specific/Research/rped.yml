@@ -10,9 +10,6 @@
   - type: Item
     sprite: Objects/Specific/Research/rped.rsi
     size: 50
-  - type: GuideHelp
-    guides:
-    - MachineUpgrading
   - type: PartExchanger
   - type: Storage
     capacity: 150
