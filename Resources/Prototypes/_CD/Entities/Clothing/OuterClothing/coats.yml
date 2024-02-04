@@ -6,6 +6,6 @@
   description: A brown duster, covered in sand.
   components:
   - type: Sprite
-    sprite: _CD\Clothing\OuterClothing\Coats\cowboyduster.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
   - type: Clothing
-    sprite: _CD\Clothing\OuterClothing\Coats\cowboyduster.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
