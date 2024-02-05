@@ -3,6 +3,9 @@
   name: job-name-senior-physician
   description: job-description-senior-physician
   playTimeTracker: JobSeniorPhysician
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
   startingGear: SeniorPhysicianGear
   icon: "JobIconSeniorPhysician"
   supervisors: job-supervisors-cmo
