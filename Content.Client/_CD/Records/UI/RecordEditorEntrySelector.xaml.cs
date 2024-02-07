@@ -14,7 +14,8 @@ public sealed partial class RecordEditorEntrySelector : Control
 
     public event Action<RecordEditorEntryUpdateArgs>? OnUpdateEntries;
 
-    private readonly RecordEntryEditPopup _popup = new();
+    private readonly RecordEntryEditPopup _editPopup = new();
+    private readonly RecordEntryViewPopup _entryViewPopup = new();
     private int _editIdx;
 
     public RecordEditorEntrySelector()
@@ -24,8 +25,8 @@ public sealed partial class RecordEditorEntrySelector : Control
         AddButton.OnPressed += _ =>
         {
             _editIdx = _entries.Count;
-            _popup.SetContents(new CharacterRecords.RecordEntry("", "", ""));
-            _popup.Open();
+            _editPopup.SetContents(new CharacterRecords.RecordEntry("", "", ""));
+            _editPopup.Open();
         };
 
         EditButton.OnPressed += _ =>
@@ -33,8 +34,17 @@ public sealed partial class RecordEditorEntrySelector : Control
             if (!EntrySelector.GetSelected().Any())
                 return;
             _editIdx = EntrySelector.IndexOf(EntrySelector.GetSelected().First());
-            _popup.SetContents(_entries[_editIdx]);
-            _popup.Open();
+            _editPopup.SetContents(_entries[_editIdx]);
+            _editPopup.Open();
+        };
+
+        ViewButton.OnPressed += _ =>
+        {
+            if (!EntrySelector.GetSelected().Any())
+                return;
+            var idx = EntrySelector.IndexOf(EntrySelector.GetSelected().First());
+            _entryViewPopup.SetContents(_entries[idx]);
+            _entryViewPopup.Open();
         };
 
         RemoveButton.OnPressed += _ =>
@@ -45,7 +55,7 @@ public sealed partial class RecordEditorEntrySelector : Control
             EntrySelector.RemoveAt(idx);
             _entries.RemoveAt(idx);
             if (idx == _editIdx)
-                _popup.Close();
+                _editPopup.Close();
             _editIdx--;
             OnUpdateEntries?.Invoke(new RecordEditorEntryUpdateArgs(_entries));
         };
@@ -74,24 +84,24 @@ public sealed partial class RecordEditorEntrySelector : Control
             OnUpdateEntries?.Invoke(new RecordEditorEntryUpdateArgs(_entries));
         };
 
-        _popup.SaveButton.OnPressed += _ =>
+        _editPopup.SaveButton.OnPressed += _ =>
         {
             if (_editIdx >= _entries.Count)
             {
-                var rec = _popup.GetContents();
+                var rec = _editPopup.GetContents();
                 _entries.Add(rec);
                 EntrySelector.AddItem(rec.Title);
             }
             else
             {
-                _entries[_editIdx] = _popup.GetContents();
+                _entries[_editIdx] = _editPopup.GetContents();
                 EntrySelector[_editIdx].Text = _entries[_editIdx].Title;
             }
             OnUpdateEntries?.Invoke(new RecordEditorEntryUpdateArgs(_entries));
         };
         OnVisibilityChanged += _ =>
         {
-            _popup.Close();
+            _editPopup.Close();
         };
     }
 

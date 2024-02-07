@@ -9,9 +9,9 @@
             <Label HorizontalAlignment="Right" Name="EntryTitle" HorizontalExpand="True" StyleClasses="LabelBig" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True" >
-            <Label Text="{Loc 'cd-character-records-entry-view-involved'}"/>
+            <Label Text="{Loc 'cd-character-records-entry-view-involved'}" StyleClasses="LabelBig"/>
             <Control HorizontalExpand="True" />
-            <Label HorizontalAlignment="Right" Name="EntryInvolved" HorizontalExpand="True" />
+            <Label HorizontalAlignment="Right" Name="EntryInvolved" HorizontalExpand="True" StyleClasses="LabelBig"/>
         </BoxContainer>
         <RichTextLabel Name="EntryDesc" HorizontalExpand="True" VerticalExpand="True" VerticalAlignment="Stretch"/>
     </BoxContainer>

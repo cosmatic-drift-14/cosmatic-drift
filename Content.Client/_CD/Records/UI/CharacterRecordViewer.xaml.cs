@@ -19,7 +19,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
     private RecordConsoleType? _type;
 
-    private readonly RecordViewEntryPopup _entryView = new();
+    private readonly RecordEntryViewPopup _entryView = new();
     private List<CharacterRecords.RecordEntry>? _entries;
 
     public CharacterRecordViewer()

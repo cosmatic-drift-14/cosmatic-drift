@@ -163,12 +163,11 @@ public sealed class CharacterRecords
 
     private static string ClampString(string str, int maxLen)
     {
-        // We call RemoveMarkup because wizden does that for flavour text
         if (str.Length > maxLen)
         {
-            return FormattedMessage.RemoveMarkup(str)[..maxLen];
+            return str[..maxLen];
         }
-        return FormattedMessage.RemoveMarkup(str);
+        return str;
     }
 
     private static void EnsureValidEntries(List<RecordEntry> entries)
