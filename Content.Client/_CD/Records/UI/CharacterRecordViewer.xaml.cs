@@ -12,14 +12,14 @@ namespace Content.Client._CD.Records.UI;
 public sealed partial class CharacterRecordViewer : FancyWindow
 {
     public Action<NetEntity?>? OnKeySelected;
-    public Action<GeneralStationRecordFilterType, string?>? OnFiltersChanged;
+    public Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
-    private GeneralStationRecordFilterType _filterType;
+    private StationRecordFilterType _filterType;
 
     private RecordConsoleType? _type;
 
-    private RecordViewEntryPopup _entryView = new();
+    private readonly RecordViewEntryPopup _entryView = new();
     private List<CharacterRecords.RecordEntry>? _entries;
 
     public CharacterRecordViewer()
@@ -28,7 +28,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
         // There is no reason why we can't just steal the GeneralStationRecordFilter class.
         // If wizden adds a new kind of filtering we want to replicate it here.
-        foreach (var item in Enum.GetValues<GeneralStationRecordFilterType>())
+        foreach (var item in Enum.GetValues<StationRecordFilterType>())
         {
             RecordFilterType.AddItem(GetTypeFilterLocals(item), (int)item);
         }
@@ -57,12 +57,12 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
         RecordFiltersReset.OnPressed += _ =>
         {
-            OnFiltersChanged?.Invoke(GeneralStationRecordFilterType.Name, null);
+            OnFiltersChanged?.Invoke(StationRecordFilterType.Name, null);
         };
 
         RecordFilterType.OnItemSelected += eventArgs =>
         {
-            var type = (GeneralStationRecordFilterType)eventArgs.Id;
+            var type = (StationRecordFilterType)eventArgs.Id;
             _filterType = type;
             RecordFilterType.SelectId(eventArgs.Id);
         };
@@ -90,7 +90,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     }
 
     // If we are using wizden's class we might as well use their localization.
-    private string GetTypeFilterLocals(GeneralStationRecordFilterType type)
+    private string GetTypeFilterLocals(StationRecordFilterType type)
     {
         return Loc.GetString($"general-station-record-{type.ToString().ToLower()}-filter");
     }
@@ -123,13 +123,13 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             case RecordConsoleType.Employment:
                 // We should only use extended filtering options for sec records.
                 RecordFilterType.Visible = false;
-                RecordFilterType.SelectId((int)GeneralStationRecordFilterType.Name);
+                RecordFilterType.SelectId((int)StationRecordFilterType.Name);
 
                 Title = Loc.GetString("cd-character-records-viewer-title-employ");
                 break;
             case RecordConsoleType.Medical:
                 RecordFilterType.Visible = false;
-                RecordFilterType.SelectId((int)GeneralStationRecordFilterType.Name);
+                RecordFilterType.SelectId((int)StationRecordFilterType.Name);
 
                 Title = Loc.GetString("cd-character-records-viewer-title-med");
                 break;

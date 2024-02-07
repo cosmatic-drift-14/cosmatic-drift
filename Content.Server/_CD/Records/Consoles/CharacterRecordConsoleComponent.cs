@@ -10,7 +10,7 @@ public sealed partial class CharacterRecordConsoleComponent : Component
     public NetEntity? Selected { get; set; }
 
     [ViewVariables(VVAccess.ReadOnly)]
-    public GeneralStationRecordsFilter? Filter;
+    public StationRecordsFilter? Filter;
 
     [DataField(required: true), ViewVariables(VVAccess.ReadOnly)]
     public RecordConsoleType ConsoleType;

@@ -26,15 +26,15 @@ public sealed class CharacterRecordConsoleState : BoundUserInterfaceState
 
     public FullCharacterRecords? SelectedRecord { get; set; } = null;
 
-    public GeneralStationRecordsFilter? Filter { get; set; } = null;
+    public StationRecordsFilter? Filter { get; set; } = null;
 }
 
 [Serializable, NetSerializable]
 public sealed class CharacterRecordsConsoleFilterMsg : BoundUserInterfaceMessage
 {
-    public readonly GeneralStationRecordsFilter? Filter;
+    public readonly StationRecordsFilter? Filter;
 
-    public CharacterRecordsConsoleFilterMsg(GeneralStationRecordsFilter? filter)
+    public CharacterRecordsConsoleFilterMsg(StationRecordsFilter? filter)
     {
         Filter = filter;
     }

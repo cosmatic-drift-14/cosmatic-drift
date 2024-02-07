@@ -93,7 +93,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     }
 
     // The next two methods where almost copied verbatim from GeneralStationRecordConsoleSystem
-    private static bool IsSkippedRecord(GeneralStationRecordsFilter filter,
+    private static bool IsSkippedRecord(StationRecordsFilter filter,
         FullCharacterRecords record)
     {
         bool isFilter = filter.Value.Length > 0;
@@ -105,12 +105,12 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
         return filter.Type switch
         {
-            GeneralStationRecordFilterType.Name =>
+            StationRecordFilterType.Name =>
                 !record.Name.ToLower().Contains(filterLowerCaseValue),
-            GeneralStationRecordFilterType.Prints => record.Fingerprint != null
+            StationRecordFilterType.Prints => record.Fingerprint != null
                 && IsFilterWithSomeCodeValue(record.Fingerprint, filterLowerCaseValue),
-            GeneralStationRecordFilterType.DNA => record.DNA != null
-                && IsFilterWithSomeCodeValue(record.DNA, filterLowerCaseValue),
+            StationRecordFilterType.DNA => record.DNA != null
+                                                && IsFilterWithSomeCodeValue(record.DNA, filterLowerCaseValue),
             _ => throw new ArgumentOutOfRangeException(nameof(filter), "Invalid Character Record filter type"),
         };
     }

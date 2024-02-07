@@ -39,7 +39,7 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
             if (txt == null)
                 SendMessage(new CharacterRecordsConsoleFilterMsg(null));
             else
-                SendMessage(new CharacterRecordsConsoleFilterMsg(new GeneralStationRecordsFilter(ty, txt)));
+                SendMessage(new CharacterRecordsConsoleFilterMsg(new StationRecordsFilter(ty, txt)));
         };
 
         _window.OpenCentered();
