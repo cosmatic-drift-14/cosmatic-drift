@@ -1,0 +1,15 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc 'cd-welcome-popup-title'}"
+                      MinSize="400 600" >
+    <BoxContainer Orientation="Vertical" Margin="5">
+        <BoxContainer Orientation="Vertical" Name="Contents" Align="Begin" MaxWidth="800"/>
+        <Control VerticalExpand="True"/>
+        <BoxContainer Orientation="Horizontal" Align="End" >
+            <Button Name="PopupCloseButton" MinWidth="40" Text="{Loc 'cd-welcome-popup-close'}"
+                    HorizontalExpand="True" StyleClasses="OpenRight"/>
+            <Button Name="NoShowButton" Access="Public" MinWidth="40" Text="{Loc 'cd-welcome-popup-do-not-show-again'}"
+                    HorizontalExpand="True" SizeFlagsStretchRatio="2" StyleClasses="OpenLeft"/>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>
