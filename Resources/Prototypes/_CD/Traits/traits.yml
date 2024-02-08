@@ -1,0 +1,6 @@
+﻿- type: trait
+  id: Synthetic
+  name: trait-lightweight-name
+  description: trait-lightweight-desc
+  components:
+    - type: Synth
