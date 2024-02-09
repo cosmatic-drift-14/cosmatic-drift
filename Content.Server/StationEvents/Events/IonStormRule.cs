@@ -74,12 +74,12 @@ public sealed class IonStormRule : StationEventSystem<IonStormRuleComponent>
 
         // CD Change - Go through everyone with the SynthComponent and inform them a storm is happening.
         var synthQuery = EntityQueryEnumerator<SynthComponent>();
-        while (synthQuery.MoveNext(out var ent))
+        while (synthQuery.MoveNext(out var ent, out var synthComp))
         {
-            if (RobustRandom.Prob(0.7f))
+            if (RobustRandom.Prob(synthComp.AlertChance))
                 continue;
 
-            if (!TryComp<ActorComponent>(uid, out var actor))
+            if (!TryComp<ActorComponent>(ent, out var actor))
                 continue;
 
             var msg = Loc.GetString("station-event-ion-storm-synth");
