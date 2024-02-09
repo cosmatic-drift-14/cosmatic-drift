@@ -22,10 +22,14 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CharacterRecordConsoleComponent, BoundUIOpenedEvent>((uid, component, _) => UpdateUi(uid, component));
         SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordsModifiedEvent>((uid, component, _) => UpdateUi(uid, component));
-        SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordConsoleSelectMsg>(OnKeySelect);
-        SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordsConsoleFilterMsg>(OnFilterApplied);
+
+        Subs.BuiEvents<CharacterRecordConsoleComponent>(CharacterRecordConsoleKey.Key, subr =>
+        {
+            subr.Event<BoundUIOpenedEvent>((uid, component, _) => UpdateUi(uid, component));
+            subr.Event<CharacterRecordConsoleSelectMsg>(OnKeySelect);
+            subr.Event<CharacterRecordsConsoleFilterMsg>(OnFilterApplied);
+        });
     }
 
     private void OnFilterApplied(EntityUid entity, CharacterRecordConsoleComponent console,
