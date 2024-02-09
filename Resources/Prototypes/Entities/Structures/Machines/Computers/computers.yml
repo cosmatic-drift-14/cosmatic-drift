@@ -295,6 +295,9 @@
   name: security records computer
   description: This can be used to access security records.
   components:
+    # We need to have both a CriminalRecordsConsole and CharacterRecordConsole
+    # component to be able to set wanted status.
+  - type: CriminalRecordsConsole
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]

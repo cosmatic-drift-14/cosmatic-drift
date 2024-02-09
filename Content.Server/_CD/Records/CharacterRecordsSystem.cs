@@ -5,7 +5,9 @@ using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
 using Content.Shared._CD.Records;
 using Content.Shared.Inventory;
+using Content.Shared.PDA;
 using Content.Shared.Roles;
+using Content.Shared.StationRecords;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;
@@ -20,7 +22,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: new []{ typeof(StationRecordsSystem) });
     }
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
@@ -34,11 +36,6 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
         var player = args.Mob;
 
-        if (!_inventorySystem.TryGetSlotEntity(player, "id", out var idUid))
-        {
-            return;
-        }
-
         if (!_prototypeManager.TryIndex(args.JobId, out JobPrototype? jobPrototype))
         {
             throw new ArgumentException($"Invalid job prototype ID: {args.JobId}");
@@ -49,6 +46,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
         var records = new FullCharacterRecords(
             characterRecords: new CharacterRecords(profile.CDCharacterRecords),
+            stationRecordsKey: FindStationRecordsKey(player),
             name: profile.Name,
             age: profile.Age,
             species: profile.Species,
@@ -61,6 +59,25 @@ public sealed class CharacterRecordsSystem : EntitySystem
         AddRecord(args.Station, args.Mob, records);
 
         // We don't delete records after a character has joined unless an admin requests it.
+    }
+
+    private uint? FindStationRecordsKey(EntityUid uid)
+    {
+        if (!_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
+            return null;
+
+        var keyStorageEntity = idUid;
+        if (TryComp<PdaComponent>(idUid, out var pda) && pda.ContainedId is {} id)
+        {
+            keyStorageEntity = id;
+        }
+
+        if (!TryComp<StationRecordKeyStorageComponent>(keyStorageEntity, out var storage))
+        {
+            return null;
+        }
+
+        return storage.Key?.Id;
     }
 
     public bool AddRecord(EntityUid station, EntityUid player, FullCharacterRecords records, CharacterRecordsComponent? recordsDb = null)

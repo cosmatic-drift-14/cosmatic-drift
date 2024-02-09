@@ -1,7 +1,10 @@
 using System.Linq;
 using Content.Server.Station.Systems;
 using Content.Server.StationRecords;
+using Content.Server.StationRecords.Systems;
 using Content.Shared._CD.Records;
+using Content.Shared.CriminalRecords;
+using Content.Shared.Security;
 using Content.Shared.StationRecords;
 using Robust.Server.GameObjects;
 
@@ -13,6 +16,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
+    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
 
     public override void Initialize()
     {
@@ -44,8 +48,8 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             return;
 
         var station = _stationSystem.GetOwningStation(entity);
-        if (!TryComp<StationRecordsComponent>(station, out _) ||
-            !TryComp<CharacterRecordsComponent>(station, out _))
+        if (!TryComp<StationRecordsComponent>(station, out var stationRecords) ||
+            !HasComp<CharacterRecordsComponent>(station))
         {
             SendState(entity, new CharacterRecordConsoleState { ConsoleType = console.ConsoleType });
             return;
@@ -67,14 +71,25 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
                 var netEnt = _entityManager.GetNetEntity(r.Key);
                 if (console.ConsoleType == RecordConsoleType.Admin)
                 {
-                    return (netEnt, $"{r.Value.Name} ({netEnt}, {r.Value.JobTitle}");
+                    return (netEnt, ($"{r.Value.Name} ({netEnt}, {r.Value.JobTitle}", r.Value.StationRecordsKey));
                 }
 
-                return (netEnt, $"{r.Value.Name} ({r.Value.JobTitle})");
+                return (netEnt, ($"{r.Value.Name} ({r.Value.JobTitle})", r.Value.StationRecordsKey));
             })
             .ToDictionary();
 
         var record = console.Selected == null ? null : characterRecords[_entityManager.GetEntity(console.Selected.Value)];
+        (SecurityStatus, string?)? securityStatus = null;
+        if ((console.ConsoleType == RecordConsoleType.Admin ||
+            console.ConsoleType == RecordConsoleType.Security)
+            && record?.StationRecordsKey != null)
+        {
+            var key = new StationRecordKey(record.StationRecordsKey.Value, station.Value);
+            if (_stationRecords.TryGetRecord<CriminalRecord>(key, out var entry))
+            {
+                securityStatus = (entry.Status, entry.Reason);
+            }
+        }
 
         SendState(entity,
             new CharacterRecordConsoleState
@@ -84,6 +99,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
                 Selected = console.Selected,
                 SelectedRecord = record,
                 Filter = console.Filter,
+                SecurityStatus = securityStatus,
             });
     }
 

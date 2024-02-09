@@ -1,3 +1,4 @@
+using Content.Shared.Security;
 using Content.Shared.StationRecords;
 using Robust.Shared.Serialization;
 
@@ -22,11 +23,13 @@ public sealed class CharacterRecordConsoleState : BoundUserInterfaceState
 
     public NetEntity? Selected { get; set; } = null;
 
-    public Dictionary<NetEntity, string>? RecordListing { get; set; }
+    public Dictionary<NetEntity, (string, uint?)>? RecordListing { get; set; }
 
     public FullCharacterRecords? SelectedRecord { get; set; } = null;
 
     public StationRecordsFilter? Filter { get; set; } = null;
+
+    public (SecurityStatus, string?)? SecurityStatus = null;
 }
 
 [Serializable, NetSerializable]

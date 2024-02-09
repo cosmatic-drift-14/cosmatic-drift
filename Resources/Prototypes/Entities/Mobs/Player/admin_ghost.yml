@@ -96,6 +96,8 @@
     prototypes: [ MobAghostGear ]
   - type: CharacterRecordConsole
     consoleType: Admin
+    # Needed for security records console functionality
+  - type: CriminalRecordsConsole
 
 - type: entity
   id: ActionAGhostShowSolar

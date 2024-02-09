@@ -1,4 +1,7 @@
 using Content.Shared._CD.Records;
+using Content.Shared.CriminalRecords;
+using Content.Shared.CriminalRecords.Components;
+using Content.Shared.Security;
 using Content.Shared.StationRecords;
 using JetBrains.Annotations;
 
@@ -8,6 +11,8 @@ namespace Content.Client._CD.Records.UI;
 public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterface
 {
     [ViewVariables] private CharacterRecordViewer? _window;
+
+    [Dependency] private readonly EntityManager _entMan = default!;
 
     public CharacterRecordConsoleBoundUserInterface(EntityUid owner, Enum key)
         : base(owner, key)
@@ -20,6 +25,12 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
         if (baseState is not CharacterRecordConsoleState state)
             return;
 
+        if (_window?.IsSecurity() ?? false)
+        {
+            var comp = EntMan.GetComponent<CriminalRecordsConsoleComponent>(Owner);
+            _window!.SecurityWantedStatusMaxLength = comp.MaxStringLength;
+        }
+
         _window?.UpdateState(state);
     }
 
@@ -29,9 +40,21 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
 
         _window = new();
         _window.OnClose += Close;
-        _window.OnKeySelected += ent =>
+        _window.OnKeySelected += (ent, stationRecordKey) =>
         {
             SendMessage(new CharacterRecordConsoleSelectMsg(ent));
+
+            // If we are a security records console, we also need to inform the criminal records
+            // system of our state.
+            if (_window.IsSecurity() && stationRecordKey != null)
+            {
+                SendMessage(new SelectStationRecord(stationRecordKey));
+                _window.SetSecurityStatusEnabled(true);
+            }
+            else
+            {
+                _window.SetSecurityStatusEnabled(false);
+            }
         };
 
         _window.OnFiltersChanged += (ty, txt) =>
@@ -40,6 +63,16 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
                 SendMessage(new CharacterRecordsConsoleFilterMsg(null));
             else
                 SendMessage(new CharacterRecordsConsoleFilterMsg(new StationRecordsFilter(ty, txt)));
+        };
+
+        _window.OnSetSecurityStatus += status =>
+        {
+            SendMessage(new CriminalRecordChangeStatus(status, null));
+        };
+
+        _window.OnSetWantedStatus += reason =>
+        {
+            SendMessage(new CriminalRecordChangeStatus(SecurityStatus.Wanted, reason));
         };
 
         _window.OpenCentered();

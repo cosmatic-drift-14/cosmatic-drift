@@ -13,7 +13,8 @@ public sealed class FullCharacterRecords
     [ViewVariables]
     public CharacterRecords CharacterRecords;
 
-    // Yes it was easier to copy-paste this than embed GeneralStationRecords.
+    [ViewVariables]
+    public uint? StationRecordsKey;
 
     /// <summary>
     ///     Name tied to this record.
@@ -66,9 +67,10 @@ public sealed class FullCharacterRecords
     [ViewVariables]
     public string? DNA;
 
-    public FullCharacterRecords(CharacterRecords characterRecords, string name, int age, string jobTitle, string jobIcon, string species, Gender gender, Sex sex, string? fingerprint, string? dna)
+    public FullCharacterRecords(CharacterRecords characterRecords, uint? stationRecordsKey, string name, int age, string jobTitle, string jobIcon, string species, Gender gender, Sex sex, string? fingerprint, string? dna)
     {
         CharacterRecords = characterRecords;
+        StationRecordsKey = stationRecordsKey;
         Name = name;
         Age = age;
         JobTitle = jobTitle;

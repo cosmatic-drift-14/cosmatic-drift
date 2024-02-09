@@ -111,6 +111,12 @@
                                 <Control HorizontalExpand="True" />
                                 <Label Name="RecordContainerDNA" Align="Right" />
                             </BoxContainer>
+                            <BoxContainer Orientation="Horizontal" Margin="5 5 5 5">
+                                <Label Text="{Loc 'criminal-records-console-status'}" FontColorOverride="DarkGray"/>
+                                <OptionButton Name="StatusOptionButton"/>
+                                <Control MinWidth="5"/>
+                                <Label Name="RecordContainerWantedReason" Visible="False" />
+                            </BoxContainer>
                         </BoxContainer>
                     </BoxContainer>
                     <!-- Entry viewer -->
