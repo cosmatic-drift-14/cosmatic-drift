@@ -29,14 +29,18 @@ public sealed partial class WelcomeWindow : FancyWindow
         };
     }
 
-    public void LoadContents(ResPath path)
+    public int LoadContents(ResPath path)
     {
         using var file = _resourceManager.ContentFileReadText(path);
 
-        if (!_parsingMan.TryAddMarkup(Contents, file.ReadToEnd()))
+        var txt = file.ReadToEnd();
+        if (!_parsingMan.TryAddMarkup(Contents, txt))
         {
             Contents.AddChild(new Label() { Text = "ERROR: Failed to parse document." });
             _sawmill.Error($"Failed to parse contents of guide document {path}.");
         }
+
+        // This does not really need any hash more complex than the standard GetHashCode hash
+        return txt.GetHashCode();
     }
 }
