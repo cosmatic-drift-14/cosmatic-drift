@@ -35,6 +35,10 @@ using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 using Direction = Robust.Shared.Maths.Direction;
 
+// CD: Records editor imports
+using Content.Client._CD.Records.UI;
+using Content.Shared._CD.Records;
+
 namespace Content.Client.Preferences.UI
 {
     public sealed class HighlightedContainer : PanelContainer
@@ -109,6 +113,9 @@ namespace Content.Client.Preferences.UI
         public event Action<HumanoidCharacterProfile, int>? OnProfileChanged;
 
         private float _defaultHeight = 1f;
+
+        // CD: Record editor
+        private readonly RecordEditorGui _recordsTab;
 
         public HumanoidProfileEditor(IClientPreferencesManager preferencesManager, IPrototypeManager prototypeManager,
             IEntityManager entityManager, IConfigurationManager configurationManager)
@@ -510,6 +517,14 @@ namespace Content.Client.Preferences.UI
 
             #endregion Markings
 
+            #region CosmaticRecords
+
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords);
+            _tabContainer.AddChild(_recordsTab);
+            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+
+            #endregion CosmaticRecords
+
             #region FlavorText
 
             if (_configurationManager.GetCVar(CCVars.FlavorText))
@@ -667,6 +682,15 @@ namespace Content.Client.Preferences.UI
             {
                 UpdateJobPriorities();
             }
+        }
+
+        // CD: Records editor
+        private void UpdateProfileRecords(CharacterRecords records)
+        {
+            if (Profile is null)
+                return;
+            Profile = Profile.WithCDCharacterRecords(records);
+            IsDirty = true;
         }
 
         private void OnFlavorTextChange(string content)
@@ -1034,7 +1058,7 @@ namespace Content.Client.Preferences.UI
 
             _backpackButton.SelectId((int) Profile.Backpack);
         }
-        
+
         private void UpdateHeightControls()
         {
             if (Profile == null)
@@ -1212,6 +1236,9 @@ namespace Content.Client.Preferences.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
             UpdateHeightControls();
+
+            // CD: Update record editor
+            _recordsTab.Update(Profile);
 
             _preferenceUnavailableButton.SelectId((int) Profile.PreferenceUnavailable);
         }
