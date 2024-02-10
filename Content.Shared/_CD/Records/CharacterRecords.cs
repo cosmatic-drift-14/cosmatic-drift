@@ -185,7 +185,7 @@ public sealed class CharacterRecords
         Height = Math.Clamp(Height, 0, MaxHeight);
         Weight = Math.Clamp(Weight, 0, MaxWeight);
         EmergencyContactName =
-            ClampString(EmergencyContactName, HumanoidCharacterProfile.MaxNameLength);
+            ClampString(EmergencyContactName, TextMedLen);
         IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
         Allergies = ClampString(Allergies, TextMedLen);
         DrugAllergies = ClampString(DrugAllergies, TextMedLen);
