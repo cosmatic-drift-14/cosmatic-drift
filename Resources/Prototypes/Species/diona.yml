@@ -35,7 +35,7 @@
   onlyWhitelisted: true
   points:
     Head:
-      points: 2
+      points: 3
       required: false
     HeadTop:
       points: 2
