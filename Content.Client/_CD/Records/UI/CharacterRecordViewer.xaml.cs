@@ -14,8 +14,8 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class CharacterRecordViewer : FancyWindow
 {
-    public Action<NetEntity?, uint?>? OnKeySelected;
-    public Action<StationRecordFilterType, string?>? OnFiltersChanged;
+    public event Action<NetEntity?, uint?>? OnKeySelected;
+    public event Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
     private StationRecordFilterType _filterType;
@@ -26,8 +26,8 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     private List<CharacterRecords.RecordEntry>? _entries;
 
     private DialogWindow? _wantedReasonDialog;
-    public Action<string?>? OnSetWantedStatus;
-    public Action<SecurityStatus>? OnSetSecurityStatus;
+    public event Action<string?>? OnSetWantedStatus;
+    public event Action<SecurityStatus>? OnSetSecurityStatus;
 
     public uint? SecurityWantedStatusMaxLength;
 
@@ -105,6 +105,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
         OnClose += () => _entryView.Close();
 
+        // Admin console entry type selector
         RecordEntryViewType.AddItem(Loc.GetString("department-Security"));
         RecordEntryViewType.AddItem(Loc.GetString("department-Medical"));
         RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-employment"));
@@ -124,8 +125,12 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
     public void UpdateState(CharacterRecordConsoleState state)
     {
+        #region Visibility
+
         RecordEntryViewType.Visible = false;
         _type = state.ConsoleType;
+
+        // Disable listing if we don't have one selected
         if (state.RecordListing == null)
         {
             RecordListingStatus.Visible = true;
@@ -136,19 +141,13 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             return;
         }
 
-        if (state.Filter != null)
-        {
-            RecordFiltersValue.SetText(state.Filter.Value);
-            RecordFilterType.SelectId((int) state.Filter.Type);
-        }
-
         RecordListingStatus.Visible = false;
         RecordListing.Visible = true;
 
+        // Enable extended filtering only for admin and security consoles
         switch (_type)
         {
             case RecordConsoleType.Employment:
-                // We should only use extended filtering options for sec records.
                 RecordFilterType.Visible = false;
                 RecordFilterType.SelectId((int)StationRecordFilterType.Name);
 
@@ -173,6 +172,16 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 break;
         }
 
+        #endregion
+
+        #region PopulateListing
+
+        if (state.Filter != null)
+        {
+            RecordFiltersValue.SetText(state.Filter.Value);
+            RecordFilterType.SelectId((int) state.Filter.Type);
+        }
+
         _isPopulating = true;
 
         RecordListing.Clear();
@@ -183,6 +192,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
         _isPopulating = false;
 
+        #endregion
+
+        #region FillRecordContainer
+
+        // Enable container if we have a record selected
         if (state.SelectedRecord == null)
         {
             RecordContainerStatus.Visible = true;
@@ -196,6 +210,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         var record = state.SelectedRecord!;
         var cr = record.CharacterRecords;
 
+        // Basic info
         RecordContainerName.Text = record.Name;
         RecordContainerAge.Text = record.Age.ToString();
         RecordContainerJob.Text = record.JobTitle; /* At some point in the future we might want to display the icon */
@@ -221,12 +236,12 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 break;
             case RecordConsoleType.Security:
                 SetEntries(cr.SecurityEntries);
-                UpdateRecordBoxSecurity(record, state.SecurityStatus);
+                UpdateRecordBoxSecurity(record, state.SelectedSecurityStatus);
                 break;
             case RecordConsoleType.Admin:
                 UpdateRecordBoxEmployment(record);
                 UpdateRecordBoxMedical(record);
-                UpdateRecordBoxSecurity(record, state.SecurityStatus);
+                UpdateRecordBoxSecurity(record, state.SelectedSecurityStatus);
                 switch ((RecordConsoleType) RecordEntryViewType.SelectedId)
                 {
                 case RecordConsoleType.Employment:
@@ -241,6 +256,9 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 }
                 break;
         }
+
+        #endregion
+
     }
 
     private void SetEntries(List<CharacterRecords.RecordEntry> entries, bool addIndex = false)

@@ -1,7 +1,6 @@
 using System.Linq;
 using Content.Shared.Preferences;
 using Robust.Shared.Serialization;
-using Robust.Shared.Utility;
 
 namespace Content.Shared._CD.Records;
 
@@ -178,6 +177,9 @@ public sealed class CharacterRecords
         }
     }
 
+    /// <summary>
+    /// Clamp invalid entries to valid values
+    /// </summary>
     public void EnsureValid()
     {
         Height = Math.Clamp(Height, 0, MaxHeight);

@@ -13,7 +13,13 @@ public enum CharacterRecordConsoleKey : byte
 [Serializable, NetSerializable]
 public enum RecordConsoleType : byte
 {
-    Security, Medical, Employment, Admin
+    Security,
+    Medical,
+    Employment,
+    /// <summary>
+    /// Admin console has the functionality of all other types and has some additional admin related functionality
+    /// </summary>
+    Admin
 }
 
 [Serializable, NetSerializable]
@@ -21,15 +27,27 @@ public sealed class CharacterRecordConsoleState : BoundUserInterfaceState
 {
     public RecordConsoleType ConsoleType { get; set; }
 
+    /// <summary>
+    /// Character selected in the console
+    /// </summary>
     public NetEntity? Selected { get; set; } = null;
 
+    /// <summary>
+    /// List of names+station record keys to display in the listing
+    /// </summary>
     public Dictionary<NetEntity, (string, uint?)>? RecordListing { get; set; }
 
+    /// <summary>
+    /// The contents of the selected record
+    /// </summary>
     public FullCharacterRecords? SelectedRecord { get; set; } = null;
 
     public StationRecordsFilter? Filter { get; set; } = null;
 
-    public (SecurityStatus, string?)? SecurityStatus = null;
+    /// <summary>
+    /// Security status of the selected record
+    /// </summary>
+    public (SecurityStatus, string?)? SelectedSecurityStatus = null;
 }
 
 [Serializable, NetSerializable]

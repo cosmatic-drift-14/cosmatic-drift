@@ -7,6 +7,9 @@ using Robust.Client.UserInterface.XAML;
 
 namespace Content.Client._CD.Records.UI;
 
+/// <summary>
+/// The box that contains the list of entities in the record editor. We create one for each record type
+/// </summary>
 [GenerateTypedNameReferences]
 public sealed partial class RecordEditorEntrySelector : Control
 {
@@ -51,6 +54,7 @@ public sealed partial class RecordEditorEntrySelector : Control
         {
             if (!EntrySelector.GetSelected().Any())
                 return;
+            // Remove the entry, being careful to set the index correctly
             int idx = EntrySelector.IndexOf(EntrySelector.GetSelected().First());
             EntrySelector.RemoveAt(idx);
             _entries.RemoveAt(idx);

@@ -13,6 +13,9 @@ public sealed class FullCharacterRecords
     [ViewVariables]
     public CharacterRecords CharacterRecords;
 
+    /// <summary>
+    /// Key for the equivalent entry in the station records
+    /// </summary>
     [ViewVariables]
     public uint? StationRecordsKey;
 

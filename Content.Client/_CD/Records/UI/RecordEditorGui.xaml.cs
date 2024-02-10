@@ -6,9 +6,15 @@ using Robust.Client.UserInterface.XAML;
 
 namespace Content.Client._CD.Records.UI;
 
+/// <summary>
+/// The record editor tab that gets "injected" into the character editor.
+/// </summary>
 [GenerateTypedNameReferences]
 public sealed partial class RecordEditorGui : Control
 {
+    /// <summary>
+    /// Delegate that tells the editor to save records when the save button is pressed
+    /// </summary>
     private readonly Action<CharacterRecords> _updateProfileRecords;
     private CharacterRecords _records = default!;
 

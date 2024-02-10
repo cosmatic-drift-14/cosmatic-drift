@@ -124,6 +124,7 @@
                         <ItemList Name="RecordEntryList" HorizontalExpand="True" MinHeight="200" />
                         <BoxContainer Orientation="Horizontal">
                             <Button Name="RecordEntryViewButton" Text="{Loc 'cd-character-records-viewer-view-entry'}"/>
+                            <!-- Admin console entry type selector -->
                             <OptionButton Name="RecordEntryViewType" />
                         </BoxContainer>
                     </BoxContainer>

@@ -67,8 +67,11 @@ public static class RecordsSerialization
     }
 
     /// <summary>
-    /// We need to manually deserialize CharacterRecords because the default deserializer does not
-    /// do exactly what we want.
+    /// We need to manually deserialize CharacterRecords because the easy JSON deserializer does not
+    /// do exactly what we want. More specifically, we need to more robustly handle missing and extra fields
+    /// <br />
+    /// <br />
+    /// Missing fields are filled in with their default value, extra fields are simply ignored
     /// </summary>
     public static CharacterRecords DeserializeJson(JsonDocument json)
     {

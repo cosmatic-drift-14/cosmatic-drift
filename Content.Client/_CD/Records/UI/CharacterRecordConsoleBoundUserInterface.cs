@@ -53,6 +53,8 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
             }
             else
             {
+                // If the user does not have criminal records for some reason, we should not be able
+                // to set their wanted status
                 _window.SetSecurityStatusEnabled(false);
             }
         };

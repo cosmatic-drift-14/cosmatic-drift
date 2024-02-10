@@ -5,10 +5,8 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using Content.Server._CD.Records;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
-using Content.Shared._CD.Records;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
@@ -18,6 +16,10 @@ using Microsoft.EntityFrameworkCore;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
+
+// CD: imports
+using Content.Server._CD.Records;
+using Content.Shared._CD.Records;
 
 namespace Content.Server.Database
 {
@@ -210,6 +212,7 @@ namespace Content.Server.Database
                 }
             }
 
+            // CD: get character records or create default records
             var cdRecords = profile.CDCharacterRecords != null
                 ? RecordsSerialization.DeserializeJson(profile.CDCharacterRecords)
                 : CharacterRecords.DefaultRecords();
@@ -292,6 +295,7 @@ namespace Content.Server.Database
                         .Select(t => new Trait {TraitName = t})
             );
 
+            // CD: Store records
             profile.CDCharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
 
             return profile;

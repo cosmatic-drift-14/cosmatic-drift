@@ -27,7 +27,12 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
     {
-        if (HasComp<StationRecordsComponent>(args.Station) && !HasComp<CharacterRecordsComponent>(args.Station))
+        if (!HasComp<StationRecordsComponent>(args.Station))
+        {
+            Log.Error("Tried to add CharacterRecords on a station without StationRecords");
+            return;
+        }
+        if (!HasComp<CharacterRecordsComponent>(args.Station))
             AddComp<CharacterRecordsComponent>(args.Station);
 
         var profile = args.Profile;

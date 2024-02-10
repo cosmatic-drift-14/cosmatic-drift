@@ -56,7 +56,7 @@
                      <LineEdit Name="PostmortemEdit" HorizontalAlignment="Right" MinSize="350 0"/>
                  </BoxContainer>
                  <Control MinSize="0 20"/>
-                 <!-- Note editor -->
+                 <!-- Entry editor -->
                  <TabContainer Name="EntryEditorTabs" VerticalExpand="True" HorizontalExpand="True" Margin="10">
                      <cdrecords:RecordEditorEntrySelector Name="EmploymentEntrySelector"/>
                      <cdrecords:RecordEditorEntrySelector Name="MedicalEntrySelector"/>

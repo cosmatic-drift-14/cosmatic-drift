@@ -8,7 +8,6 @@ namespace Content.Client._CD.Admin.UI;
 [GenerateTypedNameReferences]
 public sealed partial class ModifyCharacterRecords : DefaultWindow
 {
-    [Dependency] private EntityManager _entityManager = default!;
     public ModifyCharacterRecords()
     {
         RobustXamlLoader.Load(this);

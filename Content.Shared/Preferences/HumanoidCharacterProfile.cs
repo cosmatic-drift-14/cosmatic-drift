@@ -1,7 +1,6 @@
 using System.Linq;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using Content.Shared._CD.Records;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
@@ -15,6 +14,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+
+// CD: Imports
+using Content.Shared._CD.Records;
 
 namespace Content.Shared.Preferences
 {

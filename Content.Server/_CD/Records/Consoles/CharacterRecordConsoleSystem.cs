@@ -52,7 +52,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             return;
 
         var station = _stationSystem.GetOwningStation(entity);
-        if (!TryComp<StationRecordsComponent>(station, out var stationRecords) ||
+        if (!HasComp<StationRecordsComponent>(station) ||
             !HasComp<CharacterRecordsComponent>(station))
         {
             SendState(entity, new CharacterRecordConsoleState { ConsoleType = console.ConsoleType });
@@ -60,9 +60,11 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         }
 
         var characterRecords = _characterRecords.QueryRecords(station.Value);
+        // Get the name and station records key display from the list of records
         var names = characterRecords
             .Where(kv =>
             {
+                // Apply any filter the user has set
                 if (console.Filter != null)
                 {
                     return !IsSkippedRecord(console.Filter, kv.Value);
@@ -73,6 +75,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             .Select(r =>
             {
                 var netEnt = _entityManager.GetNetEntity(r.Key);
+                // Admins get additional info to make it easier to run commands
                 if (console.ConsoleType == RecordConsoleType.Admin)
                 {
                     return (netEnt, ($"{r.Value.Name} ({netEnt}, {r.Value.JobTitle}", r.Value.StationRecordsKey));
@@ -84,6 +87,8 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
         var record = console.Selected == null ? null : characterRecords[_entityManager.GetEntity(console.Selected.Value)];
         (SecurityStatus, string?)? securityStatus = null;
+
+        // If we need the character's security status, gather it from the criminal records
         if ((console.ConsoleType == RecordConsoleType.Admin ||
             console.ConsoleType == RecordConsoleType.Security)
             && record?.StationRecordsKey != null)
@@ -103,7 +108,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
                 Selected = console.Selected,
                 SelectedRecord = record,
                 Filter = console.Filter,
-                SecurityStatus = securityStatus,
+                SelectedSecurityStatus = securityStatus,
             });
     }
 
@@ -112,7 +117,9 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         _userInterface.TrySetUiState(entity, CharacterRecordConsoleKey.Key, state);
     }
 
-    // The next two methods where almost copied verbatim from GeneralStationRecordConsoleSystem
+    /// <summary>
+    /// Almost exactly the same as <see cref="StationRecordsSystem.IsSkipped"/>
+    /// </summary>
     private static bool IsSkippedRecord(StationRecordsFilter filter,
         FullCharacterRecords record)
     {
