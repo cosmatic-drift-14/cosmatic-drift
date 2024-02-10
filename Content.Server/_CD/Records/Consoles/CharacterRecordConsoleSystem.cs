@@ -72,7 +72,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
             var netEnt = _entityManager.GetNetEntity(uid);
             if (names.ContainsKey(netEnt))
-                Log.Error($"We somehow have duplicate character record keys, NetEntity: {netEnt}, Entity: {entity}");
+                Log.Error($"We somehow have duplicate character record keys, NetEntity: {netEnt}, Entity: {entity}, Character Name: {r.Name}");
             if (console.ConsoleType == RecordConsoleType.Admin)
             {
                 // Admins get additional info to make it easier to run commands
