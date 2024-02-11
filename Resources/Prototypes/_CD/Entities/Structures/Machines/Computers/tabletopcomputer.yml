@@ -156,6 +156,26 @@
       sprite: Structures/Machines/computers.rsi
       state: tech_key
 
+#Wireless Camera Monitor
+- type: entity
+  parent: [BaseStructureComputerTabletop, ComputerSurveillanceWirelessCameraMonitor]
+  id: ComputerTabletopSurveillanceWirelessCameraMonitor
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: computer_tabletop
+    - map: ["computerLayerKeyboard"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: generic_keyboard_tabletop
+    - map: ["computerLayerScreen"]
+      sprite: Structures/Machines/computers.rsi
+      state: cameras
+    - map: ["computerLayerKeys"]
+      sprite: Structures/Machines/computers.rsi
+      state: tech_key
+
 #Communications Console
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerComms]
