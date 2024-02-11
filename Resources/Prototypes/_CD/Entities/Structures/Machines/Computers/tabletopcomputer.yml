@@ -255,6 +255,7 @@
       sprite: Structures/Machines/computers.rsi
       state: rd_key
 
+#Analysis Console
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerAnalysisConsole]
   id: ComputerTabletopAnalysisConsole
@@ -274,6 +275,7 @@
       sprite: Structures/Machines/computers.rsi
       state: tech_key
 
+#Body Scanner
 - type: entity
   parent: [BaseStructureComputerTabletop, computerBodyScanner]
   id: ComputerTabletopBodyScanner
@@ -292,6 +294,7 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
+#Syndicate Communication's Console
 - type: entity
   parent: [BaseStructureComputerTabletop, SyndicateComputerComms]
   id: SyndicateComputerTabletopComms
@@ -311,6 +314,7 @@
       sprite: Structures/Machines/computers.rsi
       state: syndie_key
 
+#Solar Controller
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerSolarControl]
   id: ComputerTabletopSolarControl
@@ -330,6 +334,7 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
+#Mass Scanner
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerRadar]
   id: ComputerTabletopRadar
@@ -349,6 +354,7 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
+#Cargo Shuttle Computer
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerCargoShuttle]
   id: ComputerTabletopCargoShuttle
@@ -369,6 +375,7 @@
       sprite: Structures/Machines/computers.rsi
       state: tech_key
 
+#Cargo Request Computer
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerCargoOrders]
   id: ComputerTabletopCargoOrders
