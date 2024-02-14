@@ -16,6 +16,7 @@ using Content.Server.Station.Systems;
 using Content.Server.Voting;
 using Content.Server.Voting.Managers;
 using Content.Shared.Database;
+using Content.Shared.DeviceNetwork;
 using Content.Shared.GameTicking;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
