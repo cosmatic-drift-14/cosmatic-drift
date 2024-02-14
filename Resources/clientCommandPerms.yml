@@ -53,7 +53,7 @@
     - hidemechanisms
     - showmechanisms
     - menuvis
-    - togglehealthoverlay
+    - showhealthbars
     - toggledecals
     - nodevis
     - nodevisfilter
