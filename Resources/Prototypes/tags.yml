@@ -1176,6 +1176,9 @@
   id: WetFloorSign
 
 - type: Tag
+  id: Wheat
+
+- type: Tag
   id: WhitelistChameleon
 
 - type: Tag
