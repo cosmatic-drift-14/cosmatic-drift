@@ -522,7 +522,7 @@
   parent: MaterialBase
   id: MaterialWebSilk
   name: silk
-  description: A webby material
+  description: A webby material.
   suffix: Full
   components:
   - type: PhysicalComposition
