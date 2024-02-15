@@ -49,3 +49,8 @@
 - files: ["core.yml"]
   authors: Ubaser
 
+#CD Maps
+#These are located in Maps/_CD
+
+- files: ["ferrous.yml"]
+  authors: PurusitinAshes
