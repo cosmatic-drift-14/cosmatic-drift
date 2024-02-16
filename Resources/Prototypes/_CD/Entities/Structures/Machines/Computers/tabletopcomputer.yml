@@ -11,15 +11,19 @@
     - map: ["computerLayerBody"]
       sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
       state: computer_tabletop
+      offset: 0.043, 0.055
     - map: ["computerLayerKeyboard"]
       sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
       state: generic_keyboard_tabletop
+      offset: 0.043, 0.055
     - map: ["computerLayerScreen"]
       sprite: Structures/Machines/computers.rsi
       state: generic
+      offset: 0.043, 0.055
     - map: ["computerLayerKeys"]
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
+      offset: 0.043, 0.055
   - type: Fixtures
     fixtures:
       fix1:
