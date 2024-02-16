@@ -1,0 +1,186 @@
+- type: construction
+  name: sofa
+  id: RattySofaMiddle
+  graph: Seat
+  startNode: start
+  targetNode: rattyMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa
+  id: RattySofaRight
+  graph: Seat
+  startNode: start
+  targetNode: rattyRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa
+  id: RattySofaLeft
+  graph: Seat
+  startNode: start
+  targetNode: rattyLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa
+  id: RattySofaCorner
+  graph: Seat
+  startNode: start
+  targetNode: rattyCorner
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: corner
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: corporate sofa
+  id: CorpSofaMiddle
+  graph: Seat
+  startNode: start
+  targetNode: corpMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: corporate sofa
+  id: CorpSofaRight
+  graph: Seat
+  startNode: start
+  targetNode: corpRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: corporate sofa
+  id: CorpSofaLeft
+  graph: Seat
+  startNode: start
+  targetNode: corpLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: corporate sofa
+  id: CorpSofaCorner
+  graph: Seat
+  startNode: start
+  targetNode: corpCorner
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    state: corner
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: pew
+  id: PewMiddle
+  graph: Seat
+  startNode: start
+  targetNode: pewMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/pew.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: pew
+  id: PewRight
+  graph: Seat
+  startNode: start
+  targetNode: pewRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/pew.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: pew
+  id: PewLeft
+  graph: Seat
+  startNode: start
+  targetNode: pewLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Benches/pew.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

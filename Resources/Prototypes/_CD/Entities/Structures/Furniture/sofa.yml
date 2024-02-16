@@ -1,0 +1,117 @@
+# Standard sofa
+- type: entity
+  name: sofa
+  id: BenchSofaMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+
+- type: entity
+  id: BenchSofaLeft
+  suffix: Left
+  parent: BenchSofaMiddle
+  components:
+  - type: Sprite
+    state: left
+
+- type: entity
+  id: BenchSofaRight
+  suffix: Right
+  parent: BenchSofaMiddle
+  components:
+  - type: Sprite
+    state: right
+
+- type: entity
+  name: sofa
+  id: BenchSofaCorner
+  suffix: Corner
+#  parent: BenchSofaMiddle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    state: corner
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Dynamic
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+
+# Corp sofa
+- type: entity
+  name: grey sofa
+  id: BenchSofaCorpMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+
+- type: entity
+  id: BenchSofaCorpLeft
+  suffix: Left
+  parent: BenchSofaCorpMiddle
+  components:
+  - type: Sprite
+    state: left
+
+- type: entity
+  id: BenchSofaCorpRight
+  suffix: Right
+  parent: BenchSofaCorpMiddle
+  components:
+  - type: Sprite
+    state: right
+
+- type: entity
+  name: grey sofa
+  id: BenchSofaCorpCorner
+  suffix: Corner
+#  parent: BenchSofaCorpMiddle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    state: corner
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Dynamic
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
