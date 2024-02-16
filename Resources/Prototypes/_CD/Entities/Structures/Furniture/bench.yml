@@ -20,7 +20,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/parkbench_wooden.rsi
+    sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
 
 - type: entity
   id: BenchParkLeft
@@ -45,7 +45,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/parkbench_bamboo.rsi
+    sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
 
 - type: entity
   id: BenchParkBambooLeft
@@ -70,7 +70,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/pews.rsi
+    sprite: _CD/Structures/Furniture/Bench/pew.rsi
 
 - type: entity
   id: BenchPewLeft
@@ -95,7 +95,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/steel_bench.rsi
+    sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
 
 - type: entity
   id: BenchSteelLeft
@@ -120,7 +120,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/steel_bench_white.rsi
+    sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
 
 - type: entity
   id: BenchSteelWhiteLeft

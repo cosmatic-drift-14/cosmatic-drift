@@ -5,7 +5,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
 
 - type: entity
   id: BenchSofaLeft
@@ -35,7 +35,7 @@
     anchored: true
   - type: Rotatable
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/sofa.rsi
+    sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
     state: corner
   - type: Clickable
   - type: InteractionOutline
@@ -64,7 +64,7 @@
   parent: BenchBaseMiddle
   components:
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    sprite: _CD/Structures/Furniture/Sofa/sofa_corp.rsi
 
 - type: entity
   id: BenchSofaCorpLeft
@@ -94,7 +94,7 @@
     anchored: true
   - type: Rotatable
   - type: Sprite
-    sprite: _CD/Structures/Furniture/Benches/sofa_corp.rsi
+    sprite: _CD/Structures/Furniture/Sofa/sofa_corp.rsi
     state: corner
   - type: Clickable
   - type: InteractionOutline
