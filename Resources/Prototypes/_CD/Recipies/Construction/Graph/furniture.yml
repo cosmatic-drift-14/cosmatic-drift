@@ -1,16 +1,12 @@
+#Sofas
 - type: constructionGraph
-  id: Bench
+  id: Sofa
   start: start
   graph:
     - node: start
       actions:
         - !type:DestroyEntity {}
       edges:
-        - to: rattyLeft
-          steps:
-            - material: Steel
-              amount: 2
-              doAfter: 1
         - to: rattyMiddle
           steps:
             - material: Steel
@@ -21,12 +17,12 @@
             - material: Steel
               amount: 2
               doAfter: 1
-        - to: rattyCorner
+        - to: rattyLeft
           steps:
             - material: Steel
               amount: 2
               doAfter: 1
-        - to: corpLeft
+        - to: rattyCorner
           steps:
             - material: Steel
               amount: 2
@@ -41,56 +37,19 @@
             - material: Steel
               amount: 2
               doAfter: 1
+        - to: corpLeft
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
         - to: corpCorner
           steps:
             - material: Steel
               amount: 2
               doAfter: 1
-        - to: pewLeft
-          steps:
-            - material: WoodPlank
-              amount: 3
-              doAfter: 1
-        - to: pewMiddle
-          steps:
-            - material: WoodPlank
-              amount: 3
-              doAfter: 1
-        - to: pewRight
-          steps:
-            - material: WoodPlank
-              amount: 3
-              doAfter: 1
-        - to: steelbenchLeft
-          steps:
-            - material: Steel
-              amount: 1
-              doAfter: 1
-        - to: steelbenchMiddle
-          steps:
-            - material: Steel
-              amount: 1
-              doAfter: 1
-        - to: steelbenchRight
-          steps:
-            - material: Steel
-              amount: 1
-              doAfter: 1
 
-    - node: rattyMiddle
+     - node: rattyMiddle
       entity: RattySofaMiddle
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
-          steps:
-            - tool: Screwing
-              doAfter: 1
-
-    - node: rattyLeft
-      entity: RattySofaLeft
       edges:
         - to: start
           completed:
@@ -103,6 +62,18 @@
 
     - node: rattyRight
       entity: RattySofaRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: rattyLeft
+      entity: RattySofaLeft
       edges:
         - to: start
           completed:
@@ -137,8 +108,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: corpLeft
-      entity: CorpSofaLeft
+    - node: corpRight
+      entity: CorpSofaRight
       edges:
         - to: start
           completed:
@@ -149,8 +120,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: corpRight
-      entity: CorpSofaRight
+    - node: corpLeft
+      entity: CorpSofaLeft
       edges:
         - to: start
           completed:
@@ -171,37 +142,4 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 1
-
-    - node: pewMiddle
-      entity: PewMiddle
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-          steps:
-            - tool: Screwing
-              doAfter: 1
-
-    - node: pewLeft
-      entity: PewLeft
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-          steps:
-            - tool: Screwing
-              doAfter: 1
-
-    - node: pewRight
-      entity: PewRight
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-          steps:
-            - tool: Screwing
-              doAfter: 1
+              doAfter: 1           
