@@ -48,7 +48,7 @@
               amount: 2
               doAfter: 1
 
-     - node: rattyMiddle
+    - node: rattyMiddle
       entity: RattySofaMiddle
       edges:
         - to: start
