@@ -1,33 +1,33 @@
-# Standard sofa
+# "Ratty" sofa
 - type: entity
   name: sofa
-  id: BenchSofaMiddle
+  id: RattySofaMiddle
   parent: BenchBaseMiddle
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
 
 - type: entity
-  id: BenchSofaLeft
+  id: RattySofaLeft
   suffix: Left
-  parent: BenchSofaMiddle
+  parent: RattySofaMiddle
   components:
   - type: Sprite
     state: left
 
 - type: entity
-  id: BenchSofaRight
+  id: RattySofaRight
   suffix: Right
-  parent: BenchSofaMiddle
+  parent: RattySofaMiddle
   components:
   - type: Sprite
     state: right
 
 - type: entity
   name: sofa
-  id: BenchSofaCorner
+  id: RattySofaCorner
   suffix: Corner
-#  parent: BenchSofaMiddle
+#  parent: RattySofaMiddle
   placement:
     mode: SnapgridCenter
   components:
@@ -45,7 +45,7 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-  - type: Destructible
+  - type: Destructible #Might want to move this to the parent instead, testing required.
     thresholds:
     - trigger:
         !type:DamageTrigger
@@ -55,36 +55,36 @@
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          path: /Audio/Effects/metal_break1.ogg
 
 # Corp sofa
 - type: entity
   name: grey sofa
-  id: BenchSofaCorpMiddle
+  id: CorpSofaMiddle
   parent: BenchBaseMiddle
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Sofa/sofa_corp.rsi
 
 - type: entity
-  id: BenchSofaCorpLeft
+  id: SofaCorpLeft
   suffix: Left
-  parent: BenchSofaCorpMiddle
+  parent: CorpSofaMiddle
   components:
   - type: Sprite
     state: left
 
 - type: entity
-  id: BenchSofaCorpRight
+  id: SofaCorpRight
   suffix: Right
-  parent: BenchSofaCorpMiddle
+  parent: CorpSofaMiddle
   components:
   - type: Sprite
     state: right
 
 - type: entity
   name: grey sofa
-  id: BenchSofaCorpCorner
+  id: SofaCorpCorner
   suffix: Corner
 #  parent: BenchSofaCorpMiddle
   placement:
@@ -104,7 +104,7 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-  - type: Destructible
+  - type: Destructible #May be adviseable to move to a parent.
     thresholds:
     - trigger:
         !type:DamageTrigger
