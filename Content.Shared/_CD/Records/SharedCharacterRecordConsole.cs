@@ -30,12 +30,12 @@ public sealed class CharacterRecordConsoleState : BoundUserInterfaceState
     /// <summary>
     /// Character selected in the console
     /// </summary>
-    public NetEntity? Selected { get; set; } = null;
+    public uint? SelectedIndex { get; set; } = null;
 
     /// <summary>
     /// List of names+station record keys to display in the listing
     /// </summary>
-    public Dictionary<NetEntity, (string, uint?)>? RecordListing { get; set; }
+    public Dictionary<uint, (string, uint?)>? RecordListing { get; set; }
 
     /// <summary>
     /// The contents of the selected record
@@ -64,10 +64,10 @@ public sealed class CharacterRecordsConsoleFilterMsg : BoundUserInterfaceMessage
 [Serializable, NetSerializable]
 public sealed class CharacterRecordConsoleSelectMsg : BoundUserInterfaceMessage
 {
-    public readonly NetEntity? Key;
+    public readonly uint? Index;
 
-    public CharacterRecordConsoleSelectMsg(NetEntity? key)
+    public CharacterRecordConsoleSelectMsg(uint? index)
     {
-        Key = key;
+        Index = index;
     }
 }

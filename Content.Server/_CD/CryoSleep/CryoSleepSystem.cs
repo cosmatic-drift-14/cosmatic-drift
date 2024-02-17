@@ -1,3 +1,4 @@
+using Content.Server._CD.Records;
 using Content.Server.Mind;
 using Content.Server.Station.Systems;
 using Content.Server.Forensics;
@@ -41,6 +42,7 @@ public sealed class CryoSleepSystem : EntitySystem
     [Dependency] private readonly ChatSystem _chatSystem = default!;
     [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
     [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
 
     public override void Initialize()
     {
@@ -133,6 +135,11 @@ public sealed class CryoSleepSystem : EntitySystem
                 _stationRecords.RemoveRecord(key);
                 Del(item);
             }
+        }
+
+        if (TryComp<CharacterRecordKeyStorageComponent>(body, out var recordKey))
+        {
+            _characterRecords.DeleteAllRecords(body.Value, recordKey);
         }
 
         // Move their items

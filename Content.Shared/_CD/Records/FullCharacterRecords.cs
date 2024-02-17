@@ -70,7 +70,26 @@ public sealed class FullCharacterRecords
     [ViewVariables]
     public string? DNA;
 
-    public FullCharacterRecords(CharacterRecords characterRecords, uint? stationRecordsKey, string name, int age, string jobTitle, string jobIcon, string species, Gender gender, Sex sex, string? fingerprint, string? dna)
+    /// <summary>
+    /// The entity that owns this record. Should always nonnull inside CharacterRecordsComponent. This field should not be accessed client side.
+    /// </summary>
+    [ViewVariables]
+    [NonSerialized]
+    public EntityUid? Owner;
+
+    public FullCharacterRecords(
+        CharacterRecords characterRecords,
+        uint? stationRecordsKey,
+        string name,
+        int age,
+        string jobTitle,
+        string jobIcon,
+        string species,
+        Gender gender,
+        Sex sex,
+        string? fingerprint,
+        string? dna,
+        EntityUid? owner = null)
     {
         CharacterRecords = characterRecords;
         StationRecordsKey = stationRecordsKey;
@@ -83,5 +102,8 @@ public sealed class FullCharacterRecords
         Sex = sex;
         Fingerprint = fingerprint;
         DNA = dna;
+        Owner = owner;
     }
+
+
 }
