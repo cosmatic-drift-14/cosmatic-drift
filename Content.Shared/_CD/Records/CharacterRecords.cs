@@ -68,6 +68,11 @@ public sealed class CharacterRecords
         public void EnsureValid()
         {
             Title = ClampString(Title, TextMedLen);
+            if (Title.Length == 0)
+            {
+                // If the user does not proved a title, give it something so it is not blank
+                Title = Loc.GetString("cd-records-entry-default-title");
+            }
             Involved = ClampString(Involved, TextMedLen);
             Description = ClampString(Description, TextVeryLargeLen);
         }
