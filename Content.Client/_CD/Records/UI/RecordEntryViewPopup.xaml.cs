@@ -29,6 +29,6 @@ public sealed partial class RecordEntryViewPopup : FancyWindow
     {
         EntryTitle.SetMessage(entry.Title);
         EntryInvolved.SetMessage(entry.Involved);
-        EntryDesc.SetMessage(FormattedMessage.FromMarkup(entry.Description.Trim()), AllowedTags);
+        EntryDesc.SetMessage(FormattedMessage.FromMarkupPermissive(entry.Description.Trim()), AllowedTags);
     }
 }
