@@ -7,7 +7,7 @@ namespace Content.Server._CD.Records.Consoles;
 public sealed partial class CharacterRecordConsoleComponent : Component
 {
     [ViewVariables(VVAccess.ReadOnly)]
-    public NetEntity? Selected { get; set; }
+    public uint? SelectedIndex { get; set; }
 
     [ViewVariables(VVAccess.ReadOnly)]
     public StationRecordsFilter? Filter;

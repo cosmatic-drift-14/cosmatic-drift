@@ -12,8 +12,6 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
 {
     [ViewVariables] private CharacterRecordViewer? _window;
 
-    [Dependency] private readonly EntityManager _entMan = default!;
-
     public CharacterRecordConsoleBoundUserInterface(EntityUid owner, Enum key)
         : base(owner, key)
     {
@@ -40,7 +38,7 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
 
         _window = new();
         _window.OnClose += Close;
-        _window.OnKeySelected += (ent, stationRecordKey) =>
+        _window.OnListingItemSelected += (ent, stationRecordKey) =>
         {
             SendMessage(new CharacterRecordConsoleSelectMsg(ent));
 

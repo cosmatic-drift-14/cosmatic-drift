@@ -41,7 +41,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     private void OnKeySelect(EntityUid entity, CharacterRecordConsoleComponent console,
         CharacterRecordConsoleSelectMsg msg)
     {
-        console.Selected = msg.Key;
+        console.SelectedIndex = msg.Index;
         UpdateUi(entity, console);
     }
 
@@ -60,8 +60,8 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
         var characterRecords = _characterRecords.QueryRecords(station.Value);
         // Get the name and station records key display from the list of records
-        var names = new Dictionary<NetEntity, (string, uint?)>();
-        foreach (var (uid, r) in characterRecords)
+        var names = new Dictionary<uint, (string, uint?)>();
+        foreach (var (i, r) in characterRecords)
         {
             // Apply any filter the user has set
             if (console.Filter != null)
@@ -70,21 +70,24 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
                     continue;
             }
 
-            var netEnt = _entityManager.GetNetEntity(uid);
-            if (names.ContainsKey(netEnt))
-                Log.Error($"We somehow have duplicate character record keys, NetEntity: {netEnt}, Entity: {entity}, Character Name: {r.Name}");
+            if (names.ContainsKey(i))
+                Log.Error($"We somehow have duplicate character record keys, NetEntity: {i}, Entity: {entity}, Character Name: {r.Name}");
             if (console.ConsoleType == RecordConsoleType.Admin)
             {
+                var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
                 // Admins get additional info to make it easier to run commands
-                names[netEnt] = ($"{r.Name} ({netEnt}, {r.JobTitle}", r.StationRecordsKey);
+                names[i] = ($"{r.Name} ({netEnt}, {r.JobTitle}", r.StationRecordsKey);
             }
             else
             {
-                names[netEnt] = ($"{r.Name} ({r.JobTitle})", r.StationRecordsKey);
+                names[i] = ($"{r.Name} ({r.JobTitle})", r.StationRecordsKey);
             }
         }
 
-        var record = console.Selected == null ? null : characterRecords[_entityManager.GetEntity(console.Selected.Value)];
+        var record =
+            console.SelectedIndex == null || !characterRecords.ContainsKey(console.SelectedIndex!.Value)
+            ? null
+            : characterRecords[console.SelectedIndex.Value];
         (SecurityStatus, string?)? securityStatus = null;
 
         // If we need the character's security status, gather it from the criminal records
@@ -104,7 +107,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             {
                 ConsoleType = console.ConsoleType,
                 RecordListing = names,
-                Selected = console.Selected,
+                SelectedIndex = console.SelectedIndex,
                 SelectedRecord = record,
                 Filter = console.Filter,
                 SelectedSecurityStatus = securityStatus,

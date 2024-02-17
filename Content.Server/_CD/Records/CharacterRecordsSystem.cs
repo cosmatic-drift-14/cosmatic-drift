@@ -1,6 +1,5 @@
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
-using Content.Server.Station.Systems;
 using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
 using Content.Shared._CD.Records;
@@ -8,6 +7,7 @@ using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;
@@ -16,7 +16,6 @@ public sealed class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
-    [Dependency] private readonly StationSystem _stationSystem = default!;
 
     public override void Initialize()
     {
@@ -60,10 +59,9 @@ public sealed class CharacterRecordsSystem : EntitySystem
             gender: profile.Gender,
             sex: profile.Sex,
             fingerprint: fingerprintComponent?.Fingerprint,
-            dna: dnaComponent?.DNA);
+            dna: dnaComponent?.DNA,
+            owner: player);
         AddRecord(args.Station, args.Mob, records);
-
-        // We don't delete records after a character has joined unless an admin requests it.
     }
 
     private uint? FindStationRecordsKey(EntityUid uid)
@@ -85,26 +83,34 @@ public sealed class CharacterRecordsSystem : EntitySystem
         return storage.Key?.Id;
     }
 
-    public bool AddRecord(EntityUid station, EntityUid player, FullCharacterRecords records, CharacterRecordsComponent? recordsDb = null)
+    private void AddRecord(EntityUid station, EntityUid player, FullCharacterRecords records, CharacterRecordsComponent? recordsDb = null)
     {
         if (!Resolve(station, ref recordsDb))
-            return false;
+            return;
 
-        recordsDb.Records.Add(player, records);
+        uint key = recordsDb.CreateNewKey();
+        recordsDb.Records.Add(key, records);
+        var playerKey = new CharacterRecordKey { Station = station, Index = key };
+        AddComp(player, new CharacterRecordKeyStorageComponent(playerKey));
 
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
-        return true;
     }
 
-    public void DelEntry(EntityUid station, EntityUid player, CharacterRecordType ty, int idx, CharacterRecordsComponent? recordsDb = null)
+    public void DelEntry(
+        EntityUid station,
+        EntityUid player,
+        CharacterRecordType ty,
+        int idx,
+        CharacterRecordsComponent? recordsDb = null,
+        CharacterRecordKeyStorageComponent? key = null)
     {
-        if (!Resolve(station, ref recordsDb))
+        if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
 
-        if (!recordsDb.Records.ContainsKey(player))
+        if (!recordsDb.Records.ContainsKey(key.Key.Index))
             return;
 
-        var cr = recordsDb.Records[player].CharacterRecords;
+        var cr = recordsDb.Records[key.Key.Index].CharacterRecords;
 
         switch (ty)
         {
@@ -122,37 +128,40 @@ public sealed class CharacterRecordsSystem : EntitySystem
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
-    public void ResetRecord(EntityUid station, EntityUid player, CharacterRecordsComponent? recordsDb = null)
+    public void ResetRecord(
+        EntityUid station,
+        EntityUid player,
+        CharacterRecordsComponent? recordsDb = null,
+        CharacterRecordKeyStorageComponent? key = null)
     {
-        if (!Resolve(station, ref recordsDb))
+        if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
 
-        if (!recordsDb.Records.ContainsKey(player))
+        if (!recordsDb.Records.ContainsKey(key.Key.Index))
             return;
 
         var records = CharacterRecords.DefaultRecords();
-        recordsDb.Records[player].CharacterRecords = records;
+        recordsDb.Records[key.Key.Index].CharacterRecords = records;
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
-    public void DeleteAllRecords(EntityUid player)
+    public void DeleteAllRecords(EntityUid player, CharacterRecordKeyStorageComponent? key = null)
     {
-        foreach (var station in _stationSystem.GetStations())
-        {
-            CharacterRecordsComponent? recordsDb = null;
-            if (!Resolve(station, ref recordsDb))
-            {
-                continue;
-            }
+        if (!Resolve(player, ref key))
+            return;
 
-            recordsDb.Records.Remove(player);
-        }
+        var station = key.Key.Station;
+        CharacterRecordsComponent? records = null;
+        if (!Resolve(station, ref records))
+            return;
+
+        records.Records.Remove(key.Key.Index);
     }
 
-    public IDictionary<EntityUid, FullCharacterRecords> QueryRecords(EntityUid station, CharacterRecordsComponent? recordsDb = null)
+    public IDictionary<uint, FullCharacterRecords> QueryRecords(EntityUid station, CharacterRecordsComponent? recordsDb = null)
     {
         if (!Resolve(station, ref recordsDb))
-            return new Dictionary<EntityUid, FullCharacterRecords>();
+            return new Dictionary<uint, FullCharacterRecords>();
 
         return recordsDb.Records;
     }
