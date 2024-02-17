@@ -24,7 +24,7 @@ using Robust.Server.Containers;
 using Robust.Shared.Containers;
 using Content.Server._CD.Storage.Components;
 
-namespace Content.Server.CryoSleep;
+namespace Content.Server._CD.CryoSleep;
 
 public sealed class CryoSleepSystem : EntitySystem
 {

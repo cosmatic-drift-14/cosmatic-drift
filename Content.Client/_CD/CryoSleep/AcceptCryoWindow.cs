@@ -4,7 +4,7 @@ using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Localization;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 
-namespace Content.Client.CryoSleep;
+namespace Content.Client._CD.CryoSleep;
 public sealed class AcceptCryoWindow : DefaultWindow
 {
     public readonly Button DenyButton;

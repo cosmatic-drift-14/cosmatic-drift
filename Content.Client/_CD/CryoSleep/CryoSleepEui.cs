@@ -1,9 +1,9 @@
 using Content.Client.Eui;
-using Content.Shared.CryoSleep;
+using Content.Shared._CD.CryoSleep;
 using JetBrains.Annotations;
 using Robust.Client.Graphics;
 
-namespace Content.Client.CryoSleep;
+namespace Content.Client._CD.CryoSleep;
 
 [UsedImplicitly]
 public sealed class CryoSleepEui : BaseEui
