@@ -76,6 +76,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             OnFiltersChanged?.Invoke(StationRecordFilterType.Name, null);
         };
 
+        RecordFiltersValue.OnTextEntered += text =>
+        {
+            OnFiltersChanged?.Invoke(_filterType, text.Text);
+        };
+
         RecordFilterType.OnItemSelected += eventArgs =>
         {
             var type = (StationRecordFilterType)eventArgs.Id;
