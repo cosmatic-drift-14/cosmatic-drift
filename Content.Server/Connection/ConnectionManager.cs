@@ -31,10 +31,15 @@ namespace Content.Server.Connection
         [Dependency] private readonly ILocalizationManager _loc = default!;
         [Dependency] private readonly ServerDbEntryManager _serverDbEntry = default!;
 
+        private List<NetUserId> _connectedWhitelistedPlayers = new();
+
+
         public void Initialize()
         {
             _netMgr.Connecting += NetMgrOnConnecting;
             _netMgr.AssignUserIdCallback = AssignUserIdCallback;
+            _netMgr.Connected += NetMgrOnConnected;
+            _netMgr.Disconnect += NetMgrOnDisconnect;
             // Approval-based IP bans disabled because they don't play well with Happy Eyeballs.
             // _netMgr.HandleApprovalCallback = HandleApproval;
         }
@@ -170,18 +175,12 @@ namespace Content.Server.Connection
             }
 
             if (_cfg.GetCVar(CCVars.WhitelistEnabled))
-            { 
-                var connectedPlayers = _plyMgr.Sessions;
-                var whitelistedPlayers = connectedPlayers.Length;
-                // Track how many whitelisted players there are. This might be a shit way of doing it but oh well.
-                foreach(var player in connectedPlayers)
-                {
-                    if (await _db.GetWhitelistStatusAsync(player.UserId) == false)
-                        whitelistedPlayers--;
-                }
+            {
+                var connectedPlayers = _plyMgr.PlayerCount;
+                var whitelistedPlayers = _connectedWhitelistedPlayers.Count;
 
                 var openSlots = _cfg.GetCVar(CCVars.WhitelistOpenSlots);
-                var playerCountValid = openSlots < (_plyMgr.PlayerCount - whitelistedPlayers);
+                var playerCountValid = openSlots < connectedPlayers - whitelistedPlayers;
                 if (playerCountValid && await _db.GetWhitelistStatusAsync(userId) == false && adminData is null)
                 {
                     var msg = Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason));
@@ -212,6 +211,24 @@ namespace Content.Server.Connection
             var assigned = new NetUserId(Guid.NewGuid());
             await _db.AssignUserIdAsync(name, assigned);
             return assigned;
+        }
+
+        private async void NetMgrOnConnected(object? sender, NetChannelArgs e)
+        {
+            var userId = e.Channel.UserId;
+
+            if (_cfg.GetCVar(CCVars.WhitelistEnabled) && await _db.GetWhitelistStatusAsync(userId))
+            {
+                _connectedWhitelistedPlayers.Add(userId);
+            }
+        }
+
+        private async void NetMgrOnDisconnect(object? sender, NetChannelArgs e)
+        {
+            if (_cfg.GetCVar(CCVars.WhitelistEnabled))
+            {
+                _connectedWhitelistedPlayers.Remove(e.Channel.UserId);
+            }
         }
     }
 }
