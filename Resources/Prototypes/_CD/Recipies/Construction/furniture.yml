@@ -16,8 +16,6 @@
   conditions:
     - !type:TileNotBlocked
 
-#BenchParkMiddle
-
 - type: construction
   name: wooden park bench
   id: BenchParkLeft
@@ -35,8 +33,6 @@
   conditions:
     - !type:TileNotBlocked
 
-#BenchParkLeft
-
 - type: construction
   name: wooden park bench
   id: BenchParkRight
@@ -53,9 +49,6 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-
-#BenchParkRight
-
 
 # Sofas
 - type: construction

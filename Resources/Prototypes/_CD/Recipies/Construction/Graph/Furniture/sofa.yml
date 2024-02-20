@@ -110,7 +110,7 @@
               doAfter: 1
 
     - node: CorpSofaRight
-      entity: CorpSofaRight
+      entity: SofaCorpRight
       edges:
         - to: start
           completed:
@@ -122,7 +122,7 @@
               doAfter: 1
 
     - node: CorpSofaLeft
-      entity: CorpSofaLeft
+      entity: SofaCorpLeft
       edges:
         - to: start
           completed:
@@ -134,7 +134,7 @@
               doAfter: 1
 
     - node: CorpSofaCorner
-      entity: CorpSofaCorner
+      entity: SofaCorpCorner
       edges:
         - to: start
           completed:
