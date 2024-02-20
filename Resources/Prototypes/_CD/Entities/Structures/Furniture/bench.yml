@@ -21,6 +21,9 @@
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchParkMiddle
 
 - type: entity
   id: BenchParkLeft
@@ -29,6 +32,9 @@
   components:
   - type: Sprite
     state: left
+  - type: Construction
+    graph: Bench
+    node: BenchParkLeft
 
 - type: entity
   id: BenchParkRight
@@ -37,6 +43,9 @@
   components:
   - type: Sprite
     state: right
+  - type: Construction
+    graph: Bench
+    node: BenchParkRight
 
 # Bamboo benches
 - type: entity

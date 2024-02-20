@@ -1,0 +1,77 @@
+#Benches
+
+- type: constructionGraph
+  id: Bench
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: BenchParkMiddle
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchParkLeft
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchParkRight
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+
+    - node: BenchParkMiddle
+      entity: BenchParkMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchParkLeft
+      entity: BenchParkLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchParkRight
+      entity: BenchParkRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+#BenchParkBambooMiddle
+#BenchParkBambooLeft
+#BenchParkBambooRight
+
+#BenchPewMiddle
+#BenchPewleft
+#BenchPewRight
+
+#BenchSteelMiddle
+#BenchSteelLeft
+#BenchSteelRight
+
+#BenchSteelWhiteMiddle
+#BenchSteelWhiteLeft
+#BenchSteelWhiteRight

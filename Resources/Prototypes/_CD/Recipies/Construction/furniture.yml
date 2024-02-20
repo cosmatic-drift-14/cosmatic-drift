@@ -1,10 +1,69 @@
+#Benches
+- type: construction
+  name: wooden park bench
+  id: BenchParkMiddle
+  graph: Bench
+  startNode: start
+  targetNode: BenchParkMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#BenchParkMiddle
+
+- type: construction
+  name: wooden park bench
+  id: BenchParkLeft
+  graph: Bench
+  startNode: start
+  targetNode: BenchParkLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#BenchParkLeft
+
+- type: construction
+  name: wooden park bench
+  id: BenchParkRight
+  graph: Bench
+  startNode: start
+  targetNode: BenchParkRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#BenchParkRight
+
+
 # Sofas
 - type: construction
   name: sofa
   id: RattySofaMiddle
   graph: Sofa
   startNode: start
-  targetNode: rattyMiddle
+  targetNode: RattySofaMiddle
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -21,7 +80,7 @@
   id: RattySofaRight
   graph: Sofa
   startNode: start
-  targetNode: rattyRight
+  targetNode: RattySofaRight
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -38,7 +97,7 @@
   id: RattySofaLeft
   graph: Sofa
   startNode: start
-  targetNode: rattyLeft
+  targetNode: RattySofaLeft
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -55,7 +114,7 @@
   id: RattySofaCorner
   graph: Sofa
   startNode: start
-  targetNode: rattyCorner
+  targetNode: RattySofaCorner
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -72,7 +131,7 @@
   id: CorpSofaMiddle
   graph: Sofa
   startNode: start
-  targetNode: corpMiddle
+  targetNode: CorpSofaMiddle
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -89,7 +148,7 @@
   id: CorpSofaRight
   graph: Sofa
   startNode: start
-  targetNode: corpRight
+  targetNode: CorpSofaRight
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -106,7 +165,7 @@
   id: CorpSofaLeft
   graph: Sofa
   startNode: start
-  targetNode: corpLeft
+  targetNode: CorpSofaLeft
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
@@ -123,7 +182,7 @@
   id: CorpSofaCorner
   graph: Sofa
   startNode: start
-  targetNode: corpCorner
+  targetNode: CorpSofaCorner
   category: construction-category-furniture
   description: Multiple seats spanning a single object. Truly a marvel of science.
   icon:
