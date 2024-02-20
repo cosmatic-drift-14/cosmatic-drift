@@ -27,7 +27,7 @@
 
 - type: entity
   id: BenchParkLeft
-  suffix: Left
+  suffix: Right
   parent: BenchParkMiddle
   components:
   - type: Sprite
@@ -38,7 +38,7 @@
 
 - type: entity
   id: BenchParkRight
-  suffix: Right
+  suffix: Left
   parent: BenchParkMiddle
   components:
   - type: Sprite
@@ -55,22 +55,31 @@
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchParkBambooMiddle
 
 - type: entity
   id: BenchParkBambooLeft
-  suffix: Left
-  parent: BenchParkBambooMiddle
-  components:
-  - type: Sprite
-    state: left
-
-- type: entity
-  id: BenchParkBambooRight
   suffix: Right
   parent: BenchParkBambooMiddle
   components:
   - type: Sprite
+    state: left
+  - type: Construction
+    graph: Bench
+    node: BenchParkBambooLeft
+
+- type: entity
+  id: BenchParkBambooRight
+  suffix: Left
+  parent: BenchParkBambooMiddle
+  components:
+  - type: Sprite
     state: right
+  - type: Construction
+    graph: Bench
+    node: BenchParkBambooRight
 
 # Pews
 - type: entity
@@ -80,6 +89,9 @@
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/pew.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchPewMiddle
 
 - type: entity
   id: BenchPewLeft
@@ -88,6 +100,9 @@
   components:
   - type: Sprite
     state: left
+  - type: Construction
+    graph: Bench
+    node: BenchPewLeft
 
 - type: entity
   id: BenchPewRight
@@ -96,6 +111,9 @@
   components:
   - type: Sprite
     state: right
+  - type: Construction
+    graph: Bench
+    node: BenchPewRight
 
 # Steel benches
 - type: entity
@@ -105,6 +123,9 @@
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchSteelMiddle
 
 - type: entity
   id: BenchSteelLeft
@@ -113,6 +134,9 @@
   components:
   - type: Sprite
     state: left
+  - type: Construction
+    graph: Bench
+    node: BenchSteelLeft
 
 - type: entity
   id: BenchSteelRight
@@ -121,6 +145,9 @@
   components:
   - type: Sprite
     state: right
+  - type: Construction
+    graph: Bench
+    node: BenchSteelRight
 
 # White steel benches
 - type: entity
@@ -130,6 +157,9 @@
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchSteelWhiteMiddle
 
 - type: entity
   id: BenchSteelWhiteLeft
@@ -138,6 +168,9 @@
   components:
   - type: Sprite
     state: left
+  - type: Construction
+    graph: Bench
+    node: BenchSteelWhiteLeft
 
 - type: entity
   id: BenchSteelWhiteRight
@@ -146,3 +179,6 @@
   components:
   - type: Sprite
     state: right
+  - type: Construction
+    graph: Bench
+    node: BenchSteelWhiteRight

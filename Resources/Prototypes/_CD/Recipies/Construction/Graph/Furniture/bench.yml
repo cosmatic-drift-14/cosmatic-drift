@@ -23,6 +23,66 @@
             - material: WoodPlank
               amount: 2
               doAfter: 1
+        - to: BenchParkBambooMiddle
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchParkBambooLeft
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchParkBambooRight
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchPewMiddle
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchPewleft
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchPewRight
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: BenchSteelMiddle
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: BenchSteelLeft
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: BenchSteelRight
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: BenchSteelWhiteMiddle
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: BenchSteelWhiteLeft
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: BenchSteelWhiteRight
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
 
     - node: BenchParkMiddle
       entity: BenchParkMiddle
@@ -60,18 +120,146 @@
             - tool: Screwing
               doAfter: 1
 
-#BenchParkBambooMiddle
-#BenchParkBambooLeft
-#BenchParkBambooRight
+    - node: BenchParkBambooMiddle
+      entity: BenchParkBambooMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
 
-#BenchPewMiddle
-#BenchPewleft
-#BenchPewRight
+    - node: BenchParkBambooLeft
+      entity: BenchParkBambooLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+    
+    - node: BenchParkBambooRight
+      entity: BenchParkBambooRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
 
-#BenchSteelMiddle
-#BenchSteelLeft
-#BenchSteelRight
+    - node: BenchPewMiddle
+      entity: BenchPewMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
 
-#BenchSteelWhiteMiddle
-#BenchSteelWhiteLeft
-#BenchSteelWhiteRight
+    - node: BenchPewLeft
+      entity: BenchPewLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchPewRight
+      entity: BenchPewRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchSteelMiddle
+      entity: BenchSteelMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1  
+
+    - node: BenchSteelLeft
+      entity: BenchSteelLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1 
+
+    - node: BenchSteelRight
+      entity: BenchSteelRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchSteelWhiteMiddle
+      entity: BenchSteelWhiteMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchSteelWhiteLeft
+      entity: BenchSteelWhiteLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: BenchSteelWhiteRight
+      entity: BenchSteelWhiteRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1

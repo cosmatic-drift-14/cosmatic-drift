@@ -1,4 +1,5 @@
 #Benches
+#Wooden Park
 - type: construction
   name: wooden park bench
   id: BenchParkMiddle
@@ -50,7 +51,216 @@
   conditions:
     - !type:TileNotBlocked
 
+#Bamboo Park
+- type: construction
+  name: bamboo park bench
+  id: BenchParkBambooMiddle
+  graph: Bench
+  startNode: start
+  targetNode: BenchParkBambooMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: bamboo park bench
+  id: BenchParkBambooLeft
+  graph: Bench
+  startNode: start
+  targetNode: BenchParkBambooLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: bamboo park bench
+  id: BenchParkBambooRight
+  graph: Bench
+  startNode: start
+  targetNode: BenchParkBambooRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#Pews
+- type: construction
+  name: wooden pew
+  id: BenchPewMiddle
+  graph: Bench
+  startNode: start
+  targetNode: BenchPewMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/pew.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: wooden pew
+  id: BenchPewLeft
+  graph: Bench
+  startNode: start
+  targetNode: BenchPewLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/pew.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: wooden pew
+  id: BenchPewRight
+  graph: Bench
+  startNode: start
+  targetNode: BenchPewRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/pew.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#Steel Bench
+- type: construction
+  name: steel bench
+  id: BenchSteelMiddle
+  graph: Bench
+  startNode: start
+  targetNode: BenchSteelMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: steel bench
+  id: BenchSteelLeft
+  graph: Bench
+  startNode: start
+  targetNode: BenchSteelLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: steel bench
+  id: BenchSteelRight
+  graph: Bench
+  startNode: start
+  targetNode: BenchSteelRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#White Steel Bench
+- type: construction
+  name: white steel bench
+  id: BenchSteelWhiteMiddle
+  graph: Bench
+  startNode: start
+  targetNode: BenchSteelWhiteMiddle
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
+    state: middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: white steel bench
+  id: BenchSteelWhiteLeft
+  graph: Bench
+  startNode: start
+  targetNode: BenchSteelWhiteLeft
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
+    state: left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: white steel bench
+  id: BenchSteelWhiteRight
+  graph: Bench
+  startNode: start
+  targetNode: BenchSteelWhiteRight
+  category: construction-category-furniture
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  icon:
+    sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
+    state: right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
 # Sofas
+#RattySofa
 - type: construction
   name: sofa
   id: RattySofaMiddle
@@ -102,6 +312,7 @@
   conditions:
     - !type:TileNotBlocked
 
+#Corporate Sofa
 - type: construction
   name: sofa
   id: RattySofaCorner

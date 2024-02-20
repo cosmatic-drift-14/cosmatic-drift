@@ -12,7 +12,7 @@
 
 - type: entity
   id: RattySofaLeft
-  suffix: Left
+  suffix: Right
   parent: RattySofaMiddle
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
 
 - type: entity
   id: RattySofaRight
-  suffix: Right
+  suffix: Left
   parent: RattySofaMiddle
   components:
   - type: Sprite
@@ -83,7 +83,7 @@
 
 - type: entity
   id: SofaCorpLeft
-  suffix: Left
+  suffix: Right
   parent: CorpSofaMiddle
   components:
   - type: Sprite
@@ -94,7 +94,7 @@
 
 - type: entity
   id: SofaCorpRight
-  suffix: Right
+  suffix: Left
   parent: CorpSofaMiddle
   components:
   - type: Sprite
