@@ -90,7 +90,7 @@
     state: left
   - type: Construction
     graph: Sofa
-    node: SofaCorpLeft
+    node: CorpSofaLeft
 
 - type: entity
   id: SofaCorpRight
@@ -120,7 +120,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Physics
-    bodyType: Dynamic
+    bodyType: Static
   - type: Pullable
   - type: Damageable
     damageContainer: Inorganic

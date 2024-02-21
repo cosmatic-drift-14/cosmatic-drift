@@ -12,6 +12,8 @@
   - type: Rotatable
   - type: Sprite
     state: middle
+  - type: Physics
+    bodyType: Static
 
 # Park benches
 - type: entity
