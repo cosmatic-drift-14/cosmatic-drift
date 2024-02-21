@@ -102,7 +102,7 @@
     state: right
   - type: Construction
     graph: Sofa
-    node: SofaCorpRight
+    node: CorpSofaRight
 
 - type: entity
   name: grey sofa
@@ -140,4 +140,4 @@
           path: /Audio/Effects/metal_break1.ogg
   - type: Construction
     graph: Sofa
-    node: SofaCorpCorner
+    node: CorpSofaCorner
