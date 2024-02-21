@@ -668,7 +668,7 @@
   result: ClothingNeckMantleCap
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
@@ -676,7 +676,7 @@
   result: ClothingNeckMantleCE
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
@@ -684,7 +684,7 @@
   result: ClothingNeckMantleCMO
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
@@ -692,7 +692,7 @@
   result: ClothingNeckMantleHOP
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
@@ -700,7 +700,7 @@
   result: ClothingNeckMantleHOS
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
@@ -708,7 +708,7 @@
   result: ClothingNeckMantleRD
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
@@ -716,7 +716,7 @@
   result: ClothingNeckMantleQM
   completetime: 2.8
   materials:
-    Cloth: 150
+    Cloth: 200
     Durathread: 150
 
 
@@ -1147,74 +1147,74 @@
   result: ClothingNeckTieRed
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckTieDet
   result: ClothingNeckTieDet
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckTieSci
   result: ClothingNeckTieSci
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 # Scarfs
 - type: latheRecipe
   id: ClothingNeckScarfStripedGreen
   result: ClothingNeckScarfStripedGreen
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedBlue
   result: ClothingNeckScarfStripedBlue
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedRed
   result: ClothingNeckScarfStripedRed
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedBrown
   result: ClothingNeckScarfStripedBrown
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedLightBlue
   result: ClothingNeckScarfStripedLightBlue
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedOrange
   result: ClothingNeckScarfStripedOrange
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedBlack
   result: ClothingNeckScarfStripedBlack
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: ClothingNeckScarfStripedPurple
   result: ClothingNeckScarfStripedPurple
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
