@@ -272,6 +272,13 @@
       path: /Audio/Items/Toys/weh.ogg
 
 - type: entity
+  parent: PlushieLizard
+  id: PlushieLizardMirrored
+  components:
+  - type: Sprite
+    state: plushie_lizard_mirrored
+
+- type: entity
   parent: BasePlushie
   id: PlushieSpaceLizard #ᵂᵉʰ!
   name: space lizard plushie
