@@ -43,7 +43,7 @@
             - material: WoodPlank
               amount: 2
               doAfter: 1
-        - to: BenchPewleft
+        - to: BenchPewLeft
           steps:
             - material: WoodPlank
               amount: 2
