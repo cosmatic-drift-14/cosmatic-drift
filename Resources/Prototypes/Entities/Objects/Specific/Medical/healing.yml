@@ -71,6 +71,7 @@
   description: Used to treat even the nastiest burns. Also effective against caustic burns.
   parent: BaseHealingItem
   id: RegenerativeMesh
+  suffix: Full
   components:
   - type: Tag
     tags:
@@ -101,6 +102,7 @@
 - type: entity
   id: OintmentAdvanced1
   parent: RegenerativeMesh
+  suffix: Single
   components:
   - type: Stack
     stackType: RegenerativeMesh
@@ -161,6 +163,7 @@
   description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
   parent: BaseHealingItem
   id: MedicatedSuture
+  suffix: Full
   components:
   - type: Tag
     tags:
@@ -189,6 +192,7 @@
 - type: entity
   id: BrutepackAdvanced1
   parent: MedicatedSuture
+  suffix: Single
   components:
   - type: Stack
     stackType: MedicatedSuture
@@ -257,7 +261,7 @@
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:
         path: "/Audio/Items/Medical/brutepack_end.ogg"
-        
+
 - type: entity
   name: roll of gauze
   description: Some sterile gauze to wrap around bloody stumps.
