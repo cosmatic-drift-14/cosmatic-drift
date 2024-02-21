@@ -48,7 +48,7 @@
     - Item # it doesnt necessarily have to be restricted from structures, but i think it'll be better that way
   permanentComponents:
   - type: Item
-    size: Huge
+    size: 80
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

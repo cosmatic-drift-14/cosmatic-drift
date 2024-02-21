@@ -9,7 +9,7 @@
     sprite: Objects/Specific/Detective/evidence_marker.rsi
   - type: Item
     sprite: Objects/Specific/Detective/evidence_marker.rsi
-    size: Tiny
+    size: 3
 
 - type: entity
   parent: EvidenceMarker
@@ -81,8 +81,7 @@
   description: A pack of numbered yellow markers, useful for labeling evidence on a crime scene.
   components:
     - type: Item
-      shape:
-      - 0,0,1,1
+      size: 30
     - type: StorageFill
       contents:
         - id: EvidenceMarkerOne
