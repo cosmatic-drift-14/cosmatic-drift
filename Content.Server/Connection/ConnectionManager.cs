@@ -33,7 +33,6 @@ namespace Content.Server.Connection
 
         private List<NetUserId> _connectedWhitelistedPlayers = new();
 
-
         public void Initialize()
         {
             _netMgr.Connecting += NetMgrOnConnecting;
@@ -42,6 +41,8 @@ namespace Content.Server.Connection
             _netMgr.Disconnect += NetMgrOnDisconnect;
             // Approval-based IP bans disabled because they don't play well with Happy Eyeballs.
             // _netMgr.HandleApprovalCallback = HandleApproval;
+
+            _cfg.OnValueChanged(CCVars.WhitelistEnabled, WhitelistCVarChanged, true);
         }
 
         /*
@@ -228,6 +229,21 @@ namespace Content.Server.Connection
             if (_cfg.GetCVar(CCVars.WhitelistEnabled))
             {
                 _connectedWhitelistedPlayers.Remove(e.Channel.UserId);
+            }
+        }
+        private async void WhitelistCVarChanged(bool enabled)
+        {
+            if (!enabled)
+            {
+                _connectedWhitelistedPlayers.Clear();
+                return;
+            }
+
+            var connectedPlayers = _plyMgr.Sessions;
+            foreach (var player in connectedPlayers)
+            {
+                if (await _db.GetWhitelistStatusAsync(player.UserId))
+                    _connectedWhitelistedPlayers.Add(player.UserId);
             }
         }
     }
