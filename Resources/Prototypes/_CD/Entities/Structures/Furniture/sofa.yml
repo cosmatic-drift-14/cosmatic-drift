@@ -50,6 +50,7 @@
   - type: InteractionOutline
   - type: Physics
     bodyType: Dynamic
+    canCollide: False
   - type: Pullable
   - type: Damageable
     damageContainer: Inorganic
@@ -121,6 +122,7 @@
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
+    canCollide: False
   - type: Pullable
   - type: Damageable
     damageContainer: Inorganic
