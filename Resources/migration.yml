@@ -179,3 +179,6 @@ SyndiCrewMonitorEmpty: null
 # 2024-02-01
 YellowOxygenTank: OxygenTank
 YellowOxygenTankFilled: OxygenTankFilled
+
+# 2024-02-20 CD Change, removing the Candy Bucket
+CandyBucket: null
