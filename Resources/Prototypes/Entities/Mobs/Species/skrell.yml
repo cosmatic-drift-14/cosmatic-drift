@@ -1,0 +1,67 @@
+- type: entity
+  save: false
+  name: Urist McSquid
+  parent: BaseMobOrganic
+  id: BaseMobSkrell
+  abstract: true
+  components:
+  # The important nessessities
+  - type: Body
+    prototype: Skrell
+    requiredLegs: 2
+  - type: Perishable
+  - type: HumanoidAppearance
+    species: Skrell
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Skrell
+  - type: Icon
+    sprite: Mobs/Species/Skrell/parts.rsi
+    state: full
+  - type: Thirst
+  # Damage and speed
+  - type: Bloodstream
+    bloodReagent: SkrellBlood
+  - type: Temperature
+    heatDamageThreshold: 400
+    coldDamageThreshold: 230
+    currentTemperature: 310.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Cold : 0.2 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 0.1 #per second, scales with temperature & other constants
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.15 #per second, scales with pressure and other constants.
+  # Misc
+  - type: Speech
+    speechSounds: Skrell
+  - type: Vocal
+    sounds:
+      Male: UnisexSkrell
+      Female: UnisexSkrell
+      Unsexed: UnisexSkrell
+  - type: Inventory
+    templateId: skrell
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+      - id: FoodMeatFish
+        amount: 5
+
+- type: entity
+  save: false
+  name: Urist McFluff
+  parent: MobHumanDummy
+  id: MobSkrellDummy
+  noSpawn: true
+  description: A dummy skrell meant to be used in character setup.
+  components:
+  - type: Inventory
+    templateId: skrell
+  - type: HumanoidAppearance
+    species: Skrell
