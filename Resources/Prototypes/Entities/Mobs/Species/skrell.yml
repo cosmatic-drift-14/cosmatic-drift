@@ -21,7 +21,7 @@
   - type: Thirst
   # Damage and speed
   - type: Bloodstream
-    bloodReagent: SkrellBlood
+    bloodReagent: CopperBlood
   - type: Temperature
     heatDamageThreshold: 400
     coldDamageThreshold: 230
