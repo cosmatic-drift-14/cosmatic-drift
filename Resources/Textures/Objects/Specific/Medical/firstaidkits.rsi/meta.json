@@ -1,7 +1,7 @@
 {
 	"version": 1,
 	"license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/tree/727eb0a445bccbdc2d472e158e96b87fc0e997a1. Rad, toxin, o2, fire and adv by peptide",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/tree/727eb0a445bccbdc2d472e158e96b87fc0e997a1. Rad, toxin, o2, fire and adv by peptide, equipped ver. by KittenColony",
 	"size": {
 		"x": 32,
 		"y": 32
@@ -18,6 +18,10 @@
       "name": "firstaid-inhand-left",
       "directions": 4
     },
+	{
+      "name": "firstaid-equipped-BELT",
+      "directions": 4
+    },
 		{
 			"name": "brutekit"
 		},
@@ -27,6 +31,10 @@
     },
     {
       "name": "brutekit-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "brutekit-equipped-BELT",
       "directions": 4
     },
 		{
@@ -40,6 +48,10 @@
       "name": "burnkit-inhand-left",
       "directions": 4
     },
+    {
+      "name": "burnkit-equipped-BELT",
+      "directions": 4
+    },
 		{
 			"name": "o2kit"
 		},
@@ -51,6 +63,10 @@
       "name": "o2kit-inhand-left",
       "directions": 4
     },
+	{
+      "name": "o2kit-equipped-BELT",
+      "directions": 4
+    },
 		{
 			"name": "radkit"
 		},
@@ -60,6 +76,10 @@
     },
     {
       "name": "radkit-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "radkit-equipped-BELT",
       "directions": 4
     },
 		{
@@ -74,6 +94,10 @@
       "directions": 4
     },
     {
+      "name": "toxinkit-equipped-BELT",
+      "directions": 4
+    },
+    {
 			"name": "purplekit"
 		},
 		{
@@ -82,6 +106,10 @@
     },
     {
       "name": "purplekit-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "purplekit-equipped-BELT",
       "directions": 4
     },
     {
@@ -96,6 +124,10 @@
       "directions": 4
     },
     {
+      "name": "blackkit-equipped-BELT",
+      "directions": 4
+    },
+    {
 			"name": "advkit"
 		},
 		{
@@ -104,6 +136,10 @@
     },
     {
       "name": "advkit-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "advkit-equipped-BELT",
       "directions": 4
     }
 	]
