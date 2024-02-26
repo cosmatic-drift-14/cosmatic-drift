@@ -15,12 +15,10 @@
       "directions": 4
     },
     {
-      "name": "icon-flash",
-      "directions": 4
+      "name": "icon-flash"
     },
     {
-      "name": "light-overlay",
-      "directions": 4
+      "name": "light-overlay"
     },
     {
       "name": "equipped-head-light",
