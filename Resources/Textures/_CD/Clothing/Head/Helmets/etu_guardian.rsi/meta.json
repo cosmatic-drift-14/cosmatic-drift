@@ -15,6 +15,18 @@
       "directions": 4
     },
     {
+      "name": "icon-flash",
+      "directions": 4
+    },
+    {
+      "name": "light-overlay",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-light",
+      "directions": 4
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },
