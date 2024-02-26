@@ -5,6 +5,6 @@
   description: Stylish dark-slate shoes.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Color/slate.rsi
+    sprite: _CD/Clothing/Shoes/Color/slate.rsi
   - type: Clothing
-    sprite: Clothing/Shoes/Color/slate.rsi
+    sprite: _CD/Clothing/Shoes/Color/slate.rsi
