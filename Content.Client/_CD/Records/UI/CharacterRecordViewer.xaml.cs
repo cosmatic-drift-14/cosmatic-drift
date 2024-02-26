@@ -227,7 +227,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainerSpecies.Text = record.Species;
         RecordContainerHeight.Text = cr.Height + " " + UnitConversion.GetImperialDisplayLength(cr.Height);
         RecordContainerWeight.Text = cr.Weight + " " + UnitConversion.GetImperialDisplayMass(cr.Weight);
-        RecordContainerContactName.SetMessage(cr.EmergencyContactName);
+        RecordContainerContactName.SetValue(cr.EmergencyContactName);
 
         RecordContainerEmployment.Visible = false;
         RecordContainerMedical.Visible = false;
@@ -293,16 +293,16 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainerMedical.Visible = true;
         var cr = record.CharacterRecords;
         RecordContainerMedical.Visible = true;
-        RecordContainerAllergies.SetMessage(cr.Allergies, defaultColor: Color.White);
-        RecordContainerDrugAllergies.SetMessage(cr.DrugAllergies, defaultColor: Color.White);
-        RecordContainerPostmortem.SetMessage(cr.PostmortemInstructions, defaultColor: Color.White);
+        RecordContainerAllergies.SetValue(cr.Allergies);
+        RecordContainerDrugAllergies.SetValue(cr.DrugAllergies);
+        RecordContainerPostmortem.SetValue(cr.PostmortemInstructions);
         RecordContainerSex.Text = record.Sex.ToString();
     }
 
     private void UpdateRecordBoxSecurity(FullCharacterRecords record, (SecurityStatus, string?)? criminal)
     {
         RecordContainerSecurity.Visible = true;
-        RecordContainerIdentFeatures.SetMessage(record.CharacterRecords.IdentifyingFeatures, defaultColor: Color.White);
+        RecordContainerIdentFeatures.SetValue(record.CharacterRecords.IdentifyingFeatures);
         RecordContainerFingerprint.Text = record.Fingerprint ?? Loc.GetString("cd-character-records-viewer-unknown");
         RecordContainerDNA.Text = record.DNA ?? Loc.GetString("cd-character-records-viewer-unknown");
 
