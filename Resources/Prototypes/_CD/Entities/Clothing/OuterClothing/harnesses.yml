@@ -1,0 +1,20 @@
+# DEBUG HARNESS
+- type: entity
+  abstract: true
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterBaseHarness
+  components:
+  - type: Item
+    size: 25
+
+# Actual harnesses
+- type: entity
+  parent: ClothingOuterBaseHarness
+  id: ClothingOuterHarnessETU
+  name: emergency trauma unit harness
+  description: A robust harness worn by ETU teams.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Harnesses/etutrauma.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Harnesses/etutrauma.rsi

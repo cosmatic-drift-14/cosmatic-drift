@@ -37,10 +37,22 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitBoilersuitNTNavy
-  description: A dark navy boiler suit, emblazoned with a black N.T on the back.
   name: boiler suit
+  description: A dark navy boiler suit, emblazoned with a black N.T on the back.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/boilersuit.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/boilersuit.rsi
+
+#ETU gear
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitETUFlightsuit
+  name: etu flightsuit
+  description: A sterile blue flightsuit designed for emergency trauma units.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_flightsuit.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_flightsuit.rsi
