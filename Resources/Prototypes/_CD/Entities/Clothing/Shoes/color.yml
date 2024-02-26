@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorSlate
+  name: slate shoes
+  description: Stylish dark-slate shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Color/slate.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Color/slate.rsi

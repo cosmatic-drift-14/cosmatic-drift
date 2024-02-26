@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesETUGauntlet
+  name: nitrile gauntlets
+  description: Reinforced gauntlets with Nitrile fingers, designed for ETU teams.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Hands/Gloves/etu_gauntlet.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Hands/Gloves/etu_gauntlet.rsi
+  - type: Fiber
+    fiberMaterial: fibers-nitrile
+  - type: FingerprintMask
