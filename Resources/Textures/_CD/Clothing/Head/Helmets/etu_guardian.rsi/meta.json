@@ -11,7 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "equipped-head",
+      "name": "equipped-HELMET",
       "directions": 4
     },
     {
@@ -21,7 +21,7 @@
       "name": "light-overlay"
     },
     {
-      "name": "equipped-head-light",
+      "name": "equipped-HELMET-light",
       "directions": 4
     },
     {

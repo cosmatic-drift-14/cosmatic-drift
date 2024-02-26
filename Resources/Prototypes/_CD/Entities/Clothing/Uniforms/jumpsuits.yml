@@ -53,6 +53,6 @@
   description: A sterile blue flightsuit designed for emergency trauma units.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_flightsuit.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_flightsuit.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi

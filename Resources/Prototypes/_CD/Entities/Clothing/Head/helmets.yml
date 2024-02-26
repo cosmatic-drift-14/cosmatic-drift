@@ -7,6 +7,8 @@
   - type: BreathMask
   - type: Sprite
     sprite: _CD/Clothing/Head/Hardsuits/etu_guardian.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hardsuits/etu_guardian.rsi
   - type: PointLight
     color: "#ceffff"
   - type: Armor
