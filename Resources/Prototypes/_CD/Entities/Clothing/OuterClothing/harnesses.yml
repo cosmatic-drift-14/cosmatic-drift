@@ -11,10 +11,10 @@
 - type: entity
   parent: ClothingOuterBaseHarness
   id: ClothingOuterHarnessETU
-  name: emergency trauma unit harness
-  description: A robust harness worn by ETU teams.
+  name: etu harness
+  description: A robust harness worn by emergency trauma unit teams.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Harnesses/etutrauma.rsi
+    sprite: _CD/Clothing/OuterClothing/Harnesses/etu_trauma.rsi
   - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Harnesses/etutrauma.rsi
+    sprite: _CD/Clothing/OuterClothing/Harnesses/etu_trauma.rsi
