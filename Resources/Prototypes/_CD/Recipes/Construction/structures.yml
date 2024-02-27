@@ -1,0 +1,37 @@
+- type: construction
+  name: bordered window
+  id: BorderedWindow
+  graph: BorderedWindow
+  startNode: start
+  targetNode: borderedWindow
+  category: construction-category-structures
+  description: Clear, with a trim.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: _CD/Structures/Windows/window_bordered.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  name: bordered reinforced window
+  id: BorderedReinforcedWindow
+  graph: BorderedWindow
+  startNode: start
+  targetNode: borderedReinforcedWindow
+  category: construction-category-structures
+  description: Clear but tough, with a trim.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: _CD/Structures/Windows/reinforced_window_bordered.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
