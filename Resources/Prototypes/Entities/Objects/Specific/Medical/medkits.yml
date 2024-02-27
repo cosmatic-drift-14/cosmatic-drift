@@ -1,15 +1,12 @@
 - type: entity
   name: first aid kit
   description: It's an emergency medical kit for those serious boo-boos.
-  parent: ClothingBeltStorageBase
+  parent: BaseStorageItem
   id: Medkit
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/firstaidkits.rsi
     state: firstaid
-  - type: Clothing
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
-      state: firstaid-equipped-BELT
   - type: Storage
     capacity: 60
   - type: Item
