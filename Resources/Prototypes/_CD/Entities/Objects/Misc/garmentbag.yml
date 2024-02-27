@@ -26,7 +26,9 @@
   components:
   - type: Sprite
     sprite: _CD/Objects/Misc/GarmentBags/medicalcan.rsi
-      items:
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
       - id: ClothingBeltHarnessETU
       - id: ClothingHeadHelmetETUPointman
       - id: ClothingMaskGasETUSterile
