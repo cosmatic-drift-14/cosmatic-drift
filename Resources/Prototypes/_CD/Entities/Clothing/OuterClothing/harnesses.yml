@@ -21,9 +21,7 @@
   - type: Clothing
     sprite: _CD/Clothing/Belt/Harnesses/etu_trauma.rsi
   - type: Storage
-    capacity: 60
-  - type: Item
-    size: 50 # This is literally just the medical belt without the visualizers
+    capacity: 60 # This is literally just the medical belt without the visualizers
     whitelist:
       tags:
         - Wrench
