@@ -11,11 +11,6 @@
     sprite: _CD/Clothing/Head/Helmets/etu_guardian.rsi
   - type: PointLight
     color: "#ceffff"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Heat: 0.95
   - type: Tag
     tags:
     - HidesHair
