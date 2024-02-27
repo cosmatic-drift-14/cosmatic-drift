@@ -1,14 +1,14 @@
 - type: entity
   parent: ClothingHeadLightBase
-  id: ClothingHeadHelmetETUGuardian
+  id: ClothingHeadHelmetETUPilot
   name: etu helmet
-  description: An Emergency Trauma Unit Helmet, this one is a Guardian model. Featuring minor protection, a built-in mask and a flashlight.
+  description: An Emergency Trauma Unit Helmet, this one is a Pilot model. Featuring a built-in mask and a flashlight.
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: _CD/Clothing/Head/Helmets/etu_guardian.rsi
+    sprite: _CD/Clothing/Head/Helmets/etu_pilot.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Head/Helmets/etu_guardian.rsi
+    sprite: _CD/Clothing/Head/Helmets/etu_pilot.rsi
   - type: PointLight
     color: "#ceffff"
   - type: Tag
