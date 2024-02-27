@@ -21,8 +21,7 @@
 - type: entity
   parent: BaseGarmentBag
   id: ETUGarmentBag
-    suffix: POINTMAN
-  name: etu garment bag
+  name: etu garment can
   description: Contains one set of ETU equipment.
   components:
   - type: Sprite
