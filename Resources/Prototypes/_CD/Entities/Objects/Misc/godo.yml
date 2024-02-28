@@ -1,0 +1,10 @@
+- type: entity
+  id: Godo
+  parent: BaseItem
+  name: godo
+  components:
+  - type: Item
+    size: 10
+  - type: Sprite
+    sprite: _CD/Objects/Misc/godo.rsi
+    state: icon
