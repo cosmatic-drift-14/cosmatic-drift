@@ -24,6 +24,8 @@
   - type: GuideHelp
     guides:
     - Security
+  - type: UseDelay
+    delay: 6
 
 - type: entity
   name: makeshift handcuffs
@@ -32,7 +34,7 @@
   parent: Handcuffs
   components:
   - type: Handcuff
-    breakoutTime: 15
+    breakoutTime: 3
     cuffedRSI: Objects/Misc/cablecuffs.rsi
     bodyIconState: body-overlay
     color: forestgreen
@@ -74,7 +76,7 @@
   - type: Item
     size: 2
   - type: Handcuff
-    breakoutTime: 20  # halfway between improvised cablecuffs and metal ones
+    breakoutTime: 3
     cuffedRSI: Objects/Misc/cablecuffs.rsi  # cablecuffs will look fine
     bodyIconState: body-overlay
     breakOnRemove: true
@@ -147,9 +149,6 @@
   - type: Handcuff
     cuffedRSI: Clothing/OuterClothing/Misc/straight_jacket.rsi
     breakoutTime: 100
-    damageOnResist:
-      types:
-        Blunt: 0
     cuffTime: 10
     uncuffTime: 10
     stunBonus: 4

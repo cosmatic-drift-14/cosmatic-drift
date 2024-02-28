@@ -169,8 +169,6 @@ CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
 FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
 
 # 2024-01-31
-HandheldCrewMonitorEmpty: null
-HandheldCrewMonitor: null
 SpyCrewMonitor: null
 SpyCrewMonitorEmpty: null
 SyndiCrewMonitor: null
@@ -180,5 +178,19 @@ SyndiCrewMonitorEmpty: null
 YellowOxygenTank: OxygenTank
 YellowOxygenTankFilled: OxygenTankFilled
 
+# 2024-02-19
+Drone: null
+SpawnMobDrone: null
+Onestar: null # I dont think this is even mapped, but just in case
+
 # 2024-02-20 CD Change, removing the Candy Bucket
 CandyBucket: null
+
+# 2024-02-22
+SolarAssemblyPart: SolarAssemblyFlatpack
+AmePart: AmePartFlatpack
+AmePartStealObjective: AmePartFlatpackStealObjective
+Observationskit: null
+
+# 2024-02-26
+CrateBaseWeldable: CrateGenericSteel
