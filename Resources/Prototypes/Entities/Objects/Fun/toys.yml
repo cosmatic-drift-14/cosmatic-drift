@@ -1003,7 +1003,7 @@
     sprite: Objects/Fun/toys.rsi
     state: ntb
   - type: Item
-    size: Small
+    size: 24
     sprite: Objects/Fun/toys.rsi
     heldPrefix: ntb
   - type: Damageable
