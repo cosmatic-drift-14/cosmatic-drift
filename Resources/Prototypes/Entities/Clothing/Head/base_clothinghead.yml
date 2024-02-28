@@ -132,6 +132,7 @@
     - HidesHair
     - WhitelistChameleon
     - HelmetEVA
+    - HidesNose
   - type: IdentityBlocker
 
 - type: entity
@@ -170,6 +171,7 @@
     tags:
     - HidesHair
     - WhitelistChameleon
+    - HidesNose
   - type: IdentityBlocker
 
 - type: entity
