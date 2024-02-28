@@ -285,7 +285,6 @@
   components:
   - type: StorageFill
     contents:
-    - id: AdminPDA
     - id: GasAnalyzer
     - id: trayScanner
   - type: Unremoveable
