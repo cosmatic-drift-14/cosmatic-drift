@@ -1028,6 +1028,13 @@
       - ClothingNeckScarfStripedOrange
       - ClothingNeckScarfStripedBlack
       - ClothingNeckScarfStripedPurple
+      # CD exclusives
+      - id: ClothingBeltHarnessETU
+      - id: ClothingHeadHelmetETUPointman
+      - id: ClothingMaskGasETUSterile
+      - id: ClothingHandsGlovesETUGauntlet
+      - id: ClothingUniformJumpsuitETUFlightsuit
+      - id: ClothingShoesColorSlate
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
