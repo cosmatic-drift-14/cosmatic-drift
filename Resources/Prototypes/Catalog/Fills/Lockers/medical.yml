@@ -143,4 +143,5 @@
       - id: ClothingMaskSterile
       - id: HandheldGPSBasic
       - id: MedkitFilled
+      - id: ETUGarmentBag #CD exclusive
         prob: 0.3
