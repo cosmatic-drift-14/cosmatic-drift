@@ -1,7 +1,8 @@
 <controls:FancyWindow xmlns="https://spacestation14.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-                      MinSize="750 600"
-                      SetSize="750 750" >
+                      xmlns:records="clr-namespace:Content.Client._CD.Records.UI"
+                      MinSize="850 750"
+                      SetSize="850 750" >
     <BoxContainer Orientation="Vertical">
         <!-- Search bar -->
         <BoxContainer Margin="5 5 5 10" HorizontalExpand="true" VerticalAlignment="Center">
@@ -21,7 +22,7 @@
                 </ScrollContainer>
             </BoxContainer>
             <!-- Record box -->
-            <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="5">
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="5 5 10 10">
                 <Label Name="RecordContainerStatus" Visible="False" Text="{Loc 'cd-record-viewer-no-record-selected'}"/>
                 <BoxContainer Name="RecordContainer" Orientation="Vertical" Visible="False" >
                     <BoxContainer Orientation="Vertical" HorizontalExpand="True">
@@ -34,7 +35,7 @@
                                 <Label Name="RecordContainerAge" Align="Right" />
                             </BoxContainer>
                             <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'cd-character-records-viewer-record-title'}"/>
+                                <Label Text="{Loc 'cd-character-records-viewer-record-job'}"/>
                                 <Control HorizontalExpand="True" />
                                 <Label Name="RecordContainerJob" Align="Right" />
                             </BoxContainer>
@@ -58,11 +59,7 @@
                                 <Control HorizontalExpand="True" />
                                 <Label Name="RecordContainerWeight" Align="Right"/>
                             </BoxContainer>
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-cd-records-contact-name'}"/>
-                                <Control HorizontalExpand="True" />
-                                <RichTextLabel Name="RecordContainerContactName" />
-                            </BoxContainer>
+                            <records:RecordLongItemDisplay Name="RecordContainerContactName" Title="{Loc 'humanoid-profile-editor-cd-records-contact-name'}"/>
                         </BoxContainer>
                         <!-- Employment -->
                         <BoxContainer Name="RecordContainerEmployment" Orientation="Vertical" HorizontalExpand="True" Visible="False" >
@@ -74,21 +71,9 @@
                         </BoxContainer>
                         <!-- Medical -->
                         <BoxContainer Name="RecordContainerMedical" Orientation="Vertical" HorizontalExpand="True" Visible="False" >
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-cd-records-allergies'}"/>
-                                <Control HorizontalExpand="True" />
-                                <RichTextLabel Name="RecordContainerAllergies" />
-                            </BoxContainer>
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-cd-records-drug-allergies'}"/>
-                                <Control HorizontalExpand="True" />
-                                <RichTextLabel Name="RecordContainerDrugAllergies" />
-                            </BoxContainer>
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-cd-records-postmortem'}"/>
-                                <Control HorizontalExpand="True" />
-                                <RichTextLabel Name="RecordContainerPostmortem" />
-                            </BoxContainer>
+                            <records:RecordLongItemDisplay Name="RecordContainerAllergies" Title="{Loc 'humanoid-profile-editor-cd-records-allergies'}"/>
+                            <records:RecordLongItemDisplay Name="RecordContainerDrugAllergies" Title="{Loc 'humanoid-profile-editor-cd-records-drug-allergies'}"/>
+                            <records:RecordLongItemDisplay Name="RecordContainerPostmortem" Title="{Loc 'humanoid-profile-editor-cd-records-postmortem'}"/>
                             <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                                 <Label Text="{Loc 'cd-character-records-viewer-record-med-sex'}"/>
                                 <Control HorizontalExpand="True" />
@@ -97,11 +82,7 @@
                         </BoxContainer>
                         <!-- Security -->
                         <BoxContainer Name="RecordContainerSecurity" Orientation="Vertical" HorizontalExpand="True" Visible="False" >
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-cd-records-identifying-features'}"/>
-                                <Control HorizontalExpand="True" />
-                                <RichTextLabel Name="RecordContainerIdentFeatures" />
-                            </BoxContainer>
+                            <records:RecordLongItemDisplay Name="RecordContainerIdentFeatures" Title="{Loc 'humanoid-profile-editor-cd-records-identifying-features'}"/>
                             <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                                 <Label Text="{Loc 'cd-character-records-viewer-record-sec-fingerprint'}"/>
                                 <Control HorizontalExpand="True" />

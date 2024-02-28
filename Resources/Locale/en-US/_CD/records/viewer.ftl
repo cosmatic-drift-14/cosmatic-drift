@@ -6,7 +6,7 @@ cd-record-viewer-empty-state = Cannot fetch records.
 cd-record-viewer-no-record-selected = Please select record.
 
 cd-character-records-viewer-record-age = Age:
-cd-character-records-viewer-record-title = Job:
+cd-character-records-viewer-record-job = Job:
 cd-character-records-viewer-record-gender = Gender:
 cd-character-records-viewer-record-species = Species:
 

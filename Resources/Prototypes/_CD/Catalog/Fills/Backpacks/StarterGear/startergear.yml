@@ -9,6 +9,7 @@
       - id: ForensicScanner
       - id: ForensicPad
         amount: 3
+      - id: LogProbeCartridge
 
 - type: entity
   noSpawn: true
@@ -21,6 +22,7 @@
       - id: ForensicScanner
       - id: ForensicPad
         amount: 3
+      - id: LogProbeCartridge
 
 - type: entity
   noSpawn: true
@@ -33,3 +35,4 @@
       - id: ForensicScanner
       - id: ForensicPad
         amount: 3
+      - id: LogProbeCartridge
