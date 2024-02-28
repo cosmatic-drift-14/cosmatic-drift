@@ -19,7 +19,7 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  suffix: POINTMAN
+  suffix: Pointman
   parent: BaseGarmentBag
   id: ETUGarmentBag
   name: etu garment can
