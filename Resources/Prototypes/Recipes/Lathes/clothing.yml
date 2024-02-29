@@ -1253,6 +1253,7 @@
   completetime: 1
   materials:
     Cloth: 100
+
   id: CarpetOrange
   result: FloorCarpetItemOrange
   completetime: 1
