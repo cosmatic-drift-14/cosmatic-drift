@@ -1312,6 +1312,7 @@
   id: ClothingHandsGlovesETUGauntlet
   result: ClothingHandsGlovesETUGauntlet
   completetime: 1.2
+  materials:
     Cloth: 200
 
 - type: latheRecipe
