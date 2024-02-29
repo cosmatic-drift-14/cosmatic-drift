@@ -177,7 +177,7 @@ namespace Content.Shared.CCVar
         ///     Controls the maximum number of character slots a player is allowed to have.
         /// </summary>
         public static readonly CVarDef<int>
-            GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 10, CVar.ARCHIVE | CVar.SERVERONLY);
+            GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 20, CVar.ARCHIVE | CVar.SERVERONLY); /// CD change to 20 from 10.
 
         /// <summary>
         ///     Controls the game map prototype to load. SS14 stores these prototypes in Prototypes/Maps.
@@ -800,7 +800,7 @@ namespace Content.Shared.CCVar
         /// Default severity for server bans
         /// </summary>
         public static readonly CVarDef<string> ServerBanDefaultSeverity =
-            CVarDef.Create("admin.server_ban_default_severity", "high", CVar.ARCHIVE | CVar.SERVER);
+            CVarDef.Create("admin.server_ban_default_severity", "High", CVar.ARCHIVE | CVar.SERVER);
 
         /// <summary>
         ///     Minimum explosion intensity to create an admin alert message. -1 to disable the alert.
@@ -1473,15 +1473,6 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> CrewManifestUnsecure =
             CVarDef.Create("crewmanifest.unsecure", true, CVar.REPLICATED);
 
-        /// <summary>
-        ///     Dictates the order the crew manifest will appear in, in terms of its sections.
-        ///     Sections not in this list will appear at the end of the list, in no
-        ///     specific order.
-        /// </summary>
-        public static readonly CVarDef<string> CrewManifestOrdering =
-            CVarDef.Create("crewmanifest.ordering", "Command,Security,Science,Medical,Engineering,Cargo,Civilian,Unknown",
-                CVar.REPLICATED);
-
         /*
          * Biomass
          */
@@ -1814,7 +1805,7 @@ namespace Content.Shared.CCVar
         /// The time you must spend reading the rules, before the "Request" button is enabled
         /// </summary>
         public static readonly CVarDef<float> GhostRoleTime =
-            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED);
+            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Fire alarm
@@ -1989,5 +1980,15 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<bool> GatewayGeneratorEnabled =
             CVarDef.Create("gateway.generator_enabled", true);
+
+        /*
+         * DEBUG
+         */
+
+        /// <summary>
+        /// A simple toggle to test <c>OptionsVisualizerComponent</c>.
+        /// </summary>
+        public static readonly CVarDef<bool> DebugOptionVisualizerTest =
+            CVarDef.Create("debug.option_visualizer_test", false, CVar.CLIENTONLY);
     }
 }

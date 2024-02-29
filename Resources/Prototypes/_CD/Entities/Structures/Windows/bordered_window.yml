@@ -1,0 +1,13 @@
+- type: entity
+  id: BorderedWindow
+  name: bordered window
+  parent: Window
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _CD/Structures/Windows/window_bordered.rsi
+  - type: Icon
+    sprite: _CD/Structures/Windows/window_bordered.rsi
+  - type: Construction
+    graph: BorderedWindow
+    node: borderedWindow
