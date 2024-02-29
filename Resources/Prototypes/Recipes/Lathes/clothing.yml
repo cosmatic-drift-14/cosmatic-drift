@@ -1217,7 +1217,7 @@
   result: ClothingNeckScarfStripedPurple
   completetime: 2
   materials:
-    Cloth: 50
+    Cloth: 200
 
 - type: latheRecipe
   id: Carpet
@@ -1254,6 +1254,7 @@
   materials:
     Cloth: 100
 
+- type: latheRecipe
   id: CarpetOrange
   result: FloorCarpetItemOrange
   completetime: 1
