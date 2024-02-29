@@ -1294,7 +1294,7 @@
 
 - type: latheRecipe
   id: ClothingHeadHelmetETUPointman
-    result: ClothingHeadHelmetETUPointman
+  result: ClothingHeadHelmetETUPointman
   completetime: 3.8
   materials:
     Cloth: 300
