@@ -1043,12 +1043,12 @@
       - CarpetCyan
       - CarpetWhite
       # CD exclusives
-      - id: ClothingBeltHarnessETU
-      - id: ClothingHeadHelmetETUPointman
-      - id: ClothingMaskGasETUSterile
-      - id: ClothingHandsGlovesETUGauntlet
-      - id: ClothingUniformJumpsuitETUFlightsuit
-      - id: ClothingShoesColorSlate
+      - ClothingBeltHarnessETU
+      - ClothingHeadHelmetETUPointman
+      - ClothingMaskGasETUSterile
+      - ClothingHandsGlovesETUGauntlet
+      - ClothingUniformJumpsuitETUFlightsuit
+      - ClothingShoesColorSlate
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
