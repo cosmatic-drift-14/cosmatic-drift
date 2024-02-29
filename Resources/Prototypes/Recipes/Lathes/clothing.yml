@@ -1285,7 +1285,7 @@
 # CD exclusives
 
 - type: latheRecipe
-  - id: ClothingBeltHarnessETU
+  id: ClothingBeltHarnessETU
   result: ClothingBeltHarnessETU
   completetime: 3.2
   materials:
