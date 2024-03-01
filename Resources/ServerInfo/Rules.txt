@@ -1,79 +1,89 @@
-[bold][color=#d10000]All Cosmatic Drift servers are 16+ only. If you are underage you will be banned for double the amount of time till you are of age.[/bold][/color]
-
-[color=#7ade00]01.[/color] The golden rule. Game admins have the final say on all rules, game issues and punishments. We reserve the right to remove you under this rule if we see fit. Admins will be held up to high standards when invoking this rule.
-
-[color=#ffe600]Zero Tolerance Policies.[/color]
-
-[color=#7ade00]02.[/color] Do not attempt to evade bans, ahelp questioning, or punishments. Do not abuse the ahelp system.
-- Ban evading using an alternate account or other means will result in an immediate voucher ban.
-- Evading ahelp questioning by disconnecting upon being ahelped, during questioning, or ignoring the admin will usually end in an appeal ban.
-- Attempting to get around role bans by being promoted to that role in-game will lead to a game ban.
-
-- Spamming or being aggressive to our admins in ahelps will result in an appeal ban.
-
-[color=#7ade00]03.[/color] This is an English only server, as we can not moderate other languages speaking in anything but English will usually lead to a single warning, then ban if you do not cease.
-
-[color=#7ade00]04.[/color] Absolutely no discrimination nor bigotry against any player or their characters for any reason. This covers ableism, homophobia, racism, sexism, speciesism, and hate speech as a whole. If it's to the point where it makes someone uncomfortable and they ahelp you or an admin finds an issue with it, you will answer for it.
-
-[color=#7ade00]05.[/color] No sexual content, disgusting RP, or gross statements. This is not an 18+ server. This means no erotic roleplay, emotes and messages that are sexual in nature, or overtly disgusting things no one wants to hear. Includes "technically not NSFW" jokes.
-
-[color=#7ade00]06.[/color] Do not communicate in-round information about an on-going round through multiple accounts or to other people.
-- Often referred to as metacomms, this is posting screenshots of a live round, talking about in-character events in OOC, sitting in a voice chat talking about the round, etc. It does not matter how minor it is, this is zero tolerance.
-- Do not multikey, which is to play or spectate in the same round with multiple accounts operated by you.
-
-[color=#7ade00]07.[/color] Intentionally using and/or abusing exploits, bugs, or external programs are not allowed.
-- The moment you learn of a bug, you are expected to report it immediately and never intentionally use it again.
-- Some examples of external programs are as follows: autoclickers, macros, client cheats, etc.
-- Any form of cheating or hacking will immediately result in a permanent ban with no chance of appeal.
-
-[color=#ffe600]General Etiquette.[/color]
-
-[color=#7ade00]08.[/color] Don't be a huge dick and try not to over-escalate. You are playing a roleplaying game with other real people. Do not go out of your way to ruin the experience of other players, and do not grief (also referred to as "self-antagging").
-- Due to the nature of an HRP server, some leeway will be granted in terms of minor self-antagging. This means roleplaying out minor crimes, as long as they are not taken over the top and do not become uninteresting. Try not to commit the same crimes repeatedly, especially after in-character punishment. Generally, you should always ahelp to ask for permission to do things such as these.
-- The arrivals station is entirely off-limits; do not grief, attack others, or do any antagonistic acts on the terminal under any circumstance (even if you are an antagonist).
-- Try to avoid permanently killing other players (also referred to as "round-removing"). While this is acceptable if it is in pursuit of an antagonistic objective, it is generally frowned upon and should be avoided if possible.
-- Try your best not to negatively affect absent or SSD players. Stealing, killing, and griefing these players is disallowed, however, things such as moving a player to a safe area or security performing a search acceptable.
-
-[color=#7ade00]09.[/color] You are playing a high roleplay server; speak and act like a human being. While playing in this server, you will be held to a higher standard of roleplay. With this being the case, you are expected to actively engage in roleplay when it comes up.
-- Do not use text speech such as "omg," "idk," "wtf," or "lol."
-- Referring to gamey terms like "admins" or "RNG" is disallowed.
-- Do not abuse emotes to bypass chat filters. Emotes should represent actions that your character could actually perform. Emotes should have effort put into them; this means that you should not be typing things such as "John Doe motions with his hands to signal syndicate agents west of you."
-- Do not respond to events in a highly unbelievable manner, stick to how your character would react.
-
-[color=#7ade00]10.[/color] Do not disconnect, ghost, suicide, or otherwise intentionally permanently remove yourself from the round as an important role or while facing in-character punishment such as jail time without ahelping beforehand. You do not need to wait for a response, however, failure to notify admins will result in consequences.
-- This does not apply to cryo.
+[color=#ff0800][bold]DISCLAIMER:[/bold] All Cosmatic Drift servers are strictly 16+ only. If you are underage, you [bold]will be banned[/bold] for double the amount of time that it takes for you to be of age.[/color]
 
 
-[color=#7ade00]11.[/color] Your character name should be believable and realistic.
-- Your character name should not mimic popular real-life or fictional people, even if it is a "clever" plays on them, such as "White Walter."
-- Your character's name should not be phonetic word plays, such as "Mike Oxlong" or "Ben Dover."
-- Your name should not be overly dumb or gamey either, such as "John Graytide."
-- Names should not include titles, such as "Doctor," "Sergeant," or "Father."
+[head=2][color=#ffdd47][bold]1.0 -[/bold] The Golden Rule Policy.[/color][/head]
+Game admins have the final say on all rules, game issues, and punishments. We reserve the right to remove you under this policy if we see fit. Admins will be held up to high standards when invoking this policy.
 
-[color=#7ade00]12.[/color] Do not prepare items or locations for "just in case" purposes (also referred to as "powergaming"). Standard Operating Procedure (SOP) dictates how areas should be locked down and what gear should be held and/or equipped during any given circumstance. Minor things such as getting a crowbar on round start is fine, seeking out weapons is not.
 
-[color=#ffe600]Roleplay Focused.[/color]
+[head=2][color=#ff3636][bold]2.0 -[/bold] Zero Tolerance Policies.[/color][/head]
+[color=#e6e6e6]Policies and rules that we will not provide leeway for or tolerate under any circumstance.[/color]
 
-[color=#7ade00]13.[/color] Because this is an HRP server, you should avoid abandoning your job for no good reason. You can focus on and off of work, or ask the Head of Personnel to clock you out if you plan to be away for quite some time. Don't spend the entire round away from your job while on duty and your department needs you.
+[color=#e6e6e6][color=#ff3636][bold]2.1 -[/bold][/color] Do not attempt to evade bans, ahelp questioning, or punishments. Do not abuse the ahelp system.[/color][color=#c4c4c4]
+[bullet] Ban evading using an alternate account or other means will result in an immediate voucher ban.
+[bullet] Evading ahelp questioning by disconnecting upon being ahelped, during questioning, or ignoring the admin will usually end in an appeal ban.
+[bullet] Attempting to get around role bans by being promoted to that role in-game will lead to a game ban.
+[bullet] Spamming or being aggressive to our admins in ahelps will result in an appeal ban.[/color]
 
-[color=#7ade00]14.[/color] This server uses a New Life rule. You may not remember any events that may have happened while you were in an unconscious or dead state. You may not retain any knowledge that you have learned whilst you were a ghost.
-- If you enter a dead state and get defibbed back to life you forget all the events that led up to your death. (This is the basic type of memory loss for anything else that is not specified)
-- If you enter a dead state and get cloned back to life you forget all the events since the beginning of the shift.
-- Respawning as a new character eliminates all memory of everyhting that may have happened previously in that round.
+[color=#e6e6e6][color=#ff3636][bold]2.2 -[/bold][/color] This is an English only server, as we can not moderate other languages speaking in anything but English will usually lead to a single warning, then ban if you do not cease.[/color]
 
-[color=#7ade00]15.[/color] Full continuity of your character and events that happen to them is to be expected. All rounds are canonical unless stated otherwise by an admin.
-- You are allowed to recall past shifts in any manner unless it violates the New Life rule.
-- Punishments you receive will be enforced and carried out in-character throughout rounds. If your character gets demoted, you are expected to stay out of that job until a reasonable amount of time has passed or you get rehired again in-game.
-- Your characters should generally hold no more than two departmental jobs and a service side job in-character. You may swap departments from time to time so long as it doesn't happen constantly or consistently.
-- Permanent death is not required, as there is an off-site DNA storages available for all crewmembers.
+[color=#e6e6e6][color=#ff3636][bold]2.3 -[/bold][/color] Absolutely no discrimination nor bigotry against any player or their characters for any reason. This covers ableism, homophobia, racism, sexism, speciesism, and hate speech as a whole. If it's to the point where it makes someone uncomfortable and they ahelp you or an admin finds an issue with it, you will answer for it.[/color]
 
-[color=#7ade00]16.[/color] Stay within your job, reasonable knowledge, and abilities. (also referred to as metagaming).
-- Unless your character has a past in a particular line of work, they should not know how to do jobs outside of their own.
-- Do not do the jobs of other people for them, only play the role you signed up for. If you want to work a different job, ask the Head of Personnel for a job change. Exceptions can be made for if no active staff exist for a department.
-- Basic crew should not be knowledgeable on most non-NT technology and items unless they've experienced it in-character. Security and command may have some leeway within reason.
+[color=#e6e6e6][color=#ff3636][bold]2.4 -[/bold][/color] No sexual content, disgusting RP, or gross statements. This is not an 18+ server. This means no erotic roleplay, emotes and messages that are sexual in nature, or overtly disgusting things no one wants to hear. Includes "technically not NSFW" jokes.[/color]
 
-[color=#7ade00]17.[/color] Command and security are expected to be competent, lawful, and to follow procedure.
-- Neither roles should be grossly incompetent at their job or in their judgment. You are held to higher standards and should be able to be depended upon. Be a role-model for your department.
-- You should not knowingly break the law as either command or security.
-- Command staff should know Standard Operating Procedure and follow it to the best of their abilities. Security should know both Standard Operating Procedure and Space-Law; they should follow them and enforce them to the best of their abilities. Failure to do so will likely result in a role-ban.
-- (Currently, we use Wizard's Den Space-Law and SOP; you can find these at https://wiki.spacestation14.io/wiki.)
+[color=#e6e6e6][color=#ff3636][bold]2.5 -[/bold][/color] Do not communicate in-round information about an on-going round through multiple accounts or to other people.[/color][color=#c4c4c4]
+[bullet] Communicating current-round info out of character - also known as "metacommunicating" - includes posting screenshots of a live round, talking about in-character events in out-of-character, sitting in a voice chat talking about the round, etc. It does not matter how minor it is, this is zero tolerance.
+[bullet] Do not multikey, which is to play or spectate in the same round with multiple accounts operated by you.[/color]
+
+[color=#e6e6e6][color=#ff3636][bold]2.6 -[/bold][/color] Intentionally using and/or abusing exploits, bugs, or external programs are not allowed.[/color][color=#c4c4c4]
+[bullet] The moment you learn of a bug, you are expected to report it immediately and never intentionally use it again.
+[bullet] Some examples of external programs are as follows: autoclickers, macros, client cheats, etc.
+[bullet] Any form of cheating or hacking will immediately result in a permanent ban with no chance of appeal without a voucher from another reputable server.[/color]
+
+
+[head=2][color=#3bff72][bold]3.0 -[/bold] General Etiquette.[/color][/head]
+[color=#e6e6e6]General rules and common practice. The "bare-minimum" expectations that you should be following.[/color]
+
+[color=#e6e6e6][color=#3bff72][bold]3.1 -[/bold][/color] Do not be a huge dick and try not to over-escalate. You are playing a roleplaying game with other real people. Do not go out of your way to ruin the experience of other players, and do not grief.[/color][color=#c4c4c4]
+[bullet] Doing antagonistic actions without being an antagonist is commonly called "self-antagging."
+[bullet] Due to the nature of an HRP server, some leeway will be granted in terms of minor self-antagging. This means roleplaying out minor crimes, as long as they are not taken over the top and do not become uninteresting. Try not to commit the same crimes repeatedly, especially after in-character punishment. Generally, you should always ahelp to ask for permission to do things such as these.
+[bullet] The arrivals station is entirely off-limits; do not grief, attack others, or do any antagonistic acts on the terminal under any circumstance (this also applies to antagonists).
+[bullet] Try to avoid permanently killing or "round-removing" other players. While this is acceptable if it is in pursuit of an antagonistic objective, it is generally frowned upon and should be avoided if possible.
+[bullet] Try your best not to negatively affect absent or SSD players. Stealing, killing, and griefing these players is disallowed, however, things such as moving a player to a safe area or security performing a search acceptable.[/color]
+
+[color=#e6e6e6][color=#3bff72][bold]3.2 -[/bold][/color] You are playing a high-roleplay server; speak and act like a human being. While playing in this server, you will be held to a higher standard of roleplay. With this being the case, you are expected to actively engage in roleplay when it comes up.[/color][color=#c4c4c4]
+[bullet] Do not use text speech such as "omg," "idk," "wtf," or "lol."
+[bullet] Referring to gamey terms like "admins" or "RNG" is disallowed.
+[bullet] Do not abuse emotes to bypass chat filters. Emotes should represent actions that your character could actually perform. Emotes should have effort put into them; this means that you should not be typing things such as "John Doe motions with his hands to signal syndicate agents west of you."
+[bullet] Do not respond to events in a highly unbelievable manner, stick to how your character would react.[/color]
+
+[color=#e6e6e6][color=#3bff72][bold]3.3 -[/bold][/color] Do not disconnect, ghost, suicide, or otherwise intentionally permanently remove yourself from the round as an important role or while facing in-character punishment such as jail time without ahelping beforehand. You do not need to wait for a response, however, failure to notify admins will result in consequences.[/color][color=#c4c4c4]
+[bullet] This does not apply to cryo.[/color]
+
+[color=#e6e6e6][color=#3bff72][bold]3.4 -[/bold][/color] Your character name should be believable and realistic.[/color][color=#c4c4c4]
+[bullet] Your character name should not mimic popular real-life or fictional people, even if it is a "clever" plays on them, such as "White Walter."
+[bullet] Your character's name should not be phonetic word plays, such as "Mike Oxlong" or "Ben Dover."
+[bullet] Your name should not be overly dumb or gamey either, such as "John Graytide."
+[bullet] Names should not include titles, such as "Doctor," "Sergeant," or "Father."[/color]
+
+
+[head=2][color=#59ffe1][bold]4.0 -[/bold] Roleplay Expectations.[/color][/head]
+[color=#e6e6e6]Expectations and policies centered around roleplay.[/color]
+
+[color=#e6e6e6][color=#59ffe1][bold]4.1 -[/bold][/color] Do not intentionally prepare items or locations "just in case" a certain scenario happens unless you have proper in-character reasoning, especially if it is intended to gain an upper-hand or advantage over another player. Cosmatic Drift is heavily based around roleplay; you should generally be focused on this rather than playing to win.[/color][color=#c4c4c4]
+[bullet] The concept of "playing to win" is commonly referred to as "powergaming."
+[bullet] Standard Operating Procedure (SOP) dictates how areas should be locked down and what gear should be held and/or equipped during any given circumstance. Minor things such as getting a crowbar on round-start is fine, however, seeking out weapons is not.[/color]
+
+[color=#e6e6e6][color=#59ffe1][bold]4.2 -[/bold][/color] Because this is an HRP server, you should avoid abandoning your job for no good reason. You can focus on and off of work, or ask the Head of Personnel to clock you out if you plan to be away for quite some time. Don't spend the entire round away from your job while on duty and your department needs you.[/color]
+
+[color=#e6e6e6][color=#59ffe1][bold]4.3 -[/bold][/color] This server uses a New Life rule. You may not remember any events that may have happened while you were in an unconscious or dead state. You may not retain any knowledge that you have learned whilst you were a ghost.[/color][color=#c4c4c4]
+[bullet] If you enter a dead state and get defibbed back to life you forget all the events that led up to your death. (This is the basic type of memory loss for anything else that is not specified)
+[bullet] If you enter a dead state and get cloned back to life you forget all the events since the beginning of the shift.
+[bullet] Respawning as a new character eliminates all memory of everything that may have happened previously in that shift.[/color]
+
+[color=#e6e6e6][color=#59ffe1][bold]4.4 -[/bold][/color] Full continuity of your character and events that happen to them is to be expected. All rounds are canonical unless stated otherwise by an admin.[/color][color=#c4c4c4]
+[bullet] You are allowed to recall past shifts in any manner unless it violates the New Life rule.
+[bullet] Punishments you receive will be enforced and carried out in-character throughout rounds. If your character gets demoted, you are expected to stay out of that job until a reasonable amount of time has passed or you are rehired again in-game.
+[bullet] Your characters should generally hold no more than two departmental jobs and a service side job in-character. You may swap departments from time to time so long as it doesn't happen constantly or consistently.
+[bullet] Permanent death is not required, as there is an off-site DNA storages available for all crewmembers.[/color]
+
+[color=#e6e6e6][color=#59ffe1][bold]4.5 -[/bold][/color] Stay within your job, reasonable knowledge, and abilities.[/color][color=#c4c4c4]
+[bullet] Do not use knowledge that you have learned out-of-character while you are in-character. This is referred to as "metagaming."
+[bullet] Unless your character has a past in a particular line of work, they should not know how to do jobs outside of their own.
+[bullet] Do not do the jobs of other people for them, only play the role you signed up for. If you want to work a different job, ask the Head of Personnel for a job change. Exceptions can be made for if no active staff exist for a department.
+[bullet] Basic crew should not be knowledgeable on most non-NT technology and items unless they've experienced it in-character. Security and command may have some leeway within reason.[/color]
+
+[color=#e6e6e6][color=#59ffe1][bold]4.6 -[/bold][/color] Command and security are expected to be competent, to be lawful, and to follow procedure.[/color][color=#c4c4c4]
+[bullet] Neither roles should be grossly incompetent at their job or in their judgment. You are held to higher standards and should be able to be depended upon. Be a role-model for your department.
+[bullet] You should not knowingly break the law as either command or security.
+[bullet] Command staff should know Standard Operating Procedure and follow it to the best of their abilities. Security should know both Standard Operating Procedure and Space-Law; they should follow them and enforce them to the best of their abilities. Failure to do so will likely result in a role-ban.
+[bullet] (Currently, we use Wizard's Den Space-Law and SOP; you can find these at https://wiki.spacestation14.io/wiki.)[/color]
