@@ -1,0 +1,143 @@
+# "Ratty" sofa
+- type: entity
+  name: sofa
+  id: RattySofaMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
+  - type: Construction
+    graph: Sofa
+    node: RattySofaMiddle
+
+- type: entity
+  id: RattySofaLeft
+  suffix: Right
+  parent: RattySofaMiddle
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Sofa
+    node: RattySofaLeft
+
+- type: entity
+  id: RattySofaRight
+  suffix: Left
+  parent: RattySofaMiddle
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Sofa
+    node: RattySofaRight
+
+- type: entity
+  name: sofa
+  id: RattySofaCorner
+  suffix: Corner
+#  parent: RattySofaMiddle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
+    state: corner
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Dynamic
+    canCollide: False
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible #Might want to move this to the parent instead, testing required.
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metal_break1.ogg
+  - type: Construction
+    graph: Sofa
+    node: RattySofaCorner
+
+# Corp sofa
+- type: entity
+  name: grey sofa
+  id: CorpSofaMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Sofa/sofa_corp.rsi
+  - type: Construction
+    graph: Sofa
+    node: CorpSofaMiddle
+
+- type: entity
+  id: SofaCorpLeft
+  suffix: Right
+  parent: CorpSofaMiddle
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Sofa
+    node: CorpSofaLeft
+
+- type: entity
+  id: SofaCorpRight
+  suffix: Left
+  parent: CorpSofaMiddle
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Sofa
+    node: CorpSofaRight
+
+- type: entity
+  name: grey sofa
+  id: SofaCorpCorner
+  suffix: Corner
+#  parent: BenchSofaCorpMiddle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Sofa/sofa_corp.rsi
+    state: corner
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+    canCollide: False
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible #May be adviseable to move to a parent.
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metal_break1.ogg
+  - type: Construction
+    graph: Sofa
+    node: CorpSofaCorner
