@@ -1,0 +1,34 @@
+- type: entity
+  parent: ClothingHeadLightBase
+  id: ClothingHeadHelmetETUPointman
+  name: etu pointman helmet
+  description: An Emergency Trauma Unit Pointman's Helmet. Featuring a built-in flashlight. It won't stop anything
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Helmets/etu_pointman.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Helmets/etu_pointman.rsi
+  - type: PointLight
+    color: "#ceffff"
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: ClothingHeadLightBase
+  id: ClothingHeadHelmetETUPilot
+  name: etu pilot helmet
+  description: An Emergency Trauma Unit Pilot's Helmet. Featuring a built-in mask and a flashlight. Protects against good ideas.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Helmets/etu_pilot.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Helmets/etu_pilot.rsi
+  - type: PointLight
+    color: "#ceffff"
+  - type: Tag
+    tags:
+    - HidesHair
+  - type: IngestionBlocker
+  - type: IdentityBlocker

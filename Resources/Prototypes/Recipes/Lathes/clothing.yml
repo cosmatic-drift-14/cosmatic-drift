@@ -1281,3 +1281,50 @@
   completetime: 1
   materials:
     Cloth: 100
+
+# CD exclusives
+
+- type: latheRecipe
+  id: ClothingBeltHarnessETU
+  result: ClothingBeltHarnessETU
+  completetime: 3.2
+  materials:
+    Cloth: 200
+    Durathread: 250
+
+- type: latheRecipe
+  id: ClothingHeadHelmetETUPointman
+  result: ClothingHeadHelmetETUPointman
+  completetime: 3.8
+  materials:
+    Cloth: 300
+    Durathread: 250
+
+- type: latheRecipe
+  id: ClothingMaskGasETUSterile
+  result: ClothingMaskGasETUSterile
+  completetime: 1
+  materials:
+    Cloth: 50
+    Durathread: 50
+
+- type: latheRecipe
+  id: ClothingHandsGlovesETUGauntlet
+  result: ClothingHandsGlovesETUGauntlet
+  completetime: 1.2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitETUFlightsuit
+  result: ClothingUniformJumpsuitETUFlightsuit
+  completetime: 4
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingShoesColorSlate
+  result: ClothingShoesColorSlate
+  completetime: 1.4
+  materials:
+    Cloth: 100

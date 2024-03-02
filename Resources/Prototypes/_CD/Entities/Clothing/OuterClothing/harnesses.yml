@@ -1,0 +1,41 @@
+# DEBUG HARNESS
+- type: entity
+  abstract: true
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltHarnessBase
+  components:
+  - type: Storage
+    capacity: 25
+  - type: Item
+    size: 25
+
+# Actual harnesses
+- type: entity
+  parent: ClothingBeltHarnessBase
+  id: ClothingBeltHarnessETU
+  name: etu harness
+  description: A robust harness worn by emergency trauma unit teams.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Harnesses/etu_trauma.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Harnesses/etu_trauma.rsi
+  - type: Storage
+    capacity: 60 # This is literally just the medical belt without the visualizers
+    whitelist:
+      tags:
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+      components:
+        - Hypospray
+        - Injector
+        - Pill

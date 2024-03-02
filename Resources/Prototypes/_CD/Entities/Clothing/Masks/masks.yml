@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasETUSterile
+  name: etu gas mask
+  description: An ETU gasmask designed to look like a sterile mask.
+  components:
+  - type: Item
+    size: 5
+  - type: Sprite
+    sprite: _CD/Clothing/Mask/etu_sterile.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Mask/etu_sterile.rsi

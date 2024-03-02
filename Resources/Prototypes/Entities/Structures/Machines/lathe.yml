@@ -1042,6 +1042,13 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      # CD exclusives
+      - ClothingBeltHarnessETU
+      - ClothingHeadHelmetETUPointman
+      - ClothingMaskGasETUSterile
+      - ClothingHandsGlovesETUGauntlet
+      - ClothingUniformJumpsuitETUFlightsuit
+      - ClothingShoesColorSlate
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap

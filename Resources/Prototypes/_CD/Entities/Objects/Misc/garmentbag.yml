@@ -17,3 +17,22 @@
       - id: PlushieLizard
     sound:
       path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  suffix: Pointman
+  parent: BaseGarmentBag
+  id: ETUGarmentBag
+  name: etu garment can
+  description: Contains one set of ETU equipment.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/GarmentBags/medicalcan.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingBeltHarnessETU
+      - id: ClothingHeadHelmetETUPointman
+      - id: ClothingMaskGasETUSterile
+      - id: ClothingHandsGlovesETUGauntlet
+      - id: ClothingUniformJumpsuitETUFlightsuit
+      - id: ClothingShoesColorSlate
