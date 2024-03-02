@@ -13,7 +13,7 @@
 - type: entity
   parent: ClothingBeltHarnessBase
   id: ClothingBeltHarnessETU
-  name: etu harness
+  name: ETU harness
   description: A robust harness worn by emergency trauma unit teams.
   components:
   - type: Sprite

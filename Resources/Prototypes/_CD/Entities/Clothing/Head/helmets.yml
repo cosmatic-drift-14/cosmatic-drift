@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHeadLightBase
   id: ClothingHeadHelmetETUPointman
-  name: etu pointman helmet
+  name: ETU pointman helmet
   description: An Emergency Trauma Unit Pointman's Helmet. Featuring a built-in flashlight. It won't stop anything
   components:
   - type: Sprite
@@ -17,7 +17,7 @@
 - type: entity
   parent: ClothingHeadLightBase
   id: ClothingHeadHelmetETUPilot
-  name: etu pilot helmet
+  name: ETU pilot helmet
   description: An Emergency Trauma Unit Pilot's Helmet. Featuring a built-in mask and a flashlight. Protects against good ideas.
   components:
   - type: BreathMask
