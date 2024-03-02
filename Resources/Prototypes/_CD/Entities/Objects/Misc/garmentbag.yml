@@ -22,7 +22,7 @@
   suffix: Pointman
   parent: BaseGarmentBag
   id: ETUGarmentBag
-  name: etu garment can
+  name: ETU garment can
   description: Contains one set of ETU equipment.
   components:
   - type: Sprite
