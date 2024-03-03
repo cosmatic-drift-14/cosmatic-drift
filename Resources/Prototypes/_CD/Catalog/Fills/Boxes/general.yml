@@ -3,7 +3,7 @@
   name: pride pin box
   parent: BoxCardboard
   id: BoxPridePins
-  description: This box is filled pride pins.
+  description: This box is filled with pride.
   components:
     - type: StorageFill
       contents:
@@ -24,7 +24,7 @@
         - id: ClothingNeckPansexualPin
           amount: 1
         - id: ClothingNeckTransPin
-          amount: 1 
+          amount: 1
     - type: Sprite
-      layers:
-        - state: box
+      sprite: _CD/Objects/Storage/boxes.rsi
+      state: pride
