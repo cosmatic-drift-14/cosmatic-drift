@@ -72935,6 +72935,42 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -10.5,13.5
       parent: 2
+- proto: RemoteSignaller
+  entities:
+  - uid: 14087
+    components:
+    - type: MetaData
+      name: Perma Shutters
+    - type: Transform
+      pos: -18.350471,21.423662
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        14086:
+        - Pressed: Toggle
+        14085:
+        - Pressed: Toggle
+        14084:
+        - Pressed: Toggle
+        14083:
+        - Pressed: Toggle
+  - uid: 14088
+    components:
+    - type: MetaData
+      name: Perma Shutters
+    - type: Transform
+      pos: -18.465054,17.038567
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        14086:
+        - Pressed: Toggle
+        14085:
+        - Pressed: Toggle
+        14084:
+        - Pressed: Toggle
+        14083:
+        - Pressed: Toggle
 - proto: ResearchAndDevelopmentServer
   entities:
   - uid: 3549
@@ -73751,6 +73787,46 @@ entities:
     - type: Transform
       pos: 11.5,-15.5
       parent: 2
+  - uid: 14083
+    components:
+    - type: Transform
+      pos: -19.5,37.5
+      parent: 2
+    - type: DeviceLinkSink
+      links:
+      - 14087
+      - 14088
+      - 14089
+  - uid: 14084
+    components:
+    - type: Transform
+      pos: -18.5,37.5
+      parent: 2
+    - type: DeviceLinkSink
+      links:
+      - 14087
+      - 14088
+      - 14089
+  - uid: 14085
+    components:
+    - type: Transform
+      pos: -17.5,37.5
+      parent: 2
+    - type: DeviceLinkSink
+      links:
+      - 14087
+      - 14088
+      - 14089
+  - uid: 14086
+    components:
+    - type: Transform
+      pos: -16.5,37.5
+      parent: 2
+    - type: DeviceLinkSink
+      links:
+      - 14087
+      - 14088
+      - 14089
 - proto: ShuttleWindow
   entities:
   - uid: 5072
@@ -74227,6 +74303,22 @@ entities:
         14062:
         - Pressed: Toggle
         4405:
+        - Pressed: Toggle
+  - uid: 14089
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,32.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        14086:
+        - Pressed: Toggle
+        14085:
+        - Pressed: Toggle
+        14084:
+        - Pressed: Toggle
+        14083:
         - Pressed: Toggle
 - proto: SignAnomaly
   entities:
@@ -92699,6 +92791,30 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 17.5,30.5
+      parent: 2
+  - uid: 14079
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -16.5,36.5
+      parent: 2
+  - uid: 14080
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -17.5,36.5
+      parent: 2
+  - uid: 14081
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -18.5,36.5
+      parent: 2
+  - uid: 14082
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -19.5,36.5
       parent: 2
 - proto: Wirecutter
   entities:
