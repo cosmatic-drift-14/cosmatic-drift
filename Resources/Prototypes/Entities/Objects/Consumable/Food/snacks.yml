@@ -382,7 +382,10 @@
     flavors:
       - nutribrick
   - type: Item
-    size: 10
+    size: 5
+  - type: Tag
+    tags:
+      - ReptilianFood
   - type: Sprite
     state: nutribrick-open
   - type: Food
@@ -621,5 +624,17 @@
   name: MRE wrapper
   description: A general purpose wrapper for a variety of military food goods.
   components:
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 40
+  - type: Tag
+    tags:
+    - ClothMade
   - type: Sprite
     state: mre-wrapper
