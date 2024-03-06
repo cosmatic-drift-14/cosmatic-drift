@@ -6,6 +6,7 @@ using Content.Shared.Verbs;
 using Content.Shared.Examine;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Storage;
+using Content.Shared.Storage.EntitySystems;
 using JetBrains.Annotations;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
@@ -20,6 +21,9 @@ public abstract class SharedItemSystem : EntitySystem
     [Dependency] private   readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private   readonly SharedCombatModeSystem _combatMode = default!;
     [Dependency] protected readonly SharedContainerSystem Container = default!;
+
+    // CD: Fix stackable insert desync
+    [Dependency] private readonly SharedStorageSystem _storage = default!;
 
     public override void Initialize()
     {
@@ -99,8 +103,15 @@ public abstract class SharedItemSystem : EntitySystem
             return;
 
         SetSize(uid, args.NewCount * size, component);
+
+        // CD: Fix stackable insert desync
+        if (!Container.TryGetContainingContainer(uid, out var container) ||
+            !TryComp<StorageComponent>(container.Owner, out var storage))
+            return;
+        _storage.UpdateUI(container.Owner, storage);
+        // end CD
     }
-    
+
     private void AddPickupVerb(EntityUid uid, ItemComponent component, GetVerbsEvent<InteractionVerb> args)
     {
         if (args.Hands == null ||
