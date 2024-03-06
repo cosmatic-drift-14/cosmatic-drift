@@ -1,0 +1,19 @@
+- type: emoteSounds
+  id: MaleAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: _CD/Audio/Voice/Avali/avali_scream.ogg
+    Laugh:
+      path: _CD/Audio/Voice/Avali/avali_laugh.ogg
+
+- type: emoteSounds
+  id: FemaleAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: _CD/Audio/Voice/Avali/avali_scream.ogg
+    Laugh:
+      path: _CD/Audio/Voice/Avali/avali_laugh.ogg
