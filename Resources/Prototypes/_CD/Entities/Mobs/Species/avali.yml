@@ -1,0 +1,43 @@
+- type: entity
+  save: false
+  name: Urist Mcraptor
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobAvali
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Avali
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: _CD/Mobs/Species/Avali/parts.rsi
+    state: full
+  - type: Body
+    prototype: Avali
+    requiredLegs: 2
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatChicken
+      amount: 3
+  - type: Vocal
+    sounds:
+      Male: MaleAvali
+      Female: FemaleAvali
+      Unsexed: MaleAvali
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Moth # PLACEHOLDER for now :3
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+  - type: Temperature
+    heatDamageThreshold: 310
+    coldDamageThreshold: 223
+    currentTemperature: 278.15
+    specificHeat: 48
