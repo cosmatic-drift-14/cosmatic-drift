@@ -1,8 +1,8 @@
 - type: speechSounds
   id: Vulpkanin
   saySound:
-    path: /Audio/DeltaV/Voice/Talk/vulp.ogg
+    path: /Audio/_CD/Voice/Talk/vulp.ogg
   askSound:
-    path: /Audio/DeltaV/Voice/Talk/vulp_ask.ogg
+    path: /Audio/_CD/Voice/Talk/vulp_ask.ogg
   exclaimSound:
-    path: /Audio/DeltaV/Voice/Talk/vulp_exclaim.ogg
+    path: /Audio/_CD/Voice/Talk/vulp_exclaim.ogg
