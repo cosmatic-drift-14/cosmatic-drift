@@ -1,6 +1,6 @@
 ﻿﻿- type: body
-  name: "vulpkanin"
   id: Vulpkanin
+  name: "vulpkanin"
   root: torso
   slots:
     head:
