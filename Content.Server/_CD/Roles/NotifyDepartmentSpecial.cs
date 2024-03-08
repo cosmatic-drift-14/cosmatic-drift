@@ -1,4 +1,5 @@
 using Content.Server.Radio.EntitySystems;
+using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Radio;
 using Content.Shared.Roles;
@@ -26,7 +27,12 @@ public sealed partial class NotifyDepartmentSpecial : JobSpecial
         // Notify people on all stations.
         foreach (var station in stationManager.GetStations())
         {
-            radio.SendRadioMessage(station, Loc.GetString(NotifyTextKey), channel, mob);
+            if (!entMan.TryGetComponent<StationDataComponent>(station, out var stationInfo))
+                continue;
+            foreach (var grid in stationInfo.Grids)
+            {
+                radio.SendRadioMessage(station, Loc.GetString(NotifyTextKey), channel, grid);
+            }
         }
     }
 }
