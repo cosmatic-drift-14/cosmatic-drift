@@ -1,6 +1,6 @@
 - type: entity
   id: PartVulpkanin
-  parent: BaseItem
+  parent: [BaseItem, BasePart]
   name: "vulpkanin body part"
   abstract: true
   components:
@@ -20,7 +20,7 @@
 - type: entity
   id: TorsoVulpkanin
   name: "vulpkanin torso"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseTorso]
   components:
   - type: Sprite
     netsync: false
@@ -35,7 +35,7 @@
 - type: entity
   id: HeadVulpkanin
   name: "vulpkanin head"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseHead]
   components:
   - type: Sprite
     netsync: false
@@ -58,7 +58,7 @@
 - type: entity
   id: LeftArmVulpkanin
   name: "left vulpkanin arm"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseLeftArm]
   components:
   - type: Sprite
     netsync: false
@@ -74,7 +74,7 @@
 - type: entity
   id: RightArmVulpkanin
   name: "right vulpkanin arm"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseRightArm]
   components:
   - type: Sprite
     netsync: false
@@ -90,7 +90,7 @@
 - type: entity
   id: LeftHandVulpkanin
   name: "left vulpkanin hand"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseLeftHand]
   components:
   - type: Sprite
     netsync: false
@@ -106,7 +106,7 @@
 - type: entity
   id: RightHandVulpkanin
   name: "right vulpkanin hand"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseRightHand]
   components:
   - type: Sprite
     netsync: false
@@ -122,7 +122,7 @@
 - type: entity
   id: LeftLegVulpkanin
   name: "left vulpkanin leg"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseLeftLeg]
   components:
   - type: Sprite
     netsync: false
@@ -139,7 +139,7 @@
 - type: entity
   id: RightLegVulpkanin
   name: "right vulpkanin leg"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseRightLeg]
   components:
   - type: Sprite
     netsync: false
@@ -156,7 +156,7 @@
 - type: entity
   id: LeftFootVulpkanin
   name: "left vulpkanin foot"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseLeftFoot]
   components:
   - type: Sprite
     netsync: false
@@ -172,7 +172,7 @@
 - type: entity
   id: RightFootVulpkanin
   name: "right vulpkanin foot"
-  parent: PartVulpkanin
+  parent: [PartVulpkanin, BaseRightFoot]
   components:
   - type: Sprite
     netsync: false

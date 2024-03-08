@@ -4,6 +4,9 @@
   noSpawn: true
   components:
   - type: Stomach
+    specialDigestible:
+      tags:
+      - Meat
   - type: SolutionContainerManager
     solutions:
       stomach:
