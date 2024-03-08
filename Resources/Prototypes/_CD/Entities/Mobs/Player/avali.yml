@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  name: Urist Mcraptor
+  name: Urist McRaptor
   parent: BaseMobAvali
   id: MobAvali
 
