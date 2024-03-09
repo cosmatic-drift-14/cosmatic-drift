@@ -5,9 +5,9 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/avali_parts.rsi
-    state: frills_avalibase_primary
+    state: ears_avalibase_primary
   - sprite: _CD/Mobs/Customization/avali_parts.rsi
-    state: frills_avalibase_secondary
+    state: ears_avalibase_secondary
 
 - type: marking
   id: AvaliTailBase
