@@ -14,6 +14,10 @@
         {
             "name": "frills_avalibase_secondary",
             "directions": 4
+        },
+        {
+            "name": "tail_avalibase",
+            "directions": 4
         }
     ]
 }

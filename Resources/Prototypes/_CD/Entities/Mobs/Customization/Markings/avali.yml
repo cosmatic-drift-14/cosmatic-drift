@@ -3,13 +3,17 @@
   bodyPart: HeadSide
   markingCategory: HeadSide
   speciesRestriction: [Avali]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#808080"
   sprites:
   - sprite: _CD/Mobs/Customization/avali_parts.rsi
     state: frills_avalibase_primary
   - sprite: _CD/Mobs/Customization/avali_parts.rsi
     state: frills_avalibase_secondary
+
+- type: marking
+  id: AvaliTailBase
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/avali_parts.rsi
+    state: tail_avalibase
