@@ -761,12 +761,12 @@ public sealed partial class ShuttleSystem
                     continue;
                 }
 
-                if (_bodyQuery.TryGetComponent(ent, out var mob))
-                {
-                    var gibs = _bobby.GibBody(ent, body: mob);
-                    immune.UnionWith(gibs);
-                    continue;
-                }
+                //if (_bodyQuery.TryGetComponent(ent, out var mob))
+                //{
+                //    var gibs = _bobby.GibBody(ent, body: mob);
+                //    immune.UnionWith(gibs);
+                //    continue;
+                //}
 
                 QueueDel(ent);
             }
