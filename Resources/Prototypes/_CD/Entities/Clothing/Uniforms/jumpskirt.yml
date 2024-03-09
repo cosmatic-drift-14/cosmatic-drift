@@ -8,3 +8,14 @@
     sprite: _CD/Clothing/Uniforms/Jumpskirt/stylized_maid.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/stylized_maid.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtAcademia
+  name: academia dress
+  description: A plaid dress for the fashionable student. 
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
