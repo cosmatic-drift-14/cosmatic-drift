@@ -32,43 +32,27 @@
             "directions": 4
         },
         {
-            "name": "l_arm_trim1_primary",
+            "name": "arm_trim1_primary",
             "directions": 4
         },
         {
-            "name": "l_arm_trim1_secondary",
+            "name": "arm_trim1_secondary",
             "directions": 4
         },
         {
-            "name": "l_hand_trim1_primary",
+            "name": "hand_trim1_primary",
             "directions": 4
         },
         {
-            "name": "l_hand_trim1_secondary",
+            "name": "hand_trim1_secondary",
             "directions": 4
         },
         {
-            "name": "r_arm_trim1_primary",
+            "name": "leg_trim1_primary",
             "directions": 4
         },
         {
-            "name": "r_arm_trim1_secondary",
-            "directions": 4
-        },
-        {
-            "name": "r_hand_trim1_primary",
-            "directions": 4
-        },
-        {
-            "name": "r_hand_trim1_secondary",
-            "directions": 4
-        },
-        {
-            "name": "l_leg_trim1",
-            "directions": 4
-        },
-        {
-            "name": "r_leg_trim1",
+            "name": "leg_trim1_secondary",
             "directions": 4
         },
         {
