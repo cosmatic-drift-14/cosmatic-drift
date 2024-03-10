@@ -1,12 +1,7 @@
 ﻿﻿- type: entity
   id: OrganVulpkaninStomach
   parent: OrganAnimalStomach
-  noSpawn: true
   components:
-  - type: Stomach
-    specialDigestible:
-      tags:
-      - Meat
   - type: SolutionContainerManager
     solutions:
       stomach:
@@ -16,3 +11,13 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Meat
+  - type: Metabolizer
+    maxReagents: 3
+    metabolizerTypes: Animal
+    groups:
+    - id: Food
+    - id: Drink
