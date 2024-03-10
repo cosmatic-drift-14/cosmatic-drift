@@ -64,7 +64,7 @@
   description: A computer under construction.
   components:
   - type: Sprite
-    sprite: _CD/Structures/Machines/tabletop.rsi
+    sprite: _CD/Structures/Machines/tabletopcomputerparts.rsi
     layers:
     - state: 0
       map: [ "enum.ConstructionVisuals.Layer" ]

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from ss14 at:https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/computers.rsi, Altered by ErhardSteinhauer (github) in:https://github.com/new-frontiers-14/frontier-station-14/pull/854, 0-4 taken from https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/parts.rsi altered to match the tabletop computers by PursuitinAshes (github)",
+  "copyright": "Taken from ss14 at:https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/computers.rsi, Altered by ErhardSteinhauer (github) in:https://github.com/new-frontiers-14/frontier-station-14/pull/854",
   "size": {
     "x": 32,
     "y": 32
@@ -17,26 +17,6 @@
         },
         {
             "name": "generic_keyboard_tabletop",
-            "directions": 4
-        },
-        {
-            "name": "0",
-            "directions": 4
-        },
-        {
-            "name": "1",
-            "directions": 4
-        },
-        {
-            "name": "2",
-            "directions": 4
-        },
-        {
-            "name": "3",
-            "directions": 4
-        },
-        {
-            "name": "4",
             "directions": 4
         }
     ]
