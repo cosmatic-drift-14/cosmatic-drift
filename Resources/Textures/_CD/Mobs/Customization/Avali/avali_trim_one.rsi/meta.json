@@ -1,0 +1,91 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Sprites by Github MozarteanChaos / Discord mozarteanchaos (213813868282118144)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "ears_bottom_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "ears_bottom_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "ears_top_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "ears_top_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "head_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "head_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "l_hand_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "l_hand_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "r_hand_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "r_hand_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_trim1",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_trim1",
+            "directions": 4
+        },
+        {
+            "name": "tail_avali_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "tail_avali_trim1_secondary",
+            "directions": 4
+        },
+        {
+            "name": "torso_trim1_primary",
+            "directions": 4
+        },
+        {
+            "name": "torso_trim1_secondary",
+            "directions": 4
+        }
+    ]
+}

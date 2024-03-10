@@ -20,7 +20,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Eyes: MobHumanoidEyes
+    Eyes: MobAvaliEyes
     LArm: MobAvaliLArm
     RArm: MobAvaliRArm
     LHand: MobAvaliLHand
@@ -29,6 +29,12 @@
     RLeg: MobAvaliRLeg
     LFoot: MobAvaliLFoot
     RFoot: MobAvaliRFoot
+
+- type: humanoidBaseSprite
+  id: MobAvaliEyes
+  baseSprite:
+    sprite: _CD/Mobs/Species/Avali/parts.rsi
+    state: eyes
 
 - type: markingPoints
   id: MobAvaliMarkingLimits

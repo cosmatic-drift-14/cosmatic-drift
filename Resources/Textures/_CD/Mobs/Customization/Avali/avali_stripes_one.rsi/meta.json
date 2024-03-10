@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Sprites by Github MozarteanChaos / Discord mozarteanchaos (213813868282118144)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "ears_bottom_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "ears_bottom_stripe_secondary",
+            "directions": 4
+        },
+        {
+            "name": "ears_top_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "ears_top_stripe_secondary",
+            "directions": 4
+        },
+        {
+            "name": "head_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "head_stripe_secondary",
+            "directions": 4
+        },
+        {
+            "name": "arm_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "arm_stripe_secondary",
+            "directions": 4
+        },
+        {
+            "name": "hand_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "hand_stripe_secondary",
+            "directions": 4
+        },
+        {
+            "name": "leg_stripe",
+            "directions": 4
+        },
+        {
+            "name": "tail_avali_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "tail_avali_stripe_secondary",
+            "directions": 4
+        },
+        {
+            "name": "torso_stripe_primary",
+            "directions": 4
+        },
+        {
+            "name": "torso_stripe_secondary",
+            "directions": 4
+        }
+    ]
+}
