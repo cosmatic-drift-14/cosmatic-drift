@@ -1,4 +1,4 @@
-#Tabletop Computer Frame
+#TODO Tabletop Computer Frame
 
 #Debug Tabletop Computer
 - type: entity
@@ -56,9 +56,33 @@
 #        layer:
 #        - TabletopMachineLayer
 
+#Computer Frame
+- type: entity
+  id: ComputerTabletopFrame
+  parent: [DebugTabletopComputer, BaseStructureComputer]
+  name: tabletop computer frame
+  description: A computer under construction.
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Machines/tabletop.rsi
+    layers:
+    - state: 0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          frameUnsecured: { state: 0 }
+          boardUnsecured: { state: 1 }
+          missingWires: { state: 2 }
+          monitorMissing: { state: 3 }
+          monitorUnsecured: { state: 4 }
+
+
 # Base Computer
 - type: entity
-  id: BaseStructureComputerTabletop
+  id: BaseComputerTabletop
   parent: [DebugTabletopComputer, BaseComputer]
   components:
   - type: Sprite
@@ -77,7 +101,6 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
-#Base Computers
 #Medical Records
 - type: entity
   parent: [DebugTabletopComputer, ComputerMedicalRecords]
