@@ -26,7 +26,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 95 #tiny
+        density: 185
         restitution: 0.0
   - type: Vocal
     sounds:
@@ -49,6 +49,14 @@
     coldDamageThreshold: 223
     currentTemperature: 278.15
     specificHeat: 48
+  - type: ThermalRegulator
+    metabolismHeat: 800
+    radiatedHeat: 100
+    implicitHeatRegulation: 500
+    sweatHeatRegulation: 2000
+    shiveringHeatRegulation: 2000
+    normalBodyTemperature: 278.15
+    thermalRegulationTemperatureThreshold: 25
 
 - type: entity
   parent: BaseSpeciesDummy

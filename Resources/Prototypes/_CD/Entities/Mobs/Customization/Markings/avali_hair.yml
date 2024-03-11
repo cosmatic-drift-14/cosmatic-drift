@@ -1,7 +1,7 @@
 - type: marking
   id: AvaliHairBigPonytail
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
