@@ -8,59 +8,59 @@
     },
     "states": [
         {
-            "name": "ears_bottom_trim2_primary",
+            "name": "ears_bottom_primary",
             "directions": 4
         },
         {
-            "name": "ears_bottom_trim2_secondary",
+            "name": "ears_bottom_secondary",
             "directions": 4
         },
         {
-            "name": "ears_top_trim2_primary",
+            "name": "ears_top_primary",
             "directions": 4
         },
         {
-            "name": "ears_top_trim2_secondary",
+            "name": "ears_top_secondary",
             "directions": 4
         },
         {
-            "name": "head_trim2_primary",
+            "name": "head_primary",
             "directions": 4
         },
         {
-            "name": "head_trim2_secondary",
+            "name": "head_secondary",
             "directions": 4
         },
         {
-            "name": "arm_trim2_primary",
+            "name": "arm_primary",
             "directions": 4
         },
         {
-            "name": "arm_trim2_secondary",
+            "name": "arm_secondary",
             "directions": 4
         },
         {
-            "name": "hand_trim2_primary",
+            "name": "hand_primary",
             "directions": 4
         },
         {
-            "name": "hand_trim2_secondary",
+            "name": "hand_secondary",
             "directions": 4
         },
         {
-            "name": "tail_avali_trim2_primary",
+            "name": "tail_avali_primary",
             "directions": 4
         },
         {
-            "name": "tail_avali_trim2_secondary",
+            "name": "tail_avali_secondary",
             "directions": 4
         },
         {
-            "name": "torso_trim2_primary",
+            "name": "torso_primary",
             "directions": 4
         },
         {
-            "name": "torso_trim2_secondary",
+            "name": "torso_secondary",
             "directions": 4
         }
     ]

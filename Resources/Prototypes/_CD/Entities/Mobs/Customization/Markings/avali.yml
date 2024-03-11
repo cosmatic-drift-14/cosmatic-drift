@@ -33,13 +33,13 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: ears_top_stripe_primary
+    state: ears_top_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: ears_top_stripe_secondary
+    state: ears_top_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: ears_bottom_stripe_primary
+    state: ears_bottom_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: ears_bottom_stripe_secondary
+    state: ears_bottom_secondary
 
 - type: marking
   id: AvaliHeadStripeOne
@@ -48,9 +48,9 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: head_stripe_primary
+    state: head_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: head_stripe_secondary
+    state: head_secondary
 
 - type: marking
   id: AvaliTorsoStripeOne
@@ -59,9 +59,9 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: torso_stripe_primary
+    state: torso_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: torso_stripe_secondary
+    state: torso_secondary
 
 
 - type: marking
@@ -71,9 +71,9 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: arm_stripe_primary
+    state: arm_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: arm_stripe_secondary
+    state: arm_secondary
 
 - type: marking
   id: AvaliHandsStripeOne
@@ -82,9 +82,9 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: hand_stripe_primary
+    state: hand_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: hand_stripe_secondary
+    state: hand_secondary
 
 - type: marking
   id: AvaliLegsStripeOne
@@ -93,7 +93,7 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: leg_stripe
+    state: legs
 
 - type: marking
   id: AvaliTailStripeOne
@@ -102,6 +102,163 @@
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: tail_avali_stripe_primary
+    state: tail_avali_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: tail_avali_stripe_secondary
+    state: tail_avali_secondary
+
+# Trim one
+
+- type: marking
+  id: AvaliEarsTrimOne
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: ears_top_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: ears_top_secondary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: ears_bottom_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: ears_bottom_secondary
+
+- type: marking
+  id: AvaliHeadTrimOne
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: head_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: head_secondary
+
+- type: marking
+  id: AvaliTorsoTrimOne
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: torso_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: torso_secondary
+
+
+- type: marking
+  id: AvaliArmsTrimOne
+  bodyPart: RArm, LArm
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: arm_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: arm_secondary
+
+- type: marking
+  id: AvaliHandsTrimOne
+  bodyPart: RHand, LHand
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: hand_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: hand_secondary
+
+- type: marking
+  id: AvaliLegsTrimOne
+  bodyPart: LLeg, RLeg
+  markingCategory: Legs
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: leg_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: leg_secondary
+
+- type: marking
+  id: AvaliTailTrimOne
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: tail_avali_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
+    state: tail_avali_secondary
+
+# Trim two
+
+- type: marking
+  id: AvaliEarsTrimTwo
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: ears_top_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: ears_top_secondary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: ears_bottom_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: ears_bottom_secondary
+
+- type: marking
+  id: AvaliHeadTrimTwo
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: head_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: head_secondary
+
+- type: marking
+  id: AvaliTorsoTrimTwo
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: torso_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: torso_secondary
+
+
+- type: marking
+  id: AvaliArmsTrimTwo
+  bodyPart: RArm, LArm
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: arm_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: arm_secondary
+
+- type: marking
+  id: AvaliHandsTrimTwo
+  bodyPart: RHand, LHand
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: hand_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: hand_secondary
+
+- type: marking
+  id: AvaliTailTrimTwo
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: tail_avali_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
+    state: tail_avali_secondary

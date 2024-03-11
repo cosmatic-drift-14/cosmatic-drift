@@ -8,63 +8,63 @@
     },
     "states": [
         {
-            "name": "ears_bottom_stripe_primary",
+            "name": "ears_bottom_primary",
             "directions": 4
         },
         {
-            "name": "ears_bottom_stripe_secondary",
+            "name": "ears_bottom_secondary",
             "directions": 4
         },
         {
-            "name": "ears_top_stripe_primary",
+            "name": "ears_top_primary",
             "directions": 4
         },
         {
-            "name": "ears_top_stripe_secondary",
+            "name": "ears_top_secondary",
             "directions": 4
         },
         {
-            "name": "head_stripe_primary",
+            "name": "head_primary",
             "directions": 4
         },
         {
-            "name": "head_stripe_secondary",
+            "name": "head_secondary",
             "directions": 4
         },
         {
-            "name": "arm_stripe_primary",
+            "name": "arm_primary",
             "directions": 4
         },
         {
-            "name": "arm_stripe_secondary",
+            "name": "arm_secondary",
             "directions": 4
         },
         {
-            "name": "hand_stripe_primary",
+            "name": "hand_primary",
             "directions": 4
         },
         {
-            "name": "hand_stripe_secondary",
+            "name": "hand_secondary",
             "directions": 4
         },
         {
-            "name": "leg_stripe",
+            "name": "legs",
             "directions": 4
         },
         {
-            "name": "tail_avali_stripe_primary",
+            "name": "tail_avali_primary",
             "directions": 4
         },
         {
-            "name": "tail_avali_stripe_secondary",
+            "name": "tail_avali_secondary",
             "directions": 4
         },
         {
-            "name": "torso_stripe_primary",
+            "name": "torso_primary",
             "directions": 4
         },
         {
-            "name": "torso_stripe_secondary",
+            "name": "torso_secondary",
             "directions": 4
         }
     ]

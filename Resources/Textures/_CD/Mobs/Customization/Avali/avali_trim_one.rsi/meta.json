@@ -8,67 +8,67 @@
     },
     "states": [
         {
-            "name": "ears_bottom_trim1_primary",
+            "name": "ears_bottom_primary",
             "directions": 4
         },
         {
-            "name": "ears_bottom_trim1_secondary",
+            "name": "ears_bottom_secondary",
             "directions": 4
         },
         {
-            "name": "ears_top_trim1_primary",
+            "name": "ears_top_primary",
             "directions": 4
         },
         {
-            "name": "ears_top_trim1_secondary",
+            "name": "ears_top_secondary",
             "directions": 4
         },
         {
-            "name": "head_trim1_primary",
+            "name": "head_primary",
             "directions": 4
         },
         {
-            "name": "head_trim1_secondary",
+            "name": "head_secondary",
             "directions": 4
         },
         {
-            "name": "arm_trim1_primary",
+            "name": "arm_primary",
             "directions": 4
         },
         {
-            "name": "arm_trim1_secondary",
+            "name": "arm_secondary",
             "directions": 4
         },
         {
-            "name": "hand_trim1_primary",
+            "name": "hand_primary",
             "directions": 4
         },
         {
-            "name": "hand_trim1_secondary",
+            "name": "hand_secondary",
             "directions": 4
         },
         {
-            "name": "leg_trim1_primary",
+            "name": "leg_primary",
             "directions": 4
         },
         {
-            "name": "leg_trim1_secondary",
+            "name": "leg_secondary",
             "directions": 4
         },
         {
-            "name": "tail_avali_trim1_primary",
+            "name": "tail_avali_primary",
             "directions": 4
         },
         {
-            "name": "tail_avali_trim1_secondary",
+            "name": "tail_avali_secondary",
             "directions": 4
         },
         {
-            "name": "torso_trim1_primary",
+            "name": "torso_primary",
             "directions": 4
         },
         {
-            "name": "torso_trim1_secondary",
+            "name": "torso_secondary",
             "directions": 4
         }
     ]
