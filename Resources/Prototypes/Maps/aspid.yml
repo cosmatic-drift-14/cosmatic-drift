@@ -3,7 +3,7 @@
   mapName: 'NCS Aspid'
   mapPath: /Maps/aspid.yml
   minPlayers: 25
-  maxPlayers: 55
+  maxPlayers: 45
   stations:
     Aspid:
       stationProto: StandardNanotrasenStation
