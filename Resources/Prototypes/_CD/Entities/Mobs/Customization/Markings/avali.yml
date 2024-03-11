@@ -1,3 +1,5 @@
+# Base Markings
+
 - type: marking
   id: AvaliEarsBase
   bodyPart: HeadSide
@@ -22,6 +24,8 @@
   - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
     state: tail_avalibase
 
+# Stripe one
+
 - type: marking
   id: AvaliEarsStripeOne
   bodyPart: HeadSide
@@ -36,6 +40,29 @@
     state: ears_bottom_stripe_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: ears_bottom_stripe_secondary
+
+- type: marking
+  id: AvaliHeadStripeOne
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
+    state: head_stripe_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
+    state: head_stripe_secondary
+
+- type: marking
+  id: AvaliTorsoStripeOne
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
+    state: torso_stripe_primary
+  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
+    state: torso_stripe_secondary
+
 
 - type: marking
   id: AvaliArmsStripeOne
@@ -60,15 +87,13 @@
     state: hand_stripe_secondary
 
 - type: marking
-  id: AvaliHeadStripeOne
-  bodyPart: Head
-  markingCategory: Head
+  id: AvaliLegsStripeOne
+  bodyPart: LLeg, RLeg
+  markingCategory: Legs
   speciesRestriction: [Avali]
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: head_stripe_primary
-  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: head_stripe_secondary
+    state: leg_stripe
 
 - type: marking
   id: AvaliTailStripeOne
@@ -80,23 +105,3 @@
     state: tail_avali_stripe_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: tail_avali_stripe_secondary
-
-- type: marking
-  id: AvaliTorsoStripeOne
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Avali]
-  sprites:
-  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: torso_stripe_primary
-  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: torso_stripe_secondary
-
-- type: marking
-  id: AvaliLegsStripeOne
-  bodyPart: LLeg, RLeg
-  markingCategory: Legs
-  speciesRestriction: [Avali]
-  sprites:
-  - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
-    state: leg_stripe
