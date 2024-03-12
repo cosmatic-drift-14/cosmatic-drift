@@ -63,11 +63,11 @@ marking-AvaliHandsTrimOne = (Type One) Trimmed Avali Hands
 marking-AvaliHandsTrimOne-hand_primary = Primary
 marking-AvaliHandsTrimOne-hand_secondary = Secondary
 
-marking-AvaliLegsTrimOne = (Type One) Striped Avali Legs
+marking-AvaliLegsTrimOne = (Type One) Trimmed Avali Legs
 marking-AvaliLegsTrimOne-leg_primary = Primary
 marking-AvaliLegsTrimOne-leg_secondary = Secondary
 
-marking-AvaliTailTrimOne = (Type One) Striped Avali Tail
+marking-AvaliTailTrimOne = (Type One) Trimmed Avali Tail
 marking-AvaliTailBase-tail_avalibase = Base Tail
 marking-AvaliTailTrimOne-tail_avali_primary = Primary
 marking-AvaliTailTrimOne-tail_avali_secondary = Secondary
@@ -97,7 +97,7 @@ marking-AvaliHandsTrimOne = (Type Two) Trimmed Avali Hands
 marking-AvaliHandsTrimOne-hand_primary = Primary
 marking-AvaliHandsTrimOne-hand_secondary = Secondary
 
-marking-AvaliTailTrimTwo = (Type Two) Striped Avali Tail
+marking-AvaliTailTrimTwo = (Type Two) Trimmed Avali Tail
 marking-AvaliTailBase-tail_avalibase = Base Tail
 marking-AvaliTailTrimTwo-tail_avali_primary = Primary
 marking-AvaliTailTrimTwo-tail_avali_secondary = Secondary

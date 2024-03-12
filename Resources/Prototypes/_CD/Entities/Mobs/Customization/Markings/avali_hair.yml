@@ -13,8 +13,8 @@
 
 - type: marking
   id: AvaliHairCockatiel
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
@@ -24,8 +24,8 @@
 
 - type: marking
   id: AvaliHairCockatoo
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
@@ -35,8 +35,8 @@
 
 - type: marking
   id: AvaliHairDuelFeather
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
@@ -46,8 +46,8 @@
 
 - type: marking
   id: AvaliHairHooked
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
@@ -57,8 +57,8 @@
 
 - type: marking
   id: AvaliHairJay
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
@@ -68,8 +68,8 @@
 
 - type: marking
   id: AvaliHairLongFeather
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
@@ -79,8 +79,8 @@
 
 - type: marking
   id: AvaliHairPunk
-  bodyPart: Hair
-  markingCategory: Hair
+  bodyPart: HeadTop
+  markingCategory: HeadTop
   speciesRestriction: [Avali]
   sprites:
     - sprite: _CD/Mobs/Customization/Avali/avali_crests.rsi
