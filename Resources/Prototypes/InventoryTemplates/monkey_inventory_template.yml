@@ -62,5 +62,4 @@
     displayName: Suit
     whitelist:
       tags:
-        - SuitEVA
-
+        - MonkeyWearable
