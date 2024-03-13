@@ -9,7 +9,7 @@
       - id: CrowbarRed
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
-      - id: EmergencyNitrogenTankFilled
+        prob: 0.5
       - id: FoodTinMRE
       - id: DrinkWaterBottleFull
       - id: FlashlightLantern

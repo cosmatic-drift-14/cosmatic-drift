@@ -546,7 +546,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 // Try to insert it as a new stack.
                 if (TryComp(insertEnt, out ItemComponent? itemComp) &&
                     itemComp.Size > storageComp.StorageCapacityMax - storageComp.StorageUsed ||
-                    !storageComp.Container.Insert(insertEnt))
+                    !_containerSystem.Insert(insertEnt, storageComp.Container))
                 {
                     UpdateUI(uid, storageComp);
 
@@ -558,7 +558,7 @@ public abstract class SharedStorageSystem : EntitySystem
             }
         }
         // Non-stackable but no insertion for reasons.
-        else if (!storageComp.Container.Insert(insertEnt))
+        else if (!_containerSystem.Insert(insertEnt, storageComp.Container))
         {
             return false;
         }
