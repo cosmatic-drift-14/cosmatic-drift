@@ -1083,6 +1083,9 @@
   id: Smokable
 
 - type: Tag
+  id: SnowyLabs
+
+- type: Tag
   id: Soap
 
 - type: Tag
