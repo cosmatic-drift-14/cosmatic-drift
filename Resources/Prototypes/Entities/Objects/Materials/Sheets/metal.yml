@@ -133,7 +133,7 @@
     - state: brass_3
       map: ["base"]
   - type: Item
-    size: 10
+    size: 30
     heldPrefix: brass
   - type: Appearance
   - type: FloorTile
@@ -161,6 +161,8 @@
   - type: Stack
     stackType: Brass
     count: 10
+  - type: Item
+    size: 10
 
 - type: entity
   parent: SheetBrass
