@@ -120,13 +120,13 @@ marking-AvaliRArmTrimTwo = (Type Two) Trimmed Avali Right Arms
 marking-AvaliRArmTrimTwo-rarm_primary = Primary
 marking-AvaliRArmTrimTwo-rarm_secondary = Secondary
 
-marking-AvaliLHandTrimOne = (Type Two) Trimmed Avali Left Hands
-marking-AvaliLHandTrimOne-lhand_primary = Primary
-marking-AvaliLHandTrimOne-lhand_secondary = Secondary
+marking-AvaliLHandTrimTwo = (Type Two) Trimmed Avali Left Hands
+marking-AvaliLHandTrimTwo-lhand_primary = Primary
+marking-AvaliLHandTrimTwo-lhand_secondary = Secondary
 
-marking-AvaliRHandTrimOne = (Type Two) Trimmed Avali Right Hands
-marking-AvaliRHandTrimOne-rhand_primary = Primary
-marking-AvaliRHandTrimOne-rhand_secondary = Secondary
+marking-AvaliRHandTrimTwo = (Type Two) Trimmed Avali Right Hands
+marking-AvaliRHandTrimTwo-rhand_primary = Primary
+marking-AvaliRHandTrimTwo-rhand_secondary = Secondary
 
 marking-AvaliTailTrimTwo = (Type Two) Trimmed Avali Tail
 marking-AvaliTailTrimTwo-tail_avalibase = Tail Base
