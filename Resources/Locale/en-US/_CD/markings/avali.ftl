@@ -31,8 +31,8 @@ marking-AvaliLHandStripeOne-lhand_primary = Primary
 marking-AvaliLHandStripeOne-lhand_secondary = Secondary
 
 marking-AvaliRArmStripeOne = (Type One) Striped Avali Right Arm
-marking-AvaliRArmStripeOne-larm_primary = Primary
-marking-AvaliRArmStripeOne-larm_secondary = Secondary
+marking-AvaliRArmStripeOne-rarm_primary = Primary
+marking-AvaliRArmStripeOne-rarm_secondary = Secondary
 
 marking-AvaliRHandStripeOne = (Type One) Striped Avali Right Hand
 marking-AvaliRHandStripeOne-rhand_primary = Primary
