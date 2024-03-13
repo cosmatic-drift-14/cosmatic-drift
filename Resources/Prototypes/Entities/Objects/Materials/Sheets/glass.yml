@@ -549,3 +549,5 @@
   - type: Stack
     stackType: ClockworkGlass
     count: 1
+  - type: Item
+    size: 1
