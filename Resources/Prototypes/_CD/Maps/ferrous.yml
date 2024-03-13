@@ -2,7 +2,8 @@
   id: Ferrous
   mapName: 'Ferrous'
   mapPath: /Maps/_CD/ferrous.yml
-  minPlayers: 20
+  minPlayers: 15
+  maxPlayers: 35
   stations:
     Ferrous:
       stationProto: StandardNanotrasenStation
