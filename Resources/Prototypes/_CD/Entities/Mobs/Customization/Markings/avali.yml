@@ -34,12 +34,12 @@
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
     state: ears_avalibase_primary
-  - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
-    state: ears_avalibase_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: ears_top_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: ears_top_secondary
+  - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
+    state: ears_avalibase_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: ears_bottom_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -123,12 +123,12 @@
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
     state: ears_avalibase_primary
-  - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
-    state: ears_avalibase_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
     state: ears_top_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
     state: ears_top_secondary
+  - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
+    state: ears_avalibase_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
     state: ears_bottom_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -202,6 +202,7 @@
     state: tail_avali_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
     state: tail_avali_secondary
+
 # Trim two
 
 - type: marking
@@ -212,12 +213,12 @@
   sprites:
   - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
     state: ears_avalibase_primary
-  - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
-    state: ears_avalibase_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
     state: ears_top_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
     state: ears_top_secondary
+  - sprite: _CD/Mobs/Customization/Avali/avali_parts.rsi
+    state: ears_avalibase_secondary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
     state: ears_bottom_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_two.rsi
