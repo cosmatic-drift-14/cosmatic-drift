@@ -28,7 +28,7 @@
             path: /Audio/Effects/pop_high.ogg
   - type: Appearance
   - type: Item
-    size: Normal
+    size: 15
   - type: RandomMetadata # No metagaming these, jimbo.
     nameSegments:
     - SyndicateNamesPrefix

@@ -8,7 +8,7 @@
     sprite: Objects/Fun/toys.rsi
     state: snappop
   - type: Item
-    size: Tiny
+    size: 1
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -44,15 +44,13 @@
   description: Contains twenty snap pops for a few minutes of popping fun!
   components:
   - type: Item
-    size: Normal
+    size: 30
   - type: Sprite
     sprite: Objects/Fun/toys.rsi
     state: spbox
   - type: Storage
-    grid:
-    - 0,0,4,3
+    capacity: 30
     areaInsert: true
-    maxItemSize: Tiny
   - type: StorageFill
     contents:
       - id: SnapPop
