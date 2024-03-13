@@ -22,16 +22,27 @@ marking-AvaliTorsoStripeOne = (Type One) Striped Avali Chest
 marking-AvaliTorsoStripeOne-torso_primary = Primary
 marking-AvaliTorsoStripeOne-torso_secondary = Secondary
 
-marking-AvaliArmsStripeOne = (Type One) Striped Avali Arms
-marking-AvaliArmsStripeOne-arm_primary = Primary
-marking-AvaliArmsStripeOne-arm_secondary = Secondary
+marking-AvaliLArmStripeOne = (Type One) Striped Avali Left Arm
+marking-AvaliLArmStripeOne-larm_primary = Primary
+marking-AvaliLArmStripeOne-larm_secondary = Secondary
 
-marking-AvaliHandsStripeOne = (Type One) Striped Avali Hands
-marking-AvaliHandsStripeOne-hand_primary = Primary
-marking-AvaliHandsStripeOne-hand_secondary = Secondary
+marking-AvaliLHandStripeOne = (Type One) Striped Avali Left Hand
+marking-AvaliLHandStripeOne-lhand_primary = Primary
+marking-AvaliLHandStripeOne-lhand_secondary = Secondary
 
-marking-AvaliLegsStripeOne = (Type One) Striped Avali Legs
-marking-AvaliLegsStripeOne-legs = Primary
+marking-AvaliRArmStripeOne = (Type One) Striped Avali Right Arm
+marking-AvaliRArmStripeOne-larm_primary = Primary
+marking-AvaliRArmStripeOne-larm_secondary = Secondary
+
+marking-AvaliRHandStripeOne = (Type One) Striped Avali Right Hand
+marking-AvaliRHandStripeOne-rhand_primary = Primary
+marking-AvaliRHandStripeOne-rhand_secondary = Secondary
+
+marking-AvaliLLegStripeOne = (Type One) Striped Avali Left Leg
+marking-AvaliLLegStripeOne-lleg = Primary
+
+marking-AvaliRLegStripeOne = (Type One) Striped Avali Right Leg
+marking-AvaliRLegStripeOne-rleg = Primary
 
 marking-AvaliTailStripeOne = (Type One) Striped Avali Tail
 marking-AvaliTailStripeOne-tail_avalibase = Base Tail
@@ -55,17 +66,29 @@ marking-AvaliTorsoTrimOne = (Type One) Trimmed Avali Chest
 marking-AvaliTorsoTrimOne-torso_primary = Primary
 marking-AvaliTorsoTrimOne-torso_secondary = Secondary
 
-marking-AvaliArmsTrimOne = (Type One) Trimmed Avali Arms
-marking-AvaliArmsTrimOne-arm_primary = Primary
-marking-AvaliArmsTrimOne-arm_secondary = Secondary
+marking-AvaliLArmTrimOne = (Type One) Trimmed Avali Left Arms
+marking-AvaliLArmTrimOne-larm_primary = Primary
+marking-AvaliLArmTrimOne-larm_secondary = Secondary
 
-marking-AvaliHandsTrimOne = (Type One) Trimmed Avali Hands
-marking-AvaliHandsTrimOne-hand_primary = Primary
-marking-AvaliHandsTrimOne-hand_secondary = Secondary
+marking-AvaliRArmTrimOne = (Type One) Trimmed Avali Right Arms
+marking-AvaliRArmTrimOne-rarm_primary = Primary
+marking-AvaliRArmTrimOne-rarm_secondary = Secondary
 
-marking-AvaliLegsTrimOne = (Type One) Trimmed Avali Legs
-marking-AvaliLegsTrimOne-leg_primary = Primary
-marking-AvaliLegsTrimOne-leg_secondary = Secondary
+marking-AvaliLHandTrimOne = (Type One) Trimmed Avali Left Hands
+marking-AvaliLHandTrimOne-lhand_primary = Primary
+marking-AvaliLHandTrimOne-lhand_secondary = Secondary
+
+marking-AvaliRHandTrimOne = (Type One) Trimmed Avali Right Hands
+marking-AvaliRHandTrimOne-rhand_primary = Primary
+marking-AvaliRHandTrimOne-rhand_secondary = Secondary
+
+marking-AvaliLLegTrimOne = (Type One) Trimmed Avali Left Leg
+marking-AvaliLLegTrimOne-lleg_primary = Primary
+marking-AvaliLLegTrimOne-lleg_secondary = Secondary
+
+marking-AvaliRLegTrimOne = (Type One) Trimmed Avali Right Leg
+marking-AvaliRLegTrimOne-rleg_primary = Primary
+marking-AvaliRLegTrimOne-rleg_secondary = Secondary
 
 marking-AvaliTailTrimOne = (Type One) Trimmed Avali Tail
 marking-AvaliTailTrimOne-tail_avalibase = Base Tail
@@ -89,13 +112,21 @@ marking-AvaliTorsoTrimTwo = (Type Two) Trimmed Avali Chest
 marking-AvaliTorsoTrimTwo-torso_primary = Primary
 marking-AvaliTorsoTrimTwo-torso_secondary = Secondary
 
-marking-AvaliArmsTrimTwo = (Type Two) Trimmed Avali Arms
-marking-AvaliArmsTrimTwo-arm_primary = Primary
-marking-AvaliArmsTrimTwo-arm_secondary = Secondary
+marking-AvaliLArmTrimTwo = (Type Two) Trimmed Avali Left Arms
+marking-AvaliLArmTrimTwo-larm_primary = Primary
+marking-AvaliLArmTrimTwo-larm_secondary = Secondary
 
-marking-AvaliHandsTrimOne = (Type Two) Trimmed Avali Hands
-marking-AvaliHandsTrimOne-hand_primary = Primary
-marking-AvaliHandsTrimOne-hand_secondary = Secondary
+marking-AvaliRArmTrimTwo = (Type Two) Trimmed Avali Right Arms
+marking-AvaliRArmTrimTwo-rarm_primary = Primary
+marking-AvaliRArmTrimTwo-rarm_secondary = Secondary
+
+marking-AvaliLHandTrimOne = (Type Two) Trimmed Avali Left Hands
+marking-AvaliLHandTrimOne-lhand_primary = Primary
+marking-AvaliLHandTrimOne-lhand_secondary = Secondary
+
+marking-AvaliRHandTrimOne = (Type Two) Trimmed Avali Right Hands
+marking-AvaliRHandTrimOne-rhand_primary = Primary
+marking-AvaliRHandTrimOne-rhand_secondary = Secondary
 
 marking-AvaliTailTrimTwo = (Type Two) Trimmed Avali Tail
 marking-AvaliTailTrimTwo-tail_avalibase = Tail Base

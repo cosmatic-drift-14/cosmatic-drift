@@ -32,19 +32,35 @@
             "directions": 4
         },
         {
-            "name": "arm_primary",
+            "name": "larm_primary",
             "directions": 4
         },
         {
-            "name": "arm_secondary",
+            "name": "rarm_primary",
             "directions": 4
         },
         {
-            "name": "hand_primary",
+            "name": "larm_secondary",
             "directions": 4
         },
         {
-            "name": "hand_secondary",
+            "name": "rarm_secondary",
+            "directions": 4
+        },
+        {
+            "name": "lhand_primary",
+            "directions": 4
+        },
+        {
+            "name": "rhand_primary",
+            "directions": 4
+        },
+        {
+            "name": "lhand_secondary",
+            "directions": 4
+        },
+        {
+            "name": "rhand_secondary",
             "directions": 4
         },
         {
