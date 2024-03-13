@@ -28,7 +28,7 @@
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
   - type: Sprite
     layers:
       - state: internals
@@ -47,27 +47,8 @@
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
-  - type: Sprite
-    layers:
-      - state: internals
-      - state: emergencytank
-
-- type: entity
-  name: survival box
-  parent: BoxCardboard
-  id: BoxSurvivalBrigmedic
-  description: It's a box with basic internals inside.
-  suffix: MedSec
-  components:
-  - type: StorageFill
-    contents:
-      - id: ClothingMaskBreathMedicalSecurity
-      - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
-      - id: EmergencyMedipen
-      - id: EmergencyMedipen
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
+      - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
       - state: internals
@@ -86,7 +67,7 @@
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
   - type: Sprite
     layers:
       - state: internals
@@ -111,7 +92,7 @@
       - id: EmergencyFunnyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
   - type: Tag
     tags:
       - BoxHug
@@ -128,7 +109,7 @@
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
   - type: Sprite
     layers:
       - state: internals
