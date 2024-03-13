@@ -61,13 +61,13 @@
       required: true
       defaultMarkings: [ AvaliEarsBase ]
     Chest:
-      points: 3
+      points: 1
       required: false
     Legs:
-      points: 6
+      points: 1
       required: false
     Arms:
-      points: 6
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

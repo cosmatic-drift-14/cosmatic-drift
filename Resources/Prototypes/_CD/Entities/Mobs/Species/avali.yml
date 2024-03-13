@@ -41,6 +41,13 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Moth # PLACEHOLDER for now :3
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#7a8bf2"
+  - type: Bloodstream
+    bloodReagent: AmmoniaBlood
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -55,7 +62,7 @@
     currentTemperature: 278.15
     specificHeat: 48
   - type: ThermalRegulator
-    metabolismHeat: 400 #icebirb go brrr
+    metabolismHeat: 400 # icebirb go brrr
     radiatedHeat: 100
     implicitHeatRegulation: 500
     sweatHeatRegulation: 2000
