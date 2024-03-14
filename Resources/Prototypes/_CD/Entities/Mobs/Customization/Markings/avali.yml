@@ -45,7 +45,6 @@
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: ears_bottom_secondary
 
-
 - type: marking
   id: AvaliHeadStripeOne
   bodyPart: Head
@@ -78,7 +77,6 @@
     state: larm_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_stripes_one.rsi
     state: larm_secondary
-
 
 - type: marking
   id: AvaliRArmStripeOne
@@ -186,7 +184,6 @@
     state: torso_primary
   - sprite: _CD/Mobs/Customization/Avali/avali_trim_one.rsi
     state: torso_secondary
-
 
 - type: marking
   id: AvaliLArmTrimOne
