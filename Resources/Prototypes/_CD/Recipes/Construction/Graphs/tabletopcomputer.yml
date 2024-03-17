@@ -4,7 +4,7 @@
   graph:
     - node: start
       edges:
-        - to: frameUnsecured
+        - to: tabletopframeUnsecured
           completed:
             - !type:SetAnchor
               value: false
@@ -13,12 +13,12 @@
               amount: 5
               doAfter: 2.5
 
-    - node: frameUnsecured
+    - node: tabletopframeUnsecured
       actions:
       - !type:AppearanceChange
-      entity: ComputerFrame
+      entity: ComputerTabletopFrame
       edges:
-        - to: boardUnsecured
+        - to: tabletopboardUnsecured
           conditions:
             - !type:EntityAnchored {}
           steps:
@@ -39,17 +39,17 @@
             - tool: Screwing
               doAfter: 2
 
-    - node: boardUnsecured
+    - node: tabletopboardUnsecured
       actions:
       - !type:AppearanceChange
       edges:
-        - to: missingWires
+        - to: tabletopmissingWires
           conditions:
             - !type:EntityAnchored {}
           steps:
             - tool: Screwing
 
-        - to: frameUnsecured
+        - to: tabletopframeUnsecured
           conditions:
             - !type:EntityAnchored { }
           completed:
@@ -57,37 +57,37 @@
           steps:
             - tool: Prying
 
-    - node: missingWires
+    - node: tabletopmissingWires
       actions:
       - !type:AppearanceChange
       edges:
-        - to: monitorMissing
+        - to: tabletopmonitorMissing
           conditions:
             - !type:EntityAnchored {}
           steps:
             - material: Cable
               amount: 5
 
-        - to: boardUnsecured
+        - to: tabletopboardUnsecured
           conditions:
             - !type:EntityAnchored { }
           steps:
             - tool: Screwing
 
-    - node: monitorMissing
-      entity: ComputerFrame
+    - node: tabletopmonitorMissing
+      entity: ComputerTabletopFrame
       actions:
         - !type:SetAnchor { }
         - !type:AppearanceChange
       edges:
-        - to: monitorUnsecured
+        - to: tabletopmonitorUnsecured
           conditions:
             - !type:EntityAnchored {}
           steps:
             - material: Glass
               amount: 2
 
-        - to: missingWires
+        - to: tabletopmissingWires
           conditions:
             - !type:EntityAnchored { }
           completed:
@@ -97,10 +97,10 @@
           steps:
             - tool: Cutting
 
-    - node: monitorUnsecured
+    - node: tabletopmonitorUnsecured
       actions:
       - !type:AppearanceChange
-      entity: ComputerFrame
+      entity: ComputerTabletopFrame
       edges:
         - to: computer
           conditions:
@@ -108,7 +108,7 @@
           steps:
             - tool: Screwing
 
-        - to: monitorMissing
+        - to: tabletopmonitorMissing
           conditions:
             - !type:EntityAnchored {}
           completed:
@@ -118,19 +118,19 @@
           steps:
             - tool: Prying
 
-    - node: computer
+    - node: tabletopcomputer
       entity: !type:BoardNodeEntity { container: board }
       edges:
-        - to: monitorUnsecured
+        - to: tabletopmonitorUnsecured
           conditions:
             - !type:AllWiresCut {}
           steps:
             - tool: Screwing
 
-    - node: monitorBroken
-      entity: ComputerBroken
+    - node: tabletopmonitorBroken
+      entity: ComputerTabletopBroken
       edges:
-        - to: monitorMissing
+        - to: tabletopmonitorMissing
           conditions:
             - !type:EntityAnchored {}
           completed:

@@ -9,5 +9,5 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   icon:
-    sprite: Structures/Machines/parts.rsi
+    sprite: _CD/Structures/Machines/Computers/tabletopcomputerparts.rsi
     state: 4
