@@ -41,7 +41,7 @@
   - Medical
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
+    implants: [ MindShieldImplant, SadTromboneImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
