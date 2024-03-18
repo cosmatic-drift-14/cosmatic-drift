@@ -1,6 +1,6 @@
 - files: ["avali_scream"]
-  license: "Custom"
-  copyright: "Taken from Steam mod / Starbound. Message me if you are the original owner and would like this removed."
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Steam mod / Starbound."
   source: "https://steamcommunity.com/sharedfiles/filedetails/?id=3001955034"
 
 - files: ["avali_laugh"]
