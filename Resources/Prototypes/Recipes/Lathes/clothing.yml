@@ -1289,6 +1289,57 @@
   materials:
     Cloth: 100
 
+# CD Additions
+
+- type: latheRecipe
+  id: PanCloak
+  result: ClothingNeckCloakPan
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: GayCloak
+  result: ClothingNeckCloakGay
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: LesbianCloak
+  result: ClothingNeckCloakLesbian
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: IntersexCloak
+  result: ClothingNeckCloakIntersex
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: BiCloak
+  result: ClothingNeckCloakBi
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: AroCloak
+  result: ClothingNeckCloakAro
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: TransCloak
+  result: ClothingNeckCloakTrans
+  completetime: 2.8
+  materials:
+    Cloth: 150
+
 # CD exclusives
 
 - type: latheRecipe
