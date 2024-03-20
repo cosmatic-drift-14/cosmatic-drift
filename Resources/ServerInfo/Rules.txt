@@ -86,6 +86,7 @@ Game admins have the final say on all rules, game issues, and punishments. We re
 
 [color=#e6e6e6][color=#59ffe1][bold]4.6 -[/bold][/color] Command and security are expected to be competent, to be lawful, and to follow procedure.[/color][color=#c4c4c4]
 [bullet] Neither roles should be grossly incompetent at their job or in their judgment. You are held to higher standards and should be able to be depended upon. Be a role-model for your department.
+[bullet] You cannot take direct, unchallengeable orders from people other than your job superiors.
 [bullet] You should not knowingly break the law as either command or security.
 [bullet] Command staff should know Standard Operating Procedure and follow it to the best of their abilities. Security should know both Standard Operating Procedure and Space-Law; they should follow them and enforce them to the best of their abilities. Failure to do so will likely result in a role-ban.
 [bullet] (Currently, we use Wizard's Den Space-Law and SOP; you can find these at https://wiki.spacestation14.io/wiki.)[/color]
