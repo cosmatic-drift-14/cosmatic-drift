@@ -1046,6 +1046,15 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      - CarpetWhite
+      # CD Additions
+      - PanCloak
+      - GayCloak
+      - LesbianCloak
+      - AroCloak
+      - BiCloak
+      - TransCloak
+      - IntersexCloak
       # CD exclusives
       - ClothingBeltHarnessETU
       - ClothingHeadHelmetETUPointman
