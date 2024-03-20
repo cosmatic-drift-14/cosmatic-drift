@@ -6,6 +6,9 @@
   components:
   - type: Sprite
     state: box
+  - type: Tag
+    tags:
+    - BoxCardboard
 
 - type: entity
   name: mousetrap box
