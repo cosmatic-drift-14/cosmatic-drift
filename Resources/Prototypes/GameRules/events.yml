@@ -462,7 +462,6 @@
   components:
   - type: StationEvent
     weight: 11
-    earliestStart: 20
     reoccurrenceDelay: 20
     duration: 1
   - type: IonStormRule
