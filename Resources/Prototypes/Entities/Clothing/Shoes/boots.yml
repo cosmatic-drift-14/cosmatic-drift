@@ -190,7 +190,7 @@
     node: boots
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsCowboyBrown
   name: brown cowboy boots
   description: They got spurs that jingle and/or jangle.
@@ -202,13 +202,7 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepSpurs
-  - type: Matchbox
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
-      
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyBlack
@@ -218,7 +212,7 @@
     sprite: Clothing/Shoes/Boots/cowboybootsblack.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/cowboybootsblack.rsi
-    
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyWhite
@@ -228,7 +222,7 @@
     sprite: Clothing/Shoes/Boots/cowboybootswhite.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/cowboybootswhite.rsi
-    
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyFancy
