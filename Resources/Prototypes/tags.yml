@@ -313,18 +313,6 @@
   id: Carrot
 
 - type: Tag
-  id: CannonBall
-  
-- type: Tag
-  id: CannonRestrict
-
-- type: Tag
-  id: CannotSuicide
-
-- type: Tag
-  id: CaptainSabre
-
-- type: Tag
   id: CarrotFries
 
 - type: Tag
