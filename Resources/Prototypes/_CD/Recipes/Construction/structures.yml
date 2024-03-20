@@ -35,3 +35,21 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
+
+- type: construction
+  name: diagonal bordered window
+  id: BorderedWindowDiagonal
+  graph: BorderedWindowDiagonal
+  startNode: start
+  targetNode: borderedWindowDiagonal
+  category: construction-category-structures
+  description: Clear, with a trim.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: _CD/Structures/Windows/window_bordered_diagonal.rsi
+    state: state1
+  objectType: Structure
+  placementMode: SnapgridCenter

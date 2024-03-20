@@ -14,7 +14,7 @@
 
 - type: entity
   parent: Window
-  id: WindowBorderedDiagonal
+  id: BorderedWindowDiagonal
   suffix: diagonal
   placement:
     mode: SnapgridCenter
@@ -54,5 +54,5 @@
     damageOverlay:
       sprite: Structures/Windows/cracks_diagonal.rsi
   - type: Construction
-    graph: WindowDiagonal
-    node: windowDiagonal
+    graph: BorderedWindowDiagonal
+    node: borderedWindowDiagonal
