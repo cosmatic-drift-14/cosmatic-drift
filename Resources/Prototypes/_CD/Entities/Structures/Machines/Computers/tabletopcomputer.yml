@@ -71,16 +71,16 @@
     layers:
     - map: ["computerLayerBody"]
       sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
-      state: computer_tabletop
+      state: broken_tabletop
     - map: ["computerLayerKeyboard"]
       sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
-      state: generic_keyboard_tabletop
+      state: broken_tabletop
     - map: ["computerLayerScreen"]
-      sprite: Structures/Machines/computers.rsi
-      state: generic
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: broken_tabletop
     - map: ["computerLayerKeys"]
-      sprite: Structures/Machines/computers.rsi
-      state: generic_keys
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: broken_tabletop
   - type: Destructible #Everything under this should be inherited, everything above needs to stay.
     thresholds:
     - trigger:
