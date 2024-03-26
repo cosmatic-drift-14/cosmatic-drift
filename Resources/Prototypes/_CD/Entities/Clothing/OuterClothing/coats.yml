@@ -9,3 +9,16 @@
     sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
+
+# Military Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatMilitaryCoat
+  name: military jacket
+  description: A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
+
