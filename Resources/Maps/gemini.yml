@@ -124334,20 +124334,6 @@ entities:
     - type: Transform
       pos: 61.8193,-22.449226
       parent: 2
-- proto: MagazineBoxMagnumRubber
-  entities:
-  - uid: 18692
-    components:
-    - type: Transform
-      pos: 49.75043,-14.0822
-      parent: 2
-- proto: MagazineBoxPistolRubber
-  entities:
-  - uid: 18693
-    components:
-    - type: Transform
-      pos: 49.380165,-13.763298
-      parent: 2
 - proto: MagazinePistolSubMachineGun
   entities:
   - uid: 1571
@@ -172929,15 +172915,6 @@ entities:
     - type: Transform
       pos: -31.413286,49.43612
       parent: 2
-- proto: WeaponShotgunDoubleBarreledRubber
-  entities:
-  - uid: 1518
-    components:
-    - type: Transform
-      parent: 1514
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 1519
     components:
     - type: Transform
