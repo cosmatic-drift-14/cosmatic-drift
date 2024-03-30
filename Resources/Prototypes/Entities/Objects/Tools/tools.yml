@@ -42,6 +42,8 @@
       Steel: 100
   - type: StaticPrice
     price: 30
+  - type: ReplaceOnSpawn
+    prototype: Haycutters
 
 - type: entity
   name: screwdriver
@@ -85,6 +87,8 @@
       Steel: 100
   - type: StaticPrice
     price: 30
+  - type: ReplaceOnSpawn
+    prototype: Moodriver
 
 - type: entity
   name: wrench
@@ -119,6 +123,8 @@
       Steel: 100
   - type: StaticPrice
     price: 22
+  - type: ReplaceOnSpawn
+    prototype: Wronch
 
 - type: entity
   name: crowbar
@@ -155,6 +161,8 @@
   - type: StaticPrice
     price: 22
   - type: Prying
+  - type: ReplaceOnSpawn
+    prototype: Cowbar
 
 - type: entity
   parent: Crowbar
@@ -216,6 +224,8 @@
       Plastic: 100
   - type: StaticPrice
     price: 56
+  - type: ReplaceOnSpawn
+    prototype: Mooltitool
 
 - type: entity
   name: network configurator
