@@ -24,8 +24,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     private List<CharacterRecords.RecordEntry>? _entries;
 
     private DialogWindow? _wantedReasonDialog;
-    public event Action<string?>? OnSetWantedStatus;
-    public event Action<SecurityStatus>? OnSetSecurityStatus;
+    public event Action<SecurityStatus, string?>? OnSetSecurityStatus;
 
     public uint? SecurityWantedStatusMaxLength;
 
@@ -101,10 +100,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         StatusOptionButton.OnItemSelected += args =>
         {
             var status = (SecurityStatus)args.Id;
-            if (status == SecurityStatus.Wanted)
-                SetWantedStatus();
+            // This should reflect SetStatus in CriminalRecordsConsoleWindow.xaml.cs
+            if (status == SecurityStatus.Wanted || status == SecurityStatus.Suspected)
+                SetStatusWithReason(status);
             else
-                OnSetSecurityStatus?.Invoke(status);
+                OnSetSecurityStatus?.Invoke(status, null);
         };
 
         OnClose += () => _entryView.Close();
@@ -318,7 +318,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     }
 
     // This is copied almost verbatim from CriminalRecordsConsoleWindow.xaml.cs
-    private void SetWantedStatus()
+    private void SetStatusWithReason(SecurityStatus status)
     {
         if (_wantedReasonDialog != null)
         {
@@ -327,7 +327,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         }
 
         const string field = "reason";
-        var title = Loc.GetString("criminal-records-status-wanted");
+        var title = Loc.GetString("criminal-records-status-" + status.ToString().ToLower());
         var placeholder = Loc.GetString("cd-character-records-viewer-setwanted-placeholder");
         var prompt = Loc.GetString("criminal-records-console-reason");
         var entry = new QuickDialogEntry(field, QuickDialogEntryType.LongText, prompt, placeholder);
@@ -340,7 +340,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             if (reason.Length < 1 || reason.Length > SecurityWantedStatusMaxLength)
                 return;
 
-            OnSetWantedStatus?.Invoke(reason);
+            OnSetSecurityStatus?.Invoke(status, reason);
         };
 
         _wantedReasonDialog.OnClose += () => { _wantedReasonDialog = null; };
