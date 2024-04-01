@@ -9,7 +9,6 @@ using Content.Client.Chat.UI;
 using Content.Client.Examine;
 using Content.Client.Gameplay;
 using Content.Client.Ghost;
-using Content.Client.Tilenol;
 using Content.Client.UserInterface.Screens;
 using Content.Client.UserInterface.Systems.Chat.Widgets;
 using Content.Client.UserInterface.Systems.Gameplay;
@@ -56,7 +55,6 @@ public sealed class ChatUIController : UIController
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IReplayRecordingManager _replayRecording = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly IEntitySystemManager _sys = default!;
 
     [UISystemDependency] private readonly ExamineSystem? _examine = default;
     [UISystemDependency] private readonly GhostSystem? _ghost = default;
@@ -330,10 +328,7 @@ public sealed class ChatUIController : UIController
                 return;
         }
 
-        if (_sys.TryGetEntitySystem(out ByondSystem? byond))
-            byond.SaveCfg();
-        else
-            _cfg.SaveToFile();
+        _config.SaveToFile();
     }
 
     private void FocusChat()

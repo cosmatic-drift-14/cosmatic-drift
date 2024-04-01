@@ -9,8 +9,8 @@
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Sprite
     layers:
       - state: internals
@@ -27,8 +27,8 @@
       - id: ClothingMaskBreath
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Sprite
     layers:
       - state: internals
@@ -46,8 +46,8 @@
       - id: ClothingMaskGasSecurity
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Sprite
     layers:
       - state: internals
@@ -65,8 +65,8 @@
       - id: ClothingMaskGasSecurity
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Sprite
     layers:
       - state: internals
@@ -84,8 +84,8 @@
       - id: ClothingMaskBreathMedical
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Sprite
     layers:
       - state: internals
@@ -109,8 +109,8 @@
       - id: ClothingMaskBreath
       - id: EmergencyFunnyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Tag
     tags:
       - BoxHug
@@ -126,8 +126,8 @@
       - id: ClothingMaskGasSyndicate
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare
       - id: FoodSnackNutribrick
-      - id: Tilenol
   - type: Sprite
     layers:
       - state: internals
