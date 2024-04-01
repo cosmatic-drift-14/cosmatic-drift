@@ -327,7 +327,6 @@
   components:
     - type: StorageFill
       contents:
-        - id: SpaceCash300
         - id: BoxSurvivalEngineering
         - id: trayScanner
         - id: RCD
