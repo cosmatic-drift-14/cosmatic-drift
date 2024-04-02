@@ -55,7 +55,7 @@ public abstract partial class SharedBuckleSystem
 
     private void OnBuckleMove(EntityUid uid, BuckleComponent component, ref MoveEvent ev)
     {
-        if (component.BuckledTo is not {} strapUid)
+        if (component.BuckledTo is not { } strapUid)
             return;
 
         if (!TryComp<StrapComponent>(strapUid, out var strapComp))
@@ -86,7 +86,7 @@ public abstract partial class SharedBuckleSystem
         {
             Act = () => TryUnbuckle(uid, args.User, buckleComp: component),
             Text = Loc.GetString("verb-categories-unbuckle"),
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/unbuckle.svg.192dpi.png"))
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/unbuckle.svg.192dpi.png"))
         };
 
         if (args.Target == args.User && args.Using == null)
@@ -203,7 +203,7 @@ public abstract partial class SharedBuckleSystem
 
         ActionBlocker.UpdateCanMove(buckleUid);
         UpdateBuckleStatus(buckleUid, buckleComp, strapComp);
-        Dirty(buckleComp);
+        Dirty(buckleUid, buckleComp);
     }
 
     /// <summary>
@@ -484,8 +484,7 @@ public abstract partial class SharedBuckleSystem
         if (strapComp.BuckledEntities.Remove(buckleUid))
         {
             strapComp.OccupiedSize -= buckleComp.Size;
-            //Dirty(strapUid);
-            Dirty(strapComp);
+            Dirty(strapUid, strapComp);
         }
 
         _joints.RefreshRelay(buckleUid);
