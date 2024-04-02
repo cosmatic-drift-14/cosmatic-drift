@@ -103,7 +103,7 @@
   - type: Item
     size: 20
   - type: Clothing
-    sprite: Objects\Weapons\Melee\truncheon.rsi
+    sprite: Objects/Weapons/Melee/truncheon.rsi
     quickEquip: false
     slots:
     - Belt
