@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     sprite: Objects/Devices/door_remote.rsi
-  - type: Access
+  - type: Access #No access, useless
   - type: DoorRemote
   - type: StealTarget
     stealGroup: DoorRemote
@@ -26,7 +26,7 @@
       color: "#9f9f00"
   - type: Access
     groups:
-    - Command
+    - AllAccess #Cap must be able to control the station
 
 - type: entity
   parent: DoorRemoteDefault
