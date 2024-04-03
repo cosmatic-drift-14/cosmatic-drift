@@ -5,9 +5,9 @@
   abstract: true
   components:
   - type: Item
-    size: 60
+    size: 80
   - type: Storage
-    capacity: 60
+    capacity: 80
   - type: Tag
     tags:
     - Briefcase

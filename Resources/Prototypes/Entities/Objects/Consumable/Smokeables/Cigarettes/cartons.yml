@@ -12,9 +12,9 @@
         map: ["openLayer"]
   - type: Item
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/green.rsi
-    size: 36
+    size: 60
   - type: Storage
-    capacity: 36
+    capacity: 60
   - type: StorageFill
     contents:
       - id: CigPackGreen
