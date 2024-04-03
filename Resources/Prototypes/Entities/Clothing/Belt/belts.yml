@@ -219,6 +219,7 @@
         - Plunger
       components:
         - LightReplacer
+        - SmokeOnTrigger
   - type: ItemMapper
     mapLayers:
       bottle:
