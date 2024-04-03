@@ -37,8 +37,7 @@
   description: A set of 4 syndicate branded throwing knives, perfect for embedding into the body of your victims.
   components:
   - type: Storage
-    grid:
-    - 0,0,3,1
+    capacity: 30
   - type: StorageFill
     contents:
       - id: ThrowingKnife

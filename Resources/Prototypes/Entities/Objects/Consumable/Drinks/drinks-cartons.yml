@@ -49,7 +49,7 @@
       drink:
         maxVol: 100
   - type: Item
-    size: Normal
+    size: 10
 
 - type: entity
   id: DrinkCartonVisualsOpenable

@@ -8,9 +8,7 @@
     sprite: Objects/Misc/diskcases.rsi
     state: icon_base
   - type: Storage
-    grid:
-    - 0,0,0,1
-    maxItemSize: Normal
+    capacity: 5
     whitelist:
       tags:
         - Document

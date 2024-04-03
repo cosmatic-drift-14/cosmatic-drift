@@ -9,7 +9,7 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: Normal
+    size: 5
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -81,7 +81,7 @@
   abstract: true
   components:
   - type: Item
-    size: Small
+    size: 5
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -144,7 +144,7 @@
   abstract: true
   components:
   - type: Item
-    size: Normal
+    size: 10
   - type: SolutionContainerManager
     solutions:
       drink:

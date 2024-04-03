@@ -23,7 +23,7 @@ namespace Content.Shared.Storage.Components
         ///     Max item size that can be fitted into secret stash.
         /// </summary>
         [DataField("maxItemSize")]
-        public ProtoId<ItemSizePrototype> MaxItemSize = "Small";
+        public int MaxItemSize = 5;
 
         /// <summary>
         /// If stash has way to open then this will switch between open and closed.
