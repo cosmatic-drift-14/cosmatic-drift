@@ -43,7 +43,7 @@ trait-dwarf-accent-name = Dwarven Accent
 trait-dwarf-accent-desc = Your accent mirrors that of the dwarves.
 
 trait-southern-name = Southern Drawl
-trait-southern-desc = Are you wonderin' what this does?
+trait-southern-desc = You have a different way of speakin'.
 
 trait-snoring-name = Snoring
 trait-snoring-desc = You will snore while sleeping.
