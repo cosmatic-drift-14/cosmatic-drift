@@ -287,6 +287,7 @@
   - type: EmbeddableProjectile
     sound: /Audio/Weapons/star_hit.ogg
   - type: DamageOtherOnHit
+    ignoreResistances: true
     damage:
       types:
         Slash: 10
