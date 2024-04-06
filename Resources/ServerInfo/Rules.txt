@@ -14,7 +14,8 @@ Game admins have the final say on all rules, game issues, and punishments. We re
 [bullet] Attempting to get around role bans by being promoted to that role in-game will lead to a game ban.
 [bullet] Spamming or being aggressive to our admins in ahelps will result in an appeal ban.[/color]
 
-[color=#e6e6e6][color=#ff3636][bold]2.2 -[/bold][/color] This is an English only server, as we can not moderate other languages speaking in anything but English will usually lead to a single warning, then ban if you do not cease.[/color]
+[color=#e6e6e6][color=#ff3636][bold]2.2 -[/bold][/color] This is an English only server, as we can not moderate other languages speaking full sentences in anything but English will usually lead to a single warning, then a ban if you do not cease.[color=#c4c4c4]
+[bullet] You may only speak brief one to five word phrases in another language, as long as it doesn't break any of the other rules or is used to communicate with another player in the same language.[/color]
 
 [color=#e6e6e6][color=#ff3636][bold]2.3 -[/bold][/color] Absolutely no discrimination nor bigotry against any player or their characters for any reason. This covers ableism, homophobia, racism, sexism, speciesism, and hate speech as a whole. If it's to the point where it makes someone uncomfortable and they ahelp you or an admin finds an issue with it, you will answer for it.[/color]
 
@@ -50,6 +51,7 @@ Game admins have the final say on all rules, game issues, and punishments. We re
 [bullet] This does not apply to cryo.[/color]
 
 [color=#e6e6e6][color=#3bff72][bold]3.4 -[/bold][/color] Your character name should be believable and realistic.[/color][color=#c4c4c4]
+[bullet] Your name must only contain basic English letters and accented characters.
 [bullet] Your character name should not mimic popular real-life or fictional people, even if it is a "clever" plays on them, such as "White Walter."
 [bullet] Your character's name should not be phonetic word plays, such as "Mike Oxlong" or "Ben Dover."
 [bullet] Your name should not be overly dumb or gamey either, such as "John Graytide."
@@ -84,6 +86,7 @@ Game admins have the final say on all rules, game issues, and punishments. We re
 
 [color=#e6e6e6][color=#59ffe1][bold]4.6 -[/bold][/color] Command and security are expected to be competent, to be lawful, and to follow procedure.[/color][color=#c4c4c4]
 [bullet] Neither roles should be grossly incompetent at their job or in their judgment. You are held to higher standards and should be able to be depended upon. Be a role-model for your department.
+[bullet] You cannot take direct, unchallengeable orders from people other than your job superiors.
 [bullet] You should not knowingly break the law as either command or security.
 [bullet] Command staff should know Standard Operating Procedure and follow it to the best of their abilities. Security should know both Standard Operating Procedure and Space-Law; they should follow them and enforce them to the best of their abilities. Failure to do so will likely result in a role-ban.
 [bullet] (Currently, we use Wizard's Den Space-Law and SOP; you can find these at https://wiki.spacestation14.io/wiki.)[/color]

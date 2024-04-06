@@ -11,7 +11,7 @@
   - type: Matchbox
 
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsJack
   name: jackboots
   description: A set of Jackboots, once able to hold knifes they have fallen from grace due to budget cuts, now just some stylish boots.
@@ -20,7 +20,6 @@
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/jackboots.rsi
-  - type: Matchbox
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -46,7 +45,7 @@
     sprite: Clothing/Shoes/Boots/performer.rsi
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsCombat
   name: combat boots
   description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
@@ -55,15 +54,9 @@
     sprite: Clothing/Shoes/Boots/combatboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/combatboots.rsi
-  - type: Matchbox
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingShoesHighheelBoots
   name: high-heeled boots
   description: Snazy boots for when you want to be stylish, yet prepared.
@@ -76,14 +69,9 @@
     sprite: Clothing/Shoes/Boots/highheelboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/highheelboots.rsi
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsMerc
   name: mercenary boots
   description: Boots that have gone through many conflicts and that have proven their combat reliability.
@@ -92,12 +80,6 @@
     sprite: Clothing/Shoes/Boots/mercboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/mercboots.rsi
-  - type: Matchbox
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -208,7 +190,7 @@
     node: boots
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsCowboyBrown
   name: brown cowboy boots
   description: They got spurs that jingle and/or jangle.
@@ -220,13 +202,7 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepSpurs
-  - type: Matchbox
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
-      
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyBlack
@@ -236,7 +212,7 @@
     sprite: Clothing/Shoes/Boots/cowboybootsblack.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/cowboybootsblack.rsi
-    
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyWhite
@@ -246,7 +222,7 @@
     sprite: Clothing/Shoes/Boots/cowboybootswhite.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/cowboybootswhite.rsi
-    
+
 - type: entity
   parent: ClothingShoesBootsCowboyBrown
   id: ClothingShoesBootsCowboyFancy

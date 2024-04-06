@@ -1,4 +1,5 @@
 using Content.Server.Radio.EntitySystems;
+using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Radio;
 using Content.Shared.Roles;
@@ -26,6 +27,18 @@ public sealed partial class NotifyDepartmentSpecial : JobSpecial
         // Notify people on all stations.
         foreach (var station in stationManager.GetStations())
         {
+            // 2024.3.29:
+            // This code is awful and has all sorts of problems but it is the best we can do because.
+            // there does not exist a good way to broadcast a radio message everywhere. Hopefully this
+            // can be improved whenever the radio refactor takes place.
+            if (!entMan.TryGetComponent<StationDataComponent>(station, out var stationInfo))
+                continue;
+            var probablyStationGridOrCloseEnough = stationManager.GetLargestGrid(stationInfo);
+            if (probablyStationGridOrCloseEnough == null)
+                continue;
+            radio.SendRadioMessage(station, Loc.GetString(NotifyTextKey), channel, probablyStationGridOrCloseEnough.Value);
+
+            // Also let people on arrivals know, this causes ghosts to hear it twice
             radio.SendRadioMessage(station, Loc.GetString(NotifyTextKey), channel, mob);
         }
     }

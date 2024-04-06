@@ -19,6 +19,5 @@ public sealed class ItemSystem : SharedItemSystem
             return;
 
         _storage.RecalculateStorageUsed(container.Owner, storage);
-        _storage.UpdateUI(container.Owner, storage);
     }
 }

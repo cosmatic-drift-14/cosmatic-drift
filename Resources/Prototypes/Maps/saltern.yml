@@ -3,7 +3,7 @@
   mapName: 'Saltern'
   mapPath: /Maps/saltern.yml
   minPlayers: 0
-  maxPlayers: 35
+  maxPlayers: 15
   fallback: true
   stations:
     Saltern:
@@ -40,6 +40,7 @@
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 2, 2 ]
             MedicalIntern: [ 4, 4 ]
+            Paramedic: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [1, 1 ]
@@ -51,6 +52,7 @@
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ]
+            Detective: [ 1, 1 ]
             SecurityCadet: [ 4, 4 ]
             #supply
             Quartermaster: [ 1, 1 ]

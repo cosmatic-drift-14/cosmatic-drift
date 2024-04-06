@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Shared.ActionBlocker;
 using Content.Shared.CombatMode;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Coordinates;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands;
@@ -11,6 +12,7 @@ using Content.Shared.Implants.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Item;
 using Content.Shared.Lock;
+using Content.Shared.Materials;
 using Content.Shared.Placeable;
 using Content.Shared.Popups;
 using Content.Shared.Stacks;
@@ -73,6 +75,8 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, AreaPickupDoAfterEvent>(OnDoAfter);
 
         SubscribeLocalEvent<StorageComponent, StorageInteractWithItemEvent>(OnInteractWithItem);
+
+        SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
     }
 
     private void OnComponentInit(EntityUid uid, StorageComponent storageComp, ComponentInit args)
@@ -208,7 +212,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 0.2f * validStorables.Count, new AreaPickupDoAfterEvent(GetNetEntityList(validStorables)), uid, target: uid)
                 {
                     BreakOnDamage = true,
-                    BreakOnUserMove = true,
+                    BreakOnMove = true,
                     NeedHand = true
                 };
 
@@ -307,6 +311,11 @@ public abstract class SharedStorageSystem : EntitySystem
         }
 
         args.Handled = true;
+    }
+
+    private void OnReclaimed(EntityUid uid, StorageComponent storageComp, GotReclaimedEvent args)
+    {
+        _containerSystem.EmptyContainer(storageComp.Container, destination: args.ReclaimerCoordinates);
     }
 
     private void OnDestroy(EntityUid uid, StorageComponent storageComp, DestructionEventArgs args)
@@ -546,7 +555,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 // Try to insert it as a new stack.
                 if (TryComp(insertEnt, out ItemComponent? itemComp) &&
                     itemComp.Size > storageComp.StorageCapacityMax - storageComp.StorageUsed ||
-                    !storageComp.Container.Insert(insertEnt))
+                    !_containerSystem.Insert(insertEnt, storageComp.Container))
                 {
                     UpdateUI(uid, storageComp);
 
@@ -558,7 +567,7 @@ public abstract class SharedStorageSystem : EntitySystem
             }
         }
         // Non-stackable but no insertion for reasons.
-        else if (!storageComp.Container.Insert(insertEnt))
+        else if (!_containerSystem.Insert(insertEnt, storageComp.Container))
         {
             return false;
         }

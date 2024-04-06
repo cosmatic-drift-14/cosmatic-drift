@@ -27,6 +27,7 @@
     ClothingUniformJumpsuitPajamaRed: 2
     ClothingUniformJumpsuitBoilersuitNTNavy: 2
     ClothingUniformJumpskirtStylizedMaid: 2
+    ClothingUniformJumpskirtAcademia: 2
     ClothingOuterApronBar: 2
     ClothingOuterApronChef: 2
     ClothingOuterApronBotanist: 2
@@ -38,6 +39,7 @@
     ClothingOuterCoatInspector: 2
     ClothingOuterCoatJensen: 3
     ClothingOuterCoatCowboyDuster: 2
+    ClothingOuterCoatMilitaryCoat: 2
     ClothingBeltHalfApron: 2
     ClothingOuterVest: 2
     ClothingShoesChef: 2
@@ -49,7 +51,7 @@
     ClothingShoesBootsWork: 3
     ClothingShoesLuxuryHeelBoots: 3
     ClothingHeadHatFedoraBrown: 2
-    ClothingHeadHatFlowerCrown: 2
+    ClothingHeadHatFlowerWreath: 2
     ClothingHeadHatFedoraGrey: 2
     ClothingHeadHatBoaterhat: 2
     ClothingHeadSafari: 2
@@ -61,5 +63,6 @@
     ClothingHandsGlovesColorWhite: 2
     ClothingNeckTieDet: 2
     ClothingNeckTieRed: 2
+    ClothingEyesGlassesSunglasses: 2
     ClothingEyesGlassesAviator: 4
     BoxPridePins: 2

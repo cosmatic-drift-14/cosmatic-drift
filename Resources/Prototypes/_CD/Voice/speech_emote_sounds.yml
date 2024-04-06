@@ -1,4 +1,25 @@
+#Avali Sounds
+- type: emoteSounds
+  id: MaleAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_CD/Voice/Avali/avali_scream.ogg
+#    Laugh:
+#      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
 
+- type: emoteSounds
+  id: FemaleAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_CD/Voice/Avali/avali_scream.ogg
+#    Laugh:
+#      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
+
+#Vulp Sounds
 - type: emoteSounds
   id: MaleVulpkanin
   params:
@@ -54,3 +75,4 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
+

@@ -3,7 +3,7 @@
   mapName: 'NCS Aspid'
   mapPath: /Maps/aspid.yml
   minPlayers: 25
-  maxPlayers: 55
+  maxPlayers: 45
   stations:
     Aspid:
       stationProto: StandardNanotrasenStation
@@ -54,8 +54,8 @@
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ] #CD Role
             Detective: [ 1, 1 ]
-            SecurityOfficer: [ 3, 4 ]
-            SecurityCadet: [ 4, 4 ]
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 4 ]
