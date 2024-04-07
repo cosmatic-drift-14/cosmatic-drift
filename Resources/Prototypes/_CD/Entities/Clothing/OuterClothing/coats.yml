@@ -22,3 +22,36 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
 
+# Europan Coats
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatEuropanVet
+  name: europan jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatEuropanCoalition
+  name: coalition jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Coalition patch on the shoulders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatEuropanSeperatist
+  name: seperatist jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Seperatist patch on the shoulders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/seperatistcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/seperatistcoat.rsi
