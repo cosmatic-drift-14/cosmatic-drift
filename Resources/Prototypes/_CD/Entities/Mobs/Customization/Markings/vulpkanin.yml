@@ -446,7 +446,7 @@
   speciesRestriction: [Vulpkanin]
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
-      state: dalmation
+      state: dalmatian
 
 # Body Markings (Chest)
 - type: marking
