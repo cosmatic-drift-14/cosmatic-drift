@@ -25,20 +25,18 @@
   params:
     variation: 0.125
   sounds:
-    Scream:
-      collection: MaleScreams
     Laugh:
       collection: MaleLaugh
     Sneeze:
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    Crying:
-      collection: MaleCry
     Whistle:
       collection: Whistles
     Sigh:
       collection: MaleSigh
+    Scream:
+      collection: VulpkaninScreams
     Growl:
       collection: VulpkaninGrowls
     Snarl:
@@ -55,20 +53,18 @@
   params:
     variation: 0.125
   sounds:
-    Scream:
-      collection: FemaleScreams
     Laugh:
       collection: FemaleLaugh
     Sneeze:
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    Crying:
-      collection: FemaleCry
     Whistle:
       collection: Whistles
     Sigh:
       collection: FemaleSigh
+    Scream:
+      collection: VulpkaninScreams
     Growl:
       collection: VulpkaninGrowls
     Snarl:

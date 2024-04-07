@@ -4,8 +4,10 @@
   category: Vocal
   chatMessages: [barks.]
   chatTriggers:
+    - bark
     - bark.
     - bark!
+    - barks
     - barks.
     - barks!
     - barked.
@@ -17,8 +19,10 @@
   category: Vocal
   chatMessages: [snarls.]
   chatTriggers:
+    - snarl
     - snarl.
     - snarl!
+    - snarls
     - snarls.
     - snarls!
     - snarled.
@@ -30,8 +34,10 @@
   category: Vocal
   chatMessages: [whines.]
   chatTriggers:
+    - whine
     - whine.
     - whine!
+    - whines
     - whines.
     - whines!
     - whined.
@@ -43,9 +49,25 @@
   category: Vocal
   chatMessages: [howls.]
   chatTriggers:
+    - howl
     - howl.
     - howl!
+    - howls
     - howls.
     - howls!
     - howling.
     - howled.
+
+- type: emote
+  id: Growl
+  category: Vocal
+  chatMessages: [growls.]
+  chatTriggers:
+    - growl
+    - growls.
+    - growls!
+    - growled
+    - growled.
+    - growled!
+    - growling.
+    - growled.

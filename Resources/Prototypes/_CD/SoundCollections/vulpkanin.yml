@@ -30,4 +30,11 @@
 - type: soundCollection
   id: VulpkaninHowls
   files:
-  - /Audio/DeltaV/Voice/Vulpkanin/howl.ogg
+  - /Audio/_CD/Voice/Vulpkanin/howl.ogg
+
+- type: soundCollection
+  id: VulpkaninScreams
+  files:
+  - /Audio/_CD/Voice/Vulpkanin/scream1.ogg
+  - /Audio/_CD/Voice/Vulpkanin/scream2.ogg
+
