@@ -52,6 +52,8 @@
     heatDamage:
       types:
         Heat : 3 #per second, scales with temperature & other constants
+  - type: Wagging
+    action: ActionToggleVulpakinWagging
 
 - type: entity
   parent: BaseSpeciesDummy
