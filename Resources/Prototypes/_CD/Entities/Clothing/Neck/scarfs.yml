@@ -42,9 +42,9 @@
   description: A stylish striped asexual scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/ace.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/ace.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/ace.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/ace.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -53,9 +53,9 @@
   description: A stylish striped aromantic scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/aro.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/aro.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/aro.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/aro.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -64,9 +64,9 @@
   description: A stylish striped bisexual scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/bi.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/bi.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/bi.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/bi.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -75,9 +75,9 @@
   description: A stylish striped intersex scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/inter.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/inter.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/inter.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/inter.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -86,9 +86,9 @@
   description: A stylish striped lesbian scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/lesbian.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/lesbian.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/lesbian.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/lesbian.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -97,9 +97,9 @@
   description: A stylish striped pan scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/pan.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/pan.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/pan.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/pan.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -108,9 +108,9 @@
   description: A stylish striped non-binary scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Neck/Scarfs/non.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/non.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Neck/Scarfs/non.rsi
+    sprite: _CD/Clothing/Neck/Scarfs/Pride_Scarfs/non.rsi
 
 - type: entity
   parent: ClothingNeckBase
