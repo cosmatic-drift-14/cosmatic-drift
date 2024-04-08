@@ -104,7 +104,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckScarfStripedNonBinary
-  name: striped nob-binary scarf
+  name: striped non-binary scarf
   description: A stylish striped non-binary scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
   components:
   - type: Sprite
