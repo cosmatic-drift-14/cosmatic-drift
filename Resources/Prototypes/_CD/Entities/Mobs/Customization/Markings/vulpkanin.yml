@@ -812,7 +812,7 @@
   id: VulpTailAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag
@@ -823,7 +823,7 @@
   id: VulpTailTipAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag
@@ -834,7 +834,7 @@
   id: VulpTailFoxAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag
@@ -845,7 +845,7 @@
   id: VulpTailFoxTipAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag
@@ -856,7 +856,7 @@
   id: VulpTailBushyAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: bushfluff_wag
@@ -865,7 +865,7 @@
   id: VulpTailCoyoteAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: coyote_wag
@@ -874,7 +874,7 @@
   id: VulpTailCorgiAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: corgi_wag
@@ -883,7 +883,7 @@
   id: VulpTailDalmatianAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  speciesRestriction: []
   sprites:
     - sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: dalmatian_wag
