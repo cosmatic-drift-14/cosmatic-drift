@@ -80,10 +80,6 @@ public abstract class AlertsSystem : EntitySystem
     /// <param name="showCooldown">if true, the cooldown will be visibly shown over the alert icon</param>
     public void ShowAlert(EntityUid euid, AlertType alertType, short? severity = null, (TimeSpan, TimeSpan)? cooldown = null, bool autoRemove = false, bool showCooldown = true )
     {
-        // This should be handled as part of networking.
-        if (_timing.ApplyingState)
-            return;
-
         if (!TryComp(euid, out AlertsComponent? alertsComponent))
             return;
 
@@ -152,9 +148,6 @@ public abstract class AlertsSystem : EntitySystem
     /// </summary>
     public void ClearAlert(EntityUid euid, AlertType alertType)
     {
-        if (_timing.ApplyingState)
-            return;
-
         if (!EntityManager.TryGetComponent(euid, out AlertsComponent? alertsComponent))
             return;
 
