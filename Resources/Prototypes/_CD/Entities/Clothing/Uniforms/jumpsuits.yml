@@ -56,3 +56,15 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
+
+#Casual
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoCasual
+  name: cargo cargoes
+  description: A pair of khaki cargo pants, for cargo.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargocasual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargocasual.rsi
