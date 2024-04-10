@@ -302,6 +302,7 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
+  - type: LayEmote # CD Change, laying down emote
 
 - type: entity
   save: false
@@ -374,4 +375,3 @@
     interfaces:
       - key: enum.HumanoidMarkingModifierKey.Key # sure, this can go here too
         type: HumanoidMarkingModifierBoundUserInterface
-  - type: LayEmote # CD Change, laying down emote

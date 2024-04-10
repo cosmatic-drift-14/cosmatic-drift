@@ -1,6 +1,7 @@
 using Content.Server.Chat.Systems;
 using Content.Shared.Body.Systems;
 using Content.Shared.Buckle.Components;
+using Content.Shared.Humanoid;
 using Content.Shared.Mobs;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Standing;
@@ -15,6 +16,8 @@ public sealed class LayEmoteSystem : EntitySystem
 
     public override void Initialize()
     {
+        base.Initialize();
+
         SubscribeLocalEvent<LayEmoteComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<LayEmoteComponent, BuckleChangeEvent>(OnBuckleChange);
         SubscribeLocalEvent<LayEmoteComponent, MobStateChangedEvent>(OnMobStateChanged);
@@ -33,9 +36,10 @@ public sealed class LayEmoteSystem : EntitySystem
     private void OnBuckleChange(EntityUid uid, LayEmoteComponent component, ref BuckleChangeEvent args)
     {
         if (args.Buckling && component.Laying)
-        {
             _standingSystem.Stand(args.BuckledEntity);
-        }
+
+        if (!args.Buckling && component.Laying)
+            _standingSystem.Down(args.BuckledEntity);
     }
 
     private void OnMobStateChanged(EntityUid uid, LayEmoteComponent component, MobStateChangedEvent args)
@@ -50,6 +54,9 @@ public sealed class LayEmoteSystem : EntitySystem
         if (args.Handled)
             return;
 
+        if (!HasComp<HumanoidAppearanceComponent>(uid))
+            return;
+
         // If they're not laying down & they emote to lay down, make them.
         if (!component.Laying && args.Emote.ID == component.LayEmoteId) 
         {
@@ -57,11 +64,11 @@ public sealed class LayEmoteSystem : EntitySystem
             _standingSystem.Down(uid);
             _modifier.RefreshMovementSpeedModifiers(uid);
         }
-        else if (args.Emote.ID == component.StandEmoteId) // If they are laying down and want to stand, reset their movement speed.
+        else if (component.Laying && args.Emote.ID == component.StandEmoteId) // If they are laying down and want to stand, reset their movement speed.
         {
             component.Laying = false;
             _standingSystem.Stand(uid);
-            _bodySystem.UpdateMovementSpeed(uid);
+            _modifier.RefreshMovementSpeedModifiers(uid);
         }
     }
 
@@ -69,8 +76,9 @@ public sealed class LayEmoteSystem : EntitySystem
     private void OnRefreshMovementSpeedModifiers(EntityUid uid, LayEmoteComponent component, RefreshMovementSpeedModifiersEvent args)
     {
         if (component.Laying)
-        {
             args.ModifySpeed(0f, 0f);
-        }
+
+        if (!component.Laying)
+            args.ModifySpeed(1f, 1f);
     }
 }
