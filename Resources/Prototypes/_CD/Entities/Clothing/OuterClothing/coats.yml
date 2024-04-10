@@ -55,3 +55,20 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/seperatistcoat.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/seperatistcoat.rsi
+
+# Cargo Gorka
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatCargoBomber
+  name: cargo gorka
+  description: A heavy canvas gorka for cold shifts in Cargo.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  id: ClothingOuterCoatCargoBomberOpened
+  name: cargo gorka
