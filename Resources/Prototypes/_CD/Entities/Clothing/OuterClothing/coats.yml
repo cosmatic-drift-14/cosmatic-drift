@@ -47,14 +47,14 @@
 
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatEuropanSeperatist
+  id: ClothingOuterCoatEuropanSeparatist
   name: seperatist jacket
-  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Seperatist patch on the shoulders.
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Separatist patch on the shoulders.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/Europa/seperatistcoat.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
   - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/Europa/seperatistcoat.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
 
 # Cargo Gorka
 - type: entity
