@@ -37,7 +37,8 @@
   parent: ClothingEyesBase
   id: ClothingEyesHudSecurity
   name: security hud
-  description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
+  # CD: description includes flash protection
+  description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records. This model has been upgraded to include flash protection.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/sec.rsi
@@ -47,6 +48,11 @@
   - type: Tag
     tags:
     - HudSecurity
+  # CD change
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  # end CD
 
 - type: entity
   parent: ClothingEyesBase
