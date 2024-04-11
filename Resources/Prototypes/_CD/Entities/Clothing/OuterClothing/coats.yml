@@ -48,7 +48,7 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatEuropanSeparatist
-  name: seperatist jacket
+  name: separatist jacket
   description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Separatist patch on the shoulders.
   components:
   - type: Sprite
