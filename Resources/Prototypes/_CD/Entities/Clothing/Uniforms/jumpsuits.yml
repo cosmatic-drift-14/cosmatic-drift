@@ -60,7 +60,7 @@
 #Casual
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCargoPantsShirted
+  id: ClothingUniformJumpsuitCargoPants
   name: cargo cargoes
   description: A pair of khaki cargo pants, for cargo. Comes with a grey tee.
   components:
@@ -68,14 +68,3 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargocasual.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargocasual.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCargoPants
-  name: cargo cargoes
-  description: A pair of khaki cargo pants, for cargo.
-  components:
-  - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargopants.rsi
-  - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargopants.rsi
