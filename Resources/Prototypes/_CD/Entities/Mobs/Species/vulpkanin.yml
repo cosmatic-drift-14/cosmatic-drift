@@ -1,0 +1,66 @@
+- type: entity
+  save: false
+  name: Urist McVulp
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobVulpkanin
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Vulpkanin
+  - type: Hunger
+  - type: Inventory # Allows vulps to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
+    speciesId: vulpkanin
+  - type: Thirst
+  - type: Icon
+    sprite: _CD/Mobs/Species/Vulpkanin/parts.rsi
+    state: full
+  - type: Body
+    prototype: Vulpkanin
+    requiredLegs: 2
+  - type: Speech
+    speechSounds: Vulpkanin
+    speechVerb: Vulpkanin
+  # - type: TypingIndicator # If you wish to add a typing indicator, go to Textures/_CD/Effects/speech.rsi and uncomment this.
+  #   proto: vulpkanin
+  - type: Vocal
+    sounds:
+      Male: MaleVulpkanin
+      Female: FemaleVulpkanin
+      Unsexed: MaleVulpkanin
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Vulpkanin
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage: #For reference, lizards do five slash.
+      types:
+        Blunt: 2
+        Slash: 3
+  - type: Perishable
+  - type: Temperature # These are moth values, but do make sense for Vulpkanin. The heat damage per second might be high, but we can tune it if there are issues.
+    heatDamageThreshold: 320
+    coldDamageThreshold: 230
+    currentTemperature: 310.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Cold : 0.05 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 3 #per second, scales with temperature & other constants
+  - type: Wagging
+    action: ActionToggleVulpakinWagging
+
+- type: entity
+  parent: BaseSpeciesDummy
+  name: Vulpkanin Dummy
+  id: MobVulpkaninDummy
+  noSpawn: true
+  description: A dummy vulpkanin meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Vulpkanin
