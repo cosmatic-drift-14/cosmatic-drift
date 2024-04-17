@@ -8,4 +8,37 @@
     sprite: _CD/Clothing/Head/Hats/boaterhat.rsi
   - type: Clothing
     sprite: _CD/Clothing/Head/Hats/boaterhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatAnimalHeadslimeYellow
+  name: yellow headslime hat
+  description: A yellow, sticky headslime, you put it on your head.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimeyellow.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimeyellow.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatAnimalHeadslimeLightgreen
+  name: lime headslime hat
+  description: A light green, sticky headslime, you put it on your head.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimelightgreen.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimelightgreen.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatAnimalHeadslimePurple
+  name: purple headslime hat
+  description: A purple, sticky headslime, you put it on your head.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimepurple.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimepurple.rsi
     
