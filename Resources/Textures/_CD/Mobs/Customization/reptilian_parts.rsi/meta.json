@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Dragon wings by Github KittenColony / Discord kittencolony (297865728374210561), Visor by mrgreen06 on Discord",
+  "copyright": "Dragon wings by Github KittenColony / Discord kittencolony (297865728374210561), Visor by mrgreen06 on Discord, Snout modified from Snout_Sharp by KittenColony",
   "size": {
     "x": 32,
     "y": 32
@@ -21,6 +21,14 @@
     },
     {
       "name": "head_ledvisor_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "snout_splotch_primary",
+      "directions": 4
+    },
+    {
+      "name": "snout_splotch_secondary",
       "directions": 4
     }
   ]

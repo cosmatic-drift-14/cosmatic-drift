@@ -24,3 +24,14 @@
     state: head_ledvisor_secondary
   - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
     state: head_ledvisor_tertiary
+
+- type: marking
+  id: LizardSnoutSplotch
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
+    state: snout_splotch_primary
+  - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
+    state: snout_splotch_secondary
