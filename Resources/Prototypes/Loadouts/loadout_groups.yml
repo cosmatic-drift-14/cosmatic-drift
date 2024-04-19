@@ -482,8 +482,8 @@
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerHazardsuit
-  - SeniorEngineerJumpsuit
-  - SeniorEngineerJumpskirt
+  # - SeniorEngineerJumpsuit
+  # - SeniorEngineerJumpskirt
 
 - type: loadoutGroup
   id: StationEngineerBackpack
@@ -505,7 +505,7 @@
   name: loadout-group-station-engineer-id
   loadouts:
   - StationEngineerPDA
-  - SeniorEngineerPDA
+  # - SeniorEngineerPDA
 
 - type: loadoutGroup
   id: AtmosphericTechnicianJumpsuit
@@ -581,8 +581,8 @@
   loadouts:
   - ScientistJumpsuit
   - ScientistJumpskirt
-  - SeniorResearcherJumpsuit
-  - SeniorResearcherJumpskirt
+  # - SeniorResearcherJumpsuit
+  # - SeniorResearcherJumpskirt
 
 - type: loadoutGroup
   id: ScientistBackpack
@@ -599,14 +599,14 @@
   loadouts:
   - RegularLabCoat
   - ScienceLabCoat
-  - SeniorResearcherLabCoat
+  # - SeniorResearcherLabCoat
 
 - type: loadoutGroup
   id: ScientistPDA
   name: loadout-group-scientist-id
   loadouts:
   - ScientistPDA
-  - SeniorResearcherPDA
+  # - SeniorResearcherPDA
 
 - type: loadoutGroup
   id: ResearchAssistantJumpsuit
@@ -689,8 +689,8 @@
   loadouts:
   - SecurityJumpsuit
   - SecurityJumpskirt
-  - SeniorOfficerJumpsuit
-  - SeniorOfficerJumpskirt
+  # - SeniorOfficerJumpsuit
+  # - SeniorOfficerJumpskirt
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -705,7 +705,7 @@
   name: loadout-group-security-id
   loadouts:
   - SecurityPDA
-  - SeniorOfficerPDA
+  # - SeniorOfficerPDA
 
 - type: loadoutGroup
   id: DetectiveHead
@@ -809,8 +809,8 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
-  - SeniorPhysicianJumpsuit
-  - SeniorPhysicianJumpskirt
+  # - SeniorPhysicianJumpsuit
+  # - SeniorPhysicianJumpskirt
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
@@ -821,7 +821,7 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
-  - SeniorPhysicianLabCoat
+  # - SeniorPhysicianLabCoat
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -836,7 +836,7 @@
   name: loadout-group-medical-doctor-id
   loadouts:
   - MedicalDoctorPDA
-  - SeniorPhysicianPDA
+  # - SeniorPhysicianPDA
 
 - type: loadoutGroup
   id: MedicalInternJumpsuit
