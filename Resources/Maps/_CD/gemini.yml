@@ -69580,7 +69580,7 @@ entities:
       pos: 8.382109,39.69766
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
 - proto: ContainmentFieldGenerator
   entities:
