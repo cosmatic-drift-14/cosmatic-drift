@@ -11828,7 +11828,7 @@ entities:
       pos: -2.125764,56.538815
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
   - uid: 88
     components:
@@ -11836,7 +11836,7 @@ entities:
       pos: -2.0270753,56.781937
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
 - proto: AirCanister
   entities:
@@ -79599,7 +79599,7 @@ entities:
       pos: 8.712664,33.630993
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
   - uid: 12337
     components:
@@ -79607,7 +79607,7 @@ entities:
       pos: 8.7904415,33.378216
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
   - uid: 12338
     components:
@@ -79615,7 +79615,7 @@ entities:
       pos: -42.66987,43.748577
       parent: 2
     - type: Tag
-      tags:
+      tags:[]
       
   - uid: 12339
     components:
@@ -79623,7 +79623,7 @@ entities:
       pos: -42.494865,43.573578
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
   - uid: 12340
     components:
@@ -82563,7 +82563,7 @@ entities:
       pos: 8.362663,34.622658
       parent: 2
     - type: Tag
-      tags:
+      tags: []
       
 - proto: FireAxeCabinetFilled
   entities:
