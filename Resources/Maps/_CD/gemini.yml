@@ -79615,7 +79615,7 @@ entities:
       pos: -42.66987,43.748577
       parent: 2
     - type: Tag
-      tags:[]
+      tags: []
       
   - uid: 12339
     components:
