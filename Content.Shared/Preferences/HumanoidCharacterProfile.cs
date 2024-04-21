@@ -55,7 +55,7 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             List<string> antagPreferences,
             List<string> traitPreferences,
-            Dictionary<string, RoleLoadout> loadouts)
+            Dictionary<string, RoleLoadout> loadouts,
             CharacterRecords? cdCharacterRecords)
         {
             Name = name;
@@ -72,7 +72,7 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
-                        CDCharacterRecords = cdCharacterRecords;
+            CDCharacterRecords = cdCharacterRecords;
         }
 
         /// <summary>Copy constructor but with overridable references (to prevent useless copies)</summary>
@@ -80,7 +80,8 @@ namespace Content.Shared.Preferences
             HumanoidCharacterProfile other,
             Dictionary<string, JobPriority> jobPriorities,
             List<string> antagPreferences,
-            List<string> traitPreferences)
+            List<string> traitPreferences,
+            Dictionary<string, RoleLoadout> loadouts)
             : this(other.Name, other.FlavorText, other.Species, other.Height, other.Age, other.Sex, other.Gender, other.Appearance, other.SpawnPriority,
                 jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences, loadouts, other.CDCharacterRecords)
         {
@@ -106,6 +107,7 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences,
+            Dictionary<string, RoleLoadout> loadouts,
             CharacterRecords? cdCharacterRecords)
             : this(name, flavortext, species, height, age, sex, gender, appearance, spawnPriority, new Dictionary<string, JobPriority>(jobPriorities),
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences), new Dictionary<string, RoleLoadout>(loadouts), cdCharacterRecords)
