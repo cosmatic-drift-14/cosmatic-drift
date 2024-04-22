@@ -23,7 +23,7 @@
 - type: loadout
   id: SeniorPhysicianBeret
   equipment: SeniorPhysicianBeret
-  effects:
+  # effects:
   # - !type:GroupLoadoutEffect (Disabling requirements for beret)
   #   proto: SeniorPhysician
 

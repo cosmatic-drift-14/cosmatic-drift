@@ -21,6 +21,3 @@
     id: PrivateInvestigatorPDA
     ears: ClothingHeadsetService
     gloves: ClothingHandsGlovesColorBlack
-  innerClothingSkirt: ClothingUniformJumpskirtDetectiveGrey
-  satchel: ClothingBackpackSatchelPrivateInvestigatorFilled
-  duffelbag: ClothingBackpackDuffelPrivateInvestigatorFilled

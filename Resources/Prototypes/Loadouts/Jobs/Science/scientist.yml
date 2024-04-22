@@ -13,7 +13,7 @@
 - type: loadout
   id: ScientificBeret
   equipment: ScientificBeret
-  effects:
+  # effects:
   # - !type:GroupLoadoutEffect (CD: Disabled)
   #   proto: SeniorResearcher
 
