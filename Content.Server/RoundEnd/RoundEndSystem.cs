@@ -365,7 +365,7 @@ namespace Content.Server.RoundEnd
         {
             var options = new VoteOptions
             {
-                InitiatorText = ("shuttle-vote-user"),
+                InitiatorText = Loc.GetString("shuttle-vote-user"),
                 Title = Loc.GetString("shuttle-vote-title"),
                 Options =
                 {
@@ -391,7 +391,7 @@ namespace Content.Server.RoundEnd
                     _chatManager.DispatchServerAnnouncement(Loc.GetString("Vote succeeded, round end shuttle enroute"));
 					// This is kinda cursed but whatever, stops a recall
 					_cfg.SetCVar(CCVars.EmergencyRecallTurningPoint, 0f);
-					
+
                     RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
                 }
                 else
