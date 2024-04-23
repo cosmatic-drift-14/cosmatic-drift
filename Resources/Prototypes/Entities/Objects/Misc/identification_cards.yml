@@ -803,3 +803,43 @@
   - type: IdCard
     jobTitle: Cluwne
   - type: Unremoveable
+
+# - type: entity # CD - Disabled for unique cards found in our namespace
+  # parent: EngineeringIDCard
+  # id: SeniorEngineerIDCard
+  # name: senior engineer ID card
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: default
+    # - state: idseniorengineer
+
+# - type: entity
+  # parent: ResearchIDCard
+  # id: SeniorResearcherIDCard
+  # name: senior researcher ID card
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: default
+    # - state: idseniorresearcher
+
+# - type: entity
+  # parent: MedicalIDCard
+  # id: SeniorPhysicianIDCard
+  # name: senior physician ID card
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: default
+    # - state: idseniorphysician
+
+# - type: entity
+  # parent: SecurityIDCard
+  # id: SeniorOfficerIDCard
+  # name: senior officer ID card
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: default
+    # - state: idseniorofficer
