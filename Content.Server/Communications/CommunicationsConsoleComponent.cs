@@ -40,7 +40,8 @@ namespace Content.Server.Communications
         /// </summary>
         [ViewVariables]
         [DataField]
-        public int Delay = 90;
+        // CD: reduce to 20 (from 90)
+        public int Delay = 20;
 
         /// <summary>
         /// Time in seconds of announcement cooldown when a new console is created on a per-console basis
