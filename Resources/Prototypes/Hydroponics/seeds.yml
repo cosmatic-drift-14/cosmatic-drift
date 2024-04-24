@@ -897,7 +897,7 @@
   plantRsi: Objects/Specific/Hydroponics/chili.rsi
   packetPrototype: ChiliSeeds
   productPrototypes:
-    - FoodChili
+    - FoodChiliPepper
   mutationPrototypes:
     - chilly
   harvestRepeat: Repeat
@@ -930,7 +930,7 @@
   plantRsi: Objects/Specific/Hydroponics/chilly.rsi
   packetPrototype: ChillySeeds
   productPrototypes:
-    - FoodChilly
+    - FoodChillyPepper
   harvestRepeat: Repeat
   lifespan: 50
   maturation: 12
