@@ -396,20 +396,21 @@
       prob: 0.05
 
 # - type: entity
-  # id: ZombieOutbreak
-  # parent: BaseGameRule
-  # noSpawn: true
-  # components:
-  # - type: StationEvent
-    # earliestStart: 50
-    # weight: 5
-    # duration: 1
-  # - type: ZombieRule
-    # minStartDelay: 0 #let them know immediately
-    # maxStartDelay: 10
-    # maxInitialInfected: 3 #fewer zombies
-    # minInitialInfectedGrace: 300 #less time to prepare
-    # maxInitialInfectedGrace: 450
+#   id: ZombieOutbreak
+#   parent: BaseGameRule
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     earliestStart: 50
+#     minimumPlayers: 15
+#     weight: 3
+#     duration: 1
+#   - type: ZombieRule
+#     minStartDelay: 0 #let them know immediately
+#     maxStartDelay: 10
+#     maxInitialInfected: 3 #fewer zombies
+#     minInitialInfectedGrace: 300 #less time to prepare
+#     maxInitialInfectedGrace: 450
 
 # - type: entity
   # id: LoneOpsSpawn

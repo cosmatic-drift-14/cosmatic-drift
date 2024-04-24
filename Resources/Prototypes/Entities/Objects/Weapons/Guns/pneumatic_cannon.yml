@@ -22,7 +22,6 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    - FullAuto
     soundGunshot:
       path: /Audio/Effects/thunk.ogg
     soundEmpty:
@@ -32,10 +31,7 @@
     container: storagebase
   - type: PneumaticCannon
   - type: Storage
-    capacity: 30
-    blacklist:
-      tags:
-        - CannonRestrict
+    capacity: 15
   - type: Appearance
   - type: ItemMapper
     containerWhitelist: [gas_tank]

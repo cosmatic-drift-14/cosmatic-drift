@@ -26,9 +26,7 @@
 - type: startingGear
   id: WardenGear
   equipment:
-    shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     id: WardenPDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58
