@@ -66,6 +66,7 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
+            "Oasis",
             "Ferrous" // CD Map
         };
 
