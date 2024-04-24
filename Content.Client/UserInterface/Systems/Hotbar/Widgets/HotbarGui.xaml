@@ -8,11 +8,6 @@
     VerticalAlignment="Bottom"
     Orientation="Vertical"
     HorizontalAlignment="Center">
-    <inventory:ItemStatusPanel
-        Name="StatusPanel"
-        Visible="False"
-        HorizontalAlignment="Center"
-    />
     <inventory:ItemSlotButtonContainer
         Name="InventoryHotbar"
         Access="Public"
@@ -33,11 +28,21 @@
             VerticalExpand="False"
             Columns="6"
             HorizontalExpand="True"/>
+        <inventory:ItemStatusPanel
+            Name="StatusPanelRight"
+            HorizontalAlignment="Center" Margin="0 0 -2 2"
+            SetWidth="125"
+            MaxHeight="60"/>
         <hands:HandsContainer
             Name="HandContainer"
             Access="Public"
             HorizontalAlignment="Center"
             ColumnLimit="6" />
+        <inventory:ItemStatusPanel
+            Name="StatusPanelLeft"
+            HorizontalAlignment="Center" Margin="-2 0 0 2"
+            SetWidth="125"
+            MaxHeight="60"/>
         <inventory:ItemSlotButtonContainer
             Name="MainHotbar"
             SlotGroup="MainHotbar"
