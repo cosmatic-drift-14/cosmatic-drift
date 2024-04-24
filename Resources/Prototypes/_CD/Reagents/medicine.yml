@@ -192,7 +192,6 @@
         reagent: Neurozenium
         amount: -7.5
       - !type:AdjustReagent
-        probablity: 0.5 # Chance of Addiction rising per tick
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
@@ -614,7 +613,6 @@
         reagent: Soretizone
         amount: 0.03
       - !type:AdjustReagent
-        probablity: 0.55 # Chance of Addiction rising per tick
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
@@ -622,7 +620,7 @@
         - !type:ReagentThreshold
           min: 9
         reagent: Addictine # add
-        amount: 0.1
+        amount: 0.2
       - !type:PopupMessage
         type: Local
         visualType: Medium # stronger painkiller = more noticable fading
@@ -684,7 +682,6 @@
         reagent: Agonolexyne
         amount: 0.04
       - !type:AdjustReagent
-        probablity: 0.8 # Chance of Addiction rising per tick
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
@@ -692,7 +689,7 @@
         - !type:ReagentThreshold
           min: 0.25
         reagent: Addictine
-        amount: 0.2
+        amount: 0.25
       - !type:Drunk # OD causes drunkeness
         conditions:
           - !type:ReagentThreshold
@@ -831,7 +828,6 @@
         reagent: Cortexene
         amount: 0.02
       - !type:AdjustReagent
-        probablity: 0.8 # Chance of Addiction rising per tick
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
@@ -839,7 +835,7 @@
         - !type:ReagentThreshold
           min: 4
         reagent: Addictine
-        amount: 0.2
+        amount: 0.25
       - !type:PopupMessage
         type: Local
         visualType: Medium

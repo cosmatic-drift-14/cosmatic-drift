@@ -142,7 +142,7 @@
   # they portable...
   - type: MultiHandedItem
   - type: Item
-    size: Huge
+    size: 80
   - type: Sprite
     color: "#FFFFFF55"
   - type: MeleeWeapon

@@ -192,7 +192,6 @@
     node: icon
   - type: Sprite
     sprite: Objects/Weapons/Melee/shiv.rsi
-    size: 2
     state: icon
   - type: MeleeWeapon
     attackRate: 1.5
@@ -214,8 +213,6 @@
   - type: Construction
     graph: ReinforcedShiv
     node: icon
-    size: 2
-    state: icon
   - type: MeleeWeapon
     attackRate: 1.5
     damage:
