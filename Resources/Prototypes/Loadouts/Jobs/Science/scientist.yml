@@ -22,6 +22,24 @@
   equipment:
     head: ClothingHeadHatBeretRND
 
+- type: loadout
+  id: RoboticistCap
+  equipment: RoboticistCap
+
+- type: startingGear
+  id: RoboticistCap
+  equipment:
+    head: ClothingHeadHatCorpsoft
+
+- type: loadout
+  id: SkullBandana
+  equipment: SkullBandana
+
+- type: startingGear
+  id: SkullBandana
+  equipment:
+    head: ClothingHeadBandSkull
+
 # Neck
 
 - type: loadout
@@ -52,12 +70,30 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtScientist
 
+- type: loadout
+  id: RoboticistJumpsuit
+  equipment: RoboticistJumpsuit
+
+- type: startingGear
+  id: RoboticistJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRoboticist
+
+- type: loadout
+  id: RoboticistJumpskirt
+  equipment: RoboticistJumpskirt
+
+- type: startingGear
+  id: RoboticistJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtRoboticist
+
 # - type: loadout (CD: Disabled)
-#   id: SeniorResearcherJumpsuit
-#   equipment: SeniorResearcherJumpsuit
-#   effects:
-#   - !type:GroupLoadoutEffect
-#     proto: SeniorResearcher
+  # id: SeniorResearcherJumpsuit
+  # equipment: SeniorResearcherJumpsuit
+  # effects:
+  # - !type:GroupLoadoutEffect
+  #   proto: SeniorResearcher
 
 # - type: startingGear
 #   id: SeniorResearcherJumpsuit
@@ -132,7 +168,25 @@
   equipment:
     outerClothing: ClothingOuterWinterSci
 
-# - type: loadout (CD: Disabled)
+- type: loadout
+  id: RoboticistLabCoat
+  equipment: RoboticistLabCoat
+
+- type: startingGear
+  id: RoboticistLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatRobo
+
+- type: loadout
+  id: RoboticistWintercoat
+  equipment: RoboticistWintercoat
+
+- type: startingGear
+  id: RoboticistWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterRobo
+
+# - type: loadout
 #   id: SeniorResearcherLabCoat
 #   equipment: SeniorResearcherLabCoat
 #   effects:
@@ -143,6 +197,25 @@
 #   id: SeniorResearcherLabCoat
 #   equipment:
 #     outerClothing: ClothingOuterCoatLabSeniorResearcher
+
+# Gloves
+- type: loadout
+  id: LatexGloves
+  equipment: LatexGloves
+
+- type: startingGear
+  id: LatexGloves
+  equipment:
+    gloves: ClothingHandsGlovesLatex
+
+- type: loadout
+  id: RobohandsGloves
+  equipment: RobohandsGloves
+
+- type: startingGear
+  id: RobohandsGloves
+  equipment:
+    gloves: ClothingHandsGlovesRobohands
 
 # Shoes
 - type: loadout
