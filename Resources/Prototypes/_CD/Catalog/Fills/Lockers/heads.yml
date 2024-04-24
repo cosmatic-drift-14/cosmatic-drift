@@ -136,7 +136,7 @@
       - id: ClothingNeckMantleHOS
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingOuterWinterHoS
-      - id: ClothingOuterWinterHoS
+      - id: ClothingOuterWinterHoSUnarmored
       - id: ClothingShoesBootsJack
       - id: ClothingUniformJumpskirtHoS
       - id: ClothingUniformJumpskirtHoSAlt
