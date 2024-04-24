@@ -233,18 +233,21 @@ namespace Content.IntegrationTests.Tests
 
                 mapManager.DeleteMap(shuttleMap);
 
-                if (entManager.HasComponent<StationJobsComponent>(station))
-                {
-                    // Test that the map has valid latejoin spawn points or container spawn points
-                    if (!NoSpawnMaps.Contains(mapProto))
-                    {
-                        var lateSpawns = 0;
+				// NOTE: This if statement is disabled as the test below (checking for a latejoin spawn) is also disabled
+				// This is because our arrivals works as a fallback for roles who don't have a latejoin spawn point,
+				// And anyone should be spawning there anyways.
+                // if (entManager.HasComponent<StationJobsComponent>(station))
+                // {
+                    // // Test that the map has valid latejoin spawn points or container spawn points
+                    // if (!NoSpawnMaps.Contains(mapProto))
+                    // {
+                        // var lateSpawns = 0;
 
-                        lateSpawns += GetCountLateSpawn<SpawnPointComponent>(gridUids, entManager);
-                        lateSpawns += GetCountLateSpawn<ContainerSpawnPointComponent>(gridUids, entManager);
+                        // lateSpawns += GetCountLateSpawn<SpawnPointComponent>(gridUids, entManager);
+                        // lateSpawns += GetCountLateSpawn<ContainerSpawnPointComponent>(gridUids, entManager);
 
-                        Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
-                    }
+                        // Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
+                    // }
 
                     // NOTE: This test is disabled as we use CentCom spawners anyways, with a general fallback one
                     // There still won't be spawners mapped, but as long as a fallback spawners exists it won't ever matter
@@ -266,7 +269,7 @@ namespace Content.IntegrationTests.Tests
 
                     //Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
                     //    $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
-                }
+                // }
 
                 try
                 {
