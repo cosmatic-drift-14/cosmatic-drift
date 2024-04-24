@@ -29,6 +29,5 @@
 - type: startingGear
   id: ResearchDirectorGear
   equipment:
-    shoes: ClothingShoesColorBrown
     id: RnDPDA
     ears: ClothingHeadsetRD
