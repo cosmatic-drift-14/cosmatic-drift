@@ -1,0 +1,53 @@
+- type: loadout
+  id: JumpsuitETUFlightsuit
+  equipment: JumpsuitETUFlightsuit
+
+- type: startingGear
+  id: JumpsuitETUFlightsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitETUFlightsuit
+
+- type: loadout
+  id: GlovesETUGauntlet
+  equipment: GlovesETUGauntlet
+
+- type: startingGear
+  id: GlovesETUGauntlet
+  equipment:
+    gloves: ClothingHandsGlovesETUGauntlet
+
+- type: loadout
+  id: MaskGasETUSterile
+  equipment: MaskGasETUSterile
+
+- type: startingGear
+  id: MaskGasETUSterile
+  equipment:
+    mask: ClothingMaskGasETUSterile
+
+- type: loadout
+  id: HeadHelmetETUPointman
+  equipment: HeadHelmetETUPointman
+
+- type: startingGear
+  id: HeadHelmetETUPointman
+  equipment:
+    head: ClothingHeadHelmetETUPointman
+
+- type: loadout
+  id: HeadHelmetETUPilot
+  equipment: HeadHelmetETUPilot
+
+- type: startingGear
+  id: HeadHelmetETUPilot
+  equipment:
+    head: ClothingHeadHelmetETUPilot
+
+- type: loadout
+  id: BeltHarnessETU
+  equipment: BeltHarnessETU
+
+- type: startingGear
+  id: BeltHarnessETU
+  equipment:
+    outerClothing: ClothingBeltHarnessETU
