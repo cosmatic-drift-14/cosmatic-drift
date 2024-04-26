@@ -1014,7 +1014,7 @@
   minLimit: 0
   loadouts:
   - MedicalBeret
-  - SeniorPhysicianBeret
+  # - SeniorPhysicianBeret
   - BlueSurgeryCap
   - GreenSurgeryCap
   - PurpleSurgeryCap

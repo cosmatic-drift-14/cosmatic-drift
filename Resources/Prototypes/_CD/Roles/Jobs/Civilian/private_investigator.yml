@@ -13,11 +13,5 @@
 - type: startingGear
   id: PrivateInvestigatorGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitDetectiveGrey # Technically a detective outfit but only in ID
-    back: ClothingBackpackPrivateInvestigatorFilled
-    shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesGlassesSunglasses # They keep these
-    head: ClothingHeadHatFedoraGrey
     id: PrivateInvestigatorPDA
     ears: ClothingHeadsetService
-    gloves: ClothingHandsGlovesColorBlack

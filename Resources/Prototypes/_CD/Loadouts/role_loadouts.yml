@@ -1,0 +1,68 @@
+# Civilian
+- type: roleLoadout
+  id: JobPrivateInvestigator
+  groups: #Using Detective groups is probably a bad idea, but it's easier this way.
+  - DetectiveHead
+  - DetectiveJumpsuit
+  - PrivateInvestigatorBackpack
+  - PrivateInvestigatorOuterClothing
+  - PrivateInvestigatorGloves
+  - PrivateInvestigatorShoes
+  - PrivateInvestigatorGlasses
+  - Trinkets
+
+# Engineering
+- type: roleLoadout
+  id: JobSeniorEngineer
+  groups:
+  - StationEngineerHead
+  - SeniorEngineerJumpsuit
+  - StationEngineerBackpack
+  - StationEngineerOuterClothing
+  - StationEngineerShoes
+  - Trinkets
+
+# Science
+- type: roleLoadout
+  id: JobSeniorResearcher
+  groups:
+  - ScientistHead
+  - ScientistNeck
+  - SeniorResearcherJumpsuit
+  - ScientistBackpack
+  - SeniorResearcherOuterClothing
+  - ScientistGloves
+  - ScientistShoes
+  - Trinkets
+
+# Security
+- type: roleLoadout
+  id: JobSeniorOfficer
+  groups:
+  - SecurityHead
+  - SeniorOfficerJumpsuit
+  - SecurityBackpack
+  - SecurityOuterClothing
+  - SecurityShoes
+  - SecurityBelt
+  - Trinkets
+
+# Medical
+- type: roleLoadout
+  id: JobSeniorPhysician
+  groups:
+  - SeniorPhysicianHead
+  - MedicalMask
+  - SeniorPhysicianJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - SeniorPhysicianOuterClothing
+  - MedicalShoes
+  - Trinkets
+
+# Wildcards
+- type: roleLoadout
+  id: JobPrisoner
+  groups:
+  - PrisonerJumpsuit
+  - Trinkets

@@ -14,7 +14,6 @@
 - type: startingGear
   id: PrisonerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitPrisoner
     shoes: ClothingShoesColorBlack
     id: PrisonerPDA
     ears: ClothingHeadsetGrey
