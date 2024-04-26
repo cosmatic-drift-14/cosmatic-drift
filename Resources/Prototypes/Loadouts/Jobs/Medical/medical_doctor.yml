@@ -20,12 +20,12 @@
 
 # Head
 
-- type: loadout
-  id: SeniorPhysicianBeret
-  equipment: SeniorPhysicianBeret
-  # effects:
-  # - !type:GroupLoadoutEffect (Disabling requirements for beret)
-  #   proto: SeniorPhysician
+# - type: loadout (CD: Disabling senior clothing)
+  # id: SeniorPhysicianBeret
+  # equipment: SeniorPhysicianBeret
+  # # effects:
+  # # - !type:GroupLoadoutEffect
+  # #   proto: SeniorPhysician
 
 - type: startingGear
   id: SeniorPhysicianBeret
