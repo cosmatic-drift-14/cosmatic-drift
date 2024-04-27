@@ -1135,7 +1135,7 @@
   - ParamedicWindbreaker
   - ParamedicWintercoat
   # CD: ETU Loadout
-  - BeltHarnessETU
+  # - BeltHarnessETU
 
 - type: loadoutGroup
   id: ParamedicBackpack
@@ -1151,6 +1151,8 @@
   loadouts:
   - BlueShoes
   - MedicalWinterBoots
+  # CD: ETU Loadout
+  - ShoesColorSlate
 
 # Wildcards
 - type: loadoutGroup
