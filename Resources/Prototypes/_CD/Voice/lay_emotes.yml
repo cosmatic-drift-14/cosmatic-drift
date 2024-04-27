@@ -18,6 +18,18 @@
     - laid down.
     - lies down
     - lies down.
+    - falls over
+    - falls over.
+    - falls down
+    - falls down.
+    - trips
+    - trips.
+    - slips
+    - slips.
+    - goes prone
+    - goes prone.
+    - collapses
+    - collapses.
     
 - type: emote
   id: StandUp
@@ -35,3 +47,6 @@
     - stands up.
     - stood up
     - stood up.
+    - gets up
+    - gets up.
+    
