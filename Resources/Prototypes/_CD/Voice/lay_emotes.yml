@@ -28,6 +28,8 @@
     - slips.
     - goes prone
     - goes prone.
+    - collapses
+    - collapses.
     
 - type: emote
   id: StandUp
