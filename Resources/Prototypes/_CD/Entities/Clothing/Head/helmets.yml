@@ -18,6 +18,7 @@
   parent: ClothingHeadLightBase
   id: ClothingHeadHelmetETUPilot
   name: ETU pilot helmet
+  suffix: DEBUG
   description: An Emergency Trauma Unit Pilot's Helmet. Featuring a built-in mask and a flashlight. Protects against good ideas.
   components:
   - type: BreathMask
