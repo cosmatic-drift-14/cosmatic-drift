@@ -334,9 +334,11 @@
   id: JobParamedic
   groups:
   - ParamedicHead
-  - MedicalMask
+  # CD: ETU Gear
+  - ParamedicMask
   - ParamedicJumpsuit
-  - MedicalGloves
+  # CD: ETU Gear
+  - ParamedicGloves
   - ParamedicBackpack
   - ParamedicOuterClothing
   - ParamedicShoes

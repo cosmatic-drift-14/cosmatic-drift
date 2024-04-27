@@ -125,6 +125,23 @@
   - RegularLabCoat
   - MedicalDoctorWintercoat
 
+- type: loadoutGroup
+  id: ParamedicGloves
+  name: loadout-group-medical-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+  - GlovesETUGauntlet
+
+- type: loadoutGroup
+  id: ParamedicMask
+  name: loadout-group-medical-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+  - MaskGasETUSterile
+
 # Wildcards
 - type: loadoutGroup
   id: PrisonerJumpsuit
@@ -132,3 +149,10 @@
   loadouts:
   - PrisonerJumpsuit
   - PrisonerJumpskirt
+
+- type: loadoutGroup
+  id: PrisonerFun
+  name: cd-loadout-group-prisoner-fun
+  minLimit: 0
+  loadouts:
+  - Emag

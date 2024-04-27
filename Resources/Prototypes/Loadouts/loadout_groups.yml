@@ -1115,6 +1115,9 @@
   minLimit: 0
   loadouts:
   - ParamedicHead
+  # CD: ETU Loadout
+  - HeadHelmetETUPointman
+  - HeadHelmetETUPilot
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
@@ -1122,6 +1125,8 @@
   loadouts:
   - ParamedicJumpsuit
   - ParamedicJumpskirt
+  # CD: ETU Loadout
+  - JumpsuitETUFlightsuit
 
 - type: loadoutGroup
   id: ParamedicOuterClothing
@@ -1130,6 +1135,8 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  # CD: ETU Loadout
+  - BeltHarnessETU
 
 - type: loadoutGroup
   id: ParamedicBackpack
