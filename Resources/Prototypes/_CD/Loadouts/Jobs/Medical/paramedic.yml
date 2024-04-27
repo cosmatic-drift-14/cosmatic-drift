@@ -35,15 +35,6 @@
     head: ClothingHeadHelmetETUPointman
 
 - type: loadout
-  id: HeadHelmetETUPilot
-  equipment: HeadHelmetETUPilot
-
-- type: startingGear
-  id: HeadHelmetETUPilot
-  equipment:
-    head: ClothingHeadHelmetETUPilot
-
-- type: loadout
   id: BeltHarnessETU
   equipment: BeltHarnessETU
 

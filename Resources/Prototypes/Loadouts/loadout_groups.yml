@@ -1117,7 +1117,6 @@
   - ParamedicHead
   # CD: ETU Loadout
   - HeadHelmetETUPointman
-  - HeadHelmetETUPilot
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
