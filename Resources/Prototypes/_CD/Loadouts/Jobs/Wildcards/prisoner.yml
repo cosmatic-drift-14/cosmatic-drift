@@ -1,3 +1,12 @@
+- type: loadoutEffectGroup
+  id: MasterPrisoner
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobPrisoner
+      time: 360000 # 100 hours
+
 # Jumpsuit
 - type: loadout
   id: PrisonerJumpsuit
@@ -16,3 +25,16 @@
   id: PrisonerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtPrisoner
+
+- type: loadout
+  id: Emag
+  equipment: Emag
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterPrisoner
+
+- type: startingGear
+  id: Emag
+  storage:
+    back:
+    - Emag

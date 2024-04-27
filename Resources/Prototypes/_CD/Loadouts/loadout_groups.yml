@@ -149,3 +149,10 @@
   loadouts:
   - PrisonerJumpsuit
   - PrisonerJumpskirt
+
+- type: loadoutGroup
+  id: PrisonerFun
+  name: cd-loadout-group-prisoner-fun
+  minLimit: 0
+  loadouts:
+  - Emag
