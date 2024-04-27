@@ -65,5 +65,4 @@
   id: JobPrisoner
   groups:
   - PrisonerJumpsuit
-  - Trinkets
   - PrisonerFun
