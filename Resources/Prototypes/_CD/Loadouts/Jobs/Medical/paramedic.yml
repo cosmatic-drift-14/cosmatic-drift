@@ -35,15 +35,6 @@
     head: ClothingHeadHelmetETUPointman
 
 - type: loadout
-  id: HeadHelmetETUPilot
-  equipment: HeadHelmetETUPilot
-
-- type: startingGear
-  id: HeadHelmetETUPilot
-  equipment:
-    head: ClothingHeadHelmetETUPilot
-
-- type: loadout
   id: BeltHarnessETU
   equipment: BeltHarnessETU
 
@@ -51,3 +42,12 @@
   id: BeltHarnessETU
   equipment:
     outerClothing: ClothingBeltHarnessETU
+
+- type: loadout
+  id: ShoesColorSlate
+  equipment: ShoesColorSlate
+
+- type: startingGear
+  id: ShoesColorSlate
+  equipment:
+    shoes: ClothingShoesColorSlate
