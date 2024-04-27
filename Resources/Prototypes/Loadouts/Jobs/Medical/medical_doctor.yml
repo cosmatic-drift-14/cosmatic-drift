@@ -27,10 +27,10 @@
   # # - !type:GroupLoadoutEffect
   # #   proto: SeniorPhysician
 
-- type: startingGear
-  id: SeniorPhysicianBeret
-  equipment:
-    head: ClothingHeadHatBeretSeniorPhysician
+# - type: startingGear
+  # id: SeniorPhysicianBeret
+  # equipment:
+    # head: ClothingHeadHatBeretSeniorPhysician
 
 - type: loadout
   id: MedicalBeret
