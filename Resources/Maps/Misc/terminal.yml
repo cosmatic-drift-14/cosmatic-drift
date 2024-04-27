@@ -2904,8 +2904,6 @@ entities:
       - 7431
       - 6819
       - 6277
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7648
     components:
     - type: Transform
@@ -2918,8 +2916,6 @@ entities:
       - 6301
       - 6128
       - 6127
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7649
     components:
     - type: Transform
@@ -2943,8 +2939,6 @@ entities:
       - 6141
       - 6138
       - 6135
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7650
     components:
     - type: Transform
@@ -2962,8 +2956,6 @@ entities:
       - 6198
       - 6134
       - 6133
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7651
     components:
     - type: Transform
@@ -2986,8 +2978,6 @@ entities:
       - 6458
       - 6240
       - 7008
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7652
     components:
     - type: Transform
@@ -3015,8 +3005,6 @@ entities:
       - 6246
       - 7059
       - 6431
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7653
     components:
     - type: Transform
@@ -3035,8 +3023,6 @@ entities:
       - 4308
       - 6460
       - 6203
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7654
     components:
     - type: Transform
@@ -3064,8 +3050,6 @@ entities:
       - 6251
       - 7127
       - 6488
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7655
     components:
     - type: Transform
@@ -3082,8 +3066,6 @@ entities:
       - 6253
       - 6164
       - 6180
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7656
     components:
     - type: Transform
@@ -3102,8 +3084,6 @@ entities:
       - 6552
       - 6255
       - 7237
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7657
     components:
     - type: Transform
@@ -3139,8 +3119,6 @@ entities:
       - 6613
       - 7233
       - 6263
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7658
     components:
     - type: Transform
@@ -3168,8 +3146,6 @@ entities:
       - 7272
       - 6640
       - 6267
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7659
     components:
     - type: Transform
@@ -3187,8 +3163,6 @@ entities:
       - 6231
       - 7312
       - 6268
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7660
     components:
     - type: Transform
@@ -3217,8 +3191,6 @@ entities:
       - 6273
       - 6723
       - 7349
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7661
     components:
     - type: Transform
@@ -3235,8 +3207,6 @@ entities:
       - 7381
       - 6189
       - 6168
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7662
     components:
     - type: Transform
@@ -3258,8 +3228,6 @@ entities:
       - 6152
       - 6143
       - 6144
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7663
     components:
     - type: Transform
@@ -3278,8 +3246,6 @@ entities:
       - 6765
       - 6276
       - 7420
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7664
     components:
     - type: Transform
@@ -3307,8 +3273,6 @@ entities:
       - 6838
       - 6279
       - 6190
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7665
     components:
     - type: Transform
@@ -3322,8 +3286,6 @@ entities:
       - 6280
       - 7497
       - 6876
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7666
     components:
     - type: Transform
@@ -3346,8 +3308,6 @@ entities:
       - 7510
       - 6282
       - 7513
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7667
     components:
     - type: Transform
@@ -3361,8 +3321,6 @@ entities:
       - 7543
       - 6908
       - 6284
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7668
     components:
     - type: Transform
@@ -3377,8 +3335,6 @@ entities:
       - 6283
       - 7562
       - 6877
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: Airlock
   entities:
   - uid: 353
@@ -3590,7 +3546,7 @@ entities:
     - type: Transform
       pos: 11.5,-5.5
       parent: 2
-- proto: AirlockExternalGlassEasyPry
+- proto: AirlockExternalGlass
   entities:
   - uid: 694
     components:
@@ -5544,7 +5500,7 @@ entities:
     - type: Transform
       pos: -3.478174,15.587257
       parent: 2
-- proto: BodyBag_Folded
+- proto: BodyBagFolded
   entities:
   - uid: 2019
     components:
@@ -17888,8 +17844,6 @@ entities:
     - type: Transform
       pos: -32.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: Carpet
   entities:
   - uid: 2647
@@ -20850,18 +20804,6 @@ entities:
       parent: 2
     missingComponents:
     - AddAccentClothing
-- proto: ClothingHeadHatHairflower
-  entities:
-  - uid: 2817
-    components:
-    - type: Transform
-      pos: -51.71337,-28.369938
-      parent: 2
-  - uid: 3248
-    components:
-    - type: Transform
-      pos: 1.4596637,-21.308285
-      parent: 2
 - proto: ClothingHeadHatHardhatOrange
   entities:
   - uid: 7921
@@ -25106,8 +25048,6 @@ entities:
       - 6150
       - 6149
       - 6148
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 5668
     components:
     - type: Transform
@@ -25124,8 +25064,6 @@ entities:
       - 6157
       - 6158
       - 6153
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7669
     components:
     - type: Transform
@@ -25143,8 +25081,6 @@ entities:
       - 6137
       - 6138
       - 6139
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7670
     components:
     - type: Transform
@@ -25156,8 +25092,6 @@ entities:
       - 6132
       - 6131
       - 6134
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7671
     components:
     - type: Transform
@@ -25168,8 +25102,6 @@ entities:
       - 6174
       - 6175
       - 6177
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7672
     components:
     - type: Transform
@@ -25181,8 +25113,6 @@ entities:
       - 6174
       - 6175
       - 6177
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7673
     components:
     - type: Transform
@@ -25195,8 +25125,6 @@ entities:
       - 6128
       - 6130
       - 6129
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7674
     components:
     - type: Transform
@@ -25209,8 +25137,6 @@ entities:
       - 6131
       - 6142
       - 6141
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7675
     components:
     - type: Transform
@@ -25223,8 +25149,6 @@ entities:
       - 6201
       - 6199
       - 6198
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7676
     components:
     - type: Transform
@@ -25236,8 +25160,6 @@ entities:
       - 6195
       - 6194
       - 6196
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7677
     components:
     - type: Transform
@@ -25248,8 +25170,6 @@ entities:
       - 6086
       - 2522
       - 4308
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7678
     components:
     - type: Transform
@@ -25261,8 +25181,6 @@ entities:
       - 6204
       - 6206
       - 6205
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7679
     components:
     - type: Transform
@@ -25274,8 +25192,6 @@ entities:
       - 6086
       - 2522
       - 4308
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7680
     components:
     - type: Transform
@@ -25287,8 +25203,6 @@ entities:
       - 6162
       - 6180
       - 6164
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7681
     components:
     - type: Transform
@@ -25301,8 +25215,6 @@ entities:
       - 6137
       - 6138
       - 6135
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7682
     components:
     - type: Transform
@@ -25318,8 +25230,6 @@ entities:
       - 6211
       - 6215
       - 6212
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7683
     components:
     - type: Transform
@@ -25332,8 +25242,6 @@ entities:
       - 6217
       - 6218
       - 6220
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7684
     components:
     - type: Transform
@@ -25344,8 +25252,6 @@ entities:
       - 6230
       - 6229
       - 6228
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7685
     components:
     - type: Transform
@@ -25357,8 +25263,6 @@ entities:
       - 6230
       - 6229
       - 6228
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7686
     components:
     - type: Transform
@@ -25370,8 +25274,6 @@ entities:
       - 6222
       - 6223
       - 6224
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7687
     components:
     - type: Transform
@@ -25383,8 +25285,6 @@ entities:
       - 6233
       - 6232
       - 6231
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7688
     components:
     - type: Transform
@@ -25395,8 +25295,6 @@ entities:
       - 6233
       - 6232
       - 6231
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7689
     components:
     - type: Transform
@@ -25409,8 +25307,6 @@ entities:
       - 6168
       - 6169
       - 6170
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7690
     components:
     - type: Transform
@@ -25422,8 +25318,6 @@ entities:
       - 6145
       - 6146
       - 6147
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7691
     components:
     - type: Transform
@@ -25435,8 +25329,6 @@ entities:
       - 6150
       - 6149
       - 6148
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7694
     components:
     - type: Transform
@@ -25450,8 +25342,6 @@ entities:
       - 6165
       - 6166
       - 6167
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7695
     components:
     - type: Transform
@@ -25465,8 +25355,6 @@ entities:
       - 6160
       - 6161
       - 6159
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7697
     components:
     - type: Transform
@@ -25484,8 +25372,6 @@ entities:
       - 6145
       - 6146
       - 6147
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 7698
     components:
     - type: Transform
@@ -25507,8 +25393,6 @@ entities:
       - 6147
       - 6146
       - 6145
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: Firelock
   entities:
   - uid: 6195
@@ -26197,6 +26081,16 @@ entities:
       parent: 2
 - proto: FoodPoppy
   entities:
+  - uid: 2817
+    components:
+    - type: Transform
+      pos: -51.71337,-28.369938
+      parent: 2
+  - uid: 3248
+    components:
+    - type: Transform
+      pos: 1.4596637,-21.308285
+      parent: 2
   - uid: 8649
     components:
     - type: Transform
@@ -26246,8 +26140,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -10.5,38.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: GasMinerOxygenStation
   entities:
   - uid: 6098
@@ -26256,8 +26148,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -10.5,35.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: GasMixer
   entities:
   - uid: 6104
@@ -26269,8 +26159,6 @@ entities:
     - type: GasMixer
       inletTwoConcentration: 0.20999998
       inletOneConcentration: 0.79
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: GasPassiveVent
   entities:
   - uid: 3130
@@ -26279,24 +26167,18 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -9.5,38.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 3131
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -9.5,35.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 6126
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -6.5,33.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: GasPipeBend
   entities:
   - uid: 6103
@@ -35886,8 +35768,6 @@ entities:
     - type: Transform
       pos: 32.5,8.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6278
@@ -35896,8 +35776,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -23.5,-7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6301
@@ -35906,8 +35784,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,21.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6320
@@ -35916,8 +35792,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,4.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6357
@@ -35926,8 +35800,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 21.5,-2.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6427
@@ -35936,8 +35808,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 29.5,-6.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6428
@@ -35946,8 +35816,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 21.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6429
@@ -35956,8 +35824,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 16.5,-7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6430
@@ -35966,8 +35832,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 24.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6431
@@ -35976,8 +35840,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 32.5,-13.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6441
@@ -35986,8 +35848,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 22.5,4.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6458
@@ -35995,8 +35855,6 @@ entities:
     - type: Transform
       pos: 34.5,8.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6459
@@ -36005,8 +35863,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 17.5,7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6460
@@ -36015,8 +35871,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 45.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6466
@@ -36024,8 +35878,6 @@ entities:
     - type: Transform
       pos: 50.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6471
@@ -36034,8 +35886,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 49.5,-17.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6483
@@ -36043,8 +35893,6 @@ entities:
     - type: Transform
       pos: 53.5,-4.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6487
@@ -36052,8 +35900,6 @@ entities:
     - type: Transform
       pos: 56.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6488
@@ -36062,8 +35908,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 56.5,-15.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6508
@@ -36072,8 +35916,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 31.5,-21.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6528
@@ -36081,8 +35923,6 @@ entities:
     - type: Transform
       pos: -1.5,-0.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6552
@@ -36091,8 +35931,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -22.5,-0.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6561
@@ -36100,8 +35938,6 @@ entities:
     - type: Transform
       pos: -30.5,6.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6566
@@ -36110,8 +35946,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -33.5,5.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6572
@@ -36120,8 +35954,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -15.5,5.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6589
@@ -36129,8 +35961,6 @@ entities:
     - type: Transform
       pos: -15.5,14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6606
@@ -36138,8 +35968,6 @@ entities:
     - type: Transform
       pos: -32.5,14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6613
@@ -36148,8 +35976,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -39.5,13.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6621
@@ -36157,8 +35983,6 @@ entities:
     - type: Transform
       pos: -17.5,-5.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6632
@@ -36167,8 +35991,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -33.5,-7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6639
@@ -36177,8 +35999,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -23.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6640
@@ -36187,8 +36007,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -24.5,-18.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6692
@@ -36197,8 +36015,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -55.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6709
@@ -36207,8 +36023,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -53.5,-4.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6722
@@ -36217,8 +36031,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -53.5,-20.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6723
@@ -36227,8 +36039,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -52.5,-27.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6730
@@ -36237,8 +36047,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -53.5,3.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6747
@@ -36247,8 +36055,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -32.5,-25.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6765
@@ -36256,8 +36062,6 @@ entities:
     - type: Transform
       pos: 7.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6766
@@ -36265,8 +36069,6 @@ entities:
     - type: Transform
       pos: -10.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6767
@@ -36275,8 +36077,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -10.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6768
@@ -36285,8 +36085,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -16.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6769
@@ -36294,8 +36092,6 @@ entities:
     - type: Transform
       pos: -16.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6770
@@ -36303,8 +36099,6 @@ entities:
     - type: Transform
       pos: -6.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6772
@@ -36313,8 +36107,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6819
@@ -36322,8 +36114,6 @@ entities:
     - type: Transform
       pos: -15.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6827
@@ -36332,8 +36122,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6838
@@ -36341,8 +36129,6 @@ entities:
     - type: Transform
       pos: 1.5,-30.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6876
@@ -36351,8 +36137,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.5,-35.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6877
@@ -36361,8 +36145,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.5,-57.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6908
@@ -36371,8 +36153,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -8.5,-58.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 7510
@@ -36380,8 +36160,6 @@ entities:
     - type: Transform
       pos: -7.5,-46.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 8101
@@ -36389,8 +36167,6 @@ entities:
     - type: Transform
       pos: -43.5,-8.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 9106
@@ -36398,8 +36174,6 @@ entities:
     - type: Transform
       pos: -26.5,21.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 9107
@@ -36408,8 +36182,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -25.5,17.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 9117
@@ -36417,8 +36189,6 @@ entities:
     - type: Transform
       pos: -22.5,17.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
 - proto: GasVentScrubber
@@ -36429,8 +36199,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 13.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 6926
@@ -36438,8 +36206,6 @@ entities:
     - type: Transform
       pos: -3.5,23.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 6951
@@ -36448,8 +36214,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.5,1.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 6960
@@ -36458,8 +36222,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-0.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 6984
@@ -36468,8 +36230,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 26.5,-0.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 6994
@@ -36478,8 +36238,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 24.5,5.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 6998
@@ -36487,8 +36245,6 @@ entities:
     - type: Transform
       pos: 28.5,7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7008
@@ -36496,8 +36252,6 @@ entities:
     - type: Transform
       pos: 37.5,7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7018
@@ -36506,8 +36260,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,3.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7033
@@ -36515,8 +36267,6 @@ entities:
     - type: Transform
       pos: 30.5,-4.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7042
@@ -36525,8 +36275,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 15.5,-5.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7044
@@ -36535,8 +36283,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 23.5,-8.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7053
@@ -36545,8 +36291,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 29.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7059
@@ -36554,8 +36298,6 @@ entities:
     - type: Transform
       pos: 34.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7086
@@ -36564,8 +36306,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 43.5,-7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7094
@@ -36573,8 +36313,6 @@ entities:
     - type: Transform
       pos: 49.5,-8.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7106
@@ -36583,8 +36321,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 50.5,-3.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7115
@@ -36593,8 +36329,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 52.5,-19.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7122
@@ -36602,8 +36336,6 @@ entities:
     - type: Transform
       pos: 58.5,-11.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7127
@@ -36612,8 +36344,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 59.5,-16.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7150
@@ -36622,8 +36352,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 35.5,-23.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7185
@@ -36632,8 +36360,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -19.5,7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7202
@@ -36642,8 +36368,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -35.5,7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7208
@@ -36652,8 +36376,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -14.5,7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7214
@@ -36662,8 +36384,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -14.5,11.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7219
@@ -36671,8 +36391,6 @@ entities:
     - type: Transform
       pos: -28.5,16.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7223
@@ -36681,8 +36399,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -31.5,10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7233
@@ -36691,8 +36407,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -41.5,11.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7237
@@ -36701,8 +36415,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.5,-2.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7241
@@ -36711,8 +36423,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.5,-5.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7249
@@ -36721,8 +36431,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -30.5,-8.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7261
@@ -36730,8 +36438,6 @@ entities:
     - type: Transform
       pos: -14.5,-7.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7265
@@ -36740,8 +36446,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.5,-11.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7272
@@ -36750,8 +36454,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -27.5,-16.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7312
@@ -36760,8 +36462,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -43.5,-15.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7315
@@ -36770,8 +36470,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -50.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7329
@@ -36780,8 +36478,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -50.5,-1.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7333
@@ -36790,8 +36486,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -50.5,1.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7343
@@ -36800,8 +36494,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -50.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7349
@@ -36810,8 +36502,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -51.5,-28.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7381
@@ -36820,8 +36510,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -33.5,-36.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7405
@@ -36830,8 +36518,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,-18.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7420
@@ -36840,8 +36526,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.5,-17.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7431
@@ -36850,8 +36534,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -7.5,-16.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7457
@@ -36860,8 +36542,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -8.5,-21.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7458
@@ -36870,8 +36550,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -14.5,-20.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7459
@@ -36879,8 +36557,6 @@ entities:
     - type: Transform
       pos: -8.5,-11.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7460
@@ -36888,8 +36564,6 @@ entities:
     - type: Transform
       pos: -14.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7461
@@ -36898,8 +36572,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -11.5,-12.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7462
@@ -36908,8 +36580,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -11.5,-20.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7495
@@ -36918,8 +36588,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -2.5,-32.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7497
@@ -36927,8 +36595,6 @@ entities:
     - type: Transform
       pos: 13.5,-30.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7513
@@ -36937,8 +36603,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,-45.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7543
@@ -36947,8 +36611,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -11.5,-55.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 7562
@@ -36957,8 +36619,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 8.5,-64.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9105
@@ -36967,8 +36627,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -28.5,19.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9116
@@ -36977,8 +36635,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -23.5,15.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9171
@@ -36987,8 +36643,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9172
@@ -36997,8 +36651,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,-22.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9173
@@ -37006,8 +36658,6 @@ entities:
     - type: Transform
       pos: 5.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9174
@@ -37015,8 +36665,6 @@ entities:
     - type: Transform
       pos: 9.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 9175
@@ -37024,8 +36672,6 @@ entities:
     - type: Transform
       pos: 13.5,-10.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
 - proto: GasVolumePump
@@ -37035,8 +36681,6 @@ entities:
     - type: Transform
       pos: -4.5,37.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 6121
@@ -37045,8 +36689,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,35.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
     - type: AtmosPipeColor
       color: '#990000FF'
 - proto: GlowstickBase
@@ -41231,13 +40873,6 @@ entities:
     components:
     - type: Transform
       pos: -27.644938,21.581087
-      parent: 2
-- proto: MagazinePistolRubber
-  entities:
-  - uid: 8053
-    components:
-    - type: Transform
-      pos: -34.62212,8.106182
       parent: 2
 - proto: MaintenanceFluffSpawner
   entities:
@@ -46208,22 +45843,16 @@ entities:
     - type: Transform
       pos: -1.5,31.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 8605
     components:
     - type: Transform
       pos: -33.5,-15.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
   - uid: 8606
     components:
     - type: Transform
       pos: -30.5,-14.5
       parent: 2
-    - type: AtmosDevice
-      joinedGrid: 2
 - proto: Stunbaton
   entities:
   - uid: 8050
