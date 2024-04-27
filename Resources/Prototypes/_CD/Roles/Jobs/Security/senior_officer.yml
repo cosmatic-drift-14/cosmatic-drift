@@ -23,13 +23,7 @@
 - type: startingGear
   id: SeniorOfficerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
-    back: ClothingBackpackSecurityFilled
-    shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHatBeretSecurity
-    outerClothing: ClothingOuterArmorBasic
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58

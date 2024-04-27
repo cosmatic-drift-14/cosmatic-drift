@@ -1,0 +1,134 @@
+# Civilian
+- type: loadoutGroup
+  id: PrivateInvestigatorBackpack
+  name: loadout-group-private-investigator-backpack
+  loadouts:
+  - PrivateInvestigatorBackpack
+  - PrivateInvestigatorSatchel
+  - PrivateInvestigatorDuffel
+
+- type: loadoutGroup
+  id: PrivateInvestigatorOuterClothing
+  name: loadout-group-private-investigator-outerclothing
+  minLimit: 0
+  loadouts:
+  - JensonCoat
+  - BartenderVest
+  - InspectorCoat
+  - TrenchCoat
+
+- type: loadoutGroup
+  id: PrivateInvestigatorGloves
+  name: loadout-group-private-investigator-gloves
+  minLimit: 0
+  loadouts:
+  - BlackGloves
+  - LatexGloves
+
+- type: loadoutGroup
+  id: PrivateInvestigatorShoes
+  name: loadout-group-private-investigator-shoes
+  loadouts:
+  - Jackboots
+  - BlackShoes
+  - LaceupShoes
+  - BrownShoes
+  - LeatherShoes
+
+- type: loadoutGroup
+  id: PrivateInvestigatorGlasses
+  name: loadout-group-private-investigator-glasses
+  minLimit: 0
+  loadouts:
+  - Sunglasses
+  - Glasses
+  - Aviators
+
+# Engineering
+- type: loadoutGroup
+  id: SeniorEngineerJumpsuit
+  name: loadout-group-senior-engineer-jumpsuit
+  loadouts:
+  - SeniorEngineerJumpsuit
+  - SeniorEngineerJumpskirt
+  - StationEngineerJumpsuit
+  - StationEngineerJumpskirt
+  - StationEngineerHazardsuit
+
+# Science
+- type: loadoutGroup
+  id: SeniorResearcherJumpsuit
+  name: loadout-group-senior-researcher-jumpsuit
+  loadouts:
+  - SeniorResearcherJumpsuit
+  - SeniorResearcherJumpskirt
+  - ScientistJumpsuit
+  - ScientistJumpskirt
+  - RoboticistJumpsuit
+  - RoboticistJumpskirt
+
+- type: loadoutGroup
+  id: SeniorResearcherOuterClothing
+  name: loadout-group-senior-researcher-outerclothing
+  minLimit: 0
+  loadouts:
+  - SeniorResearcherLabCoat
+  - RegularLabCoat
+  - ScienceLabCoat
+  - ScienceWintercoat
+  - RoboticistLabCoat
+  - RoboticistWintercoat
+
+# Security
+- type: loadoutGroup
+  id: SeniorOfficerJumpsuit
+  name: loadout-group-senior-officer-jumpsuit
+  loadouts:
+  - SeniorOfficerJumpsuit
+  - SeniorOfficerJumpskirt
+  - SecurityJumpsuit
+  - SecurityJumpskirt
+  - SecurityJumpsuitGrey
+  - SecurityJumpskirtGrey
+
+# Medical
+- type: loadoutGroup
+  id: SeniorPhysicianHead
+  name: loadout-group-senior-physician-head
+  minLimit: 0
+  loadouts:
+  - SeniorPhysicianBeret
+  - MedicalBeret
+  - BlueSurgeryCap
+  - GreenSurgeryCap
+  - PurpleSurgeryCap
+  - NurseHat
+
+- type: loadoutGroup
+  id: SeniorPhysicianJumpsuit
+  name: loadout-group-senior-physician-jumpsuit
+  loadouts:
+  - SeniorPhysicianJumpsuit
+  - SeniorPhysicianJumpskirt
+  - MedicalDoctorJumpsuit
+  - MedicalDoctorJumpskirt
+  - MedicalBlueScrubs
+  - MedicalGreenScrubs
+  - MedicalPurpleScrubs
+
+- type: loadoutGroup
+  id: SeniorPhysicianOuterClothing
+  name: loadout-group-senior-physician-outerclothing
+  minLimit: 0
+  loadouts:
+  - SeniorPhysicianLabCoat
+  - RegularLabCoat
+  - MedicalDoctorWintercoat
+
+# Wildcards
+- type: loadoutGroup
+  id: PrisonerJumpsuit
+  name: loadout-group-prisoner-jumpsuit
+  loadouts:
+  - PrisonerJumpsuit
+  - PrisonerJumpskirt

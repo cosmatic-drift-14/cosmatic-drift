@@ -1,0 +1,121 @@
+# Back
+- type: loadout
+  id: PrivateInvestigatorBackpack
+  equipment: PrivateInvestigatorBackpack
+
+- type: startingGear
+  id: PrivateInvestigatorBackpack
+  equipment:
+    back: ClothingBackpackPrivateInvestigatorFilled
+
+- type: loadout
+  id: PrivateInvestigatorSatchel
+  equipment: PrivateInvestigatorSatchel
+
+- type: startingGear
+  id: PrivateInvestigatorSatchel
+  equipment:
+    back: ClothingBackpackSatchelPrivateInvestigatorFilled
+
+- type: loadout
+  id: PrivateInvestigatorDuffel
+  equipment: PrivateInvestigatorDuffel
+
+- type: startingGear
+  id: PrivateInvestigatorDuffel
+  equipment:
+    back: ClothingBackpackDuffelPrivateInvestigatorFilled
+
+# Outerclothing
+- type: loadout
+  id: JensonCoat
+  equipment: JensonCoat
+
+- type: startingGear
+  id: JensonCoat
+  equipment:
+    outerClothing: ClothingOuterCoatJensen
+
+- type: loadout
+  id: InspectorCoat
+  equipment: InspectorCoat
+
+- type: startingGear
+  id: InspectorCoat
+  equipment:
+    outerClothing: ClothingOuterCoatInspector
+
+- type: loadout
+  id: TrenchCoat
+  equipment: TrenchCoat
+
+- type: startingGear
+  id: TrenchCoat
+  equipment:
+    outerClothing: ClothingOuterCoatTrench
+
+# Gloves
+- type: loadout
+  id: BlackGloves
+  equipment: BlackGloves
+
+- type: startingGear
+  id: BlackGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack
+
+# Shoes
+- type: loadout
+  id: Jackboots
+  equipment: Jackboots
+
+- type: startingGear
+  id: Jackboots
+  equipment:
+    shoes: ClothingShoesBootsJack
+
+- type: loadout
+  id: LaceupShoes
+  equipment: LaceupShoes
+
+- type: startingGear
+  id: LaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: LeatherShoes
+  equipment: LeatherShoes
+
+- type: startingGear
+  id: LeatherShoes
+  equipment:
+    shoes: ClothingShoesLeather
+
+# Glasses
+- type: loadout
+  id: Sunglasses
+  equipment: Sunglasses
+
+- type: startingGear
+  id: Sunglasses
+  equipment:
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: loadout #Upstream merge will add a second glasses entry.
+  id: Glasses
+  equipment: Glasses
+
+- type: startingGear
+  id: Glasses
+  equipment:
+    eyes: ClothingEyesGlasses
+
+- type: loadout
+  id: Aviators
+  equipment: Aviators
+
+- type: startingGear
+  id: Aviators
+  equipment:
+    eyes: ClothingEyesGlassesAviator
