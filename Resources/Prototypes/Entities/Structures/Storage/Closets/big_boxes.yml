@@ -33,6 +33,11 @@
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
+    - type: ContainerSpawnPoint
+      containerId: entity_storage
+      whitelist:
+        components:
+        - Stowaway
     - type: Damageable
       damageContainer: Box
     - type: Sprite

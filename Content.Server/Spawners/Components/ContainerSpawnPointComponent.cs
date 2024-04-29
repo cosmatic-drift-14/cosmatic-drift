@@ -1,4 +1,5 @@
 using Content.Server.Spawners.EntitySystems;
+using Content.Shared.Whitelist;
 
 namespace Content.Server.Spawners.Components;
 
@@ -21,6 +22,12 @@ public sealed partial class ContainerSpawnPointComponent : Component, ISpawnPoin
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public string? Job;
+
+    /// <summary>
+    /// Only entities with this component will be spawned
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? Whitelist = null;
 
     /// <summary>
     /// The type of spawn point

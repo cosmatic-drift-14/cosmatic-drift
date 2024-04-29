@@ -3,4 +3,11 @@
   name: trait-synth-name
   description: trait-synth-desc
   components:
-    - type: Synth
+  - type: Synth
+
+- type: trait
+  id: Stowaway
+  name: trait-stowaway-name
+  description: trait-stowaway-desc
+  components:
+  - type: Stowaway

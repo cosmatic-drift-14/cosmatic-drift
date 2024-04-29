@@ -1,6 +1,7 @@
 using Content.Server.GameTicking;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Preferences;
 using Content.Shared.Traits;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
@@ -20,45 +21,56 @@ public sealed class TraitSystem : EntitySystem
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
     }
 
-    // When the player is spawned in, add all trait components selected during character creation
-    private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
+    /// <summary>
+    /// Attempts to add traits to the entity.
+    /// </summary>
+    /// <returns></returns>
+    public bool TryAddTraits(EntityUid mob, HumanoidCharacterProfile characterProfile)
     {
-        foreach (var traitId in args.Profile.TraitPreferences)
+        foreach (var traitId in characterProfile.TraitPreferences)
         {
             if (!_prototypeManager.TryIndex<TraitPrototype>(traitId, out var traitPrototype))
             {
                 Log.Warning($"No trait found with ID {traitId}!");
-                return;
+                return false;
             }
 
-            if (traitPrototype.Whitelist != null && !traitPrototype.Whitelist.IsValid(args.Mob))
+            if (traitPrototype.Whitelist != null && !traitPrototype.Whitelist.IsValid(mob))
                 continue;
 
-            if (traitPrototype.Blacklist != null && traitPrototype.Blacklist.IsValid(args.Mob))
+            if (traitPrototype.Blacklist != null && traitPrototype.Blacklist.IsValid(mob))
                 continue;
 
             // Add all components required by the prototype
             foreach (var entry in traitPrototype.Components.Values)
             {
-                if (HasComp(args.Mob, entry.Component.GetType()))
+                if (HasComp(mob, entry.Component.GetType()))
                     continue;
 
                 var comp = (Component) _serializationManager.CreateCopy(entry.Component, notNullableOverride: true);
-                comp.Owner = args.Mob;
-                EntityManager.AddComponent(args.Mob, comp);
+                comp.Owner = mob;
+                EntityManager.AddComponent(mob, comp);
             }
 
             // Add item required by the trait
             if (traitPrototype.TraitGear != null)
             {
-                if (!TryComp(args.Mob, out HandsComponent? handsComponent))
+                if (!TryComp(mob, out HandsComponent? handsComponent))
                     continue;
 
-                var coords = Transform(args.Mob).Coordinates;
+                var coords = Transform(mob).Coordinates;
                 var inhandEntity = EntityManager.SpawnEntity(traitPrototype.TraitGear, coords);
-                _sharedHandsSystem.TryPickup(args.Mob, inhandEntity, checkActionBlocker: false,
+                _sharedHandsSystem.TryPickup(mob, inhandEntity, checkActionBlocker: false,
                     handsComp: handsComponent);
             }
         }
+
+        return false;
+    }
+
+    // When the player is spawned in, add all trait components selected during character creation
+    private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
+    {
+        TryAddTraits(args.Mob, args.Profile);
     }
 }

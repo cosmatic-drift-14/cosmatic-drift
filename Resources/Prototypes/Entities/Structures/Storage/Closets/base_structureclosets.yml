@@ -96,6 +96,11 @@
   id: ClosetSteelBase
   parent: ClosetBase
   components:
+  - type: ContainerSpawnPoint
+    containerId: entity_storage
+    whitelist:
+      components:
+      - Stowaway
   - type: Construction
     graph: ClosetSteel
     node: done

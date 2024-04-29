@@ -81,6 +81,11 @@
     containers:
       entity_storage: !type:Container
       paper_label: !type:ContainerSlot
+  - type: ContainerSpawnPoint
+    containerId: entity_storage
+    whitelist:
+      components:
+      - Stowaway
   - type: ItemSlots
   - type: StaticPrice
     price: 50

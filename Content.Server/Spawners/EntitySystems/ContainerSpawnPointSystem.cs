@@ -67,6 +67,9 @@ public sealed class ContainerSpawnPointSystem : EntitySystem
             if (!_container.TryGetContainer(uid, spawnPoint.ContainerId, out var container, manager))
                 continue;
 
+            if (spawnPoint.Whitelist != null && !spawnPoint.Whitelist.IsValid(args.SpawnResult.Value))
+                continue; // This specific entity doesn't fit with the SpawnPoint's filter
+
             if (!_container.Insert(args.SpawnResult.Value, container, containerXform: xform))
                 continue;
 
