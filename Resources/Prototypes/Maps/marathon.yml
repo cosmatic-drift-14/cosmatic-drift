@@ -2,8 +2,8 @@
   id: Marathon
   mapName: 'Marathon Station'
   mapPath: /Maps/marathon.yml
-  minPlayers: 35
-  maxPlayers: 70
+  minPlayers: 25 #CD change
+  maxPlayers: 55 #CD change
   stations:
     Marathon:
       stationProto: StandardNanotrasenStation
