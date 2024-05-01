@@ -32,7 +32,7 @@
     slots: [belt]
     sprite: Objects/Specific/Janitorial/trashbag.rsi
   - type: Item
-    size: 125
+    size: 10 
 
 - type: entity
   name: trash bag
