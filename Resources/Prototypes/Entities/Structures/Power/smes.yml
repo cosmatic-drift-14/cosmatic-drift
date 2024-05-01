@@ -32,7 +32,7 @@
     - type: Appearance
     - type: Battery
       startingCharge: 0
-      maxCharge: 16000000
+      maxCharge: 16000000 # CD: Buffed from 8MW
     - type: ExaminableBattery
     - type: NodeContainer
       examinable: true
@@ -95,7 +95,7 @@
 - type: entity
   parent: BaseSMES
   id: SMESBasic
-  suffix: Basic, 8MW # CD: 16MW
+  suffix: Basic, 16MW # CD: Buffed from 16MW
   components:
   - type: Battery
     maxCharge: 16000000
