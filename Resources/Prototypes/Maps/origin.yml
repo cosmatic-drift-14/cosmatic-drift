@@ -2,7 +2,7 @@
   id: Origin
   mapName: 'Origin'
   mapPath: /Maps/origin.yml
-  minPlayers: 45
+  minPlayers: 45 #CD change
   stations:
     Origin:
       stationProto: StandardNanotrasenStation
