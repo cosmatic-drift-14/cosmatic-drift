@@ -91,6 +91,13 @@
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
 
+- type: loadoutGroup
+  id: SecurityGlassesOrHud
+  name: loadout-group-security-glasses-or-hud
+  loadouts:
+  - EyesGlassesSecurity
+  - EyesHudSecurity
+
 # Medical
 - type: loadoutGroup
   id: SeniorPhysicianHead
