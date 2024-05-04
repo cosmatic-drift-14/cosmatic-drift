@@ -82,9 +82,9 @@ namespace Content.Server.Database
                 .Property(log => log.Markings)
                 .HasConversion(jsonByteArrayConverter);
 
-            // CD: Store records on profile
-            modelBuilder.Entity<Profile>()
-                .Property(log => log.CDCharacterRecords)
+            // CD: Store Records
+            modelBuilder.Entity<CDProfile>()
+                .Property(log => log.CharacterRecords)
                 .HasConversion(jsonByteArrayConverter);
         }
 

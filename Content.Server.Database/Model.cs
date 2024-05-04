@@ -51,6 +51,13 @@ namespace Content.Server.Database
                 .HasIndex(p => new {p.Slot, PrefsId = p.PreferenceId})
                 .IsUnique();
 
+            // CD: CD Character Data
+            modelBuilder.Entity<CDProfile>()
+                .HasOne(p => p.Profile)
+                .WithOne(p => p.CDProfile)
+                .HasForeignKey<CDProfile>(p => p.ProfileId)
+                .IsRequired();
+
             modelBuilder.Entity<Antag>()
                 .HasIndex(p => new {HumanoidProfileId = p.ProfileId, p.AntagName})
                 .IsUnique();
@@ -348,7 +355,6 @@ namespace Content.Server.Database
         public string Sex { get; set; } = null!;
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
-        public float Height { get; set; } = 1f;
         [Column(TypeName = "jsonb")] public JsonDocument? Markings { get; set; } = null!;
         public string HairName { get; set; } = null!;
         public string HairColor { get; set; } = null!;
@@ -365,12 +371,31 @@ namespace Content.Server.Database
 
         [Column("pref_unavailable")] public DbPreferenceUnavailableMode PreferenceUnavailable { get; set; }
 
-        // CD: Store character records
-        [Column("cd_character_records", TypeName = "jsonb")]
-        public JsonDocument? CDCharacterRecords { get; set; }
-
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
+
+        public CDProfile? CDProfile { get; set; }
+    }
+
+    /// <summary>
+    /// Stores CD Character data separately from the main Profile. This is done to work around a bug
+    /// in EFCore migrations.
+    /// <p />
+    /// There is no way of forcing a dependent table to exist in EFCore (according to MS).
+    /// You must always account for the possibility of this table not existing.
+    /// </summary>
+    public class CDProfile
+    {
+        public int Id { get; set; }
+
+        public int ProfileId { get; set; }
+        public Profile Profile { get; set; } = null!;
+
+        public float Height { get; set; } = 1f;
+
+        // CD: Store character records
+        [Column("character_records", TypeName = "jsonb")]
+        public JsonDocument? CharacterRecords { get; set; }
     }
 
     public class Job
