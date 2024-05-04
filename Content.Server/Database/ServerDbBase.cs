@@ -46,6 +46,7 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                .Include(p => p.Profiles).ThenInclude(h => h.CDProfile) // CD: Store CD info
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -93,6 +94,7 @@ namespace Content.Server.Database
             }
 
             var oldProfile = db.DbContext.Profile
+                .Include(p => p.CDProfile) // CD: Store CD info
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
