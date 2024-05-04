@@ -14,6 +14,7 @@ loadout-group-senior-researcher-outerclothing = Senior Researcher outer clothing
 
 # Security
 loadout-group-senior-officer-jumpsuit = Senior Officer jumpsuit
+loadout-group-security-glasses-or-hud = Security Glasses
 
 # Medical
 loadout-group-senior-physician-head = Senior Physician head
