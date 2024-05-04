@@ -215,10 +215,10 @@ namespace Content.Server.Database
             }
 
             // CD: get character records or create default records
-            var cdRecords = profile.CDCharacterRecords != null
-                ? RecordsSerialization.DeserializeJson(profile.CDCharacterRecords)
+            var cdRecords = profile.CDProfile?.CharacterRecords != null
+                ? RecordsSerialization.DeserializeJson(profile.CDProfile.CharacterRecords)
                 : CharacterRecords.DefaultRecords();
-                
+
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -244,7 +244,7 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
-                profile.Height,
+                profile.CDProfile?.Height ?? 1.0f,
                 profile.Age,
                 sex,
                 gender,
@@ -285,7 +285,6 @@ namespace Content.Server.Database
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
             profile.Gender = humanoid.Gender.ToString();
-            profile.Height = humanoid.Height;
             profile.HairName = appearance.HairStyleId;
             profile.HairColor = appearance.HairColor.ToHex();
             profile.FacialHairName = appearance.FacialHairStyleId;
@@ -316,9 +315,11 @@ namespace Content.Server.Database
                         .Select(t => new Trait {TraitName = t})
             );
 
-            // CD: Store records
-            profile.CDCharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
-            
+            // CD: CD Character Data Data
+            profile.CDProfile ??= new CDProfile();
+            profile.CDProfile.Height = humanoid.Height;
+            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
+
             profile.Loadouts.Clear();
 
             foreach (var (role, loadouts) in humanoid.Loadouts)
