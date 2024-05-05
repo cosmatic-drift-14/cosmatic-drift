@@ -5,6 +5,7 @@ using Content.Server.StationRecords.Systems;
 using Content.Shared._CD.Records;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
+using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -35,8 +36,19 @@ public sealed class CharacterRecordsSystem : EntitySystem
             AddComp<CharacterRecordsComponent>(args.Station);
 
         var profile = args.Profile;
-        if (profile.CDCharacterRecords == null || string.IsNullOrEmpty(args.JobId))
+        var broken = false;
+        if (profile.CDCharacterRecords == null)
+        {
+            // FIXME: I have no clue what is the root cause of this issue. If you see a player with this, tell them to make some (small) change to their records and resave them.
+            // Right now we apply a baindaid fix of giving them default records.
+            Log.Error($"Null records in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}. Assuming default records.");
+            broken = true;
+        }
+        if (string.IsNullOrEmpty(args.JobId))
+        {
+            Log.Error($"Null JobId in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}");
             return;
+        }
 
         var player = args.Mob;
 
@@ -49,7 +61,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         TryComp<DnaComponent>(player, out var dnaComponent);
 
         var records = new FullCharacterRecords(
-            characterRecords: new CharacterRecords(profile.CDCharacterRecords),
+            characterRecords: !broken ? new CharacterRecords(profile.CDCharacterRecords!) : CharacterRecords.DefaultRecords(),
             stationRecordsKey: FindStationRecordsKey(player),
             name: profile.Name,
             age: profile.Age,
