@@ -244,7 +244,7 @@
     capacity: 5
   - type: UserInterface
     interfaces:
-      - key: enum.StorageUiKey.Key
+      enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
@@ -831,8 +831,8 @@
     capacity: 10
   - type: UserInterface
     interfaces:
-      - key: enum.StorageUiKey.Key
-        type: StorageBoundUserInterface
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

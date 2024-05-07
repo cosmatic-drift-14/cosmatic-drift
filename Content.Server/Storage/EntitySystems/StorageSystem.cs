@@ -7,7 +7,6 @@ using Content.Shared.Lock;
 using Content.Shared.Storage;
 using Content.Shared.Storage.Components;
 using Content.Shared.Storage.EntitySystems;
-using Content.Shared.Timing;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
@@ -21,21 +20,11 @@ namespace Content.Server.Storage.EntitySystems;
 
 public sealed partial class StorageSystem : SharedStorageSystem
 {
-    [Dependency] private readonly IAdminManager _admin = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-
-    private const string OpenUiUseDelayID = "storage";
 
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<StorageComponent, GetVerbsEvent<ActivationVerb>>(AddUiVerb);
-        Subs.BuiEvents<StorageComponent>(StorageComponent.StorageUiKey.Key, subs =>
-        {
-            subs.Event<BoundUIClosedEvent>(OnBoundUIClosed);
-        });
         SubscribeLocalEvent<StorageComponent, BeforeExplodeEvent>(OnExploded);
 
         SubscribeLocalEvent<StorageFillComponent, MapInitEvent>(OnStorageFillMapInit);
@@ -152,31 +141,5 @@ public sealed partial class StorageSystem : SharedStorageSystem
     {
         var filter = Filter.Pvs(uid).RemoveWhereAttachedEntity(e => e == user);
         RaiseNetworkEvent(new PickupAnimationEvent(GetNetEntity(uid), GetNetCoordinates(initialCoordinates), GetNetCoordinates(finalCoordinates), initialRotation), filter);
-    }
-
-    /// <summary>
-    ///     If the user has nested-UIs open (e.g., PDA UI open when pda is in a backpack), close them.
-    /// </summary>
-    /// <param name="session"></param>
-    public void CloseNestedInterfaces(EntityUid uid, ICommonSession session, StorageComponent? storageComp = null)
-    {
-        if (!Resolve(uid, ref storageComp))
-            return;
-
-        // for each containing thing
-        // if it has a storage comp
-        // ensure unsubscribe from session
-        // if it has a ui component
-        // close ui
-        foreach (var entity in storageComp.Container.ContainedEntities)
-        {
-            if (!TryComp(entity, out UserInterfaceComponent? ui))
-                continue;
-
-            foreach (var bui in ui.Interfaces.Values)
-            {
-                _uiSystem.TryClose(entity, bui.UiKey, session, ui);
-            }
-        }
     }
 }

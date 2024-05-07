@@ -50,7 +50,7 @@ public abstract class SharedStorageSystem : EntitySystem
     private EntityQuery<StackComponent> _stackQuery;
     private EntityQuery<TransformComponent> _xformQuery;
 
-       private const string QuickInsertUseDelayID = "quickInsert";
+    =private const string QuickInsertUseDelayID = "quickInsert";
 
     /// <inheritdoc />
     public override void Initialize()
@@ -60,6 +60,11 @@ public abstract class SharedStorageSystem : EntitySystem
         _itemQuery = GetEntityQuery<ItemComponent>();
         _stackQuery = GetEntityQuery<StackComponent>();
         _xformQuery = GetEntityQuery<TransformComponent>();
+
+        Subs.BuiEvents<StorageComponent>(StorageComponent.StorageUiKey.Key, subs =>
+        {
+            subs.Event<BoundUIClosedEvent>(OnBoundUIClosed);
+        });
 
         SubscribeLocalEvent<StorageComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<StorageComponent, ComponentInit>(OnComponentInit, before: new[] { typeof(SharedContainerSystem) });
@@ -82,10 +87,13 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
     }
 
-    protected virtual void OnMapInit(Entity<StorageComponent> entity, ref MapInitEvent args)
+    private void OnMapInit(Entity<StorageComponent> entity, ref MapInitEvent args)
     {
         if (TryComp<UseDelayComponent>(entity, out var useDelayComp))
+        {
             UseDelay.SetLength((entity, useDelayComp), entity.Comp.QuickInsertCooldown, QuickInsertUseDelayID);
+            UseDelay.SetLength((entity, useDelayComp), entity.Comp.OpenUiCooldown, OpenUiUseDelayID);
+        }
     }
 
     private void OnComponentInit(EntityUid uid, StorageComponent storageComp, ComponentInit args)
@@ -115,7 +123,100 @@ public abstract class SharedStorageSystem : EntitySystem
 
     public virtual void UpdateUI(EntityUid uid, StorageComponent component) {}
 
-    public virtual void OpenStorageUI(EntityUid uid, EntityUid entity, StorageComponent? storageComp = null, bool silent = false) { }
+        // for each containing thing
+        // if it has a storage comp
+        // ensure unsubscribe from session
+        // if it has a ui component
+        // close ui
+        foreach (var entity in storageComp.Container.ContainedEntities)
+        {
+            _ui.CloseUis(entity, actor);
+        }
+    }
+
+    private void OnBoundUIClosed(EntityUid uid, StorageComponent storageComp, BoundUIClosedEvent args)
+    {
+        CloseNestedInterfaces(uid, args.Actor, storageComp);
+
+        // If UI is closed for everyone
+        if (!_ui.IsUiOpen(uid, args.UiKey))
+        {
+            UpdateAppearance((uid, storageComp, null));
+            Audio.PlayPredicted(storageComp.StorageCloseSound, uid, args.Actor);
+        }
+    }
+
+    private void AddUiVerb(EntityUid uid, StorageComponent component, GetVerbsEvent<ActivationVerb> args)
+    {
+        var silent = false;
+        if (!args.CanAccess || !args.CanInteract || TryComp<LockComponent>(uid, out var lockComponent) && lockComponent.Locked)
+        {
+            // we allow admins to open the storage anyways
+            if (!_admin.HasAdminFlag(args.User, AdminFlags.Admin))
+                return;
+
+            silent = true;
+        }
+
+        silent |= HasComp<GhostComponent>(args.User);
+
+        // Does this player currently have the storage UI open?
+        var uiOpen = _ui.IsUiOpen(uid, StorageComponent.StorageUiKey.Key, args.User);
+
+        ActivationVerb verb = new()
+        {
+            Act = () =>
+            {
+                if (uiOpen)
+                {
+                    _ui.CloseUi(uid, StorageComponent.StorageUiKey.Key, args.User);
+                }
+                else
+                {
+                    OpenStorageUI(uid, args.User, component, silent);
+                }
+            }
+        };
+
+        if (uiOpen)
+        {
+            verb.Text = Loc.GetString("comp-storage-verb-close-storage");
+            verb.Icon = new SpriteSpecifier.Texture(
+                new("/Textures/Interface/VerbIcons/close.svg.192dpi.png"));
+        }
+        else
+        {
+            verb.Text = Loc.GetString("comp-storage-verb-open-storage");
+            verb.Icon = new SpriteSpecifier.Texture(
+                new("/Textures/Interface/VerbIcons/open.svg.192dpi.png"));
+        }
+        args.Verbs.Add(verb);
+    }
+
+    /// <summary>
+    ///     Opens the storage UI for an entity
+    /// </summary>
+    /// <param name="entity">The entity to open the UI for</param>
+    public void OpenStorageUI(EntityUid uid, EntityUid entity, StorageComponent? storageComp = null, bool silent = false)
+    {
+        if (!Resolve(uid, ref storageComp, false))
+            return;
+
+        // prevent spamming bag open / honkerton honk sound
+        silent |= TryComp<UseDelayComponent>(uid, out var useDelay) && UseDelay.IsDelayed((uid, useDelay));
+        if (!silent)
+        {
+            if (!_ui.IsUiOpen(uid, StorageComponent.StorageUiKey.Key))
+                Audio.PlayPredicted(storageComp.StorageOpenSound, uid, entity);
+
+            if (useDelay != null)
+                UseDelay.TryResetDelay((uid, useDelay));
+        }
+
+        _ui.OpenUi(uid, StorageComponent.StorageUiKey.Key, entity);
+    }
+
+    public virtual void UpdateUI(Entity<StorageComponent?> entity) {}
 
     private void AddTransferVerbs(EntityUid uid, StorageComponent component, GetVerbsEvent<UtilityVerb> args)
     {

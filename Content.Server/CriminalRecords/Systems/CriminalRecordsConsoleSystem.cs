@@ -93,7 +93,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             msg.Status == SecurityStatus.Suspected != (msg.Reason != null))
             return;
 
-        if (!CheckSelected(ent, msg.Session, out var mob, out var key))
+        if (!CheckSelected(ent, msg.Actor, out var mob, out var key))
             return;
 
         if (!_stationRecords.TryGetRecord<CriminalRecord>(key.Value, out var record) || record.Status == msg.Status)
@@ -166,7 +166,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
 
     private void OnAddHistory(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordAddHistory msg)
     {
-        if (!CheckSelected(ent, msg.Session, out _, out var key))
+        if (!CheckSelected(ent, msg.Actor, out _, out var key))
             return;
 
         var line = msg.Line.Trim();
@@ -183,7 +183,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
 
     private void OnDeleteHistory(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordDeleteHistory msg)
     {
-        if (!CheckSelected(ent, msg.Session, out _, out var key))
+        if (!CheckSelected(ent, msg.Actor, out _, out var key))
             return;
 
         if (!_criminalRecords.TryDeleteHistory(key.Value, msg.Index))
@@ -201,7 +201,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
 
         if (!TryComp<StationRecordsComponent>(owningStation, out var stationRecords))
         {
-            _ui.TrySetUiState(uid, CriminalRecordsConsoleKey.Key, new CriminalRecordsConsoleState());
+            _ui.SetUiState(uid, CriminalRecordsConsoleKey.Key, new CriminalRecordsConsoleState());
             return;
         }
 
@@ -217,24 +217,22 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             state.SelectedKey = id;
         }
 
-        _ui.TrySetUiState(uid, CriminalRecordsConsoleKey.Key, state);
+        _ui.SetUiState(uid, CriminalRecordsConsoleKey.Key, state);
     }
 
     /// <summary>
     /// Boilerplate that most actions use, if they require that a record be selected.
     /// Obviously shouldn't be used for selecting records.
     /// </summary>
-    private bool CheckSelected(Entity<CriminalRecordsConsoleComponent> ent, ICommonSession session,
+    private bool CheckSelected(Entity<CriminalRecordsConsoleComponent> ent, EntityUid user,
         [NotNullWhen(true)] out EntityUid? mob, [NotNullWhen(true)] out StationRecordKey? key)
     {
         key = null;
         mob = null;
-        if (session.AttachedEntity is not { } user)
-            return false;
 
         if (!_access.IsAllowed(user, ent))
         {
-            _popup.PopupEntity(Loc.GetString("criminal-records-permission-denied"), ent, session);
+            _popup.PopupEntity(Loc.GetString("criminal-records-permission-denied"), ent, user);
             return false;
         }
 

@@ -366,8 +366,8 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
