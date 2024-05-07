@@ -468,6 +468,7 @@
         - MagazinePistol
         - MagazineMagnum
         - CombatKnife
+        - Truncheon
       components:
         - Stunbaton
         - FlashOnTrigger
