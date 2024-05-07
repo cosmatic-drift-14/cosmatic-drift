@@ -539,8 +539,15 @@ namespace Content.Shared.Preferences
             _traitPreferences.Clear();
             _traitPreferences.AddRange(traits);
 
-            CDCharacterRecords?.EnsureValid();
-            
+            if (CDCharacterRecords == null)
+            {
+                CDCharacterRecords = CharacterRecords.DefaultRecords();
+            }
+            else
+            {
+                CDCharacterRecords!.EnsureValid();
+            }
+
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
 

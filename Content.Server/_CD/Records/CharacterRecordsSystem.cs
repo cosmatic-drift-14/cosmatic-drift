@@ -36,13 +36,10 @@ public sealed class CharacterRecordsSystem : EntitySystem
             AddComp<CharacterRecordsComponent>(args.Station);
 
         var profile = args.Profile;
-        var broken = false;
         if (profile.CDCharacterRecords == null)
         {
-            // FIXME: I have no clue what is the root cause of this issue. If you see a player with this, tell them to make some (small) change to their records and resave them.
-            // Right now we apply a baindaid fix of giving them default records.
-            Log.Error($"Null records in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}. Assuming default records.");
-            broken = true;
+            Log.Error($"Null records in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}.");
+            return;
         }
         if (string.IsNullOrEmpty(args.JobId))
         {
@@ -61,7 +58,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         TryComp<DnaComponent>(player, out var dnaComponent);
 
         var records = new FullCharacterRecords(
-            characterRecords: !broken ? new CharacterRecords(profile.CDCharacterRecords!) : CharacterRecords.DefaultRecords(),
+            characterRecords: new CharacterRecords(profile.CDCharacterRecords),
             stationRecordsKey: FindStationRecordsKey(player),
             name: profile.Name,
             age: profile.Age,
