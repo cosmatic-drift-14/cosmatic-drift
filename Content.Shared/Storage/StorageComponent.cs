@@ -27,6 +27,19 @@ namespace Content.Shared.Storage
         [DataField("clickInsert")]
         public bool ClickInsert = true; // Can insert stuff by clicking the storage entity with it
 
+        /// <summary>
+        /// Minimum delay between quick/area insert actions.
+        /// </summary>
+        /// <remarks>Used to prevent autoclickers spamming server with individual pickup actions.</remarks>
+        public TimeSpan QuickInsertCooldown = TimeSpan.FromSeconds(0.5);
+
+        /// <summary>
+        /// Minimum delay between UI open actions.
+        /// <remarks>Used to spamming opening sounds.</remarks>
+        /// </summary>
+        [DataField]
+        public TimeSpan OpenUiCooldown = TimeSpan.Zero;
+
         [DataField("areaInsert")]
         public bool AreaInsert;  // "Attacking" with the storage entity causes it to insert all nearby storables after a delay
 

@@ -50,6 +50,8 @@ public abstract class SharedStorageSystem : EntitySystem
     private EntityQuery<StackComponent> _stackQuery;
     private EntityQuery<TransformComponent> _xformQuery;
 
+       private const string QuickInsertUseDelayID = "quickInsert";
+
     /// <inheritdoc />
     public override void Initialize()
     {
@@ -59,6 +61,7 @@ public abstract class SharedStorageSystem : EntitySystem
         _stackQuery = GetEntityQuery<StackComponent>();
         _xformQuery = GetEntityQuery<TransformComponent>();
 
+        SubscribeLocalEvent<StorageComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<StorageComponent, ComponentInit>(OnComponentInit, before: new[] { typeof(SharedContainerSystem) });
         SubscribeLocalEvent<StorageComponent, GetVerbsEvent<UtilityVerb>>(AddTransferVerbs);
         SubscribeLocalEvent<StorageComponent, InteractUsingEvent>(OnInteractUsing, after: new[] { typeof(ItemSlotsSystem) });
@@ -77,6 +80,12 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, StorageInteractWithItemEvent>(OnInteractWithItem);
 
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
+    }
+
+    protected virtual void OnMapInit(Entity<StorageComponent> entity, ref MapInitEvent args)
+    {
+        if (TryComp<UseDelayComponent>(entity, out var useDelayComp))
+            UseDelay.SetLength((entity, useDelayComp), entity.Comp.QuickInsertCooldown, QuickInsertUseDelayID);
     }
 
     private void OnComponentInit(EntityUid uid, StorageComponent storageComp, ComponentInit args)
@@ -184,7 +193,7 @@ public abstract class SharedStorageSystem : EntitySystem
     /// <returns></returns>
     private void AfterInteract(EntityUid uid, StorageComponent storageComp, AfterInteractEvent args)
     {
-        if (!args.CanReach)
+        if (args.Handled || !args.CanReach || !UseDelay.TryResetDelay(uid, checkDelayed: true, id: QuickInsertUseDelayID))
             return;
 
         // Pick up all entities in a radius around the clicked location.
