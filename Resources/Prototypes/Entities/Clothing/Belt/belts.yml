@@ -477,6 +477,10 @@
         - Handcuff
         - BallisticAmmoProvider
         - CartridgeAmmo
+        - DoorRemote
+        - Whistle
+        - HolosignProjector
+        - BalloonPopper
   - type: ItemMapper
     mapLayers:
       flashbang:
