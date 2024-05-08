@@ -279,6 +279,9 @@
   - type: IngestionBlocker
   - type: IdentityBlocker
     coverage: MOUTH
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 25
 
 - type: entity
   parent: ClothingMaskBase
