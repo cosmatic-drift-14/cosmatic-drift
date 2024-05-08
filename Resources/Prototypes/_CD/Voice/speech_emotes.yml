@@ -1,6 +1,7 @@
 #Vulpkanin
 - type: emote
   id: Bark
+  name: chat-emote-name-bark
   category: Vocal
   chatMessages: [barks.]
   chatTriggers:
@@ -16,6 +17,7 @@
 
 - type: emote
   id: Snarl
+  name: chat-emote-name-snarl
   category: Vocal
   chatMessages: [snarls.]
   chatTriggers:
@@ -31,6 +33,7 @@
 
 - type: emote
   id: Whine
+  name: chat-emote-name-whine
   category: Vocal
   chatMessages: [whines.]
   chatTriggers:
@@ -46,6 +49,7 @@
 
 - type: emote
   id: Howl
+  name: chat-emote-name-howl
   category: Vocal
   chatMessages: [howls.]
   chatTriggers:
@@ -60,6 +64,7 @@
 
 - type: emote
   id: Growl
+  name: chat-emote-name-growl
   category: Vocal
   chatMessages: [growls.]
   chatTriggers:
