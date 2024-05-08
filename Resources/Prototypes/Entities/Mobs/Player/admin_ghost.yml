@@ -47,7 +47,7 @@
       enum.GeneralStationRecordConsoleKey.Key:
       # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
-      - key: enum.CharacterRecordConsoleKey.Key
+      enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
