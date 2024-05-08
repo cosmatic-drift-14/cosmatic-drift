@@ -66,9 +66,9 @@
           type: AccessOverriderBoundUserInterface
     - type: ActivatableUI
       key: enum.AccessOverriderUiKey.Key
-      requireHands: true      
-      closeOnHandDeselect: false  
-      singleUser: true      
+      requireHands: true
+      requireActiveHand: false
+      singleUser: true
     - type: ItemSlots
     - type: ContainerContainer
       containers:
