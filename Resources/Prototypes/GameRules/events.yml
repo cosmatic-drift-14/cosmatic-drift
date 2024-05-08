@@ -189,9 +189,8 @@
 #     startAudio:
 #       path: /Audio/Announcements/attention.ogg
 #     startDelay: 10
-#     earliestStart: 30
-#     minimumPlayers: 35
-#     weight: 5
+#     earliestStart: 15
+#     weight: 6
 #     duration: 50
 #   - type: VentCrittersRule
 #     entries:
@@ -205,7 +204,7 @@
 #       prob: 0.001
 #     specialEntries:
 #     - id: SpawnPointGhostRatKing
-#       prob: 0.005
+#       prob: 0.001
 
 - type: entity
   id: CockroachMigration
