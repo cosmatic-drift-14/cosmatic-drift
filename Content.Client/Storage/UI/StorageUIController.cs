@@ -41,7 +41,7 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
     private void OnStorageUpdate(EntityUid uid, StorageComponent component)
     {
         if (EntityManager.TryGetComponent<UserInterfaceComponent>(uid, out var uiComp) &&
-            uiComp.OpenInterfaces.TryGetValue(StorageComponent.StorageUiKey.Key, out var bui))
+            uiComp.ClientOpenInterfaces.TryGetValue(StorageComponent.StorageUiKey.Key, out var bui))
         {
             var storageBui = (StorageBoundUserInterface) bui;
 

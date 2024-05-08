@@ -33,10 +33,10 @@ public sealed partial class EntityWhitelist
     // TODO yaml validation
 
     /// <summary>
-    ///     Item sizes that are allowed in the whitelist.
+    ///     Max item size that is allowed in the whitelist. CD, changed from Sizes to MaxSize
     /// </summary>
     [DataField]
-    public List<ProtoId<ItemSizePrototype>>? Sizes;
+    public int MaxSize;
 
     [NonSerialized, Access(typeof(EntityWhitelistSystem))]
     public List<ComponentRegistration>? Registrations;

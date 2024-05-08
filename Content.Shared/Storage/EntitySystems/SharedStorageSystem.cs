@@ -1,11 +1,13 @@
 using System.Linq;
 using Content.Shared.ActionBlocker;
+using Content.Shared.Administration;
+using Content.Shared.Administration.Managers;
 using Content.Shared.CombatMode;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Coordinates;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
-using Content.Shared.Hands;
+using Content.Shared.Ghost;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Implants.Components;
@@ -19,17 +21,19 @@ using Content.Shared.Stacks;
 using Content.Shared.Storage.Components;
 using Content.Shared.Timing;
 using Content.Shared.Verbs;
-using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
+using Robust.Shared.Serialization;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Storage.EntitySystems;
 
 public abstract class SharedStorageSystem : EntitySystem
 {
     [Dependency] protected readonly IRobustRandom Random = default!;
+    [Dependency] private   readonly ISharedAdminManager _admin = default!;
     [Dependency] private   readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private   readonly SharedDoAfterSystem _doAfterSystem = default!;
     [Dependency] private   readonly EntityLookupSystem _entityLookupSystem = default!;
@@ -42,15 +46,17 @@ public abstract class SharedStorageSystem : EntitySystem
     [Dependency] private   readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
     [Dependency] private   readonly SharedCombatModeSystem _combatMode = default!;
-    [Dependency] protected   readonly SharedTransformSystem _transform = default!;
+    [Dependency] protected readonly SharedTransformSystem _transform = default!;
     [Dependency] private   readonly SharedStackSystem _stack = default!;
+    [Dependency] private   readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] protected readonly UseDelaySystem UseDelay = default!;
 
     private EntityQuery<ItemComponent> _itemQuery;
     private EntityQuery<StackComponent> _stackQuery;
     private EntityQuery<TransformComponent> _xformQuery;
 
-    =private const string QuickInsertUseDelayID = "quickInsert";
+    private const string QuickInsertUseDelayID = "quickInsert";
+    private const string OpenUiUseDelayID = "storage";
 
     /// <inheritdoc />
     public override void Initialize()
@@ -82,7 +88,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
         SubscribeLocalEvent<StorageComponent, AreaPickupDoAfterEvent>(OnDoAfter);
 
-        SubscribeLocalEvent<StorageComponent, StorageInteractWithItemEvent>(OnInteractWithItem);
+        SubscribeAllEvent<StorageInteractWithItemEvent>(OnInteractWithItem);
 
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
     }
@@ -114,11 +120,17 @@ public abstract class SharedStorageSystem : EntitySystem
 
         RecalculateStorageUsed(uid, component);
         UpdateStorageVisualization(uid, component);
-        UpdateUI(uid, component);
+        UpdateUI((uid, component));
         Dirty(uid, component);
     }
 
-    public virtual void UpdateUI(EntityUid uid, StorageComponent component) {}
+    /// <summary>
+    ///     If the user has nested-UIs open (e.g., PDA UI open when pda is in a backpack), close them.
+    /// </summary>
+    private void CloseNestedInterfaces(EntityUid uid, EntityUid actor, StorageComponent? storageComp = null)
+    {
+        if (!Resolve(uid, ref storageComp))
+            return;
 
         // for each containing thing
         // if it has a storage comp
@@ -138,7 +150,7 @@ public abstract class SharedStorageSystem : EntitySystem
         // If UI is closed for everyone
         if (!_ui.IsUiOpen(uid, args.UiKey))
         {
-            UpdateAppearance((uid, storageComp, null));
+            UpdateUI((uid, storageComp));
             Audio.PlayPredicted(storageComp.StorageCloseSound, uid, args.Actor);
         }
     }
@@ -438,16 +450,23 @@ public abstract class SharedStorageSystem : EntitySystem
     ///     item in the user's hand if it is currently empty, or interact with the item using the user's currently
     ///     held item.
     /// </summary>
-    private void OnInteractWithItem(EntityUid uid, StorageComponent storageComp, StorageInteractWithItemEvent args)
+    private void OnInteractWithItem(StorageInteractWithItemEvent msg, EntitySessionEventArgs args)
     {
-        if (args.Session.AttachedEntity is not EntityUid player)
+        if (args.SenderSession.AttachedEntity is not { } player)
             return;
 
-        var entity = GetEntity(args.InteractedItemUID);
+        var uid = GetEntity(msg.StorageUid);
+        var entity = GetEntity(msg.InteractedItemUid);
+
+        if (!TryComp<StorageComponent>(uid, out var storageComp))
+            return;
+
+        if (!_ui.IsUiOpen(uid, StorageComponent.StorageUiKey.Key, player))
+            return;
 
         if (!Exists(entity))
         {
-            Log.Error($"Player {args.Session} interacted with non-existent item {args.InteractedItemUID} stored in {ToPrettyString(uid)}");
+            Log.Error($"Player {args.SenderSession} interacted with non-existent item {msg.InteractedItemUid} stored in {ToPrettyString(uid)}");
             return;
         }
 
@@ -475,10 +494,11 @@ public abstract class SharedStorageSystem : EntitySystem
 
     private void OnInsertItemMessage(EntityUid uid, StorageComponent storageComp, StorageComponent.StorageInsertItemMessage args)
     {
-        if (args.Session.AttachedEntity == null)
+        var ent = GetEntity(args.Entity);
+        if (ent == null)
             return;
-
-        PlayerInsertHeldEntity(uid, args.Session.AttachedEntity.Value, storageComp);
+        
+        PlayerInsertHeldEntity(uid, ent, storageComp);
     }
 
     private void OnBoundUIOpen(EntityUid uid, StorageComponent storageComp, BoundUIOpenedEvent args)
@@ -664,7 +684,7 @@ public abstract class SharedStorageSystem : EntitySystem
                     itemComp.Size > storageComp.StorageCapacityMax - storageComp.StorageUsed ||
                     !_containerSystem.Insert(insertEnt, storageComp.Container))
                 {
-                    UpdateUI(uid, storageComp);
+                    UpdateUI((uid, storageComp));
 
                     // If we also didn't do any stack fills above then just end
                     // otherwise play sound and update UI anyway.

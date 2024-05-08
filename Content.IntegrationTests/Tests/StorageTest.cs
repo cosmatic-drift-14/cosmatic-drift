@@ -97,9 +97,8 @@ namespace Content.IntegrationTests.Tests
                     else
                     {
                         Assert.Fail($"Entity {proto.ID} has storage-fill without a storage component!");
-
-                    if (entStorage == null)
-                        return;
+                        continue;
+                    }
 
                     var fill = (StorageFillComponent) proto.Components[id].Component;
                     var size = GetFillSize(fill, isEntStorage);

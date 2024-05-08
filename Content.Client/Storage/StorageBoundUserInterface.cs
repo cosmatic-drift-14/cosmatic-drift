@@ -65,10 +65,11 @@ namespace Content.Client.Storage
         {
             if (args == null || cData is not EntityListData { Uid: var entity })
                 return;
-
+            
             if (args.Event.Function == EngineKeyFunctions.UIClick)
             {
-                SendPredictedMessage(new StorageInteractWithItemEvent(_entManager.GetNetEntity(entity)));
+                var entManager = IoCManager.Resolve<IEntityManager>();
+                SendPredictedMessage(new StorageInteractWithItemEvent(_entManager.GetNetEntity(entity), entManager.GetNetEntity(Owner)));
             }
             else if (EntMan.EntityExists(entity))
             {

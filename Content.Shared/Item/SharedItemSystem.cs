@@ -108,7 +108,7 @@ public abstract class SharedItemSystem : EntitySystem
         if (!Container.TryGetContainingContainer(uid, out var container) ||
             !TryComp<StorageComponent>(container.Owner, out var storage))
             return;
-        _storage.UpdateUI(container.Owner, storage);
+        _storage.UpdateUI((container.Owner, storage));
         // end CD
     }
 

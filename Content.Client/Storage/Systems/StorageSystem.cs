@@ -1,4 +1,4 @@
-﻿using Content.Client.Animations;
+using Content.Client.Animations;
 using Content.Shared.Hands;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
@@ -21,12 +21,6 @@ public sealed class StorageSystem : SharedStorageSystem
 
         SubscribeNetworkEvent<PickupAnimationEvent>(HandlePickupAnimation);
         SubscribeNetworkEvent<AnimateInsertingEntitiesEvent>(HandleAnimatingInsertingEntities);
-    }
-
-    public override void UpdateUI(EntityUid uid, StorageComponent component)
-    {
-        // Should we wrap this in some prediction call maybe?
-        StorageUpdated?.Invoke(uid, component);
     }
 
     /// <inheritdoc />

@@ -45,9 +45,9 @@ public sealed class EntityWhitelistSystem : EntitySystem
             }
         }
 
-        if (list.Sizes != null && _itemQuery.TryComp(uid, out var itemComp))
+        if (list.MaxSize != null && _itemQuery.TryComp(uid, out var itemComp))
         {
-            if (list.Sizes.Contains(itemComp.Size))
+            if (itemComp.Size < list.MaxSize)
                 return true;
         }
 

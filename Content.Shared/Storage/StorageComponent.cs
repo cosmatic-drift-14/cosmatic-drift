@@ -109,10 +109,14 @@ namespace Content.Shared.Storage
     [Serializable, NetSerializable]
     public sealed class StorageInteractWithItemEvent : BoundUserInterfaceMessage
     {
-        public readonly NetEntity InteractedItemUID;
-        public StorageInteractWithItemEvent(NetEntity interactedItemUID)
+        public readonly NetEntity InteractedItemUid;
+
+        public readonly NetEntity StorageUid;
+
+        public StorageInteractWithItemEvent(NetEntity interactedItemUid, NetEntity storageUid)
         {
-            InteractedItemUID = interactedItemUID;
+            InteractedItemUid = interactedItemUid;
+            StorageUid = storageUid;
         }
     }
 
