@@ -5,7 +5,7 @@
   description: High-tech recharger adapted for portability
   components:
   - type: Item
-    size: Huge
+    size: 120
   - type: Sprite
     sprite: Objects/Power/portable_recharger.rsi
     state: charging

@@ -8,7 +8,7 @@
     sprite: Objects/Weapons/Melee/cane.rsi
     state: cane
   - type: Item
-    size: Normal
+    size: 25
     sprite: Objects/Weapons/Melee/cane.rsi
   - type: Appearance
   - type: MeleeWeapon
@@ -45,7 +45,7 @@
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
-    size: Normal
+    size: 25
     sprite: Objects/Weapons/Melee/cane_blade.rsi
   - type: Tag
     tags:

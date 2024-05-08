@@ -9,7 +9,7 @@
     state: icon
   - type: Item
     sprite: Objects/Misc/chopstick.rsi
-    size: Small
+    size: 5
   - type: Utensil
     types:
     - Fork
