@@ -5,6 +5,7 @@ using Content.Server.StationRecords.Systems;
 using Content.Shared._CD.Records;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
+using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -35,8 +36,16 @@ public sealed class CharacterRecordsSystem : EntitySystem
             AddComp<CharacterRecordsComponent>(args.Station);
 
         var profile = args.Profile;
-        if (profile.CDCharacterRecords == null || string.IsNullOrEmpty(args.JobId))
+        if (profile.CDCharacterRecords == null)
+        {
+            Log.Error($"Null records in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}.");
             return;
+        }
+        if (string.IsNullOrEmpty(args.JobId))
+        {
+            Log.Error($"Null JobId in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}");
+            return;
+        }
 
         var player = args.Mob;
 
