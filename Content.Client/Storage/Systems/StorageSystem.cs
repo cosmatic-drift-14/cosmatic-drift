@@ -55,6 +55,14 @@ public sealed class StorageSystem : SharedStorageSystem
         _entityPickupAnimation.AnimateEntityPickup(item, initialCoords, finalPos, initialAngle);
     }
 
+    public override void UpdateUI(Entity<StorageComponent?> entity)
+    {
+        if (entity.Comp == null)
+            return;
+
+        StorageUpdated?.Invoke(entity.Owner, entity.Comp);
+    }
+
     /// <summary>
     /// Animate the newly stored entities in <paramref name="msg"/> flying towards this storage's position
     /// </summary>

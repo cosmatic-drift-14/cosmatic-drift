@@ -104,7 +104,7 @@ namespace Content.Client.Storage
             args.Handle();
         }
 
-        public void TouchedContainerButton(BaseButton.ButtonEventArgs args)
+        public void TouchedContainerButton(BaseButton.ButtonEventArgs? args)
         {
             _entManager.RaisePredictiveEvent(new StorageInsertItemMessage(EntMan.GetNetEntity(Owner)));
         }

@@ -81,7 +81,6 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, OpenStorageImplantEvent>(OnImplantActivate);
         SubscribeLocalEvent<StorageComponent, AfterInteractEvent>(AfterInteract);
         SubscribeLocalEvent<StorageComponent, DestructionEventArgs>(OnDestroy);
-        SubscribeLocalEvent<StorageComponent, StorageComponent.StorageInsertItemMessage>(OnInsertItemMessage);
         SubscribeLocalEvent<StorageComponent, BoundUIOpenedEvent>(OnBoundUIOpen);
 
         SubscribeLocalEvent<StorageComponent, EntInsertedIntoContainerMessage>(OnStorageItemInserted);
@@ -90,6 +89,7 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, AreaPickupDoAfterEvent>(OnDoAfter);
 
         SubscribeAllEvent<StorageInteractWithItemEvent>(OnInteractWithItem);
+        SubscribeAllEvent<StorageComponent.StorageInsertItemMessage>(OnInsertItemMessage);
 
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
     }
@@ -493,13 +493,16 @@ public abstract class SharedStorageSystem : EntitySystem
         _interactionSystem.InteractUsing(player, hands.ActiveHandEntity.Value, entity, Transform(entity).Coordinates, checkCanInteract: false);
     }
 
-    private void OnInsertItemMessage(EntityUid uid, StorageComponent storageComp, StorageComponent.StorageInsertItemMessage args)
+    private void OnInsertItemMessage(StorageComponent.StorageInsertItemMessage msg, EntitySessionEventArgs args)
     {
-        var ent = GetEntity(args.Player);
-        if (ent == EntityUid.Invalid)
+        if (args.SenderSession.AttachedEntity is not { } player)
+            return;
+
+        var uid = GetEntity(msg.StorageUid);
+        if (uid == EntityUid.Invalid)
             return;
         
-        PlayerInsertHeldEntity(uid, ent, storageComp);
+        PlayerInsertHeldEntity(uid, player);
     }
 
     private void OnBoundUIOpen(EntityUid uid, StorageComponent storageComp, BoundUIOpenedEvent args)

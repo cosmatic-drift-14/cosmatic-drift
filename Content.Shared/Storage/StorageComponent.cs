@@ -97,11 +97,11 @@ namespace Content.Shared.Storage
         [Serializable, NetSerializable]
         public sealed class StorageInsertItemMessage : EntityEventArgs
         {
-            public readonly NetEntity Player;
+            public readonly NetEntity StorageUid;
 
-            public StorageInsertItemMessage(NetEntity player)
+            public StorageInsertItemMessage(NetEntity storageUid)
             {
-                Player = player;
+                StorageUid = storageUid;
             }
         }
 
