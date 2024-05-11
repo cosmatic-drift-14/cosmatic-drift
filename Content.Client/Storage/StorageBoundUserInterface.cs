@@ -68,8 +68,7 @@ namespace Content.Client.Storage
             
             if (args.Event.Function == EngineKeyFunctions.UIClick)
             {
-                var entManager = IoCManager.Resolve<IEntityManager>();
-                SendPredictedMessage(new StorageInteractWithItemEvent(_entManager.GetNetEntity(entity), entManager.GetNetEntity(Owner)));
+                _entManager.RaisePredictiveEvent(new StorageInteractWithItemEvent(_entManager.GetNetEntity(entity), _entManager.GetNetEntity(Owner)));
             }
             else if (EntMan.EntityExists(entity))
             {
@@ -107,7 +106,7 @@ namespace Content.Client.Storage
 
         public void TouchedContainerButton(BaseButton.ButtonEventArgs args)
         {
-            SendPredictedMessage(new StorageInsertItemMessage());
+            _entManager.RaisePredictiveEvent(new StorageInsertItemMessage(EntMan.GetNetEntity(Owner)));
         }
 
         protected override void Dispose(bool disposing)

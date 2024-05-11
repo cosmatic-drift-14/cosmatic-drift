@@ -95,8 +95,14 @@ namespace Content.Shared.Storage
         public SoundSpecifier? StorageCloseSound;
 
         [Serializable, NetSerializable]
-        public sealed class StorageInsertItemMessage : BoundUserInterfaceMessage
+        public sealed class StorageInsertItemMessage : EntityEventArgs
         {
+            public readonly NetEntity Player;
+
+            public StorageInsertItemMessage(NetEntity player)
+            {
+                Player = player;
+            }
         }
 
         [Serializable, NetSerializable]
@@ -107,7 +113,7 @@ namespace Content.Shared.Storage
     }
 
     [Serializable, NetSerializable]
-    public sealed class StorageInteractWithItemEvent : BoundUserInterfaceMessage
+    public sealed class StorageInteractWithItemEvent : EntityEventArgs
     {
         public readonly NetEntity InteractedItemUid;
 

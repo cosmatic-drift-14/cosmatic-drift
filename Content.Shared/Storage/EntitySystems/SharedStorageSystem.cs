@@ -73,6 +73,7 @@ public abstract class SharedStorageSystem : EntitySystem
         });
 
         SubscribeLocalEvent<StorageComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<StorageComponent, GetVerbsEvent<ActivationVerb>>(AddUiVerb);
         SubscribeLocalEvent<StorageComponent, ComponentInit>(OnComponentInit, before: new[] { typeof(SharedContainerSystem) });
         SubscribeLocalEvent<StorageComponent, GetVerbsEvent<UtilityVerb>>(AddTransferVerbs);
         SubscribeLocalEvent<StorageComponent, InteractUsingEvent>(OnInteractUsing, after: new[] { typeof(ItemSlotsSystem) });
@@ -494,8 +495,8 @@ public abstract class SharedStorageSystem : EntitySystem
 
     private void OnInsertItemMessage(EntityUid uid, StorageComponent storageComp, StorageComponent.StorageInsertItemMessage args)
     {
-        var ent = GetEntity(args.Entity);
-        if (ent == null)
+        var ent = GetEntity(args.Player);
+        if (ent == EntityUid.Invalid)
             return;
         
         PlayerInsertHeldEntity(uid, ent, storageComp);
