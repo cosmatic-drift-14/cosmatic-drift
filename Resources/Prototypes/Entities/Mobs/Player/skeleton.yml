@@ -50,6 +50,7 @@
     description: ghost-role-information-closet-skeleton-description
     raffle:
       settings: default
+    rules: ghost-role-information-closet-skeleton-rules #CD change
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [LimitedPassengerGear]
