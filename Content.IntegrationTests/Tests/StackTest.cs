@@ -1,3 +1,4 @@
+#nullable enable
 using Content.Shared.Item;
 using Content.Shared.Stacks;
 using Robust.Shared.GameObjects;
@@ -17,12 +18,18 @@ public sealed class StackTest
         var protoManager = server.ResolveDependency<IPrototypeManager>();
         var compFact = server.ResolveDependency<IComponentFactory>();
 
-        Assert.Multiple(() =>
+        await Assert.MultipleAsync(async () =>
         {
             foreach (var entity in pair.GetPrototypesWithComponent<StackComponent>())
             {
-                if (!entity.TryGetComponent<StackComponent>(out var stackComponent, compFact) ||
-                    !entity.TryGetComponent<ItemComponent>(out var itemComponent, compFact))
+                StackComponent? stackComponent = null;
+                ItemComponent? itemComponent = null;
+                await server.WaitPost(() =>
+                {
+                    entity.TryGetComponent(out stackComponent, compFact);
+                    entity.TryGetComponent(out itemComponent, compFact);
+                });
+                if (stackComponent == null || itemComponent == null)
                     continue;
 
                 if (!protoManager.TryIndex<StackPrototype>(stackComponent.StackTypeId, out var stackProto) ||
