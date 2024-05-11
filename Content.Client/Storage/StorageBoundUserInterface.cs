@@ -65,10 +65,10 @@ namespace Content.Client.Storage
         {
             if (args == null || cData is not EntityListData { Uid: var entity })
                 return;
-
+            
             if (args.Event.Function == EngineKeyFunctions.UIClick)
             {
-                SendPredictedMessage(new StorageInteractWithItemEvent(_entManager.GetNetEntity(entity)));
+                _entManager.RaisePredictiveEvent(new StorageInteractWithItemEvent(_entManager.GetNetEntity(entity), _entManager.GetNetEntity(Owner)));
             }
             else if (EntMan.EntityExists(entity))
             {
@@ -104,9 +104,9 @@ namespace Content.Client.Storage
             args.Handle();
         }
 
-        public void TouchedContainerButton(BaseButton.ButtonEventArgs args)
+        public void TouchedContainerButton(BaseButton.ButtonEventArgs? args)
         {
-            SendPredictedMessage(new StorageInsertItemMessage());
+            _entManager.RaisePredictiveEvent(new StorageInsertItemMessage(EntMan.GetNetEntity(Owner)));
         }
 
         protected override void Dispose(bool disposing)

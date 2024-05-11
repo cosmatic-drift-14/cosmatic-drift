@@ -78,31 +78,34 @@ namespace Content.IntegrationTests.Tests
             var compFact = server.ResolveDependency<IComponentFactory>();
             var id = compFact.GetComponentName(typeof(StorageFillComponent));
 
-            Assert.Multiple(() =>
+            await Assert.MultipleAsync(async () =>
             {
                 foreach (var proto in pair.GetPrototypesWithComponent<StorageFillComponent>())
                 {
-                    int capacity;
-                    var isEntStorage = false;
+                    await server.WaitPost(() =>
+                    {
+                        int capacity;
+                        var isEntStorage = false;
 
-                    if (proto.TryGetComponent<StorageComponent>("Storage", out var storage))
-                    {
-                        capacity = storage.StorageCapacityMax;
-                    }
-                    else if (proto.TryGetComponent<EntityStorageComponent>("EntityStorage", out var entStorage))
-                    {
-                        capacity = entStorage.Capacity;
-                        isEntStorage = true;
-                    }
-                    else
-                    {
-                        Assert.Fail($"Entity {proto.ID} has storage-fill without a storage component!");
-                        continue;
-                    }
+                        if (proto.TryGetComponent<StorageComponent>("Storage", out var storage))
+                        {
+                            capacity = storage.StorageCapacityMax;
+                        }
+                        else if (proto.TryGetComponent<EntityStorageComponent>("EntityStorage", out var entStorage))
+                        {
+                            capacity = entStorage.Capacity;
+                            isEntStorage = true;
+                        }
+                        else
+                        {
+                            Assert.Fail($"Entity {proto.ID} has storage-fill without a storage component!");
+                            return;
+                        }
 
-                    var fill = (StorageFillComponent) proto.Components[id].Component;
-                    var size = GetFillSize(fill, isEntStorage);
-                    Assert.That(size, Is.LessThanOrEqualTo(capacity), $"{proto.ID} storage fill is too large.");
+                        var fill = (StorageFillComponent) proto.Components[id].Component;
+                        var size = GetFillSize(fill, isEntStorage);
+                        Assert.That(size, Is.LessThanOrEqualTo(capacity), $"{proto.ID} storage fill is too large.");
+                    });
                 }
             });
 
