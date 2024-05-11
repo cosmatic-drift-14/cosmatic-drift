@@ -56,3 +56,14 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
+#Synth suits
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDefaultSynth
+  name: synthetic jumpsuit
+  description: A standard issue jumpsuit, commonly handed out to synthetic units, though it is also seen worn by other crew members who feel fashionable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
