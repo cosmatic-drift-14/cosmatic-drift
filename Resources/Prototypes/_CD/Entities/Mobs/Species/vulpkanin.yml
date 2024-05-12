@@ -20,6 +20,7 @@
   - type: Speech
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
+    allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
   # - type: TypingIndicator # If you wish to add a typing indicator, go to Textures/_CD/Effects/speech.rsi and uncomment this.
   #   proto: vulpkanin
   - type: Vocal
