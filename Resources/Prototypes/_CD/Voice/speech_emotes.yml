@@ -3,6 +3,13 @@
   id: Bark
   name: chat-emote-name-bark
   category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: [barks.]
   chatTriggers:
     - bark
@@ -19,6 +26,13 @@
   id: Snarl
   name: chat-emote-name-snarl
   category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: [snarls.]
   chatTriggers:
     - snarl
@@ -35,6 +49,13 @@
   id: Whine
   name: chat-emote-name-whine
   category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: [whines.]
   chatTriggers:
     - whine
@@ -51,6 +72,13 @@
   id: Howl
   name: chat-emote-name-howl
   category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: [howls.]
   chatTriggers:
     - howl
@@ -66,6 +94,13 @@
   id: Growl
   name: chat-emote-name-growl
   category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: [growls.]
   chatTriggers:
     - growl
