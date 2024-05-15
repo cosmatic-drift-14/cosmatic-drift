@@ -765,7 +765,7 @@ public abstract class SharedStorageSystem : EntitySystem
             return;
 
         // Gets everyone looking at the UI
-        foreach (var actor in _ui.GetActors(uid, StorageComponent.StorageUiKey.Key))
+        foreach (var actor in _ui.GetActors(uid, StorageComponent.StorageUiKey.Key).ToList())
         {
             if (_admin.HasAdminFlag(actor, AdminFlags.Admin))
                 continue;
