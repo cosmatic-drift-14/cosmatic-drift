@@ -147,34 +147,6 @@
     node: bot
 
 - type: entity
-  parent: MobSiliconBaseVehicle
-  id: MobSupplyBot
-  name: supplybot
-  description: Delivers cargo!
-  components:
-  - type: Sprite
-    sprite: Mobs/Silicon/Bots/supplybot.rsi
-    layers:
-    - state: supplybot
-      map: ["enum.VehicleVisualLayers.AutoAnimate"]
-  - type: GhostRole
-    name: ghost-role-information-supplybot-name
-    description: ghost-role-information-supplybot-description
-  - type: Construction
-    graph: SupplyBot
-    node: bot
-  - type: Storage
-    capacity: 250
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
-
-- type: entity
   parent: MobSiliconBase
   id: MobHonkBot
   name: honkbot
@@ -421,9 +393,7 @@
     - Salvage
   - type: Dumpable
   - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,9,3
+    capacity: 250
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

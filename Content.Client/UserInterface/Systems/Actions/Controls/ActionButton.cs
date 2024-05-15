@@ -49,6 +49,8 @@ public sealed class ActionButton : Control, IEntityControl
     private readonly SpriteView _smallItemSpriteView;
     private readonly SpriteView _bigItemSpriteView;
 
+    private Texture? _buttonBackgroundTexture;
+
     public EntityUid? ActionId { get; private set; }
     private BaseActionComponent? _action;
     public bool Locked { get; set; }

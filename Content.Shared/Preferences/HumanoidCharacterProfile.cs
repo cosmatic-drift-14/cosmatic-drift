@@ -128,6 +128,13 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
+        /// These maybe shouldn't be here now? 
+        [DataField]
+        public float Height = 1f;
+
+        [DataField]
+        public CharacterRecords? CDCharacterRecords;
+
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -167,6 +174,7 @@ namespace Content.Shared.Preferences
             : this(other.Name,
                 other.FlavorText,
                 other.Species,
+                other.Height,
                 other.Age,
                 other.Sex,
                 other.Gender,
@@ -177,10 +185,7 @@ namespace Content.Shared.Preferences
                 new HashSet<string>(other.AntagPreferences),
                 new HashSet<string>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.Height,
-                CharacterRecords? cdCharacterRecords)
-            : this(name, flavortext, species, height, age, sex, gender, appearance, spawnPriority, new Dictionary<string, JobPriority>(jobPriorities),
-                preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences), new Dictionary<string, RoleLoadout>(loadouts), cdCharacterRecords)
+                other.CDCharacterRecords)
         {
         }
 

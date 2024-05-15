@@ -55,6 +55,8 @@ namespace Content.Client.Lobby.UI
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
 
+        private LineEdit _heightPicker => CHeight;
+
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
 
@@ -445,8 +447,8 @@ namespace Content.Client.Lobby.UI
             #region CosmaticRecords
 
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
-            _tabContainer.AddChild(_recordsTab);
-            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+            TabContainer.AddChild(_recordsTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
             #endregion CosmaticRecords
 
@@ -466,8 +468,6 @@ namespace Content.Client.Lobby.UI
             };
 
             #endregion Dummy
-
-            #endregion Left
 
             ShowClothes.OnToggled += args =>
             {
@@ -1354,7 +1354,7 @@ namespace Content.Client.Lobby.UI
                 return;
             }
 
-            var species = _speciesList.Find(x => x.ID == Profile.Species);
+            var species = _species.Find(x => x.ID == Profile.Species);
             if (species != null)
                 _defaultHeight = species.DefaultHeight;
 
