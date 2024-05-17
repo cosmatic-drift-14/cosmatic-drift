@@ -2,8 +2,8 @@
   id: Omega
   mapName: 'Omega'
   mapPath: /Maps/omega.yml
-  minPlayers: 5
-  maxPlayers: 25
+  minPlayers: 5 #CD change
+  maxPlayers: 25 #CD change
   stations:
     Omega:
       stationProto: StandardNanotrasenStation

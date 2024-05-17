@@ -13,11 +13,11 @@ thief-backpack-button-deselect = Select [X]
 
 # Sets
 
-thief-backpack-category-chameleon-name = Chameleon's kit.
-thief-backpack-category-chameleon-description = 
-    Includes a full set of clothing that contain 
-    chameleon technology, allowing you to disguise 
-    as pretty much anything on the station.
+thief-backpack-category-chameleon-name = chameleon's kit
+thief-backpack-category-chameleon-description =
+    Includes a full set of clothing that contains chameleon technology,
+    Contains a chameleon projector to help disguise yourself as objects,
+    You'll be able to disguise yourself as almost anything and anyone.
 
 thief-backpack-category-tools-name = Bearcatcher's kit
 thief-backpack-category-tools-description = 

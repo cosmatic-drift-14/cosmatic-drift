@@ -18,6 +18,8 @@
     whitelist:
       tags:
       - Burnt
+      - Cigarette
+      - Cigar
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

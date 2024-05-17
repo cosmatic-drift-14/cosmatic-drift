@@ -65,14 +65,9 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
                 SendMessage(new CharacterRecordsConsoleFilterMsg(new StationRecordsFilter(ty, txt)));
         };
 
-        _window.OnSetSecurityStatus += status =>
+        _window.OnSetSecurityStatus += (status, reason) =>
         {
-            SendMessage(new CriminalRecordChangeStatus(status, null));
-        };
-
-        _window.OnSetWantedStatus += reason =>
-        {
-            SendMessage(new CriminalRecordChangeStatus(SecurityStatus.Wanted, reason));
+            SendMessage(new CriminalRecordChangeStatus(status, reason));
         };
 
         _window.OpenCentered();

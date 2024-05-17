@@ -148,11 +148,15 @@ namespace Content.Server.RoundEnd
 
         public void RequestRoundEnd(TimeSpan countdownTime, EntityUid? requester = null, bool checkCooldown = true, string text = "round-end-system-shuttle-called-announcement", string name = "Station")
         {
-            if (_gameTicker.RunLevel != GameRunLevel.InRound) return;
+            if (_gameTicker.RunLevel != GameRunLevel.InRound)
+                return;
 
-            if (checkCooldown && _cooldownTokenSource != null) return;
+            if (checkCooldown && _cooldownTokenSource != null)
+                return;
 
-            if (_countdownTokenSource != null) return;
+            if (_countdownTokenSource != null)
+                return;
+
             _countdownTokenSource = new();
 
             if (requester != null)
@@ -191,6 +195,8 @@ namespace Content.Server.RoundEnd
 
             LastCountdownStart = _gameTiming.CurTime;
             ExpectedCountdownEnd = _gameTiming.CurTime + countdownTime;
+
+            // TODO full game saves
             Timer.Spawn(countdownTime, _shuttle.CallEmergencyShuttle, _countdownTokenSource.Token);
 
             ActivateCooldown();
@@ -336,6 +342,8 @@ namespace Content.Server.RoundEnd
         {
             _cooldownTokenSource?.Cancel();
             _cooldownTokenSource = new();
+
+            // TODO full game saves
             Timer.Spawn(DefaultCooldownDuration, () =>
             {
                 _cooldownTokenSource.Cancel();
@@ -365,7 +373,7 @@ namespace Content.Server.RoundEnd
         {
             var options = new VoteOptions
             {
-                InitiatorText = ("shuttle-vote-user"),
+                InitiatorText = Loc.GetString("shuttle-vote-user"),
                 Title = Loc.GetString("shuttle-vote-title"),
                 Options =
                 {
@@ -391,7 +399,7 @@ namespace Content.Server.RoundEnd
                     _chatManager.DispatchServerAnnouncement(Loc.GetString("Vote succeeded, round end shuttle enroute"));
 					// This is kinda cursed but whatever, stops a recall
 					_cfg.SetCVar(CCVars.EmergencyRecallTurningPoint, 0f);
-					
+
                     RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
                 }
                 else
