@@ -23,7 +23,7 @@
       "directions": 4
     },
     {
-      "name": "bottomsheet-icon",
+      "name": "bottomsheet-icon"
     },
     {
       "name": "bottomsheet-equipped-INNERCLOTHING",
@@ -38,7 +38,7 @@
       "directions": 4
     },
     {
-      "name": "topsheet-icon",
+      "name": "topsheet-icon"
     },
     {
       "name": "topsheet-equipped-INNERCLOTHING",
@@ -53,7 +53,7 @@
       "directions": 4
     },
 	{
-      "name": "trimprimary-icon",
+      "name": "trimprimary-icon"
     },
     {
       "name": "trimprimary-equipped-INNERCLOTHING",
@@ -68,7 +68,7 @@
       "directions": 4
     },
     {
-      "name": "trimsecondary-icon",
+      "name": "trimsecondary-icon"
     },
     {
       "name": "trimsecondary-equipped-INNERCLOTHING",
@@ -83,7 +83,7 @@
       "directions": 4
     },
     {
-      "name": "chimes-icon",
+      "name": "chimes-icon"
     },
     {
       "name": "chimes-equipped-INNERCLOTHING",
