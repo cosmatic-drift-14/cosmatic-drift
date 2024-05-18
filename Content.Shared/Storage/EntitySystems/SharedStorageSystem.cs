@@ -82,6 +82,7 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, AfterInteractEvent>(AfterInteract);
         SubscribeLocalEvent<StorageComponent, DestructionEventArgs>(OnDestroy);
         SubscribeLocalEvent<StorageComponent, BoundUIOpenedEvent>(OnBoundUIOpen);
+        SubscribeLocalEvent<StorageComponent, LockToggledEvent>(OnLockToggled);
 
         SubscribeLocalEvent<StorageComponent, EntInsertedIntoContainerMessage>(OnStorageItemInserted);
         SubscribeLocalEvent<StorageComponent, EntRemovedFromContainerMessage>(OnStorageItemRemoved);
@@ -753,6 +754,25 @@ public abstract class SharedStorageSystem : EntitySystem
             return false;
         }
         return true;
+    }
+
+    /// <summary>
+    /// Checks if a storage's UI is open by anyone when locked, and closes it unless they're an admin.
+    /// </summary>
+    private void OnLockToggled(EntityUid uid, StorageComponent component, ref LockToggledEvent args)
+    {
+        if (!args.Locked)
+            return;
+
+        // Gets everyone looking at the UI
+        foreach (var actor in _ui.GetActors(uid, StorageComponent.StorageUiKey.Key).ToList())
+        {
+            if (_admin.HasAdminFlag(actor, AdminFlags.Admin))
+                continue;
+
+            // And closes it unless they're an admin
+            _ui.CloseUi(uid, StorageComponent.StorageUiKey.Key, actor);
+        }
     }
 
     /// <summary>

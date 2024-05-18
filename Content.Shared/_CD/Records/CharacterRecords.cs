@@ -4,8 +4,9 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Records;
 
+[DataDefinition]
 [Serializable, NetSerializable]
-public sealed class CharacterRecords
+public sealed partial class CharacterRecords
 {
     private const int TextMedLen = 128;
     private const int TextVeryLargeLen = 2048;
@@ -15,36 +16,53 @@ public sealed class CharacterRecords
     // Additional data is fetched from the Profile
 
     // All
-    public const int MaxHeight = 800;
+    [DataField]
     public int Height { get; private set; }
-    public const int MaxWeight = 300;
+    public const int MaxHeight = 800;
+
+    [DataField]
     public int Weight { get; private set; }
+    public const int MaxWeight = 300;
+
+    [DataField]
     public string EmergencyContactName { get; private set; }
 
     // Employment
+    [DataField]
     public bool HasWorkAuthorization { get; private set; }
 
     // Security
+    [DataField]
     public string IdentifyingFeatures { get; private set; }
 
     // Medical
+    [DataField]
     public string Allergies { get; private set; }
+    [DataField]
     public string DrugAllergies { get; private set; }
+    [DataField]
     public string PostmortemInstructions { get; private set; }
     // history, prescriptions, etc. would be a record below
 
     // "incidents"
+    [DataField]
     public List<RecordEntry> MedicalEntries { get; private set; }
+    [DataField]
     public List<RecordEntry> SecurityEntries { get; private set; }
+    [DataField]
     public List<RecordEntry> EmploymentEntries { get; private set; }
 
+    [DataDefinition]
     [Serializable, NetSerializable]
-    public sealed class RecordEntry
+    public sealed partial class RecordEntry
     {
+        [DataField]
         public string Title { get; private set; }
         // players involved, can be left blank (or with a generic "CentCom" etc.) for backstory related issues
+        [DataField]
         public string Involved { get; private set; }
         // Longer description of events.
+        [DataField]
         public string Description { get; private set; }
 
         public RecordEntry(string title, string involved, string desc)
