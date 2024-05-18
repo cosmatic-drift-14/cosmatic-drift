@@ -1,0 +1,63 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformFabricRandom
+  abstract: true
+  description: Designed to be comfortable, light, and cover enough to pass inspection.
+  suffix: Random Fabric Wrap
+  components:
+  - type: SuitSensor
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/fabric_wrap.rsi
+    layers:
+    - state: topsheet-icon
+      map: [ "top" ]
+    - state: middlesheet-icon
+      map: [ "middle" ]
+    - state: bottomsheet-icon
+      map: [ "bottom" ]
+    - state: trimprimary_icon
+      map: [ "trim" ]
+    - state: trimsecondary_icon
+      map: [ "trim2"     ]
+    - state: mask_null
+      map: [ "chime" ]
+    - state: mask_null
+      map: [ "chime2" ]
+  - type: Clothing
+    femaleMask: UniformTop
+    maleMask: UniformTop
+    sprite: _CD/Clothing/Uniforms/fabric_wrap.rsi
+    clothingVisuals:
+      jumpsuit:
+    - state: topsheet-icon
+      map: [ "top" ]
+    - state: middlesheet-icon
+      map: [ "middle" ]
+    - state: bottomsheet-icon
+      map: [ "bottom" ]
+    - state: trimprimary_icon
+      map: [ "trim" ]
+    - state: trimsecondary_icon
+      map: [ "trim2"     ]
+    - state: mask_null
+      map: [ "chime" ]
+    - state: mask_null
+      map: [ "chime2" ]
+
+- type: entity
+  parent: ClothingUniformRandom
+  id: ClothingUniformFabricChimeless
+  name: fabric bodywrap
+  components:
+  - type: RandomSprite
+    available:
+      - top:
+          topsheet-equipped-INNERCLOTHING: Sixteen
+        middle:
+          middlesheet-equipped-INNERCLOTHING: Sixteen
+        bottom:
+          bottomsheet-equipped-INNERCLOTHING: Sixteen
+        trim:
+          trimprimary-equipped-INNERCLOTHING: Sixteen
+        trim2::
+          trimsecondary-equipped-INNERCLOTHING: Sixteen
