@@ -109,9 +109,9 @@ public sealed partial class RecordEditorGui : Control
         #endregion
     }
 
-    public void Update(HumanoidCharacterProfile profile)
+    public void Update(HumanoidCharacterProfile? profile)
     {
-        _records = profile.CDCharacterRecords ?? CharacterRecords.DefaultRecords();
+        _records = profile?.CDCharacterRecords ?? CharacterRecords.DefaultRecords();
         EmploymentEntrySelector.UpdateContents(_records.EmploymentEntries);
         MedicalEntrySelector.UpdateContents(_records.MedicalEntries);
         SecurityEntrySelector.UpdateContents(_records.SecurityEntries);

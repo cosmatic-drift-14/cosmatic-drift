@@ -128,11 +128,10 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
-        /// These maybe shouldn't be here now? 
-        [DataField]
+        [DataField("cosmaticDriftCharacterHeight")]
         public float Height = 1f;
 
-        [DataField]
+        [DataField("cosmaticDriftCharacterRecords")]
         public CharacterRecords? CDCharacterRecords;
 
         public HumanoidCharacterProfile(

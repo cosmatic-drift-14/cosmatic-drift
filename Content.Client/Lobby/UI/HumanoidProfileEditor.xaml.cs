@@ -55,8 +55,6 @@ namespace Content.Client.Lobby.UI
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
 
-        private LineEdit _heightPicker => CHeight;
-
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
 
@@ -219,7 +217,7 @@ namespace Content.Client.Lobby.UI
 
             #region CDHeight
 
-            _heightPicker.OnTextChanged += args =>
+            CDHeight.OnTextChanged += args =>
             {
                 if (Profile is null || !float.TryParse(args.Text, out var newHeight))
                     return;
@@ -235,9 +233,9 @@ namespace Content.Client.Lobby.UI
                 SetProfileHeight(newHeight);
             };
 
-            CHeightReset.OnPressed += _ =>
+            CDHeightReset.OnPressed += _ =>
             {
-                _heightPicker.SetText(_defaultHeight.ToString(CultureInfo.InvariantCulture), true);
+                CDHeight.SetText(_defaultHeight.ToString(CultureInfo.InvariantCulture), true);
             };
 
             CDHeightSlider.OnValueChanged += _ =>
@@ -246,7 +244,7 @@ namespace Content.Client.Lobby.UI
                     return;
                 var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
                 var newHeight = MathF.Round(MathHelper.Lerp(prototype.MinHeight, prototype.MaxHeight, CDHeightSlider.Value), 2);
-                _heightPicker.Text = newHeight.ToString(CultureInfo.InvariantCulture);
+                CDHeight.Text = newHeight.ToString(CultureInfo.InvariantCulture);
                 SetProfileHeight(newHeight);
             };
 
@@ -453,7 +451,7 @@ namespace Content.Client.Lobby.UI
             #endregion CosmaticRecords
 
             RefreshFlavorText();
-            
+
             #region Dummy
 
             SpriteRotateLeft.OnPressed += _ =>
@@ -721,6 +719,10 @@ namespace Content.Client.Lobby.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
+
+            // CD: our controls
+            UpdateHeightControls();
+            _recordsTab.Update(profile);
 
             RefreshAntags();
             RefreshJobs();
@@ -1159,7 +1161,8 @@ namespace Content.Client.Lobby.UI
         private void SetProfileHeight(float height)
         {
             Profile = Profile?.WithHeight(height);
-            IsDirty = true;
+            SetDirty();
+            ReloadProfilePreview();
         }
 
         private void SetSpawnPriority(SpawnPriorityPreference newSpawnPriority)
@@ -1362,7 +1365,7 @@ namespace Content.Client.Lobby.UI
             var sliderPercent = (Profile.Height - prototype.MinHeight) /
                                 (prototype.MaxHeight - prototype.MinHeight);
             CDHeightSlider.Value = sliderPercent;
-            _heightPicker.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
+            CDHeight.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
         }
 
         private void UpdateSpawnPriorityControls()
