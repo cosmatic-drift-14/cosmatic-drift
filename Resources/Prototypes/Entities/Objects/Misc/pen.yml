@@ -10,7 +10,7 @@
   - type: Item
     sprite: Objects/Misc/pens.rsi
     heldPrefix: pen
-    size: Tiny
+    size: 1
   - type: Tag
     tags:
     - Write
