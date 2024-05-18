@@ -1,6 +1,6 @@
-- type: advertisementsPack
+- type: messagePack
   id: QuickThreadsAds
-  advertisements:
+  messages:
   - advertisement-threads-1
   - advertisement-threads-2
   - advertisement-threads-3

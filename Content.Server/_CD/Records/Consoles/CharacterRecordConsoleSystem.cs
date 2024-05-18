@@ -116,7 +116,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
     private void SendState(EntityUid entity, CharacterRecordConsoleState state)
     {
-        _userInterface.TrySetUiState(entity, CharacterRecordConsoleKey.Key, state);
+        _userInterface.SetUiState(entity, CharacterRecordConsoleKey.Key, state);
     }
 
     /// <summary>

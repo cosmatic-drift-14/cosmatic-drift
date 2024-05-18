@@ -2,8 +2,8 @@
   id: Cluster
   mapName: 'Cluster'
   mapPath: /Maps/cluster.yml
-  minPlayers: 5
-  maxPlayers: 25
+  minPlayers: 5 #CD change
+  maxPlayers: 25 #CD change
   stations:
     Cluster:
       stationProto: StandardNanotrasenStation

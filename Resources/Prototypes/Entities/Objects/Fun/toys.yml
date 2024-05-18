@@ -1160,7 +1160,6 @@
   description: New Sandy-Cat plastic sword! Comes with realistic sound and full color! Looks almost like the real thing!
   components:
     - type: EnergySword
-      isSharp: false
       colorOptions:
         - DodgerBlue
     - type: ItemToggle
@@ -1226,7 +1225,7 @@
 - type: entity
   parent: BasePlushie
   id: ToyAmongPequeno
-  name: among pequeno
+  name: among pequeño
   description: sus!
   components:
   - type: Sprite
@@ -1294,9 +1293,7 @@
   components:
     - type: Sprite
       sprite: Objects/Fun/rubber_hammer.rsi
-      layers:
-        - state: icon
-          shader: unshaded
+      state: icon
     - type: StaminaDamageOnHit
       damage: 8
     - type: Item

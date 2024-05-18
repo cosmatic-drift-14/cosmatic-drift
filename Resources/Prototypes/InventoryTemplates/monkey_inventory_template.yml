@@ -31,6 +31,7 @@
     displayName: Jumpsuit
   - name: id
     slotTexture: id
+    fullTextureName: template_small
     slotFlags: IDCARD
     slotGroup: SecondHotbar
     stripTime: 6

@@ -2,8 +2,8 @@
   id: Core
   mapName: 'Core'
   mapPath: /Maps/core.yml
-  minPlayers: 25
-  maxPlayers: 35
+  minPlayers: 25 #CD change
+  maxPlayers: 35 #CD change
   stations:
     Core:
       stationProto: StandardNanotrasenStation

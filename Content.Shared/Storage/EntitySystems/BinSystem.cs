@@ -140,7 +140,7 @@ public sealed class BinSystem : EntitySystem
 
         _container.Insert(toInsert, component.ItemContainer);
         component.Items.Add(toInsert);
-        Dirty(component);
+        Dirty(uid, component);
         return true;
     }
 
@@ -156,7 +156,7 @@ public sealed class BinSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return false;
 
-        if (!component.Items.Any())
+        if (component.Items.Count == 0)
             return false;
 
         if (toRemove == null || toRemove != component.Items.LastOrDefault())
@@ -166,7 +166,7 @@ public sealed class BinSystem : EntitySystem
             return false;
 
         component.Items.Remove(toRemove.Value);
-        Dirty(component);
+        Dirty(uid, component);
         return true;
     }
 }

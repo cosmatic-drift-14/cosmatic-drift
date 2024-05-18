@@ -2,7 +2,7 @@
   id: Meta
   mapName: 'Meta Station'
   mapPath: /Maps/meta.yml
-  minPlayers: 35
+  minPlayers: 35 #CD change
   stations:
     Meta:
       stationProto: StandardNanotrasenStation

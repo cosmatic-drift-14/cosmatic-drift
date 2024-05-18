@@ -1,0 +1,17 @@
+- type: loadout
+  id: EyesGlassesSecurity
+  equipment: EyesGlassesSecurity
+
+- type: startingGear
+  id: EyesGlassesSecurity
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+
+- type: loadout
+  id: EyesHudSecurity
+  equipment: EyesHudSecurity
+
+- type: startingGear
+  id: EyesHudSecurity
+  equipment:
+    eyes: ClothingEyesHudSecurity
