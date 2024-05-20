@@ -57,17 +57,6 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
     
-#Casual
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCargoPants
-  name: cargo cargoes
-  description: A pair of khaki cargo pants, for cargo. Comes with a grey tee.
-  components:
-  - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargocasual.rsi
-  - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargocasual.rsi
 
 #Synth suits
 - type: entity
@@ -80,3 +69,49 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
+
+#Casual
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoPants
+  name: cargo cargoes
+  description: A pair of khaki cargo pants, for cargo. Comes with a grey tee.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSecurtyCasual
+  name: casual security fatigues
+  description: A Red shirt with a black undershirt and pants. Comfortable while on patrol.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformHoSSeniorCasual
+  name: casual senior fatigues
+  description: A Red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/senior_security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/senior_security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformWardenCasual
+  name: casual warden fatigues
+  description: A Red shirt with a black undershirt and pants. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/warden_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/warden_casual.rsi
+    
