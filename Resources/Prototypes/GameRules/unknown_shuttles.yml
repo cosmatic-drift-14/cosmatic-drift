@@ -43,20 +43,20 @@
   - type: LoadMapRule
     preloadedGrid: DisasterEvacPod
 
-- type: entity
-  id: UnknownShuttleHonki
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-unknown-shuttle-incoming
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 2
-    reoccurrenceDelay: 30
-    duration: 1
-  - type: LoadMapRule
-    preloadedGrid: Honki
+# - type: entity
+#   id: UnknownShuttleHonki
+#   parent: BaseGameRule
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     startAnnouncement: station-event-unknown-shuttle-incoming
+#     startAudio:
+#       path: /Audio/Announcements/attention.ogg
+#     weight: 2
+#     reoccurrenceDelay: 30
+#     duration: 1
+#   - type: LoadMapRule
+#     preloadedGrid: Honki
 
 - type: entity
   id: UnknownShuttleSyndieEvacPod
@@ -67,7 +67,7 @@
     startAnnouncement: station-event-unknown-shuttle-incoming
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 2
+    weight: 1 #CD change from 2 to 1, if it happens too much we can flat out disable it.
     reoccurrenceDelay: 30
     duration: 1
   - type: LoadMapRule
