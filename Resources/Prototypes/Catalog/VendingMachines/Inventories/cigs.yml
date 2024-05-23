@@ -5,6 +5,8 @@
     CigPackRed: 2
     CigPackBlue: 2
     CigPackBlack: 2
+    CigPackPurple: 2 # _CD 
+    CigPackCandy: 2 # _CD
     CigPackMixed: 2
     CigarCase: 1
     SmokingPipeFilledTobacco: 1
