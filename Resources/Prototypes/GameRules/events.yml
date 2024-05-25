@@ -114,9 +114,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 2
+    weight: 1
     duration: 1
-    earliestStart: 45
+    earliestStart: 135
     minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: MobRevenant
