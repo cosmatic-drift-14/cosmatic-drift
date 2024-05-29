@@ -1163,7 +1163,10 @@ namespace Content.Shared.Interaction
         /// <inheritdoc cref="CanAccessViaStorage(Robust.Shared.GameObjects.EntityUid,Robust.Shared.GameObjects.EntityUid)"/>
         public bool CanAccessViaStorage(EntityUid user, EntityUid target, BaseContainer container)
         {
-            if (StorageComponent.ContainerId != container.ID)
+            if (!TryComp(container.Owner, out StorageComponent? storage))
+                return false;
+
+            if (storage.Container?.ID != container.ID)
                 return false;
 
             // we don't check if the user can access the storage entity itself. This should be handed by the UI system.
