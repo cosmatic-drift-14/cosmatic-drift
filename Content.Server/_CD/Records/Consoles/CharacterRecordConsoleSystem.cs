@@ -63,25 +63,21 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         var names = new Dictionary<uint, (string, uint?)>();
         foreach (var (i, r) in characterRecords)
         {
+            var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
+            // Admins get additional info to make it easier to run commands
+            var nameJob = console.ConsoleType != RecordConsoleType.Admin ? $"{r.Name} ({r.JobTitle})" : $"{r.Name} ({netEnt}, {r.JobTitle}";
+
             // Apply any filter the user has set
             if (console.Filter != null)
             {
-                if (IsSkippedRecord(console.Filter, r))
+                if (IsSkippedRecord(console.Filter, r, nameJob))
                     continue;
             }
 
             if (names.ContainsKey(i))
                 Log.Error($"We somehow have duplicate character record keys, NetEntity: {i}, Entity: {entity}, Character Name: {r.Name}");
-            if (console.ConsoleType == RecordConsoleType.Admin)
-            {
-                var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
-                // Admins get additional info to make it easier to run commands
-                names[i] = ($"{r.Name} ({netEnt}, {r.JobTitle}", r.StationRecordsKey);
-            }
-            else
-            {
-                names[i] = ($"{r.Name} ({r.JobTitle})", r.StationRecordsKey);
-            }
+
+            names[i] = (nameJob, r.StationRecordsKey);
         }
 
         var record =
@@ -123,7 +119,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     /// Almost exactly the same as <see cref="StationRecordsSystem.IsSkipped"/>
     /// </summary>
     private static bool IsSkippedRecord(StationRecordsFilter filter,
-        FullCharacterRecords record)
+        FullCharacterRecords record, string nameJob)
     {
         bool isFilter = filter.Value.Length > 0;
 
@@ -135,7 +131,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         return filter.Type switch
         {
             StationRecordFilterType.Name =>
-                !record.Name.ToLower().Contains(filterLowerCaseValue),
+                !nameJob.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Prints => record.Fingerprint != null
                 && IsFilterWithSomeCodeValue(record.Fingerprint, filterLowerCaseValue),
             StationRecordFilterType.DNA => record.DNA != null
