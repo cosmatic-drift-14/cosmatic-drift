@@ -420,9 +420,9 @@
 #         prototype: InitialInfected
 
 - type: entity
-  id: LoneOpsSpawn
-  parent: BaseGameRule
   noSpawn: true
+  parent: BaseNukeopsRule
+  id: LoneOpsSpawn
   components:
   # - type: StationEvent # CD: Hoping just changing this works
   #   earliestStart: 45
