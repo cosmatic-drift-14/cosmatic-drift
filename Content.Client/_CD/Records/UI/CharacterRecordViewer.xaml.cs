@@ -24,6 +24,8 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     private List<CharacterRecords.RecordEntry>? _entries;
 
     private DialogWindow? _wantedReasonDialog;
+
+    private uint? _selectedListingKey;
     public event Action<SecurityStatus, string?>? OnSetSecurityStatus;
 
     public uint? SecurityWantedStatusMaxLength;
@@ -53,7 +55,9 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 return;
             var selected = RecordListing.GetSelected().First();
             var (index, listingKey) = ((uint, uint?))selected.Metadata!;
-            OnListingItemSelected?.Invoke(index,  listingKey);
+            _selectedListingKey = listingKey;
+            if (!_isPopulating)
+                OnListingItemSelected?.Invoke(index,  listingKey);
         };
 
         RecordListing.OnItemDeselected += _ =>
@@ -63,6 +67,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             // interrupt what the player is doing.
             if (!_isPopulating)
                 OnListingItemSelected?.Invoke(null, null);
+            _selectedListingKey = null;
         };
 
         RecordFilters.OnPressed += _ =>
@@ -127,6 +132,37 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         return Loc.GetString($"general-station-record-{type.ToString().ToLower()}-filter");
     }
 
+    /// <summary>
+    /// Select the record in the listing for the given key.
+    /// </summary>
+    /// <param name="key">The index of the record in the dictionary</param>
+    private void SelectRecordKey(uint? key)
+    {
+        if (_selectedListingKey == key)
+            return;
+        _selectedListingKey = key;
+
+        _isPopulating = true;
+
+        RecordListing.ClearSelected();
+
+        // I wish there was a better way of doing this
+        if (key != null)
+        {
+            foreach (var item in RecordListing)
+            {
+                if ((((uint, uint?)) item.Metadata!).Item1 == key)
+                {
+                    item.Selected = true;
+                    break;
+                }
+            }
+        }
+
+        _isPopulating = false;
+    }
+
+
     public void UpdateState(CharacterRecordConsoleState state)
     {
         #region Visibility
@@ -186,21 +222,21 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             RecordFilterType.SelectId((int) state.Filter.Type);
         }
 
-        // If the counts are the same it is probably not needed to refresh the entry list. This provides
-        // a much better UI experience at the cost of the user possibly needing to re-open the UI under
-        // very specific circumstances that are *very* unlikely to appear in real gameplay.
-        if (RecordListing.Count != state.RecordListing.Count)
-        {
-            _isPopulating = true;
+        _isPopulating = true;
 
-            RecordListing.Clear();
-            foreach (var (key, (txt, stationRecordsKey)) in state.RecordListing)
-            {
-                RecordListing.AddItem(txt, metadata: (key, stationRecordsKey));
-            }
+        RecordListing.Clear();
 
-            _isPopulating = false;
-        }
+        // Add the records to the listing in a sorted order. There is probably are faster way of doing this, but
+        // this is not really a hot code path.
+        state.RecordListing
+            .Select(r => (r.Value.Item1, (r.Key, r.Value.Item2)))
+            .OrderBy(r => r.Item1)
+            .ToList()
+            .ForEach(r => RecordListing.AddItem(r.Item1, metadata: r.Item2));
+
+        _isPopulating = false;
+
+        SelectRecordKey(state.SelectedIndex);
 
         #endregion
 
