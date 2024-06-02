@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
 using Content.Server.StationRecords;
@@ -7,7 +8,6 @@ using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;
@@ -16,6 +16,12 @@ public sealed class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
+
+    [ValidatePrototypeId<JobPrototype>]
+    private static readonly string[] SkippedJobIds =
+    [
+        "Borg"
+    ];
 
     public override void Initialize()
     {
@@ -34,9 +40,21 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!HasComp<CharacterRecordsComponent>(args.Station))
             AddComp<CharacterRecordsComponent>(args.Station);
 
-        var profile = args.Profile;
-        if (profile.CDCharacterRecords == null || string.IsNullOrEmpty(args.JobId))
+        if (string.IsNullOrEmpty(args.JobId))
+        {
+            Log.Error($"Null JobId in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}");
             return;
+        }
+
+        if (SkippedJobIds.Contains(args.JobId))
+            return;
+
+        var profile = args.Profile;
+        if (profile.CDCharacterRecords == null)
+        {
+            Log.Error($"Null records in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}.");
+            return;
+        }
 
         var player = args.Mob;
 

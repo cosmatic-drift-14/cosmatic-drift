@@ -2,8 +2,8 @@
   id: Atlas
   mapName: Atlas
   mapPath: /Maps/atlas.yml
-  minPlayers: 0
-  maxPlayers: 15
+  minPlayers: 0 #CD change
+  maxPlayers: 15 #CD change
   stations:
     Atlas:
       stationProto: StandardNanotrasenStation

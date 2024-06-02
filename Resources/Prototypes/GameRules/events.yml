@@ -114,9 +114,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 2
+    weight: 1
     duration: 1
-    earliestStart: 45
+    earliestStart: 135
     minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: MobRevenant
@@ -189,9 +189,8 @@
 #     startAudio:
 #       path: /Audio/Announcements/attention.ogg
 #     startDelay: 10
-#     earliestStart: 30
-#     minimumPlayers: 35
-#     weight: 5
+#     earliestStart: 15
+#     weight: 6
 #     duration: 50
 #   - type: VentCrittersRule
 #     entries:
@@ -201,9 +200,11 @@
 #       prob: 0.02
 #     - id: MobMouse2
 #       prob: 0.02
+#     - id: MobMouseCancer
+#       prob: 0.001
 #     specialEntries:
 #     - id: SpawnPointGhostRatKing
-#       prob: 0.005
+#       prob: 0.001
 
 - type: entity
   id: CockroachMigration
@@ -283,19 +284,6 @@
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
-# - type: entity
-  # parent: BaseGameRule
-  # id: TerminatorSpawn
-  # noSpawn: true
-  # components:
-  # - type: StationEvent
-    # weight: 8
-    # duration: 1
-    # earliestStart: 30
-    # minimumPlayers: 20
-  # - type: RandomSpawnRule
-    # prototype: SpawnPointGhostTerminator
-
 - type: entity
   id: VentClog
   parent: BaseGameRule
@@ -333,6 +321,8 @@
       prob: 0.02
     - id: MobMouse2
       prob: 0.02
+    - id: MobMouseCancer
+      prob: 0.001
 
 - type: entity
   id: SlimesSpawn
@@ -396,33 +386,97 @@
       prob: 0.05
 
 # - type: entity
-  # id: ZombieOutbreak
-  # parent: BaseGameRule
-  # noSpawn: true
-  # components:
-  # - type: StationEvent
-    # earliestStart: 50
-    # weight: 5
-    # duration: 1
-  # - type: ZombieRule
-    # minStartDelay: 0 #let them know immediately
-    # maxStartDelay: 10
-    # maxInitialInfected: 3 #fewer zombies
-    # minInitialInfectedGrace: 300 #less time to prepare
-    # maxInitialInfectedGrace: 450
+#   id: ZombieOutbreak
+#   parent: BaseGameRule
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     earliestStart: 50
+#     minimumPlayers: 15
+#     weight: 3
+#     duration: 1
+#   - type: ZombieRule
+#   - type: AntagSelection
+#     definitions:
+#     - prefRoles: [ InitialInfected ]
+#       max: 3
+#       playerRatio: 10
+#       blacklist:
+#         components:
+#         - ZombieImmune
+#         - InitialInfectedExempt
+#       briefing:
+#         text: zombie-patientzero-role-greeting
+#         color: Plum
+#         sound: "/Audio/Ambience/Antag/zombie_start.ogg"
+#       components:
+#       - type: PendingZombie #less time to prepare than normal
+#         minInitialInfectedGrace: 300
+#         maxInitialInfectedGrace: 450
+#       - type: ZombifyOnDeath
+#       - type: IncurableZombie
+#       mindComponents:
+#       - type: InitialInfectedRole
+#         prototype: InitialInfected
+
+- type: entity
+  noSpawn: true
+  parent: BaseNukeopsRule
+  id: LoneOpsSpawn
+  components:
+  # - type: StationEvent # CD: Hoping just changing this works
+  #   earliestStart: 45
+  #   weight: 5
+  #   minimumPlayers: 20
+  #   reoccurrenceDelay: 30
+  #   duration: 1
+  - type: LoadMapRule
+    preloadedGrid: ShuttleStriker
+  - type: NukeopsRule
+    roundEndBehavior: Nothing
+  - type: AntagSelection
+    definitions:
+    - spawnerPrototype: SpawnPointLoneNukeOperative
+      min: 1
+      max: 1
+      pickPlayer: false
+      startingGear: SyndicateLoneOperativeGearFull
+      components:
+      - type: NukeOperative
+      - type: RandomMetadata
+        nameSegments:
+        - SyndicateNamesPrefix
+        - SyndicateNamesNormal
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      mindComponents:
+      - type: NukeopsRole
+        prototype: Nukeops
 
 # - type: entity
-  # id: LoneOpsSpawn
-  # parent: BaseGameRule
-  # noSpawn: true
-  # components:
-  # - type: StationEvent
-    # earliestStart: 45
-    # weight: 5
-    # minimumPlayers: 20
-    # reoccurrenceDelay: 30
-    # duration: 1
-  # - type: LoneOpsSpawnRule
+#   noSpawn: true
+#   parent: BaseTraitorRule
+#   id: SleeperAgentsRule
+#   components:
+#   - type: StationEvent
+#     earliestStart: 30
+#     weight: 8
+#     minimumPlayers: 15
+#     maxOccurrences: 1 # can only happen once per round
+#     startAnnouncement: station-event-communication-interception
+#     startAudio:
+#       path: /Audio/Announcements/intercept.ogg
+#   - type: AlertLevelInterceptionRule
+#   - type: AntagSelection
+#     definitions:
+#     - prefRoles: [ Traitor ]
+#       min: 1
+#       max: 2
+#       playerRatio: 10
+#       mindComponents:
+#       - type: TraitorRole
+#         prototype: Traitor
 
 - type: entity
   id: MassHallucinations

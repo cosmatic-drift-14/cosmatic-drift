@@ -16,6 +16,9 @@
     size: 80
   - type: Storage
     capacity: 80
+    whitelist:
+      tags:
+        - Medal
   - type: StorageFill
     contents:
     - id: ClothingNeckGoldmedal
