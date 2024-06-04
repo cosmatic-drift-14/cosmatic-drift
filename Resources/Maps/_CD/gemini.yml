@@ -72,14 +72,15 @@ entities:
     - type: MetaData
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
+    - type: GridTree
+    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
       parallax: KettleStation
     - type: LoadedMap
-    - type: GridTree
-    - type: MovedGrids
   - uid: 2
     components:
     - type: MetaData
@@ -11829,7 +11830,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
   - uid: 88
     components:
     - type: Transform
@@ -11837,7 +11837,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
 - proto: AirCanister
   entities:
   - uid: 89
@@ -12225,7 +12224,7 @@ entities:
       pos: -9.5,60.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -6080.238
+      secondsUntilStateChange: -7000.8296
       state: Opening
   - uid: 160
     components:
@@ -13806,7 +13805,7 @@ entities:
       pos: 0.5,-22.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -87520.914
+      secondsUntilStateChange: -88441.51
       state: Opening
   - uid: 439
     components:
@@ -14113,7 +14112,7 @@ entities:
       pos: -1.5,10.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110481.23
+      secondsUntilStateChange: -111401.82
       state: Opening
 - proto: AirlockResearchDirectorLocked
   entities:
@@ -14124,7 +14123,7 @@ entities:
       pos: -2.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110480.86
+      secondsUntilStateChange: -111401.45
       state: Opening
 - proto: AirlockSalvageGlassLocked
   entities:
@@ -14160,7 +14159,7 @@ entities:
       pos: 24.5,72.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -109034.99
+      secondsUntilStateChange: -109955.586
       state: Opening
   - uid: 501
     components:
@@ -14187,7 +14186,7 @@ entities:
       pos: 18.5,68.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -124908.414
+      secondsUntilStateChange: -125829.01
       state: Opening
   - uid: 505
     components:
@@ -14202,7 +14201,7 @@ entities:
       pos: 23.5,72.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -109035.43
+      secondsUntilStateChange: -109956.02
       state: Opening
   - uid: 507
     components:
@@ -14232,7 +14231,7 @@ entities:
       pos: 10.5,6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110483.79
+      secondsUntilStateChange: -111404.38
       state: Opening
   - uid: 511
     components:
@@ -14240,7 +14239,7 @@ entities:
       pos: -0.5,15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110477.49
+      secondsUntilStateChange: -111398.086
       state: Opening
   - uid: 512
     components:
@@ -14250,7 +14249,7 @@ entities:
       pos: 2.5,7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -109938.46
+      secondsUntilStateChange: -110859.055
       state: Opening
   - uid: 513
     components:
@@ -14259,7 +14258,7 @@ entities:
       pos: 11.5,3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -147698.88
+      secondsUntilStateChange: -148619.47
       state: Opening
   - uid: 514
     components:
@@ -14267,7 +14266,7 @@ entities:
       pos: 5.5,19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110493.59
+      secondsUntilStateChange: -111414.19
       state: Opening
   - uid: 515
     components:
@@ -14275,7 +14274,7 @@ entities:
       pos: -0.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110477.73
+      secondsUntilStateChange: -111398.32
       state: Opening
   - uid: 516
     components:
@@ -14283,7 +14282,7 @@ entities:
       pos: 13.5,13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110492.02
+      secondsUntilStateChange: -111412.62
       state: Opening
   - uid: 517
     components:
@@ -14291,7 +14290,7 @@ entities:
       pos: 14.5,13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110492.33
+      secondsUntilStateChange: -111412.92
       state: Opening
 - proto: AirlockScienceLocked
   entities:
@@ -14301,7 +14300,7 @@ entities:
       pos: 27.5,13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110453.83
+      secondsUntilStateChange: -111374.42
       state: Opening
   - uid: 519
     components:
@@ -14309,7 +14308,7 @@ entities:
       pos: 30.5,13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110452.26
+      secondsUntilStateChange: -111372.85
       state: Opening
   - uid: 520
     components:
@@ -14318,7 +14317,7 @@ entities:
       pos: 17.5,15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110490.99
+      secondsUntilStateChange: -111411.586
       state: Opening
   - uid: 521
     components:
@@ -14326,7 +14325,7 @@ entities:
       pos: 30.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110452.52
+      secondsUntilStateChange: -111373.12
       state: Opening
   - uid: 522
     components:
@@ -14334,7 +14333,7 @@ entities:
       pos: 27.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110454.125
+      secondsUntilStateChange: -111374.72
       state: Opening
   - uid: 523
     components:
@@ -14342,7 +14341,7 @@ entities:
       pos: 15.5,19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -151784.72
+      secondsUntilStateChange: -152705.31
       state: Opening
   - uid: 524
     components:
@@ -14350,7 +14349,7 @@ entities:
       pos: 11.5,19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110495.39
+      secondsUntilStateChange: -111415.984
       state: Opening
   - uid: 525
     components:
@@ -14359,7 +14358,7 @@ entities:
       pos: 17.5,14.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110491.26
+      secondsUntilStateChange: -111411.85
       state: Opening
   - uid: 526
     components:
@@ -14368,7 +14367,7 @@ entities:
       pos: 22.5,15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110489.52
+      secondsUntilStateChange: -111410.12
       state: Opening
   - uid: 527
     components:
@@ -14377,7 +14376,7 @@ entities:
       pos: 22.5,14.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -110489.26
+      secondsUntilStateChange: -111409.85
       state: Opening
 - proto: AirlockSecurity
   entities:
@@ -20114,7 +20113,7 @@ entities:
   - uid: 1530
     components:
     - type: Transform
-      pos: -4.2164016,9.471152
+      pos: -3.587648,8.968846
       parent: 2
 - proto: BoxFolderBlue
   entities:
@@ -20198,7 +20197,7 @@ entities:
   - uid: 1546
     components:
     - type: Transform
-      pos: -3.9486427,9.700549
+      pos: -3.275148,9.104357
       parent: 2
 - proto: BoxFolderRed
   entities:
@@ -64199,18 +64198,6 @@ entities:
     - type: Transform
       pos: -51.5,-32.5
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 10202
-    components:
-    - type: Transform
-      pos: -33.5,-28.5
-      parent: 2
-  - uid: 10203
-    components:
-    - type: Transform
-      pos: -29.5,-24.5
-      parent: 2
 - proto: ChemBag
   entities:
   - uid: 10204
@@ -64236,6 +64223,18 @@ entities:
     components:
     - type: Transform
       pos: -29.5,-26.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 10202
+    components:
+    - type: Transform
+      pos: -33.5,-28.5
+      parent: 2
+  - uid: 10203
+    components:
+    - type: Transform
+      pos: -29.5,-24.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -69378,6 +69377,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,12.5
       parent: 2
+- proto: ComputerRoboticsControl
+  entities:
+  - uid: 21628
+    components:
+    - type: Transform
+      pos: -4.5,9.5
+      parent: 2
 - proto: ComputerSalvageExpedition
   entities:
   - uid: 10672
@@ -69581,7 +69587,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
 - proto: ContainmentFieldGenerator
   entities:
   - uid: 10705
@@ -79600,7 +79605,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
   - uid: 12337
     components:
     - type: Transform
@@ -79608,7 +79612,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
   - uid: 12338
     components:
     - type: Transform
@@ -79616,7 +79619,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
   - uid: 12339
     components:
     - type: Transform
@@ -79624,7 +79626,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
   - uid: 12340
     components:
     - type: Transform
@@ -82564,7 +82565,6 @@ entities:
       parent: 2
     - type: Tag
       tags: []
-      
 - proto: FireAxeCabinetFilled
   entities:
   - uid: 12701
@@ -84192,7 +84192,7 @@ entities:
       pos: 19.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -148280.1
+      secondsUntilStateChange: -149200.69
       state: Closing
   - uid: 12990
     components:
@@ -120858,7 +120858,7 @@ entities:
       pos: 29.5,63.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -124050.71
+      secondsUntilStateChange: -124971.305
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -131732,7 +131732,7 @@ entities:
   - uid: 20014
     components:
     - type: Transform
-      pos: -4.598915,9.687805
+      pos: -3.712648,8.687401
       parent: 2
   - uid: 20015
     components:
@@ -143373,7 +143373,7 @@ entities:
     - type: Transform
       pos: 43.486195,6.3836384
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 21955
     components:
@@ -147481,7 +147481,6 @@ entities:
       solutions:
         injector:
           temperature: 293.15
-          canMix: False
           canReact: True
           maxVol: 15
           name: null
@@ -149855,12 +149854,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -3.5,7.5
-      parent: 2
-  - uid: 23058
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,9.5
       parent: 2
 - proto: TableWood
   entities:
