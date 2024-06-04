@@ -4,6 +4,7 @@ using Content.Client.Animations;
 using Content.Shared.Hands;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
+using Robust.Shared.Collections;
 using Robust.Shared.Map;
 using Robust.Shared.Timing;
 
@@ -45,7 +46,7 @@ public sealed class StorageSystem : SharedStorageSystem
         if (!_timing.IsFirstTimePredicted)
             return;
 
-        if (finalCoords.InRange(EntityManager, _transform, initialCoords, 0.1f) ||
+        if (finalCoords.InRange(EntityManager, TransformSystem, initialCoords, 0.1f) ||
             !Exists(initialCoords.EntityId) || !Exists(finalCoords.EntityId))
         {
             return;

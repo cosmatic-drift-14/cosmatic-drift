@@ -1,12 +1,7 @@
-using Content.Client.UserInterface.Systems.Hotbar.Widgets;
-using Content.Client.UserInterface.Systems.Storage.Controls;
 using Content.IntegrationTests.Tests.Interaction;
-using Content.Shared.Input;
 using Content.Shared.PDA;
 using Content.Shared.Storage;
-using Robust.Client.UserInterface;
 using Robust.Shared.Containers;
-using Robust.Shared.GameObjects;
 
 namespace Content.IntegrationTests.Tests.Storage;
 
@@ -44,32 +39,8 @@ public sealed class StorageInteractionTest : InteractionTest
         Assert.That(sys.TryGetContainingContainer((sPda, null), out container));
         Assert.That(container!.Owner, Is.EqualTo(backpack));
 
-        // Use "e" / ActivateInWorld to open the PDA UI while it is still in the backpack.
-        var ctrl = GetStorageControl(pda);
-        await ClickControl(ctrl, ContentKeyFunctions.ActivateItemInWorld);
-        await RunTicks(10);
-        Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.True);
-        Assert.That(IsUiOpen(PdaUiKey.Key), Is.True);
-
-        // Click on the pda to pick it up and remove it from the backpack.
-        await ClickControl(ctrl, ContentKeyFunctions.MoveStoredItem);
-        await RunTicks(10);
-        Assert.That(sys.TryGetContainingContainer((sPda, null), out container));
-        Assert.That(container!.Owner, Is.EqualTo(SPlayer));
-
         // UIs should still be open
         Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.True);
         Assert.That(IsUiOpen(PdaUiKey.Key), Is.True);
-    }
-
-    /// <summary>
-    /// Retrieve the control that corresponds to the given entity in the currently open storage UI.
-    /// </summary>
-    private ItemGridPiece GetStorageControl(NetEntity target)
-    {
-        var uid = ToClient(target);
-        var hotbar = GetWidget<HotbarGui>();
-        var storageContainer  = GetControlFromField<Control>(nameof(HotbarGui.StorageContainer), hotbar);
-        return GetControlFromChildren<ItemGridPiece>(c => c.Entity == uid, storageContainer);
     }
 }

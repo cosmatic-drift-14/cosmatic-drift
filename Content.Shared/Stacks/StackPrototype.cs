@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Prototypes;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Utility;
 
@@ -37,4 +37,11 @@ public sealed partial class StackPrototype : IPrototype
     /// </summary>
     [DataField]
     public int? MaxCount { get; private set; }
+
+
+    /// <summary>
+    /// The size of an individual unit of this stack.
+    /// </summary>
+    [DataField("itemSize")]
+    public int? ItemSize;
 }
