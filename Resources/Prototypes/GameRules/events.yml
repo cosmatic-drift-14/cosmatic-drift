@@ -442,12 +442,12 @@
   parent: BaseNukeopsRule
   id: LoneOpsSpawn
   components:
-  # - type: StationEvent # CD: Hoping just changing this works
-  #   earliestStart: 45
-  #   weight: 5
+  # - type: StationEvent CD: Hope just changing this works
+  #   earliestStart: 35
+  #   weight: 5.5
   #   minimumPlayers: 20
-  #   reoccurrenceDelay: 30
   #   duration: 1
+  - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: ShuttleStriker
   - type: NukeopsRule
