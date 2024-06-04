@@ -54,3 +54,7 @@
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
+  storage:
+    back:
+    - BoxSurvival
+    - Flash
