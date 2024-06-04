@@ -259,10 +259,6 @@
   id: ClothingBackpackDeathSquad
   name: death squad backpack
   description: Holds the kit of CentComm's most feared agents.
-  components:
-    - type: Storage
-      grid:
-      - 0,0,7,6
 
 #Syndicate
 - type: entity

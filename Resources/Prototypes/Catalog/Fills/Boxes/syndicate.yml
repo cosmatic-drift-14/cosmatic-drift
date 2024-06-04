@@ -57,12 +57,9 @@
     layers:
       - state: box_of_doom
       - state: syringe
-  - type: Storage
-    grid:
-    - 0,0,5,3
   - type: StorageFill
     contents:
       - id: DeathRattleImplanter
-        amount: 6
+        amount: 3
       - id: HandheldGPSBasic
-        amount: 6
+        amount: 3

@@ -16,8 +16,8 @@
     denyState: deny-unshaded
     ejectDelay: 5
     soundVend: /Audio/Machines/circuitprinter.ogg
-  - type: Advertise
-    pack: QuickThreadsAds
+  # - type: Advertise
+  #   pack: QuickThreadsAds
   - type: Speech
   - type: Sprite
     sprite: _CD/Structures/Machines/VendingMachines/quickthreads.rsi
