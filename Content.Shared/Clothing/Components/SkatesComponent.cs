@@ -56,7 +56,7 @@ public sealed partial class SkatesComponent : Component
     /// Defaults for MinimumSpeed, StunSeconds, DamageCooldown and SpeedDamage.
     /// </summary>
     [ViewVariables]
-    public float DefaultMinimumSpeed = 23f;
+    public float DefaultMinimumSpeed = 20f;
 
     [ViewVariables]
     public float DefaultStunSeconds = 1f;
@@ -65,5 +65,5 @@ public sealed partial class SkatesComponent : Component
     public float DefaultDamageCooldown = 2f;
 
     [ViewVariables]
-    public float DefaultSpeedDamage = 0.05f;
+    public float DefaultSpeedDamage = 0.45f;
 }
