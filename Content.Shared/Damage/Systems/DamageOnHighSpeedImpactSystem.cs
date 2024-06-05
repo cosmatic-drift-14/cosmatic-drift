@@ -45,7 +45,7 @@ public sealed class DamageOnHighSpeedImpactSystem : EntitySystem
         component.LastHit = _gameTiming.CurTime;
 
         if (_robustRandom.Prob(component.StunChance))
-            _stun.TryStun(uid, TimeSpan.FromSeconds(component.StunSeconds), true);
+            _stun.TryParalyze(uid, TimeSpan.FromSeconds(component.StunSeconds), true);
 
         var damageScale = component.SpeedDamageFactor * speed / component.MinimumSpeed;
 
