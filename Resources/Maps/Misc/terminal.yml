@@ -20756,6 +20756,11 @@ entities:
     - type: Transform
       pos: -5.5,38.5
       parent: 2
+  - uid: 9590
+    components:
+    - type: Transform
+      pos: -4.5,35.5
+      parent: 2
 - proto: ClothingBeltAssault
   entities:
   - uid: 8075
@@ -20853,6 +20858,13 @@ entities:
     components:
     - type: Transform
       pos: 51.42561,-2.4049816
+      parent: 2
+- proto: ClothingEyesGlassesSecurity
+  entities:
+  - uid: 9594
+    components:
+    - type: Transform
+      pos: -4.5,35.5
       parent: 2
 - proto: ClothingEyesGlassesSunglasses
   entities:
@@ -21296,12 +21308,17 @@ entities:
     - type: Transform
       pos: 16.539623,-44.539253
       parent: 2
-- proto: ClothingNeckLawyerbadge
-  entities:
-  - uid: 9501
+  - uid: 9605
     components:
     - type: Transform
-      pos: -5.5,37.5
+      pos: -4.4642844,-23.404097
+      parent: 2
+- proto: ClothingNeckLawyerbadge
+  entities:
+  - uid: 9595
+    components:
+    - type: Transform
+      pos: -4.5,36.5
       parent: 2
 - proto: ClothingNeckLGBTPin
   entities:
@@ -21433,6 +21450,11 @@ entities:
     - type: Transform
       pos: -2.5,38.5
       parent: 2
+  - uid: 9589
+    components:
+    - type: Transform
+      pos: -4.5,35.5
+      parent: 2
 - proto: ClothingOuterCoatJensen
   entities:
   - uid: 8046
@@ -21463,7 +21485,7 @@ entities:
   - uid: 8198
     components:
     - type: Transform
-      pos: -4.5405684,-23.444595
+      pos: -4.5424094,-23.638472
       parent: 2
 - proto: ClothingOuterVest
   entities:
@@ -21589,6 +21611,11 @@ entities:
     - type: Transform
       pos: -2.5,38.5
       parent: 2
+  - uid: 9593
+    components:
+    - type: Transform
+      pos: -4.5,35.5
+      parent: 2
 - proto: ClothingShoesTourist
   entities:
   - uid: 9255
@@ -21630,7 +21657,7 @@ entities:
   - uid: 8200
     components:
     - type: Transform
-      pos: -4.5700836,-23.680582
+      pos: -4.5424094,-23.841597
       parent: 2
 - proto: ClothingUniformJumpsuitDetectiveGrey
   entities:
@@ -22220,9 +22247,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -30.5,-18.5
       parent: 2
-    missingComponents:
-    - LitOnPowered
-    - PointLight
 - proto: ComputerTabletopCrewMonitoring
   entities:
   - uid: 8636
@@ -22249,15 +22273,12 @@ entities:
       parent: 2
 - proto: ComputerTabletopSurveillanceCameraMonitor
   entities:
-  - uid: 9471
+  - uid: 6122
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -32.5,-18.5
       parent: 2
-    missingComponents:
-    - LitOnPowered
-    - PointLight
 - proto: ComputerTelevision
   entities:
   - uid: 1981
@@ -24984,6 +25005,11 @@ entities:
     - type: Transform
       pos: -32.406086,10.680475
       parent: 2
+  - uid: 6121
+    components:
+    - type: Transform
+      pos: -5.5,37.5
+      parent: 2
 - proto: DrinkHotCoco
   entities:
   - uid: 8208
@@ -26467,6 +26493,11 @@ entities:
     - type: Transform
       pos: 53.00676,1.6565981
       parent: 2
+  - uid: 9604
+    components:
+    - type: Transform
+      pos: 6.814361,-29.621756
+      parent: 2
 - proto: FoodSnackNutribrick
   entities:
   - uid: 8047
@@ -27350,11 +27381,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
-  - uid: 6122
-    components:
-    - type: Transform
-      pos: -5.5,36.5
-      parent: 2
   - uid: 6123
     components:
     - type: Transform
@@ -35555,6 +35581,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -38.5,-17.5
       parent: 2
+  - uid: 9501
+    components:
+    - type: Transform
+      pos: -5.5,35.5
+      parent: 2
 - proto: GasPipeTJunction
   entities:
   - uid: 777
@@ -37054,14 +37085,12 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 6121
+  - uid: 9471
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -5.5,35.5
+      pos: -5.5,36.5
       parent: 2
-    - type: AtmosPipeColor
-      color: '#990000FF'
 - proto: GlowstickBase
   entities:
   - uid: 7938
@@ -40502,6 +40531,11 @@ entities:
     - type: Transform
       pos: -5.5,38.5
       parent: 2
+  - uid: 9591
+    components:
+    - type: Transform
+      pos: -4.5,35.5
+      parent: 2
 - proto: HandheldGPSBasic
   entities:
   - uid: 1087
@@ -40751,6 +40785,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 8.5,24.5
+      parent: 2
+- proto: JukeboxCircuitBoard
+  entities:
+  - uid: 9602
+    components:
+    - type: Transform
+      pos: 1.6195216,37.42281
       parent: 2
 - proto: Lamp
   entities:
@@ -41247,6 +41288,13 @@ entities:
     - type: Transform
       pos: -19.5,17.5
       parent: 2
+- proto: MachineFlatpacker
+  entities:
+  - uid: 9597
+    components:
+    - type: Transform
+      pos: 0.5,38.5
+      parent: 2
 - proto: MagazineBoxPistolPractice
   entities:
   - uid: 2393
@@ -41343,6 +41391,14 @@ entities:
     - type: Transform
       pos: -23.461369,15.812455
       parent: 2
+- proto: MaterialWoodPlank
+  entities:
+  - uid: 9606
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.7457786,38.671017
+      parent: 2
 - proto: MaterialWoodPlank1
   entities:
   - uid: 8641
@@ -41371,12 +41427,46 @@ entities:
     - type: Transform
       pos: -17.35666,-4.1152163
       parent: 2
+- proto: MindShieldImplanter
+  entities:
+  - uid: 9578
+    components:
+    - type: Transform
+      pos: -7.595616,35.75319
+      parent: 2
+  - uid: 9579
+    components:
+    - type: Transform
+      pos: -7.595616,35.62819
+      parent: 2
+  - uid: 9580
+    components:
+    - type: Transform
+      pos: -7.595616,35.47194
+      parent: 2
+  - uid: 9581
+    components:
+    - type: Transform
+      pos: -7.345616,35.550064
+      parent: 2
+  - uid: 9582
+    components:
+    - type: Transform
+      pos: -7.345616,35.675064
+      parent: 2
 - proto: MopItem
   entities:
   - uid: 9534
     components:
     - type: Transform
       pos: 6.340523,27.494898
+      parent: 2
+- proto: Multitool
+  entities:
+  - uid: 9603
+    components:
+    - type: Transform
+      pos: 1.2207026,37.51656
       parent: 2
 - proto: NitrogenTankFilled
   entities:
@@ -43585,6 +43675,26 @@ entities:
     - type: Transform
       pos: 6.5,25.5
       parent: 2
+  - uid: 9585
+    components:
+    - type: Transform
+      pos: -5.5,35.5
+      parent: 2
+  - uid: 9586
+    components:
+    - type: Transform
+      pos: -3.5,35.5
+      parent: 2
+  - uid: 9587
+    components:
+    - type: Transform
+      pos: -4.5,35.5
+      parent: 2
+  - uid: 9588
+    components:
+    - type: Transform
+      pos: -2.5,35.5
+      parent: 2
 - proto: RadioHandheld
   entities:
   - uid: 1074
@@ -45457,6 +45567,13 @@ entities:
     - type: Transform
       pos: -50.348988,-20.302904
       parent: 2
+- proto: RubberStampCentcom
+  entities:
+  - uid: 9577
+    components:
+    - type: Transform
+      pos: -6.206844,35.84694
+      parent: 2
 - proto: RubberStampDenied
   entities:
   - uid: 1096
@@ -45507,6 +45624,27 @@ entities:
     components:
     - type: Transform
       pos: 6.4358597,25.45479
+      parent: 2
+- proto: SheetGlass
+  entities:
+  - uid: 9600
+    components:
+    - type: Transform
+      pos: 1.3819156,38.27333
+      parent: 2
+- proto: SheetPlastic
+  entities:
+  - uid: 9599
+    components:
+    - type: Transform
+      pos: 1.3819156,38.49208
+      parent: 2
+- proto: SheetSteel
+  entities:
+  - uid: 9598
+    components:
+    - type: Transform
+      pos: 1.4287906,38.601456
       parent: 2
 - proto: SheetSteel10
   entities:
@@ -46137,7 +46275,7 @@ entities:
     - type: Transform
       pos: -8.038198,37.105595
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 1612
     components:
@@ -47207,6 +47345,26 @@ entities:
     components:
     - type: Transform
       pos: 7.5,27.5
+      parent: 2
+  - uid: 9583
+    components:
+    - type: Transform
+      pos: -7.5,35.5
+      parent: 2
+  - uid: 9584
+    components:
+    - type: Transform
+      pos: -6.5,35.5
+      parent: 2
+  - uid: 9596
+    components:
+    - type: Transform
+      pos: 1.5,38.5
+      parent: 2
+  - uid: 9601
+    components:
+    - type: Transform
+      pos: 1.5,37.5
       parent: 2
 - proto: TableReinforcedGlass
   entities:
@@ -56640,6 +56798,11 @@ entities:
     components:
     - type: Transform
       pos: -5.5,38.5
+      parent: 2
+  - uid: 9592
+    components:
+    - type: Transform
+      pos: -4.5,35.5
       parent: 2
 - proto: WeaponDisablerPractice
   entities:
