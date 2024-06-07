@@ -79,6 +79,13 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
 
+- type: loadoutGroup
+  id: ScientistTitles
+  name: loadout-group-scientist-id
+  loadouts:
+  - ScientistPDA
+  - RoboticistPDA
+
 # Security
 - type: loadoutGroup
   id: SeniorOfficerJumpsuit
