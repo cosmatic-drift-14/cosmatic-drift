@@ -4,14 +4,15 @@ using Content.Shared.Administration;
 using Content.Shared.Administration.Managers;
 using Content.Shared.CombatMode;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Coordinates;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Ghost;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Implants.Components;
+using Content.Shared.Input;
 using Content.Shared.Interaction;
+using Content.Shared.Inventory;
 using Content.Shared.Item;
 using Content.Shared.Lock;
 using Content.Shared.Materials;
@@ -24,9 +25,10 @@ using Content.Shared.Verbs;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
+using Robust.Shared.Player;
 using Robust.Shared.Random;
-using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Storage.EntitySystems;
@@ -53,6 +55,9 @@ public abstract class SharedStorageSystem : EntitySystem
     [Dependency] protected readonly UseDelaySystem UseDelay = default!;
     [Dependency] private   readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
+    // CD: required for keybinds. Note that _actionBlocker is protected upstream and called ActionBlocker
+    [Dependency] private   readonly InventorySystem _inventory = default!;
+    [Dependency] private   readonly ActionBlockerSystem _actionBlocker = default!;
 
     private EntityQuery<ItemComponent> _itemQuery;
     private EntityQuery<StackComponent> _stackQuery;
@@ -96,6 +101,11 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeAllEvent<StorageComponent.StorageInsertItemMessage>(OnInsertItemMessage);
 
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
+
+        CommandBinds.Builder
+            .Bind(ContentKeyFunctions.OpenBackpack, InputCmdHandler.FromDelegate(HandleOpenBackpack, handle: false))
+            .Bind(ContentKeyFunctions.OpenBelt, InputCmdHandler.FromDelegate(HandleOpenBelt, handle: false))
+            .Register<SharedStorageSystem>();
     }
 
     private void OnMapInit(Entity<StorageComponent> entity, ref MapInitEvent args)
@@ -505,7 +515,7 @@ public abstract class SharedStorageSystem : EntitySystem
         var uid = GetEntity(msg.StorageUid);
         if (uid == EntityUid.Invalid)
             return;
-        
+
         PlayerInsertHeldEntity(uid, player);
     }
 
@@ -778,4 +788,39 @@ public abstract class SharedStorageSystem : EntitySystem
     /// </summary>
     public abstract void PlayPickupAnimation(EntityUid uid, EntityCoordinates initialCoordinates,
         EntityCoordinates finalCoordinates, Angle initialRotation, EntityUid? user = null);
+
+    // CD: Handle bag open keybinds. This is almost entirely copy-pasted from upstream
+    private void HandleOpenBackpack(ICommonSession? session)
+    {
+        HandleToggleSlotUI(session, "back");
+    }
+
+    private void HandleOpenBelt(ICommonSession? session)
+    {
+        HandleToggleSlotUI(session, "belt");
+    }
+
+    private void HandleToggleSlotUI(ICommonSession? session, string slot)
+    {
+        if (session is not { } playerSession)
+            return;
+
+        if (playerSession.AttachedEntity is not {Valid: true} playerEnt || !Exists(playerEnt))
+            return;
+
+        if (!_inventory.TryGetSlotEntity(playerEnt, slot, out var storageEnt))
+            return;
+
+        if (!_actionBlocker.CanInteract(playerEnt, storageEnt))
+            return;
+
+        if (!_ui.IsUiOpen(storageEnt.Value, StorageComponent.StorageUiKey.Key, playerEnt))
+        {
+            OpenStorageUI(storageEnt.Value, playerEnt, silent: false);
+        }
+        else
+        {
+            _ui.CloseUi(storageEnt.Value, StorageComponent.StorageUiKey.Key, playerEnt);
+        }
+    }
 }
