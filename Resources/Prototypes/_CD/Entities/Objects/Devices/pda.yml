@@ -85,6 +85,7 @@
   - type: Icon
     state: pda-seniorofficer
 
+# Alternate Titles
 - type: entity
   id: RoboticistPDA
   parent: BasePDA
@@ -101,3 +102,17 @@
       state: pda-roboticist
     - type: RenameId
       value: cd-job-title-roboticist
+
+- type: entity
+  id: OffDutyPDA
+  parent: BasePDA
+  name: off-duty staff PDA
+  description: Why isn't it gray?
+  components:
+  - type: Pda
+    id: PassengerIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#717059"
+  - type: RenameId
+    value: cd-job-title-offduty

@@ -44,6 +44,13 @@
   - Glasses
   - Aviators
 
+- type: loadoutGroup
+  id: PassengerTitles
+  name: loadout-group-passenger-id
+  loadouts:
+  - PassengerPDA
+  - OffDutyPDA
+
 # Engineering
 - type: loadoutGroup
   id: SeniorEngineerJumpsuit
