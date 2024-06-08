@@ -16,6 +16,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
 
     [ValidatePrototypeId<JobPrototype>]
     private static readonly string[] SkippedJobIds =
@@ -66,13 +67,22 @@ public sealed class CharacterRecordsSystem : EntitySystem
         TryComp<FingerprintComponent>(player, out var fingerprintComponent);
         TryComp<DnaComponent>(player, out var dnaComponent);
 
+        var jobTitle = jobPrototype.LocalizedName;
+        var stationRecordsKey = FindStationRecordsKey(player);
+
+        // Grab the title from the station records if they exist to support our job title system
+        if (stationRecordsKey != null && _stationRecords.TryGetRecord<GeneralStationRecord>(stationRecordsKey.Value, out var stationRecords))
+        {
+            jobTitle = stationRecords.JobTitle;
+        }
+
         var records = new FullCharacterRecords(
             characterRecords: new CharacterRecords(profile.CDCharacterRecords),
-            stationRecordsKey: FindStationRecordsKey(player),
+            stationRecordsKey: stationRecordsKey?.Id, // TODO: replace this with StationRecordsKey instead of a uint
             name: profile.Name,
             age: profile.Age,
             species: profile.Species,
-            jobTitle: jobPrototype.LocalizedName,
+            jobTitle: jobTitle,
             jobIcon: jobPrototype.Icon,
             gender: profile.Gender,
             sex: profile.Sex,
@@ -82,7 +92,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         AddRecord(args.Station, args.Mob, records);
     }
 
-    private uint? FindStationRecordsKey(EntityUid uid)
+    private StationRecordKey? FindStationRecordsKey(EntityUid uid)
     {
         if (!_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
             return null;
@@ -98,7 +108,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
             return null;
         }
 
-        return storage.Key?.Id;
+        return storage.Key;
     }
 
     private void AddRecord(EntityUid station, EntityUid player, FullCharacterRecords records, CharacterRecordsComponent? recordsDb = null)
