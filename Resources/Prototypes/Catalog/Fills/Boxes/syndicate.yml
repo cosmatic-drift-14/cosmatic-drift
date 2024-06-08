@@ -46,3 +46,20 @@
     layers:
       - state: box_of_doom
       - state: throwing_knives
+
+- type: entity
+  name: deathrattle implant box
+  parent: BoxCardboard
+  id: BoxDeathRattleImplants
+  description: Six deathrattle implants and handheld GPS devices for the whole squad.
+  components:
+  - type: Sprite
+    layers:
+      - state: box_of_doom
+      - state: syringe
+  - type: StorageFill
+    contents:
+      - id: DeathRattleImplanter
+        amount: 3
+      - id: HandheldGPSBasic
+        amount: 3
