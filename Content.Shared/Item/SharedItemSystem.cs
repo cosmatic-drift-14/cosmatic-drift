@@ -98,11 +98,10 @@ public abstract class SharedItemSystem : EntitySystem
         if (!TryComp<StackComponent>(uid, out var stack))
             return;
 
-        if (!_prototype.TryIndex<StackPrototype>(stack.StackTypeId, out var stackProto) ||
-            stackProto.ItemSize is not { } size)
+        if (!_prototype.TryIndex<StackPrototype>(stack.StackTypeId, out var stackProto))
             return;
 
-        SetSize(uid, args.NewCount * size, component);
+        SetSize(uid, args.NewCount * stackProto.ItemSize, component);
 
         // CD: Fix stackable insert desync
         if (!Container.TryGetContainingContainer(uid, out var container) ||

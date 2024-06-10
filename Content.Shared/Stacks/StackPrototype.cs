@@ -43,5 +43,5 @@ public sealed partial class StackPrototype : IPrototype
     /// The size of an individual unit of this stack.
     /// </summary>
     [DataField("itemSize")]
-    public int? ItemSize;
+    public int ItemSize = 1;
 }
