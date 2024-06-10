@@ -5,6 +5,8 @@ loadout-group-private-investigator-gloves = Private Investigator gloves
 loadout-group-private-investigator-shoes = Private Investigator shoes
 loadout-group-private-investigator-glasses = Private Investigator glasses
 
+loadout-group-passenger-id = Passenger ID
+
 # Engineering
 loadout-group-senior-engineer-jumpsuit = Senior Engineer jumpsuit
 
