@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: BaseStockPart
   name: stock part
   parent: BaseItem
@@ -29,6 +29,7 @@
         - CapacitorStockPart
     - type: Stack
       stackType: Capacitor
+      itemSize: 1
 
 - type: entity
   id: MicroManipulatorStockPart
@@ -44,6 +45,7 @@
       rating: 1
     - type: Stack
       stackType: MicroManipulator
+      itemSize: 1
 
 - type: entity
   id: MatterBinStockPart
@@ -59,3 +61,4 @@
       rating: 1
     - type: Stack
       stackType: MatterBin
+      itemSize: 1
