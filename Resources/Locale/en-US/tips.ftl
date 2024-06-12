@@ -27,21 +27,43 @@ tips-dataset-26 = During a teslaloose, make sure to get rid of all electronic it
 tips-dataset-27 = You can add labels to any item, including food or pill canisters, using a hand labeller.
 tips-dataset-28 = Riot armor is significantly more powerful against opponents that aren't using guns compared to regular armor.
 tips-dataset-29 = As a ghost, you can use the Verb Menu to orbit around and follow any entity in game automatically.
-tips-dataset-30 = As a Traitor, you may sometimes be assigned to hunt other traitors, and in turn be hunted by others.
-tips-dataset-31 = As a Traitor, the syndicate encryption key can be used to communicate through a secure channel with any other traitors who have purchased it.
-tips-dataset-32 = As a Traitor, compromising important communications channels like security or engineering can give valuable intelligence. Be aware that this goes in both ways - security can compromise syndicate communications as well!
-tips-dataset-33 = As a Traitor, the syndicate toolbox is extremely versatile. For only 2 telecrystals, you can get a full set of tools to help you in an emergency, insulated combat gloves and a syndicate gas mask.
-tips-dataset-34 = As a Traitor, never underestimate the web vest. It may not provide space protection, but its cheap cost and robust protection makes it handy for protecting against trigger-happy foes.
-tips-dataset-35 = As a Traitor, any purchased grenade penguins won't attack you, and will explode if killed.
-tips-dataset-36 = As a Traitor, be careful when using vestine from the chemical synthesis kit. If someone checks your station, they could easily out you.
-tips-dataset-37 = As a Traitor, remember that power sinks will create a loud sound and alert the crew after running for long enough. Try to hide them in a tricky-to-find spot, or reinforce the area around them so that they're harder to reach.
-tips-dataset-38 = As a Traitor, plasma gas is an excellent way to create chaos. It can be ignited to make an area extra-uninhabitable, and can cause toxin damage to those that inhale it.
-tips-dataset-39 = As a Traitor, dehydrated carps are useful for killing a large hoard of people. As long as you pat it before rehydrating it, it can be used as a great distraction.
-tips-dataset-40 = As a Traitor, have you tried injecting plasma into batteries? In the case of a defibrillator, it explodes on use; hurting the user and the patient!
-tips-dataset-41 = As a Nuclear Operative, stick together! While your equipment is robust, your fellow operatives are much better at saving your life: they can drag you away from danger while stunned and provide cover fire.
-tips-dataset-42 = As a Nuclear Operative, communication is key! Use your radio to speak to your fellow operatives and coordinate an attack plan.
-tips-dataset-43 = As a Nuclear Operative, remember that stealth is an option. It'll be hard for the captain to fight back if he gets caught off guard by what he thinks is just a regular passenger!
-tips-dataset-44 = As an antagonist, be mindful of the power of destroying telecommunications. It'll be a lot harder for people to call you out if they can't do so effectively!
+
+# CD: Remove traitor tips
+
+# tips-dataset-30 = As a Traitor, you may sometimes be assigned to hunt other traitors, and in turn be hunted by others.
+# tips-dataset-31 = As a Traitor, the syndicate encryption key can be used to communicate through a secure channel with any other traitors who have purchased it.
+# tips-dataset-32 = As a Traitor, compromising important communications channels like security or engineering can give valuable intelligence. Be aware that this goes in both ways - security can compromise syndicate communications as well!
+# tips-dataset-33 = As a Traitor, the syndicate toolbox is extremely versatile. For only 2 telecrystals, you can get a full set of tools to help you in an emergency, insulated combat gloves and a syndicate gas mask.
+# tips-dataset-34 = As a Traitor, never underestimate the web vest. It may not provide space protection, but its cheap cost and robust protection makes it handy for protecting against trigger-happy foes.
+# tips-dataset-35 = As a Traitor, any purchased grenade penguins won't attack you, and will explode if killed.
+# tips-dataset-36 = As a Traitor, be careful when using vestine from the chemical synthesis kit. If someone checks your station, they could easily out you.
+# tips-dataset-37 = As a Traitor, remember that power sinks will create a loud sound and alert the crew after running for long enough. Try to hide them in a tricky-to-find spot, or reinforce the area around them so that they're harder to reach.
+# tips-dataset-38 = As a Traitor, plasma gas is an excellent way to create chaos. It can be ignited to make an area extra-uninhabitable, and can cause toxin damage to those that inhale it.
+# tips-dataset-39 = As a Traitor, dehydrated carps are useful for killing a large hoard of people. As long as you pat it before rehydrating it, it can be used as a great distraction.
+# tips-dataset-40 = As a Traitor, have you tried injecting plasma into batteries? In the case of a defibrillator, it explodes on use; hurting the user and the patient!
+# tips-dataset-41 = As a Nuclear Operative, stick together! While your equipment is robust, your fellow operatives are much better at saving your life: they can drag you away from danger while stunned and provide cover fire.
+# tips-dataset-42 = As a Nuclear Operative, communication is key! Use your radio to speak to your fellow operatives and coordinate an attack plan.
+# tips-dataset-43 = As a Nuclear Operative, remember that stealth is an option. It'll be hard for the captain to fight back if he gets caught off guard by what he thinks is just a regular passenger!
+# tips-dataset-44 = As an antagonist, be mindful of the power of destroying telecommunications. It'll be a lot harder for people to call you out if they can't do so effectively!
+
+tips-dataset-30 = Upon entering cryosleep your items will be transferred to the lost and found locker in the HoP's office
+tips-dataset-31 = It is possible to return to arrivals using the arrivals shuttle. This can be used for easy access to cryosleep pods
+tips-dataset-32 = Everyone is permitted to commit minor crimes. However, it is strongly reccomended that you ask over ahelp before doing so.
+tips-dataset-33 = Do not be afraid to ahelp. The worst the admins can say is no. The admins regularly grant requests such as minor items and the ability to pick up small characters!
+tips-dataset-34 = Character records are a great place to include information about your characters backstory.
+tips-dataset-35 = When playing prisoner, it is strongly recommended to include why you are in prison inside of your security records.
+tips-dataset-36 = If your character has some kind of recurring prescription, feel free to include it inside of their medical records.
+tips-dataset-37 = Do not anger the Kobold.
+tips-dataset-38 = There is full continuity between rounds. Remember your actions may have long-term consequences.
+tips-dataset-39 = Bees are very awesome and trustworthy creatures. If you are in danger you should always trust the closest bee.
+tips-dataset-40 = Bees are very evil and untrustworthy creatures. Remember to never trust any bees that you see!
+tips-dataset-41 = Additional clothing items are available at the Quickthreads vending machine on arrivals.
+tips-dataset-42 = You can take the arrivals shuttle back to the arrivals station. This is useful in the event you cannot find the cryosleep chambers on the station.
+tips-dataset-43 = Rounds are typically 3-4 hours long on Cosmatic Drift. Nobody will judge you if you need to leave in order sleep/eat/do something else in real life. Please try to use a cryosleep chamber if you do because it opens up your job slot.
+tips-dataset-44 = As an Engineer, you can always work on additional projects to pass the time! Exercise your creativity!
+
+# END CD
+
 tips-dataset-45 = You can examine your headset to see which radio channels you have available and how to speak in them.
 tips-dataset-46 = As a Salvage Specialist, always carry a GPS on you and take note of the station's coordinates in case your salvage is lost to space.
 tips-dataset-47 = As a Salvage Specialist, you can use your proto-kinetic accelerator to move yourself in space when in a pinch. Just be wary that it isn't very effective.
