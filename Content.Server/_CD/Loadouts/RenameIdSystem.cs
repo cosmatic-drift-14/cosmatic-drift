@@ -1,10 +1,9 @@
+using Content.Server.Access.Systems;
 using Content.Server.GameTicking;
-using Content.Server.StationRecords.Systems;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
-using Content.Shared.Roles.Jobs;
 
 namespace Content.Server._CD.Loadouts;
 
@@ -17,10 +16,24 @@ public sealed class RenameIdSystem : EntitySystem
     {
         base.Initialize();
 
-        // We need to be after station records system because otherwise we would remove the RenameIdComponent too early
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [ typeof(StationRecordsSystem) ]);
+        // We need to subscribe to both of these because RulePlayerJobsAssignedEvent only fires on round start and
+        // messes up what we do in PlayerSpawnCompleteEvent
+        SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnJobsAssigned, after: [ typeof(PresetIdCardSystem) ]);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn);
     }
 
+    private void OnJobsAssigned(RulePlayerJobsAssignedEvent args)
+    {
+        var query = EntityQuery<RenameIdComponent, PdaComponent>();
+        foreach (var (rename, pda) in query)
+        {
+            if (pda.ContainedId is { } id
+                && TryComp<IdCardComponent>(id, out var card))
+            {
+                _idCardSystem.TryChangeJobTitle(id, Loc.GetString(rename.Value), card);
+            }
+        }
+    }
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
     {
         var player = args.Mob;
@@ -33,7 +46,6 @@ public sealed class RenameIdSystem : EntitySystem
             && TryComp<IdCardComponent>(id, out var card))
         {
             _idCardSystem.TryChangeJobTitle(id, Loc.GetString(rename.Value), card);
-            RemComp(pdaUid.Value, rename);
         }
     }
 }
