@@ -13,7 +13,7 @@
 
 - type: guideEntry
   id: ZeroTolerancePolicies
-  name: guide-entry-rules-1.0
+  name: guide-entry-rules-1-0
   ruleEntry: true
   priority: 30
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-0.xml"
@@ -27,49 +27,49 @@
 
 - type: guideEntry
   id: Rule1.1
-  name: guide-entry-rules-1.1
+  name: guide-entry-rules-1-1
   ruleEntry: true
   priority: 1
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-1.xml"
 
 - type: guideEntry
   id: Rule1.2
-  name: guide-entry-rules-1.2
+  name: guide-entry-rules-1-2
   ruleEntry: true
   priority: 2
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-2.xml"
 
 - type: guideEntry
   id: Rule1.3
-  name: guide-entry-rules-1.3
+  name: guide-entry-rules-1-3
   ruleEntry: true
   priority: 3
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-3.xml"
 
 - type: guideEntry
   id: Rule1.4
-  name: guide-entry-rules-1.4
+  name: guide-entry-rules-1-4
   ruleEntry: true
   priority: 4
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-4.xml"
 
 - type: guideEntry
   id: Rule1.5
-  name: guide-entry-rules-1.5
+  name: guide-entry-rules-1-5
   ruleEntry: true
   priority: 5
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-5.xml"
 
 - type: guideEntry
   id: Rule1.6
-  name: guide-entry-rules-1.6
+  name: guide-entry-rules-1-6
   ruleEntry: true
   priority: 6
   text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-6.xml"
 
 - type: guideEntry
   id: GeneralEtiquette
-  name: guide-entry-rules-2.0
+  name: guide-entry-rules-2-0
   ruleEntry: true
   priority: 40
   text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-0.xml"
@@ -82,42 +82,42 @@
 
 - type: guideEntry
   id: Rule2.1
-  name: guide-entry-rules-2.1
+  name: guide-entry-rules-2-1
   ruleEntry: true
   priority: 1
   text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-1.xml"
 
 - type: guideEntry
   id: Rule2.2
-  name: guide-entry-rules-2.2
+  name: guide-entry-rules-2-2
   ruleEntry: true
   priority: 2
   text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-2.xml"
 
 - type: guideEntry
   id: Rule2.3
-  name: guide-entry-rules-2.3
+  name: guide-entry-rules-2-3
   ruleEntry: true
   priority: 3
   text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-3.xml"
 
 - type: guideEntry
   id: Rule2.4
-  name: guide-entry-rules-2.4
+  name: guide-entry-rules-2-4
   ruleEntry: true
   priority: 4
   text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-4.xml"
 
 - type: guideEntry
   id: Rule2.5
-  name: guide-entry-rules-2.5
+  name: guide-entry-rules-2-5
   ruleEntry: true
   priority: 5
   text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-5.xml"
 
 - type: guideEntry
   id: RoleplayExpectations
-  name: guide-entry-rules-3.0
+  name: guide-entry-rules-3-0
   ruleEntry: true
   priority: 50
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-0.xml"
@@ -132,49 +132,49 @@
 
 - type: guideEntry
   id: Rule3.1
-  name: guide-entry-rules-3.1
+  name: guide-entry-rules-3-1
   ruleEntry: true
   priority: 1
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-1.xml"
 
 - type: guideEntry
   id: Rule3.2
-  name: guide-entry-rules-3.2
+  name: guide-entry-rules-3-2
   ruleEntry: true
   priority: 2
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-2.xml"
 
 - type: guideEntry
   id: Rule3.3
-  name: guide-entry-rules-3.3
+  name: guide-entry-rules-3-3
   ruleEntry: true
   priority: 3
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-3.xml"
 
 - type: guideEntry
   id: Rule3.4
-  name: guide-entry-rules-3.4
+  name: guide-entry-rules-3-4
   ruleEntry: true
   priority: 4
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-4.xml"
 
 - type: guideEntry
   id: Rule3.5
-  name: guide-entry-rules-3.5
+  name: guide-entry-rules-3-5
   ruleEntry: true
   priority: 5
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-5.xml"
 
 - type: guideEntry
   id: Rule3.6
-  name: guide-entry-rules-3.6
+  name: guide-entry-rules-3-6
   ruleEntry: true
   priority: 6
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-6.xml"
 
 - type: guideEntry
   id: Rule3.7
-  name: guide-entry-rules-3.7
+  name: guide-entry-rules-3-7
   ruleEntry: true
   priority: 7
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-7.xml"
