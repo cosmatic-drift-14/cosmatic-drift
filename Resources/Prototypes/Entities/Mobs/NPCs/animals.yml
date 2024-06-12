@@ -1708,7 +1708,7 @@
       Dead:
         Base: splat-1
   - type: Item
-    size: Tiny
+    size: 5
     heldPrefix: 1
 
 - type: entity
@@ -1737,7 +1737,7 @@
       Dead:
         Base: splat-2
   - type: Item
-    size: Tiny
+    size: 5
     heldPrefix: 2
 
 - type: entity

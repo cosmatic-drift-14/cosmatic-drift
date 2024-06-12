@@ -1,6 +1,6 @@
 // CD: Test Disabled. Ideally re-enable this someday.
 using Content.Client.UserInterface.Systems.Hotbar.Widgets;
-using Content.Client.UserInterface.Systems.Storage.Controls;
+//using Content.Client.UserInterface.Systems.Storage.Controls;
 using Content.IntegrationTests.Tests.Interaction;
 using Content.Shared.Input;
 using Content.Shared.PDA;
