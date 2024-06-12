@@ -11,7 +11,7 @@ rules_file = "MRPRuleset"
 [whitelist]
 enabled = true
 reason = "whitelist-not-whitelisted-rp"
-min_players = 15
+# min_players = 15
 
 [shuttle]
 emergency_early_launch_allowed = true
