@@ -1,4 +1,14 @@
 // CD: Test Disabled. Ideally re-enable this someday.
+using Content.Client.UserInterface.Systems.Hotbar.Widgets;
+//using Content.Client.UserInterface.Systems.Storage.Controls;
+using Content.IntegrationTests.Tests.Interaction;
+using Content.Shared.Input;
+using Content.Shared.PDA;
+using Content.Shared.Storage;
+using Content.Shared.Timing;
+using Robust.Client.UserInterface;
+using Robust.Shared.Containers;
+using Robust.Shared.GameObjects;
 
 //using Content.IntegrationTests.Tests.Interaction;
 //using Content.Shared.PDA;
@@ -20,14 +30,28 @@
 //        await SpawnTarget("ClothingBackpack");
 //        var backpack = ToServer(Target);
 
-//        // Initially no BUI is open.
-//        Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.False);
-//        Assert.That(IsUiOpen(PdaUiKey.Key), Is.False);
+        // await Server.WaitPost(() => SEntMan.RemoveComponent<UseDelayComponent>(STarget!.Value));
+        // await RunTicks(5);
 
-//        // Activating the backpack opens the UI
-//        await Activate();
-//        Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.True);
-//        Assert.That(IsUiOpen(PdaUiKey.Key), Is.False);
+        // // Activating the backpack opens the UI
+        // await Activate();
+        // Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.True);
+        // Assert.That(IsUiOpen(PdaUiKey.Key), Is.False);
+
+        // // Activating it again closes the UI
+        // await Activate();
+        // Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.False);
+
+        // // Open it again
+        // await Activate();
+        // Assert.That(IsUiOpen(StorageComponent.StorageUiKey.Key), Is.True);
+
+        // // Pick up a PDA
+        // var pda = await PlaceInHands("PassengerPDA");
+        // var sPda = ToServer(pda);
+        // Assert.That(sys.IsEntityInContainer(sPda), Is.True);
+        // Assert.That(sys.TryGetContainingContainer((sPda, null), out var container));
+        // Assert.That(container!.Owner, Is.EqualTo(SPlayer));
 
 //        // Pick up a PDA
 //        var pda = await PlaceInHands("PassengerPDA");

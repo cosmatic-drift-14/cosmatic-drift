@@ -20,6 +20,8 @@
     equippedPrefix: unlit
   - type: Item
     size: 1
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar.rsi
+    heldPrefix: unlit
 
 - type: entity
   id: CigarSpent

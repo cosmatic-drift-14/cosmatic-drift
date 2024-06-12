@@ -1,0 +1,9 @@
+﻿# Configuration preset used on Wizard's Den Lizard
+
+# Nothing specific yet
+
+[game]
+hostname = "[EN] Wizard's Den Lizard [US West]"
+
+[hub]
+tags = "lang:en,region:am_n_w,rp:low"
