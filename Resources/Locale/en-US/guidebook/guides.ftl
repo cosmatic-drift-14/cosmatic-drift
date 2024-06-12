@@ -108,4 +108,5 @@ guide-entry-rules-ban-types = Ban Types
 guide-entry-rules-ban-durations = Ban Durations
 
 guide-entry-writing = Writing
+guide-entry-cryosleep = Cryosleep
 guide-entry-glossary = Glossary
