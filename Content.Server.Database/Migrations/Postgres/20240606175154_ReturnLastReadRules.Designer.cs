@@ -5,6 +5,7 @@ using System.Text.Json;
 using Content.Server.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using NpgsqlTypes;
@@ -14,9 +15,11 @@ using NpgsqlTypes;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    partial class PostgresServerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240606175154_ReturnLastReadRules")]
+    partial class ReturnLastReadRules
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -510,36 +513,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsUnique();
 
                     b.ToTable("assigned_user_id", (string)null);
-                });
-
-            modelBuilder.Entity("Content.Server.Database.CDProfile", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("cdprofile_id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<JsonDocument>("CharacterRecords")
-                        .HasColumnType("jsonb")
-                        .HasColumnName("character_records");
-
-                    b.Property<float>("Height")
-                        .HasColumnType("real")
-                        .HasColumnName("height");
-
-                    b.Property<int>("ProfileId")
-                        .HasColumnType("integer")
-                        .HasColumnName("profile_id");
-
-                    b.HasKey("Id")
-                        .HasName("PK_cdprofile");
-
-                    b.HasIndex("ProfileId")
-                        .IsUnique();
-
-                    b.ToTable("cdprofile", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
@@ -1597,18 +1570,6 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Navigation("Profile");
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CDProfile", b =>
-                {
-                    b.HasOne("Content.Server.Database.Profile", "Profile")
-                        .WithOne("CDProfile")
-                        .HasForeignKey("Content.Server.Database.CDProfile", "ProfileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cdprofile_profile_profile_id");
-
-                    b.Navigation("Profile");
-                });
-
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.HasOne("Content.Server.Database.Server", "Server")
@@ -1905,8 +1866,6 @@ namespace Content.Server.Database.Migrations.Postgres
             modelBuilder.Entity("Content.Server.Database.Profile", b =>
                 {
                     b.Navigation("Antags");
-
-                    b.Navigation("CDProfile");
 
                     b.Navigation("Jobs");
 
