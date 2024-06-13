@@ -1,0 +1,8 @@
+- type: radioChannel
+  id: Hailing
+  name: cd-chat-radio-hailing
+  keycode: 'a' # a for hAiling
+  frequency: 1000
+  color: "#7583FF"
+  # This is "unencrypted" so does not require an encryption server.
+  longRange: true
