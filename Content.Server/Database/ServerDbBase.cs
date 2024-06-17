@@ -223,7 +223,7 @@ namespace Content.Server.Database
             // CD: get character records or create default records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
                 ? RecordsSerialization.DeserializeJson(profile.CDProfile.CharacterRecords)
-                : CharacterRecords.DefaultRecords();
+                : PlayerProvidedCharacterRecords.DefaultRecords();
 
             var loadouts = new Dictionary<string, RoleLoadout>();
 
@@ -324,7 +324,7 @@ namespace Content.Server.Database
             // CD: CD Character Data Data
             profile.CDProfile ??= new CDProfile();
             profile.CDProfile.Height = humanoid.Height;
-            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
+            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
 
             profile.Loadouts.Clear();
 

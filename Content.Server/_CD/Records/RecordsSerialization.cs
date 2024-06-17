@@ -41,29 +41,29 @@ public static class RecordsSerialization
         return def;
     }
 
-    private static List<CharacterRecords.RecordEntry> DeserializeEntries(JsonElement e, string key)
+    private static List<PlayerProvidedCharacterRecords.RecordEntry> DeserializeEntries(JsonElement e, string key)
     {
         if (e.TryGetProperty(key, out var arrv))
         {
             if (arrv.ValueKind != JsonValueKind.Array)
-                return new List<CharacterRecords.RecordEntry>();
+                return new List<PlayerProvidedCharacterRecords.RecordEntry>();
 
-            var res = new List<CharacterRecords.RecordEntry>();
+            var res = new List<PlayerProvidedCharacterRecords.RecordEntry>();
             for (var i = 0; i < arrv.GetArrayLength(); ++i)
             {
                 var record = arrv[i];
-                var title = DeserializeString(record, nameof(CharacterRecords.RecordEntry.Title), null);
-                var involved = DeserializeString(record, nameof(CharacterRecords.RecordEntry.Involved), null);
-                var desc = DeserializeString(record, nameof(CharacterRecords.RecordEntry.Description), null);
+                var title = DeserializeString(record, nameof(PlayerProvidedCharacterRecords.RecordEntry.Title), null);
+                var involved = DeserializeString(record, nameof(PlayerProvidedCharacterRecords.RecordEntry.Involved), null);
+                var desc = DeserializeString(record, nameof(PlayerProvidedCharacterRecords.RecordEntry.Description), null);
                 if (title == null || involved == null || desc == null)
-                    return new List<CharacterRecords.RecordEntry>();
-                res.Add(new CharacterRecords.RecordEntry(title, involved, desc));
+                    return new List<PlayerProvidedCharacterRecords.RecordEntry>();
+                res.Add(new PlayerProvidedCharacterRecords.RecordEntry(title, involved, desc));
             }
 
             return res;
         }
 
-        return new List<CharacterRecords.RecordEntry>();
+        return new List<PlayerProvidedCharacterRecords.RecordEntry>();
     }
 
     /// <summary>
@@ -73,11 +73,11 @@ public static class RecordsSerialization
     /// <br />
     /// Missing fields are filled in with their default value, extra fields are simply ignored
     /// </summary>
-    public static CharacterRecords DeserializeJson(JsonDocument json)
+    public static PlayerProvidedCharacterRecords DeserializeJson(JsonDocument json)
     {
         var e = json.RootElement;
-        var def = CharacterRecords.DefaultRecords();
-        return new CharacterRecords(
+        var def = PlayerProvidedCharacterRecords.DefaultRecords();
+        return new PlayerProvidedCharacterRecords(
             height: DeserializeInt(e, nameof(def.Height), def.Height),
             weight: DeserializeInt(e, nameof(def.Weight), def.Weight),
             emergencyContactName: DeserializeString(e, nameof(def.EmergencyContactName), def.EmergencyContactName),

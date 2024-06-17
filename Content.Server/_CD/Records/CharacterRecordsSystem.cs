@@ -28,7 +28,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: new []{ typeof(StationRecordsSystem) });
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(StationRecordsSystem)]);
     }
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
@@ -77,8 +77,8 @@ public sealed class CharacterRecordsSystem : EntitySystem
         }
 
         var records = new FullCharacterRecords(
-            characterRecords: new CharacterRecords(profile.CDCharacterRecords),
-            stationRecordsKey: stationRecordsKey?.Id, // TODO: replace this with StationRecordsKey instead of a uint
+            pRecords: new PlayerProvidedCharacterRecords(profile.CDCharacterRecords),
+            stationRecordsKey: stationRecordsKey?.Id,
             name: profile.Name,
             age: profile.Age,
             species: profile.Species,
@@ -138,7 +138,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!recordsDb.Records.ContainsKey(key.Key.Index))
             return;
 
-        var cr = recordsDb.Records[key.Key.Index].CharacterRecords;
+        var cr = recordsDb.Records[key.Key.Index].PRecords;
 
         switch (ty)
         {
@@ -168,8 +168,8 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!recordsDb.Records.ContainsKey(key.Key.Index))
             return;
 
-        var records = CharacterRecords.DefaultRecords();
-        recordsDb.Records[key.Key.Index].CharacterRecords = records;
+        var records = PlayerProvidedCharacterRecords.DefaultRecords();
+        recordsDb.Records[key.Key.Index].PRecords = records;
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
@@ -195,10 +195,4 @@ public sealed class CharacterRecordsSystem : EntitySystem
     }
 }
 
-public sealed class CharacterRecordsModifiedEvent : EntityEventArgs
-{
-
-    public CharacterRecordsModifiedEvent()
-    {
-    }
-}
+public sealed class CharacterRecordsModifiedEvent : EntityEventArgs;

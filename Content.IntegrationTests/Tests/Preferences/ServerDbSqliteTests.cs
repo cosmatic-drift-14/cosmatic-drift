@@ -55,7 +55,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                     Color.Beige,
                     new ()),
                 // CD: test records
-                CDCharacterRecords = CharacterRecords.DefaultRecords()
+                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords()
             };
         }
 

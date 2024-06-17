@@ -23,13 +23,13 @@ public sealed partial class RecordEntryEditPopup : FancyWindow
         };
     }
 
-    public CharacterRecords.RecordEntry GetContents()
+    public PlayerProvidedCharacterRecords.RecordEntry GetContents()
     {
         string desc = Rope.Collapse(DescriptionEdit.TextRope).Trim();
-        return new CharacterRecords.RecordEntry(TitleEdit.Text, InvolvedEdit.Text, desc);
+        return new PlayerProvidedCharacterRecords.RecordEntry(TitleEdit.Text, InvolvedEdit.Text, desc);
     }
 
-    public void SetContents(CharacterRecords.RecordEntry entry)
+    public void SetContents(PlayerProvidedCharacterRecords.RecordEntry entry)
     {
         TitleEdit.Text = entry.Title;
         InvolvedEdit.Text = entry.Involved;

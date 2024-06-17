@@ -25,6 +25,13 @@ public enum RecordConsoleType : byte
 [Serializable, NetSerializable]
 public sealed class CharacterRecordConsoleState : BoundUserInterfaceState
 {
+    [Serializable, NetSerializable]
+    public struct CharacterInfo
+    {
+        public string CharacterDisplayName;
+        public uint? StationRecordKey;
+    }
+
     public RecordConsoleType ConsoleType { get; set; }
 
     /// <summary>
@@ -35,7 +42,7 @@ public sealed class CharacterRecordConsoleState : BoundUserInterfaceState
     /// <summary>
     /// List of names+station record keys to display in the listing
     /// </summary>
-    public Dictionary<uint, (string, uint?)>? RecordListing { get; set; }
+    public Dictionary<uint, CharacterInfo>? CharacterList { get; set; }
 
     /// <summary>
     /// The contents of the selected record
@@ -64,10 +71,10 @@ public sealed class CharacterRecordsConsoleFilterMsg : BoundUserInterfaceMessage
 [Serializable, NetSerializable]
 public sealed class CharacterRecordConsoleSelectMsg : BoundUserInterfaceMessage
 {
-    public readonly uint? Index;
+    public readonly uint? CharacterRecordKey;
 
-    public CharacterRecordConsoleSelectMsg(uint? index)
+    public CharacterRecordConsoleSelectMsg(uint? characterRecordKey)
     {
-        Index = index;
+        CharacterRecordKey = characterRecordKey;
     }
 }

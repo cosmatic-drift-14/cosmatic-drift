@@ -15,10 +15,10 @@ public sealed partial class RecordEditorGui : Control
     /// <summary>
     /// Delegate that tells the editor to save records when the save button is pressed
     /// </summary>
-    private readonly Action<CharacterRecords> _updateProfileRecords;
-    private CharacterRecords _records = default!;
+    private readonly Action<PlayerProvidedCharacterRecords> _updateProfileRecords;
+    private PlayerProvidedCharacterRecords _records = default!;
 
-    public RecordEditorGui(Action<CharacterRecords> updateProfileRecords)
+    public RecordEditorGui(Action<PlayerProvidedCharacterRecords> updateProfileRecords)
     {
         RobustXamlLoader.Load(this);
         _updateProfileRecords = updateProfileRecords;
@@ -111,14 +111,14 @@ public sealed partial class RecordEditorGui : Control
 
     public void Update(HumanoidCharacterProfile? profile)
     {
-        _records = profile?.CDCharacterRecords ?? CharacterRecords.DefaultRecords();
+        _records = profile?.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords();
         EmploymentEntrySelector.UpdateContents(_records.EmploymentEntries);
         MedicalEntrySelector.UpdateContents(_records.MedicalEntries);
         SecurityEntrySelector.UpdateContents(_records.SecurityEntries);
         UpdateWidgets();
     }
 
-    private void UpdateRecords(CharacterRecords records)
+    private void UpdateRecords(PlayerProvidedCharacterRecords records)
     {
         records.EnsureValid();
         _records = records;

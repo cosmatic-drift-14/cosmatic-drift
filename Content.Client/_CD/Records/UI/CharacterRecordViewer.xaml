@@ -14,11 +14,11 @@
             <Button Name="RecordFiltersReset" Text="{Loc 'general-station-record-console-reset-filters'}"/>
         </BoxContainer>
         <BoxContainer VerticalExpand="True">
-            <!-- Record listing -->
+            <!-- Character listing -->
             <BoxContainer Orientation="Vertical" Margin="5" MinWidth="250" MaxWidth="250">
-                <Label Name="RecordListingStatus" Visible="False" />
+                <Label Name="CharacterListingStatus" Visible="False" />
                 <ScrollContainer VerticalExpand="True">
-                    <ItemList Name="RecordListing" />
+                    <ItemList Name="CharacterListing" />
                 </ScrollContainer>
             </BoxContainer>
             <!-- Record box -->

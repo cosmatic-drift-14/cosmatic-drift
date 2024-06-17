@@ -41,7 +41,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     private void OnKeySelect(EntityUid entity, CharacterRecordConsoleComponent console,
         CharacterRecordConsoleSelectMsg msg)
     {
-        console.SelectedIndex = msg.Index;
+        console.SelectedIndex = msg.CharacterRecordKey;
         UpdateUi(entity, console);
     }
 
@@ -60,7 +60,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
         var characterRecords = _characterRecords.QueryRecords(station.Value);
         // Get the name and station records key display from the list of records
-        var names = new Dictionary<uint, (string, uint?)>();
+        var names = new Dictionary<uint, CharacterRecordConsoleState.CharacterInfo>();
         foreach (var (i, r) in characterRecords)
         {
             var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
@@ -77,7 +77,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             if (names.ContainsKey(i))
                 Log.Error($"We somehow have duplicate character record keys, NetEntity: {i}, Entity: {entity}, Character Name: {r.Name}");
 
-            names[i] = (nameJob, r.StationRecordsKey);
+            names[i] = new CharacterRecordConsoleState.CharacterInfo() { CharacterDisplayName = nameJob, StationRecordKey = r.StationRecordsKey };
         }
 
         var record =
@@ -102,7 +102,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             new CharacterRecordConsoleState
             {
                 ConsoleType = console.ConsoleType,
-                RecordListing = names,
+                CharacterList = names,
                 SelectedIndex = console.SelectedIndex,
                 SelectedRecord = record,
                 Filter = console.Filter,

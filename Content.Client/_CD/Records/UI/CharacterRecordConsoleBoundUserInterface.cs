@@ -1,21 +1,15 @@
 using Content.Shared._CD.Records;
 using Content.Shared.CriminalRecords;
 using Content.Shared.CriminalRecords.Components;
-using Content.Shared.Security;
 using Content.Shared.StationRecords;
 using JetBrains.Annotations;
 
 namespace Content.Client._CD.Records.UI;
 
 [UsedImplicitly]
-public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterface
+public sealed class CharacterRecordConsoleBoundUserInterface(EntityUid owner, Enum key) : BoundUserInterface(owner, key)
 {
     [ViewVariables] private CharacterRecordViewer? _window;
-
-    public CharacterRecordConsoleBoundUserInterface(EntityUid owner, Enum key)
-        : base(owner, key)
-    {
-    }
 
     protected override void UpdateState(BoundUserInterfaceState baseState)
     {
@@ -38,15 +32,15 @@ public sealed class CharacterRecordConsoleBoundUserInterface : BoundUserInterfac
 
         _window = new();
         _window.OnClose += Close;
-        _window.OnListingItemSelected += (ent, stationRecordKey) =>
+        _window.OnListingItemSelected += meta =>
         {
-            SendMessage(new CharacterRecordConsoleSelectMsg(ent));
+            SendMessage(new CharacterRecordConsoleSelectMsg(meta?.CharacterRecordKey));
 
             // If we are a security records console, we also need to inform the criminal records
             // system of our state.
-            if (_window.IsSecurity() && stationRecordKey != null)
+            if (_window.IsSecurity() && meta?.StationRecordKey != null)
             {
-                SendMessage(new SelectStationRecord(stationRecordKey));
+                SendMessage(new SelectStationRecord(meta.Value.StationRecordKey.Value));
                 _window.SetSecurityStatusEnabled(true);
             }
             else
