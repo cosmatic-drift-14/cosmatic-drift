@@ -83,7 +83,7 @@ namespace Content.Server.Database
                 .HasConversion(jsonByteArrayConverter);
 
             // CD: Store Records
-            modelBuilder.Entity<CDProfile>()
+            modelBuilder.Entity<CDModel.CDProfile>()
                 .Property(log => log.CharacterRecords)
                 .HasConversion(jsonByteArrayConverter);
         }

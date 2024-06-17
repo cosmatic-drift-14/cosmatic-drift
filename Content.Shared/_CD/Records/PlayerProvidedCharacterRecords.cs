@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Text.Json.Serialization;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Records;
@@ -47,11 +48,11 @@ public sealed partial class PlayerProvidedCharacterRecords
     // history, prescriptions, etc. would be a record below
 
     // "incidents"
-    [DataField]
+    [DataField, JsonIgnore]
     public List<RecordEntry> MedicalEntries { get; private set; }
-    [DataField]
+    [DataField, JsonIgnore]
     public List<RecordEntry> SecurityEntries { get; private set; }
-    [DataField]
+    [DataField, JsonIgnore]
     public List<RecordEntry> EmploymentEntries { get; private set; }
 
     [DataDefinition]
