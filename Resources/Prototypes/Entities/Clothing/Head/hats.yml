@@ -249,6 +249,10 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
+  - type: PilotedClothing
+    pilotWhitelist:
+      tags:
+        - ChefPilot
   - type: Tag
     tags:
     - ClothMade
