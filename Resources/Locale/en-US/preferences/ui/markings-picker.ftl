@@ -14,7 +14,7 @@ marking-slot-remove = Remove
 # Categories
 
 markings-category-Hair = Hair
-markings-category-FacialHair = Facial Hair
+markings-category-FacialHair = Front
 markings-category-Head = Head
 markings-category-HeadTop = Head (Top)
 markings-category-HeadSide = Head (Side)

@@ -1,0 +1,21 @@
+- type: dataset
+  id: names_ipc_unisex
+  values:
+    - int
+    - int*
+    - char
+    - auto
+    - void
+    - bool
+    - char8_t
+    - unsigned char
+    - signed char
+    - __int8
+    - char16_t
+    - __int16
+    - short
+    - unsigned short
+    - wchar_t
+    - char32_t
+    - float
+    - double

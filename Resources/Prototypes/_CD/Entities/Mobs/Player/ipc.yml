@@ -1,0 +1,7 @@
+- type: entity
+  save: false
+  name: Urist McRobor
+  parent: BaseMobIPC
+  id: MobIPC
+
+# beep boop kiss robots

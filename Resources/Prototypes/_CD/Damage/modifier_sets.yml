@@ -2,3 +2,13 @@
   id: Vulpkanin
   coefficients:
     Heat: 1.15
+
+# electronic damset but slightly evened mods
+- type: damageModifierSet
+  id: IPC
+  coefficients:
+    Blunt: 0.75
+    Slash: 0.75
+    Piercing: 0.95
+    Shock: 1.25
+    Heat: 1.25
