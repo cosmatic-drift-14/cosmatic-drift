@@ -9,7 +9,6 @@
     slots: [eyes]
   - type: Item
     size: 5
-    storedRotation: -90
 
 - type: entity
   parent: [ClothingEyesBase, BaseFoldable]
