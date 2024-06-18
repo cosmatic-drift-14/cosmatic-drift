@@ -108,7 +108,6 @@
         - 0.153853429 # nitrogen
   - type: Item
     sprite: null
-    size: Normal
 
 - type: entity
   id: ActionBaseToggleMagboots
