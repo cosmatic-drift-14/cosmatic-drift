@@ -58,6 +58,11 @@
     gloves: ClothingHandsGlovesColorBlack
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
+  # CD: This is gear set used for the syndicate shuttle people so we give them a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # END CD
 
 # Syndicate Footsoldier Gear - No Headset
 - type: startingGear
@@ -227,7 +232,7 @@
     shoes: ClothingShoesClown
     id: ClownPDA
     back: ClothingBackpackClown
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange # CD: not station so long range
     mask: ClothingMaskClown
     pocket1: BikeHorn
     pocket2: ClownRecorder
@@ -243,6 +248,11 @@
     back: ClothingBackpackCargo
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
+  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # End CD
 
 - type: startingGear
   id: LostCargoTechGearCoat
@@ -255,6 +265,11 @@
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
     outerClothing: ClothingOuterWinterCargo
+  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # End CD
 
 #Traveling Chef
 - type: startingGear
@@ -264,7 +279,7 @@
     shoes: ClothingShoesColorWhite
     id: ChefPDA
     back: ClothingBackpackSatchel
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange # CD: not station so long range
     belt: ClothingBeltChef
 
 #CMO Disaster Victim
@@ -280,6 +295,11 @@
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedical
     outerClothing: ClothingOuterCoatLabCmo
+  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # End CD
 
 - type: startingGear
   id: DisasterVictimCMOAlt
@@ -293,6 +313,11 @@
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedical
     outerClothing: ClothingOuterCoatLabCmo
+  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # End CD
 
 #Captain Disaster Victim
 - type: startingGear
@@ -335,6 +360,11 @@
     back: ClothingBackpackScience
     ears: ClothingHeadsetRD
     outerClothing: ClothingOuterCoatRD
+  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # End CD
 
 - type: startingGear
   id: DisasterVictimRDAlt
@@ -347,3 +377,8 @@
     back: ClothingBackpackSatchelScience
     ears: ClothingHeadsetRD
     outerClothing: ClothingOuterCoatRD
+  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # End CD
