@@ -50,7 +50,11 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
-                .Include(p => p.Profiles).ThenInclude(h => h.CDProfile) // CD: Store CD info
+                // CD: Store CD info
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                // END CD
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -99,6 +103,7 @@ namespace Content.Server.Database
 
             var oldProfile = db.DbContext.Profile
                 .Include(p => p.CDProfile) // CD: Store CD info
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -222,8 +227,8 @@ namespace Content.Server.Database
 
             // CD: get character records or create default records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
-                ? RecordsSerialization.DeserializeJson(profile.CDProfile.CharacterRecords)
-                : CharacterRecords.DefaultRecords();
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
+                : PlayerProvidedCharacterRecords.DefaultRecords();
 
             var loadouts = new Dictionary<string, RoleLoadout>();
 
@@ -321,10 +326,17 @@ namespace Content.Server.Database
                         .Select(t => new Trait {TraitName = t})
             );
 
-            // CD: CD Character Data Data
-            profile.CDProfile ??= new CDProfile();
+            // CD: CD Character Data
+            profile.CDProfile ??= new CDModel.CDProfile();
             profile.CDProfile.Height = humanoid.Height;
-            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
+            // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
+            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
+            if (humanoid.CDCharacterRecords != null)
+            {
+                profile.CDProfile.CharacterRecordEntries.Clear();
+                profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
+            }
+            // END CD
 
             profile.Loadouts.Clear();
 

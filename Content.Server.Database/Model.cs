@@ -53,11 +53,18 @@ namespace Content.Server.Database
                 .IsUnique();
 
             // CD: CD Character Data
-            modelBuilder.Entity<CDProfile>()
+            modelBuilder.Entity<CDModel.CDProfile>()
                 .HasOne(p => p.Profile)
                 .WithOne(p => p.CDProfile)
-                .HasForeignKey<CDProfile>(p => p.ProfileId)
+                .HasForeignKey<CDModel.CDProfile>(p => p.ProfileId)
                 .IsRequired();
+
+            modelBuilder.Entity<CDModel.CharacterRecordEntry>()
+                .HasOne(e => e.CDProfile)
+                .WithMany(e => e.CharacterRecordEntries)
+                .HasForeignKey(e => e.CDProfileId)
+                .IsRequired();
+            // END CD
 
             modelBuilder.Entity<Antag>()
                 .HasIndex(p => new {HumanoidProfileId = p.ProfileId, p.AntagName})
@@ -382,28 +389,7 @@ namespace Content.Server.Database
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
 
-        public CDProfile? CDProfile { get; set; }
-    }
-
-    /// <summary>
-    /// Stores CD Character data separately from the main Profile. This is done to work around a bug
-    /// in EFCore migrations.
-    /// <p />
-    /// There is no way of forcing a dependent table to exist in EFCore (according to MS).
-    /// You must always account for the possibility of this table not existing.
-    /// </summary>
-    public class CDProfile
-    {
-        public int Id { get; set; }
-
-        public int ProfileId { get; set; }
-        public Profile Profile { get; set; } = null!;
-
-        public float Height { get; set; } = 1f;
-
-        // CD: Store character records
-        [Column("character_records", TypeName = "jsonb")]
-        public JsonDocument? CharacterRecords { get; set; }
+        public CDModel.CDProfile? CDProfile { get; set; }
     }
 
     public class Job

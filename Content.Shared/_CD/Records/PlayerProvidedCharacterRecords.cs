@@ -1,12 +1,15 @@
 using System.Linq;
-using Content.Shared.Preferences;
+using System.Text.Json.Serialization;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Records;
 
+/// <summary>
+/// Contains Cosmatic Drift records that can be changed in the character editor. This is stored on the character's profile.
+/// </summary>
 [DataDefinition]
 [Serializable, NetSerializable]
-public sealed partial class CharacterRecords
+public sealed partial class PlayerProvidedCharacterRecords
 {
     private const int TextMedLen = 128;
     private const int TextVeryLargeLen = 2048;
@@ -45,11 +48,11 @@ public sealed partial class CharacterRecords
     // history, prescriptions, etc. would be a record below
 
     // "incidents"
-    [DataField]
+    [DataField, JsonIgnore]
     public List<RecordEntry> MedicalEntries { get; private set; }
-    [DataField]
+    [DataField, JsonIgnore]
     public List<RecordEntry> SecurityEntries { get; private set; }
-    [DataField]
+    [DataField, JsonIgnore]
     public List<RecordEntry> EmploymentEntries { get; private set; }
 
     [DataDefinition]
@@ -95,7 +98,7 @@ public sealed partial class CharacterRecords
         }
     }
 
-    public CharacterRecords(
+    public PlayerProvidedCharacterRecords(
         bool hasWorkAuthorization,
         int height, int weight,
         string emergencyContactName,
@@ -117,7 +120,7 @@ public sealed partial class CharacterRecords
         EmploymentEntries = employmentEntries;
     }
 
-    public CharacterRecords(CharacterRecords other)
+    public PlayerProvidedCharacterRecords(PlayerProvidedCharacterRecords other)
     {
         Height = other.Height;
         Weight = other.Weight;
@@ -132,9 +135,9 @@ public sealed partial class CharacterRecords
         EmploymentEntries = other.EmploymentEntries.Select(x => new RecordEntry(x)).ToList();
     }
 
-    public static CharacterRecords DefaultRecords()
+    public static PlayerProvidedCharacterRecords DefaultRecords()
     {
-        return new CharacterRecords(
+        return new PlayerProvidedCharacterRecords(
             hasWorkAuthorization: true,
             height: 170, weight: 70,
             emergencyContactName: "",
@@ -148,7 +151,7 @@ public sealed partial class CharacterRecords
         );
     }
 
-    public bool MemberwiseEquals(CharacterRecords other)
+    public bool MemberwiseEquals(PlayerProvidedCharacterRecords other)
     {
         // This is ugly but is only used for integration tests.
         var test = Height == other.Height
@@ -218,47 +221,47 @@ public sealed partial class CharacterRecords
         EnsureValidEntries(MedicalEntries);
         EnsureValidEntries(SecurityEntries);
     }
-    public CharacterRecords WithHeight(int height)
+    public PlayerProvidedCharacterRecords WithHeight(int height)
     {
         return new(this) { Height = height };
     }
-    public CharacterRecords WithWeight(int weight)
+    public PlayerProvidedCharacterRecords WithWeight(int weight)
     {
         return new(this) { Weight = weight };
     }
-    public CharacterRecords WithWorkAuth(bool auth)
+    public PlayerProvidedCharacterRecords WithWorkAuth(bool auth)
     {
         return new(this) { HasWorkAuthorization = auth };
     }
-    public CharacterRecords WithContactName(string name)
+    public PlayerProvidedCharacterRecords WithContactName(string name)
     {
         return new(this) { EmergencyContactName = name};
     }
-    public CharacterRecords WithIdentifyingFeatures(string feat)
+    public PlayerProvidedCharacterRecords WithIdentifyingFeatures(string feat)
     {
         return new(this) { IdentifyingFeatures = feat};
     }
-    public CharacterRecords WithAllergies(string s)
+    public PlayerProvidedCharacterRecords WithAllergies(string s)
     {
         return new(this) { Allergies = s };
     }
-    public CharacterRecords WithDrugAllergies(string s)
+    public PlayerProvidedCharacterRecords WithDrugAllergies(string s)
     {
         return new(this) { DrugAllergies = s };
     }
-    public CharacterRecords WithPostmortemInstructions(string s)
+    public PlayerProvidedCharacterRecords WithPostmortemInstructions(string s)
     {
         return new(this) { PostmortemInstructions = s};
     }
-    public CharacterRecords WithEmploymentEntries(List<RecordEntry> entries)
+    public PlayerProvidedCharacterRecords WithEmploymentEntries(List<RecordEntry> entries)
     {
         return new(this) { EmploymentEntries = entries};
     }
-    public CharacterRecords WithMedicalEntries(List<RecordEntry> entries)
+    public PlayerProvidedCharacterRecords WithMedicalEntries(List<RecordEntry> entries)
     {
         return new(this) { MedicalEntries = entries};
     }
-    public CharacterRecords WithSecurityEntries(List<RecordEntry> entries)
+    public PlayerProvidedCharacterRecords WithSecurityEntries(List<RecordEntry> entries)
     {
         return new(this) { SecurityEntries = entries};
     }

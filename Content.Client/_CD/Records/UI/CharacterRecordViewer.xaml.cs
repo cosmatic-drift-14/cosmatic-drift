@@ -12,7 +12,13 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class CharacterRecordViewer : FancyWindow
 {
-    public event Action<uint?, uint?>? OnListingItemSelected;
+    public struct CharacterListMetadata
+    {
+        public uint CharacterRecordKey;
+        public uint? StationRecordKey;
+    }
+
+    public event Action<CharacterListMetadata?>? OnListingItemSelected;
     public event Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
@@ -21,7 +27,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     private RecordConsoleType? _type;
 
     private readonly RecordEntryViewPopup _entryView = new();
-    private List<CharacterRecords.RecordEntry>? _entries;
+    private List<PlayerProvidedCharacterRecords.RecordEntry>? _entries;
 
     private DialogWindow? _wantedReasonDialog;
 
@@ -49,24 +55,24 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             StatusOptionButton.AddItem(name, (int)status);
         }
 
-        RecordListing.OnItemSelected += _ =>
+        CharacterListing.OnItemSelected += _ =>
         {
-            if (!RecordListing.GetSelected().Any())
+            if (!CharacterListing.GetSelected().Any())
                 return;
-            var selected = RecordListing.GetSelected().First();
-            var (index, listingKey) = ((uint, uint?))selected.Metadata!;
-            _selectedListingKey = listingKey;
+            var selected = CharacterListing.GetSelected().First();
+            var meta = (CharacterListMetadata)selected.Metadata!;
+            _selectedListingKey = meta.CharacterRecordKey;
             if (!_isPopulating)
-                OnListingItemSelected?.Invoke(index,  listingKey);
+                OnListingItemSelected?.Invoke(meta);
         };
 
-        RecordListing.OnItemDeselected += _ =>
+        CharacterListing.OnItemDeselected += _ =>
         {
             // When we populate the records, we clear the contents of the listing.
             // This could cause a deselection but we don't want to really deselect because it would
             // interrupt what the player is doing.
             if (!_isPopulating)
-                OnListingItemSelected?.Invoke(null, null);
+                OnListingItemSelected?.Invoke(null);
             _selectedListingKey = null;
         };
 
@@ -144,14 +150,14 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
         _isPopulating = true;
 
-        RecordListing.ClearSelected();
+        CharacterListing.ClearSelected();
 
         // I wish there was a better way of doing this
         if (key != null)
         {
-            foreach (var item in RecordListing)
+            foreach (var item in CharacterListing)
             {
-                if ((((uint, uint?)) item.Metadata!).Item1 == key)
+                if (((CharacterListMetadata) item.Metadata!).CharacterRecordKey == key)
                 {
                     item.Selected = true;
                     break;
@@ -162,17 +168,17 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         _isPopulating = false;
     }
 
-    private bool EntryListNeedsRepopulating(IReadOnlyDictionary<uint, (string, uint?)> newKeys)
+    private bool CharacterListNeedsRepopulating(IReadOnlyDictionary<uint, CharacterRecordConsoleState.CharacterInfo> newKeys)
     {
         int newCount = newKeys.Count;
-        if (newCount != RecordListing.Count)
+        if (newCount != CharacterListing.Count)
             return true;
 
         // Given that there is the same number of keys in the dictionary as in items in the listing, they are not equal
         // if and only if there exists a key in the listing that is not in the dictionary
-        foreach (var item in RecordListing)
+        foreach (var item in CharacterListing)
         {
-            var key = (((uint, uint?)) item.Metadata!).Item1;
+            var key = ((CharacterListMetadata)item.Metadata!).CharacterRecordKey;
             if (!newKeys.ContainsKey(key))
             {
                 return true;
@@ -190,18 +196,18 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         _type = state.ConsoleType;
 
         // Disable listing if we don't have one selected
-        if (state.RecordListing == null)
+        if (state.CharacterList == null)
         {
-            RecordListingStatus.Visible = true;
-            RecordListing.Visible = false;
-            RecordListingStatus.Text = Loc.GetString("cd-record-viewer-empty-state");
+            CharacterListingStatus.Visible = true;
+            CharacterListing.Visible = false;
+            CharacterListingStatus.Text = Loc.GetString("cd-record-viewer-empty-state");
             RecordContainer.Visible = false;
             RecordContainerStatus.Visible = false;
             return;
         }
 
-        RecordListingStatus.Visible = false;
-        RecordListing.Visible = true;
+        CharacterListingStatus.Visible = false;
+        CharacterListing.Visible = true;
 
         // Enable extended filtering only for admin and security consoles
         switch (_type)
@@ -241,21 +247,21 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             RecordFilterType.SelectId((int) state.Filter.Type);
         }
 
-        if (EntryListNeedsRepopulating(state.RecordListing))
+        if (CharacterListNeedsRepopulating(state.CharacterList))
         {
             _isPopulating = true;
 
-            RecordListing.Clear();
+            CharacterListing.Clear();
 
             // Add the records to the listing in a sorted order. There is probably are faster way of doing this, but
             // this is not really a hot code path.
-            state.RecordListing
-                // TODO: turn metadata tuple into a struct, it is too confusing.
-                // The items in this tuple are as follows: (name of character, (character records key, station records key))
-                .Select(r => (r.Value.Item1, (r.Key, r.Value.Item2)))
+            state.CharacterList
+                // The items in this tuple are as follows: (name of character, CharacterListMetadata)
+                .Select(r
+                    => (CharacterName: r.Value.CharacterDisplayName, new CharacterListMetadata() { CharacterRecordKey = r.Key, StationRecordKey = r.Value.StationRecordKey}))
                 .OrderBy(r => r.Item1)
                 .ToList()
-                .ForEach(r => RecordListing.AddItem(r.Item1, metadata: r.Item2));
+                .ForEach(r => CharacterListing.AddItem(r.Item1, metadata: r.Item2));
 
             _isPopulating = false;
         }
@@ -278,7 +284,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainer.Visible = true;
 
         var record = state.SelectedRecord!;
-        var cr = record.CharacterRecords;
+        var cr = record.PRecords;
 
         // Basic info
         RecordContainerName.Text = record.Name;
@@ -331,7 +337,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
     }
 
-    private void SetEntries(List<CharacterRecords.RecordEntry> entries, bool addIndex = false)
+    private void SetEntries(List<PlayerProvidedCharacterRecords.RecordEntry> entries, bool addIndex = false)
     {
         _entries = entries;
         RecordEntryList.Clear();
@@ -346,13 +352,13 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     private void UpdateRecordBoxEmployment(FullCharacterRecords record)
     {
         RecordContainerEmployment.Visible = true;
-        RecordContainerWorkAuth.Text = record.CharacterRecords.HasWorkAuthorization ? "yes" : "no";
+        RecordContainerWorkAuth.Text = record.PRecords.HasWorkAuthorization ? "yes" : "no";
     }
 
     private void UpdateRecordBoxMedical(FullCharacterRecords record)
     {
         RecordContainerMedical.Visible = true;
-        var cr = record.CharacterRecords;
+        var cr = record.PRecords;
         RecordContainerMedical.Visible = true;
         RecordContainerAllergies.SetValue(cr.Allergies);
         RecordContainerDrugAllergies.SetValue(cr.DrugAllergies);
@@ -363,7 +369,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     private void UpdateRecordBoxSecurity(FullCharacterRecords record, (SecurityStatus, string?)? criminal)
     {
         RecordContainerSecurity.Visible = true;
-        RecordContainerIdentFeatures.SetValue(record.CharacterRecords.IdentifyingFeatures);
+        RecordContainerIdentFeatures.SetValue(record.PRecords.IdentifyingFeatures);
         RecordContainerFingerprint.Text = record.Fingerprint ?? Loc.GetString("cd-character-records-viewer-unknown");
         RecordContainerDNA.Text = record.DNA ?? Loc.GetString("cd-character-records-viewer-unknown");
 
