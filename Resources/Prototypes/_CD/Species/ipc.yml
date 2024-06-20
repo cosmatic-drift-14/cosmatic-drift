@@ -10,7 +10,6 @@
   skinColoration: Hues
   maleFirstNames: names_ipc_unisex
   femaleFirstNames: names_ipc_unisex
-  lastNames: names_ipc_last
 
 - type: speciesBaseSprites
   id: MobIPCSprites
