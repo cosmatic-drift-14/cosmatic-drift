@@ -78,7 +78,7 @@ public sealed class ArrivalsSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<StationArrivalsComponent, ComponentStartup>(OnStationPostInit); // CD change- use ComponentStartup instead of StationPostInitEvent
+        SubscribeLocalEvent<StationArrivalsComponent, StationPostInitEvent>(OnStationPostInit);
 
         SubscribeLocalEvent<ArrivalsShuttleComponent, ComponentStartup>(OnShuttleStartup);
         SubscribeLocalEvent<ArrivalsShuttleComponent, FTLTagEvent>(OnShuttleTag);
@@ -527,7 +527,7 @@ public sealed class ArrivalsSystem : EntitySystem
         }
     }
 
-    private void OnStationPostInit(EntityUid uid, StationArrivalsComponent component, ComponentStartup args) // CD: Use ComponentStartup instead of OnStationPostInit
+    private void OnStationPostInit(EntityUid uid, StationArrivalsComponent component, ref StationPostInitEvent args)
     {
         if (!Enabled)
             return;
