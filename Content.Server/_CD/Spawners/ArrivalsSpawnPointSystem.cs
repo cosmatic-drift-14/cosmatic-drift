@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Server.GameTicking;
-using Content.Server.Station.Systems;
+using Robust.Shared.Map;
 
 using Robust.Shared.Random;
 
@@ -10,6 +10,7 @@ public sealed class ArrivalsSpawnPointSystem : EntitySystem
 {
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly IMapManager _mapManager = default!;
 
     public override void Initialize()
     {
@@ -60,6 +61,11 @@ public sealed class ArrivalsSpawnPointSystem : EntitySystem
 
         var xform = Transform(spawn);
         _transform.SetCoordinates(args.Mob, xform.Coordinates);
+
+        // Unpause the map if it's paused. We don't want people spawning on paused maps.
+        if(_mapManager.IsMapPaused(xform.MapID))
+            _mapManager.SetMapPaused(xform.MapID, false);
+
         return;
     }
 }
