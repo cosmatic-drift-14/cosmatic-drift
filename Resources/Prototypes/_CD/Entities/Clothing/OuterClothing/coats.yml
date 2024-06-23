@@ -22,3 +22,59 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
 
+# Europan Coats
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatEuropanVet
+  name: europan jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+
+- type: entity
+  parent: ClothingOuterCoatEuropanVet
+  id: ClothingOuterCoatEuropanCoalition
+  name: coalition jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Coalition patch on the shoulders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+
+- type: entity
+  parent: ClothingOuterCoatEuropanVet
+  id: ClothingOuterCoatEuropanSeparatist
+  name: separatist jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Separatist patch on the shoulders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
+
+# Cargo Gorka
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatCargoBomber
+  name: cargo gorka
+  description: A heavy canvas gorka for cold shifts in Cargo.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  id: ClothingOuterCoatCargoBomberOpened
+  name: cargo gorka
