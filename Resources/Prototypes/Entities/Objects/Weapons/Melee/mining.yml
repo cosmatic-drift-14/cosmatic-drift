@@ -62,9 +62,6 @@
   - type: Item
     size: 150
   - type: DisarmMalus
-  - type: Tool
-    qualities:
-      - Prying
   - type: Prying
 
 - type: entity
