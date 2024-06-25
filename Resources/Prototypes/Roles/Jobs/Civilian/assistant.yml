@@ -13,6 +13,6 @@
   id: PassengerGear
   equipment:
     ears: ClothingHeadsetGrey
-  storage:
-    back:
-    - BoxSurvival
+  #storage:
+    #back:
+    #- Stuff
