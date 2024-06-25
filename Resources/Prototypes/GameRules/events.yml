@@ -279,7 +279,7 @@
     duration: 60
     maxDuration: 120
   - type: PowerGridCheckRule
-  
+
 - type: entity
   parent: BaseGameRule
   id: SolarFlare
@@ -406,6 +406,7 @@
 #         maxInitialInfectedGrace: 450
 #       - type: ZombifyOnDeath
 #       - type: IncurableZombie
+#       - type: InitialInfected
 #       mindComponents:
 #       - type: InitialInfectedRole
 #         prototype: InitialInfected
