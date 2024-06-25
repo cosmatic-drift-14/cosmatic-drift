@@ -202,6 +202,9 @@ namespace Content.Server.Database
                 .HasIndex(p => p.UserId);
 
             modelBuilder.Entity<ConnectionLog>()
+                .HasIndex(p => p.Time);
+
+            modelBuilder.Entity<ConnectionLog>()
                 .Property(p => p.ServerId)
                 .HasDefaultValue(0);
 
