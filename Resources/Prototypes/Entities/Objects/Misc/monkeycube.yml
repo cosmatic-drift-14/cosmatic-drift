@@ -45,7 +45,7 @@
   - type: StorageFill
     contents:
       - id: KoboldCubeWrapped
-        amount: 6
+        amount: 8
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: box_kobold
@@ -59,9 +59,9 @@
   - type: StorageFill
     contents:
       - id: KoboldCubeWrapped
-        amount: 3
+        amount: 4
       - id: MonkeyCubeWrapped
-        amount: 3
+        amount: 4
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: box_variant
@@ -91,11 +91,6 @@
   id: SyndicateSpongeBox
   description: Drymate brand monkey cubes. Just add water!
   components:
-  - type: Storage
-    whitelist:
-      tags:
-      - MonkeyCube
-    capacity: 30
   - type: StorageFill
     contents:
       - id: SyndicateSpongeWrapped
