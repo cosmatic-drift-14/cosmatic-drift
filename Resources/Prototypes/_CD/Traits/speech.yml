@@ -1,0 +1,10 @@
+# 1 Cost
+
+- type: trait # CD addtions start.
+  id: MobsterAccent
+  name: trait-mobster-name
+  description: trait-mobster-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+    - type: MobsterAccent 
