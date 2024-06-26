@@ -6,13 +6,15 @@
  * defined by the Mozilla Public License, v. 2.0.
  */
 
+using Content.Server.Administration;
+using Content.Shared.Administration;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Utility;
 
 namespace Content.Server._CD.MapPatch;
 
-[ToolshedCommand(Name = "cd_map_patch")]
+[ToolshedCommand(Name = "cd_map_patch"), AdminCommand(AdminFlags.Mapping)]
 public sealed class CDMapPatchCommand : ToolshedCommand
 {
     [Dependency] private readonly IResourceManager _res = default!;

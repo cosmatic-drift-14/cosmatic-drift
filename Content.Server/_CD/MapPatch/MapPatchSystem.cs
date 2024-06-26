@@ -6,10 +6,15 @@
  * defined by the Mozilla Public License, v. 2.0.
  */
 
+using System.Numerics;
+using Content.Server.Administration.Managers;
+using Content.Server.Administration.Systems;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
+using Content.Shared.Administration;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
+using Robust.Server.Maps;
 using Robust.Shared.Map;
 
 namespace Content.Server._CD.MapPatch;
@@ -20,17 +25,25 @@ namespace Content.Server._CD.MapPatch;
 /// </summary>
 public sealed partial class MapPatchSystem : EntitySystem
 {
-    [Dependency] private readonly ChatManager _chat = default!;
-    [Dependency] private readonly TransformSystem _xform = default!;
+    [Dependency] private readonly IAdminManager _admin = default!;
+    [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly IMapManager _mapMan = default!;
+
     [Dependency] private readonly MapSystem _mapSys = default!;
+    [Dependency] private readonly TransformSystem _xform = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
     {
+        SubscribeLocalEvent<PreGameMapLoad>(OnPreMapLoad);
         SubscribeLocalEvent<PostGameMapLoad>(OnPostMapLoad);
         SubscribeLocalEvent<GetVerbsEvent<Verb>>(OnGetVerbs);
     }
+
+    // HACK: Exists because otherwise we can't possibly know what the map offset is after loading it.
+    // The world would be better if i had more foresight years ago when writing the current map loading code.
+    // Only valid between PreGameMapLoad (exclusive) and PostGameMapLoad (inclusive).
+    private MapLoadOptions _iWroteABadTwoYearsAgo = default!;
 
     /// <summary>
     ///     The current patch set, containing patches added by the user for quick printout.
@@ -42,6 +55,9 @@ public sealed partial class MapPatchSystem : EntitySystem
 
     private void OnGetVerbs(GetVerbsEvent<Verb> msg)
     {
+        if (!_admin.HasAdminFlag(msg.User, AdminFlags.Mapping))
+            return;
+
         var proto = MetaData(msg.Target).EntityPrototype;
 
         // If it has no prototype we can't really spawn it with this system...
@@ -63,6 +79,11 @@ public sealed partial class MapPatchSystem : EntitySystem
                 });
             },
         });
+    }
+
+    private void OnPreMapLoad(PreGameMapLoad ev)
+    {
+        _iWroteABadTwoYearsAgo = ev.Options;
     }
 
     private void OnPostMapLoad(PostGameMapLoad ev)
@@ -100,11 +121,12 @@ public sealed partial class MapPatchSystem : EntitySystem
 
     private void ApplySpawnPatch(PostGameMapLoad mapLoadEv, CDSpawnEntityMapPatch patch)
     {
-        var worldCoords = new MapCoordinates(patch.WorldPosition, mapLoadEv.Map);
+        var worldCoords = new MapCoordinates(Vector2.Transform(patch.WorldPosition, _iWroteABadTwoYearsAgo.TransformMatrix), mapLoadEv.Map);
 
-        // Spawn isn't quite nice enough here, so to make sure we attach properly to any grids, we find it ourself.
+        // Spawn isn't quite nice enough here, so to make sure we attach properly to any grids, we find it ourselves.
         if (!_mapMan.TryFindGridAt(worldCoords, out var grid, out var gridComp))
         {
+            Log.Debug($"Spawning {patch.Id} at {worldCoords}");
             Spawn(patch.Id, worldCoords, rotation: patch.WorldRotation);
             return;
         }
@@ -112,7 +134,8 @@ public sealed partial class MapPatchSystem : EntitySystem
         // I dislike this. Too verbose, but oh well.
         var gridLocal = _mapSys.WorldToLocal(grid, gridComp, worldCoords.Position);
         var coords = new EntityCoordinates(grid, gridLocal);
+        Log.Debug($"Spawning {patch.Id} at {coords}/{worldCoords}");
         var ent = SpawnAtPosition(patch.Id, coords);
-        _xform.SetWorldRotation(ent, patch.WorldRotation);
+        _xform.SetWorldRotation(ent, patch.WorldRotation + _iWroteABadTwoYearsAgo.Rotation);
     }
 }

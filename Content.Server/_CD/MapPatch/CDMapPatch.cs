@@ -11,7 +11,6 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.MapPatch;
 
-[DataDefinition]
 public abstract partial class CDMapPatch;
 
 /// <summary>
