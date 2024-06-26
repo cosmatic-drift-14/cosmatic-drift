@@ -22,3 +22,14 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
 
+# Harmony Jacket
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHarmony
+  name: harmony jacket
+  description: A black leather coat designed by the small Harmony company.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
