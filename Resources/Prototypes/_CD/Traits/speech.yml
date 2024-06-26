@@ -1,6 +1,6 @@
 # 1 Cost
 
-- type: trait # CD addtions start.
+- type: trait
   id: MobsterAccent
   name: trait-mobster-name
   description: trait-mobster-desc
