@@ -31,7 +31,7 @@ We are not currently accepting translations of the game on our main repository. 
 
 ## License
 
-Almost code for the content repository is licensed under [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Some code is under the [MPL v2.0](https://www.mozilla.org/en-US/MPL/) and must remain open source.
+Almost code for the content repository is licensed under [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Some code is instead under the [MPL v2.0](https://www.mozilla.org/en-US/MPL/) and must remain open source (and for some, unincumbered by transformative licenses like the GPL as per the Incompatible With Secondary Licenses clauses). All files under the MPL are clearly marked with a file header.
 
 Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
