@@ -2,7 +2,7 @@
   id: Oasis
   mapName: 'Oasis'
   mapPath: /Maps/oasis.yml
-  minPlayers: 35 #CD change
+  minPlayers: 55 #CD change
   stations:
     Oasis:
       stationProto: StandardNanotrasenStation
