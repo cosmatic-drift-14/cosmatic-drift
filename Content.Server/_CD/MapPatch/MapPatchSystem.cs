@@ -16,6 +16,7 @@ using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
 using Robust.Server.Maps;
 using Robust.Shared.Map;
+using Robust.Shared.Utility;
 
 namespace Content.Server._CD.MapPatch;
 
@@ -61,7 +62,7 @@ public sealed partial class MapPatchSystem : EntitySystem
         var proto = MetaData(msg.Target).EntityPrototype;
 
         // If it has no prototype we can't really spawn it with this system...
-        if (proto is not {ID: { } protoId})
+        if (proto is not { ID: { } protoId })
             return;
 
         msg.Verbs.Add(new Verb()
@@ -75,7 +76,7 @@ public sealed partial class MapPatchSystem : EntitySystem
                 {
                     Id = new(protoId),
                     WorldPosition = _xform.GetWorldPosition(msg.Target),
-                    WorldRotation =  _xform.GetWorldRotation(msg.Target),
+                    WorldRotation = _xform.GetWorldRotation(msg.Target),
                 });
             },
         });
@@ -93,6 +94,16 @@ public sealed partial class MapPatchSystem : EntitySystem
 
         Log.Info($"Applying patches to {ev.GameMap.ID} from {patchfile}.");
 
+        var args = new MapPatchEvArgs(ev, _iWroteABadTwoYearsAgo);
+
+        ApplyPatchToMap(args, patchfile);
+    }
+
+    /// <summary>
+    ///     Applies the given patch file to a map.
+    /// </summary>
+    public void ApplyPatchToMap(MapPatchEvArgs args, ResPath patchfile)
+    {
         if (!TryLoadPatchfile(patchfile, out var patches))
         {
             // Yell at the players that the patch failed to load + console error.
@@ -109,19 +120,19 @@ public sealed partial class MapPatchSystem : EntitySystem
             switch (patch)
             {
                 case CDSpawnEntityMapPatch spawnPatch:
-                {
-                    ApplySpawnPatch(ev, spawnPatch);
-                    break;
-                }
+                    {
+                        ApplySpawnPatch(args, spawnPatch);
+                        break;
+                    }
                 default:
                     throw new NotImplementedException($"Haven't implemented support for {patch.GetType()} yet.");
             }
         }
     }
 
-    private void ApplySpawnPatch(PostGameMapLoad mapLoadEv, CDSpawnEntityMapPatch patch)
+    private void ApplySpawnPatch(MapPatchEvArgs mapLoadEv, CDSpawnEntityMapPatch patch)
     {
-        var worldCoords = new MapCoordinates(Vector2.Transform(patch.WorldPosition, _iWroteABadTwoYearsAgo.TransformMatrix), mapLoadEv.Map);
+        var worldCoords = new MapCoordinates(Vector2.Transform(patch.WorldPosition, mapLoadEv.MapLoadOptions.TransformMatrix), mapLoadEv.Map);
 
         // Spawn isn't quite nice enough here, so to make sure we attach properly to any grids, we find it ourselves.
         if (!_mapMan.TryFindGridAt(worldCoords, out var grid, out var gridComp))
@@ -137,5 +148,23 @@ public sealed partial class MapPatchSystem : EntitySystem
         Log.Debug($"Spawning {patch.Id} at {coords}/{worldCoords}");
         var ent = SpawnAtPosition(patch.Id, coords);
         _xform.SetWorldRotation(ent, patch.WorldRotation + _iWroteABadTwoYearsAgo.Rotation);
+    }
+}
+
+public struct MapPatchEvArgs
+{
+    public MapId Map;
+    public MapLoadOptions MapLoadOptions;
+
+    public MapPatchEvArgs(PostGameMapLoad fromEv, MapLoadOptions mapLoadOptions)
+    {
+        Map = fromEv.Map;
+        MapLoadOptions = mapLoadOptions; //ough.
+    }
+
+    public MapPatchEvArgs(MapId map)
+    {
+        Map = map;
+        MapLoadOptions = new();
     }
 }

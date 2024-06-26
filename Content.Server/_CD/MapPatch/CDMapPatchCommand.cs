@@ -11,6 +11,7 @@ using Content.Shared.Administration;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Utility;
+using Robust.Shared.Map;
 
 namespace Content.Server._CD.MapPatch;
 
@@ -42,5 +43,13 @@ public sealed class CDMapPatchCommand : ToolshedCommand
 
         var text = _mapPatch.PatchToText();
         _res.UserData.WriteAllText(path, text);
+    }
+
+    [CommandImplementation("load")]
+    public void Load([CommandArgument] int map, [CommandArgument] ResPath path)
+    {
+        _mapPatch ??= GetSys<MapPatchSystem>();
+
+        _mapPatch.ApplyPatchToMap(new MapPatchEvArgs(new MapId(map)), path);
     }
 }
