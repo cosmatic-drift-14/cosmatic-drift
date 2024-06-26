@@ -4,3 +4,4 @@ cd-create-map-patch-verb-desc =
 command-description-CDMapPatchCommand-print = Prints the current patch set as serialized YAML, usable in a patch file.
 command-description-CDMapPatchCommand-write = Writes the current patch set directly to a file.
 command-description-CDMapPatchCommand-clear = Clears the current patch set from memory.
+command-description-CDMapPatchCommand-load = Loads the provided patchfile in the given map.
