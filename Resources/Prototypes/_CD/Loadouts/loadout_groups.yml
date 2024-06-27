@@ -1,13 +1,5 @@
 # Civilian
 - type: loadoutGroup
-  id: PrivateInvestigatorBackpack
-  name: loadout-group-private-investigator-backpack
-  loadouts:
-  - PrivateInvestigatorBackpack
-  - PrivateInvestigatorSatchel
-  - PrivateInvestigatorDuffel
-
-- type: loadoutGroup
   id: PrivateInvestigatorOuterClothing
   name: loadout-group-private-investigator-outerclothing
   minLimit: 0
