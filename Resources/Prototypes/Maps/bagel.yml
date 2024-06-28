@@ -4,6 +4,7 @@
   mapPath: /Maps/bagel.yml
   minPlayers: 25 #CD change
   maxPlayers: 55 #CD change
+  patchfile: /CDMapPatches/bagel.yml # CD Edit: Apply map patch
   stations:
     Bagel:
       stationProto: StandardNanotrasenStation
@@ -42,9 +43,9 @@
             MedicalIntern: [ 4, 4 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ] #CD Role       
+            SeniorResearcher: [ 1, 1 ] #CD Role
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 4, 4 ] 
+            ResearchAssistant: [ 4, 4 ]
             Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
