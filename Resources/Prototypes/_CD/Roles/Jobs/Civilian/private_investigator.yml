@@ -15,3 +15,11 @@
   equipment:
     id: PrivateInvestigatorPDA
     ears: ClothingHeadsetService
+  storage:
+    back:
+    - BoxSurvival
+    - ForensicScanner
+    - ForensicPad
+    - ForensicPad
+    - ForensicPad
+    - LogProbeCartridge
