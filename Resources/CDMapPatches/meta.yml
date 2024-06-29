@@ -1,5 +1,5 @@
 - !type:CDSpawnEntityMapPatch
-  worldPosition: -13.228987,-3.9148211
+  worldPosition: -9.228987,-3.9148211
   id: LockerLostAndFound
 - !type:CDSpawnEntityMapPatch
   worldRotation: 1.5707963267948966 rad
