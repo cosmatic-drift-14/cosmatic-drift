@@ -3,6 +3,9 @@
   name: job-name-senior-researcher
   description: job-description-senior-researcher
   playTimeTracker: JobSeniorResearcher
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
   startingGear: SeniorResearcherGear
   icon: "JobIconSeniorResearcher"
   supervisors: job-supervisors-rd
