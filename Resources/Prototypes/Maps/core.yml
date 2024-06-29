@@ -4,6 +4,7 @@
   mapPath: /Maps/core.yml
   minPlayers: 25 #CD change
   maxPlayers: 35 #CD change
+  patchfile: /CDMapPatches/core.yml # CD Edit: Apply map patch
   stations:
     Core:
       stationProto: StandardNanotrasenStation
@@ -46,7 +47,7 @@
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 2, 2 ]
             ResearchAssistant: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ] 
+            SeniorResearcher: [ 1, 1 ]
             Borg: [ 1, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
