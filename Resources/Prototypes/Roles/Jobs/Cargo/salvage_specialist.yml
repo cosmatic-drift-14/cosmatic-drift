@@ -3,6 +3,9 @@
   name: job-name-salvagespec
   description: job-description-salvagespec
   playTimeTracker: JobSalvageSpecialist
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm
