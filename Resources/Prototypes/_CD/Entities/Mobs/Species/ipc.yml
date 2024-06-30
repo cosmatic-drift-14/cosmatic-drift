@@ -1,0 +1,77 @@
+- type: entity
+  save: false
+  name: Urist McFuckingRobot # todo remove when i dont have a headache
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobIPC
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: IPC
+  - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+    damageCap: 999
+    damage:
+      groups:
+        Toxin: -0.1
+        Genetic: -0.1
+  - type: Hunger # TODO: ???
+  - type: Thirst
+  - type: Icon
+    sprite: _CD/Mobs/Species/Avali/parts.rsi
+    state: full
+  - type: Body
+    prototype: IPC
+    requiredLegs: 2
+  - type: FloorOcclusion
+  - type: Vocal
+    sounds:
+      Male: MaleIPC # TODO ???????????
+      Female: FemaleIPC
+      Unsexed: MaleIPC
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: IPC
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#7a8bf2"
+  - type: Bloodstream
+    bloodReagent: Water # They're watercooled
+    bloodlossDamage:
+      types:
+        Heat: 0.5
+    bloodlossHealDamage:
+      types:
+        Heat: -1
+  - type: Temperature
+    heatDamageThreshold: 373.15
+    coldDamageThreshold: 273.15 # Condensation irks the CPU
+    currentTemperature: 323.15
+    specificHeat: 48
+    coldDamage:
+      types:
+        Cold: 0.1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 1.5 #per second, scales with temperature & other constants
+  - type: ThermalRegulator
+    metabolismHeat: 800
+    radiatedHeat: 200 # they got FANS man
+    implicitHeatRegulation: 400
+    sweatHeatRegulation: 1500
+    shiveringHeatRegulation: 2500
+    normalBodyTemperature: 310.15
+    thermalRegulationTemperatureThreshold: 25
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobIPCDummy
+  noSpawn: true
+  description: Stupid Ipc..
+  components:
+  - type: HumanoidAppearance
+    species: IPC

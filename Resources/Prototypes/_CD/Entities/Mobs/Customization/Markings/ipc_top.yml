@@ -1,0 +1,53 @@
+- type: marking
+  id: IPCTopAntenna
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _CD/Mobs/Customization/IPC/ipc_top.rsi
+    state: antenna
+
+- type: marking
+  id: IPCTopAntlers
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _CD/Mobs/Customization/IPC/ipc_top.rsi
+    state: antlers
+
+- type: marking
+  id: IPCTopCrowned
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _CD/Mobs/Customization/IPC/ipc_top.rsi
+    state: crowned
+
+- type: marking
+  id: IPCTopCyberheadAntenna
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _CD/Mobs/Customization/IPC/ipc_top.rsi
+    state: cyberhead_antenna
+
+- type: marking
+  id: IPCSidelights
+  bodyPart: HeadSide
+  markingCategory: Headside
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _CD/Mobs/Customization/IPC/ipc_top.rsi
+    state: sidelights
+
+- type: marking
+  id: IPCTopTVAntenna
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _CD/Mobs/Customization/IPC/ipc_top.rsi
+    state: tv_antenna
