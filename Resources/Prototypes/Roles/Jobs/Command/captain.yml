@@ -32,6 +32,5 @@
     ears: ClothingHeadsetAltCommand
   storage:
     back:
-    - BoxSurvival
     - Flash
     # - StationCharter

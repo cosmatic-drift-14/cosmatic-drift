@@ -7,13 +7,22 @@
   - type: StorageFill
     contents:
       - id: CrowbarRed
-      - id: ClothingMaskBreath
-      - id: EmergencyOxygenTankFilled
-        prob: 0.5
-      - id: FoodTinMRE
-      - id: DrinkWaterBottleFull
+      - id: RadioHandheld
+      - id: WelderMini
+      - id: FireExtinguisherMini
+      # Random lighting item orGroup
       - id: FlashlightLantern
-
+        orGroup: LightingItem
+      - id: Flare
+        orGroup: LightingItem
+      - id: GlowstickBase
+        orGroup: LightingItem
+      # Low-chance items
+      - id: FoodSnackChocolate
+        prob: 0.15
+      - id: HarmonicaInstrument
+        prob: 0.15
+ 
 - type: entity
   id: ToolboxElectricalFilled
   name: electrical toolbox

@@ -37,7 +37,7 @@
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD role
-            Chemist: [ 3, 3 ]
+            Chemist: [ 2, 2 ]
             MedicalDoctor: [ 6, 6 ]
             Paramedic: [ 2, 2 ]
             MedicalIntern: [ 4, 4 ]
