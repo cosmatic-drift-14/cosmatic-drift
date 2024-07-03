@@ -5,7 +5,7 @@
   playTimeTracker: JobSeniorEngineer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 7200 #2 hrs
+      time: 10800 #3 hrs
   startingGear: SeniorEngineerGear
   icon: "JobIconSeniorEngineer"
   supervisors: job-supervisors-ce
