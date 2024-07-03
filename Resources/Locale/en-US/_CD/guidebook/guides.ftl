@@ -1,6 +1,7 @@
 guide-entry-cd-records = Character Records
 guide-entry-rules-cd = Cosmatic Drift Rules
 
+guide-entry-rules-ic = In Character Policy
 guide-entry-rules-sop-core = Standard Operating Procedure
 guide-entry-rules-sop-restricted = List of Restricted Items
 guide-entry-rules-sop-command = Command

@@ -1,4 +1,11 @@
 - type: guideEntry
+  id: CDICPolicy
+  name: guide-entry-rules-ic
+  text: "/ServerInfo/Guidebook/_CD/ic-policy.xml"
+  children:
+  - CDSop
+
+- type: guideEntry
   id: CDSop
   name: guide-entry-rules-sop-core
   text: "/ServerInfo/Guidebook/_CD/sop/core.xml"

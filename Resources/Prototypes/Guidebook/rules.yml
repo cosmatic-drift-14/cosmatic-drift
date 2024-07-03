@@ -12,8 +12,6 @@
   ruleEntry: true
   priority: 0
   text: "/ServerInfo/Guidebook/ServerRules/CosmaticDriftRules.xml"
-  children:
-  - CDSop
 
 - type: guideEntry
   id: ZeroTolerancePolicies
