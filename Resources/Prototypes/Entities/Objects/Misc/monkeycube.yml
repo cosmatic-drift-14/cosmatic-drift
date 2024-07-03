@@ -45,7 +45,7 @@
   - type: StorageFill
     contents:
       - id: KoboldCubeWrapped
-        amount: 8
+        amount: 6
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: box_kobold
@@ -59,9 +59,9 @@
   - type: StorageFill
     contents:
       - id: KoboldCubeWrapped
-        amount: 4
+        amount: 3
       - id: MonkeyCubeWrapped
-        amount: 4
+        amount: 3
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: box_variant
