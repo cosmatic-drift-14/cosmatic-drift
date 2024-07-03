@@ -38,14 +38,14 @@ public sealed class LayEmoteSystem : EntitySystem
     private void OnBuckled(EntityUid uid, LayEmoteComponent component, ref BuckledEvent args)
     {
         if (component.Laying)
-            _standingSystem.Stand(args.BuckledEntity);
+            _standingSystem.Stand(args.Buckle.Owner);
     }
 
     // If buckled, make sure someone is standing. Unbuckling while laying down should keep someone laying down and vice versa.
     private void OnUnbuckled(EntityUid uid, LayEmoteComponent component, ref UnbuckledEvent args)
     {
         if (component.Laying)
-            _standingSystem.Down(args.BuckledEntity);
+            _standingSystem.Down(args.Buckle.Owner);
     }
 
     private void OnMobStateChanged(EntityUid uid, LayEmoteComponent component, MobStateChangedEvent args)
