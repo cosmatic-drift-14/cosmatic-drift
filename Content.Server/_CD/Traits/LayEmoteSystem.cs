@@ -1,4 +1,5 @@
 using Content.Server.Chat.Systems;
+using Content.Shared.Atmos.Rotting;
 using Content.Shared.Body.Systems;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Humanoid;
@@ -19,7 +20,8 @@ public sealed class LayEmoteSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<LayEmoteComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<LayEmoteComponent, BuckleChangeEvent>(OnBuckleChange);
+        SubscribeLocalEvent<LayEmoteComponent, BuckledEvent>(OnBuckled);
+        SubscribeLocalEvent<LayEmoteComponent, UnbuckledEvent>(OnUnbuckled);
         SubscribeLocalEvent<LayEmoteComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<LayEmoteComponent, EmoteEvent>(OnEmote);
         SubscribeLocalEvent<LayEmoteComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
@@ -32,13 +34,17 @@ public sealed class LayEmoteSystem : EntitySystem
         _bodySystem.UpdateMovementSpeed(uid);
     }
 
-    // If buckled, make sure someone is standing. Unbuckling while laying down should keep someone laying down and vice versa.
-    private void OnBuckleChange(EntityUid uid, LayEmoteComponent component, ref BuckleChangeEvent args)
+    // If buckled, make sure someone is standing.
+    private void OnBuckled(EntityUid uid, LayEmoteComponent component, ref BuckledEvent args)
     {
-        if (args.Buckling && component.Laying)
+        if (component.Laying)
             _standingSystem.Stand(args.BuckledEntity);
+    }
 
-        if (!args.Buckling && component.Laying)
+    // If buckled, make sure someone is standing. Unbuckling while laying down should keep someone laying down and vice versa.
+    private void OnUnbuckled(EntityUid uid, LayEmoteComponent component, ref UnbuckledEvent args)
+    {
+        if (component.Laying)
             _standingSystem.Down(args.BuckledEntity);
     }
 

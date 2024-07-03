@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Construction;
 using Content.Shared.Destructible;
@@ -38,7 +38,7 @@ public abstract partial class SharedBuckleSystem
     private void OnStrapContainerGettingInsertedAttempt(EntityUid uid, StrapComponent component, ContainerGettingInsertedAttemptEvent args)
     {
         // If someone is attempting to put this item inside of a backpack, ensure that it has no entities strapped to it.
-        if (args.Container.ID == StorageComponent.ContainerId && component.BuckledEntities.Count != 0)
+        if (component.BuckledEntities.Count != 0)
             args.Cancel();
     }
 
