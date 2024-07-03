@@ -43,7 +43,7 @@
 - type: startingGear
   id: InspectorCoat
   equipment:
-    outerClothing: ClothingOuterCoatInspector
+    outerClothing: ClothingOuterCoatDetectiveLoadout
 
 - type: loadout
   id: TrenchCoat
