@@ -11,7 +11,7 @@
     sprite: Objects/Tools/jaws_of_life.rsi
     state: jaws_pry
   - type: Item
-    size: 50
+    size: 20
   - type: Clothing
     sprite: Objects/Tools/jaws_of_life.rsi
     quickEquip: false
