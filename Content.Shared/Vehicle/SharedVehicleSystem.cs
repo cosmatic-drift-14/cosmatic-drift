@@ -53,8 +53,8 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         InitializeRider();
 
         SubscribeLocalEvent<VehicleComponent, ComponentStartup>(OnVehicleStartup);
-        SubscribeLocalEvent<VehicleComponent, BuckledEvent>(OnBuckled);
-        SubscribeLocalEvent<VehicleComponent, UnbuckledEvent>(OnUnbuckled);
+        SubscribeLocalEvent<VehicleComponent, StrappedEvent>(OnBuckled);
+        SubscribeLocalEvent<VehicleComponent, UnstrappedEvent>(OnUnbuckled);
         SubscribeLocalEvent<VehicleComponent, HonkActionEvent>(OnHonkAction);
         SubscribeLocalEvent<VehicleComponent, EntInsertedIntoContainerMessage>(OnEntInserted);
         SubscribeLocalEvent<VehicleComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
@@ -105,7 +105,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
     /// <summary>
     /// Add the rider component to the user
     /// </summary>
-    private void OnBuckled(EntityUid uid, VehicleComponent component, ref BuckledEvent args)
+    private void OnBuckled(EntityUid uid, VehicleComponent component, ref StrappedEvent args)
     {
         if (component.UseHand == true)
         {
@@ -153,7 +153,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
     /// <summary>
     /// Remove the rider component from the user
     /// </summary>
-    private void OnUnbuckled(EntityUid uid, VehicleComponent component, ref UnbuckledEvent args)
+    private void OnUnbuckled(EntityUid uid, VehicleComponent component, ref UnstrappedEvent args)
     {
         // Remove rider
 
