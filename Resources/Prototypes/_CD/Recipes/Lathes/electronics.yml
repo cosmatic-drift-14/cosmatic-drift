@@ -1,0 +1,26 @@
+- type: latheRecipe
+  id: StationRecordsComputerCircuitboard
+  result: StationRecordsComputerCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 500
+
+- type: latheRecipe
+  id: MedicalRecordsComputerCircuitboard
+  result: MedicalRecordsComputerCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 500
+
+- type: latheRecipe
+  id: CriminalRecordsComputerCircuitboard
+  result: CriminalRecordsComputerCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 500

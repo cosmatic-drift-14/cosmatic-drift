@@ -431,6 +431,9 @@
     - BoozeDispenserMachineCircuitboard
     - SodaDispenserMachineCircuitboard
     - SpaceHeaterMachineCircuitBoard
+    - StationRecordsComputerCircuitboard #CD additions start.
+    - MedicalRecordsComputerCircuitboard
+    - CriminalRecordsComputerCircuitboard #CD additions end.
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
