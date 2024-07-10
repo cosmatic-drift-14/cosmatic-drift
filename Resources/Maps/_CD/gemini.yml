@@ -123190,7 +123190,6 @@ entities:
   - uid: 18677
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: 13.5,4.5
       parent: 2
     - type: DeviceLinkSink

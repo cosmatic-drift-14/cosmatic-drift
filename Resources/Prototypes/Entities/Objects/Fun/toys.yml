@@ -852,6 +852,7 @@
   - type: Sprite
   - type: Item
     size: 24
+  - type: PacifismAllowedGun
 
 - type: entity
   parent: FoamWeaponBase

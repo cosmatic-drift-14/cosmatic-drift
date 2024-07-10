@@ -279,6 +279,7 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: ClothingOuterWinterHoS
+      - id: BookSpaceLaw
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -303,6 +304,7 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: ClothingOuterWinterHoS
+      - id: BookSpaceLaw
 
 - type: entity
   id: LockerFreezerVaultFilled
