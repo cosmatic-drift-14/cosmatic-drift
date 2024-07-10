@@ -113,8 +113,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         if (clientInv == null)
         {
             _inventoryHotbar?.ClearButtons();
-            if (_inventoryButton != null)
-                _inventoryButton.Visible = false;
+            // if (_inventoryButton != null)
+            //     _inventoryButton.Visible = false;
 
             return;
         }
