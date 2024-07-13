@@ -1,11 +1,14 @@
+
 <Document>
   # List of Restricted Items
+
+  [color=lightblue][bold]OOC[/bold]: It is strongly recommended to increase the size of your guidebook window when viewing this page.[/color]
 
   ## Contraband
 
   <Table Columns="2">
-    <ColorBox Color="#4A148C"><Box>Type of Contraband</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Type of Contraband</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Examples</Box></ColorBox>
     <ColorBox><Box>Hostile corporation branded objects.</Box></ColorBox>
     <ColorBox><Box>Generally anything that carries a Syndicate, Cybersun, Gorlax, Spider Clan, or blood-red branding.</Box></ColorBox>
     <ColorBox><Box>Hijacked NT technology.</Box></ColorBox>
@@ -37,10 +40,10 @@
   ## Restricted Gear
 
   <Table Columns="4">
-    <ColorBox Color="#4A148C"><Box>Allowed Departments</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Type of Gear</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Examples</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Exceptions</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Allowed Departments</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Type of Gear</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Exceptions</Box></ColorBox>
     <ColorBox><Box>\[[color=#1b6475]Command[/color]/[color=#cd0000]Security[/color]/[color=#c96dbf]Science[/color]\]</Box></ColorBox>
     <ColorBox><Box>Handheld flashing technology</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
@@ -142,9 +145,9 @@
   ## Controlled Substances
 
   <Table Columns="3">
-    <ColorBox Color="#4A148C"><Box>Type of Substance</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Examples</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Exceptions</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Type of Substance</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Exceptions</Box></ColorBox>
     <ColorBox><Box>High-grade painkillers.</Box></ColorBox>
     <ColorBox><Box>Soretizone, and Agonolexyne.</Box></ColorBox>
     <ColorBox><Box>Medical prescriptions.</Box></ColorBox>

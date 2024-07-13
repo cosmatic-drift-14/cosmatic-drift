@@ -1,6 +1,8 @@
 <Document>
   # GENERAL STANDARD OPERATING PROCEDURES
 
+  [color=lightblue][bold]OOC[/bold]: You can view the guidebook externally by using the link on our discord.[/color]
+
   The standard procedures followed on any uniform NT station. The Captain can edit and make additions to their station's general operation procedures (excluding Contraband) whenever they please as long as a copy of the changes is forwarded to each station bound fax machine. Anyone in the station's sector is required to follow this document and their related work SOP.
 
   ## Secured Rooms
@@ -52,10 +54,10 @@
 
   ## Departmental SOP
 
-  [textlink="Command" link="CDSopCommand"]
-  [textlink="Security" link="CDSopSecurity"]
-  [textlink="Engineerring" link="CDSopEngineering"]
-  [textlink="Medical" link="CDSopMedial"]
-  [textlink="Science" link="CDSopScience"]
+  - [textlink="Command" link="CDSopCommand"]
+  - [textlink="Security" link="CDSopSecurity"]
+  - [textlink="Engineerring" link="CDSopEngineering"]
+  - [textlink="Medical" link="CDSopMedial"]
+  - [textlink="Science" link="CDSopScience"]
 
 </Document>
