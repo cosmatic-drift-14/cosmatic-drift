@@ -1,11 +1,14 @@
+
 <Document>
   # List of Restricted Items
+
+  [color=lightblue][bold]OOC[/bold]: It is strongly recommended to increase the size of your guidebook window when viewing this page.[/color]
 
   ## Contraband
 
   <Table Columns="2">
-    <ColorBox Color="#4A148C"><Box>Type of Contraband</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Type of Contraband</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Examples</Box></ColorBox>
     <ColorBox><Box>Hostile corporation branded objects.</Box></ColorBox>
     <ColorBox><Box>Generally anything that carries a Syndicate, Cybersun, Gorlax, Spider Clan, or blood-red branding.</Box></ColorBox>
     <ColorBox><Box>Hijacked NT technology.</Box></ColorBox>
@@ -37,10 +40,10 @@
   ## Restricted Gear
 
   <Table Columns="4">
-    <ColorBox Color="#4A148C"><Box>Allowed Departments</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Type of Gear</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Examples</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Exceptions</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Allowed Departments</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Type of Gear</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Exceptions</Box></ColorBox>
     <ColorBox><Box>\[[color=#1b6475]Command[/color]/[color=#cd0000]Security[/color]/[color=#c96dbf]Science[/color]\]</Box></ColorBox>
     <ColorBox><Box>Handheld flashing technology</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
@@ -50,7 +53,7 @@
     <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#f39f27]Engineering[color]\]</Box></ColorBox>
-    <ColorBox><Box>Enginnering goggles</Box></ColorBox>
+    <ColorBox><Box>Engineering goggles</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#f39f27]Engineering[color]\]</Box></ColorBox>
@@ -64,7 +67,7 @@
     <ColorBox><Box>\[[color=#b18644]Salvage[/color]\]</Box></ColorBox>
     <ColorBox><Box>Standard salvage weaponry.</Box></ColorBox>
     <ColorBox><Box>Crusher weapons, PKAs, and survival knives</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#b18644]Salvage[/color]\]</Box></ColorBox>
     <ColorBox><Box>Seismic charges</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
@@ -72,15 +75,15 @@
     <ColorBox><Box>\[[color=#b18644]Salvage[/color]\]</Box></ColorBox>
     <ColorBox><Box>Fulton devices.</Box></ColorBox>
     <ColorBox><Box>Fulton beacons, and fultons</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#c96dbf]Science[/color]\]</Box></ColorBox>
     <ColorBox><Box>Experimental technology.</Box></ColorBox>
     <ColorBox><Box>Quantum spin inverters, speed boots, and blue-space backpacks</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Advanced flashing technology.</Box></ColorBox>
     <ColorBox><Box>Flashbangs, and mounted auto flashers</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Combat knives</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
@@ -88,11 +91,11 @@
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Riot control grenades.</Box></ColorBox>
     <ColorBox><Box>Tear gas, and stingers</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Restraining gear.</Box></ColorBox>
     <ColorBox><Box>Handcuffs, zip ties, bolas, and improvised restraints</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Chest rigs and protective armor.</Box></ColorBox>
     <ColorBox><Box>Security webbing, helmets, and armored vests.</Box></ColorBox>
@@ -100,7 +103,7 @@
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Physical shields.</Box></ColorBox>
     <ColorBox><Box>Riot, telescopic, and improvised shields</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Stun technology.</Box></ColorBox>
     <ColorBox><Box>Disablers, stun batons, and disabler SMGs.</Box></ColorBox>
@@ -108,7 +111,7 @@
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Security heads-up displays.</Box></ColorBox>
     <ColorBox><Box>Security glasses, and security HUDs</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Ballistic and laser firearms.</Box></ColorBox>
     <ColorBox><Box>Handguns, rifles, laser guns, and shotguns.</Box></ColorBox>
@@ -120,7 +123,7 @@
     <ColorBox><Box>\[Service: Kitchen\]</Box></ColorBox>
     <ColorBox><Box>Cooking knives.</Box></ColorBox>
     <ColorBox><Box>Kitchen knives, and butcher cleavers</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[None\]</Box></ColorBox>
     <ColorBox><Box>Improvised deadly weaponry.</Box></ColorBox>
     <ColorBox><Box>Baseball bats, shivs, and spears</Box></ColorBox>
@@ -132,19 +135,19 @@
     <ColorBox><Box>\[None\]</Box></ColorBox>
     <ColorBox><Box>Non-mining explosives.</Box></ColorBox>
     <ColorBox><Box>IEDs, mines, grenades, and C4</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#134975]NT[/color]/[color=#009100]CC[/color]/[color=134975]ERT[/color]\]</Box></ColorBox>
     <ColorBox><Box>Any NT, CC, or ERT branded gear.</Box></ColorBox>
     <ColorBox><Box>Uniforms, vests, backpacks, and headgear</Box></ColorBox>
-    <ColorBox><Box>    </Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
   </Table>
 
   ## Controlled Substances
 
   <Table Columns="3">
-    <ColorBox Color="#4A148C"><Box>Type of Substance</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Examples</Box></ColorBox>
-    <ColorBox Color="#4A148C"><Box>Exceptions</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Type of Substance</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Exceptions</Box></ColorBox>
     <ColorBox><Box>High-grade painkillers.</Box></ColorBox>
     <ColorBox><Box>Soretizone, and Agonolexyne.</Box></ColorBox>
     <ColorBox><Box>Medical prescriptions.</Box></ColorBox>
