@@ -21,5 +21,9 @@
       whitelist:
         tags:
           - Book
+          - Dice
           - Document
+          - Figurine
+          - TabletopBoard
+          - Write
     - type: Dumpable
