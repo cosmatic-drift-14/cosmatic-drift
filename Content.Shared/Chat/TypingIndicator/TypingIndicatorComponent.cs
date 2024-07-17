@@ -7,7 +7,8 @@ namespace Content.Shared.Chat.TypingIndicator;
 ///     Show typing indicator icon when player typing text in chat box.
 ///     Added automatically when player poses entity.
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent]
+// [Access(typeof(SharedTypingIndicatorSystem))]
 public sealed partial class TypingIndicatorComponent : Component
 {
     /// <summary>

@@ -13,7 +13,7 @@
   - type: Clock
   - type: Item
     sprite: Objects/Devices/wristwatch.rsi
-    size: Small
+    size: 5
   - type: Clothing
     sprite: Objects/Devices/wristwatch.rsi
     slots:

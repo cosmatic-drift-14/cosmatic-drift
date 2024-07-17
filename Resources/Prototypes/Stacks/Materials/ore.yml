@@ -12,6 +12,7 @@
   icon: { sprite: /Textures/Objects/Materials/ore.rsi, state: diamond }
   spawn: DiamondOre1
   maxCount: 30
+  itemSize: 2
 
 - type: stack
   id: SteelOre
