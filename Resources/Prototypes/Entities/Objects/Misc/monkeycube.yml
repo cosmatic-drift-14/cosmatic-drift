@@ -91,11 +91,6 @@
   id: SyndicateSpongeBox
   description: Drymate brand monkey cubes. Just add water!
   components:
-  - type: Storage
-    whitelist:
-      tags:
-      - MonkeyCube
-    capacity: 30
   - type: StorageFill
     contents:
       - id: SyndicateSpongeWrapped

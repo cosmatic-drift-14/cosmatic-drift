@@ -4,14 +4,15 @@ using Content.Shared.Administration;
 using Content.Shared.Administration.Managers;
 using Content.Shared.CombatMode;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Coordinates;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Ghost;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Implants.Components;
+using Content.Shared.Input;
 using Content.Shared.Interaction;
+using Content.Shared.Inventory;
 using Content.Shared.Item;
 using Content.Shared.Lock;
 using Content.Shared.Materials;
@@ -21,11 +22,13 @@ using Content.Shared.Stacks;
 using Content.Shared.Storage.Components;
 using Content.Shared.Timing;
 using Content.Shared.Verbs;
+using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
+using Robust.Shared.Player;
 using Robust.Shared.Random;
-using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Storage.EntitySystems;
@@ -50,6 +53,11 @@ public abstract class SharedStorageSystem : EntitySystem
     [Dependency] private   readonly SharedStackSystem _stack = default!;
     [Dependency] private   readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] protected readonly UseDelaySystem UseDelay = default!;
+    [Dependency] private   readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
+    // CD: required for keybinds. Note that _actionBlocker is protected upstream and called ActionBlocker
+    [Dependency] private   readonly InventorySystem _inventory = default!;
+    [Dependency] private   readonly ActionBlockerSystem _actionBlocker = default!;
 
     private EntityQuery<ItemComponent> _itemQuery;
     private EntityQuery<StackComponent> _stackQuery;
@@ -72,6 +80,7 @@ public abstract class SharedStorageSystem : EntitySystem
             subs.Event<BoundUIClosedEvent>(OnBoundUIClosed);
         });
 
+        SubscribeLocalEvent<StorageComponent, ComponentRemove>(OnRemove);
         SubscribeLocalEvent<StorageComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<StorageComponent, GetVerbsEvent<ActivationVerb>>(AddUiVerb);
         SubscribeLocalEvent<StorageComponent, ComponentInit>(OnComponentInit, before: new[] { typeof(SharedContainerSystem) });
@@ -82,6 +91,7 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, AfterInteractEvent>(AfterInteract);
         SubscribeLocalEvent<StorageComponent, DestructionEventArgs>(OnDestroy);
         SubscribeLocalEvent<StorageComponent, BoundUIOpenedEvent>(OnBoundUIOpen);
+        SubscribeLocalEvent<StorageComponent, LockToggledEvent>(OnLockToggled);
 
         SubscribeLocalEvent<StorageComponent, EntInsertedIntoContainerMessage>(OnStorageItemInserted);
         SubscribeLocalEvent<StorageComponent, EntRemovedFromContainerMessage>(OnStorageItemRemoved);
@@ -92,6 +102,16 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeAllEvent<StorageComponent.StorageInsertItemMessage>(OnInsertItemMessage);
 
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
+
+        CommandBinds.Builder
+            .Bind(ContentKeyFunctions.OpenBackpack, InputCmdHandler.FromDelegate(HandleOpenBackpack, handle: false))
+            .Bind(ContentKeyFunctions.OpenBelt, InputCmdHandler.FromDelegate(HandleOpenBelt, handle: false))
+            .Register<SharedStorageSystem>();
+    }
+
+    private void OnRemove(Entity<StorageComponent> entity, ref ComponentRemove args)
+    {
+        _ui.CloseUi(entity.Owner, StorageComponent.StorageUiKey.Key);
     }
 
     private void OnMapInit(Entity<StorageComponent> entity, ref MapInitEvent args)
@@ -220,7 +240,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 Audio.PlayPredicted(storageComp.StorageOpenSound, uid, entity);
 
             if (useDelay != null)
-                UseDelay.TryResetDelay((uid, useDelay));
+                UseDelay.TryResetDelay((uid, useDelay), id: OpenUiUseDelayID);
         }
 
         _ui.OpenUi(uid, StorageComponent.StorageUiKey.Key, entity);
@@ -279,7 +299,7 @@ public abstract class SharedStorageSystem : EntitySystem
     /// </summary>
     private void OnActivate(EntityUid uid, StorageComponent storageComp, ActivateInWorldEvent args)
     {
-        if (args.Handled || _combatMode.IsInCombatMode(args.User) || TryComp(uid, out LockComponent? lockComponent) && lockComponent.Locked)
+        if (args.Handled || !args.Complex || _combatMode.IsInCombatMode(args.User) || TryComp(uid, out LockComponent? lockComponent) && lockComponent.Locked)
             return;
 
         OpenStorageUI(uid, args.User, storageComp);
@@ -355,7 +375,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 return;
             }
 
-            if (TryComp<TransformComponent>(uid, out var transformOwner) && TryComp<TransformComponent>(target, out var transformEnt))
+            if (TryComp(uid, out TransformComponent? transformOwner) && TryComp(target, out TransformComponent? transformEnt))
             {
                 var parent = transformOwner.ParentUid;
 
@@ -501,7 +521,7 @@ public abstract class SharedStorageSystem : EntitySystem
         var uid = GetEntity(msg.StorageUid);
         if (uid == EntityUid.Invalid)
             return;
-        
+
         PlayerInsertHeldEntity(uid, player);
     }
 
@@ -607,13 +627,8 @@ public abstract class SharedStorageSystem : EntitySystem
             return false;
         }
 
-        if (storageComp.Whitelist?.IsValid(insertEnt, EntityManager) == false)
-        {
-            reason = "comp-storage-invalid-container";
-            return false;
-        }
-
-        if (storageComp.Blacklist?.IsValid(insertEnt, EntityManager) == true)
+        if (_whitelistSystem.IsWhitelistFail(storageComp.Whitelist, insertEnt) ||
+            _whitelistSystem.IsBlacklistPass(storageComp.Blacklist, insertEnt))
         {
             reason = "comp-storage-invalid-container";
             return false;
@@ -756,8 +771,62 @@ public abstract class SharedStorageSystem : EntitySystem
     }
 
     /// <summary>
+    /// Checks if a storage's UI is open by anyone when locked, and closes it unless they're an admin.
+    /// </summary>
+    private void OnLockToggled(EntityUid uid, StorageComponent component, ref LockToggledEvent args)
+    {
+        if (!args.Locked)
+            return;
+
+        // Gets everyone looking at the UI
+        foreach (var actor in _ui.GetActors(uid, StorageComponent.StorageUiKey.Key).ToList())
+        {
+            if (_admin.HasAdminFlag(actor, AdminFlags.Admin))
+                continue;
+
+            // And closes it unless they're an admin
+            _ui.CloseUi(uid, StorageComponent.StorageUiKey.Key, actor);
+        }
+    }
+
+    /// <summary>
     /// Plays a clientside pickup animation for the specified uid.
     /// </summary>
     public abstract void PlayPickupAnimation(EntityUid uid, EntityCoordinates initialCoordinates,
         EntityCoordinates finalCoordinates, Angle initialRotation, EntityUid? user = null);
+
+    // CD: Handle bag open keybinds. This is almost entirely copy-pasted from upstream
+    private void HandleOpenBackpack(ICommonSession? session)
+    {
+        HandleToggleSlotUI(session, "back");
+    }
+
+    private void HandleOpenBelt(ICommonSession? session)
+    {
+        HandleToggleSlotUI(session, "belt");
+    }
+
+    private void HandleToggleSlotUI(ICommonSession? session, string slot)
+    {
+        if (session is not { } playerSession)
+            return;
+
+        if (playerSession.AttachedEntity is not {Valid: true} playerEnt || !Exists(playerEnt))
+            return;
+
+        if (!_inventory.TryGetSlotEntity(playerEnt, slot, out var storageEnt))
+            return;
+
+        if (!_actionBlocker.CanInteract(playerEnt, storageEnt))
+            return;
+
+        if (!_ui.IsUiOpen(storageEnt.Value, StorageComponent.StorageUiKey.Key, playerEnt))
+        {
+            OpenStorageUI(storageEnt.Value, playerEnt, silent: false);
+        }
+        else
+        {
+            _ui.CloseUi(storageEnt.Value, StorageComponent.StorageUiKey.Key, playerEnt);
+        }
+    }
 }

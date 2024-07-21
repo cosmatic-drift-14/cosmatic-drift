@@ -4,7 +4,7 @@
   groups: #Using Detective groups is probably a bad idea, but it's easier this way.
   - DetectiveHead
   - DetectiveJumpsuit
-  - PrivateInvestigatorBackpack
+  - CommonBackpack
   - PrivateInvestigatorOuterClothing
   - PrivateInvestigatorGloves
   - PrivateInvestigatorShoes

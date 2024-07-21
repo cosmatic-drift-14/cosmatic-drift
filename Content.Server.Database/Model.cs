@@ -40,6 +40,8 @@ namespace Content.Server.Database
         public DbSet<AdminNote> AdminNotes { get; set; } = null!;
         public DbSet<AdminWatchlist> AdminWatchlists { get; set; } = null!;
         public DbSet<AdminMessage> AdminMessages { get; set; } = null!;
+        public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
+        public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -52,11 +54,18 @@ namespace Content.Server.Database
                 .IsUnique();
 
             // CD: CD Character Data
-            modelBuilder.Entity<CDProfile>()
+            modelBuilder.Entity<CDModel.CDProfile>()
                 .HasOne(p => p.Profile)
                 .WithOne(p => p.CDProfile)
-                .HasForeignKey<CDProfile>(p => p.ProfileId)
+                .HasForeignKey<CDModel.CDProfile>(p => p.ProfileId)
                 .IsRequired();
+
+            modelBuilder.Entity<CDModel.CharacterRecordEntry>()
+                .HasOne(e => e.CDProfile)
+                .WithMany(e => e.CharacterRecordEntries)
+                .HasForeignKey(e => e.CDProfileId)
+                .IsRequired();
+            // END CD
 
             modelBuilder.Entity<Antag>()
                 .HasIndex(p => new {HumanoidProfileId = p.ProfileId, p.AntagName})
@@ -194,6 +203,9 @@ namespace Content.Server.Database
                 .HasIndex(p => p.UserId);
 
             modelBuilder.Entity<ConnectionLog>()
+                .HasIndex(p => p.Time);
+
+            modelBuilder.Entity<ConnectionLog>()
                 .Property(p => p.ServerId)
                 .HasDefaultValue(0);
 
@@ -321,6 +333,13 @@ namespace Content.Server.Database
                 .HasForeignKey(ban => ban.LastEditedById)
                 .HasPrincipalKey(author => author.UserId)
                 .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<RoleWhitelist>()
+                .HasOne(w => w.Player)
+                .WithMany(p => p.JobWhitelists)
+                .HasForeignKey(w => w.PlayerUserId)
+                .HasPrincipalKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
 
         public virtual IQueryable<AdminLog> SearchLogs(IQueryable<AdminLog> query, string searchText)
@@ -374,28 +393,7 @@ namespace Content.Server.Database
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
 
-        public CDProfile? CDProfile { get; set; }
-    }
-
-    /// <summary>
-    /// Stores CD Character data separately from the main Profile. This is done to work around a bug
-    /// in EFCore migrations.
-    /// <p />
-    /// There is no way of forcing a dependent table to exist in EFCore (according to MS).
-    /// You must always account for the possibility of this table not existing.
-    /// </summary>
-    public class CDProfile
-    {
-        public int Id { get; set; }
-
-        public int ProfileId { get; set; }
-        public Profile Profile { get; set; } = null!;
-
-        public float Height { get; set; } = 1f;
-
-        // CD: Store character records
-        [Column("character_records", TypeName = "jsonb")]
-        public JsonDocument? CharacterRecords { get; set; }
+        public CDModel.CDProfile? CDProfile { get; set; }
     }
 
     public class Job
@@ -560,6 +558,7 @@ namespace Content.Server.Database
         public List<ServerBan> AdminServerBansLastEdited { get; set; } = null!;
         public List<ServerRoleBan> AdminServerRoleBansCreated { get; set; } = null!;
         public List<ServerRoleBan> AdminServerRoleBansLastEdited { get; set; } = null!;
+        public List<RoleWhitelist> JobWhitelists { get; set; } = null!;
     }
 
     [Table("whitelist")]
@@ -714,6 +713,14 @@ namespace Content.Server.Database
         /// Intended use is for users with shared connections. This should not be used as an alternative to <see cref="Datacenter"/>.
         /// </remarks>
         IP = 1 << 1,
+
+        /// <summary>
+        /// Ban is an IP range that is only applied for first time joins.
+        /// </summary>
+        /// <remarks>
+        /// Intended for use with residential IP ranges that are often used maliciously.
+        /// </remarks>
+        BlacklistedRange = 1 << 2,
         // @formatter:on
     }
 
@@ -910,6 +917,10 @@ namespace Content.Server.Database
         Whitelist = 1,
         Full = 2,
         Panic = 3,
+        /*
+         * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
+         */
+        BabyJail = 4,
     }
 
     public class ServerBanHit
@@ -1128,5 +1139,69 @@ namespace Content.Server.Database
         /// Whether the message has been dismissed permanently by the player.
         /// </summary>
         public bool Dismissed { get; set; }
+    }
+
+    [PrimaryKey(nameof(PlayerUserId), nameof(RoleId))]
+    public class RoleWhitelist
+    {
+        [Required, ForeignKey("Player")]
+        public Guid PlayerUserId { get; set; }
+        public Player Player { get; set; } = default!;
+
+        [Required]
+        public string RoleId { get; set; } = default!;
+    }
+
+    /// <summary>
+    /// Defines a template that admins can use to quickly fill out ban information.
+    /// </summary>
+    /// <remarks>
+    /// <para>
+    /// This information is not currently used by the game itself, but it is used by SS14.Admin.
+    /// </para>
+    /// </remarks>
+    public sealed class BanTemplate
+    {
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Title of the ban template. This is purely for reference by admins and not copied into the ban.
+        /// </summary>
+        public required string Title { get; set; }
+
+        /// <summary>
+        /// How long the ban should last. 0 for permanent.
+        /// </summary>
+        public TimeSpan Length { get; set; }
+
+        /// <summary>
+        /// The reason for the ban.
+        /// </summary>
+        /// <seealso cref="ServerBan.Reason"/>
+        public string Reason { get; set; } = "";
+
+        /// <summary>
+        /// Exemptions granted to the ban.
+        /// </summary>
+        /// <seealso cref="ServerBan.ExemptFlags"/>
+        public ServerBanExemptFlags ExemptFlags { get; set; }
+
+        /// <summary>
+        /// Severity of the ban
+        /// </summary>
+        /// <seealso cref="ServerBan.Severity"/>
+        public NoteSeverity Severity { get; set; }
+
+        /// <summary>
+        /// Ban will be automatically deleted once expired.
+        /// </summary>
+        /// <seealso cref="ServerBan.AutoDelete"/>
+        public bool AutoDelete { get; set; }
+
+        /// <summary>
+        /// Ban is not visible to players in the remarks menu.
+        /// </summary>
+        /// <seealso cref="ServerBan.Hidden"/>
+        public bool Hidden { get; set; }
     }
 }

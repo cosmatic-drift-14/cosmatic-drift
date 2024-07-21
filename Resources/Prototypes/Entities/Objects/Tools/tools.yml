@@ -90,7 +90,7 @@
   name: wrench
   parent: BaseItem
   id: Wrench
-  description: 'A common tool for assembly and disassembly. Remember: righty tighty, lefty loosey.'
+  description: 'A common tool for assembly and disassembly. Remember: lefty latchy, righty removey.'
   components:
   - type: EmitSoundOnLand
     sound:
@@ -293,7 +293,7 @@
   - type: Tool
     qualities:
       - Screwing
-    speed: 1.5
+    speedModifier: 1.5
     useSound: /Audio/Items/drill_use.ogg
   - type: MultipleTool
     statusShowBehavior: true
@@ -468,7 +468,7 @@
   - type: Tool
     qualities:
       - Screwing
-    speed: 1.2 # Kept for future adjustments. Currently 1.2x for balance
+    speedModifier: 1.2 # Kept for future adjustments. Currently 1.2x for balance
     useSound: /Audio/Items/drill_use.ogg
   - type: ToolTileCompatible
   - type: MultipleTool

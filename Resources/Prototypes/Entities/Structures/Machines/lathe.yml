@@ -89,7 +89,7 @@
   id: Autolathe
   parent: BaseLatheLube
   name: autolathe
-  description: It produces items using metal and glass.
+  description: It produces basic items using metal and glass.
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe.rsi
@@ -197,57 +197,34 @@
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
+      - WetFloorSign
+      - ClothingHeadHatCone
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
       - BoxShotgunFlare
+      - BoxShotgunSlug
+      - CombatKnife
       - MagazineBoxLightRifle
       - MagazineBoxMagnum
       - MagazineBoxPistol
       - MagazineBoxRifle
       - MagazineLightRifle
       - MagazineLightRifleEmpty
-      - MagazinePistol 
+      - MagazinePistol
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty
+      - MagazinePistolSubMachineGunTopMounted
+      - MagazinePistolSubMachineGunTopMountedEmpty
       - MagazineRifle
       - MagazineRifleEmpty
       - MagazineShotgun
       - MagazineShotgunEmpty
-      - ShellTranquilizer
+      - MagazineShotgunSlug
+      - RiotShield
       - SpeedLoaderMagnum
       - SpeedLoaderMagnumEmpty
-    emagDynamicRecipes:
-      - BoxBeanbag
-      - BoxShotgunIncendiary
-      - BoxShotgunUranium
-      - GrenadeBlast
-      - GrenadeEMP
-      - GrenadeFlash
-      - MagazineBoxLightRifleIncendiary
-      - MagazineBoxLightRifleUranium
-      - MagazineBoxMagnumIncendiary
-      - MagazineBoxMagnumUranium
-      - MagazineBoxPistolIncendiary
-      - MagazineBoxPistolUranium
-      - MagazineBoxRifleIncendiary
-      - MagazineBoxRifleUranium
-      - MagazineGrenadeEmpty
-      - MagazineLightRifleIncendiary
-      - MagazineLightRifleUranium
-      - MagazinePistolIncendiary
-      - MagazinePistolUranium
-      - MagazineRifleIncendiary
-      - MagazineRifleUranium
-      - MagazineShotgunBeanbag
-      - MagazineShotgunIncendiary
-      - MagazineShotgunIncendiary
-      - PowerCageHigh
-      - PowerCageMedium
-      - PowerCageSmall
-      - SpeedLoaderMagnumIncendiary
-      - SpeedLoaderMagnumUranium
 
 - type: entity
   id: AutolatheHyperConvection
@@ -264,7 +241,7 @@
   id: Protolathe
   parent: BaseLatheLube
   name: protolathe
-  description: Converts raw materials into useful objects.
+  description: Converts raw materials into advanced items.
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe.rsi
@@ -334,6 +311,7 @@
       - WeaponGauntletGorilla
       - SynthesizerInstrument
       - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
@@ -358,10 +336,44 @@
       - DeviceQuantumSpinInverter
   - type: EmagLatheRecipes
     emagDynamicRecipes:
+      - BoxBeanbag
+      - BoxShotgunIncendiary
+      - BoxShotgunUranium
+      - BoxShellTranquilizer
       - ExplosivePayload
-      - WeaponLaserCarbine
+      - GrenadeBlast
+      - GrenadeEMP
+      - GrenadeFlash
+      - HoloprojectorSecurity
+      - MagazineBoxLightRifleIncendiary
+      - MagazineBoxLightRifleUranium
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxMagnumUranium
+      - MagazineBoxPistolIncendiary
+      - MagazineBoxPistolUranium
+      - MagazineBoxRifleIncendiary
+      - MagazineBoxRifleUranium
+      - MagazineGrenadeEmpty
+      - MagazineLightRifleIncendiary
+      - MagazineLightRifleUranium
+      - MagazinePistolIncendiary
+      - MagazinePistolUranium
+      - MagazineRifleIncendiary
+      - MagazineRifleUranium
+      - MagazineShotgunBeanbag
+      - MagazineShotgunIncendiary
+      - MagazineShotgunIncendiary
+      - PortableRecharger
+      - PowerCageHigh
+      - PowerCageMedium
+      - PowerCageSmall
+      - SpeedLoaderMagnumIncendiary
+      - SpeedLoaderMagnumUranium
+      - TelescopicShield
+      - Truncheon
       - WeaponAdvancedLaser
       - WeaponLaserCannon
+      - WeaponLaserCarbine
       - WeaponXrayCannon
 
 - type: entity
@@ -419,6 +431,9 @@
     - BoozeDispenserMachineCircuitboard
     - SodaDispenserMachineCircuitboard
     - SpaceHeaterMachineCircuitBoard
+    - StationRecordsComputerCircuitboard #CD additions start.
+    - MedicalRecordsComputerCircuitboard
+    - CriminalRecordsComputerCircuitboard #CD additions end.
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
@@ -489,12 +504,19 @@
       - MassMediaCircuitboard
       - ReagentGrinderIndustrialMachineCircuitboard
       - JukeboxCircuitBoard
+  - type: EmagLatheRecipes
+    emagDynamicRecipes:
+      - ShuttleGunDusterCircuitboard
+      - ShuttleGunFriendshipCircuitboard
+      - ShuttleGunPerforatorCircuitboard
+      - ShuttleGunSvalinnMachineGunCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
         - Sheet
         - RawMaterial
         - Ingot
+  - type: RequireProjectileTarget
 
 - type: entity
   id: CircuitImprinterHyperConvection
@@ -692,9 +714,10 @@
     staticRecipes:
       - BoxLethalshot
       - BoxShotgunFlare
-      - BoxShotgunPractice 
+      - BoxShotgunPractice
       - BoxShotgunSlug
       - ClothingEyesHudSecurity
+      - CombatKnife
       - Flash
       - ForensicPad
       - Handcuffs
@@ -708,7 +731,7 @@
       - MagazineBoxRiflePractice
       - MagazineLightRifle
       - MagazineLightRifleEmpty
-      - MagazinePistol 
+      - MagazinePistol
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty
@@ -733,6 +756,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
+      - BoxShellTranquilizer
       - ExplosivePayload
       - FlashPayload
       - GrenadeBlast
@@ -760,7 +784,6 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      - ShellTranquilizer
       - ShuttleGunDusterCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunPerforatorCircuitboard
@@ -814,20 +837,20 @@
         - BoxLethalshot
         - BoxShotgunFlare
         - BoxShotgunSlug
+        - BoxShellTranquilizer
         - MagazineBoxLightRifle
         - MagazineBoxMagnum
         - MagazineBoxPistol
         - MagazineBoxRifle
         - MagazineLightRifle
         - MagazineLightRifleEmpty
-        - MagazinePistol 
-        - MagazinePistolEmpty 
+        - MagazinePistol
+        - MagazinePistolEmpty
         - MagazineRifle
         - MagazineRifleEmpty
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
-        - ShellTranquilizer
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
     - type: MaterialStorage
@@ -898,6 +921,7 @@
       - Saw
       - Hemostat
       - ClothingEyesGlassesChemical
+      - WhiteCane
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
@@ -958,6 +982,8 @@
       - ClothingHeadHatBeretCmo
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
+      - ClothingUniformJumpsuitCMOTurtle
+      - ClothingUniformJumpskirtCMOTurtle
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
@@ -1196,6 +1222,7 @@
         - IngotGold30
         - IngotSilver30
         - MaterialBananium10
+        - MaterialDiamond
 
 - type: entity
   parent: OreProcessor

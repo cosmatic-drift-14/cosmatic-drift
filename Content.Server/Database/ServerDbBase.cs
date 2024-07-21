@@ -14,10 +14,12 @@ using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
-using Content.Shared.Preferences.Loadouts.Effects;
+using Content.Shared.Roles;
+using Content.Shared.Traits;
 using Microsoft.EntityFrameworkCore;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 // CD: imports
@@ -48,7 +50,11 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
-                .Include(p => p.Profiles).ThenInclude(h => h.CDProfile) // CD: Store CD info
+                // CD: Store CD info
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                // END CD
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -97,6 +103,7 @@ namespace Content.Server.Database
 
             var oldProfile = db.DbContext.Profile
                 .Include(p => p.CDProfile) // CD: Store CD info
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -188,9 +195,9 @@ namespace Content.Server.Database
 
         private static HumanoidCharacterProfile ConvertProfiles(Profile profile)
         {
-            var jobs = profile.Jobs.ToDictionary(j => j.JobName, j => (JobPriority) j.Priority);
-            var antags = profile.Antags.Select(a => a.AntagName);
-            var traits = profile.Traits.Select(t => t.TraitName);
+            var jobs = profile.Jobs.ToDictionary(j => new ProtoId<JobPrototype>(j.JobName), j => (JobPriority) j.Priority);
+            var antags = profile.Antags.Select(a => new ProtoId<AntagPrototype>(a.AntagName));
+            var traits = profile.Traits.Select(t => new ProtoId<TraitPrototype>(t.TraitName));
 
             var sex = Sex.Male;
             if (Enum.TryParse<Sex>(profile.Sex, true, out var sexVal))
@@ -220,8 +227,8 @@ namespace Content.Server.Database
 
             // CD: get character records or create default records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
-                ? RecordsSerialization.DeserializeJson(profile.CDProfile.CharacterRecords)
-                : CharacterRecords.DefaultRecords();
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
+                : PlayerProvidedCharacterRecords.DefaultRecords();
 
             var loadouts = new Dictionary<string, RoleLoadout>();
 
@@ -265,8 +272,8 @@ namespace Content.Server.Database
                 spawnPriority,
                 jobs,
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
-                antags.ToList(),
-                traits.ToList(),
+                antags.ToHashSet(),
+                traits.ToHashSet(),
                 loadouts,
                 cdRecords
             );
@@ -319,10 +326,17 @@ namespace Content.Server.Database
                         .Select(t => new Trait {TraitName = t})
             );
 
-            // CD: CD Character Data Data
-            profile.CDProfile ??= new CDProfile();
+            // CD: CD Character Data
+            profile.CDProfile ??= new CDModel.CDProfile();
             profile.CDProfile.Height = humanoid.Height;
-            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
+            // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
+            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
+            if (humanoid.CDCharacterRecords != null)
+            {
+                profile.CDProfile.CharacterRecordEntries.Clear();
+                profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
+            }
+            // END CD
 
             profile.Loadouts.Clear();
 
@@ -639,6 +653,11 @@ namespace Content.Server.Database
                 .SingleOrDefaultAsync(p => p.UserId == userId.UserId, cancel);
 
             return record == null ? null : MakePlayerRecord(record);
+        }
+
+        protected async Task<bool> PlayerRecordExists(DbGuard db, NetUserId userId)
+        {
+            return await db.DbContext.Player.AnyAsync(p => p.UserId == userId);
         }
 
         [return: NotNullIfNotNull(nameof(player))]
@@ -1594,6 +1613,65 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             }
 
             return bans;
+        }
+
+        #endregion
+
+        #region Job Whitelists
+
+        public async Task<bool> AddJobWhitelist(Guid player, ProtoId<JobPrototype> job)
+        {
+            await using var db = await GetDb();
+            var exists = await db.DbContext.RoleWhitelists
+                .Where(w => w.PlayerUserId == player)
+                .Where(w => w.RoleId == job.Id)
+                .AnyAsync();
+
+            if (exists)
+                return false;
+
+            var whitelist = new RoleWhitelist
+            {
+                PlayerUserId = player,
+                RoleId = job
+            };
+            db.DbContext.RoleWhitelists.Add(whitelist);
+            await db.DbContext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<List<string>> GetJobWhitelists(Guid player, CancellationToken cancel)
+        {
+            await using var db = await GetDb(cancel);
+            return await db.DbContext.RoleWhitelists
+                .Where(w => w.PlayerUserId == player)
+                .Select(w => w.RoleId)
+                .ToListAsync(cancellationToken: cancel);
+        }
+
+        public async Task<bool> IsJobWhitelisted(Guid player, ProtoId<JobPrototype> job)
+        {
+            await using var db = await GetDb();
+            return await db.DbContext.RoleWhitelists
+                .Where(w => w.PlayerUserId == player)
+                .Where(w => w.RoleId == job.Id)
+                .AnyAsync();
+        }
+
+        public async Task<bool> RemoveJobWhitelist(Guid player, ProtoId<JobPrototype> job)
+        {
+            await using var db = await GetDb();
+            var entry = await db.DbContext.RoleWhitelists
+                .Where(w => w.PlayerUserId == player)
+                .Where(w => w.RoleId == job.Id)
+                .SingleOrDefaultAsync();
+
+            if (entry == null)
+                return false;
+
+            db.DbContext.RoleWhitelists.Remove(entry);
+            await db.DbContext.SaveChangesAsync();
+            return true;
         }
 
         #endregion

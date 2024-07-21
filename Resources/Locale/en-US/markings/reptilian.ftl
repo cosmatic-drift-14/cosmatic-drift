@@ -93,11 +93,13 @@ marking-LizardHornsMyrsore = Lizard Horns (Myrsore)
 marking-LizardHornsBighorn-horns_bighorn = Lizard Horns (Bighorn)
 marking-LizardHornsBighorn = Lizard Horns (Bighorn)
 
+marking-LizardHornsDemonic-horns_demonic = Lizard Horns (Demonic)
+marking-LizardHornsDemonic = Lizard Horns (Demonic)
+
 marking-LizardHornsKoboldEars-horns_kobold_ears = Lizard Ears (Kobold)
 marking-LizardHornsKoboldEars = Lizard Ears (Kobold)
 
-marking-LizardHornsFloppyKoboldEars-horns_floppy_kobold_ears_primary = Lizard Ears (Floppy Kobold)
-marking-LizardHornsFloppyKoboldEars-horns-floppy_kobold_ears_secondary = Lizard Ears (Floppy Kobold)
+marking-LizardHornsFloppyKoboldEars-horns_floppy_kobold_ears = Lizard Ears (Floppy Kobold)
 marking-LizardHornsFloppyKoboldEars = Lizard Ears (Floppy Kobold)
 
 marking-LizardChestUnderbelly-body_underbelly = Lizard Chest (Underbelly)

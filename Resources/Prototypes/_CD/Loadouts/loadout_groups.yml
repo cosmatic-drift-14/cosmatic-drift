@@ -1,13 +1,5 @@
 # Civilian
 - type: loadoutGroup
-  id: PrivateInvestigatorBackpack
-  name: loadout-group-private-investigator-backpack
-  loadouts:
-  - PrivateInvestigatorBackpack
-  - PrivateInvestigatorSatchel
-  - PrivateInvestigatorDuffel
-
-- type: loadoutGroup
   id: PrivateInvestigatorOuterClothing
   name: loadout-group-private-investigator-outerclothing
   minLimit: 0
@@ -44,6 +36,13 @@
   - Glasses
   - Aviators
 
+- type: loadoutGroup
+  id: PassengerTitles
+  name: loadout-group-passenger-id
+  loadouts:
+  - PassengerPDA
+  - OffDutyPDA
+
 # Engineering
 - type: loadoutGroup
   id: SeniorEngineerJumpsuit
@@ -78,6 +77,13 @@
   - ScienceWintercoat
   - RoboticistLabCoat
   - RoboticistWintercoat
+
+- type: loadoutGroup
+  id: ScientistTitles
+  name: loadout-group-scientist-id
+  loadouts:
+  - ScientistPDA
+  - RoboticistPDA
 
 # Security
 - type: loadoutGroup

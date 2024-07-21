@@ -48,6 +48,12 @@ public partial record struct SolutionOverflowEvent(Entity<SolutionComponent> Sol
     public bool Handled = false;
 }
 
+[ByRefEvent]
+public partial record struct SolutionAccessAttemptEvent(string SolutionName)
+{
+    public bool Cancelled;
+}
+
 /// <summary>
 /// Part of Chemistry system deal with SolutionContainers
 /// </summary>
@@ -60,7 +66,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     [Dependency] protected readonly SharedAppearanceSystem AppearanceSystem = default!;
     [Dependency] protected readonly SharedHandsSystem Hands = default!;
     [Dependency] protected readonly SharedContainerSystem ContainerSystem = default!;
-    [Dependency] protected readonly MetaDataSystem MetaData = default!;
+    [Dependency] protected readonly MetaDataSystem MetaDataSys = default!;
     [Dependency] protected readonly INetManager NetManager = default!;
 
     public override void Initialize()
@@ -156,12 +162,6 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         [NotNullWhen(true)] out Entity<SolutionComponent>? entity,
         bool errorOnMissing = false)
     {
-        if (TryComp(container, out BlockSolutionAccessComponent? blocker))
-        {
-            entity = null;
-            return false;
-        }
-
         EntityUid uid;
         if (name is null)
             uid = container;
@@ -170,7 +170,18 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             solutionContainer is ContainerSlot solutionSlot &&
             solutionSlot.ContainedEntity is { } containedSolution
         )
+        {
+            var attemptEv = new SolutionAccessAttemptEvent(name);
+            RaiseLocalEvent(container, ref attemptEv);
+
+            if (attemptEv.Cancelled)
+            {
+                entity = null;
+                return false;
+            }
+
             uid = containedSolution;
+        }
         else
         {
             entity = null;
@@ -218,11 +229,14 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         if (!Resolve(container, ref container.Comp, logMissing: false))
             yield break;
 
-        if (HasComp<BlockSolutionAccessComponent>(container))
-            yield break;
-
         foreach (var name in container.Comp.Containers)
         {
+            var attemptEv = new SolutionAccessAttemptEvent(name);
+            RaiseLocalEvent(container, ref attemptEv);
+
+            if (attemptEv.Cancelled)
+                continue;
+
             if (ContainerSystem.GetContainer(container, $"solution@{name}") is ContainerSlot slot && slot.ContainedEntity is { } solutionId)
                 yield return (name, (solutionId, Comp<SolutionComponent>(solutionId)));
         }
@@ -1123,7 +1137,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         Dirty(uid, container);
         return solution;
     }
-    
+
     private Entity<SolutionComponent, ContainedSolutionComponent> SpawnSolutionUninitialized(ContainerSlot container, string name, FixedPoint2 maxVol, Solution prototype)
     {
         var coords = new EntityCoordinates(container.Owner, Vector2.Zero);
@@ -1135,7 +1149,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var relation = new ContainedSolutionComponent() { Container = container.Owner, ContainerName = name };
         AddComp(uid, relation);
 
-        MetaData.SetEntityName(uid, $"solution - {name}");
+        MetaDataSys.SetEntityName(uid, $"solution - {name}");
         ContainerSystem.Insert(uid, container, force: true);
 
         return (uid, solution, relation);

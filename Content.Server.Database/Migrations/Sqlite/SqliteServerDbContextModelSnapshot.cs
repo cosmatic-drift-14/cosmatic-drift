@@ -483,7 +483,50 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("assigned_user_id", (string)null);
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CDProfile", b =>
+            modelBuilder.Entity("Content.Server.Database.BanTemplate", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("ban_template_id");
+
+                    b.Property<bool>("AutoDelete")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("auto_delete");
+
+                    b.Property<int>("ExemptFlags")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("exempt_flags");
+
+                    b.Property<bool>("Hidden")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("hidden");
+
+                    b.Property<TimeSpan>("Length")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("length");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("reason");
+
+                    b.Property<int>("Severity")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("severity");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("title");
+
+                    b.HasKey("Id")
+                        .HasName("PK_ban_template");
+
+                    b.ToTable("ban_template", (string)null);
+                });
+
+ modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -509,6 +552,48 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsUnique();
 
                     b.ToTable("cdprofile", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("cd_character_record_entries_id");
+
+                    b.Property<int>("CDProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("cdprofile_id");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("description");
+
+                    b.Property<string>("Involved")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("involved");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("title");
+
+                    b.Property<byte>("Type")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("type");
+
+                    b.HasKey("Id")
+                        .HasName("PK_cd_character_record_entries");
+
+                    b.HasIndex("CDProfileId")
+                        .HasDatabaseName("IX_cd_character_record_entries_cdprofile_id");
+
+                    b.HasIndex("Id")
+                        .HasDatabaseName("IX_cd_character_record_entries_cd_character_record_entries_id");
+
+                    b.ToTable("cd_character_record_entries", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
@@ -555,6 +640,8 @@ namespace Content.Server.Database.Migrations.Sqlite
 
                     b.HasIndex("ServerId")
                         .HasDatabaseName("IX_connection_log_server_id");
+
+                    b.HasIndex("Time");
 
                     b.HasIndex("UserId");
 
@@ -873,6 +960,22 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.HasIndex("ProfileId");
 
                     b.ToTable("profile_role_loadout", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.RoleWhitelist", b =>
+                {
+                    b.Property<Guid>("PlayerUserId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("player_user_id");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("role_id");
+
+                    b.HasKey("PlayerUserId", "RoleId")
+                        .HasName("PK_role_whitelists");
+
+                    b.ToTable("role_whitelists", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.Round", b =>
@@ -1504,16 +1607,28 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CDProfile", b =>
+            modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
                 {
                     b.HasOne("Content.Server.Database.Profile", "Profile")
                         .WithOne("CDProfile")
-                        .HasForeignKey("Content.Server.Database.CDProfile", "ProfileId")
+                        .HasForeignKey("Content.Server.Database.CDModel+CDProfile", "ProfileId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_cdprofile_profile_profile_id");
 
                     b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
+                {
+                    b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
+                        .WithMany("CharacterRecordEntries")
+                        .HasForeignKey("CDProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cd_character_record_entries_cdprofile_cdprofile_id");
+
+                    b.Navigation("CDProfile");
                 });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
@@ -1586,6 +1701,19 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasConstraintName("FK_profile_role_loadout_profile_profile_id");
 
                     b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.RoleWhitelist", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", "Player")
+                        .WithMany("JobWhitelists")
+                        .HasForeignKey("PlayerUserId")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_role_whitelists_player_player_user_id");
+
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Round", b =>
@@ -1747,6 +1875,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Flags");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
+                {
+                    b.Navigation("CharacterRecordEntries");
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.Navigation("BanHits");
@@ -1787,6 +1920,8 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("AdminWatchlistsLastEdited");
 
                     b.Navigation("AdminWatchlistsReceived");
+
+                    b.Navigation("JobWhitelists");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Preference", b =>

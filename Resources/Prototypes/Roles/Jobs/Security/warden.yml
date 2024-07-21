@@ -5,7 +5,7 @@
   playTimeTracker: JobWarden
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 7200 #2 hrs
+      time: 10800 #3 hrs
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
@@ -30,3 +30,7 @@
     id: WardenPDA
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - Flash
+    - MagazinePistol

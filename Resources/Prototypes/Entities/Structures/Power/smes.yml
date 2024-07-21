@@ -95,7 +95,7 @@
 - type: entity
   parent: BaseSMES
   id: SMESBasic
-  suffix: Basic, 16MW # CD: Buffed from 16MW
+  suffix: Basic, 16MJ # CD: Buffed from 8 MJ
   components:
   - type: Battery
     maxCharge: 16000000

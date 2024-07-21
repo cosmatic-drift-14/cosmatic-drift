@@ -65,5 +65,5 @@ public sealed partial class SkatesComponent : Component
     public float DefaultDamageCooldown = 2f;
 
     [ViewVariables]
-    public float DefaultSpeedDamage = 0.5f;
+    public float DefaultSpeedDamage = 0.45f;
 }

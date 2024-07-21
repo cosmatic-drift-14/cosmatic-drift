@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: ShuttleVoteUserDataset
+  values:
+    prefix: shuttle-vote-user-
+    count: 7

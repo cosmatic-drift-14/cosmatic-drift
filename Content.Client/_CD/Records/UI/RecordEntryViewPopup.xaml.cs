@@ -7,6 +7,8 @@ using Robust.Shared.Utility;
 
 namespace Content.Client._CD.Records.UI;
 
+// TODO: Add a scrollbar to this. I tried for over an hour and I could not get it to work in a way that I liked.
+
 [GenerateTypedNameReferences]
 public sealed partial class RecordEntryViewPopup : FancyWindow
 {
@@ -25,7 +27,7 @@ public sealed partial class RecordEntryViewPopup : FancyWindow
         RobustXamlLoader.Load(this);
     }
 
-    public void SetContents(CharacterRecords.RecordEntry entry)
+    public void SetContents(PlayerProvidedCharacterRecords.RecordEntry entry)
     {
         EntryTitle.SetMessage(entry.Title);
         EntryInvolved.SetMessage(entry.Involved);

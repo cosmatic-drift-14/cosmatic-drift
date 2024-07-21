@@ -21,6 +21,6 @@ cd-character-records-viewer-view-entry = View
 cd-records-entry-view-popup-title = View Entry
 
 cd-character-records-entry-view-title = Title:
-cd-character-records-entry-view-involved = Involved:
+cd-character-records-entry-view-involved = Author(s):
 
 cd-character-records-viewer-setwanted-placeholder = Reason

@@ -31,6 +31,6 @@ cd-records-entry-edit-popup-save = Save
 cd-records-entry-default-title = Untitled Entry
 
 cd-records-entry-edit-popup-title-placeholder = Entry Title
-cd-records-entry-edit-popup-involved-placeholder = Involved Staff
+cd-records-entry-edit-popup-involved-placeholder = Author(s)
 cd-records-entry-edit-popup-description-placeholder = Description
 

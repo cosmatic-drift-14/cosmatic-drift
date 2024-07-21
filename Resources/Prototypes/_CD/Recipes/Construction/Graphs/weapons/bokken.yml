@@ -1,0 +1,17 @@
+﻿- type: constructionGraph
+  id: Bokken
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bokken
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 2
+            - material: Cloth
+              amount: 1
+              doAfter: 2
+
+    - node: bokken
+      entity: Bokken

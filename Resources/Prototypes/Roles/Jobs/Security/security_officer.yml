@@ -27,3 +27,7 @@
     # eyes: ClothingEyesGlassesSecurity  CD: Secglasses selector fix
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - Flash
+    - MagazinePistol

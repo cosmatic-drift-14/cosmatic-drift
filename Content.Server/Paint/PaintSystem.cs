@@ -9,7 +9,7 @@ using Content.Shared.Humanoid;
 using Robust.Shared.Utility;
 using Content.Shared.Verbs;
 using Content.Shared.SubFloor;
-using Content.Shared.Nutrition.Components;
+using Content.Shared.Whitelist;
 using Content.Shared.Inventory;
 using Content.Shared.Nutrition.EntitySystems;
 
@@ -27,6 +27,7 @@ public sealed class PaintSystem : SharedPaintSystem
     [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     public override void Initialize()
     {
@@ -103,7 +104,7 @@ public sealed class PaintSystem : SharedPaintSystem
             return;
         }
 
-        if (!entity.Comp.Blacklist?.IsValid(target, EntityManager) != true || HasComp<HumanoidAppearanceComponent>(target) || HasComp<SubFloorHideComponent>(target))
+        if (_whitelistSystem.IsWhitelistFail(entity.Comp.Blacklist, target) || HasComp<HumanoidAppearanceComponent>(target) || HasComp<SubFloorHideComponent>(target))
         {
             _popup.PopupEntity(Loc.GetString("paint-failure", ("target", args.Target)), args.User, args.User, PopupType.Medium);
             return;
@@ -127,8 +128,7 @@ public sealed class PaintSystem : SharedPaintSystem
                         if (!_inventory.TryGetSlotEntity(target, slot.Name, out var slotEnt))
                             continue;
 
-                        if (HasComp<PaintedComponent>(slotEnt.Value) || !entity.Comp.Blacklist?.IsValid(slotEnt.Value,
-                                                                         EntityManager) != true
+                        if (HasComp<PaintedComponent>(slotEnt.Value) || _whitelistSystem.IsWhitelistFail(entity.Comp.Blacklist, slotEnt.Value)
                                                                      || HasComp<RandomSpriteComponent>(slotEnt.Value) ||
                                                                      HasComp<HumanoidAppearanceComponent>(
                                                                          slotEnt.Value))

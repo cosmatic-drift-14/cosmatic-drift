@@ -3,6 +3,7 @@
   mapName: 'Meta Station'
   mapPath: /Maps/meta.yml
   minPlayers: 35 #CD change
+  patchfile: /CDMapPatches/meta.yml # CD Edit: Apply map patch
   stations:
     Meta:
       stationProto: StandardNanotrasenStation
@@ -15,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -37,15 +36,15 @@
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ]
-            Chemist: [ 3, 3 ]
-            MedicalDoctor: [ 4, 4 ]
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 5, 5 ]
             MedicalIntern: [ 3, 6 ]
             Paramedic: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ]        
+            SeniorResearcher: [ 1, 1 ]
             Scientist: [ 4, 6 ]
-            ResearchAssistant: [ 3, 6 ] 
+            ResearchAssistant: [ 3, 6 ]
             Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
