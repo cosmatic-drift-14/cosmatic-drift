@@ -98,7 +98,7 @@
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatCentcomOfficer
   name: CentCom officer's coat
-  description: A comfortable green coat worn by CentCom officers. The armour has been removed in favour of more pocketspace.
+  description: A comfortable green coat worn by CentCom officers. The armour has been removed in favour of more pocket space.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
