@@ -85,8 +85,22 @@
     sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
   id: ClothingOuterCoatCargoBomberOpened
   name: cargo gorka
+
+# CentCom Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentcomOfficer
+  name: CentCom officer's coat
+  description: A comfortable green coat worn by CentCom officers. The armour has been removed in favour of more pocketspace.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
