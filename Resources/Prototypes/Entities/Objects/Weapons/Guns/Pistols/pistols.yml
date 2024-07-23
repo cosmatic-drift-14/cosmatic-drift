@@ -44,6 +44,7 @@
         whitelist:
           tags:
             - MagazinePistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol
@@ -87,6 +88,7 @@
           tags:
             - MagazinePistol
             - MagazinePistolHighCapacity
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol
@@ -170,6 +172,7 @@
         whitelist:
           tags:
             - MagazinePistolCaselessRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgeCaselessRifle
@@ -240,6 +243,7 @@
         whitelist:
           tags:
             - MagazineMagnum
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgeMagnum
