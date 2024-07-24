@@ -113,9 +113,9 @@
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/yellow_bomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
   - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/yellow_bomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
 
@@ -131,9 +131,9 @@
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon orange.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/orange_bomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
   - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/orange_bomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
 
@@ -149,9 +149,9 @@
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon blue.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/blue_bomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
   - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/blue_bomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
 
