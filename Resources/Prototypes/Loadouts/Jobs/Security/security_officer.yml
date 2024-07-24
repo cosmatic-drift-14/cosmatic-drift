@@ -78,24 +78,6 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecGrey
 
-- type: loadout # CD
-  id: SecurityCasualsuit
-  equipment: SecurityCasualsuit
-
-- type: startingGear # CD
-  id: SecurityCasualsuit
-  equipment:
-    jumpsuit: ClothingUniformSecurtyCasual
-
-- type: loadout # CD
-  id: SecurityCasualSkirt
-  equipment: SeniorOfficerCasualskirt
-
-- type: startingGear # CD
-  id: SecurityCasualSkirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSecurtyCasual
-
 # - type: loadout (CD: Disabled)
 #   id: SeniorOfficerJumpsuit
 #   equipment: SeniorOfficerJumpsuit
