@@ -77,7 +77,7 @@
 
 # Cargo Gorka
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterWinterCoat]
   id: ClothingOuterCoatCargoBomber
   name: cargo gorka
   description: A heavy canvas gorka for cold shifts in Cargo.
@@ -86,8 +86,6 @@
     sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
-  - type: TemperatureProtection
-    coefficient: 0.1
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
