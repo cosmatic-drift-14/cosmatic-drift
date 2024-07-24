@@ -82,9 +82,9 @@
   description: A heavy canvas gorka for cold shifts in Cargo.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
   - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/cargobomber.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
 
