@@ -39,7 +39,7 @@
 - type: roleLoadout
   id: JobSeniorOfficer
   groups:
-  - SecurityHead
+  - SeniorOfficerHead
   - SeniorOfficerJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing

@@ -65,6 +65,15 @@
   equipment:
     outerClothing: ClothingOuterWinterCargo
 
+- type: loadout # CD
+  id: CargoBomber
+  equipment: CargoBomber
+
+- type: startingGear # CD
+  id: CargoBomber
+  equipment:
+    outerClothing: ClothingOuterCoatCargoBomber
+
 # Shoes
 - type: loadout
   id: CargoWinterBoots

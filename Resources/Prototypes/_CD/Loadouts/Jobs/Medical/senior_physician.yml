@@ -26,6 +26,16 @@
   id: SeniorPhysicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorPhysician
+    
+- type: loadout
+  id: SeniorPhysicianFormalsuit
+  equipment: SeniorPhysicianFormalsuit
+
+- type: startingGear
+  id: SeniorPhysicianFormalsuit
+  equipment:
+    jumpsuit: ClothingUniformPhysicianCasual
+
 
 # OuterClothing
 - type: loadout 

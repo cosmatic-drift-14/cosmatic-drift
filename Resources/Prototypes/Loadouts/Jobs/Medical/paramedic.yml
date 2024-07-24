@@ -27,6 +27,24 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtParamedic
 
+- type: loadout # CD
+  id: ParamedicCasualsuit
+  equipment: ParamedicCasualsuit
+
+- type: startingGear # CD
+  id: ParamedicCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformParamedicCasual
+
+- type: loadout # CD
+  id: ParamedicCasualskirt
+  equipment: ParamedicCasualskirt
+
+- type: startingGear # CD
+  id: ParamedicCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtParamedicCasual
+
 # Outer clothing
 - type: loadout
   id: ParamedicWindbreaker

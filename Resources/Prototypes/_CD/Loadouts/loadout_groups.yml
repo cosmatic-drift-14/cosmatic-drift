@@ -52,6 +52,7 @@
   - SeniorEngineerJumpskirt
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
+  - StationEngineerCasualsuit
   - StationEngineerHazardsuit
 
 # Science
@@ -86,12 +87,25 @@
   - RoboticistPDA
 
 # Security
+
+- type: loadoutGroup
+  id: SeniorOfficerHead
+  name: loadout-group-security-head
+  minLimit: 0
+  loadouts:
+  - SecurityHelmet
+  - SecurityVeteranBeret
+  - SecurityBeret
+  - SecurityHat
+
 - type: loadoutGroup
   id: SeniorOfficerJumpsuit
   name: loadout-group-senior-officer-jumpsuit
   loadouts:
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
+  - SeniorOfficerCasualsuit
+  - SeniorOfficerCasualskirt
   - SecurityJumpsuit
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
@@ -123,6 +137,7 @@
   loadouts:
   - SeniorPhysicianJumpsuit
   - SeniorPhysicianJumpskirt
+  - SeniorPhysicianFormalsuit
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
   - MedicalBlueScrubs
