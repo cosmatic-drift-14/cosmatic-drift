@@ -44,7 +44,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatBeretVet
+  id: ClothingHeadHatBeretSecurityVet
   name: senior officer's beret
   description: A black beret with a silver rank emblem. For officers that are more inclined towards style than safety.
   components:
