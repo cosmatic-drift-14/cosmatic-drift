@@ -108,7 +108,7 @@
 
 # High-Vis jackets
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterWinterCoat]
   id: ClothingOuterCoatYellowHiVis
   name: emergency jacket
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
@@ -117,13 +117,6 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
-  - type: TemperatureProtection
-    coefficient: 0.1
-  - type: Armor
-    modifiers:
-      coefficients:
-        Slash: 0.95
-        Heat: 0.90
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatYellowHiVis]
@@ -140,13 +133,6 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
-  - type: TemperatureProtection
-    coefficient: 0.1
-  - type: Armor
-    modifiers:
-      coefficients:
-        Slash: 0.95
-        Heat: 0.90
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatOrangeHiVis]
@@ -163,13 +149,6 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
-  - type: TemperatureProtection
-    coefficient: 0.1
-  - type: Armor
-    modifiers:
-      coefficients:
-        Slash: 0.95
-        Heat: 0.90
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
