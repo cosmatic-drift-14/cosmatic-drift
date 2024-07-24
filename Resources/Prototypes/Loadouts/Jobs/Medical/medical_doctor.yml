@@ -119,15 +119,6 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
 
-- type: loadout # CD
-  id: MedicalCasualsuit
-  equipment: MedicalCasualsuit 
-
-- type: startingGear # CD
-  id: MedicalCasualsuit
-  equipment:
-    jumpsuit: ClothingUniformDoctorCasual
-
 # - type: loadout (CD: Disabling senior clothing)
 #   id: SeniorPhysicianJumpsuit
 #   equipment: SeniorPhysicianJumpsuit

@@ -86,15 +86,6 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringHazard
 
-- type: loadout # CD
-  id: StationEngineerCasualsuit
-  equipment: StationEngineerCasualsuit
-
-- type: startingGear # CD
-  id: StationEngineerCasualsuit
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitEngineeringCasual
-
 
 # - type: loadout (CD removed senior clothing in favor of senior roles)
 #   id: SeniorEngineerJumpsuit

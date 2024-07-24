@@ -1,0 +1,17 @@
+- type: loadout
+  id: WardenCasualsuit
+  equipment: WardenCasualsuit
+
+- type: startingGear
+  id: WardenCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformWardenCasual
+
+- type: loadout
+  id: WardenCasualskirt
+  equipment: WardenCasualskirt
+
+- type: startingGear
+  id: WardenCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenCasual

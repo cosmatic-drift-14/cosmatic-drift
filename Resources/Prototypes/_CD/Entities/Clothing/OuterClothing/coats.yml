@@ -36,7 +36,7 @@
 
 # Europan Coats
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat
   id: ClothingOuterCoatEuropanVet
   name: europan jacket
   description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments.
@@ -119,6 +119,11 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatYellowHiVis]
@@ -137,6 +142,11 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatOrangeHiVis]
@@ -155,6 +165,11 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
   - type: TemperatureProtection
     coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
