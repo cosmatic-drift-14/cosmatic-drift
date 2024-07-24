@@ -18,7 +18,7 @@
   storage:
     back:
     - PlushieLizard
-    
+
 - type: loadout
   id: PlushieSpaceLizard
   equipment: PlushieSpaceLizard
@@ -28,6 +28,27 @@
   storage:
     back:
     - PlushieSpaceLizard
+
+# CD: Lunchbox
+- type: loadout # CD
+  id: LunchboxBlue
+  equipment: LunchboxBlue
+
+- type: startingGear # CD
+  id: LunchboxBlue
+  storage:
+    back:
+    - LunchboxBlue
+
+- type: loadout # CD
+  id: LunchboxYellow
+  equipment: LunchboxYellow
+
+- type: startingGear # CD
+  id: LunchboxYellow
+  storage:
+    back:
+    - LunchboxYellow
 
 # Smokeables
 - type: loadout
