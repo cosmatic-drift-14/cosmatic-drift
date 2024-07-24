@@ -323,7 +323,7 @@ namespace Content.Server.Kitchen.EntitySystems
 
             if (TryComp<ItemComponent>(args.EntityUid, out var item))
             {
-                if (_item.GetSizePrototype(item.Size) > _item.GetSizePrototype(ent.Comp.MaxItemSize))
+                if (item.Size > ent.Comp.MaxItemSize)
                 {
                     args.Cancel();
                     return;

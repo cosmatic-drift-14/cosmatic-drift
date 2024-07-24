@@ -166,7 +166,7 @@
     sprite: Objects/Specific/Medical/Surgery/saw.rsi
     state: saw
   - type: Item
-    size: Normal
+    size: 5
     sprite: Objects/Specific/Medical/Surgery/saw.rsi
   - type: Tool
     qualities:
@@ -182,7 +182,7 @@
   - type: Sprite
     state: improv
   - type: Item
-    size: Small
+    size: 10
     heldPrefix: improv
   - type: MeleeWeapon
     damage:

@@ -21,7 +21,7 @@
     containers:
       entity_storage: !type:Container
   - type: Item
-    size: Normal
+    size: 10
     heldPrefix: lamp
     sprite: Objects/Misc/arabianlamp.rsi
     inhandVisuals:
