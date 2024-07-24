@@ -45,6 +45,9 @@
     ClothingOuterCoatEuropanVet: 2
     ClothingOuterCoatEuropanCoalition: 2
     ClothingOuterCoatEuropanSeparatist: 2
+    ClothingOuterCoatYellowHiVis: 3
+    ClothingOuterCoatOrangeHiVis: 3
+    ClothingOuterCoatBlueHiVis: 3
     ClothingBeltHalfApron: 2
     ClothingOuterVest: 2
     ClothingShoesChef: 2
@@ -72,6 +75,8 @@
     ClothingHandsGlovesColorWhite: 2
     ClothingNeckTieDet: 2
     ClothingNeckTieRed: 2
+    ClothingNeckCloakWinterOrange: 2
+    ClothingNeckCloakIlluminated: 2
     ClothingEyesGlassesSunglasses: 2
     ClothingEyesGlassesAviator: 4
     BoxPridePins: 2
