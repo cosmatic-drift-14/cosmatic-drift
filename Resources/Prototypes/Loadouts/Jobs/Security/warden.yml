@@ -46,11 +46,11 @@
     jumpsuit: ClothingUniformWardenCasual
 
 - type: loadout # CD
-  id: WardenCasualSkirt
-  equipment: WardenCasualSkirt
+  id: WardenCasualskirt
+  equipment: WardenCasualskirt
 
 - type: startingGear # CD
-  id: WardenCasualSkirt
+  id: WardenCasualskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtWardenCasual
 
