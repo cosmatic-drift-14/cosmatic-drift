@@ -568,6 +568,7 @@
   loadouts:
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
+  - CargoTechnicianPants # CD
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
