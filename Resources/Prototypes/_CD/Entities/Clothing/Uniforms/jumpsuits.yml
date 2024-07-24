@@ -152,3 +152,14 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/physician_casual.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDoctorCasual
+  name: casual medical outfit
+  description: A blue-white shirt with comfortable black jeans. There is a blue cross on the right sleeve
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
+

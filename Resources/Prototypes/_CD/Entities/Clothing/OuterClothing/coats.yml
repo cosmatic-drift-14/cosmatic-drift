@@ -104,3 +104,58 @@
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+
+# High-Vis jackets
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatYellowHiVis
+  name: emergency jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/yellow_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/yellow_bomber.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatYellowHiVis]
+  id: ClothingOuterCoatYellowHiVisOpened
+  name: emergency jacket
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatOrangeHiVis
+  name: hazard jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon orange.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/orange_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/orange_bomber.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatOrangeHiVis]
+  id: ClothingOuterCoatOrangeHiVisOpened
+  name: hazard jacket
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatBlueHiVis
+  name: EMT jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon blue.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/blue_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/HiVis/blue_bomber.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
+  id: ClothingOuterCoatBlueHiVisOpened
+  name: EMT jacket

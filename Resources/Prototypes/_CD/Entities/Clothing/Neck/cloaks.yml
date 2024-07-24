@@ -1,3 +1,4 @@
+# CD cloaks
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakIlluminated
@@ -5,6 +6,8 @@
   description: A white cloak with orange trim with an emblem emblazed on the back.
   components:
   - type: Sprite
+    sprite: _CD/Clothing/Neck/Cloaks/illuminated_cloak.rsi
+  - type: Clothing
     sprite: _CD/Clothing/Neck/Cloaks/illuminated_cloak.rsi
 
 - type: entity
@@ -14,4 +17,6 @@
   description: A heavy orange cloak with winter padding inside it. It feels extremely warm.
   components:
   - type: Sprite
+    sprite: _CD/Clothing/Neck/Cloaks/orange_winter.rsi
+  - type: Clothing
     sprite: _CD/Clothing/Neck/Cloaks/orange_winter.rsi
