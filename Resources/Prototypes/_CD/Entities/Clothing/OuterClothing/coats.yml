@@ -106,7 +106,7 @@
 
 # High-Vis jackets
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterWinterCoat]
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
   id: ClothingOuterCoatYellowHiVis
   name: emergency jacket
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
@@ -122,7 +122,7 @@
   name: emergency jacket
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: ClothingOuterCoatYellowHiVis
   id: ClothingOuterCoatOrangeHiVis
   name: hazard jacket
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon orange.
@@ -138,7 +138,7 @@
   name: hazard jacket
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: ClothingOuterCoatYellowHiVis
   id: ClothingOuterCoatBlueHiVis
   name: EMT jacket
   description: A somewhat heavy jacket made of fluorescent fabric. This one is neon blue.
