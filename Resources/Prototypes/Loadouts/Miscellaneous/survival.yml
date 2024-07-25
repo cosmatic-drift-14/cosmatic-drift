@@ -18,6 +18,8 @@
     - Human
     - Moth
     - Reptilian
+    - Avali #CD additions start
+    - Vulpkanin #CD additions end
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

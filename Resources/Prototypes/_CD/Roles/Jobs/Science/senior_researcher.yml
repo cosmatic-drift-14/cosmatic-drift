@@ -18,6 +18,3 @@
   equipment:
     id: SeniorResearcherPDA
     ears: ClothingHeadsetScience
-  storage:
-    back:
-    - BoxSurvival
