@@ -84,7 +84,8 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-        
+  - type: BalloonPopper
+
 - type: entity
   parent: Dart
   id: DartBlue
