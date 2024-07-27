@@ -16,3 +16,32 @@
   id: SeniorOfficerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+
+- type: loadout
+  id: SeniorOfficerCasualsuit
+  equipment: SeniorOfficerCasualsuit
+
+- type: startingGear
+  id: SeniorOfficerCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformHoSSeniorCasual
+
+- type: loadout
+  id: SeniorOfficerCasualskirt
+  equipment: SeniorOfficerCasualskirt
+
+- type: startingGear
+  id: SeniorOfficerCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSSeniorCasual
+
+# Head
+
+- type: loadout
+  id: SecurityVeteranBeret
+  equipment: SecurityVeteranBeret
+
+- type: startingGear
+  id: SecurityVeteranBeret
+  equipment:
+    head: ClothingHeadHatBeretSecurityVet
