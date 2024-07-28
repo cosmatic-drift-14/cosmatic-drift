@@ -13,6 +13,9 @@ using Robust.Server.Player;
 using Robust.Shared.Console;
 using Robust.Shared.Player;
 
+// CD: imports
+using Content.Server._CD.Records;
+
 namespace Content.Server.Mind.Commands;
 
 [AdminCommand(AdminFlags.VarEdit)]
@@ -98,6 +101,13 @@ public sealed class RenameCommand : IConsoleCommand
             && _entManager.TryGetComponent<ActorComponent>(entityUid, out var actorComp))
         {
             adminSystem.UpdatePlayerList(actorComp.PlayerSession);
+        }
+
+        // CD: records
+        if (_entManager.TrySystem<CharacterRecordsSystem>(out var cdRecordsSys)
+            && _entManager.TryGetComponent<CharacterRecordKeyStorageComponent>(entityUid, out var cdCRecords))
+        {
+            cdRecordsSys.QueryRecords(cdCRecords.Key.Station)[cdCRecords.Key.Index].Name = name;
         }
     }
 
