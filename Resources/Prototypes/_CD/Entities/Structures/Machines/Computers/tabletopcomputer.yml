@@ -55,7 +55,6 @@
 #        - TabletopMachineLayer
 
 #Broken Tabletop Computer
-#Clean up the components from this, most of this should be inherited.
 - type: entity
   parent: [DebugTabletopComputer, ComputerBroken]
   id: ComputerTabletopBroken
