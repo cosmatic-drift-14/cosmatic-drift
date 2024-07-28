@@ -1,0 +1,24 @@
+- type: guideEntry
+  id: CosmaticDrift
+  name: guide-entry-cd
+  text: "/ServerInfo/Guidebook/_CD/Features.xml"
+  children:
+  - Cryosleep
+  - Records
+  - CDNewPlayer
+
+- type: guideEntry
+  id: Cryosleep
+  name: guide-entry-cryosleep
+  text: "/ServerInfo/Guidebook/_CD/Cryosleep.xml"
+
+- type: guideEntry
+  id: Records
+  name: guide-entry-cd-records
+  text: "/ServerInfo/Guidebook/_CD/Records.xml"
+
+- type: guideEntry
+  id: CDNewPlayer
+  name: guide-entry-cd-newplayer
+  text: "/ServerInfo/Guidebook/_CD/NewPlayer.xml"
+  priority: 0

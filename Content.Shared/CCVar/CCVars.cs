@@ -28,9 +28,10 @@ namespace Content.Shared.CCVar
 
         /// <summary>
         ///     Guide entry that is displayed by default when a guide is opened.
+        ///     CD: Use our new player guidebook.
         /// </summary>
         public static readonly CVarDef<string> DefaultGuide =
-            CVarDef.Create("server.default_guide", "NewPlayer", CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("server.default_guide", "CDNewPlayer", CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Ambience
