@@ -34,6 +34,8 @@
         mask:
         - Impassable
         - LowImpassable
+        layer:
+        - MachineLayer
   - type: Construction
     graph: tabletopComputer
     node: frameUnsecured
