@@ -13,7 +13,7 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class RecordEditorEntrySelector : Control
 {
-    private List<CharacterRecords.RecordEntry> _entries = new();
+    private List<PlayerProvidedCharacterRecords.RecordEntry> _entries = new();
 
     public event Action<RecordEditorEntryUpdateArgs>? OnUpdateEntries;
 
@@ -28,7 +28,7 @@ public sealed partial class RecordEditorEntrySelector : Control
         AddButton.OnPressed += _ =>
         {
             _editIdx = _entries.Count;
-            _editPopup.SetContents(new CharacterRecords.RecordEntry("", "", ""));
+            _editPopup.SetContents(new PlayerProvidedCharacterRecords.RecordEntry("", "", ""));
             _editPopup.Open();
         };
 
@@ -109,7 +109,7 @@ public sealed partial class RecordEditorEntrySelector : Control
         };
     }
 
-    public void UpdateContents(List<CharacterRecords.RecordEntry> entries)
+    public void UpdateContents(List<PlayerProvidedCharacterRecords.RecordEntry> entries)
     {
         _entries = entries;
         RefreshSelector();
@@ -126,9 +126,9 @@ public sealed partial class RecordEditorEntrySelector : Control
 
     public sealed class RecordEditorEntryUpdateArgs
     {
-        public List<CharacterRecords.RecordEntry> Entries { get; private set; }
+        public List<PlayerProvidedCharacterRecords.RecordEntry> Entries { get; private set; }
 
-        public RecordEditorEntryUpdateArgs(List<CharacterRecords.RecordEntry> entries)
+        public RecordEditorEntryUpdateArgs(List<PlayerProvidedCharacterRecords.RecordEntry> entries)
         {
             Entries = entries;
         }

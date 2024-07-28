@@ -183,6 +183,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("uuid")
                         .HasColumnName("deleted_by_id");
 
+                    b.Property<bool>("Dismissed")
+                        .HasColumnType("boolean")
+                        .HasColumnName("dismissed");
+
                     b.Property<DateTime?>("ExpirationTime")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("expiration_time");
@@ -232,7 +236,10 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.HasIndex("RoundId")
                         .HasDatabaseName("IX_admin_messages_round_id");
 
-                    b.ToTable("admin_messages", (string)null);
+                    b.ToTable("admin_messages", null, t =>
+                        {
+                            t.HasCheckConstraint("NotDismissedAndSeen", "NOT dismissed OR seen");
+                        });
                 });
 
             modelBuilder.Entity("Content.Server.Database.AdminNote", b =>
@@ -505,6 +512,124 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.ToTable("assigned_user_id", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.BanTemplate", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("ban_template_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("AutoDelete")
+                        .HasColumnType("boolean")
+                        .HasColumnName("auto_delete");
+
+                    b.Property<int>("ExemptFlags")
+                        .HasColumnType("integer")
+                        .HasColumnName("exempt_flags");
+
+                    b.Property<bool>("Hidden")
+                        .HasColumnType("boolean")
+                        .HasColumnName("hidden");
+
+                    b.Property<TimeSpan>("Length")
+                        .HasColumnType("interval")
+                        .HasColumnName("length");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("reason");
+
+                    b.Property<int>("Severity")
+                        .HasColumnType("integer")
+                        .HasColumnName("severity");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("title");
+
+                    b.HasKey("Id")
+                        .HasName("PK_ban_template");
+
+                    b.ToTable("ban_template", (string)null);
+                });
+
+             modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("cdprofile_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<JsonDocument>("CharacterRecords")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("character_records");
+
+                    b.Property<float>("Height")
+                        .HasColumnType("real")
+                        .HasColumnName("height");
+
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_cdprofile");
+
+                    b.HasIndex("ProfileId")
+                        .IsUnique();
+
+                    b.ToTable("cdprofile", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("cd_character_record_entries_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CDProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("cdprofile_id");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("description");
+
+                    b.Property<string>("Involved")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("involved");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("title");
+
+                    b.Property<byte>("Type")
+                        .HasColumnType("smallint")
+                        .HasColumnName("type");
+
+                    b.HasKey("Id")
+                        .HasName("PK_cd_character_record_entries");
+
+                    b.HasIndex("CDProfileId");
+
+                    b.HasIndex("Id")
+                        .HasDatabaseName("IX_cd_character_record_entries_cd_character_record_entries_id");
+
+                    b.ToTable("cd_character_record_entries", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.Property<int>("Id")
@@ -551,6 +676,8 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     b.HasIndex("ServerId")
                         .HasDatabaseName("IX_connection_log_server_id");
+
+                    b.HasIndex("Time");
 
                     b.HasIndex("UserId");
 
@@ -728,24 +855,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("age");
 
-                    b.Property<string>("Backpack")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("backpack");
-
-                    b.Property<JsonDocument>("CDCharacterRecords")
-                        .HasColumnType("jsonb")
-                        .HasColumnName("cd_character_records");
-
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("char_name");
-
-                    b.Property<string>("Clothing")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("clothing");
 
                     b.Property<string>("EyeColor")
                         .IsRequired()
@@ -781,10 +894,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("hair_name");
-
-                    b.Property<float>("Height")
-                        .HasColumnType("real")
-                        .HasColumnName("height");
 
                     b.Property<JsonDocument>("Markings")
                         .HasColumnType("jsonb")
@@ -833,6 +942,100 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.ToTable("profile", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.ProfileLoadout", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_loadout_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("LoadoutName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("loadout_name");
+
+                    b.Property<int>("ProfileLoadoutGroupId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_loadout_group_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_profile_loadout");
+
+                    b.HasIndex("ProfileLoadoutGroupId");
+
+                    b.ToTable("profile_loadout", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileLoadoutGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_loadout_group_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("GroupName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("group_name");
+
+                    b.Property<int>("ProfileRoleLoadoutId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_role_loadout_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_profile_loadout_group");
+
+                    b.HasIndex("ProfileRoleLoadoutId");
+
+                    b.ToTable("profile_loadout_group", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileRoleLoadout", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_role_loadout_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_id");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("role_name");
+
+                    b.HasKey("Id")
+                        .HasName("PK_profile_role_loadout");
+
+                    b.HasIndex("ProfileId");
+
+                    b.ToTable("profile_role_loadout", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.RoleWhitelist", b =>
+                {
+                    b.Property<Guid>("PlayerUserId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("player_user_id");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("text")
+                        .HasColumnName("role_id");
+
+                    b.HasKey("PlayerUserId", "RoleId")
+                        .HasName("PK_role_whitelists");
+
+                    b.ToTable("role_whitelists", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.Round", b =>
                 {
                     b.Property<int>("Id")
@@ -846,10 +1049,8 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("server_id");
 
-                    b.Property<DateTime>("StartDate")
-                        .ValueGeneratedOnAdd()
+                    b.Property<DateTime?>("StartDate")
                         .HasColumnType("timestamp with time zone")
-                        .HasDefaultValue(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified))
                         .HasColumnName("start_date");
 
                     b.HasKey("Id")
@@ -1486,6 +1687,30 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Navigation("Profile");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithOne("CDProfile")
+                        .HasForeignKey("Content.Server.Database.CDModel+CDProfile", "ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cdprofile_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
+                {
+                    b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
+                        .WithMany("CharacterRecordEntries")
+                        .HasForeignKey("CDProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cd_character_record_entries_cdprofile_cdprofile_id");
+
+                    b.Navigation("CDProfile");
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.HasOne("Content.Server.Database.Server", "Server")
@@ -1520,6 +1745,55 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasConstraintName("FK_profile_preference_preference_id");
 
                     b.Navigation("Preference");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileLoadout", b =>
+                {
+                    b.HasOne("Content.Server.Database.ProfileLoadoutGroup", "ProfileLoadoutGroup")
+                        .WithMany("Loadouts")
+                        .HasForeignKey("ProfileLoadoutGroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_profile_loadout_profile_loadout_group_profile_loadout_group~");
+
+                    b.Navigation("ProfileLoadoutGroup");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileLoadoutGroup", b =>
+                {
+                    b.HasOne("Content.Server.Database.ProfileRoleLoadout", "ProfileRoleLoadout")
+                        .WithMany("Groups")
+                        .HasForeignKey("ProfileRoleLoadoutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_profile_loadout_group_profile_role_loadout_profile_role_loa~");
+
+                    b.Navigation("ProfileRoleLoadout");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileRoleLoadout", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithMany("Loadouts")
+                        .HasForeignKey("ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_profile_role_loadout_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.RoleWhitelist", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", "Player")
+                        .WithMany("JobWhitelists")
+                        .HasForeignKey("PlayerUserId")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_role_whitelists_player_player_user_id");
+
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Round", b =>
@@ -1681,6 +1955,11 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Navigation("Flags");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
+                {
+                    b.Navigation("CharacterRecordEntries");
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.Navigation("BanHits");
@@ -1721,6 +2000,8 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Navigation("AdminWatchlistsLastEdited");
 
                     b.Navigation("AdminWatchlistsReceived");
+
+                    b.Navigation("JobWhitelists");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Preference", b =>
@@ -1732,9 +2013,23 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Navigation("Antags");
 
+                    b.Navigation("CDProfile");
+
                     b.Navigation("Jobs");
 
+                    b.Navigation("Loadouts");
+
                     b.Navigation("Traits");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileLoadoutGroup", b =>
+                {
+                    b.Navigation("Loadouts");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.ProfileRoleLoadout", b =>
+                {
+                    b.Navigation("Groups");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Round", b =>

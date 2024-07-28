@@ -2,8 +2,9 @@
   id: Marathon
   mapName: 'Marathon Station'
   mapPath: /Maps/marathon.yml
-  minPlayers: 35
-  maxPlayers: 70
+  minPlayers: 25 #CD change
+  maxPlayers: 55 #CD change
+  patchfile: /CDMapPatches/marathon.yml # CD Edit: Apply map patch
   stations:
     Marathon:
       stationProto: StandardNanotrasenStation
@@ -16,8 +17,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_rod.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -45,9 +44,9 @@
             Paramedic: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ]        
+            SeniorResearcher: [ 1, 1 ]
             Scientist: [ 3, 3 ]
-            ResearchAssistant: [ 3, 3 ] 
+            ResearchAssistant: [ 3, 3 ]
             Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]

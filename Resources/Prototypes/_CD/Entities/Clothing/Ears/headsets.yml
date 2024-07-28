@@ -1,0 +1,14 @@
+- type: entity
+  id: ClothingHeadsetLongRange
+  name: long range headset
+  description: a headset that is used to contact other ships
+  parent: ClothingHeadset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyHailing
+  - type: Sprite
+    sprite: _CD/Clothing/Ears/Headsets/long-range.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Ears/Headsets/long-range.rsi

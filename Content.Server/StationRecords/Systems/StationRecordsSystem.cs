@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Server._CD.Loadouts;
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
 using Content.Shared.Inventory;
@@ -120,11 +121,14 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
             return;
         }
 
+        // CD: Job titles. We need to inject it here for the manifest and records.
+        var jobTitle = TryComp<RenameIdComponent>(idUid, out var rename) ? Loc.GetString(rename.Value) : jobPrototype.LocalizedName;
+
         var record = new GeneralStationRecord()
         {
             Name = name,
             Age = age,
-            JobTitle = jobPrototype.LocalizedName,
+            JobTitle = jobTitle, // CD: Job Titles
             JobIcon = jobPrototype.Icon,
             JobPrototype = jobId,
             Species = species,
@@ -211,7 +215,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
     /// </remarks>
     public uint? GetRecordByName(EntityUid station, string name, StationRecordsComponent? records = null)
     {
-        if (!Resolve(station, ref records))
+        if (!Resolve(station, ref records, false))
             return null;
 
         foreach (var (id, record) in GetRecordsOfType<GeneralStationRecord>(station, records))
@@ -221,6 +225,17 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         }
 
         return null;
+    }
+
+    /// <summary>
+    /// Get the name for a record, or an empty string if it has no record.
+    /// </summary>
+    public string RecordName(StationRecordKey key)
+    {
+        if (!TryGetRecord<GeneralStationRecord>(key, out var record))
+           return string.Empty;
+
+        return record.Name;
     }
 
     /// <summary>

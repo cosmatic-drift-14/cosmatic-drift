@@ -27,6 +27,19 @@ namespace Content.Shared.Storage
         [DataField("clickInsert")]
         public bool ClickInsert = true; // Can insert stuff by clicking the storage entity with it
 
+        /// <summary>
+        /// Minimum delay between quick/area insert actions.
+        /// </summary>
+        /// <remarks>Used to prevent autoclickers spamming server with individual pickup actions.</remarks>
+        public TimeSpan QuickInsertCooldown = TimeSpan.FromSeconds(0.5);
+
+        /// <summary>
+        /// Minimum delay between UI open actions.
+        /// <remarks>Used to spamming opening sounds.</remarks>
+        /// </summary>
+        [DataField]
+        public TimeSpan OpenUiCooldown = TimeSpan.Zero;
+
         [DataField("areaInsert")]
         public bool AreaInsert;  // "Attacking" with the storage entity causes it to insert all nearby storables after a delay
 
@@ -82,9 +95,23 @@ namespace Content.Shared.Storage
         public SoundSpecifier? StorageCloseSound;
 
         [Serializable, NetSerializable]
-        public sealed class StorageInsertItemMessage : BoundUserInterfaceMessage
+        public sealed class StorageInsertItemMessage : EntityEventArgs
         {
+            public readonly NetEntity StorageUid;
+
+            public StorageInsertItemMessage(NetEntity storageUid)
+            {
+                StorageUid = storageUid;
+            }
         }
+
+        /// <summary>
+        /// If true, sets StackVisuals.Hide to true when the container is closed
+        /// Used in cases where there are sprites that are shown when the container is open but not
+        /// when it is closed
+        /// </summary>
+        [DataField]
+        public bool HideStackVisualsWhenClosed = true;
 
         [Serializable, NetSerializable]
         public enum StorageUiKey
@@ -94,12 +121,16 @@ namespace Content.Shared.Storage
     }
 
     [Serializable, NetSerializable]
-    public sealed class StorageInteractWithItemEvent : BoundUserInterfaceMessage
+    public sealed class StorageInteractWithItemEvent : EntityEventArgs
     {
-        public readonly NetEntity InteractedItemUID;
-        public StorageInteractWithItemEvent(NetEntity interactedItemUID)
+        public readonly NetEntity InteractedItemUid;
+
+        public readonly NetEntity StorageUid;
+
+        public StorageInteractWithItemEvent(NetEntity interactedItemUid, NetEntity storageUid)
         {
-            InteractedItemUID = interactedItemUID;
+            InteractedItemUid = interactedItemUid;
+            StorageUid = storageUid;
         }
     }
 

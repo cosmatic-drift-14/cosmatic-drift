@@ -5,6 +5,8 @@ using Content.Shared._CD.Records;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Preferences;
+using Content.Shared.Preferences.Loadouts;
+using Content.Shared.Preferences.Loadouts.Effects;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Robust.Shared.Configuration;
@@ -12,7 +14,6 @@ using Robust.Shared.Enums;
 using Robust.Shared.Log;
 using Robust.Shared.Maths;
 using Robust.Shared.Network;
-using Robust.Shared.Prototypes;
 using Robust.UnitTesting;
 
 namespace Content.IntegrationTests.Tests.Preferences
@@ -39,36 +40,23 @@ namespace Content.IntegrationTests.Tests.Preferences
 
         private static HumanoidCharacterProfile CharlieCharlieson()
         {
-            return new(
-                "Charlie Charlieson",
-                "The biggest boy around.",
-                "Human",
-                1,
-                21,
-                Sex.Male,
-                Gender.Epicene,
-                new HumanoidCharacterAppearance(
+            return new()
+            {
+                Name = "Charlie Charlieson",
+                FlavorText = "The biggest boy around.",
+                Species = "Human",
+                Age = 21,
+                Appearance = new(
                     "Afro",
                     Color.Aqua,
                     "Shaved",
                     Color.Aquamarine,
                     Color.Azure,
                     Color.Beige,
-                    new ()
-                ),
-                ClothingPreference.Jumpskirt,
-                BackpackPreference.Backpack,
-                SpawnPriorityPreference.None,
-                new Dictionary<string, JobPriority>
-                {
-                    {SharedGameTicker.FallbackOverflowJob, JobPriority.High}
-                },
-                PreferenceUnavailableMode.StayInLobby,
-                new List<string> (),
-                new List<string>(),
+                    new ()),
                 // CD: test records
-                CharacterRecords.DefaultRecords()
-            );
+                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords()
+            };
         }
 
         private static ServerDbSqlite GetDb(RobustIntegrationTest.ServerIntegrationInstance server)
@@ -120,6 +108,17 @@ namespace Content.IntegrationTests.Tests.Preferences
             await db.SaveCharacterSlotAsync(username, null, 1);
             var prefs = await db.GetPlayerPreferencesAsync(username);
             Assert.That(!prefs.Characters.Any(p => p.Key != 0));
+            await pair.CleanReturnAsync();
+        }
+
+        [Test]
+        public async Task TestNoPendingDatabaseChanges()
+        {
+            var pair = await PoolManager.GetServerClient();
+            var server = pair.Server;
+            var db = GetDb(server);
+            Assert.That(async () => await db.HasPendingModelChanges(), Is.False,
+                "The database has pending model changes. Add a new migration to apply them. See https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations");
             await pair.CleanReturnAsync();
         }
 

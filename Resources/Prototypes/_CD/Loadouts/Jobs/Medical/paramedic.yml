@@ -1,0 +1,80 @@
+- type: loadout
+  id: JumpsuitETUFlightsuit
+  equipment: JumpsuitETUFlightsuit
+
+- type: startingGear
+  id: JumpsuitETUFlightsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitETUFlightsuit
+
+- type: loadout
+  id: ParamedicCasualsuit
+  equipment: ParamedicCasualsuit
+
+- type: startingGear
+  id: ParamedicCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformParamedicCasual
+
+- type: loadout
+  id: ParamedicCasualskirt
+  equipment: ParamedicCasualskirt
+
+- type: startingGear
+  id: ParamedicCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtParamedicCasual
+
+- type: loadout
+  id: GlovesETUGauntlet
+  equipment: GlovesETUGauntlet
+
+- type: startingGear
+  id: GlovesETUGauntlet
+  equipment:
+    gloves: ClothingHandsGlovesETUGauntlet
+
+- type: loadout
+  id: MaskGasETUSterile
+  equipment: MaskGasETUSterile
+
+- type: startingGear
+  id: MaskGasETUSterile
+  equipment:
+    mask: ClothingMaskGasETUSterile
+
+- type: loadout
+  id: HeadHelmetETUPointman
+  equipment: HeadHelmetETUPointman
+
+- type: startingGear
+  id: HeadHelmetETUPointman
+  equipment:
+    head: ClothingHeadHelmetETUPointman
+
+- type: loadout
+  id: BeltHarnessETU
+  equipment: BeltHarnessETU
+
+- type: startingGear
+  id: BeltHarnessETU
+  equipment:
+    outerClothing: ClothingBeltHarnessETU
+
+- type: loadout
+  id: ShoesColorSlate
+  equipment: ShoesColorSlate
+
+- type: startingGear
+  id: ShoesColorSlate
+  equipment:
+    shoes: ClothingShoesColorSlate
+
+- type: loadout
+  id: BlueHighvisBomber
+  equipment: BlueHighvisBomber
+
+- type: startingGear
+  id: BlueHighvisBomber
+  equipment:
+    jumpsuit: ClothingOuterCoatBlueHiVis

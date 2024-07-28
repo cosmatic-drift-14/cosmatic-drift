@@ -1,0 +1,28 @@
+# Jumpsuit
+- type: loadout
+  id: SeniorResearcherJumpsuit
+  equipment: SeniorResearcherJumpsuit
+
+- type: startingGear
+  id: SeniorResearcherJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorResearcher
+
+- type: loadout
+  id: SeniorResearcherJumpskirt
+  equipment: SeniorResearcherJumpskirt
+
+- type: startingGear
+  id: SeniorResearcherJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorResearcher
+
+# OuterClothing
+- type: loadout
+  id: SeniorResearcherLabCoat
+  equipment: SeniorResearcherLabCoat
+
+- type: startingGear
+  id: SeniorResearcherLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabSeniorResearcher

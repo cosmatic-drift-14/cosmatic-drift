@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Github MozarteanChaos / Discord mozarteanchaos (213813868282118144)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "middlesheet-icon"
+    },
+    {
+      "name": "middlesheet-equipped-INNERCLOTHING",
+	  "directions": 4
+    },
+    {
+      "name": "middlesheet-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "middlesheet-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "bottomsheet-icon"
+    },
+    {
+      "name": "bottomsheet-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "bottomsheet-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "bottomsheet-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "topsheet-icon"
+    },
+    {
+      "name": "topsheet-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "topsheet-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "topsheet-inhand-right",
+      "directions": 4
+    },
+	{
+      "name": "trimprimary-icon"
+    },
+    {
+      "name": "trimprimary-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "trimprimary-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "trimprimary-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "trimsecondary-icon"
+    },
+    {
+      "name": "trimsecondary-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "trimsecondary-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "trimsecondary-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "chimes-icon"
+    },
+    {
+      "name": "chimes-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "mask_null",
+      "directions": 4
+    }
+  ]
+}

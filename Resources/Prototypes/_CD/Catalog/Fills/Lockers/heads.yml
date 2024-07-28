@@ -18,6 +18,7 @@
       - id: ClothingUniformJumpskirtQMTurtleneck
       - id: ClothingUniformJumpsuitQM
       - id: ClothingUniformJumpsuitQMTurtleneck
+      - id: ClothingOuterCoatCargoBomber
 
 - type: entity
   id: LockerCaptainFilledCosmetic
@@ -136,7 +137,7 @@
       - id: ClothingNeckMantleHOS
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingOuterWinterHoS
-      - id: ClothingOuterWinterArmoredHoS
+      - id: ClothingOuterWinterHoSUnarmored
       - id: ClothingShoesBootsJack
       - id: ClothingUniformJumpskirtHoS
       - id: ClothingUniformJumpskirtHoSAlt

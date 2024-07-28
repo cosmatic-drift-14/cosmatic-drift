@@ -2,7 +2,8 @@
   id: Ferrous
   mapName: 'Ferrous'
   mapPath: /Maps/_CD/ferrous.yml
-  minPlayers: 20
+  minPlayers: 15
+  maxPlayers: 35
   stations:
     Ferrous:
       stationProto: StandardNanotrasenStation
@@ -15,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #High Command
             Captain: [ 1, 1 ]

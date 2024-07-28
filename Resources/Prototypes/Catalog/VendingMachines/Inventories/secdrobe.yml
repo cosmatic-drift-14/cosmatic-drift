@@ -15,13 +15,13 @@
     ClothingUniformJumpsuitSecGrey: 3
     ClothingUniformJumpskirtSecGrey: 3
     ClothingUniformJumpsuitSecBlue: 3
+    ClothingUniformSecurtyCasual: 3 # CD
+    ClothingUniformJumpskirtSecurtyCasual: 3 # CD
     ClothingHeadsetSecurity: 3
     ClothingOuterWinterSec: 2
     ClothingOuterArmorBasic: 2
     ClothingNeckScarfStripedRed: 3
-    ClothingOuterArmorBasicSlim: 2 
+    ClothingOuterArmorBasicSlim: 2
     ClothingEyesBlindfold: 1
     ClothingShoesBootsCombat: 1
     ClothingShoesBootsWinterSec: 2
-    ClothingShoesBootsCowboyBlack: 1
-    ClothingHeadHatCowboyBlack: 1

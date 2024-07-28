@@ -69,16 +69,23 @@
   itemSize: 5
 
 - type: stack
-  id: FloorTileReinforced
-  name: reinforced tile
-  spawn: FloorTileItemReinforced
+  id: FloorTileMono
+  name: mono tile
+  spawn: FloorTileItemMono
   maxCount: 30
   itemSize: 5
 
 - type: stack
-  id: FloorTileMono
-  name: mono tile
-  spawn: FloorTileItemMono
+  id: FloorTileBrassFilled
+  name: filled brass plate
+  spawn: FloorTileItemBrassFilled
+  maxCount: 30
+  itemSize: 5
+  
+- type: stack
+  id: FloorTileBrassReebe
+  name: smooth brass plate
+  spawn: FloorTileItemBrassReebe
   maxCount: 30
   itemSize: 5
 
@@ -462,9 +469,30 @@
   itemSize: 5
 
 - type: stack
+  id: FloorTileMowedAstroGrass
+  name: mowed astro-grass floor
+  spawn: FloorTileItemMowedAstroGrass
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileJungleAstroGrass
+  name: jungle astro-grass floor
+  spawn: FloorTileItemJungleAstroGrass
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
   id: FloorTileAstroIce
   name: astro-ice floor
   spawn: FloorTileItemAstroIce
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileAstroSnow
+  name: astro-snow floor
+  spawn: FloorTileItemAstroSnow
   maxCount: 30
   itemSize: 5
 

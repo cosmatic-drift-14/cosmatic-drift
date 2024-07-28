@@ -5,4 +5,5 @@
   noSpawn: true
   components:
   - type: Item
+    size: 9999 # no storage insertion visuals (CD: irrelevant lmao)
   - type: VirtualItem

@@ -57,8 +57,8 @@
         - Spellbook
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: InteractionOutline
   - type: ContainerContainer
     containers:
@@ -66,3 +66,4 @@
   - type: Construction
     graph: Bookshelf
     node: bookshelf
+  - type: BlockWeather

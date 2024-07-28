@@ -2,8 +2,8 @@
   id: Atlas
   mapName: Atlas
   mapPath: /Maps/atlas.yml
-  minPlayers: 5
-  maxPlayers: 20
+  minPlayers: 0 #CD change
+  maxPlayers: 15 #CD change
   stations:
     Atlas:
       stationProto: StandardNanotrasenStation
@@ -14,8 +14,6 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'R4' # R4407/Goon. GS isn't as cool sounding.
         - type: StationJobs
-          overflowJobs:
-          - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]

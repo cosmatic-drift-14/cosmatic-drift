@@ -2,8 +2,8 @@
   id: Omega
   mapName: 'Omega'
   mapPath: /Maps/omega.yml
-  minPlayers: 10
-  maxPlayers: 35
+  minPlayers: 5 #CD change
+  maxPlayers: 25 #CD change
   stations:
     Omega:
       stationProto: StandardNanotrasenStation
@@ -16,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]

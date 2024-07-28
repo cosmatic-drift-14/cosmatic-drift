@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockQuickThreads
+  name: QuickThreads restock box
+  description: A box full of a ton of surplus clothing goods. Use this to restock a QuickThreads vending machine.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - QuickThreadsInventory
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Service/vending_machine_restock.rsi
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_threads

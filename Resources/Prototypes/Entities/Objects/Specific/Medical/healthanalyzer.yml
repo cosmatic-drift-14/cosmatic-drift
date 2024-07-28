@@ -15,11 +15,12 @@
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
   - type: ActivatableUI
     key: enum.HealthAnalyzerUiKey.Key
-    closeOnHandDeselect: false
   - type: UserInterface
     interfaces:
-      - key: enum.HealthAnalyzerUiKey.Key
+      enum.HealthAnalyzerUiKey.Key:
         type: HealthAnalyzerBoundUserInterface
+  - type: ItemToggle
+    onUse: false
   - type: HealthAnalyzer
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"

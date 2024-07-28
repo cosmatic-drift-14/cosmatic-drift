@@ -221,7 +221,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
 
         var coords = args.Coordinates;
 
-        if (!_actionsSystem.ValidateWorldTarget(user, coords, action))
+        if (!_actionsSystem.ValidateWorldTarget(user, coords, (actionId, action)))
         {
             // Invalid target.
             if (action.DeselectOnMiss)
@@ -236,6 +236,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             {
                 action.Event.Target = coords;
                 action.Event.Performer = user;
+                action.Event.Action = actionId;
             }
 
             _actionsSystem.PerformAction(user, actionComp, actionId, action, action.Event, _timing.CurTime);
@@ -256,7 +257,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
 
         var entity = args.EntityUid;
 
-        if (!_actionsSystem.ValidateEntityTarget(user, entity, action))
+        if (!_actionsSystem.ValidateEntityTarget(user, entity, (actionId, action)))
         {
             if (action.DeselectOnMiss)
                 StopTargeting();
@@ -270,6 +271,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             {
                 action.Event.Target = entity;
                 action.Event.Performer = user;
+                action.Event.Action = actionId;
             }
 
             _actionsSystem.PerformAction(user, actionComp, actionId, action, action.Event, _timing.CurTime);

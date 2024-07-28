@@ -1,0 +1,41 @@
+- type: marking
+  id: SyntheticScreen
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Human]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _CD/Mobs/Customization/synthetic.rsi
+    state: synthetic_screen
+
+- type: marking
+  id: SyntheticAntennaLeft
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Human]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _CD/Mobs/Customization/synthetic.rsi
+    state: synthetic_antenna_left
+
+- type: marking
+  id: SyntheticAntennaRight
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Human]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _CD/Mobs/Customization/synthetic.rsi
+    state: synthetic_antenna_right

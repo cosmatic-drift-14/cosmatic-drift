@@ -41,7 +41,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     private void OnKeySelect(EntityUid entity, CharacterRecordConsoleComponent console,
         CharacterRecordConsoleSelectMsg msg)
     {
-        console.SelectedIndex = msg.Index;
+        console.SelectedIndex = msg.CharacterRecordKey;
         UpdateUi(entity, console);
     }
 
@@ -60,28 +60,24 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
         var characterRecords = _characterRecords.QueryRecords(station.Value);
         // Get the name and station records key display from the list of records
-        var names = new Dictionary<uint, (string, uint?)>();
+        var names = new Dictionary<uint, CharacterRecordConsoleState.CharacterInfo>();
         foreach (var (i, r) in characterRecords)
         {
+            var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
+            // Admins get additional info to make it easier to run commands
+            var nameJob = console.ConsoleType != RecordConsoleType.Admin ? $"{r.Name} ({r.JobTitle})" : $"{r.Name} ({netEnt}, {r.JobTitle}";
+
             // Apply any filter the user has set
             if (console.Filter != null)
             {
-                if (IsSkippedRecord(console.Filter, r))
+                if (IsSkippedRecord(console.Filter, r, nameJob))
                     continue;
             }
 
             if (names.ContainsKey(i))
                 Log.Error($"We somehow have duplicate character record keys, NetEntity: {i}, Entity: {entity}, Character Name: {r.Name}");
-            if (console.ConsoleType == RecordConsoleType.Admin)
-            {
-                var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
-                // Admins get additional info to make it easier to run commands
-                names[i] = ($"{r.Name} ({netEnt}, {r.JobTitle}", r.StationRecordsKey);
-            }
-            else
-            {
-                names[i] = ($"{r.Name} ({r.JobTitle})", r.StationRecordsKey);
-            }
+
+            names[i] = new CharacterRecordConsoleState.CharacterInfo() { CharacterDisplayName = nameJob, StationRecordKey = r.StationRecordsKey };
         }
 
         var record =
@@ -106,7 +102,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             new CharacterRecordConsoleState
             {
                 ConsoleType = console.ConsoleType,
-                RecordListing = names,
+                CharacterList = names,
                 SelectedIndex = console.SelectedIndex,
                 SelectedRecord = record,
                 Filter = console.Filter,
@@ -116,14 +112,14 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
     private void SendState(EntityUid entity, CharacterRecordConsoleState state)
     {
-        _userInterface.TrySetUiState(entity, CharacterRecordConsoleKey.Key, state);
+        _userInterface.SetUiState(entity, CharacterRecordConsoleKey.Key, state);
     }
 
     /// <summary>
     /// Almost exactly the same as <see cref="StationRecordsSystem.IsSkipped"/>
     /// </summary>
     private static bool IsSkippedRecord(StationRecordsFilter filter,
-        FullCharacterRecords record)
+        FullCharacterRecords record, string nameJob)
     {
         bool isFilter = filter.Value.Length > 0;
 
@@ -135,7 +131,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         return filter.Type switch
         {
             StationRecordFilterType.Name =>
-                !record.Name.ToLower().Contains(filterLowerCaseValue),
+                !nameJob.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Prints => record.Fingerprint != null
                 && IsFilterWithSomeCodeValue(record.Fingerprint, filterLowerCaseValue),
             StationRecordFilterType.DNA => record.DNA != null

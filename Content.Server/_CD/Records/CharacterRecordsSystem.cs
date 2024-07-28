@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
 using Content.Server.StationRecords;
@@ -7,7 +8,6 @@ using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;
@@ -16,12 +16,19 @@ public sealed class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
+
+    [ValidatePrototypeId<JobPrototype>]
+    private static readonly string[] SkippedJobIds =
+    [
+        "Borg"
+    ];
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: new []{ typeof(StationRecordsSystem) });
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(StationRecordsSystem)]);
     }
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
@@ -34,9 +41,21 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!HasComp<CharacterRecordsComponent>(args.Station))
             AddComp<CharacterRecordsComponent>(args.Station);
 
-        var profile = args.Profile;
-        if (profile.CDCharacterRecords == null || string.IsNullOrEmpty(args.JobId))
+        if (string.IsNullOrEmpty(args.JobId))
+        {
+            Log.Error($"Null JobId in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}");
             return;
+        }
+
+        if (SkippedJobIds.Contains(args.JobId))
+            return;
+
+        var profile = args.Profile;
+        if (profile.CDCharacterRecords == null)
+        {
+            Log.Error($"Null records in CharacterRecordsSystem::OnPlayerSpawn for character {args.Profile.Name} played by {args.Player.Name}.");
+            return;
+        }
 
         var player = args.Mob;
 
@@ -48,13 +67,22 @@ public sealed class CharacterRecordsSystem : EntitySystem
         TryComp<FingerprintComponent>(player, out var fingerprintComponent);
         TryComp<DnaComponent>(player, out var dnaComponent);
 
+        var jobTitle = jobPrototype.LocalizedName;
+        var stationRecordsKey = FindStationRecordsKey(player);
+
+        // Grab the title from the station records if they exist to support our job title system
+        if (stationRecordsKey != null && _stationRecords.TryGetRecord<GeneralStationRecord>(stationRecordsKey.Value, out var stationRecords))
+        {
+            jobTitle = stationRecords.JobTitle;
+        }
+
         var records = new FullCharacterRecords(
-            characterRecords: new CharacterRecords(profile.CDCharacterRecords),
-            stationRecordsKey: FindStationRecordsKey(player),
+            pRecords: new PlayerProvidedCharacterRecords(profile.CDCharacterRecords),
+            stationRecordsKey: stationRecordsKey?.Id,
             name: profile.Name,
             age: profile.Age,
             species: profile.Species,
-            jobTitle: jobPrototype.LocalizedName,
+            jobTitle: jobTitle,
             jobIcon: jobPrototype.Icon,
             gender: profile.Gender,
             sex: profile.Sex,
@@ -64,7 +92,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         AddRecord(args.Station, args.Mob, records);
     }
 
-    private uint? FindStationRecordsKey(EntityUid uid)
+    private StationRecordKey? FindStationRecordsKey(EntityUid uid)
     {
         if (!_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
             return null;
@@ -80,7 +108,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
             return null;
         }
 
-        return storage.Key?.Id;
+        return storage.Key;
     }
 
     private void AddRecord(EntityUid station, EntityUid player, FullCharacterRecords records, CharacterRecordsComponent? recordsDb = null)
@@ -110,7 +138,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!recordsDb.Records.ContainsKey(key.Key.Index))
             return;
 
-        var cr = recordsDb.Records[key.Key.Index].CharacterRecords;
+        var cr = recordsDb.Records[key.Key.Index].PRecords;
 
         switch (ty)
         {
@@ -140,8 +168,8 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!recordsDb.Records.ContainsKey(key.Key.Index))
             return;
 
-        var records = CharacterRecords.DefaultRecords();
-        recordsDb.Records[key.Key.Index].CharacterRecords = records;
+        var records = PlayerProvidedCharacterRecords.DefaultRecords();
+        recordsDb.Records[key.Key.Index].PRecords = records;
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
@@ -167,10 +195,4 @@ public sealed class CharacterRecordsSystem : EntitySystem
     }
 }
 
-public sealed class CharacterRecordsModifiedEvent : EntityEventArgs
-{
-
-    public CharacterRecordsModifiedEvent()
-    {
-    }
-}
+public sealed class CharacterRecordsModifiedEvent : EntityEventArgs;

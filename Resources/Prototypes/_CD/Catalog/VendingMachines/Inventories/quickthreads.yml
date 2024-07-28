@@ -17,6 +17,7 @@
     ClothingUniformJumpsuitLibrarian: 2
     ClothingUniformJumpsuitDetectiveGrey: 2
     ClothingUniformJumpsuitSafari: 2
+    ClothingUniformJumpsuitDefaultSynth: 5
     ClothingUniformJumpskirtBartender: 2
     ClothingUniformJumpskirtLawyerBlack: 2
     ClothingUniformJumpskirtChef: 2
@@ -36,9 +37,17 @@
     ClothingOuterCoatBomber: 2
     ClothingOuterCoatGentle: 2
     ClothingOuterHoodieGrey: 2
-    ClothingOuterCoatInspector: 2
+    ClothingOuterCoatDetectiveLoadout: 2
     ClothingOuterCoatJensen: 3
     ClothingOuterCoatCowboyDuster: 2
+    ClothingOuterCoatMilitaryCoat: 2
+    ClothingOuterCoatHarmony: 2
+    ClothingOuterCoatEuropanVet: 2
+    ClothingOuterCoatEuropanCoalition: 2
+    ClothingOuterCoatEuropanSeparatist: 2
+    ClothingOuterCoatYellowHiVis: 3
+    ClothingOuterCoatOrangeHiVis: 3
+    ClothingOuterCoatBlueHiVis: 3
     ClothingBeltHalfApron: 2
     ClothingOuterVest: 2
     ClothingShoesChef: 2
@@ -50,10 +59,14 @@
     ClothingShoesBootsWork: 3
     ClothingShoesLuxuryHeelBoots: 3
     ClothingHeadHatFedoraBrown: 2
-    ClothingHeadHatFlowerCrown: 2
+    ClothingHeadHatFlowerWreath: 2
     ClothingHeadHatFedoraGrey: 2
     ClothingHeadHatBoaterhat: 2
     ClothingHeadSafari: 2
+    ClothingHeadHatAnimalHeadslime: 2
+    ClothingHeadHatAnimalHeadslimeYellow: 2
+    ClothingHeadHatAnimalHeadslimePurple: 2
+    ClothingHeadHatAnimalHeadslimeLightgreen: 2
     ClothingEyesBlindfold: 3
     ClothingEyesEyepatch: 3
     ClothingEyesGlassesJamjar: 2
@@ -62,6 +75,8 @@
     ClothingHandsGlovesColorWhite: 2
     ClothingNeckTieDet: 2
     ClothingNeckTieRed: 2
+    ClothingNeckCloakWinterOrange: 2
+    ClothingNeckCloakIlluminated: 2
     ClothingEyesGlassesSunglasses: 2
     ClothingEyesGlassesAviator: 4
     BoxPridePins: 2

@@ -3,6 +3,9 @@
   name: job-name-salvagespec
   description: job-description-salvagespec
   playTimeTracker: JobSalvageSpecialist
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm
@@ -16,9 +19,8 @@
   id: SalvageSpecialistGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
-    back: ClothingBackpackSalvageFilled
-    shoes: ClothingShoesBootsSalvage
     id: SalvagePDA
     ears: ClothingHeadsetCargo
-  satchel: ClothingBackpackSatchelSalvageFilled
-  duffelbag: ClothingBackpackDuffelSalvageFilled
+  #storage:
+    #back:
+    #- Stuff

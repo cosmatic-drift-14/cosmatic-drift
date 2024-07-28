@@ -9,3 +9,146 @@
     sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
+
+# Military Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatMilitaryCoat
+  name: military jacket
+  description: A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
+
+# Harmony Jacket
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHarmony
+  name: harmony jacket
+  description: A black leather coat designed by the small Harmony company.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
+
+# Europan Coats
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCoatEuropanVet
+  name: europan jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+
+- type: entity
+  parent: ClothingOuterCoatEuropanVet
+  id: ClothingOuterCoatEuropanCoalition
+  name: coalition jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Coalition patch on the shoulders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+
+- type: entity
+  parent: ClothingOuterCoatEuropanVet
+  id: ClothingOuterCoatEuropanSeparatist
+  name: separatist jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Separatist patch on the shoulders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
+
+# Cargo Gorka
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatCargoBomber
+  name: cargo gorka
+  description: A heavy canvas gorka for cold shifts in Cargo.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  id: ClothingOuterCoatCargoBomberOpened
+  name: cargo gorka
+
+# CentCom Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentcomOfficer
+  name: CentCom officer's coat
+  description: A comfortable green coat worn by CentCom officers. The armour has been removed in favour of more pocket space.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+
+# High-Vis jackets
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatYellowHiVis
+  name: emergency jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatYellowHiVis]
+  id: ClothingOuterCoatYellowHiVisOpened
+  name: emergency jacket
+
+- type: entity
+  parent: ClothingOuterCoatYellowHiVis
+  id: ClothingOuterCoatOrangeHiVis
+  name: hazard jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon orange.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatOrangeHiVis]
+  id: ClothingOuterCoatOrangeHiVisOpened
+  name: hazard jacket
+
+- type: entity
+  parent: ClothingOuterCoatYellowHiVis
+  id: ClothingOuterCoatBlueHiVis
+  name: EMT jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon blue.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
+  id: ClothingOuterCoatBlueHiVisOpened
+  name: EMT jacket

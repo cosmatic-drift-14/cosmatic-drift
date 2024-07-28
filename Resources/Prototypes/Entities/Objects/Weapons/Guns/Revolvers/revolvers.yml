@@ -125,12 +125,10 @@
       params:
         volume: 2.25
 
-- type: entity 
-  name: Python
+- type: entity
   parent: WeaponRevolverPython
   id: WeaponRevolverPythonAP # For the uplink.
   suffix: armor-piercing
-  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
   components:
   - type: RevolverAmmoProvider
     whitelist:

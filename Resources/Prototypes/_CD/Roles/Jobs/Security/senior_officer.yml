@@ -5,7 +5,7 @@
   playTimeTracker: JobSeniorOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 7200 #2 hrs
+      time: 10800 #3 hrs
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"
   supervisors: job-supervisors-hos
@@ -23,16 +23,10 @@
 - type: startingGear
   id: SeniorOfficerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
-    back: ClothingBackpackSecurityFilled
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSunglasses
-    head: ClothingHeadHatBeretSecurity
-    outerClothing: ClothingOuterArmorBasic
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58Nonlethal
-  innerClothingSkirt: ClothingUniformJumpskirtSeniorOfficer
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled
+    pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - Flash
+    - MagazinePistol

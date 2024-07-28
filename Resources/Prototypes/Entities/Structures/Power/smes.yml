@@ -32,7 +32,7 @@
     - type: Appearance
     - type: Battery
       startingCharge: 0
-      maxCharge: 8000000
+      maxCharge: 16000000 # CD: Buffed from 8MW
     - type: ExaminableBattery
     - type: NodeContainer
       examinable: true
@@ -67,9 +67,6 @@
       color: "#c9c042"
       castShadows: false
     - type: WiresPanel
-    - type: Wires
-      boardName: wires-board-name-smes
-      layoutId: SMES
     - type: Machine
       board: SMESMachineCircuitboard
     - type: StationInfiniteBatteryTarget
@@ -98,11 +95,11 @@
 - type: entity
   parent: BaseSMES
   id: SMESBasic
-  suffix: Basic, 8MW
+  suffix: Basic, 16MJ # CD: Buffed from 8 MJ
   components:
   - type: Battery
-    maxCharge: 8000000
-    startingCharge: 8000000
+    maxCharge: 16000000
+    startingCharge: 16000000
 
 - type: entity
   parent: SMESBasic

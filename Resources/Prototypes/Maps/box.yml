@@ -2,7 +2,7 @@
   id: Box
   mapName: 'Box Station'
   mapPath: /Maps/box.yml
-  minPlayers: 50
+  minPlayers: 35 #CD
   stations:
     Boxstation:
       stationProto: StandardNanotrasenStation
@@ -15,8 +15,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -36,9 +34,9 @@
             TechnicalAssistant: [ 4, 4 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
             SeniorPhysician: [ 1, 1 ] #CD Role
-            Chemist: [ 2, 3 ]
-            MedicalDoctor: [ 3, 3 ]
+            MedicalDoctor: [ 4, 4 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 4, 4 ]
             Psychologist: [ 1, 1 ]

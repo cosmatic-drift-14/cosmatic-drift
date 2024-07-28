@@ -1,7 +1,10 @@
-﻿using Content.Client.Animations;
+using System.Linq;
+using System.Numerics;
+using Content.Client.Animations;
 using Content.Shared.Hands;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
+using Robust.Shared.Collections;
 using Robust.Shared.Map;
 using Robust.Shared.Timing;
 
@@ -23,12 +26,6 @@ public sealed class StorageSystem : SharedStorageSystem
         SubscribeNetworkEvent<AnimateInsertingEntitiesEvent>(HandleAnimatingInsertingEntities);
     }
 
-    public override void UpdateUI(EntityUid uid, StorageComponent component)
-    {
-        // Should we wrap this in some prediction call maybe?
-        StorageUpdated?.Invoke(uid, component);
-    }
-
     /// <inheritdoc />
     public override void PlayPickupAnimation(EntityUid uid, EntityCoordinates initialCoordinates, EntityCoordinates finalCoordinates,
         Angle initialRotation, EntityUid? user = null)
@@ -48,17 +45,25 @@ public sealed class StorageSystem : SharedStorageSystem
     {
         if (!_timing.IsFirstTimePredicted)
             return;
-
-        if (finalCoords.InRange(EntityManager, _transform, initialCoords, 0.1f) ||
+        
+        if (TransformSystem.InRange(finalCoords, initialCoords, 0.1f) ||
             !Exists(initialCoords.EntityId) || !Exists(finalCoords.EntityId))
         {
             return;
         }
 
-        var finalMapPos = finalCoords.ToMapPos(EntityManager, _transform);
-        var finalPos = _transform.GetInvWorldMatrix(initialCoords.EntityId).Transform(finalMapPos);
+        var finalMapPos = TransformSystem.ToMapCoordinates(finalCoords).Position;
+        var finalPos = Vector2.Transform(finalMapPos, TransformSystem.GetInvWorldMatrix(initialCoords.EntityId));
 
         _entityPickupAnimation.AnimateEntityPickup(item, initialCoords, finalPos, initialAngle);
+    }
+
+    public override void UpdateUI(Entity<StorageComponent?> entity)
+    {
+        if (entity.Comp == null)
+            return;
+
+        StorageUpdated?.Invoke(entity.Owner, entity.Comp);
     }
 
     /// <summary>

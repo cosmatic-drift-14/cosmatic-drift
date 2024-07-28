@@ -1,0 +1,23 @@
+- type: entity
+  abstract: true
+  parent: EncryptionKey
+  id: CosmaticEncryptionKey
+  components:
+  - type: Item
+    sprite: _CD/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _CD/Objects/Devices/encryption_keys.rsi
+
+- type: entity
+  parent: CosmaticEncryptionKey
+  id: EncryptionKeyHailing
+  name: high power transponder
+  description: A transponder that can be inserted into a headset to enable unencrypted high-powered broadcasts for ship-to-ship communication.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Hailing
+  - type: Sprite
+    layers:
+    - state: crypt_blue
+    - state: hailing_label

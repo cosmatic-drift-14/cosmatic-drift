@@ -84,3 +84,56 @@
     accentVColor: "#DFDFDF"
   - type: Icon
     state: pda-seniorofficer
+
+# Alternate Titles
+- type: entity
+  id: RoboticistPDA
+  parent: BasePDA
+  name: roboticist PDA
+  description: There are exposed wires and damaged "warranty void if removed" stickers.
+  components:
+    - type: Pda
+      id: ResearchIDCard
+      state: pda-roboticist
+    - type: PdaBorderColor
+      borderColor: "#f4f4f4"
+      accentVColor: "#730402"
+    - type: Icon
+      state: pda-roboticist
+    - type: RenameId
+      value: cd-job-title-roboticist
+
+- type: entity
+  id: OffDutyPDA
+  parent: BasePDA
+  name: off-duty staff PDA
+  description: Does that count as grey?
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _CD/Objects/Devices/pda.rsi
+    state: pda-offduty
+  - type: Pda
+    id: PassengerIDCard
+    state: pda-offduty
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#3a3a3a"
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+    - Belt
+  - type: RenameId
+    value: cd-job-title-offduty

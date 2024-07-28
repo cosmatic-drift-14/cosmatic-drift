@@ -18,6 +18,7 @@
   - Maintenance
   - Command
   - Brig
+  - Cryogenics
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -28,14 +29,10 @@
 - type: startingGear
   id: QuartermasterGear
   equipment:
-    head: ClothingHeadHatQMsoft
-    jumpsuit: ClothingUniformJumpsuitQM
-    back: ClothingBackpackQuartermasterFilled
-    shoes: ClothingShoesColorBrown
     id: QuartermasterPDA
     ears: ClothingHeadsetQM
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
-  innerClothingSkirt: ClothingUniformJumpskirtQM
-  satchel: ClothingBackpackSatchelQuartermasterFilled
-  duffelbag: ClothingBackpackDuffelQuartermasterFilled
+  storage:
+    back:
+    - Flash
