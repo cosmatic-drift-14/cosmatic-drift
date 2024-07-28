@@ -102,7 +102,7 @@
       - !type:AppearanceChange
       entity: ComputerTabletopFrame
       edges:
-        - to: computer
+        - to: tabletopcomputer
           conditions:
             - !type:EntityAnchored {}
           steps:
