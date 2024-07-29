@@ -35,7 +35,7 @@
         - Impassable
         - LowImpassable
         layer:
-        - MachineLayer
+        - MachineLayer #This may cause issues with constructing on tables relyably. We'll have to decide if its worth dealing with.
   - type: Construction
     graph: tabletopComputer
     node: frameUnsecured
@@ -105,6 +105,9 @@
           missingWires: { state: 2 }
           monitorMissing: { state: 3 }
           monitorUnsecured: { state: 4 }
+  - type: Construction
+    graph: tabletopComputer
+    node: tabletopframeUnsecured
 
 # Base Computer
 - type: entity
