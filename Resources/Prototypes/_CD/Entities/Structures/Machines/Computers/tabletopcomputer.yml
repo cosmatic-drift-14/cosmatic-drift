@@ -100,11 +100,11 @@
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          frameUnsecured: { state: 0 }
-          boardUnsecured: { state: 1 }
-          missingWires: { state: 2 }
-          monitorMissing: { state: 3 }
-          monitorUnsecured: { state: 4 }
+          tabletopframeUnsecured: { state: 0 }
+          tabletopboardUnsecured: { state: 1 }
+          tabletopmissingWires: { state: 2 }
+          tabletopmonitorMissing: { state: 3 }
+          tabletopmonitorUnsecured: { state: 4 }
   - type: Construction
     graph: tabletopComputer
     node: tabletopframeUnsecured
