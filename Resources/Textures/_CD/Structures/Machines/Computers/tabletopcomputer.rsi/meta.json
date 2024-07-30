@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from ss14 at:https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/computers.rsi, Altered by ErhardSteinhauer (github) in:https://github.com/new-frontiers-14/frontier-station-14/pull/854",
+  "copyright": "Taken from ss14 at:https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/computers.rsi (The computer and broken were last edited by: https://github.com/space-wizards/space-station-14/pull/4252, and the generic keyboard was last altered in: https://github.com/space-wizards/space-station-14/pull/13289), Altered by ErhardSteinhauer (github) in:https://github.com/new-frontiers-14/frontier-station-14/pull/854",
   "size": {
     "x": 32,
     "y": 32

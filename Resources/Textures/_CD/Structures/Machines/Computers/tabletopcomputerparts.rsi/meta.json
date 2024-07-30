@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/parts.rsi altered to match the tabletop computers by PursuitinAshes (github)",
+  "copyright": "Taken from https://github.com/space-wizards/space-station-14/tree/master/Resources/Textures/Structures/Machines/parts.rsi (Versions of states 1-4 were last altered in: https://github.com/space-wizards/space-station-14/pull/17744 and state 0 was last altered in: https://github.com/space-wizards/space-station-14/pull/4252)altered to match the tabletop computers by PursuitinAshes (github)",
   "size": {
     "x": 32,
     "y": 32
