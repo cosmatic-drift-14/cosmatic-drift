@@ -1469,7 +1469,7 @@
   description: A fragile crystal plant with lot of spiky thorns. 
   components:
   - type: Item
-    size: Small
+    size: 5
     sprite: Objects/Specific/Hydroponics/glasstle.rsi
     heldPrefix: produce  
   - type: FlavorProfile

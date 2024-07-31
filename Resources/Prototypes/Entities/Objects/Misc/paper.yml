@@ -610,7 +610,7 @@
       enum.PaperUiKey.Key:
         type: PaperBoundUserInterface
   - type: Item
-    size: Tiny
+    size: 1
   - type: Tag
     tags:
     - Trash
