@@ -15,6 +15,8 @@ using Content.Shared.Nutrition.EntitySystems;
 
 namespace Content.Server.Paint;
 
+// TODO: This file does not exist upstream and should be namespaced
+
 /// <summary>
 /// Colors target and consumes reagent on each color success.
 /// </summary>
@@ -68,10 +70,12 @@ public sealed class PaintSystem : SharedPaintSystem
         };
         args.Verbs.Add(verb);
     }
-    private void PrepPaint(EntityUid uid, PaintComponent component, EntityUid target, EntityUid user)
+    private void PrepPaint(EntityUid can, PaintComponent comp, EntityUid target, EntityUid user)
     {
+        if (!CanPaintEntity(new Entity<PaintComponent>(can, comp), target, user))
+            return;
 
-        var doAfterEventArgs = new DoAfterArgs(EntityManager, user, component.Delay, new PaintDoAfterEvent(), uid, target: target, used: uid)
+        var doAfterEventArgs = new DoAfterArgs(EntityManager, user, comp.Delay, new PaintDoAfterEvent(), can, target: target, used: can)
         {
             BreakOnMove = true,
             NeedHand = true,
@@ -79,6 +83,29 @@ public sealed class PaintSystem : SharedPaintSystem
         };
 
         _doAfterSystem.TryStartDoAfter(doAfterEventArgs);
+    }
+
+    private bool CanPaintEntity(Entity<PaintComponent> can, EntityUid target, EntityUid user)
+    {
+        if (!_openable.IsOpen(target))
+        {
+            _popup.PopupEntity(Loc.GetString("paint-closed", ("used", can)), user, user, PopupType.Medium);
+            return false;
+        }
+
+        if (HasComp<PaintedComponent>(target) || HasComp<RandomSpriteComponent>(target))
+        {
+            _popup.PopupEntity(Loc.GetString("paint-failure-painted", ("target", target)), user, user, PopupType.Medium);
+            return false;
+        }
+
+        if (_whitelistSystem.IsWhitelistPass(can.Comp.Blacklist, target) || HasComp<HumanoidAppearanceComponent>(target) || HasComp<SubFloorHideComponent>(target))
+        {
+            _popup.PopupEntity(Loc.GetString("paint-failure", ("target", target)), user, user, PopupType.Medium);
+            return false;
+        }
+
+        return true;
     }
 
     private void OnPaint(Entity<PaintComponent> entity, ref PaintDoAfterEvent args)
@@ -92,23 +119,8 @@ public sealed class PaintSystem : SharedPaintSystem
         if (args.Target is not { Valid: true } target)
             return;
 
-        if (!_openable.IsOpen(entity))
-        {
-            _popup.PopupEntity(Loc.GetString("paint-closed", ("used", args.Used)), args.User, args.User, PopupType.Medium);
+        if (!CanPaintEntity(entity, args.Target.Value, args.User))
             return;
-        }
-
-        if (HasComp<PaintedComponent>(target) || HasComp<RandomSpriteComponent>(target))
-        {
-            _popup.PopupEntity(Loc.GetString("paint-failure-painted", ("target", args.Target)), args.User, args.User, PopupType.Medium);
-            return;
-        }
-
-        if (_whitelistSystem.IsWhitelistFail(entity.Comp.Blacklist, target) || HasComp<HumanoidAppearanceComponent>(target) || HasComp<SubFloorHideComponent>(target))
-        {
-            _popup.PopupEntity(Loc.GetString("paint-failure", ("target", args.Target)), args.User, args.User, PopupType.Medium);
-            return;
-        }
 
         if (TryPaint(entity, target))
         {
@@ -128,7 +140,7 @@ public sealed class PaintSystem : SharedPaintSystem
                         if (!_inventory.TryGetSlotEntity(target, slot.Name, out var slotEnt))
                             continue;
 
-                        if (HasComp<PaintedComponent>(slotEnt.Value) || _whitelistSystem.IsWhitelistFail(entity.Comp.Blacklist, slotEnt.Value)
+                        if (HasComp<PaintedComponent>(slotEnt.Value) || _whitelistSystem.IsWhitelistPass(entity.Comp.Blacklist, slotEnt.Value)
                                                                      || HasComp<RandomSpriteComponent>(slotEnt.Value) ||
                                                                      HasComp<HumanoidAppearanceComponent>(
                                                                          slotEnt.Value))
