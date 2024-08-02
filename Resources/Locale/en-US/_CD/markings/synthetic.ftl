@@ -6,3 +6,12 @@ marking-SyntheticAntennaLeft-synthtic_antenna_left = Antenna
 
 marking-SyntheticAntennaRight = Synthetic Antenna (Right)
 marking-SyntheticAntennaRight-synthtic_antenna_right = Antenna
+
+marking-LizardTailSynth = Lizard Tail (Synth-Lizard)
+marking-LizardTailSynth-tail_synthliz
+
+marking-LizardSnoutSynth = Synth-Lizard Faceplate
+marking-LizardSnoutSynth-
+marking-LizardSnoutSynth-
+marking-LizardSnoutSynth-
+marking-LizardSnoutSynth-
