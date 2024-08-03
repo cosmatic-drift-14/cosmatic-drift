@@ -67,7 +67,7 @@
 - type: entity
   parent: ClothingOuterCoatEuropanVet
   id: ClothingOuterCoatEuropanSeparatist
-  name: independance jacket
+  name: independence jacket
   description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a raised fist.
   components:
   - type: Sprite
