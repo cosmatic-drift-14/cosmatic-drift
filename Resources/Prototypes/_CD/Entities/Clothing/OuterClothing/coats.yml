@@ -57,7 +57,7 @@
   parent: ClothingOuterCoatEuropanVet
   id: ClothingOuterCoatEuropanCoalition
   name: nautical jacket
-  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a blue compass mounted atop a gear.
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a navigator's compass.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
@@ -67,8 +67,8 @@
 - type: entity
   parent: ClothingOuterCoatEuropanVet
   id: ClothingOuterCoatEuropanSeparatist
-  name: determined jacket
-  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is an orange raisedfist inside of an inverted triangle.
+  name: independance jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a raised fist.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
