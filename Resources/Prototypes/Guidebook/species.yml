@@ -11,8 +11,8 @@
     - Reptilian
     - SlimePerson
     - Vox
-    - Avali #CD Species - Thse can both be probably name spaced out of this file.
-    - Vulpkanin #CD Species - in ServerInfo/Guidebook/Mobs/Species.xml there are both cd species. I can't markdown in there and should probably move those
+    - Avali #CD Species
+    - Vulpkanin #CD Species
 
 - type: guideEntry
   id: Arachnid
