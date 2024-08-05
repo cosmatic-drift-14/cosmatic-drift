@@ -139674,13 +139674,6 @@ entities:
     - type: Transform
       pos: -6.5865464,1.3825479
       parent: 2
-- proto: RubberStampSyndicate
-  entities:
-  - uid: 21475
-    components:
-    - type: Transform
-      pos: -63.2649,-19.79454
-      parent: 2
 - proto: SalvageMagnet
   entities:
   - uid: 21476
