@@ -66,7 +66,7 @@ namespace Content.IntegrationTests.Tests
             "Oasis",
             "Ferrous", // CD Map
             "Aspid", // CD Map
-            "Gemini", // CD Map
+            "Gemini" // CD Map
         };
 
         /// <summary>
