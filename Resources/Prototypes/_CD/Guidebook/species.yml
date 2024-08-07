@@ -1,0 +1,9 @@
+- type: guideEntry
+  id: Avali
+  name: species-name-avali
+  text: "/ServerInfo/Guidebook/_CD/Mobs/Avali.xml"
+
+- type: guideEntry
+  id: Vulpkanin
+  name: species-name-vulpkanin
+  text: "/ServerInfo/Guidebook/_CD/Mobs/Vulpkanin.xml"
