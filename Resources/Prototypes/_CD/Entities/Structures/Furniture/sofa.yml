@@ -42,6 +42,8 @@
   components:
   - type: Transform
     anchored: true
+  - type: Physics
+    bodyType: Static
   - type: Rotatable
   - type: Sprite
     sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
