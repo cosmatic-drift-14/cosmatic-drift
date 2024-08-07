@@ -34,7 +34,6 @@
   - Prisoner # Custom role
   - PrivateInvestigator # Custom role
 
-# CD: Rebrand Command as High Command to fit our rules and remove non High Command roles
 - type: department
   id: Command
   description: department-Command-description
@@ -42,7 +41,12 @@
   roles:
   - Captain
   - CentralCommandOfficial
+  - ChiefEngineer
+  - ChiefMedicalOfficer
   - HeadOfPersonnel
+  - HeadOfSecurity
+  - ResearchDirector
+  - Quartermaster
   primary: false
   weight: 100
 
