@@ -810,6 +810,7 @@
   - type: GuideHelp
     guides:
     - CargoBounties
+    - Cargo
 
 - type: entity
   parent: BaseComputer
