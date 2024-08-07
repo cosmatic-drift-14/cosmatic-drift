@@ -91,6 +91,7 @@
   - type: GuideHelp
     guides:
     - Botany
+    - Chemicals
   - type: Tag
     tags:
       - NoPaint
