@@ -353,10 +353,11 @@
     guides:
     - Chemicals
 
+# CD: Link to our space law
 - type: entity
   id: BookSpaceLaw
   parent: BaseItem
-  name: space law
+  name: laws and regulations # CD: Name Change
   description: A set of Nanotrasen guidelines for keeping law and order on their space stations.
   components:
   - type: Sprite
@@ -373,7 +374,7 @@
   - type: GuideHelp
     openOnActivation: true
     guides:
-    - SpaceLaw
+    - CDICPolicy
   - type: MeleeWeapon # so you can beat stupid cadets
     soundHit:
       collection: Punch
