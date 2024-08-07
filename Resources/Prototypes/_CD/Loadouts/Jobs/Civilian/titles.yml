@@ -1,17 +1,9 @@
 - type: loadout
   id: PassengerPDA
-  equipment: PassengerPDA
-
-- type: startingGear
-  id: PassengerPDA
-  equipment:
+  equipment: 
     id: PassengerPDA
 
 - type: loadout
   id: OffDutyPDA
-  equipment: OffDutyPDA
-
-- type: startingGear
-  id: OffDutyPDA
-  equipment:
+  equipment: 
     id: OffDutyPDA
