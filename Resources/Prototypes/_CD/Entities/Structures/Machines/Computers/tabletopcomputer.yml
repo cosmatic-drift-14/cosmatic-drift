@@ -1,6 +1,6 @@
-# Base Computer, Mostly Used As Parent
+#Debug Tabletop Computer
 - type: entity
-  id: BaseStructureComputerTabletop
+  id: DebugTabletopComputer
   suffix: Tabletop
   abstract: true
   components:
@@ -34,14 +34,105 @@
         mask:
         - Impassable
         - LowImpassable
+        layer:
+        - MachineLayer #This may cause issues with constructing on tables relyably. We'll have to decide if its worth dealing with.
+  - type: Construction
+    graph: tabletopComputer
+    node: frameUnsecured
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: tabletopmonitorBroken
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 #        - TabletopMachineMask
 #        layer:
 #        - TabletopMachineLayer
 
-#Base Computers
+#Broken Tabletop Computer
+- type: entity
+  parent: [DebugTabletopComputer, ComputerBroken]
+  id: ComputerTabletopBroken
+  name: broken computer
+  description: This computer has seen better days.
+  components:
+  - type: Construction
+    graph: tabletopComputer
+    node: monitorBroken
+  - type: Sprite
+    sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+    drawdepth: SmallObjects
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: broken_tabletop
+    - map: ["computerLayerKeyboard"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: broken_tabletop
+    - map: ["computerLayerScreen"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: broken_tabletop
+    - map: ["computerLayerKeys"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: broken_tabletop
+
+#Computer Frame
+- type: entity
+  id: ComputerTabletopFrame
+  parent: [DebugTabletopComputer, BaseStructureComputer]
+  name: tabletop computer frame
+  description: A computer under construction.
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Machines/Computers/tabletopcomputerparts.rsi
+    layers:
+    - state: 0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          tabletopframeUnsecured: { state: 0 }
+          tabletopboardUnsecured: { state: 1 }
+          tabletopmissingWires: { state: 2 }
+          tabletopmonitorMissing: { state: 3 }
+          tabletopmonitorUnsecured: { state: 4 }
+  - type: Construction
+    graph: tabletopComputer
+    node: tabletopframeUnsecured
+
+# Base Computer
+- type: entity
+  id: BaseComputerTabletop
+  parent: [DebugTabletopComputer, BaseComputer]
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: computer_tabletop
+    - map: ["computerLayerKeyboard"]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: generic_keyboard_tabletop
+    - map: ["computerLayerScreen"]
+      sprite: Structures/Machines/computers.rsi
+      state: generic
+    - map: ["computerLayerKeys"]
+      sprite: Structures/Machines/computers.rsi
+      state: generic_keys
+
 #Medical Records
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerMedicalRecords]
+  parent: [DebugTabletopComputer, ComputerMedicalRecords]
   id: ComputerTabletopMedicalRecords
   components:
   - type: Sprite
@@ -61,7 +152,7 @@
 
 #Criminal Records
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerCriminalRecords]
+  parent: [DebugTabletopComputer, ComputerCriminalRecords]
   id: ComputerTabletopCriminalRecords
   components:
   - type: Sprite
@@ -81,7 +172,7 @@
 
 #Station Records
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerStationRecords]
+  parent: [DebugTabletopComputer, ComputerStationRecords]
   id: ComputerTabletopStationRecords
   components:
   - type: Sprite
@@ -101,7 +192,7 @@
 
 #Crew Monitoring
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerCrewMonitoring]
+  parent: [DebugTabletopComputer, ComputerCrewMonitoring]
   id: ComputerTabletopCrewMonitoring
   components:
   - type: Sprite
@@ -121,7 +212,7 @@
 
 #ID Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerId]
+  parent: [DebugTabletopComputer, ComputerId]
   id: ComputerTabletopId
   components:
   - type: Sprite
@@ -141,7 +232,7 @@
 
 #Camera Monitor
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerSurveillanceCameraMonitor]
+  parent: [DebugTabletopComputer, ComputerSurveillanceCameraMonitor]
   id: ComputerTabletopSurveillanceCameraMonitor
   components:
   - type: Sprite
@@ -161,7 +252,7 @@
 
 #Wireless Camera Monitor
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerSurveillanceWirelessCameraMonitor]
+  parent: [DebugTabletopComputer, ComputerSurveillanceWirelessCameraMonitor]
   id: ComputerTabletopSurveillanceWirelessCameraMonitor
   components:
   - type: Sprite
@@ -181,7 +272,7 @@
 
 #Communications Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerComms]
+  parent: [DebugTabletopComputer, ComputerComms]
   id: ComputerTabletopComms
   components:
   - type: Sprite
@@ -201,7 +292,7 @@
 
 #Alert Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerAlert]
+  parent: [DebugTabletopComputer, ComputerAlert]
   id: ComputerTabletopAlert
   components:
   - type: Sprite
@@ -221,7 +312,7 @@
 
 #Power Monitoring Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerPowerMonitoring]
+  parent: [DebugTabletopComputer, ComputerPowerMonitoring]
   id: ComputerTabletopPowerMonitoring
   components:
   - type: Sprite
@@ -241,7 +332,7 @@
 
 #R&D Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerResearchAndDevelopment]
+  parent: [DebugTabletopComputer, ComputerResearchAndDevelopment]
   id: ComputerTabletopResearchAndDevelopment
   components:
   - type: Sprite
@@ -261,7 +352,7 @@
 
 #Analysis Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerAnalysisConsole]
+  parent: [DebugTabletopComputer, ComputerAnalysisConsole]
   id: ComputerTabletopAnalysisConsole
   components:
   - type: Sprite
@@ -281,7 +372,7 @@
 
 #Body Scanner
 - type: entity
-  parent: [BaseStructureComputerTabletop, computerBodyScanner]
+  parent: [DebugTabletopComputer, computerBodyScanner]
   id: ComputerTabletopBodyScanner
   components:
   - type: Sprite
@@ -300,7 +391,7 @@
 
 #Syndicate Communication's Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, SyndicateComputerComms]
+  parent: [DebugTabletopComputer, SyndicateComputerComms]
   id: SyndicateComputerTabletopComms
   components:
   - type: Sprite
@@ -320,7 +411,7 @@
 
 #Solar Controller
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerSolarControl]
+  parent: [DebugTabletopComputer, ComputerSolarControl]
   id: ComputerTabletopSolarControl
   components:
   - type: Sprite
@@ -340,7 +431,7 @@
 
 #Mass Scanner
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerRadar]
+  parent: [DebugTabletopComputer, ComputerRadar]
   id: ComputerTabletopRadar
   components:
   - type: Sprite
@@ -360,7 +451,7 @@
 
 #Cargo Shuttle Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerCargoShuttle]
+  parent: [DebugTabletopComputer, ComputerCargoShuttle]
   id: ComputerTabletopCargoShuttle
   noSpawn: true
   components:
@@ -381,7 +472,7 @@
 
 #Cargo Request Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerCargoOrders]
+  parent: [DebugTabletopComputer, ComputerCargoOrders]
   id: ComputerTabletopCargoOrders
   components:
   - type: Sprite
@@ -401,7 +492,7 @@
 
 #Cargo Bounty Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerCargoBounty]
+  parent: [DebugTabletopComputer, ComputerCargoBounty]
   id: ComputerTabletopCargoBounty
   components:
   - type: Sprite
@@ -421,7 +512,7 @@
 
 #Cloning Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerCloningConsole]
+  parent: [DebugTabletopComputer, ComputerCloningConsole]
   id: ComputerTabletopCloningConsole
   components:
   - type: Sprite
@@ -441,7 +532,7 @@
 
 #Salvage Expedition Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerSalvageExpedition]
+  parent: [DebugTabletopComputer, ComputerSalvageExpedition]
   id: ComputerTabletopSalvageExpedition
   components:
   - type: Sprite
@@ -461,7 +552,7 @@
 
 #Mass Media Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerMassMedia]
+  parent: [DebugTabletopComputer, ComputerMassMedia]
   id: ComputerTabletopMassMedia
   components:
   - type: Sprite
@@ -482,7 +573,7 @@
 #Shuttle Related Computers
 #Emergency Shuttle Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerEmergencyShuttle]
+  parent: [DebugTabletopComputer, ComputerEmergencyShuttle]
   id: ComputerTabletopEmergencyShuttle
   noSpawn: true
   components:
@@ -503,7 +594,7 @@
 
 #Shuttle Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerShuttle]
+  parent: [DebugTabletopComputer, ComputerShuttle]
   id: ComputerTabletopShuttle
   components:
   - type: Sprite
@@ -523,7 +614,7 @@
 
 #Syndicate Shuttle Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerShuttleSyndie]
+  parent: [DebugTabletopComputer, ComputerShuttleSyndie]
   id: ComputerTabletopShuttleSyndie
   components:
   - type: Sprite
@@ -543,7 +634,7 @@
 
 #Cargo Shuttle Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerShuttleCargo]
+  parent: [DebugTabletopComputer, ComputerShuttleCargo]
   id: ComputerTabletopShuttleCargo
   noSpawn: true
   components:
@@ -564,7 +655,7 @@
 
 #Salvage Shuttle Computer
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerShuttleSalvage]
+  parent: [DebugTabletopComputer, ComputerShuttleSalvage]
   id: ComputerTabletopShuttleSalvage
   noSpawn: true
   components:
@@ -585,7 +676,7 @@
 
 #IFF Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerIFF]
+  parent: [DebugTabletopComputer, ComputerIFF]
   id: ComputerTabletopIFF
   components:
   - type: Sprite
@@ -605,7 +696,7 @@
 
 #Syndicate IFF Console
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerIFFSyndicate]
+  parent: [DebugTabletopComputer, ComputerIFFSyndicate]
   id: ComputerTabletopIFFSyndicate
   suffix: Syndicate, Tabletop
   components:
@@ -626,7 +717,7 @@
 
 #Testing/Debugging
 - type: entity
-  parent: [BaseStructureComputerTabletop, ComputerSensorMonitoring]
+  parent: [DebugTabletopComputer, ComputerSensorMonitoring]
   id: ComputerTabletopSensorMonitoring
   suffix: Tabletop, TESTING, DO NOT MAP
   noSpawn: true

@@ -1,0 +1,142 @@
+- type: constructionGraph
+  id: tabletopComputer
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tabletopframeUnsecured
+          completed:
+            - !type:SetAnchor
+              value: false
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2.5
+
+    - node: tabletopframeUnsecured
+      actions:
+      - !type:AppearanceChange
+      entity: ComputerTabletopFrame
+      edges:
+        - to: tabletopboardUnsecured
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - component: ComputerBoard
+              store: board
+              name: any computer circuit board
+              icon:
+                sprite: "Objects/Misc/module.rsi"
+                state: "id_mod"
+
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 5
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: tabletopboardUnsecured
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: tabletopmissingWires
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - tool: Screwing
+
+        - to: tabletopframeUnsecured
+          conditions:
+            - !type:EntityAnchored { }
+          completed:
+            - !type:EmptyAllContainers {}
+          steps:
+            - tool: Prying
+
+    - node: tabletopmissingWires
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: tabletopmonitorMissing
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Cable
+              amount: 5
+
+        - to: tabletopboardUnsecured
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - tool: Screwing
+
+    - node: tabletopmonitorMissing
+      entity: ComputerTabletopFrame
+      actions:
+        - !type:SetAnchor { }
+        - !type:AppearanceChange
+      edges:
+        - to: tabletopmonitorUnsecured
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Glass
+              amount: 2
+
+        - to: tabletopmissingWires
+          conditions:
+            - !type:EntityAnchored { }
+          completed:
+            - !type:SpawnPrototype
+              prototype: CableApcStack1
+              amount: 5
+          steps:
+            - tool: Cutting
+
+    - node: tabletopmonitorUnsecured
+      actions:
+      - !type:AppearanceChange
+      entity: ComputerTabletopFrame
+      edges:
+        - to: tabletopcomputer
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - tool: Screwing
+
+        - to: tabletopmonitorMissing
+          conditions:
+            - !type:EntityAnchored {}
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - tool: Prying
+
+    - node: tabletopcomputer
+      entity: !type:BoardNodeEntity { container: board }
+      edges:
+        - to: tabletopmonitorUnsecured
+          conditions:
+            - !type:AllWiresCut {}
+          steps:
+            - tool: Screwing
+
+    - node: tabletopmonitorBroken
+      entity: ComputerTabletopBroken
+      edges:
+        - to: tabletopmonitorMissing
+          conditions:
+            - !type:EntityAnchored {}
+          completed:
+            - !type:SpawnPrototype
+              prototype: ShardGlass
+              amount: 2
+          steps:
+            - tool: Prying
+              doAfter: 2
