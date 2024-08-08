@@ -114,5 +114,6 @@
   - Boxer
   - Reporter
   - Zookeeper
-  - Psychologist
+  # CD: Psychologist is not station specific
+  # - Psychologist
   primary: false
