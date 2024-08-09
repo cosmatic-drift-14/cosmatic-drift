@@ -130,6 +130,14 @@
     {
       "name": "underwing_secondary",
       "directions": 4
+    },
+    {
+       "name": "membral_primary",
+       "directions": 4
+    },
+    {
+        "name": "membral_secondary",
+        "directions": 4
     }
   ]
 }
