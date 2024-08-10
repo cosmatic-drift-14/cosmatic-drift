@@ -1,5 +1,6 @@
 - type: department
   id: HighCommand
+  name: department-HighCommand
   description: department-HighCommand-description
   color: "#334E6D"
   weight: 90
