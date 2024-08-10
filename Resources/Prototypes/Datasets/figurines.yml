@@ -1,8 +1,9 @@
+# Heavily edited by CD.
 - type: localizedDataset
   id: FigurinesHoP
   values:
     prefix: figurines-hop-
-    count: 2
+    count: 3
 
 - type: localizedDataset
   id: FigurinesPassenger
@@ -50,7 +51,7 @@
   id: FigurinesCaptain
   values:
     prefix: figurines-captain-
-    count: 2
+    count: 3
 
 - type: localizedDataset
   id: FigurinesHoS
@@ -68,43 +69,43 @@
   id: FigurinesDetective
   values:
     prefix: figurines-detective-
-    count: 1
+    count: 2
 
 - type: localizedDataset
   id: FigurinesSecurity
   values:
     prefix: figurines-security-
-    count: 2
+    count: 4
 
 - type: localizedDataset
   id: FigurinesLawyer
   values:
     prefix: figurines-lawyer-
-    count: 2
+    count: 3
 
 - type: localizedDataset
   id: FigurinesCargoTech
   values:
     prefix: figurines-cargotech-
-    count: 3
+    count: 4
 
 - type: localizedDataset
   id: FigurinesSalvage
   values:
     prefix: figurines-salvage-
-    count: 1
+    count: 3
 
 - type: localizedDataset
   id: FigurinesQM
   values:
     prefix: figurines-qm-
-    count: 7
+    count: 6
 
 - type: localizedDataset
   id: FigurinesCE
   values:
     prefix: figurines-ce-
-    count: 5
+    count: 6
 
 - type: localizedDataset
   id: FigurinesEngineer
@@ -122,7 +123,7 @@
   id: FigurinesRD
   values:
     prefix: figurines-rd-
-    count: 2
+    count: 4
 
 - type: localizedDataset
   id: FigurinesScientist
@@ -134,13 +135,13 @@
   id: FigurinesCMO
   values:
     prefix: figurines-cmo-
-    count: 2
+    count: 3
 
 - type: localizedDataset
   id: FigurinesChemist
   values:
     prefix: figurines-chemist-
-    count: 1
+    count: 2
 
 - type: localizedDataset
   id: FigurinesParamedic
@@ -152,31 +153,31 @@
   id: FigurinesDoctor
   values:
     prefix: figurines-doctor-
-    count: 3
+    count: 4
 
 - type: localizedDataset
   id: FigurinesLibrarian
   values:
     prefix: figurines-librarian-
-    count: 2
+    count: 4
 
 - type: localizedDataset
   id: FigurinesChaplain
   values:
     prefix: figurines-chaplain-
-    count: 3
+    count: 4
 
 - type: localizedDataset
   id: FigurinesChef
   values:
     prefix: figurines-chef-
-    count: 1
+    count: 2
 
 - type: localizedDataset
   id: FigurinesBartender
   values:
     prefix: figurines-bartender-
-    count: 2
+    count: 3
 
 - type: localizedDataset
   id: FigurinesBotanist
@@ -218,7 +219,7 @@
   id: FigurinesWizard
   values:
     prefix: figurines-wizard-
-    count: 1
+    count: 5
 
 - type: localizedDataset
   id: FigurinesSpaceDragon
