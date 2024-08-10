@@ -54,7 +54,7 @@ public sealed class ShuttleVoteSystem : EntitySystem
             var votesNo = vote.VotesPerOption["no"];
             var total = votesYes + votesNo;
 
-            if (total > 0 && votesYes > votesNo)
+            if (total > 0 && votesYes >= votesNo)
             {
                 _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Round end shuttle vote succeded: {votesYes}/{votesNo}");
                 // TODO: Add .loc files n make an unrecallable shuttle
