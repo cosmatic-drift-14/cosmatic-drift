@@ -1,8 +1,10 @@
+# Heavily edited by CD.
 figurines-hop-1 = Papers, please.
-figurines-hop-2 = You are fired.
+figurines-hop-2 = Sounds like a demotion is in store.
+figurines-hop-3 = You're going to need a stamp for that.
 
-figurines-passenger-1 = How to change hands?
-figurines-passenger-2 = Call evac.
+figurines-passenger-1 = A nice and pleasant resort, they said.
+figurines-passenger-2 = When's the next crew transfer?
 
 figurines-greytider-1 = Man, this party stinks. I fucking hate these people.
 figurines-greytider-2 = Uh-oh, who's lost their stunbaton?
@@ -29,84 +31,102 @@ figurines-musician-2 = Never gonna let you down!
 
 # figurines-boxer-
 
-figurines-captain-1 = Crew, the Nuke Disk is safely up my ass.
+figurines-captain-1 = Captain, on deck!
 figurines-captain-2 = Glory to NT!
+figurines-captain-3 = No idea what you're doing, but keep up the good work.
 
-figurines-hos-1 = Space law? What?
-figurines-hos-2 = Shot the clown.
+figurines-hos-1 = The only reason I'm still sane is the pay.
+figurines-hos-2 = What do you mean you 'accidently' shot the clown?
 
-figurines-warden-1 = Execute him for breaking in!
+figurines-warden-1 = Huh- wh? Sorry, I almost dozed off.
 
 figurines-detective-1 = The butler did it.
+figurines-detective-2 = Four cases, all cold.
 
-figurines-security-1 = I am the law!
-figurines-security-2 = You have violated article 1984.
+figurines-security-1 = That's the third hostage situation this week.
+figurines-security-2 = Oh joy, a fax from Central Command.
+figurines-security-3 = Just science exploding, again.
+figurines-security-4 = Suspect in custody.
 
-figurines-lawyer-1 = Better Call Saul!
+figurines-lawyer-1 = Well actually...
 figurines-lawyer-2 = Objection!
+figurines-lawyer-3 = Legally speaking...
 
-figurines-cargotech-1 = DRAGON ON ATS!
-figurines-cargotech-2 = I sold the station!
-figurines-cargotech-3 = Brain bounty? I don't have a brain.
+figurines-cargotech-1 = Do you think CC will notice?
+figurines-cargotech-2 = I wish I could sell the Station.
+figurines-cargotech-3 = I swear it's for a bounty, officer.
+figurines-cargotech-4 = Do you think anyone will order anything this shift?
 
 figurines-salvage-1 = Megafauna? It was mega easy.
+figurines-salvage-2 = Did we ever get windshield wipers?
+figurines-salvage-3 = I wonder what's going on station-side..
 
-figurines-qm-1 = Who stole the shuttle?
-figurines-qm-2 = I won't approve the guns.
-figurines-qm-3 = I didn't buy those guns!
-figurines-qm-4 = One toys crate for ma fellow clown!
-figurines-qm-5 = Time to spent all money on gambling.
-figurines-qm-6 = Viva La Cargonia!
-figurines-qm-7 = Fill the form.
+figurines-qm-1 = Security needs the shuttle again.
+figurines-qm-2 = I can't approve this without a permit.
+figurines-qm-3 = Please do not anger security, for my sake.
+figurines-qm-4 = This is not what I had in mind when they said management job.
+figurines-qm-5 = We can spend all the budget on gambling, in a moment.
+figurines-qm-6 = Fill the form.
 
-figurines-ce-1 = Everyone to the briefing!
-figurines-ce-2 = Wire the solars!
-figurines-ce-3 = How to setup the TEG?
-figurines-ce-4 = SINGULOOSE!
-figurines-ce-5 = TESLOOSE!
+figurines-ce-1 = In a moment, I'm busy.
+figurines-ce-2 = Did someone forget solars again?
+figurines-ce-3 = I don't actually know how to run a TEG.
+figurines-ce-4 = I can't remember what the emergency protocol for this is.
+figurines-ce-5 = You definitely look like someone who has no idea what they're doing.
+figurines-ce-6 = I should have just done it myself.
 
-figurines-engineer-1 = SINGULOOSE!
-figurines-engineer-2 = TESLOOSE!
-figurines-engineer-3 = What is AME?
+figurines-engineer-1 = This is a waste of my degree.
+figurines-engineer-2 = I have built three separate bars this shift.
+figurines-engineer-3 = I got bored and over-engineered it, hope you don't mind.
 
-figurines-atmostech-1 = I put plasma in distro.
-figurines-atmostech-2 = I will burn you in a burn chamber.
-figurines-atmostech-3 = Frezon...
-figurines-atmostech-4 = Tritium...
-figurines-atmostech-5 = Glory to Atmosia!
+figurines-atmostech-1 = I get paid to sit around and look at pipes.
+figurines-atmostech-2 = And that's why we need that pipe- Are you still listening?
+figurines-atmostech-3 = Just space it.
+figurines-atmostech-4 = Waste of a degree? No, this is easy money.
+figurines-atmostech-5 = I thought open carrying only applied to firearms.
 
-figurines-rd-1 = Blowing all of the borgs!
-figurines-rd-2 = Tier 3 arsenal? No way.
+figurines-rd-1 = I have no idea where any of my workers are.
+figurines-rd-2 = The shift JUST started.
+figurines-rd-3 = Safety appears to be optional in my department.
+figurines-rd-4 = Zero days since last accident...
 
-figurines-scientist-1 = Someone else must have made those bombs!
-figurines-scientist-2 = He asked to be borged!
-figurines-scientist-3 = Carp at sci!
-figurines-scientist-4 = Explosion at sci.
-figurines-scientist-5 = The anomaly has exploded.
+figurines-scientist-1 = I wish I was allowed to do something fun.
+figurines-scientist-2 = I've never done robotics but I can try!
+figurines-scientist-3 = I was nearly cooked alive by radiation- anyways.
+figurines-scientist-4 = The artifact lab is gone.
+figurines-scientist-5 = Has anyone seen the anomaly?
 
 figurines-cmo-1 = Suit sensors!
 figurines-cmo-2 = Why do we have meth?
+figurines-cmo-3 = I wonder why I ever went to space..
 
-figurines-chemist-1 = Get your pills!
+figurines-chemist-1 = I still have like four other perscriptions to do.
+figurines-chemist-2 = I'd only make you that if I wanted to risk my job, which I do.
 
-figurines-paramedic-1 = Insuls and tools!
-figurines-paramedic-2 = I need AA for saving people!
+figurines-paramedic-1 = Science exploded again, hold on.
+figurines-paramedic-2 = Another dead on arrival..
 
 figurines-doctor-1 = The patient is already dead!
-figurines-doctor-2 = CLEAR!
-figurines-doctor-3 = Saw makes BRRR.
+figurines-doctor-2 = CLEAR!!
+figurines-doctor-3 = Good news, you'll live.
+figurines-doctor-4 = In my professional medical opinion...
 
-figurines-librarian-1 = One day while...
+figurines-librarian-1 = Once upon a time...
 figurines-librarian-2 = Silence!
+figurines-librarian-3 = I'm not a nerd.
+figurines-librarian-4 = Just return it.
 
-figurines-chaplain-1 = Would you like to join my cul- I mean religion.
-figurines-chaplain-2 = Gods make me a killing machine please!
-figurines-chaplain-3 = God exists!
+figurines-chaplain-1 = I swear this is not a cult.
+figurines-chaplain-2 = Do you want a blessing?
+figurines-chaplain-3 = Space gods exist!
+figurines-chaplain-4 = I can't point you to Nar'sie cult, stop asking.
 
-figurines-chef-1 = I swear it's not human meat.
+figurines-chef-1 = Did you check the menu?
+figurines-chef-2 = Order something, please.
 
-figurines-bartender-1 = Where's my monkey?
+figurines-bartender-1 = Where's Pun Pun?
 figurines-bartender-2 = Sec won't drink.
+figurines-bartender-3 = The only limit is your liver.
 
 figurines-botanist-1 = I don't have any weed, officer!
 figurines-botanist-2 = Dude, I see colors...
@@ -132,6 +152,7 @@ figurines-wizard-1 = Ei Nath!
 figurines-wizard-2 = Wehgardium Leviosa!
 figurines-wizard-3 = Skidaddle skadoodle!
 figurines-wizard-4 = FIREBALL!
+figurines-wizard-5 = IT'S WIZARD TIME!
 
 figurines-space-dragon-1 = Fish will consume the station.
 
