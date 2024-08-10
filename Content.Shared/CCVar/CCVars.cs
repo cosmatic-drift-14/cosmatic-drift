@@ -419,7 +419,7 @@ namespace Content.Shared.CCVar
         /// Defaults to 5 minutes. CD change from 2 to 5 because the Cvar doesn't work.
         /// </summary>
         public static readonly CVarDef<float> RoundRestartTime =
-            CVarDef.Create("game.round_restart_time", 300f, CVar.SERVERONLY);
+            CVarDef.Create("game.round_restart_time", 600f, CVar.SERVERONLY);
 
         /// <summary>
         /// Respawn time, how long the player has to wait in seconds after death.
