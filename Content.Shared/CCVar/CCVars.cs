@@ -416,10 +416,10 @@ namespace Content.Shared.CCVar
 
         /// <summary>
         /// The time in seconds that the server should wait before restarting the round.
-        /// Defaults to 2 minutes.
+        /// Defaults to 5 minutes. CD change from 2 to 5 because the Cvar doesn't work.
         /// </summary>
         public static readonly CVarDef<float> RoundRestartTime =
-            CVarDef.Create("game.round_restart_time", 120f, CVar.SERVERONLY);
+            CVarDef.Create("game.round_restart_time", 600f, CVar.SERVERONLY);
 
         /// <summary>
         /// Respawn time, how long the player has to wait in seconds after death.
@@ -909,6 +909,15 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> AdminBypassMaxPlayers =
             CVarDef.Create("admin.bypass_max_players", true, CVar.SERVERONLY);
 
+        /// <summary>
+        /// Determine if custom rank names are used.
+        /// If it is false, it'd use the actual rank name regardless of the individual's title.
+        /// </summary>
+        /// <seealso cref="AhelpAdminPrefix"/>
+        /// <seealso cref="AhelpAdminPrefixWebhook"/>
+        public static readonly CVarDef<bool> AdminUseCustomNamesAdminRank =
+            CVarDef.Create("admin.use_custom_names_admin_rank", true, CVar.SERVERONLY);
+
         /*
          * AHELP
          */
@@ -927,6 +936,24 @@ namespace Content.Shared.CCVar
         /// <seealso cref="AhelpRateLimitPeriod"/>
         public static readonly CVarDef<int> AhelpRateLimitCount =
             CVarDef.Create("ahelp.rate_limit_count", 10, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Should the administrator's position be displayed in ahelp.
+        /// If it is is false, only the admin's ckey will be displayed in the ahelp.
+        /// </summary>
+        /// <seealso cref="AdminUseCustomNamesAdminRank"/>
+        /// <seealso cref="AhelpAdminPrefixWebhook"/>
+        public static readonly CVarDef<bool> AhelpAdminPrefix =
+            CVarDef.Create("ahelp.admin_prefix", false, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Should the administrator's position be displayed in the webhook.
+        /// If it is is false, only the admin's ckey will be displayed in webhook.
+        /// </summary>
+        /// <seealso cref="AdminUseCustomNamesAdminRank"/>
+        /// <seealso cref="AhelpAdminPrefix"/>
+        public static readonly CVarDef<bool> AhelpAdminPrefixWebhook =
+            CVarDef.Create("ahelp.admin_prefix_webhook", true, CVar.SERVERONLY);
 
         /*
          * Explosions
@@ -2164,6 +2191,12 @@ namespace Content.Shared.CCVar
         // Clippy!
         public static readonly CVarDef<string> TippyEntity =
             CVarDef.Create("tippy.entity", "Tippy", CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        ///     The number of seconds that must pass for a single entity to be able to point at something again.
+        /// </summary>
+        public static readonly CVarDef<float> PointingCooldownSeconds =
+            CVarDef.Create("pointing.cooldown_seconds", 0.5f, CVar.SERVERONLY);
 
         /*
          * DEBUG
