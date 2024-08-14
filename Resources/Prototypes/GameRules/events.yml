@@ -6,8 +6,8 @@
     - id: BluespaceArtifact
     - id: BluespaceLocker
     - id: BreakerFlip
-    - id: BureaucraticError
-    - id: ClericalError
+    # - id: BureaucraticError
+    # - id: ClericalError
     - id: CockroachMigration
     - id: GasLeak
     - id: IonStorm # its calm like 90% of the time smh
@@ -27,14 +27,14 @@
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
     children:
     - id: ClosetSkeleton
-    - id: DragonSpawn
-    - id: KingRatMigration
-    - id: NinjaSpawn
+    # - id: DragonSpawn
+    # - id: KingRatMigration
+    # - id: NinjaSpawn
     - id: RevenantSpawn
-    - id: SleeperAgents
-    - id: ZombieOutbreak
+    # - id: SleeperAgents
+    # - id: ZombieOutbreak
 
-
+# CD Change - Tripled most event times
 - type: entity
   id: BaseStationEvent
   parent: BaseGameRule
@@ -42,8 +42,8 @@
   components:
     - type: GameRule
       delay:
-        min:  10
-        max:  20
+        min:  30
+        max:  60
 
 - type: entity
   id: BaseStationEventShortDelay
@@ -52,8 +52,8 @@
   components:
     - type: GameRule
       delay:
-        min:  10
-        max:  20
+        min:  30
+        max:  60
 
 - type: entity
   id: BaseStationEventLongDelay
@@ -62,8 +62,8 @@
   components:
     - type: GameRule
       delay:
-        min:  40
-        max:  60
+        min:  90
+        max:  180
 
 - type: entity
   id: AnomalySpawn
@@ -83,8 +83,8 @@
   components:
   - type: GameRule
     delay:
-      min:  30
-      max:  30
+      min:  45
+      max:  45
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:

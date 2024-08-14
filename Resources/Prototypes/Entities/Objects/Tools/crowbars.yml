@@ -38,9 +38,7 @@
     - Belt
   - type: Item
     sprite: Objects/Tools/crowbar.rsi
-    size: Normal
-    shape:
-    - 0,0,0,1
+    size: 10
 
 # Standard (grey) Crowbar
 - type: entity
@@ -51,9 +49,6 @@
   - type: Sprite
     state: icon
   - type: Item
-    storedSprite:
-      sprite: Objects/Tools/crowbar.rsi
-      state: storage
 
 # Emergency (red) Crowbar
 - type: entity
@@ -72,10 +67,7 @@
     - state: cover-icon
       color: "#990000"
   - type: Item
-    size: Small # for pockets
-    storedSprite:
-      state: red-storage
-      sprite: Objects/Tools/crowbar.rsi
+    size: 10
     inhandVisuals:
       left:
       - state: inhand-left
@@ -104,9 +96,6 @@
     - state: cover-icon
       color: "#00621c"
   - type: Item
-    storedSprite:
-      state: green-storage
-      sprite: Objects/Tools/crowbar.rsi
     inhandVisuals:
       left:
       - state: inhand-left
@@ -135,9 +124,6 @@
     - state: cover-icon
       color: "#673800"
   - type: Item
-    storedSprite:
-      state: orange-storage
-      sprite: Objects/Tools/crowbar.rsi
     inhandVisuals:
       left:
       - state: inhand-left
@@ -166,9 +152,6 @@
     - state: cover-icon
       color: "#968000"
   - type: Item
-    storedSprite:
-      state: yellow-storage
-      sprite: Objects/Tools/crowbar.rsi
     inhandVisuals:
       left:
       - state: inhand-left

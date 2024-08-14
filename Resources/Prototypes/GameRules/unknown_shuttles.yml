@@ -7,7 +7,7 @@
     - id: UnknownShuttleCargoLost
     - id: UnknownShuttleTravelingCuisine
     - id: UnknownShuttleDisasterEvacPod
-    - id: UnknownShuttleHonki
+    # - id: UnknownShuttleHonki
 
 - type: entityTable
   id: UnknownShuttlesFreelanceTable

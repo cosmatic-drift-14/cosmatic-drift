@@ -10,7 +10,7 @@
     sprite: Objects/Materials/Scrap/generic.rsi
   - type: Item
     sprite: Objects/Materials/Scrap/generic.rsi
-    size: Normal
+    size: 20
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: FlimsyMetallic
@@ -37,7 +37,7 @@
       - state: metal-1
         map: [ "base" ]
   - type: Item
-    size: Ginormous
+    size: 9999
     heldPrefix: metal
   - type: MultiHandedItem
   - type: RandomSprite
@@ -62,9 +62,7 @@
       map: [ "base" ]
   - type: Item
     heldPrefix: "glass"
-    size: Large
-    shape:
-    - 0,0,2,2 # 3x3
+    size: 50
   - type: RandomSprite
     available:
     - base:
@@ -95,7 +93,7 @@
         junk-airlock-1: ""
         junk-airlock-2: ""
   - type: Item
-    size: Ginormous
+    size: 9999
     heldPrefix: "airlock"
   - type: MultiHandedItem
   - type: PhysicalComposition
@@ -112,9 +110,7 @@
     layers:
     - state: junk-airlock-3
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,3,0
+    size: 20
   - type: PhysicalComposition
     materialComposition:
       Steel: 200 # 2 sheets
@@ -170,7 +166,7 @@
     layers:
     - state: junk-canister-2
   - type: Item
-    size: Small
+    size: 5
   - type: PhysicalComposition
     materialComposition:
       Steel: 200 # 2 sheets
@@ -187,9 +183,7 @@
   - type: MultiHandedItem
   - type: Item
     heldPrefix: closet
-    size: Huge
-    shape:
-    - 0,0,5,2
+    size: 120
   - type: PhysicalComposition
     materialComposition:
       Steel: 1500 # 15 sheets
@@ -204,7 +198,7 @@
     layers:
     - state: junk-fax
   - type: Item
-    size: Huge
+    size: 130
   - type: PhysicalComposition
     materialComposition:
       Plastic: 800 # 8 sheets
@@ -233,7 +227,7 @@
     layers:
     - state: junk-firelock-1
   - type: Item
-    size: Ginormous
+    size: 9999
     heldPrefix: firelock-1
   - type: MultiHandedItem
   - type: PhysicalComposition
@@ -250,7 +244,7 @@
     layers:
     - state: junk-firelock-2
   - type: Item
-    size: Ginormous
+    size: 9999
     heldPrefix: firelock-2
   - type: MultiHandedItem
   - type: PhysicalComposition
@@ -266,7 +260,7 @@
     layers:
     - state: junk-firelock-3
   - type: Item
-    size: Large
+    size: 80
   - type: PhysicalComposition
     materialComposition:
       Steel: 700 # 7 sheets
@@ -303,7 +297,7 @@
     layers:
     - state: junk-jetpack
   - type: Item
-    size: Huge
+    size: 130
     heldPrefix: jetpack
   - type: PhysicalComposition
     materialComposition:
@@ -326,7 +320,7 @@
         junk-medkit-1: ""
         junk-medkit-2: ""
   - type: Item
-    size: Large
+    size: 80
   - type: PhysicalComposition
     materialComposition:
       Plastic: 500 # 5 sheets
@@ -341,7 +335,7 @@
     layers:
     - state: junk-mop-bucket
   - type: Item
-    size: Huge
+    size: 80
   - type: PhysicalComposition
     materialComposition:
       Plastic: 1500 # 15 sheets
@@ -356,7 +350,7 @@
     layers:
     - state: junk-pai
   - type: Item
-    size: Small
+    size: 5
   - type: PhysicalComposition
     materialComposition:
       Steel: 300 # 3 sheets
@@ -372,7 +366,7 @@
     layers:
     - state: junk-pai-gold
   - type: Item
-    size: Small
+    size: 5
   - type: PhysicalComposition
     materialComposition:
       Gold: 100 # 1 sheet
@@ -398,7 +392,7 @@
         tube-r: ""
         tube-y: ""
   - type: Item
-    size: Small
+    size: 5
   - type: PhysicalComposition
     materialComposition:
       Glass: 500 # 5 sheets

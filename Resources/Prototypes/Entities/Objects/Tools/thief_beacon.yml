@@ -6,7 +6,7 @@
     - type: ThiefBeacon
     - type: StealArea
     - type: Item
-      size: Normal
+      size: 45
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures

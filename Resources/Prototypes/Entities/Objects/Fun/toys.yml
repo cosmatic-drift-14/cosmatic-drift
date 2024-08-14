@@ -66,7 +66,7 @@
       wideAnimationRotation: -135
       attackRate: 10
     - type: Item
-      size: Ginormous
+      size: 9999
       sprite: Objects/Weapons/Melee/Throngler-in-hand.rsi
 
 - type: entity

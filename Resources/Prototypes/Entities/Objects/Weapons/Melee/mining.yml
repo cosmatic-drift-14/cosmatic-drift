@@ -28,12 +28,8 @@
       types:
         Structural: 30
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,2,0
-    - 1,1,1,2
+    size: 30
     sprite: Objects/Weapons/Melee/pickaxe.rsi
-    storedRotation: -45
   - type: UseDelay
 
 - type: entity
@@ -43,7 +39,6 @@
   description: Powerful tool used to quickly drill through rocks.
   components:
   - type: Item
-    storedRotation: -90
   - type: Tag
     tags:
     - Pickaxe
