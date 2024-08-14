@@ -546,7 +546,7 @@
   - type: Clothing
     sprite: Clothing/Belt/bandolier.rsi
   - type: Item
-    size: Huge
+    size: 80
   - type: BallisticAmmoProvider
     whitelist:
       tags:
