@@ -500,6 +500,7 @@
   id: JobPsychologist
   groups:
   - GroupTankHarness
+  - PsychologistJumpsuit
   - MedicalBackpack
   - Glasses
   - Survival
