@@ -3,8 +3,8 @@ figurines-hop-1 = Papers, please.
 figurines-hop-2 = Sounds like a demotion is in store.
 figurines-hop-3 = You're going to need a stamp for that.
 
-figurines-passenger-1 = A nice and pleasant resort, they said.
-figurines-passenger-2 = When's the next crew transfer?
+figurines-passenger-1 = Insuls please.
+figurines-passenger-2 = Call evac.
 
 figurines-greytider-1 = Man, this party stinks. I fucking hate these people.
 figurines-greytider-2 = Uh-oh, who's lost their stunbaton?
