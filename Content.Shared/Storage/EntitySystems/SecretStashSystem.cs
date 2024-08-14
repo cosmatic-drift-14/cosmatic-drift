@@ -91,7 +91,7 @@ public sealed class SecretStashSystem : EntitySystem
         }
 
         // check if item is too big to fit into secret stash
-        if (_item.GetSizePrototype(itemComp.Size) > _item.GetSizePrototype(entity.Comp.MaxItemSize))
+        if (itemComp.Size > entity.Comp.MaxItemSize)
         {
             var msg = Loc.GetString("comp-secret-stash-action-hide-item-too-big",
                 ("item", itemToHideUid), ("stashname", GetStashName(entity)));

@@ -515,7 +515,7 @@ public abstract class SharedStorageSystem : EntitySystem
         }
 
         // Else, interact using the held item
-        _interactionSystem.InteractUsing(player, player.Comp.ActiveHandEntity.Value, item, Transform(item).Coordinates, checkCanInteract: false);
+        _interactionSystem.InteractUsing(player, hands.ActiveHandEntity.Value, entity, Transform(entity).Coordinates, checkCanInteract: false);
     }
 
     private void OnInsertItemMessage(StorageComponent.StorageInsertItemMessage msg, EntitySessionEventArgs args)
@@ -749,13 +749,13 @@ public abstract class SharedStorageSystem : EntitySystem
             return false;
         }
 
-        if (!_sharedHandsSystem.CanDrop(player, toInsert.Value, hands))
+        if (!_sharedHandsSystem.TryDrop(player, toInsert.Value, handsComp: hands))
         {
             _popupSystem.PopupClient(Loc.GetString("comp-storage-cant-drop", ("entity", toInsert.Value)), uid, player);
             return false;
         }
 
-        return PlayerInsertEntityInWorld((uid, storageComp), player, toInsert.Value);
+        return PlayerInsertEntityInWorld(uid, player, toInsert.Value, storageComp);
     }
 
     /// <summary>
