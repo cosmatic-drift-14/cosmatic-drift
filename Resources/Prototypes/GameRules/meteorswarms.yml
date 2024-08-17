@@ -77,14 +77,14 @@
     scheduledGameRules: !type:NestedSelector
       tableId: MeteorSwarmMildTable
 
-- type: entity
-  parent: BaseGameRule
-  id: KesslerSyndromeScheduler
-  components:
-  - type: GameRule
-  - type: RampingStationEventScheduler
-    scheduledGameRules: !type:NestedSelector
-      tableId: BasicMeteorSwarmEventsTable
+# - type: entity
+#   parent: BaseGameRule
+#   id: KesslerSyndromeScheduler
+#   components:
+#   - type: GameRule
+#   - type: RampingStationEventScheduler
+#     scheduledGameRules: !type:NestedSelector
+#       tableId: BasicMeteorSwarmEventsTable
 
 # Game Rules
 
@@ -108,8 +108,8 @@
     earliestStart: 2
     minimumPlayers: 0
   - type: MeteorSwarm
-    announcement: null
-    announcementSound: null
+    announcement: station-event-meteor-swarm-start-announcement
+    announcementSound: /Audio/Announcements/attention.ogg
     nonDirectional: true
     meteors:
       MeteorSpaceDust: 1
