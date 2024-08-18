@@ -7159,7 +7159,7 @@
   url: https://github.com/space-wizards/space-station-14/pull/28327
 - author: EmoGarbage404
   changes:
-  - message: Removed the fire-fighting remote. # nuh uh! (CD change)
+  - message: Removed the fire-fighting remote.
     type: Remove
   id: 6629
   time: '2024-05-28T00:04:32.0000000+00:00'
