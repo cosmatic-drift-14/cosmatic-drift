@@ -1,19 +1,11 @@
 # Lunchboxes
 - type: loadout
   id: LunchboxBlue
-  equipment: LunchboxBlue
-
-- type: startingGear
-  id: LunchboxBlue
   storage:
     back:
     - LunchboxBlue
 
 - type: loadout
-  id: LunchboxYellow
-  equipment: LunchboxYellow
-
-- type: startingGear
   id: LunchboxYellow
   storage:
     back:
