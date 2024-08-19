@@ -20,9 +20,6 @@
         Blunt: 3
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
-  - type: Tag
-    tags:
-    - Toolbox
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
