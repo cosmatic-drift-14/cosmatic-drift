@@ -4,6 +4,7 @@
   mapPath: /Maps/cog.yml
   minPlayers: 25 #CD change
   maxPlayers: 45 #CD change
+  patchfile: /CDMapPatches/cog.yml # CD Edit: Apply map patch
   stations:
     Cog:
       stationProto: StandardNanotrasenStation

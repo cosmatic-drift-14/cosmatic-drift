@@ -1,0 +1,4 @@
+- !type:CDSpawnEntityMapPatch
+  worldPosition: 29.9375,44.984375
+  id: LockerLostAndFound
+...
