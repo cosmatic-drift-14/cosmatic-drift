@@ -6,14 +6,14 @@ whitelist-openslots-full = There are also {$openslots} non-whitelist slots on th
 whitelist-not-whitelisted-rp = You are not whitelisted. To become whitelisted, visit our Discord (which can be found in the server's hub description) and check the #whitelist-requests channel.
 
 cmd-whitelistadd-desc = Adds the player with the given username to the server whitelist.
-cmd-whitelistadd-help = Usage: whitelistadd <username>
+cmd-whitelistadd-help = Usage: whitelistadd <username or User ID>
 cmd-whitelistadd-existing = {$username} is already on the whitelist!
 cmd-whitelistadd-added = {$username} added to the whitelist
 cmd-whitelistadd-not-found = Unable to find '{$username}'
 cmd-whitelistadd-arg-player = [player]
 
 cmd-whitelistremove-desc = Removes the player with the given username from the server whitelist.
-cmd-whitelistremove-help = Usage: whitelistremove <username>
+cmd-whitelistremove-help = Usage: whitelistremove <username or User ID>
 cmd-whitelistremove-existing = {$username} is not on the whitelist!
 cmd-whitelistremove-removed = {$username} removed from the whitelist
 cmd-whitelistremove-not-found = Unable to find '{$username}'

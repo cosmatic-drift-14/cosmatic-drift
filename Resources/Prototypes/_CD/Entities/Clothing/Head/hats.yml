@@ -41,4 +41,19 @@
     sprite: _CD/Clothing/Head/Hats/Animals/headslimepurple.rsi
   - type: Clothing
     sprite: _CD/Clothing/Head/Hats/Animals/headslimepurple.rsi
-    
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSecurityVet
+  name: senior officer's beret
+  description: A black beret with a silver rank emblem. For officers that are more inclined towards style than safety.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_secvet.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_secvet.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon

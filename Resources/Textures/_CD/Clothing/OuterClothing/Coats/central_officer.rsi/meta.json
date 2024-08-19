@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/Imaginos16/tgstation/raw/3f5275885d02e1bd42d685949fdca1ca25773e5c/icons/mob/clothing/suits/jacket.dmi & https://github.com/Imaginos16/tgstation/raw/3f5275885d02e1bd42d685949fdca1ca25773e5c/icons/obj/clothing/suits/jacket.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-OUTERCLOTHING",
+      "directions": 4
+    }
+  ]
+}

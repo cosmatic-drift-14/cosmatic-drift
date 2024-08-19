@@ -1,0 +1,9 @@
+- type: loadout
+  id: CargoTechnicianPants
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoPants
+
+- type: loadout
+  id: CargoBomber
+  equipment: 
+    outerClothing: ClothingOuterCoatCargoBomber

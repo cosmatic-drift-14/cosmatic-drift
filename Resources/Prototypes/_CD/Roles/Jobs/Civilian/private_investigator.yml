@@ -17,7 +17,6 @@
     ears: ClothingHeadsetService
   storage:
     back:
-    - BoxSurvival
     - ForensicScanner
     - ForensicPad
     - ForensicPad

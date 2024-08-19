@@ -1,0 +1,9 @@
+- type: loadout
+  id: WardenCasualsuit
+  equipment: 
+    jumpsuit: ClothingUniformWardenCasual
+
+- type: loadout
+  id: WardenCasualskirt
+  equipment: 
+    jumpsuit: ClothingUniformJumpskirtWardenCasual

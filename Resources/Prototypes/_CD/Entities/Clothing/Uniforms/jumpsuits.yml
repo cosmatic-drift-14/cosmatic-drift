@@ -56,6 +56,8 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
+    
+
 #Synth suits
 - type: entity
   parent: ClothingUniformBase
@@ -67,3 +69,97 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
+
+#Casual
+
+# Industrial
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoPants
+  name: cargo cargoes
+  description: A pair of khaki cargo pants, for cargo. Comes with a grey tee.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/cargo_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/cargo_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitEngineeringCasual
+  name: engineering sweater
+  description: A warm-knit sweater made of synthetic polywool. The shorts seem counter-intuitive.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_casual.rsi
+
+# Militant
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSecurtyCasual
+  name: casual security fatigues
+  description: A Red shirt with a black undershirt and pants. Comfortable while on patrol.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformHoSSeniorCasual
+  name: casual senior fatigues
+  description: A Red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/senior_security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/senior_security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformWardenCasual
+  name: casual warden fatigues
+  description: A Red shirt with a black undershirt and pants. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/warden_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/warden_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformParamedicCasual
+  name: casual paramedic uniform
+  description: A mineral green shirt worn over a sterile-white shirt with black pants. On the left upper corner there is an outline of a cross bleached into the fabric.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/paramedic_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/paramedic_casual.rsi
+
+# Medicinal
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformPhysicianCasual
+  name: physician dress suit
+  description: A white button-down shirt with brown trousers and a blue waistcoat. An orange tie shows it's seniority. There is a blue cross on the right sleeve
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/physician_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/physician_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDoctorCasual
+  name: casual medical outfit
+  description: A blue-white shirt with comfortable black jeans. There is a blue cross on the right sleeve
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
+

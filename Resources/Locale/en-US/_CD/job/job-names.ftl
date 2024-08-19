@@ -1,4 +1,3 @@
-job-name-prisoner = Prisoner
 job-name-private-investigator = Private Investigator
 
 #Senior Roles

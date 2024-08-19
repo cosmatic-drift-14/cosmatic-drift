@@ -10,6 +10,8 @@
         prob: 0.25
       - id: ClothingOuterWinterMiner
         prob: 0.25
+      - id: ClothingOuterCoatCargoBomber
+        prob: 0.25
       - id: HandheldGPSBasic
       - id: RadioHandheld
       - id: OreBag

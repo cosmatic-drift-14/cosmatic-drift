@@ -1,38 +1,28 @@
 # Head
 - type: loadout
   id: SeniorPhysicianBeret
-  equipment: SeniorPhysicianBeret
-
-- type: startingGear
-  id: SeniorPhysicianBeret
-  equipment:
+  equipment: 
     head: ClothingHeadHatBeretSeniorPhysician
 
 # Jumpsuit
 - type: loadout
   id: SeniorPhysicianJumpsuit
-  equipment: SeniorPhysicianJumpsuit
-
-- type: startingGear
-  id: SeniorPhysicianJumpsuit
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
 
 - type: loadout
   id: SeniorPhysicianJumpskirt
-  equipment: SeniorPhysicianJumpskirt
-
-- type: startingGear
-  id: SeniorPhysicianJumpskirt
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformJumpskirtSeniorPhysician
+    
+- type: loadout
+  id: SeniorPhysicianFormalsuit
+  equipment: 
+    jumpsuit: ClothingUniformPhysicianCasual
+
 
 # OuterClothing
 - type: loadout 
   id: SeniorPhysicianLabCoat
-  equipment: SeniorPhysicianLabCoat
-
-- type: startingGear
-  id: SeniorPhysicianLabCoat
-  equipment:
+  equipment: 
     outerClothing: ClothingOuterCoatLabSeniorPhysician

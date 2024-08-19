@@ -19,3 +19,51 @@
     sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
+
+# Casual
+
+#Militant
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSecurtyCasual
+  name: casual security fatigues
+  description: A Red shirt with a black undershirt and skirt. Comfortable while on patrol.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtHoSSeniorCasual
+  name: casual senior fatigues
+  description: A Red shirt with a black undershirt and skirt. Includes gold insignias denoting a respected member of Security.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/senior_security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/senior_security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtWardenCasual
+  name: casual warden fatigues
+  description: A Red shirt with a black undershirt and skirt. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/warden_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/warden_casual.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtParamedicCasual
+  name: casual paramedic uniform
+  description: A mineral green shirt worn over a sterile-white shirt with black skirt. On the left upper corner there is an outline of a cross bleached into the fabric.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/paramedic_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/paramedic_casual.rsi
+

@@ -7,8 +7,6 @@
   - Survival
   - Antagonists
   - Glossary
-  - Cryosleep
-  - Records
 
 - type: guideEntry
   id: Glossary
@@ -19,13 +17,3 @@
   id: Survival
   name: guide-entry-survival
   text: "/ServerInfo/Guidebook/Survival.xml"
-
-- type: guideEntry
-  id: Cryosleep
-  name: guide-entry-cryosleep
-  text: "/ServerInfo/Guidebook/Cryosleep.xml"
-
-- type: guideEntry
-  id: Records
-  name: guide-entry-cd-records
-  text: "/ServerInfo/Guidebook/_CD/Records.xml"

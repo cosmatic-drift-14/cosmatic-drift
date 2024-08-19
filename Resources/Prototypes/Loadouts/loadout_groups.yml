@@ -53,7 +53,15 @@
   loadouts:
   - EmergencyNitrogen
   - EmergencyOxygen
+  - LoadoutSpeciesVoxNitrogen
+
+- type: loadoutGroup
+  id: GroupEVATank
+  name: loadout-group-EVA-tank
+  hidden: true
+  loadouts:
   - LoadoutSpeciesEVANitrogen
+  - LoadoutSpeciesEVAOxygen
 
 # Command
 - type: loadoutGroup
@@ -166,6 +174,13 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
+
+- type: loadoutGroup
+  id: PassengerNeck
+  name: loadout-group-passenger-neck
+  minLimit: 0
+  loadouts:
+  - Mantle
 
 - type: loadoutGroup
   id: PassengerOuterClothing
@@ -425,7 +440,7 @@
   loadouts:
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
-  - LoadoutSpeciesEVANitrogen
+  - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: MimeHead
@@ -548,6 +563,7 @@
   minLimit: 0
   loadouts:
   - QuartermasterWintercoat
+  - CargoBomber # CD
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -569,6 +585,7 @@
   loadouts:
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
+  - CargoTechnicianPants # CD
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -584,7 +601,8 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
-
+  - CargoBomber # CD  
+  
 - type: loadoutGroup
   id: CargoTechnicianShoes
   name: loadout-group-cargo-technician-shoes
@@ -677,6 +695,7 @@
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerHazardsuit
+  - StationEngineerCasualsuit # CD
   # - SeniorEngineerJumpsuit
   # - SeniorEngineerJumpskirt
 
@@ -748,7 +767,7 @@
   loadouts:
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
-  - LoadoutSpeciesEVANitrogen
+  - LoadoutSpeciesVoxNitrogen
 
 # Science
 - type: loadoutGroup
@@ -881,6 +900,8 @@
   loadouts:
   - HeadofSecurityJumpsuit
   - HeadofSecurityJumpskirt
+  - SeniorOfficerCasualsuit # CD
+  - SeniorOfficerCasualskirt # CD
   - HeadofSecurityTurtleneck
   - HeadofSecurityTurtleneckSkirt
   - HeadofSecurityFormalSuit
@@ -915,6 +936,8 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  - WardenCasualsuit # CD
+  - WardenCasualskirt # CD
 
 - type: loadoutGroup
   id: WardenOuterClothing
@@ -938,6 +961,8 @@
   loadouts:
   - SecurityJumpsuit
   - SecurityJumpskirt
+  - SecurityCasualsuit # CD
+  - SecurityCasualskirt # CD
   # - SeniorOfficerJumpsuit
   # - SeniorOfficerJumpskirt
   - SecurityJumpsuitGrey
@@ -1028,7 +1053,7 @@
   loadouts:
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
-  - LoadoutSpeciesEVANitrogen
+  - LoadoutSpeciesVoxNitrogen
 
 # Medical
 - type: loadoutGroup
@@ -1090,6 +1115,7 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
+  - MedicalCasualsuit # CD
   # - SeniorPhysicianJumpsuit
   # - SeniorPhysicianJumpskirt
   - MedicalBlueScrubs
@@ -1188,6 +1214,8 @@
   loadouts:
   - ParamedicJumpsuit
   - ParamedicJumpskirt
+  - ParamedicCasualsuit # CD
+  - ParamedicCasualskirt # CD
   # CD: ETU Loadout
   - JumpsuitETUFlightsuit
 
@@ -1198,6 +1226,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  - BlueHighvisBomber # CD
   # CD: ETU Loadout
   # - BeltHarnessETU
 
@@ -1218,7 +1247,7 @@
   loadouts:
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
-  - LoadoutSpeciesEVANitrogen
+  - LoadoutSpeciesVoxNitrogen
 
 # Wildcards
 - type: loadoutGroup
@@ -1227,6 +1256,13 @@
   loadouts:
   - ReporterJumpsuit
   - JournalistJumpsuit
+
+- type: loadoutGroup
+  id: PsychologistJumpsuit
+  name: loadout-group-psychologist-jumpsuit
+  loadouts:
+  - PsychologistJumpsuit
+  - PsychologistJumpskirt
 
 - type: loadoutGroup
   id: BoxerJumpsuit
@@ -1253,7 +1289,7 @@
   loadouts:
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
-  - LoadoutSpeciesEVANitrogen
+  - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

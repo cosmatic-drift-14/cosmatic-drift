@@ -18,6 +18,7 @@
       - id: ClothingUniformJumpskirtQMTurtleneck
       - id: ClothingUniformJumpsuitQM
       - id: ClothingUniformJumpsuitQMTurtleneck
+      - id: ClothingOuterCoatCargoBomber
 
 - type: entity
   id: LockerCaptainFilledCosmetic

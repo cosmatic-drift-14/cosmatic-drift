@@ -169,6 +169,8 @@ public sealed class CharacterRecordsSystem : EntitySystem
             return;
 
         var records = PlayerProvidedCharacterRecords.DefaultRecords();
+        if (TryComp(player, out MetaDataComponent? meta))
+            recordsDb.Records[key.Key.Index].Name = meta.EntityName;
         recordsDb.Records[key.Key.Index].PRecords = records;
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
