@@ -12,3 +12,5 @@ guide-entry-rules-sop-sec = Security
 guide-entry-rules-sop-engi = Engineering
 guide-entry-rules-sop-med = Medical
 guide-entry-rules-sop-sci = Science
+guide-entry-rules-sop-cargo = Cargo
+guide-entry-rules-sop-service = Service

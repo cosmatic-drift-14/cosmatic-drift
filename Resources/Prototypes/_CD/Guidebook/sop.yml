@@ -16,6 +16,8 @@
   - CDSopEngineering
   - CDSopMedical
   - CDSopScience
+  - CDSopCargo
+  - CDSopService
 
 - type: guideEntry
   id: CDSopCommand
@@ -41,6 +43,16 @@
   id: CDSopScience
   name: guide-entry-rules-sop-sci
   text: "/ServerInfo/Guidebook/_CD/sop/sci.xml"
+
+- type: guideEntry
+  id: CDSopCargo
+  name: guide-entry-rules-sop-cargo
+  text: "/ServerInfo/Guidebook/_CD/sop/cargo.xml"
+
+- type: guideEntry
+  id: CDSopService
+  name: guide-entry-rules-sop-service
+  text: "/ServerInfo/Guidebook/_CD/sop/service.xml"
 
 - type: guideEntry
   id: CDRestricted

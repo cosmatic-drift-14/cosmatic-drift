@@ -9,6 +9,8 @@ Allowed Departments|Type of Gear|Examples|Exceptions
 \[[color=#b18644]Salvage[/color]\]|Seismic charges||
 \[[color=#b18644]Salvage[/color]\]|Fulton devices.|Fulton beacons, and fultons|
 \[[color=#c96dbf]Science[/color]\]|Experimental technology.|Quantum spin inverters, speed boots, and blue-space backpacks|
+\[[color=#c96dbf]Science[/color]/[color=#f39f27]Engineering[/color]]|Advanced production fabricators.|Protolathes.|
+\[[color=#c96dbf]Science[/color]\]|Scientific production fabricators.|Circuit imprinters, and exosuit fabricators.|
 \[[color=#cd0000]Security[/color]\]|Advanced flashing technology.|Flashbangs, and mounted auto flashers|
 \[[color=#cd0000]Security[/color]\]|Combat knives||
 \[[color=#cd0000]Security[/color]\]|Riot control grenades.|Tear gas, and stingers|
@@ -18,6 +20,7 @@ Allowed Departments|Type of Gear|Examples|Exceptions
 \[[color=#cd0000]Security[/color]\]|Stun technology.|Disablers, stun batons, and disabler SMGs.|[color=#134975]Captain's[/color] disabler. Head of Personnel's disabler.
 \[[color=#cd0000]Security[/color]\]|Security heads-up displays.|Security glasses, and security HUDs|
 \[[color=#cd0000]Security[/color]\]|Ballistic and laser firearms.|Handguns, rifles, laser guns, and shotguns.|[color=#134975]Captain's[/color] laser pistol. [color=#9fed58]Bartender's[/color] shotgun.
+\[[color=#cd0000]Security[/color]\]|Firearm and ammunition fabricators.|Security techfabs, and ammo techfabs.|
 \[[color=#cd0000]Security[/color]/Service: Bar\]|Beanbag shotgun shells||
 \[Service: Kitchen\]|Cooking knives.|Kitchen knives, and butcher cleavers|
 \[None\]|Improvised deadly weaponry.|Baseball bats, shivs, and spears|

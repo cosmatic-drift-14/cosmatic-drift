@@ -80,6 +80,14 @@
     <ColorBox><Box>Experimental technology.</Box></ColorBox>
     <ColorBox><Box>Quantum spin inverters, speed boots, and blue-space backpacks</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#c96dbf]Science[/color]/[color=#f39f27]Engineering[/color]]</Box></ColorBox>
+    <ColorBox><Box>Advanced production fabricators.</Box></ColorBox>
+    <ColorBox><Box>Protolathes.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#c96dbf]Science[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Scientific production fabricators.</Box></ColorBox>
+    <ColorBox><Box>Circuit imprinters, and exosuit fabricators.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Advanced flashing technology.</Box></ColorBox>
     <ColorBox><Box>Flashbangs, and mounted auto flashers</Box></ColorBox>
@@ -116,6 +124,10 @@
     <ColorBox><Box>Ballistic and laser firearms.</Box></ColorBox>
     <ColorBox><Box>Handguns, rifles, laser guns, and shotguns.</Box></ColorBox>
     <ColorBox><Box>[color=#134975]Captain's[/color] laser pistol. [color=#9fed58]Bartender's[/color] shotgun.</Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Firearm and ammunition fabricators.</Box></ColorBox>
+    <ColorBox><Box>Security techfabs, and ammo techfabs.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]/Service: Bar\]</Box></ColorBox>
     <ColorBox><Box>Beanbag shotgun shells</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
