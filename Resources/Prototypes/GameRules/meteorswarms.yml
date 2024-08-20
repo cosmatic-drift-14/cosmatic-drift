@@ -57,10 +57,10 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 300 # 5 min
+    minimumTimeUntilFirstEvent: 600 # CD: 10 min
     minMaxEventTiming:
-      min: 2250 # CD Change: 38 min
-      max: 2790 # CD Change: 46 min
+      min: 3600 # CD Change: 60 min
+      max: 4080 # CD Change: 68 min
     scheduledGameRules: !type:NestedSelector
       tableId: BasicMeteorSwarmEventsTable
 
@@ -70,10 +70,10 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 300 # 5 min 
+    minimumTimeUntilFirstEvent: 300 # 5 min
     minMaxEventTiming:
-      min: 2250 # CD Change: 38 min
-      max: 2790 # CD Change: 46 min
+      min: 3600 # CD Change: 60 min
+      max: 4080 # CD Change: 68 min
     scheduledGameRules: !type:NestedSelector
       tableId: MeteorSwarmMildTable
 
@@ -125,7 +125,7 @@
   id: GameRuleSpaceDustMajor
   components:
   - type: StationEvent
-    weight: 22
+    weight: 12 # CD: Lower from 22
     minimumPlayers: 0
   - type: MeteorSwarm
     announcement: station-event-space-dust-start-announcement
@@ -137,8 +137,9 @@
       min: 2
       max: 3
     meteorsPerWave:
-      min: 8
-      max: 12
+      # CD: Decrease count
+      min: 6
+      max: 10
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -149,8 +150,9 @@
     minimumPlayers: 15
   - type: MeteorSwarm
     meteors:
-      MeteorSmall: 7
-      MeteorMedium: 3
+      # CD: Decrease count
+      MeteorSmall: 5
+      MeteorMedium: 2
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -160,8 +162,9 @@
     weight: 5
   - type: MeteorSwarm
     meteors:
-      MeteorSmall: 3
-      MeteorMedium: 6
+      # CD: Decrease count
+      MeteorSmall: 2
+      MeteorMedium: 3
       MeteorLarge: 1
 
 # - type: entity
