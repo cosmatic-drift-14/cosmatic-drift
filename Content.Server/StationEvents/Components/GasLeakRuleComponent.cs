@@ -1,4 +1,4 @@
-﻿using Content.Server.StationEvents.Events;
+using Content.Server.StationEvents.Events;
 using Content.Shared.Atmos;
 using Robust.Shared.Map;
 
@@ -42,6 +42,6 @@ public sealed partial class GasLeakRuleComponent : Component
     public int MaximumMolesPerSecond = 200;
 
     public int MinimumGas = 1000;
-    public int MaximumGas = 4000;
+    public int MaximumGas = 3000; // CD: Nerf max gas a bit to hopefully stop it from hijacking the round as often.
     public float SparkChance = 0.05f;
 }

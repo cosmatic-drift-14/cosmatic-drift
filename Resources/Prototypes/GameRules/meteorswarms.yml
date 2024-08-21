@@ -70,7 +70,7 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 min 
+    minimumTimeUntilFirstEvent: 1200 # 20 min
     minMaxEventTiming:
       min: 4500 # CD Change: 75 min
       max: 5400 # CD Change: 90 min
@@ -138,8 +138,9 @@
       min: 2
       max: 3
     meteorsPerWave:
-      min: 8
-      max: 12
+      # CD: Decrease count
+      min: 6
+      max: 10
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -150,8 +151,9 @@
     minimumPlayers: 15
   - type: MeteorSwarm
     meteors:
-      MeteorSmall: 7
-      MeteorMedium: 3
+      # CD: Decrease count
+      MeteorSmall: 5
+      MeteorMedium: 2
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -161,8 +163,9 @@
     weight: 5
   - type: MeteorSwarm
     meteors:
-      MeteorSmall: 3
-      MeteorMedium: 6
+      # CD: Decrease count
+      MeteorSmall: 2
+      MeteorMedium: 3
       MeteorLarge: 1
 
 # - type: entity
