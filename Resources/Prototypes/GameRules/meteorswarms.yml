@@ -70,7 +70,7 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 min 
+    minimumTimeUntilFirstEvent: 1200 # 20 min
     minMaxEventTiming:
       min: 4500 # CD Change: 75 min
       max: 5400 # CD Change: 90 min
@@ -126,7 +126,7 @@
   id: GameRuleSpaceDustMajor
   components:
   - type: StationEvent
-    weight: 12 # CD: Lower from 22
+    weight: 22
     minimumPlayers: 0
   - type: MeteorSwarm
     announcement: station-event-space-dust-start-announcement

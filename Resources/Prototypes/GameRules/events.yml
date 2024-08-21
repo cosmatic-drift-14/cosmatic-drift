@@ -259,7 +259,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     endAnnouncement: station-event-gas-leak-end-announcement
-    weight: 5 # CD: Nerf weight, please revert if upstream ever makes "dangerous" gasses more rare.
+    weight: 10
   - type: GasLeakRule
 
 - type: entity
