@@ -57,13 +57,13 @@
   id: FigurinesHoS
   values:
     prefix: figurines-hos-
-    count: 2
+    count: 3
 
 - type: localizedDataset
   id: FigurinesWarden
   values:
     prefix: figurines-warden-
-    count: 1
+    count: 3
 
 - type: localizedDataset
   id: FigurinesDetective
