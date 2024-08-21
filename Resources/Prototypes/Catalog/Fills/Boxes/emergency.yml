@@ -220,9 +220,9 @@
     - id: ClothingMaskBreath
     - id: EmergencyOxygenTankFilled
     - id: EmergencyMedipen
-    - id: Flare
+    # - id: Flare
     - id: FoodBreadBaguette
-    - id: DrinkWaterBottleFull
+    # - id: DrinkWaterBottleFull
 
 - type: entity
   parent: BoxSurvivalNitrogen
@@ -234,9 +234,9 @@
     - id: ClothingMaskBreath
     - id: EmergencyNitrogenTankFilled
     - id: EmergencyMedipen
-    - id: Flare
+    # - id: Flare
     - id: FoodBreadBaguette
-    - id: DrinkWaterBottleFull
+    # - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-nitrogen
 

@@ -335,13 +335,7 @@
   suffix: Debug
   components:
   - type: Storage
-    grid:
-    - 0,0,3,3
-    - 5,0,7,2
-    - 0,5,7,5
-    - 6,4,7,5
-    - 9,2,10,3
-    - 9,5,9,5
+    capacity: 9999
 
 - type: entity
   parent: ClothingBackpack
@@ -351,8 +345,7 @@
   suffix: Debug
   components:
   - type: Storage
-    grid:
-    - 0,0,39,24
+    capacity: 9999
 
 - type: entity
   parent: ClothingBackpack
@@ -362,18 +355,7 @@
   suffix: Debug
   components:
   - type: Storage
-    grid:
-    - 0,0,0,3
-    - 0,0,2,0
-    - 0,3,2,3
-    - 2,1,2,1
-    - 4,0,4,2
-    - 6,0,6,2
-    - 5,1,5,1
-    - 5,3,5,3
-    - 9,0,9,1
-    - 8,2,8,3
-    - 10,2,10,3
+    capacity: 9999
 
 - type: entity
   parent: ClothingBackpack
@@ -383,5 +365,4 @@
   suffix: Debug
   components:
   - type: Storage
-    grid:
-    - 5,5,11,8
+    capacity: 9999

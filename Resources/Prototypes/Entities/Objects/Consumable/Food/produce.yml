@@ -2469,7 +2469,7 @@
   description: A large, blue... berry. Seriously.
   components:
   - type: Item
-    size: Small
+    size: 10
   - type: FlavorProfile
     flavors:
       - bluepumpkin

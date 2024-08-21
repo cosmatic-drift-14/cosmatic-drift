@@ -266,10 +266,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: Item
-<<<<<<< HEAD
     size: 5
-=======
->>>>>>> dc66386e5f022809ad5c289b4bb4b033adade25c
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
 
 - type: entity

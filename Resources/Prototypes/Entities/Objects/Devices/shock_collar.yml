@@ -6,7 +6,7 @@
   description: An electric collar that shocks on the signal.
   components:
   - type: Item
-    size: Small
+    size: 15
   - type: Sprite
     sprite: Clothing/Neck/Misc/shock_collar.rsi
     state: icon

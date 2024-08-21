@@ -566,7 +566,7 @@
   description: A big wheel of delicious Cheddar.
   components:
   - type: Item
-    size: Normal
+    size: 20
   - type: FlavorProfile
     flavors:
       - cheesy

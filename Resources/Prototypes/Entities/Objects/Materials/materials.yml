@@ -655,7 +655,7 @@
       map: [ "base" ]
   - type: Item
     sprite: Objects/Materials/Mob/carptooth.rsi
-    size: Normal
+    size: 10
   - type: Appearance
   - type: Stack
     stackType: SpaceCarpTooth
@@ -678,6 +678,8 @@
   components:
   - type: Stack
     count: 1
+  - type: Item
+    size: 1
 
 - type: entity
   parent: [ MaterialBase, BaseKnife ]
@@ -693,7 +695,7 @@
       map: [ "base" ]
   - type: Item
     sprite: Objects/Materials/Mob/sharktooth.rsi
-    size: Normal
+    size: 10
   - type: Appearance
   - type: Stack
     stackType: SharkMinnowTooth
@@ -717,6 +719,8 @@
   components:
   - type: Stack
     count: 1
+  - type: Item
+    size: 1
 
 - type: entity
   parent: MaterialBase
@@ -803,7 +807,7 @@
     - goliath_hide_2
     - goliath_hide_3
   - type: Item
-    size: 2
+    size: 60
 
 - type: entity
   parent: MaterialGoliathHide
@@ -812,3 +816,5 @@
   components:
   - type: Stack
     count: 1
+  - type: Item
+    size: 2

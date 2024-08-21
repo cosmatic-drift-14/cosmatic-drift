@@ -124,6 +124,8 @@
     state: plasma
   - type: Stack
     count: 10
+  - type: Item
+    size: 10
 
 - type: entity
   parent: SheetPlasma

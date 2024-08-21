@@ -37,9 +37,10 @@ figurines-captain-3 = No idea what you're doing, but keep up the good work.
 
 figurines-hos-1 = The only reason I'm still sane is the pay.
 figurines-hos-2 = What do you mean you 'accidently' shot the clown?
+figurines-hos-3 = Yes, I hate my job.
 
 figurines-warden-1 = Huh- wh? Sorry, I almost dozed off.
-figurines-warden-3 = Yes, I am allowed to leave the brig.
+figurines-warden-2 = Yes, I am allowed to leave the brig.
 figurines-warden-3 = We totally treat everyone fairly and do NOT mistreat our prisoners.
 figurines-warden-4 = Brig is my home. My home is brig. My brig is home. Stop, what?
 
