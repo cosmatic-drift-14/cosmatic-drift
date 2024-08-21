@@ -1,0 +1,12 @@
+# Lunchboxes
+- type: loadout
+  id: LunchboxBlue
+  storage:
+    back:
+    - LunchboxBlue
+
+- type: loadout
+  id: LunchboxYellow
+  storage:
+    back:
+    - LunchboxYellow
