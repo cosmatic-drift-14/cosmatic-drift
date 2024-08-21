@@ -49,9 +49,10 @@
   id: ChiefEngineerMantle
   equipment:
     neck: ClothingNeckMantleCE
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MasterCE
+#CD redaction
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: MasterCE
 
 - type: startingGear
   id: ChiefEngineerMantle
