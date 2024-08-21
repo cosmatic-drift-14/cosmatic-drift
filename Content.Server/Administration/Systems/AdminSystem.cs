@@ -55,6 +55,9 @@ public sealed class AdminSystem : EntitySystem
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
 
+    // CD: for erasing records on erase ban
+    [Dependency] private readonly CharacterRecordsSystem _cdRecords = default!;
+
     private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
 
     /// <summary>
@@ -70,11 +73,6 @@ public sealed class AdminSystem : EntitySystem
     {
         base.Initialize();
 
-        // CD: for erasing records on erase ban
-        [Dependency] private readonly CharacterRecordsSystem _cdRecords = default!;
-
-        private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
-        
         _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
         _adminManager.OnPermsChanged += OnAdminPermsChanged;
         _playTime.SessionPlayTimeUpdated += OnSessionPlayTimeUpdated;
@@ -126,304 +124,7 @@ public sealed class AdminSystem : EntitySystem
 
         foreach (var admin in _adminManager.ActiveAdmins)
         {
-            var session = _minds.GetSession(ev.Mind);
-            if (!ev.Antagonist || session == null)
-                return;
-
-            UpdatePlayerList(session);
-        }
-
-        private void OnAdminPermsChanged(AdminPermsChangedEventArgs obj)
-        {
-            UpdatePanicBunker();
-
-            if (!obj.IsAdmin)
-            {
-                RaiseNetworkEvent(new FullPlayerListEvent(), obj.Player.Channel);
-                return;
-            }
-
-            SendFullPlayerList(obj.Player);
-        }
-
-        private void OnPlayerDetached(PlayerDetachedEvent ev)
-        {
-            // If disconnected then the player won't have a connected entity to get character name from.
-            // The disconnected state gets sent by OnPlayerStatusChanged.
-            if (ev.Player.Status == SessionStatus.Disconnected)
-                return;
-
-            UpdatePlayerList(ev.Player);
-        }
-
-        private void OnPlayerAttached(PlayerAttachedEvent ev)
-        {
-            if (ev.Player.Status == SessionStatus.Disconnected)
-                return;
-
-            _roundActivePlayers.Add(ev.Player.UserId);
-            UpdatePlayerList(ev.Player);
-        }
-
-        public override void Shutdown()
-        {
-            base.Shutdown();
-            _playerManager.PlayerStatusChanged -= OnPlayerStatusChanged;
-            _adminManager.OnPermsChanged -= OnAdminPermsChanged;
-            _playTime.SessionPlayTimeUpdated -= OnSessionPlayTimeUpdated;
-        }
-
-        private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
-        {
-            UpdatePlayerList(e.Session);
-            UpdatePanicBunker();
-        }
-
-        private void SendFullPlayerList(ICommonSession playerSession)
-        {
-            var ev = new FullPlayerListEvent();
-
-            ev.PlayersInfo = _playerList.Values.ToList();
-
-            RaiseNetworkEvent(ev, playerSession.Channel);
-        }
-
-        private PlayerInfo GetPlayerInfo(SessionData data, ICommonSession? session)
-        {
-            var name = data.UserName;
-            var entityName = string.Empty;
-            var identityName = string.Empty;
-
-            if (session?.AttachedEntity != null)
-            {
-                entityName = EntityManager.GetComponent<MetaDataComponent>(session.AttachedEntity.Value).EntityName;
-                identityName = Identity.Name(session.AttachedEntity.Value, EntityManager);
-            }
-
-            var antag = false;
-            var startingRole = string.Empty;
-            if (_minds.TryGetMind(session, out var mindId, out _))
-            {
-                antag = _role.MindIsAntagonist(mindId);
-                startingRole = _jobs.MindTryGetJobName(mindId);
-            }
-
-            var connected = session != null && session.Status is SessionStatus.Connected or SessionStatus.InGame;
-            TimeSpan? overallPlaytime = null;
-            if (session != null &&
-                _playTime.TryGetTrackerTimes(session, out var playTimes) &&
-                playTimes.TryGetValue(PlayTimeTrackingShared.TrackerOverall, out var playTime))
-            {
-                overallPlaytime = playTime;
-            }
-
-            return new PlayerInfo(name, entityName, identityName, startingRole, antag, GetNetEntity(session?.AttachedEntity), data.UserId,
-                connected, _roundActivePlayers.Contains(data.UserId), overallPlaytime);
-        }
-
-        private void OnPanicBunkerChanged(bool enabled)
-        {
-            PanicBunker.Enabled = enabled;
-            _chat.SendAdminAlert(Loc.GetString(enabled
-                ? "admin-ui-panic-bunker-enabled-admin-alert"
-                : "admin-ui-panic-bunker-disabled-admin-alert"
-            ));
-
-            SendPanicBunkerStatusAll();
-        }
-
-        private void OnBabyJailChanged(bool enabled)
-        {
-            BabyJail.Enabled = enabled;
-            _chat.SendAdminAlert(Loc.GetString(enabled
-                ? "admin-ui-baby-jail-enabled-admin-alert"
-                : "admin-ui-baby-jail-disabled-admin-alert"
-            ));
-
-            SendBabyJailStatusAll();
-        }
-
-        private void OnPanicBunkerDisableWithAdminsChanged(bool enabled)
-        {
-            PanicBunker.DisableWithAdmins = enabled;
-            UpdatePanicBunker();
-        }
-
-        private void OnPanicBunkerEnableWithoutAdminsChanged(bool enabled)
-        {
-            PanicBunker.EnableWithoutAdmins = enabled;
-            UpdatePanicBunker();
-        }
-
-        private void OnPanicBunkerCountDeadminnedAdminsChanged(bool enabled)
-        {
-            PanicBunker.CountDeadminnedAdmins = enabled;
-            UpdatePanicBunker();
-        }
-
-        private void OnPanicBunkerShowReasonChanged(bool enabled)
-        {
-            PanicBunker.ShowReason = enabled;
-            SendPanicBunkerStatusAll();
-        }
-
-        private void OnBabyJailShowReasonChanged(bool enabled)
-        {
-            BabyJail.ShowReason = enabled;
-            SendBabyJailStatusAll();
-        }
-
-        private void OnPanicBunkerMinAccountAgeChanged(int minutes)
-        {
-            PanicBunker.MinAccountAgeMinutes = minutes;
-            SendPanicBunkerStatusAll();
-        }
-
-        private void OnBabyJailMaxAccountAgeChanged(int minutes)
-        {
-            BabyJail.MaxAccountAgeMinutes = minutes;
-            SendBabyJailStatusAll();
-        }
-
-        private void OnPanicBunkerMinOverallMinutesChanged(int minutes)
-        {
-            PanicBunker.MinOverallMinutes = minutes;
-            SendPanicBunkerStatusAll();
-        }
-
-        private void OnBabyJailMaxOverallMinutesChanged(int minutes)
-        {
-            BabyJail.MaxOverallMinutes = minutes;
-            SendBabyJailStatusAll();
-        }
-
-        private void UpdatePanicBunker()
-        {
-            var admins = PanicBunker.CountDeadminnedAdmins
-                ? _adminManager.AllAdmins
-                : _adminManager.ActiveAdmins;
-            var hasAdmins = admins.Any();
-
-            // TODO Fix order dependent Cvars
-            // Please for the sake of my sanity don't make cvars & order dependent.
-            // Just make a bool field on the system instead of having some cvars automatically modify other cvars.
-            //
-            // I.e., this:
-            //   /sudo cvar game.panic_bunker.enabled true
-            //   /sudo cvar game.panic_bunker.disable_with_admins true
-            // and this:
-            //   /sudo cvar game.panic_bunker.disable_with_admins true
-            //   /sudo cvar game.panic_bunker.enabled true
-            //
-            // should have the same effect, but currently setting the disable_with_admins can modify enabled.
-
-            if (hasAdmins && PanicBunker.DisableWithAdmins)
-            {
-                _config.SetCVar(CCVars.PanicBunkerEnabled, false);
-            }
-            else if (!hasAdmins && PanicBunker.EnableWithoutAdmins)
-            {
-                _config.SetCVar(CCVars.PanicBunkerEnabled, true);
-            }
-
-            SendPanicBunkerStatusAll();
-        }
-
-        private void SendPanicBunkerStatusAll()
-        {
-            var ev = new PanicBunkerChangedEvent(PanicBunker);
-            foreach (var admin in _adminManager.AllAdmins)
-            {
-                RaiseNetworkEvent(ev, admin);
-            }
-        }
-
-        private void SendBabyJailStatusAll()
-        {
-            var ev = new BabyJailChangedEvent(BabyJail);
-            foreach (var admin in _adminManager.AllAdmins)
-            {
-                RaiseNetworkEvent(ev, admin);
-            }
-        }
-
-        /// <summary>
-        ///     Erases a player from the round.
-        ///     This removes them and any trace of them from the round, deleting their
-        ///     chat messages and showing a popup to other players.
-        ///     Their items are dropped on the ground.
-        /// </summary>
-        public void Erase(ICommonSession player)
-        {
-            var entity = player.AttachedEntity;
-            _chat.DeleteMessagesBy(player);
-
-            if (entity != null && !TerminatingOrDeleted(entity.Value))
-            {
-                if (TryComp(entity.Value, out TransformComponent? transform))
-                {
-                    var coordinates = _transform.GetMoverCoordinates(entity.Value, transform);
-                    var name = Identity.Entity(entity.Value, EntityManager);
-                    _popup.PopupCoordinates(Loc.GetString("admin-erase-popup", ("user", name)), coordinates, PopupType.LargeCaution);
-                    var filter = Filter.Pvs(coordinates, 1, EntityManager, _playerManager);
-                    var audioParams = new AudioParams().WithVolume(3);
-                    _audio.PlayStatic("/Audio/Effects/pop_high.ogg", filter, coordinates, true, audioParams);
-                }
-
-                foreach (var item in _inventory.GetHandOrInventoryEntities(entity.Value))
-                {
-                    if (TryComp(item, out PdaComponent? pda) &&
-                        TryComp(pda.ContainedId, out StationRecordKeyStorageComponent? keyStorage) &&
-                        keyStorage.Key is { } key &&
-                        _stationRecords.TryGetRecord(key, out GeneralStationRecord? record))
-                    {
-                        if (TryComp(entity, out DnaComponent? dna) &&
-                            dna.DNA != record.DNA)
-                        {
-                            continue;
-                        }
-
-                        if (TryComp(entity, out FingerprintComponent? fingerPrint) &&
-                            fingerPrint.Fingerprint != record.Fingerprint)
-                        {
-                            continue;
-                        }
-
-                        _stationRecords.RemoveRecord(key);
-                        Del(item);
-                    }
-                }
-
-                if (_inventory.TryGetContainerSlotEnumerator(entity.Value, out var enumerator))
-                {
-                    while (enumerator.NextItem(out var item, out var slot))
-                    {
-                        if (_inventory.TryUnequip(entity.Value, entity.Value, slot.Name, true, true))
-                            _physics.ApplyAngularImpulse(item, ThrowingSystem.ThrowAngularImpulse);
-                    }
-                }
-
-                if (TryComp(entity.Value, out HandsComponent? hands))
-                {
-                    foreach (var hand in _hands.EnumerateHands(entity.Value, hands))
-                    {
-                        _hands.TryDrop(entity.Value, hand, checkActionBlocker: false, doDropInteraction: false, handsComp: hands);
-                    }
-                }
-
-                // CD: Erase Character Records on ban
-                _cdRecords.DeleteAllRecords(entity.Value);
-            }
-
-            _minds.WipeMind(player);
-            QueueDel(entity);
-
-            _gameTicker.SpawnObserver(player);
-        }
-
-        private void OnSessionPlayTimeUpdated(ICommonSession session)
-        {
-            UpdatePlayerList(session);
+            RaiseNetworkEvent(updateEv, admin.Channel);
         }
     }
 
@@ -745,6 +446,9 @@ public sealed class AdminSystem : EntitySystem
                     _hands.TryDrop(entity.Value, hand, checkActionBlocker: false, doDropInteraction: false, handsComp: hands);
                 }
             }
+
+            // CD: Erase Character Records on ban
+            _cdRecords.DeleteAllRecords(entity.Value);
         }
 
         _minds.WipeMind(player);
