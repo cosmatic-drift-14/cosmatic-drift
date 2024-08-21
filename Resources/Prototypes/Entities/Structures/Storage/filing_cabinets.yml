@@ -64,7 +64,7 @@
     graph: FilingCabinet
     node: filingCabinet
   - type: StaticPrice
-    price: 20
+    price: 60
 
 - type: entity
   name: tall cabinet
@@ -151,7 +151,7 @@
     graph: FilingCabinet
     node: chestDrawer
   - type: StaticPrice
-    price: 15
+    price: 100
   - type: RequireProjectileTarget
 
 - type: entity
