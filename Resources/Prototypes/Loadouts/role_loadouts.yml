@@ -170,7 +170,7 @@
   - MimeBackpack
   - MimeOuterClothing
   - Glasses
-  - Survival
+  - SurvivalMime
   - Trinkets
 
 - type: roleLoadout
@@ -340,6 +340,7 @@
   - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -354,6 +355,7 @@
   - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -369,6 +371,7 @@
   - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -384,6 +387,7 @@
   - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout

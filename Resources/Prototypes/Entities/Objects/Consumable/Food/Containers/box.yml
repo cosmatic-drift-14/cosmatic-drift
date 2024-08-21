@@ -206,8 +206,10 @@
       map: ["enum.StorageVisualLayers.Door"]
   # TODO make these entitystorage again + placeablesurface after entity storage ECS gets merged.
   - type: Storage
-    capacity: 8
+    capacity: 20
     whitelist:
+      components:
+      - Utensil
       tags:
       - Pizza
   - type: Item
@@ -260,6 +262,7 @@
     - id: FoodPizzaDonkpocket
       prob: 0.10
       orGroup: Pizza
+    - id: KnifePlastic
 
 # Nugget
 

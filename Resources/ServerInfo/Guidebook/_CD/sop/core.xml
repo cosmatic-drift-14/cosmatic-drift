@@ -59,5 +59,7 @@
   - [textlink="Engineerring" link="CDSopEngineering"]
   - [textlink="Medical" link="CDSopMedial"]
   - [textlink="Science" link="CDSopScience"]
+  - [textlink="Cargo" link="CDSopCargo"]
+  - [textlink="Service" link="CDSopService"]
 
 </Document>

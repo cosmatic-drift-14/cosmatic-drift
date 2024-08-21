@@ -3,6 +3,7 @@
   mapName: 'Oasis'
   mapPath: /Maps/oasis.yml
   minPlayers: 55 #CD change
+  patchfile: /CDMapPatches/oasis.yml # CD Edit: Apply map patch
   stations:
     Oasis:
       stationProto: StandardNanotrasenStation

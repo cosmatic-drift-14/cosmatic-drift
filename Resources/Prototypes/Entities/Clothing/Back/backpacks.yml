@@ -303,3 +303,66 @@
   - type: Unremoveable
     deleteOnDrop: false
 
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackElectropack
+  name: electropack
+  suffix: SelfUnremovable
+  description: Shocks on the signal. It is used to keep a particularly dangerous criminal under control.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/electropack.rsi
+    state: icon
+  - type: Clothing
+    stripDelay: 10
+    equipDelay: 5 # to avoid accidentally falling into the trap associated with SelfUnremovableClothing
+  - type: SelfUnremovableClothing
+  - type: ShockOnTrigger
+    damage: 5
+    duration: 3
+    cooldown: 4
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+
+# Debug
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug
+  name: wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug2
+  name: big wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug3
+  name: gay wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug4
+  name: offset wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
