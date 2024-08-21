@@ -29,7 +29,7 @@ figurines-mime-5 = ................
 figurines-musician-1 = Never gonna give you up!
 figurines-musician-2 = Never gonna let you down!
 
-# figurines-boxer-
+figurines-boxer-1 = The first rule of Fight Club is...
 
 figurines-captain-1 = Captain, on deck!
 figurines-captain-2 = Glory to NT!
@@ -90,11 +90,11 @@ figurines-rd-2 = The shift JUST started.
 figurines-rd-3 = Safety appears to be optional in my department.
 figurines-rd-4 = Zero days since last accident...
 
-figurines-scientist-1 = I wish I was allowed to do something fun.
-figurines-scientist-2 = I've never done robotics but I can try!
-figurines-scientist-3 = I was nearly cooked alive by radiation- anyways.
-figurines-scientist-4 = The artifact lab is gone.
-figurines-scientist-5 = Has anyone seen the anomaly?
+figurines-scientist-1 = Someone else must have made those bombs!
+figurines-scientist-2 = He asked to be borged!
+figurines-scientist-3 = Carp at sci!
+figurines-scientist-4 = Explosion at sci!
+figurines-scientist-5 = The anomaly has exploded!
 
 figurines-cmo-1 = Suit sensors!
 figurines-cmo-2 = Why do we have meth?
