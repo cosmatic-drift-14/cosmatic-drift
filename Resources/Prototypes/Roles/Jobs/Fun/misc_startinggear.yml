@@ -182,6 +182,7 @@
     - GasAnalyzer
     - trayScanner
     - AccessConfiguratorUniversal
+    - Multitool
 
 #Gladiator with spear
 - type: startingGear
