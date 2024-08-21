@@ -45,9 +45,10 @@
   id: HoPMantle
   equipment:
     neck: ClothingNeckMantleHOP
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MasterHoP
+#CD redaction
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: MasterHoP
 
 - type: startingGear
   id: HoPMantle
