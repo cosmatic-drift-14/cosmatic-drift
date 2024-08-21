@@ -39,6 +39,9 @@ figurines-hos-1 = The only reason I'm still sane is the pay.
 figurines-hos-2 = What do you mean you 'accidently' shot the clown?
 
 figurines-warden-1 = Huh- wh? Sorry, I almost dozed off.
+figurines-warden-3 = Yes, I am allowed to leave the brig.
+figurines-warden-3 = We totally treat everyone fairly and do NOT mistreat our prisoners.
+figurines-warden-4 = Brig is my home. My home is brig. My brig is home. Stop, what?
 
 figurines-detective-1 = The butler did it.
 figurines-detective-2 = Four cases, all cold.
