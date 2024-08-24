@@ -109,7 +109,7 @@
     earliestStart: 2
     minimumPlayers: 0
   - type: MeteorSwarm
-    announcement: station-event-meteor-swarm-start-announcement
+    announcement: station-event-space-dust-minor-start-announcement # CD Change: custom announcement
     announcementSound: /Audio/Announcements/attention.ogg
     nonDirectional: true
     meteors:
@@ -129,7 +129,7 @@
     weight: 22
     minimumPlayers: 0
   - type: MeteorSwarm
-    announcement: station-event-space-dust-start-announcement
+    announcement: station-event-space-dust-moderate-start-announcement # CD Change: custom announcement
     announcementSound: /Audio/Announcements/attention.ogg
     nonDirectional: true
     meteors:
@@ -150,6 +150,7 @@
     weight: 8
     minimumPlayers: 15
   - type: MeteorSwarm
+    announcement: station-event-meteor-swarm-small-start-announcement # CD Change: custom announcement
     meteors:
       # CD: Decrease count
       MeteorSmall: 5
@@ -162,6 +163,7 @@
   - type: StationEvent
     weight: 5
   - type: MeteorSwarm
+    announcement: station-event-meteor-swarm-moderate-start-announcement # CD Change: custom announcement
     meteors:
       # CD: Decrease count
       MeteorSmall: 2
@@ -175,6 +177,7 @@
 #   - type: StationEvent
 #     weight: 2
 #   - type: MeteorSwarm
+#     announcement: station-event-meteor-swarm-heavy-start-announcement # CD Change: custom announcement
 #     meteors:
 #       MeteorSmall: 2
 #       MeteorMedium: 4
