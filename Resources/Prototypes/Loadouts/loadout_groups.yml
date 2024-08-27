@@ -408,6 +408,7 @@
   name: loadout-group-clown-jumpsuit
   loadouts:
   - ClownSuit
+  - ClownSkirt
   - JesterSuit
   - JesterAltSuit
 
