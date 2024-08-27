@@ -99,6 +99,7 @@ guide-entry-rules-3-4 = 3.4
 guide-entry-rules-3-5 = 3.5
 guide-entry-rules-3-6 = 3.6
 guide-entry-rules-3-7 = 3.7
+guide-entry-rules-3-8 = 3.8
 guide-entry-rules-space-law = Space Law
 guide-entry-rules-sl-crime-list = Crime List
 guide-entry-rules-sl-controlled-substances = Controlled Substances
