@@ -44,8 +44,10 @@ public sealed class ArrivalsSystem : EntitySystem
     [Dependency] private readonly IConsoleHost _console = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
+    [Dependency] private readonly IPrototypeManager _protoManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IChatManager _chat = default!;
+    [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly BiomeSystem _biomes = default!;
     [Dependency] private readonly GameTicker _ticker = default!;
     [Dependency] private readonly MapLoaderSystem _loader = default!;
@@ -486,7 +488,7 @@ public sealed class ArrivalsSystem : EntitySystem
 
     private void SetupArrivalsStation()
     {
-        var mapId = _mapManager.CreateMap();
+        var mapUid = _mapSystem.CreateMap(out var mapId, false);
 
         if (!_loader.TryLoad(mapId, _cfgManager.GetCVar(CCVars.ArrivalsMap), out var uids))
         {
@@ -499,6 +501,20 @@ public sealed class ArrivalsSystem : EntitySystem
             EnsureComp<ProtectedGridComponent>(id);
             EnsureComp<PreventPilotComponent>(id);
         }
+
+        // Setup planet arrivals if relevant
+        if (_cfgManager.GetCVar(CCVars.ArrivalsPlanet))
+        {
+            var template = _random.Pick(_arrivalsBiomeOptions);
+            _biomes.EnsurePlanet(mapUid, _protoManager.Index(template));
+            var restricted = new RestrictedRangeComponent
+            {
+                Range = 32f
+            };
+            AddComp(mapUid, restricted);
+        }
+
+        _mapSystem.InitializeMap(mapId);
 
         // Handle roundstart stations.
         var query = AllEntityQuery<StationArrivalsComponent>();
@@ -556,10 +572,10 @@ public sealed class ArrivalsSystem : EntitySystem
             return;
 
         // Spawn arrivals on a dummy map then dock it to the source.
-        var dummyMap = _mapManager.CreateMap();
+        var dummpMapEntity = _mapSystem.CreateMap(out var dummyMapId);
 
         if (TryGetArrivals(out var arrivals) &&
-            _loader.TryLoad(dummyMap, component.ShuttlePath.ToString(), out var shuttleUids))
+            _loader.TryLoad(dummyMapId, component.ShuttlePath.ToString(), out var shuttleUids))
         {
             component.Shuttle = shuttleUids[0];
             var shuttleComp = Comp<ShuttleComponent>(component.Shuttle);
@@ -571,7 +587,7 @@ public sealed class ArrivalsSystem : EntitySystem
         }
 
         // Don't start the arrivals shuttle immediately docked so power has a time to stabilise?
-        var timer = AddComp<TimedDespawnComponent>(_mapManager.GetMapEntityId(dummyMap));
+        var timer = AddComp<TimedDespawnComponent>(dummpMapEntity);
         timer.Lifetime = 15f;
     }
 }
