@@ -30,6 +30,9 @@ figurines-musician-1 = Never gonna give you up!
 figurines-musician-2 = Never gonna let you down!
 
 figurines-boxer-1 = The first rule of Fight Club is...
+figurines-boxer-2 = We settle this in the ring, alright?
+figurines-boxer-3 = I. AM. THE. CHAMPION!!
+figurines-boxer-4 = Don't look at me, he was shot, not punched.
 
 figurines-captain-1 = Captain, on deck!
 figurines-captain-2 = Glory to NT!
