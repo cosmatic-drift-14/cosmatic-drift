@@ -14,14 +14,15 @@
   parent: [ClothingShoesMilitaryBase, BaseRestrictedContraband]
   id: ClothingShoesBootsJack
   name: jackboots
-  description: A set of Jackboots, once able to hold knifes they have fallen from grace due to budget cuts, now just some stylish boots.
+  description: Sturdy boots made for heavy work. Originally standard issue for security teams.
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/jackboots.rsi
-  - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+#  CD remove SlowOnDamageModifier
+#  - type: ClothingSlowOnDamageModifier
+#    modifier: 0.5
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -56,6 +57,9 @@
     sprite: Clothing/Shoes/Boots/combatboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/combatboots.rsi
+# CD add SlowOnDamageModifier
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingShoesMilitaryBase
