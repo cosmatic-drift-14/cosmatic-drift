@@ -10,7 +10,7 @@
     state: icon
   - type: Item
     sprite: Objects/Tools/blueprint.rsi
-    size: Normal
+    size: 15
   - type: Blueprint
   - type: StaticPrice
     price: 1000
