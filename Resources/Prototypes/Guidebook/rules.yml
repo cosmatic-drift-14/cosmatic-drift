@@ -131,6 +131,7 @@
   - Rule3.5
   - Rule3.6
   - Rule3.7
+  - Rule3.8
 
 - type: guideEntry
   id: Rule3.1
@@ -180,6 +181,13 @@
   ruleEntry: true
   priority: 7
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-7.xml"
+
+- type: guideEntry
+  id: Rule3.8
+  name: guide-entry-rules-3-8
+  ruleEntry: true
+  priority: 8
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-8.xml"
 
 - type: guideEntry
   id: SpaceLaw
