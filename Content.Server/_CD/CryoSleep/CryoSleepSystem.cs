@@ -24,6 +24,8 @@ using Robust.Shared.Enums;
 using Robust.Server.Containers;
 using Robust.Shared.Containers;
 using Content.Server._CD.Storage.Components;
+using Content.Server.Administration.Logs;
+using Content.Shared.Database;
 
 namespace Content.Server._CD.CryoSleep;
 
@@ -43,6 +45,7 @@ public sealed class CryoSleepSystem : EntitySystem
     [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
     public override void Initialize()
     {
@@ -114,6 +117,8 @@ public sealed class CryoSleepSystem : EntitySystem
 
         if (body == null)
             return;
+
+        _adminLog.Add(LogType.Respawn, LogImpact.Low, $"Player {mind.Session} playing {ToPrettyString(body)} entered cryosleep.");
 
         // Remove the record. Hopefully.
         foreach (var item in _inventory.GetHandOrInventoryEntities(body.Value))
