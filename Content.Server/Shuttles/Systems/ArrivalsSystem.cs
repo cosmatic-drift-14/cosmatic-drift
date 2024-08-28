@@ -20,6 +20,8 @@ using Content.Shared.Damage.Components;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Components;
+using Content.Shared.Parallax.Biomes;
+using Content.Shared.Salvage;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Tiles;
 using Robust.Server.GameObjects;
@@ -82,6 +84,13 @@ public sealed class ArrivalsSystem : EntitySystem
     ///     The first arrival is a little early, to save everyone 10s
     /// </summary>
     private const float RoundStartFTLDuration = 30f;
+
+    private readonly List<ProtoId<BiomeTemplatePrototype>> _arrivalsBiomeOptions = new()
+    {
+        "Grasslands",
+        "LowDesert",
+        "Snow",
+    };
 
     public override void Initialize()
     {
