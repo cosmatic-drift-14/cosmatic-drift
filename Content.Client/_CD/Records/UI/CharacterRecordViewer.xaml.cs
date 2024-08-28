@@ -31,7 +31,18 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
     private DialogWindow? _wantedReasonDialog;
 
+    /// <summary>
+    /// The key to the record of the currently selected item in the listing.
+    /// </summary>
     private uint? _selectedListingKey;
+
+    /// <summary>
+    /// The key to the record that is currently visible.
+    /// </summary>
+    /// <remarks>
+    /// This may differ from <see cref="_selectedListingKey"/> because this contents has not been updated yet to reflect the new selection.
+    /// </remarks>
+    private uint? _openRecordKey;
     public event Action<SecurityStatus, string?>? OnSetSecurityStatus;
 
     public uint? SecurityWantedStatusMaxLength;
@@ -126,6 +137,8 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-employment"));
         RecordEntryViewType.OnItemSelected += args =>
         {
+            if (args.Id == RecordEntryViewType.SelectedId)
+                return;
             RecordEntryViewType.SelectId(args.Id);
             // This is a hack to get the server to send us another packet with the new entries
             OnFiltersChanged?.Invoke(_filterType, RecordFiltersValue.Text);
@@ -282,6 +295,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
         RecordContainerStatus.Visible = false;
         RecordContainer.Visible = true;
+
+        // Do not needlessly reload the record if not needed. This is mainly done to prevent a bug in the admin record viewer.
+        if (state.SelectedIndex == _openRecordKey)
+            return;
+        _openRecordKey = state.SelectedIndex;
 
         var record = state.SelectedRecord!;
         var cr = record.PRecords;
