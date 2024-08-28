@@ -1015,7 +1015,7 @@
   id: SecurityShoes
   name: loadout-group-security-shoes
   loadouts:
-  - JackBoots
+  - CombatBoots #CD change from JackBoots to CombatBoots
   - SecurityWinterBoots
 
 - type: loadoutGroup
