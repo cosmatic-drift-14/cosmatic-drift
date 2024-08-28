@@ -24,6 +24,7 @@ using Robust.Shared.Enums;
 using Robust.Server.Containers;
 using Robust.Shared.Containers;
 using Content.Server._CD.Storage.Components;
+using Content.Server.Ghost;
 using Content.Server.Administration.Logs;
 using Content.Shared.Database;
 
@@ -39,6 +40,7 @@ public sealed class CryoSleepSystem : EntitySystem
     [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!;
+    [Dependency] private readonly GhostSystem _ghostSystem = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
     [Dependency] private readonly ChatSystem _chatSystem = default!;
@@ -150,7 +152,7 @@ public sealed class CryoSleepSystem : EntitySystem
         // Move their items
         MoveItems(body.Value);
 
-        _gameTicker.OnGhostAttempt(mindId, false, true, mind: mind);
+        _ghostSystem.OnGhostAttempt(mindId, false, true, mind: mind);
         EntityManager.DeleteEntity(body);
 
         if (!TryComp<MindComponent>(mindId, out var mindComp) || mindComp.UserId == null)
