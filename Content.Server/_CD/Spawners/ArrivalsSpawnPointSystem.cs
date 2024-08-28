@@ -42,11 +42,16 @@ public sealed class ArrivalsSpawnPointSystem : EntitySystem
 
         foreach (var (spawnUid, spawnPoint) in jobSpawns)
         {
+            foreach (var ignoredJob in spawnPoint.IgnoredJobs)
+            {
+                if (args.JobId == ignoredJob)
+                    return;
+            }
+
             foreach(var jobId in spawnPoint.JobIds!)
             {
                 if (jobId == args.JobId)
                 {
-
                     _transform.SetCoordinates(args.Mob, Transform(spawnUid).Coordinates);
                     return;
                 }
@@ -55,9 +60,15 @@ public sealed class ArrivalsSpawnPointSystem : EntitySystem
 
         if(generalSpawns.Count == 0)
             return;
-            
+
         _random.Shuffle(generalSpawns);
         var spawn = generalSpawns.First();
+
+        foreach (var ignoredJob in spawn.Comp.IgnoredJobs)
+        {
+            if (args.JobId == ignoredJob)
+                return;
+        }
 
         var xform = Transform(spawn);
         _transform.SetCoordinates(args.Mob, xform.Coordinates);
