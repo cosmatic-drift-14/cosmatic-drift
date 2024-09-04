@@ -109,15 +109,6 @@
     state: horn_antenna_slash
 
 - type: marking
-  id: LizardHornsSlash
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Reptilian]
-  sprites:
-  - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
-    state: horn_antenna_
-
-- type: marking
   id: LizardHornsSharp
   bodyPart: HeadTop
   markingCategory: HeadTop
