@@ -64,3 +64,8 @@
             Clown: [ 1, 2 ]
             Mime: [ 1, 2 ]
             Musician: [ 1, 2 ]
+            #silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 4, 4 ]
+            #misc
+            Prisoner: [ 1, 1 ] #CD Role
