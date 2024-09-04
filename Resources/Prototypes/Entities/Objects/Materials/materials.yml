@@ -126,6 +126,9 @@
     size: 30
   - type: Food
     requiresSpecialDigestion: true
+  - type: FlavorProfile
+    flavors:
+    - fiber
   - type: SolutionContainerManager
     solutions:
       food:
@@ -433,6 +436,9 @@
     size: 30
   - type: Food
     requiresSpecialDigestion: true
+  - type: FlavorProfile
+    flavors:
+    - fiber
   - type: SolutionContainerManager
     solutions:
       food:

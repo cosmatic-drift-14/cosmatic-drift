@@ -160,36 +160,6 @@
     stealGroup: CargoShuttleConsoleCircuitboard
 
 - type: entity
-  parent: BaseComputerShuttle
-  id: ComputerShuttleSalvage
-  name: salvage shuttle console
-  description: Used to pilot the salvage shuttle.
-  components:
-    - type: Sprite
-      layers:
-        - map: ["computerLayerBody"]
-          state: computer
-        - map: ["computerLayerKeyboard"]
-          state: generic_keyboard
-        - map: ["computerLayerScreen"]
-          state: shuttle
-        - map: ["computerLayerKeys"]
-          state: generic_keys
-    - type: DroneConsole
-      components:
-        - type: SalvageShuttle
-    - type: RadarConsole
-      maxRange: 256
-    - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#43ccb5"
-    - type: Computer
-      board: SalvageShuttleConsoleCircuitboard
-    - type: StealTarget
-      stealGroup: SalvageShuttleConsoleCircuitboard
-
-- type: entity
   parent: BaseComputer
   id: ComputerIFF
   name: IFF computer
@@ -600,8 +570,8 @@
     energy: 1.6
     color: "#3c5eb5"
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: StrongMetallic
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
 
 - type: entity
   parent: ComputerComms
@@ -856,8 +826,8 @@
     speechVerb: Robotic
     speechSounds: Pai
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: StrongMetallic
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
   - type: GuideHelp
     guides:
     - Cloning
