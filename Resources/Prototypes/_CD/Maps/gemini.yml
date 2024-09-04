@@ -47,7 +47,6 @@
             SeniorResearcher: [ 1, 1 ]
             Scientist: [ 4, 6 ]
             ResearchAssistant: [ 8, 8 ]
-            Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -64,3 +63,7 @@
             Clown: [ 1, 2 ]
             Mime: [ 1, 2 ]
             Musician: [ 1, 2 ]
+            #silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]
+
