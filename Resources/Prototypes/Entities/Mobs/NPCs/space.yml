@@ -393,7 +393,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: snail
   - type: Item
-    size: Tiny
+    size: 3
   - type: NpcFactionMember
     factions:
       - Mouse
