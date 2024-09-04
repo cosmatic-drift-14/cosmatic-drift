@@ -452,6 +452,7 @@
     - MedicalRecordsComputerCircuitboard
     - CriminalRecordsComputerCircuitboard #CD additions end.
     - CutterMachineCircuitboard
+    - StationAnchorCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
