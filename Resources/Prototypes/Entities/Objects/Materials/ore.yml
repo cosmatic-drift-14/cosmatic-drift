@@ -55,7 +55,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -88,7 +88,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -121,7 +121,7 @@
     - type: Stack
       count: 1
     - type: Item
-      size: 2
+      size: 1
 
 - type: entity
   parent: OreBase
@@ -159,7 +159,7 @@
     - type: Stack
       count: 1
     - type: Item
-      size: 2
+      size: 1
 
 - type: entity
   parent: OreBase
@@ -192,7 +192,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -225,7 +225,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -266,7 +266,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 
 - type: entity
@@ -309,7 +309,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -350,7 +350,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -385,4 +385,4 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
