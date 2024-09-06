@@ -358,7 +358,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 {
                     BreakOnDamage = true,
                     BreakOnMove = true,
-                    NeedHand = true
+                    NeedHand = true,
                 };
 
                 _doAfterSystem.TryStartDoAfter(doAfterArgs);
@@ -732,7 +732,9 @@ public abstract class SharedStorageSystem : EntitySystem
     /// <summary>
     ///     Inserts an entity into storage from the player's active hand
     /// </summary>
+    /// <param name="uid"></param>
     /// <param name="player">The player to insert an entity from</param>
+    /// <param name="storageComp"></param>
     /// <returns>true if inserted, false otherwise</returns>
     public bool PlayerInsertHeldEntity(EntityUid uid, EntityUid player, StorageComponent? storageComp = null)
     {
@@ -758,7 +760,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
     /// <summary>
     ///     Inserts an Entity (<paramref name="toInsert"/>) in the world into storage, informing <paramref name="player"/> if it fails.
-    ///     <paramref name="toInsert"/> is *NOT* held, see <see cref="PlayerInsertHeldEntity(Robust.Shared.GameObjects.EntityUid)"/>.
+    ///     <paramref name="toInsert"/> is *NOT* held, see <see cref="PlayerInsertHeldEntity(EntityUid,EntityUid,StorageComponent)"/>.
     /// </summary>
     /// <param name="player">The player to insert an entity with</param>
     /// <returns>true if inserted, false otherwise</returns>

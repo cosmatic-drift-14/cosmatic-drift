@@ -2,10 +2,9 @@
   id: DefaultMapPool
   maps:
   - Aspid
-  - Atlas
   - Bagel
   - Box
-  - Cluster
+  - Cog
   - Core
   - Fland
   - Gemini
@@ -13,8 +12,6 @@
   - Meta
   - Oasis
   - Omega
-  - Origin
-  - Saltern
   - Packed
   - Reach
   #- Train <- CD change, please no

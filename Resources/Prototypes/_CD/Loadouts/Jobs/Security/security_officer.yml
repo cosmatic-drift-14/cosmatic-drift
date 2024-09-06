@@ -1,35 +1,19 @@
 - type: loadout
   id: EyesGlassesSecurity
-  equipment: EyesGlassesSecurity
-
-- type: startingGear
-  id: EyesGlassesSecurity
-  equipment:
+  equipment: 
     eyes: ClothingEyesGlassesSecurity
 
 - type: loadout
   id: EyesHudSecurity
-  equipment: EyesHudSecurity
-
-- type: startingGear
-  id: EyesHudSecurity
-  equipment:
+  equipment: 
     eyes: ClothingEyesHudSecurity
 
 - type: loadout
   id: SecurityCasualsuit
-  equipment: SecurityCasualsuit
-
-- type: startingGear
-  id: SecurityCasualsuit
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformSecurtyCasual
 
 - type: loadout
   id: SecurityCasualskirt
-  equipment: SecurityCasualskirt
-
-- type: startingGear
-  id: SecurityCasualskirt
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformJumpskirtSecurtyCasual

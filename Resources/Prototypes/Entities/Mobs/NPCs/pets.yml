@@ -123,6 +123,8 @@
     tags:
     - CannotSuicide
     - VimPilot
+  - type: StealTarget
+    stealGroup: AnimalNamedCat
 
 - type: entity
   name: Exception
@@ -141,6 +143,8 @@
     tags:
     - CannotSuicide
     - VimPilot
+  - type: StealTarget
+    stealGroup: AnimalNamedCat
 
 - type: entity
   name: Floppa
@@ -166,6 +170,8 @@
     tags:
     - CannotSuicide
     - VimPilot
+  - type: StealTarget
+    stealGroup: AnimalNamedCat
 
 - type: entity
   name: Bandito
@@ -237,7 +243,7 @@
     - CannotSuicide
     - VimPilot
   - type: StealTarget
-    stealGroup: AnimalBingus
+    stealGroup: AnimalNamedCat
 
 - type: entity
   name: McGriff
@@ -579,6 +585,10 @@
     - Hamster
     - VimPilot
     - ChefPilot
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - sadness
 
 - type: entity
   name: Shiva
@@ -735,6 +745,7 @@
   - type: MultiHandedItem
   - type: Item
     size: 80
+    sprite: Mobs/Pets/smile.rsi
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-slime
   - type: MobPrice

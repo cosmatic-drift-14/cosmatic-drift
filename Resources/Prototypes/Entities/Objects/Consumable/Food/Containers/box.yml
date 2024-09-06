@@ -16,6 +16,7 @@
     state: box
     layers:
     - state: box
+      map: ["closeLayer"]
     - state: box-open
       map: ["openLayer"]
       visible: false
@@ -78,6 +79,7 @@
     state: box-closed
     layers:
     - state: box-closed
+      map: ["closeLayer"]
     - state: box-open
       map: ["openLayer"]
       visible: false
@@ -206,8 +208,10 @@
       map: ["enum.StorageVisualLayers.Door"]
   # TODO make these entitystorage again + placeablesurface after entity storage ECS gets merged.
   - type: Storage
-    capacity: 8
+    capacity: 20
     whitelist:
+      components:
+      - Utensil
       tags:
       - Pizza
   - type: Item
@@ -260,6 +264,7 @@
     - id: FoodPizzaDonkpocket
       prob: 0.10
       orGroup: Pizza
+    - id: KnifePlastic
 
 # Nugget
 
@@ -274,6 +279,7 @@
     state: box
     layers:
     - state: box
+      map: ["closeLayer"]
     - state: box-open
       map: ["openLayer"]
       visible: false
@@ -465,6 +471,7 @@
     state: box
     layers:
     - state: box
+      map: ["closeLayer"]
     - state: box-open
       map: ["openLayer"]
   - type: Item
@@ -558,7 +565,7 @@
 
 - type: entity
   id: HappyHonkNukie
-  parent: HappyHonk
+  parent: [HappyHonk, BaseSyndicateContraband]
   name: robust nukie meal
   description: A sus meal with a potentially explosive surprise.
   suffix: Toy Unsafe

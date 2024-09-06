@@ -11,15 +11,18 @@
   - type: Matchbox
 
 - type: entity
-  parent: ClothingShoesMilitaryBase
+  parent: [ClothingShoesMilitaryBase, BaseRestrictedContraband]
   id: ClothingShoesBootsJack
   name: jackboots
-  description: A set of Jackboots, once able to hold knifes they have fallen from grace due to budget cuts, now just some stylish boots.
+  description: Sturdy boots made for heavy work. Originally standard issue for security teams.
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/jackboots.rsi
+#  CD remove SlowOnDamageModifier
+#  - type: ClothingSlowOnDamageModifier
+#    modifier: 0.5
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -45,7 +48,7 @@
     sprite: Clothing/Shoes/Boots/performer.rsi
 
 - type: entity
-  parent: ClothingShoesMilitaryBase
+  parent: [ClothingShoesMilitaryBase, BaseRestrictedContraband]
   id: ClothingShoesBootsCombat
   name: combat boots
   description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
@@ -54,6 +57,9 @@
     sprite: Clothing/Shoes/Boots/combatboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/combatboots.rsi
+# CD add SlowOnDamageModifier
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -143,7 +149,7 @@
     sprite: Clothing/Shoes/Boots/winterbootssci.rsi
 
 - type: entity
-  parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase]
+  parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase, BaseRestrictedContraband]
   id: ClothingShoesBootsWinterSec
   name: security winter boots
   components:
@@ -153,10 +159,10 @@
     sprite: Clothing/Shoes/Boots/winterbootssec.rsi
 
 - type: entity
-  parent: ClothingShoesBaseWinterBoots
+  parent: [ClothingShoesBaseWinterBoots, BaseSyndicateContraband]
   id: ClothingShoesBootsWinterSyndicate
   name: syndicate's winter boots
-  description: Durable heavy boots, looks like merch from "Syndieland"
+  description: Durable heavy boots, looks like merch from "Syndieland".
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootssyndicate.rsi

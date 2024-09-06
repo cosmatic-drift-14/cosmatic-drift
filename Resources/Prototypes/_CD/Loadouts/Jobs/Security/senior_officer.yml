@@ -1,47 +1,27 @@
 # Jumpsuit
 - type: loadout
   id: SeniorOfficerJumpsuit
-  equipment: SeniorOfficerJumpsuit
-
-- type: startingGear
-  id: SeniorOfficerJumpsuit
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
 
 - type: loadout
   id: SeniorOfficerJumpskirt
-  equipment: SeniorOfficerJumpskirt
-
-- type: startingGear
-  id: SeniorOfficerJumpskirt
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
 
 - type: loadout
   id: SeniorOfficerCasualsuit
-  equipment: SeniorOfficerCasualsuit
-
-- type: startingGear
-  id: SeniorOfficerCasualsuit
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformHoSSeniorCasual
 
 - type: loadout
   id: SeniorOfficerCasualskirt
-  equipment: SeniorOfficerCasualskirt
-
-- type: startingGear
-  id: SeniorOfficerCasualskirt
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformJumpskirtHoSSeniorCasual
 
 # Head
 
 - type: loadout
   id: SecurityVeteranBeret
-  equipment: SecurityVeteranBeret
-
-- type: startingGear
-  id: SecurityVeteranBeret
-  equipment:
+  equipment: 
     head: ClothingHeadHatBeretSecurityVet

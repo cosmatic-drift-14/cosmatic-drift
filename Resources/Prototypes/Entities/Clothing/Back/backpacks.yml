@@ -54,7 +54,7 @@
       collection: IanBark
 
 - type: entity
-  parent: ClothingBackpack
+  parent: [ClothingBackpack, BaseRestrictedContraband]
   id: ClothingBackpackSecurity
   name: security backpack
   description: It's a very robust backpack.
@@ -63,7 +63,7 @@
     sprite: Clothing/Back/Backpacks/security.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: [ClothingBackpack, BaseRestrictedContraband]
   id: ClothingBackpackBrigmedic
   name: brigmedic backpack
   description: It's a very sterile backpack.
@@ -99,7 +99,7 @@
     sprite: Clothing/Back/Backpacks/medical.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: [ClothingBackpack, BaseCommandContraband]
   id: ClothingBackpackCaptain
   name: captain's backpack
   description: It's a special backpack made exclusively for Nanotrasen officers.
@@ -262,7 +262,7 @@
 
 #Syndicate
 - type: entity
-  parent: ClothingBackpack
+  parent: [ClothingBackpack, BaseSyndicateContraband]
   id: ClothingBackpackSyndicate
   name: syndicate backpack
   description:
@@ -303,3 +303,66 @@
   - type: Unremoveable
     deleteOnDrop: false
 
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackElectropack
+  name: electropack
+  suffix: SelfUnremovable
+  description: Shocks on the signal. It is used to keep a particularly dangerous criminal under control.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/electropack.rsi
+    state: icon
+  - type: Clothing
+    stripDelay: 10
+    equipDelay: 5 # to avoid accidentally falling into the trap associated with SelfUnremovableClothing
+  - type: SelfUnremovableClothing
+  - type: ShockOnTrigger
+    damage: 5
+    duration: 3
+    cooldown: 4
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+
+# Debug
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug
+  name: wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug2
+  name: big wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug3
+  name: gay wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDebug4
+  name: offset wackpack
+  description: What the fuck is this?
+  suffix: Debug
+  components:
+  - type: Storage
+    capacity: 9999

@@ -12,6 +12,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
+// CD: imports
+using Content.Shared.Labels.Components;
+
 namespace Content.Shared.Stacks
 {
     [UsedImplicitly]
@@ -114,6 +117,10 @@ namespace Content.Shared.Stacks
                 return false;
 
             if (string.IsNullOrEmpty(recipientStack.StackTypeId) || !recipientStack.StackTypeId.Equals(donorStack.StackTypeId))
+                return false;
+
+            // CD: Cannot merge stacks with labels
+            if (HasComp<LabelComponent>(donor) || HasComp<LabelComponent>(recipient))
                 return false;
 
             transferred = Math.Min(donorStack.Count, GetAvailableSpace(recipientStack));
@@ -223,6 +230,9 @@ namespace Content.Shared.Stacks
             foreach (var otherStack in intersecting)
             {
                 var otherEnt = otherStack.Owner;
+                // if you merge a ton of stacks together, you will end up deleting a few by accident.
+                if (TerminatingOrDeleted(otherEnt) || EntityManager.IsQueuedForDeletion(otherEnt))
+                    continue;
 
                 if (!TryMergeStacks(uid, otherEnt, out _, stack, otherStack))
                     continue;
@@ -327,6 +337,10 @@ namespace Content.Shared.Stacks
         public bool TryAdd(EntityUid insertEnt, EntityUid targetEnt, int count, StackComponent? insertStack = null, StackComponent? targetStack = null)
         {
             if (!Resolve(insertEnt, ref insertStack) || !Resolve(targetEnt, ref targetStack))
+                return false;
+
+            // CD: Don't merge labeled stacks
+            if (HasComp<LabelComponent>(insertEnt) || HasComp<LabelComponent>(targetEnt))
                 return false;
 
             var available = GetAvailableSpace(targetStack);

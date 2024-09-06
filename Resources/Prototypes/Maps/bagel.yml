@@ -18,13 +18,14 @@
           emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
         - type: StationJobs
           availableJobs:
-            #service
+            #command
             Captain: [ 1, 1 ]
+            #service
             HeadOfPersonnel: [ 1, 1 ]
-            Bartender: [ 2, 2 ]
-            Botanist: [ 3, 3 ]
+            Bartender: [ 1, 2 ]
+            Botanist: [ 2, 2 ]
             Chef: [ 2, 2 ]
-            Janitor: [ 3, 3 ]
+            Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
@@ -46,7 +47,6 @@
             SeniorResearcher: [ 1, 1 ] #CD Role
             Scientist: [ 4, 4 ]
             ResearchAssistant: [ 4, 4 ]
-            Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -65,5 +65,8 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Reporter: [ 2, 2 ]
+            #silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]
             #misc
             Prisoner: [ 1, 1 ] #CD Role

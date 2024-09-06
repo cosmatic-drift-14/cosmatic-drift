@@ -451,7 +451,7 @@
   - type: Appearance
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltStorageBase, BaseRestrictedContraband]
   id: ClothingBeltSecurity
   name: security belt
   description: Can hold security gear like handcuffs and flashes.
@@ -502,7 +502,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltBase, ClothingSlotBase]
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
   id: ClothingBeltSheath
   name: sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
@@ -536,7 +536,7 @@
 # Belts without visualizers
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltAmmoProviderBase, BaseRestrictedContraband]
   id: ClothingBeltBandolier
   name: bandolier
   description: A bandolier for holding shotgun ammunition.
@@ -546,12 +546,12 @@
   - type: Clothing
     sprite: Clothing/Belt/bandolier.rsi
   - type: Item
-    size: 60
-  - type: Storage
-    capacity: 60
+    size: 80
+  - type: BallisticAmmoProvider
     whitelist:
       tags:
         - ShellShotgun
+    capacity: 14
 
 - type: entity
   parent: ClothingBeltBase
@@ -582,7 +582,7 @@
     capacity: 20
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltStorageBase, BaseSyndicateContraband]
   id: ClothingBeltSyndieHolster
   name: syndicate shoulder holster
   description: A deep shoulder holster capable of holding many types of ballistics.
@@ -604,7 +604,7 @@
 - type: entity
   parent: ClothingBeltSecurity
   id: ClothingBeltSecurityWebbing
-  name: security webbing
+  name: security carrier
   description: Unique and versatile chest rig, can hold security gear.
   components:
   - type: Sprite
@@ -635,7 +635,7 @@
     sprite: Clothing/Belt/salvagewebbing.rsi
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSyndicateContraband]
   id: ClothingBeltMilitaryWebbing
   name: chest rig
   description: A set of tactical webbing worn by Syndicate boarding parties.
@@ -666,19 +666,29 @@
 
 - type: entity
   parent: ClothingBeltBase
-  id: ClothingBeltSuspenders
-  name: suspenders
+  id: ClothingBeltSuspendersRed
+  name: red suspenders
   description: For holding your pants up.
   components:
   - type: Tag
     tags:
     - MimeBelt
   - type: Sprite
-    sprite: Clothing/Belt/suspenders.rsi
+    sprite: Clothing/Belt/suspenders_red.rsi
     state: icon
   - type: Clothing
-    sprite: Clothing/Belt/suspenders.rsi
+    sprite: Clothing/Belt/suspenders_red.rsi
     quickEquip: true
+
+- type: entity
+  parent: ClothingBeltSuspendersRed
+  id: ClothingBeltSuspendersBlack
+  name: black suspenders
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/suspenders_black.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/suspenders_black.rsi
 
 - type: entity
   parent: ClothingBeltStorageBase

@@ -38,7 +38,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingOuterCoatEuropanVet
-  name: europan jacket
+  name: submarine jacket
   description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments.
   components:
   - type: Sprite
@@ -56,8 +56,8 @@
 - type: entity
   parent: ClothingOuterCoatEuropanVet
   id: ClothingOuterCoatEuropanCoalition
-  name: coalition jacket
-  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Coalition patch on the shoulders.
+  name: nautical jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a navigator's compass.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
@@ -67,8 +67,8 @@
 - type: entity
   parent: ClothingOuterCoatEuropanVet
   id: ClothingOuterCoatEuropanSeparatist
-  name: separatist jacket
-  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned with a Separatist patch on the shoulders.
+  name: independence jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a raised fist.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi

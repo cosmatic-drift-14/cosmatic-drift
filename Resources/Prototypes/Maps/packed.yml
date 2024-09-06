@@ -4,6 +4,7 @@
   mapPath: /Maps/packed.yml
   minPlayers: 5
   maxPlayers: 25 #CD change
+  patchfile: /CDMapPatches/packed.yml # CD Edit: Apply map patch
   stations:
     Packed:
       stationProto: StandardNanotrasenStation
@@ -60,4 +61,6 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Borg: [ 1 , 1 ]
+            #silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 1, 1 ]

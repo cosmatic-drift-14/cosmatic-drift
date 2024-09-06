@@ -8,7 +8,7 @@
     sprite: Objects/Materials/ore.rsi
   - type: Item
     sprite: Objects/Materials/ore.rsi
-    size: 60
+    size: 30
   - type: Tag
     tags:
     - Ore
@@ -23,17 +23,6 @@
           - ItemMask
         restitution: 0.3
         friction: 0.2
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 200
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
 
 - type: entity
   parent: OreBase
@@ -48,7 +37,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawGold: 500
+      RawGold: 100
   - type: Extractable
     grindableSolutionName: goldore
   - type: SolutionContainerManager
@@ -66,7 +55,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -81,7 +70,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawDiamond: 500
+      RawDiamond: 100
   - type: Extractable
     grindableSolutionName: diamondore
   - type: SolutionContainerManager
@@ -99,7 +88,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -114,7 +103,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawIron: 500
+      RawIron: 100
   - type: Extractable
     grindableSolutionName: ironore
   - type: SolutionContainerManager
@@ -132,7 +121,7 @@
     - type: Stack
       count: 1
     - type: Item
-      size: 2
+      size: 1
 
 - type: entity
   parent: OreBase
@@ -147,7 +136,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawPlasma: 500
+      RawPlasma: 100
   - type: PointLight
     radius: 1.2
     energy: 0.6
@@ -170,7 +159,7 @@
     - type: Stack
       count: 1
     - type: Item
-      size: 2
+      size: 1
 
 - type: entity
   parent: OreBase
@@ -185,7 +174,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawSilver: 500
+      RawSilver: 100
   - type: Extractable
     grindableSolutionName: silverore
   - type: SolutionContainerManager
@@ -203,7 +192,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -218,7 +207,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawQuartz: 500
+      RawQuartz: 100
   - type: Extractable
     grindableSolutionName: quartzore
   - type: SolutionContainerManager
@@ -236,7 +225,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -251,7 +240,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawUranium: 500
+      RawUranium: 100
   - type: PointLight
     radius: 1.2
     energy: 0.8
@@ -277,7 +266,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 
 - type: entity
@@ -293,7 +282,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawBananium: 500
+      RawBananium: 100
   - type: PointLight
     radius: 1.2
     energy: 1
@@ -320,7 +309,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -351,7 +340,7 @@
           Quantity: 0.1
   - type: PhysicalComposition
     materialComposition:
-      Coal: 500
+      Coal: 100
 
 - type: entity
   parent: Coal
@@ -361,7 +350,7 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1
 
 - type: entity
   parent: OreBase
@@ -376,7 +365,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawSalt: 500
+      RawSalt: 100
   - type: Extractable
     grindableSolutionName: saltore
   - type: SolutionContainerManager
@@ -396,4 +385,4 @@
   - type: Stack
     count: 1
   - type: Item
-    size: 2
+    size: 1

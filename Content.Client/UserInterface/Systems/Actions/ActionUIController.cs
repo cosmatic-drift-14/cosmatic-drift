@@ -131,7 +131,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             var boundKey = hotbarKeys[i];
             builder = builder.Bind(boundKey, new PointerInputCmdHandler((in PointerInputCmdArgs args) =>
             {
-                if (args.State != BoundKeyState.Up)
+                if (args.State != BoundKeyState.Down)
                     return false;
 
                 TriggerAction(boundId);
@@ -203,10 +203,13 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         switch (action)
         {
             case WorldTargetActionComponent mapTarget:
-                    return TryTargetWorld(args, actionId, mapTarget, user, comp) || !mapTarget.InteractOnMiss;
+                return TryTargetWorld(args, actionId, mapTarget, user, comp) || !mapTarget.InteractOnMiss;
 
             case EntityTargetActionComponent entTarget:
-                    return TryTargetEntity(args, actionId, entTarget, user, comp) || !entTarget.InteractOnMiss;
+                return TryTargetEntity(args, actionId, entTarget, user, comp) || !entTarget.InteractOnMiss;
+
+            case EntityWorldTargetActionComponent entMapTarget:
+                return TryTargetEntityWorld(args, actionId, entMapTarget, user, comp) || !entMapTarget.InteractOnMiss;
 
             default:
                 Logger.Error($"Unknown targeting action: {actionId.GetType()}");
@@ -235,8 +238,6 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             if (action.Event != null)
             {
                 action.Event.Target = coords;
-                action.Event.Performer = user;
-                action.Event.Action = actionId;
             }
 
             _actionsSystem.PerformAction(user, actionComp, actionId, action, action.Event, _timing.CurTime);
@@ -270,14 +271,51 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             if (action.Event != null)
             {
                 action.Event.Target = entity;
-                action.Event.Performer = user;
-                action.Event.Action = actionId;
             }
 
             _actionsSystem.PerformAction(user, actionComp, actionId, action, action.Event, _timing.CurTime);
         }
         else
             EntityManager.RaisePredictiveEvent(new RequestPerformActionEvent(EntityManager.GetNetEntity(actionId), EntityManager.GetNetEntity(args.EntityUid)));
+
+        if (!action.Repeat)
+            StopTargeting();
+
+        return true;
+    }
+
+    private bool TryTargetEntityWorld(in PointerInputCmdArgs args,
+        EntityUid actionId,
+        EntityWorldTargetActionComponent action,
+        EntityUid user,
+        ActionsComponent actionComp)
+    {
+        if (_actionsSystem == null)
+            return false;
+
+        var entity = args.EntityUid;
+        var coords = args.Coordinates;
+
+        if (!_actionsSystem.ValidateEntityWorldTarget(user, entity, coords, (actionId, action)))
+        {
+            if (action.DeselectOnMiss)
+                StopTargeting();
+
+            return false;
+        }
+
+        if (action.ClientExclusive)
+        {
+            if (action.Event != null)
+            {
+                action.Event.Entity = entity;
+                action.Event.Coords = coords;
+            }
+
+            _actionsSystem.PerformAction(user, actionComp, actionId, action, action.Event, _timing.CurTime);
+        }
+        else
+            EntityManager.RaisePredictiveEvent(new RequestPerformActionEvent(EntityManager.GetNetEntity(actionId), EntityManager.GetNetEntity(args.EntityUid), EntityManager.GetNetCoordinates(coords)));
 
         if (!action.Repeat)
             StopTargeting();
@@ -833,7 +871,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
 
     private void LoadGui()
     {
-        DebugTools.Assert(_window == null);
+        UnloadGui();
         _window = UIManager.CreateWindow<ActionsWindow>();
         LayoutContainer.SetAnchorPreset(_window, LayoutContainer.LayoutPreset.CenterTop);
 

@@ -46,7 +46,7 @@ public class MapLoadBenchmark
         PoolManager.Shutdown();
     }
 
-    public static readonly string[] MapsSource = { "Empty", "Box", "Aspid", "Bagel", "Dev", "CentComm", "Atlas", "Core", "TestTeg", "Saltern", "Packed", "Omega", "Cluster", "Gemini", "Reach", "Origin", "Meta", "Marathon", "Europa", "MeteorArena", "Fland", "Barratry", "Oasis" };
+    public static readonly string[] MapsSource = { "Empty", "Box", "Aspid", "Bagel", "Dev", "CentComm", "Core", "TestTeg", "Saltern", "Packed", "Omega", "Gemini", "Reach", "Meta", "Marathon", "MeteorArena", "Fland", "Barratry", "Oasis", "Cog" };
 
     [ParamsSource(nameof(MapsSource))]
     public string Map;
