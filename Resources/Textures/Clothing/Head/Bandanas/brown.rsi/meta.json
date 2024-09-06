@@ -11,38 +11,22 @@
       "name": "icon"
     },
     {
-      "name": "icon_flipped"
+      "name": "icon_mask"
     },
     {
-      "name": "equipped-Mask",
+      "name": "equipped-HELMET",
       "directions": 4
     },
     {
-      "name": "equipped-Mask-reptilian",
+      "name": "equipped-HELMET-vox",
       "directions": 4
     },
     {
-      "name": "equipped-MASK-vulpkanin",
+      "name": "equipped-MASK",
       "directions": 4
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 4
-    },
-    {
-      "name": "flipped-equipped-Mask",
-      "directions": 4
-    },
-    {
-      "name": "flipped-equipped-Mask-reptilian",
-      "directions": 4
-    },
-    {
-      "name": "flipped-equipped-MASK-vulpkanin",
-      "directions": 4
-    },
-    {
-      "name": "flipped-equipped-MASK-vox",
       "directions": 4
     },
     {

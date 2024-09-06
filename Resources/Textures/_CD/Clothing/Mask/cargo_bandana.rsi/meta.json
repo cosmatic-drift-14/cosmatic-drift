@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Sprites by Github KittenColony / Discord kittencolony (297865728374210561)."
+  "copyright": "Sprites by Github KittenColony / Discord kittencolony (297865728374210561)",
   "size": {
     "x": 32,
     "y": 32
@@ -14,11 +14,11 @@
       "name": "icon_flipped"
     },
     {
-      "name": "equipped-Mask",
+      "name": "equipped-MASK",
       "directions": 4
     },
     {
-      "name": "equipped-Mask-reptilian",
+      "name": "equipped-MASK-reptilian",
       "directions": 4
     },
     {
@@ -30,11 +30,11 @@
       "directions": 4
     },
     {
-      "name": "flipped-equipped-Mask",
+      "name": "flipped-equipped-MASK",
       "directions": 4
     },
     {
-      "name": "flipped-equipped-Mask-reptilian",
+      "name": "flipped-equipped-MASK-reptilian",
       "directions": 4
     },
     {
@@ -51,6 +51,14 @@
     },
     {
       "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "flipped-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "flipped-inhand-right",
       "directions": 4
     }
   ]
