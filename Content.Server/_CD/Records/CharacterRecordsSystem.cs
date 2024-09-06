@@ -18,12 +18,6 @@ public sealed class CharacterRecordsSystem : EntitySystem
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
 
-    [ValidatePrototypeId<JobPrototype>]
-    private static readonly string[] SkippedJobIds =
-    [
-        "Borg"
-    ];
-
     public override void Initialize()
     {
         base.Initialize();
@@ -47,7 +41,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
             return;
         }
 
-        if (SkippedJobIds.Contains(args.JobId))
+        if (HasComp<SkipLoadingCharacterRecordsComponent>(args.Mob))
             return;
 
         var profile = args.Profile;

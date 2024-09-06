@@ -11,6 +11,12 @@
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain
+  # CD: Skip records
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: SkipLoadingCharacterRecords
+  # end CD
 
 - type: job
   id: Borg
@@ -24,3 +30,9 @@
   icon: JobIconBorg
   supervisors: job-supervisors-rd
   jobEntity: PlayerBorgGeneric
+  # CD: Skip records
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: SkipLoadingCharacterRecords
+  # end CD
