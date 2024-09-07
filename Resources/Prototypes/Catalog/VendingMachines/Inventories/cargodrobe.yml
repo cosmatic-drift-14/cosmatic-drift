@@ -4,16 +4,21 @@
     ClothingBackpackCargo: 3
     ClothingBackpackSatchelCargo: 3
     ClothingBackpackDuffelCargo: 3
-    ClothingUniformJumpsuitCargo: 3
-    ClothingUniformJumpskirtCargo: 3
+    ClothingUniformJumpsuitCargoLight: 3 # CD
+    ClothingUniformJumpsuitCargoDark: 3 # CD
+    ClothingUniformJumpskirtCargoLight: 3 # CD
+    ClothingUniformJumpskirtCargoDark: 3 # CD
     ClothingUniformJumpsuitCargoPants: 3 # CD
     ClothingShoesColorBlack: 3
     ClothingHandsGlovesFingerless: 3
+    ClothingHandsGlovesMechanic: 3 # CD
     ClothingHeadHatCargosoft: 3
     ClothingHeadBandBrown: 3
+    ClothingMaskBandCargo : 3 # CD
     ClothingHeadsetCargo: 3
     ClothingOuterWinterCargo: 2
     ClothingOuterWinterMiner: 2
     ClothingOuterCoatCargoBomber: 2 # CD
     ClothingNeckScarfStripedBrown: 3
     ClothingShoesBootsWinterCargo: 2
+    ClothingShoesBootsSteel: 2 # CD
