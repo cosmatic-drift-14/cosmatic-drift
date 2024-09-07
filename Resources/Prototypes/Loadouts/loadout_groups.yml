@@ -7,8 +7,6 @@
   loadouts:
   - PlushieLizard
   - PlushieSpaceLizard
-  - LunchboxBlue # CD
-  - LunchboxYellow # CD
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -27,6 +25,9 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
+  - CDDogtags # CD
+  - LunchboxBlue # CD
+  - LunchboxYellow # CD
 
 - type: loadoutGroup
   id: Glasses
