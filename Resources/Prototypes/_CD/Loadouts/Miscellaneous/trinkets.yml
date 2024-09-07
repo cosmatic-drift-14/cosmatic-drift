@@ -10,3 +10,9 @@
   storage:
     back:
     - LunchboxYellow
+
+- type: loadout
+  id: CDDogtags
+  storage:
+    back:
+    - CDDogtags
