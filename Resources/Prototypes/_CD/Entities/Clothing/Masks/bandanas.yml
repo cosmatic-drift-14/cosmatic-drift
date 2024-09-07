@@ -1,0 +1,73 @@
+- type: entity
+  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  id: CDClothingMaskDepartBandanaBase
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: flipped
+    foldedHeldPrefix: flipped
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_flipped
+      map: ["foldedLayer"]
+  - type: Mask
+    disableOnFolded: true
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: Tag
+    tags:
+    - Bandana
+
+- type: entity
+  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  id: CDClothingMaskDepartBandanaBaseDown
+  abstract: true
+  components:
+  - type: Foldable
+    folded: true
+  - type: Clothing
+    equippedPrefix: pulled down
+  - type: Item
+    heldPrefix: pulled down
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon_flipped
+      map: ["foldedLayer"]
+      visible: true
+  - type: Mask
+  - type: IngestionBlocker
+    enabled: false
+  - type: IdentityBlocker
+    enabled: false
+    coverage: MOUTH
+  - type: Tag
+    tags:
+    - Bandana
+
+## This is all an affront to god ^
+
+- type: entity
+  parent: CDClothingMaskDepartBandanaBase
+  id: ClothingMaskBandCargo
+  name: cargo bandana
+  description: A cargo-coloured bandana to cover your face. You feel hidden behind it.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Mask/cargo_bandana.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Mask/cargo_bandana.rsi
+
+- type: entity
+  parent: [CDClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
+  id: ClothingMaskBandCargoDown
+  name: cargo bandana
+  description: A cargo-coloured bandana to cover your face.
