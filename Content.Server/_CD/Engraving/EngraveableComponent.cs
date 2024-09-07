@@ -4,7 +4,7 @@ using Robust.Shared.Utility;
 namespace Content.Server._CD.Engraving;
 
 /// <summary>
-/// Allows an entity to be prayed on in the context menu
+/// Allows an items' description to be modified with an engraving
 /// </summary>
 [RegisterComponent]
 public sealed partial class EngraveableComponent : Component

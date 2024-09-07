@@ -9,12 +9,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Player;
 
 namespace Content.Server._CD.Engraving;
-/// <summary>
-/// System to handle subtle messages and praying
-/// </summary>
-/// <remarks>
-/// Rain is a professional developer and this did not take 2 PRs to fix subtle messages
-/// </remarks>
+
 public sealed class EngraveableSystem : EntitySystem
 {
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
