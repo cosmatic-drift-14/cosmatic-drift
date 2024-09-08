@@ -69,6 +69,7 @@
       - id: ClothingUniformJumpsuitHosFormal
       - id: ClothingOuterWinterHoS
       - id: ClothingNeckCloakHos
+      - id: ClothingHeadHatHossheriffhat #CD
 
 - type: entity
   id: DresserQuarterMasterFilled
