@@ -1,0 +1,5 @@
+#Sheriff Hat
+- type: loadout
+  id: HeadofSecuritySheriffHat
+  equipment: 
+    head: ClothingHeadHatHossheriffhat

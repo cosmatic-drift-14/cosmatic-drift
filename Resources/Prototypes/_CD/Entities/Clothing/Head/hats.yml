@@ -57,3 +57,20 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
+
+# Reverts a portion of https://github.com/space-wizards/space-station-14/pull/29082.
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHossheriffhat
+  name: head of security's sheriff hat
+  description: "There's a new sheriff in station."
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/hossheriffhat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/hossheriffhat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
