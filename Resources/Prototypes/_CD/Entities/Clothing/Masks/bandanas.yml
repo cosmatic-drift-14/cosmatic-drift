@@ -35,7 +35,7 @@
     hideOnToggle: true
 
 - type: entity
-  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  parent: [ClothingNeckBase, BaseFoldable]
   id: ClothingMaskDepartBandanaBaseDown
   abstract: true
   components:
@@ -79,6 +79,6 @@
 
 - type: entity
   parent: [ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
-  id: ClothingMaskBandCargoDown
+  id: ClothingNeckBandCargo
   name: cargo bandana
   description: A cargo-coloured bandana to cover your face.
