@@ -17,3 +17,8 @@
   id: SecurityCasualskirt
   equipment: 
     jumpsuit: ClothingUniformJumpskirtSecurtyCasual
+
+- type: loadout
+  id: SecurityPlateCarrier
+  equipment:
+    belt: ClothingBeltSecurityPlateCarrier
