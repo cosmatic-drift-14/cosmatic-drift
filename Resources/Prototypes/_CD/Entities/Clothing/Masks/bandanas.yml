@@ -1,54 +1,65 @@
 - type: entity
   parent: [ClothingMaskBaseButcherable, BaseFoldable]
-  id: CDClothingMaskDepartBandanaBase
+  id: ClothingMaskDepartBandanaBase
   abstract: true
   components:
   - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
-    foldedEquippedPrefix: flipped
-    foldedHeldPrefix: flipped
-  - type: Sprite
-    layers:
-    - state: icon
-      map: [ "unfoldedLayer" ]
-    - state: icon_flipped
-      map: ["foldedLayer"]
+    foldedSlots:
+    - NECK
+    unfoldedSlots:
+    - MASK
+    foldedHideLayers: []
+    unfoldedHideLayers:
+    - Snout
   - type: Mask
     disableOnFolded: true
   - type: IngestionBlocker
   - type: IdentityBlocker
     coverage: MOUTH
-  - type: Tag
-    tags:
-    - Bandana
-
-- type: entity
-  parent: [ClothingMaskBaseButcherable, BaseFoldable]
-  id: CDClothingMaskDepartBandanaBaseDown
-  abstract: true
-  components:
-  - type: Foldable
-    folded: true
-  - type: Clothing
-    equippedPrefix: pulled down
-  - type: Item
-    heldPrefix: pulled down
   - type: Sprite
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
-      visible: false
-    - state: icon_flipped
+    - state: icon_neck
       map: ["foldedLayer"]
-      visible: true
+      visible: false
+  - type: Tag
+    tags:
+    - Bandana
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+
+- type: entity
+  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  id: ClothingMaskDepartBandanaBaseDown
+  abstract: true
+  components:
+  - type: Foldable
+    folded: true
   - type: Mask
+    isToggled: true
+    enabled: false
+    disableOnFolded: true
   - type: IngestionBlocker
     enabled: false
   - type: IdentityBlocker
     enabled: false
     coverage: MOUTH
+  - type: Sprite # needed for vendor inventory icons
+    layers:
+    - state: icon_neck
+      map: ["foldedLayer"]
+      visible: true
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+  - type: HideLayerClothing # needed since head bandana inherits from mask bandana
+    slots: []
   - type: Tag
     tags:
     - Bandana
@@ -56,7 +67,7 @@
 ## This is all an affront to god ^
 
 - type: entity
-  parent: CDClothingMaskDepartBandanaBase
+  parent: ClothingMaskDepartBandanaBase
   id: ClothingMaskBandCargo
   name: cargo bandana
   description: A cargo-coloured bandana to cover your face. You feel hidden behind it.
@@ -67,7 +78,7 @@
     sprite: _CD/Clothing/Mask/cargo_bandana.rsi
 
 - type: entity
-  parent: [CDClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
+  parent: [ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
   id: ClothingMaskBandCargoDown
   name: cargo bandana
   description: A cargo-coloured bandana to cover your face.

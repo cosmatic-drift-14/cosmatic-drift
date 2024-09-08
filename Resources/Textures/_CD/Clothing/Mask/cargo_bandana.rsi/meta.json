@@ -11,7 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "icon_flipped"
+      "name": "icon_neck"
     },
     {
       "name": "equipped-MASK",
@@ -30,19 +30,19 @@
       "directions": 4
     },
     {
-      "name": "flipped-equipped-MASK",
+      "name": "equipped-NECK",
       "directions": 4
     },
     {
-      "name": "flipped-equipped-MASK-reptilian",
+      "name": "equipped-NECK-reptilian",
       "directions": 4
     },
     {
-      "name": "flipped-equipped-MASK-vulpkanin",
+      "name": "equipped-NECK-vulpkanin",
       "directions": 4
     },
     {
-      "name": "flipped-equipped-MASK-vox",
+      "name": "equipped-NECK-vox",
       "directions": 4
     },
     {
@@ -53,13 +53,5 @@
       "name": "inhand-right",
       "directions": 4
     },
-    {
-      "name": "flipped-inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "flipped-inhand-right",
-      "directions": 4
-    }
   ]
 }
