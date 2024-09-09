@@ -1606,7 +1606,7 @@ namespace Content.Shared.CCVar
         ///     the shuttle again.
         /// </summary>
         public static readonly CVarDef<int> EmergencyShuttleAutoCallExtensionTime =
-            CVarDef.Create("shuttle.auto_call_extension_time", 45, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.auto_call_extension_time", 30, CVar.SERVERONLY);
 
         /*
          * Crew Manifests
