@@ -5,9 +5,9 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
+    sprite: _CD/Mobs/Species/Rodentia/parts.rsi
   - type: Icon
-    sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
+    sprite: _CD/Mobs/Species/Rodentia/parts.rsi
   - type: Damageable
     damageContainer: Biological
   - type: BodyPart
