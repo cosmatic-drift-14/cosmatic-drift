@@ -1,0 +1,11 @@
+<Document>
+  # Rodentia
+
+  <Box>
+    <GuideEntityEmbed Entity="MobRodentiaDummy" Caption=""/>
+  </Box>
+
+  Rodentia are [color=#ffa500]able to store small items within their cheeks, but this makes their speech unintelligible[/color]. They [color=#ffa500]get hungry 33% faster[/color] due to their fast metabolism. Their claws do a mix of [color=#ffa500] 
+  blunt and slash damage[/color].
+
+</Document>
