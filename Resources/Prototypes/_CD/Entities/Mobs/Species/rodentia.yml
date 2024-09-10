@@ -13,7 +13,7 @@
   - type: Thirst
     speciesId: rodentia
   - type: Icon
-    sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
+    sprite: _CD/Mobs/Species/Rodentia/parts.rsi
     state: full
   - type: Body
     prototype: Rodentia
@@ -61,7 +61,7 @@
       - map: [ "pocket1" ]
       - map: [ "pocket2" ]
       - map: [ "clownedon" ] # Dynamically generated
-        sprite: "DeltaV/Effects/creampie.rsi"
+        sprite: "_CD/Effects/creampie.rsi"
         state: "creampie_rodentia"
         visible: false
   - type: MeleeWeapon
