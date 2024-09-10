@@ -92,7 +92,7 @@
   id: ClothingOuterCoatCargoBomberOpened
   name: cargo gorka
 
-# Fore man Coat
+# Foreman Coat
 - type: entity
   parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
   id: ClothingOuterCoatCargoForeman
@@ -105,7 +105,7 @@
     sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoForeman]
   id: ClothingOuterCoatCargoForemanOpened
   name: foreman jacket
 
