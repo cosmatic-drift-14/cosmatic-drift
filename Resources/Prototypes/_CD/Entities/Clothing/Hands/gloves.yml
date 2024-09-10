@@ -15,7 +15,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesMechanic
-  name: mechanics gloves
+  name: mechanic gloves
   description: Reinforced gloves to prevent crushing when working with heavy machinery.
   components:
   - type: Sprite
