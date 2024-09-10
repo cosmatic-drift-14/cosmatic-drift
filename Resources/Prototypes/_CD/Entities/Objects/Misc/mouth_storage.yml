@@ -5,10 +5,7 @@
   noSpawn: true
   components:
   - type: Storage
-    clickInsert: false
-    grid:
-    - 0,0,1,1
-    maxItemSize: Small
+    capacity: 6
     blacklist: 
       components:
       - Sharp
