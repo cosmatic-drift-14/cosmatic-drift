@@ -1162,6 +1162,8 @@
       state: generic_keys
   - type: ApcPowerReceiver
     powerLoad: 1000
+  - type: Computer
+    board: StationAiUploadCircuitboard
   - type: AccessReader
     access: [ [ "ResearchDirector" ] ]
   - type: Lock
