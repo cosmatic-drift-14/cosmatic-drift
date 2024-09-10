@@ -108,9 +108,9 @@
   name: cargo winter boots
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/winterbootscargo.rsi
+    sprite: _CD/Clothing/Shoes/Boots/winterbootscargo.rsi # CD drip 2
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/winterbootscargo.rsi
+    sprite: _CD/Clothing/Shoes/Boots/winterbootscargo.rsi # CD drip 2
 
 - type: entity
   parent: ClothingShoesBaseWinterBoots
