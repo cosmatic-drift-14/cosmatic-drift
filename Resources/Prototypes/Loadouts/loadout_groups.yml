@@ -558,6 +558,7 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
+  - QuartermasterForemansuit # CD
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -574,6 +575,7 @@
   loadouts:
   - QuartermasterWintercoat
   - CargoBomber # CD
+  - ForemanCoat # CD
 
 - type: loadoutGroup
   id: QuartermasterShoes
