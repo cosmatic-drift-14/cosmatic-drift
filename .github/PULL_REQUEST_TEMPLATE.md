@@ -11,7 +11,7 @@
 <!-- If this is a code change, summarize at high level how your new code works. This makes it easier to review. -->
 
 ## Media
-<!-- 
+<!--
 PRs which make ingame changes (adding clothing, items, new features, etc) are required to have media attached that showcase the changes.
 Small fixes/refactors are exempt.
 Any media may be used in SS14 progress reports, with clear credit given.
@@ -20,7 +20,7 @@ If you're unsure whether your PR will require media, ask a maintainer.
 -->
 
 ## Requirements
-<!-- 
+<!--
 Due to influx of PR's we require to ensure that PR's are following the correct guidelines.
 
 Please take a moment to read these if its your first time.
@@ -38,13 +38,8 @@ List any breaking changes, including namespace, public class/method/field change
 **Changelog**
 <!--
 Make players aware of new features and changes that could affect how they play the game by adding a Changelog entry. Please read the Changelog guidelines located at: https://docs.spacestation14.io/en/getting-started/pr-guideline#changelog
--->
 
-<!--
-Make sure to take this Changelog template out of the comment block in order for it to show up. Changelog must have a :cl: symbol, so the bot recognizes the changes and adds them to the game's changelog.
-:cl:
-- add: Added fun!
-- remove: Removed fun!
-- tweak: Changed fun!
-- fix: Fixed fun!
+We do not have the bot upstream uses to automatically create changelogs. Simply write a summery of your changes to be
+listed in #progress-reports. If you would like to be credited as something other then you github username please include the
+name that you would like to be credited as.
 -->
