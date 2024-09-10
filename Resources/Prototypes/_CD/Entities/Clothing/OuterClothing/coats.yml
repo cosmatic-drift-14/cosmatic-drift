@@ -92,6 +92,23 @@
   id: ClothingOuterCoatCargoBomberOpened
   name: cargo gorka
 
+# Fore man Coat
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatCargoForeman
+  name: foreman jacket
+  description: A comfortable padded leather jacket for a logistics foreman
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  id: ClothingOuterCoatCargoForemanOpened
+  name: foreman jacket
+
 # CentCom Coat
 - type: entity
   parent: ClothingOuterStorageBase

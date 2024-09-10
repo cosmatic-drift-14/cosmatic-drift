@@ -188,3 +188,16 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
+
+# QM foreman uniform
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitForeman
+  name: foreman uniform
+  description: A pair of tan cargo pants with a white dress shirt, comfortable enough for a foreman.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
