@@ -11,7 +11,6 @@
     baseDecayRate: 0.0467 # 33% faster than usual
   - type: Inventory
   - type: Thirst
-    speciesId: rodentia
   - type: Icon
     sprite: _CD/Mobs/Species/Rodentia/parts.rsi
     state: full
