@@ -156,6 +156,25 @@
       "directions": 4
     },
 	{
+      "name": "CARGO-icon"
+    },
+    {
+      "name": "CARGO-equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "CARGO-equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+    {
+      "name": "CARGO-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "CARGO-inhand-right",
+      "directions": 4
+    },
+	{
       "name": "HYDRO-icon"
     },
     {
