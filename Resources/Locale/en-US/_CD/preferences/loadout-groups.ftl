@@ -6,6 +6,9 @@ loadout-group-private-investigator-glasses = Private Investigator glasses
 
 loadout-group-passenger-id = Passenger ID
 
+# Cargo
+loadout-group-salvage-specialist-jumpsuit = Salvage Specialist jumpsuit
+
 # Engineering
 loadout-group-senior-engineer-jumpsuit = Senior Engineer jumpsuit
 

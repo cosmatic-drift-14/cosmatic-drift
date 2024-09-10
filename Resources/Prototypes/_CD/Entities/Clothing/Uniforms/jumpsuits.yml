@@ -201,3 +201,16 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
+
+# Salvage Operator
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSalvageOperator
+  name: salvage operator jumpsuit
+  description: A heavy duty suit designed for salvage operations, overall heavier then the typical overalls.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
