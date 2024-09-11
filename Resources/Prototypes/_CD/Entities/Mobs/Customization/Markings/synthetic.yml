@@ -60,7 +60,7 @@
   speciesRestriction: []
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/tails.rsi
-      state: tail_synthliz_wagging
+    state: tail_synthliz_wagging
 
 # snout
 
