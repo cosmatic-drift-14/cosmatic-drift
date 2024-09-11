@@ -42,7 +42,7 @@ marking-SyntheticHornTwinLight = Synth-Lizard Antenna (Twin L)
 marking-SyntheticHornTwinLight-horn_antenna_twin = Horn
 marking-SyntheticHornTwinLight-horn_antenna_twin_light = Light
 
-marking-SyntheticHornThickLight = Synth-Lizard Antenna (Thick)
+marking-SyntheticHornThickLight = Synth-Lizard Antenna (Thick L)
 marking-SyntheticHornThickLight-horn_antenna_thick = Horn
 marking-SyntheticHornThickLight-horn_antenna_thick_light = Light
 

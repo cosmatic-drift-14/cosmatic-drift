@@ -82,7 +82,7 @@
 # horns
 
 - type: marking
-  id: LizardHornsCurl
+  id: SyntheticHornCurl
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -91,7 +91,7 @@
     state: horn_antenna_curl
 
 - type: marking
-  id: LizardHornsShortSynth
+  id: SyntheticHornShort
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -100,7 +100,7 @@
     state: horn_antenna_short
 
 - type: marking
-  id: LizardHornsSlash
+  id: SyntheticHornSlash
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -109,7 +109,7 @@
     state: horn_antenna_slash
 
 - type: marking
-  id: LizardHornsSharp
+  id: SyntheticHornSharp
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -118,7 +118,7 @@
     state: horn_antenna_sharp
 
 - type: marking
-  id: LizardHornsTwin
+  id: SyntheticHornTwin
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -127,7 +127,7 @@
     state: horn_antenna_twin
 
 - type: marking
-  id: LizardHornsThick
+  id: SyntheticHornThick
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -138,7 +138,7 @@
 # horns with lights
 
 - type: marking
-  id: LizardHornsSharpLight
+  id: SyntheticHornSharpLight
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -149,7 +149,7 @@
     state: horn_antenna_sharp_light
 
 - type: marking
-  id: LizardHornsTwinLight
+  id: SyntheticHornTwinLight
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -160,7 +160,7 @@
     state: horn_antenna_twin_light
 
 - type: marking
-  id: LizardHornsThickLight
+  id: SyntheticHornThickLight
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
@@ -173,7 +173,7 @@
 # Chest
 
 - type: marking
-  id: LizardChestScute
+  id: SyntheticBodyScute
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Reptilian]
@@ -182,7 +182,7 @@
     state: body_scute
 
 - type: marking
-  id: LizardChestPlate
+  id: SyntheticBodyPlate
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Reptilian]
@@ -193,7 +193,7 @@
 # Chest w/ Lights
 
 - type: marking
-  id: LizardChestPecs
+  id: SyntheticBodyPecs
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Reptilian]
@@ -204,7 +204,7 @@
     state: body_pecs_secondary
 
 - type: marking
-  id: LizardChestLights
+  id: SyntheticBodyLights
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Reptilian]
