@@ -308,7 +308,7 @@
     sprite: Objects/Consumable/Food/rorocore.rsi
     state: boiled
   - type: Item
-    size: Normal
+    size: 10
   - type: Perishable
     rotAfter: 120 # rot after 2 minutes
     molsPerSecondPerUnitMass: 0
@@ -331,6 +331,6 @@
     color: "#664444"
   - type: SpaceGarbage
   - type: Item
-    size: Normal
+    size: 10
   - type: StaticPrice
     price: 500

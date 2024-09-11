@@ -275,8 +275,8 @@
         tableId: CargoGiftsTable
       - !type:NestedSelector
         tableId: CalmPestEventsTable
-      - !type:NestedSelector
-        tableId: SpicyPestEventsTable
+      # - !type:NestedSelector
+      #   tableId: SpicyPestEventsTable
         
 
 - type: entityTable

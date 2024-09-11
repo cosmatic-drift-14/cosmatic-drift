@@ -59,7 +59,6 @@
           Quantity: 4
   - type: Item
     sprite: Objects/Consumable/Food/taco.rsi
-    storedRotation: -90
   - type: Tag
     tags:
       - Meat

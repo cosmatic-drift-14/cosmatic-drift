@@ -45,8 +45,6 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
-  - type: TemperatureProtection
-    coefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:
