@@ -129,12 +129,15 @@ public sealed class DumpableSystem : EntitySystem
             return;
 
         DumpContents(uid, args.Args.Target, args.Args.User, component);
+        // CD: Split OnAfterInteract into two methods to allow dumping that doesn't require a verb, which is required
+        // for the functionality of Rodentia mouth storage being spilled when damaged. See DumpContents.
     }
 
-    // Refactor to allow dumping that doesn't require a verb
     [PublicAPI]
     public void DumpContents(EntityUid uid, EntityUid? target, EntityUid user, DumpableComponent? component = null)
     {
+        // CD: Split OnAfterInteract into two methods to allow dumping that doesn't require a verb, which is required
+        // for the functionality of Rodentia mouth storage being spilled when damaged.
         if (!TryComp<StorageComponent>(uid, out var storage)
             || !Resolve(uid, ref component))
             return;
