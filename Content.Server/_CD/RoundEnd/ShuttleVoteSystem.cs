@@ -1,5 +1,6 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
+using Content.Server.Communications;
 using Content.Server.RoundEnd;
 using Content.Server.Voting;
 using Content.Server.Voting.Managers;
@@ -56,11 +57,17 @@ public sealed class ShuttleVoteSystem : EntitySystem
 
             if (total > 0 && votesYes >= votesNo)
             {
+                // TODO: Add .loc files
                 _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Round end shuttle vote succeded: {votesYes}/{votesNo}");
-                // TODO: Add .loc files n make an unrecallable shuttle
                 _chatManager.DispatchServerAnnouncement(Loc.GetString("Vote succeeded, round end shuttle enroute"));
-                // This is kinda cursed but whatever, stops a recall
-                _cfg.SetCVar(CCVars.EmergencyRecallTurningPoint, 0f);
+
+                // Disable the ability to recall the shuttle on all existing consoles. Players could technically bypass
+                // this by building a new one. However, I don't think this is likely enough to warrant accounting for it
+                // and would be an admin issue is somebody was abusing it.
+                foreach (var console in EntityQuery<CommunicationsConsoleComponent>())
+                {
+                    console.CanShuttle = false;
+                }
 
                 _roundEndSystem.RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
             }
