@@ -1355,6 +1355,9 @@
   id: Vegetable
 
 - type: Tag
+  id: VGRoidInterior
+
+- type: Tag
   id: VimPilot
 
 - type: Tag
