@@ -91,7 +91,7 @@
     state: horn_antenna_curl
 
 - type: marking
-  id: LizardHornsShort
+  id: LizardHornsShortSynth
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
