@@ -210,6 +210,6 @@
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/body_markings.rsi
-    state: body_light_primary
+    state: body_lights_primary
   - sprite: _CD/Mobs/Customization/Synthliz/body_markings.rsi
-    state: body_light_secondary
+    state: body_lights_secondary
