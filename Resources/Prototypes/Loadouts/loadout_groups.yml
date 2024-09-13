@@ -7,6 +7,14 @@
   loadouts:
   - PlushieLizard
   - PlushieSpaceLizard
+  - PlushieVox # CD
+  - PlushieArachind # CD
+  - PlushieDiona # CD
+  - PlushieHuman # CD
+  - PlushieMoth # CD
+  - PlushieSharkBlue # CD
+  - PlushieSharkPink # CD
+  - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
   - Lighter
   - CigPackGreen
   - CigPackRed

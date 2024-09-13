@@ -16,3 +16,51 @@
   storage:
     back:
     - CDDogtags
+    
+- type: loadout
+  id: PlushieVox
+  storage:
+    back:
+    - PlushieVox
+
+- type: loadout
+  id: PlushieArachind
+  storage:
+    back:
+    - PlushieArachind
+
+- type: loadout
+  id: PlushieDiona
+  storage:
+    back:
+    - PlushieDiona
+
+- type: loadout
+  id: PlushieHuman
+  storage:
+    back:
+    - PlushieHuman
+
+- type: loadout
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+
+- type: loadout
+  id: PlushieSharkBlue
+  storage:
+    back:
+    - PlushieSharkBlue
+
+- type: loadout
+  id: PlushieSharkPink
+  storage:
+    back:
+    - PlushieSharkPink
+
+- type: loadout
+  id: PlushieSharkGrey
+  storage:
+    back:
+    - PlushieSharkGrey
