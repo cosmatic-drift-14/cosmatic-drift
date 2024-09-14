@@ -22,6 +22,10 @@
     {
       "name": "synthsnout_visor",
       "directions": 4
+	},
+	{
+	  "name": "synthsnout_jaw",
+	  "directions": 4
     }
   ]
 }
