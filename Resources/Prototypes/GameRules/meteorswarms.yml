@@ -184,24 +184,6 @@
 #       MeteorLarge: 4
 
 # - type: entity
-#   parent: GameRuleMeteorSwarm
-#   id: GameRuleUristSwarm
-#   components:
-#   - type: StationEvent
-#     weight: 0.05
-#   - type: MeteorSwarm
-#     announcement: station-event-meteor-urist-start-announcement
-#     announcementSound: /Audio/Announcements/attention.ogg
-#     meteors:
-#       MeteorUrist: 1
-#     waves:
-#       min: 3
-#       max: 3
-#     meteorsPerWave:
-#       min: 10
-#       max: 10
-
-# - type: entity
 #   id: ImmovableRodSpawn
 #   parent: BaseGameRule
 #   components:
@@ -217,26 +199,29 @@
 #   - type: ImmovableRodRule
 #     rodPrototypes:
 #     - id: ImmovableRodKeepTilesStill
-#       prob: 0.95
+#       prob: 0.94
 #       orGroup: rodProto
 #     - id: ImmovableRodMop
-#       prob: 0.0072
+#       prob: 0.0075
 #       orGroup: rodProto
 #     - id: ImmovableRodShark
-#       prob: 0.0072
+#       prob: 0.0075
 #       orGroup: rodProto
 #     - id: ImmovableRodClown
-#       prob: 0.0072
+#       prob: 0.0075
 #       orGroup: rodProto
 #     - id: ImmovableRodBanana
-#       prob: 0.0072
+#       prob: 0.0075
 #       orGroup: rodProto
 #     - id: ImmovableRodHammer
-#       prob: 0.0072
+#       prob: 0.0075
 #       orGroup: rodProto
 #     - id: ImmovableRodThrongler
-#       prob: 0.0072
+#       prob: 0.0075
 #       orGroup: rodProto
 #     - id: ImmovableRodGibstick
-#       prob: 0.0072
+#       prob: 0.0075
+#       orGroup: rodProto
+#     - id: ImmovableRodWeh
+#       prob: 0.0075
 #       orGroup: rodProto
