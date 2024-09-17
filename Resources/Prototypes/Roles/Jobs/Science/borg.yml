@@ -17,6 +17,7 @@
       components:
         - type: SkipLoadingCharacterRecords
   # end CD
+  applyTraits: false
 
 - type: job
   id: Borg
@@ -36,3 +37,4 @@
       components:
         - type: SkipLoadingCharacterRecords
   # end CD
+  applyTraits: false
