@@ -1073,14 +1073,6 @@
       - ClothingHeadHatWarden
       - ClothingUniformJumpsuitWarden
       - ClothingUniformJumpskirtWarden
-      - ClothingUniformJumpskirtHosFormal
-      - ClothingUniformJumpskirtHoSParadeMale
-      - ClothingUniformJumpsuitHoSBlue
-      - ClothingUniformJumpsuitHosFormal
-      - ClothingUniformJumpsuitHoSGrey
-      - ClothingUniformJumpsuitHoSParadeMale
-      - ClothingUniformJumpsuitCapFormal
-      - ClothingUniformJumpskirtCapFormalDress
       - ClothingHeadHatParamedicsoft
       # Winter outfits
       - ClothingOuterWinterCap
@@ -1111,24 +1103,6 @@
       - ClothingOuterWinterSci
       - ClothingOuterWinterRobo
       - ClothingOuterWinterSec
-      - ClothingNeckCloakHop
-      - ClothingNeckCloakQm
-      - ClothingNeckCloakCe
-      - ClothingCloakCmo
-      - ClothingNeckCloakRd
-      - ClothingNeckCloakHos
-      - ClothingNeckCloakCapFormal
-      - ClothingNeckCloakCap
-      - ClothingHeadHatBeretEngineering
-      - ClothingHeadHatBeretCmo
-      - ClothingHeadHatBeretRND
-      - ClothingHeadHatBeretHoS
-      - ClothingHeadHatHoshat
-      - ClothingHeadHatHopcap
-      - ClothingHeadHatQMsoftFlipped
-      - ClothingHeadHatQMsoft
-      - ClothingHeadHatCaptain
-      - ClothingHeadHatCapcap
       # Ties
       - ClothingNeckTieRed
       - ClothingNeckTieDet
@@ -1154,6 +1128,32 @@
       - CarpetWhite
       - CarpetWhite
       # CD Additions
+      - ClothingUniformJumpskirtHosFormal
+      - ClothingUniformJumpskirtHoSParadeMale
+      - ClothingUniformJumpsuitHoSBlue
+      - ClothingUniformJumpsuitHosFormal
+      - ClothingUniformJumpsuitHoSGrey
+      - ClothingUniformJumpsuitHoSParadeMale
+      - ClothingUniformJumpsuitCapFormal
+      - ClothingUniformJumpskirtCapFormalDress
+      - ClothingNeckCloakHop
+      - ClothingNeckCloakQm
+      - ClothingNeckCloakCe
+      - ClothingCloakCmo
+      - ClothingNeckCloakRd
+      - ClothingNeckCloakHos
+      - ClothingNeckCloakCapFormal
+      - ClothingNeckCloakCap
+      - ClothingHeadHatBeretEngineering
+      - ClothingHeadHatBeretCmo
+      - ClothingHeadHatBeretRND
+      - ClothingHeadHatBeretHoS
+      - ClothingHeadHatHoshat
+      - ClothingHeadHatHopcap
+      - ClothingHeadHatQMsoftFlipped
+      - ClothingHeadHatQMsoft
+      - ClothingHeadHatCaptain
+      - ClothingHeadHatCapcap
       - PanCloak
       - GayCloak
       - LesbianCloak

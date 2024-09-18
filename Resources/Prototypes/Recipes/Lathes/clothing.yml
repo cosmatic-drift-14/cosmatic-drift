@@ -967,6 +967,77 @@
 # CD Additions
 
 - type: latheRecipe
+  id: ClothingNeckCloakQm
+  result: ClothingNeckCloakQm
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingHeadHatQMsoftFlipped
+  result: ClothingHeadHatQMsoftFlipped
+  completetime: 2.5
+  materials:
+    Cloth: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakCapFormal
+  result: ClothingNeckCloakCapFormal
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakCap
+  result: ClothingNeckCloakCap
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakHop
+  result: ClothingNeckCloakHop
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakCe
+  result: ClothingNeckCloakCe
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingCloakCmo
+  result: ClothingCloakCmo
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakRd
+  result: ClothingNeckCloakRd
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+
+- type: latheRecipe
+  id: ClothingNeckCloakHos
+  result: ClothingNeckCloakHos
+  completetime: 2.8
+  materials:
+    Cloth: 150
+    Durathread: 150
+    
+- type: latheRecipe
   id: PanCloak
   result: ClothingNeckCloakPan
   completetime: 2.8
