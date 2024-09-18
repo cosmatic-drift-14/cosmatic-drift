@@ -8,6 +8,7 @@
     Fork: 4
     PairedChopsticks: 4
     FoodBowlBig: 10
+    FoodBowlFancy: 5 # CD change
     FoodPlate: 10
     FoodPlateSmall: 10
     FoodPlateTin: 5
