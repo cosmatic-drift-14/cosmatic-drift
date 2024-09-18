@@ -281,7 +281,7 @@
 
 - type: stealTargetGroup
   id: VehicleSecway
-  name: secway
+  name: steal-target-groups-secway
   sprite:
     sprite: Objects/Vehicles/secway.rsi
     state: icon

@@ -362,7 +362,7 @@
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerCargoShuttle]
   id: ComputerTabletopCargoShuttle
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
@@ -484,7 +484,7 @@
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerEmergencyShuttle]
   id: ComputerTabletopEmergencyShuttle
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
@@ -545,7 +545,7 @@
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerShuttleCargo]
   id: ComputerTabletopShuttleCargo
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
@@ -608,7 +608,7 @@
   parent: [BaseStructureComputerTabletop, ComputerSensorMonitoring]
   id: ComputerTabletopSensorMonitoring
   suffix: Tabletop, TESTING, DO NOT MAP
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
