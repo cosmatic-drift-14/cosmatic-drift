@@ -51,7 +51,7 @@ public abstract class SharedItemSystem : EntitySystem
             return;
 
         component.Size = size;
-        Dirty(component);
+        Dirty(uid, component);
     }
 
     public void SetHeldPrefix(EntityUid uid, string? heldPrefix, bool force = false, ItemComponent? component = null)
@@ -63,7 +63,7 @@ public abstract class SharedItemSystem : EntitySystem
             return;
 
         component.HeldPrefix = heldPrefix;
-        Dirty(component);
+        Dirty(uid, component);
         VisualsChanged(uid);
     }
 
@@ -79,7 +79,7 @@ public abstract class SharedItemSystem : EntitySystem
         item.InhandVisuals = otherItem.InhandVisuals;
         item.HeldPrefix = otherItem.HeldPrefix;
 
-        Dirty(item);
+        Dirty(uid, item);
         VisualsChanged(uid);
     }
 
