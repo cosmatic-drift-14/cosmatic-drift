@@ -16,6 +16,8 @@
     - Security
     - Service
     - Supply
+# CD-exclusive channels
+    - Hailing
   - type: ActiveRadio
     channels:
     - Binary
@@ -27,6 +29,8 @@
     - Security
     - Service
     - Supply
+# CD-exclusive channels
+    - Hailing
   - type: IgnoreUIRange
   - type: StationAiHeld
   - type: StationAiOverlay
