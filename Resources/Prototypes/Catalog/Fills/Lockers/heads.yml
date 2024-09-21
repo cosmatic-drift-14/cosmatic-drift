@@ -19,9 +19,8 @@
     - id: RubberStampQm
     #CD Addions
     - id: BookSOPCargo
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
+      prob: 0.3
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -57,9 +56,7 @@
     - id: ClothingEyesGlassesCommand
     #CD Addions
     - id: BookSOPGeneral
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
 
 # No laser table + Laser table
 - type: entityTable
@@ -145,9 +142,8 @@
     - id: ClothingEyesHudCommand
     #CD Addions
     - id: BookSOPService
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
+      prob: 0.3
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -178,9 +174,8 @@
     - id: RubberStampCE
     #CD Addions
     - id: BookSOPEngineering
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -240,9 +235,8 @@
     - id: RubberStampCMO
     #CD Addions
     - id: BookSOPMedical
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -295,9 +289,8 @@
     - id: RubberStampRd
     #CD Addions
     - id: BookSOPScience
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -357,9 +350,8 @@
     - id: WeaponDisabler
     #CD Addions
     - id: BookSOPSecurity
-      prob: 0.2
     - id: BookSOPCommand
-      prob: 0.2
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
