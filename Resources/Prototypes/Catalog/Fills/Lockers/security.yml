@@ -24,6 +24,9 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+      #CD Addions
+      - id: BookSOPSecurity
+        prob: 0.2
 
 - type: entity
   id: LockerWardenFilled
@@ -50,6 +53,9 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+      #CD Addions
+      - id: BookSOPSecurity
+        prob: 0.2
 
 - type: entity
   id: LockerSecurityFilled
@@ -78,6 +84,9 @@
         prob: 0.6
       - id: BookSpaceLaw
         prob: 0.5
+      #CD Addions
+      - id: BookSOPSecurity
+        prob: 0.2
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -137,6 +146,9 @@
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
       - id: HandLabeler
+      #CD Addions
+      - id: BookSOPSecurity
+        prob: 0.2
 
 - type: entity
   id: ClosetBombFilled

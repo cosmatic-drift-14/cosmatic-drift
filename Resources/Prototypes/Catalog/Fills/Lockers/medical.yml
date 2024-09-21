@@ -69,6 +69,9 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
+      #CD Addions
+      - id: BookSOPMedical
+        prob: 0.2
 
 - type: entity
   parent: LockerWallMedical
@@ -102,6 +105,9 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
+      #CD Addions
+      - id: BookSOPMedical
+        prob: 0.2
 
 - type: entity
   id: LockerChemistryFilled
@@ -123,6 +129,9 @@
       - id: ClothingMaskSterile
       - id: HandLabeler
         prob: 0.5
+      #CD Addions
+      - id: BookSOPMedical
+        prob: 0.2
 
 - type: entity
   id: LockerParamedicFilled
@@ -143,5 +152,8 @@
       - id: ClothingMaskSterile
       - id: HandheldGPSBasic
       - id: MedkitFilled
-      - id: ETUGarmentBag #CD exclusive
+      #CD Addions
+      - id: ETUGarmentBag
         prob: 0.3
+      - id: BookSOPMedical
+        prob: 0.2
