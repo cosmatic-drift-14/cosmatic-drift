@@ -1,0 +1,6 @@
+﻿- type: typingIndicator
+  id: rodentia
+  spritePath: /Textures/_CD/Effects/speech.rsi
+  typingState: rodentia0
+  offset: 0, 0.2 # 0625
+
