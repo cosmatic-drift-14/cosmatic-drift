@@ -96,6 +96,9 @@
       - id: HolofanProjector
       - id: RCD
       - id: RCDAmmo
+      #CD Addions
+      - id: BookSOPEngineering
+        prob: 0.2
 
 - type: entity
   id: LockerAtmosphericsFilled
@@ -112,6 +115,9 @@
       - id: HolofanProjector
       - id: RCD
       - id: RCDAmmo
+      #CD Addions
+      - id: BookSOPEngineering
+        prob: 0.2
 
 - type: entity
   id: LockerEngineerFilledHardsuit
@@ -126,6 +132,9 @@
       - id: ClothingShoesBootsMag
       - id: RCD
       - id: RCDAmmo
+      #CD Addions
+      - id: BookSOPEngineering
+        prob: 0.2
 
 - type: entity
   id: LockerEngineerFilled
@@ -139,6 +148,9 @@
       - id: trayScanner
       - id: RCD
       - id: RCDAmmo
+      #CD Addions
+      - id: BookSOPEngineering
+        prob: 0.2
 
 - type: entity
   id: ClosetRadiationSuitFilled

@@ -17,6 +17,11 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampQm
+    #CD Addions
+    - id: BookSOPCargo
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -50,6 +55,11 @@
     - id: SpaceCash1000
     - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
+    #CD Addions
+    - id: BookSOPGeneral
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 # No laser table + Laser table
 - type: entityTable
@@ -133,6 +143,11 @@
     - id: RubberStampHop
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
+    #CD Addions
+    - id: BookSOPService
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -161,6 +176,11 @@
     - id: RCD
     - id: RCDAmmo
     - id: RubberStampCE
+    #CD Addions
+    - id: BookSOPEngineering
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -218,6 +238,11 @@
     - id: MedicalTechFabCircuitboard
     - id: MedkitFilled
     - id: RubberStampCMO
+    #CD Addions
+    - id: BookSOPMedical
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -268,6 +293,11 @@
     - id: ProtolatheMachineCircuitboard
     - id: ResearchComputerCircuitboard
     - id: RubberStampRd
+    #CD Addions
+    - id: BookSOPScience
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -325,6 +355,11 @@
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
+    #CD Addions
+    - id: BookSOPSecurity
+      prob: 0.2
+    - id: BookSOPCommand
+      prob: 0.2
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
