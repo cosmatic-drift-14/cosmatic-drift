@@ -11,10 +11,10 @@
     gloves: ClothingHandsGlovesCaptain
     head: ClothingHeadHatCaptain
     neck: ClothingNeckCloakCap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: WeaponDisabler
     back: ClothingBackpackCaptain
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterArmorCaptainCarapace
     pocket1: WeaponDisabler
 
@@ -27,10 +27,10 @@
     gloves: ClothingHandsGlovesCaptain
     head: ClothingHeadHatCapcap
     neck: ClothingNeckMantleCap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: WeaponDisabler
     back: ClothingBackpackSatchelCaptain
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterArmorCaptainCarapace
     pocket1: WeaponDisabler
 
@@ -41,10 +41,10 @@
     shoes: ClothingShoesColorWhite
     head: ClothingHeadHatBeretEngineering
     neck: ClothingNeckCloakCe
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackDuffelEngineering
-    ears: ClothingHeadsetCE
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterVestHazard
     pocket1: WeaponDisabler
 
@@ -55,10 +55,10 @@
     shoes: ClothingShoesColorWhite
     head: ClothingHeadHatBeretEngineering
     neck: ClothingNeckMantleCE
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackSatchelEngineering
-    ears: ClothingHeadsetCE
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterCE
     pocket1: WeaponDisabler
 
@@ -70,9 +70,9 @@
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadMirror
     neck: ClothingCloakCmo
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackMedical
-    ears: ClothingHeadsetCMO
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     belt: ClothingBeltMedicalFilled
     outerClothing: ClothingOuterCoatLabCmo
     pocket1: WeaponDisabler
@@ -85,9 +85,9 @@
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatBeretCmo
     neck: ClothingNeckMantleCMO
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetCMO
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     belt: ClothingBeltMedicalFilled
     outerClothing: ClothingOuterCoatLabCmo
     pocket1: WeaponDisabler
@@ -99,10 +99,10 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatHopcap
     neck: ClothingNeckCloakHop
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: WeaponDisabler
     back: ClothingBackpackDebug
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterHoP
     pocket1: WeaponDisabler
 
@@ -113,10 +113,10 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatHopcap
     neck: ClothingNeckMantleHOP
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: WeaponDisabler
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterHoP
     pocket1: WeaponDisabler
 
@@ -128,10 +128,10 @@
     gloves: ClothingHandsGlovesCombat
     head: ClothingHeadHatHoshat
     neck: ClothingNeckCloakHos
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetAltSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatHoSTrench
     pocket1: WeaponDisabler
@@ -147,10 +147,10 @@
     gloves: ClothingHandsGlovesColorWhite
     head: ClothingHeadHatCowboyWhite
     neck: SecurityWhistle
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetAltSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     pocket1: WeaponDisabler
     pocket2: MagazinePistolSubMachineGunTopMounted
@@ -165,9 +165,9 @@
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatBeretRND
     neck: ClothingNeckCloakRd
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackScience
-    ears: ClothingHeadsetRD
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterCoatRD
     pocket1: WeaponDisabler
 
@@ -179,9 +179,9 @@
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatBeretRND
     neck: ClothingNeckMantleRD
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelScience
-    ears: ClothingHeadsetRD
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterCoatRD
     pocket1: WeaponDisabler
 
@@ -192,9 +192,9 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatQMsoft
     neck: ClothingNeckCloakQm
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackCargo
-    ears: ClothingHeadsetRD
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterQM
     pocket1: WeaponDisabler
     pocket2: AppraisalTool
@@ -206,9 +206,9 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatBeretQM
     neck: ClothingNeckMantleQM
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelCargo
-    ears: ClothingHeadsetQM
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterQM
     pocket1: WeaponDisabler
     pocket2: AppraisalTool
@@ -221,10 +221,10 @@
     jumpsuit: ClothingUniformJumpsuitSec
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetBasic
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasic
     pocket1: WeaponPistolMk58
@@ -239,10 +239,10 @@
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetBasic
     neck: SecurityWhistle
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
     pocket1: WeaponPistolMk58
@@ -256,10 +256,10 @@
     jumpsuit: ClothingUniformJumpsuitSec
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetBasic
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityWebbingFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasic
     pocket1: WeaponPistolMk58
@@ -274,10 +274,10 @@
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHatCorpsoft
     neck: SecurityWhistle
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
     pocket1: WeaponPistolMk58
@@ -292,10 +292,10 @@
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHatFedoraBrown
     neck: ClothingNeckTieDet
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltHolsterFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatDetectiveLoadout
     pocket1: ForensicScanner
@@ -310,10 +310,10 @@
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHatFedoraGrey
     neck: ClothingNeckTieDet
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltHolsterFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterVestDetective
     pocket1: ForensicScanner
@@ -329,10 +329,10 @@
     gloves: ClothingHandsGlovesCombat
     head: ClothingHeadHatBeretWarden
     neck: SecurityWhistle
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityWebbingFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatWarden
     pocket1: WeaponDisabler
@@ -348,10 +348,10 @@
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     head: ClothingHeadHatWarden
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterWinterWarden
     pocket1: WeaponDisabler
@@ -368,9 +368,9 @@
     jumpsuit: ClothingUniformJumpsuitCargo
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatCargosoft
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackCargo
-    ears: ClothingHeadsetCargo
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: AppraisalTool
     pocket2: DrinkColaCan
   inhand:
@@ -382,9 +382,9 @@
     jumpsuit: ClothingUniformJumpsuitCargo
     shoes: ClothingShoesBootsWinterCargo
     head: ClothingHeadHatCargosoft
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackDuffelCargo
-    ears: ClothingHeadsetCargo
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: AppraisalTool
     pocket2: SpaceCash500
     outerClothing: ClothingOuterWinterCargo
@@ -398,10 +398,10 @@
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHatCargosoftFlipped
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSalvageWebbing
     back: ClothingBackpackSalvage
-    ears: ClothingHeadsetCargo
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: SurvivalKnife
     pocket2: HandheldGPSBasic
   inhand:
@@ -413,10 +413,10 @@
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHatBrownFlatcap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSalvageWebbing
     back: ClothingBackpackDuffelSalvage
-    ears: ClothingHeadsetCargo
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterCargo
     pocket1: SurvivalKnife
     pocket2: HandheldGPSBasic
@@ -432,9 +432,9 @@
     shoes: ClothingShoesColorWhite
     gloves: ClothingHandsGlovesFingerlessInsulated
     head: ClothingHeadHelmetFire
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackDuffelAtmospherics
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterSuitAtmosFire
     suitstorage: AirTankFilled
@@ -450,10 +450,10 @@
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatHardhatYellow
     neck: ClothingNeckScarfStripedLightBlue
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: DoubleEmergencyOxygenTankFilled
     back: ClothingBackpackSatchelAtmospherics
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterWinterAtmos
     pocket1: FlashlightLantern
@@ -468,9 +468,9 @@
     shoes: ClothingShoesBootsWork
     gloves: ClothingHandsGlovesColorYellowBudget
     head: ClothingHeadHatWelding
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackEngineering
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesMeson
     pocket1: LightReplacer
     pocket2: Welder
@@ -484,10 +484,10 @@
     shoes: ClothingShoesColorBlack
     gloves: ClothingHandsGlovesColorYellowBudget
     head: ClothingHeadHatCone
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltUtility
     back: ClothingBackpackSatchelEngineering
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterVestHazard
     pocket1: HolofanProjector
@@ -502,10 +502,10 @@
     shoes: ClothingShoesBootsWork
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatHardhatYellow
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltUtilityEngineering
     back: ClothingBackpackEngineering
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesMeson
     outerClothing: ClothingOuterWinterEngi
     pocket1: RCD
@@ -521,10 +521,10 @@
     shoes: ClothingShoesBootsWork
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatBeretEngineering
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltUtilityEngineering
     back: ClothingBackpackDuffelEngineering
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesMeson
     pocket1: RCD
     pocket2: RCDAmmo
@@ -540,10 +540,10 @@
     jumpsuit: ClothingUniformJumpsuitChemistry
     shoes: ClothingShoesColorOrange
     gloves: ClothingHandsGlovesLatex
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ChemBag
     back: ClothingBackpackChemistry
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesChemical
     outerClothing: ClothingOuterCoatLabChem
     pocket1: PillCanisterRandom
@@ -558,10 +558,10 @@
     jumpsuit: ClothingUniformJumpsuitChemistry
     shoes: ClothingShoesColorOrange
     head: ClothingHeadHatPaper
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelChemistry
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesChemical
     outerClothing: ClothingOuterWinterChem
     pocket1: PillCanisterRandom
@@ -577,10 +577,10 @@
     shoes: ClothingShoesColorBlue
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadBandGrey
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackGenetics
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatLabGene
     pocket1: PillCanisterCharcoal
@@ -595,10 +595,10 @@
     shoes: ClothingShoesColorBlue
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatBeretBrigmedic
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelGenetics
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterGen
     pocket1: PillCanisterHyronalin
@@ -613,10 +613,10 @@
     shoes: ClothingShoesColorGreen
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadMirror
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackVirology
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatLabViro
     pocket1: PillCanisterTricordrazine
@@ -632,10 +632,10 @@
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatBeretSeniorPhysician
     neck: ClothingNeckStethoscope
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelVirology
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterViro
     pocket1: PillCanisterTricordrazine
@@ -651,10 +651,10 @@
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatCorpsoft
     neck: ClothingNeckStethoscope
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatLab
     pocket1: PillCanisterTricordrazine
@@ -670,10 +670,10 @@
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatBeretMedic
     neck: ClothingNeckStethoscope
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterMed
     pocket1: PillCanisterTricordrazine
@@ -689,10 +689,10 @@
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatSurgcapBlue
 #    mask: ClothingMaskBreathMedical # right now this is broken for vox, but maybe some day.
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltStorageWaistbag
     back: NitrousOxideTankFilled
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlasses
     pocket1: Scalpel
     pocket2: Gauze
@@ -707,10 +707,10 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatMagician
     neck: ClothingNeckTieRed
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: WhoopieCushion
     pocket2: PillSpaceDrugs
@@ -724,10 +724,10 @@
     jumpsuit: ClothingUniformJumpsuitPsychologist
     shoes: ClothingShoesLeather
     head: ClothingHeadHatAnimalCat
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: BulletFoam
     pocket2: PillSpaceDrugs
@@ -743,10 +743,10 @@
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatParamedicsoft
     neck: ClothingNeckStethoscope
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalEMTFilled
     back: ClothingBackpackDuffelGenetics
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterWinterPara
     pocket1: CombatMedipen
@@ -763,10 +763,10 @@
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatParamedicsoftFlipped
     neck: ClothingNeckStethoscope
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalEMTFilled
     back: ClothingBackpackDuffelGenetics
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     outerClothing: ClothingOuterCoatParamedicWB
     pocket1: CombatMedipen
@@ -781,10 +781,10 @@
     jumpsuit: ClothingUniformJumpsuitColorWhite
     shoes: ClothingShoesColorWhite
     head: ClothingHeadBandGreen
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackDuffelMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: Ointment
     pocket2: Brutepack
@@ -798,10 +798,10 @@
     jumpsuit: ClothingUniformJumpsuitColorWhite
     shoes: ClothingShoesColorWhite
     head: ClothingHeadBandBlue
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackDuffelMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: Ointment
     pocket2: Brutepack
@@ -816,10 +816,10 @@
     shoes: ClothingShoesColorRed
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatSurgcapPurple
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: RegenerativeMesh
     pocket2: PillCanisterBicaridine
@@ -834,10 +834,10 @@
     shoes: ClothingShoesColorGreen
     gloves: ClothingHandsGlovesLatex
     head: ClothingHeadHatSurgcapGreen
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: RegenerativeMesh
     pocket2: PillCanisterBicaridine
@@ -852,10 +852,10 @@
     shoes: ClothingShoesColorBlue
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatSurgcapBlue
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetMedical
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudMedical
     pocket1: RegenerativeMesh
     pocket2: PillCanisterBicaridine
@@ -871,10 +871,10 @@
     jumpsuit: ClothingUniformJumpsuitColorPurple
     shoes: ClothingShoesColorBlack
     head: ClothingHeadPaperSack
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackScience
-    ears: ClothingHeadsetScience
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlasses
   inhand:
   - NetworkConfigurator
@@ -885,10 +885,10 @@
     jumpsuit: ClothingUniformJumpsuitCasualPurple
     shoes: ClothingShoesColorBlack
     neck: ClothingNeckTieSci
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelScience
-    ears: ClothingHeadsetScience
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlasses
   inhand:
   - DrinkHotCoffee
@@ -899,10 +899,10 @@
     jumpsuit: ClothingUniformJumpsuitScientistFormal
     shoes: ClothingShoesColorPurple
     head: ClothingHeadHatBeretRND
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackScience
-    ears: ClothingHeadsetScience
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlasses
   inhand:
   - DrinkHotCoffee
@@ -914,10 +914,10 @@
     shoes: ClothingShoesBootsWinterSci
     head: ClothingHeadHatPurplesoft
     neck: ClothingNeckTieSci
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackSatchelScience
-    ears: ClothingHeadsetScience
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlasses
   inhand:
   - AnomalyScanner
@@ -930,10 +930,10 @@
     jumpsuit: ClothingUniformJumpsuitBartender
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatTophat
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
     suitstorage: WeaponShotgunDoubleBarreledRubber
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesGlassesSunglasses
     outerClothing: ClothingOuterArmorBasicSlim
     pocket1: DrinkVodkaBottleFull
@@ -946,9 +946,9 @@
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatBowlerHat
     neck: ClothingNeckTieSci
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     eyes: ClothingEyesHudBeer
     outerClothing: ClothingOuterWinterBar
     pocket1: WeaponShotgunSawn
@@ -960,9 +960,9 @@
     jumpsuit: ClothingUniformJumpsuitHydroponics
     shoes: ClothingShoesColorGreen
     head: ClothingHeadBandGreen
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackDuffelHydroponics
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
   inhand:
   - HydroponicsToolScythe
 
@@ -973,9 +973,9 @@
     jumpsuit: ClothingUniformJumpsuitHydroponics
     shoes: ClothingShoesColorGreen
     head: Bucket
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackHydroponics
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: HydroponicsToolMiniHoe
     pocket2: HydroponicsToolSpade
 
@@ -986,8 +986,8 @@
     shoes: ClothingShoesColorBlack
     gloves: ClothingHandsGlovesBoxingBlue
     head: ClothingHeadPaperSackSmile
-    id: VisitorPDA
-    ears: ClothingHeadsetService
+    #id: VisitorPDA #CD remove for SOP reasons
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: DrinkVodkaBottleFull
     pocket2: SoapDeluxe
 
@@ -998,8 +998,8 @@
     shoes: ClothingShoesColorBlack
     gloves: ClothingHandsGlovesBoxingRed
     head: ClothingHeadHatSkub
-    id: VisitorPDA
-    ears: ClothingHeadsetService
+    #id: VisitorPDA #CD remove for SOP reasons
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterSkub
     pocket1: Skub
     pocket2: DrinkSpaceGlue
@@ -1011,9 +1011,9 @@
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatPlaguedoctor
     mask: ClothingMaskPlague
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: Bible
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterPlagueSuit
     pocket1: PlushieSharkGrey
     pocket2: FoodSnackEnergy
@@ -1024,9 +1024,9 @@
     jumpsuit: ClothingUniformJumpsuitChaplain
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatHoodNunHood
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: Bible
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterNunRobe
     pocket1: PlushiePenguin
     pocket2: DrinkCoconutWaterCarton
@@ -1038,10 +1038,10 @@
     shoes: ClothingShoesChef
     head: ClothingHeadHatChef
 #    mask: ClothingMaskItalianMoustache # right now this is broken for vox, so its inhand.
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
     belt: ClothingBeltChefFilled
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterJacketChef
     pocket1: ButchCleaver
     pocket2: BookHowToCookForFortySpaceman
@@ -1056,10 +1056,10 @@
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatChef
 #    mask: ClothingMaskItalianMoustache # right now this is broken for vox, so its inhand.
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
     belt: ClothingBeltChefFilled
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterChef
     pocket1: RollingPin
     pocket2: BookHowToCookForFortySpaceman
@@ -1072,9 +1072,9 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitClown
     shoes: ClothingShoesClown
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackClown
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     mask: ClothingMaskClown
     pocket1: BikeHorn
     pocket2: ClownRecorder
@@ -1086,10 +1086,10 @@
     shoes: ClothingShoesGaloshes
     gloves: ClothingHandsGlovesJanitor
     head: ClothingHeadFishCap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
     belt: ClothingBeltJanitorFilled
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterJani
   inhand:
   - MopItem
@@ -1102,10 +1102,10 @@
     shoes: ClothingShoesGaloshes
     gloves: ClothingHandsGlovesJanitor
     head: ClothingHeadHatHoodBioJanitor
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
     belt: ClothingBeltJanitorFilled
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterBioJanitor
   inhand:
   - MopItem
@@ -1118,9 +1118,9 @@
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatFedoraGrey
     neck: ClothingNeckLawyerbadge
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
   inhand:
@@ -1133,9 +1133,9 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatFedoraBrown
     neck: ClothingNeckLawyerbadge
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: RubberStampLawyer
     pocket2: SmokingPipeFilledTobacco
   inhand:
@@ -1148,10 +1148,10 @@
     shoes: ClothingShoesColorRed
     head: ClothingHeadHatCowboyBrown
     neck: ClothingNeckLawyerbadge
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: RubberStampLawyer
     pocket2: SmokingPipeFilledTobacco
   inhand:
@@ -1166,9 +1166,9 @@
     head: ClothingHeadHatBeaverHat
     neck: ClothingNeckLawyerbadge
     mask: CigarGold
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterCoatExpensive
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
@@ -1182,10 +1182,10 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatCorpsoft
     neck: ClothingNeckLawyerbadge
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
   inhand:
@@ -1215,11 +1215,11 @@
     jumpsuit: ClothingUniformJumpsuitLibrarian
     shoes: ClothingShoesBootsLaceup
     neck: ClothingNeckScarfStripedGreen
-    id: VisitorLibrarianPDA
+    #id: VisitorLibrarianPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
     eyes: ClothingEyesGlassesJamjar
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BookJanitorTale
     pocket2: BookRandomStory
   inhand:
@@ -1231,11 +1231,11 @@
     jumpsuit: ClothingUniformJumpsuitCurator
     shoes: ClothingShoesBootsLaceup
     head: ClothingHeadHatGreyFlatcap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
     eyes: ClothingEyesGlasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BookSun
     pocket2: BookRandomStory
   inhand:
@@ -1246,10 +1246,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: DrinkGrapeCan
     pocket2: FoodSnackBoritos
   inhand:
@@ -1260,10 +1260,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: FoodSnackCheesie
     pocket2: DrinkShamblersJuiceCan
   inhand:
@@ -1274,10 +1274,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: FoodSnackPistachios
     pocket2: DrinkNukieCan
   inhand:
@@ -1288,10 +1288,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: DrinkSolDryCan
     pocket2: FoodSnackBoritos
   inhand:
@@ -1302,10 +1302,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: DrinkEnergyDrinkCan
     pocket2: FoodSnackRaisins
   inhand:
@@ -1316,10 +1316,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: FoodSnackSus
     pocket2: DrinkFourteenLokoCan
   inhand:
@@ -1330,10 +1330,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: FoodSnackCnDs
     pocket2: DrinkDrGibbCan
   inhand:
@@ -1344,10 +1344,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: FoodSnackChips
     pocket2: DrinkRootBeerCan
   inhand:
@@ -1358,10 +1358,10 @@
   equipment:
     jumpsuit: ClothingUniformRandomShirt
     shoes: ClothingShoesColorBrown
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackDuffel
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: DrinkGrapeCan
   inhand:
@@ -1372,10 +1372,10 @@
   equipment:
     jumpsuit: ClothingUniformRandomShirt
     shoes: ClothingShoesColorBlack
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: DrinkNukieCan
   inhand:
@@ -1386,10 +1386,10 @@
   equipment:
     jumpsuit: ClothingUniformRandomShirt
     shoes: ClothingShoesColorBlack
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: FoodSnackCheesie
   inhand:
@@ -1400,10 +1400,10 @@
   equipment:
     jumpsuit: ClothingUniformRandomShirt
     shoes: ClothingShoesColorBrown
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackDuffel
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: FoodSnackPistachios
   inhand:
@@ -1414,10 +1414,10 @@
   equipment:
     jumpsuit: ClothingUniformRandomShirt
     shoes: ClothingShoesColorBlack
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackDuffel
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: DrinkEnergyDrinkCan
   inhand:
@@ -1428,9 +1428,9 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
     shoes: ClothingShoesBootsLaceup
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: FoodSnackSus
   inhand:
@@ -1442,10 +1442,10 @@
     jumpsuit: ClothingUniformRandomShirt
     shoes: ClothingShoesWizard
     head: ClothingHeadRastaHat
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: BluntRainbow
     pocket2: FoodSnackSus
   inhand:
@@ -1457,10 +1457,10 @@
     jumpsuit: ClothingUniformJumpsuitColorTeal
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatSombrero
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterPoncho
     pocket1: BluntRainbow
     pocket2: FoodSnackSus
@@ -1475,10 +1475,10 @@
     gloves: ClothingHandsGlovesColorWhite
     head: ClothingHeadBandBlack
     mask: ClothingMaskMime
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackMime
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: CrayonMime
     pocket2: RubberStampMime
 
@@ -1490,10 +1490,10 @@
     gloves: ClothingHandsGlovesColorWhite
     head: ClothingHeadHatAnimalCatBlack
     mask: ClothingMaskMime
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackMime
     eyes: ClothingEyesGlassesCheapSunglasses
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterWinterMime
     pocket1: CrayonMime
     pocket2: RubberStampMime
@@ -1505,9 +1505,9 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitReporter
     shoes: ClothingShoesLeather
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: MicrophoneInstrument
     pocket2: BoxFolderClipboard
 
@@ -1516,9 +1516,9 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitJournalist
     shoes: ClothingShoesColorBrown
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchel
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: MicrophoneInstrument
     pocket2: BoxFolderClipboard
 
@@ -1528,9 +1528,9 @@
     jumpsuit: ClothingUniformJumpsuitBartender
     shoes: ClothingShoesColorBlack
     head: ClothingHeadBandBlue
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: Fork
     pocket2: FoodShakerPepper
 
@@ -1540,9 +1540,9 @@
     jumpsuit: ClothingUniformJumpsuitColorBlack
     shoes: ClothingShoesColorBlack
     head: ClothingHeadBandBlack
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterApronBar
     pocket1: Fork
     pocket2: FoodShakerPepper
@@ -1553,10 +1553,10 @@
     jumpsuit: ClothingUniformJumpsuitSafari
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadSafari
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltUtility
     back: ClothingBackpackDuffel
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: WeaponFlareGun
     pocket2: PillCanisterDylovene
 
@@ -1566,10 +1566,10 @@
     jumpsuit: ClothingUniformJumpsuitSafari
     shoes: ClothingShoesBootsWork
     head: ClothingHeadSafari
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltStorageWaistbag
     back: WeaponShotgunDoubleBarreledRubber
-    ears: ClothingHeadsetService
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     pocket1: WeaponFlareGun
     pocket2: PillCanisterDylovene
 
@@ -1588,7 +1588,7 @@
     jumpsuit: ClothingUniformJumpsuitCargo
     shoes: ClothingShoesColorBlack
     head: ClothingHeadHatCargosoft
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackCargo
     #ears: null # No headsets.
     pocket1: AppraisalTool
@@ -1599,7 +1599,7 @@
     jumpsuit: ClothingUniformJumpsuitCargo
     shoes: ClothingShoesBootsWinterCargo
     head: ClothingHeadHatCargosoft
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelCargo
     #ears: # No headsets.
     pocket1: AppraisalTool
@@ -1617,7 +1617,7 @@
     gloves: ClothingHandsGlovesCaptain
     head: ClothingHeadHatCaptain
     neck: ClothingNeckCloakCap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackCaptain
     #ears: # No headsets.
 
@@ -1630,7 +1630,7 @@
     gloves: ClothingHandsGlovesCaptain
     head: ClothingHeadHatCapcap
     neck: ClothingNeckMantleCap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelCaptain
     #ears: # No headsets.
     outerClothing: ClothingOuterWinterCap
@@ -1645,7 +1645,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadMirror
     neck: ClothingCloakCmo
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackMedical
     #ears: # No headsets.
     belt: ClothingBeltMedical
@@ -1658,7 +1658,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatBeretCmo
     neck: ClothingNeckMantleCMO
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelMedical
     #ears: # No headsets.
     belt: ClothingBeltMedical
@@ -1674,7 +1674,7 @@
     shoes: ClothingShoesColorWhite
     head: ClothingHeadHatBeretEngineering
     neck: ClothingNeckCloakCe
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     #belt: ClothingBeltChiefEngineerFilled # probably too strong?
     back: ClothingBackpackDuffelEngineering
     #ears: # No headsets.
@@ -1688,7 +1688,7 @@
     shoes: ClothingShoesColorWhite
     head: ClothingHeadHatBeretEngineering
     neck: ClothingNeckMantleCE
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackSatchelEngineering
     #ears: # No headsets.
@@ -1705,7 +1705,7 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatHopcap
     neck: ClothingNeckCloakHop
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: WeaponDisabler
     back: ClothingBackpackDebug
     #ears: #No headsets.
@@ -1718,7 +1718,7 @@
     shoes: ClothingShoesLeather
     head: ClothingHeadHatHopcap
     neck: ClothingNeckMantleHOP
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: WeaponDisabler
     back: ClothingBackpackSatchelLeather
     #ears: #No headsets.
@@ -1735,7 +1735,7 @@
     gloves: ClothingHandsGlovesCombat
     head: ClothingHeadHatHoshat
     neck: ClothingNeckCloakHos
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
     #ears: #No headsets.
@@ -1750,7 +1750,7 @@
     gloves: ClothingHandsGlovesColorWhite
     head: ClothingHeadHatCowboyWhite
     neck: SecurityWhistle
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelLeather
     #ears: #No headsets.
@@ -1766,7 +1766,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatBeretRND
     neck: ClothingNeckCloakRd
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackScience
     #ears: #No headsets.
     outerClothing: ClothingOuterCoatRD
@@ -1778,7 +1778,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatBeretRND
     neck: ClothingNeckMantleRD
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelScience
     #ears: # No headsets.
     outerClothing: ClothingOuterCoatRD
@@ -1793,7 +1793,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatQMsoft
     neck: ClothingNeckCloakQm
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackCargo
     #ears: # No headsets.
     outerClothing: ClothingOuterWinterQM
@@ -1806,7 +1806,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatBeretQM
     neck: ClothingNeckMantleQM
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackSatchelCargo
     #ears: # No headsets.
     outerClothing: ClothingOuterWinterQM
@@ -1885,10 +1885,10 @@
     jumpsuit: ClothingUniformJumpsuitMercenary
     shoes: ClothingShoesBootsMercFilled
     head: ClothingHeadHelmetMerc
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpackMerc
     belt: ClothingBeltMercWebbing
-    ears: ClothingHeadsetGrey
+    ears: ClothingHeadsetLongRange #CD change to LongRange
     outerClothing: ClothingOuterVestWebMerc
     pocket1: WeaponLaserSvalinn
     pocket2: RadioHandheld
@@ -1899,5 +1899,5 @@
     jumpsuit: ClothingUniformJumpsuitCossack
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHatGreyFlatcap
-    id: VisitorPDA
+    #id: VisitorPDA #CD remove for SOP reasons
     back: ClothingBackpack
