@@ -63,9 +63,9 @@
   description: "It's a baseball hat painted in Cargo colours."
   components:
   - type: Sprite
-    sprite: Clothing/Head/Soft/cargosoft.rsi
+    sprite: _CD/Clothing/Head/Soft/cargosoft.rsi # CD drip 2
   - type: Clothing
-    sprite: Clothing/Head/Soft/cargosoft.rsi
+    sprite: _CD/Clothing/Head/Soft/cargosoft.rsi # CD drip 2
   - type: Tag
     tags:
     - ClothMade

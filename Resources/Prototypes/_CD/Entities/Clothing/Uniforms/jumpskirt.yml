@@ -67,3 +67,28 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/paramedic_casual.rsi
 
+# cargo variants
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCargoLight
+  name: cargo tech jumpskirt
+  description: A sturdy jumpskirt, issued to members of the Cargo department.
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_light.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_light.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCargoDark
+  name: cargo tech jumpskirt
+  description: A sturdy jumpskirt, issued to members of the Cargo department.
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_dark.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_dark.rsi

@@ -18,7 +18,7 @@
 - type: startingGear
   id: SalvageSpecialistGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+#    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist # CD unique
     id: SalvagePDA
     ears: ClothingHeadsetCargo
   #storage:

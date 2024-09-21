@@ -1,0 +1,84 @@
+- type: entity
+  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  id: ClothingMaskDepartBandanaBase
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedSlots:
+    - NECK
+    unfoldedSlots:
+    - MASK
+    foldedHideLayers: []
+    unfoldedHideLayers:
+    - Snout
+  - type: Mask
+    disableOnFolded: true
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_neck
+      map: ["foldedLayer"]
+      visible: false
+  - type: Tag
+    tags:
+    - Bandana
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+
+- type: entity
+  parent: [ClothingNeckBase, BaseFoldable]
+  id: ClothingMaskDepartBandanaBaseDown
+  abstract: true
+  components:
+  - type: Foldable
+    folded: true
+  - type: Mask
+    isToggled: true
+    enabled: false
+    disableOnFolded: true
+  - type: IngestionBlocker
+    enabled: false
+  - type: IdentityBlocker
+    enabled: false
+    coverage: MOUTH
+  - type: Sprite # needed for vendor inventory icons
+    layers:
+    - state: icon_neck
+      map: ["foldedLayer"]
+      visible: true
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+  - type: HideLayerClothing # needed since head bandana inherits from mask bandana
+    slots: []
+  - type: Tag
+    tags:
+    - Bandana
+
+## This is all an affront to god ^
+
+- type: entity
+  parent: ClothingMaskDepartBandanaBase
+  id: ClothingMaskBandCargo
+  name: cargo bandana
+  description: A cargo-coloured bandana to cover your face. You feel hidden behind it.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Mask/cargo_bandana.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Mask/cargo_bandana.rsi
+
+- type: entity
+  parent: [ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
+  id: ClothingNeckBandCargo
+  name: cargo bandana
+  description: A cargo-coloured bandana to cover your face.

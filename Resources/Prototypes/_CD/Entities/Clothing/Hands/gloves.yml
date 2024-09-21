@@ -11,3 +11,22 @@
   - type: Fiber
     fiberMaterial: fibers-nitrile
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesMechanic
+  name: mechanic gloves
+  description: Reinforced gloves to prevent crushing when working with heavy machinery.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Hands/Gloves/reinforced.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Hands/Gloves/reinforced.rsi
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-black
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+  - type: FingerprintMask

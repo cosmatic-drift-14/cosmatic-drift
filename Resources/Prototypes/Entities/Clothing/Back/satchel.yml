@@ -143,7 +143,7 @@
   description: A robust satchel for stealing cargo's loot.
   components:
     - type: Sprite
-      sprite: Clothing/Back/Satchels/cargo.rsi
+      sprite: _CD/Clothing/Back/Satchels/cargo.rsi # CD drip 2
 
 - type: entity
   parent: ClothingBackpackSatchel

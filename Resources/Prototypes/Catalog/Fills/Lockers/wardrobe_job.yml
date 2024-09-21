@@ -172,10 +172,10 @@
    - type: StorageFill
      contents:
        - id: ClothingHeadHatCargosoft
-       - id: ClothingUniformJumpsuitCargo
+       - id: ClothingUniformJumpsuitCargoLight # CD
        - id: ClothingBackpack
        - id: ClothingShoesColorBlack
-       - id: ClothingUniformJumpskirtCargo
+       - id: ClothingUniformJumpskirtCargoLight # CD
        - id: ClothingHandsGlovesFingerless
        - id: AppraisalTool
 

@@ -8,3 +8,15 @@
     sprite: _CD/Clothing/Shoes/Boots/lowdrag-heels.rsi
   - type: Clothing
     sprite: _CD/Clothing/Shoes/Boots/lowdrag-heels.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsSteel
+  name: steel-toed boots
+  description: Reinforced workboots with a rubber toe, reinforced with steel.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Shoes/Boots/steeltoed_boots.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Shoes/Boots/steeltoed_boots.rsi
+  - type: Matchbox

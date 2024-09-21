@@ -163,3 +163,54 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
 
+# cargo variants
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoLight
+  name: cargo tech jumpsuit
+  description: A sturdy jumpsuit, issued to members of the Cargo department.
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_light.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_light.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoDark
+  name: cargo tech jumpsuit
+  suffix: dark
+  description: A sturdy jumpsuit, issued to members of the Cargo department.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
+
+# QM foreman uniform
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitForeman
+  name: foreman uniform
+  description: A pair of tan cargo pants with a white dress shirt, comfortable enough for a foreman.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
+
+# Salvage Operator
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSalvageOperator
+  name: salvage operator jumpsuit
+  description: A heavy duty suit designed for salvage operations, overall heavier then the typical overalls.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi

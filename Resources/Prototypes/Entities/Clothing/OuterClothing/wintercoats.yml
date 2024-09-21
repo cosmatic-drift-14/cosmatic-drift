@@ -125,7 +125,7 @@
   name: cargo winter coat
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    sprite: _CD/Clothing/OuterClothing/WinterCoats/coat.rsi # CD drip 2
     layers:
     - state: CARGO-icon
   - type: Item
@@ -135,7 +135,7 @@
       right:
       - state: CARGO-inhand-right
   - type: Clothing
-    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    sprite: _CD/Clothing/OuterClothing/WinterCoats/coat.rsi # CD drip 2
     clothingVisuals:
       outerClothing:
       - state: CARGO-equipped-OUTERCLOTHING

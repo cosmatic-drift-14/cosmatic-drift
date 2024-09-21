@@ -344,9 +344,9 @@
   description: A sharp turtleneck made for the hardy work environment of supply.
   components:
     - type: Sprite
-      sprite: Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi
+      sprite: _CD/Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi # CD drip 2
     - type: Clothing
-      sprite: Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi
+      sprite: _CD/Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi # CD drip 2
 
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseCommandContraband]
