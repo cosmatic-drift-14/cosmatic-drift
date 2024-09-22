@@ -13,7 +13,6 @@ namespace Content.Server._CD.Toolshed.Commands;
 public sealed class PrefCommand : ToolshedCommand
 {
     [Dependency] private readonly IServerPreferencesManager _pref = default!;
-    // [Dependency] private readonly AntagSelectionSystem _antag = default!;
 
     [CommandImplementation("has")]
     public bool Has(
