@@ -4,7 +4,7 @@
 
   [color=lightblue][bold]OOC[/bold]: It is strongly recommended to increase the size of your guidebook window when viewing this page.[/color]
 
-  ## Contraband
+  ## Contraband (NE)
 
   <Table Columns="2">
     <ColorBox Color="#660000"><Box>Type of Contraband</Box></ColorBox>
@@ -184,9 +184,12 @@
     <ColorBox><Box>Stimulants.</Box></ColorBox>
     <ColorBox><Box>Desoxyephedrine</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
-    <ColorBox><Box>Genetic mutatives.</Box></ColorBox>
-    <ColorBox><Box>Unstable Mutagen, and Romerol</Box></ColorBox>
+    <ColorBox><Box>Unstable lazarus chemicals.</Box></ColorBox>
+    <ColorBox><Box>Romerol.</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>Genetic mutatives.</Box></ColorBox>
+    <ColorBox><Box>Unstable Mutagen.</Box></ColorBox>
+    <ColorBox><Box>Botanical operations.</Box></ColorBox>
     <ColorBox><Box>Hazardous toxins.</Box></ColorBox>
     <ColorBox><Box>Amatoxin, Heartbreaker, Licoxide, and many more</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
