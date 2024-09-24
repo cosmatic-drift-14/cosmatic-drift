@@ -686,7 +686,7 @@ namespace Content.Client.Lobby.UI
                 if (!antag.SetPreference)
                     continue;
 
-                if (!antag.VisiblePreference)
+                if (!antag.VisiblePreference) // CD change
                     continue;
 
                 var antagContainer = new BoxContainer()
