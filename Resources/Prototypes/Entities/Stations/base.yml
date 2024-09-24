@@ -52,6 +52,9 @@
             - type: TradeStation
           paths:
             - /Maps/Shuttles/trading_outpost.yml
+        mining: !type:GridSpawnGroup # CD change
+          paths:
+          - /Maps/Shuttles/mining.yml # CD change
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true
