@@ -4,6 +4,7 @@
   antagonist: true
   setPreference: true
   objective: roles-low-impact-antag-desc
+  visiblePreference: true
 
 - type: antag
   id: ModerateImpactAntag
@@ -11,6 +12,7 @@
   antagonist: true
   setPreference: true
   objective: roles-moderate-impact-antag-desc
+  visiblePreference: true
 
 - type: antag
   id: HighImpactAntag
@@ -18,3 +20,4 @@
   antagonist: true
   setPreference: true
   objective: roles-high-impact-antag-desc
+  visiblePreference: true
