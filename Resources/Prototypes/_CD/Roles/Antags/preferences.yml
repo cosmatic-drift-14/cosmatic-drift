@@ -1,0 +1,23 @@
+- type: antag
+  id: LowImpactAntag
+  name: roles-low-impact-antag
+  antagonist: true
+  setPreference: true
+  objective: roles-low-impact-antag-desc
+  visiblePreference: true
+
+- type: antag
+  id: ModerateImpactAntag
+  name: roles-moderate-impact-antag
+  antagonist: true
+  setPreference: true
+  objective: roles-moderate-impact-antag-desc
+  visiblePreference: true
+
+- type: antag
+  id: HighImpactAntag
+  name: roles-high-impact-antag
+  antagonist: true
+  setPreference: true
+  objective: roles-high-impact-antag-desc
+  visiblePreference: true
