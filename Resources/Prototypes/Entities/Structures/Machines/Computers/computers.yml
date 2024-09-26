@@ -341,11 +341,10 @@
   - type: UserInterface
     interfaces:
       enum.CriminalRecordsConsoleKey.Key:
-        type: CriminalRecordsConsoleBoundUserInterface
+        type: CharacterRecordConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: ActivatableUI
-    key: enum.CriminalRecordsConsoleKey.Key
+
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -368,10 +367,6 @@
     access: [["Security"]]
   - type: CharacterRecordConsole
     consoleType: Security
-  - type: UserInterface
-    interfaces:
-      enum.CharacterRecordConsoleKey.Key:
-        type: CharacterRecordConsoleBoundUserInterface
   - type: ActivatableUI
     key: enum.CharacterRecordConsoleKey.Key
 
@@ -384,12 +379,12 @@
   - type: GeneralStationRecordConsole
   - type: UserInterface
     interfaces:
-        enum.GeneralStationRecordConsoleKey.Key:
-          type: GeneralStationRecordConsoleBoundUserInterface
+        enum.CharacterRecordConsoleKey.Key:
+          type: CharacterRecordConsoleBoundUserInterface
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.GeneralStationRecordConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -401,12 +396,6 @@
     - Forensics
   - type: CharacterRecordConsole
     consoleType: Employment
-  - type: UserInterface
-    interfaces:
-      enum.CharacterRecordConsoleKey.Key:
-        type: CharacterRecordConsoleBoundUserInterface
-  - type: ActivatableUI
-    key: enum.CharacterRecordConsoleKey.Key
 
 - type: entity
   parent: BaseComputerAiAccess
