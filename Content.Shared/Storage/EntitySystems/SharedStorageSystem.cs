@@ -352,7 +352,7 @@ public abstract class SharedStorageSystem : EntitySystem
             }
 
             //If there's only one then let's be generous
-            if (validStorables.Count > 1)
+            if (validStorables.Count >= 1)
             {
                 var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 0.2f * validStorables.Count, new AreaPickupDoAfterEvent(GetNetEntityList(validStorables)), uid, target: uid)
                 {
