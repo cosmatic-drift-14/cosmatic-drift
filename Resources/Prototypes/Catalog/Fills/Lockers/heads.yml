@@ -348,6 +348,7 @@
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
+    - id: WantedListCartridge
     #CD Addions
     - id: BookSOPSecurity
     - id: BookSOPCommand
