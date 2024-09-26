@@ -287,9 +287,9 @@ public abstract class SharedStorageSystem : EntitySystem
         if (args.Handled || !storageComp.ClickInsert || TryComp(uid, out LockComponent? lockComponent) && lockComponent.Locked)
             return;
 
-        Log.Debug($"Storage (UID {uid}) attacked by user (UID {args.User}) with entity (UID {args.Used}).");
-
-        if (HasComp<PlaceableSurfaceComponent>(uid))
+        var attemptEv = new StorageInteractUsingAttemptEvent();
+        RaiseLocalEvent(uid, ref attemptEv);
+        if (attemptEv.Cancelled)
             return;
 
         PlayerInsertHeldEntity(uid, args.User, storageComp);
