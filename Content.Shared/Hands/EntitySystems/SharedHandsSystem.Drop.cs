@@ -40,6 +40,20 @@ public abstract partial class SharedHandsSystem
     }
 
     /// <summary>
+    ///     Checks whether an entity can drop a given entity. Will return false if they are not holding the entity.
+    /// </summary>
+    public bool CanDrop(EntityUid uid, EntityUid entity, HandsComponent? handsComp = null, bool checkActionBlocker = true)
+    {
+        if (!Resolve(uid, ref handsComp))
+            return false;
+
+        if (!IsHolding(uid, entity, out var hand, handsComp))
+            return false;
+
+        return CanDropHeld(uid, hand, checkActionBlocker);
+    }
+
+    /// <summary>
     ///     Checks if the contents of a hand is able to be removed from its container.
     /// </summary>
     public bool CanDropHeld(EntityUid uid, Hand hand, bool checkActionBlocker = true)
@@ -116,7 +130,7 @@ public abstract partial class SharedHandsSystem
             TransformSystem.DropNextTo((entity, itemXform), (uid, userXform));
             return true;
         }
-        
+
         // drop the item with heavy calculations from their hands and place it at the calculated interaction range position
         // The DoDrop is handle if there's no drop target
         DoDrop(uid, hand, doDropInteraction: doDropInteraction, handsComp);
@@ -124,7 +138,7 @@ public abstract partial class SharedHandsSystem
         // if there's no drop location stop here
         if (targetDropLocation == null)
             return true;
-        
+
         // otherwise, also move dropped item and rotate it properly according to grid/map
         var (itemPos, itemRot) = TransformSystem.GetWorldPositionRotation(entity);
         var origin = new MapCoordinates(itemPos, itemXform.MapID);

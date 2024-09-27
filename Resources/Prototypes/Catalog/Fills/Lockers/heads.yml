@@ -17,6 +17,7 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampQm
+    - id: AstroNavCartridge
     #CD Addions
     - id: BookSOPCargo
     - id: BookSOPCommand
@@ -348,6 +349,7 @@
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
+    - id: WantedListCartridge
     #CD Addions
     - id: BookSOPSecurity
     - id: BookSOPCommand
