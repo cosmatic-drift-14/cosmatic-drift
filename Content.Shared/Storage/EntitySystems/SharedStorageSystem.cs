@@ -287,9 +287,9 @@ public abstract class SharedStorageSystem : EntitySystem
         if (args.Handled || !storageComp.ClickInsert || TryComp(uid, out LockComponent? lockComponent) && lockComponent.Locked)
             return;
 
-        Log.Debug($"Storage (UID {uid}) attacked by user (UID {args.User}) with entity (UID {args.Used}).");
-
-        if (HasComp<PlaceableSurfaceComponent>(uid))
+        var attemptEv = new StorageInteractUsingAttemptEvent();
+        RaiseLocalEvent(uid, ref attemptEv);
+        if (attemptEv.Cancelled)
             return;
 
         PlayerInsertHeldEntity(uid, args.User, storageComp);
@@ -352,7 +352,7 @@ public abstract class SharedStorageSystem : EntitySystem
             }
 
             //If there's only one then let's be generous
-            if (validStorables.Count > 1)
+            if (validStorables.Count >= 1)
             {
                 var doAfterArgs = new DoAfterArgs(EntityManager, args.User, 0.2f * validStorables.Count, new AreaPickupDoAfterEvent(GetNetEntityList(validStorables)), uid, target: uid)
                 {
@@ -436,7 +436,7 @@ public abstract class SharedStorageSystem : EntitySystem
 
             var angle = targetXform.LocalRotation;
 
-            if (PlayerInsertEntityInWorld(uid, args.Args.User, entity, component))
+            if (PlayerInsertEntityInWorld(uid, args.Args.User, entity, component, playSound: false))
             {
                 successfullyInserted.Add(entity);
                 successfullyInsertedPositions.Add(position);
@@ -764,12 +764,12 @@ public abstract class SharedStorageSystem : EntitySystem
     /// </summary>
     /// <param name="player">The player to insert an entity with</param>
     /// <returns>true if inserted, false otherwise</returns>
-    public bool PlayerInsertEntityInWorld(EntityUid uid, EntityUid player, EntityUid toInsert, StorageComponent? storageComp = null)
+    public bool PlayerInsertEntityInWorld(EntityUid uid, EntityUid player, EntityUid toInsert, StorageComponent? storageComp = null, bool playSound = true)
     {
         if (!Resolve(uid, ref storageComp) || !_sharedInteractionSystem.InRangeUnobstructed(player, uid))
             return false;
 
-        if (!Insert(uid, toInsert, out _, user: player, storageComp))
+        if (!Insert(uid, toInsert, out _, user: player, storageComp, playSound: playSound))
         {
             _popupSystem.PopupClient(Loc.GetString("comp-storage-cant-insert"), uid, player);
             return false;

@@ -39,6 +39,7 @@
             SeniorPhysician: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 2, 2 ]
+            Paramedic: [ 1, 1 ]
             MedicalIntern: [ 2, 2 ]
             #science
             ResearchDirector: [ 1, 1 ]
