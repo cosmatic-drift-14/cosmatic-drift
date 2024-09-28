@@ -45,6 +45,7 @@ public sealed class ShuttleVoteSystem : EntitySystem
                 (Loc.GetString("ui-vote-restart-abstain"), "abstain"),
             },
             Duration = TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerRestart)),
+            DisplayVotes = false,
         };
 
         var vote = _voteManager.CreateVote(options);
