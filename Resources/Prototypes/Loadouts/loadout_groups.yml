@@ -1075,6 +1075,8 @@
   loadouts:
   - DetectiveJumpsuit
   - DetectiveJumpskirt
+  - DetectiveJumpsuitCasual # CD
+  - DetectiveJumpskirtCasual # CD
   - NoirJumpsuit
   - NoirJumpskirt
 
@@ -1086,6 +1088,7 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - ForensicJacket # CD
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit

@@ -1,0 +1,16 @@
+# Jumpsuit
+- type: loadout
+  id: DetectiveJumpsuitCasual
+  equipment:
+    jumpsuit: ClothingUniformDetectiveCasual
+
+- type: loadout
+  id: DetectiveJumpskirtCasual
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveCasual
+
+# OuterClothing
+- type: loadout
+  id: ForensicJacket
+  equipment:
+    outerClothing: ClothingOuterCoatDetectiveForensic
