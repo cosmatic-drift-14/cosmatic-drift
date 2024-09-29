@@ -63,9 +63,9 @@
   description: A white shirt with a red collar and black skirt. Comfortable, modern and stylish.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/detective_casual.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/detective_casual.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/detective_casual.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/detective_casual.rsi
 
 - type: entity
   parent: ClothingUniformSkirtBase
