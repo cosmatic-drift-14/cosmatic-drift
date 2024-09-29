@@ -225,3 +225,16 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
+
+# Suits
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  id: ClothingUniformJumpsuitSuitBlue
+  name: blue formal suit
+  description: A pair of blue dress pants with a white shirt, includes a waistcoat.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi

@@ -185,3 +185,16 @@
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatDetectiveForensic]
   id: ClothingOuterCoatDetectiveForensicOpened
   name: forensic jacket
+
+# Suit Jackets
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitBlue
+  name: blue suit jacket
+  description: A fancy blue suit jacket.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
