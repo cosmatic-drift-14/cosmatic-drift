@@ -167,3 +167,21 @@
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
   id: ClothingOuterCoatBlueHiVisOpened
   name: EMT jacket
+
+# Forensic jacket
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatDetectiveForensic
+  name: forensic jacket
+  description: A sturdy black windbreaker with a red armband and collar.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatDetectiveForensic]
+  id: ClothingOuterCoatDetectiveForensicOpened
+  name: forensic jacket
