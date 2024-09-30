@@ -5,7 +5,7 @@
   description: A solid yellow ledger, for Detectives who take more notes then most.
   components:
   - type: Sprite
-    sprite: Objects/Misc/cc-clipboard.rsi
+    sprite: _CD/Objects/Misc/ledger.rsi
     layers:
     - state: clipboard
     - state: clipboard_paper
@@ -16,7 +16,9 @@
       visible: false
     - state: clipboard_over
   - type: Item
-    sprite: Objects/Misc/cc-clipboard.rsi
-    size: 10
+    sprite: _CD/Objects/Misc/ledger.rsi
+    size: 20
   - type: Clothing
-    sprite: Objects/Misc/cc-clipboard.rsi
+    sprite: _CD/Objects/Misc/ledger.rsi
+  - type: Storage
+    capacity: 60
