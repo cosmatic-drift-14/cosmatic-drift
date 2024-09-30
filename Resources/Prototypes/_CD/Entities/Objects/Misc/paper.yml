@@ -26,3 +26,8 @@
       tags:
         - Document
         - Folder
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    damage:
+      types:
+        Blunt: 8 # It's bigger, and heavy, it does an extra 2 damage vs the regular clipboard.
