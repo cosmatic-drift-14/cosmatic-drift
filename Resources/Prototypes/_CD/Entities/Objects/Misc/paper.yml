@@ -1,0 +1,22 @@
+- type: entity
+  id: BoxFolderDetectiveClipboard
+  parent: BoxFolderClipboard
+  name: Detective ledger
+  description: A solid yellow ledger, for Detectives who take more notes then most.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/cc-clipboard.rsi
+    layers:
+    - state: clipboard
+    - state: clipboard_paper
+      map: ["clipboard_paper"]
+      visible: false
+    - state: clipboard_pen
+      map: ["clipboard_pen"]
+      visible: false
+    - state: clipboard_over
+  - type: Item
+    sprite: Objects/Misc/cc-clipboard.rsi
+    size: 10
+  - type: Clothing
+    sprite: Objects/Misc/cc-clipboard.rsi
