@@ -22,3 +22,8 @@
   id: SecurityPlateCarrier
   equipment:
     belt: ClothingBeltSecurityPlateCarrier
+
+- type: loadout
+  id: SecurityGreatcoat
+  equipment:
+    outerClothing: ClothingOuterCoatSecGreatcoat

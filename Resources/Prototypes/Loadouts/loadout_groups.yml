@@ -967,6 +967,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - SecurityGreatcoat # CD
 
 - type: loadoutGroup
   id: WardenHead
@@ -991,6 +992,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - SecurityGreatcoat # CD
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1039,6 +1041,7 @@
   - ArmorVest
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - SecurityGreatcoat # CD
 
 - type: loadoutGroup
   id: SecurityShoes
