@@ -186,6 +186,34 @@
   id: ClothingOuterCoatDetectiveForensicOpened
   name: forensic jacket
 
+# Greatcoat
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat, AllowSuitStorageClothing]
+  id: ClothingOuterCoatSecGreatcoat
+  name: security greatcoat
+  description: An exceptionally heavy wool greatcoat, the sleeves are dyed red to help distinguish the wearer as Security staff.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_greatcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_greatcoat.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.75
+        Piercing: 0.80
+        Heat: 0.70
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatSecGreatcoat]
+  id: ClothingOuterCoatSecGreatcoatOpened
+  name: security greatcoat
+
 # Suit Jackets
 
 - type: entity
