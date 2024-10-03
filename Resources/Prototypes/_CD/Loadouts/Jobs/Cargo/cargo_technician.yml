@@ -24,6 +24,11 @@
     jumpsuit: ClothingUniformJumpskirtCargoDark
 
 - type: loadout
+  id: CargoTechnicianOveralls
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoOveralls
+
+- type: loadout
   id: CargoBomber
   equipment: 
     outerClothing: ClothingOuterCoatCargoBomber

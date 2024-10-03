@@ -81,7 +81,6 @@
   parent: [ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
   id: ClothingNeckBandCargo
   name: cargo bandana
-  description: A cargo-coloured bandana to cover your face.
 
 
 - type: entity

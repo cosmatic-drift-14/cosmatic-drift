@@ -340,11 +340,10 @@
   - type: CriminalRecordsConsole
   - type: UserInterface
     interfaces:
-      enum.CriminalRecordsConsoleKey.Key:
+      enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]

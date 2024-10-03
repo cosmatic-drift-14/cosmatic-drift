@@ -13,7 +13,7 @@
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesBootsSteel
   name: steel-toed boots
-  description: Reinforced workboots with a rubber toe, reinforced with steel.
+  description: Sturdy workboots with a steel reinforced toe and rubber toecap.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Shoes/Boots/steeltoed_boots.rsi

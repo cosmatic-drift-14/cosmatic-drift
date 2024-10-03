@@ -147,6 +147,7 @@
       - id: BoxEvidenceMarkers
       - id: HandLabeler
       #CD Addions
+      - id: BoxFolderDetectiveClipboard
       - id: BookSOPSecurity
         prob: 0.2
 

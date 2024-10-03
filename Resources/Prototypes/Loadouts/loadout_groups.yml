@@ -629,7 +629,7 @@
   - CargoTechnicianJumpskirtLight # CD
   - CargoTechnicianJumpsuitDark # CD
   - CargoTechnicianJumpskirtDark # CD
-
+  - CargoTechnicianOveralls # CD
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
