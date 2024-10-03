@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Derived from Wizden's sprites for Cargo, Sprites by Github KittenColony / Discord kittencolony (297865728374210561)",
+  "copyright": "Shape taken from tgstation at commit https://github.com/tgstation/tgstation/commit/0a1ae39f0fb7353b0704f27d1599a567891f727c, modified by Github KittenColony / Discord kittencolony (297865728374210561)",
   "size": {
     "x": 32,
     "y": 32

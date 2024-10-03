@@ -163,6 +163,8 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
 
+
+# Non-casual drip below
 # cargo variants
 
 - type: entity
@@ -189,6 +191,19 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
 
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoOveralls
+  name: cargo overalls
+  description: A set of sturdy tan overalls worn by cargo techs wanting more coverage.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_overalls.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_overalls.rsi
+
+
 # QM foreman uniform
 
 - type: entity
@@ -208,7 +223,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSalvageOperator
   name: salvage operator jumpsuit
-  description: A heavy duty suit designed for salvage operations, overall heavier then the typical overalls.
+  description: A heavy duty suit designed for salvage operations, feels heavier then the typical overalls.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
