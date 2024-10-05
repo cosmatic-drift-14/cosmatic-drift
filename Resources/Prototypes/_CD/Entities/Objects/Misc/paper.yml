@@ -17,7 +17,7 @@
     - state: clipboard_over
   - type: Item
     sprite: _CD/Objects/Misc/ledger.rsi
-    size: 20
+    size: 10
   - type: Clothing
     sprite: _CD/Objects/Misc/ledger.rsi
   - type: Storage
