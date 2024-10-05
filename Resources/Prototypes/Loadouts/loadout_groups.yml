@@ -967,6 +967,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - SecurityGreatcoat # CD
 
 - type: loadoutGroup
   id: WardenHead
@@ -991,6 +992,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - SecurityGreatcoat # CD
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1039,6 +1041,7 @@
   - ArmorVest
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - SecurityGreatcoat # CD
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1075,6 +1078,8 @@
   loadouts:
   - DetectiveJumpsuit
   - DetectiveJumpskirt
+  - DetectiveJumpsuitCasual # CD
+  - DetectiveJumpskirtCasual # CD
   - NoirJumpsuit
   - NoirJumpskirt
 
@@ -1086,6 +1091,7 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - ForensicJacket # CD
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit

@@ -9,6 +9,7 @@
     ClothingHeadHatBeretSecurity: 3
     ClothingHeadHatSecsoft: 3
     ClothingHeadBandRed: 3
+    ClothingMaskBandSec : 3 # CD
     ClothingMaskNeckGaiterRed: 3
     ClothingHandsGlovesColorBlack: 3
     ClothingHandsGlovesFingerless: 3
@@ -23,6 +24,7 @@
     ClothingOuterArmorBasic: 2
     ClothingNeckScarfStripedRed: 3
     ClothingOuterArmorBasicSlim: 2
+    ClothingOuterCoatSecGreatcoat : 2 # CD
     ClothingEyesBlindfold: 1
     ClothingShoesBootsCombat: 1
     ClothingShoesBootsWinterSec: 2

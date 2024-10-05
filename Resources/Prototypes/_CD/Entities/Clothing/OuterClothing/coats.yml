@@ -167,3 +167,60 @@
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
   id: ClothingOuterCoatBlueHiVisOpened
   name: EMT jacket
+
+# Forensic jacket
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatDetectiveForensic
+  name: forensic jacket
+  description: A sturdy black windbreaker with a red armband and collar.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatDetectiveForensic]
+  id: ClothingOuterCoatDetectiveForensicOpened
+  name: forensic jacket
+
+# Greatcoat
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatSecGreatcoat
+  name: security greatcoat
+  description: An exceptionally heavy wool greatcoat, the sleeves are dyed red to help distinguish the wearer as Security staff.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_greatcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_greatcoat.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatSecGreatcoat]
+  id: ClothingOuterCoatSecGreatcoatOpened
+  name: security greatcoat
+
+# Suit Jackets
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitBlue
+  name: blue suit jacket
+  description: A fancy blue suit jacket.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi

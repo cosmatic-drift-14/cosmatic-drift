@@ -100,7 +100,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSecurtyCasual
   name: casual security fatigues
-  description: A Red shirt with a black undershirt and pants. Comfortable while on patrol.
+  description: A red shirt with a black undershirt and pants. Comfortable while on patrol.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/security_casual.rsi
@@ -111,7 +111,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformHoSSeniorCasual
   name: casual senior fatigues
-  description: A Red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
+  description: A red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/senior_security_casual.rsi
@@ -122,12 +122,23 @@
   parent: ClothingUniformBase
   id: ClothingUniformWardenCasual
   name: casual warden fatigues
-  description: A Red shirt with a black undershirt and pants. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
+  description: A red shirt with a black undershirt and pants. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/warden_casual.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/warden_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDetectiveCasual
+  name: casual detective fatigues
+  description: A white shirt with a red collar and black pants. Comfortable, modern and stylish.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/detective_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/detective_casual.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -229,3 +240,16 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
+
+# Suits
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  id: ClothingUniformJumpsuitSuitBlue
+  name: blue formal suit
+  description: A pair of blue dress pants with a white shirt, includes a waistcoat.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi

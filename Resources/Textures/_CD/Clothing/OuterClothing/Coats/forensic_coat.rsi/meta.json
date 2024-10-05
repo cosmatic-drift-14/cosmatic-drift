@@ -11,11 +11,14 @@
       "name": "icon"
     },
     {
-      "name": "equipped-INNERCLOTHING",
+      "name": "icon-open"
+    },
+    {
+      "name": "equipped-OUTERCLOTHING",
       "directions": 4
     },
     {
-      "name": "folded-equipped-INNERCLOTHING",
+      "name": "open-equipped-OUTERCLOTHING",
       "directions": 4
     },
     {
@@ -24,6 +27,14 @@
     },
     {
       "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "open-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "open-inhand-right",
       "directions": 4
     }
   ]

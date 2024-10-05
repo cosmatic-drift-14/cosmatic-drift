@@ -1,0 +1,34 @@
+# Bowties
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBowtieRed
+  name: red bowtie
+  description: A simple, stylish red bowtie.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/bowtie.rsi
+    layers:
+    - state: red
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/bowtie.rsi
+    clothingVisuals:
+      neck:
+      - state: red-equipped
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBowtieBlue
+  name: blue bowtie
+  description: A simple, stylish blue bowtie.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/bowtie.rsi
+    layers:
+    - state: blue
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/bowtie.rsi
+    clothingVisuals:
+      neck:
+      - state: blue-equipped
+
