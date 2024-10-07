@@ -32,6 +32,8 @@
     ClothingUniformJumpskirtColorOrange: 2
     ClothingUniformJumpsuitColorRed: 2
     ClothingUniformJumpskirtColorRed: 2
+    ClothingUniformJumpsuitColorPurple: 2
+    ClothingUniformJumpskirtColorPurple: 2
     ClothingUniformJumpsuitColorPink: 2
     ClothingUniformJumpskirtColorPink: 2
     ClothingUniformJumpsuitColorDarkBlue: 2
@@ -40,8 +42,6 @@
     ClothingUniformJumpskirtColorDarkGreen: 2
     ClothingUniformJumpsuitColorTeal: 2
     ClothingUniformJumpskirtColorTeal: 2
-    ClothingUniformJumpsuitColorPurple: 2
-    ClothingUniformJumpskirtColorPurple: 2
     # CD Below
     ClothingUniformJumpsuitColorLightBrown: 2
     ClothingUniformJumpskirtColorLightBrown: 2
