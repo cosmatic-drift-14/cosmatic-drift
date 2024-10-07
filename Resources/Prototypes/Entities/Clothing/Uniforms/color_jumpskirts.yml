@@ -366,12 +366,12 @@
         color: "#ffe14d"
       - state: trinkets-equipped-INNERCLOTHING
 
-# Lilac Jumpskirt - CD
+# Purple Jumpskirt
 - type: entity
   parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtColorLilac
-  name: lilac jumpskirt
-  description: A generic lilac jumpskirt with no rank markings.
+  id: ClothingUniformJumpskirtColorPurple
+  name: purple jumpskirt
+  description: A generic light purple jumpskirt with no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color.rsi
@@ -488,35 +488,4 @@
       jumpsuit:
       - state: equipped-INNERCLOTHING
         color: "#cc295f"
-      - state: trinkets-equipped-INNERCLOTHING
-
-# Purple Jumpskirt - CD
-- type: entity
-  parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtColorPurple
-  name: purple jumpskirt
-  description: A generic purple jumpskirt with no rank markings.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-    layers:
-    - state: icon
-      color: "#8100ac"
-    - state: trinkets-icon
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#8100ac"
-      - state: trinkets-inhand-left
-      right:
-      - state: inhand-right
-        color: "#8100ac"
-      - state: trinkets-inhand-right
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-        color: "#8100ac"
       - state: trinkets-equipped-INNERCLOTHING

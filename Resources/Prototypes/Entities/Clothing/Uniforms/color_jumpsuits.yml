@@ -366,12 +366,12 @@
         color: "#ffe14d"
       - state: trinkets-equipped-INNERCLOTHING
 
-# Lilac Jumpsuit - CD
+# Purple Jumpsuit
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitColorLilac
-  name: lilac jumpsuit
-  description: A generic lilac jumpsuit with no rank markings.
+  id: ClothingUniformJumpsuitColorPurple
+  name: purple jumpsuit
+  description: A generic light purple jumpsuit with no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi
@@ -488,37 +488,6 @@
       jumpsuit:
       - state: equipped-INNERCLOTHING
         color: "#cc295f"
-      - state: trinkets-equipped-INNERCLOTHING
-
-# Purple Jumpsuit - CD
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitColorPurple
-  name: purple jumpsuit
-  description: A generic purple jumpsuit with no rank markings.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
-    layers:
-    - state: icon
-      color: "#8100ac"
-    - state: trinkets-icon
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#8100ac"
-      - state: trinkets-inhand-left
-      right:
-      - state: inhand-right
-        color: "#8100ac"
-      - state: trinkets-inhand-right
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-        color: "#8100ac"
       - state: trinkets-equipped-INNERCLOTHING
 
 # Rainbow Jumpsuit
