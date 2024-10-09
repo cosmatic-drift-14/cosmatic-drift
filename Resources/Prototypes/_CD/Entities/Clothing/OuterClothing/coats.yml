@@ -311,3 +311,26 @@
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician]
   id: ClothingOuterCoatLabStylishSeniorPhysicianOpened
   name: modern senior physician lab coat
+
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatLabStylishViro
+  name: modern virologist lab coat
+  description: A suit that protects against bacteria and viruses. Has an green stripe on the shoulder.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_viro.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_viro.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro]
+  id: ClothingOuterCoatLabStylishViroOpened
+  name: modern virologist lab coat
+
+
