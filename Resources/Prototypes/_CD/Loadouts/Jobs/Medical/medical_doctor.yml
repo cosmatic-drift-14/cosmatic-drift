@@ -2,3 +2,10 @@
   id: MedicalCasualsuit
   equipment: 
     jumpsuit: ClothingUniformDoctorCasual
+
+
+# OuterClothing
+- type: loadout 
+  id: ModernLabCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatStylishLab

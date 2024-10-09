@@ -26,3 +26,8 @@
   id: SeniorPhysicianLabCoat
   equipment: 
     outerClothing: ClothingOuterCoatLabSeniorPhysician
+
+- type: loadout 
+  id: SeniorPhysicianModernLabCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatLabStylishSeniorPhysician
