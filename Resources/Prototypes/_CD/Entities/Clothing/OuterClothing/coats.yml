@@ -293,7 +293,7 @@
 
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatLabStylishSeniorPhysician
   name: modern senior physician lab coat
   description: A sleak suit that protects against minor chemical spills. Has light blue sleeves and an orange waist trim.
