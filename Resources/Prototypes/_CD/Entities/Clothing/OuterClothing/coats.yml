@@ -234,9 +234,9 @@
   description: A sleak suit that protects against minor chemical spills.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -255,9 +255,9 @@
   description: A sleak suit that protects against minor chemical spills. It has orange stripes on the shoulders
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -276,9 +276,9 @@
   description: Custom made sleek blue lab coat for the Chief Medical Officer, offers improved protection against chemical spills and minor cuts.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -299,9 +299,9 @@
   description: A sleak suit that protects against minor chemical spills. Has light blue sleeves and an orange waist trim.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
   - type: Armor
     modifiers:
       coefficients:
