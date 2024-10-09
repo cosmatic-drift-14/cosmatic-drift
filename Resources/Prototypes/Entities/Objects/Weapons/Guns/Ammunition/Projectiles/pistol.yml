@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 16
+        Piercing: 30 # CD change, orig 16
 
 - type: entity
   id: BulletPistolPractice

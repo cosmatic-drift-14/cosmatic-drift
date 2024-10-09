@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28
+        Piercing: 65 # CD change, orig 28
 
 - type: entity
   id: PelletShotgunBeanbag
@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 15 # CD change, orig 10
 
 - type: entity
   id: PelletShotgunSpread
