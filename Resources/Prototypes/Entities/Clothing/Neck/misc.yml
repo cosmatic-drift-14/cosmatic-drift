@@ -89,7 +89,7 @@
     sprite: Clothing/Neck/Misc/dinkystar.rsi
     state: icon
   - type: Item
-    size: Tiny
+    size: 5
   - type: Tag
     tags:
     - Trash
