@@ -234,6 +234,7 @@
     - id: MedicalTechFabCircuitboard
     - id: MedkitFilled
     - id: RubberStampCMO
+    - id: MedTekCartridge
     #CD Addions
     - id: BookSOPMedical
     - id: BookSOPCommand
