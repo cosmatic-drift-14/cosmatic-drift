@@ -893,6 +893,7 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - ScienceLabCoat
   - ScienceWintercoat
   - RoboticistLabCoat
@@ -1141,6 +1142,7 @@
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerLabCoat
+  - ChiefMedicalOfficerModernLabCoat # CD
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
@@ -1190,6 +1192,7 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - MedicalDoctorWintercoat
   # - SeniorPhysicianLabCoat
 
@@ -1250,7 +1253,9 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - ChemistLabCoat
+  - ChemistModernLabCoat # CD
   - ChemistWintercoat
 
 - type: loadoutGroup
