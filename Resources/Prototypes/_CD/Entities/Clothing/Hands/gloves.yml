@@ -30,3 +30,23 @@
       coefficients:
         Blunt: 0.95
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesKnuckledusters
+  name: steel knuckle dusters
+  description: A pair of steel knuckle dusters.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Hands/Gloves/steel_knuckles.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Hands/Gloves/steel_knuckles.rsi
+  - type: StaminaDamageOnHit
+    damage: 10 # Avoid the guy with the knuckles.
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Blunt: 8 # Ow!
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
