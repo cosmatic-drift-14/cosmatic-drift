@@ -158,7 +158,9 @@
   minLimit: 0
   loadouts:
   - SeniorPhysicianLabCoat
+  - SeniorPhysicianModernLabCoat
   - RegularLabCoat
+  - ModernLabCoat
   - MedicalDoctorWintercoat
 
 - type: loadoutGroup
