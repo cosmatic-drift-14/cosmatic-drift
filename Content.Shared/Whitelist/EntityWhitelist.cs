@@ -33,6 +33,12 @@ public sealed partial class EntityWhitelist
     // TODO yaml validation
 
     /// <summary>
+    ///     Mind Role Prototype names that are allowed in the whitelist.
+    /// </summary>
+    [DataField] public string[]? MindRoles;
+    // TODO yaml validation
+
+    /// <summary>
     ///     Max item size that is allowed in the whitelist. CD, changed from Sizes to MaxSize
     /// </summary>
     [DataField]
