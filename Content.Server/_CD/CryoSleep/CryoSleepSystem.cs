@@ -106,7 +106,7 @@ public sealed class CryoSleepSystem : EntitySystem
     }
     public void CryoStoreBody(EntityUid mindId)
     {
-        if (!_sharedJobSystem.MindTryGetJob(mindId, out _, out var prototype))
+        if (!_sharedJobSystem.MindTryGetJob(mindId, out var prototype))
             return;
 
         if (!TryComp<MindComponent>(mindId, out var mind))
