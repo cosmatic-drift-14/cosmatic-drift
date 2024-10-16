@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
+        Piercing: 120 # CD change, orig 40
         Structural: 30
   - type: StaminaDamageOnCollide
     damage: 35
