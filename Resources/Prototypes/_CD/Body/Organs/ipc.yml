@@ -1,0 +1,9 @@
+- type: entity
+  id: IPCCPU
+  parent: [BaseItem, OrganHumanBrain]
+  name: ipc cpu gen4
+  description: Glorb glorbp boop beep # TODO replace whenim not having a headache
+  components:
+  - type: Sprite
+    sprite: _CD/Mobs/Species/IPC/organs.rsi
+    state: cpu
