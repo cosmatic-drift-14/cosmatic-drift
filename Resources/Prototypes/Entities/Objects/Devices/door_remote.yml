@@ -140,6 +140,7 @@
   - type: Access
     groups:
     - Engineering
+    - FireFight # CD change
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
