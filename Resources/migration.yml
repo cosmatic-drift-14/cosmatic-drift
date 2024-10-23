@@ -385,8 +385,10 @@ ClothingBeltSuspenders: ClothingBeltSuspendersRed
 # 2024-08-19
 ClothingNeckShockCollar: ClothingBackpackElectropack
 
-# 2024-08-22
- # Originally the pr that removed the salvage shuttle, this change has been reverted, CD change
+# 2024-08-22    # this change has been reverted on CD
+# ComputerShuttleSalvage: null
+# SalvageShuttleConsoleCircuitboard: null          
+# SalvageShuttleCircuitboardStealObjective: null
 
 # 2024-08-28
 ClothingBackpackDuffelSyndicateCostumeCentcom: null
