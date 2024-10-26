@@ -45,7 +45,7 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
-    - type: SalvageShuttle # CD change
+    - type: SalvageShuttle
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg

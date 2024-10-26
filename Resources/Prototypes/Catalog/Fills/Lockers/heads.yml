@@ -17,7 +17,11 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampQm
-    - id: SalvageShuttleConsoleCircuitboard # CD change
+    - id: AstroNavCartridge
+    # CD Additions
+    - id: BookSOPCargo
+    - id: BookSOPCommand
+    - id: SalvageShuttleConsoleCircuitboard
 
 - type: entity
   id: LockerQuarterMasterFilled
