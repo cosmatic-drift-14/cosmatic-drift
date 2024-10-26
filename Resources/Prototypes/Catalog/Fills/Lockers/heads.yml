@@ -18,7 +18,7 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: AstroNavCartridge
-    # CD Additions
+    #CD Addions
     - id: BookSOPCargo
     - id: BookSOPCommand
       prob: 0.3
