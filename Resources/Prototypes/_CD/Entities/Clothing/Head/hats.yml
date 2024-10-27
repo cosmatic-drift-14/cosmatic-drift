@@ -80,7 +80,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCowboyDerbyBlack
-  name: black cowboy hat
+  name: black derby hat
   description: A black cowboy hat in the derby style
   components:
   - type: Sprite
@@ -91,7 +91,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCowboyDerbyBrown
-  name: brown cowboy hat
+  name: brown derby hat
   description: A brown cowboy hat in the derby style
   components:
   - type: Sprite
@@ -102,7 +102,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCowboyDerbyWhite
-  name: cowboy hat
+  name: white derby hat
   description: A white cowboy hat in the derby style
   components:
   - type: Sprite
@@ -113,7 +113,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCowboyGamblerBlack
-  name: black cowboy hat
+  name: black brick hat
   description: A black cowboy hat in the gambler style
   components:
   - type: Sprite
@@ -124,7 +124,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCowboyGamblerBrown
-  name: brown cowboy hat
+  name: brown brick hat
   description: A brown cowboy hat in the gambler style
   components:
   - type: Sprite
@@ -135,7 +135,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCowboyGamblerWhite
-  name: white cowboy hat
+  name: white brick hat
   description: A white cowboy hat in the gambler style
   components:
   - type: Sprite
