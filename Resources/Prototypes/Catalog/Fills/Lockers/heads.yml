@@ -22,7 +22,6 @@
     - id: BookSOPCargo
     - id: BookSOPCommand
       prob: 0.3
-    - id: SalvageShuttleConsoleCircuitboard
 
 - type: entity
   id: LockerQuarterMasterFilled
