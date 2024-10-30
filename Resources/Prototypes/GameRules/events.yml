@@ -35,6 +35,7 @@
     - id: RevenantSpawn
     # - id: SleeperAgents
     # - id: ZombieOutbreak
+    # - id: LoneOpsSpawn
 
 # CD Change - Tripled most event times
 - type: entity
@@ -454,7 +455,7 @@
   #   duration: 1
   - type: RuleGrids
   - type: LoadMapRule
-    preloadedGrid: ShuttleStriker
+    mapPath: /Maps/Shuttles/ShuttleEvent/striker.yml
   - type: NukeopsRule
     roundEndBehavior: Nothing
   - type: AntagSelection
