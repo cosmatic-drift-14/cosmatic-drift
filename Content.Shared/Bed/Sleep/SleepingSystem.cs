@@ -62,7 +62,7 @@ public sealed partial class SleepingSystem : EntitySystem
 
         SubscribeLocalEvent<ForcedSleepingComponent, ComponentInit>(OnInit);
         SubscribeLocalEvent<SleepingComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
-        SubscribeLocalEvent<SleepingComponent, EmoteAttemptEvent>(OnEmoteAttempt);
+        // SubscribeLocalEvent<SleepingComponent, EmoteAttemptEvent>(OnEmoteAttempt); CD: Disable
     }
 
     private void OnUnbuckleAttempt(Entity<SleepingComponent> ent, ref UnbuckleAttemptEvent args)
@@ -316,10 +316,10 @@ public sealed partial class SleepingSystem : EntitySystem
     /// <summary>
     /// Prevents the use of emote actions while sleeping
     /// </summary>
-    public void OnEmoteAttempt(Entity<SleepingComponent> ent, ref EmoteAttemptEvent args)
-    {
-        args.Cancel();
-    }
+    // public void OnEmoteAttempt(Entity<SleepingComponent> ent, ref EmoteAttemptEvent args)
+    // {
+    //     args.Cancel();
+    // }
 }
 
 

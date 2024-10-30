@@ -111,9 +111,7 @@
     layers:
     - state: syringe_gun
   - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,2,0
+    capacity: 20
     whitelist:
       tags:
       - SyringeGunAmmo
@@ -131,7 +129,7 @@
   - type: ContainerAmmoProvider
     container: storagebase
   - type: Item
-    size: Normal
+    size: 30
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

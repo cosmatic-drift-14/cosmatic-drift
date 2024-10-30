@@ -26,8 +26,8 @@ public sealed class StackTest
                 ItemComponent? itemComponent = null;
                 await server.WaitPost(() =>
                 {
-                    entity.TryGetComponent(out stackComponent, compFact);
-                    entity.TryGetComponent(out itemComponent, compFact);
+                    entity.Item1.TryGetComponent(out itemComponent, compFact);
+                    entity.Item1.TryGetComponent(out itemComponent, compFact);
                 });
                 if (stackComponent == null || itemComponent == null)
                     continue;
@@ -37,7 +37,7 @@ public sealed class StackTest
                     continue;
 
                 var expectedSize = stackProto.ItemSize * stackComponent.Count;
-                Assert.That(itemComponent.Size, Is.EqualTo(expectedSize), $"Prototype id: {entity.ID} has an item size of {itemComponent.Size} but expected size of {expectedSize}.");
+                Assert.That(itemComponent.Size, Is.EqualTo(expectedSize), $"Prototype id: {entity.Item1.ID} has an item size of {itemComponent.Size} but expected size of {expectedSize}.");
             }
         });
 

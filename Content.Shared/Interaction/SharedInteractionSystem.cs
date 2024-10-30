@@ -986,7 +986,7 @@ namespace Content.Shared.Interaction
             bool checkCanUse = true)
         {
             if (IsDeleted(user) || IsDeleted(used) || IsDeleted(target))
-                return false;
+                return;
 
             if (checkCanInteract && !_actionBlockerSystem.CanInteract(user, target))
                 return;
@@ -1000,7 +1000,7 @@ namespace Content.Shared.Interaction
                 $"{ToPrettyString(user):user} interacted with {ToPrettyString(target):target} using {ToPrettyString(used):used}");
 
             if (RangedInteractDoBefore(user, used, target, clickLocation, canReach: true, checkDeletion: false))
-                return true;
+                return;
 
             DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
             // all interactions should only happen when in range / unobstructed, so no range check is needed
@@ -1013,10 +1013,10 @@ namespace Content.Shared.Interaction
                 return;
 
             if (InteractDoAfter(user, used, target, clickLocation, canReach: true, checkDeletion: false))
-                return true;
+                return;
 
             DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
-            return false;
+            return;
         }
 
         /// <summary>
@@ -1045,10 +1045,10 @@ namespace Content.Shared.Interaction
             }
 
             if (afterInteractEvent.Handled)
-                return;
+                return false;
 
             if (target == null)
-                return;
+                return false;
 
             DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
             var afterInteractUsingEvent = new AfterInteractUsingEvent(user, used, target, clickLocation, canReach);

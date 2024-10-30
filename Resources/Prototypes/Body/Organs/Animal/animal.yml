@@ -61,7 +61,6 @@
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
   - type: Item
-    size: Small
     heldPrefix: lungs
 
 - type: entity
@@ -90,7 +89,6 @@
     - id: Food
     - id: Drink
   - type: Item
-    size: Small
     heldPrefix: stomach
 
 - type: entity
@@ -104,7 +102,6 @@
       stomach:
         maxVol: 30
   - type: Item
-    size: Small
     heldPrefix: stomach
 
 - type: entity
@@ -123,7 +120,6 @@
     - id: Alcohol
       rateModifier: 0.1
   - type: Item
-    size: Small
     heldPrefix: liver
 
 - type: entity
@@ -143,7 +139,6 @@
     - id: Poison
     - id: Narcotic
   - type: Item
-    size: Small
     heldPrefix: heart
 
 - type: entity
@@ -162,5 +157,4 @@
     metabolizerTypes: [ Animal ]
     removeEmpty: true
   - type: Item
-    size: Small
     heldPrefix: kidneys

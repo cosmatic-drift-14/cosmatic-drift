@@ -33,7 +33,6 @@
     fiberColor: fibers-white
   - type: DnaSubstanceTrace
   - type: Item
-    size: Small
 
 - type: entity
   id: TowelColorWhite

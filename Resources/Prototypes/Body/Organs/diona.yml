@@ -32,7 +32,6 @@
   description: "The central hub of a diona's pseudo-neurological activity, its root-like tendrils search for its former body."
   components:
   - type: Item
-    size: Small
     heldPrefix: brain
   - type: Sprite
     state: brain
@@ -94,7 +93,6 @@
       - id: Alcohol
         rateModifier: 0.1
   - type: Item
-    size: Small
     heldPrefix: stomach
 
 - type: entity
@@ -106,7 +104,6 @@
   - type: Sprite
     state: lungs
   - type: Item
-    size: Small
     heldPrefix: lungs
   - type: Lung 
   - type: Metabolizer

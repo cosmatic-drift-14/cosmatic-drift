@@ -11,5 +11,4 @@
   - type: Lung
     alert: LowNitrogen
   - type: Item
-    size: Small
     heldPrefix: lungs
