@@ -1363,7 +1363,8 @@ namespace Content.Shared.Interaction
             if (uidB == null || args?.Handled == false)
                 return;
 
-            DebugTools.AssertNotEqual(uidA, uidB.Value);
+            if (uidA == uidB.Value)
+                return;
 
             if (!TryComp(uidA, out MetaDataComponent? metaA) || metaA.EntityPaused)
                 return;
