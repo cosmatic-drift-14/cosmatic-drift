@@ -20,6 +20,9 @@
     spawned:
     - id: FoodMeatChicken
       amount: 3
+  - type: Speech
+    speechVerb: Parrot # RMC did it right.
+    speechSounds: MaleAvali
   - type: Fixtures
     fixtures:
       fix1:
