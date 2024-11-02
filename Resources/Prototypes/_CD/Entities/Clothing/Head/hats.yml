@@ -74,3 +74,71 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
+
+# Cowboy hat spam follows.
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyDerbyBlack
+  name: black derby hat
+  description: A black cowboy hat in the derby style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_black.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyDerbyBrown
+  name: brown derby hat
+  description: A brown cowboy hat in the derby style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_brown.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_brown.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyDerbyWhite
+  name: white derby hat
+  description: A white cowboy hat in the derby style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_white.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_white.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyGamblerBlack
+  name: black gambler hat
+  description: A black cowboy hat in the gambler style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_black.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyGamblerBrown
+  name: brown gambler hat
+  description: A brown cowboy hat in the gambler style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_brown.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_brown.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyGamblerWhite
+  name: white gambler hat
+  description: A white cowboy hat in the gambler style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_white.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_white.rsi
