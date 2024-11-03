@@ -302,8 +302,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
             if (otherId == phone)
                 continue;
 
-            var name = GetPhoneName((otherId, otherComp));
-            phones.Add(new Phone(GetNetEntity(otherId), otherComp.Category, name));
         }
 
         _ui.SetUiState(phone, TelephoneUiKey.Key, new TelephoneBuiState(phones));
@@ -330,18 +328,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
         UpdateAppearance((receiving, rotaryPhone));
     }
 
-    protected string GetPhoneName(Entity<RotaryPhoneComponent?> phone)
-    {
-        var name = Name(phone);
-        if (!TryGetPhoneBackpackHolder(phone, out var holder))
-            return name;
-
-        name = Name(holder);
-        if (TryComp(holder, out JobPrefixComponent? jobPrefix))
-            name = $"{jobPrefix.Prefix} {name}";
-
-        return name;
-    }
 
     private bool HangUpDialing(Entity<RotaryPhoneDialingComponent> ent, EntityUid phone, EntityUid? user)
     {
