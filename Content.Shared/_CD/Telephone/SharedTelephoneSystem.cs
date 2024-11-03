@@ -330,6 +330,18 @@ public abstract class SharedTelephoneSystem : EntitySystem
         UpdateAppearance((receiving, rotaryPhone));
     }
 
+    protected string GetPhoneName(Entity<RotaryPhoneComponent?> phone)
+    {
+        var name = Name(phone);
+        if (!TryGetPhoneBackpackHolder(phone, out var holder))
+            return name;
+
+        name = Name(holder);
+        if (TryComp(holder, out JobPrefixComponent? jobPrefix))
+            name = $"{jobPrefix.Prefix} {name}";
+
+        return name;
+    }
 
     private bool HangUpDialing(Entity<RotaryPhoneDialingComponent> ent, EntityUid phone, EntityUid? user)
     {
