@@ -45,9 +45,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
         SubscribeLocalEvent<TelephoneComponent, ComponentShutdown>(OnTelephoneTerminating);
         SubscribeLocalEvent<TelephoneComponent, EntityTerminatingEvent>(OnTelephoneTerminating);
 
-        SubscribeLocalEvent<RotaryPhoneBackpackComponent, GetItemActionsEvent>(OnBackpackGetItemActions);
-        SubscribeLocalEvent<RotaryPhoneBackpackComponent, TelephoneActionEvent>(OnBackpackTelephoneAction);
-
         Subs.BuiEvents<RotaryPhoneComponent>(TelephoneUiKey.Key,
             subs =>
             {
@@ -116,30 +113,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
         }
     }
 
-    private void OnBackpackGetItemActions(Entity<RotaryPhoneBackpackComponent> ent, ref GetItemActionsEvent args)
-    {
-        if (args.InHands || (args.SlotFlags & ent.Comp.Slot) == 0)
-            return;
-
-        args.AddAction(ref ent.Comp.Action, ent.Comp.ActionId, ent);
-    }
-
-    private void OnBackpackTelephoneAction(Entity<RotaryPhoneBackpackComponent> ent, ref TelephoneActionEvent args)
-    {
-        args.Handled = true;
-        if (HasComp<RotaryPhoneDialingComponent>(ent))
-            return;
-
-        if (TryComp(ent, out RotaryPhoneReceivingComponent? receiving))
-        {
-            PickupReceiving((ent, receiving), args.Performer);
-            return;
-        }
-
-        SendUIState(ent);
-        _ui.TryOpenUi(ent.Owner, TelephoneUiKey.Key, args.Performer);
-    }
-
     private void OnTelephoneCallMsg(Entity<RotaryPhoneComponent> ent, ref TelephoneCallBuiMsg args)
     {
         var time = _timing.CurTime;
@@ -165,13 +138,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
         if (IsPhoneBusy(target))
         {
             _popup.PopupEntity("That phone is busy!", user, user, PopupType.MediumCaution);
-            return;
-        }
-
-        if (HasComp<RotaryPhoneBackpackComponent>(target) &&
-            !TryGetPhoneBackpackHolder(target, out _))
-        {
-            _popup.PopupEntity("No transmitters could be located to call!", user, user, PopupType.MediumCaution);
             return;
         }
 
@@ -323,18 +289,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
                container.ContainedEntities.Count == 0;
     }
 
-    private bool TryGetPhoneBackpackHolder(EntityUid backpack, out EntityUid holder)
-    {
-        holder = default;
-        if (!_container.TryGetContainingContainer((backpack, null, null), out var container))
-            return false;
-
-        if (!HasComp<InventoryComponent>(container.Owner))
-            return false;
-
-        holder = container.Owner;
-        return true;
-    }
 
     private void SendUIState(EntityUid phone)
     {
@@ -376,18 +330,6 @@ public abstract class SharedTelephoneSystem : EntitySystem
         UpdateAppearance((receiving, rotaryPhone));
     }
 
-    protected string GetPhoneName(Entity<RotaryPhoneComponent?> phone)
-    {
-        var name = Name(phone);
-        if (!TryGetPhoneBackpackHolder(phone, out var holder))
-            return name;
-
-        name = Name(holder);
-        if (TryComp(holder, out JobPrefixComponent? jobPrefix))
-            name = $"{jobPrefix.Prefix} {name}";
-
-        return name;
-    }
 
     private bool HangUpDialing(Entity<RotaryPhoneDialingComponent> ent, EntityUid phone, EntityUid? user)
     {
