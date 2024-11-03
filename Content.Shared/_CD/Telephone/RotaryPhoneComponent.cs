@@ -4,7 +4,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared._RMC14.Telephone;
+namespace Content.Shared._CD.Telephone;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
 [Access(typeof(SharedTelephoneSystem))]
@@ -17,19 +17,19 @@ public sealed partial class RotaryPhoneComponent : Component
     public bool CanDnd;
 
     [DataField, AutoNetworkedField]
-    public SoundSpecifier? DialingSound = new SoundPathSpecifier("/Audio/_RMC14/Phone/dial.ogg", AudioParams.Default.WithVolume(-3));
+    public SoundSpecifier? DialingSound = new SoundPathSpecifier("/Audio/_CD/Phone/dial.ogg", AudioParams.Default.WithVolume(-3));
 
     [DataField, AutoNetworkedField]
-    public SoundSpecifier? DialingIdleSound = new SoundPathSpecifier("/Audio/_RMC14/Phone/ring_outgoing.ogg", AudioParams.Default.WithVolume(-3));
+    public SoundSpecifier? DialingIdleSound = new SoundPathSpecifier("/Audio/_CD/Phone/ring_outgoing.ogg", AudioParams.Default.WithVolume(-3));
 
     [DataField, AutoNetworkedField]
-    public SoundSpecifier? ReceivingSound = new SoundPathSpecifier("/Audio/_RMC14/Phone/telephone_ring.ogg", AudioParams.Default.WithVolume(-3));
+    public SoundSpecifier? ReceivingSound = new SoundPathSpecifier("/Audio/_CD/Phone/telephone_ring.ogg", AudioParams.Default.WithVolume(-3));
 
     [DataField, AutoNetworkedField]
-    public EntProtoId<TelephoneComponent> PhoneId = "RMCTelephone";
+    public EntProtoId<TelephoneComponent> PhoneId = "CDTelephone";
 
     [DataField, AutoNetworkedField]
-    public string ContainerId = "rmc_rotary_phone_telephone";
+    public string ContainerId = "cd_rotary_phone_telephone";
 
     [DataField, AutoNetworkedField]
     public EntityUid? Phone;

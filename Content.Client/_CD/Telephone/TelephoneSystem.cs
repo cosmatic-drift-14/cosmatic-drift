@@ -1,7 +1,7 @@
-using Content.Shared._RMC14.Telephone;
+using Content.Shared._CD.Telephone;
 using Robust.Client.Graphics;
 
-namespace Content.Client._RMC14.Telephone;
+namespace Content.Client._CD.Telephone;
 
 public sealed class TelephoneSystem : SharedTelephoneSystem
 {

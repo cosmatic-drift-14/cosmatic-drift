@@ -1,4 +1,3 @@
-using Content.Shared._RMC14.Marines;
 using Content.Shared.Actions;
 using Content.Shared.Audio;
 using Content.Shared.Hands.EntitySystems;
@@ -12,7 +11,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._RMC14.Telephone;
+namespace Content.Shared._CD.Telephone;
 
 public abstract class SharedTelephoneSystem : EntitySystem
 {
@@ -27,9 +26,9 @@ public abstract class SharedTelephoneSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
 
-    private static readonly SoundSpecifier RemotePickupSound = new SoundPathSpecifier("/Audio/_RMC14/Phone/remote_pickup.ogg");
-    private static readonly SoundSpecifier RemoteHangupSound = new SoundPathSpecifier("/Audio/_RMC14/Phone/remote_hangup.ogg");
-    private static readonly SoundSpecifier BusySound = new SoundPathSpecifier("/Audio/_RMC14/Phone/phone_busy.ogg");
+    private static readonly SoundSpecifier RemotePickupSound = new SoundPathSpecifier("/Audio/_CD/Phone/remote_pickup.ogg");
+    private static readonly SoundSpecifier RemoteHangupSound = new SoundPathSpecifier("/Audio/_CD/Phone/remote_hangup.ogg");
+    private static readonly SoundSpecifier BusySound = new SoundPathSpecifier("/Audio/_CD/Phone/phone_busy.ogg");
 
     public override void Initialize()
     {

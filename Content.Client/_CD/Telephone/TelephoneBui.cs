@@ -1,10 +1,10 @@
 using Content.Client.UserInterface.ControlExtensions;
-using Content.Shared._RMC14.Telephone;
+using Content.Shared._CD.Telephone;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 
-namespace Content.Client._RMC14.Telephone;
+namespace Content.Client._CD.Telephone;
 
 public sealed class TelephoneBui(EntityUid owner, Enum uiKey) : BoundUserInterface(owner, uiKey)
 {

@@ -1,12 +1,12 @@
 ﻿- type: entity
-  id: RMCRotaryPhone
+  id: CDRotaryPhone
   name: rotary phone
   description: The finger plate is a little stiff.
   components:
   - type: Physics
     bodyType: Static
   - type: Sprite
-    sprite: _RMC14/Structures/rotary_phone.rsi
+    sprite: _CD/Structures/rotary_phone.rsi
     drawdepth: WallMountedItems
     layers:
     - state: rotary_phone
@@ -23,10 +23,6 @@
     interfaces:
       enum.TelephoneUiKey.Key:
         type: TelephoneBui
-  - type: ActivatableUIBlacklist
-    blacklist:
-      components:
-      - Xeno
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -40,11 +36,11 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCTelephone
+  id: CDTelephone
   name: telephone
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/phone.rsi
+    sprite: _CD/Objects/phone.rsi
     state: rpb_phone
   - type: Item
     size: Invalid

@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._RMC14.Telephone;
+namespace Content.Shared._CD.Telephone;
 
 [Serializable, NetSerializable]
 public enum TelephoneUiKey

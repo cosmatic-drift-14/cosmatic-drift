@@ -1,5 +1,5 @@
 using Content.Shared.Actions;
 
-namespace Content.Shared._RMC14.Telephone;
+namespace Content.Shared._CD.Telephone;
 
 public sealed partial class TelephoneActionEvent : InstantActionEvent;
