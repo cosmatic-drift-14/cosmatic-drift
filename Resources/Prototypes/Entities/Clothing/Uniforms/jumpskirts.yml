@@ -126,9 +126,9 @@
   description: It's a turtleneck worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpskirt/cmo_turtleskirt.rsi # CD
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cmoturtleskirt.rsi # CD
   - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpskirt/cmo_turtleskirt.rsi # CD
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cmoturtleskirt.rsi # CD
 
 - type: entity
   parent: ClothingUniformSkirtBase
