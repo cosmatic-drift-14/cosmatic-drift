@@ -1267,7 +1267,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
-  - ClothingUniformChemistCasual # CD
+  - ChemistCasualsuit # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
