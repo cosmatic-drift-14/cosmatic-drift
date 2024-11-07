@@ -3,3 +3,9 @@
   id: ChemistModernLabCoat
   equipment: 
     outerClothing: ClothingOuterCoatStylishLabChem
+
+# Uniform
+- type: loadout
+  id: ChemistCasualsuit
+  equipment: 
+    jumpsuit: ClothingUniformChemistCasual
