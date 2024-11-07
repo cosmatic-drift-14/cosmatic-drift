@@ -175,7 +175,66 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
 
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformChemistCasual
+  name: casual chemist outfit
+  description: A blue-white shirt with comfortable black slacks. There is an orange armband on the left sleeve with a matching collar.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/chemist_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/chemist_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformPsychologistCasual
+  name: psychology professor outfit
+  description: A black turtleneck with comfortable brown pants akin to an early-modern professor, or a psychologist.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
+    
 # Non-casual drip below
+
+# medical garments
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCMOFormal
+  name: medical director suit
+  description: A blue shirt with black slacks. Worn by someone with clinical expectations.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmo_formal.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmo_formal.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMedicalTechnician
+  name: medical technician jumpsuit
+  description: A sturdy feeling suit made for utility minded doctors.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/medical_technician.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/medical_technician.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMaintSurgeon
+  name: rip-surgeon outfit
+  description: A messy blue shirt with rolled sleeves and black jeans, there is a padded pocket to hold surgical tools.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/maintsurgeon.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/maintsurgeon.rsi
+
 # cargo variants
 
 - type: entity
