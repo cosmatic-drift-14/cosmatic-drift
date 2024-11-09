@@ -42,7 +42,7 @@ namespace Content.Shared.Examine
         public const float DeadExamineRange = 0.75f;
 
         public const float ExamineRange = 16f;
-        protected const float ExamineDetailsRange = 3f;
+        protected const float ExamineDetailsRange = 8f; // CD change from 3 to 8.
 
         protected const float ExamineBlurrinessMult = 2.5f;
 
