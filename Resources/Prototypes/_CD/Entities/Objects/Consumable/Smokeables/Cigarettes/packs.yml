@@ -43,6 +43,18 @@
     - id: CigaretteMirage
       amount: 10
 
+# Unmarked packets
+
+parent: CigPackBaseUnmarked
+  id: CigPackUnmarked
+  name: unmarked packet
+  components:
+  - type: RandomSpawner
+    - CigPackUnmarkedWeh
+    - CigPackUnmarkedBliss
+    - CigPackUnmarkedAgono
+    - CigPackUnmarkedEquili
+
 - type: entity
   id: CigPackUnmarkedWeh
   parent: CigPackBase
@@ -96,7 +108,7 @@
   parent: CigPackBase
   name: unmarked packet
   suffix: equili
-  description: An unmarked packet of cigarettes. There is a darm brown marker on the bottom.
+  description: An unmarked packet of cigarettes. There is a dark brown marker on the bottom.
   components:
   - type: Sprite
     sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
@@ -107,3 +119,68 @@
     - id: CigaretteEquili
       amount: 10
 
+- type: entity
+  id: CigPackBaseUnmarked
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  name: unmarked cigarette pack
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+      visible: false
+    - state: cig1
+      map: ["cig1"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig2
+      map: ["cig2"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig3
+      map: ["cig3"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig4
+      map: ["cig4"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig5
+      map: ["cig5"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig6
+      map: ["cig6"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+  - type: Tag
+    tags:
+    - CigPack
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 50
+  - type: SpaceGarbage
+  - type: Item
+    size: 10
+  - type: Storage
+    capacity: 10
+  - type: StorageFill
+    contents:
+    - id: Cigarette
+      amount: 10
+  - type: ItemCounter
+    count:
+      tags: [Cigarette]
+    composite: true
+    layerStates:
+    - cig1
+    - cig2
+    - cig3
+    - cig4
+    - cig5
+    - cig6
+  - type: Appearance
