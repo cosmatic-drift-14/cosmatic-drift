@@ -27,3 +27,83 @@
     contents:
     - id: CigaretteCandy
       amount: 10
+
+- type: entity
+  id: CigPackDarkGreen
+  parent: CigPackBase
+  name: Garden Mirage packet
+  description: Life's a Mirage, see through it.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/darkgreen.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/darkgreen.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteMirage
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedWeh
+  parent: CigPackBase
+  name: cigarweh packet
+  suffix: weh
+  description: An unmarked packet of cigarettes. There is a lizard plushie sticker on the back of it.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteWeh
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedBliss
+  parent: CigPackBase
+  name: unmarked packet
+  suffix: bliss
+  description: An unmarked packet of cigarettes. There is a bright yellow marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteBliss
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedAgono
+  parent: CigPackBase
+  name: unmarked packet
+  suffix: agono
+  description: An unmarked packet of cigarettes. There is a pink marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteAgono
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedEquili
+  parent: CigPackBase
+  name: unmarked packet
+  suffix: equili
+  description: An unmarked packet of cigarettes. There is a darm brown marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteEquili
+      amount: 10
+
