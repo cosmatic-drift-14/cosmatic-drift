@@ -45,19 +45,9 @@
 
 # Unmarked packets
 
-parent: CigPackBaseUnmarked
-  id: CigPackUnmarked
-  name: unmarked packet
-  components:
-  - type: RandomSpawner
-    - CigPackUnmarkedWeh
-    - CigPackUnmarkedBliss
-    - CigPackUnmarkedAgono
-    - CigPackUnmarkedEquili
-
 - type: entity
   id: CigPackUnmarkedWeh
-  parent: CigPackBase
+  parent: CigPackBaseUnmarked
   name: cigarweh packet
   suffix: weh
   description: An unmarked packet of cigarettes. There is a lizard plushie sticker on the back of it.
@@ -72,8 +62,24 @@ parent: CigPackBaseUnmarked
       amount: 10
 
 - type: entity
+  id: CigPackUnmarkedWeh
+  parent: CigPackBaseUnmarked
+  name: cigarweh packet
+  suffix: happsiness
+  description: An unmarked packet of cigarettes. There is a striped mint and violet marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteHappiPsi
+      amount: 10
+
+- type: entity
   id: CigPackUnmarkedBliss
-  parent: CigPackBase
+  parent: CigPackBaseUnmarked
   name: unmarked packet
   suffix: bliss
   description: An unmarked packet of cigarettes. There is a bright yellow marker on the bottom.
@@ -89,7 +95,7 @@ parent: CigPackBaseUnmarked
 
 - type: entity
   id: CigPackUnmarkedAgono
-  parent: CigPackBase
+  parent: CigPackBaseUnmarked
   name: unmarked packet
   suffix: agono
   description: An unmarked packet of cigarettes. There is a pink marker on the bottom.
@@ -105,7 +111,7 @@ parent: CigPackBaseUnmarked
 
 - type: entity
   id: CigPackUnmarkedEquili
-  parent: CigPackBase
+  parent: CigPackBaseUnmarked
   name: unmarked packet
   suffix: equili
   description: An unmarked packet of cigarettes. There is a dark brown marker on the bottom.
@@ -118,6 +124,8 @@ parent: CigPackBaseUnmarked
     contents:
     - id: CigaretteEquili
       amount: 10
+
+
 
 - type: entity
   id: CigPackBaseUnmarked

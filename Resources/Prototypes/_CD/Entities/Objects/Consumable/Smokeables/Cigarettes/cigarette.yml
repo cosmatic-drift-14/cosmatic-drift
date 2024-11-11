@@ -49,7 +49,7 @@
   suffix: mirage
   parent: Cigarette
   name: cigarette
-  description: A roll of dried plant-matter dipped with medical-grade narcotics.
+  description: A roll of dried plant matter dipped with medical-grade narcotics.
   components:
   - type: SolutionContainerManager
     solutions:
