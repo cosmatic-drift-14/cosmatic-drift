@@ -57,9 +57,11 @@
         maxVol: 40
         reagents:
           - ReagentId: THC
-            Quantity: 5
+            Quantity: 15
           - ReagentId: SpaceDrugs
-            Quantity: 25
+            Quantity: 15
+          - ReagentId: Psicodine
+            Quantity: 10
 
 - type: entity
   id: CigaretteHappiPsi

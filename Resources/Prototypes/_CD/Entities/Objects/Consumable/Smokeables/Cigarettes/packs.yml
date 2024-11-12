@@ -62,9 +62,9 @@
       amount: 10
 
 - type: entity
-  id: CigPackUnmarkedWeh
+  id: CigPackUnmarkedHappiPsi
   parent: CigPackBaseUnmarked
-  name: cigarweh packet
+  name: unmarked packet
   suffix: happsiness
   description: An unmarked packet of cigarettes. There is a striped mint and violet marker on the bottom.
   components:
@@ -126,6 +126,19 @@
       amount: 10
 
 
+- type: entity
+  parent: CigPackBaseUnmarked
+  id: CigPackUnmarked
+  name: unmarked packet
+  components:
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+    - CigPackUnmarkedWeh
+    - CigPackUnmarkedHappiPsi
+    - CigPackUnmarkedBliss
+    - CigPackUnmarkedAgono
+    - CigPackUnmarkedEquili
 
 - type: entity
   id: CigPackBaseUnmarked
@@ -134,6 +147,7 @@
   abstract: true
   components:
   - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
     layers:
     - state: closed
       map: ["closeLayer"]
