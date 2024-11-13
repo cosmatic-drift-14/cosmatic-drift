@@ -22,7 +22,9 @@
             min: 10 # Careful.
         damage:
           types:
-            Poison: 0.75
+            Bloodloss: 2
+            Asphyxiation: 2
+            Poison: 1
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold

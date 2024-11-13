@@ -25,4 +25,5 @@
   contrabandInventory:
     FoodDonutHomer: 12
     FoodBoxDonut: 2
+    SecurityStimpack: 4 # _CD
     #box evidence
