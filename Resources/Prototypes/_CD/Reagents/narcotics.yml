@@ -1,0 +1,78 @@
+
+- type: reagent
+  id: Dynamoxine
+  name: reagent-name-dynamoxine
+  group: Narcotics
+  desc: reagent-desc-dynamoxine
+  physicalDesc: reagent-physical-desc-sour
+  flavor: sharp
+  color: "#965A7D"
+  boilingPoint: 212.0
+  meltingPoint: 170.0
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.5
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.15
+        sprintSpeedModifier: 1.15
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 10 # Careful.
+        damage:
+          types:
+            Poison: 0.75
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: ChloralHydrate
+          min: 1
+        reagent: ChloralHydrate
+        amount: -10
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 2
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 2
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 2
+        type: Add
+      - !type:GenericStatusEffect
+        key: ForcedSleep
+        time: 2
+        type: Remove
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 8 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          reagent: WeakStimulant
+          min: 6
+        reagent: Addictine
+        amount: 0.1
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 8
+    Medicine:
+      metabolismRate: 1.0
+      effects:
+        - !type:ResetNarcolepsy
+        - !type:SatiateHunger
+          factor: 0.75
+        - !type:SatiateThirst
+          factor: 0.75
+        - !type:HealthChange
+          conditions:
+          - !type:TotalDamage
+            min: 65
+          damage:
+            groups:
+              Burn: -0.4
+              Brute: -0.4
