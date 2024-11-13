@@ -66,6 +66,8 @@
         time: 2
         type: Remove
         conditions:
+      - !type:AdjustReagent
+        conditions:
         - !type:ReagentThreshold
           reagent: Addictine
           max: 8 # maximum addiction severity for this reagent
