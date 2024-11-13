@@ -39,8 +39,8 @@
         - !type:ReagentThreshold
           reagent: Epinephrine # God help you if you mix these two.
           min: 1
-        reagent: Dynamoxine
-        amount: 0.5
+          reagent: Dynamoxine
+          amount: 0.5
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
