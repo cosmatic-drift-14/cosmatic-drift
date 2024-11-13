@@ -34,5 +34,5 @@ reagent-desc-saprodipine = A commonly used anti-psychotic with minimal side-effe
 reagent-name-cortexene = Cortexene
 reagent-desc-cortexene = A somewhat addictive chemical used to treat amnesia. Not effective on cloning related memory loss. Incompatible with alcohol and generally dangerous if improperly used.
 
-reagent-name-stimulants-weak = Dynamoxine
-reagent-desc-stimulants-weak = An attempt at synthizing a stimulant for extended engagements, the Dynamoxine project was shelved after Donk Co. came out with Hyperzine. Overdoses will cause minor heart and lung spasms.
+reagent-name-dynamoxine = Dynamoxine
+reagent-desc-dynamoxine = An attempt at synthizing a stimulant for extended engagements, the Dynamoxine project was shelved after Donk Co. came out with Hyperzine. Overdoses will cause minor heart and lung spasms.
