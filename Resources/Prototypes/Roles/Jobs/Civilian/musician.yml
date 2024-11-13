@@ -18,7 +18,7 @@
   id: MusicianGear
   equipment:
     eyes: ClothingEyesGlassesSunglasses
-    shoes: ClothingShoesBootsLaceup
+    # shoes: ClothingShoesBootsLaceup | CD, removed due to loadout addtion.
     id: MusicianPDA
     ears: ClothingHeadsetService
   #storage:

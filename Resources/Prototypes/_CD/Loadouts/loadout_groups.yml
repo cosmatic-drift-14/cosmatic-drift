@@ -1,3 +1,13 @@
+# Command
+- type: loadoutGroup
+  id: FormalShoes
+  name: loadout-group-formal-shoes
+  loadouts:
+  - LeatherShoes
+  - LaceupShoes
+  - BrownShoes
+  - BlackShoes
+
 # Civilian
 - type: loadoutGroup
   id: PrivateInvestigatorOuterClothing
@@ -162,6 +172,20 @@
   - RegularLabCoat
   - ModernLabCoat
   - MedicalDoctorWintercoat
+
+- type: loadoutGroup
+  id: MedicalSpecializationBackpack
+  name: loadout-group-medical-doctor-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+  - ViroBackpack
+  - ViroSatchel
+  - ViroDuffel
+  - GeneBackpack
+  - GeneSatchel
+  - GeneDuffel
 
 - type: loadoutGroup
   id: ParamedicGloves
