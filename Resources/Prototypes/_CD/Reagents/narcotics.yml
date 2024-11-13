@@ -27,8 +27,8 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-          reagent: Epinephrine # DO NOT USE A FUCKING EPEN
-          min: 1
+            reagent: Epinephrine # DO NOT USE A FUCKING EPEN
+            min: 1
         damage:
           types:
             Bloodloss: 5
