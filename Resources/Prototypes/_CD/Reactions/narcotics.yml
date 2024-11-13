@@ -1,0 +1,12 @@
+- type: reaction
+  id: Dynamoxine
+  minTemp: 393
+  reactants:
+    Phenol:
+      amount: 1
+    Dexalin:
+      amount: 1
+    Ephedrine:
+      amount: 2
+  products:
+    Dynamoxine: 3
