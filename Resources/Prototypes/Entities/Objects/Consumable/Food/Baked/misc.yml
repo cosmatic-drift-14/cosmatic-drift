@@ -46,7 +46,7 @@
     flavors:
       - sweet
   - type: Item
-    size: Tiny
+    size: 1
 
 - type: entity
   name: berry muffin

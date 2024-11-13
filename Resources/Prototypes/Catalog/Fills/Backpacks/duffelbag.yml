@@ -300,8 +300,8 @@
   - type: StorageFill
     contents:
       - id: DefibrillatorSyndicate
-      - id: MedkitCombatFilled
-        amount: 4
+      #- id: MedkitCombatFilled
+      #  amount: 4
       - id: Tourniquet
         amount: 4
       - id: CombatMedipen

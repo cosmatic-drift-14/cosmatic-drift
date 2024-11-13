@@ -90,7 +90,7 @@
         map: ["enum.PowerDeviceVisualLayers.Powered"]
         shader: unshaded
   - type: Item
-    size: Normal
+    size: 15
   - type: ToggleCellDraw
   - type: PowerCellDraw
     useRate: 100

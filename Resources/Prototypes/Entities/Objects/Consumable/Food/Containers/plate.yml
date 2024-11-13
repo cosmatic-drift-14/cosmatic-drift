@@ -166,10 +166,7 @@
     sprite: Objects/Consumable/Food/plates.rsi
     state: muffin-tin
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    storedOffset: 0,-3
+    size: 1
   - type: Tag
     tags:
     - Trash
