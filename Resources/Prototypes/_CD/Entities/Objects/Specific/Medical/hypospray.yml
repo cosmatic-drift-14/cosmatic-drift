@@ -5,12 +5,12 @@
   description: A smuggled injector containing a single ten-second dose of Dynamoxine. A label says not to take more then one at a time or with an Epi-Pen. Use it when you need to close the distance.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _CD/Objects/Specific/Medical/medipen.rsi
     layers:
-    - state: hypovolemic
+    - state: dynamoxine
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _CD/Objects/Specific/Medical/medipen.rsi
     size: 10
   - type: SolutionContainerManager
     solutions:
@@ -22,7 +22,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: hypovolemic_empty
+    emptySpriteName: dynamoxine_empty
   - type: Hypospray
     solutionName: pen
     transferAmount: 5
