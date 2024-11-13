@@ -4,3 +4,13 @@
   description: trait-synth-desc
   components:
     - type: Synth
+
+- type: trait
+  id: ScaleItem
+  name: trait-scale-item-name
+  description: trait-scale-item-desc
+  components:
+    - type: ScaleItem
+      maxScale: 0.85
+      size: 120
+      
