@@ -50,6 +50,18 @@
     Bake: 1
 
 - type: reaction
+  id: BakePowder
+  impact: Low
+  quantized: true
+  maxTemp: 280
+  reactants:
+    Bake:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: MaterialBake
+
+- type: reaction
   id: Grit
   reactants:
     Bake:
@@ -61,3 +73,4 @@
       catalyst: true
   products:
     Grit: 2
+

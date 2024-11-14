@@ -1,0 +1,26 @@
+- type: material
+  id: BakePowder
+  name: reagent-name-bake
+  unit: materials-unit-piece
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  color: "#FFFFE6"
+  price: 0 # wrap it
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialBake
+  name: bake
+  description: A narcotic in powder form.
+  components:
+  - type: Stack
+    stackType: BakePowder
+    count: 1
+  - type: Sprite
+    sprite: Objects/Misc/reagent_fillings.rsi
+    state: powderpile
+    color: "#FFFFE6"
+  - type: PhysicalComposition
+    materialComposition:
+      Bake: 100
+  - type: Item
+    size: 1
