@@ -1,0 +1,20 @@
+- type: constructionGraph
+  id: wrappedBakepackage
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: wrappedBakepackage
+          steps:
+            - material: PaperRolling
+              doAfter: 2
+    - to: fuel
+      conditions:
+      - !type:MinSolution
+        solution: drink
+        reagent:
+          ReagentId: Bake
+        quantity: 30
+    - node: wrappedBakepackage
+      entity: wrappedBakepackage
+      

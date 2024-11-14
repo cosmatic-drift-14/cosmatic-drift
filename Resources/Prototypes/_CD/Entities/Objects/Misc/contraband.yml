@@ -1,0 +1,25 @@
+- type: entity
+  parent: [BaseItem, BaseMinorContraband]
+  id: wrappedpackage
+  name: unmarked package
+  description: Worth a pretty penny?
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 0
+  - type: Sprite
+    sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi
+    state: brown_icon
+
+- type: entity
+  parent: [BaseItem, BaseMinorContraband]
+  id: wrappedBakepackage
+  name: unmarked package
+  description: Worth a pretty penny, the powder inside looks chalky.
+  suffix: Bake
+  components:
+  - type: StaticPrice
+    price: 8000 # worth the risk?
+  - type: Sprite
+    sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi
+    state: brown_icon
