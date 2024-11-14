@@ -6,10 +6,11 @@
     "x": 32,
     "y": 32
   },
+  "states": [
     {
       "name": "icon"
     },
-    {
+	{
       "name": "icon_empty"
     },
     {
