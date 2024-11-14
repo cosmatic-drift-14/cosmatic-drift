@@ -9,7 +9,7 @@
       conditions:
       - !type:SolutionEmpty
         solution: drink
-    - to: wrappedBakepackage
+    - to: wrappedbakepackage
       conditions:
       - !type:MinSolution
         solution: drink
@@ -20,20 +20,5 @@
       - material: emptyPacket
         amount: 1
         doAfter: 2
-  - node: BakeWrapped
+  - node: bakewrapped
     entity: wrappedBakepackage
-
-
-- type: constructionGraph
-  id: foldsmugglerpackage
-  start: start
-  graph:
-  - node: start
-    edges:
-    - to: emptyPacket
-      steps:
-      - material: Cardboard
-        amount: 1
-        doAfter: 3
-  - node: emptyPacket
-    entity: emptyPacket
