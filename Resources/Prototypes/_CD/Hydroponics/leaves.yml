@@ -16,7 +16,6 @@
         - ReagentId: MindleafSap
           Quantity: 8
 
-
 - type: entity
   name: dried mindleaf leaves
   parent: BaseItem

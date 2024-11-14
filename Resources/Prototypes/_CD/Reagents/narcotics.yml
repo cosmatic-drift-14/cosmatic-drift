@@ -105,9 +105,6 @@
               Burn: -0.4
               Brute: -0.4
 
-
-
-
 # Organic
 
 # Mindleaf / Raw form
@@ -275,8 +272,6 @@
         component: IgnoreSlowOnDamage
         time: 1
 
-
-
 # Refined Organic
 
 # Rust / Smokable form
@@ -341,7 +336,6 @@
         component: IgnoreSlowOnDamage
         time: 1
 
-
 # Bake / Fine Powder form
 # Further refined from Rust using Ultravasculine and Diphenylmethylamine with a catalyst of Sigynate
 # Decently safe OD risk, addiction occurs first. High doses attacks the lungs and kidneys directly.
@@ -395,7 +389,6 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 1
-
 
 # Grit / Injector fluid form
 # 'Amps you up' makes you aggressive, dulls pain. Makes you feel 'REALLY FUCKIN' GOOD MAN!!'

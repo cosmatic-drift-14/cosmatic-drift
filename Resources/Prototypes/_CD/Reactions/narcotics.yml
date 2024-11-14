@@ -16,7 +16,7 @@
   reactants:
     MindleafSap:
       amount: 1
-    water:
+    Water:
       amount: 5
   products:
     MindleafTea: 6
