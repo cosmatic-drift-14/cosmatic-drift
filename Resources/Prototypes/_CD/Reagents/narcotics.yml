@@ -332,6 +332,10 @@
           min: 8
         reagent: Addictine
         amount: 2
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 1
 
 
 # Bake / Fine Powder form
@@ -348,6 +352,45 @@
   flavor: chalky
   color: "#FFFFE6"
   physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.1
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages:
+          - "reagent-effect-painkiller-strong1"
+          - "reagent-effect-painkiller-strong2"
+          - "reagent-effect-painkiller-strong3"
+          - "reagent-effect-painkiller-strong4"
+          - "reagent-effect-painkiller-strong5"
+          - "reagent-effect-painkiller-strong6"
+        probability: 0.1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+        damage:
+          types:
+            Asphyxiation: 10
+            Poison: 2
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 25 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          min: 15
+        reagent: Addictine
+        amount: 1
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 1
 
 
 # Grit / Injector fluid form
