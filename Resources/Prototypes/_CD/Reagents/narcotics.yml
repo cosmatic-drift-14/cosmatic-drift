@@ -407,4 +407,60 @@
   flavor: sour
   color: "#64FF7D"
   physicalDesc: reagent-physical-desc-volatile
-
+  metabolisms:
+    Poison:
+      metabolismRate: 0.5
+      effects:
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 1
+            max: 9
+        damage:
+          types:
+            Poison: 0.5
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 10
+            max: 19
+        damage:
+          types:
+            Poison: 5
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 20
+        damage:
+          types:
+            Poison: 20 # Don't fucking macrodose
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.5
+        sprintSpeedModifier: 1.5 # Extremely fucking dangerous, extremely fucking fast.
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 5
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages:
+          - "reagent-effect-ragechem-intense1"
+          - "reagent-effect-ragechem-intense2"
+          - "reagent-effect-ragechem-intense3"
+          - "reagent-effect-ragechem-intense5"
+          - "reagent-effect-ragechem-intense6"
+          - "reagent-effect-motivate-intense1"
+          - "reagent-effect-motivate-intense2"
+          - "reagent-effect-motivate-intense3"
+          - "reagent-effect-motivate-intense4"
+          - "reagent-effect-motivate-intense5"
+          - "reagent-effect-euphoria-intense1"
+          - "reagent-effect-euphoria-intense2"
+          - "reagent-effect-euphoria-intense3"
+          - "reagent-effect-euphoria-intense4"
+        probability: 0.4
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+      - !type:AdjustReagent
