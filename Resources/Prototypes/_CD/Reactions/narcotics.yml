@@ -14,7 +14,7 @@
 - type: reaction
   id: MindleafTea
   reactants:
-    MindleafSap
+    MindleafSap:
       amount: 1
     water:
       amount: 5
