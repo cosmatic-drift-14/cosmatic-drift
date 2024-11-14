@@ -4,11 +4,15 @@
   graph:
     - node: start
       edges:
-        - to: wrapbake
+        - to: wrappedBakepackage
           steps:
             - material: MaterialCardboard
-            - material: MaterialBake
-              doAfter: 5
-    - node: wrapbake
-      entity: wrappedBakepacket
-      
+      conditions:
+      - !type:MinSolution
+        solution: drink
+        reagent:
+          ReagentId: WeldingFuel
+        quantity: 30
+              doAfter: 2
+    - node: wrappedBakepackage
+      entity: wrappedBakepackage
