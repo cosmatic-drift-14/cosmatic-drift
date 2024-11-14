@@ -317,7 +317,7 @@
         - !type:ReagentThreshold
           min: 20
         reagent: Histamine
-        amount: 2
+        amount: 5
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold

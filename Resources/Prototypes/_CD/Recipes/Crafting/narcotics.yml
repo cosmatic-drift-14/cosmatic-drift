@@ -1,5 +1,5 @@
 - type: construction
-  name: wrap up bake
+  name: wrap Bake
   id: wrappedBakepackage
   graph: wrappedBakepackage
   startNode: start
