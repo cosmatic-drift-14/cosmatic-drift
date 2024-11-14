@@ -312,6 +312,10 @@
           - "reagent-effect-painkiller-strong5"
           - "reagent-effect-painkiller-strong6"
           - "reagent-effect-anxietymed-strong7"
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          max: 20
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
