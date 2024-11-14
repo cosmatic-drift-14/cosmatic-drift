@@ -215,7 +215,7 @@
   desc: reagent-desc-breakout
   flavor: bitter
   color: "#C8FFC8"
-  physicalDesc: reagent-physical-desc-powdery
+  physicalDesc: reagent-physical-desc-coarse
   metabolisms:
     Poison:
       metabolismRate: 0.25
@@ -286,14 +286,44 @@
 # OD causes mass expulsion of stomach contents
 # Second worse addiction risk of all Mindleaf types
 
+- type: reagent
+  id: Rust
+  name: reagent-name-rust
+  group: Narcotics
+  desc: reagent-desc-rust
+  flavor: syrupy
+  color: "#FFFFB4"
+  physicalDesc: reagent-physical-desc-oily
+
+
 # Bake / Fine Powder form
 # Further refined from Rust using Ultravasculine and Diphenylmethylamine with a catalyst of Sigynate
 # Decently safe OD risk, addiction occurs first. High doses attacks the lungs and kidneys directly.
 # User moves slightly faster, acts as surgical anesthetic, 
 # !!!EXTREMELY VALUABLE TO SELL!!!
 
+- type: reagent
+  id: Bake
+  name: reagent-name-bake
+  group: Narcotics
+  desc: reagent-desc-bake
+  flavor: chalky
+  color: "#FFFFE6"
+  physicalDesc: reagent-physical-desc-powdery
+
+
 # Grit / Injector fluid form
 # 'Amps you up' makes you aggressive, dulls pain. Makes you feel 'REALLY FUCKIN' GOOD MAN!!'
 # Adrenaline, Speed, jitters, chance to vomit, poison damage
 # Do not mix with other forms of Mindleaf, causes Grit to metabolize into Lexorin and metabolizes blood
 # Combine with Bake and Desoxyephedrine with Psicodine as a catalyst
+
+- type: reagent
+  id: Grit
+  name: reagent-name-grit
+  group: Narcotics
+  desc: reagent-desc-grit
+  flavor: sour
+  color: "#64FF7D"
+  physicalDesc: reagent-physical-desc-volitile
+
