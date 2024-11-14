@@ -1,10 +1,10 @@
 - type: construction
-  name: wrapped bake package
+  name: wrap up bake
   id: wrappedBakepackage
   graph: wrappedBakepackage
   startNode: start
   targetNode: wrappedBakepackage
   category: construction-category-misc
-  description: "A roll of dried plant matter wrapped in thin paper."
+  description: "Wrap up a packet of Bake for export."
   icon: { sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi, state: brown_icon }
   objectType: Item

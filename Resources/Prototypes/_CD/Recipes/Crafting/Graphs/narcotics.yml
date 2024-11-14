@@ -6,15 +6,13 @@
       edges:
         - to: wrappedBakepackage
           steps:
-            - material: PaperRolling
-              doAfter: 2
-    - to: fuel
+            - material: MaterialCardboard
       conditions:
       - !type:MinSolution
         solution: drink
         reagent:
-          ReagentId: Bake
+          ReagentId: WeldingFuel
         quantity: 30
+              doAfter: 2
     - node: wrappedBakepackage
       entity: wrappedBakepackage
-      
