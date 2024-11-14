@@ -110,14 +110,96 @@
 
 # Organic
 
-
 # Mindleaf / Raw form
 # Cannot be metabolizes, can be ground into Breakout, which can be processed into Rust and Bake using other chemicals
+# Sap is used to make Stray / Tea
+
+- type: reagent
+  id: MindleafSap
+  name: reagent-name-mindleafsap
+  group: Narcotics
+  desc: reagent-desc-mindleafsap
+  flavor: bitter
+  color: "#CCDD33"
+  physicalDesc: reagent-physical-desc-opaque
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 5
+  - !type:PlantAdjustHealth
+    amount: -2.5
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
+      - !type:GenericStatusEffect
+        key: SeeingRainbows # why do you think its toxic?
+        component: SeeingRainbows
+        type: Add
+        time: 2
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        probability: 0.75 # You -WILL- vomit, makes for a good natural alternative to Ipecac though.
 
 # Stray / Tea form
 # Tea bag can be crafted by hand, add to water 1-1 to create a soothing tea
 # Makes you feel at ease, numbs minor pain and keeps you awake. Metabolizes slowly
 # Relatively safe, no OD limit and has minor addiction risk, 40u?
+
+- type: reagent
+  id: MindleafTea
+  name: reagent-name-stray
+  parent: BaseDrink
+  desc: reagent-desc-stray
+  physicalDesc: reagent-physical-desc-exotic-smelling
+  flavor: spicy #   w h y  i s  i t  s p i c y ?
+  color: "#8E4E00"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+    Medicine:
+      metabolismRate : 0.08 # Technically a narcotic, it takes a while for the body to process the toxins.
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "reagent-effect-antidepressant-mild1"
+          - "reagent-effect-antidepressant-mild2"
+          - "reagent-effect-antidepressant-mild3"
+          - "reagent-effect-antidepressant-mild4"
+          - "reagent-effect-painkiller-mild1"
+          - "reagent-effect-painkiller-mild2"
+          - "reagent-effect-painkiller-mild3"
+          - "reagent-effect-painkiller-mild4"
+        probability: 0.08
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows # More processed, less toxic form of the sap, still a drug
+        type: Add
+        time: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 2 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          min: 40
+        reagent: Addictine
+        amount: 0.05
+  metamorphicSprite:
+    sprite: _CD/Objects/Consumable/Drinks/strayglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
 # Breakout / Coarse Powder form
 # Direct process from grinding Mindleaf, can be crafted into more potent drugs
