@@ -13,6 +13,14 @@
     solutions:
       drink:
         maxVol: 30
+  - type: Spillable
+    solution: drink
+  - type: DrawableSolution
+    solution: drink
+  - type: RefillableSolution
+    solution: drink
+  - type: DrainableSolution
+    solution: drink
 
 - type: entity
   parent: [BaseItem, BaseMinorContraband]
