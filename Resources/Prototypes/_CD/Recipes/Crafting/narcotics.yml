@@ -1,9 +1,9 @@
 - type: construction
-  name: wrap Bake packet
-  id: wrappedBakepackage
-  graph: wrappedBakepackage
+  name: wrapped bake package
+  id: wrappedBakePackage
+  graph: WrappedBakePackage
   startNode: start
-  targetNode: BakeWrapped
+  targetNode: bakeWrapped
   category: construction-category-misc
   description: "Wrap up a packet of Bake for export."
   icon: { sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi, state: brown_icon }
