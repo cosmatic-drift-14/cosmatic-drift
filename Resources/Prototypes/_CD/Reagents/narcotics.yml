@@ -1,3 +1,5 @@
+# Stimulants - Synthetic
+
 - type: reagent
   id: Dynamoxine
   name: reagent-name-dynamoxine
@@ -18,7 +20,7 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 10 # Careful.
+            min: 6.1 # Careful.
         damage:
           types:
             Bloodloss: 5
@@ -102,3 +104,14 @@
             groups:
               Burn: -0.4
               Brute: -0.4
+
+
+
+# Refined Organic
+
+# Grit
+# 'Amps you up' makes you aggressive, dulls pain. Makes you feel 'REALLY FUCKIN' GOOD MAN!!'
+# Adrenaline, Speed, jitters, chance to vomit, poison damage
+# Processed botanical narcotic, do not mix with unrefined form / other refined forms
+
+# 
