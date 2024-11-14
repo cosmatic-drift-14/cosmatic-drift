@@ -224,7 +224,7 @@
             min: 5
         damage:
           types:
-            Caustic: 2
+            Caustic: 2.5
       - !type:PopupMessage
         type: Local
         visualType: LargeCaution
@@ -235,7 +235,14 @@
           - "reagent-effect-ragechem-intense4"
           - "reagent-effect-ragechem-intense5"
           - "reagent-effect-ragechem-intense6"
-        probability: 0.2
+        probability: 0.15
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+      - !type:Emote
+        emote: Scream # makes you screna sometimes
+        showInChat: true
+        probability: 0.05
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
@@ -260,9 +267,12 @@
         conditions:
         - !type:ReagentThreshold
           min: 15
-        - !type:ReagentThreshold
-          reagent: PolytrinicAcid
-        amount: 2
+        reagent: PolytrinicAcid
+        amount: 1
+
+
+
+
 # Refined Organic
 
 # Rust / Smokable form
