@@ -9,6 +9,10 @@
   - type: Sprite
     sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi
     state: brown_icon
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
 
 - type: entity
   parent: [BaseItem, BaseMinorContraband]
