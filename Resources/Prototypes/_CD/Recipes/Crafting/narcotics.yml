@@ -3,7 +3,7 @@
   id: wrappedBakepackage
   graph: wrappedBakepackage
   startNode: start
-  targetNode: wrappedBakepackage
+  targetNode: BakeWrapped
   category: construction-category-misc
   description: "Wrap up a packet of Bake for export."
   icon: { sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi, state: brown_icon }
