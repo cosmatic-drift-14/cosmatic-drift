@@ -1,24 +1,26 @@
 - type: constructionGraph
-  id: wrappedBakepackage
+  id: WrappedBakePackage
   start: start
   graph:
   - node: start
-    entity: start
     edges:
-    - to: wrappedBakepackage
-      conditions:
-      - !type:SolutionEmpty
-        solution: drink
-    - to: wrappedbakepackage
+    - to: empty
+      steps:
+      - tag: EmptyPacket
+        name: an empty packet
+        doAfter: 1
+  - node: empty
+    entity: EmptyPacket
+    edges:
+    - to: bakeWrapped
+      steps:
+      - tool: Screwing
+        doAfter: 1
       conditions:
       - !type:MinSolution
         solution: drink
         reagent:
           ReagentId: Bake
         quantity: 30
-      steps:
-      - material: emptyPacket
-        amount: 1
-        doAfter: 2
-  - node: bakewrapped
-    entity: wrappedBakepackage
+  - node: bakeWrapped
+    entity: WrappedBakePackage
