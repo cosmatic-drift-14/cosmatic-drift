@@ -464,3 +464,106 @@
         - !type:ReagentThreshold
           min: 0.1
       - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: ChloralHydrate
+          min: 1
+        reagent: ChloralHydrate
+        amount: -10
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 3
+        type: Add
+      - !type:GenericStatusEffect
+        key: ForcedSleep
+        time: 3
+        type: Remove
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        probability: 0.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: MindleafSap 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MindleafSap
+          min: 1
+        reagent: Lexorin
+        amount: 0.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: MindleafTea 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MindleafTea
+          min: 1
+        reagent: Lexorin
+        amount: 0.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Breakout 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 8
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Breakout
+          min: 1
+        reagent: Lexorin
+        amount: 0.5
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Rust 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 10
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Rust
+          min: 1
+        reagent: Lexorin
+        amount: 0.8
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Bake 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 12
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Bake
+          min: 1
+        reagent: Lexorin
+        amount: 0.8
