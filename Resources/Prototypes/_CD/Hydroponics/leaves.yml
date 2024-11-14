@@ -30,7 +30,7 @@
     solutions:
       food:
         reagents:
-        - ReagentId: Breakout # Drying turns the sap into a coarse powder
+        - ReagentId: THC #Breakout # Drying turns the sap into a coarse powder
           Quantity: 4
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/tobacco.rsi

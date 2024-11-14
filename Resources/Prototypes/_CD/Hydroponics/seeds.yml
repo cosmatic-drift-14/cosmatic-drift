@@ -3,7 +3,7 @@
   name: seeds-mindleaf-name
   noun: seeds-noun-seeds
   displayName: seeds-mindleaf-display-name
-  plantRsi: _CD/Objects/Specific/Hydroponics/mindlead.rsi
+  plantRsi: _CD/Objects/Specific/Hydroponics/mindleaf.rsi
   packetPrototype: MindleafSeeds
   productPrototypes:
     - LeavesMindleaf
