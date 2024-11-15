@@ -3,6 +3,7 @@
   id: EmptyPacket
   name: empty packet
   description: Worth a pretty penny?
+  suffix: Cardboard
   components:
   - type: StaticPrice
     price: 0
