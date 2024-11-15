@@ -11,8 +11,8 @@
 
 - type: construction
   name: fold smuggling packet
-  id: foldsmugglerpackage
-  graph: foldsmugglerpackage
+  id: FoldSmugglerPackage
+  graph: FoldSmugglerPackage
   startNode: start
   targetNode: emptyPacket
   category: construction-category-misc
