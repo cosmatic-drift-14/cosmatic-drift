@@ -31,7 +31,7 @@
 
 - type: entity
   parent: [BaseItem, BaseMinorContraband]
-  id: WrappedBakePacket
+  id: WrappedBakePackage
   name: sealed narcotic packet
   description: Worth a pretty penny, the powder inside looks chalky.
   suffix: Bake
