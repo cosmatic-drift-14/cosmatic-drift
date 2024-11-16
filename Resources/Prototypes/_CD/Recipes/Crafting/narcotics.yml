@@ -10,7 +10,7 @@
   objectType: Item
 
 - type: construction
-  name: fold smuggling packet
+  name: folded smuggling packet
   id: FoldSmugglerPackage
   graph: FoldSmugglerPackage
   startNode: start
