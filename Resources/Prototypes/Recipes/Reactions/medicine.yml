@@ -557,32 +557,32 @@
   products:
     Insuzine: 3
 
-- type: reaction
-  id: Opporozidone
-  minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
-  reactants:
-    Cognizine: 
-      amount: 1
-    Plasma:
-      amount: 2
-    Doxarubixadone:
-      amount: 1
-  products:
-    Opporozidone: 3
+# - type: reaction # CD Change: Removed Opporozidone
+#   id: Opporozidone
+#   minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
+#   reactants:
+#     Cognizine: 
+#       amount: 1
+#     Plasma:
+#       amount: 2
+#     Doxarubixadone:
+#       amount: 1
+#   products:
+#     Opporozidone: 3
 
-- type: reaction
-  id: Necrosol
-  impact: Medium
-  minTemp: 370
-  reactants:
-    Blood:
-      amount: 3
-    Omnizine:
-      amount: 1
-    Cryoxadone:
-      amount: 2
-  products:
-    Necrosol: 2
+# - type: reaction # CD Change: removed necrosol
+#   id: Necrosol
+#   impact: Medium
+#   minTemp: 370
+#   reactants:
+#     Blood:
+#       amount: 3
+#     Omnizine:
+#       amount: 1
+#     Cryoxadone:
+#       amount: 2
+#   products:
+#     Necrosol: 2
 
 - type: reaction
   id: Aloxadone
