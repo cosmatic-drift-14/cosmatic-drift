@@ -5,6 +5,11 @@
     jumpsuit: ClothingUniformDoctorCasual
 
 - type: loadout
+  id: MedicalTechnician
+  equipment: 
+    jumpsuit: ClothingUniformMedicalTechnician
+
+- type: loadout
   id: ViroJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitVirology
