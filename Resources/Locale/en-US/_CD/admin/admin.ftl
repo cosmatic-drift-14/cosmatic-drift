@@ -13,7 +13,7 @@ cmd-eventpreferences-desc = Displays a player's current character's event prefer
 cmd-characterpanel-desc = Displays general information, preferences, and records for a given player's current character
 cmd-characterpanel-help = Usage: characterpanel <name or user ID>
 
-cd-characterpanel-title = Character Panel
+cd-characterpanel-title = Character Panel for {$player}
 cd-characterpanel-player = Player: {$player}
 cd-characterpanel-dropdown = Character Description
 cd-characterpanel-character-description = {$characterDescription}
