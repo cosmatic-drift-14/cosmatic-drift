@@ -1,7 +1,6 @@
-using System.Numerics;
-using Content.Shared.Roles;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
+using System.Numerics;
 
 namespace Content.Server._CD.CryoSleep;
 
@@ -13,18 +12,18 @@ public sealed partial class CryoSleepComponent : Component
     /// <summary>
     /// Whether or not spawns are routed through the cryopod.
     /// </summary>
-    [DataField("doSpawns"), ViewVariables(VVAccess.ReadWrite)]
-    public bool DoSpawns = false;
+    [DataField]
+    public bool DoSpawns;
 
     /// <summary>
     /// The sound that is played when a player spawns in the pod.
     /// </summary>
-    [DataField("arrivalSound")]
+    [DataField]
     public SoundSpecifier ArrivalSound = new SoundPathSpecifier("/Audio/Effects/teleport_arrival.ogg");
 
     /// <summary>
     /// How long the entity initially is asleep for upon joining.
     /// </summary>
-    [DataField("initialSleepDurationRange")]
+    [DataField]
     public Vector2 InitialSleepDurationRange = new (5, 10);
 }

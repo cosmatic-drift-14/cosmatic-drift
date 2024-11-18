@@ -1,53 +1,51 @@
-using Content.Server._CD.Records;
-using Content.Server.Mind;
-using Content.Server.Station.Systems;
-using Content.Server.Forensics;
-using Content.Server.StationRecords.Systems;
+using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
+using Content.Server.EUI;
+using Content.Server.Forensics;
+using Content.Server.Ghost;
+using Content.Server.Mind;
+using Content.Server.Station.Components;
+using Content.Server.Station.Systems;
+using Content.Server.StationRecords.Systems;
 using Content.Server.Storage.Components;
 using Content.Server.Storage.EntitySystems;
-using Content.Server.Station.Components;
+using Content.Server._CD.Records;
+using Content.Server._CD.Storage.Components;
 using Content.Shared.ActionBlocker;
-using Content.Shared.DragDrop;
-using Content.Shared.Destructible;
-using Content.Shared.Mind;
-using Content.Server.EUI;
-using Content.Server.GameTicking;
-using Content.Shared.Mobs.Components;
-using Content.Shared.Roles.Jobs;
-using Content.Shared.Verbs;
 using Content.Shared.Climbing.Systems;
-using Content.Shared.PDA;
+using Content.Shared.Database;
+using Content.Shared.Destructible;
+using Content.Shared.DragDrop;
 using Content.Shared.Inventory;
+using Content.Shared.Mind;
+using Content.Shared.Mobs.Components;
+using Content.Shared.PDA;
+using Content.Shared.Roles.Jobs;
 using Content.Shared.StationRecords;
-using Robust.Shared.Enums;
+using Content.Shared.Verbs;
 using Robust.Server.Containers;
 using Robust.Shared.Containers;
-using Content.Server._CD.Storage.Components;
-using Content.Server.Ghost;
-using Content.Server.Administration.Logs;
-using Content.Shared.Database;
+using Robust.Shared.Enums;
 
 namespace Content.Server._CD.CryoSleep;
 
 public sealed class CryoSleepSystem : EntitySystem
 {
-    [Dependency] private readonly EuiManager _euiManager = null!;
-    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
-    [Dependency] private readonly ClimbSystem _climb = default!;
-    [Dependency] private readonly StationJobsSystem _stationJobsSystem = default!;
-    [Dependency] private readonly SharedJobSystem _sharedJobSystem = default!;
-    [Dependency] private readonly MindSystem _mindSystem = default!;
-    [Dependency] private readonly ContainerSystem _container = default!;
-    [Dependency] private readonly GameTicker _gameTicker = default!;
-    [Dependency] private readonly GhostSystem _ghostSystem = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
-    [Dependency] private readonly ChatSystem _chatSystem = default!;
-    [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
-    [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly ActionBlockerSystem _blocker = default!;
     [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly ClimbSystem _climb = default!;
+    [Dependency] private readonly ContainerSystem _container = default!;
+    [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
+    [Dependency] private readonly EuiManager _eui = null!;
+    [Dependency] private readonly GhostSystem _ghost = default!;
     [Dependency] private readonly IAdminLogManager _adminLog = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly MindSystem _mind = default!;
+    [Dependency] private readonly SharedJobSystem _jobs = default!;
+    [Dependency] private readonly StationJobsSystem _stationJobs = default!;
+    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
+    [Dependency] private readonly StationSystem _station = default!;
 
     public override void Initialize()
     {
@@ -55,58 +53,60 @@ public sealed class CryoSleepSystem : EntitySystem
 
         SubscribeLocalEvent<CryoSleepComponent, ComponentInit>(ComponentInit);
         SubscribeLocalEvent<CryoSleepComponent, GetVerbsEvent<AlternativeVerb>>(AddAlternativeVerbs);
-        SubscribeLocalEvent<CryoSleepComponent, DestructionEventArgs>((e, c, _) => EjectBody(e, c));
+        SubscribeLocalEvent<CryoSleepComponent, DestructionEventArgs>(OnDestruction);
         SubscribeLocalEvent<CryoSleepComponent, DragDropTargetEvent>(OnDragDrop);
     }
 
-    private void ComponentInit(EntityUid uid, CryoSleepComponent component, ComponentInit args)
+    private void ComponentInit(Entity<CryoSleepComponent> ent, ref ComponentInit args)
     {
-        component.BodyContainer = _container.EnsureContainer<ContainerSlot>(uid, "body_container");
+        ent.Comp.BodyContainer = _container.EnsureContainer<ContainerSlot>(ent.Owner, "body_container");
     }
 
-    private bool InsertBody(EntityUid uid, EntityUid? toInsert, CryoSleepComponent component)
+    private void OnDestruction(Entity<CryoSleepComponent> ent, ref DestructionEventArgs args)
     {
-        if (toInsert == null || IsOccupied(component))
-            return false;
+        EjectBody(ent);
+    }
+
+    private void InsertBody(Entity<CryoSleepComponent> ent, EntityUid? toInsert)
+    {
+        if (toInsert == null || IsOccupied(ent))
+            return;
 
         if (!HasComp<MobStateComponent>(toInsert.Value))
-            return false;
+            return;
 
-        var inserted = _container.Insert(toInsert.Value, component.BodyContainer);
-
-        return inserted;
+        _container.Insert(toInsert.Value, ent.Comp.BodyContainer);
     }
 
-    public bool RespawnUser(EntityUid? toInsert, CryoSleepComponent component, bool force)
+    private void RespawnUser(Entity<CryoSleepComponent> ent, EntityUid? toInsert, bool force)
     {
         if (toInsert == null)
-            return false;
+            return;
 
-        if (IsOccupied(component) && !force)
-            return false;
+        if (IsOccupied(ent) && !force)
+            return;
 
-        if (_mindSystem.TryGetMind(toInsert.Value, out var mind, out var mindComp))
+        if (_mind.TryGetMind(toInsert.Value, out var mind, out var mindComp))
         {
             var session = mindComp.Session;
             if (session != null && session.Status == SessionStatus.Disconnected)
             {
-                InsertBody(toInsert.Value, component.Owner, component);
-                return true;
+                InsertBody(ent, toInsert.Value);
+                return;
             }
         }
 
-        var success = _container.Insert(toInsert.Value, component.BodyContainer);
+        var success = _container.Insert(toInsert.Value, ent.Comp.BodyContainer);
 
         if (success && mindComp?.Session != null)
         {
-            _euiManager.OpenEui(new CryoSleepEui(mind, this), mindComp.Session);
+            _eui.OpenEui(new CryoSleepEui(mind, this), mindComp.Session);
         }
-
-        return success;
     }
+
     public void CryoStoreBody(EntityUid mindId)
     {
-        if (!_sharedJobSystem.MindTryGetJob(mindId, out var prototype))
+        if (!_jobs.MindTryGetJob(mindId, out var prototype))
             return;
 
         if (!TryComp<MindComponent>(mindId, out var mind))
@@ -125,23 +125,21 @@ public sealed class CryoSleepSystem : EntitySystem
         // Remove the record. Hopefully.
         foreach (var item in _inventory.GetHandOrInventoryEntities(body.Value))
         {
-            if (TryComp(item, out PdaComponent? pda) && TryComp(pda.ContainedId, out StationRecordKeyStorageComponent? keyStorage) && keyStorage.Key is { } key && _stationRecords.TryGetRecord(key, out GeneralStationRecord? record))
-            {
-                if (TryComp(body, out DnaComponent? dna) &&
-                    dna.DNA != record.DNA)
-                {
-                    continue;
-                }
+            if (!TryComp(item, out PdaComponent? pda) ||
+                !TryComp(pda.ContainedId, out StationRecordKeyStorageComponent? keyStorage) ||
+                keyStorage.Key is not { } key || !_stationRecords.TryGetRecord(key, out GeneralStationRecord? record))
+                continue;
 
-                if (TryComp(body, out FingerprintComponent? fingerPrint) &&
-                    fingerPrint.Fingerprint != record.Fingerprint)
-                {
-                    continue;
-                }
+            if (TryComp(body, out DnaComponent? dna) &&
+                dna.DNA != record.DNA)
+                continue;
 
-                _stationRecords.RemoveRecord(key);
-                Del(item);
-            }
+            if (TryComp(body, out FingerprintComponent? fingerPrint) &&
+                fingerPrint.Fingerprint != record.Fingerprint)
+                continue;
+
+            _stationRecords.RemoveRecord(key);
+            Del(item);
         }
 
         if (TryComp<CharacterRecordKeyStorageComponent>(body, out var recordKey))
@@ -152,7 +150,7 @@ public sealed class CryoSleepSystem : EntitySystem
         // Move their items
         MoveItems(body.Value);
 
-        _ghostSystem.OnGhostAttempt(mindId, false, true, mind: mind);
+        _ghost.OnGhostAttempt(mindId, false, true, mind: mind);
         EntityManager.DeleteEntity(body);
 
         if (!TryComp<MindComponent>(mindId, out var mindComp) || mindComp.UserId == null)
@@ -163,51 +161,55 @@ public sealed class CryoSleepSystem : EntitySystem
             if (!TryComp<StationJobsComponent>(station, out var stationJobs))
                continue;
 
-            if (!_stationJobsSystem.TryGetPlayerJobs(station, mindComp.UserId.Value, out var jobs, stationJobs))
+            if (!_stationJobs.TryGetPlayerJobs(station, mindComp.UserId.Value, out var jobs, stationJobs))
                 continue;
 
             foreach (var item in jobs)
             {
-               _stationJobsSystem.TryAdjustJobSlot(station, item, 1, clamp: true);
-               _chatSystem.DispatchStationAnnouncement(station, Loc.GetString("cryo-leave-announcement", ("character", name!), ("job", job.LocalizedName)), "Cryo Pod", false);
+               _stationJobs.TryAdjustJobSlot(station, item, 1, clamp: true);
+               _chat.DispatchStationAnnouncement(station,
+                   Loc.GetString("cryo-leave-announcement",
+                       ("character", name!),
+                       ("job", job.LocalizedName)),
+                   "Cryo Pod",
+                   false);
             }
 
-            _stationJobsSystem.TryRemovePlayerJobs(station, mindComp.UserId.Value, stationJobs);
+            _stationJobs.TryRemovePlayerJobs(station, mindComp.UserId.Value, stationJobs);
         }
     }
 
-    private bool EjectBody(EntityUid pod, CryoSleepComponent component)
+    private void EjectBody(Entity<CryoSleepComponent> ent)
     {
-        if (!IsOccupied(component))
-            return false;
+        if (!IsOccupied(ent))
+            return;
 
-        var toEject = component.BodyContainer.ContainedEntity;
+        var toEject = ent.Comp.BodyContainer.ContainedEntity;
         if (toEject == null)
-            return false;
+            return;
 
-        _container.Remove(toEject.Value, component.BodyContainer);
-        _climb.ForciblySetClimbing(toEject.Value, pod);
-
-        return true;
+        _container.Remove(toEject.Value, ent.Comp.BodyContainer);
+        _climb.ForciblySetClimbing(toEject.Value, ent.Owner);
     }
 
-    private bool IsOccupied(CryoSleepComponent component)
+    private static bool IsOccupied(Entity<CryoSleepComponent> ent)
     {
-        return component.BodyContainer.ContainedEntity != null;
+        return ent.Comp.BodyContainer.ContainedEntity != null;
     }
 
-    private void AddAlternativeVerbs(EntityUid uid, CryoSleepComponent component, GetVerbsEvent<AlternativeVerb> args)
+    private void AddAlternativeVerbs(Entity<CryoSleepComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract)
             return;
 
         // Insert self verb
-        if (!IsOccupied(component) &&
-            _actionBlocker.CanMove(args.User))
+        if (!IsOccupied(ent) &&
+            _blocker.CanMove(args.User))
         {
+            var user = args.User;
             AlternativeVerb verb = new()
             {
-                Act = () => RespawnUser(args.User, component, false),
+                Act = () => RespawnUser(ent, user, false),
                 Category = VerbCategory.Insert,
                 Text = Loc.GetString("medical-scanner-verb-enter")
             };
@@ -215,11 +217,11 @@ public sealed class CryoSleepSystem : EntitySystem
         }
 
         // Eject somebody verb
-        if (IsOccupied(component))
+        if (IsOccupied(ent))
         {
             AlternativeVerb verb = new()
             {
-                Act = () => EjectBody(component.Owner, component),
+                Act = () => EjectBody(ent),
                 Category = VerbCategory.Eject,
                 Text = Loc.GetString("medical-scanner-verb-noun-occupant")
             };
@@ -227,23 +229,18 @@ public sealed class CryoSleepSystem : EntitySystem
         }
     }
 
-    private void OnDragDrop(EntityUid uid, CryoSleepComponent component, ref DragDropTargetEvent args)
+    private void OnDragDrop(Entity<CryoSleepComponent> ent, ref DragDropTargetEvent args)
     {
         if (args.Handled || args.User != args.Dragged)
             return;
 
-        RespawnUser(args.User, component, false);
+        RespawnUser(ent, args.User, false);
     }
 
     private void MoveItems(EntityUid uid)
     {
-        //// Make sure the entity being cryo'd has an inventory
-        //if (!HasComp<EntityStorageComponent>(uid))
-        //    return;
-
-        // Get the locker
         var query = EntityQueryEnumerator<LostAndFoundComponent>();
-        query.MoveNext(out var locker, out var lostAndFoundComponent);
+        query.MoveNext(out var locker, out _);
 
         // Make sure the locker exists and has storage
         if (!locker.Valid)
