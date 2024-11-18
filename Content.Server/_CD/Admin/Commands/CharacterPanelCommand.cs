@@ -39,7 +39,7 @@ public sealed class CharacterPanel : LocalizedCommands
 
         var ui = new CharacterPanelEui(queriedPlayer);
         _euis.OpenEui(ui, admin);
-        ui.StateDirty();
+        ui.SetPlayerState();
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)

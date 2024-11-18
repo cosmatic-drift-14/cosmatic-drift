@@ -26,10 +26,11 @@ public sealed partial class CharacterPanel : FancyWindow
         PlayerName.Text = Loc.GetString("cd-characterpanel-player", ("player", player));
     }
 
-    public void SetCharacterDescription(string description)
+    public void SetCharacterDescription(string? description)
     {
-        CharacterDescriptionLabel.Text = Loc.GetString(
-            "cd-characterpanel-character-description",
-            ("characterDescription", description));
+        if (description == null)
+            Loc.GetString("cd-characterpanel-missing-description");
+        else
+            Loc.GetString("cd-characterpanel-character-description", ("characterDescription", description));
     }
 }

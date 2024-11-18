@@ -13,3 +13,5 @@ cd-characterpanel-character-description = {$characterDescription}
 cd-characterpanel-records = Records
 
 cd-characterpanel-preferences-title = Event Preferences
+
+cd-characterpanel-missing-description = Character description not found.
