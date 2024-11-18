@@ -1,22 +1,25 @@
-﻿<ui:FancyWindow xmlns="https://spacestation14.io"
+﻿
+
+<ui:FancyWindow xmlns="https://spacestation14.io"
                 xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                 xmlns:cdrecords="clr-namespace:Content.Client._CD.Records.UI"
                 xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                 MinSize="750 600"
+                Title="{Loc cd-characterpanel-title}"
 >
 
     <BoxContainer>
         <BoxContainer Orientation="Vertical" Margin="10" MinWidth="200">
             <!-- character and player information -->
             <BoxContainer MinHeight="50" Orientation="Vertical">
-                <Label Text="Player: shuttle-vote-user"/>
+                <Label Text="{Loc cd-characterpanel-player}"/>
                 <Collapsible>
-                    <CollapsibleHeading Title="Character Description"/>
+                    <CollapsibleHeading Title="{Loc cd-characterpanel-dropdown}"/>
                         <PanelContainer>
                             <PanelContainer.PanelOverride>
                                 <gfx:StyleBoxFlat Padding="10 0 10 0" BackgroundColor="#1B1B1E"/>
                             </PanelContainer.PanelOverride>
-                            <RichTextLabel Margin="10 2" MaxWidth="420" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>
+                            <RichTextLabel Margin="10 2" MaxWidth="420" Text="{Loc cd-characterpanel-character-description}"/>
                         </PanelContainer>
                 </Collapsible>
             </BoxContainer>
@@ -24,7 +27,7 @@
             <!-- everything records -->
             <BoxContainer Orientation="Vertical">
                 <ui:StripeBack>
-                    <Label Text="Records"/>
+                    <Label Text="{Loc cd-characterpanel-records}"/>
                 </ui:StripeBack>
                 <TabContainer>
                     <cdrecords:RecordEditorEntrySelector Name="Employment"/>
@@ -35,8 +38,9 @@
             </BoxContainer>
         </BoxContainer>
 
+        <!-- preference information -->
         <BoxContainer Orientation="Vertical" Margin="5 0 20 0" MinWidth="200">
-            <Label Text="Event Preferences"/>
+            <Label Text="{Loc cd-characterpanel-preferences-title}"/>
             <Label Text="high"/>
             <Label Text="med"/>
             <Label Text="low"/>
