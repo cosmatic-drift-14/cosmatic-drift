@@ -30,10 +30,9 @@
                     <Label Text="{Loc cd-characterpanel-records}"/>
                 </ui:StripeBack>
                 <TabContainer>
-                    <cdrecords:RecordEditorEntrySelector Name="Employment"/>
-                    <cdrecords:RecordEditorEntrySelector Name="Medical"/>
-                    <cdrecords:RecordEditorEntrySelector Name="Security"/>
-                    <cdrecords:RecordEditorEntrySelector Name="Confidential"/>
+                    <cdrecords:RecordEditorEntrySelector Name="EmploymentEntrySelector"/>
+                    <cdrecords:RecordEditorEntrySelector Name="MedicalEntrySelector"/>
+                    <cdrecords:RecordEditorEntrySelector Name="SecurityEntrySelector"/>
                 </TabContainer>
             </BoxContainer>
         </BoxContainer>
