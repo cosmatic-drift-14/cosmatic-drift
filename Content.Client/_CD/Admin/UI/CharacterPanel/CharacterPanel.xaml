@@ -2,6 +2,7 @@
 
 <ui:FancyWindow xmlns="https://spacestation14.io"
                 xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
+                xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
                 xmlns:cdrecords="clr-namespace:Content.Client._CD.Records.UI"
                 xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                 MinSize="750 600"
@@ -43,6 +44,7 @@
             <Label Text="med"/>
             <Label Text="low"/>
             <Label Text="non"/>
+            <cc:HSeparator/>
             <Label Text="high tar"/>
             <Label Text="mod tar"/>
             <Label Text="low tar"/>
