@@ -2,8 +2,6 @@
                 xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                 xmlns:cdrecords="clr-namespace:Content.Client._CD.Records.UI"
                 xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-                SetWidth="620"
-                SetHeight="580"
                 MinSize="750 600"
 >
 
@@ -12,19 +10,15 @@
             <!-- character and player information -->
             <BoxContainer MinHeight="50" Orientation="Vertical">
                 <Label Text="Player: shuttle-vote-user"/>
-                <BoxContainer>
-                    <Collapsible>
-                        <CollapsibleHeading Title="Character Description"/>
-                        <CollapsibleBody>
-                                <PanelContainer>
-                                    <PanelContainer.PanelOverride>
-                                        <gfx:StyleBoxFlat Padding="10 0 10 0" BackgroundColor="#1B1B1E"/>
-                                    </PanelContainer.PanelOverride>
-                                    <RichTextLabel Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" Margin="10 2"/>
-                                </PanelContainer>
-                        </CollapsibleBody>
-                    </Collapsible>
-                </BoxContainer>
+                <Collapsible>
+                    <CollapsibleHeading Title="Character Description"/>
+                        <PanelContainer>
+                            <PanelContainer.PanelOverride>
+                                <gfx:StyleBoxFlat Padding="10 0 10 0" BackgroundColor="#1B1B1E"/>
+                            </PanelContainer.PanelOverride>
+                            <RichTextLabel Margin="10 2" MaxWidth="420" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>
+                        </PanelContainer>
+                </Collapsible>
             </BoxContainer>
 
             <!-- everything records -->
@@ -43,17 +37,13 @@
 
         <BoxContainer Orientation="Vertical" Margin="5 0 20 0" MinWidth="200">
             <Label Text="Event Preferences"/>
-            <BoxContainer Orientation="Vertical">
-                <Label Text="high"/>
-                <Label Text="med"/>
-                <Label Text="low"/>
-                <Label Text="non"/>
-            </BoxContainer>
-            <BoxContainer Orientation="Vertical">
-                <Label Text="high tar"/>
-                <Label Text="mod tar"/>
-                <Label Text="low tar"/>
-            </BoxContainer>
+            <Label Text="high"/>
+            <Label Text="med"/>
+            <Label Text="low"/>
+            <Label Text="non"/>
+            <Label Text="high tar"/>
+            <Label Text="mod tar"/>
+            <Label Text="low tar"/>
         </BoxContainer>
     </BoxContainer>
 </ui:FancyWindow>
