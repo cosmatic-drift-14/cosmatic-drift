@@ -19,7 +19,7 @@
                             <PanelContainer.PanelOverride>
                                 <gfx:StyleBoxFlat Padding="10 0 10 0" BackgroundColor="#1B1B1E"/>
                             </PanelContainer.PanelOverride>
-                            <RichTextLabel Name="CharacterDescriptionLabel" Margin="10 2" MaxWidth="420" Text="{Loc cd-characterpanel-character-description}"/>
+                            <RichTextLabel Name="CharacterDescriptionLabel" Margin="10 2" MaxWidth="420"/>
                         </PanelContainer>
                 </Collapsible>
             </BoxContainer>
