@@ -1,0 +1,15 @@
+﻿<DefaultWindow xmlns="https://spacestation14.io"
+               Resizable="False">
+
+    <LayoutContainer>
+        <BoxContainer>
+            <Label Text="wawa"/>
+            <Label Text="wawa"/>
+
+        </BoxContainer>
+        <BoxContainer>
+            <Label Text="wawa"/>
+            <Label Text="wawa"/>
+        </BoxContainer>
+    </LayoutContainer>
+</DefaultWindow>
