@@ -17,6 +17,10 @@ public sealed class CharacterPanelEui : BaseEui
 
     public override EuiStateBase GetNewState()
     {
-        return new CharacterPanelEuiState(_targetPlayer.Username);
+        return new CharacterPanelEuiState(
+            _targetPlayer.UserId,
+            _targetPlayer.Username,
+            "Test Description"
+            );
     }
 }
