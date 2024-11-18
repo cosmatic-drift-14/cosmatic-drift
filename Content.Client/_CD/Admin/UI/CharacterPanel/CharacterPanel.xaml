@@ -1,15 +1,17 @@
-﻿<DefaultWindow xmlns="https://spacestation14.io"
-               Resizable="False">
-
-    <LayoutContainer>
-        <BoxContainer>
-            <Label Text="wawa"/>
-            <Label Text="wawa"/>
-
+﻿<ui:FancyWindow xmlns="https://spacestation14.io"
+                xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
+                Resizable="False"
+                MinWidth="620"
+                MinHeight="580"
+>
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer MinHeight="50">
+            <Label Text="Player: Nairod"/>
         </BoxContainer>
-        <BoxContainer>
-            <Label Text="wawa"/>
-            <Label Text="wawa"/>
+
+        <BoxContainer Orientation="Vertical">
+            <Label Text="Records"/>
         </BoxContainer>
-    </LayoutContainer>
-</DefaultWindow>
+
+    </BoxContainer>
+</ui:FancyWindow>
