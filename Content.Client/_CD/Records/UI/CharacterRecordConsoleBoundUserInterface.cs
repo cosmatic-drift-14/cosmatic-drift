@@ -1,7 +1,7 @@
-using Content.Shared._CD.Records;
-using Content.Shared.CriminalRecords;
 using Content.Shared.CriminalRecords.Components;
+using Content.Shared.CriminalRecords;
 using Content.Shared.StationRecords;
+using Content.Shared._CD.Records;
 using JetBrains.Annotations;
 
 namespace Content.Client._CD.Records.UI;
@@ -53,10 +53,9 @@ public sealed class CharacterRecordConsoleBoundUserInterface(EntityUid owner, En
 
         _window.OnFiltersChanged += (ty, txt) =>
         {
-            if (txt == null)
-                SendMessage(new CharacterRecordsConsoleFilterMsg(null));
-            else
-                SendMessage(new CharacterRecordsConsoleFilterMsg(new StationRecordsFilter(ty, txt)));
+            SendMessage(txt == null
+                ? new CharacterRecordsConsoleFilterMsg(null)
+                : new CharacterRecordsConsoleFilterMsg(new StationRecordsFilter(ty, txt)));
         };
 
         _window.OnSetSecurityStatus += (status, reason) =>

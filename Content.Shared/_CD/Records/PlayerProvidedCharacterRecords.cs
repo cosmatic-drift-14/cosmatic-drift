@@ -11,8 +11,8 @@ namespace Content.Shared._CD.Records;
 [Serializable, NetSerializable]
 public sealed partial class PlayerProvidedCharacterRecords
 {
-    private const int TextMedLen = 128;
-    private const int TextVeryLargeLen = 2048;
+    public const int TextMedLen = 64;
+    public const int TextVeryLargeLen = 4096;
 
     /* Basic info */
 
@@ -88,11 +88,6 @@ public sealed partial class PlayerProvidedCharacterRecords
         public void EnsureValid()
         {
             Title = ClampString(Title, TextMedLen);
-            if (Title.Length == 0)
-            {
-                // If the user does not proved a title, give it something so it is not blank
-                Title = Loc.GetString("cd-records-entry-default-title");
-            }
             Involved = ClampString(Involved, TextMedLen);
             Description = ClampString(Description, TextVeryLargeLen);
         }
