@@ -9,3 +9,6 @@ cd-eventpreferencepanel-character = Character: {$characterName}
 
 cmd-eventpreferences-help = Usage: eventpreferences <name>
 cmd-eventpreferences-desc = Displays a player's current character's event preferences (i.e. antags)
+
+cmd-characterpanel-desc = Displays general information, preferences, and records for a given player's current character
+cmd-characterpanel-help = Usage: characterpanel <name or user ID>
