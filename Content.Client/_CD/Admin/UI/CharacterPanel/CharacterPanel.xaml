@@ -5,21 +5,20 @@
                 xmlns:cdrecords="clr-namespace:Content.Client._CD.Records.UI"
                 xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                 MinSize="750 600"
-                Title="{Loc cd-characterpanel-title}"
 >
 
     <BoxContainer>
         <BoxContainer Orientation="Vertical" Margin="10" MinWidth="200">
             <!-- character and player information -->
             <BoxContainer MinHeight="50" Orientation="Vertical">
-                <Label Text="{Loc cd-characterpanel-player}"/>
+                <Label Name="PlayerName"/>
                 <Collapsible>
                     <CollapsibleHeading Title="{Loc cd-characterpanel-dropdown}"/>
                         <PanelContainer>
                             <PanelContainer.PanelOverride>
                                 <gfx:StyleBoxFlat Padding="10 0 10 0" BackgroundColor="#1B1B1E"/>
                             </PanelContainer.PanelOverride>
-                            <RichTextLabel Margin="10 2" MaxWidth="420" Text="{Loc cd-characterpanel-character-description}"/>
+                            <RichTextLabel Name="CharacterDescriptionLabel" Margin="10 2" MaxWidth="420" Text="{Loc cd-characterpanel-character-description}"/>
                         </PanelContainer>
                 </Collapsible>
             </BoxContainer>
