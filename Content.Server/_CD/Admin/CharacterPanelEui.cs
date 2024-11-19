@@ -3,12 +3,14 @@ using Content.Server.DetailExaminable;
 using Content.Server.EUI;
 using Content.Shared._CD.Admin;
 using Content.Shared.Eui;
+using Robust.Server.Player;
 
 namespace Content.Server._CD.Admin;
 
 public sealed class CharacterPanelEui : BaseEui
 {
-    private readonly IEntityManager _entity = default!;
+    [Dependency] private readonly IEntityManager _entity = default!;
+    [Dependency] private readonly IPlayerManager _player = default!;
 
     private readonly LocatedPlayerData _targetPlayer;
     private string? _description;
@@ -30,10 +32,11 @@ public sealed class CharacterPanelEui : BaseEui
 
     public async void SetPlayerState()
     {
-        if (!_entity.TryGetComponent<DetailExaminableComponent>(Player.AttachedEntity, out DetailExaminableComponent? examinable))
-            _description = null;
-        else
-            _description = examinable.Content;
+        if (_player.TryGetSessionById(_targetPlayer.UserId, out var session))
+        {
+            if (_entity.TryGetComponent<DetailExaminableComponent>(session.AttachedEntity, out var examinable))
+                _description = examinable.Content;
+        }
 
         StateDirty();
     }
