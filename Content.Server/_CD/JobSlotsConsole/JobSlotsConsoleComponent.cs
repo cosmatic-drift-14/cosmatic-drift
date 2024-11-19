@@ -1,4 +1,5 @@
 using Content.Shared.Roles;
+using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.JobSlotsConsole;
@@ -23,4 +24,10 @@ public sealed partial class JobSlotsConsoleComponent : Component
     /// </summary>
     [DataField]
     public bool Debug;
+
+    /// <summary>
+    /// The sound to play if the player doesn't have access to change job slots.
+    /// </summary>
+    [DataField]
+    public SoundSpecifier DenySound = new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg");
 }

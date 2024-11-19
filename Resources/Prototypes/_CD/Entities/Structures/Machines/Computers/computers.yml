@@ -6,13 +6,13 @@
   components:
   - type: Sprite
     layers:
-    - map: ["computerLayerBody"]
+    - map: [ "computerLayerBody" ]
       state: computer
-    - map: ["computerLayerKeyboard"]
+    - map: [ "computerLayerKeyboard" ]
       state: generic_keyboard
-    - map: ["computerLayerScreen"]
+    - map: [ "computerLayerScreen" ]
       state: command
-    - map: ["computerLayerKeys"]
+    - map: [ "computerLayerKeys" ]
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
@@ -22,12 +22,6 @@
   - type: JobSlotsConsole
     blacklist:
     - Captain
-    - ChiefEngineer
-    - ChiefMedicalOfficer
-    - HeadOfPersonnel
-    - HeadOfSecurity
-    - ResearchDirector
-    - Quartermaster
     - CentralCommandOfficial
     - StationAi
     - Borg
@@ -44,6 +38,8 @@
   - type: ActivatableUIRequiresVision
   - type: Transform
     anchored: true
+  - type: AccessReader
+    access: [ [ "HeadOfPersonnel" ] ]
   - type: UserInterface
     interfaces:
       enum.JobSlotsConsoleUiKey.Key:

@@ -3,17 +3,21 @@ using Content.Shared._CD.JobSlotsConsole;
 using Robust.Server.GameObjects;
 using System.Linq;
 using Content.Server.Station.Components;
+using Content.Shared.Access.Systems;
 using Content.Shared.GameTicking;
 using Content.Shared.Roles;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.JobSlotsConsole;
 
 public sealed class JobSlotsConsoleSystem : EntitySystem
 {
+    [Dependency] private readonly AccessReaderSystem _access = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StationJobsSystem _jobs = default!;
-    [Dependency] private readonly UserInterfaceSystem _ui = default!;
     [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly UserInterfaceSystem _ui = default!;
 
     // Keep track of consoles so we can update them
     private readonly Dictionary<EntityUid, HashSet<EntityUid>> _stationConsoles = new();
@@ -92,19 +96,34 @@ public sealed class JobSlotsConsoleSystem : EntitySystem
         if (ent.Comp.Station == null || !HasComp<StationJobsComponent>(ent.Comp.Station.Value))
             return;
 
-        if (message.SetInfinite.HasValue && ent.Comp.Debug)
+        // Check for access
+        if (!_access.IsAllowed(message.Actor, ent))
         {
-            if (message.SetInfinite.Value)
-                _jobs.MakeJobUnlimited(ent.Comp.Station.Value, message.JobId);
-            else
-                _jobs.TrySetJobSlot(ent.Comp.Station.Value, message.JobId, 0);
-
-            UpdateUi(ent);
+            _audio.PlayGlobal(ent.Comp.DenySound, message.Actor);
             return;
         }
 
-        if (_jobs.TryAdjustJobSlot(ent.Comp.Station.Value, message.JobId, message.Adjustment, clamp: true))
-            UpdateUi(ent);
+        // i wish we could use pattern matching
+        // but MakeJobUnlimited is void
+        switch (message.Adjustment)
+        {
+            case JobSlotAdjustment.Decrease:
+                _jobs.TryAdjustJobSlot(ent.Comp.Station.Value, message.Job, -1, clamp: true);
+                break;
+            case JobSlotAdjustment.Increase:
+                _jobs.TryAdjustJobSlot(ent.Comp.Station.Value, message.Job, 1);
+                break;
+            case JobSlotAdjustment.SetInfinite when ent.Comp.Debug:
+                _jobs.MakeJobUnlimited(ent.Comp.Station.Value, message.Job);
+                break;
+            case JobSlotAdjustment.SetFinite when ent.Comp.Debug:
+                _jobs.TrySetJobSlot(ent.Comp.Station.Value, message.Job, 0);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+
+        UpdateUi(ent);
     }
 
     public override void Update(float frameTime)

@@ -23,9 +23,9 @@ public sealed class JobSlotsConsoleBoundUserInterface : BoundUserInterface
         _menu.OnAdjustPressed += AdjustSlot;
     }
 
-    private void AdjustSlot(ProtoId<JobPrototype> jobId, int adjustment, bool? setInfinite)
+    private void AdjustSlot(ProtoId<JobPrototype> jobId, JobSlotAdjustment adjustment)
     {
-        SendMessage(new JobSlotsConsoleAdjustMessage(jobId, adjustment, setInfinite));
+        SendMessage(new JobSlotsConsoleAdjustMessage(jobId, adjustment));
     }
 
     protected override void UpdateState(BoundUserInterfaceState state)

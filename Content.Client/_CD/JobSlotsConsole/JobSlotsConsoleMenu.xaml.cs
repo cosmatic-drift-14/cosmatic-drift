@@ -19,7 +19,7 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
     private readonly Dictionary<ProtoId<DepartmentPrototype>, Label> _departmentLabels = new();
     private JobSlotsConsoleState? _currentState;
 
-    public event Action<ProtoId<JobPrototype>, int, bool?>? OnAdjustPressed;
+    public event Action<ProtoId<JobPrototype>, JobSlotAdjustment>? OnAdjustPressed;
 
     public JobSlotsConsoleMenu()
     {
@@ -99,8 +99,8 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
         foreach (var (proto, slots, blacklisted) in jobs)
         {
             var row = new JobRow(proto.ID, slots, blacklisted);
-            row.OnAdjustPressed += (adjustment, setInfinite) =>
-                OnAdjustPressed?.Invoke(proto.ID, adjustment, setInfinite);
+            row.OnAdjustPressed += adjustment =>
+                OnAdjustPressed?.Invoke(proto.ID, adjustment);
             row.ShowDebugControls(_currentState?.Debug ?? false);
             jobRows.Add(row);
             departmentBox.AddChild(row);

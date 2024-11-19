@@ -11,6 +11,15 @@ public enum JobSlotsConsoleUiKey : byte
 }
 
 [Serializable, NetSerializable]
+public enum JobSlotAdjustment : byte
+{
+    Decrease,
+    Increase,
+    SetFinite,
+    SetInfinite
+}
+
+[Serializable, NetSerializable]
 public sealed class JobSlotsConsoleState : BoundUserInterfaceState
 {
     public readonly Dictionary<ProtoId<JobPrototype>, int?> Jobs;
@@ -30,14 +39,12 @@ public sealed class JobSlotsConsoleState : BoundUserInterfaceState
 [Serializable, NetSerializable]
 public sealed class JobSlotsConsoleAdjustMessage : BoundUserInterfaceMessage
 {
-    public readonly string JobId;
-    public readonly int Adjustment;
-    public readonly bool? SetInfinite;
+    public readonly ProtoId<JobPrototype> Job;
+    public readonly JobSlotAdjustment Adjustment;
 
-    public JobSlotsConsoleAdjustMessage(string jobId, int adjustment, bool? setInfinite = null)
+    public JobSlotsConsoleAdjustMessage(ProtoId<JobPrototype> job, JobSlotAdjustment  adjustment)
     {
-        JobId = jobId;
+        Job = job;
         Adjustment = adjustment;
-        SetInfinite = setInfinite;
     }
 }
