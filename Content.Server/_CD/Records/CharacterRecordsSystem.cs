@@ -183,7 +183,9 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
     public IDictionary<uint, FullCharacterRecords> QueryRecords(EntityUid station, CharacterRecordsComponent? recordsDb = null)
     {
-        return !Resolve(station, ref recordsDb) ? new Dictionary<uint, FullCharacterRecords>() : recordsDb.Records;
+        return !Resolve(station, ref recordsDb)
+            ? new Dictionary<uint, FullCharacterRecords>()
+            : recordsDb.Records;
     }
 }
 

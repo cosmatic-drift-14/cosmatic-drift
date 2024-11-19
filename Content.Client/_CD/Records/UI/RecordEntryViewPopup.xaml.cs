@@ -11,13 +11,14 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class RecordEntryViewPopup : FancyWindow
 {
-    // We don't permit headings because it looks ugly
+    // Font tags bad
     private static readonly Type[] AllowedTags =
     [
         typeof(BoldItalicTag),
         typeof(BoldTag),
         typeof(BulletTag),
         typeof(ColorTag),
+        typeof(HeadingTag),
         typeof(ItalicTag),
     ];
 

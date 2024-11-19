@@ -84,10 +84,10 @@ public static class RecordsSerialization
 
     public static List<CDModel.CharacterRecordEntry> GetEntries(PlayerProvidedCharacterRecords records)
     {
-        var entries = records.MedicalEntries.Select(medical => ConvertEntry(medical, CDModel.DbRecordEntryType.Medical)).ToList();
-        entries.AddRange(records.SecurityEntries.Select(security => ConvertEntry(security, CDModel.DbRecordEntryType.Security)));
-        entries.AddRange(records.EmploymentEntries.Select(employment => ConvertEntry(employment, CDModel.DbRecordEntryType.Employment)));
-        return entries;
+        return records.MedicalEntries.Select(medical => ConvertEntry(medical, CDModel.DbRecordEntryType.Medical))
+            .Concat(records.SecurityEntries.Select(security => ConvertEntry(security, CDModel.DbRecordEntryType.Security)))
+            .Concat(records.EmploymentEntries.Select(employment => ConvertEntry(employment, CDModel.DbRecordEntryType.Employment)))
+            .ToList();
     }
 
     public static JsonDocument SerializeRecords(PlayerProvidedCharacterRecords pRecords)
