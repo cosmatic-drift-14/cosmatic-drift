@@ -4,7 +4,7 @@ using System.Numerics;
 
 namespace Content.Server._CD.CryoSleep;
 
-[RegisterComponent]
+[RegisterComponent, Access(typeof(CryoSleepSystem))]
 public sealed partial class CryoSleepComponent : Component
 {
     public ContainerSlot BodyContainer = default!;

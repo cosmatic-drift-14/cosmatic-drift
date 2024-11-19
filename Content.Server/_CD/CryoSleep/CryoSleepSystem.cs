@@ -1,29 +1,24 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
 using Content.Server.EUI;
-using Content.Server.Forensics;
 using Content.Server.Ghost;
+using Content.Server.Hands.Systems;
 using Content.Server.Mind;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
-using Content.Server.StationRecords.Systems;
-using Content.Server.Storage.Components;
-using Content.Server.Storage.EntitySystems;
 using Content.Server._CD.Records;
-using Content.Server._CD.Storage.Components;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Climbing.Systems;
 using Content.Shared.Database;
-using Content.Shared.Destructible;
 using Content.Shared.DragDrop;
 using Content.Shared.Inventory;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Components;
-using Content.Shared.PDA;
 using Content.Shared.Roles.Jobs;
-using Content.Shared.StationRecords;
 using Content.Shared.Verbs;
+using Content.Shared._CD.CryoSleep;
 using Robust.Server.Containers;
+using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Enums;
 
@@ -31,29 +26,33 @@ namespace Content.Server._CD.CryoSleep;
 
 public sealed class CryoSleepSystem : EntitySystem
 {
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
     [Dependency] private readonly ActionBlockerSystem _blocker = default!;
     [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly ClimbSystem _climb = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
-    [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
-    [Dependency] private readonly EuiManager _eui = null!;
+    [Dependency] private readonly EuiManager _eui = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
-    [Dependency] private readonly IAdminLogManager _adminLog = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly MindSystem _mind = default!;
     [Dependency] private readonly SharedJobSystem _jobs = default!;
     [Dependency] private readonly StationJobsSystem _stationJobs = default!;
-    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
     [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly SharedMapSystem _map = default!;
+    [Dependency] private readonly TransformSystem _transform = default!;
+    [Dependency] private readonly HandsSystem _hands = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly LostAndFoundSystem _lostAndFound = default!;
+
+    private EntityUid? _pausedMap;
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<CryoSleepComponent, ComponentInit>(ComponentInit);
+        SubscribeLocalEvent<CryoSleepComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<CryoSleepComponent, GetVerbsEvent<AlternativeVerb>>(AddAlternativeVerbs);
-        SubscribeLocalEvent<CryoSleepComponent, DestructionEventArgs>(OnDestruction);
         SubscribeLocalEvent<CryoSleepComponent, DragDropTargetEvent>(OnDragDrop);
     }
 
@@ -62,7 +61,7 @@ public sealed class CryoSleepSystem : EntitySystem
         ent.Comp.BodyContainer = _container.EnsureContainer<ContainerSlot>(ent.Owner, "body_container");
     }
 
-    private void OnDestruction(Entity<CryoSleepComponent> ent, ref DestructionEventArgs args)
+    private void OnShutdown(Entity<CryoSleepComponent> ent, ref ComponentShutdown args)
     {
         EjectBody(ent);
     }
@@ -113,46 +112,72 @@ public sealed class CryoSleepSystem : EntitySystem
             return;
 
         var body = mind.CurrentEntity;
-        var job = prototype;
-
         var name = mind.CharacterName;
 
         if (body == null)
             return;
 
-        _adminLog.Add(LogType.Respawn, LogImpact.Low, $"Player {mind.Session} playing {ToPrettyString(body)} entered cryosleep.");
+        _adminLog.Add(LogType.Action,
+            LogImpact.Low,
+            $"Player {mind.Session} playing {ToPrettyString(body.Value)} entered cryosleep.");
 
-        // Remove the record. Hopefully.
-        foreach (var item in _inventory.GetHandOrInventoryEntities(body.Value))
+        // Record items
+        var foundItems = new List<LostItemData>();
+
+        // Get inventory items
+        var enumerator = _inventory.GetSlotEnumerator(body.Value);
+        while (enumerator.NextItem(out var item, out var slotDef))
         {
-            if (!TryComp(item, out PdaComponent? pda) ||
-                !TryComp(pda.ContainedId, out StationRecordKeyStorageComponent? keyStorage) ||
-                keyStorage.Key is not { } key || !_stationRecords.TryGetRecord(key, out GeneralStationRecord? record))
-                continue;
-
-            if (TryComp(body, out DnaComponent? dna) &&
-                dna.DNA != record.DNA)
-                continue;
-
-            if (TryComp(body, out FingerprintComponent? fingerPrint) &&
-                fingerPrint.Fingerprint != record.Fingerprint)
-                continue;
-
-            _stationRecords.RemoveRecord(key);
-            Del(item);
+            foundItems.Add(new LostItemData(
+                slotDef.Name,
+                MetaData(item).EntityName,
+                GetNetEntity(item)
+            ));
         }
 
+        // Get held items
+        foreach (var hand in _hands.EnumerateHands(body.Value))
+        {
+            if (hand.HeldEntity == null)
+                continue;
+
+            foundItems.Add(new LostItemData(
+                hand.Name,
+                MetaData(hand.HeldEntity.Value).EntityName,
+                GetNetEntity(hand.HeldEntity.Value)
+            ));
+        }
+
+        // Find Lost and Found locker and store items data
+        var query = EntityQueryEnumerator<LostAndFoundComponent>();
+        if (query.MoveNext(out var storage, out var lostAndFound))
+        {
+            var ent = (storage, lostAndFound);
+            if (foundItems.Count > 0)
+            {
+                _lostAndFound.StorePlayerItems(ent, name!, foundItems); // best language
+            }
+        }
+
+        // Remove records
         if (TryComp<CharacterRecordKeyStorageComponent>(body, out var recordKey))
         {
             _characterRecords.DeleteAllRecords(body.Value, recordKey);
         }
 
-        // Move their items
-        MoveItems(body.Value);
+        // Ensure nullspace map exists
+        EnsurePausedMap();
+        if (_pausedMap == null)
+        {
+            Log.Error("CryoSleep map was unexpectedly null");
+            return;
+        }
 
+        // Ghost the player if needed and move body to nullspace
         _ghost.OnGhostAttempt(mindId, false, true, mind: mind);
-        EntityManager.DeleteEntity(body);
+        _transform.SetParent(body.Value, _pausedMap.Value);
 
+        // Handle job slots and announcements
         if (!TryComp<MindComponent>(mindId, out var mindComp) || mindComp.UserId == null)
             return;
 
@@ -170,7 +195,7 @@ public sealed class CryoSleepSystem : EntitySystem
                _chat.DispatchStationAnnouncement(station,
                    Loc.GetString("cryo-leave-announcement",
                        ("character", name!),
-                       ("job", job.LocalizedName)),
+                       ("job", prototype.LocalizedName)),
                    "Cryo Pod",
                    false);
             }
@@ -236,30 +261,13 @@ public sealed class CryoSleepSystem : EntitySystem
 
         RespawnUser(ent, args.User, false);
     }
-
-    private void MoveItems(EntityUid uid)
+    private void EnsurePausedMap()
     {
-        var query = EntityQueryEnumerator<LostAndFoundComponent>();
-        query.MoveNext(out var locker, out _);
-
-        // Make sure the locker exists and has storage
-        if (!locker.Valid)
+        if (_pausedMap != null && Exists(_pausedMap))
             return;
 
-        TryComp<EntityStorageComponent>(uid, out var lockerStorageComp);
-
-        var coordinates = Transform(locker).Coordinates;
-
-        // Go through their inventory and put everything in a locker
-        foreach (var item in _inventory.GetHandOrInventoryEntities(uid))
-        {
-            if (!item.IsValid() || !TryComp<MetaDataComponent>(item, out var comp))
-                continue;
-
-            var proto = comp.EntityPrototype;
-            var ent = EntityManager.SpawnEntity(proto!.ID, coordinates);
-
-            _entityStorage.Insert(ent, locker, lockerStorageComp);
-        }
+        var mapUid = _map.CreateMap();
+        _map.SetPaused(mapUid, true);
+        _pausedMap = mapUid;
     }
 }
