@@ -179,8 +179,7 @@ public sealed class JobSlotsConsoleSystem : EntitySystem
             if (!TryComp<JobSlotsConsoleComponent>(console, out var comp))
                 continue;
 
-            var ent = new Entity<JobSlotsConsoleComponent>(console, comp);
-            UpdateUi(ent);
+            UpdateUi((console, comp));
         }
     }
 
