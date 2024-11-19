@@ -17,7 +17,9 @@ public sealed class JobSlotsConsoleState : BoundUserInterfaceState
     public readonly HashSet<ProtoId<JobPrototype>> BlacklistedJobs;
     public readonly bool Debug;
 
-    public JobSlotsConsoleState(Dictionary<ProtoId<JobPrototype>, int?> jobs, HashSet<ProtoId<JobPrototype>> blacklistedJobs, bool debug)
+    public JobSlotsConsoleState(Dictionary<ProtoId<JobPrototype>, int?> jobs,
+        HashSet<ProtoId<JobPrototype>> blacklistedJobs,
+        bool debug)
     {
         Jobs = jobs;
         BlacklistedJobs = blacklistedJobs;
@@ -30,10 +32,12 @@ public sealed class JobSlotsConsoleAdjustMessage : BoundUserInterfaceMessage
 {
     public readonly string JobId;
     public readonly int Adjustment;
+    public readonly bool? SetInfinite;
 
-    public JobSlotsConsoleAdjustMessage(string jobId, int adjustment)
+    public JobSlotsConsoleAdjustMessage(string jobId, int adjustment, bool? setInfinite = null)
     {
         JobId = jobId;
         Adjustment = adjustment;
+        SetInfinite = setInfinite;
     }
 }

@@ -17,4 +17,10 @@ public sealed partial class JobSlotsConsoleComponent : Component
     /// </summary>
     [DataField]
     public HashSet<ProtoId<JobPrototype>> Blacklist = [];
+
+    /// <summary>
+    /// Whether this console has debug features enabled, like toggling infinite slots.
+    /// </summary>
+    [DataField]
+    public bool Debug;
 }

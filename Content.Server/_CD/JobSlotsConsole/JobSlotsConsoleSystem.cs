@@ -87,12 +87,22 @@ public sealed class JobSlotsConsoleSystem : EntitySystem
         UpdateUi(ent);
     }
 
-    private void OnAdjustMessage(Entity<JobSlotsConsoleComponent> ent, ref  JobSlotsConsoleAdjustMessage message)
+    private void OnAdjustMessage(Entity<JobSlotsConsoleComponent> ent, ref JobSlotsConsoleAdjustMessage message)
     {
         if (ent.Comp.Station == null || !HasComp<StationJobsComponent>(ent.Comp.Station.Value))
             return;
 
-        // Only update the UI if successful
+        if (message.SetInfinite.HasValue && ent.Comp.Debug)
+        {
+            if (message.SetInfinite.Value)
+                _jobs.MakeJobUnlimited(ent.Comp.Station.Value, message.JobId);
+            else
+                _jobs.TrySetJobSlot(ent.Comp.Station.Value, message.JobId, 0);
+
+            UpdateUi(ent);
+            return;
+        }
+
         if (_jobs.TryAdjustJobSlot(ent.Comp.Station.Value, message.JobId, message.Adjustment, clamp: true))
             UpdateUi(ent);
     }
@@ -161,13 +171,13 @@ public sealed class JobSlotsConsoleSystem : EntitySystem
         if (ent.Comp.Station is not { } station || !HasComp<StationJobsComponent>(station))
         {
             // If we don't have a valid station yet, send empty state
-            var emptyState = new JobSlotsConsoleState(new Dictionary<ProtoId<JobPrototype>, int?>(), []);
+            var emptyState = new JobSlotsConsoleState(new Dictionary<ProtoId<JobPrototype>, int?>(), [], false);
             _ui.SetUiState(ent.Owner, JobSlotsConsoleUiKey.Key, emptyState);
             return;
         }
 
         var jobs = _jobs.GetJobs(station);
-        var state = new JobSlotsConsoleState(jobs.ToDictionary(), ent.Comp.Blacklist);
+        var state = new JobSlotsConsoleState(jobs.ToDictionary(), ent.Comp.Blacklist, ent.Comp.Debug);
         _ui.SetUiState(ent.Owner, JobSlotsConsoleUiKey.Key, state);
     }
 }

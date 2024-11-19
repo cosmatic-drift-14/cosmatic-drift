@@ -13,8 +13,7 @@ public sealed partial class JobRow : BoxContainer
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
     [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
 
-    public event Action<int>? OnAdjustPressed;
-
+    public event Action<int, bool?>? OnAdjustPressed;
     public string JobName { get; }
 
     public JobRow(string jobId, int? slots, bool blacklisted)
@@ -38,16 +37,28 @@ public sealed partial class JobRow : BoxContainer
 
         DecreaseButton.OnPressed += OnDecrease;
         IncreaseButton.OnPressed += OnIncrease;
+        ToggleInfiniteButton.OnPressed += OnToggleInfinite;
     }
 
     private void OnDecrease(BaseButton.ButtonEventArgs args)
     {
-        OnAdjustPressed?.Invoke(-1);
+        OnAdjustPressed?.Invoke(-1, null);
     }
 
     private void OnIncrease(BaseButton.ButtonEventArgs args)
     {
-        OnAdjustPressed?.Invoke(1);
+        OnAdjustPressed?.Invoke(1, null);
+    }
+
+    private void OnToggleInfinite(BaseButton.ButtonEventArgs args)
+    {
+        var currentInfinite = SlotsLabel.Text == "∞";
+        OnAdjustPressed?.Invoke(0, !currentInfinite);
+    }
+
+    public void ShowDebugControls(bool show)
+    {
+        ToggleInfiniteButton.Visible = show;
     }
 
     private void UpdateSlots(int? slots, bool blacklisted)
@@ -57,16 +68,19 @@ public sealed partial class JobRow : BoxContainer
         // Disable buttons if blacklisted or at limits
         DecreaseButton.Disabled = blacklisted || slots is 0 or null;
         IncreaseButton.Disabled = blacklisted || slots == null;
+        ToggleInfiniteButton.Disabled = blacklisted;
 
         if (blacklisted)
         {
             DecreaseButton.ToolTip = Loc.GetString("job-slots-console-blacklisted");
             IncreaseButton.ToolTip = Loc.GetString("job-slots-console-blacklisted");
+            ToggleInfiniteButton.ToolTip = Loc.GetString("job-slots-console-blacklisted");
         }
         else
         {
             DecreaseButton.ToolTip = null;
             IncreaseButton.ToolTip = null;
+            ToggleInfiniteButton.ToolTip = null;
         }
     }
 }

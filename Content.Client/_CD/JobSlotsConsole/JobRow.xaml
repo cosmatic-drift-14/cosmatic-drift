@@ -32,4 +32,9 @@
         Text="+"
         MinWidth="32"
         Margin="0 0 4 0"/>
+    <Button
+        Name="ToggleInfiniteButton"
+        Text="∞"
+        MinWidth="32"
+        Visible="False"/>
 </BoxContainer>

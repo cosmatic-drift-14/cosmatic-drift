@@ -51,6 +51,8 @@
         type: GeneralStationRecordConsoleBoundUserInterface
       enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        type: JobSlotsConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -68,6 +70,8 @@
       #  toggleAction: ActionAGhostShowStationRecords
       enum.CharacterRecordConsoleKey.Key:
         toggleAction: ActionAGhostShowCharacterRecords
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        toggleAction: ActionAGhostShowJobSlotsConsole
   - type: SolarControlConsole # look ma i AM the computer!
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
@@ -101,6 +105,8 @@
     consoleType: Admin
     # Needed for security records console functionality
   - type: CriminalRecordsConsole
+  - type: JobSlotsConsole # _CD
+    debug: true
 
 - type: entity
   id: ActionAGhostShowSolar
@@ -187,3 +193,16 @@
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
 
+# _CD - Job slots
+- type: entity
+  id: ActionAGhostShowJobSlotsConsole
+  name: Job Slots Interface
+  description: View and adjust job slots
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
+    iconOn: Structures/Machines/parts.rsi/box_2.png
+    keywords: [ "AI", "console", "interface" ]
+    priority: -10
+    event: !type:ToggleIntrinsicUIEvent { key: enum.JobSlotsConsoleUiKey.Key }
