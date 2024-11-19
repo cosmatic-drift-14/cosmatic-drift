@@ -18,12 +18,12 @@ public sealed class LostAndFoundSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<LostAndFoundComponent, ComponentInit>(OnInit);
+        SubscribeLocalEvent<LostAndFoundComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<LostAndFoundComponent, BoundUIOpenedEvent>(OnUIOpened);
         SubscribeLocalEvent<LostAndFoundComponent, LostAndFoundRetrieveItemMessage>(OnRetrieveItem);
     }
 
-    private void OnInit(Entity<LostAndFoundComponent> ent, ref ComponentInit args)
+    private void OnMapInit(Entity<LostAndFoundComponent> ent, ref MapInitEvent args)
     {
         _container.EnsureContainer<Container>(ent, LostFoundContainer);
     }
