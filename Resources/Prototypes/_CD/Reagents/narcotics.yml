@@ -46,6 +46,13 @@
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
+          reagent: Epinephrine 
+          min: 1
+        reagent: Epinephrine
+        amount: -1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
           reagent: ChloralHydrate
           min: 1
         reagent: ChloralHydrate
