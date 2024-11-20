@@ -7,6 +7,8 @@ using Content.Server.Mind;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Server._CD.Records;
+using Content.Server.StationRecords;
+using Content.Server.StationRecords.Systems;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Climbing.Systems;
 using Content.Shared.Database;
@@ -17,6 +19,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Roles.Jobs;
 using Content.Shared.Verbs;
 using Content.Shared._CD.CryoSleep;
+using Content.Shared.StationRecords;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
@@ -26,7 +29,6 @@ namespace Content.Server._CD.CryoSleep;
 
 public sealed class CryoSleepSystem : EntitySystem
 {
-    [Dependency] private readonly IAdminLogManager _adminLog = default!;
     [Dependency] private readonly ActionBlockerSystem _blocker = default!;
     [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
@@ -34,15 +36,17 @@ public sealed class CryoSleepSystem : EntitySystem
     [Dependency] private readonly ContainerSystem _container = default!;
     [Dependency] private readonly EuiManager _eui = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
-    [Dependency] private readonly MindSystem _mind = default!;
-    [Dependency] private readonly SharedJobSystem _jobs = default!;
-    [Dependency] private readonly StationJobsSystem _stationJobs = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly HandsSystem _hands = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly LostAndFoundSystem _lostAndFound = default!;
+    [Dependency] private readonly MindSystem _mind = default!;
+    [Dependency] private readonly SharedJobSystem _jobs = default!;
+    [Dependency] private readonly SharedMapSystem _map = default!;
+    [Dependency] private readonly StationJobsSystem _stationJobs = default!;
+    [Dependency] private readonly StationRecordsSystem _records = default!;
+    [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly TransformSystem _transform = default!;
 
     private EntityUid? _pausedMap;
 
@@ -186,8 +190,19 @@ public sealed class CryoSleepSystem : EntitySystem
             if (!TryComp<StationJobsComponent>(station, out var stationJobs))
                continue;
 
+            if (!TryComp<StationRecordsComponent>(station, out var stationRecords))
+                continue;
+
             if (!_stationJobs.TryGetPlayerJobs(station, mindComp.UserId.Value, out var jobs, stationJobs))
                 continue;
+
+            var recordId = _records.GetRecordByName(station, name!);
+            if (recordId != null)
+            {
+                var key = new StationRecordKey(recordId.Value, station);
+                if (_records.TryGetRecord<GeneralStationRecord>(key, out _, stationRecords))
+                    _records.RemoveRecord(key, stationRecords);
+            }
 
             foreach (var item in jobs)
             {

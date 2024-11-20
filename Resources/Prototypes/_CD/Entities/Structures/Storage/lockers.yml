@@ -11,6 +11,9 @@
     interfaces:
       enum.LostAndFoundUiKey.Key:
         type: LostAndFoundBoundUserInterface
+  - type: ActivatableUIRequiresAccess
+  - type: AccessReader
+    access: [ [ "HeadOfPersonnel" ] ]
   - type: Appearance
   - type: Sprite
     sprite: Structures/Storage/closet.rsi
