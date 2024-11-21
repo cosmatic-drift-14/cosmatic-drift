@@ -4,10 +4,8 @@ using Content.Server.EUI;
 using Content.Server.Preferences.Managers;
 using Content.Shared.Administration;
 using Content.Shared.Preferences;
-using Content.Shared.Roles;
 using Robust.Server.Player;
 using Robust.Shared.Console;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Admin.Commands;
 
@@ -18,7 +16,6 @@ public sealed class EventPreferencesCommand : LocalizedCommands
     [Dependency] private readonly IServerPreferencesManager _pref = default!;
     [Dependency] private readonly EuiManager _euis = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
     public override string Command => "eventpreferences";
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
@@ -43,13 +40,11 @@ public sealed class EventPreferencesCommand : LocalizedCommands
             return;
         }
 
-
-
         var pref = (HumanoidCharacterProfile)_pref.GetPreferences(queriedPlayer.UserId).SelectedCharacter;
 
-        // var ui = new EventPreferencePanelEui(queriedPlayer, pref, _prototype);
-        // _euis.OpenEui(ui, admin);
-        // ui.SetState();
+        var ui = new EventPreferencePanelEui(queriedPlayer, pref);
+        _euis.OpenEui(ui, admin);
+        ui.SetState();
     }
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {

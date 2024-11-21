@@ -1,5 +1,5 @@
-﻿<Control xmlns="https://spacestation14.io">
-    <BoxContainer Name="EventPrefContainer" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
-        <ItemList Name="EventPrefList" HorizontalExpand="True" VerticalExpand="True"/>
-    </BoxContainer>
-</Control>
+﻿<cdadmin:EventPreferences xmlns="https://spacestation14.io"
+                          xmlns:cdadmin="clr-namespace:Content.Client._CD.Admin.UI"
+                          MinSize="100 200">
+    <BoxContainer Name="EventPrefContainer" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True"/>
+</cdadmin:EventPreferences>
