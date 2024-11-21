@@ -71,7 +71,7 @@
     state: pda-seniorphysician
 
 - type: entity
-  parent: [ BaseSecurityPDA, BasePDA ] 
+  parent: [ BaseSecurityPDA, BasePDA ]
   id: SeniorOfficerPDA
   name: senior officer PDA
   description: Beaten, battered and broken, but just barely useable.
@@ -130,10 +130,5 @@
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#3a3a3a"
-  - type: Clothing
-    quickEquip: false
-    slots:
-    - idcard
-    - Belt
   - type: RenameId
     value: cd-job-title-offduty

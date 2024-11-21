@@ -1,8 +1,8 @@
 - type: entity
-  id: CigaretteOlive
-  suffix: olive
   parent: Cigarette
+  id: CigaretteOlive
   name: cigarette
+  suffix: olive
   description: A roll of tobacco and nicotine soaked in some chemical, smells like olives.
   components:
   - type: SolutionContainerManager
@@ -16,10 +16,10 @@
             Quantity: 5
 
 - type: entity
+  parent: [ Cigarette, FoodBase ]
   id: CigaretteCandy
-  suffix: candy
-  parent: [Cigarette, FoodBase]
   name: cigarette
+  suffix: candy
   description: Sugar sticks designed to look like a roll of nicotine and tobacco.
   components:
   - type: Appearance

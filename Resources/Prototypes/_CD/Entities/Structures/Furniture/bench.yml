@@ -1,10 +1,10 @@
 # Base benches
 - type: entity
-  name: bench
-  id: BenchBaseMiddle
-  suffix: Middle
   abstract: true
   parent: SeatBase
+  id: BenchBaseMiddle
+  name: bench
+  suffix: Middle
   description: Multiple seats spanning a single object. Truly a marvel of science.
   components:
   - type: Transform
@@ -17,9 +17,9 @@
 
 # Park benches
 - type: entity
-  name: park bench
-  id: BenchParkMiddle
   parent: BenchBaseMiddle
+  id: BenchParkMiddle
+  name: park bench
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
@@ -28,9 +28,9 @@
     node: BenchParkMiddle
 
 - type: entity
+  parent: BenchParkMiddle
   id: BenchParkLeft
   suffix: Right
-  parent: BenchParkMiddle
   components:
   - type: Sprite
     state: left
@@ -39,9 +39,9 @@
     node: BenchParkLeft
 
 - type: entity
+  parent: BenchParkMiddle
   id: BenchParkRight
   suffix: Left
-  parent: BenchParkMiddle
   components:
   - type: Sprite
     state: right
@@ -51,9 +51,9 @@
 
 # Bamboo benches
 - type: entity
-  name: park bench
-  id: BenchParkBambooMiddle
   parent: BenchBaseMiddle
+  id: BenchParkBambooMiddle
+  name: park bench
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
@@ -62,9 +62,9 @@
     node: BenchParkBambooMiddle
 
 - type: entity
+  parent: BenchParkBambooMiddle
   id: BenchParkBambooLeft
   suffix: Right
-  parent: BenchParkBambooMiddle
   components:
   - type: Sprite
     state: left
@@ -73,9 +73,9 @@
     node: BenchParkBambooLeft
 
 - type: entity
+  parent: BenchParkBambooMiddle
   id: BenchParkBambooRight
   suffix: Left
-  parent: BenchParkBambooMiddle
   components:
   - type: Sprite
     state: right
@@ -85,9 +85,9 @@
 
 # Pews
 - type: entity
-  name: pew
-  id: BenchPewMiddle
   parent: BenchBaseMiddle
+  id: BenchPewMiddle
+  name: pew
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/pew.rsi
@@ -96,9 +96,9 @@
     node: BenchPewMiddle
 
 - type: entity
+  parent: BenchPewMiddle
   id: BenchPewLeft
   suffix: Left
-  parent: BenchPewMiddle
   components:
   - type: Sprite
     state: left
@@ -107,9 +107,9 @@
     node: BenchPewLeft
 
 - type: entity
+  parent: BenchPewMiddle
   id: BenchPewRight
   suffix: Right
-  parent: BenchPewMiddle
   components:
   - type: Sprite
     state: right
@@ -119,9 +119,9 @@
 
 # Steel benches
 - type: entity
-  name: steel bench
-  id: BenchSteelMiddle
   parent: BenchBaseMiddle
+  id: BenchSteelMiddle
+  name: steel bench
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
@@ -130,9 +130,9 @@
     node: BenchSteelMiddle
 
 - type: entity
+  parent: BenchSteelMiddle
   id: BenchSteelLeft
   suffix: Left
-  parent: BenchSteelMiddle
   components:
   - type: Sprite
     state: left
@@ -141,9 +141,9 @@
     node: BenchSteelLeft
 
 - type: entity
+  parent: BenchSteelMiddle
   id: BenchSteelRight
   suffix: Right
-  parent: BenchSteelMiddle
   components:
   - type: Sprite
     state: right
@@ -153,9 +153,9 @@
 
 # White steel benches
 - type: entity
-  name: white steel bench
-  id: BenchSteelWhiteMiddle
   parent: BenchBaseMiddle
+  id: BenchSteelWhiteMiddle
+  name: white steel bench
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
@@ -164,9 +164,9 @@
     node: BenchSteelWhiteMiddle
 
 - type: entity
+  parent: BenchSteelWhiteMiddle
   id: BenchSteelWhiteLeft
   suffix: Left
-  parent: BenchSteelWhiteMiddle
   components:
   - type: Sprite
     state: left
@@ -175,9 +175,9 @@
     node: BenchSteelWhiteLeft
 
 - type: entity
+  parent: BenchSteelWhiteMiddle
   id: BenchSteelWhiteRight
   suffix: Right
-  parent: BenchSteelWhiteMiddle
   components:
   - type: Sprite
     state: right

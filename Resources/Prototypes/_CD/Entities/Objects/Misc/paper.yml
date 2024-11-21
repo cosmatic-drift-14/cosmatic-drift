@@ -1,6 +1,6 @@
 - type: entity
-  id: BoxFolderDetectiveClipboard
   parent: BoxFolderClipboard
+  id: BoxFolderDetectiveClipboard
   name: Detective ledger
   description: A solid yellow ledger, for Detectives who take more notes then most.
   components:

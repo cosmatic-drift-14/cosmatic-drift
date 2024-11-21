@@ -1,5 +1,5 @@
-#Benches
-#Wooden Park
+# Benches
+# Wooden Park
 - type: construction
   name: wooden park bench
   id: BenchParkMiddle
@@ -51,7 +51,7 @@
   conditions:
     - !type:TileNotBlocked
 
-#Bamboo Park
+# Bamboo Park
 - type: construction
   name: bamboo park bench
   id: BenchParkBambooMiddle
@@ -103,7 +103,7 @@
   conditions:
     - !type:TileNotBlocked
 
-#Pews
+# Pews
 - type: construction
   name: wooden pew
   id: BenchPewMiddle
@@ -155,7 +155,7 @@
   conditions:
     - !type:TileNotBlocked
 
-#Steel Bench
+# Steel Bench
 - type: construction
   name: steel bench
   id: BenchSteelMiddle
@@ -207,7 +207,7 @@
   conditions:
     - !type:TileNotBlocked
 
-#White Steel Bench
+# White Steel Bench
 - type: construction
   name: white steel bench
   id: BenchSteelWhiteMiddle
@@ -259,8 +259,8 @@
   conditions:
     - !type:TileNotBlocked
 
-# Sofas
-#RattySofa
+#  Sofas
+# RattySofa
 - type: construction
   name: sofa
   id: RattySofaMiddle
@@ -312,7 +312,7 @@
   conditions:
     - !type:TileNotBlocked
 
-#Corporate Sofa
+# Corporate Sofa
 - type: construction
   name: sofa
   id: RattySofaCorner

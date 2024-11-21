@@ -41,7 +41,6 @@
       types:
         Blunt: 2
         Slash: 3
-  - type: Perishable
   - type: Temperature # These are moth values, but do make sense for Vulpkanin. The heat damage per second might be high, but we can tune it if there are issues.
     heatDamageThreshold: 320
     coldDamageThreshold: 230

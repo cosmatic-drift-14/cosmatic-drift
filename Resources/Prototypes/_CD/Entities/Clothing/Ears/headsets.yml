@@ -1,8 +1,8 @@
 - type: entity
+  parent: ClothingHeadset
   id: ClothingHeadsetLongRange
   name: long range headset
   description: a headset that is used to contact other ships
-  parent: ClothingHeadset
   components:
   - type: ContainerFill
     containers:

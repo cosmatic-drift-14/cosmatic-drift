@@ -1,6 +1,6 @@
 - type: entity
-  id: CrateVendingMachineRestockQuickThreadsFilled
   parent: CratePlastic
+  id: CrateVendingMachineRestockQuickThreadsFilled
   name: QuickThreads restock crate
   description: Contains a restock box for the QuickThreads.
   components:
