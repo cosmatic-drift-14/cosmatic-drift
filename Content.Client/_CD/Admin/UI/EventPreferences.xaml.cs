@@ -15,13 +15,22 @@ public sealed partial class EventPreferences : Control
         RobustXamlLoader.Load(this);
     }
 
+    /// <summary>
+    /// Fills the BoxContainer with all the AntagPrototypes that we want to show, and colours them based on whether
+    /// the passed in preference profile has these preferences set to yes or no.
+    /// </summary>
+    /// <param name="userPreferences">The profile of preferences that we want to check for.</param>
+    /// <param name="listablePreferences">The preferences that we want to list and compare with userPreferences.</param>
     public void SetPreferenceList(HumanoidCharacterProfile userPreferences, IEnumerable<AntagPrototype> listablePreferences)
     {
-        // representing whether or not a player has a preference with red and green colors
+        var labelList = new List<Label>();
+
+        // representing whether a player has a preference with red and green colors
         foreach (var listablePreference in listablePreferences)
         {
             var label = new Label();
-            Color color = Color.Red;
+
+            var color = Color.Red;
             if (userPreferences.AntagPreferences.Contains(listablePreference))
                 color = Color.Green;
 

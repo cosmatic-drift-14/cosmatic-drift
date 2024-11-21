@@ -14,6 +14,11 @@ public sealed partial class EventPreferencesPanel : DefaultWindow
         RobustXamlLoader.Load(this);
     }
 
+    /// <summary>
+    /// Sets the displayed username of the current player alongside their current selected character's name
+    /// </summary>
+    /// <param name="username">Player's username</param>
+    /// <param name="currentPreferences">Profile preference to fetch the character name from</param>
     public void SetDetails(string username, HumanoidCharacterProfile currentPreferences)
     {
         PlayerLabel.Text = Loc.GetString("cd-eventpreferencepanel-player", ("player", username));
@@ -23,6 +28,7 @@ public sealed partial class EventPreferencesPanel : DefaultWindow
             );
     }
 
+    /// <inheritdoc cref="EventPreferences.SetPreferenceList"/>
     public void SetPreferenceList(HumanoidCharacterProfile userPreferences, IEnumerable<AntagPrototype> listablePreferences)
     {
         EventPreferenceControl.SetPreferenceList(userPreferences, listablePreferences);
