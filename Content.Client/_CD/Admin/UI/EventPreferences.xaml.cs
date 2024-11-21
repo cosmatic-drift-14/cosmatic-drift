@@ -28,6 +28,7 @@ public sealed partial class EventPreferences : Control
 
             label.Text = Loc.GetString(listablePreference.Name);
             label.Modulate = color;
+            label.HorizontalAlignment = HAlignment.Center;
 
             EventPrefContainer.AddChild(label);
         }
