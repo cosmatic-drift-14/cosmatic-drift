@@ -1,6 +1,6 @@
 - type: entity
-  id: ClothingBeltSecurityPlateCarrier
-  parent: ClothingBeltSecurityPlateCarrierFilled
+  id: ClothingBeltSecurityPlateCarrierFilled
+  parent: ClothingBeltSecurityPlateCarrier
   suffix: Filled
   components:
   - type: EntityTableContainerFill
