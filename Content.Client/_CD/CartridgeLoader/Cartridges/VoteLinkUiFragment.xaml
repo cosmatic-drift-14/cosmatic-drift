@@ -1,0 +1,68 @@
+<cartridges:VoteLinkUiFragment
+    xmlns="https://spacestation14.io"
+    xmlns:cartridges="clr-namespace:Content.Client._CD.CartridgeLoader.Cartridges"
+    xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    Margin="5"
+    VerticalExpand="True">
+
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+        <!-- Header section -->
+        <PanelContainer StyleClasses="AngleRect">
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                <Label Text="{Loc vote-link-title}"
+                       StyleClasses="LabelHeading"
+                       HorizontalExpand="True"
+                       HorizontalAlignment="Left" />
+                <Button Name="HistoryButton"
+                        Text="{Loc vote-link-history}"
+                        HorizontalAlignment="Right"
+                        StyleClasses="OpenRight"
+                        Margin="0 0 4 0" />
+                <Button Name="CreateVoteButton"
+                        Text="{Loc vote-link-create-new}"
+                        HorizontalAlignment="Right"
+                        StyleClasses="OpenLeft" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <customControls:HSeparator Margin="0 8" />
+
+        <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+                <!-- No votes label -->
+                <Label Name="NoVotes"
+                       Text="{Loc vote-link-no-votes}"
+                       HorizontalExpand="True"
+                       StyleClasses="LabelHeading"
+                       HorizontalAlignment="Center" />
+
+                <!-- Active votes container -->
+                <BoxContainer Name="ActiveVotes"
+                              Orientation="Vertical"
+                              HorizontalExpand="True" />
+
+                <customControls:HSeparator Name="LastVoteSeparator"
+                                           Margin="0 8"
+                                           Visible="False" />
+
+                <!-- Last vote results -->
+                <BoxContainer Name="LastVoteContainer"
+                              Orientation="Vertical"
+                              HorizontalExpand="True"
+                              Visible="False">
+                    <PanelContainer StyleClasses="RoundedPanel">
+                        <BoxContainer Orientation="Vertical"
+                                      HorizontalExpand="True"
+                                      Margin="8">
+                            <Label Name="LastVoteQuestion"
+                                   StyleClasses="LabelHeading" />
+                            <BoxContainer Name="LastVoteResults"
+                                          Orientation="Vertical"
+                                          Margin="0 4 0 0" />
+                        </BoxContainer>
+                    </PanelContainer>
+                </BoxContainer>
+            </BoxContainer>
+        </ScrollContainer>
+    </BoxContainer>
+</cartridges:VoteLinkUiFragment>
