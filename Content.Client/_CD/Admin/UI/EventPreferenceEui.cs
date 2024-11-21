@@ -12,6 +12,6 @@ public sealed class EventPreferenceEui : BaseEui
 
     public EventPreferenceEui()
     {
-        EventPreferencesPanel = new EventPreferences(_admin);
+        EventPreferencesPanel = new EventPreferences();
     }
 }
