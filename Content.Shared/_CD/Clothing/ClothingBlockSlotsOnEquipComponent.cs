@@ -6,7 +6,7 @@ namespace Content.Shared._CD.Clothing;
 /// This component prevents equipping items in specified slots when this clothing item is worn,
 /// and prevents equipping this item if any of the specified slots are occupied.
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, Access(typeof(ClothingBlockSlotsOnEquipSystem))]
 public sealed partial class ClothingBlockSlotsOnEquipComponent : Component
 {
     /// <summary>
