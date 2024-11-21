@@ -42,10 +42,11 @@ public sealed class EventPreferencesCommand : LocalizedCommands
 
         var pref = (HumanoidCharacterProfile)_pref.GetPreferences(queriedPlayer.UserId).SelectedCharacter;
 
-        var ui = new EventPreferencePanelEui(queriedPlayer, pref);
+        var ui = new EventPreferencesPanelEui(queriedPlayer, pref);
         _euis.OpenEui(ui, admin);
         ui.SetState();
     }
+
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
         if (args.Length == 1)

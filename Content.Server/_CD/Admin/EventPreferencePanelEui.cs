@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Admin;
 
-public sealed class EventPreferencePanelEui : BaseEui
+public sealed class EventPreferencesPanelEui : BaseEui
 {
     [Dependency] private readonly IPrototypeManager _proto = default!;
 
@@ -16,7 +16,7 @@ public sealed class EventPreferencePanelEui : BaseEui
     private readonly LocatedPlayerData _targetPlayer;
     private List<AntagPrototype> _visibleAntagPrototypes = new List<AntagPrototype>();
 
-    public EventPreferencePanelEui(LocatedPlayerData player, HumanoidCharacterProfile pref)
+    public EventPreferencesPanelEui(LocatedPlayerData player, HumanoidCharacterProfile pref)
     {
         IoCManager.InjectDependencies(this);
         _targetPlayer = player;

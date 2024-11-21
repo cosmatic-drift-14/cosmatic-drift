@@ -4,11 +4,11 @@ using Content.Shared.Eui;
 
 namespace Content.Client._CD.Admin.UI;
 
-public sealed class EventPreferencePanelEui : BaseEui
+public sealed class EventPreferencesPanelEui : BaseEui
 {
     private EventPreferencesPanel EventPreferencesPanel { get; }
 
-    public EventPreferencePanelEui()
+    public EventPreferencesPanelEui()
     {
         EventPreferencesPanel = new EventPreferencesPanel();
     }
