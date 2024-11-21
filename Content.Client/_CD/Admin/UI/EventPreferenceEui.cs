@@ -4,13 +4,13 @@ using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace Content.Client._CD.Admin.UI;
 
-public sealed class EventPreferenceEui : BaseEui
+public sealed class EventPreferencePanelEui : BaseEui
 {
     [Dependency] private readonly IClientAdminManager _admin = default!;
 
     private EventPreferences EventPreferencesPanel { get; }
 
-    public EventPreferenceEui()
+    public EventPreferencePanelEui()
     {
         EventPreferencesPanel = new EventPreferences(_admin);
     }

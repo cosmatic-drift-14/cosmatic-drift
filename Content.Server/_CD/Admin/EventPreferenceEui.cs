@@ -4,12 +4,12 @@ using Content.Shared.Preferences;
 
 namespace Content.Server._CD.Admin;
 
-public sealed class EventPreferenceEui : BaseEui
+public sealed class EventPreferencePanelEui : BaseEui
 {
     private readonly HumanoidCharacterProfile _playerPref;
     private readonly LocatedPlayerData _targetPlayer;
 
-    public EventPreferenceEui(LocatedPlayerData player, HumanoidCharacterProfile pref)
+    public EventPreferencePanelEui(LocatedPlayerData player, HumanoidCharacterProfile pref)
     {
         IoCManager.InjectDependencies(this);
         _targetPlayer = player;
