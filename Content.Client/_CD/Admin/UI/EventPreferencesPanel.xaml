@@ -5,8 +5,6 @@
                Resizable="False"
                >
     <BoxContainer Orientation="Vertical" HorizontalAlignment="Center">
-               >
-    <BoxContainer Orientation="Vertical">
         <Label Name="PlayerLabel"/>
         <Label Name="CharacterLabel"/>
         <cc:HSeparator Margin="12"/>
