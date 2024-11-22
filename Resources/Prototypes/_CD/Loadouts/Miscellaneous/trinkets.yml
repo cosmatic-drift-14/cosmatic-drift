@@ -64,3 +64,9 @@
   storage:
     back:
     - PlushieSharkGrey
+
+- type: loadout
+  id: MedCrutchesForearm
+  storage:
+    back:
+    - MedCrutchesForearm

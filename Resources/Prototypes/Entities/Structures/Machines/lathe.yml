@@ -943,6 +943,7 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - WhiteCane
+      - MedCrutchesForearm
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
