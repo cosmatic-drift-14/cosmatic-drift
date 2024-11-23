@@ -25,6 +25,7 @@
     Chest: MobHumanTorso
     Eyes: MobHumanoidEyes
     HeadTop: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking # CD
     LArm: MobHumanLArm
     RArm: MobHumanRArm
     LHand: MobHumanLHand
