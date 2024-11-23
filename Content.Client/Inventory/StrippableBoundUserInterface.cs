@@ -6,6 +6,7 @@ using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Hands.Controls;
 using Content.Client.Verbs.UI;
+using Content.Shared._CD.Inventory; // _CD
 using Content.Shared.Cuffs;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Ensnaring.Components;
@@ -198,7 +199,8 @@ namespace Content.Client.Inventory
             var entity = container.ContainedEntity;
 
             // If this is a full pocket, obscure the real entity
-            if (entity != null && slotDef.StripHidden)
+            if (entity != null && slotDef.StripHidden
+                && !EntMan.HasComponent<PocketVisibleComponent>(entity.Value)) // _CD - Also check for PocketVisibleComponent
                 entity = _virtualHiddenEntity;
 
             var button = new SlotButton(new SlotData(slotDef, container));
