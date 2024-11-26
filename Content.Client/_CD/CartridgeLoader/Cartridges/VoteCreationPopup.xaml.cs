@@ -24,6 +24,9 @@ public sealed partial class VoteCreationPopup : DefaultWindow
         AddOptionInput();
         AddOptionInput();
 
+        // ContentsContainer trolling
+        ContentsContainer.Margin = new Thickness(3);
+
         // Button handlers
         AddOptionButton.OnPressed += _ => AddOptionInput();
         CancelButton.OnPressed += _ => Close();

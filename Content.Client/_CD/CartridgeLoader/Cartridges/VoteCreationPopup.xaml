@@ -3,9 +3,9 @@
                Title="{Loc vote-link-create-title}"
                MinSize="300 400">
     <PanelContainer StyleClasses="AngleRect">
-        <BoxContainer Orientation="Vertical" Margin="2">
+        <BoxContainer Orientation="Vertical">
             <!-- Question input -->
-            <BoxContainer Orientation="Vertical" Margin="0 4">
+            <BoxContainer Orientation="Vertical">
                 <Label Text="{Loc vote-link-question-label}"
                        StyleClasses="LabelHeading" />
                 <PanelContainer StyleClasses="ButtonSquare">
@@ -15,10 +15,10 @@
                 </PanelContainer>
             </BoxContainer>
 
-            <customControls:HSeparator Margin="0 4" />
+            <customControls:HSeparator Margin="0 4"/>
 
             <!-- Options input -->
-            <BoxContainer Orientation="Vertical" Margin="0 2">
+            <BoxContainer Orientation="Vertical">
                 <Label Text="{Loc vote-link-options-label}"
                        StyleClasses="LabelHeading" />
                 <BoxContainer Name="OptionsContainer"
@@ -33,14 +33,13 @@
                         Margin="0 4" />
             </BoxContainer>
 
-            <customControls:HSeparator Margin="0 4" />
+            <customControls:HSeparator Margin="0 4"/>
 
             <!-- Duration input -->
-            <BoxContainer Orientation="Vertical" Margin="0 4">
+            <BoxContainer Orientation="Vertical">
                 <Label Text="{Loc vote-link-duration-label}"
                        StyleClasses="LabelHeading" />
                 <BoxContainer Orientation="Horizontal"
-                              Margin="0 4"
                               VerticalAlignment="Center">
                     <PanelContainer StyleClasses="ButtonSquare">
                         <SpinBox Name="DurationSpinBox"
@@ -55,7 +54,7 @@
             <!-- Action buttons -->
             <BoxContainer Orientation="Horizontal"
                           HorizontalAlignment="Right"
-                          Margin="0 6 0 0">
+                          Margin="0 4 0 0">
                 <Button Name="CancelButton"
                         Text="{Loc vote-link-cancel}"
                         StyleClasses="OpenRight"
