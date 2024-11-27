@@ -572,7 +572,7 @@
 
 - type: entity
   id: PlayerBorgDerelictGhostRole
-  parent: PlayerBorgDerelictBattery
+  parent: PlayerBorgDerelict
   suffix: Battery, Ghost role
   components:
     - type: GhostRole
