@@ -36,6 +36,7 @@
     # - id: SleeperAgents
     # - id: ZombieOutbreak
     - id: DerelictCyborgSpawn
+    # - id: LoneOpsSpawn
 
 # CD Change - Tripled most event times
 - type: entity
