@@ -19,8 +19,6 @@ public partial class InventorySystem : EntitySystem
 
         _vvm.GetTypeHandler<InventoryComponent>()
             .AddHandler(HandleViewVariablesSlots, ListViewVariablesSlots);
-
-        SubscribeLocalEvent<InventoryComponent, AfterAutoHandleStateEvent>(AfterAutoState);
     }
 
     private void ShutdownSlots()
