@@ -45,7 +45,7 @@ public sealed class IonStormRule : StationEventSystem<IonStormRuleComponent>
             if (CompOrNull<StationMemberComponent>(xform.GridUid)?.Station != chosenStation)
                 continue;
 
-            _ionStorm.IonStormTarget((ent, lawBound, target), xform, chosenStation);
+            _ionStorm.IonStormTarget((ent, lawBound, target));
         }
     }
 }
