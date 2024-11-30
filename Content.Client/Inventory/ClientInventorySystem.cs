@@ -237,7 +237,7 @@ namespace Content.Client.Inventory
 
         public sealed class SlotData
         {
-            public readonly SlotDefinition SlotDef;
+            public SlotDefinition SlotDef;
             public EntityUid? HeldEntity => Container?.ContainedEntity;
             public bool Blocked;
             public bool Highlighted;
