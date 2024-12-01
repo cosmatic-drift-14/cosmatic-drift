@@ -1,3 +1,6 @@
+# Command
+loadout-group-formal-shoes = Formal Shoes
+
 # Civilian
 loadout-group-private-investigator-outerclothing = Private Investigator outer clothing
 loadout-group-private-investigator-gloves = Private Investigator gloves

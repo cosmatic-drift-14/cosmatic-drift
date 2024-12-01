@@ -6,6 +6,9 @@ using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Timing;
+// This really should be namespaced anyways but, later
+// CD
+using Content.Shared._CD.CCVars;
 
 namespace Content.Server.GameTicking.Commands;
 
@@ -22,7 +25,7 @@ public sealed class GhostRespawnCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (_configurationManager.GetCVar(CCVars.RespawnTime) == 0)
+        if (_configurationManager.GetCVar(CDCCVars.RespawnTime) == 0)
         {
             shell.WriteLine("Respawning is disabled, ask an admin to respawn you.");
             return;
@@ -53,7 +56,7 @@ public sealed class GhostRespawnCommand : IConsoleCommand
             return;
         }
         var time = (_gameTiming.CurTime - ghost.TimeOfDeath);
-        var respawnTime = _configurationManager.GetCVar(CCVars.RespawnTime);
+        var respawnTime = _configurationManager.GetCVar(CDCCVars.RespawnTime);
 
         if (respawnTime > time.TotalSeconds)
         {

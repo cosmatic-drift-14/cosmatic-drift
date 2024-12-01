@@ -1,48 +1,48 @@
 using Content.Server.Station.Systems;
-using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
-using Content.Shared._CD.Records;
+using Content.Server.StationRecords;
 using Content.Shared.CriminalRecords;
 using Content.Shared.Security;
 using Content.Shared.StationRecords;
+using Content.Shared._CD.Records;
 using Robust.Server.GameObjects;
 
 namespace Content.Server._CD.Records.Consoles;
 
 public sealed class CharacterRecordConsoleSystem : EntitySystem
 {
-    [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
-    [Dependency] private readonly StationSystem _stationSystem = default!;
-    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
+    [Dependency] private readonly IEntityManager _entity = default!;
+    [Dependency] private readonly StationRecordsSystem _records = default!;
+    [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly UserInterfaceSystem _ui = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordsModifiedEvent>((uid, component, _) => UpdateUi(uid, component));
+        SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordsModifiedEvent>((uid, component, _) =>
+            UpdateUi(uid, component));
 
-        Subs.BuiEvents<CharacterRecordConsoleComponent>(CharacterRecordConsoleKey.Key, subr =>
-        {
-            subr.Event<BoundUIOpenedEvent>((uid, component, _) => UpdateUi(uid, component));
-            subr.Event<CharacterRecordConsoleSelectMsg>(OnKeySelect);
-            subr.Event<CharacterRecordsConsoleFilterMsg>(OnFilterApplied);
-        });
+        Subs.BuiEvents<CharacterRecordConsoleComponent>(CharacterRecordConsoleKey.Key,
+            subr =>
+            {
+                subr.Event<BoundUIOpenedEvent>((uid, component, _) => UpdateUi(uid, component));
+                subr.Event<CharacterRecordConsoleSelectMsg>(OnKeySelect);
+                subr.Event<CharacterRecordsConsoleFilterMsg>(OnFilterApplied);
+            });
     }
 
-    private void OnFilterApplied(EntityUid entity, CharacterRecordConsoleComponent console,
-        CharacterRecordsConsoleFilterMsg msg)
+    private void OnFilterApplied(Entity<CharacterRecordConsoleComponent> ent, ref CharacterRecordsConsoleFilterMsg msg)
     {
-        console.Filter = msg.Filter;
-        UpdateUi(entity, console);
+        ent.Comp.Filter = msg.Filter;
+        UpdateUi(ent);
     }
 
-    private void OnKeySelect(EntityUid entity, CharacterRecordConsoleComponent console,
-        CharacterRecordConsoleSelectMsg msg)
+    private void OnKeySelect(Entity<CharacterRecordConsoleComponent> ent, ref CharacterRecordConsoleSelectMsg msg)
     {
-        console.SelectedIndex = msg.CharacterRecordKey;
-        UpdateUi(entity, console);
+        ent.Comp.SelectedIndex = msg.CharacterRecordKey;
+        UpdateUi(ent);
     }
 
     private void UpdateUi(EntityUid entity, CharacterRecordConsoleComponent? console = null)
@@ -50,7 +50,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         if (!Resolve(entity, ref console))
             return;
 
-        var station = _stationSystem.GetOwningStation(entity);
+        var station = _station.GetOwningStation(entity);
         if (!HasComp<StationRecordsComponent>(station) ||
             !HasComp<CharacterRecordsComponent>(station))
         {
@@ -63,9 +63,11 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         var names = new Dictionary<uint, CharacterRecordConsoleState.CharacterInfo>();
         foreach (var (i, r) in characterRecords)
         {
-            var netEnt = _entityManager.GetNetEntity(r.Owner!.Value);
+            var netEnt = _entity.GetNetEntity(r.Owner!.Value);
             // Admins get additional info to make it easier to run commands
-            var nameJob = console.ConsoleType != RecordConsoleType.Admin ? $"{r.Name} ({r.JobTitle})" : $"{r.Name} ({netEnt}, {r.JobTitle}";
+            var nameJob = console.ConsoleType != RecordConsoleType.Admin
+                ? $"{r.Name} ({r.JobTitle})"
+                : $"{r.Name} ({netEnt}, {r.JobTitle}";
 
             // Apply any filter the user has set
             if (console.Filter != null)
@@ -75,27 +77,29 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             }
 
             if (names.ContainsKey(i))
-                Log.Error($"We somehow have duplicate character record keys, NetEntity: {i}, Entity: {entity}, Character Name: {r.Name}");
+            {
+                Log.Error(
+                    $"We somehow have duplicate character record keys, NetEntity: {i}, Entity: {entity}, Character Name: {r.Name}");
+            }
 
-            names[i] = new CharacterRecordConsoleState.CharacterInfo() { CharacterDisplayName = nameJob, StationRecordKey = r.StationRecordsKey };
+            names[i] = new CharacterRecordConsoleState.CharacterInfo
+                { CharacterDisplayName = nameJob, StationRecordKey = r.StationRecordsKey };
         }
 
         var record =
-            console.SelectedIndex == null || !characterRecords.ContainsKey(console.SelectedIndex!.Value)
-            ? null
-            : characterRecords[console.SelectedIndex.Value];
+            console.SelectedIndex == null || !characterRecords.TryGetValue(console.SelectedIndex!.Value, out var value)
+                ? null
+                : value;
         (SecurityStatus, string?)? securityStatus = null;
 
         // If we need the character's security status, gather it from the criminal records
         if ((console.ConsoleType == RecordConsoleType.Admin ||
-            console.ConsoleType == RecordConsoleType.Security)
+             console.ConsoleType == RecordConsoleType.Security)
             && record?.StationRecordsKey != null)
         {
             var key = new StationRecordKey(record.StationRecordsKey.Value, station.Value);
-            if (_stationRecords.TryGetRecord<CriminalRecord>(key, out var entry))
-            {
+            if (_records.TryGetRecord<CriminalRecord>(key, out var entry))
                 securityStatus = (entry.Status, entry.Reason);
-            }
         }
 
         SendState(entity,
@@ -112,16 +116,17 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
     private void SendState(EntityUid entity, CharacterRecordConsoleState state)
     {
-        _userInterface.SetUiState(entity, CharacterRecordConsoleKey.Key, state);
+        _ui.SetUiState(entity, CharacterRecordConsoleKey.Key, state);
     }
 
     /// <summary>
     /// Almost exactly the same as <see cref="StationRecordsSystem.IsSkipped"/>
     /// </summary>
     private static bool IsSkippedRecord(StationRecordsFilter filter,
-        FullCharacterRecords record, string nameJob)
+        FullCharacterRecords record,
+        string nameJob)
     {
-        bool isFilter = filter.Value.Length > 0;
+        var isFilter = filter.Value.Length > 0;
 
         if (!isFilter)
             return false;
@@ -131,7 +136,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         return filter.Type switch
         {
             StationRecordFilterType.Name =>
-                !nameJob.ToLower().Contains(filterLowerCaseValue),
+                !nameJob.Contains(filterLowerCaseValue, StringComparison.CurrentCultureIgnoreCase),
             StationRecordFilterType.Prints => record.Fingerprint != null
                 && IsFilterWithSomeCodeValue(record.Fingerprint, filterLowerCaseValue),
             StationRecordFilterType.DNA => record.DNA != null
@@ -142,6 +147,6 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
 
     private static bool IsFilterWithSomeCodeValue(string value, string filter)
     {
-        return !value.ToLower().StartsWith(filter);
+        return !value.StartsWith(filter, StringComparison.CurrentCultureIgnoreCase);
     }
 }

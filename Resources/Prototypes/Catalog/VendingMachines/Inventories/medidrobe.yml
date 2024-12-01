@@ -7,10 +7,12 @@
     ClothingUniformJumpsuitMedicalDoctor: 4
     ClothingUniformJumpskirtMedicalDoctor: 4
     ClothingUniformDoctorCasual: 4 # CD
+    ClothingUniformMedicalTechnician: 4 # CD
     ClothingBeltMedical: 4
     ClothingHeadHatBeretMedic: 4
     ClothingHeadNurseHat: 4
     ClothingOuterCoatLab: 4
+    ClothingOuterCoatStylishLab: 4
     ClothingShoesColorWhite: 4
     ClothingHandsGlovesLatex: 4
     ClothingHandsGlovesNitrile: 2
@@ -26,3 +28,4 @@
     ClothingShoesBootsWinterMed: 2
   contrabandInventory:
     ClothingUniformJumpskirtOfLife: 1
+    ClothingUniformJumpsuitMaintSurgeon: 1 # CD

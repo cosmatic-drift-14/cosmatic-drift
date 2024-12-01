@@ -5,6 +5,9 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  - FlowerWreath
+  - Hairflower
+  - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
   - PlushieVox # CD
@@ -34,9 +37,26 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
+  - TowelColorBlack
+  - TowelColorDarkBlue
+  - TowelColorDarkGreen
+  - TowelColorGold
+  - TowelColorGray
+  - TowelColorGreen
+  - TowelColorLightBlue
+  - TowelColorLightBrown
+  - TowelColorMaroon
+  - TowelColorMime
+  - TowelColorOrange
+  - TowelColorPurple
+  - TowelColorRed
+  - TowelColorSilver
+  - TowelColorWhite
+  - TowelColorYellow
   - CDDogtags # CD
   - LunchboxBlue # CD
   - LunchboxYellow # CD
+  - Cane # CD
 
 - type: loadoutGroup
   id: Glasses
@@ -611,6 +631,8 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -717,6 +739,9 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - WorkBoots # CD
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -852,6 +877,8 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ScientistHead
@@ -894,6 +921,7 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - ScienceLabCoat
   - ScienceWintercoat
   - RoboticistLabCoat
@@ -1135,13 +1163,15 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
-
+  - ChiefMedicalOfficerFormalsuit # CD
+  
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
   name: loadout-group-chief-medical-officer-outerclothing
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerLabCoat
+  - ChiefMedicalOfficerModernLabCoat # CD
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
@@ -1158,6 +1188,8 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1184,6 +1216,10 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - ViroJumpsuit # CD
+  - ViroJumpskirt # CD
+  - GeneJumpsuit # CD
+  - GeneJumpskirt # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1191,8 +1227,14 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - MedicalDoctorWintercoat
   # - SeniorPhysicianLabCoat
+  - ViroCoat # CD
+  - ModernViroCoat # CD
+  - ViroWintercoat # CD
+  - GeneCoat # CD
+  - GeneWintercoat # CD
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1244,6 +1286,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
+  - ChemistCasualsuit # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -1251,7 +1294,9 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - ChemistLabCoat
+  - ChemistModernLabCoat # CD
   - ChemistWintercoat
 
 - type: loadoutGroup
@@ -1326,6 +1371,7 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistCasualJumpsuit # CD
 
 - type: loadoutGroup
   id: BoxerJumpsuit

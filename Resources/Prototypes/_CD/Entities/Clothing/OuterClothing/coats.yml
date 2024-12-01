@@ -224,3 +224,113 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
+
+# Labcoats
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatStylishLab
+  name: modern lab coat
+  description: A sleak suit that protects against minor chemical spills.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLab]
+  id: ClothingOuterCoatStylishLabOpened
+  name: modern lab coat
+
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatStylishLabChem
+  name: modern chemist lab coat
+  description: A sleak suit that protects against minor chemical spills. It has orange stripes on the shoulders
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabChem]
+  id: ClothingOuterCoatStylishLabChemOpened
+  name: modern chemist lab coat
+
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatStylishLabCMO
+  name: chief medical officer's modern lab coat
+  description: Custom made sleek blue lab coat for the Chief Medical Officer, offers improved protection against chemical spills and minor cuts.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.95
+        Caustic: 0.65
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabCMO]
+  id: ClothingOuterCoatStylishLabCMOOpened
+  name: chief medical officer's modern lab coat
+
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatLabStylishSeniorPhysician
+  name: modern senior physician lab coat
+  description: A sleak suit that protects against minor chemical spills. Has light blue sleeves and an orange waist trim.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician]
+  id: ClothingOuterCoatLabStylishSeniorPhysicianOpened
+  name: modern senior physician lab coat
+
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatLabStylishViro
+  name: modern virologist lab coat
+  description: A suit that protects against bacteria and viruses. Has an green stripe on the shoulder.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_viro.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_viro.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro]
+  id: ClothingOuterCoatLabStylishViroOpened
+  name: modern virologist lab coat
+
+

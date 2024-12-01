@@ -1,0 +1,11 @@
+# OuterClothing
+- type: loadout 
+  id: ChiefMedicalOfficerModernLabCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatStylishLabCMO
+
+# Uniform
+- type: loadout
+  id: ChiefMedicalOfficerFormalsuit
+  equipment: 
+    jumpsuit: ClothingUniformCMOFormal

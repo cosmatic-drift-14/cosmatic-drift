@@ -80,7 +80,7 @@ namespace Content.IntegrationTests.Tests
 
             await Assert.MultipleAsync(async () =>
             {
-                foreach (var proto in pair.GetPrototypesWithComponent<StorageFillComponent>())
+                foreach (var (proto, fill) in pair.GetPrototypesWithComponent<StorageFillComponent>())
                 {
                     await server.WaitPost(() =>
                     {

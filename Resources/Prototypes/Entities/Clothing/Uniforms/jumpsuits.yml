@@ -270,9 +270,9 @@
   description: It's a turtleneck worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/cmo_turtle.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmoturtle.rsi # CD
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/cmo_turtle.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmoturtle.rsi # CD
 
 - type: entity
   parent: ClothingUniformBase
@@ -1347,6 +1347,36 @@
       - state: equipped-INNERCLOTHING-shirt
         color: "#b30000"
   
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualGreen
+  name: casual green jumpsuit
+  description: A loose worn green shirt with a grey pants, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#00661D"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-jumpsuit
+      - state: inhand-left-shirt
+        color: "#00661D"
+      right:
+      - state: inhand-right-jumpsuit
+      - state: inhand-right-shirt
+        color: "#00661D"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-jumpsuit
+      - state: equipped-INNERCLOTHING-shirt
+        color: "#00661D"
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitFamilyGuy

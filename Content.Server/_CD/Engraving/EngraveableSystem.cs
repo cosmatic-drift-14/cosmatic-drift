@@ -4,17 +4,17 @@ using Content.Server.Popups;
 using Content.Shared.Database;
 using Content.Shared.Popups;
 using Content.Shared.Examine;
-using Content.Shared.Prayer;
 using Content.Shared.Verbs;
 using Robust.Shared.Player;
+using Robust.Shared.Utility;
 
 namespace Content.Server._CD.Engraving;
 
 public sealed class EngraveableSystem : EntitySystem
 {
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
-    [Dependency] private readonly PopupSystem _popupSystem = default!;
+    [Dependency] private readonly PopupSystem _popup = default!;
+    [Dependency] private readonly QuickDialogSystem _dialog = default!;
 
     public override void Initialize()
     {
@@ -24,22 +24,23 @@ public sealed class EngraveableSystem : EntitySystem
         SubscribeLocalEvent<EngraveableComponent, GetVerbsEvent<ActivationVerb>>(AddEngraveVerb);
     }
 
-    private void OnExamined(EntityUid uid, EngraveableComponent comp, ExaminedEvent args)
+    private void OnExamined(Entity<EngraveableComponent> ent, ref ExaminedEvent args)
     {
-        if (comp.EngravedMessage == string.Empty)
-        {
-            args.PushMarkup(Loc.GetString(comp.NoEngravingText));
-            return;
-        }
+        var msg = new FormattedMessage();
+        msg.AddMarkupOrThrow(Loc.GetString(ent.Comp.EngravedMessage == string.Empty
+            ? ent.Comp.NoEngravingText
+            : ent.Comp.HasEngravingText));
 
-        args.PushMarkup(Loc.GetString(comp.HasEngravingText));
-        args.PushMarkup(Loc.GetString(comp.EngravedMessage));
+        if (ent.Comp.EngravedMessage != string.Empty)
+            msg.AddMarkupOrThrow(Loc.GetString(ent.Comp.EngravedMessage));
+
+        args.PushMessage(msg, 1);
     }
 
-    private void AddEngraveVerb(EntityUid uid, EngraveableComponent comp, GetVerbsEvent<ActivationVerb> args)
+    private void AddEngraveVerb(Entity<EngraveableComponent> ent, ref GetVerbsEvent<ActivationVerb> args)
     {
         // First check if it's already been engraved. If it has, don't let them do it again.
-        if (comp.EngravedMessage != string.Empty)
+        if (ent.Comp.EngravedMessage != string.Empty)
             return;
 
         // We need an actor to give the verb.
@@ -55,19 +56,26 @@ public sealed class EngraveableSystem : EntitySystem
             Text = Loc.GetString("engraving-verb-engrave"),
             Act = () =>
             {
-                _quickDialog.OpenDialog(actor.PlayerSession, Loc.GetString("engraving-verb-engrave"), Loc.GetString("engraving-popup-ui-message"), (string message) =>
-                {
-                    // If either the actor or comp have magically vanished
-                    if (actor?.PlayerSession != null && actor.PlayerSession.AttachedEntity != null && HasComp<EngraveableComponent>(uid))
+                _dialog.OpenDialog(actor.PlayerSession,
+                    Loc.GetString("engraving-verb-engrave"),
+                    Loc.GetString("engraving-popup-ui-message"),
+                    (string message) =>
                     {
-                        comp.EngravedMessage = message;
-                        _popupSystem.PopupEntity(Loc.GetString(comp.EngraveSuccessMessage), actor.PlayerSession.AttachedEntity.Value, actor.PlayerSession, PopupType.Medium);
-                        _adminLogger.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(actor.PlayerSession.AttachedEntity):player} engraved an item with message: {message}");
-                    }
-                });
+                        // If either the actor or comp have magically vanished
+                        if (actor.PlayerSession.AttachedEntity == null || !HasComp<EngraveableComponent>(ent))
+                            return;
+
+                        ent.Comp.EngravedMessage = message;
+                        _popup.PopupEntity(Loc.GetString(ent.Comp.EngraveSuccessMessage),
+                            actor.PlayerSession.AttachedEntity.Value,
+                            actor.PlayerSession,
+                            PopupType.Medium);
+                        _adminLogger.Add(LogType.Action,
+                            LogImpact.Low,
+                            $"{ToPrettyString(actor.PlayerSession.AttachedEntity):player} engraved an item with message: {message}");
+                    });
             },
             Impact = LogImpact.Low,
-
         };
         engraveVerb.Impact = LogImpact.Low;
         args.Verbs.Add(engraveVerb);

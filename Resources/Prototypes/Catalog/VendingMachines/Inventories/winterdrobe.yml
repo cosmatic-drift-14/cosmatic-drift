@@ -25,6 +25,7 @@
     ClothingNeckScarfStripedAce: 3
     ClothingNeckScarfStripedAro: 3
     ClothingNeckScarfStripedBiSexual: 3
+    ClothingNeckScarfStripedGay: 3
     ClothingNeckScarfStripedInter: 3
     ClothingNeckScarfStripedLesbian: 3
     ClothingNeckScarfStripedPan: 3
@@ -42,6 +43,7 @@
     ClothingOuterWinterColorOrange: 6
     ClothingOuterWinterColorWhite: 6
     ClothingOuterWinterColorYellow: 6
+    # End CD
 
   emaggedInventory:
     ClothingNeckScarfStripedSyndieGreen: 3

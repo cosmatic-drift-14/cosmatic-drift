@@ -15,7 +15,7 @@
 - type: startingGear
   id: LawyerGear
   equipment:
-    shoes: ClothingShoesBootsLaceup
+    # shoes: ClothingShoesBootsLaceup | CD, removed due to loadout addtion.
     id: LawyerPDA
     ears: ClothingHeadsetSecurity
   inhand:

@@ -21,7 +21,7 @@
 - type: loadout
   id: SecurityPlateCarrier
   equipment:
-    belt: ClothingBeltSecurityPlateCarrier
+    belt: ClothingBeltSecurityPlateCarrierFilled
 
 - type: loadout
   id: SecurityGreatcoat
