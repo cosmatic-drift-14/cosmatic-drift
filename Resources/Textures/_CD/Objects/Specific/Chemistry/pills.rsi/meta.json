@@ -14,6 +14,9 @@
       "name": "pill1"
     },
     {
+      "name": "pill2"
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },
