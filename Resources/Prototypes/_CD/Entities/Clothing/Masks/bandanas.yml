@@ -1,7 +1,7 @@
 - type: entity
-  parent: [ClothingMaskBaseButcherable, BaseFoldable]
-  id: ClothingMaskDepartBandanaBase
   abstract: true
+  parent: [ ClothingMaskBaseButcherable, BaseFoldable ]
+  id: ClothingMaskDepartBandanaBase
   components:
   - type: Appearance
   - type: Foldable
@@ -35,9 +35,9 @@
     hideOnToggle: true
 
 - type: entity
-  parent: [ClothingNeckBase, BaseFoldable]
-  id: ClothingMaskDepartBandanaBaseDown
   abstract: true
+  parent: [ ClothingNeckBase, BaseFoldable ]
+  id: ClothingMaskDepartBandanaBaseDown
   components:
   - type: Foldable
     folded: true
@@ -78,7 +78,7 @@
     sprite: _CD/Clothing/Mask/cargo_bandana.rsi
 
 - type: entity
-  parent: [ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo]
+  parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo ]
   id: ClothingNeckBandCargo
   name: cargo bandana
 
@@ -95,6 +95,6 @@
     sprite: _CD/Clothing/Mask/security_bandana.rsi
 
 - type: entity
-  parent: [ClothingMaskDepartBandanaBaseDown, ClothingMaskBandSec]
+  parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandSec ]
   id: ClothingNeckBandSec
   name: security bandana

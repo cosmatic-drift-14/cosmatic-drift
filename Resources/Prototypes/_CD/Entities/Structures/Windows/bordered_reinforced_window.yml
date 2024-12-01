@@ -1,7 +1,7 @@
 - type: entity
+  parent: ReinforcedWindow
   id: BorderedReinforcedWindow
   name: bordered reinforced window
-  parent: ReinforcedWindow
   components:
   - type: Sprite
     drawdepth: WallTops
