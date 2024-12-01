@@ -7,7 +7,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Toolshed;
 
-namespace Content.Server._CD.Toolshed.Commands;
+namespace Content.Server._CD.Administration.Commands;
 
 [ToolshedCommand, AdminCommand(AdminFlags.Admin)]
 public sealed class PrefCommand : ToolshedCommand
