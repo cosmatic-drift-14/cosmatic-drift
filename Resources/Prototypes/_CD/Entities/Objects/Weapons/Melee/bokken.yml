@@ -1,7 +1,7 @@
 - type: entity
-  name: bokken
   parent: BaseItem
   id: Bokken
+  name: bokken
   description: A simple but sleek training sword.
   components:
   - type: Sprite

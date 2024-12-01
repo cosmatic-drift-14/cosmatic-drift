@@ -1,20 +1,11 @@
 using Content.Server.EUI;
-using Content.Shared._CD.CryoSleep;
 using Content.Shared.Eui;
+using Content.Shared._CD.CryoSleep;
 
 namespace Content.Server._CD.CryoSleep;
 
-public sealed class CryoSleepEui : BaseEui
+public sealed class CryoSleepEui(EntityUid mind, CryoSleepSystem cryoSys) : BaseEui
 {
-    private readonly CryoSleepSystem _cryoSystem;
-    private readonly EntityUid _mind;
-
-    public CryoSleepEui(EntityUid mind, CryoSleepSystem cryoSys)
-    {
-        _mind = mind;
-        _cryoSystem = cryoSys;
-    }
-
     public override void HandleMessage(EuiMessageBase msg)
     {
         base.HandleMessage(msg);
@@ -26,9 +17,9 @@ public sealed class CryoSleepEui : BaseEui
             return;
         }
 
-        if (_mind is { Valid: true } body)
+        if (mind is { Valid: true })
         {
-            _cryoSystem.CryoStoreBody(body);
+            cryoSys.CryoStoreBody(mind);
         }
 
         Close();

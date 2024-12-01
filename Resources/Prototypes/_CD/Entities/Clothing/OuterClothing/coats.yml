@@ -75,7 +75,7 @@
 
 # Cargo Gorka
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
   id: ClothingOuterCoatCargoBomber
   name: cargo gorka
   description: A heavy canvas gorka for cold shifts in Cargo.
@@ -92,7 +92,7 @@
 
 # Foreman Coat
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
   id: ClothingOuterCoatCargoForeman
   name: foreman jacket
   description: A comfortable padded leather jacket for a logistics foreman
@@ -103,7 +103,7 @@
     sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoForeman]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoForeman ]
   id: ClothingOuterCoatCargoForemanOpened
   name: foreman jacket
 
@@ -247,7 +247,6 @@
   id: ClothingOuterCoatStylishLabOpened
   name: modern lab coat
 
-
 - type: entity
   parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatStylishLabChem
@@ -268,7 +267,6 @@
   id: ClothingOuterCoatStylishLabChemOpened
   name: modern chemist lab coat
 
-
 - type: entity
   parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatStylishLabCMO
@@ -287,10 +285,9 @@
         Caustic: 0.65
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabCMO]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabCMO ]
   id: ClothingOuterCoatStylishLabCMOOpened
   name: chief medical officer's modern lab coat
-
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -308,10 +305,9 @@
         Caustic: 0.75
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician ]
   id: ClothingOuterCoatLabStylishSeniorPhysicianOpened
   name: modern senior physician lab coat
-
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -329,8 +325,6 @@
         Caustic: 0.75
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro ]
   id: ClothingOuterCoatLabStylishViroOpened
   name: modern virologist lab coat
-
-

@@ -2,7 +2,7 @@
   id: MothWingsMembral
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Moth]
+  speciesRestriction: [ Moth ]
   sprites:
   - sprite: _CD/Mobs/Customization/Moth/moth_wings.rsi
     state: membral_primary

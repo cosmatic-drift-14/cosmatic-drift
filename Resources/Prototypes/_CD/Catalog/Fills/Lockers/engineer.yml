@@ -1,15 +1,23 @@
+- type: entityTable
+  id: LockerFillAtmosphericsCosmetic
+  table: !type:AllSelector
+    children:
+    - id: ClothingMaskGasAtmos
+    - id: ClothingNeckScarfStripedLightBlue
+      prob: 0.25
+    - id: ClothingOuterWinterAtmos
+      prob: 0.25
+    - id: ClothingUniformJumpsuitAtmosCasual
+      prob: 0.25
+    - id: GasAnalyzer
+
 - type: entity
   id: LockerAtmosphericsFilledCosmetic
   suffix: Cosmetic
   parent: LockerAtmospherics
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingMaskGasAtmos
-      - id: ClothingNeckScarfStripedLightBlue
-        prob: 0.25
-      - id: ClothingOuterWinterAtmos
-        prob: 0.25
-      - id: ClothingUniformJumpsuitAtmosCasual
-        prob: 0.25
-      - id: GasAnalyzer
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: LockerFillAtmosphericsCosmetic
+

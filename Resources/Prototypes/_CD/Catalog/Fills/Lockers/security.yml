@@ -1,35 +1,49 @@
+- type: entityTable
+  id: LockerFillWardenCosmetic
+  table: !type:AllSelector
+    children:
+    - id: FlashlightSeclite
+    - id: ClothingHeadHatWarden
+    - id: ClothingHeadHatBeretWarden
+    - id: ClothingBeltSecurityFilled
+    - id: Flash
+    - id: ClothingEyesGlassesSunglasses
+    - id: ClothingShoesBootsJack
+    - id: ClothingOuterCoatWarden
+    - id: ClothingOuterWinterWarden
+    - id: ClothingEyesHudSecurity
+    - id: ClothingUniformWardenCasual
+    - id: ClothingUniformJumpskirtWardenCasual
+
 - type: entity
   id: LockerWardenFilledCosmetic
   suffix: Cosmetic
   parent: LockerWarden
   components:
-  - type: StorageFill
-    contents:
-      - id: FlashlightSeclite
-      - id: ClothingHeadHatWarden
-      - id: ClothingHeadHatBeretWarden
-      - id: ClothingBeltSecurityFilled
-      - id: Flash
-      - id: ClothingEyesGlassesSunglasses
-      - id: ClothingShoesBootsJack
-      - id: ClothingOuterCoatWarden
-      - id: ClothingOuterWinterWarden
-      - id: ClothingEyesHudSecurity
-      - id: ClothingUniformWardenCasual
-      - id: ClothingUniformJumpskirtWardenCasual
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: LockerFillWardenCosmetic
+
+- type: entityTable
+  id: LockerFillDetectiveCosmetic
+  table: !type:AllSelector
+    children:
+    - id: ClothingEyesHudSecurity
+      prob: 0.3
+    - id: ClothingHeadHatFedoraBrown
+    - id: ClothingNeckTieDet
+    - id: ClothingOuterVestDetective
+    - id: ClothingOuterCoatDetective
+    - id: FlashlightSeclite
+    - id: DrinkDetFlask
 
 - type: entity
   id: LockerDetectiveFilledCosmetic
   suffix: Cosmetic
   parent: LockerDetective
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingEyesHudSecurity
-        prob: 0.3
-      - id: ClothingHeadHatFedoraBrown
-      - id: ClothingNeckTieDet
-      - id: ClothingOuterVestDetective
-      - id: ClothingOuterCoatDetective
-      - id: FlashlightSeclite
-      - id: DrinkDetFlask
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: LockerFillDetectiveCosmetic

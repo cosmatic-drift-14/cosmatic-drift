@@ -1,9 +1,8 @@
-using System.Collections;
+using Content.Server.Database;
+using Content.Shared._CD.Records;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
-using Content.Server.Database;
-using Content.Shared._CD.Records;
 
 namespace Content.Server._CD.Records;
 
@@ -21,25 +20,25 @@ public static class RecordsSerialization
 
     private static bool DeserializeBool(JsonElement e, string key, bool def)
     {
-        if (e.TryGetProperty(key, out var v))
-        {
-            if (v.ValueKind == JsonValueKind.True)
-                return true;
-            if (v.ValueKind == JsonValueKind.False)
-                return false;
-        }
+        if (!e.TryGetProperty(key, out var v))
+            return def;
 
-        return def;
+        return v.ValueKind switch
+        {
+            JsonValueKind.True => true,
+            JsonValueKind.False => false,
+            _ => def,
+        };
     }
 
     [return: NotNullIfNotNull(nameof(def))]
     private static string? DeserializeString(JsonElement e, string key, string? def)
     {
-        if (e.TryGetProperty(key, out var v))
-        {
-            if (v.ValueKind == JsonValueKind.String)
-                return v.GetString() ?? def;
-        }
+        if (!e.TryGetProperty(key, out var v))
+            return def;
+
+        if (v.ValueKind == JsonValueKind.String)
+            return v.GetString() ?? def;
 
         return def;
     }
@@ -68,7 +67,8 @@ public static class RecordsSerialization
             emergencyContactName: DeserializeString(e, nameof(def.EmergencyContactName), def.EmergencyContactName),
             hasWorkAuthorization: DeserializeBool(e, nameof(def.HasWorkAuthorization), def.HasWorkAuthorization),
             identifyingFeatures: DeserializeString(e, nameof(def.IdentifyingFeatures), def.IdentifyingFeatures),
-            allergies: DeserializeString(e, nameof(def.Allergies), def.Allergies), drugAllergies: DeserializeString(e, nameof(def.DrugAllergies), def.DrugAllergies),
+            allergies: DeserializeString(e, nameof(def.Allergies), def.Allergies),
+            drugAllergies: DeserializeString(e, nameof(def.DrugAllergies), def.DrugAllergies),
             postmortemInstructions: DeserializeString(e, nameof(def.PostmortemInstructions), def.PostmortemInstructions),
             medicalEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Medical),
             securityEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Security),
@@ -84,20 +84,10 @@ public static class RecordsSerialization
 
     public static List<CDModel.CharacterRecordEntry> GetEntries(PlayerProvidedCharacterRecords records)
     {
-        List<CDModel.CharacterRecordEntry> entries = new();
-        foreach (var medical in records.MedicalEntries)
-        {
-            entries.Add(ConvertEntry(medical, CDModel.DbRecordEntryType.Medical));
-        }
-        foreach (var security in records.SecurityEntries)
-        {
-            entries.Add(ConvertEntry(security, CDModel.DbRecordEntryType.Security));
-        }
-        foreach (var employment in records.EmploymentEntries)
-        {
-            entries.Add(ConvertEntry(employment, CDModel.DbRecordEntryType.Employment));
-        }
-        return entries;
+        return records.MedicalEntries.Select(medical => ConvertEntry(medical, CDModel.DbRecordEntryType.Medical))
+            .Concat(records.SecurityEntries.Select(security => ConvertEntry(security, CDModel.DbRecordEntryType.Security)))
+            .Concat(records.EmploymentEntries.Select(employment => ConvertEntry(employment, CDModel.DbRecordEntryType.Employment)))
+            .ToList();
     }
 
     public static JsonDocument SerializeRecords(PlayerProvidedCharacterRecords pRecords)

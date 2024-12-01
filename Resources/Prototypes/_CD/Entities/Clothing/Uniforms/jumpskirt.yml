@@ -13,7 +13,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtAcademia
   name: academia dress
-  description: A plaid dress for the fashionable student. 
+  description: A plaid dress for the fashionable student.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
@@ -22,7 +22,7 @@
 
 # Casual
 
-#Militant
+# Militant
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtSecurtyCasual

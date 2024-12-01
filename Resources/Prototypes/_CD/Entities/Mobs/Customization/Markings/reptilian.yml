@@ -2,7 +2,7 @@
   id: LizardChestDragonwings
   bodyPart: Tail
   markingCategory: Chest
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
     state: body_dragonwings
@@ -11,7 +11,7 @@
   id: LizardHeadLEDVisor
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [ Reptilian ]
   coloring:
     default:
       type:

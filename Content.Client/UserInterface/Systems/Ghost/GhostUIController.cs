@@ -7,6 +7,8 @@ using Robust.Shared.Configuration;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Shared.Console;
+// CD
+using Content.Shared._CD.CCVars;
 
 namespace Content.Client.UserInterface.Systems.Ghost;
 
@@ -68,7 +70,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         }
 
         Gui.Visible = _system?.IsGhost ?? false;
-        Gui.Update(_system?.AvailableGhostRoleCount, _system?.Player?.CanReturnToBody, _system?.Player?.TimeOfDeath, _cfg.GetCVar(CCVars.RespawnTime));
+        Gui.Update(_system?.AvailableGhostRoleCount, _system?.Player?.CanReturnToBody, _system?.Player?.TimeOfDeath, _cfg.GetCVar(CDCCVars.RespawnTime));
     }
 
     private void OnPlayerRemoved(GhostComponent component)
