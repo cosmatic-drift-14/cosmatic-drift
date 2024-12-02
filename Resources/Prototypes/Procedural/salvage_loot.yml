@@ -22,10 +22,10 @@
           cost: 2
         - proto: CircuitImprinter
           cost: 2
-        - proto: CloningConsoleComputerCircuitboard
-          cost: 2
-        - proto: CloningPodMachineCircuitboard
-          cost: 2
+#        - proto: CloningConsoleComputerCircuitboard
+#          cost: 2 # CD change, removed cloning
+#        - proto: CloningPodMachineCircuitboard
+#          cost: 2
         - proto: CognizineChemistryBottle
         - proto: FoodBoxDonkpocketCarp
           prob: 0.5
@@ -41,8 +41,8 @@
         - proto: GyroscopeUnanchored
           cost: 2
           prob: 0.1
-        - proto: MedicalScannerMachineCircuitboard
-          cost: 2
+#        - proto: MedicalScannerMachineCircuitboard
+#          cost: 2 #CD change, removed cloning
         - proto: NuclearBombKeg
           cost: 5
         - proto: OmnizineChemistryBottle
