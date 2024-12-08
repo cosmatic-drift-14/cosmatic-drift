@@ -1,0 +1,21 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc 'job-slots-console-title'}"
+                      SetSize="600 400"
+                      MinSize="600 300">
+    <BoxContainer Orientation="Vertical" Margin="4">
+        <LineEdit Name="SearchBar"
+                  PlaceHolder="{Loc 'job-slots-console-search-placeholder'}"
+                  HorizontalExpand="True"
+                  Margin="0 0 0 4" />
+
+        <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
+            <BoxContainer Name="DepartmentsList"
+                          Orientation="Vertical"
+                          VerticalExpand="True"
+                          HorizontalExpand="True">
+                <!-- Populated with departments -->
+            </BoxContainer>
+        </ScrollContainer>
+    </BoxContainer>
+</controls:FancyWindow>
