@@ -60536,8 +60536,6 @@ entities:
       pos: 16.5,39.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17400
   - uid: 12735
@@ -60546,8 +60544,6 @@ entities:
       pos: 18.5,39.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17400
   - uid: 12774
@@ -60556,8 +60552,6 @@ entities:
       pos: 17.5,39.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17400
   - uid: 12967
