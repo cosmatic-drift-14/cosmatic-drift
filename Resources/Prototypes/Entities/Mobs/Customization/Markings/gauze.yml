@@ -16,7 +16,7 @@
   id: GauzeLefteyePad
   bodyPart: Eyes
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Arachnid, Rodentia, Vulpkanin] # CD: Rodentia, Vulpkanins.
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Rodentia, Vulpkanin] # CD: Rodentia, Vulpkanins.
   coloring:
     default:
       type:
