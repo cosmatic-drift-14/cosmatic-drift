@@ -21,6 +21,15 @@ public sealed class EventPreferencesPanelEui : BaseEui
         IoCManager.InjectDependencies(this);
         _targetPlayer = player;
         _playerPref = pref;
+
+        var visibleAntagPrototypes = new List<AntagPrototype>();
+        foreach (var antagPrototype in _proto.EnumeratePrototypes<AntagPrototype>())
+        {
+            if(antagPrototype.VisiblePreference)
+                visibleAntagPrototypes.Add(antagPrototype);
+        }
+
+        _visibleAntagPrototypes = visibleAntagPrototypes;
     }
 
     public override EuiStateBase GetNewState()
@@ -30,19 +39,5 @@ public sealed class EventPreferencesPanelEui : BaseEui
             _playerPref,
             _visibleAntagPrototypes
             );
-    }
-
-    public async void SetState()
-    {
-        var visibleAntagPrototypes = new List<AntagPrototype>();
-        foreach (var antagPrototype in _proto.EnumeratePrototypes<AntagPrototype>())
-        {
-            if(antagPrototype.VisiblePreference)
-                visibleAntagPrototypes.Add(antagPrototype);
-        }
-
-        _visibleAntagPrototypes = visibleAntagPrototypes;
-
-        StateDirty();
     }
 }

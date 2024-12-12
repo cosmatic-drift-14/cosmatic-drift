@@ -44,7 +44,7 @@ public sealed class EventPreferencesCommand : LocalizedCommands
 
         var ui = new EventPreferencesPanelEui(queriedPlayer, pref);
         _eui.OpenEui(ui, admin);
-        ui.SetState();
+        ui.StateDirty();
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
