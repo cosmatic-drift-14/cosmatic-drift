@@ -14,7 +14,7 @@ public sealed class EventPreferencesCommand : LocalizedCommands
 {
     [Dependency] private readonly IPlayerLocator _locator = default!;
     [Dependency] private readonly IServerPreferencesManager _pref = default!;
-    [Dependency] private readonly EuiManager _euis = default!;
+    [Dependency] private readonly EuiManager _eui = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
     public override string Command => "eventpreferences";
 
@@ -43,7 +43,7 @@ public sealed class EventPreferencesCommand : LocalizedCommands
         var pref = (HumanoidCharacterProfile)_pref.GetPreferences(queriedPlayer.UserId).SelectedCharacter;
 
         var ui = new EventPreferencesPanelEui(queriedPlayer, pref);
-        _euis.OpenEui(ui, admin);
+        _eui.OpenEui(ui, admin);
         ui.SetState();
     }
 

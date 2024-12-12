@@ -28,8 +28,7 @@ public sealed class EventPreferencesPanelEui : BaseEui
         if (state is not EventPreferencePanelEuiState s)
             return;
 
-        EventPreferencesPanel.SetDetails(s.Username, s.Preferences);
-        EventPreferencesPanel.SetPreferenceList(s.Preferences, s.VisibleAntagPrototypes);
+        EventPreferencesPanel.SetDetails(s.Username, s.Preferences, s.VisibleAntagPrototypes);
     }
 
 }
