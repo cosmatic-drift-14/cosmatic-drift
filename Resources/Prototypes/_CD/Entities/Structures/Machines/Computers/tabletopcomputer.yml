@@ -600,6 +600,26 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
+# Job slots console
+- type: entity
+  parent: [ BaseStructureComputerTabletop, ComputerJobSlots ]
+  id: ComputerTabletopJobSlots
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "computerLayerBody" ]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: computer_tabletop
+    - map: [ "computerLayerKeyboard" ]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: generic_keyboard_tabletop
+    - map: [ "computerLayerScreen" ]
+      sprite: Structures/Machines/computers.rsi
+      state: command
+    - map: [ "computerLayerKeys" ]
+      sprite: Structures/Machines/computers.rsi
+      state: generic_keys
+
 # Testing/Debugging
 - type: entity
   parent: [ BaseStructureComputerTabletop, ComputerSensorMonitoring ]
