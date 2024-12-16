@@ -2,6 +2,7 @@
   id: DefaultMapPool
   maps:
   - Aspid
+  - Amber
   - Bagel
   - Box
   - Cog
