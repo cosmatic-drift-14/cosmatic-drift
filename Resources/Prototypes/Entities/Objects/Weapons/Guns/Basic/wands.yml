@@ -77,7 +77,7 @@
     capacity: 5
     count: 5
   - type: Item
-    size: Normal
+    size: 30
     inhandVisuals:
       left:
       - state: locker-inhand-left

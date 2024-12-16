@@ -49,6 +49,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    # heldPrefix: cardboard
   - type: Extractable
     grindableSolutionName: cardboard
   - type: SolutionContainerManager
@@ -57,8 +58,6 @@
         reagents:
         - ReagentId: Cellulose
           Quantity: 6
-  - type: Item
-    heldPrefix: cardboard
 
 - type: entity
   parent: MaterialCardboard
@@ -126,6 +125,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    # heldPrefix: cloth
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -146,8 +146,6 @@
   - type: Construction
     graph: WebObjects # not sure if I should either keep this here or just make another prototype. Will keep it here just in case.
     node: cloth
-  - type: Item
-    heldPrefix: cloth
 
 - type: entity
   parent: MaterialCloth
@@ -439,6 +437,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    heldPrefix: cotton
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -460,8 +459,6 @@
     tags:
       - ClothMade
       - RawMaterial
-  - type: Item
-    heldPrefix: cotton
 
 - type: entity
   parent: MaterialCotton
@@ -613,6 +610,8 @@
     stackType: WebSilk
   - type: Item
     size: 50
+    sprite: Objects/Materials/silk.rsi
+    heldPrefix: silk
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -636,9 +635,6 @@
     tags:
       - ClothMade
       - RawMaterial
-  - type: Item
-    sprite: Objects/Materials/silk.rsi
-    heldPrefix: silk
 
 - type: entity
   parent: MaterialWebSilk
@@ -762,6 +758,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    heldPrefix: bones
   - type: Food
   - type: BadFood
   - type: SolutionContainerManager
@@ -771,8 +768,6 @@
         reagents:
         - ReagentId: Vitamin
           Quantity: 3
-  - type: Item
-    heldPrefix: bones
 
 - type: entity
   parent: MaterialBones
@@ -829,7 +824,7 @@
     - goliath_hide_3
   - type: Item
     size: 60
-    # heldPrefix: goliathhide
+    heldPrefix: goliathhide
     sprite: Objects/Materials/hide.rsi
 
 - type: entity
