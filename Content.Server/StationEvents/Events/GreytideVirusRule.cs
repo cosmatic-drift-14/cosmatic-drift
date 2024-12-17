@@ -33,7 +33,7 @@ public sealed class GreytideVirusRule : StationEventSystem<GreytideVirusRuleComp
         virusComp.Severity ??= virusComp.SeverityRange.Next(_random);
         virusComp.Severity = Math.Min(virusComp.Severity.Value, virusComp.AccessGroups.Count);
 
-        stationEvent.StartAnnouncement = Loc.GetString("station-event-greytide-virus-start-announcement", ("severity", virusComp.Severity.Value));
+        stationEvent.StartAnnouncement = Loc.GetString("cd-station-event-greytide-virus-start-announcement"); // CD: Changed announcement, removed severity indicator
         base.Added(uid, virusComp, gameRule, args);
     }
     protected override void Started(EntityUid uid, GreytideVirusRuleComponent virusComp, GameRuleComponent gameRule, GameRuleStartedEvent args)
