@@ -1,0 +1,14 @@
+﻿<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:cdadmin="clr-namespace:Content.Client._CD.Admin.UI"
+               xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
+               Title="{Loc cd-eventpreferencepanel-title}"
+               Resizable="False"
+               >
+    <BoxContainer Orientation="Vertical" HorizontalAlignment="Center">
+        <Label Name="PlayerLabel"/>
+        <Label Name="CharacterLabel"/>
+        <cc:HSeparator Margin="12"/>
+        <cdadmin:EventPreferences Name="EventPreferenceControl"/>
+        <Control Margin="12"/>
+    </BoxContainer>
+</DefaultWindow>
