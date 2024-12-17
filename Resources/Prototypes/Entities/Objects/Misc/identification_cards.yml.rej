@@ -1,0 +1,8 @@
+--- Resources/Prototypes/Entities/Objects/Misc/identification_cards.yml
++++ Resources/Prototypes/Entities/Objects/Misc/identification_cards.yml
+@@ -828,3 +828,5 @@
+     - NuclearOperative
+     - SyndicateAgent
+     - DV-SpareSafe # CD
++  - type: NanoChatCard # CD
++    notificationsMuted: true
