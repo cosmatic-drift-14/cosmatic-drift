@@ -552,10 +552,11 @@
   - type: StationEvent
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 5
+    weight: 3 # CD: Changed from 5 to 3
     minimumPlayers: 25
     reoccurrenceDelay: 20
   - type: GreytideVirusRule
+    severity: 1 # CD: Locked to one severity
     accessGroups:
     - Cargo
     - Command
