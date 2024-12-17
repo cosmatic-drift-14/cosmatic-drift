@@ -30,12 +30,11 @@ public sealed partial class EventPreferences : Control
         {
             var label = new Label();
 
-            var color = Color.Red;
-            if (userPreferences.AntagPreferences.Contains(listablePreference))
-                color = Color.Green;
+            if (!userPreferences.AntagPreferences.Contains(listablePreference))
+                continue;
 
             label.Text = Loc.GetString(listablePreference.Name);
-            label.Modulate = color;
+            label.Modulate = Color.Green;
             label.HorizontalAlignment = HAlignment.Center;
 
             EventPrefContainer.AddChild(label);

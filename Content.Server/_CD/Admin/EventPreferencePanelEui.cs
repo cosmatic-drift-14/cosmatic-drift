@@ -14,7 +14,7 @@ public sealed class EventPreferencesPanelEui : BaseEui
 
     private readonly HumanoidCharacterProfile _playerPref;
     private readonly LocatedPlayerData _targetPlayer;
-    private List<AntagPrototype> _visibleAntagPrototypes = new List<AntagPrototype>();
+    private readonly List<AntagPrototype> _visibleAntagPrototypes;
 
     public EventPreferencesPanelEui(LocatedPlayerData player, HumanoidCharacterProfile pref)
     {
