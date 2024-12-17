@@ -75,6 +75,7 @@ public sealed partial class NanoChatUiFragment : BoxContainer
             }
         };
 
+        MessageInput.OnTextEntered += _ => SendMessage();
         SendButton.OnPressed += _ => SendMessage();
         DeleteChatButton.OnPressed += _ => DeleteCurrentChat();
     }
