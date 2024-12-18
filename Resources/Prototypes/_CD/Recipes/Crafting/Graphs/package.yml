@@ -1,0 +1,13 @@
+- type: constructionGraph
+  id: FoldSmugglerPackage
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: emptyPacket 
+      steps:
+      - material: Cardboard
+        amount: 1
+        doAfter: 3
+  - node: emptyPacket 
+    entity: EmptyPacket 

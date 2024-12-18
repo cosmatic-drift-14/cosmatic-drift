@@ -1,0 +1,23 @@
+- type: seed
+  id: mindleaf
+  name: seeds-mindleaf-name
+  noun: seeds-noun-seeds
+  displayName: seeds-mindleaf-display-name
+  plantRsi: _CD/Objects/Specific/Hydroponics/mindleaf.rsi
+  packetPrototype: MindleafSeeds
+  productPrototypes:
+    - LeavesMindleaf
+  lifespan: 180
+  maturation: 12
+  production: 12
+  yield: 2
+  potency: 20
+  growthStages: 3
+  waterConsumption: 0.25
+  idealLight: 9
+  idealHeat: 303
+  chemicals:
+    MindleafSap:
+      Min: 1 
+      Max: 6
+      PotencyDivisor: 20
