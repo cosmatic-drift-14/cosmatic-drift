@@ -1,0 +1,10 @@
+- type: latheRecipe
+  id: HandheldCrewMonitor
+  result: HandheldCrewMonitorEmpty
+  category: Tools
+  completetime: 4
+  materials:
+    Glass: 600
+    Steel: 600
+    Plastic: 600
+    Gold: 300

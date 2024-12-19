@@ -153,6 +153,7 @@
       - id: HandheldGPSBasic
       - id: MedkitFilled
       #CD Addions
+      - id: HandheldCrewMonitor
       - id: ETUGarmentBag
         prob: 0.3
       - id: BookSOPMedical
