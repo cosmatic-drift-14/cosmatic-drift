@@ -25,6 +25,7 @@
     - BaseStationSiliconLawCrewsimov
     - BaseStationAllEventsEligible
     - BaseStationNanotrasen
+    - BaseStationVoteLink # _CD
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
