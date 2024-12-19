@@ -906,6 +906,7 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - WhiteCane
+      - HandheldCrewMonitor # CD addition
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
