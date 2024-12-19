@@ -6,6 +6,7 @@ using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Hands.Controls;
 using Content.Client.Verbs.UI;
+using Content.Shared._CD.Inventory; // _CD
 using Content.Shared.Cuffs;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Ensnaring.Components;
@@ -211,7 +212,8 @@ namespace Content.Client.Inventory
 
             // If this is a full pocket, obscure the real entity
             // this does not work for modified clients because they are still sent the real entity
-            if (entity != null && _strippable.IsStripHidden(slotDef, _player.LocalEntity))
+            if (entity != null && _strippable.IsStripHidden(slotDef, _player.LocalEntity)
+                               && !EntMan.HasComponent<PocketVisibleComponent>(entity.Value)) // _CD - Also check for PocketVisibleComponent
                 entity = _virtualHiddenEntity;
 
             var button = new SlotButton(new SlotData(slotDef, container));
