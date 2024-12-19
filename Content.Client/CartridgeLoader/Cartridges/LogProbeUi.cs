@@ -23,6 +23,6 @@ public sealed partial class LogProbeUi : UIFragment
         if (state is not LogProbeUiState logProbeUiState)
             return;
 
-        _fragment?.UpdateState(logProbeUiState.PulledLogs);
+        _fragment?.UpdateState(logProbeUiState); // CD - just take the state
     }
 }
