@@ -2,7 +2,7 @@
   id: DefaultMapPool
   maps:
   - Aspid
-  - Amber
+  #- Amber CD, temporarily derotated
   - Bagel
   - Box
   - Cog
