@@ -46,6 +46,7 @@ public static class RecordsSerialization
     private static List<PlayerProvidedCharacterRecords.RecordEntry> DeserializeEntries(List<CDModel.CharacterRecordEntry> entries, CDModel.DbRecordEntryType ty)
     {
         return entries.Where(e => e.Type == ty)
+            .OrderBy(e => e.Id) // attempt at fixing the record order changing bug.
             .Select(e => new PlayerProvidedCharacterRecords.RecordEntry(e.Title, e.Involved, e.Description))
             .ToList();
     }
