@@ -31,3 +31,9 @@
     damage:
       types:
         Blunt: 8 # It's bigger, and heavy, it does an extra 2 damage vs the regular clipboard.
+
+# Casset Transcript
+- type: entity
+  parent: Paper
+  id: TapeRecorderTranscript
+  name: record transcript
