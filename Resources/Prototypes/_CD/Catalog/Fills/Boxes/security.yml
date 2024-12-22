@@ -17,7 +17,5 @@
       - id: TapeRecorder
         amount: 1
   - type: Sprite
-    layers:
-      - state: box_security
-      #- sprite: _CD/Objects/Storage/boxes.rsi
-      #  - state: recorder
+    sprite: _CD/Objects/Storage/boxes.rsi
+    state: recorder
