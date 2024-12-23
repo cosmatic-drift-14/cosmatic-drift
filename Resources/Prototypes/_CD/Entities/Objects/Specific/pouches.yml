@@ -25,6 +25,5 @@
   - type: PhysicalComposition
     materialComposition:
       Plastic: 250
-  - PocketVisible # REQUIRES #482
   - type: StaticPrice
     price: 20
