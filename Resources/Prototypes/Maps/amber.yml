@@ -2,8 +2,9 @@
   id: Amber
   mapName: 'Amber'
   mapPath: /Maps/amber.yml
-  minPlayers: 7
-  maxPlayers: 50
+  minPlayers: 5 #CD change from 7 to 5.
+  maxPlayers: 25 #CD change from 50 to 25.
+  patchfile: /CDMapPatches/amber.yml #CD: Apply map patch.
   stations:
     Amber:
       stationProto: StandardNanotrasenStation
@@ -30,24 +31,28 @@
             Reporter: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
+            SeniorEngineer: [ 1, 1 ] #CD Role.
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 2, 4 ]
             TechnicalAssistant: [ 1, 1 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ] #CD Role.
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 2, 4 ]
+            MedicalDoctor: [ 2, 3 ] #CD change from 2-4 to 2-3.
             Paramedic: [ 2, 2 ]
             MedicalIntern: [ 1, 2 ]
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ] #CD Role
             Scientist: [ 4, 4 ]
             ResearchAssistant: [ 1, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 4, 4 ]
+            SeniorOfficer: [ 1, 1 ] #CD Role.
+            SecurityOfficer: [ 3, 3 ] #CD change from 4-4 to 3-3.
             Detective: [ 1, 1 ]
             SecurityCadet: [ 1, 1 ]
             Lawyer: [ 1, 1 ]
