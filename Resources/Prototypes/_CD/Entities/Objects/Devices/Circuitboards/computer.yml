@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: JobSlotsComputerCircuitboard
+  name: job slots computer board
+  description: A computer printed circuit board for a job slots console.
+  components:
+    - type: Sprite
+      state: cpu_command
+    - type: ComputerBoard
+      prototype: ComputerJobSlots
