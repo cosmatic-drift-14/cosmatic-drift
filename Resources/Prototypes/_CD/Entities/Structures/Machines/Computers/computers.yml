@@ -1,0 +1,48 @@
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerJobSlots
+  name: job slots console
+  description: Manage station job slots and positions.
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "computerLayerBody" ]
+      state: computer
+    - map: [ "computerLayerKeyboard" ]
+      state: generic_keyboard
+    - map: [ "computerLayerScreen" ]
+      state: command
+    - map: [ "computerLayerKeys" ]
+      state: generic_keys
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: Computer
+    board: ComputerMassMediaCircuitboard
+  - type: DeviceNetworkRequiresPower
+  - type: JobSlotsConsole
+    blacklist:
+    - Captain
+    - CentralCommandOfficial
+    - StationAi
+    - Borg
+    - CBURN
+    - ERTLeader
+    - ERTChaplain
+    - ERTJanitor
+    - ERTMedical
+    - ERTSecurity
+    - ERTEngineer
+    - DeathSquad
+  - type: ActivatableUI
+    key: enum.JobSlotsConsoleUiKey.Key
+  - type: ActivatableUIRequiresVision
+  - type: Transform
+    anchored: true
+  - type: AccessReader
+    access: [ [ "HeadOfPersonnel" ] ]
+  - type: UserInterface
+    interfaces:
+      enum.JobSlotsConsoleUiKey.Key:
+        type: JobSlotsConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface

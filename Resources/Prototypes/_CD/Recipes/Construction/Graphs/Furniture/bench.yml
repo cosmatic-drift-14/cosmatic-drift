@@ -1,4 +1,4 @@
-#Benches
+# Benches
 
 - type: constructionGraph
   id: Bench
@@ -143,7 +143,7 @@
           steps:
             - tool: Screwing
               doAfter: 1
-    
+
     - node: BenchParkBambooRight
       entity: BenchParkBambooRight
       edges:
@@ -202,7 +202,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 1  
+              doAfter: 1
 
     - node: BenchSteelLeft
       entity: BenchSteelLeft
@@ -214,7 +214,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 1 
+              doAfter: 1
 
     - node: BenchSteelRight
       entity: BenchSteelRight

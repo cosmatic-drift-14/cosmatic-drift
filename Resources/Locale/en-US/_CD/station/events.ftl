@@ -5,3 +5,5 @@ station-event-space-dust-moderate-start-announcement = The station is passing th
 station-event-meteor-swarm-small-start-announcement = A small meteor field has been detected on collision course with the station. Please be cautious around exposed areas of the station.
 station-event-meteor-swarm-moderate-start-announcement = A meteor field has been detected on collision course with the station. Crew are advised to avoid exposed areas of the station, and inform engineering staff of any damaged locations.
 station-event-meteor-swarm-heavy-start-announcement = A large meteor field is on a collision course with the station. Station crew are advised to head towards a central, safe area, and engineering staff should prepare for heavy damage. 
+
+cd-station-event-greytide-virus-start-announcement = Error detected in the station's airlock encryption subroutines. The Station AI or any engineering staff are recommended to find and repair any abnormal systems.

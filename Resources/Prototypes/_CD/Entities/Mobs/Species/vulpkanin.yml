@@ -21,8 +21,8 @@
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
-  # - type: TypingIndicator # If you wish to add a typing indicator, go to Textures/_CD/Effects/speech.rsi and uncomment this.
-  #   proto: vulpkanin
+  - type: TypingIndicator
+    proto: vulpkanin
   - type: Vocal
     sounds:
       Male: MaleVulpkanin
@@ -41,7 +41,6 @@
       types:
         Blunt: 2
         Slash: 3
-  - type: Perishable
   - type: Temperature # These are moth values, but do make sense for Vulpkanin. The heat damage per second might be high, but we can tune it if there are issues.
     heatDamageThreshold: 320
     coldDamageThreshold: 230

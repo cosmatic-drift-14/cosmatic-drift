@@ -11,12 +11,7 @@ public enum AcceptCryoUiButton
 }
 
 [Serializable, NetSerializable]
-public sealed class AcceptCryoChoiceMessage : EuiMessageBase
+public sealed class AcceptCryoChoiceMessage(AcceptCryoUiButton button) : EuiMessageBase
 {
-    public readonly AcceptCryoUiButton Button;
-
-    public AcceptCryoChoiceMessage(AcceptCryoUiButton button)
-    {
-        Button = button;
-    }
+    public readonly AcceptCryoUiButton Button = button;
 }

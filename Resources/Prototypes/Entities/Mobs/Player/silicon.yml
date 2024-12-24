@@ -34,10 +34,10 @@
   - type: IgnoreUIRange
   - type: StationAiHeld
   - type: StationAiOverlay
+  - type: ShowElectrocutionHUD
   - type: ActionGrant
     actions:
     - ActionJumpToCore
-    - ActionShowJobIcons
     - ActionSurvCameraLights
     - ActionAIViewLaws
   - type: UserInterface
@@ -74,6 +74,7 @@
     canShuttle: false
     title: comms-console-announcement-title-station-ai
     color: "#2ed2fd"
+  - type: ShowJobIcons
 
 - type: entity
   id: AiHeldIntellicard
@@ -255,7 +256,7 @@
 
 - type: entity
   id: AntimovCircuitBoard
-  parent: BaseElectronics
+  parent: [BaseElectronics, BaseSyndicateContraband]
   name: law board (Antimov)
   description: An electronics board containing the Antimov lawset.
   components:
@@ -305,6 +306,7 @@
         unshaded:
           Empty: { state: empty }
           Occupied: { state: full }
+  - type: Intellicard
 
 - type: entity
   id: PlayerStationAiEmpty
@@ -397,6 +399,9 @@
     drawFov: false
   - type: Examiner
   - type: InputMover
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
   - type: Tag
     tags:
     - HideContextMenu
@@ -430,27 +435,8 @@
 
 # Borgs
 - type: entity
-  id: PlayerBorgGeneric
-  parent: BorgChassisGeneric
-  suffix: Battery, Tools
-  components:
-  - type: ContainerFill
-    containers:
-      borg_brain:
-        - PositronicBrain
-      borg_module:
-        - BorgModuleTool
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellMedium
-  - type: RandomMetadata
-    nameSegments: [names_borg]
-
-- type: entity
   id: PlayerBorgBattery
-  parent: BorgChassisGeneric
+  parent: BorgChassisSelectable
   suffix: Battery
   components:
   - type: ContainerFill
@@ -544,3 +530,37 @@
     - PlayerBorgSyndicateAssaultGhostRole
     - PlayerBorgSyndicateAssaultGhostRole # Saboteurs are kinda like cyborg medics, we want less.
     - PlayerBorgSyndicateSaboteurGhostRole
+
+- type: entity
+  id: PlayerBorgDerelict
+  parent: BorgChassisDerelict
+  suffix: Battery, Module
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+        - PositronicBrain
+      borg_module:
+        - BorgModuleTool
+        - BorgModuleFireExtinguisher
+        - BorgModuleGPS
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+  - type: RandomMetadata
+    nameSegments: [names_borg]
+
+- type: entity
+  id: PlayerBorgDerelictGhostRole
+  parent: PlayerBorgDerelict
+  suffix: Ghost role
+  components:
+    - type: GhostRole
+      name: ghost-role-information-derelict-cyborg-name
+      description: ghost-role-information-derelict-cyborg-description
+      rules: ghost-role-information-silicon-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable

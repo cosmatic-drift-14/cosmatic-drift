@@ -1,18 +1,25 @@
+- type: entityTable
+  id: LockerFillParamedicCosmetic
+  table: !type:AllSelector
+    children:
+    - id: ClothingOuterCoatParamedicWB
+    - id: ClothingHeadHatParamedicsoft
+    - id: ClothingOuterCoatBlueHiVis
+    - id: ClothingOuterWinterPara
+    - id: ClothingUniformJumpsuitParamedic
+    - id: ClothingUniformJumpskirtParamedic
+    - id: ClothingEyesHudMedical
+    - id: ClothingHandsGlovesLatex
+    - id: ClothingHeadsetMedical
+    - id: ClothingMaskSterile
+    - id: ETUGarmentBag
+
 - type: entity
   id: LockerParamedicFilledCosmetic
   suffix: Cosmetic
   parent: LockerParamedic
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterCoatParamedicWB
-      - id: ClothingHeadHatParamedicsoft
-      - id: ClothingOuterCoatBlueHiVis
-      - id: ClothingOuterWinterPara
-      - id: ClothingUniformJumpsuitParamedic
-      - id: ClothingUniformJumpskirtParamedic
-      - id: ClothingEyesHudMedical
-      - id: ClothingHandsGlovesLatex
-      - id: ClothingHeadsetMedical
-      - id: ClothingMaskSterile
-      - id: ETUGarmentBag
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: LockerFillParamedicCosmetic

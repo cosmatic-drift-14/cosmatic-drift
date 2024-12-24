@@ -15,7 +15,7 @@
 - type: startingGear
   id: PsychologistGear
   equipment:
-    shoes: ClothingShoesLeather
+    # shoes: ClothingShoesLeather | CD, removed due to loadout addtion.
     id: PsychologistPDA
     ears: ClothingHeadsetMedical
   storage:

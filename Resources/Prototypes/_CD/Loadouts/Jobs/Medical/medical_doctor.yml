@@ -1,11 +1,92 @@
+# Jumpsuit
 - type: loadout
   id: MedicalCasualsuit
   equipment: 
     jumpsuit: ClothingUniformDoctorCasual
 
+- type: loadout
+  id: MedicalTechnician
+  equipment: 
+    jumpsuit: ClothingUniformMedicalTechnician
+
+- type: loadout
+  id: ViroJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitVirology
+
+- type: loadout
+  id: ViroJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtVirology
+
+- type: loadout
+  id: GeneJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGenetics
+
+- type: loadout
+  id: GeneJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtGenetics
+
+# Back
+- type: loadout
+  id: ViroBackpack
+  equipment:
+    back: ClothingBackpackVirology
+
+- type: loadout
+  id: ViroSatchel
+  equipment:
+    back: ClothingBackpackSatchelVirology
+
+- type: loadout
+  id: ViroDuffel
+  equipment:
+    back: ClothingBackpackDuffelVirology
+
+- type: loadout
+  id: GeneBackpack
+  equipment:
+    back: ClothingBackpackGenetics
+
+- type: loadout
+  id: GeneSatchel
+  equipment:
+    back: ClothingBackpackSatchelGenetics
+
+- type: loadout
+  id: GeneDuffel
+  equipment:
+    back: ClothingBackpackDuffelGenetics
 
 # OuterClothing
 - type: loadout 
   id: ModernLabCoat
   equipment: 
     outerClothing: ClothingOuterCoatStylishLab
+
+- type: loadout
+  id: ViroWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterViro
+
+- type: loadout 
+  id: ViroCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatLabViro
+
+- type: loadout 
+  id: ModernViroCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatLabStylishViro
+
+- type: loadout
+  id: GeneWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterGen
+
+- type: loadout 
+  id: GeneCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatLabGene

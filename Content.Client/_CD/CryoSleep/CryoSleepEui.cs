@@ -13,18 +13,7 @@ public sealed class CryoSleepEui : BaseEui
     public CryoSleepEui()
     {
         _window = new AcceptCryoWindow();
-
-        _window.DenyButton.OnPressed += _ =>
-        {
-            SendMessage(new AcceptCryoChoiceMessage(AcceptCryoUiButton.Deny));
-            _window.Close();
-        };
-
-        _window.AcceptButton.OnPressed += _ =>
-        {
-            SendMessage(new AcceptCryoChoiceMessage(AcceptCryoUiButton.Accept));
-            _window.Close();
-        };
+        _window.OnChoice += choice => SendMessage(new AcceptCryoChoiceMessage(choice));
     }
 
     public override void Opened()
@@ -37,5 +26,4 @@ public sealed class CryoSleepEui : BaseEui
     {
         _window.Close();
     }
-
 }

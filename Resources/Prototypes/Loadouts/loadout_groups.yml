@@ -7,6 +7,7 @@
   loadouts:
   - FlowerWreath
   - Hairflower
+  - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
   - PlushieVox # CD
@@ -50,12 +51,12 @@
   - TowelColorPurple
   - TowelColorRed
   - TowelColorSilver
-  - TowelColorLightBlue
   - TowelColorWhite
   - TowelColorYellow
   - CDDogtags # CD
   - LunchboxBlue # CD
   - LunchboxYellow # CD
+  - Cane # CD
   - MedCrutchesForearm # CD
 
 - type: loadoutGroup
@@ -631,6 +632,8 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -737,6 +740,9 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - WorkBoots # CD
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -872,6 +878,8 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ScientistHead
@@ -1156,7 +1164,8 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
-
+  - ChiefMedicalOfficerFormalsuit # CD
+  
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
   name: loadout-group-chief-medical-officer-outerclothing
@@ -1180,6 +1189,8 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1206,6 +1217,10 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - ViroJumpsuit # CD
+  - ViroJumpskirt # CD
+  - GeneJumpsuit # CD
+  - GeneJumpskirt # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1216,6 +1231,11 @@
   - ModernLabCoat # CD
   - MedicalDoctorWintercoat
   # - SeniorPhysicianLabCoat
+  - ViroCoat # CD
+  - ModernViroCoat # CD
+  - ViroWintercoat # CD
+  - GeneCoat # CD
+  - GeneWintercoat # CD
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1267,6 +1287,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
+  - ChemistCasualsuit # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -1351,6 +1372,7 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistCasualJumpsuit # CD
 
 - type: loadoutGroup
   id: BoxerJumpsuit

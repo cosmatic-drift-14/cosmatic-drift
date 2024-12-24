@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "copyright": "berlytwintails and shortheart by cephalopod.",
+    "license": "CC-BY-SA-3.0",  
+    "states": [
+      {
+        "name": "berlytwintails",
+        "directions": 4
+      },
+      {
+        "name": "shortheart",
+        "directions": 4
+      }
+    ]
+  }

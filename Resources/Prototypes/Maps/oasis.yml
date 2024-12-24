@@ -20,7 +20,7 @@
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
-            Bartender: [ 2, 2 ]
+            Bartender: [ 1, 2 ] #CD change from 2-2 to 1-2.
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
             Janitor: [ 3, 3 ]
@@ -34,20 +34,20 @@
             SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 5, 5 ]
-            TechnicalAssistant: [ 4, 4 ]
+            TechnicalAssistant: [ 2, 2 ] #CD change from 4 to 2.
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 6, 6 ]
+            MedicalDoctor: [ 4, 4 ] #CD change from 6 to 4.
             Paramedic: [ 2, 2 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalIntern: [ 2, 2 ] #CD change from 4 to 2.
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]  #CD role
             Scientist: [ 5, 5 ]
-            ResearchAssistant: [ 6, 6 ]
+            ResearchAssistant: [ 2, 2 ] #CD change from 6 to 2.
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
             #security
@@ -61,7 +61,7 @@
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 4, 4 ]
+            CargoTechnician: [ 3, 3 ] #CD change from 4 to 3.
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]

@@ -66,6 +66,12 @@
     - PlushieSharkGrey
 
 - type: loadout
+  id: Cane
+  storage:
+    back:
+    - Cane
+
+- type: loadout
   id: MedCrutchesForearm
   storage:
     back:

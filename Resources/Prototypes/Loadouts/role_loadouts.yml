@@ -7,6 +7,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - FormalShoes # CD
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
@@ -20,6 +21,7 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -28,7 +30,7 @@
 # Silicons
 - type: roleLoadout
   id: JobStationAi
-  nameDataset: names_ai
+  nameDataset: NamesAI
 
 # Civilian
 - type: roleLoadout
@@ -56,6 +58,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -67,6 +70,7 @@
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -92,6 +96,7 @@
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -104,6 +109,7 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -186,6 +192,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -433,7 +440,7 @@
   - MedicalMask
   - MedicalDoctorJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalSpecializationBackpack # CD change from MedicalBackpack
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
@@ -514,6 +521,7 @@
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets

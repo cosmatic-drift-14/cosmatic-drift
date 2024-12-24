@@ -1,8 +1,8 @@
 # Pride Pins Box
 - type: entity
-  name: pride pin box
   parent: BoxCardboard
   id: BoxPridePins
+  name: pride pin box
   description: This box is filled with pride.
   components:
     - type: StorageFill

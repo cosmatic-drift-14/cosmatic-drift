@@ -1,6 +1,6 @@
 - type: entity
-  id: CigCartonPurple
   parent: CigCartonGreen
+  id: CigCartonPurple
   name: De Jure carton
   description: A carton containing 6 packets of De Jure.
   components:
@@ -16,8 +16,8 @@
         amount: 5
 
 - type: entity
-  id: CigCartonCandy
   parent: CigCartonGreen
+  id: CigCartonCandy
   name: Sugar Rush carton
   description: A carton containing 6 packets of Sugar Rush.
   components:

@@ -34,19 +34,19 @@
             SeniorEngineer: [ 1, 1 ] #CD Role
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 3, 3 ]
-            TechnicalAssistant: [ 4, 4 ]
+            TechnicalAssistant: [ 2, 2 ] #CD change from 4 to 2.
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD Role
-            Chemist: [ 2, 3 ]
+            Chemist: [ 2, 2 ] #CD change from 3 to 2.
             MedicalDoctor: [ 3, 3 ]
             Paramedic: [ 1, 1 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalIntern: [ 2, 2 ] #CD change from 4 to 2.
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD Role
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 4, 4 ]
+            ResearchAssistant: [ 2, 2 ] #CD change from 4 to 2.
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]

@@ -1,6 +1,6 @@
 - type: entity
-  id: CigPackPurple
   parent: CigPackBase
+  id: CigPackPurple
   name: De Jure packet
   description: Your divine right to smoke. Tastes like olives and fake gold.
   components:
@@ -14,8 +14,8 @@
       amount: 10
 
 - type: entity
-  id: CigPackCandy
   parent: CigPackBase
+  id: CigPackCandy
   name: Sugar Rush packet
   description: It's sweetened!
   components:
