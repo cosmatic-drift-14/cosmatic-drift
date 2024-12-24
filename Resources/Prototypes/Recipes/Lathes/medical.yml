@@ -249,18 +249,3 @@
   materials:
     Steel: 100
     Plastic: 100
-
-- type: latheRecipe # CD
-  id: MedCrutchesForearm
-  result: MedCrutchesForearm
-  completetime: 2
-  materials:
-    Steel: 200
-    Plastic: 150
-
-- type: latheRecipe # CD
-  id: ReagentPouch
-  result: ReagentPouch
-  completetime: 2
-  materials:
-    Plastic: 250

@@ -944,7 +944,6 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
       - MedCrutchesForearm # CD
-      - ReagentPouch # CD
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
