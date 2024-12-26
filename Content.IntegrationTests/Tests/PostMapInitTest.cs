@@ -62,6 +62,7 @@ namespace Content.IntegrationTests.Tests
             "Train",
             "Oasis",
             "Cog",
+            "Gate",
             "Amber",
             "Ferrous", // CD Map
             "Aspid", // CD Map
