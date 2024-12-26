@@ -907,6 +907,7 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
       - HandheldCrewMonitor # CD addition
+      - MedCrutchesForearm # CD
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
