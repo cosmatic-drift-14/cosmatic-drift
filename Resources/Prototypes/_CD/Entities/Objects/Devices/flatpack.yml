@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseFlatpack
+  id: JobSlotsComputerFlatpack
+  name: job slots console flatpack
+  description: A flatpack used for constructing a job slots console.
+  components:
+  - type: Flatpack
+    entity: ComputerJobSlots
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#334E6D"
+    - state: icon-default
