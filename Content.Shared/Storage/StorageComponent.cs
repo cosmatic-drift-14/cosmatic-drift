@@ -42,6 +42,14 @@ namespace Content.Shared.Storage
 
         [DataField("areaInsert")]
         public bool AreaInsert;  // "Attacking" with the storage entity causes it to insert all nearby storables after a delay
+        
+        /// <summary>
+        /// Open the storage window when pressing E.
+        /// When false you can still open the inventory using verbs.
+        /// </summary>
+        [DataField]
+        public bool OpenOnActivate = true;
+
 
         [DataField("areaInsertRadius")]
         public int AreaInsertRadius = 1;
