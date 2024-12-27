@@ -38,7 +38,7 @@ public sealed class RoundEndVoteSystem : EntitySystem
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
 
         // Set the round restart time just in case the vote does not work for whatever reason.
-        RoundEndTime = TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.RoundRestartTime));
+        _cfg.OnValueChanged(CCVars.RoundRestartTime, (value) => RoundEndTime = TimeSpan.FromSeconds(value), true);
     }
 
     private void OnRoundRestart(RoundRestartCleanupEvent args)
