@@ -46,7 +46,7 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StationSystem _stationSystem = default!;
 
-        [Dependency] private readonly ShuttleVoteSystem _cdShuttleVoteSystem = default!;
+        [Dependency] private readonly RoundEndVoteSystem _cdRoundEndVoteSystem = default!;
 
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 
@@ -279,7 +279,7 @@ namespace Content.Server.RoundEnd
             _countdownTokenSource?.Cancel();
             _countdownTokenSource = new();
 
-            countdownTime ??= TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.RoundRestartTime));
+            countdownTime ??= _cdRoundEndVoteSystem.RoundEndTime;
             int time;
             string unitsLocString;
             if (countdownTime.Value.TotalSeconds < 60)
@@ -368,7 +368,7 @@ namespace Content.Server.RoundEnd
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
                     // CD: reuse this code for our shuttle vote because this would have needed to be disabled anyway
-                    _cdShuttleVoteSystem.RunRestartVote();
+                    _cdRoundEndVoteSystem.RunRestartVote();
                     _autoCalledBefore = true;
                     _lastShuttleVoteRoundTime = _gameTicker.RoundDuration();
                 }
