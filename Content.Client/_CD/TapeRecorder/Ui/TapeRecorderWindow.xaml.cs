@@ -11,9 +11,9 @@ namespace Content.Client._CD.TapeRecorder.Ui;
 [GenerateTypedNameReferences]
 public sealed partial class TapeRecorderWindow : FancyWindow
 {
-    private IEntityManager _entMan;
+    private readonly IEntityManager _entMan;
 
-    private EntityUid _owner;
+    private readonly EntityUid _owner;
     private bool _onCooldown;
     private bool _hasCassette;
     private TapeRecorderMode _mode = TapeRecorderMode.Stopped;
