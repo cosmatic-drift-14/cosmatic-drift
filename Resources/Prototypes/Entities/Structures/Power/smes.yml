@@ -139,8 +139,8 @@
   - type: Machine
     board: SMESAdvancedMachineCircuitboard
   - type: Battery
-    maxCharge: 16000000
-    startingCharge: 16000000
+    maxCharge: 24000000 # CD: Changed from 16 to 24
+    startingCharge: 24000000
   - type: PowerMonitoringDevice
     group: SMES
     sourceNode: input
