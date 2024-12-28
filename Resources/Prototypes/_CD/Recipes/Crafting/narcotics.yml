@@ -1,0 +1,21 @@
+- type: construction
+  name: wrapped bake package
+  id: wrappedBakePackage
+  graph: WrappedBakePackage
+  startNode: start
+  targetNode: bakeWrapped
+  category: construction-category-misc
+  description: "Wrap up a packet of Bake for export."
+  icon: { sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi, state: brown_icon }
+  objectType: Item
+
+- type: construction
+  name: folded smuggling packet
+  id: FoldSmugglerPackage
+  graph: FoldSmugglerPackage
+  startNode: start
+  targetNode: emptyPacket
+  category: construction-category-misc
+  description: "Fold a packet to smuggle narcotics"
+  icon: { sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi, state: brown_icon }
+  objectType: Item

@@ -20,4 +20,6 @@
     FoodButter: 3
     FoodCheese: 1
     FoodMeat: 6
+  contrabandInventory:
+    PillCanisterHappiness: 2 # _CD 14 Happiness Pills 
     

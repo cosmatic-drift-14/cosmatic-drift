@@ -1,0 +1,573 @@
+# Stimulants - Synthetic
+
+- type: reagent
+  id: Dynamoxine
+  name: reagent-name-dynamoxine
+  group: Narcotics
+  desc: reagent-desc-dynamoxine
+  physicalDesc: reagent-physical-desc-sour
+  flavor: sharp
+  color: "#965A7D"
+  boilingPoint: 212.0
+  meltingPoint: 170.0
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.5
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.15
+        sprintSpeedModifier: 1.15
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 6.1 # Careful.
+        damage:
+          types:
+            Bloodloss: 5
+            Asphyxiation: 5
+            Poison: 2
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Epinephrine # DO NOT USE A FUCKING EPEN
+            min: 1
+        damage:
+          types:
+            Bloodloss: 5
+            Asphyxiation: 5
+            Poison: 3
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Epinephrine # God help you if you mix these two.
+          min: 1
+        reagent: Dynamoxine
+        amount: 0.5
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Epinephrine 
+          min: 1
+        reagent: Epinephrine
+        amount: -1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: ChloralHydrate
+          min: 1
+        reagent: ChloralHydrate
+        amount: -10
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 2
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 2
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 2
+        type: Add
+      - !type:GenericStatusEffect
+        key: ForcedSleep
+        time: 2
+        type: Remove
+        conditions:
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 8 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          reagent: WeakStimulant
+          min: 6
+        reagent: Addictine
+        amount: 0.1
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 8
+      - !type:ModifyBleedAmount
+        amount: -0.5
+      - !type:GenericStatusEffect
+        key: Adrenaline # combat stim
+        component: IgnoreSlowOnDamage
+        time: 3 # slightly worse then Epi
+    Medicine:
+      metabolismRate: 1.0
+      effects:
+        - !type:ResetNarcolepsy
+        - !type:SatiateHunger
+          factor: 0.75
+        - !type:SatiateThirst
+          factor: 0.75
+        - !type:HealthChange
+          conditions:
+          - !type:TotalDamage
+            min: 65
+          damage:
+            groups:
+              Burn: -0.4
+              Brute: -0.4
+
+# Organic
+
+# Mindleaf / Raw form
+# Cannot be metabolizes, can be ground into Breakout, which can be processed into Rust and Bake using other chemicals
+# Sap is used to make Stray / Tea
+
+- type: reagent
+  id: MindleafSap
+  name: reagent-name-mindleafsap
+  group: Narcotics
+  desc: reagent-desc-mindleafsap
+  flavor: bitter
+  color: "#CCDD33"
+  physicalDesc: reagent-physical-desc-opaque
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 5
+  - !type:PlantAdjustHealth
+    amount: -2.5
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
+      - !type:GenericStatusEffect
+        key: SeeingRainbows # why do you think its toxic?
+        component: SeeingRainbows
+        type: Add
+        time: 2
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        probability: 0.75 # You -WILL- vomit, makes for a good natural alternative to Ipecac though.
+
+# Stray / Tea form
+# Tea bag can be crafted by hand, add to water 1-1 to create a soothing tea
+# Makes you feel at ease, numbs minor pain and keeps you awake. Metabolizes slowly
+# Relatively safe, no OD limit and has minor addiction risk, 40u?
+
+- type: reagent
+  id: MindleafTea
+  name: reagent-name-stray
+  parent: BaseDrink
+  desc: reagent-desc-stray
+  physicalDesc: reagent-physical-desc-exotic-smelling
+  flavor: spicy #   w h y  i s  i t  s p i c y ?
+  color: "#8E4E00"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+    Medicine:
+      metabolismRate : 0.04 # Technically a narcotic, it takes a while for the body to process the toxins.
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "reagent-effect-antidepressant-mild1"
+          - "reagent-effect-antidepressant-mild2"
+          - "reagent-effect-antidepressant-mild3"
+          - "reagent-effect-antidepressant-mild4"
+          - "reagent-effect-painkiller-mild1"
+          - "reagent-effect-painkiller-mild2"
+          - "reagent-effect-painkiller-mild3"
+          - "reagent-effect-painkiller-mild4"
+        probability: 0.1
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows # More processed, less toxic form of the sap, still a drug
+        type: Add
+        time: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 2 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          min: 40
+        reagent: Addictine
+        amount: 0.05
+  metamorphicSprite:
+    sprite: _CD/Objects/Consumable/Drinks/strayglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+# Breakout / Coarse Powder form
+# Direct process from grinding Mindleaf, can be crafted into more potent drugs
+# Extremely dangerous form, better off used to create Rust and Bake
+# 15u OD, causes jittering and seizures, causes caustic damage to kidneys and liver above 5u, 
+# User feels invincable while high, metabolizes into Polytrinic Acid at high doses
+# Worst addiction risk of all Mindleaf types
+
+- type: reagent
+  id: Breakout
+  name: reagent-name-breakout
+  group: Narcotics
+  desc: reagent-desc-breakout
+  flavor: bitter
+  color: "#C8FFC8"
+  physicalDesc: reagent-physical-desc-coarse
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.05
+        sprintSpeedModifier: 1.05
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+        damage:
+          types:
+            Caustic: 0.1
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages:
+          - "reagent-effect-ragechem-intense1"
+          - "reagent-effect-ragechem-intense2"
+          - "reagent-effect-ragechem-intense3"
+          - "reagent-effect-ragechem-intense4"
+          - "reagent-effect-ragechem-intense5"
+          - "reagent-effect-ragechem-intense6"
+        probability: 0.3
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+      - !type:Emote
+        emote: Scream # makes you screna sometimes
+        showInChat: true
+        probability: 0.05
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        reagent: PolytrinicAcid
+        amount: 1
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 30 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          min: 2
+        reagent: Addictine
+        amount: 4
+      - !type:GenericStatusEffect
+        key: Adrenaline # I'M FUCKIN' INVINCIBLE!
+        component: IgnoreSlowOnDamage
+        time: 1
+
+# Refined Organic
+
+# Rust / Smokable form
+# Made from Breakout, Tranexamic Acid and Hydroxide at high temperature
+# Highly dangerous, metabolizes rapidly into Histamine at high doses
+# Blocks most pain, makes the user feel highly motivated 
+# OD causes mass expulsion of stomach contents
+# Second worse addiction risk of all Mindleaf types
+
+- type: reagent
+  id: Rust
+  name: reagent-name-rust
+  group: Narcotics
+  desc: reagent-desc-rust
+  flavor: syrupy
+  color: "#FFFFB4"
+  physicalDesc: reagent-physical-desc-oily
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.05
+        sprintSpeedModifier: 1.05
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "reagent-effect-anxietymed-strong1"
+          - "reagent-effect-antidepressant-mild2"
+          - "reagent-effect-antidepressant-normal3"
+          - "reagent-effect-antidepressant-normal4"
+          - "reagent-effect-painkiller-strong5"
+          - "reagent-effect-painkiller-strong6"
+          - "reagent-effect-anxietymed-strong7"
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          max: 20
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        reagent: Histamine
+        amount: 5
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        probability: 1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 25 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          min: 8
+        reagent: Addictine
+        amount: 2
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 1
+
+# Bake / Fine Powder form
+# Further refined from Rust using Ultravasculine and Diphenylmethylamine with a catalyst of Sigynate
+# Decently safe OD risk, addiction occurs first. High doses attacks the lungs and kidneys directly.
+# User moves slightly faster, acts as surgical anesthetic, 
+# !!!EXTREMELY VALUABLE TO SELL!!!
+
+- type: reagent
+  id: Bake
+  name: reagent-name-bake
+  group: Narcotics
+  desc: reagent-desc-bake
+  flavor: chalky
+  color: "#FFFFE6"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.1
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages:
+          - "reagent-effect-painkiller-strong1"
+          - "reagent-effect-painkiller-strong2"
+          - "reagent-effect-painkiller-strong3"
+          - "reagent-effect-painkiller-strong4"
+          - "reagent-effect-painkiller-strong5"
+          - "reagent-effect-painkiller-strong6"
+        probability: 0.1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+        damage:
+          types:
+            Asphyxiation: 10
+            Poison: 2
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Addictine
+          max: 25 # maximum addiction severity for this reagent
+        - !type:ReagentThreshold
+          min: 15
+        reagent: Addictine
+        amount: 1
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 1
+
+# Grit / Injector fluid form
+# 'Amps you up' makes you aggressive, dulls pain. Makes you feel 'REALLY FUCKIN' GOOD MAN!!'
+# Adrenaline, Speed, jitters, chance to vomit, poison damage
+# Do not mix with other forms of Mindleaf, causes Grit to metabolize into Lexorin and metabolizes blood
+# Combine with Bake and Desoxyephedrine with Psicodine as a catalyst
+
+- type: reagent
+  id: Grit
+  name: reagent-name-grit
+  group: Narcotics
+  desc: reagent-desc-grit
+  flavor: sour
+  color: "#64FF7D"
+  physicalDesc: reagent-physical-desc-volatile
+  metabolisms:
+    Poison:
+      metabolismRate: 0.5
+      effects:
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 1
+            max: 9
+        damage:
+          types:
+            Poison: 0.5
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 10
+            max: 19
+        damage:
+          types:
+            Poison: 5
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 20
+        damage:
+          types:
+            Poison: 20 # Don't fucking macrodose
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.5
+        sprintSpeedModifier: 1.5 # Extremely fucking dangerous, extremely fucking fast.
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 5
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages:
+          - "reagent-effect-ragechem-intense1"
+          - "reagent-effect-ragechem-intense2"
+          - "reagent-effect-ragechem-intense3"
+          - "reagent-effect-ragechem-intense5"
+          - "reagent-effect-ragechem-intense6"
+          - "reagent-effect-motivate-intense1"
+          - "reagent-effect-motivate-intense2"
+          - "reagent-effect-motivate-intense3"
+          - "reagent-effect-motivate-intense4"
+          - "reagent-effect-motivate-intense5"
+          - "reagent-effect-euphoria-intense1"
+          - "reagent-effect-euphoria-intense2"
+          - "reagent-effect-euphoria-intense3"
+          - "reagent-effect-euphoria-intense4"
+        probability: 0.4
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: ChloralHydrate
+          min: 1
+        reagent: ChloralHydrate
+        amount: -10
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 3
+        type: Add
+      - !type:GenericStatusEffect
+        key: ForcedSleep
+        time: 3
+        type: Remove
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        probability: 0.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: MindleafSap 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MindleafSap
+          min: 1
+        reagent: Lexorin
+        amount: 0.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: MindleafTea 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MindleafTea
+          min: 1
+        reagent: Lexorin
+        amount: 0.1
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Breakout 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 8
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Breakout
+          min: 1
+        reagent: Lexorin
+        amount: 0.5
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Rust 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 10
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Rust
+          min: 1
+        reagent: Lexorin
+        amount: 0.8
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Bake 
+            min: 0.1
+        damage:
+          types:
+            Bloodloss: 12
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Bake
+          min: 1
+        reagent: Lexorin
+        amount: 0.8

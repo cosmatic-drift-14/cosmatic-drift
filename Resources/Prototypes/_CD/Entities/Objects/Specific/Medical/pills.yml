@@ -1,0 +1,45 @@
+- type: entity
+  abstract: true
+  parent: Pill
+  id: CDPill # to avoid having to add more sprites to non-namespace
+  name: pill
+  description: It's not a suppository.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Chemistry/pills.rsi
+    state: pill
+  - type: Item
+    sprite: _CD/Objects/Specific/Chemistry/pills.rsi
+
+- type: entity
+  parent: CDPill
+  id: PillHappiness
+  name: pill
+  suffix: Happiness 10u
+  components:
+  - type: Pill
+    pillType: 1
+  - type: Sprite
+    state: pill1
+  - type: Label
+    currentLabel: Happiness
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Happiness
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: PillCanisterHappiness
+  name: pill canister
+  suffix: Happiness 7
+  components:
+  - type: Label
+    currentLabel: Happiness
+  - type: StorageFill
+    contents:
+    - id: PillHappiness
+      amount: 7

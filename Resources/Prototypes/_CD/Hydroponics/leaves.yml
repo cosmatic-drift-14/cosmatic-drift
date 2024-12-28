@@ -1,0 +1,36 @@
+- type: entity
+  name: mindleaf leaves
+  parent: ProduceBase
+  id: LeavesMindleaf
+  description: "The raw form of Mindleaf, can be made into tea or dried for refinement"
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Hydroponics/mindleaf.rsi
+  - type: Produce
+    seedId: mindleaf
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: MindleafSap
+          Quantity: 8
+
+- type: entity
+  name: dried mindleaf leaves
+  parent: BaseItem
+  id: LeavesMindleafDried
+  description: "Dried mindleaf, ready to be ground."
+  components:
+  - type: Stack
+    stackType: LeavesMindleafDried
+    count: 1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Breakout # Drying turns the sap into a coarse powder
+          Quantity: 4
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/tobacco.rsi
+    state: dried
