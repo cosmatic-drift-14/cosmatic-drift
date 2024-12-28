@@ -1,3 +1,4 @@
+using System.Text;
 using Content.Server.Chat.Systems;
 using Content.Server.Hands.Systems;
 using Content.Server.Speech;
@@ -8,10 +9,8 @@ using Content.Shared.Speech;
 using Content.Shared._CD.TapeRecorder;
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
-using Robust.Server.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using System.Text;
 
 namespace Content.Server._CD.TapeRecorder;
 

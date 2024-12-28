@@ -25,7 +25,7 @@ public sealed class PrintTapeRecorderMessage : BoundUserInterfaceMessage;
 public sealed class TapeRecorderState : BoundUserInterfaceState
 {
     // TODO: check the itemslot on client instead of putting easy casette stuff in the state
-    public bool HasCasette;
+    public bool HasCassette;
     public bool HasData;
     public float CurrentTime;
     public float MaxTime;
@@ -33,14 +33,14 @@ public sealed class TapeRecorderState : BoundUserInterfaceState
     public TimeSpan PrintCooldown;
 
     public TapeRecorderState(
-        bool hasCasette,
+        bool hasCassette,
         bool hasData,
         float currentTime,
         float maxTime,
         string cassetteName,
         TimeSpan printCooldown)
     {
-        HasCasette = hasCasette;
+        HasCassette = hasCassette;
         HasData = hasData;
         CurrentTime = currentTime;
         MaxTime = maxTime;

@@ -18,6 +18,6 @@
     ears: ClothingHeadsetService
   storage:
     back:
-    - TapeRecorder #CD Change
-    - CassetteTape #CD Change
-    - CassetteTape #CD Change
+    - TapeRecorder # CD Change
+    - CassetteTape # CD Change
+    - CassetteTape # CD Change

@@ -1,12 +1,12 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Text;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Damage;
-using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Labels.Components;
 using Content.Shared.Popups;
-using Content.Shared.Tag;
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
 using Content.Shared.Toggleable;
@@ -16,22 +16,19 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using System.Diagnostics.CodeAnalysis;
-using System.Text;
 
 namespace Content.Shared._CD.TapeRecorder;
 
 public abstract class SharedTapeRecorderSystem : EntitySystem
 {
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
-    [Dependency] protected readonly IGameTiming Timing = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] protected readonly SharedAudioSystem Audio = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
+    [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] protected readonly SharedAudioSystem Audio = default!;
 
     protected const string SlotName = "cassette_tape";
 
@@ -307,7 +304,6 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// <summary>
     /// Choose a random recorded entry on the cassette and replace some of the text with hashes
     /// </summary>
-    /// <param name="component"></param>
     protected void CorruptRandomEntry(TapeCassetteComponent tape)
     {
         if (tape.RecordedData.Count == 0)
