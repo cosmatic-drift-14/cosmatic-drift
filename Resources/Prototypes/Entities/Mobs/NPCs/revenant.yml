@@ -21,7 +21,8 @@
     - Stun
     - Corporeal
   - type: Damageable
-    damageContainer: Biological
+    damageContainer: ManifestedSpirit
+    damageModifierSet: ManifestedSpirit
   - type: NoSlip
   - type: Eye
     drawFov: false
@@ -79,3 +80,6 @@
   - type: Tag
     tags:
       - NoPaint
+  - type: Reactive
+    groups:
+      Acidic: [Touch]
