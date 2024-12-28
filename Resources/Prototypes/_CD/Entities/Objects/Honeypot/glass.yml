@@ -1,0 +1,8 @@
+# The IDs are deliberately a bit vague because hacked clients probably show entity IDs
+
+- type: entity
+  parent: ReinforcedWindow
+  id: ReinforcedWindowArrivalsTerminal
+  suffix: Terminal
+  components:
+  - type: AdminNotifyOnDamage
