@@ -28,11 +28,11 @@
       "directions": 4
     },
     {
-      "name": "tail_snakeduel_primary",
+      "name": "tail_snakedual_primary",
       "directions": 4
     },
     {
-      "name": "tail_snakeduel_secondary",
+      "name": "tail_snakedual_secondary",
       "directions": 4
     },
     {
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "name": "tail_snakeduel_primary_wagging",
+      "name": "tail_snakedual_primary_wagging",
       "directions": 4,
       "delays": [
         [
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "name": "tail_snakeduel_secondary_wagging",
+      "name": "tail_snakedual_secondary_wagging",
       "directions": 4,
       "delays": [
         [
