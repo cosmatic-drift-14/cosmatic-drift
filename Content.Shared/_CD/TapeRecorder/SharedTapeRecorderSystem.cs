@@ -177,7 +177,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// <summary>
     /// Start repairing a damaged tape when using a screwdriver or pen on it
     /// </summary>
-    protected void OnInteractingWithCassette(Entity<TapeCassetteComponent> ent, ref InteractUsingEvent args)
+    private protected void OnInteractingWithCassette(Entity<TapeCassetteComponent> ent, ref InteractUsingEvent args)
     {
         // Is the tape damaged?
         if (HasComp<FitsInTapeRecorderComponent>(ent))
@@ -197,7 +197,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// <summary>
     /// Repair a damaged tape
     /// </summary>
-    protected void OnTapeCassetteRepair(Entity<TapeCassetteComponent> ent, ref TapeCassetteRepairDoAfterEvent args)
+    private protected void OnTapeCassetteRepair(Entity<TapeCassetteComponent> ent, ref TapeCassetteRepairDoAfterEvent args)
     {
         if (args.Handled || args.Cancelled || args.Args.Target == null)
             return;
@@ -214,7 +214,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// <summary>
     /// When the cassette has been damaged, corrupt and entry and unspool it
     /// </summary>
-    protected void OnDamagedChanged(Entity<TapeCassetteComponent> ent, ref DamageChangedEvent args)
+    private protected void OnDamagedChanged(Entity<TapeCassetteComponent> ent, ref DamageChangedEvent args)
     {
         if (args.DamageDelta == null || args.DamageDelta.GetTotal() < 5)
             return;
@@ -225,7 +225,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         CorruptRandomEntry(ent);
     }
 
-    protected void OnTapeExamined(Entity<TapeCassetteComponent> ent, ref ExaminedEvent args)
+    private protected void OnTapeExamined(Entity<TapeCassetteComponent> ent, ref ExaminedEvent args)
     {
         if (!args.IsInDetailsRange)
             return;
@@ -241,7 +241,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         args.PushMarkup(tapePosMsg);
     }
 
-    protected void OnRecorderExamined(Entity<TapeRecorderComponent> ent, ref ExaminedEvent args)
+    private protected void OnRecorderExamined(Entity<TapeRecorderComponent> ent, ref ExaminedEvent args)
     {
         if (!args.IsInDetailsRange)
             return;
@@ -268,7 +268,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// <summary>
     /// Prevent removing the tape cassette while the recorder is active
     /// </summary>
-    protected void OnCassetteRemoveAttempt(Entity<TapeRecorderComponent> ent, ref ItemSlotEjectAttemptEvent args)
+    private protected void OnCassetteRemoveAttempt(Entity<TapeRecorderComponent> ent, ref ItemSlotEjectAttemptEvent args)
     {
         if (!HasComp<ActiveTapeRecorderComponent>(ent))
             return;
@@ -276,14 +276,14 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         args.Cancelled = true;
     }
 
-    protected void OnCassetteRemoved(Entity<TapeRecorderComponent> ent, ref EntRemovedFromContainerMessage args)
+    private protected void OnCassetteRemoved(Entity<TapeRecorderComponent> ent, ref EntRemovedFromContainerMessage args)
     {
         SetMode(ent, TapeRecorderMode.Stopped);
         UpdateAppearance(ent);
         UpdateUI(ent);
     }
 
-    protected void OnCassetteInserted(Entity<TapeRecorderComponent> ent, ref EntInsertedIntoContainerMessage args)
+    private protected void OnCassetteInserted(Entity<TapeRecorderComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
         UpdateAppearance(ent);
         UpdateUI(ent);
@@ -293,7 +293,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// Update the appearance of the tape recorder.
     /// </summary>
     /// <param name="ent">The tape recorder to update</param>
-    protected void UpdateAppearance(Entity<TapeRecorderComponent> ent)
+    private protected void UpdateAppearance(Entity<TapeRecorderComponent> ent)
     {
         var hasCassette = TryGetTapeCassette(ent, out _);
         _appearance.SetData(ent, TapeRecorderVisuals.Mode, ent.Comp.Mode);
@@ -303,7 +303,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// <summary>
     /// Choose a random recorded entry on the cassette and replace some of the text with hashes
     /// </summary>
-    protected void CorruptRandomEntry(TapeCassetteComponent tape)
+    private protected void CorruptRandomEntry(TapeCassetteComponent tape)
     {
         if (tape.RecordedData.Count == 0)
             return;
@@ -362,7 +362,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         UpdateUI(ent);
     }
 
-    protected bool TryGetTapeCassette(EntityUid ent, out Entity<TapeCassetteComponent> tape)
+    private protected bool TryGetTapeCassette(EntityUid ent, out Entity<TapeCassetteComponent> tape)
     {
         if (_slots.GetItemOrNull(ent, SlotName) is not {} cassette)
         {

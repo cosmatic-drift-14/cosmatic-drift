@@ -8,14 +8,9 @@ namespace Content.Shared._CD.TapeRecorder.Events;
 public sealed partial class TapeCassetteRepairDoAfterEvent : SimpleDoAfterEvent;
 
 [Serializable, NetSerializable]
-public sealed class ChangeModeTapeRecorderMessage : BoundUserInterfaceMessage
+public sealed class ChangeModeTapeRecorderMessage(TapeRecorderMode mode) : BoundUserInterfaceMessage
 {
-    public TapeRecorderMode Mode;
-
-    public ChangeModeTapeRecorderMessage(TapeRecorderMode mode)
-    {
-        Mode = mode;
-    }
+    public TapeRecorderMode Mode = mode;
 }
 
 [Serializable, NetSerializable]
@@ -26,7 +21,6 @@ public sealed class TapeRecorderState : BoundUserInterfaceState
 {
     // TODO: check the itemslot on client instead of putting easy cassette stuff in the state
     public bool HasCassette;
-    public bool HasData;
     public float CurrentTime;
     public float MaxTime;
     public string CassetteName;
@@ -41,7 +35,6 @@ public sealed class TapeRecorderState : BoundUserInterfaceState
         TimeSpan printCooldown)
     {
         HasCassette = hasCassette;
-        HasData = hasData;
         CurrentTime = currentTime;
         MaxTime = maxTime;
         CassetteName = cassetteName;

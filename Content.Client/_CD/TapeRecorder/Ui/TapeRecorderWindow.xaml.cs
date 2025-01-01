@@ -70,7 +70,6 @@ public sealed partial class TapeRecorderWindow : FancyWindow
     public void UpdatePrint(bool disabled)
     {
         PrintButton.Disabled = disabled;
-        _onCooldown = disabled;
     }
 
     public void UpdateState(TapeRecorderState state)

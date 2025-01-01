@@ -42,12 +42,12 @@ public sealed class TapeRecorderSystem : SharedTapeRecorderSystem
             if (message.Timestamp < tape.CurrentPosition || message.Timestamp >= segmentEnd)
                 continue;
 
-            //Change the voice to match the speaker
+            // Change the voice to match the speaker
             voice.NameOverride = message.Name ?? ent.Comp.DefaultName;
             // TODO: mimic the exact string chosen when the message was recorded
             var verb = message.Verb ?? SharedChatSystem.DefaultSpeechVerb;
-            speech.SpeechVerb = _proto.Index<SpeechVerbPrototype>(verb);
-            //Play the message
+            speech.SpeechVerb = _proto.Index<SpeechVerbPrototype>;
+            // Play the message
             _chat.TrySendInGameICMessage(ent, message.Message, InGameICChatType.Speak, false);
         }
     }
@@ -82,7 +82,7 @@ public sealed class TapeRecorderSystem : SharedTapeRecorderSystem
 
     private void OnPrintMessage(Entity<TapeRecorderComponent> ent, ref PrintTapeRecorderMessage args)
     {
-        var (uid, comp) = ent;
+        var (_uid, comp) = ent;
 
         if (comp.CooldownEndTime > Timing.CurTime)
             return;
