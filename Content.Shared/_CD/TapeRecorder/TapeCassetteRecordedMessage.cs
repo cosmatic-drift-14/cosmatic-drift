@@ -6,7 +6,7 @@ namespace Content.Shared._CD.TapeRecorder;
 /// <summary>
 /// Every chat event recorded on a tape is saved in this format
 /// </summary>
-[ImplicitDataDefinitionForInheritors]
+[DataDefinition]
 public sealed partial class TapeCassetteRecordedMessage : IComparable<TapeCassetteRecordedMessage>
 {
     /// <summary>
