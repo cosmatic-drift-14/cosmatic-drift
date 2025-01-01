@@ -19,7 +19,7 @@ public sealed partial class TapeCassetteComponent : Component
     /// Only dirtied when the tape recorder is stopped
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float CurrentPosition = 0f;
+    public float CurrentPosition;
 
     /// <summary>
     /// Maximum capacity of this tape

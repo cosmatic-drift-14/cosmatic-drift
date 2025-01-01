@@ -1,9 +1,11 @@
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
+using JetBrains.Annotations;
 using Robust.Shared.Timing;
 
 namespace Content.Client._CD.TapeRecorder.Ui;
 
+[UsedImplicitly]
 public sealed class TapeRecorderBoundUserInterface(EntityUid owner, Enum uiKey) : BoundUserInterface(owner, uiKey)
 {
     [Dependency] private readonly IEntityManager _entMan = default!;

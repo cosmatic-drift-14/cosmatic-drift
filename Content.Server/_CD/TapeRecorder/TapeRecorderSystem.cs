@@ -10,7 +10,6 @@ using Content.Shared._CD.TapeRecorder;
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Timing;
 
 namespace Content.Server._CD.TapeRecorder;
 
@@ -71,11 +70,11 @@ public sealed class TapeRecorderSystem : SharedTapeRecorderSystem
 
         // TODO: Handle "Someone" when whispering from far away, needs chat refactor
 
-        //Handle someone using a voice changer
+        // Handle someone using a voice changer
         var nameEv = new TransformSpeakerNameEvent(args.Source, Name(args.Source));
         RaiseLocalEvent(args.Source, nameEv);
 
-        //Add a new entry to the tape
+        // Add a new entry to the tape
         var verb = _chat.GetSpeechVerb(args.Source, args.Message);
         var name = nameEv.VoiceName;
         cassette.Comp.Buffer.Add(new TapeCassetteRecordedMessage(cassette.Comp.CurrentPosition, name, verb, args.Message));

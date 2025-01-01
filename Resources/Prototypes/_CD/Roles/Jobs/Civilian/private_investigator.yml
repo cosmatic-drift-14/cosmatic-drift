@@ -22,6 +22,4 @@
     - ForensicPad
     - ForensicPad
     - LogProbeCartridge
-    - TapeRecorder # CD Change
-    - CassetteTape # CD Change
-    - CassetteTape # CD Change
+    - BoxTapeRecorder

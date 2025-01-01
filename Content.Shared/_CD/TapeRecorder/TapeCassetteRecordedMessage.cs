@@ -6,14 +6,14 @@ namespace Content.Shared._CD.TapeRecorder;
 /// <summary>
 /// Every chat event recorded on a tape is saved in this format
 /// </summary>
-[ImplicitDataDefinitionForInheritors]
+[DataField]
 public sealed partial class TapeCassetteRecordedMessage : IComparable<TapeCassetteRecordedMessage>
 {
     /// <summary>
     /// Number of seconds since the start of the tape that this event was recorded at
     /// </summary>
     [DataField(required: true)]
-    public float Timestamp = 0;
+    public float Timestamp;
 
     /// <summary>
     /// The name of the entity that spoke

@@ -14,11 +14,10 @@ public sealed partial class TapeRecorderWindow : FancyWindow
     private readonly IEntityManager _entMan;
 
     private readonly EntityUid _owner;
-    private bool _onCooldown;
     private bool _hasCassette;
     private TapeRecorderMode _mode = TapeRecorderMode.Stopped;
 
-    private RadioOptions<TapeRecorderMode> _options = default!;
+    private RadioOptions<TapeRecorderMode> _options;
     private bool _updating;
 
     public Action<TapeRecorderMode>? OnModeChanged;

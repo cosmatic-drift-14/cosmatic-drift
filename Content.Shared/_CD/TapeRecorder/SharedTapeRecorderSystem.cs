@@ -6,7 +6,6 @@ using Content.Shared.DoAfter;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Labels.Components;
-using Content.Shared.Popups;
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
 using Content.Shared.Toggleable;
@@ -30,7 +29,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     [Dependency] protected readonly IGameTiming Timing = default!;
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
 
-    protected const string SlotName = "cassette_tape";
+    private protected const string SlotName = "cassette_tape";
 
     public override void Initialize()
     {
@@ -108,18 +107,18 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
 
         var currentTime = tape.Comp.CurrentPosition + frameTime;
 
-        //'Flushed' in this context is a mark indicating the message was not added between the last update and this update
-        //Remove any flushed messages in the segment we just recorded over (ie old messages)
+        // 'Flushed' in this context is a mark indicating the message was not added between the last update and this update
+        // Remove any flushed messages in the segment we just recorded over (ie old messages)
         tape.Comp.RecordedData.RemoveAll(x => x.Timestamp > tape.Comp.CurrentPosition && x.Timestamp <= currentTime);
 
         tape.Comp.RecordedData.AddRange(tape.Comp.Buffer);
 
         tape.Comp.Buffer.Clear();
 
-        //Update the tape's current time
+        // Update the tape's current time
         tape.Comp.CurrentPosition = (float) Math.Min(currentTime, tape.Comp.MaxCapacity.TotalSeconds);
 
-        //If we have reached the end of the tape - stop
+        // If we have reached the end of the tape - stop
         return tape.Comp.CurrentPosition < tape.Comp.MaxCapacity.TotalSeconds;
     }
 
@@ -134,16 +133,16 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         if (!TryGetTapeCassette(ent, out var tape))
             return false;
 
-        //Get the segment of the tape to be played
-        //And any messages within that time period
+        // Get the segment of the tape to be played
+        // And any messages within that time period
         var currentTime = tape.Comp.CurrentPosition + frameTime;
 
         ReplayMessagesInSegment(ent, tape.Comp, tape.Comp.CurrentPosition, currentTime);
 
-        //Update the tape's position
+        // Update the tape's position
         tape.Comp.CurrentPosition = (float) Math.Min(currentTime, tape.Comp.MaxCapacity.TotalSeconds);
 
-        //Stop when we reach the end of the tape
+        // Stop when we reach the end of the tape
         return tape.Comp.CurrentPosition < tape.Comp.MaxCapacity.TotalSeconds;
     }
 
@@ -158,12 +157,12 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         if (!TryGetTapeCassette(ent, out var tape))
             return false;
 
-        //Calculate how far we have rewound
+        // Calculate how far we have rewound
         var rewindTime = frameTime * ent.Comp.RewindSpeed;
-        //Update the current time, clamp to 0
+        // Update the current time, clamp to 0
         tape.Comp.CurrentPosition = Math.Max(0, tape.Comp.CurrentPosition - rewindTime);
 
-        //If we have reached the beginning of the tape, stop
+        // If we have reached the beginning of the tape, stop
         return tape.Comp.CurrentPosition >= float.Epsilon;
     }
 
@@ -180,11 +179,11 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     /// </summary>
     protected void OnInteractingWithCassette(Entity<TapeCassetteComponent> ent, ref InteractUsingEvent args)
     {
-        //Is the tape damaged?
+        // Is the tape damaged?
         if (HasComp<FitsInTapeRecorderComponent>(ent))
             return;
 
-        //Are we using a valid repair tool?
+        // Are we using a valid repair tool?
         if (_whitelist.IsWhitelistFail(ent.Comp.RepairWhitelist, args.Used))
             return;
 
@@ -203,7 +202,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         if (args.Handled || args.Cancelled || args.Args.Target == null)
             return;
 
-        //Cant repair if not damaged
+        // Cant repair if not damaged
         if (HasComp<FitsInTapeRecorderComponent>(ent))
             return;
 
@@ -247,7 +246,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         if (!args.IsInDetailsRange)
             return;
 
-        //Check if we have a tape cassette inserted
+        // Check if we have a tape cassette inserted
         if (!TryGetTapeCassette(ent, out var tape))
         {
             args.PushMarkup(Loc.GetString(ent.Comp.TextModeEmpty));
@@ -363,7 +362,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         UpdateUI(ent);
     }
 
-    protected bool TryGetTapeCassette(EntityUid ent, [NotNullWhen(true)] out Entity<TapeCassetteComponent> tape)
+    protected bool TryGetTapeCassette(EntityUid ent, out Entity<TapeCassetteComponent> tape)
     {
         if (_slots.GetItemOrNull(ent, SlotName) is not {} cassette)
         {
@@ -401,8 +400,10 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
             maxTime = (float) tape.Comp.MaxCapacity.TotalSeconds;
 
             if (TryComp<LabelComponent>(tape, out var labelComp))
+            {
                 if (labelComp.CurrentLabel != null)
                     cassetteName = labelComp.CurrentLabel;
+            }
         }
 
         var state = new TapeRecorderState(
