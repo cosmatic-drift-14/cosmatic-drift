@@ -18,10 +18,10 @@ public sealed class EngraveableSystem : SharedEngraveableSystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<Shared._CD.Engraving.EngraveableComponent, GetVerbsEvent<ActivationVerb>>(AddEngraveVerb);
+        SubscribeLocalEvent<EngraveableComponent, GetVerbsEvent<ActivationVerb>>(AddEngraveVerb);
     }
 
-    private void AddEngraveVerb(Entity<Shared._CD.Engraving.EngraveableComponent> ent, ref GetVerbsEvent<ActivationVerb> args)
+    private void AddEngraveVerb(Entity<EngraveableComponent> ent, ref GetVerbsEvent<ActivationVerb> args)
     {
         // First check if it's already been engraved. If it has, don't let them do it again.
         if (ent.Comp.EngravedMessage != string.Empty)
