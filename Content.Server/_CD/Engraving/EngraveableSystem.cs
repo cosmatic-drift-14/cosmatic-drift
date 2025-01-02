@@ -46,7 +46,7 @@ public sealed class EngraveableSystem : SharedEngraveableSystem
                     (string message) =>
                     {
                         // If either the actor or comp have magically vanished
-                        if (actor.PlayerSession.AttachedEntity == null || !HasComp<Shared._CD.Engraving.EngraveableComponent>(ent))
+                        if (actor.PlayerSession.AttachedEntity == null || !HasComp<EngraveableComponent>(ent))
                             return;
 
                         ent.Comp.EngravedMessage = message;
