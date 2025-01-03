@@ -22,7 +22,7 @@
 - type: entity
   parent: ClothingOuterCoatRandomBase
   id: ClothingOuterCoatRandom
-  name: random colorful coat
+  name: colorful coat
   description: A colorful coat. Won't do much to keep you warm, but it's certainly a fashion statement!
   components:
   - type: RandomSprite
