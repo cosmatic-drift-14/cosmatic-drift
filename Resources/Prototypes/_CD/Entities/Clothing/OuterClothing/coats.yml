@@ -107,17 +107,33 @@
   id: ClothingOuterCoatCargoForemanOpened
   name: foreman jacket
 
-# CentCom Coat
+# CentComm Coats
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatCentcomOfficer
-  name: CentCom officer's coat
-  description: A comfortable green coat worn by CentCom officers. The armour has been removed in favour of more pocket space.
+  id: ClothingOuterCoatCentCommOfficer
+  name: CentComm officer's coat
+  description: A comfortable green coat worn by CentComm officers. The armour has been removed in favour of more pocket space.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatCentCommOverseer
+  name: CentComm overseer jacket
+  description: A leather jacket worn by Overseers who prefer a more rugged style.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/central_overseer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/central_overseer.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCentCommOverseer ]
+  id: ClothingOuterCoatCentCommOverseerOpened
+  name: CentComm overseer jacket
 
 # High-Vis jackets
 - type: entity

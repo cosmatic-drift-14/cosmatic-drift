@@ -18,6 +18,7 @@
     ClothingHeadsetCentCom: 3
     ClothingOuterWinterCentcom: 3
     ClothingOuterCoatExpensive: 1
-    ClothingOuterCoatCentcomOfficer: 1 # CD
+    ClothingOuterCoatCentCommOfficer: 1 # CD
+    ClothingOuterCoatCentCommOverseer: 1 # CD
     ClothingNeckScarfStripedCentcom: 3
     ClothingNeckCloakCentcom: 3
