@@ -46,7 +46,7 @@ public sealed class TapeRecorderSystem : SharedTapeRecorderSystem
             voice.NameOverride = message.Name ?? ent.Comp.DefaultName;
             // TODO: mimic the exact string chosen when the message was recorded
             var verb = message.Verb ?? SharedChatSystem.DefaultSpeechVerb;
-            speech.SpeechVerb = _proto.Index<SpeechVerbPrototype>;
+            speech.SpeechVerb = _proto.Index(verb);
             // Play the message
             _chat.TrySendInGameICMessage(ent, message.Message, InGameICChatType.Speak, false);
         }

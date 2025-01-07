@@ -17,27 +17,17 @@ public sealed class ChangeModeTapeRecorderMessage(TapeRecorderMode mode) : Bound
 public sealed class PrintTapeRecorderMessage : BoundUserInterfaceMessage;
 
 [Serializable, NetSerializable]
-public sealed class TapeRecorderState : BoundUserInterfaceState
+public sealed class TapeRecorderState(
+    bool hasCassette,
+    float currentTime,
+    float maxTime,
+    string cassetteName,
+    TimeSpan printCooldown): BoundUserInterfaceState
 {
     // TODO: check the itemslot on client instead of putting easy cassette stuff in the state
-    public bool HasCassette;
-    public float CurrentTime;
-    public float MaxTime;
-    public string CassetteName;
-    public TimeSpan PrintCooldown;
-
-    public TapeRecorderState(
-        bool hasCassette,
-        bool hasData,
-        float currentTime,
-        float maxTime,
-        string cassetteName,
-        TimeSpan printCooldown)
-    {
-        HasCassette = hasCassette;
-        CurrentTime = currentTime;
-        MaxTime = maxTime;
-        CassetteName = cassetteName;
-        PrintCooldown = printCooldown;
-    }
+    public bool HasCassette = hasCassette;
+    public float CurrentTime = currentTime;
+    public float MaxTime = maxTime;
+    public string CassetteName = cassetteName;
+    public TimeSpan PrintCooldown = printCooldown;
 }
