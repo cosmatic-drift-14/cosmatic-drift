@@ -221,7 +221,7 @@
     contents:
     - id: WeaponShotgunEnforcer
       amount: 2
-    - id: MagazineShotgun
+    - id: BoxLethalshot
       amount: 4
 
 - type: entity
@@ -233,8 +233,8 @@
     contents:
     - id: WeaponShotgunKammerer
       amount: 2
-    - id: MagazineShotgun
-      amount: 4
+    - id: BoxLethalshot
+      amount: 2
 
 - type: entity
   id: GunSafeSubMachineGunWt550
