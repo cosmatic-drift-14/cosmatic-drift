@@ -195,6 +195,19 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
 
+#Non-Departmental
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformCentcommCasual
+  name: CentComm summer outfit
+  description: A CentComm branded tee with office pants, for coffee boys and comfortable Commanders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
+
 # Non-casual drip below
 
 # Medical garments
@@ -304,3 +317,16 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
+
+# Turtlenecks
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformCentcommTurtleneck
+  name: CentComm turtleneck
+  description: A CentComm green turtleneck with office slacks, the material feels expensive.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/centcomm_turtle.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/centcomm_turtle.rsi
