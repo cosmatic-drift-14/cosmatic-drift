@@ -559,6 +559,27 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
+# Salvage Shuttle Computer
+- type: entity
+  parent: [ BaseStructureComputerTabletop, ComputerShuttleSalvage ]
+  id: ComputerTabletopShuttleSalvage
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "computerLayerBody" ]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: computer_tabletop
+    - map: [ "computerLayerKeyboard" ]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: generic_keyboard_tabletop
+    - map: [ "computerLayerScreen" ]
+      sprite: Structures/Machines/computers.rsi
+      state: shuttle
+    - map: [ "computerLayerKeys" ]
+      sprite: Structures/Machines/computers.rsi
+      state: generic_keys
+
 # IFF Console
 - type: entity
   parent: [ BaseStructureComputerTabletop, ComputerIFF ]
