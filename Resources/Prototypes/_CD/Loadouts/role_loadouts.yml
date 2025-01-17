@@ -48,7 +48,7 @@
 - type: roleLoadout
   id: JobSeniorOfficer
   groups:
-#  - GroupTankHarness # CD
+#  - GroupTankHarness # CD: fixes bug where vox detectives start with their outerclothing on the floor
   - SeniorOfficerHead
   - SeniorOfficerJumpsuit
   - SecurityBackpack
