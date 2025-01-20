@@ -1,0 +1,60 @@
+- type: entity
+  parent: BaseItem
+  id: AIShellBrain
+  name: B.O.R.I.S. AI-Cyborg Remote Control
+  description: An artificial brain capable of spontaneous neural activity.
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Robotics/mmi.rsi
+      layers:
+      - state: posibrain
+        map: ["base"]
+    - type: Input
+      context: human
+    - type: BlockMovement
+    - type: Examiner
+    - type: BorgBrain
+    - type: IntrinsicRadioReceiver
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - Binary
+    - type: ActiveRadio
+      channels:
+      - Binary
+      - Common
+    - type: StationAiShellBrain
+    - type: DoAfter
+    - type: Actions
+    - type: TypingIndicator
+      proto: robot
+    - type: Speech
+      speechSounds: Pai
+    - type: MobState
+      allowedStates:
+      - Alive
+    - type: Appearance
+    - type: Tag
+      tags:
+      - CannotSuicide
+    - type: GenericVisualizer
+      visuals:
+        enum.ToggleableGhostRoleVisuals.Status:
+          base:
+            Off: { state: posibrain }
+            Searching: { state: posibrain-searching }
+            On: { state: posibrain-occupied }
+    - type: ChangeVoiceInContainer
+      whitelist:
+        components:
+        - SecretStash
+        
+# Borgs
+- type: entity
+  id: PlayerBorgBoris
+  parent: PlayerBorgBattery
+  suffix: Boris
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+        - AIShellBrain

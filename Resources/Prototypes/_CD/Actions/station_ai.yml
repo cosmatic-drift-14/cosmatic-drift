@@ -1,0 +1,26 @@
+﻿# Actions
+- type: entity
+  id: ActionEnterShell
+  name: AI Shell
+  description: Allows you to possess a shell.
+  components:
+  - type: InstantAction
+    priority: -6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: ai_core
+    event: !type:AiEnterShellEvent
+
+- type: entity
+  id: ActionExitShell
+  name: Exit Shell
+  description: Exits your active shell and returns you to your core.
+  components:
+  - type: InstantAction
+    priority: -6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: ai_core
+    event: !type:AiExitShellEvent

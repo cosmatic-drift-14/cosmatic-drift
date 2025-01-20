@@ -40,6 +40,10 @@
     - ActionJumpToCore
     - ActionSurvCameraLights
     - ActionAIViewLaws
+# CD-exclusive action
+    - ActionEnterShell
+  - type: StationAiShellUser # CD-exclusive component
+    actionPrototype: ActionExitShell
   - type: UserInterface
     interfaces:
       enum.RadarConsoleUiKey.Key:

@@ -1,0 +1,25 @@
+﻿<FancyWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client._CD.Silicons.StationAi"
+    Title="Select Shell" MinSize="425 272">
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="{Loc admin-player-actions-reason}" MinWidth="100" />
+            <Control MinWidth="50" />
+            <LineEdit Name="ReasonLine" MinWidth="100" HorizontalExpand="True" />
+        </BoxContainer>
+        <controls:ListContainer
+            Name="ShellsList"
+            HorizontalAlignment="Left"
+            VerticalExpand="True"
+            Visible="True"
+            Toggle="True"
+            Group="True"
+            SetWidth="192" />
+        <BoxContainer Orientation="Horizontal">
+            <Button Name="RefreshListButton" Text="Jump" Disabled="True"/>
+            <Button Name="JumpToShellButton" Text="Jump" Disabled="True"/>
+            <Button Name="SelectShellButton" Text="Select" Disabled="True"/>
+        </BoxContainer>
+    </BoxContainer>
+</FancyWindow>
