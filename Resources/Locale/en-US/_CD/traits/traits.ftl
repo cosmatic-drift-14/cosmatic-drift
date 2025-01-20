@@ -12,3 +12,5 @@ cd-trait-very-lightweight-desc = Alcohol has a much stronger effect on you.
 cd-trait-heavyweight-name = Heavyweight drunk
 cd-trait-heavyweight-desc = Alcohol has a weaker effect on you.
 
+trait-russian-name = Russian accent
+trait-russian-desc = You seem to have come from a region of space that speaks Russian, da?
