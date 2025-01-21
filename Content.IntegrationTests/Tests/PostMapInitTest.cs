@@ -65,6 +65,7 @@ namespace Content.IntegrationTests.Tests
             "Gate",
             "Amber",
             "Loop",
+            "Elkridge",
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini" // CD Map
