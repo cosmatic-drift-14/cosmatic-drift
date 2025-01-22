@@ -7,7 +7,7 @@
   - Box
   - Cog
   - Core
-  - Elkridge
+  #- Elkridge # CD Change, temporarily derotated
   - Fland
   - Gemini
   #- Gate
@@ -17,7 +17,7 @@
   - Oasis
   - Omega
   - Packed
-  - Plasma
+  #- Plasma # CD Change, temporarily derotated
   - Reach
   #- Train <- CD change, please no
   - Ferrous
