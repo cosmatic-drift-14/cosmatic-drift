@@ -1,5 +1,5 @@
 - type: soundCollection
   id: SodiumSpark
   files:
-  - /Audio/DeltaV/Effects/sodiumspark1.ogg
-  - /Audio/DeltaV/Effects/sodiumspark2.ogg
+  - /Audio/_DV/Effects/sodiumspark1.ogg
+  - /Audio/_DV/Effects/sodiumspark2.ogg
