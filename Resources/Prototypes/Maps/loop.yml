@@ -4,6 +4,7 @@
   mapPath: /Maps/loop.yml
   minPlayers: 25 #CD change from 35 to 25
   maxPlayers: 45 #CD change from 70 to 45
+  patchfile: /CDMapPatches/loop.yml #CD apply map patch
   stations:
     Loop:
       stationProto: StandardNanotrasenStation
