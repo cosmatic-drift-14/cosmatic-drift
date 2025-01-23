@@ -2,8 +2,8 @@
   id: Elkridge
   mapName: 'Elkridge Depot'
   mapPath: /Maps/elkridge.yml
-  minPlayers: 7
-  maxPlayers: 35
+  minPlayers: 5 #CD change from 7 to 5
+  maxPlayers: 25 #CD change from 35 to 25
   stations:
     Elkridge:
       stationProto: StandardNanotrasenStation
@@ -32,11 +32,13 @@
             ServiceWorker: [ 2, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
+            SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 3, 4 ]
             TechnicalAssistant: [ 2, 2 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 2, 2 ]
@@ -44,12 +46,14 @@
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ] #CD role
             Scientist: [ 3, 4 ]
             ResearchAssistant: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ] #CD role
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 3, 4 ]
+            SecurityOfficer: [ 3, 3 ] #CD change from 3-4 to 3-3
             Detective: [ 1, 1 ]
             SecurityCadet: [ 2, 2 ]
             Lawyer: [ 1, 1 ]
