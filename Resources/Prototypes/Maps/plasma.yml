@@ -2,8 +2,9 @@
   id: Plasma
   mapName: 'Plasma'
   mapPath: /Maps/plasma.yml
-  minPlayers: 20
-  maxPlayers: 60
+  minPlayers: 15 #CD change from 20 to 15
+  maxPlayers: 35 #CD change from 60 to 35
+  patchfile: /CDMapPatches/plasma.yml #CD apply map patch
   stations:
     Plasma:
       stationProto: StandardNanotrasenStation
@@ -32,33 +33,37 @@
             Reporter: [ 2, 3 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
+            SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 4, 4 ]
             StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ]
+            TechnicalAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 4, 4 ]
+            MedicalDoctor: [ 3, 3 ] #CD change from 4-4 to 3-3
             Paramedic: [ 2, 2 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalIntern: [ 2, 2 ] #CD change from 4-4 to 2-2
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ] #CD role
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 4, 4 ]
+            ResearchAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
             StationAi: [ 1, 1 ]
             Borg: [ 2, 4 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ] #CD role
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 6, 8 ]
+            SecurityOfficer: [ 3, 3 ] #CD change from 6-8 to 3-3
             Detective: [ 1, 2 ]
-            SecurityCadet: [ 4, 4 ]
+            SecurityCadet: [ 2, 2 ] #CD change from 4-4 to 2-2
             Lawyer: [ 1, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 4, 4 ]
-            CargoTechnician: [ 4, 6 ]
+            CargoTechnician: [ 3, 3 ] #CD change from 4-6 to 3-3
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
