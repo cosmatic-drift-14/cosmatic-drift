@@ -43,6 +43,7 @@ public abstract class SharedAirlockSystem : EntitySystem
 
         if (TryComp(uid, out DoorComponent? door)
             && !door.Partial
+            && door.State != DoorState.Closing
             && !CanChangeState(uid, airlock))
         {
             args.Cancel();
