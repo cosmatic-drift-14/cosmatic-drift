@@ -205,6 +205,10 @@
       - FreezerElectronics
       - CassetteTape #CD Change
       - TapeRecorder #CD Change
+      - GoldRing # CD
+      - SilverRing # CD
+      - GoldRingDiamond # CD
+      - SilverRingDiamond # CD
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot

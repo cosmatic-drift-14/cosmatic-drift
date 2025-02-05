@@ -60,6 +60,8 @@
   - LunchboxYellow # CD
   - Cane # CD
   - MedCrutchesForearm # CD
+  - GoldRing # CD
+  - SilverRing # CD
 
 - type: loadoutGroup
   id: Glasses
@@ -671,8 +673,8 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
-  - CargoBomber # CD  
-  
+  - CargoBomber # CD
+
 - type: loadoutGroup
   id: CargoTechnicianShoes
   name: loadout-group-cargo-technician-shoes
@@ -1166,7 +1168,7 @@
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
   - ChiefMedicalOfficerFormalsuit # CD
-  
+
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
   name: loadout-group-chief-medical-officer-outerclothing
