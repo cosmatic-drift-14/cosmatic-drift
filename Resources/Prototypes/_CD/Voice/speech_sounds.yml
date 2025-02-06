@@ -26,7 +26,7 @@
     path: /Audio/_CD/Voice/Talk/avali_2_exclaim.ogg
 
 - type: speechSounds
-  id: Moth
+  id: Moth #squeaksqueaksqueaksqueak
   saySound:
     path: /Audio/_CD/Voice/Talk/moth.ogg
   askSound:
