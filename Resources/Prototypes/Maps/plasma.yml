@@ -19,10 +19,16 @@
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_plasma.yml
         - type: StationJobs
-          availableJobs:
-            #service
+          availableJobs: #Total of 66 jobs roundstart, max of 93 inc. latejoins and trainees.
+            #command - 7
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            Quartermaster: [ 1, 1 ]
+            #service - 18-21
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
@@ -31,6 +37,9 @@
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
             Reporter: [ 2, 3 ]
+            Clown: [ 1, 2 ] # This might be fun
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ] #CD role
@@ -60,12 +69,8 @@
             Detective: [ 1, 2 ]
             SecurityCadet: [ 2, 2 ] #CD change from 4-4 to 2-2
             Lawyer: [ 1, 2 ]
-            #supply
-            Quartermaster: [ 1, 1 ]
+            #supply - 8-10
             SalvageSpecialist: [ 4, 4 ]
             CargoTechnician: [ 3, 3 ] #CD change from 4-6 to 3-3
             #civilian
             Passenger: [ -1, -1 ]
-            Clown: [ 1, 1 ]
-            Mime: [ 1, 1 ]
-            Musician: [ 1, 1 ]
