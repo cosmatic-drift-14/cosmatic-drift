@@ -76,3 +76,11 @@
     - type: BuckleOnMapInit
       prototype: VehicleWheelchair
     - type: LegsParalyzed
+    
+- type: trait
+  id: PainNumbness
+  name: trait-painnumbness-name
+  description: trait-painnumbness-desc
+  category: Disabilities
+  components:
+  - type: PainNumbness

@@ -353,6 +353,7 @@
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
     - id: WantedListCartridge
+    - id: DrinkHosFlask
     #CD Addions
     - id: BookSOPSecurity
     - id: BookSOPCommand

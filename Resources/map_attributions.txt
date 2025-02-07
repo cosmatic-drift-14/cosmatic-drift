@@ -58,6 +58,9 @@
 - files: ["cog.yml"]
   authors: Spacemann
 
+- files: ["convex.yml"]
+  authors: Spacemann
+
 #CD Maps
 #These are located in Maps/_CD
 
