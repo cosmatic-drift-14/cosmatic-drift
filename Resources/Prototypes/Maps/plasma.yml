@@ -2,8 +2,8 @@
   id: Plasma
   mapName: 'Plasma'
   mapPath: /Maps/plasma.yml
-  minPlayers: 15 #CD change from 20 to 15
-  maxPlayers: 35 #CD change from 60 to 35
+  minPlayers: 15 #CD change from 30 to 15
+  maxPlayers: 35 #CD change from 80 to 35
   patchfile: /CDMapPatches/plasma.yml #CD apply map patch
   stations:
     Plasma:
