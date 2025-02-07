@@ -1,2 +1,5 @@
 - type: Tag
   id: EmptyPacket
+
+- type: Tag
+  id: StunSabre
