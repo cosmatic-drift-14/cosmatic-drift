@@ -771,14 +771,12 @@
     sprite: Objects/Consumable/Food/ingredients.rsi
     state: cloth-box
   - type: Storage
-    grid:
-    - 0,0,1,1
-    maxItemSize: Normal
+    capacity: 30
     whitelist:
       tags:
       - ClothMade
   - type: Item
-    size: Normal
+    size: 30
   - type: StorageFill
     contents:
     - id: MaterialCloth10

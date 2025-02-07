@@ -41,13 +41,11 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             #engineering
-            ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 4, 4 ]
             StationEngineer: [ 4, 4 ]
             TechnicalAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
             #medical
-            ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ] #CD change from 4-4 to 3-3
@@ -55,14 +53,12 @@
             MedicalIntern: [ 2, 2 ] #CD change from 4-4 to 2-2
             Psychologist: [ 1, 1 ]
             #science
-            ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD role
             Scientist: [ 4, 4 ]
             ResearchAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
             StationAi: [ 1, 1 ]
             Borg: [ 2, 4 ]
             #security
-            HeadOfSecurity: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ] #CD role
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ] #CD change from 6-8 to 3-3
