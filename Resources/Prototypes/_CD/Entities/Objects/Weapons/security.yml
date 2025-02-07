@@ -1,13 +1,13 @@
 - type: entity
   name: stun sabre
   parent: Stunbaton
-  id: Stuns?Sabre
+  id: StunSabre
   description: A variant of the stunbaton, designed to look like a sabre or longsword
   components:
   - type: Sprite
     sprite: _CD/Objects/Weapons/Melee/stunsabre.rsi
     layers:
-    - state: stunsabre_off
+    - state: stunbaton_off
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Tag
     tags:
@@ -17,5 +17,5 @@
     visuals:
      enum.ToggleVisuals.Toggled:
         enum.ToggleVisuals.Layer:
-          True: {state: stunsabre_on}
-          False: {state: stunsabre_off}
+          True: {state: stunbaton_on}
+          False: {state: stunbaton_off}
