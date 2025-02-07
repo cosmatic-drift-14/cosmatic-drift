@@ -83,6 +83,9 @@
     size: 5
   - type: Storage
     capacity: 5
+    whitelist:
+      tags:
+        - Matchstick
   - type: StorageFill
     contents:
       - id: Matchstick
