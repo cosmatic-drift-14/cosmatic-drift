@@ -25206,8 +25206,8 @@ entities:
     - type: Transform
       pos: -55.51698,-77.4413
       parent: 2
-    - type: Item
-      size: Huge
+    # - type: Item CD: Removed this
+    #   size: Huge
     missingComponents:
     - Blueprint
     - StaticPrice
@@ -141586,8 +141586,8 @@ entities:
     - type: Transform
       pos: -15.441118,17.515356
       parent: 2
-    - type: Item
-      size: Huge
+    # - type: Item # CD: Removed this
+    #   size: Huge
     - type: Contraband
       allowedJobs: []
       allowedDepartments:
