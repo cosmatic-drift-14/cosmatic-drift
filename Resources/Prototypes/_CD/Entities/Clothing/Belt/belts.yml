@@ -28,3 +28,35 @@
   - type: ClothingBlockSlotsOnEquip
     blockedSlots:
     - "outerClothing"
+
+- type: entity
+  parent: [ClothingBeltSheath, BaseSecurityContraband]
+  id: ClothingBeltStunSheath
+  name: stun sheath
+  description: A utilitarian sheath designed to hold a security sabre.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/stunsheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/stunsheath.rsi
+  - type: Item
+    size: 80
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sabre
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - StunSabre
+  - type: ItemMapper
+    mapLayers:
+      sheath-sabre:
+        whitelist:
+          tags:
+          - StunSabre
+  - type: Appearance
