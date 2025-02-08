@@ -26,6 +26,7 @@
       #CD Addions
       - id: BookSOPSecurity
         prob: 0.2
+      - id: BreachingCharge
 
 - type: entity
   id: LockerWardenFilled
@@ -54,6 +55,7 @@
       #CD Addions
       - id: BookSOPSecurity
         prob: 0.2
+      - id: BreachingCharge
 
 - type: entity
   id: LockerSecurityFilled
