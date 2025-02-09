@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseItem
+  id: VoteLinkCartridge
+  name: VoteLink cartridge
+  description: A cartridge that lets you poll the public.
+  components:
+  - type: Sprite # placeholder
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-y
+  - type: UIFragment
+    ui: !type:VoteLinkUi
+  - type: VoteLinkCartridge
+  - type: Cartridge
+    programName: vote-link-program-name
+    icon:
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_words
+      color: "#cccccc"
+  - type: AccessReader # This is so that we can restrict who can make votes
+    access: [ [ "Command" ] ]
