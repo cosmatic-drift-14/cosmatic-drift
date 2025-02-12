@@ -1,0 +1,36 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               Title="{Loc vote-link-history-title}"
+               MinSize="400 300">
+    <ScrollContainer VerticalExpand="True"
+                     HorizontalExpand="True"
+                     Margin="2">
+        <BoxContainer Name="HistoryEntries"
+                      Orientation="Vertical"
+                      HorizontalExpand="True">
+            <!-- Empty state message -->
+            <Label Name="NoHistoryLabel"
+                   Text="{Loc vote-link-history-empty}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   StyleClasses="LabelHeading"
+                   HorizontalExpand="True"
+                   VerticalExpand="True"
+                   Margin="0 20 0 0" />
+
+            <!-- Template for entries - actual entries added in code -->
+            <PanelContainer StyleClasses="AngleRect" Visible="False">
+                <BoxContainer Orientation="Vertical"
+                              HorizontalExpand="True"
+                              Margin="2">
+                    <Label StyleClasses="LabelHeading" />
+                    <Label Modulate="Gray" />
+                    <BoxContainer Orientation="Vertical"
+                                  HorizontalExpand="True"
+                                  Margin="0 4 0 0">
+                        <!-- Results added here -->
+                    </BoxContainer>
+                </BoxContainer>
+            </PanelContainer>
+        </BoxContainer>
+    </ScrollContainer>
+</DefaultWindow>
