@@ -8,10 +8,10 @@
   },
   "states": [
     {
-      "name": "stunbaton_off"
+      "name": "stunsabre_off"
     },
     {
-      "name": "stunbaton_on",
+      "name": "stunsabre_on",
       "delays": [
         [
           0.1,

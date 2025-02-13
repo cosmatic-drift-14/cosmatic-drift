@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: _CD/Objects/Weapons/Melee/stunsabre.rsi
     layers:
-    - state: stunbaton_off
+    - state: stunsabre_off
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Tag
     tags:
@@ -17,5 +17,5 @@
     visuals:
      enum.ToggleVisuals.Toggled:
         enum.ToggleVisuals.Layer:
-          True: {state: stunbaton_on}
-          False: {state: stunbaton_off}
+          True: {state: stunsabre_on}
+          False: {state: stunsabre_off}

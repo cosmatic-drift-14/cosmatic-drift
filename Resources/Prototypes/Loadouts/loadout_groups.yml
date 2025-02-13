@@ -1067,6 +1067,7 @@
   - SecurityBelt
   - SecurityWebbing
   - SecurityPlateCarrier #CD
+  - SecurityStunSabre # CD
 
 - type: loadoutGroup
   id: SecurityOuterClothing

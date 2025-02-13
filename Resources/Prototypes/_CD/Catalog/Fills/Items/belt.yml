@@ -7,3 +7,13 @@
     containers:
       storagebase: !type:NestedSelector
         tableId: BeltSecurityEntityTable
+
+- type: entity
+  id: ClothingBeltStunSheathFilled
+  parent: ClothingBeltStunSheath
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - StunSabre
