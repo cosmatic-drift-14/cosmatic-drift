@@ -24,6 +24,11 @@
     belt: ClothingBeltSecurityPlateCarrierFilled
 
 - type: loadout
+  id: SecurityStunSabre
+  equipment:
+    belt: ClothingBeltStunSheathFilled
+
+- type: loadout
   id: SecurityGreatcoat
   equipment:
     outerClothing: ClothingOuterCoatSecGreatcoat
