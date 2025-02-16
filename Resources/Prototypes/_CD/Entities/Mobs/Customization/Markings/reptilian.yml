@@ -2,7 +2,7 @@
   id: LizardChestDragonwings
   bodyPart: Tail
   markingCategory: Chest
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
     state: body_dragonwings
@@ -11,7 +11,7 @@
   id: LizardHeadLEDVisor
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [ Reptilian ]
   coloring:
     default:
       type:
@@ -24,3 +24,113 @@
     state: head_ledvisor_secondary
   - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
     state: head_ledvisor_tertiary
+
+# Snake Tails
+
+- type: marking
+  id: LizardTailSnake
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Reptilian]
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snaketail
+
+- type: marking
+  id: LizardTailSnakeStripe
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Reptilian]
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripe_primary
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripe_secondary
+
+- type: marking
+  id: LizardTailSnakeStripeAlt
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Reptilian]
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripealt_primary
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripealt_secondary
+
+- type: marking
+  id: LizardTailSnakeDual
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Reptilian]
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakedual_primary
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakedual_secondary
+
+- type: marking
+  id: LizardTailSnakeUnder
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Reptilian]
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakeunder_primary
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakeunder_secondary
+
+# Animated Snake Tails
+
+- type: marking
+  id: LizardTailSnakeAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: []
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snaketail_wagging
+
+- type: marking
+  id: LizardTailSnakeStripeAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: []
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripe_primary_wagging
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripe_secondary_wagging
+
+- type: marking
+  id: LizardTailSnakeStripeAltAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: []
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripealt_primary_wagging
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakestripealt_secondary_wagging
+
+- type: marking
+  id: LizardTailSnakeDualAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: []
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakedual_primary_wagging
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakedual_secondary_wagging
+
+- type: marking
+  id: LizardTailSnakeUnderAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: []
+  sprites:
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakeunder_primary_wagging
+    - sprite: _CD/Mobs/Customization/snaketails.rsi
+      state: tail_snakeunder_secondary_wagging

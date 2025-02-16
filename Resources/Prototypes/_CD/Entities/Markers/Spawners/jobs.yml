@@ -1,7 +1,7 @@
 # Regular Spawn Points (for CD exclusive jobs)
 - type: entity
-  id: SpawnPointPrisoner # Likely unused, but good to have
   parent: SpawnPointJobBase
+  id: SpawnPointPrisoner # Likely unused, but good to have
   name: prisoner
   components:
   - type: SpawnPoint
@@ -12,8 +12,8 @@
       - state: prisoner
 
 - type: entity
-  id: SpawnPointPrivateInvestigator
   parent: SpawnPointJobBase
+  id: SpawnPointPrivateInvestigator
   name: privateinvestigator
   components:
   - type: SpawnPoint
@@ -25,8 +25,8 @@
 
 # Standard Spawnpoints for Senior Roles
 - type: entity
-  id: SpawnPointSeniorEngineer
   parent: SpawnPointJobBase
+  id: SpawnPointSeniorEngineer
   name: seniorengineer
   components:
   - type: SpawnPoint
@@ -37,8 +37,8 @@
       - state: seniorengineer
 
 - type: entity
-  id: SpawnPointSeniorPhysician
   parent: SpawnPointJobBase
+  id: SpawnPointSeniorPhysician
   name: seniorphysician
   components:
   - type: SpawnPoint
@@ -49,8 +49,8 @@
       - state: seniorphysician
 
 - type: entity
-  id: SpawnPointSeniorResearcher
   parent: SpawnPointJobBase
+  id: SpawnPointSeniorResearcher
   name: seniorresearcher
   components:
   - type: SpawnPoint
@@ -61,8 +61,8 @@
       - state: seniorresearcher
 
 - type: entity
-  id: SpawnPointSeniorOfficer
   parent: SpawnPointJobBase
+  id: SpawnPointSeniorOfficer
   name: seniorofficer
   components:
   - type: SpawnPoint
@@ -76,9 +76,9 @@
 # Base
 
 - type: entity
-  id: ArrivalsSpawnPointJobBase
-  parent: MarkerBase
   abstract: true
+  parent: MarkerBase
+  id: ArrivalsSpawnPointJobBase
   name: arrivals job spawn
   components:
   - type: ArrivalsSpawnPoint
@@ -88,9 +88,9 @@
     sprite: Markers/jobs.rsi
 
 - type: entity
-  suffix: general
-  id: ArrivalsSpawnPointGeneral
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointGeneral
+  suffix: general
   components:
   - type: Sprite
     state: green
@@ -98,8 +98,8 @@
 # Cargo
 
 - type: entity
-  id: ArrivalsSpawnPointCargo
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointCargo
   suffix: cargo
   components:
   - type: ArrivalsSpawnPoint
@@ -111,8 +111,8 @@
       - state: cargo_tech
 
 - type: entity
-  id: ArrivalsSpawnPointQuartermaster
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointQuartermaster
   suffix: quartermaster
   components:
   - type: ArrivalsSpawnPoint
@@ -124,8 +124,8 @@
       - state: qm
 
 - type: entity
-  id: ArrivalsSpawnPointSalvage
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointSalvage
   suffix: salvage
   components:
   - type: ArrivalsSpawnPoint
@@ -139,8 +139,8 @@
 # Civilian
 
 - type: entity
-  id: ArrivalsSpawnPointBartender
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointBartender
   suffix: bartender
   components:
   - type: ArrivalsSpawnPoint
@@ -152,8 +152,8 @@
       - state: bartender
 
 - type: entity
-  id: ArrivalsSpawnPointClown
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointClown
   suffix: clown
   components:
   - type: ArrivalsSpawnPoint
@@ -165,8 +165,8 @@
       - state: clown
 
 - type: entity
-  id: ArrivalsSpawnPointLibrarian
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointLibrarian
   suffix: librarian
   components:
   - type: ArrivalsSpawnPoint
@@ -178,8 +178,8 @@
       - state: librarian
 
 - type: entity
-  id: ArrivalsSpawnPointMime
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointMime
   suffix: mime
   components:
   - type: ArrivalsSpawnPoint
@@ -191,8 +191,8 @@
       - state: mime
 
 - type: entity
-  id: ArrivalsSpawnPointMusician
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointMusician
   suffix: musician
   components:
   - type: ArrivalsSpawnPoint
@@ -204,8 +204,8 @@
       - state: musician
 
 - type: entity
-  id: ArrivalsSpawnPrivateInvestigator
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPrivateInvestigator
   suffix: private investigator
   components:
   - type: ArrivalsSpawnPoint
@@ -219,8 +219,8 @@
 # Command
 
 - type: entity
-  id: ArrivalsSpawnPointCaptain
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointCaptain
   suffix: captain
   components:
   - type: ArrivalsSpawnPoint
@@ -232,8 +232,8 @@
       - state: captain
 
 - type: entity
-  id: ArrivalsSpawnPointHeadOfPersonnel
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointHeadOfPersonnel
   suffix: headofpersonnel
   components:
   - type: ArrivalsSpawnPoint
@@ -247,8 +247,8 @@
 # Engineering
 
 - type: entity
-  id: ArrivalsSpawnPointAtmosphericTechnician
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointAtmosphericTechnician
   suffix: atmospheric technician
   components:
   - type: ArrivalsSpawnPoint
@@ -260,8 +260,8 @@
       - state: atmospherics
 
 - type: entity
-  id: ArrivalsSpawnPointChiefEngineer
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointChiefEngineer
   suffix: chief engineer
   components:
   - type: ArrivalsSpawnPoint
@@ -273,8 +273,8 @@
       - state: ce
 
 - type: entity
-  id: ArrivalsSpawnPointEngineer
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointEngineer
   suffix: engineering
   components:
   - type: ArrivalsSpawnPoint
@@ -290,8 +290,8 @@
 # Medical
 
 - type: entity
-  id: ArrivalsSpawnPointChemist
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointChemist
   suffix: chemist
   components:
   - type: ArrivalsSpawnPoint
@@ -303,8 +303,8 @@
       - state: chemist
 
 - type: entity
-  id: ArrivalsSpawnPointChiefMedicalOfficer
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointChiefMedicalOfficer
   suffix: chief medical officer
   components:
   - type: ArrivalsSpawnPoint
@@ -316,8 +316,8 @@
       - state: cmo
 
 - type: entity
-  id: ArrivalsSpawnPointMedical
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointMedical
   suffix: medical
   components:
   - type: ArrivalsSpawnPoint
@@ -334,8 +334,8 @@
 # Science
 
 - type: entity
-  id: ArrivalsSpawnPointResearchDirector
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointResearchDirector
   suffix: research director
   components:
   - type: ArrivalsSpawnPoint
@@ -347,8 +347,8 @@
       - state: rd
 
 - type: entity
-  id: ArrivalsSpawnPointScience
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointScience
   suffix: science
   components:
   - type: ArrivalsSpawnPoint
@@ -364,8 +364,8 @@
 # Security
 
 - type: entity
-  id: ArrivalsSpawnPointDetective
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointDetective
   suffix: detective
   components:
   - type: ArrivalsSpawnPoint
@@ -377,8 +377,8 @@
       - state: detective
 
 - type: entity
-  id: ArrivalsSpawnPointHeadOfSecurity
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointHeadOfSecurity
   suffix: head of security
   components:
   - type: ArrivalsSpawnPoint
@@ -390,8 +390,8 @@
       - state: hos
 
 - type: entity
-  id: ArrivalsSpawnPointSecurity
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointSecurity
   suffix: security
   components:
   - type: ArrivalsSpawnPoint
@@ -405,8 +405,8 @@
       - state: security_officer
 
 - type: entity
-  id: ArrivalsSpawnPointWarden
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointWarden
   suffix: warden
   components:
   - type: ArrivalsSpawnPoint
@@ -420,8 +420,8 @@
 # Wildcards
 
 - type: entity
-  id: ArrivalsSpawnPointPrisoner
   parent: ArrivalsSpawnPointJobBase
+  id: ArrivalsSpawnPointPrisoner
   suffix: prisoner
   components:
   - type: ArrivalsSpawnPoint

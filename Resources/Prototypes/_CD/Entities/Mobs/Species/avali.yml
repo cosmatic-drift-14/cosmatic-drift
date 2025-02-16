@@ -35,7 +35,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: FloorOcclusion
   - type: Vocal
     sounds:
       Male: MaleAvali

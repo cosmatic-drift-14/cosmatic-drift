@@ -1,6 +1,6 @@
 - type: body
   id: Avali
-  name: "avali"
+  name: avali
   root: torso
   slots:
     head:

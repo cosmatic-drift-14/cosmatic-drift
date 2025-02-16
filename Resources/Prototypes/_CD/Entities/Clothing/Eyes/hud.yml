@@ -1,0 +1,13 @@
+- type: entity
+  parent: [ClothingEyesBase, ShowMedicalIcons]
+  id: ClothingEyesHudMedicalVisor
+  name: medical visor
+  description: A full-vision medical hud, allowing for more visible information diagnostics.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Eyes/Hud/med_visor.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Eyes/Hud/med_visor.rsi
+  - type: Tag
+    tags:
+    - HudMedical

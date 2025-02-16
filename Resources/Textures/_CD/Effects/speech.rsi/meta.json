@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Rodentia sprites made by portfiend",
+    "copyright": "Rodentia sprites made by portfiend, Vulpkanin0-2 made by PursuitinAshes (Github) based off of https://github.com/space-wizards/space-station-14/pull/24994",
     "states": [
         {
             "name": "rodentia0",
@@ -23,6 +23,23 @@
         },
         {
             "name": "rodentia2"
+        },
+        {
+            "name": "vulpkanin0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "vulpkanin1"
+        },
+        {
+            "name": "vulpkanin2"
         }
     ]
 }

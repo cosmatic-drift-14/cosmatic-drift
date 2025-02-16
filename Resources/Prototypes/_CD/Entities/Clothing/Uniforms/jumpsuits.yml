@@ -1,4 +1,4 @@
-#Waiter Jumpsuit
+# Waiter Jumpsuit
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitWaiter
@@ -10,7 +10,7 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/waiter.rsi
 
-#Pajama's
+# Pajama's
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitPajamaBlue
@@ -33,7 +33,7 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/pajama_red.rsi
 
-#Boiler suits
+# Boiler suits
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitBoilersuitNTNavy
@@ -45,7 +45,7 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/boilersuit.rsi
 
-#ETU gear
+# ETU gear
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitETUFlightsuit
@@ -56,9 +56,8 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/etu_jumpsuit.rsi
-    
 
-#Synth suits
+# Synth suits
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitDefaultSynth
@@ -70,11 +69,11 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/synth_default.rsi
 
-#Casual
+# Casual
 
 # Industrial
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
   id: ClothingUniformJumpsuitCargoPants
   name: cargo cargoes
   description: A pair of khaki cargo pants, for cargo. Comes with a grey tee.
@@ -174,7 +173,6 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
 
-
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformChemistCasual
@@ -196,11 +194,23 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
-    
+
+#Non-Departmental
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformCentcommCasual
+  name: CentComm summer outfit
+  description: A CentComm branded tee with office pants, for coffee boys and comfortable Commanders.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
+
 # Non-casual drip below
 
-# medical garments
-
+# Medical garments
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformCMOFormal
@@ -211,7 +221,6 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cmo_formal.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cmo_formal.rsi
-
 
 - type: entity
   parent: ClothingUniformBase
@@ -241,8 +250,8 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCargoLight
   name: cargo tech jumpsuit
-  description: A sturdy jumpsuit, issued to members of the Cargo department.
   suffix: light
+  description: A sturdy jumpsuit, issued to members of the Cargo department.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_light.rsi
@@ -261,7 +270,6 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
 
-
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCargoOveralls
@@ -273,9 +281,7 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_overalls.rsi
 
-
 # QM foreman uniform
-
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitForeman
@@ -288,7 +294,6 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
 
 # Salvage Operator
-
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSalvageOperator
@@ -303,7 +308,7 @@
 # Suits
 
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
   id: ClothingUniformJumpsuitSuitBlue
   name: blue formal suit
   description: A pair of blue dress pants with a white shirt, includes a waistcoat.
@@ -312,3 +317,16 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
+
+# Turtlenecks
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformCentcommTurtleneck
+  name: CentComm turtleneck
+  description: A CentComm green turtleneck with office slacks, the material feels expensive.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/centcomm_turtle.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/centcomm_turtle.rsi

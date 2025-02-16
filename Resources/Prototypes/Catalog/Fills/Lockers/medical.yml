@@ -123,6 +123,7 @@
       - id: BoxPillCanister
       - id: BoxBottle
       - id: BoxVial
+      - id: PlasmaChemistryVial
       - id: ChemBag
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
@@ -153,6 +154,7 @@
       - id: HandheldGPSBasic
       - id: MedkitFilled
       #CD Addions
+      - id: HandheldCrewMonitor
       - id: ETUGarmentBag
         prob: 0.3
       - id: BookSOPMedical

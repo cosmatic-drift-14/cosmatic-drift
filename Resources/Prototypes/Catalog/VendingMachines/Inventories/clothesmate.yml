@@ -7,6 +7,7 @@
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
     ClothingRandomSpawner: 8
+    ClothingOuterCoatRandom: 8 # CD
     ClothingHeadHatBeret: 4
     ClothingHeadBandBlack: 2
     ClothingHeadBandBlue: 2
@@ -63,6 +64,8 @@
     ClothingUniformJumpskirtCasualPurple: 2
     ClothingUniformJumpsuitCasualRed: 2
     ClothingUniformJumpskirtCasualRed: 2
+    ClothingUniformJumpsuitCasualGreen: 2
+    ClothingUniformJumpskirtCasualGreen: 2
     # DO NOT ADD MORE, USE UNIFORM DYING
     ClothingShoesColorBlack: 8
     ClothingShoesColorBrown: 4

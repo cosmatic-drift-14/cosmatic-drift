@@ -46,6 +46,7 @@ public static class RecordsSerialization
     private static List<PlayerProvidedCharacterRecords.RecordEntry> DeserializeEntries(List<CDModel.CharacterRecordEntry> entries, CDModel.DbRecordEntryType ty)
     {
         return entries.Where(e => e.Type == ty)
+            .OrderBy(e => e.Id) // attempt at fixing the record order changing bug.
             .Select(e => new PlayerProvidedCharacterRecords.RecordEntry(e.Title, e.Involved, e.Description))
             .ToList();
     }
@@ -88,19 +89,5 @@ public static class RecordsSerialization
             .Concat(records.SecurityEntries.Select(security => ConvertEntry(security, CDModel.DbRecordEntryType.Security)))
             .Concat(records.EmploymentEntries.Select(employment => ConvertEntry(employment, CDModel.DbRecordEntryType.Employment)))
             .ToList();
-    }
-
-    public static JsonDocument SerializeRecords(PlayerProvidedCharacterRecords pRecords)
-    {
-        // This is cursed, but we cannot use the normal JSON annotations inside of Content.Shared because it is a sandbox violation.
-        //var node = JsonSerializer.SerializeToNode(pRecords)!;
-        //node.AsObject().Remove(nameof(pRecords.MedicalEntries));
-        //node.AsObject().Remove(nameof(pRecords.SecurityEntries));
-        //node.AsObject().Remove(nameof(pRecords.EmploymentEntries));
-
-        // Even though the method is called "Deserialize", we are serializing here. This is needed because you cannot
-        // modify JSON documents.
-        //return node.Deserialize<JsonDocument>()!;
-        return JsonSerializer.SerializeToDocument(pRecords);
     }
 }

@@ -1,6 +1,6 @@
 - type: entity
-  id: CigPackPurple
   parent: CigPackBase
+  id: CigPackPurple
   name: De Jure packet
   description: Your divine right to smoke. Tastes like olives and fake gold.
   components:
@@ -14,8 +14,8 @@
       amount: 10
 
 - type: entity
-  id: CigPackCandy
   parent: CigPackBase
+  id: CigPackCandy
   name: Sugar Rush packet
   description: It's sweetened!
   components:
@@ -27,3 +27,181 @@
     contents:
     - id: CigaretteCandy
       amount: 10
+
+- type: entity
+  id: CigPackDarkGreen
+  parent: CigPackBase
+  name: Garden Mirage packet
+  description: Life's a Mirage, see through it.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/darkgreen.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/darkgreen.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteMirage
+      amount: 10
+
+# Unmarked packets
+
+- type: entity
+  id: CigPackUnmarkedWeh
+  parent: CigPackBaseUnmarked
+  name: cigarweh packet
+  suffix: weh
+  description: An unmarked packet of cigarettes. There is a lizard plushie sticker on the back of it.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteWeh
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedHappiPsi
+  parent: CigPackBaseUnmarked
+  name: unmarked packet
+  suffix: happsiness
+  description: An unmarked packet of cigarettes. There is a striped mint and violet marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteHappiPsi
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedBliss
+  parent: CigPackBaseUnmarked
+  name: unmarked packet
+  suffix: bliss
+  description: An unmarked packet of cigarettes. There is a bright yellow marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteBliss
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedAgono
+  parent: CigPackBaseUnmarked
+  name: unmarked packet
+  suffix: agono
+  description: An unmarked packet of cigarettes. There is a pink marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteAgono
+      amount: 10
+
+- type: entity
+  id: CigPackUnmarkedEquili
+  parent: CigPackBaseUnmarked
+  name: unmarked packet
+  suffix: equili
+  description: An unmarked packet of cigarettes. There is a dark brown marker on the bottom.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+  - type: StorageFill
+    contents:
+    - id: CigaretteEquili
+      amount: 10
+
+- type: entity
+  parent: CigPackBaseUnmarked
+  id: CigPackUnmarked
+  name: unmarked packet
+  components:
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+    - CigPackUnmarkedWeh
+    - CigPackUnmarkedHappiPsi
+    - CigPackUnmarkedBliss
+    - CigPackUnmarkedAgono
+    - CigPackUnmarkedEquili
+
+- type: entity
+  id: CigPackBaseUnmarked
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  name: unmarked cigarette pack
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Packs/unmarked.rsi
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+      visible: false
+    - state: cig1
+      map: ["cig1"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig2
+      map: ["cig2"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig3
+      map: ["cig3"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig4
+      map: ["cig4"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig5
+      map: ["cig5"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+    - state: cig6
+      map: ["cig6"]
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/visualizer.rsi
+      visible: false
+  - type: Tag
+    tags:
+    - CigPack
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 50
+  - type: SpaceGarbage
+  - type: Item
+    size: 10
+  - type: Storage
+    capacity: 10
+  - type: StorageFill
+    contents:
+    - id: Cigarette
+      amount: 10
+  - type: ItemCounter
+    count:
+      tags: [Cigarette]
+    composite: true
+    layerStates:
+    - cig1
+    - cig2
+    - cig3
+    - cig4
+    - cig5
+    - cig6
+  - type: Appearance

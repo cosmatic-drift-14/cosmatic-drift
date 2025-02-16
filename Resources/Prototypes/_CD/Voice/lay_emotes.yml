@@ -35,7 +35,7 @@
     - goes prone.
     - collapses
     - collapses.
-    
+
 - type: emote
   id: StandUp
   name: chat-emote-name-stand-up
@@ -55,4 +55,3 @@
     - stood up.
     - gets up
     - gets up.
-    

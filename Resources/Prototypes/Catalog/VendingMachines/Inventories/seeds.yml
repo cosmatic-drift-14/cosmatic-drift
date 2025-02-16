@@ -39,5 +39,7 @@
     TowercapSeeds: 5
     WheatSeeds: 5
     WatermelonSeeds: 5
+  contrabandInventory:
+    MindleafSeeds: 1 # _CD
   emaggedInventory:
     FlyAmanitaSeeds: 1

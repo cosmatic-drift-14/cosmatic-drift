@@ -5,7 +5,8 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Timing;
 using Robust.Shared.Configuration;
-using Content.Shared.CCVar;
+// CD
+using Content.Shared._CD.CCVars;
 
 namespace Content.Client.UserInterface.Systems.Ghost.Widgets;
 
@@ -53,7 +54,7 @@ public sealed partial class GhostGui : UIWidget
         if (todd != null)
         {
             _timeOfDeath = todd;
-            _minTimeToRespawn = _configurationManager.GetCVar(CCVars.RespawnTime);
+            _minTimeToRespawn = _configurationManager.GetCVar(CDCCVars.RespawnTime);
         }
     }
 

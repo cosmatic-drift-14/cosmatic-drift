@@ -20,32 +20,33 @@
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
-            Bartender: [ 2, 2 ]
+            Bartender: [ 1, 2 ] #CD change from 2 minimum to 1 minimum.
             Botanist: [ 3, 3 ]
             Chef: [ 2, 2 ]
             Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
+            Reporter: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ] #CD Role
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ]
+            TechnicalAssistant: [ 2, 2 ] #CD change from 4 to 2.
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             SeniorPhysician: [ 1, 1 ] #CD Role
             MedicalDoctor: [ 4, 4 ]
             Paramedic: [ 1, 1 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalIntern: [ 2, 2 ] #CD change from 4 to 2.
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD Role      
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 4, 4 ] 
+            ResearchAssistant: [ 2, 2 ] #CD change from 4 to 2.
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]

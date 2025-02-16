@@ -156,12 +156,13 @@
   - type: StealCondition
     stealGroup: Hypospray
 
-- type: entity
-  parent: BaseCMOStealObjective
-  id: CMOCrewMonitorStealObjective
-  components:
-  - type: StealCondition
-    stealGroup: HandheldCrewMonitor
+# CD: We hand these out to paramedics
+#- type: entity
+#  parent: BaseCMOStealObjective
+#  id: CMOCrewMonitorStealObjective
+#  components:
+#  - type: StealCondition
+#    stealGroup: HandheldCrewMonitor
 
 ## rd
 

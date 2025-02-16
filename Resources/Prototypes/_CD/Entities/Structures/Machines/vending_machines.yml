@@ -16,19 +16,17 @@
     denyState: deny-unshaded
     ejectDelay: 5
     soundVend: /Audio/Machines/circuitprinter.ogg
-  # - type: Advertise
-  #   pack: QuickThreadsAds
   - type: Speech
   - type: Sprite
     sprite: _CD/Structures/Machines/VendingMachines/quickthreads.rsi
     layers:
     - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
     - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
       shader: unshaded
     - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
   - type: PointLight
     radius: 1.5
     energy: 1.3

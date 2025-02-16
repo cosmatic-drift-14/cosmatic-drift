@@ -22,6 +22,7 @@
     - id: BookSOPCargo
     - id: BookSOPCommand
       prob: 0.3
+    - id: SalvageShuttleConsoleCircuitboard
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -352,6 +353,7 @@
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
     - id: WantedListCartridge
+    - id: DrinkHosFlask
     #CD Addions
     - id: BookSOPSecurity
     - id: BookSOPCommand

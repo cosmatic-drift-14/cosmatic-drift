@@ -4,6 +4,7 @@
   text: "/ServerInfo/Guidebook/_CD/ic-policy.xml"
   children:
   - CDSop
+  - SpaceLaw
 
 - type: guideEntry
   id: CDSop

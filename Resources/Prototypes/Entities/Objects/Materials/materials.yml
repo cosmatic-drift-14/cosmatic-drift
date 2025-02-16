@@ -49,6 +49,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    # heldPrefix: cardboard
   - type: Extractable
     grindableSolutionName: cardboard
   - type: SolutionContainerManager
@@ -124,6 +125,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    # heldPrefix: cloth
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -208,6 +210,8 @@
     tags:
       - ClothMade
       - RawMaterial
+  - type: Item
+    heldPrefix: durathread
 
 - type: entity
   parent: MaterialDurathread
@@ -357,8 +361,7 @@
     sprite: Objects/Materials/materials.rsi
     state: corgihide
   - type: Item
-    sprite: Clothing/Head/Misc/hides.rsi
-    heldPrefix: corgi
+    heldPrefix: corgihide
   - type: Clothing
     sprite: Clothing/Head/Misc/hides.rsi
     equippedPrefix: corgi2
@@ -434,6 +437,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    heldPrefix: cotton
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -509,6 +513,8 @@
     tags:
       - ClothMade
       - RawMaterial
+  - type: Item
+    heldPrefix: pyrotton
 
 - type: entity
   parent: MaterialPyrotton
@@ -572,6 +578,7 @@
   - type: Appearance
   - type: Item
     size: 20
+    heldPrefix: bananium
 
 - type: entity
   parent: MaterialBananium
@@ -603,6 +610,8 @@
     stackType: WebSilk
   - type: Item
     size: 50
+    sprite: Objects/Materials/silk.rsi
+    heldPrefix: silk
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -749,6 +758,7 @@
   - type: Appearance
   - type: Item
     size: 30
+    heldPrefix: bones
   - type: Food
   - type: BadFood
   - type: SolutionContainerManager
@@ -814,6 +824,8 @@
     - goliath_hide_3
   - type: Item
     size: 60
+    heldPrefix: goliathhide
+    sprite: Objects/Materials/hide.rsi
 
 - type: entity
   parent: MaterialGoliathHide

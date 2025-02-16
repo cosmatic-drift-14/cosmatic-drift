@@ -49,6 +49,11 @@
       map: ["base"]
   - type: Item
     size: 10
+  - type: Clothing
+    sprite: Objects/Weapons/Bombs/c4.rsi
+    slots:
+    - HEAD
+    quickEquip: false
   - type: OnUseTimerTrigger
     delay: 10
     delayOptions: [10, 30, 60, 120, 300]

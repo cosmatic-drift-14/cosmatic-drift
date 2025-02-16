@@ -121,6 +121,9 @@
       Steel: 100
   - type: StaticPrice
     price: 22
+  - type: GuideHelp
+    guides:
+    - Construction
 
 - type: entity
   name: multitool
@@ -169,6 +172,12 @@
       Plastic: 100
   - type: StaticPrice
     price: 56
+  - type: GuideHelp
+    guides:
+    - Networking
+    - WirePanels
+    - Airlocks
+    - InspectingPower
 
 - type: entity
   name: network configurator
@@ -219,7 +228,7 @@
       price: 56
     - type: GuideHelp
       guides:
-      - NetworkConfigurator
+      - Networking
 
 #Power tools
 #Later on these should switch probably switch damage when changing the tool behavior.
@@ -307,7 +316,6 @@
   - type: LimitedCharges
     maxCharges: 30
     charges: 30
-  - type: UseDelay
   - type: Sprite
     sprite: Objects/Tools/rcd.rsi
     state: icon
