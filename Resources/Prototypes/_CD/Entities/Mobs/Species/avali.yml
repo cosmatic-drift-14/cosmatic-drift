@@ -63,6 +63,17 @@
     coldDamageThreshold: 223
     currentTemperature: 296.15
     specificHeat: 48
+    coldDamage: # same damage as moths
+      types:
+        Cold : 0.05 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 3 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds: # all temps are 10K colder then moths, adjusted for current temp.
+      265: 0.8
+      251: 0.6
+      226: 0.4
   - type: ThermalRegulator
     metabolismHeat: 400 # icebirb go brrr
     radiatedHeat: 100
