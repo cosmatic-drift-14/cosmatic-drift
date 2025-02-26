@@ -66,6 +66,7 @@ namespace Content.IntegrationTests.Tests
             "Plasma",
             "Elkridge",
             "Convex",
+            "Relic",
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini" // CD Map
