@@ -128889,8 +128889,8 @@ entities:
     - type: MeleeWeapon
       attackRate: 10
       autoAttack: True
-    - type: Item
-      size: Huge
+    # - type: Item CD: Removed this
+    #   size: Huge
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []

@@ -8,7 +8,7 @@
     sprite: Objects/Tools/binoculars.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 5
   - type: Wieldable
   - type: UseDelay
     delay: 1.0

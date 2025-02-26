@@ -381,7 +381,7 @@
       shader: unshaded
       map: [ "gem" ]
   - type: Item
-    size: Small
+    size: 5
     sprite: Objects/Weapons/Melee/hypereutactic_blade_inhands.rsi
   - type: Reflect
     reflectProb: 1.0

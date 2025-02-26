@@ -394,13 +394,13 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    - CDSecfabStatic
     dynamicPacks:
     - SecurityEquipment
     - SecurityBoards
     - SecurityExplosives
     - SecurityAmmo
     - SecurityWeapons
-    - CDSecfabStatic
   - type: MaterialStorage
     whitelist:
       tags:
