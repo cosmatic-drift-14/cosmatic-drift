@@ -1,0 +1,72 @@
+- type: latheRecipePack
+  id: CDBoardsStatic
+  recipes:
+  - StationRecordsComputerCircuitboard
+  - MedicalRecordsComputerCircuitboard
+  - CriminalRecordsComputerCircuitboard
+
+- type: latheRecipePack
+  id: CDAutolatheStatic
+  recipes:
+  - CassetteTape
+  - TapeRecorder
+  - GoldRing 
+  - SilverRing 
+  - GoldRingDiamond 
+  - SilverRingDiamond
+
+- type: latheRecipePack
+  id: CDMedfabStatic
+  recipes:
+  - HandheldCrewMonitor
+  - MedCrutchesForearm
+
+- type: latheRecipePack
+  id: CDSecfabStatic
+  recipes:
+  - BreachingCharge
+
+- type: latheRecipePack
+  id: CDUniformPrinterStatic
+  recipes:
+  # CD Additions
+  - ClothingUniformJumpskirtHosFormal
+  - ClothingUniformJumpskirtHoSParadeMale
+  - ClothingUniformJumpsuitHoSBlue
+  - ClothingUniformJumpsuitHosFormal
+  - ClothingUniformJumpsuitHoSGrey
+  - ClothingUniformJumpsuitHoSParadeMale
+  - ClothingUniformJumpsuitCapFormal
+  - ClothingUniformJumpskirtCapFormalDress
+  - ClothingNeckCloakHop
+  - ClothingNeckCloakQm
+  - ClothingNeckCloakCe
+  - ClothingCloakCmo
+  - ClothingNeckCloakRd
+  - ClothingNeckCloakHos
+  - ClothingNeckCloakCapFormal
+  - ClothingNeckCloakCap
+  - ClothingHeadHatBeretEngineering
+  - ClothingHeadHatBeretCmo
+  - ClothingHeadHatBeretRND
+  - ClothingHeadHatBeretHoS
+  - ClothingHeadHatHoshat
+  - ClothingHeadHatHopcap
+  - ClothingHeadHatQMsoftFlipped
+  - ClothingHeadHatQMsoft
+  - ClothingHeadHatCaptain
+  - ClothingHeadHatCapcap
+  - PanCloak
+  - GayCloak
+  - LesbianCloak
+  - AroCloak
+  - BiCloak
+  - TransCloak
+  - IntersexCloak
+  # CD exclusives
+  - ClothingBeltHarnessETU
+  - ClothingHeadHelmetETUPointman
+  - ClothingMaskGasETUSterile
+  - ClothingHandsGlovesETUGauntlet
+  - ClothingUniformJumpsuitETUFlightsuit
+  - ClothingShoesColorSlate
