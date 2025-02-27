@@ -22,6 +22,15 @@
     MindleafTea: 6
 
 - type: reaction
+  id: Breakout
+  minTemp: 393
+  reactants:
+    MindleafSap:
+      amount: 1
+  products:
+    Breakout: 1
+
+- type: reaction
   id: Rust
   minTemp: 423
   reactants:
