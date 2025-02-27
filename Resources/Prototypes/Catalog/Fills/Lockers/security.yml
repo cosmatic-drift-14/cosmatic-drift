@@ -52,6 +52,7 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+      - id: Binoculars
       #CD Addions
       - id: BookSOPSecurity
         prob: 0.2

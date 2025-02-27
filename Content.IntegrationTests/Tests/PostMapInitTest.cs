@@ -60,13 +60,13 @@ namespace Content.IntegrationTests.Tests
             "Reach",
             "Train",
             "Oasis",
-            "Cog",
             "Gate",
             "Amber",
             "Loop",
             "Plasma",
             "Elkridge",
             "Convex",
+            "Relic",
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini" // CD Map

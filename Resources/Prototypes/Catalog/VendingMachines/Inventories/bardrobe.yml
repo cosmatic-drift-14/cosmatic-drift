@@ -18,4 +18,5 @@
     ClothingBeltBandolier: 2
     ClothingEyesGlassesAviator: 2
     ClothingEyesGlassesSunglasses: 2
-
+  contrabandInventory:
+    ToyFigurineBartender: 1
