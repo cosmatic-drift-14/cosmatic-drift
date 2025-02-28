@@ -91,6 +91,8 @@
   params:
     variation: 0.125
   sounds:
+    Scream:
+      collection: VulpkaninBarks
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -141,6 +143,8 @@
   params:
     variation: 0.125
   sounds:
+    Scream:
+      collection: VulpkaninBarks
     Growl:
       collection: VulpkaninGrowls
     Snarl:
