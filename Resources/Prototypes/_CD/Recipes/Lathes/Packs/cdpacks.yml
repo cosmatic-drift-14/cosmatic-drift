@@ -10,9 +10,9 @@
   recipes:
   - CassetteTape
   - TapeRecorder
-  - GoldRing 
-  - SilverRing 
-  - GoldRingDiamond 
+  - GoldRing
+  - SilverRing
+  - GoldRingDiamond
   - SilverRingDiamond
 
 - type: latheRecipePack
@@ -20,6 +20,7 @@
   recipes:
   - HandheldCrewMonitor
   - MedCrutchesForearm
+  - VehicleWheelchairFolded
 
 - type: latheRecipePack
   id: CDSecfabStatic
