@@ -92,7 +92,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: VulpkaninBarks
+      collection: MaleScreams
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -144,7 +144,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: VulpkaninBarks
+      collection: FemaleScreams
     Growl:
       collection: VulpkaninGrowls
     Snarl:
