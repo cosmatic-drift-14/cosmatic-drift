@@ -7,7 +7,7 @@
     Scream:
       path: /Audio/_CD/Voice/Avali/avali_scream.ogg
     Laugh:
-      path: /Audio/_RMC14/Voice/Avali/avali_laugh.ogg
+      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
 
 - type: emoteSounds
   id: FemaleAvali
@@ -17,7 +17,7 @@
     Scream:
       path: /Audio/_CD/Voice/Avali/avali_scream.ogg
     Laugh:
-      path: /Audio/_RMC14/Voice/Avali/avali_laugh.ogg
+      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
 
 # Vulp Sounds
 - type: emoteSounds
