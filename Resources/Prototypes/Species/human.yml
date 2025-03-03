@@ -82,83 +82,83 @@
 - type: humanoidBaseSprite
   id: MobHumanHead
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobHumanHeadMale
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobHumanHeadFemale
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: head_f
 
 - type: humanoidBaseSprite
   id: MobHumanTorso
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobHumanTorsoMale
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobHumanTorsoFemale
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: torso_f
 
 - type: humanoidBaseSprite
   id: MobHumanLLeg
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: l_leg
 
 - type: humanoidBaseSprite
   id: MobHumanLArm
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: l_arm
 
 - type: humanoidBaseSprite
   id: MobHumanLHand
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: l_hand
 
 - type: humanoidBaseSprite
   id: MobHumanLFoot
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: l_foot
 
 - type: humanoidBaseSprite
   id: MobHumanRLeg
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: r_leg
 
 - type: humanoidBaseSprite
   id: MobHumanRArm
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: r_arm
 
 - type: humanoidBaseSprite
   id: MobHumanRHand
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: r_hand
 
 - type: humanoidBaseSprite
   id: MobHumanRFoot
   baseSprite:
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _CD/Mobs/Species/Human/parts.rsi # CD resprite
     state: r_foot
