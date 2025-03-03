@@ -241,6 +241,39 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
 
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitRed
+  name: red suit jacket
+  description: A fancy red suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/red.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/red.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitPurple
+  name: purple suit jacket
+  description: A fancy purple suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/purple.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/purple.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitBurgundy
+  name: burgundy suit jacket
+  description: A fancy burgundy suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/burgundy.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/burgundy.rsi
+
 # Labcoats
 
 - type: entity
