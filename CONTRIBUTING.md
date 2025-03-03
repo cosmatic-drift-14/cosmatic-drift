@@ -32,8 +32,12 @@ All contributions must be placed under the `_CD` namespace where appropriate. Fo
 typically a subdirectory called `_CD`. For C# changes, there is a C# namespace under almost every `Content.*` folder. If
 one does not exist, feel free to make one.
 
+**Content ported from other servers should be moved to the CD namespace**
+
 Changes to wizden code should be clearly marked with a comment. For one line changes this typically takes the form of `#
 CD: why you changed it`. Larger changes are typically located between the comments.
+
+Wizden database tables should not be touched. Instead create another table that containes all CD related information that is a optional 1:1 relationship with the wizden table. See `CDModel` for more information. This is a workaround for [an EF Core bug](https://github.com/dotnet/efcore/issues/24834).
 
 Some old code does not follow these guidelines. If you are modifying it, please try to bring it up to our modern
 standards.
