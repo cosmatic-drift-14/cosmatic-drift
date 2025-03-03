@@ -21,8 +21,8 @@ If you're unsure whether your PR will require media, ask a maintainer.
 
 ## Requirements
 
-- [ ] I have read and I am following both the Cosmatic Drift [PR Guidelines](https://github.com/cosmatic-drift-14/cosmatic-drift/blob/master/CONTRIBUTING.md) (note that they may differ than what you find on other SS14 forks).
-- [ ] I have approval from a maintainer if this PR adds a feature OR this PR does not add a feature OR you are alright with this PR being closed a a maintainer's discression.
+- [ ] I have read and I am following the Cosmatic Drift [PR Guidelines](https://github.com/cosmatic-drift-14/cosmatic-drift/blob/master/CONTRIBUTING.md) (note that they may differ than what you find on other SS14 forks).
+- [ ] I have approval from a maintainer if this PR adds a feature OR this PR does not add a feature OR you are alright with this PR being closed at a maintainer's discression.
 - [ ] I have added screenshots/videos to this PR showcasing its changes ingame, **or** this PR does not require an ingame showcase
 
 ## Breaking changes
