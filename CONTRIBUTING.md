@@ -48,3 +48,16 @@ Before you work on a medium to large PR please ask the maintainers on discord if
 it. This is to prevent you from wasting your time working on something that would not get merged. For large PRs we would
 prefer if you would create a design document outlining your changes. You can do this as a discord thread or a github
 issue. Github issues are preferred.
+
+### Licensing
+
+All content must be clearly identifiable as a license that we accept. If it is not, you need to reach out and get a written statement from the author that we are alright to use it under the terms of one of the licenses that we do accept. Ask a Project Lead before including content with a license not on this list.
+
+We accept the following licenses:
+- MIT (and similar licenses)
+- MPL 2.0 (without Exhibit B)
+- Public Domain equivalent licenses
+- CC-BY-SA (or anything from CC that is less restrictive)
+- CC-BY-SA-NC (note that this is not preferred for the reasons outlined [here](https://github.com/cosmatic-drift-14/cosmatic-drift/pull/549#discussion_r1976817869))
+
+We do not accept code under any version of the GNU GPL or AGPL. These licenses are used by a few space station forks. We would need a statement from the author stating that we are allowed to use it under a license on the above list if you intend to port code from a (A)GPL fork.
