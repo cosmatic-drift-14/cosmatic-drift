@@ -20,19 +20,14 @@ If you're unsure whether your PR will require media, ask a maintainer.
 -->
 
 ## Requirements
-<!--
-Due to influx of PR's we require to ensure that PR's are following the correct guidelines.
 
-Please take a moment to read these if its your first time.
-
-Check the boxes below to confirm that you have in fact seen these (put an X in the brackets, like [X]):
--->
-- [ ] I have read and I am following the [Pull Request Guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html). I understand that not doing so may get my pr closed at maintainer’s discretion
+- [ ] I have read and I am following both the Cosmatic Drift [PR Guidelines](https://github.com/cosmatic-drift-14/cosmatic-drift/blob/master/CONTRIBUTING.md) (note that they may differ than what you find on other SS14 forks).
+- [ ] I have approval from a maintainer if this PR adds a feature OR this PR does not add a feature OR you are alright with this PR being closed a a maintainer's discression.
 - [ ] I have added screenshots/videos to this PR showcasing its changes ingame, **or** this PR does not require an ingame showcase
 
 ## Breaking changes
 <!--
-List any breaking changes, including namespace, public class/method/field changes, prototype renames; and provide instructions for fixing them. This will be pasted in #codebase-changes.
+List any major breaking changes that downstream's of CD should be aware of or any additional considerations when merging. At the moment, you do not need to list insignificant breaking changes that are immediately visable from the git diff such as a single method or prototype rename.
 -->
 
 **Changelog**
