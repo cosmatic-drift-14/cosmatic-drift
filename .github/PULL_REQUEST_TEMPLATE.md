@@ -2,7 +2,7 @@
 <!-- The text between the arrows are comments - they will not be visible on your PR. -->
 
 ## About the PR
-<!-- What did you change in this PR? -->
+<!-- What did you change in this PR and why did you do it? -->
 
 ## Media
 <!--
