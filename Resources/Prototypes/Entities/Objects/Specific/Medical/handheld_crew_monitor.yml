@@ -1,6 +1,6 @@
 - type: entity
   name: handheld crew monitor
-  suffix: DO NOT MAP
+  # categories: [ DoNotMap ] CD: Not CMO-only
   parent: [ BaseHandheldComputer ] # CD: Not contraband
   id: HandheldCrewMonitor
   description: A hand-held crew monitor displaying the status of suit sensors.
