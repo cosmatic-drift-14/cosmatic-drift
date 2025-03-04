@@ -384,7 +384,7 @@ public abstract class SharedStorageSystem : EntitySystem
             {
                 var parent = transformOwner.ParentUid;
 
-                var position = EntityCoordinates.FromMap(
+                var position = TransformSystem.ToCoordinates(
                     parent.IsValid() ? parent : uid,
                     transformEnt.MapPosition,
                     _transform
@@ -428,7 +428,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 continue;
             }
 
-            var position = EntityCoordinates.FromMap(
+            var position = TransformSystem.ToCoordinates(
                 xform.ParentUid.IsValid() ? xform.ParentUid : uid,
                 new MapCoordinates(_transform.GetWorldPosition(targetXform), targetXform.MapID),
                 _transform
