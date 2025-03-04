@@ -6,6 +6,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Procedural;
 using Content.Shared.Radio;
 using Content.Shared.Salvage.Magnet;
+using Robust.Shared.Exceptions;
 using Robust.Shared.Map;
 
 namespace Content.Server.Salvage;
