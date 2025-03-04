@@ -12,7 +12,7 @@ using Content.Server.GameTicking;
 using Content.Shared.Administration;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
-using Robust.Server.Maps;
+using Robust.Shared.EntitySerialization;
 using Robust.Shared.Map;
 using Robust.Shared.Utility;
 
