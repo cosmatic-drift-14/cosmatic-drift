@@ -795,7 +795,7 @@
     spawned:
     - id: null # Should give nothing when you butcher it so we set the item id it needs to spawn to null
   - type: Item
-    size: Tiny
+    size: 1
   - type: Tag
     tags:
     - Trash

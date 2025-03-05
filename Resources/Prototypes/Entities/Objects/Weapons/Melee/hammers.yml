@@ -22,7 +22,7 @@
         Blunt: 10
         Structural: 10
   - type: Item
-    size: Large
+    size: 90
 
 - type: entity
   id: Mjollnir
@@ -65,7 +65,7 @@
         Blunt: 15
         Structural: 15
   - type: Item
-    size: Ginormous
+    size: 150
 
 - type: entity
   id: SingularityHammer
@@ -106,4 +106,4 @@
         Blunt: 15
         Structural: 15
   - type: Item
-    size: Ginormous
+    size: 150
