@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: packet of mindleaf seeds
+  id: MindleafSeeds
+  components:
+    - type: Seed
+      seedId: mindleaf
+    - type: Sprite
+      sprite: _CD/Objects/Specific/Hydroponics/mindleaf.rsi

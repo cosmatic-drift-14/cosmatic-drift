@@ -1,8 +1,8 @@
 - type: entity
-  suffix: DEBUG
-  id: BaseGarmentBag
   parent: BaseItem
+  id: BaseGarmentBag
   name: debug garment bag
+  suffix: DEBUG
   components:
   - type: Item
     size: 10
@@ -19,10 +19,10 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  suffix: Pointman
   parent: BaseGarmentBag
   id: ETUGarmentBag
   name: etu garment can
+  suffix: Pointman
   description: Contains one set of ETU equipment.
   components:
   - type: Sprite

@@ -1,6 +1,6 @@
 - type: entity
-  id: BookSOPGeneral
   parent: BaseGuidebook
+  id: BookSOPGeneral
   name: General Operating Procedure
   description: The standard procedures followed on any uniform NT station.
   components:
@@ -20,8 +20,8 @@
     - CDSop
 
 - type: entity
-  id: BookSOPCommand
   parent: BaseGuidebook
+  id: BookSOPCommand
   name: Command Operating Procedure
   description: The standard procedures followed by command staff on any uniform NT station.
   components:
@@ -41,8 +41,8 @@
     - CDSopCommand
 
 - type: entity
-  id: BookSOPSecurity
   parent: BaseGuidebook
+  id: BookSOPSecurity
   name: Security Operating Procedure
   description: The standard procedures followed by security staff on any uniform NT station.
   components:
@@ -62,8 +62,8 @@
     - CDSopSecurity
 
 - type: entity
-  id: BookSOPEngineering
   parent: BaseGuidebook
+  id: BookSOPEngineering
   name: Engineering Operating Procedure
   description: The standard procedures followed by engineering staff on any uniform NT station.
   components:
@@ -83,8 +83,8 @@
     - CDSopEngineering
 
 - type: entity
-  id: BookSOPMedical
   parent: BaseGuidebook
+  id: BookSOPMedical
   name: Medical Operating Procedure
   description: The standard procedures followed by medical staff on any uniform NT station.
   components:
@@ -104,8 +104,8 @@
     - CDSopMedical
 
 - type: entity
-  id: BookSOPScience
   parent: BaseGuidebook
+  id: BookSOPScience
   name: Science Operating Procedure
   description: The standard procedures followed by science staff on any uniform NT station.
   components:
@@ -125,8 +125,8 @@
     - CDSopScience
 
 - type: entity
-  id: BookSOPCargo
   parent: BaseGuidebook
+  id: BookSOPCargo
   name: Cargo Operating Procedure
   description: The standard procedures followed by cargo staff on any uniform NT station.
   components:
@@ -146,8 +146,8 @@
     - CDSopCargo
 
 - type: entity
-  id: BookSOPService
   parent: BaseGuidebook
+  id: BookSOPService
   name: Service Operating Procedure
   description: The standard procedures followed by service staff on any uniform NT station.
   components:

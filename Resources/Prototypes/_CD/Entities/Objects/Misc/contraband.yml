@@ -1,0 +1,47 @@
+- type: entity
+  parent: [BaseItem, BaseMinorContraband]
+  id: EmptyPacket
+  name: empty packet
+  description: Worth a pretty penny?
+  suffix: Cardboard
+  components:
+  - type: StaticPrice
+    price: 0
+  - type: Sprite
+    sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi
+    state: brown_icon
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+  - type: Spillable
+    solution: drink
+  - type: DrawableSolution
+    solution: drink
+  - type: RefillableSolution
+    solution: drink
+  - type: DrainableSolution
+    solution: drink
+  - type: Tag
+    tags:
+    - EmptyPacket
+  - type: Construction
+    graph: WrappedBakePackage
+    node: empty
+    defaultTarget: bakeWrapped
+
+- type: entity
+  parent: [BaseItem, BaseMinorContraband]
+  id: WrappedBakePackage
+  name: sealed narcotic packet
+  description: Worth a pretty penny, the powder inside looks chalky.
+  suffix: Bake
+  components:
+  - type: StaticPrice
+    price: 10000 # worth the risk?
+  - type: Sprite
+    sprite: _CD/Objects/Misc/Contraband/drug_packets.rsi
+    state: brown_icon
+  - type: Construction
+    graph: WrappedBakePackage
+    node: bakeWrapped

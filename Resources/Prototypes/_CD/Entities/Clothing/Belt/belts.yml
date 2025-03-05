@@ -15,9 +15,8 @@
     capacity: 20
 
 # Reverts the sprite changes in: https://github.com/space-wizards/space-station-14/pull/29441/files.
-# It is intentional that this does not provide armor until its possible for this item to block equipping armor.
 - type: entity
-  parent: ClothingBeltSecurity
+  parent: [ ClothingBeltSecurity, ClothingOuterArmorBasic ] # same armor but cant be equiped at the same time
   id: ClothingBeltSecurityPlateCarrier
   name: security plate carrier
   description: Unique and versatile plate carrier, designed to hold security gear.
@@ -26,3 +25,6 @@
     sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
   - type: Clothing
     sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
+  - type: ClothingBlockSlotsOnEquip
+    blockedSlots:
+    - "outerClothing"

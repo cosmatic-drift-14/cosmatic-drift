@@ -1,8 +1,8 @@
 - type: entity
-  id: CigaretteOlive
-  suffix: olive
   parent: Cigarette
+  id: CigaretteOlive
   name: cigarette
+  suffix: olive
   description: A roll of tobacco and nicotine soaked in some chemical, smells like olives.
   components:
   - type: SolutionContainerManager
@@ -16,10 +16,10 @@
             Quantity: 5
 
 - type: entity
+  parent: [ Cigarette, FoodBase ]
   id: CigaretteCandy
-  suffix: candy
-  parent: [Cigarette, FoodBase]
   name: cigarette
+  suffix: candy
   description: Sugar sticks designed to look like a roll of nicotine and tobacco.
   components:
   - type: Appearance
@@ -43,3 +43,101 @@
         reagents:
           - ReagentId: Sugar
             Quantity: 10
+
+- type: entity
+  id: CigaretteMirage
+  suffix: mirage
+  parent: Cigarette
+  name: cigarette
+  description: A roll of dried plant matter dipped with medical-grade narcotics.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 40
+        reagents:
+          - ReagentId: THC
+            Quantity: 15
+          - ReagentId: SpaceDrugs
+            Quantity: 15
+          - ReagentId: Psicodine
+            Quantity: 10
+
+- type: entity
+  id: CigaretteHappiPsi
+  suffix: happsiness
+  parent: Cigarette
+  name: cigarette
+  description: A laced cigarette roll. This one has a striped mint and violet ring above the filter.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 40
+        reagents:
+          - ReagentId: Happiness
+            Quantity: 15
+          - ReagentId: Psicodine
+            Quantity: 15
+
+- type: entity
+  id: CigaretteWeh
+  suffix: weh
+  parent: Cigarette
+  name: cigarweh
+  description: A roll that makes you weh.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 40
+        reagents:
+          - ReagentId: JuiceThatMakesYouWeh
+            Quantity: 20
+
+# CD Chems below
+
+- type: entity
+  id: CigaretteBliss
+  suffix: bliss
+  parent: Cigarette
+  name: cigarette
+  description: A laced cigarette roll. This one has a bright yellow ring above the filter.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 10
+        reagents:
+          - ReagentId: Blissifylovene
+            Quantity: 7.5
+
+- type: entity
+  id: CigaretteAgono
+  suffix: agono
+  parent: Cigarette
+  name: cigarette
+  description: A laced cigarette roll. This one has a pink ring above the filter.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 10
+        reagents:
+          - ReagentId: Agonolexyne
+            Quantity: 7.5
+
+- type: entity
+  id: CigaretteEquili
+  suffix: equili
+  parent: Cigarette
+  name: cigarette
+  description: A laced cigarette roll. This one has a dark brown ring above the filter.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 10
+        reagents:
+          - ReagentId: Equilibrazine
+            Quantity: 7.5

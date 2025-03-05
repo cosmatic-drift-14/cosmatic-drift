@@ -29,7 +29,7 @@
             HeadOfPersonnel: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-            ServiceWorker: [ 3, 3 ]
+            ServiceWorker: [ 2, 2 ] #CD change from 3 to 2.
             #engineering
             ChiefEngineer: [ 1, 1 ]
             StationEngineer: [ 3, 3 ]
@@ -52,8 +52,8 @@
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ]
             Warden: [ 1, 1 ]
-            Lawyer: [ 1, 1 ]
-            SecurityCadet: [ 1, 1 ]
+            Lawyer: [ 1, 2 ] #CD change from 1 maximum to 2 maximum.
+            SecurityCadet: [ 2, 2 ] #CD change from 1 to 2.
             Detective: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
             #supply

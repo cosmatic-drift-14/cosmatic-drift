@@ -1,0 +1,72 @@
+- type: reaction
+  id: Dynamoxine
+  minTemp: 393
+  reactants:
+    Phenol:
+      amount: 1
+    Dexalin:
+      amount: 1
+    Ephedrine:
+      amount: 2
+  products:
+    Dynamoxine: 3
+
+- type: reaction
+  id: MindleafTea
+  reactants:
+    MindleafSap:
+      amount: 1
+    Water:
+      amount: 5
+  products:
+    MindleafTea: 6
+
+- type: reaction
+  id: Breakout
+  minTemp: 393
+  reactants:
+    MindleafSap:
+      amount: 1
+  products:
+    Breakout: 1
+
+- type: reaction
+  id: Rust
+  minTemp: 423
+  reactants:
+    TranexamicAcid:
+      amount: 2
+    Breakout:
+      amount: 1
+    Hydroxide:
+      amount: 3
+  products:
+    Rust: 3
+
+- type: reaction
+  id: Bake
+  reactants:
+    Rust:
+      amount: 1
+    Ultravasculine:
+      amount: 2
+    Diphenylmethylamine:
+      amount: 2
+    Sigynate:
+      amount: 1
+      catalyst: true
+  products:
+    Bake: 1
+
+- type: reaction
+  id: Grit
+  reactants:
+    Bake:
+      amount: 3
+    Desoxyephedrine:
+      amount: 2
+    Psicodine:
+      amount: 1
+      catalyst: true
+  products:
+    Grit: 2

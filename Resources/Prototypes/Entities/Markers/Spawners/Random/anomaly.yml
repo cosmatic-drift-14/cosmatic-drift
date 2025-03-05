@@ -22,7 +22,8 @@
     - AnomalyFlora
     - AnomalyShadow
     - AnomalyTech
-    rareChance: 0.05 # These should be suitably rare and anomalies spawn all the time
+    #- AnomalySanta # Intentionally Removed
+    rareChance: 0.3
     rarePrototypes:
     - RandomAnomalyInjectorSpawner
     offset: 0.15 # not to put it higher. The anomaly sychnronizer looks for anomalies within this radius, and if the radius is higher, the anomaly can be attracted from a neighboring tile.
@@ -66,5 +67,6 @@
     - AnomalyTrapGravity
     - AnomalyTrapTech
     - AnomalyTrapRock
+    #- AnomalyTrapSanta
     chance: 1
   

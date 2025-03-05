@@ -193,9 +193,7 @@
   id: SpaceLaw
   name: guide-entry-rules-space-law
   priority: 1
-  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SpaceLaw.xml"
-  children:
-  - SpaceLawCrimeList
+  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/CDSpaceLaw.xml"
 
 - type: guideEntry
   id: SpaceLawCrimeList

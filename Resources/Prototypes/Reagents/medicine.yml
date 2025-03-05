@@ -124,7 +124,7 @@
           types:
             Radiation: -3
           groups:
-            Brute: 0.5
+            Brute: 1.5
 
 - type: reagent
   id: Bicaridine
@@ -560,14 +560,29 @@
         min: 4
   metabolisms:
     Medicine:
+      metabolismRate: 0.1
       effects:
       - !type:HealthChange
         damage:
           types:
-            Cellular: -1
-            Radiation: 1
-      - !type:ChemVomit
-        probability: 0.05
+            Cellular: -0.3
+            Radiation: 0.15
+            Caustic: 0.15
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 11
+        damage:
+          types:
+            Radiation: 0.2
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arithrazine
+          min: 1
+        damage:
+          types:
+            Caustic: 0.3
 
 - type: reagent
   id: PolypyryliumOligomers
@@ -973,6 +988,21 @@
         - !type:ReagentThreshold
           min: 30
         probability: 0.02
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arithrazine
+          min: 1
+        probability: 0.1
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arithrazine
+          min: 1
+        type: Local
+        visualType: Medium
+        messages: [ "generic-reagent-effect-nauseous" ]
+        probability: 0.2
 
 - type: reagent
   id: Lacerinol
@@ -1075,6 +1105,15 @@
       methods: [ Touch ]
       effects:
       - !type:ExtinguishReaction
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Holy: 0.5
   plantMetabolism:
   - !type:PlantAdjustWater
     amount: 1
@@ -1161,55 +1200,55 @@
         - !type:ReagentThreshold
           min: 12
           
-- type: reagent
-  id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
-  name: reagent-name-opporozidone
-  group: Medicine
-  desc: reagent-desc-opporozidone
-  physicalDesc: reagent-physical-desc-sickly
-  flavor: acid
-  color: "#b5e36d"
-  worksOnTheDead: true
-  metabolisms:
-    Medicine:
-      effects:
-        - !type:ReduceRotting
-          seconds: 20
-          conditions:
-          #Patient must be dead and in a cryo tube (or something cold)
-          - !type:Temperature
-            max: 150.0
-          - !type:MobStateCondition
-            mobstate: Dead
+# - type: reagent # CD Change: Removed opporozidone
+#   id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
+#   name: reagent-name-opporozidone
+#   group: Medicine
+#   desc: reagent-desc-opporozidone
+#   physicalDesc: reagent-physical-desc-sickly
+#   flavor: acid
+#   color: "#b5e36d"
+#   worksOnTheDead: true
+#   metabolisms:
+#     Medicine:
+#       effects:
+#         - !type:ReduceRotting
+#           seconds: 20
+#           conditions:
+#           #Patient must be dead and in a cryo tube (or something cold)
+#           - !type:Temperature
+#             max: 150.0
+#           - !type:MobStateCondition
+#             mobstate: Dead
 
-- type: reagent
-  id: Necrosol
-  name: reagent-name-necrosol
-  group: Medicine
-  desc: reagent-desc-necrosol
-  physicalDesc: reagent-physical-desc-necrotic
-  flavor: medicine
-  color: "#86a5bd"
-  worksOnTheDead: true
-  plantMetabolism:
-  - !type:PlantAdjustToxins
-    amount: -5
-  - !type:PlantAdjustHealth
-    amount: 5
-  - !type:PlantCryoxadone {}
-  metabolisms:
-    Medicine:
-      effects:
-        - !type:HealthChange
-          conditions:
-          - !type:Temperature
-            max: 213.0
-          damage:
-            groups:
-              Brute: -4
-              Burn: -5
-            types:
-              Poison: -2
+# - type: reagent # CD Change: removed necrosol
+#   id: Necrosol
+#   name: reagent-name-necrosol
+#   group: Medicine
+#   desc: reagent-desc-necrosol
+#   physicalDesc: reagent-physical-desc-necrotic
+#   flavor: medicine
+#   color: "#86a5bd"
+#   worksOnTheDead: true
+#   plantMetabolism:
+#   - !type:PlantAdjustToxins
+#     amount: -5
+#   - !type:PlantAdjustHealth
+#     amount: 5
+#   - !type:PlantCryoxadone {}
+#   metabolisms:
+#     Medicine:
+#       effects:
+#         - !type:HealthChange
+#           conditions:
+#           - !type:Temperature
+#             max: 213.0
+#           damage:
+#             groups:
+#               Brute: -4
+#               Burn: -5
+#             types:
+#               Poison: -2
 
 - type: reagent
   id : Aloxadone

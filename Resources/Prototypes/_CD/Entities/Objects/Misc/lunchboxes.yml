@@ -1,7 +1,7 @@
 - type: entity
-  id: LunchboxBase
-  parent: BaseStorageItem
   abstract: true
+  parent: BaseStorageItem
+  id: LunchboxBase
   components:
   - type: Sprite
     layers:
@@ -29,9 +29,9 @@
   - type: Appearance
 
 - type: entity
-  name: blue lunchbox
   parent: LunchboxBase
   id: LunchboxBlue
+  name: blue lunchbox
   description: A blue lunch box, it smells less of food and more like metal.
   components:
   - type: Sprite
@@ -41,9 +41,9 @@
     sprite: _CD/Objects/Misc/Lunchboxes/lunchbox_blue.rsi
 
 - type: entity
-  name: yellow lunchbox
   parent: LunchboxBase
   id: LunchboxYellow
+  name: yellow lunchbox
   description: A yellow lunch box, you can tell your food will be shockingly good. # i'm so sorry for this pun
   components:
   - type: Sprite

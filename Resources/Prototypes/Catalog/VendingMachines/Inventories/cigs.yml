@@ -16,5 +16,11 @@
     CheapLighter: 4
     Lighter: 3
     FlippoLighter: 2
+  contrabandInventory: # _CD
+    CigPackDarkGreen: 2 # _CD
+    CigPackUnmarked: 4 # _CD
+    GroundTobacco: 3
+    CigarGold: 2
+    Igniter: 1
   emaggedInventory:
     CigPackSyndicate: 1

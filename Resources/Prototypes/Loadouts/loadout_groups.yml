@@ -7,6 +7,7 @@
   loadouts:
   - FlowerWreath
   - Hairflower
+  - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
   - PlushieVox # CD
@@ -17,6 +18,7 @@
   - PlushieSharkBlue # CD
   - PlushieSharkPink # CD
   - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
+  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -25,6 +27,7 @@
   - CigarCase
   - CigarGold
   - ClothingNeckLGBTPin
+  - ClothingNeckAllyPin
   - ClothingNeckAromanticPin
   - ClothingNeckAsexualPin
   - ClothingNeckBisexualPin
@@ -33,6 +36,8 @@
   - ClothingNeckLesbianPin
   - ClothingNeckNonBinaryPin
   - ClothingNeckPansexualPin
+  - ClothingNeckOmnisexualPin
+  - ClothingNeckGenderqueerPin
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
@@ -50,12 +55,15 @@
   - TowelColorPurple
   - TowelColorRed
   - TowelColorSilver
-  - TowelColorLightBlue
   - TowelColorWhite
   - TowelColorYellow
   - CDDogtags # CD
   - LunchboxBlue # CD
   - LunchboxYellow # CD
+  - Cane # CD
+  - MedCrutchesForearm # CD
+  - GoldRing # CD
+  - SilverRing # CD
 
 - type: loadoutGroup
   id: Glasses
@@ -630,6 +638,8 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -665,8 +675,8 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
-  - CargoBomber # CD  
-  
+  - CargoBomber # CD
+
 - type: loadoutGroup
   id: CargoTechnicianShoes
   name: loadout-group-cargo-technician-shoes
@@ -736,6 +746,9 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - WorkBoots # CD
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -747,6 +760,7 @@
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
+  minLimit: 0
   loadouts:
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange
@@ -871,6 +885,8 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ScientistHead
@@ -1107,7 +1123,6 @@
 - type: loadoutGroup
   id: DetectiveOuterClothing
   name: loadout-group-detective-outerclothing
-  minLimit: 0
   loadouts:
   - DetectiveArmorVest
   - DetectiveCoat
@@ -1155,6 +1170,7 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
+  - ChiefMedicalOfficerFormalsuit # CD
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -1179,6 +1195,8 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1205,6 +1223,10 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - ViroJumpsuit # CD
+  - ViroJumpskirt # CD
+  - GeneJumpsuit # CD
+  - GeneJumpskirt # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1215,6 +1237,11 @@
   - ModernLabCoat # CD
   - MedicalDoctorWintercoat
   # - SeniorPhysicianLabCoat
+  - ViroCoat # CD
+  - ModernViroCoat # CD
+  - ViroWintercoat # CD
+  - GeneCoat # CD
+  - GeneWintercoat # CD
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1266,6 +1293,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
+  - ChemistCasualsuit # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -1350,6 +1378,7 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistCasualJumpsuit # CD
 
 - type: loadoutGroup
   id: BoxerJumpsuit

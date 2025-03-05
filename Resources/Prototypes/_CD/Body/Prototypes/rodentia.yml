@@ -1,6 +1,6 @@
 - type: body
-  name: species-name-rodentia
   id: Rodentia
+  name: species-name-rodentia
   root: torso
   slots:
     head:
@@ -12,17 +12,17 @@
         eyes: OrganHumanEyes
     torso:
       part: TorsoRodentia
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
       organs:
         heart: OrganAnimalHeart
         lungs: OrganHumanLungs
         stomach: OrganAnimalStomach
         liver: OrganAnimalLiver
         kidneys: OrganHumanKidneys
-      connections:
-      - right arm
-      - left arm
-      - right leg
-      - left leg
     right arm:
       part: RightArmRodentia
       connections:

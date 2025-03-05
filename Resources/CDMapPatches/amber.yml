@@ -1,0 +1,6 @@
+- !type:CDSpawnEntityMapPatch
+  worldPosition: -37.963028,-19.952396
+  id: ComputerTabletopMedicalRecords
+- !type:CDSpawnEntityMapPatch
+  worldPosition: -18.963028,-51.952396
+  id: LockerLostAndFound

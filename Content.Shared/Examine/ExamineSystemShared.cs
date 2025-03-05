@@ -42,7 +42,7 @@ namespace Content.Shared.Examine
         public const float DeadExamineRange = 0.75f;
 
         public const float ExamineRange = 16f;
-        protected const float ExamineDetailsRange = 3f;
+        protected const float ExamineDetailsRange = 8f; // CD change from 3 to 8.
 
         protected const float ExamineBlurrinessMult = 2.5f;
 
@@ -385,6 +385,8 @@ namespace Content.Shared.Examine
                     totalMessage.PushNewline();
             }
 
+            totalMessage.TrimEnd();
+
             return totalMessage;
         }
 
@@ -409,8 +411,10 @@ namespace Content.Shared.Examine
         private void PopGroup()
         {
             DebugTools.Assert(_currentGroupPart != null);
-            if (_currentGroupPart != null)
+            if (_currentGroupPart != null && !_currentGroupPart.Message.IsEmpty)
+            {
                 Parts.Add(_currentGroupPart);
+            }
 
             _currentGroupPart = null;
         }

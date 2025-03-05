@@ -1,0 +1,10 @@
+﻿- type: marking
+  id: MothWingsMembral
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/moth_wings.rsi
+    state: membral_primary
+  - sprite: _CD/Mobs/Customization/Moth/moth_wings.rsi
+    state: membral_secondary

@@ -1,4 +1,4 @@
-#Avali Sounds
+# Avali Sounds
 - type: emoteSounds
   id: MaleAvali
   params:
@@ -6,8 +6,8 @@
   sounds:
     Scream:
       path: /Audio/_CD/Voice/Avali/avali_scream.ogg
-#    Laugh:
-#      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
+    Laugh:
+      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
 
 - type: emoteSounds
   id: FemaleAvali
@@ -16,10 +16,10 @@
   sounds:
     Scream:
       path: /Audio/_CD/Voice/Avali/avali_scream.ogg
-#    Laugh:
-#      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
+    Laugh:
+      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
 
-#Vulp Sounds
+# Vulp Sounds
 - type: emoteSounds
   id: MaleVulpkanin
   params:
@@ -75,7 +75,7 @@
       collection: VulpkaninWhines
     Howl:
       collection: VulpkaninHowls
-      
+
 - type: emoteSounds
   id: MaleRodentia
   params:
@@ -99,7 +99,7 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
-    Squeak: 
+    Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
 
 - type: emoteSounds
@@ -125,5 +125,5 @@
       collection: FemaleCry
     Whistle:
       collection: Whistles
-    Squeak: 
+    Squeak:
       path: /Audio/Animals/mouse_squeak.ogg

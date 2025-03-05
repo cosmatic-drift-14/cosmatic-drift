@@ -1,8 +1,8 @@
 # "Ratty" sofa
 - type: entity
-  name: sofa
-  id: RattySofaMiddle
   parent: BenchBaseMiddle
+  id: RattySofaMiddle
+  name: sofa
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Sofa/sofa.rsi
@@ -11,9 +11,9 @@
     node: RattySofaMiddle
 
 - type: entity
+  parent: RattySofaMiddle
   id: RattySofaLeft
   suffix: Right
-  parent: RattySofaMiddle
   components:
   - type: Sprite
     state: left
@@ -22,9 +22,9 @@
     node: RattySofaLeft
 
 - type: entity
+  parent: RattySofaMiddle
   id: RattySofaRight
   suffix: Left
-  parent: RattySofaMiddle
   components:
   - type: Sprite
     state: right
@@ -33,10 +33,9 @@
     node: RattySofaRight
 
 - type: entity
-  name: sofa
   id: RattySofaCorner
+  name: sofa
   suffix: Corner
-#  parent: RattySofaMiddle
   placement:
     mode: SnapgridCenter
   components:
@@ -72,9 +71,9 @@
 
 # Corp sofa
 - type: entity
-  name: grey sofa
-  id: CorpSofaMiddle
   parent: BenchBaseMiddle
+  id: CorpSofaMiddle
+  name: grey sofa
   components:
   - type: Sprite
     sprite: _CD/Structures/Furniture/Sofa/sofa_corp.rsi
@@ -83,9 +82,9 @@
     node: CorpSofaMiddle
 
 - type: entity
+  parent: CorpSofaMiddle
   id: SofaCorpLeft
   suffix: Right
-  parent: CorpSofaMiddle
   components:
   - type: Sprite
     state: left
@@ -94,9 +93,9 @@
     node: CorpSofaLeft
 
 - type: entity
+  parent: CorpSofaMiddle
   id: SofaCorpRight
   suffix: Left
-  parent: CorpSofaMiddle
   components:
   - type: Sprite
     state: right
@@ -108,7 +107,6 @@
   name: grey sofa
   id: SofaCorpCorner
   suffix: Corner
-#  parent: BenchSofaCorpMiddle
   placement:
     mode: SnapgridCenter
   components:

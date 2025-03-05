@@ -17,7 +17,7 @@
 - type: startingGear
   id: BartenderGear
   equipment:
-    shoes: ClothingShoesColorBlack
+    # shoes: ClothingShoesColorBlack | CD, removed due to loadout addtion.
     id: BartenderPDA
     ears: ClothingHeadsetService
   #storage:

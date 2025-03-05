@@ -48,7 +48,6 @@
 - type: roleLoadout
   id: JobSeniorOfficer
   groups:
-  - GroupTankHarness
   - SeniorOfficerHead
   - SeniorOfficerJumpsuit
   - SecurityBackpack

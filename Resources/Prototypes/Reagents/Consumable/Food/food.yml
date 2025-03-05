@@ -6,7 +6,7 @@
   desc: reagent-desc-nutriment
   physicalDesc: reagent-physical-desc-opaque
   flavor: nutriment
-  color: "#24591F"
+  color: "#D3D3D3" # CD: Not everything is vomit green when you grind it down.
   metabolisms:
     Food:
       effects:

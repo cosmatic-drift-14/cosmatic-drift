@@ -8,14 +8,20 @@
     ClothingUniformJumpsuitCentcomOfficer: 3
     ClothingUniformJumpsuitCentcomOfficial: 3
     ClothingUniformJumpsuitCentcomAgent: 3
+    ClothingUniformCentcommCasual: 3 # CD
     ClothingUniformJumpsuitCentcomFormal: 3
     ClothingUniformJumpskirtCentcomFormalDress: 3
+    ClothingUniformCentcommTurtleneck: 3 # CD
     ClothingHeadHatCentcom: 3
     ClothingHeadHatCentcomcap: 3
     ClothingMaskGasCentcom: 3
     ClothingHeadsetCentCom: 3
     ClothingOuterWinterCentcom: 3
     ClothingOuterCoatExpensive: 1
-    ClothingOuterCoatCentcomOfficer: 1 # CD
+    ClothingOuterCoatCentCommOfficer: 1 # CD
+    ClothingOuterCoatCentCommOverseer: 1 # CD
     ClothingNeckScarfStripedCentcom: 3
     ClothingNeckCloakCentcom: 3
+  contrabandInventory:
+    ToyFigurineCaptain: 1
+    ToyFigurineHeadOfPersonnel: 1

@@ -1,22 +1,23 @@
-using System.Linq;
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
-using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
-using Content.Shared._CD.Records;
+using Content.Server.StationRecords;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
+using Content.Shared._CD.Records;
+using Content.Shared.Forensics.Components;
+using Content.Shared.GameTicking;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;
 
 public sealed class CharacterRecordsSystem : EntitySystem
 {
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly InventorySystem _inventorySystem = default!;
-    [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly StationRecordsSystem _records = default!;
 
     public override void Initialize()
     {
@@ -53,7 +54,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
         var player = args.Mob;
 
-        if (!_prototypeManager.TryIndex(args.JobId, out JobPrototype? jobPrototype))
+        if (!_prototype.TryIndex(args.JobId, out JobPrototype? jobPrototype))
         {
             throw new ArgumentException($"Invalid job prototype ID: {args.JobId}");
         }
@@ -65,7 +66,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         var stationRecordsKey = FindStationRecordsKey(player);
 
         // Grab the title from the station records if they exist to support our job title system
-        if (stationRecordsKey != null && _stationRecords.TryGetRecord<GeneralStationRecord>(stationRecordsKey.Value, out var stationRecords))
+        if (stationRecordsKey != null && _records.TryGetRecord<GeneralStationRecord>(stationRecordsKey.Value, out var stationRecords))
         {
             jobTitle = stationRecords.JobTitle;
         }
@@ -88,7 +89,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
     private StationRecordKey? FindStationRecordsKey(EntityUid uid)
     {
-        if (!_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
+        if (!_inventory.TryGetSlotEntity(uid, "id", out var idUid))
             return null;
 
         var keyStorageEntity = idUid;
@@ -110,7 +111,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!Resolve(station, ref recordsDb))
             return;
 
-        uint key = recordsDb.CreateNewKey();
+        var key = recordsDb.CreateNewKey();
         recordsDb.Records.Add(key, records);
         var playerKey = new CharacterRecordKey { Station = station, Index = key };
         AddComp(player, new CharacterRecordKeyStorageComponent(playerKey));
@@ -129,10 +130,10 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
 
-        if (!recordsDb.Records.ContainsKey(key.Key.Index))
+        if (!recordsDb.Records.TryGetValue(key.Key.Index, out var value))
             return;
 
-        var cr = recordsDb.Records[key.Key.Index].PRecords;
+        var cr = value.PRecords;
 
         switch (ty)
         {
@@ -159,13 +160,13 @@ public sealed class CharacterRecordsSystem : EntitySystem
         if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
 
-        if (!recordsDb.Records.ContainsKey(key.Key.Index))
+        if (!recordsDb.Records.TryGetValue(key.Key.Index, out var value))
             return;
 
         var records = PlayerProvidedCharacterRecords.DefaultRecords();
         if (TryComp(player, out MetaDataComponent? meta))
-            recordsDb.Records[key.Key.Index].Name = meta.EntityName;
-        recordsDb.Records[key.Key.Index].PRecords = records;
+            value.Name = meta.EntityName;
+        value.PRecords = records;
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
@@ -184,10 +185,9 @@ public sealed class CharacterRecordsSystem : EntitySystem
 
     public IDictionary<uint, FullCharacterRecords> QueryRecords(EntityUid station, CharacterRecordsComponent? recordsDb = null)
     {
-        if (!Resolve(station, ref recordsDb))
-            return new Dictionary<uint, FullCharacterRecords>();
-
-        return recordsDb.Records;
+        return !Resolve(station, ref recordsDb)
+            ? new Dictionary<uint, FullCharacterRecords>()
+            : recordsDb.Records;
     }
 }
 

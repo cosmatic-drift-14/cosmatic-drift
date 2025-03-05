@@ -75,7 +75,7 @@
 
 # Cargo Gorka
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
   id: ClothingOuterCoatCargoBomber
   name: cargo gorka
   description: A heavy canvas gorka for cold shifts in Cargo.
@@ -92,7 +92,7 @@
 
 # Foreman Coat
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
   id: ClothingOuterCoatCargoForeman
   name: foreman jacket
   description: A comfortable padded leather jacket for a logistics foreman
@@ -103,21 +103,37 @@
     sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoForeman]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoForeman ]
   id: ClothingOuterCoatCargoForemanOpened
   name: foreman jacket
 
-# CentCom Coat
+# CentComm Coats
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatCentcomOfficer
-  name: CentCom officer's coat
-  description: A comfortable green coat worn by CentCom officers. The armour has been removed in favour of more pocket space.
+  id: ClothingOuterCoatCentCommOfficer
+  name: CentComm officer's coat
+  description: A comfortable green coat worn by CentComm officers. The armour has been removed in favour of more pocket space.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatCentCommOverseer
+  name: CentComm overseer jacket
+  description: A leather jacket worn by Overseers who prefer a more rugged style.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/central_overseer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/central_overseer.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCentCommOverseer ]
+  id: ClothingOuterCoatCentCommOverseerOpened
+  name: CentComm overseer jacket
 
 # High-Vis jackets
 - type: entity
@@ -247,7 +263,6 @@
   id: ClothingOuterCoatStylishLabOpened
   name: modern lab coat
 
-
 - type: entity
   parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatStylishLabChem
@@ -268,7 +283,6 @@
   id: ClothingOuterCoatStylishLabChemOpened
   name: modern chemist lab coat
 
-
 - type: entity
   parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatStylishLabCMO
@@ -287,10 +301,9 @@
         Caustic: 0.65
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabCMO]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabCMO ]
   id: ClothingOuterCoatStylishLabCMOOpened
   name: chief medical officer's modern lab coat
-
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -308,10 +321,9 @@
         Caustic: 0.75
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician ]
   id: ClothingOuterCoatLabStylishSeniorPhysicianOpened
   name: modern senior physician lab coat
-
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -329,8 +341,6 @@
         Caustic: 0.75
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro ]
   id: ClothingOuterCoatLabStylishViroOpened
   name: modern virologist lab coat
-
-

@@ -19,7 +19,7 @@ public sealed partial class ConnectionManager
 {
     private PlayerConnectionWhitelistPrototype[]? _whitelists;
 
-    public void PostInit()
+    private void InitializeWhitelist()
     {
         _cfg.OnValueChanged(CCVars.WhitelistPrototypeList, UpdateWhitelists, true);
     }
@@ -233,12 +233,11 @@ public sealed partial class ConnectionManager
         // Should only be running on non-whitelisted players anyways, thus performance impact is lowered
         foreach(var player in connectedPlayers)
         {
-            if (await _db.GetWhitelistStatusAsync(data.UserId) == false)
-                if (await _db.GetWhitelistStatusAsync(player.UserId) == false)
-                    whitelistedPlayers--;
+            if (await _db.GetWhitelistStatusAsync(player.UserId) == false)
+                whitelistedPlayers--;
         }
 
-        return conditionWhitelistSlots.MaximumPlayers < (_plyMgr.PlayerCount - whitelistedPlayers);
+        return (_plyMgr.PlayerCount - whitelistedPlayers) < conditionWhitelistSlots.MaximumPlayers;
     }
 
     #endregion

@@ -1,0 +1,19 @@
+- type: latheRecipe
+  id: HandheldCrewMonitor
+  result: HandheldCrewMonitorEmpty
+  categories: 
+  - Tools
+  completetime: 4
+  materials:
+    Glass: 600
+    Steel: 600
+    Plastic: 600
+    Gold: 300
+
+- type: latheRecipe
+  id: MedCrutchesForearm
+  result: MedCrutchesForearm
+  completetime: 2
+  materials:
+    Steel: 200
+    Plastic: 150

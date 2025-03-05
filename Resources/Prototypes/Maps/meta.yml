@@ -17,51 +17,52 @@
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
           availableJobs:
-            #service
+            #service (18)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
-            Janitor: [ 1, 2 ]
+            Janitor: [ 2, 3 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            #engineering
+            Reporter: [ 2, 2 ]
+            #engineering (11)
             ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 4, 6 ]
-            TechnicalAssistant: [ 3, 6 ]
+            StationEngineer: [ 4, 6 ] # CD change from 6-8 to 4-6
+            TechnicalAssistant: [ 2, 2 ] #CD change from 6-8 to 2-2.
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            SeniorPhysician: [ 1, 1 ]
-            Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 5, 5 ]
-            MedicalIntern: [ 3, 6 ]
-            Paramedic: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ] # CD Role
+            Chemist: [ 2, 2 ] # CD change from 2-3
+            MedicalDoctor: [ 4, 4 ] #CD change from 4-6 to 4.
+            MedicalIntern: [ 2, 2 ] #CD change from 4-6 to 2-2.
+            Paramedic: [ 1, 1 ] # CD change from 1-2 to 1
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
             Scientist: [ 4, 6 ]
-            ResearchAssistant: [ 3, 6 ]
+            ResearchAssistant: [ 2, 2 ] #CD change from 3-6 to 2-2.
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
-            SecurityOfficer: [ 3, 3 ]
+            SeniorOfficer: [ 1, 1 ] # CD Role
+            SecurityOfficer: [ 3, 3 ] # CD change from 6 to 3
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ] #CD change from 4 to 2.
             Lawyer: [ 2, 2 ]
-            #supply
+            #supply (10)
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 3, 3 ]
-            #civilian
+            CargoTechnician: [ 4, 6 ]
+            #civilian (3+)
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            #silicon
+            #silicon (5)
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 2 ]
+            Borg: [ 4, 4 ]

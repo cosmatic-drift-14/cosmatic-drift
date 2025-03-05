@@ -31,11 +31,11 @@
     CratePartsT3: 1.0
     CratePartsT3T4: 0.5
     TechnologyDiskRare: 0.5
-    # cloning boards
-    CloningPodMachineCircuitboard: 0.5
-    MedicalScannerMachineCircuitboard: 0.5
-    CloningConsoleComputerCircuitboard: 0.5
-    BiomassReclaimerMachineCircuitboard: 0.5
+    # cloning boards # CD Change: Removed Cloning
+    # CloningPodMachineCircuitboard: 0.5
+    # MedicalScannerMachineCircuitboard: 0.5
+    # CloningConsoleComputerCircuitboard: 0.5
+    # BiomassReclaimerMachineCircuitboard: 0.5
     # basic weapons
     Machete: 0.25
     Katana: 0.25

@@ -2,17 +2,22 @@
   id: DefaultMapPool
   maps:
   - Aspid
+  - Amber
   - Bagel
   - Box
-  - Cog
+  - Convex
   - Core
+  - Elkridge
   - Fland
   - Gemini
+  #- Gate
+  - Loop
   - Marathon
   - Meta
   - Oasis
   - Omega
   - Packed
+  - Plasma
   - Reach
   #- Train <- CD change, please no
   - Ferrous

@@ -1,0 +1,35 @@
+- type: entity
+  parent: MobArgocyteMolder
+  id: MobPebble
+  name: Pebble
+  description: Typically a hostile species; Pebble seems remarkably accustomed to humanoids. They say the purple hue came from an unbalanced plasma diet as a larva.
+  components:
+  - type: Sprite
+    sprite: _CD/Mobs/Pets/pebble.rsi
+    layers:
+    - state: pebble
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pebble
+      Dead:
+        Base: pebble_dead
+  - type: NpcFactionMember
+    factions:
+      - PetsNT
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: epicene
+  - type: InteractionPopup
+    successChance: 0.7
+    interactSuccessString: petting-success-argocyte
+    interactFailureString: petting-failure-argocyte
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/snake_hiss.ogg

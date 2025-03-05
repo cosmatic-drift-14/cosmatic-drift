@@ -51,6 +51,8 @@
         type: GeneralStationRecordConsoleBoundUserInterface
       enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        type: JobSlotsConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -68,10 +70,15 @@
       #  toggleAction: ActionAGhostShowStationRecords
       enum.CharacterRecordConsoleKey.Key:
         toggleAction: ActionAGhostShowCharacterRecords
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        toggleAction: ActionAGhostShowJobSlotsConsole
   - type: SolarControlConsole # look ma i AM the computer!
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
-    color: "#228b22"
+    color: "#1d8bad"
+    delay: 10
+    initialDelay: 0
+    global: true
   - type: RadarConsole
     followEntity: true
   - type: CargoOrderConsole
@@ -101,6 +108,8 @@
     consoleType: Admin
     # Needed for security records console functionality
   - type: CriminalRecordsConsole
+  - type: JobSlotsConsole # _CD
+    debug: true
 
 - type: entity
   id: ActionAGhostShowSolar
@@ -135,7 +144,7 @@
     icon: { sprite: Interface/Actions/actions_ai.rsi, state: mass_scanner }
     iconOn: Interface/Actions/actions_ai.rsi/mass_scanner.png
     keywords: [ "AI", "console", "interface" ]
-    priority: -7
+    priority: -6
     event: !type:ToggleIntrinsicUIEvent { key: enum.RadarConsoleUiKey.Key }
 
 - type: entity
@@ -159,7 +168,7 @@
     icon: { sprite: Interface/Actions/actions_ai.rsi, state: crew_monitor }
     iconOn: Interface/Actions/actions_ai.rsi/crew_monitor.png
     keywords: [ "AI", "console", "interface" ]
-    priority: -9
+    priority: -8
     event: !type:ToggleIntrinsicUIEvent { key: enum.CrewMonitoringUIKey.Key }
 
 - type: entity
@@ -171,7 +180,7 @@
     icon: { sprite: Interface/Actions/actions_ai.rsi, state: station_records }
     iconOn: Interface/Actions/actions_ai.rsi/station_records.png
     keywords: [ "AI", "console", "interface" ]
-    priority: -8
+    priority: -7
     event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }
 
 - type: entity
@@ -187,3 +196,16 @@
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
 
+# _CD - Job slots
+- type: entity
+  id: ActionAGhostShowJobSlotsConsole
+  name: Job Slots Interface
+  description: View and adjust job slots
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
+    iconOn: Structures/Machines/parts.rsi/box_2.png
+    keywords: [ "AI", "console", "interface" ]
+    priority: -10
+    event: !type:ToggleIntrinsicUIEvent { key: enum.JobSlotsConsoleUiKey.Key }

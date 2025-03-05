@@ -1,4 +1,4 @@
-﻿- type: guideEntry
+- type: guideEntry
   id: Security
   name: guide-entry-security
   text: "/ServerInfo/Guidebook/Security/Security.xml"
@@ -6,7 +6,7 @@
   - Forensics
   - Defusal
   - CriminalRecords
-  - SpaceLaw
+  # - SpaceLaw CD: Move to IC policy.
 
 - type: guideEntry
   id: Forensics

@@ -1,4 +1,3 @@
-# DEBUG HARNESS
 - type: entity
   abstract: true
   parent: ClothingBeltStorageBase
