@@ -4,6 +4,7 @@ using Content.Server.Disposal.Tube.Components;
 using Content.Server.Disposal.Unit.Components;
 using Content.Shared.Body.Components;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Components;
 using Content.Shared.Item;
 using Content.Shared.Throwing;
 using Robust.Shared.Audio.Systems;
@@ -214,7 +215,11 @@ namespace Content.Server.Disposal.Unit.EntitySystems
             {
                 foreach (var ent in holder.Container.ContainedEntities)
                 {
-                    _damageable.TryChangeDamage(ent, to.DamageOnTurn);
+                    // CD: Cap disposals damage at being dead
+                    if (HasComp<StaminaComponent>(ent) // don't break cups because that would spill liquid on the tile above.
+                            && TryComp<DamageableComponent>(ent, out var damage)
+                            && damage.TotalDamage < 201)
+                        _damageable.TryChangeDamage(ent, to.DamageOnTurn);
                 }
                 _audio.PlayPvs(to.ClangSound, toUid);
             }
