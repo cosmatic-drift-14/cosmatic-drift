@@ -73,26 +73,24 @@
 #CD additions
     amber:
       announcement: alert-level-amber-announcement
-      sound: /Audio/Misc/bluealert.ogg
-        params:
-          pitch: -2
+      sound: /Audio/_CD/Misc/amber.ogg
       color: "#ffbf00"
       forceEnableEmergencyLights: true
       emergencyLightColor: "#ffbf00"
       shuttleTime: 600
     bronze:
       announcement: alert-level-bronze-announcement
-      sound: /Audio/Misc/bluealert.ogg
+      sound:
+        path: /Audio/_CD/Misc/bronze.ogg
+        params:
+          volume: -2
       color: "#cd7f32"
       forceEnableEmergencyLights: true
       emergencyLightColor: "#cd7f32"
       shuttleTime: 600
     omega:
       announcement: alert-level-omega-announcement
-      sound:
-        path: /Audio/Misc/delta_alt.ogg
-        params:
-          volume: -3
+      sound: /Audio/_CD/Misc/omega.ogg
       color: "#bf002c"
       emergencyLightColor: "#bf002c"
       forceEnableEmergencyLights: true

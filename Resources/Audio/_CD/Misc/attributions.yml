@@ -1,0 +1,14 @@
+- files: ["amber.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Used sound effect from SCP:CB called Alarm5.ogg, modified by Nairod."
+  source: "https://github.com/Regalis11/scpcb/blob/master/SFX/Alarm/Alarm5.ogg"
+
+- files: ["bronze.ogg"]
+  license: "CC0"
+  copyright: "Used sound effect from Freesound.org called School Fire Alarm, modified by Nairod."
+  source: "https://freesound.org/s/783829"
+ 
+- files: ["omega.ogg"]
+  license: "CC0"
+  copyright: "Used sound effect from Freesound.org called Air Raid Siren Alarm."
+  source: "https://freesound.org/s/412171"
