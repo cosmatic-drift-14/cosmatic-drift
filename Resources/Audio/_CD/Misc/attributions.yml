@@ -4,11 +4,11 @@
   source: "https://github.com/Regalis11/scpcb/blob/master/SFX/Alarm/Alarm5.ogg"
 
 - files: ["bronze.ogg"]
-  license: "CC0"
+  license: "CC0-1.0"
   copyright: "Used sound effect from Freesound.org called School Fire Alarm, modified by Nairod."
   source: "https://freesound.org/s/783829"
  
 - files: ["omega.ogg"]
-  license: "CC0"
+  license: "CC0-1.0"
   copyright: "Used sound effect from Freesound.org called Air Raid Siren Alarm."
   source: "https://freesound.org/s/412171"
