@@ -22,3 +22,6 @@
     ClothingOuterCoatCentCommOverseer: 1 # CD
     ClothingNeckScarfStripedCentcom: 3
     ClothingNeckCloakCentcom: 3
+  contrabandInventory:
+    ToyFigurineCaptain: 1
+    ToyFigurineHeadOfPersonnel: 1

@@ -42,6 +42,7 @@
             MedicalDoctor: [ 3, 3 ] #CD change from 4-5 to 3-3
             Paramedic: [ 2, 2 ]
             MedicalIntern: [ 2, 2 ] #CD change from 4-4 to 2-2
+            Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD role

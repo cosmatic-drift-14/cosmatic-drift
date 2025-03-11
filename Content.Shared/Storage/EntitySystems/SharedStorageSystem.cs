@@ -208,7 +208,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 }
                 else
                 {
-                    OpenStorageUI(uid, args.User, component, silent);
+                    OpenStorageUI(uid, args.User, component, false);
                 }
             }
         };
@@ -384,10 +384,9 @@ public abstract class SharedStorageSystem : EntitySystem
             {
                 var parent = transformOwner.ParentUid;
 
-                var position = EntityCoordinates.FromMap(
+                var position = TransformSystem.ToCoordinates(
                     parent.IsValid() ? parent : uid,
-                    transformEnt.MapPosition,
-                    _transform
+                    transformEnt.MapPosition
                 );
 
                 if (PlayerInsertEntityInWorld(uid, args.User, target, storageComp))
@@ -428,10 +427,9 @@ public abstract class SharedStorageSystem : EntitySystem
                 continue;
             }
 
-            var position = EntityCoordinates.FromMap(
+            var position = TransformSystem.ToCoordinates(
                 xform.ParentUid.IsValid() ? xform.ParentUid : uid,
-                new MapCoordinates(_transform.GetWorldPosition(targetXform), targetXform.MapID),
-                _transform
+                new MapCoordinates(_transform.GetWorldPosition(targetXform), targetXform.MapID)
             );
 
             var angle = targetXform.LocalRotation;
