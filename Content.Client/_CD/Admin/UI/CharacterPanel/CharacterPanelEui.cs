@@ -33,6 +33,7 @@ public sealed class CharacterPanelEui : BaseEui
 
         CharacterPanel.TargetPlayer = s.Player;
         CharacterPanel.SetPlayer(s.Player);
-        CharacterPanel.SetCharacterDescription(s.CharacterDescription);
+
+        CharacterPanel.SetPreferences(s.Preferences, s.VisibleAntagPrototypes);
     }
 }

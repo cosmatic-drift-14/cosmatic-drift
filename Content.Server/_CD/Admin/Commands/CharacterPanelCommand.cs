@@ -1,7 +1,9 @@
 ﻿using System.Linq;
 using Content.Server.Administration;
 using Content.Server.EUI;
+using Content.Server.Preferences.Managers;
 using Content.Shared.Administration;
+using Content.Shared.Preferences;
 using Robust.Server.Player;
 using Robust.Shared.Console;
 
@@ -11,6 +13,7 @@ namespace Content.Server._CD.Admin.Commands;
 public sealed class CharacterPanel : LocalizedCommands
 {
     [Dependency] private readonly IPlayerLocator _locator = default!;
+    [Dependency] private readonly IServerPreferencesManager _pref = default!;
     [Dependency] private readonly EuiManager _euis = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
 
@@ -37,7 +40,9 @@ public sealed class CharacterPanel : LocalizedCommands
             return;
         }
 
-        var ui = new CharacterPanelEui(queriedPlayer);
+        var pref = (HumanoidCharacterProfile)_pref.GetPreferences(queriedPlayer.UserId).SelectedCharacter;
+
+        var ui = new CharacterPanelEui(queriedPlayer, pref);
         _euis.OpenEui(ui, admin);
         ui.SetPlayerState();
     }

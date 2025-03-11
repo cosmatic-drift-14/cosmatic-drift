@@ -1,9 +1,7 @@
-﻿
-
-<ui:FancyWindow xmlns="https://spacestation14.io"
+﻿<ui:FancyWindow xmlns="https://spacestation14.io"
                 xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
-                xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
                 xmlns:cdrecords="clr-namespace:Content.Client._CD.Records.UI"
+                xmlns:cdadmin="clr-namespace:Content.Client._CD.Admin.UI"
                 xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                 MinSize="750 600"
 >
@@ -41,15 +39,7 @@
 
         <!-- preference information -->
         <BoxContainer Orientation="Vertical" Margin="5 0 20 0" MinWidth="200">
-            <Label Text="{Loc cd-characterpanel-preferences-title}"/>
-            <Label Text="high"/>
-            <Label Text="med"/>
-            <Label Text="low"/>
-            <Label Text="non"/>
-            <cc:HSeparator/>
-            <Label Text="high tar"/>
-            <Label Text="mod tar"/>
-            <Label Text="low tar"/>
+            <cdadmin:EventPreferences Name="EventPreferencesControl"/>
         </BoxContainer>
     </BoxContainer>
 </ui:FancyWindow>
