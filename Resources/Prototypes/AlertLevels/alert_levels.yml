@@ -48,16 +48,16 @@
       forceEnableEmergencyLights: true
     delta:
       announcement: alert-level-delta-announcement
-      selectable: false
+      #selectable: false | CD commented out
       sound:
-        path: /Audio/Misc/delta.ogg
+        path: /Audio/Misc/delta_alt.ogg #CD change from delta to delta_alt
         params:
-          volume: -3
-      disableSelection: true
+          volume: -1
+      #disableSelection: true | CD commented out
       color: DarkRed
       emergencyLightColor: Orange
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
+      shuttleTime: 600 #CD change from 1200 to 600
     epsilon:
       announcement: alert-level-epsilon-announcement
       selectable: false
@@ -70,3 +70,28 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+#CD additions
+    amber:
+      announcement: alert-level-amber-announcement
+      sound: /Audio/_CD/Misc/amber.ogg
+      color: "#ffbf00"
+      forceEnableEmergencyLights: true
+      emergencyLightColor: "#ffbf00"
+      shuttleTime: 600
+    bronze:
+      announcement: alert-level-bronze-announcement
+      sound:
+        path: /Audio/_CD/Misc/bronze.ogg
+        params:
+          volume: -2
+      color: "#cd7f32"
+      forceEnableEmergencyLights: true
+      emergencyLightColor: "#cd7f32"
+      shuttleTime: 600
+    omega:
+      announcement: alert-level-omega-announcement
+      sound: /Audio/_CD/Misc/omega.ogg
+      color: "#bf002c"
+      emergencyLightColor: "#bf002c"
+      forceEnableEmergencyLights: true
+      shuttleTime: 600
