@@ -32,7 +32,7 @@ public sealed partial class DisposalTubeComponent : Component
     {
         DamageDict = new()
         {
-            { "Blunt", 0.0 },
+            { "Blunt", 3.0 }, // CD: 1 was not enough. It took multiple minutes in a 2x2 loop to kill somebody. This seemed to be a good number.
         }
     };
 }
