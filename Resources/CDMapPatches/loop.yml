@@ -12,3 +12,6 @@
   worldRotation: 1.5707963267948966 rad
   worldPosition: -30.124258,59.92165
   id: ComputerJobSlots
+- !type:CDSpawnEntityMapPatch
+  worldPosition: 25.875742,27.921648
+  id: SpawnMobPebble
