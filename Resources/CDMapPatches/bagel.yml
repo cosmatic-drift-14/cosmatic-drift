@@ -5,7 +5,7 @@
   worldRotation: 1.5707963267948966 rad
   worldPosition: 46.95583,-17.07162
   id: ComputerTabletopMedicalRecords
-  - !type:CDSpawnEntityMapPatch
+- !type:CDSpawnEntityMapPatch
   worldPosition: 3.841084,-31.042545
   id: JobSlotsComputerFlatpack
 - !type:CDSpawnEntityMapPatch
