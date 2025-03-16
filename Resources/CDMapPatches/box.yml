@@ -1,7 +1,7 @@
 - !type:CDSpawnEntityMapPatch
   worldPosition: -5.999672,-16.99885
   id: LockerLostAndFound
-  - !type:CDSpawnEntityMapPatch
+- !type:CDSpawnEntityMapPatch
   worldPosition: -10.734194,-20.737495
   id: JobSlotsComputerFlatpack
 - !type:CDSpawnEntityMapPatch
