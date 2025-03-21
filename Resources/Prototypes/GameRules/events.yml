@@ -230,8 +230,8 @@
 #         - DeathAcidifierImplant
 #       - type: RandomMetadata
 #         nameSegments:
-#         - names_ninja_title
-#         - names_ninja
+#         - NamesNinjaTitle
+#         - NamesNinja
 #       mindRoles:
 #       - MindRoleNinja
 
@@ -271,17 +271,17 @@
 #       briefing:
 #         text: wizard-role-greeting
 #         color: Turquoise
-#         # TODO: Need Wizard Start sound
-#         #sound: "/Audio/Ambience/Antag/wizard_start.ogg"
-#       # TODO: WizardComp as needed
+#         TODO: Need Wizard Start sound
+#         sound: "/Audio/Ambience/Antag/wizard_start.ogg"
+#       TODO: WizardComp as needed
 #       components:
 #       - type: NpcFactionMember
 #         factions:
 #         - Wizard
 #       - type: RandomMetadata
 #         nameSegments:
-#         - names_wizard_first
-#         - names_wizard_last
+#         - NamesWizardFirst
+#         - NamesWizardLast
 #       mindRoles:
 #       - MindRoleWizard
 
@@ -513,7 +513,7 @@
       - type: RandomMetadata
         nameSegments:
         - SyndicateNamesPrefix
-        - SyndicateNamesNormal
+        - NamesSyndicateNormal
       - type: NpcFactionMember
         factions:
         - Syndicate
