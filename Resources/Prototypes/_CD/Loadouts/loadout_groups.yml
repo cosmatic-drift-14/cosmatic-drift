@@ -115,6 +115,7 @@
   - SecurityVeteranBeret
   - SecurityBeret
   - SecurityHat
+  - TrooperHat
 
 - type: loadoutGroup
   id: SeniorOfficerJumpsuit
@@ -128,6 +129,7 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
+  - TrooperUniform
 
 - type: loadoutGroup
   id: SecurityGlassesOrHud
