@@ -475,6 +475,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CentralCommandOfficial
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -489,6 +491,8 @@
     job: ERTLeader
   - type: Item
     heldPrefix: gold
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -503,6 +507,8 @@
     job: ERTChaplain
   - type: Item
     heldPrefix: blue
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -515,6 +521,8 @@
     - state: ert_engineer
   - type: PresetIdCard
     job: ERTEngineer
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -527,6 +535,8 @@
     - state: ert_janitor
   - type: PresetIdCard
     job: ERTJanitor
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -539,6 +549,8 @@
     - state: ert_medic
   - type: PresetIdCard
     job: ERTMedical
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -551,6 +563,8 @@
     - state: ert_security
   - type: PresetIdCard
     job: ERTSecurity
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -576,6 +590,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: DeathSquad
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   name: passenger ID card
@@ -610,6 +626,8 @@
         type: AgentIDCardBoundUserInterface
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   name: passenger ID card
@@ -647,6 +665,8 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -660,6 +680,8 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -734,6 +756,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CBURN
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -803,6 +827,8 @@
     - Wizard
     - External
     - Maintenance
+  - type: NanoChatCard # CD
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -845,3 +871,4 @@
         type: AgentIDCardBoundUserInterface
   - type: NanoChatCard # CD
     notificationsMuted: true
+    listNumber: false
