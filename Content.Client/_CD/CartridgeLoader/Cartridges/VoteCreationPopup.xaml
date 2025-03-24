@@ -1,0 +1,70 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
+               Title="{Loc vote-link-create-title}"
+               MinSize="300 400">
+    <PanelContainer StyleClasses="AngleRect">
+        <BoxContainer Orientation="Vertical">
+            <!-- Question input -->
+            <BoxContainer Orientation="Vertical">
+                <Label Text="{Loc vote-link-question-label}"
+                       StyleClasses="LabelHeading" />
+                <PanelContainer StyleClasses="ButtonSquare">
+                    <LineEdit Name="QuestionInput"
+                              MinSize="200 0"
+                              PlaceHolder="{Loc vote-link-question-placeholder}" />
+                </PanelContainer>
+            </BoxContainer>
+
+            <customControls:HSeparator Margin="0 4"/>
+
+            <!-- Options input -->
+            <BoxContainer Orientation="Vertical">
+                <Label Text="{Loc vote-link-options-label}"
+                       StyleClasses="LabelHeading" />
+                <BoxContainer Name="OptionsContainer"
+                              Orientation="Vertical"
+                              Margin="0 2">
+                    <!-- Options added dynamically -->
+                </BoxContainer>
+                <Button Name="AddOptionButton"
+                        Text="{Loc vote-link-add-option}"
+                        MaxWidth="120"
+                        StyleClasses="ButtonSquare"
+                        Margin="0 4" />
+            </BoxContainer>
+
+            <customControls:HSeparator Margin="0 4"/>
+
+            <!-- Duration input -->
+            <BoxContainer Orientation="Vertical">
+                <Label Text="{Loc vote-link-duration-label}"
+                       StyleClasses="LabelHeading" />
+                <BoxContainer Orientation="Horizontal"
+                              VerticalAlignment="Center">
+                    <PanelContainer StyleClasses="ButtonSquare">
+                        <SpinBox Name="DurationSpinBox"
+                                 Value="120"
+                                 MinSize="80 0" />
+                    </PanelContainer>
+                    <Label Text="{Loc vote-link-duration-seconds}"
+                           Margin="8 0 0 0" />
+                </BoxContainer>
+            </BoxContainer>
+
+            <!-- Action buttons -->
+            <BoxContainer Orientation="Horizontal"
+                          HorizontalAlignment="Right"
+                          Margin="0 4 0 0">
+                <Button Name="CancelButton"
+                        Text="{Loc vote-link-cancel}"
+                        StyleClasses="OpenRight"
+                        MinSize="80 0" />
+                <Button Name="CreateButton"
+                        Text="{Loc vote-link-create}"
+                        StyleClasses="OpenLeft"
+                        MinSize="80 0"
+                        Disabled="True" />
+            </BoxContainer>
+        </BoxContainer>
+    </PanelContainer>
+</DefaultWindow>

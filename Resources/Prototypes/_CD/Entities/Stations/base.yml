@@ -1,0 +1,5 @@
+- type: entity
+  abstract: true
+  id: BaseStationVoteLink
+  components:
+  - type: StationVoteDatabase
