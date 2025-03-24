@@ -6,7 +6,11 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/green.rsi
-    state: icon
+    layers:
+      - state: closed
+        map: ["closeLayer"]
+      - state: open
+        map: ["openLayer"]
   - type: Item
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/green.rsi
     size: 60
@@ -32,7 +36,8 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/red.rsi
-    state: icon
+    layers:
+      - state: closed
   - type: Item
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/red.rsi
   - type: StorageFill
@@ -48,7 +53,8 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/blue.rsi
-    state: icon
+    layers:
+      - state: closed
   - type: Item
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/blue.rsi
   - type: StorageFill
@@ -64,7 +70,8 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/black.rsi
-    state: icon
+    layers:
+      - state: closed
   - type: Item
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/black.rsi
   - type: StorageFill
@@ -80,7 +87,8 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/mixed.rsi
-    state: icon
+    layers:
+      - state: closed
   - type: Item
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/mixed.rsi
   - type: StorageFill

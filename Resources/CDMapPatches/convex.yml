@@ -9,3 +9,6 @@
   worldRotation: -1.5707963267948966 rad
   worldPosition: 55.5,2.5
   id: ComputerShuttleSalvage
+- !type:CDSpawnEntityMapPatch
+  worldPosition: -58.5,0.5
+  id: SpawnMobPebble

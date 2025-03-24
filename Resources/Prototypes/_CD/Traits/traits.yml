@@ -6,6 +6,15 @@
     - type: Synth
 
 - type: trait
+  id: ScaleItem
+  name: trait-scale-item-name
+  description: trait-scale-item-desc
+  components:
+    - type: ScaleItem
+      maxScale: 0.85
+      size: 120
+      
+- type: trait
   id: VeryLightweightDrunk
   name: cd-trait-very-lightweight-name
   description: cd-trait-very-lightweight-desc
