@@ -68,10 +68,6 @@
       - state: equipped-head-vulpkanin
       - state: equipped-head-unshaded-vulpkanin
         shader: unshaded
-      head-vox:
-      - state: equipped-head-vox
-      - state: equipped-head-unshaded-vox
-        shader: unshaded
   - type: PointLight
     color: "#adffe6"
   - type: PressureProtection
