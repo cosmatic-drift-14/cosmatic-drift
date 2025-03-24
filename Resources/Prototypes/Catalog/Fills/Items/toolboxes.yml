@@ -121,7 +121,6 @@
     - id: Multitool
 
 - type: entity
-  parent: ToolboxSyndicate
   id: ToolboxSyndicateFilled
   name: suspicious toolbox
   suffix: Filled

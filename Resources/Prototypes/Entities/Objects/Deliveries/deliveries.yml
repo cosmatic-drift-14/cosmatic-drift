@@ -72,7 +72,7 @@
       visible: false
   - type: MultiHandedItem
   - type: Item
-    size: Huge
+    size: 121
   - type: Delivery
     spesoReward: 800
   - type: EntityTableContainerFill

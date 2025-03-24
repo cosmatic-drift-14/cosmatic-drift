@@ -48,7 +48,7 @@
         - ReagentId: Fiber
           Quantity: 1
   - type: Item
-    size: Tiny
+    size: 1
 
 - type: entity
   name: paper

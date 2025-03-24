@@ -247,7 +247,7 @@
   description: A pole with powerful mounted lights on it. It's broken.
   components:
   - type: Item
-    size: Normal
+    size: 45
     sprite: Objects/Misc/Lights/lights.rsi
     heldPrefix: floodlight-broken
   - type: Sprite
