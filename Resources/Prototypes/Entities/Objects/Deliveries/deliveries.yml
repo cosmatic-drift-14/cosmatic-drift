@@ -109,7 +109,6 @@
       map: [ "enum.DeliveryVisualLayers.Breakage" ]
       visible: false
   - type: Item
-    storedRotation: 90
   - type: Delivery
     spesoReward: 400
   - type: EntityTableContainerFill

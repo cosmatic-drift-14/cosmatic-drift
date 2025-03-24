@@ -25,6 +25,8 @@
   name: go go hat
   description: A novel hat with a built in toolkit. Automatically stores and retrieves items at the say of a phrase!
   components:
+  - type: Item
+    size: 20
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
   - type: TriggerOnVoice
@@ -37,8 +39,7 @@
     - HEAD
   - type: Storage
     showVerb: false
-    grid:
-    - 0,0,6,3
+    capacity: 20
     maxItemSize: Small
     blacklist:
       tags:
