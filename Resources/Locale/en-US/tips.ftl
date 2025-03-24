@@ -79,7 +79,6 @@ tips-dataset-56 = As a Cargo Technician, remember that you can order guns in an 
 tips-dataset-57 = As the Bartender, you can use a circular saw on your shotgun to make it easier to store.
 tips-dataset-58 = As the Bartender, try experimenting with unique drinks. Have you tried to make demon's blood yet?
 tips-dataset-59 = As a Botanist, you can mutate and crossbreed plants together to create more potent produce that also has higher yields.
-tips-dataset-60 = As the Clown, spice your gimmicks up! Nobody likes a one-trick pony.
 tips-dataset-61 = As the Clown, if you lose your banana peels and soap, you can still slip people with your PDA! Honk!
 tips-dataset-62 = As the Chef, your knife can act as a weapon in an emergency.
 tips-dataset-63 = As the Chef, you can sneak liquids into your foods. As a traitor, putting a little bit of amatoxin or other poison can greatly annoy the crew!
