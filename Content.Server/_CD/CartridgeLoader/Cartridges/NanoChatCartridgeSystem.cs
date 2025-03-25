@@ -50,7 +50,8 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
                 continue;
 
             // Check if we need to update our card reference
-            if (!TryComp<PdaComponent>(cartridge.LoaderUid, out var pda))
+            var q = GetEntityQuery<PdaComponent>();
+            if (!q.TryGetComponent(cartridge.LoaderUid, out var pda))
                 continue;
 
             var newCard = pda.ContainedId;
