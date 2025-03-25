@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: NamesVulpkaninMale
+  values:
+    prefix: names-vulpkanin-male-
+    count: 345
+
+- type: localizedDataset
+  id: NamesVulpkaninFemale
+  values:
+    prefix: names-vulpkanin-female-
+    count: 345
+
+- type: localizedDataset
+  id: NamesVulpkaninLast
+  values:
+    prefix: names-vulpkanin-last-
+    count: 252
