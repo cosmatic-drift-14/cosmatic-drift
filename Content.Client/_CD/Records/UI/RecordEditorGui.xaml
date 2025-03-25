@@ -61,6 +61,9 @@
                      <cdrecords:RecordEditorEntrySelector Name="EmploymentEntrySelector"/>
                      <cdrecords:RecordEditorEntrySelector Name="MedicalEntrySelector"/>
                      <cdrecords:RecordEditorEntrySelector Name="SecurityEntrySelector"/>
+                     <!-- commented out until confidential records are added (one bite at a time!)
+                     <cdrecords:RecordEditorEntrySelector Name="ConfidentialEntrySelector"/>
+                        -->
                  </TabContainer>
              </BoxContainer>
          </ScrollContainer>
