@@ -184,7 +184,7 @@ public abstract class SharedStorageSystem : EntitySystem
     private void AddUiVerb(EntityUid uid, StorageComponent component, GetVerbsEvent<ActivationVerb> args)
     {
         var silent = false;
-        if (!args.CanAccess || !args.CanInteract || TryComp<LockComponent>(uid, out var lockComponent) && lockComponent.Locked)
+        if (component.ShowVerb == false || !args.CanAccess || !args.CanInteract || TryComp<LockComponent>(uid, out var lockComponent) && lockComponent.Locked)
         {
             // we allow admins to open the storage anyways
             if (!_admin.HasAdminFlag(args.User, AdminFlags.Admin))

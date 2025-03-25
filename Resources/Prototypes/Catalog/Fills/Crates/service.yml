@@ -94,6 +94,7 @@
     contents:
     - id: ClothingUniformJumpskirtPerformer
     - id: ClothingShoesBootsPerformer
+    - id: ClothingHeadPerformerWig
     - id: ClothingOuterSuitMonkey
     - id: ClothingHeadHatAnimalMonkey
     - id: ClothingNeckCloakMoth
