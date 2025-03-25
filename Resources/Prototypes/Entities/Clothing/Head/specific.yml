@@ -40,7 +40,6 @@
   - type: Storage
     showVerb: false
     capacity: 20
-    maxItemSize: Small
     blacklist:
       tags:
       - HighRiskItem # no hiding objectives or trolling nukies
