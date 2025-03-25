@@ -8,8 +8,8 @@
   markingLimits: MobAvaliMarkingLimits
   dollPrototype: MobAvaliDummy
   skinColoration: Hues
-  maleFirstNames: names_avali_unisex
-  femaleFirstNames: names_avali_unisex
+  maleFirstNames: NamesAvaliUnisex
+  femaleFirstNames: NamesAvaliUnisex
   naming: First
 
 - type: speciesBaseSprites
