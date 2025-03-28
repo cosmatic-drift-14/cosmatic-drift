@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,20 @@ namespace Content.Server.Database;
 
 public static class CDModel
 {
+    /// <summary>
+    /// Stores Advanced Round Information (shitcode probably idk)
+    /// </summary>
+    public sealed class AdvancedRound
+    {
+        [Key] public int Id { get; set; }
+        [ForeignKey("Server")] public int ServerId { get; set; }
+        [ForeignKey("Round")] public int RoundId { get; set; }
+        public string Map { get; set; } = null!;
+        public List<Player> Players { get; set; } = default!;
+        public DateTime? StartDate { get; set; }
+
+    }
+
     /// <summary>
     /// Stores CD Character data separately from the main Profile. This is done to work around a bug
     /// in EFCore migrations.
