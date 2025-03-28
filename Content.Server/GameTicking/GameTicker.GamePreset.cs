@@ -147,6 +147,11 @@ namespace Content.Server.GameTicking
             return pool.Maps.Contains(map.ID);
         }
 
+        public bool IsMapExcluded(GameMapPrototype map)
+        {
+            return MapCache.Contains(map.ID);
+        }
+
         private void ValidateMap()
         {
             if (Preset == null || _gameMapManager.GetSelectedMap() is not { } map)

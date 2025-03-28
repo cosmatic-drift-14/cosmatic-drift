@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -898,33 +899,23 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             return advRound.Id;
         }
 
-        public async Task<CDModel.AdvancedRound> GetAdvancedRound(int id)
+        public async Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
         {
             await using var db = await GetDb();
 
-            var round = await db.DbContext.AdvancedRound
-                .Include(round => round.Players)
-                .SingleAsync(round => round.Id == id);
+            var maps = db.DbContext.AdvancedRound
+                .Where(m => m.Map != "")
+                .ToList()
+                .TakeLast(cacheDepth)
+                .Select(m => m.Map)
+                .ToArray();
 
-            return round;
-        }
-
-        public async Task AddAdvancedRoundPlayers(int id, Guid[] playerIds)
-        {
-            await using var db = await GetDb();
-
-            Dictionary<Guid, int> players = await db.DbContext.Player
-                .Where(player => playerIds.Contains(player.UserId))
-                .ToDictionaryAsync(player => player.UserId, player => player.Id);
-
-            foreach (var player in playerIds)
+            foreach (var map in maps)
             {
-                await db.DbContext.Database.ExecuteSqlAsync($"""
-                    INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}) ON CONFLICT DO NOTHING
-                    """);
+                mapCache.Enqueue(map);
             }
 
-            await db.DbContext.SaveChangesAsync();
+            return maps;
         }
         // END CD Additions
 

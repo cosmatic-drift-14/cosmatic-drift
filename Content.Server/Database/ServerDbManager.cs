@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Immutable;
 using System.IO;
 using System.Net;
@@ -238,9 +239,8 @@ namespace Content.Server.Database
         Task<Round> GetRound(int id);
         Task AddRoundPlayers(int id, params Guid[] playerIds);
 
-        Task<int> AddNewAdvancedRound(Server server, int roundid, string map,params Guid[] playerIds);
-        Task<CDModel.AdvancedRound> GetAdvancedRound(int id);
-        Task AddAdvancedRoundPlayers(int id, params Guid[] playerIds);
+        Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds);
+        Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth);
 
         #endregion
 
@@ -739,16 +739,10 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.AddNewAdvancedRound(server, roundid, map, playerIds));
         }
 
-        public Task<CDModel.AdvancedRound> GetAdvancedRound(int id)
+        public Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
         {
             DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetAdvancedRound(id));
-        }
-
-        public Task AddAdvancedRoundPlayers(int id, params Guid[] playerIds)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.AddAdvancedRoundPlayers(id, playerIds));
+            return RunDbCommand(() => _db.RetrieveMapQueue(mapCache, cacheDepth));
         }
 
         public Task UpdateAdminRankAsync(AdminRank rank, CancellationToken cancel = default)

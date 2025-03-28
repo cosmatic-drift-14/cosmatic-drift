@@ -147,6 +147,8 @@ namespace Content.Server.GameTicking
                 if (i == 0)
                     DefaultMap = mapId;
             }
+
+            IncrementAdvancedRoundNumber(); // CD Addition. Caches current map and cycles queue, as well as adding an entry useful for statistics.
         }
 
         public PreGameMapLoad RaisePreLoad(
@@ -661,7 +663,6 @@ namespace Content.Server.GameTicking
             IncrementRoundNumber();
             SendRoundStartingDiscordMessage();
 
-            IncrementAdvancedRoundNumber(); // CD Addition
 
             if (!LobbyEnabled)
             {
