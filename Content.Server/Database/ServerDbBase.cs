@@ -24,6 +24,7 @@ using Robust.Shared.Utility;
 
 // CD: imports
 using Content.Server._CD.Records;
+using Content.Server.GameTicking;
 using Content.Shared._CD.Records;
 
 namespace Content.Server.Database
@@ -871,6 +872,61 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             await db.DbContext.SaveChangesAsync();
         }
+
+        // CD Additions
+        public async Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds)
+        {
+            await using var db = await GetDb();
+
+            var players = await db.DbContext.Player
+                .Where(player => playerIds.Contains(player.UserId))
+                .ToListAsync();
+
+            var advRound = new CDModel.AdvancedRound
+            {
+                StartDate = DateTime.UtcNow,
+                Players = players,
+                RoundId = roundid,
+                ServerId = server.Id,
+                Map = map,
+            };
+
+            db.DbContext.AdvancedRound.Add(advRound);
+
+            await db.DbContext.SaveChangesAsync();
+
+            return advRound.Id;
+        }
+
+        public async Task<CDModel.AdvancedRound> GetAdvancedRound(int id)
+        {
+            await using var db = await GetDb();
+
+            var round = await db.DbContext.AdvancedRound
+                .Include(round => round.Players)
+                .SingleAsync(round => round.Id == id);
+
+            return round;
+        }
+
+        public async Task AddAdvancedRoundPlayers(int id, Guid[] playerIds)
+        {
+            await using var db = await GetDb();
+
+            Dictionary<Guid, int> players = await db.DbContext.Player
+                .Where(player => playerIds.Contains(player.UserId))
+                .ToDictionaryAsync(player => player.UserId, player => player.Id);
+
+            foreach (var player in playerIds)
+            {
+                await db.DbContext.Database.ExecuteSqlAsync($"""
+                    INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}) ON CONFLICT DO NOTHING
+                    """);
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+        // END CD Additions
 
         [return: NotNullIfNotNull(nameof(round))]
         protected RoundRecord? MakeRoundRecord(Round? round)

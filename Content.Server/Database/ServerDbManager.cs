@@ -238,6 +238,10 @@ namespace Content.Server.Database
         Task<Round> GetRound(int id);
         Task AddRoundPlayers(int id, params Guid[] playerIds);
 
+        Task<int> AddNewAdvancedRound(Server server, int roundid, string map,params Guid[] playerIds);
+        Task<CDModel.AdvancedRound> GetAdvancedRound(int id);
+        Task AddAdvancedRoundPlayers(int id, params Guid[] playerIds);
+
         #endregion
 
         #region Admin Logs
@@ -727,6 +731,24 @@ namespace Content.Server.Database
         {
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.AddRoundPlayers(id, playerIds));
+        }
+
+        public Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.AddNewAdvancedRound(server, roundid, map, playerIds));
+        }
+
+        public Task<CDModel.AdvancedRound> GetAdvancedRound(int id)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetAdvancedRound(id));
+        }
+
+        public Task AddAdvancedRoundPlayers(int id, params Guid[] playerIds)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.AddAdvancedRoundPlayers(id, playerIds));
         }
 
         public Task UpdateAdminRankAsync(AdminRank rank, CancellationToken cancel = default)
