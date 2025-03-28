@@ -661,6 +661,8 @@ namespace Content.Server.GameTicking
             IncrementRoundNumber();
             SendRoundStartingDiscordMessage();
 
+            IncrementAdvancedRoundNumber(); // CD Addition
+
             if (!LobbyEnabled)
             {
                 StartRound();
