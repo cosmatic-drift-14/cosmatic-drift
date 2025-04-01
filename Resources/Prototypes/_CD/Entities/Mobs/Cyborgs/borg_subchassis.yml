@@ -9,3 +9,24 @@
     sprite: /Textures/_CD/Mobs/Silicon/Medical/qualified_doctor.rsi
     layers:
     - state: qualified_doctor
+
+- type: entity
+  id: SpiderminEngineerChassis
+  parent: BorgChassisEngineer
+  name: spidermin engineering cyborg
+  components:
+  # - type: BorgSwitchableSubtype
+  #   subtype: qualified_doctor
+  - type: Sprite
+    sprite: /Textures/_CD/Mobs/Silicon/Engineering/spidermin.rsi
+    layers:
+    - state: engineer
+      map: [ "enum.BorgVisualLayers.Body", "movement" ]
+    - state: engineer_e_r
+      map: [ "enum.BorgVisualLayers.Light" ]
+      shader: unshaded
+      visible: false
+    - state: engineer_l
+      shader: unshaded
+      map: [ "light","enum.BorgVisualLayers.LightStatus" ]
+      visible: false
