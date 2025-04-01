@@ -15,26 +15,7 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.1");
-
-            modelBuilder.Entity("AdvancedRoundPlayer", b =>
-                {
-                    b.Property<int>("AdvancedRoundsId")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("advanced_rounds_id");
-
-                    b.Property<int>("PlayersId")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("players_id");
-
-                    b.HasKey("AdvancedRoundsId", "PlayersId")
-                        .HasName("PK_advanced_round_player");
-
-                    b.HasIndex("PlayersId")
-                        .HasDatabaseName("IX_advanced_round_player_players_id");
-
-                    b.ToTable("advanced_round_player", (string)null);
-                });
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
                 {
@@ -283,7 +264,8 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("expiration_time");
 
-                    b.Property<DateTime>("LastEditedAt")
+                    b.Property<DateTime?>("LastEditedAt")
+                        .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("last_edited_at");
 
@@ -411,7 +393,8 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("expiration_time");
 
-                    b.Property<DateTime>("LastEditedAt")
+                    b.Property<DateTime?>("LastEditedAt")
+                        .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("last_edited_at");
 
@@ -551,52 +534,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("ban_template", (string)null);
                 });
 
-            modelBuilder.Entity("Content.Server.Database.Blacklist", b =>
-                {
-                    b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("user_id");
-
-                    b.HasKey("UserId")
-                        .HasName("PK_blacklist");
-
-                    b.ToTable("blacklist", (string)null);
-                });
-
-            modelBuilder.Entity("Content.Server.Database.CDModel+AdvancedRound", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("advanced_round_id");
-
-                    b.Property<string>("Map")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("map");
-
-                    b.Property<int>("RoundId")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("round_id");
-
-                    b.Property<int>("ServerId")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("server_id");
-
-                    b.Property<DateTime?>("StartDate")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("start_date");
-
-                    b.HasKey("Id")
-                        .HasName("PK_advanced_round");
-
-                    b.HasIndex("StartDate");
-
-                    b.ToTable("advanced_round", (string)null);
-                });
-
-            modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
+ modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -664,6 +602,19 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasDatabaseName("IX_cd_character_record_entries_cd_character_record_entries_id");
 
                     b.ToTable("cd_character_record_entries", (string)null);
+                });
+                
+            modelBuilder.Entity("Content.Server.Database.Blacklist", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("user_id");
+
+                    b.HasKey("UserId")
+                        .HasName("PK_blacklist");
+
+                    b.ToTable("blacklist", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
@@ -1478,23 +1429,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasDatabaseName("IX_player_round_rounds_id");
 
                     b.ToTable("player_round", (string)null);
-                });
-
-            modelBuilder.Entity("AdvancedRoundPlayer", b =>
-                {
-                    b.HasOne("Content.Server.Database.CDModel+AdvancedRound", null)
-                        .WithMany()
-                        .HasForeignKey("AdvancedRoundsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_advanced_round_player_advanced_round_advanced_rounds_id");
-
-                    b.HasOne("Content.Server.Database.Player", null)
-                        .WithMany()
-                        .HasForeignKey("PlayersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_advanced_round_player_player_players_id");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
