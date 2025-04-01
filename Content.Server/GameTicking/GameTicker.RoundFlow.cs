@@ -663,7 +663,6 @@ namespace Content.Server.GameTicking
             IncrementRoundNumber();
             SendRoundStartingDiscordMessage();
 
-
             if (!LobbyEnabled)
             {
                 StartRound();
