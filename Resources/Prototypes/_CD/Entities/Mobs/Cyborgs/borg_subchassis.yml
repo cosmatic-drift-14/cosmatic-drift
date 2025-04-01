@@ -9,16 +9,3 @@
     sprite: /Textures/_CD/Mobs/Silicon/Medical/qualified_doctor.rsi
     layers:
     - state: qualified_doctor
-
-- type: entity
-  id: NikaMiningChassis
-  parent: BorgChassisMedical
-  name: nika cyborg
-  components:
-  # - type: BorgSwitchableSubtype
-  #   subtype: qualified_doctor
-  - type: Sprite
-    sprite: /Textures/_CD/Mobs/Silicon/Medical/nika_mining.rsi
-    offset: 0, 0.5
-    layers:
-    - state: nika_mining
