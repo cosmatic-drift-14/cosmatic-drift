@@ -93,9 +93,16 @@ public sealed class GameMapManager : IGameMapManager
         }
     }
 
-    public IEnumerable<GameMapPrototype> CurrentlyEligibleMaps()
+    public IEnumerable<GameMapPrototype> CurrentlyEligibleMaps(bool exclude = false)
     {
         var maps = AllVotableMaps().Where(IsMapEligible).ToArray();
+
+        // CD Addition
+        if (exclude)
+        {
+            maps = maps.Where(IsMapExcluded).ToArray();
+        }
+
         return maps.Length == 0 ? AllMaps().Where(x => x.Fallback) : maps;
     }
 
@@ -190,10 +197,15 @@ public sealed class GameMapManager : IGameMapManager
 
     private bool IsMapEligible(GameMapPrototype map)
     {
-        return map.MaxPlayers >= _playerManager.PlayerCount &&
-               map.MinPlayers <= _playerManager.PlayerCount &&
-               map.Conditions.All(x => x.Check(map)) &&
+        return //map.MaxPlayers >= _playerManager.PlayerCount &&
+               //map.MinPlayers <= _playerManager.PlayerCount &&
+               //map.Conditions.All(x => x.Check(map)) &&
                _entityManager.System<GameTicker>().IsMapEligible(map);
+    }
+
+    private bool IsMapExcluded(GameMapPrototype map)
+    {
+        return !_entityManager.System<GameTicker>().IsMapExcluded(map);
     }
 
     private bool TryLookupMap(string gameMap, [NotNullWhen(true)] out GameMapPrototype? map)
