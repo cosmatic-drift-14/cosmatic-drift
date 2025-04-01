@@ -12,7 +12,7 @@ namespace Content.Server.Database;
 public static class CDModel
 {
     /// <summary>
-    /// Stores Advanced Round Information (shitcode probably idk)
+    /// Stores more information regarding previous rounds. Very similar to Round.
     /// </summary>
     public sealed class AdvancedRound
     {
@@ -20,7 +20,6 @@ public static class CDModel
         [ForeignKey("Server")] public int ServerId { get; set; }
         [ForeignKey("Round")] public int RoundId { get; set; }
         public string Map { get; set; } = null!;
-        public List<Player> Players { get; set; } = default!;
         public DateTime? StartDate { get; set; }
 
     }
