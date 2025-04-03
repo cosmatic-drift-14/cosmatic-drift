@@ -3,7 +3,7 @@
                       xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
                       xmlns:chassisSpriteControls="clr-namespace:Content.Client._CD.Silicon.UI"
                       Title="{Loc 'borg-select-type-menu-title'}"
-                      SetSize="550 300">
+                      SetSize="600 480"> <!-- CD size change -->
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal" VerticalExpand="True">
             <!-- Left pane: selection of borg type -->
@@ -31,7 +31,7 @@
                     </BoxContainer>
                 </Control>
 
-                <chassisSpriteControls:ChassisSpriteSelection/> <!-- CD change -->
+                <chassisSpriteControls:ChassisSpriteSelection Name="ChassisSpriteSelection"/> <!-- CD change -->
 
                 <controls:ConfirmButton Name="ConfirmTypeButton" Text="{Loc 'borg-select-type-menu-confirm'}"
                                         Disabled="True" HorizontalAlignment="Right"

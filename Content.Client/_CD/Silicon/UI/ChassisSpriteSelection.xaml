@@ -1,12 +1,18 @@
 <Control xmlns="https://spacestation14.io"
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
          >
-    <controls:StripeBack>
-        <Label Text="TESTING TESTING TESTING"/>
-    </controls:StripeBack>
 
-    <BoxContainer Name="OptionsContainer"
-                  Orientation="Horizontal"
+    <BoxContainer Name="MainContainer"
+                  Orientation="Vertical"
                   SeparationOverride="4"
-                  />
+                  Visible="False"
+                  >
+        <controls:StripeBack>
+            <Label Text="TESTING TESTING TESTING"/>
+        </controls:StripeBack>
+        <BoxContainer Name="OptionsContainer"
+                      Orientation="Horizontal"
+                      SeparationOverride="4"
+        />
+    </BoxContainer>
 </Control>

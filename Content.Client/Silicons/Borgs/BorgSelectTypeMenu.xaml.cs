@@ -64,6 +64,8 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         NameLabel.Text = PrototypeName(prototype);
         DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
         ChassisView.SetPrototype(prototype.DummyPrototype);
+
+        ChassisSpriteSelection.FillContainer(prototype);
     }
 
     private void ConfirmButtonPressed(BaseButton.ButtonEventArgs obj)

@@ -1,0 +1,53 @@
+# Generic subtypes
+- type: borgSubtype
+  id: default_generic
+  parentBorgType: generic
+
+  dummyPrototype: BorgChassisGeneric
+
+# Mining subtypes
+- type: borgSubtype
+  id: default_mining
+  parentBorgType: mining
+
+  dummyPrototype: BorgChassisMining
+
+# Engineering subtypes
+- type: borgSubtype
+  id: default_engineer
+  parentBorgType: engineering
+
+  dummyPrototype: BorgChassisEngineer
+
+- type: borgSubtype
+  id: spidermin
+  parentBorgType: engineering
+
+  dummyPrototype: SpiderminEngineerChassis
+
+# Janitorial subtypes
+- type: borgSubtype
+  id: default_janitor
+  parentBorgType: janitor
+
+  dummyPrototype: BorgChassisJanitor
+
+# Medical subtypes
+- type: borgSubtype
+  id: default_medical
+  parentBorgType: medical
+
+  dummyPrototype: BorgChassisMedical
+
+- type: borgSubtype
+  id: qualified_doctor
+  parentBorgType: medical
+
+  dummyPrototype: QualifiedDoctorChassis
+
+- type: borgSubtype
+  id: default_service
+  parentBorgType: service
+
+  dummyPrototype: BorgChassisService
+

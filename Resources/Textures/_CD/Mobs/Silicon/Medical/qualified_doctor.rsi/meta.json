@@ -8,8 +8,20 @@
   },
   "states": [
     {
-        "name": "qualified_doctor",
+        "name": "medical",
         "directions": 4
-    }
+    },
+      {
+          "name": "medical_e",
+          "directions": 4
+      },
+      {
+          "name": "medical_e_r",
+          "directions": 4
+      },
+      {
+          "name": "medical_l",
+          "directions": 4
+      }
   ]
 }
