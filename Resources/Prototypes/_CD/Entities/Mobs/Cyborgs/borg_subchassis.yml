@@ -3,21 +3,10 @@
   parent: BorgChassisMedical
   name: qualified medical cyborg
   components:
-  # - type: BorgSwitchableSubtype
-  #   subtype: qualified_doctor
   - type: Sprite
     sprite: /Textures/_CD/Mobs/Silicon/Medical/qualified_doctor.rsi
-    layers:
-    - state: medical
-      map: [ "enum.BorgVisualLayers.Body", "movement" ]
-    - state: medical_e_r
-      map: [ "enum.BorgVisualLayers.Light" ]
-      shader: unshaded
-      visible: false
-    - state: medical_l
-      shader: unshaded
-      map: [ "light","enum.BorgVisualLayers.LightStatus" ]
-      visible: false
+  - type: BorgSwitchableType
+    selectedBorgType: medical
 
 
 - type: entity
@@ -27,14 +16,5 @@
   components:
   - type: Sprite
     sprite: /Textures/_CD/Mobs/Silicon/Engineering/spidermin.rsi
-    layers:
-    - state: engineer
-      map: [ "enum.BorgVisualLayers.Body", "movement" ]
-    - state: engineer_e_r
-      map: [ "enum.BorgVisualLayers.Light" ]
-      shader: unshaded
-      visible: false
-    - state: engineer_l
-      shader: unshaded
-      map: [ "light","enum.BorgVisualLayers.LightStatus" ]
-      visible: false
+  - type: BorgSwitchableType
+    selectedBorgType: engineering

@@ -1,11 +1,12 @@
 using Content.Shared.Silicons.Borgs;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Silicons.Borgs;
 /// <summary>
 ///  Information relating to a borg's subtype. Should be purely cosmetic.
 /// </summary>
-[Prototype]
+[Prototype, Serializable, NetSerializable]
 public sealed partial class BorgSubtypePrototype : IPrototype
 {
     [IdDataField]
