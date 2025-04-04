@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._CD.Silicons.Borgs;
 using Content.Shared.Guidebook;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
@@ -24,6 +25,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
     private BorgTypePrototype? _selectedBorgType;
 
     public event Action<ProtoId<BorgTypePrototype>>? ConfirmedBorgType;
+    public event Action<BorgSubtypePrototype>? ConfirmedBorgSubtype;
 
     [ValidatePrototypeId<GuideEntryPrototype>]
     private static readonly List<ProtoId<GuideEntryPrototype>> GuidebookEntries = new() { "Cyborgs", "Robotics" };
@@ -49,6 +51,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
             SelectionsContainer.AddChild(button);
         }
 
+        ChassisSpriteSelection.SubtypeSelected += UpdateConfirmButton;
         ConfirmTypeButton.OnPressed += ConfirmButtonPressed;
         HelpGuidebookIds = GuidebookEntries;
     }
@@ -59,13 +62,18 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
 
         InfoContents.Visible = true;
         InfoPlaceholder.Visible = false;
-        ConfirmTypeButton.Disabled = false;
 
         NameLabel.Text = PrototypeName(prototype);
         DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
         ChassisView.SetPrototype(prototype.DummyPrototype);
 
         ChassisSpriteSelection.FillContainer(prototype);
+        UpdateConfirmButton();
+    }
+
+    private void UpdateConfirmButton()
+    {
+        ConfirmTypeButton.Disabled = ChassisSpriteSelection._selectedBorgSubtype == null;
     }
 
     private void ConfirmButtonPressed(BaseButton.ButtonEventArgs obj)

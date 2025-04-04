@@ -14,8 +14,10 @@ namespace Content.Client._CD.Silicon.UI;
 [GenerateTypedNameReferences]
 public partial class ChassisSpriteSelection : Control
 {
+    public new event Action? SubtypeSelected;
+
     [Dependency] private readonly IPrototypeManager _prototype = default!;
-    private BorgSubtypePrototype? _selectedBorgSubtype;
+    public required BorgSubtypePrototype? _selectedBorgSubtype;
 
     public ChassisSpriteSelection()
     {
@@ -25,6 +27,7 @@ public partial class ChassisSpriteSelection : Control
 
     public void FillContainer(BorgTypePrototype parentPrototype)
     {
+        _selectedBorgSubtype = null;
         OptionsContainer.RemoveAllChildren();
 
         var group = new ButtonGroup();
@@ -39,6 +42,7 @@ public partial class ChassisSpriteSelection : Control
             button.OnPressed += _ =>
             {
                 _selectedBorgSubtype = borgSubtype;
+                SubtypeSelected?.Invoke();
             };
 
             var entPrototypeView = new EntityPrototypeView();
