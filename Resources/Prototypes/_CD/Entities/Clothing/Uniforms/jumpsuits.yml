@@ -94,6 +94,17 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_casual.rsi
 
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
+  id: ClothingUniformJumpsuitEngineeringPants
+  name: engineering cargoes
+  description: A pair of dyed cargo pants, with added high-vis stripes. Comes with a grey tee.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_pants.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_pants.rsi
+
 # Militant
 - type: entity
   parent: ClothingUniformBase
@@ -207,6 +218,17 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
+  id: ClothingUniformJumpsuitJeansBlack
+  name: black jeans
+  description: Black jeans, shirt optional.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_black.rsi
 
 # Non-casual drip below
 
