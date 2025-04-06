@@ -8,7 +8,10 @@
                   Visible="False"
                   >
         <controls:StripeBack>
-            <Label Text="TESTING TESTING TESTING"/>
+            <Label Text="{Loc 'borg-select-subtype-flavour-text'}"
+                   StyleClasses="LabelSubText"
+                   HorizontalAlignment="Center"
+                   Margin="0 12"/>
         </controls:StripeBack>
         <BoxContainer Name="OptionsContainer"
                       Orientation="Horizontal"

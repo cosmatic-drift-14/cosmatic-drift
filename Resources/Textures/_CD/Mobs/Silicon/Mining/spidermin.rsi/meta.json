@@ -8,19 +8,19 @@
   },
   "states": [
       {
-          "name": "engineer",
+          "name": "miner",
           "directions": 4
       },
       {
-          "name": "engineer_e",
+          "name": "miner_e",
           "directions": 4
       },
       {
-          "name":"engineer_e_r",
+          "name":"miner_e_r",
           "directions": 4
       },
       {
-          "name": "engineer_l",
+          "name": "miner_l",
           "directions": 4
       }
   ]

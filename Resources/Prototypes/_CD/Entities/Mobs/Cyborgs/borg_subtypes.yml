@@ -14,6 +14,13 @@
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisMining
 
+- type: borgSubtype
+  parentBorgType: mining
+  id: spidermin
+
+  spritePath: _CD/Mobs/Silicon/Mining/spidermin.rsi
+  dummyPrototype: SpiderminMiningChassis
+
 # Engineering subtypes
 - type: borgSubtype
   parentBorgType: engineering
@@ -21,13 +28,6 @@
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisEngineer
-
-- type: borgSubtype
-  parentBorgType: engineering
-  id: spidermin
-
-  spritePath: _CD/Mobs/Silicon/Engineering/spidermin.rsi
-  dummyPrototype: SpiderminEngineerChassis
 
 # Janitorial subtypes
 - type: borgSubtype

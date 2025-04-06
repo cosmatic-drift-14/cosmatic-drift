@@ -9,11 +9,11 @@
     borgSubtype: qualified_doctor
 
 - type: entity
-  parent: BorgChassisEngineer
-  id: SpiderminEngineerChassis
-  name: spidermin engineering cyborg
+  parent: BorgChassisMining
+  id: SpiderminMiningChassis
+  name: spidermin salvage cyborg
   components:
   - type: BorgSwitchableType
-    selectedBorgType: engineering
+    selectedBorgType: mining
   - type: BorgSwitchableSubtype
     borgSubtype: spidermin
