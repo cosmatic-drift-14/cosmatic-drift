@@ -1,60 +1,60 @@
 # Generic subtypes
 - type: borgSubtype
-  id: default_generic
   parentBorgType: generic
+  id: default_generic
   spritePath: Mobs/Silicon/chassis.rsi
 
   dummyPrototype: BorgChassisGeneric
 
 # Mining subtypes
 - type: borgSubtype
-  id: default_mining
   parentBorgType: mining
+  id: default_mining
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisMining
 
 # Engineering subtypes
 - type: borgSubtype
-  id: default_engineer
   parentBorgType: engineering
+  id: default_engineering
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisEngineer
 
 - type: borgSubtype
-  id: spidermin
   parentBorgType: engineering
+  id: spidermin
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: SpiderminEngineerChassis
 
 # Janitorial subtypes
 - type: borgSubtype
-  id: default_janitor
   parentBorgType: janitor
+  id: default_janitor
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisJanitor
 
 # Medical subtypes
 - type: borgSubtype
-  id: default_medical
   parentBorgType: medical
+  id: default_medical
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisMedical
 
 - type: borgSubtype
-  id: qualified_doctor
   parentBorgType: medical
+  id: qualified_doctor
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: QualifiedDoctorChassis
 
 - type: borgSubtype
-  id: default_service
   parentBorgType: service
+  id: default_service
 
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisService

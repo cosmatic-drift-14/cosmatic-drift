@@ -1,20 +1,23 @@
 - type: entity
-  id: QualifiedDoctorChassis
   parent: BorgChassisMedical
+  id: QualifiedDoctorChassis
   name: qualified medical cyborg
   components:
   - type: Sprite
     sprite: /Textures/_CD/Mobs/Silicon/Medical/qualified_doctor.rsi
   - type: BorgSwitchableType
     selectedBorgType: medical
-
+  - type: BorgSwitchableSubtype
+    borgSubtype: qualified_doctor
 
 - type: entity
-  id: SpiderminEngineerChassis
   parent: BorgChassisEngineer
+  id: SpiderminEngineerChassis
   name: spidermin engineering cyborg
   components:
   - type: Sprite
     sprite: /Textures/_CD/Mobs/Silicon/Engineering/spidermin.rsi
   - type: BorgSwitchableType
     selectedBorgType: engineering
+  - type: BorgSwitchableSubtype
+    borgSubtype: spidermin
