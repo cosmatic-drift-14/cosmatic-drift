@@ -3,7 +3,7 @@
                       xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
                       xmlns:chassisSpriteControls="clr-namespace:Content.Client._CD.Silicon.UI"
                       Title="{Loc 'borg-select-type-menu-title'}"
-                      SetSize="600 480"> <!-- CD size change -->
+                      SetSize="600 480">
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal" VerticalExpand="True">
             <!-- Left pane: selection of borg type -->

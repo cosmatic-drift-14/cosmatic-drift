@@ -51,9 +51,12 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
             SelectionsContainer.AddChild(button);
         }
 
-        ChassisSpriteSelection.SubtypeSelected += UpdateConfirmButton;
         ConfirmTypeButton.OnPressed += ConfirmButtonPressed;
         HelpGuidebookIds = GuidebookEntries;
+
+        // CD changes below
+        ChassisSpriteSelection.SubtypeSelected += () =>
+            ConfirmTypeButton.Disabled = ChassisSpriteSelection._selectedBorgSubtype == null;
     }
 
     private void UpdateInformation(BorgTypePrototype prototype)
@@ -67,13 +70,10 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
         ChassisView.SetPrototype(prototype.DummyPrototype);
 
+        // CD changes below
         ChassisSpriteSelection.FillContainer(prototype);
-        UpdateConfirmButton();
-    }
-
-    private void UpdateConfirmButton()
-    {
         ConfirmTypeButton.Disabled = ChassisSpriteSelection._selectedBorgSubtype == null;
+
     }
 
     private void ConfirmButtonPressed(BaseButton.ButtonEventArgs obj)
