@@ -2,6 +2,7 @@
 - type: borgSubtype
   id: default_generic
   parentBorgType: generic
+  spritePath: Mobs/Silicon/chassis.rsi
 
   dummyPrototype: BorgChassisGeneric
 
@@ -10,6 +11,7 @@
   id: default_mining
   parentBorgType: mining
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisMining
 
 # Engineering subtypes
@@ -17,12 +19,14 @@
   id: default_engineer
   parentBorgType: engineering
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisEngineer
 
 - type: borgSubtype
   id: spidermin
   parentBorgType: engineering
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: SpiderminEngineerChassis
 
 # Janitorial subtypes
@@ -30,6 +34,7 @@
   id: default_janitor
   parentBorgType: janitor
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisJanitor
 
 # Medical subtypes
@@ -37,17 +42,20 @@
   id: default_medical
   parentBorgType: medical
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisMedical
 
 - type: borgSubtype
   id: qualified_doctor
   parentBorgType: medical
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: QualifiedDoctorChassis
 
 - type: borgSubtype
   id: default_service
   parentBorgType: service
 
+  spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: BorgChassisService
 
