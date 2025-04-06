@@ -1,5 +1,4 @@
-﻿using Content.Shared._CD.Silicons.Borgs;
-using Content.Shared.Actions;
+﻿using Content.Shared.Actions;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Movement.Components;
@@ -39,7 +38,6 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
                 sub.Event<BorgSelectTypeMessage>(SelectTypeMessageHandler);
             });
     }
-
 
     //
     // UI-adjacent code
@@ -124,6 +122,4 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
             footstepModifier.FootstepSoundCollection = prototype.FootstepCollection;
         }
     }
-
-
 }
