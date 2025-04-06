@@ -26,7 +26,7 @@
   parentBorgType: engineering
   id: spidermin
 
-  spritePath: Mobs/Silicon/chassis.rsi
+  spritePath: _CD/Mobs/Silicon/Engineering/spidermin.rsi
   dummyPrototype: SpiderminEngineerChassis
 
 # Janitorial subtypes
@@ -49,9 +49,10 @@
   parentBorgType: medical
   id: qualified_doctor
 
-  spritePath: Mobs/Silicon/chassis.rsi
+  spritePath: _CD/Mobs/Silicon/Medical/qualified_doctor.rsi
   dummyPrototype: QualifiedDoctorChassis
 
+# Service subtypes
 - type: borgSubtype
   parentBorgType: service
   id: default_service

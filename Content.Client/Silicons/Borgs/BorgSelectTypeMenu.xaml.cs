@@ -25,7 +25,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
     private BorgTypePrototype? _selectedBorgType;
 
     public event Action<ProtoId<BorgTypePrototype>>? ConfirmedBorgType;
-    public event Action<BorgSubtypePrototype>? ConfirmedBorgSubtype;
+    public event Action<ProtoId<BorgSubtypePrototype>>? ConfirmedBorgSubtype;
 
     [ValidatePrototypeId<GuideEntryPrototype>]
     private static readonly List<ProtoId<GuideEntryPrototype>> GuidebookEntries = new() { "Cyborgs", "Robotics" };
@@ -56,7 +56,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
 
         // CD changes below
         ChassisSpriteSelection.SubtypeSelected += () =>
-            ConfirmTypeButton.Disabled = ChassisSpriteSelection._selectedBorgSubtype == null;
+            ConfirmTypeButton.Disabled = false;
     }
 
     private void UpdateInformation(BorgTypePrototype prototype)
@@ -72,7 +72,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
 
         // CD changes below
         ChassisSpriteSelection.FillContainer(prototype);
-        ConfirmTypeButton.Disabled = ChassisSpriteSelection._selectedBorgSubtype == null;
+        ConfirmTypeButton.Disabled = true;
 
     }
 
@@ -82,6 +82,12 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
             return;
 
         ConfirmedBorgType?.Invoke(_selectedBorgType);
+
+        // CD changes
+        if(ChassisSpriteSelection.SelectedBorgSubtype == null)
+            return;
+
+        ConfirmedBorgSubtype?.Invoke(ChassisSpriteSelection.SelectedBorgSubtype);
     }
 
     private static string PrototypeName(BorgTypePrototype prototype)
