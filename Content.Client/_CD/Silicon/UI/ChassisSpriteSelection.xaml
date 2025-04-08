@@ -1,12 +1,9 @@
 <Control xmlns="https://spacestation14.io"
-         xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-         >
-
+         xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
     <BoxContainer Name="MainContainer"
                   Orientation="Vertical"
                   SeparationOverride="4"
-                  Visible="False"
-                  >
+                  Visible="False">
         <controls:StripeBack>
             <Label Text="{Loc 'borg-select-subtype-flavour-text'}"
                    StyleClasses="LabelSubText"
@@ -15,7 +12,6 @@
         </controls:StripeBack>
         <BoxContainer Name="OptionsContainer"
                       Orientation="Horizontal"
-                      SeparationOverride="4"
-        />
+                      SeparationOverride="4"/>
     </BoxContainer>
 </Control>
