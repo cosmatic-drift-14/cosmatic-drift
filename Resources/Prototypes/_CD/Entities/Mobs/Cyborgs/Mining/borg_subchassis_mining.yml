@@ -1,0 +1,9 @@
+- type: entity
+  parent: BorgChassisMining
+  id: SpiderminMiningChassis
+  name: spidermin salvage cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: mining
+  - type: BorgSwitchableSubtype
+    borgSubtype: spidermin
