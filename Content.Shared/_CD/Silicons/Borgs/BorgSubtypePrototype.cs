@@ -7,7 +7,7 @@ namespace Content.Shared._CD.Silicons.Borgs;
 /// <summary>
 ///  Information relating to a borg's subtype. Should be purely cosmetic.
 /// </summary>
-[Prototype, Serializable, NetSerializable]
+[Prototype]
 public sealed partial class BorgSubtypePrototype : IPrototype
 {
     [IdDataField]
