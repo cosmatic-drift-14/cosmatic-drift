@@ -12385,8 +12385,6 @@ entities:
       pos: -37.5,26.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17489
 - proto: AirSensorVox
@@ -59965,8 +59963,6 @@ entities:
       pos: -42.5,27.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17489
   - uid: 8154
@@ -59976,8 +59972,6 @@ entities:
       pos: -42.5,28.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17489
   - uid: 19080
@@ -61403,8 +61397,6 @@ entities:
       pos: -37.5,20.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17489
   - uid: 8553
@@ -81177,8 +81169,6 @@ entities:
       pos: -38.5,28.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17489
     - type: AtmosPipeColor
@@ -82362,8 +82352,6 @@ entities:
       pos: -38.5,23.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17489
     - type: AtmosPipeColor
