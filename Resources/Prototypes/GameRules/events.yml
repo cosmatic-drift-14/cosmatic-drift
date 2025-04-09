@@ -163,7 +163,7 @@
   id: DragonSpawn
   components:
   - type: StationEvent
-    weight: 1
+    weight: 1 #CD change from 6.5 to 1
     earliestStart: 40
     reoccurrenceDelay: 20
     minimumPlayers: 20
