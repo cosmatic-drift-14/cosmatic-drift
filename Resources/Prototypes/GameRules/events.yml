@@ -175,7 +175,7 @@
   - type: DragonRule
   - type: AntagObjectives
     objectives:
-    - CarpRiftsObjective
+#   - CarpRiftsObjective |CD disabled for free agent status
     - DragonSurviveObjective
   - type: AntagSelection
     agentName: dragon-round-end-agent-name

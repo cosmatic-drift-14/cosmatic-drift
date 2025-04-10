@@ -124,7 +124,7 @@
   components:
   - type: MindRole
     antagPrototype: Dragon
-    roleType: TeamAntagonist
+    roleType: FreeAgent #CD change from team antag to free agent.
     exclusiveAntag: true
   - type: DragonRole
   - type: RoleBriefing
