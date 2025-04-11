@@ -2,3 +2,8 @@
   id: StationEngineerCasualsuit
   equipment: 
     jumpsuit: ClothingUniformJumpsuitEngineeringCasual
+    
+- type: loadout
+  id: StationEngineerPants
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringPants
