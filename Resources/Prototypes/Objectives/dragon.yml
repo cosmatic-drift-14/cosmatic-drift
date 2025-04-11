@@ -32,7 +32,7 @@
   parent: [BaseDragonObjective, BaseSurviveObjective]
   id: DragonSurviveObjective
   name: Survive
-  description: You have to stay alive to maintain control.
+  description: Dying would be counter productive. #CD description change.
   components:
   - type: Objective
     icon:
