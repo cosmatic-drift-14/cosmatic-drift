@@ -190,6 +190,13 @@
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-8.xml"
 
 - type: guideEntry
+  id: Rule3.9
+  name: guide-entry-rules-3-9
+  ruleEntry: true
+  priority: 9
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-9.xml"
+
+- type: guideEntry
   id: SpaceLaw
   name: guide-entry-rules-space-law
   priority: 1
