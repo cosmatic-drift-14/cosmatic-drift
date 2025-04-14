@@ -90,3 +90,9 @@
   id: GeneCoat
   equipment: 
     outerClothing: ClothingOuterCoatLabGene
+
+# ID
+- type: loadout
+  id: MedicalInternPDA
+  equipment:
+    id: MedicalInternPDA

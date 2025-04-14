@@ -327,9 +327,7 @@
   - ScientistOuterClothing
   - ScientistGloves
   - ScientistShoes
-  # CD: use our title system
-  #- ScientistPDA
-  - ScientistTitles
+  - ScientistPDA
   - Glasses
   - Survival
   - Trinkets

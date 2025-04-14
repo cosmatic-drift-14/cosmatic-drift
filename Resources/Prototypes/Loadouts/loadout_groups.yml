@@ -807,6 +807,7 @@
   name: loadout-group-station-engineer-id
   loadouts:
   - StationEngineerPDA
+  - TechnicalAssistantPDA #CD addition
   # - SeniorEngineerPDA
 
 - type: loadoutGroup
@@ -959,6 +960,7 @@
   name: loadout-group-scientist-id
   loadouts:
   - ScientistPDA
+  - ResearchAssistantPDA #CD addition
   # - SeniorResearcherPDA
 
 - type: loadoutGroup
@@ -1093,6 +1095,7 @@
   name: loadout-group-security-id
   loadouts:
   - SecurityPDA
+  - SecurityCadetPDA #CD addition
   # - SeniorOfficerPDA
 
 - type: loadoutGroup
@@ -1264,6 +1267,7 @@
   name: loadout-group-medical-doctor-id
   loadouts:
   - MedicalDoctorPDA
+  - MedicalInternPDA #CD addition
   # - SeniorPhysicianPDA
 
 - type: loadoutGroup
