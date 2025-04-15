@@ -9,7 +9,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: thorns_head
 
 - type: marking
@@ -23,7 +23,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: thorns_body
 
 - type: marking
@@ -37,7 +37,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: flowers_head
 
 - type: marking
@@ -51,7 +51,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: flowers_body
 
 - type: marking
@@ -64,7 +64,7 @@
       type:
         !type:SkinColoring
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: leaf_cover
 
 - type: marking
@@ -78,7 +78,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: bloom
 
 - type: marking
@@ -92,7 +92,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: bracket
 
 - type: marking
@@ -105,7 +105,7 @@
       type:
         !type:SkinColoring
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: brush
 
 - type: marking
@@ -119,7 +119,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: cornflower
 
 - type: marking
@@ -133,7 +133,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: ficus
 
 - type: marking
@@ -147,7 +147,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: garland
 
 - type: marking
@@ -161,7 +161,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: king
 
 - type: marking
@@ -175,7 +175,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: laurel
 
 - type: marking
@@ -189,7 +189,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: leafy
 
 - type: marking
@@ -203,7 +203,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: lotus
 
 - type: marking
@@ -217,7 +217,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: meadow
 
 - type: marking
@@ -231,7 +231,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: oak
 
 - type: marking
@@ -245,7 +245,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: palm
 
 - type: marking
@@ -259,7 +259,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: root
 
 - type: marking
@@ -273,7 +273,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: rose
 
 - type: marking
@@ -287,7 +287,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: rosey
 
 - type: marking
@@ -301,7 +301,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: shrub
 
 - type: marking
@@ -315,7 +315,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: spinner
 
 - type: marking
@@ -329,7 +329,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: sprout
 
 - type: marking
@@ -343,7 +343,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: vine
 
 - type: marking
@@ -357,7 +357,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: vinel
 
 - type: marking
@@ -371,7 +371,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: vines
 
 - type: marking
@@ -385,7 +385,7 @@
         !type:SimpleColoring
           color: "#FFFFFF"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: wildflower
 
 - type: marking
@@ -399,5 +399,5 @@
         !type:SimpleColoring
         color: "#5f7039"
   sprites:
-  - sprite: Mobs/Customization/diona.rsi
+  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
     state: overlay

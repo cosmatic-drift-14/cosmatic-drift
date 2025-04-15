@@ -25,3 +25,15 @@ marking-LizardTailSnakeUnder = Snake Tail (Under)
 marking-LizardTailSnakeUnder-tail_snakeunder_primary = Primary Tone
 marking-LizardTailSnakeUnder-tail_snakeunder_secondary = Secondary Tone
 
+marking-BurqaSolidLizard = Burqa
+marking-BurqaSolidLizard-burqasolidlizard = Burqa
+marking-HijabFashionableLizard = Hijab (Fashionable)
+marking-HijabFashionableLizard-hijabchiclizard = Hijab (Fashionable)
+marking-HijabSimpleLizard = Hijab (Simple)
+marking-HijabSimpleLizard-hijabsimplelizard = Hijab (Simple)
+marking-NiqabLizard = Niqab
+marking-NiqabLizard-niqablizard = Niqab
+marking-TichelFashionableLizard = Tichel (Fashionable)
+marking-TichelFashionableLizard-tichelfashionablelizard = Tichel (Fashionable)
+marking-TichelSimpleLizard = Tichel (Simple)
+marking-TichelSimpleLizard-tichelsimplelizard = Tichel (Simple)

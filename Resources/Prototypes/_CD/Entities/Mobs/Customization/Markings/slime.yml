@@ -1,33 +1,4 @@
-- type: marking
-  id: SlimeNose
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [SlimePerson]
-  forcedColoring: true
-  followSkinColor: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: nose
-
-- type: marking
-  id: SlimeMouth
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: mouth
-
-- type: marking
-  id: SlimeBrain
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: brain
+# Eyes
 
 - type: marking
   id: SlimeEyeglow
@@ -40,29 +11,42 @@
         !type:EyeColoring
           negative: false
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: eyeglow
   shader: unshaded
 
-- type: marking
-  id: SlimeLungs
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: lungs
+# Head
 
 - type: marking
-  id: SlimeCore
-  bodyPart: Chest
-  markingCategory: Chest
+  id: SlimeNose
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  forcedColoring: true
+  followSkinColor: true
+  sprites:
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: nose
+
+- type: marking
+  id: SlimeMouth
+  bodyPart: Head
+  markingCategory: Head
   speciesRestriction: [SlimePerson]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: core
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: mouth
+
+- type: marking
+  id: SlimeBrain
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  followSkinColor: true
+  sprites:
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: brain
 
 - type: marking
   id: SlimeBonehead
@@ -76,8 +60,57 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonehead
+
+- type: marking
+  id: fizz
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [ SlimePerson ]
+  forcedColoring: false
+  followSkinColor: false
+  sprites:
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: fizz
+
+- type: marking
+  id: FadingStars
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [ SlimePerson ]
+  forcedColoring: false
+  followSkinColor: false
+  sprites:
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: fadingstars1
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: fadingstars2
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: fadingstars3
+  shader: unshaded
+
+# Chest
+
+- type: marking
+  id: SlimeLungs
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [SlimePerson]
+  followSkinColor: true
+  sprites:
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: lungs
+
+- type: marking
+  id: SlimeCore
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [SlimePerson]
+  followSkinColor: true
+  sprites:
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: core
 
 - type: marking
   id: SlimeBonechest
@@ -91,8 +124,34 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonechest
+
+- type: marking
+  id: bubble
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [ SlimePerson ]
+  forcedColoring: false
+  followSkinColor: false
+  sprites:
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: bubble
+
+- type: marking
+  id: fishbowl
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [ SlimePerson ]
+  forcedColoring: false
+  followSkinColor: false
+  sprites:
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: fishbowl1
+  - sprite: _CD/Mobs/Customization/animatedmarkings.rsi
+    state: fishbowl2
+
+# Arms
 
 - type: marking
   id: SlimeBonearmleft
@@ -106,7 +165,7 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonearmleft
 
 - type: marking
@@ -121,38 +180,8 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonearmright
-
-- type: marking
-  id: SlimeBonefootleft
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#F8F8F8"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: bonefootleft
-
-- type: marking
-  id: SlimeBonefootright
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#F8F8F8"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
-    state: bonefootright
 
 - type: marking
   id: SlimeBonehandleft
@@ -166,7 +195,7 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonehandleft
 
 - type: marking
@@ -181,8 +210,40 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonehandright
+
+# Legs
+
+- type: marking
+  id: SlimeBonefootleft
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [SlimePerson]
+  followSkinColor: false
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#F8F8F8"
+  sprites:
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: bonefootleft
+
+- type: marking
+  id: SlimeBonefootright
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [SlimePerson]
+  followSkinColor: false
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#F8F8F8"
+  sprites:
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
+    state: bonefootright
 
 - type: marking
   id: SlimeBonelegleft
@@ -196,7 +257,7 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonelegleft
 
 - type: marking
@@ -211,5 +272,5 @@
         !type:SimpleColoring
           color: "#F8F8F8"
   sprites:
-  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+  - sprite: _CD/Mobs/Customization/slime_parts.rsi
     state: bonelegright

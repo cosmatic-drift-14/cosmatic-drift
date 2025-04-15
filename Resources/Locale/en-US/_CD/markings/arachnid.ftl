@@ -54,3 +54,22 @@ marking-ArachnidRLegSegments-leg_r_segments2 = Shin
 
 marking-ArachnidOverlayFluffy = Fluffy
 marking-ArachnidOverlayFluffy-fluffy = Fluff
+
+marking-AbdomenBasic = Abdomen (Basic)
+marking-AbdomenBasic-abdomenbasic1 = Legs
+marking-AbdomenBasic-abdomenbasic2 = Abdomen
+marking-CreepyArms = Creepy Arms
+marking-CreepyArms-creepy = Creepy Arms
+marking-AbdomenWidow = Abdomen (Widow)
+marking-AbdomenWidow-widow1 = Abdomen and Arms
+marking-AbdomenWidow-widow2 = Marking
+
+marking-SpiderMirror = Mirror
+marking-SpiderMirror-spidermirror = Mirror
+marking-SpiderGlowEyes = Glowing Eyes
+marking-SpiderGlowEyes-spidergloweyes = Glowing Eyes
+marking-SpiderEyesMulti = Multicolor Eyes
+marking-SpiderEyesMulti-spidereyesmulti1 = Top
+marking-SpiderEyesMulti-spidereyesmulti2 = Middle Top
+marking-SpiderEyesMulti-spidereyesmulti3 = Middle Bottom
+marking-SpiderEyesMulti-spidereyesmulti4 = Bottom
