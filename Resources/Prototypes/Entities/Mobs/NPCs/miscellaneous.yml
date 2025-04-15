@@ -138,6 +138,7 @@
     accent: tomatoKiller
   - type: Item
     size: 80
+  - type: MultiHandedItem
   - type: NpcFactionMember
     factions:
       - SimpleHostile
