@@ -4,7 +4,12 @@
   equipment: 
     jumpsuit: ClothingUniformJumpsuitEngineeringCasual
 
-# ID (Senior IDs disable for CD)
+- type: loadout
+  id: StationEngineerPants
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringPants
+
+# ID
 - type: loadout
   id: TechnicalAssistantPDA
   equipment:

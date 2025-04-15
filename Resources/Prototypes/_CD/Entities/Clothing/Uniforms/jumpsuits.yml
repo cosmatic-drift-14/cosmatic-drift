@@ -94,6 +94,17 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_casual.rsi
 
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
+  id: ClothingUniformJumpsuitEngineeringPants
+  name: engineering cargoes
+  description: A pair of dyed cargo pants, with added high-vis stripes. Comes with a grey tee.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_pants.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/engineering_pants.rsi
+
 # Militant
 - type: entity
   parent: ClothingUniformBase
@@ -208,6 +219,17 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/centcomm_casual.rsi
 
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
+  id: ClothingUniformJumpsuitJeansBlack
+  name: black jeans
+  description: Black jeans, shirt optional.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_black.rsi
+
 # Non-casual drip below
 
 # Medical garments
@@ -317,6 +339,39 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  id: ClothingUniformJumpsuitSuitRed
+  name: red formal suit
+  description: A pair of red dress pants with a white shirt, includes a waistcoat.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/red.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/red.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  id: ClothingUniformJumpsuitSuitPurple
+  name: purple formal suit
+  description: A pair of purple dress pants with a white shirt, includes a waistcoat.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/purple.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/purple.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  id: ClothingUniformJumpsuitSuitBurgundy
+  name: burgundy formal suit
+  description: A pair of burgundy dress pants with a white shirt, includes a waistcoat.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/burgundy.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/burgundy.rsi
 
 # Turtlenecks
 

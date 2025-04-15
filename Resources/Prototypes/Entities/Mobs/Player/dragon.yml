@@ -16,7 +16,7 @@
     description: ghost-role-information-space-dragon-description
     rules: ghost-role-information-space-dragon-rules
     mindRoles:
-    - MindRoleGhostRoleTeamAntagonist
+    - MindRoleGhostRoleFreeAgent #CD change from team antag to free agent.
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
