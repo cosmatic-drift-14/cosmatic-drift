@@ -13,7 +13,7 @@
     slots:
     - belt
   - type: Item
-    size: Ginormous
+    size: 300
   - type: Storage
     capacity: 300
     quickInsert: true

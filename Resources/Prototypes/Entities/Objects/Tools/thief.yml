@@ -8,7 +8,7 @@
     - type: StealArea
       range: 2 # Slightly larger than fulton beacon's random offset
     - type: Item
-      size: Normal
+      size: 40
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures

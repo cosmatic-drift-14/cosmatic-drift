@@ -33,7 +33,7 @@ public sealed class AnchoredStorageFilterSystem : EntitySystem
         if (!TryComp<StorageComponent>(ent, out var storage))
             return;
 
-        foreach (var item in storage.StoredItems.Keys)
+        foreach (var item in storage.Container.ContainedEntities)
         {
             if (!_whitelist.CheckBoth(item, ent.Comp.Blacklist, ent.Comp.Whitelist))
                 _container.RemoveEntity(ent, item);

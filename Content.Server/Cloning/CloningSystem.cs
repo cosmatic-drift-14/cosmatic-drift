@@ -168,11 +168,11 @@ public sealed partial class CloningSystem : EntitySystem
 
             // recursively replace them
             // surely no one will ever create two items that contain each other causing an infinite loop, right?
-            foreach ((var itemUid, var itemLocation) in originalStorage.StoredItems)
+            foreach (var itemUid in originalStorage.Container.ContainedEntities)
             {
                 var copy = CopyItem(itemUid, coords, whitelist, blacklist);
                 if (copy != null)
-                    _storage.InsertAt((spawned, spawnedStorage), copy.Value, itemLocation, out _, playSound: false);
+                    _storage.Insert(spawned, copy.Value, out _, playSound: false);
             }
         }
 
@@ -195,11 +195,11 @@ public sealed partial class CloningSystem : EntitySystem
         _container.CleanContainer(target.Comp.Container);
 
         // recursively replace them
-        foreach ((var itemUid, var itemLocation) in original.Comp.StoredItems)
+        foreach (var itemUid in original.Comp.Container.ContainedEntities)
         {
             var copy = CopyItem(itemUid, coords, whitelist, blacklist);
             if (copy != null)
-                _storage.InsertAt(target, copy.Value, itemLocation, out _, playSound: false);
+                _storage.Insert(target, copy.Value, out _, playSound: false);
         }
     }
 

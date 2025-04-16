@@ -526,6 +526,8 @@
   description: Contains enough hyperzine for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
   - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 10
     inhandVisuals:
       left:
       - state: base-needle-inhand-left
@@ -544,9 +546,6 @@
     layers:
     - state: stimpen
       map: ["enum.SolutionContainerLayers.Fill"]
-  - type: Item
-    sprite: Objects/Specific/Medical/medipen.rsi
-    size: 10
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -575,6 +574,8 @@
   description: A microinjector of hyperzine that give you about 15 seconds of the chemical's effects.
   components:
   - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 5
     inhandVisuals:
       left:
       - state: base-needle-inhand-left
@@ -593,9 +594,6 @@
     layers:
     - state: microstimpen
       map: ["enum.SolutionContainerLayers.Fill"]
-  - type: Item
-    sprite: Objects/Specific/Medical/medipen.rsi
-    size: 5
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -619,6 +617,8 @@
   description: A single-use medipen containing chemicals that regenerate most types of damage.
   components:
   - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: 5
     inhandVisuals:
       left:
       - state: base-needle-inhand-left
@@ -635,9 +635,6 @@
     layers:
     - state: morphen
       map: ["enum.SolutionContainerLayers.Fill"]
-  - type: Item
-    sprite: Objects/Specific/Medical/medipen.rsi
-    size: 5
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false

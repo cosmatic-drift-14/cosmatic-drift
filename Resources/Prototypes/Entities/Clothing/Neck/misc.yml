@@ -38,7 +38,7 @@
   description: An outdated medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing.
   components:
   - type: Item
-    size: Small
+    size: 3
   - type: Sprite
     sprite: Clothing/Neck/Misc/stethoscope.rsi
     state: icon
