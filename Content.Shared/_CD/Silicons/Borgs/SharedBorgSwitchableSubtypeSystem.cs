@@ -34,22 +34,14 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
     {
     }
 
-    public void SetSubtype(EntityUid ent, ProtoId<BorgSubtypePrototype> subtype)
+    private void SetSubtype(Entity<BorgSwitchableSubtypeComponent> ent, ProtoId<BorgSubtypePrototype> subtype)
     {
-        if (!TryComp(ent, out BorgSwitchableSubtypeComponent? subtypeComp))
-            return;
-
-        subtypeComp.BorgSubtype = subtype;
+        ent.Comp.BorgSubtype = subtype;
         RaiseLocalEvent(ent, new BorgSubtypeChangedEvent(subtype));
     }
 }
 
-public class BorgSubtypeChangedEvent : EntityEventArgs
+public struct BorgSubtypeChangedEvent(ProtoId<BorgSubtypePrototype> subtype)
 {
-    public ProtoId<BorgSubtypePrototype> Subtype { get; }
-
-    public BorgSubtypeChangedEvent(ProtoId<BorgSubtypePrototype> subtype)
-    {
-        Subtype = subtype;
-    }
+    public ProtoId<BorgSubtypePrototype> Subtype { get; } = subtype;
 }
