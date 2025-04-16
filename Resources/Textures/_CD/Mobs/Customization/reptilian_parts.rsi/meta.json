@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Dragon wings by Github KittenColony / Discord kittencolony (297865728374210561), Visor by mrgreen06 on Discord",
+  "copyright": "Dragon wings by Github KittenColony / Discord kittencolony (297865728374210561), Visor by mrgreen06 on Discord, horns_nubby by pinkbat5, all other markings by starlighthowls, head_flat/snout_tall/beard by rainyatrium",
   "size": {
     "x": 32,
     "y": 32
@@ -21,6 +21,38 @@
     },
     {
       "name": "head_ledvisor_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "snout_tall",
+      "directions": 4
+    },
+    {
+      "name": "head_flat",
+      "directions": 4
+    },
+    {
+      "name": "beard",
+      "directions": 4
+    },
+    {
+      "name": "fangs",
+      "directions": 4
+    },
+    {
+      "name": "horns_kobold_ears_piercings",
+      "directions": 4
+    },
+    {
+      "name": "horns_kobold_ears",
+      "directions": 4
+    },
+    {
+      "name": "horns_nubby",
+      "directions": 4
+    },
+    {
+      "name": "piercings1",
       "directions": 4
     }
   ]

@@ -4,7 +4,7 @@
       "x": 32,
       "y": 32
     },
-    "copyright": "berlytwintails and shortheart by cephalopod.",
+    "copyright": "berlytwintails and shortheart by cephalopod, gatheredlow sprited by Sha-Seng (Github), lowpigtails by Skeleskitty (Discord)",
     "license": "CC-BY-SA-3.0",  
     "states": [
       {
@@ -13,6 +13,14 @@
       },
       {
         "name": "shortheart",
+        "directions": 4
+      },
+      {
+        "name": "gatheredlow",
+        "directions": 4
+      },
+      {
+        "name": "lowpigtails",
         "directions": 4
       }
     ]
