@@ -3,13 +3,8 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: thorns_head
 
 - type: marking
@@ -17,13 +12,8 @@
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: thorns_body
 
 - type: marking
@@ -31,28 +21,22 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: flowers_head
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: flowers_head_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: flowers_head_secondary
 
 - type: marking
   id: DionaFlowersBody
   bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: flowers_body
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: flowers_body_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: flowers_body_secondary
 
 - type: marking
   id: DionaLeafCover
@@ -64,7 +48,7 @@
       type:
         !type:SkinColoring
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: leaf_cover
 
 - type: marking
@@ -72,14 +56,11 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: bloom
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: bloom_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: bloom_secondary
 
 - type: marking
   id: DionaBracketHead
@@ -89,10 +70,9 @@
   coloring:
     default:
       type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
+        !type:EyeColoring
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: bracket
 
 - type: marking
@@ -105,7 +85,7 @@
       type:
         !type:SkinColoring
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: brush
 
 - type: marking
@@ -113,27 +93,21 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: cornflower
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: cornflower_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: cornflower_secondary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: cornflower_flowers
 
 - type: marking
   id: DionaFicusHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: ficus
 
 - type: marking
@@ -141,41 +115,36 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: garland
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: garland_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: garland_secondary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: garland_flowers1
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: garland_flowers2
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: garland_flowers3
 
 - type: marking
   id: DionaKingHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: king
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: king_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: king_secondary
 
 - type: marking
   id: DionaLaurelHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: laurel
 
 - type: marking
@@ -183,13 +152,8 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: leafy
 
 - type: marking
@@ -197,27 +161,19 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: lotus
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: lotus_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: lotus_secondary
 
 - type: marking
   id: DionaMeadowHeadTop
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: meadow
 
 - type: marking
@@ -225,13 +181,8 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: oak
 
 - type: marking
@@ -239,13 +190,8 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: palm
 
 - type: marking
@@ -253,13 +199,8 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: root
 
 - type: marking
@@ -267,41 +208,32 @@
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: rose
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: rose_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: rose_secondary
 
 - type: marking
   id: DionaRoseyHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: rosey
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: rosey_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: rosey_secondary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: rosey_flowers
 
 - type: marking
   id: DionaShrubHeadTop
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: shrub
 
 - type: marking
@@ -309,95 +241,86 @@
   bodyPart: HeadSide
   markingCategory: HeadSide
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: spinner
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: spinner_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: spinner_secondary
 
 - type: marking
   id: DionaSproutHeadSide
   bodyPart: HeadSide
   markingCategory: HeadSide
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: sprout
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: sprout_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: sprout_secondary
 
 - type: marking
   id: DionaVineHeadTop
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: vine
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: vine_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: vine_secondary
 
 - type: marking
   id: DionaVinelHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: vinel
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: vinel_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: vinel_secondary
 
 - type: marking
   id: DionaVinesHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: vines
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: vines_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: vines_secondary
 
 - type: marking
   id: DionaWildflowerHead
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
-    state: wildflower
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: wildflower_primary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: wildflower_secondary
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: wildflower_flowers1
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: wildflower_flowers2
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: wildflower_flowers3
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
+    state: wildflower_flowers4
 
 - type: marking
   id: DionaVineOverlay
   bodyPart: LLeg
   markingCategory: Overlay
   speciesRestriction: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#5f7039"
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#5f7039"
+# This was the part that was removed from every marking entirely
   sprites:
-  - sprite: _CD/Mobs/Customization/diona.rsi   # Grayscaled Diona markings, CD
+  - sprite: _CD/Mobs/Customization/diona.rsi # CD, grayscaled markings
     state: overlay
