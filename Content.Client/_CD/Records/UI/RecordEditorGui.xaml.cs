@@ -106,6 +106,11 @@ public sealed partial class RecordEditorGui : Control
             UpdateRecords(_records.WithSecurityEntries(args.Entries));
         };
 
+        ConfidentialEntrySelector.OnUpdateEntries += args =>
+        {
+            UpdateRecords(_records.WithConfidentialEntries(args.Entries));
+        };
+
         #endregion
     }
 
@@ -115,6 +120,7 @@ public sealed partial class RecordEditorGui : Control
         EmploymentEntrySelector.UpdateContents(_records.EmploymentEntries);
         MedicalEntrySelector.UpdateContents(_records.MedicalEntries);
         SecurityEntrySelector.UpdateContents(_records.SecurityEntries);
+        ConfidentialEntrySelector.UpdateContents(_records.ConfidentialEntries);
         UpdateWidgets();
     }
 

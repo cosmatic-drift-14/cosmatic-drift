@@ -152,6 +152,9 @@ public sealed class CharacterRecordsSystem : EntitySystem
             case CharacterRecordType.Security:
                 cr.SecurityEntries.RemoveAt(idx);
                 break;
+            case CharacterRecordType.Confidential:
+                cr.ConfidentialEntries.RemoveAt(idx);
+                break;
         }
 
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
