@@ -1,89 +1,108 @@
-Name: Admin
-AdminOnly: true
-Order: 1
+﻿AdminOnly: true
 Entries:
 - author: DrSmugleaf
   changes:
-  - {message: 'Created the admin changelog.', type: Add}
+  - message: Created the admin changelog.
+    type: Add
   id: 1
   time: '2023-10-08T04:26:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Added a new panic bunker UI in the F7 admin panel.', type: Add}
-  - {message: 'Added being able to toggle the panic bunker automatically depending on
-      if admins are online or not.', type: Add}
+  - message: Added a new panic bunker UI in the F7 admin panel.
+    type: Add
+  - message: Added being able to toggle the panic bunker automatically depending on
+      if admins are online or not.
+    type: Add
   id: 2
   time: '2023-10-12T22:46:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Added total playtime to the F7 player list and the AHelp window title.', type: Add}
+  - message: Added total playtime to the F7 player list and the AHelp window title.
+    type: Add
   id: 3
   time: '2023-10-14T08:55:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Added admin Erase verb, add checkbox to erase from the ban panel.', type: Add}
+  - message: Added admin Erase verb, add checkbox to erase from the ban panel.
+    type: Add
   id: 4
   time: '2023-10-14T09:00:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Made the panic bunker UI also set the minimum account age/playtime
-      requirements when the two inputs lose focus, not just when pressing enter.', type: Tweak}
-  - {message: 'Added message tooltip to the erase verb.', type: Tweak}
+  - message: Made the panic bunker UI also set the minimum account age/playtime requirements
+      when the two inputs lose focus, not just when pressing enter.
+    type: Tweak
+  - message: Added message tooltip to the erase verb.
+    type: Tweak
   id: 5
   time: '2023-10-14T09:21:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Add pop sound effect when using the erase admin verb.', type: Tweak}
+  - message: Add pop sound effect when using the erase admin verb.
+    type: Tweak
   id: 5
   time: '2023-10-14T09:47:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Fixed not being able to sort the F7 players tab by playtime.', type: Fix}
+  - message: Fixed not being able to sort the F7 players tab by playtime.
+    type: Fix
   id: 6
   time: '2023-10-14T23:52:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Fixed playtime being sorted incorrectly in the F7 players tab.', type: Fix}
+  - message: Fixed playtime being sorted incorrectly in the F7 players tab.
+    type: Fix
   id: 7
   time: '2023-10-16T04:23:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Fixed whitelist commands not giving feedback with 0 arguments.', type: Fix}
-  - {message: 'Fixed not trimming starting and trailing whitespaces within names
-      in whitelist commands.', type: Fix}
-  - {message: 'Added a \[player\] completion type hint to whitelist add and remove
-      commands.', type: Tweak}
+  - message: Fixed whitelist commands not giving feedback with 0 arguments.
+    type: Fix
+  - message: Fixed not trimming starting and trailing whitespaces within names in
+      whitelist commands.
+    type: Fix
+  - message: Added a \[player\] completion type hint to whitelist add and remove commands.
+    type: Tweak
   id: 8
   time: '2023-10-21T09:53:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Fixed the Erase verb not removing all chat messages from the player
-      in some cases.', type: Fix}
+  - message: Fixed the Erase verb not removing all chat messages from the player in
+      some cases.
+    type: Fix
   id: 9
   time: '2023-10-30T01:28:00.0000000+00:00'
 - author: Vasilis
   changes:
-  - {message: 'AME and PA make a sound effect when they are being overloaded. Similar to being sent a fax.', type: Add}
+  - message: AME and PA make a sound effect when they are being overloaded. Similar
+      to being sent a fax.
+    type: Add
   id: 10
   time: '2023-11-07T15:03:00.0000000+00:00'
 - author: nikthechampiongr
   changes:
-    - {message: 'The respawn verb now respawns the targeted player instead of the admin', type: Fix}
+  - message: The respawn verb now respawns the targeted player instead of the admin
+    type: Fix
   id: 11
   time: '2023-11-22T16:39:00.0000000+00:00'
 - author: nikthechampiongr
   changes:
-  - {message: 'The Super Bonk smite is now available. Targets will bonk their head on every single table.', type: Add}
+  - message: The Super Bonk smite is now available. Targets will bonk their head on
+      every single table.
+    type: Add
   id: 12
   time: '2023-12-12T11:54:00.0000000+00:00'
 - author: DrSmugleaf
   changes:
-  - {message: 'Fixed not being able to right click in AHelps and the players and objects tabs.', type: Fix}
+  - message: Fixed not being able to right click in AHelps and the players and objects
+      tabs.
+    type: Fix
   id: 13
   time: '2023-12-21T06:34:00.0000000+00:00'
 - author: Geekyhobo
   changes:
-    - {message: 'Fixed AGhosts not being able to drop items past the default range.', type: Fix}
+  - message: Fixed AGhosts not being able to drop items past the default range.
+    type: Fix
   id: 14
   time: '2024-1-4T01:30:00.0000000+00:00'
 - author: nikthechampiongr
@@ -899,5 +918,86 @@ Entries:
   id: 113
   time: '2025-03-21T23:21:32.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/35994
+- author: Errant
+  changes:
+  - message: The Antag column on the player list has been removed, and it's functionality
+      folded into the Character and Role Type columns.
+    type: Remove
+  - message: The Role Type column now sorts entries in a revised order. All antagonist
+      types are grouped at the end.
+    type: Tweak
+  - message: On the player list, the names of antagonist players are now prefixed
+      with an antag symbol, and (optionally) shown in the color of their current role
+      type. The default setting is to show the "standard antag dagger" symbol for
+      any type of antag, same as the ahelp relay. Optionally a distinct icon can be
+      shown for each role type for easier identification.
+    type: Tweak
+  - message: More playerlist/overlay settings can now be changed in Admin Options.
+    type: Tweak
+  id: 114
+  time: '2025-03-25T16:03:59.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/35538
+- author: ScarKy0
+  changes:
+  - message: The "Spawn here" verb now reliably transfers mind of the target to their
+      new body.
+    type: Fix
+  id: 115
+  time: '2025-03-25T18:40:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/36080
+- author: Errant
+  changes:
+  - message: Admin overlays of mobs/players in very close proximity no longer overlap
+      each other. They now form stacks of up to 3. If more than 3 overlay entries
+      are stacked, any additional entries will be drawn over the 3rd element of the
+      stack. These names are ordered by vertical position, but when the coordinates
+      match exactly (such as someone carrying a mothroach/pAI, or ghosts orbiting),
+      the top member of the stack is NOT guaranteed to be the most visible/interesting
+      element in the stack.
+    type: Add
+  - message: Ghosts near the mouse cursor no longer show up on the admin overlay,
+      including any ghosts in stacks near the mouse cursor.
+    type: Add
+  id: 116
+  time: '2025-03-25T20:15:22.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/35622
+- author: slarticodefast
+  changes:
+  - message: Added an antag control verb to create a paradox clone ghost role of a
+      selected player.
+    type: Add
+  id: 117
+  time: '2025-03-27T17:04:25.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/36105
+- author: lzk228, ScarKy0
+  changes:
+  - message: Aghost now silently interact with storages.
+    type: Tweak
+  id: 118
+  time: '2025-03-27T17:42:58.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/35417
+- author: Minemoder
+  changes:
+  - message: Admin PDA Health Analyzer now has infinite range.
+    type: Tweak
+  id: 119
+  time: '2025-04-06T08:31:06.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/36347
+- author: ScarKy0
+  changes:
+  - message: Aghosts now load biome terrain.
+    type: Tweak
+  id: 120
+  time: '2025-04-06T12:10:17.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/36325
+- author: slarticodefast
+  changes:
+  - message: Fixed the rmobjective command.
+    type: Fix
+  - message: Added completion hints to the rmobjective command.
+    type: Tweak
+  id: 121
+  time: '2025-04-08T14:54:14.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/36396
 Name: Admin
 Order: 1

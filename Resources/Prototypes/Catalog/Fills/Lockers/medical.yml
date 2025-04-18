@@ -49,22 +49,16 @@
     - id: ClothingEyesHudMedical
     - id: ClothingHeadHatSurgcapGreen
       prob: 0.1
-      orGroup: Surgcaps
     - id: ClothingHeadHatSurgcapPurple
       prob: 0.05
-      orGroup: Surgcaps
     - id: ClothingHeadHatSurgcapBlue
       prob: 0.90
-      orGroup: Surgcaps
     - id: UniformScrubsColorBlue
       prob: 0.5
-      orGroup: Surgshrubs
     - id: UniformScrubsColorGreen
       prob: 0.1
-      orGroup: Surgshrubs
     - id: UniformScrubsColorPurple
       prob: 0.05
-      orGroup: Surgshrubs
     - id: ClothingMaskSterile
     #CD Addions
     - id: BookSOPMedical

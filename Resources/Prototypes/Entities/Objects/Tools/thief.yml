@@ -74,7 +74,7 @@
   - type: Sprite
     sprite: Clothing/Back/Satchels/smuggler.rsi
     state: folded
-  - type: Item
-    storedRotation: 90
+  # - type: Item
+  #   storedRotation: 90
   - type: ThiefUndeterminedBackpack
     spawnedStoragePrototype: ClothingBackpackSatchelSmugglerUnanchored
