@@ -19,7 +19,7 @@
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_plasma.yml
         - type: StationJobs
-          availableJobs: #Total of 66 jobs roundstart, max of 93 inc. latejoins and trainees.
+          availableJobs: #Total of 69 jobs roundstart, max of 76 inc. latejoins and trainees.
             #command - 7
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -43,29 +43,29 @@
             #engineering
             SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 4, 4 ]
-            StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
+            StationEngineer: [ 5, 5 ] #CD change from 4-4 to 5-5.
+            # TechnicalAssistant: [ 2, 2 ] #CD disabled.
             #medical
             SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 3 ] #CD change from 4-4 to 3-3
+            MedicalDoctor: [ 4, 4 ]
             Paramedic: [ 2, 2 ]
-            MedicalIntern: [ 2, 2 ] #CD change from 4-4 to 2-2
+            # MedicalIntern: [ 2, 2 ] #CD disabled.
             Psychologist: [ 1, 1 ]
             #science
             SeniorResearcher: [ 1, 1 ] #CD role
-            Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
+            Scientist: [ 5, 5 ] #CD change from 4-4 to 5-5.
+            # ResearchAssistant: [ 2, 2 ] #CD disabled.
             StationAi: [ 1, 1 ]
             Borg: [ 2, 4 ]
             #security
             SeniorOfficer: [ 1, 1 ] #CD role
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 3, 3 ] #CD change from 6-8 to 3-3
+            SecurityOfficer: [ 4, 4 ] #CD change from 6-8 to 4-4.
             Detective: [ 1, 2 ]
-            SecurityCadet: [ 2, 2 ] #CD change from 4-4 to 2-2
+            # SecurityCadet: [ 2, 2 ] #CD disabled.
             Lawyer: [ 1, 2 ]
-            #supply - 8-10
+            #supply - 7
             SalvageSpecialist: [ 4, 4 ]
             CargoTechnician: [ 3, 3 ] #CD change from 4-6 to 3-3
             #civilian

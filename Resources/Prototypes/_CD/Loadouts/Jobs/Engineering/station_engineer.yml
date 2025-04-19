@@ -1,9 +1,16 @@
+# Jumpsuit
 - type: loadout
   id: StationEngineerCasualsuit
   equipment: 
     jumpsuit: ClothingUniformJumpsuitEngineeringCasual
-    
+
 - type: loadout
   id: StationEngineerPants
   equipment: 
     jumpsuit: ClothingUniformJumpsuitEngineeringPants
+
+# ID
+- type: loadout
+  id: TechnicalAssistantPDA
+  equipment:
+    id: TechnicalAssistantPDA

@@ -197,6 +197,8 @@
     accentVColor: "#949137"
   - type: Icon
     state: pda-interntech
+  - type: RenameId #CD addition
+    value: job-name-technical-assistant
 
 - type: entity
   parent: BaseMedicalPDA
@@ -219,6 +221,8 @@
   - type: GuideHelp
     guides:
     - Medical Doctor
+  - type: RenameId #CD addition
+    value: job-name-intern
 
 - type: entity
   parent: BaseSecurityPDA
@@ -238,6 +242,8 @@
     accentVColor: "#A32D26"
   - type: Icon
     state: pda-interncadet
+  - type: RenameId #CD addition
+    value: job-name-cadet
 
 - type: entity
   parent: BasePDA
@@ -257,6 +263,8 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-internsci
+  - type: RenameId #CD addition
+    value: job-name-research-assistant
 
 - type: entity
   parent: BasePDA
