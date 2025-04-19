@@ -1,18 +1,9 @@
 # Hair
 marking-MessyPonytail = Messy Ponytail
 
-marking-BurqaSolid = Burqa
+marking-HumanHairGatheredlow = Gathered Low
 
-marking-HijabFashionable = Hijab (Fashionable)
-
-marking-HijabSimple = Hijab (Simple)
-
-marking-Niqab = Niqab
-
-marking-TichelFashionable = Tichel (Fashionable)
-
-marking-TichelSimple = Tichel (Simple)
-
+marking-HumanHairLowpigtails = Low Pigtails
 
 # Head
 marking-HumanoidEyebags = Eyebags
