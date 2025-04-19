@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "vitiligochestspots through torso_incision by Carousel, human_bodyhair_male & human_bodyhair_female by Honeyed_Lemons_, chest_necklace through chest_heavy3 by Sha-Seng (Github)",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "vitiligochestspots",
+        "directions": 4
+      },
+      {
+        "name": "vitiligochestf",
+        "directions": 4
+      },
+      {
+        "name": "muscular",
+        "directions": 4
+      },
+      {
+        "name": "chest_backstabbed",
+        "directions": 4
+      },
+      {
+        "name": "chest_l_twisting",
+        "directions": 4
+      },
+      {
+        "name": "chest_r_twisting",
+        "directions": 4
+      },
+      {
+        "name": "chest_star",
+        "directions": 4
+      },
+      {
+        "name": "torso_incision",
+        "directions": 4
+      },
+      {
+        "name": "human_bodyhair_male",
+        "directions": 4
+      },
+      {
+        "name": "human_bodyhair_female",
+        "directions": 4
+      },
+      {
+        "name": "chest_necklace",
+        "directions": 4
+      },
+      {
+        "name": "chest_heavy1",
+        "directions": 4
+      },
+      {
+        "name": "chest_heavy2",
+        "directions": 4
+      },
+      {
+        "name": "chest_heavy3",
+        "directions": 4
+      }
+    ]
+  }
+  
