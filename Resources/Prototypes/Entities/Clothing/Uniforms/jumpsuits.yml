@@ -314,9 +314,9 @@
   description: Woven in a grungy, warm orange. Lets others around you know that you really mean business when it comes to work.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/engineering_hazard.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_hazard.rsi # CD drip 4
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/engineering_hazard.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_hazard.rsi # CD drip 4
 
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
