@@ -1,6 +1,6 @@
 # Jumpsuit
 - type: loadout
-  id: AtmosphericTechnicianJumpsuitCasual
+  id: AtmosphericTechnicianHazardsuit
   equipment: 
     jumpsuit: ClothingUniformJumpsuitAtmosHazard
 
