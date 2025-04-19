@@ -8,6 +8,7 @@
       tags:
       - ClothMade
       - Paper
+      - Fruit
   - type: SolutionContainerManager
     solutions:
       stomach:
