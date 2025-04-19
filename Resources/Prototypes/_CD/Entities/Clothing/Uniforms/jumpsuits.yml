@@ -327,6 +327,19 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
 
+# Engineering garments
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitAtmosHazard
+  name: atmospherics hazard jumpsuit
+  description: Woven from black fire-retardant material. Lets you act where others might falter during emergencies.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos_hazard.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos_hazard.rsi
+
 # Suits
 
 - type: entity
