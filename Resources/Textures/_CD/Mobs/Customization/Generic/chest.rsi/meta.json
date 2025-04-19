@@ -52,6 +52,10 @@
         "directions": 4
       },
       {
+        "name": "chest_cuthere",
+        "directions": 4
+      },
+      {
         "name": "chest_heavy1",
         "directions": 4
       },
