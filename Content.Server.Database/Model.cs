@@ -26,6 +26,7 @@ namespace Content.Server.Database
         public DbSet<Admin> Admin { get; set; } = null!;
         public DbSet<AdminRank> AdminRank { get; set; } = null!;
         public DbSet<Round> Round { get; set; } = null!;
+        public DbSet<CDModel.AdvancedRound> AdvancedRound { get; set; } = null!; // CD Addition
         public DbSet<Server> Server { get; set; } = null!;
         public DbSet<AdminLog> AdminLog { get; set; } = null!;
         public DbSet<AdminLogPlayer> AdminLogPlayer { get; set; } = null!;
@@ -155,6 +156,11 @@ namespace Content.Server.Database
 
             modelBuilder.Entity<Round>()
                 .HasIndex(round => round.StartDate);
+
+            // CD Additions
+            modelBuilder.Entity<CDModel.AdvancedRound>()
+                .HasIndex(round => round.StartDate);
+            // END CD Additions
 
             modelBuilder.Entity<AdminLogPlayer>()
                 .HasKey(logPlayer => new {logPlayer.RoundId, logPlayer.LogId, logPlayer.PlayerUserId});
@@ -589,6 +595,7 @@ namespace Content.Server.Database
 
         // Data that changes with each round
         public List<Round> Rounds { get; set; } = null!;
+        public List<CDModel.AdvancedRound> AdvancedRounds { get; set; } = null!; // CD Addition
         public List<AdminLogPlayer> AdminLogs { get; set; } = null!;
 
         public DateTime? LastReadRules { get; set; }
