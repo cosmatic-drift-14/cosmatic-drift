@@ -397,6 +397,8 @@
     - SecurityWeaponsStatic
     - CDSecfabStatic
     dynamicPacks:
+    - SalvageSecurityBoards
+    - SalvageSecurityWeapons
     - SecurityEquipment
     - SecurityBoards
     - SecurityExplosives
