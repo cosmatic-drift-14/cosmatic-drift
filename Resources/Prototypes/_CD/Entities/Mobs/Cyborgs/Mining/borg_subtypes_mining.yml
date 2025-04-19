@@ -1,0 +1,7 @@
+- type: borgSubtype
+  parent: base_subtype
+  parentBorgType: mining
+  id: spidermin
+
+  spritePath: _CD/Mobs/Silicon/Mining/spidermin.rsi
+  dummyPrototype: SpiderminMiningChassis
