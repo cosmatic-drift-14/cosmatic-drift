@@ -1,36 +1,12 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "burqasolid through messyponytail by Carousel, gatheredlow by Sha-Seng (Github), lowpigtails by Skeleskitty (Discord)",
+    "copyright": "messyponytail by Carousel, gatheredlow by Sha-Seng (Github), lowpigtails by Skeleskitty (Discord)",
     "size": {
       "x": 32,
       "y": 32
     },
     "states": [
-      {
-        "name": "burqasolid",
-        "directions": 4
-      },
-      {
-        "name": "hijabchic",
-        "directions": 4
-      },
-      {
-        "name": "hijabsimple",
-        "directions": 4
-      },
-      {
-        "name": "niqab",
-        "directions": 4
-      },
-      {
-        "name": "tichelfashionable",
-        "directions": 4
-      },
-      {
-        "name": "tichelsimple",
-        "directions": 4
-      },
       {
         "name": "messyponytail",
         "directions": 4
