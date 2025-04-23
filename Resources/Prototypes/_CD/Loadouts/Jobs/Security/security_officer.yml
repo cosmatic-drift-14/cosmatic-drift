@@ -1,3 +1,4 @@
+#Eyes
 - type: loadout
   id: EyesGlassesSecurity
   equipment: 
@@ -8,6 +9,7 @@
   equipment: 
     eyes: ClothingEyesHudSecurity
 
+#Jumpsuit
 - type: loadout
   id: SecurityCasualsuit
   equipment: 
@@ -27,3 +29,9 @@
   id: SecurityGreatcoat
   equipment:
     outerClothing: ClothingOuterCoatSecGreatcoat
+
+# PDA
+- type: loadout
+  id: SecurityCadetPDA
+  equipment:
+    id: SecurityCadetPDA
