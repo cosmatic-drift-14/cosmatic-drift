@@ -362,6 +362,9 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 case RecordConsoleType.Admin:
                     SetEntries(cr.ConfidentialEntries, true);
                     break;
+                case RecordConsoleType.Admin:
+                    SetEntries(cr.ConfidentialEntries, true);
+                    break;
                 }
                 break;
         }
