@@ -27,6 +27,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     public event Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
+    private bool _filtersChanged;
     private StationRecordFilterType _filterType;
 
     private RecordConsoleType? _type;
@@ -147,6 +148,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             RecordEntryViewType.SelectId(args.Id);
             // This is a hack to get the server to send us another packet with the new entries
             OnFiltersChanged?.Invoke(_filterType, RecordFiltersValue.Text);
+            _filtersChanged = true;
         };
     }
 
@@ -301,8 +303,9 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainerStatus.Visible = false;
         RecordContainer.Visible = true;
 
-        // Do not needlessly reload the record if not needed. This is mainly done to prevent a bug in the admin record viewer.
-        if (state.SelectedIndex == _openRecordKey)
+        // Do not needlessly reload the record if not needed. This is mainly done to prevent a bug in the admin record viewer
+        // AND the admin record filter.
+        if (state.SelectedIndex == _openRecordKey && _filtersChanged == false)
             return;
         _openRecordKey = state.SelectedIndex;
 
@@ -345,12 +348,15 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 {
                 case RecordConsoleType.Employment:
                     SetEntries(cr.EmploymentEntries, true);
+                    _filtersChanged = false;
                     break;
                 case RecordConsoleType.Medical:
                     SetEntries(cr.MedicalEntries, true);
+                    _filtersChanged = false;
                     break;
                 case RecordConsoleType.Security:
                     SetEntries(cr.SecurityEntries, true);
+                    _filtersChanged = false;
                     break;
                 }
                 break;
