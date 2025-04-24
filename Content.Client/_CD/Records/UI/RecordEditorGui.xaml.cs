@@ -90,6 +90,7 @@ public sealed partial class RecordEditorGui : Control
         EntryEditorTabs.SetTabTitle(0, Loc.GetString("humanoid-profile-editor-cd-records-employment"));
         EntryEditorTabs.SetTabTitle(1, Loc.GetString("department-Medical"));
         EntryEditorTabs.SetTabTitle(2, Loc.GetString("department-Security"));
+        EntryEditorTabs.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-cd-records-confidential"));
 
         EmploymentEntrySelector.OnUpdateEntries += args =>
         {
