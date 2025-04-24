@@ -146,9 +146,9 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             if (args.Id == RecordEntryViewType.SelectedId)
                 return;
             RecordEntryViewType.SelectId(args.Id);
+            _filtersChanged = true;
             // This is a hack to get the server to send us another packet with the new entries
             OnFiltersChanged?.Invoke(_filterType, RecordFiltersValue.Text);
-            _filtersChanged = true;
         };
     }
 
