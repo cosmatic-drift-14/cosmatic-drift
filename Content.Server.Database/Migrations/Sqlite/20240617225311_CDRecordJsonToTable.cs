@@ -71,6 +71,15 @@ namespace Content.Server.Database.Migrations.Sqlite
                     FROM
                         cdprofile, json_each(character_records, '$.EmploymentEntries')
                 """);
+
+            migrationBuilder.Sql($"""
+                INSERT INTO cd_character_record_entries (title, involved, description, type, cdprofile_id)
+                    SELECT
+                        json_each.value ->> '$.Title', json_each.value ->> '$.Involved', json_each.value ->> '$.Description',
+                        {(int)CDModel.DbRecordEntryType.Confidential}, cdprofile_id
+                    FROM
+                        cdprofile, json_each(character_records, '$.ConfidentialEntries')
+                """);
         }
 
         /// <inheritdoc />
