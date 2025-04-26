@@ -54,6 +54,8 @@ public sealed partial class PlayerProvidedCharacterRecords
     public List<RecordEntry> SecurityEntries { get; private set; }
     [DataField, JsonIgnore]
     public List<RecordEntry> EmploymentEntries { get; private set; }
+    [DataField, JsonIgnore]
+    public List<RecordEntry> ConfidentialEntries { get; private set; }
 
     [DataDefinition]
     [Serializable, NetSerializable]
@@ -100,7 +102,10 @@ public sealed partial class PlayerProvidedCharacterRecords
         string identifyingFeatures,
         string allergies, string drugAllergies,
         string postmortemInstructions,
-        List<RecordEntry> medicalEntries, List<RecordEntry> securityEntries, List<RecordEntry> employmentEntries)
+        List<RecordEntry> medicalEntries,
+        List<RecordEntry> securityEntries,
+        List<RecordEntry> employmentEntries,
+        List<RecordEntry> confidentialEntries)
     {
         HasWorkAuthorization = hasWorkAuthorization;
         Height = height;
@@ -113,6 +118,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         MedicalEntries = medicalEntries;
         SecurityEntries = securityEntries;
         EmploymentEntries = employmentEntries;
+        ConfidentialEntries = confidentialEntries;
     }
 
     public PlayerProvidedCharacterRecords(PlayerProvidedCharacterRecords other)
@@ -128,6 +134,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         MedicalEntries = other.MedicalEntries.Select(x => new RecordEntry(x)).ToList();
         SecurityEntries = other.SecurityEntries.Select(x => new RecordEntry(x)).ToList();
         EmploymentEntries = other.EmploymentEntries.Select(x => new RecordEntry(x)).ToList();
+        ConfidentialEntries = other.ConfidentialEntries.Select(x => new RecordEntry(x)).ToList();
     }
 
     public static PlayerProvidedCharacterRecords DefaultRecords()
@@ -142,7 +149,8 @@ public sealed partial class PlayerProvidedCharacterRecords
             postmortemInstructions: "Return home",
             medicalEntries: new List<RecordEntry>(),
             securityEntries: new List<RecordEntry>(),
-            employmentEntries: new List<RecordEntry>()
+            employmentEntries: new List<RecordEntry>(),
+            confidentialEntries: new List<RecordEntry>()
         );
     }
 
@@ -165,6 +173,8 @@ public sealed partial class PlayerProvidedCharacterRecords
             return false;
         if (EmploymentEntries.Count != other.EmploymentEntries.Count)
             return false;
+        if (ConfidentialEntries.Count != other.ConfidentialEntries.Count)
+            return false;
         if (MedicalEntries.Where((t, i) => !t.MemberwiseEquals(other.MedicalEntries[i])).Any())
         {
             return false;
@@ -174,6 +184,11 @@ public sealed partial class PlayerProvidedCharacterRecords
             return false;
         }
         if (EmploymentEntries.Where((t, i) => !t.MemberwiseEquals(other.EmploymentEntries[i])).Any())
+        {
+            return false;
+        }
+
+        if (ConfidentialEntries.Where((t, i) => !t.MemberwiseEquals(other.ConfidentialEntries[i])).Any())
         {
             return false;
         }
@@ -215,6 +230,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         EnsureValidEntries(EmploymentEntries);
         EnsureValidEntries(MedicalEntries);
         EnsureValidEntries(SecurityEntries);
+        EnsureValidEntries(ConfidentialEntries);
     }
     public PlayerProvidedCharacterRecords WithHeight(int height)
     {
@@ -260,9 +276,14 @@ public sealed partial class PlayerProvidedCharacterRecords
     {
         return new(this) { SecurityEntries = entries};
     }
+
+    public PlayerProvidedCharacterRecords WithConfidentialEntries(List<RecordEntry> entries)
+    {
+        return new (this) { ConfidentialEntries = entries };
+    }
 }
 
 public enum CharacterRecordType : byte
 {
-    Employment, Medical, Security
+    Employment, Medical, Security, Confidential,
 }
