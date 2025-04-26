@@ -280,7 +280,8 @@ namespace Content.Server.Database
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                cdRecords
+                cdRecords,
+                null
             );
         }
 

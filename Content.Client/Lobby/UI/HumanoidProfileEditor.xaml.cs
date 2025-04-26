@@ -470,6 +470,20 @@ namespace Content.Client.Lobby.UI
             TabContainer.AddChild(_recordsTab);
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
+            CDCustomSpeciesNameCheck.OnToggled += args =>
+            {
+                CDCustomSpeciesName.Editable = args.Pressed;
+                if (args.Pressed)
+                    Profile = Profile?.WithCDCustomSpeciesName(CDCustomSpeciesName.Text != "" ? null : CDCustomSpeciesName.Text);
+                else
+                    Profile = Profile?.WithCDCustomSpeciesName(null);
+            };
+
+            SpeciesButton.OnItemSelected += args =>
+            {
+                CDCustomSpeciesName.PlaceHolder = Loc.GetString(_species[args.Id].Name);
+            };
+
             #endregion CosmaticRecords
 
             RefreshFlavorText();
@@ -820,6 +834,7 @@ namespace Content.Client.Lobby.UI
             // CD: our controls
             UpdateHeightControls();
             _recordsTab.Update(profile);
+            UpdateCDCustomSpecies();
 
             RefreshAntags();
             RefreshJobs();
@@ -1501,6 +1516,21 @@ namespace Content.Client.Lobby.UI
                                 (prototype.MaxHeight - prototype.MinHeight);
             CDHeightSlider.Value = sliderPercent;
             CDHeight.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
+        }
+
+        private void UpdateCDCustomSpecies()
+        {
+            if (Profile == null)
+                return;
+
+            if (Profile.CDCustomSpeciesName == null)
+            {
+                CDCustomSpeciesNameCheck.Pressed = false;
+                CDCustomSpeciesName.Text = Loc.GetString(_species[SpeciesButton.SelectedId].Name);
+                return;
+            }
+
+            CDCustomSpeciesNameCheck.Pressed = true;
         }
 
         private void UpdateSpawnPriorityControls()

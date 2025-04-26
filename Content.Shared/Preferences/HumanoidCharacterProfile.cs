@@ -135,6 +135,9 @@ namespace Content.Shared.Preferences
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
 
+        [DataField("cosmaticDriftCustomSpeciesName")]
+        public string? CDCustomSpeciesName = null;
+
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -150,7 +153,8 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            PlayerProvidedCharacterRecords? cdCharacterRecords)
+            PlayerProvidedCharacterRecords? cdCharacterRecords,
+            string? cdCustomSpeciesName)
         {
             Name = name;
             FlavorText = flavortext;
@@ -199,7 +203,8 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords)
+                other.CDCharacterRecords,
+                other.CDCustomSpeciesName)
         {
         }
 
@@ -474,6 +479,11 @@ namespace Content.Shared.Preferences
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
         }
 
+        public HumanoidCharacterProfile WithCDCustomSpeciesName(string? customSpeciesName)
+        {
+            return new HumanoidCharacterProfile(this) { CDCustomSpeciesName = customSpeciesName };
+        }
+
         public string Summary =>
             Loc.GetString(
                 "humanoid-character-profile-summary",
@@ -500,6 +510,9 @@ namespace Content.Shared.Preferences
             if (FlavorText != other.FlavorText) return false;
             if (CDCharacterRecords != null && other.CDCharacterRecords != null &&
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
+            if (CDCustomSpeciesName != null || other.CDCustomSpeciesName != null ||
+                CDCustomSpeciesName != other.CDCustomSpeciesName)
+                return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
