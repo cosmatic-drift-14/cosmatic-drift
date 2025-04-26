@@ -189,7 +189,7 @@
   description: Why isn't it yellow?
   components:
   - type: Pda
-    id: TechnicalAssistantIDCard
+    id: EngineeringIDCard #CD change
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -210,7 +210,7 @@
   description: Why isn't it white?
   components:
   - type: Pda
-    id: MedicalInternIDCard
+    id: MedicalIDCard #CD change
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -234,7 +234,7 @@
   description: Why isn't it red?
   components:
   - type: Pda
-    id: SecurityCadetIDCard
+    id: SecurityIDCard #CD change
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -255,7 +255,7 @@
   description: Why isn't it purple?
   components:
   - type: Pda
-    id: ResearchAssistantIDCard
+    id: ResearchIDCard #CD change
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

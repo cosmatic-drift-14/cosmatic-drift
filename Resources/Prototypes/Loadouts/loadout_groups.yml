@@ -972,6 +972,7 @@
   loadouts:
   - ScientistPDA
   - ResearchAssistantPDA #CD addition
+  - RoboticistPDA #CD addition
   # - SeniorResearcherPDA
 
 - type: loadoutGroup
