@@ -842,7 +842,6 @@ namespace Content.Client.Lobby.UI
             // CD: our controls
             UpdateHeightControls();
             _recordsTab.Update(profile);
-            UpdateCDCustomSpecies();
 
             RefreshAntags();
             RefreshJobs();
@@ -851,6 +850,10 @@ namespace Content.Client.Lobby.UI
             RefreshTraits();
             RefreshFlavorText();
             ReloadPreview();
+
+            // CD: UpdateCustomSpecies
+            // Needs to run after RefreshSpecies
+            UpdateCDCustomSpecies();
 
             if (Profile != null)
             {
@@ -1535,11 +1538,11 @@ namespace Content.Client.Lobby.UI
                 CDCustomSpeciesNameCheck.Pressed = false;
                 return;
             }
+            CDCustomSpeciesName.PlaceHolder = Loc.GetString(_species[SpeciesButton.SelectedId].Name);
 
             if (Profile.CDCustomSpeciesName == null)
             {
                 CDCustomSpeciesNameCheck.Pressed = false;
-                CDCustomSpeciesName.PlaceHolder = Loc.GetString(_species[SpeciesButton.SelectedId].Name);
                 CDCustomSpeciesName.Text = "";
                 CDCustomSpeciesName.Editable = false;
                 return;
