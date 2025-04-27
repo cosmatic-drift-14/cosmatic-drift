@@ -474,9 +474,17 @@ namespace Content.Client.Lobby.UI
             {
                 CDCustomSpeciesName.Editable = args.Pressed;
                 if (args.Pressed)
-                    Profile = Profile?.WithCDCustomSpeciesName(CDCustomSpeciesName.Text != "" ? null : CDCustomSpeciesName.Text);
+                    Profile = Profile?.WithCDCustomSpeciesName(CDCustomSpeciesName.Text == "" ? null : CDCustomSpeciesName.Text);
                 else
                     Profile = Profile?.WithCDCustomSpeciesName(null);
+
+                SetDirty();
+            };
+
+            CDCustomSpeciesName.OnTextChanged += args =>
+            {
+                Profile = Profile?.WithCDCustomSpeciesName(args.Text);
+                SetDirty();
             };
 
             SpeciesButton.OnItemSelected += args =>
@@ -1521,16 +1529,24 @@ namespace Content.Client.Lobby.UI
         private void UpdateCDCustomSpecies()
         {
             if (Profile == null)
+            {
+                CDCustomSpeciesName.Text = "";
+                CDCustomSpeciesName.Editable = false;
+                CDCustomSpeciesNameCheck.Pressed = false;
                 return;
+            }
 
             if (Profile.CDCustomSpeciesName == null)
             {
                 CDCustomSpeciesNameCheck.Pressed = false;
-                CDCustomSpeciesName.Text = Loc.GetString(_species[SpeciesButton.SelectedId].Name);
+                CDCustomSpeciesName.PlaceHolder = Loc.GetString(_species[SpeciesButton.SelectedId].Name);
+                CDCustomSpeciesName.Text = "";
+                CDCustomSpeciesName.Editable = false;
                 return;
             }
-
+            CDCustomSpeciesName.Text = Profile.CDCustomSpeciesName;
             CDCustomSpeciesNameCheck.Pressed = true;
+            CDCustomSpeciesName.Editable = true;
         }
 
         private void UpdateSpawnPriorityControls()

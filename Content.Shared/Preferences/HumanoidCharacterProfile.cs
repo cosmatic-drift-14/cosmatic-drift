@@ -34,6 +34,7 @@ namespace Content.Shared.Preferences
         public const int MaxNameLength = 32;
         public const int MaxLoadoutNameLength = 32;
         public const int MaxDescLength = 1024; // CosmaticDrift-LargerCharacterDescriptions // Was 512
+        public const int MaxCDCustomSpeciesNameLength = 32;
 
         /// <summary>
         /// Job preferences for initial spawn.
@@ -171,6 +172,7 @@ namespace Content.Shared.Preferences
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
             CDCharacterRecords = cdCharacterRecords;
+            CDCustomSpeciesName = cdCustomSpeciesName;
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -510,9 +512,7 @@ namespace Content.Shared.Preferences
             if (FlavorText != other.FlavorText) return false;
             if (CDCharacterRecords != null && other.CDCharacterRecords != null &&
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
-            if (CDCustomSpeciesName != null || other.CDCustomSpeciesName != null ||
-                CDCustomSpeciesName != other.CDCustomSpeciesName)
-                return false;
+            if (CDCustomSpeciesName != other.CDCustomSpeciesName) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -674,6 +674,16 @@ namespace Content.Shared.Preferences
             {
                 CDCharacterRecords!.EnsureValid();
             }
+
+            // CD: Custom Species
+            if (CDCustomSpeciesName != null)
+            {
+                if (CDCustomSpeciesName == "")
+                    CDCustomSpeciesName = null;
+                else if (CDCustomSpeciesName.Length > MaxCDCustomSpeciesNameLength)
+                    CDCustomSpeciesName = CDCustomSpeciesName[..MaxCDCustomSpeciesNameLength];
+            }
+            // end CD
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
