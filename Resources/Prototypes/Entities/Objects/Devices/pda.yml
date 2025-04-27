@@ -202,6 +202,7 @@
     state: pda-interntech
   - type: RenameId #CD addition
     value: job-name-technical-assistant
+    newIcon: "JobIconTechnicalAssistant"
 
 - type: entity
   parent: BaseMedicalPDA
@@ -226,6 +227,7 @@
     - Medical Doctor
   - type: RenameId #CD addition
     value: job-name-intern
+    newIcon: "JobIconMedicalIntern"
 
 - type: entity
   parent: BaseSecurityPDA
@@ -247,6 +249,7 @@
     state: pda-interncadet
   - type: RenameId #CD addition
     value: job-name-cadet
+    newIcon: "JobIconSecurityCadet"
 
 - type: entity
   parent: BasePDA
@@ -268,6 +271,7 @@
     state: pda-internsci
   - type: RenameId #CD addition
     value: job-name-research-assistant
+    newIcon: "JobIconResearchAssistant"
 
 - type: entity
   parent: BasePDA
