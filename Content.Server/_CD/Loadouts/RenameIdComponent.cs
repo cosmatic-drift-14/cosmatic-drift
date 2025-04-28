@@ -1,3 +1,6 @@
+using Content.Shared.StatusIcon;
+using Robust.Shared.Prototypes;
+
 namespace Content.Server._CD.Loadouts;
 
 /// <summary>
@@ -6,6 +9,9 @@ namespace Content.Server._CD.Loadouts;
 [RegisterComponent]
 public sealed partial class RenameIdComponent : Component
 {
-    [DataField]
+    [DataField(required: true)]
     public string Value;
+
+    [DataField("newIcon")]
+    public string? NewIcon = "JobIconUnknown";
 }

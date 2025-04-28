@@ -130,6 +130,7 @@
       state: pda-roboticist
     - type: RenameId
       value: cd-job-title-roboticist
+      newIcon: "JobIconRoboticist" # Apparently this just exists in the game
 
 - type: entity
   id: OffDutyPDA
