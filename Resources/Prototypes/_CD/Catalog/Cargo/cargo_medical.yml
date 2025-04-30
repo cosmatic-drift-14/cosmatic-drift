@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: MedicalSupplies
+  icon:
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    state: firstaid
+  product: CrateMedicalSupplies
+  cost: 2400
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalTrackingImplant
+  icon:
+    sprite: Objects/Specific/Medical/implanter.rsi
+    state: implanter0
+  product: CrateMedicalTrackingImplants
+  cost: 1000
+  category: cargoproduct-category-name-medical
+  group: market
