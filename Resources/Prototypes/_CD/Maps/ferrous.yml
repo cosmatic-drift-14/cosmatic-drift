@@ -64,3 +64,4 @@
             PrivateInvestigator: [ 1, 1] #CD Role
             #misc
             Prisoner: [ 1, 1 ] #CD Role
+            StationAi: [ 1, 1 ]
