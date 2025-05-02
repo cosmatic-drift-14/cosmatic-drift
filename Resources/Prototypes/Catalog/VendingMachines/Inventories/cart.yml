@@ -12,6 +12,7 @@
     HandLabeler: 2
     EncryptionKeyCargo: 3 #CD change from 2 to 3.
     EncryptionKeyCommand: 3 #CD addition.
+    EncryptionKeyCommon: 3 #CD addition.
     EncryptionKeyEngineering: 3 #CD change from 2 to 3.
     EncryptionKeyHailing: 3 #CD addition.
     EncryptionKeyMedical: 3 #CD change from 2 to 3.
