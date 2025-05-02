@@ -80,6 +80,25 @@
     state: synthsnout_snout
   - sprite: _CD/Mobs/Customization/Synthliz/snouts.rsi
     state: synthsnout_jaw
+    
+# alternate snout
+
+- type: marking
+  id: LizardSnoutSynthAlt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [ Reptilian ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Synthliz/altsnouts.rsi
+    state: alt_synthsnout_eyes
+  - sprite: _CD/Mobs/Customization/Synthliz/altsnouts.rsi
+    state: alt_synthsnout_visor
+  - sprite: _CD/Mobs/Customization/Synthliz/altsnouts.rsi
+    state: alt_synthsnout_frame
+  - sprite: _CD/Mobs/Customization/Synthliz/altsnouts.rsi
+    state: alt_synthsnout_snout
+  - sprite: _CD/Mobs/Customization/Synthliz/altsnouts.rsi
+    state: alt_synthsnout_jaw
 
 # horns
 
