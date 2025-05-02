@@ -10,11 +10,13 @@
     Paper: 10
     Envelope: 10
     HandLabeler: 2
-    EncryptionKeyCargo: 2
-    EncryptionKeyEngineering: 2
-    EncryptionKeyMedical: 2
-    EncryptionKeyScience: 2
-    EncryptionKeySecurity: 1
+    EncryptionKeyCargo: 3 #CD change from 2 to 3.
+    EncryptionKeyCommand: 3 #CD addition.
+    EncryptionKeyEngineering: 3 #CD change from 2 to 3.
+    EncryptionKeyHailing: 3 #CD addition.
+    EncryptionKeyMedical: 3 #CD change from 2 to 3.
+    EncryptionKeyScience: 3 #CD change from 2 to 3.
+    EncryptionKeySecurity: 3 #CD change from 1 to 3.
     EncryptionKeyService: 3
   contrabandInventory:
     BalloonNT: 2
