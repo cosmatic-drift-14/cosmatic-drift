@@ -4,6 +4,6 @@
     sprite: Objects/Specific/Medical/implanter.rsi
     state: implanter0
   product: CrateMedicalTrackingImplants
-  cost: 1000
+  cost: 2500
   category: cargoproduct-category-name-medical
   group: market
