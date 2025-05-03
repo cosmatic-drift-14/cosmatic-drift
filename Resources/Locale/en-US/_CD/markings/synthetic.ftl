@@ -17,6 +17,13 @@ marking-LizardSnoutSynth-synthsnout_visor = Face
 marking-LizardSnoutSynth-synthsnout_eyes = Eyes
 marking-LizardSnoutSynth-synthsnout_jaw = Jaw
 
+marking-LizardSnoutSynthAlt = Synth-Lizard Faceplate (Alternate)
+marking-LizardSnoutSynthAlt-alt_synthsnout_frame = Base
+marking-LizardSnoutSynthAlt-alt_synthsnout_snout = Snout
+marking-LizardSnoutSynthAlt-alt_synthsnout_visor = Face
+marking-LizardSnoutSynthAlt-alt_synthsnout_eyes = Eyes
+marking-LizardSnoutSynthAlt-alt_synthsnout_jaw = Jaw
+
 marking-SyntheticHornCurl = Synth-Lizard Antenna (Curl)
 marking-SyntheticHornCurl-horn_antenna_curl = Horn
 
