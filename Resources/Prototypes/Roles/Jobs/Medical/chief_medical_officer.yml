@@ -21,6 +21,7 @@
   - ChiefMedicalOfficer
   - Brig
   - Cryogenics
+  - External #CD addition.
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
