@@ -52,13 +52,13 @@
       points: 1
       required: false
     Chest:
-      points: 2
+      points: 4 # CD
       required: false
     Legs:
-      points: 2
+      points: 6 # CD
       required: false
     Arms:
-      points: 2
+      points: 6 # CD
       required: false
     Overlay:
       points: 1
