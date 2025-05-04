@@ -57,7 +57,7 @@
       required: true
       defaultMarkings: [ VoxLArmScales, VoxRArmScales, VoxRHandScales, VoxLHandScales ]
     Legs:
-      points: 6 # CD
+      points: 4 # CD
       required: true
       defaultMarkings: [ VoxLLegScales, VoxRLegScales, VoxRFootScales, VoxLFootScales ]
     UndergarmentTop:
@@ -67,7 +67,7 @@
       points: 1
       required: false
     Chest:
-      points: 4 # CD
+      points: 2 # CD
       required: false
     Tail:
       points: 1
