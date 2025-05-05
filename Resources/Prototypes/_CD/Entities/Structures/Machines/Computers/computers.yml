@@ -48,6 +48,39 @@
         type: WiresBoundUserInterface
 
 - type: entity
+<<<<<<< HEAD
+  parent: [ SyndicateComputerComms ]
+  id: SyndicateComputerCommsDiplomat
+  name: syndicate diplomat computer
+  description: A computer capable of hacking into the station's communications systems. This one has non-hostile software precepts.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm_syndie
+    - map: ["computerLayerKeys"]
+      state: syndie_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: AccessReader
+    access: [[ "SyndicateAgent" ]]
+  - type: CommunicationsConsole
+    title: comms-console-announcement-title-syndicate
+    color: "#ff5555"
+    canShuttle: false
+    global: true #announce to everyone they're about to have a very peaceful and diplomatic afternoon!
+    sound: /Audio/_CD/Announcements/evilannounce.ogg
+  - type: Computer
+    board: SyndicateCommsComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#f71713"
+=======
   parent: BaseComputerShuttle
   id: ComputerShuttleSalvage
   name: salvage shuttle console
@@ -74,3 +107,4 @@
     color: "#43CCB5"
   - type: Computer
     board: SalvageShuttleConsoleCircuitboard
+>>>>>>> 1a9541e5e76b33fafa5ebc6048cd799326b044c8
