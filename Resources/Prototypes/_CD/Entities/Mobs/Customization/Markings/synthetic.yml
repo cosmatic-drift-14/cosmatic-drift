@@ -47,7 +47,6 @@
   id: LizardTailSynth
   bodyPart: Tail
   markingCategory: Tail
-  forcedColoring: true
   speciesRestriction: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/tails.rsi
