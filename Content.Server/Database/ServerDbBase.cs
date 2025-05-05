@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -24,6 +25,7 @@ using Robust.Shared.Utility;
 
 // CD: imports
 using Content.Server._CD.Records;
+using Content.Server.GameTicking;
 using Content.Shared._CD.Records;
 
 namespace Content.Server.Database
@@ -871,6 +873,51 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             await db.DbContext.SaveChangesAsync();
         }
+
+        // CD Additions
+        public async Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds)
+        {
+            await using var db = await GetDb();
+
+            var players = await db.DbContext.Player
+                .Where(player => playerIds.Contains(player.UserId))
+                .ToListAsync();
+
+            var advRound = new CDModel.AdvancedRound
+            {
+                StartDate = DateTime.UtcNow,
+                Players = players,
+                RoundId = roundid,
+                ServerId = server.Id,
+                Map = map,
+            };
+
+            db.DbContext.AdvancedRound.Add(advRound);
+
+            await db.DbContext.SaveChangesAsync();
+
+            return advRound.Id;
+        }
+
+        public async Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
+        {
+            await using var db = await GetDb();
+
+            var maps = db.DbContext.AdvancedRound
+                .Where(m => m.Map != "")
+                .ToList()
+                .TakeLast(cacheDepth)
+                .Select(m => m.Map)
+                .ToArray();
+
+            foreach (var map in maps)
+            {
+                mapCache.Enqueue(map);
+            }
+
+            return maps;
+        }
+        // END CD Additions
 
         [return: NotNullIfNotNull(nameof(round))]
         protected RoundRecord? MakeRoundRecord(Round? round)

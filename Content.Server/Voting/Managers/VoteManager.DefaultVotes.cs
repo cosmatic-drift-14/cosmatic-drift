@@ -63,7 +63,7 @@ namespace Content.Server.Voting.Managers
                     CreatePresetVote(initiator);
                     break;
                 case StandardVoteType.Map:
-                    CreateMapVote(initiator);
+                    CreateMapVote(initiator, args); // CD Change
                     break;
                 case StandardVoteType.Votekick:
                     timeoutVote = false; // Allows the timeout to be updated manually in the create method
@@ -261,9 +261,11 @@ namespace Content.Server.Voting.Managers
             };
         }
 
-        private void CreateMapVote(ICommonSession? initiator)
+        private void CreateMapVote(ICommonSession? initiator, string[]? args)
         {
-            var maps = _gameMapManager.CurrentlyEligibleMaps().ToDictionary(map => map, map => map.MapName);
+            // CD Addition
+            var exclude = args == null || args.Length == 0 || (bool.TryParse(args[0], out var result) && result);
+            var maps = _gameMapManager.CurrentlyEligibleMaps(exclude).ToDictionary(map => map, map => map.MapName); // CD Change: Added argument "exclude"
 
             var alone = _playerManager.PlayerCount == 1 && initiator != null;
             var options = new VoteOptions

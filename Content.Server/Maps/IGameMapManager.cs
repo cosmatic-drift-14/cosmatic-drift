@@ -11,7 +11,7 @@ public interface IGameMapManager
     /// Returns all maps eligible to be played right now.
     /// </summary>
     /// <returns>enumerator of map prototypes</returns>
-    IEnumerable<GameMapPrototype> CurrentlyEligibleMaps();
+    IEnumerable<GameMapPrototype> CurrentlyEligibleMaps(bool exclude); // CD Change
 
     /// <summary>
     /// Returns all maps that can be voted for.

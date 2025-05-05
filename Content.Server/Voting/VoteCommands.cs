@@ -26,7 +26,7 @@ namespace Content.Server.Voting
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 1 && args[0] != StandardVoteType.Votekick.ToString())
+            if (args.Length != 1 && (args[0] != StandardVoteType.Votekick.ToString() && args[0] != StandardVoteType.Map.ToString())) // CD Change
             {
                 shell.WriteError(Loc.GetString("shell-need-exactly-one-argument"));
                 return;
@@ -62,6 +62,12 @@ namespace Content.Server.Voting
             {
                 var options = Enum.GetNames<StandardVoteType>();
                 return CompletionResult.FromHintOptions(options, Loc.GetString("cmd-createvote-arg-vote-type"));
+            }
+
+            // CD Addition
+            if (args.Length == 2 && args[0] == StandardVoteType.Map.ToString())
+            {
+                return CompletionResult.FromHint(Loc.GetString("exclude"));
             }
 
             return CompletionResult.Empty;
