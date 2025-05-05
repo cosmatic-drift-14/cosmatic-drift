@@ -47,7 +47,7 @@
         enum.StorageUiKey.Key:
           type: StorageBoundUserInterface
     - type: Storage
-      capacity: 300 #CD
+      capacity: 300 #CD, our storage system is different and 30 isn't practical with it
     - type: TileFrictionModifier
       modifier: 0.4 # makes it slide 
     
