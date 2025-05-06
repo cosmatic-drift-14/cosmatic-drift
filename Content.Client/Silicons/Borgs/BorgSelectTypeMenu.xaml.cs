@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._CD.Silicons.Borgs;
 using Content.Shared.Guidebook;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
@@ -24,6 +25,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
     private BorgTypePrototype? _selectedBorgType;
 
     public event Action<ProtoId<BorgTypePrototype>>? ConfirmedBorgType;
+    public event Action<ProtoId<BorgSubtypePrototype>>? ConfirmedBorgSubtype;
 
     [ValidatePrototypeId<GuideEntryPrototype>]
     private static readonly List<ProtoId<GuideEntryPrototype>> GuidebookEntries = new() { "Cyborgs", "Robotics" };
@@ -51,6 +53,10 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
 
         ConfirmTypeButton.OnPressed += ConfirmButtonPressed;
         HelpGuidebookIds = GuidebookEntries;
+
+        // CD changes below
+        ChassisSpriteSelection.SubtypeSelected += () =>
+            ConfirmTypeButton.Disabled = false;
     }
 
     private void UpdateInformation(BorgTypePrototype prototype)
@@ -59,11 +65,15 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
 
         InfoContents.Visible = true;
         InfoPlaceholder.Visible = false;
-        ConfirmTypeButton.Disabled = false;
 
         NameLabel.Text = PrototypeName(prototype);
         DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
         ChassisView.SetPrototype(prototype.DummyPrototype);
+
+        // CD changes below
+        ChassisSpriteSelection.FillContainer(prototype);
+        ConfirmTypeButton.Disabled = true;
+
     }
 
     private void ConfirmButtonPressed(BaseButton.ButtonEventArgs obj)
@@ -72,6 +82,12 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
             return;
 
         ConfirmedBorgType?.Invoke(_selectedBorgType);
+
+        // CD changes
+        if(ChassisSpriteSelection.SelectedBorgSubtype == null)
+            return;
+
+        ConfirmedBorgSubtype?.Invoke(ChassisSpriteSelection.SelectedBorgSubtype);
     }
 
     private static string PrototypeName(BorgTypePrototype prototype)
