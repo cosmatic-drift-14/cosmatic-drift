@@ -35,7 +35,7 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("sprites", required: true)]
         public List<SpriteSpecifier> Sprites { get; private set; } = default!;
 
-        /// Ported from Imp, originally created by Beck
+        /// CD change, originally created by Beck for Impstation
 	    [DataField("shader")]
 		public string? Shader { get; private set; } = null;
 

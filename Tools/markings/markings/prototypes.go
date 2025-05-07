@@ -61,7 +61,7 @@ func (s *SpriteAccessoryPrototype) toMarking() (*MarkingPrototype, error) {
 	}, nil
 }
 
-/// Shader is an Imp addition, originally added by Beck
+/// CD Change, originally added by Beck for Impstation
 type MarkingPrototype struct {
 	Type               string            `yaml:"type"`
 	Id                 string            `yaml:"id"`
