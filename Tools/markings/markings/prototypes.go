@@ -61,6 +61,7 @@ func (s *SpriteAccessoryPrototype) toMarking() (*MarkingPrototype, error) {
 	}, nil
 }
 
+/// Shader is an Imp addition, originally added by Beck
 type MarkingPrototype struct {
 	Type               string            `yaml:"type"`
 	Id                 string            `yaml:"id"`
@@ -68,6 +69,7 @@ type MarkingPrototype struct {
 	MarkingCategory    string            `yaml:"markingCategory"`
 	SpeciesRestriction []string          `yaml:"speciesRestriction,omitempty"`
 	Sprites            []SpriteSpecifier `yaml:"sprites"`
+	Shader             string?           `yaml:"shader"`
 }
 
 type SpriteSpecifier struct {
