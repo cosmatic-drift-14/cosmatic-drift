@@ -17,7 +17,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
         - type: StationJobs
-          availableJobs:
+          availableJobs: # 60 jobs total w/o latejoins & interns, 77 jobs total w/ latejoins & interns
             #command
             Captain: [ 1, 1 ]
             #service
