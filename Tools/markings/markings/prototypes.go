@@ -61,7 +61,6 @@ func (s *SpriteAccessoryPrototype) toMarking() (*MarkingPrototype, error) {
 	}, nil
 }
 
-/// CD Change, originally added by Beck for Impstation
 type MarkingPrototype struct {
 	Type               string            `yaml:"type"`
 	Id                 string            `yaml:"id"`
@@ -69,7 +68,6 @@ type MarkingPrototype struct {
 	MarkingCategory    string            `yaml:"markingCategory"`
 	SpeciesRestriction []string          `yaml:"speciesRestriction,omitempty"`
 	Sprites            []SpriteSpecifier `yaml:"sprites"`
-	Shader             string?           `yaml:"shader"`
 }
 
 type SpriteSpecifier struct {
