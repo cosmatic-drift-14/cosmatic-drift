@@ -1367,6 +1367,7 @@
   name: loadout-group-paramedic-shoes
   loadouts:
   - BlueShoes
+  - WhiteShoes
   - MedicalWinterBoots
   # CD: ETU Loadout
   - ShoesColorSlate
