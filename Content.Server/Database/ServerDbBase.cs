@@ -280,7 +280,8 @@ namespace Content.Server.Database
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                cdRecords
+                cdRecords,
+                profile.CDProfile?.CustomSpeciesName
             );
         }
 
@@ -341,6 +342,8 @@ namespace Content.Server.Database
                 profile.CDProfile.CharacterRecordEntries.Clear();
                 profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
             }
+
+            profile.CDProfile.CustomSpeciesName = humanoid.CDCustomSpeciesName;
             // END CD
 
             profile.Loadouts.Clear();
