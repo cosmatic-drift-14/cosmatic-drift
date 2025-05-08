@@ -184,6 +184,24 @@
   id: ClothingOuterCoatBlueHiVisOpened
   name: EMT jacket
 
+# Engineering jacket
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
+  id: ClothingOuterCoatEngi
+  name: engineering jacket
+  description: A comfortable yellow jacket for less-extreme chills.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/engi_jacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/engi_jacket.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  id: ClothingOuterCoatEngiOpened
+  name: engineering jacket
+
 # Forensic jacket
 
 - type: entity
