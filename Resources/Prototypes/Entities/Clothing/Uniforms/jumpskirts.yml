@@ -38,9 +38,9 @@
   description: It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of Chief Engineer.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/ce.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi # CD drip 4
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/ce.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi # CD drip 4
 
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseCommandContraband]
@@ -653,9 +653,9 @@
   description: A sign of skill and prestige within the engineering department.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi # CD drip 4
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi # CD drip 4
 
 - type: entity
   parent: ClothingUniformSkirtBase
