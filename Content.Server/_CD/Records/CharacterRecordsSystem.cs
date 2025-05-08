@@ -1,5 +1,4 @@
-using Content.Server.Forensics;
-using Content.Server.GameTicking;
+using Content.Server._CD.Species;
 using Content.Server.StationRecords.Systems;
 using Content.Server.StationRecords;
 using Content.Shared.Inventory;
@@ -7,6 +6,7 @@ using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
 using Content.Shared._CD.Records;
+using Content.Shared._CD.Species;
 using Content.Shared.Forensics.Components;
 using Content.Shared.GameTicking;
 using Robust.Shared.Prototypes;
@@ -23,7 +23,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(StationRecordsSystem)]);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(StationRecordsSystem), typeof(CustomSpeciesNameSystem)]);
     }
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
@@ -71,12 +71,18 @@ public sealed class CharacterRecordsSystem : EntitySystem
             jobTitle = stationRecords.JobTitle;
         }
 
+        string species = profile.Species;
+        if (TryComp<CustomSpeciesNameComponent>(player, out var speciesNameComp))
+        {
+            species = speciesNameComp.NewSpeciesName;
+        }
+
         var records = new FullCharacterRecords(
             pRecords: new PlayerProvidedCharacterRecords(profile.CDCharacterRecords),
             stationRecordsKey: stationRecordsKey?.Id,
             name: profile.Name,
             age: profile.Age,
-            species: profile.Species,
+            species: species,
             jobTitle: jobTitle,
             jobIcon: jobPrototype.Icon,
             gender: profile.Gender,
