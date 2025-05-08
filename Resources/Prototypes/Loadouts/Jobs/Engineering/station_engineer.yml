@@ -105,6 +105,11 @@
   equipment:
     outerClothing: ClothingOuterWinterEngi
 
+- type: loadout # CD
+  id: StationEngineerJacket
+  equipment:
+    outerClothing: ClothingOuterCoatEngi
+
 # Shoes
 - type: loadout
   id: WorkBoots

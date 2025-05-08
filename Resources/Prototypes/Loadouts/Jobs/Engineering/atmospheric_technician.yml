@@ -36,6 +36,11 @@
   equipment:
     outerClothing: ClothingOuterWinterAtmos
 
+- type: loadout # CD
+  id: AtmosphericTechnicianOveralls
+  equipment:
+    outerClothing: ClothingOuterOverallsAtmos
+
 # Shoes
 - type: loadout
   id: WhiteShoes
