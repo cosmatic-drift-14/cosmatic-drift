@@ -29,7 +29,7 @@
       children:
       - !type:AllSelector
         weight: 0.2
-        children: 
+        children:
         - id: RubberStampApproved
         - id: RubberStampDenied
       - id: RubberStampGreytide
