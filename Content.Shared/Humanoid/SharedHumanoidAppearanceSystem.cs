@@ -40,6 +40,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly ISerializationManager _serManager = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
+    [Dependency] private readonly GrammarSystem _grammarSystem = default!;
 
     [Dependency] private readonly SharedCustomSpeciesNameSystem _cdSpeciesName = default!;
 
@@ -162,8 +163,9 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.Height = sourceHumanoid.Height; // CD Change
 
         targetHumanoid.Gender = sourceHumanoid.Gender;
+
         if (TryComp<GrammarComponent>(target, out var grammar))
-            grammar.Gender = sourceHumanoid.Gender;
+            _grammarSystem.SetGender((target, grammar), sourceHumanoid.Gender);
 
         Dirty(target, targetHumanoid);
     }
@@ -444,7 +446,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))
         {
-            grammar.Gender = profile.Gender;
+            _grammarSystem.SetGender((uid, grammar), profile.Gender);
         }
 
         humanoid.Age = profile.Age;
