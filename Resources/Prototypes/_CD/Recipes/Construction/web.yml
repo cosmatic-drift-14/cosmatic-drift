@@ -13,5 +13,8 @@
   placementMode: SnapgridCenter
   canRotate: false
   canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - SpiderCraft
   conditions:
     - !type:TileNotBlocked
