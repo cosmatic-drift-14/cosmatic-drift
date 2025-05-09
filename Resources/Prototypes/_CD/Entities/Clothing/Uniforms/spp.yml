@@ -9,3 +9,32 @@
   - type: Foldable
     unfoldVerbText: fold-verb
     foldVerbText: fold-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: jacket
+
+- type: entity
+  parent: JumpsuitSPP
+  id: JumpsuitMedicSPP
+  name: SPP medic fatigues
+  description: A set of SPP medic fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/SPP/medic.rsi
+
+- type: entity
+  parent: JumpsuitSPP
+  id: JumpsuitEngineerSPP
+  name: SPP engineer fatigues
+  description: A set of SPP engineer fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/SPP/engi.rsi
+
+- type: entity
+  parent: JumpsuitSPP
+  id: JumpsuitOfficerSPP
+  name: SPP officer fatigues
+  description: A set of SPP officer fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/SPP/officer.rsi
