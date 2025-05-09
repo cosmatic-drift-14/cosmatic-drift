@@ -1,7 +1,7 @@
 - type: construction
   name: web nest
   id: WebNest
-  graph: WebStructures
+  graph: WebStructuresCD
   startNode: start
   targetNode: nest
   category: construction-category-furniture

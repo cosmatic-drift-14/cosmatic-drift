@@ -1,5 +1,5 @@
 - type: constructionGraph
-  id: WebStructures
+  id: WebStructuresCD
   start: start
   graph:
   - node: start
