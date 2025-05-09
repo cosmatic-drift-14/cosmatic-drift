@@ -74,7 +74,7 @@
   - type: Item
     size: 121
   - type: Delivery
-    spesoReward: 800
+    spesoReward: 1000
   - type: EntityTableContainerFill
     containers:
       delivery: !type:NestedSelector
@@ -110,7 +110,7 @@
       visible: false
   - type: Item
   - type: Delivery
-    spesoReward: 400
+    spesoReward: 500
   - type: EntityTableContainerFill
     containers:
       delivery: !type:NestedSelector
