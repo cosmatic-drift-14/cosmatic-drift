@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ]
+  id: JumpsuitSPP
+  name: SPP fatigues
+  description: A set of SPP fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/SPP/uniform.rsi
+  - type: Foldable
+    unfoldVerbText: fold-verb
+    foldVerbText: fold-verb
