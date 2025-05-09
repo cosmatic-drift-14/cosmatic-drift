@@ -1,0 +1,28 @@
+# Rebel hood
+- type: entity
+  parent: ClothingHeadBase
+  id: RMCHeadMilitiaHood
+  name: armored militia cowl
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/CLF/hood_rebel.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/CLF/hood_rebel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.8
+
+# Red headband
+- type: entity
+  parent: ClothingHeadBase
+  id: CMHeadBandRed
+  name: radical red headband
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/CLF/red.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/CLF/red.rsi

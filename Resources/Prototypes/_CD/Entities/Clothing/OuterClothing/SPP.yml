@@ -7,7 +7,7 @@
   - type: Sprite
     state: icon # default state used by most inheritors
   - type: Item
-    size: Huge
+    size: 150
   - type: Clothing
     equipSound:
       path: /Audio/Items/belt_equip.ogg
@@ -23,8 +23,7 @@
     unequipDelay: 2
   - type: Storage
     maxItemSize: Small
-    grid:
-    - 0,0,5,1 # 3 slots
+    capacity: 15
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -33,7 +32,6 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
-  - type: FixedItemSizeStorage
   - type: ClothingSpeedModifier # Juggsuit slowdown
     walkModifier: 0.9
     sprintModifier: 0.65
@@ -48,9 +46,9 @@
   - type: Sprite
     layers:
     - state: icon
-    - sprite: _CD/Objects/Clothing/OuterClothing/Armor/armor_overlays.rsi
+    - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
       state: lamp-off
-    - sprite: _CD/Objects/Clothing/OuterClothing/Armor/armor_overlays.rsi
+    - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
       state: lamp-on
       visible: false
       map: [ "light" ]
@@ -59,14 +57,14 @@
     clothingVisuals:
       outerClothing:
       - state: equipped-OUTERCLOTHING
-      - sprite: _CD/Objects/Clothing/OuterClothing/Armor/armor_overlays.rsi
+      - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
         state: lamp-off
   - type: Appearance
   - type: ToggleableLightVisuals
     spriteLayer: light
     clothingVisuals:
       outerClothing:
-      - sprite: _CD/Objects/Clothing/OuterClothing/Armor/armor_overlays.rsi
+      - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
         state: lamp-on
   - type: PointLight
     enabled: false
@@ -77,8 +75,6 @@
     autoRot: true
     netsync: false
     color: "#FFFFFF"
-  - type: PointLightRotation
-    rotation: 90
   - type: HandheldLight
     addPrefix: true
     blinkingBehaviourId: blinking
@@ -87,7 +83,6 @@
       path: /Audio/Items/flashlight_pda.ogg
     turnOnSound:
       path: /Audio/Items/flashlight_pda.ogg
-  - type: NoHandsInteractionBlocked
   - type: LightBehaviour
     behaviours:
     - !type:FadeBehaviour
@@ -136,8 +131,7 @@
     walkModifier: 0.666
     sprintModifier: 0.666
   - type: Storage
-    grid:
-    - 0,0,1,1 # 1 slot
+    capacity: 15
 
 - type: entity
   parent: RMCArmorSPP
@@ -158,8 +152,7 @@
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: Storage
-    grid:
-    - 0,0,5,1 # 3 slots
+    capacity: 10
 
 - type: entity
   parent: RMCArmorSPP
@@ -182,5 +175,34 @@
     walkModifier: 0.62
     sprintModifier: 0.62
   - type: Storage
-    grid:
-    - 0,0,5,1 # 3 slots
+    capacity: 20
+
+    # SPP coats
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: RMCCoatSPP
+  name: SPP UL4 officer jacket
+  description: A lightweight jacket, issued to officers of the SPP's military.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Armor/SPP/officer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/SPP/officer.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: Storage
+    capacity: 15
+
+- type: entity
+  parent: RMCCoatSPP
+  id: RMCCoatSPPSenior
+  name: SPP UL4 senior officer jacket
+  description: A lightweight jacket, issued to senior officers of the SPP's military. Made of high-quality materials, even going as far as having the ranks and insignia of the Kapitan and their Company emblazoned on the shoulders and front of the jacket.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Armor/SPP/senior.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/SPP/senior.rsi
+  - type: Storage
+    capacity: 20
