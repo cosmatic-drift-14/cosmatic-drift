@@ -74,7 +74,10 @@
   - type: Item
     size: 121
   - type: Delivery
-    spesoReward: 1000
+    baseSpesoReward: 1000
+    baseSpesoPenalty: 500
+  - type: Speech
+    speechVerb: Robotic
   - type: EntityTableContainerFill
     containers:
       delivery: !type:NestedSelector
@@ -110,7 +113,10 @@
       visible: false
   - type: Item
   - type: Delivery
-    spesoReward: 500
+    baseSpesoReward: 500
+    baseSpesoPenalty: 250
+  - type: Speech
+    speechVerb: Robotic
   - type: EntityTableContainerFill
     containers:
       delivery: !type:NestedSelector
