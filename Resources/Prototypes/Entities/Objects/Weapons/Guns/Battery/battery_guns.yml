@@ -811,9 +811,9 @@
       shader: unshaded
   - type: Appearance
   - type: Item
-    size: Large
-    shape:
-    - 0,0,3,1
+    size: 60
+    # shape:
+    # - 0,0,3,1
   - type: MagazineVisuals
     magState: mag
     steps: 5

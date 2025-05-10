@@ -216,11 +216,12 @@
   - type: XAEApplyComponents
     components:
     - type: Item
-      size: Huge
+      size: 80
     - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,10,5
+      capacity: 80
+      # maxItemSize: Huge
+      # grid:
+      # - 0,0,10,5
 
 - type: entity
   id: XenoArtifactPhasing

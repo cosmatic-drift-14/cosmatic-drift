@@ -81,12 +81,15 @@
   description: Unwrap this to get a kobold cube.
   components:
   - type: Item
-    size: 5
+    size: 1
   - type: SpawnItemsOnUse
     items:
       - id: KoboldCube
   - type: Sprite
     state: wrapper_kobold
+  - type: Tag
+    tags:
+    - MonkeyCube
 
 - type: entity
   parent: MonkeyCubeBox

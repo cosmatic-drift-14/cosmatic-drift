@@ -10,11 +10,11 @@
     state: icon
   - type: Item
     size: 15
-    shape:
-    - 0,0,2,0
-    storedSprite:
-      sprite: Objects/Tools/blueprint.rsi
-      state: storage
+    # shape:
+    # - 0,0,2,0
+    # storedSprite:
+    #   sprite: Objects/Tools/blueprint.rsi
+    #   state: storage
   - type: Blueprint
   - type: StaticPrice
     price: 1000

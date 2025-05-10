@@ -182,7 +182,7 @@
     autoRecharge: true
     autoRechargeRate: 2
   - type: Item
-    size: Normal
+    size: 30
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]

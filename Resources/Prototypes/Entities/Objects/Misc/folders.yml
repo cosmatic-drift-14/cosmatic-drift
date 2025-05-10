@@ -43,12 +43,11 @@
 #      green: "#43bc38"
   - type: Item
     sprite: Objects/Misc/folders.rsi
-    size: Small
-    shape: null
+    size: 5
   - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,4,3
+    capacity: 10
+    # grid:
+    # - 0,0,4,3
     whitelist:
       tags:
       - Document
@@ -195,14 +194,14 @@
         insertOnInteract: false
   - type: Item
     sprite: Objects/Misc/clipboard.rsi
-    size: Small
+    size: 5
   - type: Clothing
     slots: [belt]
     quickEquip: false
     sprite: Objects/Misc/clipboard.rsi
   - type: Storage
-    grid:
-    - 0,0,5,3
+    # grid:
+    # - 0,0,5,3
     whitelist:
       tags:
       - Document
@@ -271,12 +270,12 @@
         insertOnInteract: true
   - type: Item
     sprite: Objects/Misc/qm_clipboard.rsi
-    size: Normal
+    size: 30
   - type: Clothing
     sprite: Objects/Misc/qm_clipboard.rsi
   - type: Storage
-    grid:
-    - 0,0,4,3
+    # grid:
+    # - 0,0,4,3
     quickInsert: true
   - type: StorageFill
     contents: [] #to override base clipboard fill

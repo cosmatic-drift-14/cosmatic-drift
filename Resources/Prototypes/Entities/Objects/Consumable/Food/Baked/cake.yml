@@ -27,7 +27,7 @@
     tags:
     - Cake
   - type: SecretStash
-    maxItemSize: "Normal"
+    maxItemSize: 15
     secretStashName: secret-stash-cake
     damageEatenItemInside:
       types:

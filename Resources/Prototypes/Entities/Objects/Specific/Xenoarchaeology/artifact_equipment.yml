@@ -119,15 +119,15 @@
         map: ["enum.LockVisualLayers.Lock"]
         shader: unshaded
   - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,1,1
+    capacity: 100
+    # grid:
+    # - 0,0,1,1
     whitelist:
       components:
       - Artifact
   - type: Item
     sprite: Objects/Storage/artifact_container.rsi  
-    size: Huge
+    size: 120
   - type: MeleeWeapon
     damage:
       types:

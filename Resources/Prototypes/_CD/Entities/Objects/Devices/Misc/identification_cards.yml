@@ -1,6 +1,6 @@
 - type: entity
   parent: IDCardStandard
-  id: PrisonerIDCard
+  id: CDPrisonerIDCard
   name: prisoner ID card
   components:
   - type: Sprite
