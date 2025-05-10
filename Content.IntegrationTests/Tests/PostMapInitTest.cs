@@ -84,6 +84,7 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic",
+            "dm01-entryway",
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini" // CD Map

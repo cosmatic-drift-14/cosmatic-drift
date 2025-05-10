@@ -1,5 +1,7 @@
 using System.Linq;
 using Content.Shared.Disposal;
+using Content.Shared.Disposal.Components;
+using Content.Shared.Disposal.Unit;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Placeable;
@@ -39,7 +41,7 @@ public sealed class DumpableSystem : EntitySystem
         if (!args.CanReach || args.Handled)
             return;
 
-        if (!_disposalUnitSystem.HasDisposals(args.Target) && !HasComp<PlaceableSurfaceComponent>(args.Target))
+        if (!HasComp<DisposalUnitComponent>(args.Target) && !HasComp<PlaceableSurfaceComponent>(args.Target))
             return;
 
         if (!TryComp<StorageComponent>(uid, out var storage))
@@ -80,7 +82,7 @@ public sealed class DumpableSystem : EntitySystem
         if (!TryComp<StorageComponent>(uid, out var storage) || !storage.Container.ContainedEntities.Any())
             return;
 
-        if (_disposalUnitSystem.HasDisposals(args.Target))
+        if (HasComp<DisposalUnitComponent>(args.Target))
         {
             UtilityVerb verb = new()
             {
@@ -149,7 +151,7 @@ public sealed class DumpableSystem : EntitySystem
 
         var dumped = false;
 
-        if (_disposalUnitSystem.HasDisposals(target))
+        if (target.HasValue && HasComp<DisposalUnitComponent>(target))
         {
             dumped = true;
 

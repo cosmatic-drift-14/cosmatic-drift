@@ -62,6 +62,14 @@ public abstract class SharedMouthStorageSystem : EntitySystem
         _dumpableSystem.DumpContents(component.MouthId.Value, uid, uid);
     }
 
+    private void DropAllContents(EntityUid uid, MouthStorageComponent component, ref DisarmedEvent args)
+    {
+        if (component.MouthId == null)
+            return;
+
+        _dumpableSystem.DumpContents(component.MouthId.Value, uid, uid);
+    }
+
     private void OnDamageModified(EntityUid uid, MouthStorageComponent component, DamageChangedEvent args)
     {
         if (args.DamageDelta == null

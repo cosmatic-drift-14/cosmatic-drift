@@ -31,6 +31,10 @@
     size: 30
     sprite: Objects/Weapons/Melee/pickaxe.rsi
   - type: UseDelay
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Wood: 100
 
 - type: entity
   name: mining drill
