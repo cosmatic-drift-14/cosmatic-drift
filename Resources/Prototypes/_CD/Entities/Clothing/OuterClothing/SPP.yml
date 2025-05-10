@@ -192,7 +192,7 @@
     damageCoefficient: 0
     worn: false
   - type: Storage
-    capacity: 15
+    capacity: 10
 
 - type: entity
   parent: RMCCoatSPP
@@ -205,4 +205,4 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Armor/SPP/senior.rsi
   - type: Storage
-    capacity: 20
+    capacity: 10
