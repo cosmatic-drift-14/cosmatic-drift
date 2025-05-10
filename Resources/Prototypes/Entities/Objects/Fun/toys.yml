@@ -1309,7 +1309,7 @@
       types:
         Blunt: 0
   - type: Item
-    size: 20
+    size: 5
     sprite: Objects/Fun/toys.rsi
     heldPrefix: foamblade
   - type: UseDelay
