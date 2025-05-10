@@ -151,7 +151,7 @@ public sealed class DumpableSystem : EntitySystem
 
         var dumped = false;
 
-        if (HasComp<DisposalUnitComponent>(args.Args.Target))
+        if (target.HasValue && HasComp<DisposalUnitComponent>(target))
         {
             dumped = true;
 
