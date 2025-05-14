@@ -79,9 +79,9 @@ namespace Content.Server.Database.Migrations.Postgres
                 INSERT INTO cd_character_record_entries (title, involved, description, type, cdprofile_id)
                     SELECT
                         jsonb_array_elements.value ->> 'Title', jsonb_array_elements.value ->> 'Involved', jsonb_array_elements.value ->> 'Description',
-                        {(int)CDModel.DbRecordEntryType.Confidential}, cdprofile_id
+                        {(int)CDModel.DbRecordEntryType.Admin}, cdprofile_id
                     FROM
-                        cdprofile, jsonb_array_elements(character_records -> 'ConfidentialEntries')
+                        cdprofile, jsonb_array_elements(character_records -> 'AdminEntries')
                 """);
         }
 

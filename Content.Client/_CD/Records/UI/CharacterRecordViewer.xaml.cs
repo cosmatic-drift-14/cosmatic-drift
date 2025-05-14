@@ -141,7 +141,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordEntryViewType.AddItem(Loc.GetString("department-Security"));
         RecordEntryViewType.AddItem(Loc.GetString("department-Medical"));
         RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-employment"));
-        RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-confidential"));
+        RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-admin"));
         RecordEntryViewType.OnItemSelected += args =>
         {
             if (args.Id == RecordEntryViewType.SelectedId)
@@ -360,7 +360,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                     _filtersChanged = false;
                     break;
                 case RecordConsoleType.Admin:
-                    SetEntries(cr.ConfidentialEntries, true);
+                    SetEntries(cr.AdminEntries, true);
                     _filtersChanged = false;
                     break;
                 }
