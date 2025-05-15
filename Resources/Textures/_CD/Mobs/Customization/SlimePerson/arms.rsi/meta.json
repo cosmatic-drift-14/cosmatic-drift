@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "bonearmleft through bonehandright by Sha-Seng (Github)",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "bonearmleft",
+        "directions": 4
+      },
+      {
+        "name": "bonearmright",
+        "directions": 4
+      },
+      {
+        "name": "bonehandleft",
+        "directions": 4
+      },
+      {
+        "name": "bonehandright",
+        "directions": 4
+      }
+    ]
+  }

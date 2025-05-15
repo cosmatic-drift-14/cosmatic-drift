@@ -1,0 +1,159 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "fizz through fadingstars3 by Carousel, nose through bonehead by Sha-Seng (Github)",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+        {
+            "name": "fizz",
+            "directions": 4,
+            "delays": [
+              [
+                0.2,
+                0.2,
+                0.2
+              ],
+              [
+                0.2,
+                0.2,
+                0.2
+              ],
+              [
+                0.2,
+                0.2,
+                0.2
+              ],
+              [
+                0.2,
+                0.2,
+                0.2
+              ]
+            ]
+        },
+        {
+            "name": "fadingstars1",
+            "directions": 4,
+            "delays": [
+              [
+                0.2,
+                0.3,
+                0.1,
+                1.2,
+                0.3
+              ],
+              [
+                0.2,
+                0.3,
+                0.1,
+                1.2,
+                0.3
+              ],
+              [
+                0.2,
+                0.3,
+                0.1,
+                1.2,
+                0.3
+              ],
+              [
+                0.2,
+                0.3,
+                0.1,
+                1.2,
+                0.3
+              ]
+            ]
+        },
+        {
+            "name": "fadingstars2",
+            "directions": 4,
+            "delays": [
+              [
+                1.0,
+                0.2,
+                0.1,
+                0.6,
+                0.2
+              ],
+              [
+                1.0,
+                0.2,
+                0.1,
+                0.6,
+                0.2
+              ],
+              [
+                1.0,
+                0.2,
+                0.1,
+                0.6,
+                0.2
+              ],
+              [
+                1.0,
+                0.2,
+                0.1,
+                0.6,
+                0.2
+              ]
+            ]
+        },
+        {
+            "name": "fadingstars3",
+            "directions": 4,
+            "delays": [
+              [
+                1.8,
+                0.3,
+                0.1,
+                0.8,
+                0.4
+              ],
+              [
+                1.8,
+                0.3,
+                0.1,
+                0.8,
+                0.4
+              ],
+              [
+                1.8,
+                0.3,
+                0.1,
+                0.8,
+                0.4
+              ],
+              [
+                1.8,
+                0.3,
+                0.1,
+                0.8,
+                0.4
+              ]
+            ]
+        },
+        {
+            "name": "nose",
+            "directions": 4
+        },
+        {
+            "name": "mouth",
+            "directions": 4
+        },
+        {
+            "name": "brain",
+            "directions": 4
+        },
+        {
+            "name": "eyeglow",
+            "directions": 4
+        },
+        {
+            "name": "bonehead",
+            "directions": 4
+        }
+    ]
+  }
