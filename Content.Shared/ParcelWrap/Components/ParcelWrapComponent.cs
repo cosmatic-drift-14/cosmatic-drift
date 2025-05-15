@@ -30,9 +30,10 @@ public sealed partial class ParcelWrapComponent : Component
     /// <summary>
     /// The <see cref="ItemSizePrototype">size</see> of parcels created by this component's entity. This is used if
     /// <see cref="WrappedItemsMaintainSize"/> is false, or if the item being wrapped somehow doesn't have a size.
+    /// CD: Changed this to an integer
     /// </summary>
     [DataField]
-    public ProtoId<ItemSizePrototype> FallbackItemSize = "Ginormous";
+    public int FallbackItemSize = 200;
 
     /// <summary>
     /// If true, parcels created by this will have the same shape as the item they contain. If false, parcels created by

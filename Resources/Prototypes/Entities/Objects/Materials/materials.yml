@@ -441,9 +441,6 @@
     - state: cotton_3
       map: ["base"]
   - type: Appearance
-  - type: Item
-    size: 30
-    heldPrefix: cotton
   - type: Food
     requiresSpecialDigestion: true
   - type: FlavorProfile
@@ -471,6 +468,7 @@
     materialComposition:
       Cotton: 100
   - type: Item
+    size: 30
     heldPrefix: cotton
 
 

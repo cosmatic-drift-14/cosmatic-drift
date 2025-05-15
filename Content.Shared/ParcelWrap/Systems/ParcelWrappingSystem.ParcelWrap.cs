@@ -94,18 +94,19 @@ public sealed partial class ParcelWrappingSystem
                 size = targetItemComp.Size;
             }
 
+            // CD: Replaced item sizes with integers
             // ParcelWrap's spawned entity should always have an `ItemComp`. As of writing, the only use has it hardcoded on
             // its prototype.
             var item = Comp<ItemComponent>(spawned);
             _item.SetSize(spawned, size, item);
-            _appearance.SetData(spawned, WrappedParcelVisuals.Size, size.Id);
+            _appearance.SetData(spawned, WrappedParcelVisuals.Size, size);
 
             // If this wrap maintains the shape when wrapping and the item has a shape override, copy the shape override to
             // the parcel.
-            if (wrapper.Comp.WrappedItemsMaintainShape && targetItemComp is { Shape: { } shape })
-            {
-                _item.SetShape(spawned, shape, item);
-            }
+            // if (wrapper.Comp.WrappedItemsMaintainShape && targetItemComp is { Shape: { } shape })
+            // {
+            //     _item.SetShape(spawned, shape, item);
+            // }
 
             // If the target's in a container, try to put the parcel in its place in the container.
             if (_container.TryGetContainingContainer((target, null, null), out var containerOfTarget))
