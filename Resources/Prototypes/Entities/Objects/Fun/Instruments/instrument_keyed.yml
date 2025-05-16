@@ -64,4 +64,4 @@
   - type: Sprite
     sprite: Objects/Fun/Instruments/kalimba.rsi
   - type: Item
-    size: Small
+    size: 5

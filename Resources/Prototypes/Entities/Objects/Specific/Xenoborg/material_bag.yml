@@ -14,11 +14,12 @@
     slots:
     - belt
   - type: Item
-    size: Ginormous
+    size: 300
   - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,9,3
+    capaicty: 300
+    # maxItemSize: Normal
+    # grid:
+    # - 0,0,9,3
     quickInsert: true
     areaInsert: true
     whitelist:

@@ -28,7 +28,7 @@
   - type: Sprite
     sprite: Objects/Fun/Instruments/musicbox.rsi
   - type: Item
-    size: Small
+    size: 5
 
 - type: entity
   parent: BasePercussionInstrument
@@ -58,7 +58,7 @@
   - type: Sprite
     sprite: Objects/Fun/Instruments/microphone.rsi
   - type: Item
-    size: 20
+    size: 5
 
 - type: entity
   parent: BasePercussionInstrument

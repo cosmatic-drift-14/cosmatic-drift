@@ -42,7 +42,7 @@
   description: It's time for moths to experience the burger tower.
   components:
   - type: Item
-    size: Normal #patch until there is an adequate resizing system in place
+    size: 15 #patch until there is an adequate resizing system in place # CD: Could do this but idc frankly
   - type: Food
     requiresSpecialDigestion: true
   - type: Sprite

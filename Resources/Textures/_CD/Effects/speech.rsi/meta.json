@@ -25,6 +25,9 @@
             "name": "rodentia2"
         },
         {
+            "name": "rodentia3"
+        },
+        {
             "name": "vulpkanin0",
             "delays": [
                 [
@@ -37,6 +40,9 @@
         },
         {
             "name": "vulpkanin1"
+        },
+        {
+            "name": "vulpkanin2"
         },
         {
             "name": "vulpkanin2"

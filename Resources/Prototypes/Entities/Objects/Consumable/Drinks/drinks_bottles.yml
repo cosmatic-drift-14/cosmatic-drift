@@ -51,7 +51,7 @@
   suffix: Full
   components:
   - type: Item
-    size: Small
+    size: 5
   - type: Tag
     tags:
       - DrinkCup

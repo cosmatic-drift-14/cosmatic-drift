@@ -8,7 +8,7 @@
   - type: Sprite
     sprite: Objects/Tools/upgrade.rsi
   - type: Item
-    size: Small
+    size: 5
   - type: GunUpgrade
   - type: StaticPrice
     price: 750

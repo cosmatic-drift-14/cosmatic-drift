@@ -208,7 +208,7 @@
     state: icon
   - type: Item
     sprite: Objects/Fun/push_horn.rsi
-    size: Tiny
+    size: 5
   - type: Clothing
     sprite: Objects/Fun/push_horn.rsi
     slots: [Belt]

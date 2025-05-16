@@ -1191,7 +1191,7 @@
   description: Not carried here by ocean currents.
   components:
   - type: Item
-    size: Tiny
+    size: 3
   - type: Sprite
     sprite: Objects/Fun/ducky.rsi
     state: icon
