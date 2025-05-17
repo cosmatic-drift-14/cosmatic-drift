@@ -1,0 +1,68 @@
+# CLF Armors
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: RMCCoatMilitia
+  name: colonial militia hauberk
+  description: The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops.
+  components:
+  - type: AllowSuitStorage
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Armor/CLF/rebel.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/CLF/rebel.rsi
+  - type: Item
+    size: 100
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.4
+        Heat: 0.6
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    walkModifier: 0.725
+    sprintModifier: 0.725
+  - type: Storage
+    capacity: 10
+
+- type: entity
+  parent: RMCCoatMilitia
+  id: RMCCoatMilitiaVest
+  name: colonial militia vest
+  description: The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This extremely light variant protects only the chest and abdomen.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Armor/CLF/vest.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/CLF/vest.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.6
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_VERY_LIGHT
+    walkModifier: 0.897
+    sprintModifier: 0.897
+
+- type: entity
+  parent: RMCCoatMilitia
+  id: RMCCoatMilitiaHauberk
+  name: colonial militia partial hauberk
+  description: The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This even lighter variant has some of the arm pieces removed.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Armor/CLF/hauberk.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/CLF/hauberk.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_VERY_LIGHT
+    walkModifier: 0.897
+    sprintModifier: 0.897
