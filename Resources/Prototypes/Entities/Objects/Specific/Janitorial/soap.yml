@@ -250,7 +250,6 @@
   - type: Appearance
   - type: Item
     sprite: Objects/Specific/Janitorial/soap.rsi
-    storedRotation: -90
   - type: CleansForensics
   - type: Residue
     residueAdjective: residue-slippery

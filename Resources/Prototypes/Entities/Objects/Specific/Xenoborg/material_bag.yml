@@ -16,7 +16,7 @@
   - type: Item
     size: 300
   - type: Storage
-    capaicty: 300
+    capacity: 300
     # maxItemSize: Normal
     # grid:
     # - 0,0,9,3
@@ -28,3 +28,5 @@
       - RawMaterial
       - Ingot
   - type: Dumpable
+
+

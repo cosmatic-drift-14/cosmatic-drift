@@ -32,7 +32,7 @@
     slots: [belt]
     sprite: Objects/Specific/Janitorial/trashbag.rsi
   - type: Item
-    size: 10 
+    size: 10
 
 - type: entity
   name: trash bag
@@ -66,6 +66,4 @@
   description: An upgraded trash bag with a larger internal volume, installed directly into a custodial cyborg.
   components:
   - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,7,6
+    capacity: 150
