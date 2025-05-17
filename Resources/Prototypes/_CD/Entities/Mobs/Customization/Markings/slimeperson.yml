@@ -148,23 +148,9 @@
 # Eyes
 
 - type: marking
-  id: SlimeEyesDefault
-  bodyPart: Eyes
-  markingCategory: Eyes
-  speciesRestriction: [ SlimePerson ]
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-  sprites:
-  - sprite: _CD/Mobs/Species/Slime/parts.rsi
-    state: eyes
-
-- type: marking
   id: SlimeEyeglow
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: HeadTop
   speciesRestriction: [ SlimePerson ]
   coloring:
     default:
@@ -179,7 +165,7 @@
 - type: marking
   id: SlimeEyesDroopy
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: HeadTop
   speciesRestriction: [ SlimePerson ]
   coloring:
     default:
@@ -193,7 +179,7 @@
 - type: marking
   id: SlimeEyesDroopyGlowing
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: HeadTop
   speciesRestriction: [ SlimePerson ]
   coloring:
     default:
@@ -208,7 +194,7 @@
 - type: marking
   id: SlimeEyesCyclops
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: HeadTop
   speciesRestriction: [ SlimePerson ]
   coloring:
     default:
@@ -222,7 +208,7 @@
 - type: marking
   id: SlimeEyesCyclopsGlowing
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: HeadTop
   speciesRestriction: [ SlimePerson ]
   coloring:
     default:
