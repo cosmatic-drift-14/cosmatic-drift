@@ -18,6 +18,9 @@
           Quantity: 5
   - type: Item
     size: 1
+  - type: Tag
+    tags:
+    - VoxFood
 
 # Muffins
 

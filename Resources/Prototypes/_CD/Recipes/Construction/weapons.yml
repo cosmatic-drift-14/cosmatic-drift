@@ -1,10 +1,7 @@
 - type: construction
-  name: bokken
   id: Bokken
   graph: Bokken
   startNode: start
   targetNode: bokken
   category: construction-category-weapons
-  description: A simple but sleek training sword.
-  icon: { sprite: _CD/Objects/Weapons/Melee/bokken.rsi, state: icon }
   objectType: Item

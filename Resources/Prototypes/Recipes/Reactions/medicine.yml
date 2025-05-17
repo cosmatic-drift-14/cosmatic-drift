@@ -557,7 +557,7 @@
   products:
     Insuzine: 3
 
-# - type: reaction # CD Change: Removed Opporozidone
+# - type: reaction
 #   id: Opporozidone
 #   minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
 #   reactants:
