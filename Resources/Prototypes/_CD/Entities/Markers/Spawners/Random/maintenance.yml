@@ -296,7 +296,7 @@
       - id: PetCarrier
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
-      - id: WehpetInstrument    # CD: So that the weh-pet can spawn at the standard rare maints spawn.
+      - id: WehpetInstrument  # CD: So that the weh-pet can spawn at the standard rare maints spawn.
       - id: LidSalami
         weight: 0.05
 
