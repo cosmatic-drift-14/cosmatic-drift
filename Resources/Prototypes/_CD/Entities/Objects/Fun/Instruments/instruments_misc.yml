@@ -186,7 +186,7 @@
     notificationPrefix: prayer-chat-notify-honkmother
     verb: prayer-verbs-call
     verbImage: null
-
+  # CD: Weh-pet entry
 - type: entity
   parent: BaseHandheldInstrument
   id: WehpetInstrument
