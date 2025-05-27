@@ -13,7 +13,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconThinking
-  name: station-ai-icon-alien
+  name: station-ai-icon-thinking
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -25,7 +25,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconDatabase
-  name: station-ai-icon-alien
+  name: station-ai-icon-database
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -37,7 +37,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconFirewall
-  name: station-ai-icon-alien
+  name: station-ai-icon-firewall
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -49,7 +49,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconFuzzy
-  name: station-ai-icon-alien
+  name: station-ai-icon-fuzzy
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -61,7 +61,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconGentoo
-  name: station-ai-icon-alien
+  name: station-ai-icon-gentoo
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -73,7 +73,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconGlitchman
-  name: station-ai-icon-alien
+  name: station-ai-icon-glitchman
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -85,7 +85,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconGoon
-  name: station-ai-icon-alien
+  name: station-ai-icon-goon
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -97,7 +97,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconHades
-  name: station-ai-icon-alien
+  name: station-ai-icon-hades
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -109,7 +109,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconHelios
-  name: station-ai-icon-alien
+  name: station-ai-icon-helios
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -121,7 +121,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconHouse
-  name: station-ai-icon-alien
+  name: station-ai-icon-house
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -133,7 +133,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconInverted
-  name: station-ai-icon-alien
+  name: station-ai-icon-inverted
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -145,7 +145,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconMatrix
-  name: station-ai-icon-alien
+  name: station-ai-icon-matrix
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -157,7 +157,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconMonochrome
-  name: station-ai-icon-alien
+  name: station-ai-icon-monochrome
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -169,7 +169,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconMurica
-  name: station-ai-icon-alien
+  name: station-ai-icon-murica
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -181,7 +181,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconNanoTrasen
-  name: station-ai-icon-alien
+  name: station-ai-icon-nanotrasen
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -193,7 +193,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconNotMalf
-  name: station-ai-icon-alien
+  name: station-ai-icon-not-malf
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -205,7 +205,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconPresident
-  name: station-ai-icon-alien
+  name: station-ai-icon-president
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -217,7 +217,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconRainbow
-  name: station-ai-icon-alien
+  name: station-ai-icon-rainbow
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -229,7 +229,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconRed
-  name: station-ai-icon-alien
+  name: station-ai-icon-red
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -241,7 +241,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconRedOctober
-  name: station-ai-icon-alien
+  name: station-ai-icon-red-october
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -253,7 +253,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconStatic
-  name: station-ai-icon-alien
+  name: station-ai-icon-static
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -265,7 +265,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconMeow
-  name: station-ai-icon-alien
+  name: station-ai-icon-meow
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -277,7 +277,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconText
-  name: station-ai-icon-alien
+  name: station-ai-icon-text
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -289,7 +289,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconTooDeep
-  name: station-ai-icon-alien
+  name: station-ai-icon-too-deep
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -301,7 +301,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconTriumvirate
-  name: station-ai-icon-alien
+  name: station-ai-icon-triumvirate
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -313,7 +313,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconWeird
-  name: station-ai-icon-alien
+  name: station-ai-icon-weird
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
@@ -325,7 +325,7 @@
 - type: stationAiCustomization
   parent: StationAiIconBase
   id: StationAiIconEvilDot
-  name: station-ai-icon-alien
+  name: station-ai-icon-evil-dot
   layerData:
     Occupied:
       sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
