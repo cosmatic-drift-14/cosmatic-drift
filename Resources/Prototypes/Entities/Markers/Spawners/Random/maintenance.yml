@@ -298,6 +298,7 @@
       - id: PetCarrier
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
+      - id: WehpetInstrument  # CD: Rare maints loot can only be in upstream code, so that the weh-pet can actually spawn in maints lockers.
       - id: LidSalami
         weight: 0.05
 
