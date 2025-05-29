@@ -842,6 +842,11 @@
     size: 60
     heldPrefix: goliathhide
     sprite: Objects/Materials/hide.rsi
+    # shape:
+    # - 0,0,2,2
+  - type: Tag
+    tags:
+    - GoliathPlate
 
 - type: entity
   parent: MaterialGoliathHide
