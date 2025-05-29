@@ -1,6 +1,6 @@
 # Atmos Overalls
 - type: entity
-  parent: ClothingOuterStorageFoldableBase # Adjust later, this isn't a winter coat
+  parent: ClothingOuterWinterCoat # Its not a winter coat but okay
   id: ClothingOuterOverallsAtmos 
   name: atmospherics overalls
   description: A set of heavy overalls worn by atmospheric technicians.
