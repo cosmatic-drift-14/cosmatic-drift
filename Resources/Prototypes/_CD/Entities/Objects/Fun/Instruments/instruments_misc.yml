@@ -14,7 +14,7 @@
   - type: Item
     size: 10
     sprite: _CD/Objects/Fun/Instruments/wehpet.rsi
-    storedRotation: -90
+    # storedRotation: -90
   - type: Tag
     tags:
     - BrassInstrument
