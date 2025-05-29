@@ -1,7 +1,7 @@
 # Atmos Overalls
 - type: entity
-  parent: [ClothingOuterBase, AllowSuitStorageClothing]
-  id: ClothingOuterOverallsAtmos
+  parent: ClothingOuterStorageFoldableBase # Adjust later, this isn't a winter coat
+  id: ClothingOuterOverallsAtmos 
   name: atmospherics overalls
   description: A set of heavy overalls worn by atmospheric technicians.
   components:
@@ -9,12 +9,3 @@
     sprite: _CD/Clothing/OuterClothing/Misc/atmos_overalls.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Misc/atmos_overalls.rsi
-  - type: FireProtection
-    reduction: 0.20 # I mean, its better then nothing?
-  - type: Armor
-    modifiers:
-      coefficients:
-        Slash: 0.95
-        Heat: 0.8
-        Cold: 0.8
-

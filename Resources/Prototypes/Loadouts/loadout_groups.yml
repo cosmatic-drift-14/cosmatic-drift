@@ -732,6 +732,9 @@
   loadouts:
   - ChiefEngineerJumpsuit
   - ChiefEngineerJumpskirt
+  - ChiefEngineerJumpsuitModern # CD Drip 4
+  - ChiefEngineerJumpskirtModern # CD Drip 4
+  - ChiefEngineerJumpsuitFormal # CD Drip 4
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
 
