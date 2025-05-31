@@ -9,6 +9,12 @@
   equipment: 
     jumpsuit: ClothingUniformJumpsuitEngineeringPants
 
+# OuterClothing
+- type: loadout
+  id: StationEngineerJacket
+  equipment:
+    outerClothing: ClothingOuterCoatEngi
+
 # ID
 - type: loadout
   id: TechnicalAssistantPDA

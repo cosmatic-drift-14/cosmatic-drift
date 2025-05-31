@@ -330,6 +330,39 @@
 # Engineering garments
 
 - type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitChiefEngineerModern
+  name: chief engineer's jumpsuit
+  description: It's a high visibility jumpsuit given to those engineers insane enough to achieve the rank of Chief Engineer.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/ce.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/ce.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitChiefEngineerFormal
+  name: ce's formal suit
+  description: A suit for special occasions.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/formal_ce_orange.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/formal_ce_orange.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSeniorEngineerModern
+  name: senior engineer jumpsuit
+  description: A sign of skill and prestige within the engineering department.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/senior_engineer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/senior_engineer.rsi
+
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitAtmosHazard
   name: atmospherics hazard jumpsuit

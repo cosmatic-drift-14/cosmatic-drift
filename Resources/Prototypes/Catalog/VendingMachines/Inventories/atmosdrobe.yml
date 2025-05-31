@@ -13,6 +13,7 @@
     ClothingHeadsetEngineering: 2
     ClothingHeadHelmetFire: 2
     ClothingOuterSuitFire: 2
+    ClothingOuterOverallsAtmos: 2 # CD
     ClothingOuterWinterAtmos: 2
     ClothingNeckScarfStripedLightBlue: 3
   contrabandInventory:
