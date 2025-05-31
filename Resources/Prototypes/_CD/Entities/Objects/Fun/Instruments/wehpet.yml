@@ -6,7 +6,7 @@
   description: A lizard had too much time on their hands when they made this.
   components:
   - type: Instrument
-    program: 5
+    program: 55
     bank: 1
   - type: Sprite
     sprite: _CD/Objects/Fun/Instruments/wehpet.rsi
