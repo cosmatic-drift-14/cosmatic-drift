@@ -478,3 +478,5 @@
     channels:
     - Common
     - Supply
+  - type: Puller
+    needsHands: false
