@@ -115,6 +115,7 @@
       - id: HolofanProjector
       - id: RCD
       - id: RCDAmmo
+      - id: AirGrenade
       #CD Addions
       - id: BookSOPEngineering
         prob: 0.2
@@ -134,6 +135,7 @@
       - id: HolofanProjector
       - id: RCD
       - id: RCDAmmo
+      - id: AirGrenade
       #CD Addions
       - id: BookSOPEngineering
         prob: 0.2
