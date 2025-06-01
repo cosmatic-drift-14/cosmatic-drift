@@ -151,6 +151,7 @@
       - id: ClothingShoesBootsMag
       - id: RCD
       - id: RCDAmmo
+      - id: MetalFoamGrenade
       #CD Addions
       - id: BookSOPEngineering
         prob: 0.2
@@ -167,6 +168,7 @@
       - id: trayScanner
       - id: RCD
       - id: RCDAmmo
+      - id: MetalFoamGrenade
       #CD Addions
       - id: BookSOPEngineering
         prob: 0.2

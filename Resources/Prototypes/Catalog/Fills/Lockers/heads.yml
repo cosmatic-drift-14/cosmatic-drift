@@ -182,6 +182,7 @@
     - id: RCD
     - id: RCDAmmo
     - id: RubberStampCE
+    - id: MetalFoamGrenade
     #CD Addions
     - id: BookSOPEngineering
     - id: BookSOPCommand
