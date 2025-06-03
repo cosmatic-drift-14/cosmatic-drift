@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Text.Json.Serialization;
+using Content.Shared.FixedPoint;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Records;
@@ -8,7 +9,7 @@ namespace Content.Shared._CD.Records;
 /// Contains Cosmatic Drift records that can be changed in the character editor. This is stored on the character's profile.
 /// </summary>
 [DataDefinition]
-[Serializable, NetSerializable]
+[Serializable] [NetSerializable]
 public sealed partial class PlayerProvidedCharacterRecords
 {
     public const int TextMedLen = 64;
@@ -40,9 +41,8 @@ public sealed partial class PlayerProvidedCharacterRecords
 
     // Medical
     [DataField]
-    public string Allergies { get; private set; }
-    [DataField]
-    public string DrugAllergies { get; private set; }
+    public Dictionary<string, FixedPoint2> Allergies { get; private set; }
+
     [DataField]
     public string PostmortemInstructions { get; private set; }
     // history, prescriptions, etc. would be a record below
@@ -98,7 +98,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         int height, int weight,
         string emergencyContactName,
         string identifyingFeatures,
-        string allergies, string drugAllergies,
+        Dictionary<string, FixedPoint2> allergies,
         string postmortemInstructions,
         List<RecordEntry> medicalEntries, List<RecordEntry> securityEntries, List<RecordEntry> employmentEntries)
     {
@@ -108,7 +108,6 @@ public sealed partial class PlayerProvidedCharacterRecords
         EmergencyContactName = emergencyContactName;
         IdentifyingFeatures = identifyingFeatures;
         Allergies = allergies;
-        DrugAllergies = drugAllergies;
         PostmortemInstructions = postmortemInstructions;
         MedicalEntries = medicalEntries;
         SecurityEntries = securityEntries;
@@ -123,7 +122,6 @@ public sealed partial class PlayerProvidedCharacterRecords
         HasWorkAuthorization = other.HasWorkAuthorization;
         IdentifyingFeatures = other.IdentifyingFeatures;
         Allergies = other.Allergies;
-        DrugAllergies = other.DrugAllergies;
         PostmortemInstructions = other.PostmortemInstructions;
         MedicalEntries = other.MedicalEntries.Select(x => new RecordEntry(x)).ToList();
         SecurityEntries = other.SecurityEntries.Select(x => new RecordEntry(x)).ToList();
@@ -137,8 +135,7 @@ public sealed partial class PlayerProvidedCharacterRecords
             height: 170, weight: 70,
             emergencyContactName: "",
             identifyingFeatures: "",
-            allergies: "None",
-            drugAllergies: "None",
+            new Dictionary<string, FixedPoint2>(),
             postmortemInstructions: "Return home",
             medicalEntries: new List<RecordEntry>(),
             securityEntries: new List<RecordEntry>(),
@@ -155,7 +152,6 @@ public sealed partial class PlayerProvidedCharacterRecords
                    && HasWorkAuthorization == other.HasWorkAuthorization
                    && IdentifyingFeatures == other.IdentifyingFeatures
                    && Allergies == other.Allergies
-                   && DrugAllergies == other.DrugAllergies
                    && PostmortemInstructions == other.PostmortemInstructions;
         if (!test)
             return false;
@@ -166,17 +162,11 @@ public sealed partial class PlayerProvidedCharacterRecords
         if (EmploymentEntries.Count != other.EmploymentEntries.Count)
             return false;
         if (MedicalEntries.Where((t, i) => !t.MemberwiseEquals(other.MedicalEntries[i])).Any())
-        {
             return false;
-        }
         if (SecurityEntries.Where((t, i) => !t.MemberwiseEquals(other.SecurityEntries[i])).Any())
-        {
             return false;
-        }
         if (EmploymentEntries.Where((t, i) => !t.MemberwiseEquals(other.EmploymentEntries[i])).Any())
-        {
             return false;
-        }
 
         return true;
     }
@@ -184,9 +174,7 @@ public sealed partial class PlayerProvidedCharacterRecords
     private static string ClampString(string str, int maxLen)
     {
         if (str.Length > maxLen)
-        {
             return str[..maxLen];
-        }
         return str;
     }
 
@@ -208,8 +196,6 @@ public sealed partial class PlayerProvidedCharacterRecords
         EmergencyContactName =
             ClampString(EmergencyContactName, TextMedLen);
         IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
-        Allergies = ClampString(Allergies, TextMedLen);
-        DrugAllergies = ClampString(DrugAllergies, TextMedLen);
         PostmortemInstructions = ClampString(PostmortemInstructions, TextMedLen);
 
         EnsureValidEntries(EmploymentEntries);
@@ -232,17 +218,15 @@ public sealed partial class PlayerProvidedCharacterRecords
     {
         return new(this) { EmergencyContactName = name};
     }
+
     public PlayerProvidedCharacterRecords WithIdentifyingFeatures(string feat)
     {
         return new(this) { IdentifyingFeatures = feat};
     }
-    public PlayerProvidedCharacterRecords WithAllergies(string s)
+
+    public PlayerProvidedCharacterRecords WithAllergies(Dictionary<string, FixedPoint2> allergies)
     {
-        return new(this) { Allergies = s };
-    }
-    public PlayerProvidedCharacterRecords WithDrugAllergies(string s)
-    {
-        return new(this) { DrugAllergies = s };
+        return new PlayerProvidedCharacterRecords(this) { Allergies = allergies };
     }
     public PlayerProvidedCharacterRecords WithPostmortemInstructions(string s)
     {

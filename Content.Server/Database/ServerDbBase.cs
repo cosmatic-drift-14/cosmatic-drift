@@ -55,6 +55,9 @@ namespace Content.Server.Database
                 // CD: Store CD info
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
                     .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
                 // END CD
                 .Include(p => p.Profiles)
@@ -104,6 +107,8 @@ namespace Content.Server.Database
             }
 
             var oldProfile = db.DbContext.Profile
+                .Include(p => p.CDProfile)
+                .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
                 .Include(p => p.CDProfile) // CD: Store CD info
                     .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
                 .Include(p => p.Preference)
@@ -229,7 +234,9 @@ namespace Content.Server.Database
 
             // CD: get character records or create default records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
-                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords,
+                    profile.CDProfile.CharacterAllergies,
+                    profile.CDProfile.CharacterRecordEntries)
                 : PlayerProvidedCharacterRecords.DefaultRecords();
 
             var loadouts = new Dictionary<string, RoleLoadout>();
@@ -339,6 +346,10 @@ namespace Content.Server.Database
             profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
             if (humanoid.CDCharacterRecords != null)
             {
+                profile.CDProfile.CharacterAllergies.Clear();
+                profile.CDProfile.CharacterAllergies.AddRange(
+                    RecordsSerialization.GetAllergies(humanoid.CDCharacterRecords));
+
                 profile.CDProfile.CharacterRecordEntries.Clear();
                 profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
             }

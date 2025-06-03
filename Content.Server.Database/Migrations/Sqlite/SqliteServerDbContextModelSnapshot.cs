@@ -577,6 +577,29 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("cdprofile", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterAllergy", b =>
+                {
+                    b.Property<int>("CDProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("cdprofile_id");
+
+                    b.Property<string>("Allergen")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("allergen");
+
+                    b.Property<int>("Intensity")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("intensity");
+
+                    b.HasKey("CDProfileId", "Allergen")
+                        .HasName("PK_cd_character_allergies");
+
+                    b.HasIndex("Allergen")
+                        .HasDatabaseName("IX_cd_character_allergies_allergen");
+
+                    b.ToTable("cd_character_allergies", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
                 {
                     b.Property<int>("Id")
@@ -1664,6 +1687,18 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterAllergy", b =>
+                {
+                    b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
+                        .WithMany("CharacterAllergies")
+                        .HasForeignKey("CDProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cd_character_allergies_cdprofile_cdprofile_id");
+
+                    b.Navigation("CDProfile");
+                });
+
             modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
                 {
                     b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
@@ -2037,6 +2072,8 @@ namespace Content.Server.Database.Migrations.Sqlite
 
             modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
                 {
+                    b.Navigation("CharacterAllergies");
+
                     b.Navigation("CharacterRecordEntries");
                 });
 

@@ -15,7 +15,7 @@ humanoid-profile-editor-cd-records-identifying-features = Identifying Features:
 
 # Medical
 humanoid-profile-editor-cd-records-allergies = Allergies:
-humanoid-profile-editor-cd-records-drug-allergies = Drug Allergies:
+humanoid-profile-editor-cd-records-allergies-edit = Edit
 humanoid-profile-editor-cd-records-postmortem = Postmortem Instructions:
 
 # Entries
