@@ -242,7 +242,7 @@ public sealed class DrinkSystem : SharedDrinkSystem
 
         _audio.PlayPvs(entity.Comp.UseSound, args.Target.Value, AudioParams.Default.WithVolume(-2f).WithVariation(0.25f));
 
-        _reaction.DoEntityReaction(args.Target.Value, solution, ReactionMethod.Ingestion);
+        _reaction.DoEntityReaction(args.Target.Value, drained, ReactionMethod.Ingestion);
         _stomach.TryTransferSolution(firstStomach.Value.Owner, drained, firstStomach.Value.Comp1);
 
         _forensics.TransferDna(entity, args.Target.Value);
