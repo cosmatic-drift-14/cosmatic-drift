@@ -13,6 +13,7 @@ namespace Content.Shared.Strip.Components
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField("handDelay")]
         public TimeSpan HandStripDelay = TimeSpan.FromSeconds(2f);
+        /// # CD: Decreased HandStripDelay for easier tranfer of items as it's not needed for antag balancing
     }
 
     [NetSerializable, Serializable]
