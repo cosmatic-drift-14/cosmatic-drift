@@ -1,14 +1,9 @@
 - type: construction
-  name: web nest
   id: WebNest
   graph: WebStructuresCD
   startNode: start
   targetNode: nest
   category: construction-category-furniture
-  description: Fun fact, you eating spiders in your sleep is false.
-  icon:
-    sprite: _CD/Structures/Web/nest.rsi
-    state: icon
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false

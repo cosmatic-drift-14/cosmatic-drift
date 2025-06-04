@@ -103,3 +103,28 @@
     sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_dark.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_dark.rsi
+
+# Non-casual drip below
+
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtChiefEngineerModern
+  name: chief engineer's jumpskirt
+  description: It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of Chief Engineer.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSeniorEngineerModern
+  name: senior engineer jumpskirt
+  description: A sign of skill and prestige within the engineering department.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi

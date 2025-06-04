@@ -68,6 +68,8 @@
   loadouts:
   - SeniorEngineerJumpsuit
   - SeniorEngineerJumpskirt
+  - SeniorEngineerJumpsuitModern
+  - SeniorEngineerJumpskirtModern
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerCasualsuit
