@@ -1,0 +1,34 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      MinSize="700 400"
+                      Title="{Loc 'cd-allergies-editor-allergies'}">
+    <BoxContainer Margin="5 2 5 5" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True"
+                  SeparationOverride="2">
+        <BoxContainer Orientation="Horizontal" SeparationOverride="5" VerticalExpand="True" HorizontalExpand="True">
+            <!-- Unused reagents -->
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <OptionButton Name="CReagentGroupButton" StyleClasses="OpenLeft" />
+                <LineEdit Name="CReagentSearch" PlaceHolder="{Loc 'cd-allergies-editor-search'}" />
+                <ItemList Name="CReagents" VerticalExpand="True" />
+            </BoxContainer>
+
+            <BoxContainer Orientation="Vertical" Align="Center">
+                <Button Name="CAllergyAdd" Text="+" />
+                <Button Name="CAllergyRemove" Text="-" />
+            </BoxContainer>
+
+            <!-- Current allergies -->
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <Label Text="{Loc 'cd-allergies-editor-allergies'}" />
+                <ItemList Name="CAllergies" VerticalExpand="True" />
+            </BoxContainer>
+        </BoxContainer>
+
+        <!-- Allergy attributes -->
+        <BoxContainer Name="CAllergyAttributes" HorizontalExpand="True">
+            <Label Text="{Loc 'cd-allergies-editor-intensity'}" />
+            <Control HorizontalExpand="True" />
+            <OptionButton Name="CIntensityButton" StyleClasses="OpenLeft" />
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>

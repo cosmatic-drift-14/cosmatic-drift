@@ -3,6 +3,7 @@ using Content.Shared._CD.Records;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
+using Content.Shared.FixedPoint;
 
 namespace Content.Server._CD.Records;
 
@@ -11,9 +12,7 @@ public static class RecordsSerialization
     private static int DeserializeInt(JsonElement e, string key, int def)
     {
         if (e.TryGetProperty(key, out var prop) && prop.TryGetInt32(out var v))
-        {
             return v;
-        }
 
         return def;
     }
@@ -43,6 +42,11 @@ public static class RecordsSerialization
         return def;
     }
 
+    private static Dictionary<string, FixedPoint2> DeserializeAllergies(List<CDModel.CharacterAllergy> allergies)
+    {
+        return allergies.Select(allergy => (allergy.Allergen, FixedPoint2.FromCents(allergy.Intensity))).ToDictionary();
+    }
+
     private static List<PlayerProvidedCharacterRecords.RecordEntry> DeserializeEntries(List<CDModel.CharacterRecordEntry> entries, CDModel.DbRecordEntryType ty)
     {
         return entries.Where(e => e.Type == ty)
@@ -58,7 +62,9 @@ public static class RecordsSerialization
     /// <br />
     /// Missing fields are filled in with their default value, extra fields are simply ignored
     /// </summary>
-    public static PlayerProvidedCharacterRecords Deserialize(JsonDocument json, List<CDModel.CharacterRecordEntry> entries)
+    public static PlayerProvidedCharacterRecords Deserialize(JsonDocument json,
+        List<CDModel.CharacterAllergy> allergies,
+        List<CDModel.CharacterRecordEntry> entries)
     {
         var e = json.RootElement;
         var def = PlayerProvidedCharacterRecords.DefaultRecords();
@@ -68,12 +74,21 @@ public static class RecordsSerialization
             emergencyContactName: DeserializeString(e, nameof(def.EmergencyContactName), def.EmergencyContactName),
             hasWorkAuthorization: DeserializeBool(e, nameof(def.HasWorkAuthorization), def.HasWorkAuthorization),
             identifyingFeatures: DeserializeString(e, nameof(def.IdentifyingFeatures), def.IdentifyingFeatures),
-            allergies: DeserializeString(e, nameof(def.Allergies), def.Allergies),
-            drugAllergies: DeserializeString(e, nameof(def.DrugAllergies), def.DrugAllergies),
+            allergies: DeserializeAllergies(allergies),
             postmortemInstructions: DeserializeString(e, nameof(def.PostmortemInstructions), def.PostmortemInstructions),
             medicalEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Medical),
             securityEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Security),
             employmentEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Employment));
+    }
+
+    public static List<CDModel.CharacterAllergy> GetAllergies(PlayerProvidedCharacterRecords records)
+    {
+        return records.Allergies.Select(entry => new CDModel.CharacterAllergy
+            {
+                Allergen = entry.Key,
+                Intensity = entry.Value.Value,
+            })
+            .ToList();
     }
 
     private static CDModel.CharacterRecordEntry ConvertEntry(PlayerProvidedCharacterRecords.RecordEntry entry, CDModel.DbRecordEntryType type)
