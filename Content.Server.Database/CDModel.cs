@@ -1,6 +1,5 @@
 // File to store as much CD related database things outside of Model.cs
 
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
@@ -29,20 +28,37 @@ public static class CDModel
         [Column("character_records", TypeName = "jsonb")]
         public JsonDocument? CharacterRecords { get; set; }
 
+        public List<CharacterAllergy> CharacterAllergies { get; set; } = new();
+
         public List<CharacterRecordEntry> CharacterRecordEntries { get; set; } = new();
 
         public string? CustomSpeciesName { get; set; } = null;
-
     }
+
     public enum DbRecordEntryType : byte
     {
-         Medical = 0, Security = 1, Employment = 2
+        Medical = 0, Security = 1, Employment = 2,
     }
 
-    [Table("cd_character_record_entries"), Index(nameof(Id))]
+    [Table("cd_character_allergies")]
+    [PrimaryKey(nameof(CDProfileId), nameof(Allergen))]
+    [Index(nameof(Allergen))]
+    public sealed class CharacterAllergy
+    {
+        public string Allergen { get; set; } = null!;
+
+        // in 100ths
+        public int Intensity { get; set; } = 100;
+
+        public int CDProfileId { get; set; }
+
+        public CDProfile CDProfile { get; set; } = null!;
+    }
+
+    [Table("cd_character_record_entries")] [Index(nameof(Id))]
     public sealed class CharacterRecordEntry
     {
-        public int Id { get; set;  }
+        public int Id { get; set; }
 
         public string Title { get; set; } = null!;
 
