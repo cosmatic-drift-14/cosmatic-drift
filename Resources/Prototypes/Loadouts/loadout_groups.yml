@@ -790,6 +790,9 @@
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerHazardsuit
+  - StationEngineerJumpsuitModern # CD
+  - StationEngineerJumpskirtModern # CD
+  - StationEngineerHazardsuitModern # CD
   - StationEngineerCasualsuit # CD
   - StationEngineerPants # CD
   # - SeniorEngineerJumpsuit
@@ -832,6 +835,8 @@
   loadouts:
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
+  - AtmosphericTechnicianJumpsuitModern # CD
+  - AtmosphericTechnicianJumpskirtModern # CD
   - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
 

@@ -4,6 +4,16 @@
   equipment: 
     jumpsuit: ClothingUniformJumpsuitAtmosHazard
 
+- type: loadout
+  id: AtmosphericTechnicianJumpsuitModern
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitAtmosModern
+
+- type: loadout
+  id: AtmosphericTechnicianJumpskirtModern
+  equipment: 
+    jumpsuit: ClothingUniformJumpskirtAtmosModern
+
 # OuterClothing
 - type: loadout
   id: AtmosphericTechnicianOveralls
