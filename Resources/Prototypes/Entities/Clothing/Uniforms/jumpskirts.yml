@@ -159,9 +159,9 @@
   description: If this suit was non-conductive, maybe engineers would actually do their damn job.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/engineering.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/engineering.rsi
 
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseCommandContraband]
