@@ -11,6 +11,35 @@
   - StationAiIconDorf
   - StationAiIconHeartline
   - StationAiIconSmiley
+  # Umbra changes from here
+  - StationAiIconAlien
+  - StationAiIconThinking
+  - StationAiIconDatabase
+  - StationAiIconFirewall
+  - StationAiIconFuzzy
+  - StationAiIconGentoo
+  - StationAiIconGlitchman
+  - StationAiIconGoon
+  - StationAiIconHades
+  - StationAiIconHelios
+  - StationAiIconInverted
+  - StationAiIconMatrix
+  - StationAiIconMonochrome
+  - StationAiIconMurica
+  - StationAiIconNanoTrasen
+  - StationAiIconNotMalf
+  - StationAiIconPresident
+  - StationAiIconRainbow
+  - StationAiIconRed
+  - StationAiIconRedOctober
+  - StationAiIconStatic
+  - StationAiIconMeow
+  - StationAiIconText
+  - StationAiIconTooDeep
+  - StationAiIconTriumvirate
+  - StationAiIconWeird
+  - StationAiIconEvilDot
+  # end of Umbra changes
 
 - type: stationAiCustomizationGroup
   id: StationAiHolograms
