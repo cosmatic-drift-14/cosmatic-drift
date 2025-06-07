@@ -258,6 +258,7 @@
   - type: SiliconLawProvider
     laws: Crewsimov
   - type: SiliconLawBound
+  - type: IonStormTarget # CD change
   - type: ActionGrant
     actions:
     - ActionViewLaws
