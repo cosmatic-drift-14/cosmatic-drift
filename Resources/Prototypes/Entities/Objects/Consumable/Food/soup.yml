@@ -6,7 +6,7 @@
   abstract: true
   components:
   - type: Food
-    trash: 
+    trash:
     - FoodBowlBig
     utensil: Spoon
   - type: SolutionContainerManager
@@ -40,7 +40,6 @@
   - type: Tag
     tags:
     - Soup
-    - VoxFood
   - type: Destructible
     thresholds:
     - trigger:
@@ -970,7 +969,7 @@
     flavors:
       - miso
   - type: Food
-    trash: 
+    trash:
     - FoodBowlFancy
   - type: Sprite
     layers:
