@@ -31,6 +31,8 @@ namespace Content.Shared.Preferences
         private static readonly Regex RestrictedNameRegex = new(@"[^A-Za-z0-9 '\-]");
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
+        public const int MaxCDCustomSpeciesNameLength = 32; // This should be changed to a cvar later.
+
         /// <summary>
         /// Job preferences for initial spawn.
         /// </summary>
