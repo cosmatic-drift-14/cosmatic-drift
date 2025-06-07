@@ -5,8 +5,11 @@
     ClothingBackpackSatchelEngineering: 3
     ClothingBackpackEngineering: 3
     ClothingUniformJumpsuitEngineering: 3
+    ClothingUniformJumpsuitEngineeringModern: 3 # CD
     ClothingUniformJumpskirtEngineering: 3
+    ClothingUniformJumpskirtEngineeringModern: 3 # CD
     ClothingUniformJumpsuitEngineeringHazard: 3
+    ClothingUniformJumpsuitEngineeringHazardModern: 3 # CD
     ClothingUniformJumpsuitEngineeringCasual: 3 # CD
     ClothingUniformJumpsuitEngineeringPants: 3 # CD
     ClothingShoesColorBlack: 3
