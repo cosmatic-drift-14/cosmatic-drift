@@ -264,9 +264,9 @@
     - id: ClothingMaskBreath
     - id: EmergencyOxygenTankFilled
     - id: EmergencyMedipen
-    - id: Flare
+    # - id: Flare
     - id: FoodBreadBaguetteCotton
-    - id: DrinkWaterBottleFull
+    # - id: DrinkWaterBottleFull
 
 - type: entity
   parent: BoxCardboard

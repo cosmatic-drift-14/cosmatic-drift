@@ -328,6 +328,10 @@
   name: basic operative bundle
   description: "Contains a weapon, medical supplies, breaching tools, spare ammo, and some simple utilities."
   components:
+  - type: Item # CD Stuff: To make it fit
+    size: 250
+  - type: Storage
+    capacity: 250 # END CD
   - type: StorageFill
     contents:
       - id: WeaponSubMachineGunC20r
