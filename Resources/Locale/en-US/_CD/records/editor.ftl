@@ -18,6 +18,9 @@ humanoid-profile-editor-cd-records-allergies = Allergies:
 humanoid-profile-editor-cd-records-drug-allergies = Drug Allergies:
 humanoid-profile-editor-cd-records-postmortem = Postmortem Instructions:
 
+# Admin
+humanoid-profile-editor-cd-records-admin = Admin
+
 # Entries
 humanoid-profile-editor-cd-records-add-entry = Add Entry
 humanoid-profile-editor-cd-records-edit-entry = Edit Entry
