@@ -31,9 +31,7 @@ namespace Content.Shared.Preferences
         private static readonly Regex RestrictedNameRegex = new(@"[^A-Za-z0-9 '\-]");
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
-        public const int MaxNameLength = 32;
-        public const int MaxLoadoutNameLength = 32;
-        public const int MaxDescLength = 1024; // CosmaticDrift-LargerCharacterDescriptions // Was 512
+        public const int MaxCDCustomSpeciesNameLength = 32; // This should be changed to a cvar later.
 
         /// <summary>
         /// Job preferences for initial spawn.
@@ -135,6 +133,9 @@ namespace Content.Shared.Preferences
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
 
+        [DataField("cosmaticDriftCustomSpeciesName")]
+        public string? CDCustomSpeciesName = null;
+
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -150,7 +151,8 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            PlayerProvidedCharacterRecords? cdCharacterRecords)
+            PlayerProvidedCharacterRecords? cdCharacterRecords,
+            string? cdCustomSpeciesName)
         {
             Name = name;
             FlavorText = flavortext;
@@ -167,6 +169,7 @@ namespace Content.Shared.Preferences
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
             CDCharacterRecords = cdCharacterRecords;
+            CDCustomSpeciesName = cdCustomSpeciesName;
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -199,7 +202,8 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords)
+                other.CDCharacterRecords,
+                other.CDCustomSpeciesName)
         {
         }
 
@@ -278,6 +282,7 @@ namespace Content.Shared.Preferences
                 Gender = gender,
                 Species = species,
                 Appearance = HumanoidCharacterAppearance.Random(species, sex),
+                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords(), // CD: Fix records on the RNG development characters
             };
         }
 
@@ -474,6 +479,11 @@ namespace Content.Shared.Preferences
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
         }
 
+        public HumanoidCharacterProfile WithCDCustomSpeciesName(string? customSpeciesName)
+        {
+            return new HumanoidCharacterProfile(this) { CDCustomSpeciesName = customSpeciesName };
+        }
+
         public string Summary =>
             Loc.GetString(
                 "humanoid-character-profile-summary",
@@ -500,6 +510,7 @@ namespace Content.Shared.Preferences
             if (FlavorText != other.FlavorText) return false;
             if (CDCharacterRecords != null && other.CDCharacterRecords != null &&
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
+            if (CDCustomSpeciesName != other.CDCustomSpeciesName) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -538,13 +549,14 @@ namespace Content.Shared.Preferences
             };
 
             string name;
+            var maxNameLength = configManager.GetCVar(CCVars.MaxNameLength);
             if (string.IsNullOrEmpty(Name))
             {
                 name = GetName(Species, gender);
             }
-            else if (Name.Length > MaxNameLength)
+            else if (Name.Length > maxNameLength)
             {
-                name = Name[..MaxNameLength];
+                name = Name[..maxNameLength];
             }
             else
             {
@@ -570,9 +582,10 @@ namespace Content.Shared.Preferences
             }
 
             string flavortext;
-            if (FlavorText.Length > MaxDescLength)
+            var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
+            if (FlavorText.Length > maxFlavorTextLength)
             {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..MaxDescLength];
+                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..maxFlavorTextLength];
             }
             else
             {
@@ -661,6 +674,16 @@ namespace Content.Shared.Preferences
             {
                 CDCharacterRecords!.EnsureValid();
             }
+
+            // CD: Custom Species
+            if (CDCustomSpeciesName != null)
+            {
+                if (CDCustomSpeciesName == "")
+                    CDCustomSpeciesName = null;
+                else if (CDCustomSpeciesName.Length > MaxCDCustomSpeciesNameLength)
+                    CDCustomSpeciesName = CDCustomSpeciesName[..MaxCDCustomSpeciesNameLength];
+            }
+            // end CD
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();

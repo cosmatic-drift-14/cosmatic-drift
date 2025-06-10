@@ -50,10 +50,10 @@
       points: 1
       required: false
     Legs:
-      points: 1
+      points: 3 # CD
       required: false
     Arms:
-      points: 1
+      points: 3 # CD
       required: false
     Snout:
       points: 1

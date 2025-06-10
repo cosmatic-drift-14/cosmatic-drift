@@ -32,27 +32,27 @@
             ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 5, 5 ]
-            TechnicalAssistant: [ 2, 2 ] #CD change from 4-4 to 2-2
+            StationEngineer: [ 6, 6 ] #CD change from 5-5 to 6-6.
+            # TechnicalAssistant: [ 2, 2 ] #CD disabled.
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD Role
             Chemist: [ 2, 2 ] #CD change from 3-3 to 2-2
-            MedicalDoctor: [ 4, 4 ] #CD change from 6-6 to 4-4
+            MedicalDoctor: [ 5, 5 ] #CD change from 6-6 to 5-5
             Paramedic: [ 1, 1 ]
-            MedicalIntern: [ 2, 2 ] #CD change from 4-4 to 2-2
+            # MedicalIntern: [ 2, 2 ] #CD disabled.
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD role
-            Scientist: [ 5, 5 ]
-            ResearchAssistant: [ 2, 2 ] #CD change from 6-6 to 2-2
+            Scientist: [ 6, 6 ] #CD change from 5-5 to 6-6.
+            # ResearchAssistant: [ 2, 2 ] #CD disabled.
             #security
             HeadOfSecurity: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ] #CD Role
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 4, 4 ] #CD change from 8-8 to 4-4
+            SecurityOfficer: [ 5, 5 ] #CD change from 8-8 to 5-5
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 2, 2 ] #CD change from 4-4 to 2-2
+            # SecurityCadet: [ 2, 2 ] #CD disabled.
             Lawyer: [ 2, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]

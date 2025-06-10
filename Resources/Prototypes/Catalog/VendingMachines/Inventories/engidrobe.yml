@@ -8,6 +8,7 @@
     ClothingUniformJumpskirtEngineering: 3
     ClothingUniformJumpsuitEngineeringHazard: 3
     ClothingUniformJumpsuitEngineeringCasual: 3 # CD
+    ClothingUniformJumpsuitEngineeringPants: 3 # CD
     ClothingShoesColorBlack: 3
     ClothingOuterVestHazard: 3
     ClothingShoesBootsWork: 3
@@ -15,6 +16,7 @@
     ClothingHeadHatHardhatOrange: 3
     ClothingHeadsetEngineering: 3
     ClothingOuterWinterEngi: 2
+    ClothingOuterCoatEngi: 2 # CD
     ClothingOuterCoatYellowHiVis: 3 # CD
     ClothingOuterCoatOrangeHiVis: 3 # CD
     ClothingNeckScarfStripedOrange: 3

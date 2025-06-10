@@ -1,0 +1,11 @@
+# Jumpsuit
+- type: loadout
+  id: AtmosphericTechnicianHazardsuit
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitAtmosHazard
+
+# OuterClothing
+- type: loadout
+  id: AtmosphericTechnicianOveralls
+  equipment:
+    outerClothing: ClothingOuterOverallsAtmos

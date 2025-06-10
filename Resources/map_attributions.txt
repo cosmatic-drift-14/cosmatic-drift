@@ -59,7 +59,10 @@
   authors: Spacemann
 
 - files: ["convex.yml"]
-  authors: Spacemann
+  authors: Spacemann'
+
+- file: ["amber.yml"]
+  authors: Southbridge, Flipsie27
 
 #CD Maps
 #These are located in Maps/_CD

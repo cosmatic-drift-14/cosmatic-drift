@@ -11,7 +11,8 @@
       - state: icon
         map: ["base"]
     - type: Item
-      sprite: Objects/Weapons/Bombs/hot_potato.rsi
+      sprite: Objects/Specific/Hydroponics/potato.rsi
+      heldPrefix: produce
       size: 5
     - type: AmbientSound
       enabled: false

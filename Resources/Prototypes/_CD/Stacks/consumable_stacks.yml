@@ -1,6 +1,6 @@
 - type: stack
   id: LeavesMindleafDried
-  name: dried mindleaf leaves
+  name: cd-stack-dried-mindleaf-leaves
   icon: { sprite: /Textures/Objects/Specific/Hydroponics/tobacco.rsi, state: dried }
   spawn: LeavesMindleafDried
   maxCount: 5

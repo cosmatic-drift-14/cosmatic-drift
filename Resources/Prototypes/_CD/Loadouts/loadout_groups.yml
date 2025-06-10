@@ -68,10 +68,13 @@
   loadouts:
   - SeniorEngineerJumpsuit
   - SeniorEngineerJumpskirt
+  - SeniorEngineerJumpsuitModern
+  - SeniorEngineerJumpskirtModern
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerCasualsuit
   - StationEngineerHazardsuit
+  - StationEngineerPants
 
 # Science
 - type: loadoutGroup
@@ -97,15 +100,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
 
-- type: loadoutGroup
-  id: ScientistTitles
-  name: loadout-group-scientist-id
-  loadouts:
-  - ScientistPDA
-  - RoboticistPDA
-
 # Security
-
 - type: loadoutGroup
   id: SeniorOfficerHead
   name: loadout-group-security-head

@@ -23,6 +23,7 @@
     ClothingNeckScarfStripedBrown: 3
     ClothingShoesBootsWinterCargo: 2
     ClothingShoesBootsSteel: 2 # CD
+    MailBag: 2
   contrabandInventory:
     ToyFigurineCargoTech: 1
     ToyFigurineSalvage: 1

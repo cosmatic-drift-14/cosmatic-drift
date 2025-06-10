@@ -31,6 +31,8 @@ public static class CDModel
 
         public List<CharacterRecordEntry> CharacterRecordEntries { get; set; } = new();
 
+        public string? CustomSpeciesName { get; set; } = null;
+
     }
     public enum DbRecordEntryType : byte
     {
