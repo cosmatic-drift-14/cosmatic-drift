@@ -26,6 +26,7 @@ using Robust.Shared.Utility;
 // CD: imports
 using Content.Server._CD.Records;
 using Content.Shared._CD.Records;
+using Content.Shared.FixedPoint;
 
 namespace Content.Server.Database
 {
@@ -57,6 +58,9 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.CDProfile)
                     .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
                 // END CD
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
@@ -111,6 +115,8 @@ namespace Content.Server.Database
             var oldProfile = db.DbContext.Profile
                 .Include(p => p.CDProfile) // CD: Store CD info
                     .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                .Include(p => p.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -251,6 +257,14 @@ namespace Content.Server.Database
                 ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
                 : PlayerProvidedCharacterRecords.DefaultRecords();
 
+            var cdAllergies = profile.CDProfile?.CharacterAllergies != null
+                ? profile.CDProfile.CharacterAllergies
+                    .Select(allergy => (allergy.Allergen, FixedPoint2.FromCents(allergy.Intensity)))
+                    .ToDictionary()
+                : new();
+
+            // END CD
+
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -300,7 +314,8 @@ namespace Content.Server.Database
                 traits.ToHashSet(),
                 loadouts,
                 cdRecords,
-                profile.CDProfile?.CustomSpeciesName
+                profile.CDProfile?.CustomSpeciesName,
+                cdAllergies
             );
         }
 
@@ -363,6 +378,15 @@ namespace Content.Server.Database
             }
 
             profile.CDProfile.CustomSpeciesName = humanoid.CDCustomSpeciesName;
+
+            profile.CDProfile.CharacterAllergies.Clear();
+            profile.CDProfile.CharacterAllergies.AddRange(humanoid.CDAllergies.Select(entry =>
+                new CDModel.CharacterAllergy
+                {
+                    Allergen = entry.Key,
+                    Intensity = entry.Value.Value,
+                }));
+
             // END CD
 
             profile.Loadouts.Clear();
