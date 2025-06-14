@@ -20,7 +20,7 @@ public sealed partial class TelephoneComponent : Component
     /// Sets how long the telephone can remain idle in-call before it automatically hangs up
     /// </summary>
     [DataField]
-    public float IdlingTimeout = 60;
+    public float IdlingTimeout = 600; // CD change - 10 minutes
 
     /// <summary>
     /// Sets how long the telephone will stay in the hanging up state before return to idle
