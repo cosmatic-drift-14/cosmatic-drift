@@ -7,7 +7,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Administration.Commands;
 
-[AnyCommand]
+[AnyCommand] // CD change from admin only to unrestricted.
 public sealed class AdminWhoCommand : IConsoleCommand
 {
     public string Command => "adminwho";
