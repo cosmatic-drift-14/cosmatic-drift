@@ -5,7 +5,9 @@
     ClothingBackpackSatchelAtmospherics: 2
     ClothingBackpackAtmospherics: 2
     ClothingUniformJumpsuitAtmos: 3
+    ClothingUniformJumpsuitAtmosModern: 3 # CD
     ClothingUniformJumpskirtAtmos: 3
+    ClothingUniformJumpskirtAtmosModern: 3 # CD
     ClothingUniformJumpsuitAtmosCasual: 3
     ClothingUniformJumpsuitAtmosHazard: 3 # CD
     ClothingUniformJumpsuitEngineeringPants: 3 # CD
