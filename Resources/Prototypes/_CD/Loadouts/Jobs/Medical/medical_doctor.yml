@@ -96,3 +96,9 @@
   id: MedicalInternPDA
   equipment:
     id: MedicalInternPDA
+
+#Eyewear
+- type: loadout
+  id: MedicalVisorHud
+  equipment:
+    eyes: ClothingEyesHudMedicalVisor
