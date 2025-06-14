@@ -1,0 +1,32 @@
+<Control xmlns="https://spacestation14.io">
+    <!-- Primary container -->
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+        <!-- Allergen lists -->
+        <BoxContainer Orientation="Horizontal" SeparationOverride="5" HorizontalExpand="True">
+                <!-- Unused reagents -->
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+                <OptionButton Name="CReagentGroupButton" StyleClasses="OpenLeft" />
+                <LineEdit Name="CReagentSearch" PlaceHolder="{Loc 'cd-allergies-editor-search'}" />
+                <ItemList Name="CReagents" VerticalExpand="True" MinSize="275 250" />
+            </BoxContainer>
+
+            <BoxContainer Orientation="Vertical" Align="Center" MinSize="50 250">
+                <Button Name="CAllergyAdd" Text="+" />
+                <Button Name="CAllergyRemove" Text="-" />
+            </BoxContainer>
+
+            <!-- Current allergies -->
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+                <Label Text="{Loc 'cd-allergies-editor-allergies'}" />
+                <ItemList Name="CAllergies" VerticalExpand="True" MinSize="275 250" />
+            </BoxContainer>
+        </BoxContainer>
+
+        <!-- Allergy attributes -->
+        <BoxContainer Name="CAllergyAttributes" HorizontalExpand="True">
+            <Label Text="{Loc 'cd-allergies-editor-intensity'}" />
+            <Control HorizontalExpand="True" />
+            <OptionButton Name="CIntensityButton" StyleClasses="OpenLeft" />
+        </BoxContainer>
+    </BoxContainer>
+</Control>
