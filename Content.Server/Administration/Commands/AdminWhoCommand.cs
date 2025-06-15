@@ -44,8 +44,6 @@ public sealed class AdminWhoCommand : IConsoleCommand
             first = false;
 
             sb.Append(admin.Name);
-            if (adminData.Title is { } title)
-                sb.Append($": [{title}]");
 
             if (adminData.Stealth)
                 sb.Append(" (S)");
@@ -54,6 +52,9 @@ public sealed class AdminWhoCommand : IConsoleCommand
             {
                 if (afk.IsAfk(admin))
                     sb.Append(" [AFK]");
+
+                if (adminData.Title is { } title) // CD change to move titles to admin only.
+                    sb.Append($": [{title}]");
             }
         }
 
