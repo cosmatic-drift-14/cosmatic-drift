@@ -315,6 +315,26 @@
       sprite: Structures/Machines/computers.rsi
       state: syndie_key
 
+#Syndicate Diplomacy Console
+- type: entity
+  parent: [ BaseStructureComputerTabletop, SyndicateComputerCommsDiplomat ]
+  id: SyndicateComputerTabletopCommsDiplomat
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "computerLayerBody" ]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: computer_tabletop
+    - map: [ "computerLayerKeyboard" ]
+      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
+      state: generic_keyboard_tabletop
+    - map: [ "computerLayerScreen" ]
+      sprite: Structures/Machines/computers.rsi
+      state: comm_syndie
+    - map: [ "computerLayerKeys" ]
+      sprite: Structures/Machines/computers.rsi
+      state: syndie_key
+
 # Solar Controller
 - type: entity
   parent: [ BaseStructureComputerTabletop, ComputerSolarControl ]
