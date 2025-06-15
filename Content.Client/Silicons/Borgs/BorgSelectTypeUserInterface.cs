@@ -26,5 +26,7 @@ public sealed class BorgSelectTypeUserInterface : BoundUserInterface
 
         _menu = this.CreateWindow<BorgSelectTypeMenu>();
         _menu.ConfirmedBorgType += prototype => SendPredictedMessage(new BorgSelectTypeMessage(prototype));
+        _menu.ConfirmedBorgType += prototype => SendMessage(new BorgSelectTypeMessage(prototype));
+        _menu.ConfirmedBorgSubtype += subtype => SendPredictedMessage(new BorgSelectSubtypeMessage(subtype));
     }
 }
