@@ -2,3 +2,7 @@
   id: DrinkingSkill
   name: cd-trait-category-drinking-skill
   maxTraitPoints: 1
+
+- type: traitCategory
+  id: Meta
+  name: cd-trait-category-meta

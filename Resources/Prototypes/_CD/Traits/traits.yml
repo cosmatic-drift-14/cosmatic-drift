@@ -2,6 +2,7 @@
   id: Synthetic
   name: trait-synth-name
   description: trait-synth-desc
+  category: Quirks
   components:
     - type: Synth
 
@@ -9,11 +10,12 @@
   id: ScaleItem
   name: trait-scale-item-name
   description: trait-scale-item-desc
+  category: Quirks
   components:
     - type: ScaleItem
       maxScale: 0.85
       size: 120
-      
+
 - type: trait
   id: VeryLightweightDrunk
   name: cd-trait-very-lightweight-name
@@ -33,3 +35,11 @@
   components:
   - type: LightweightDrunk
     boozeStrengthMultiplier: 0.5
+
+- type: trait
+  id: HideFromRoundEndScreen
+  name: cd-trait-hide-from-round-end-screen-name
+  description: cd-trait-hide-from-round-end-screen-desc
+  category: Meta
+  components:
+  - type: HideFromRoundEndScreen
