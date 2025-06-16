@@ -114,10 +114,12 @@
     sprite: null
 
 - type: entity
+  parent: BaseAction
   id: ActionToggleMagboots
   name: Toggle Magboots
   description: Toggles the magboots on and off.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: BigItem
+  - type: InstantAction
     event: !type:ToggleActionEvent
