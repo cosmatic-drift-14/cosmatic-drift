@@ -44,6 +44,7 @@
   - type: Tag
     tags:
     - HudMedical
+    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
@@ -64,6 +65,7 @@
   - type: EyeProtection
     protectionTime: 5
   # end CD
+    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]
