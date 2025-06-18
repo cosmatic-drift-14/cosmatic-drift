@@ -60,12 +60,12 @@
   - type: Tag
     tags:
     - HudSecurity
+    - WhitelistChameleon
   # CD change
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
   # end CD
-    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]

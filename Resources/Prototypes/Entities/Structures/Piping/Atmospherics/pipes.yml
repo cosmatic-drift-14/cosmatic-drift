@@ -106,10 +106,10 @@
     graph: GasPipe
     node: half
   - type: Item
-    size: Small
-    storedSprite:
-      sprite: Structures/Piping/Atmospherics/pipe.rsi
-      state: storageHalf
+    size: 5
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/pipe.rsi
+    #   state: storageHalf
   - type: GuideHelp
     guides:
     - Pipes
@@ -281,9 +281,9 @@
   - type: Item
     size: 10
     heldPrefix: Fourway
-    storedSprite:
-      sprite: Structures/Piping/Atmospherics/pipe.rsi
-      state: storageFourway
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/pipe.rsi
+    #   state: storageFourway
   - type: MeleeWeapon
     wideAnimationRotation: 90
     attackRate: 0.75
@@ -316,7 +316,7 @@
     graph: GasPipe
     node: broken
   - type: Item
-    size: Small
+    size: 5
   - type: Destructible
     thresholds: # override parent to avoid recursive destruction
     - trigger:
@@ -354,12 +354,12 @@
     graph: GasPipe
     node: manifold
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    storedSprite:
-      sprite: Structures/Piping/Atmospherics/manifold.rsi
-      state: storageManifold
+    size: 10
+    # shape:
+    # - 0,0,1,0
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/manifold.rsi
+    #   state: storageManifold
   - type: NodeContainer
     nodes:
       south0:
