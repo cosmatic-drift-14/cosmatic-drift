@@ -44,6 +44,7 @@
   - type: Tag
     tags:
     - HudMedical
+    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
@@ -59,6 +60,7 @@
   - type: Tag
     tags:
     - HudSecurity
+    - WhitelistChameleon
   # CD change
   - type: FlashImmunity
   - type: EyeProtection
