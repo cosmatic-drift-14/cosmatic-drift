@@ -155,14 +155,12 @@
     tags: []
 
 - type: entity
-  parent: BaseAction
   id: ActionToggleSpeedBoots
   name: Toggle Speed Boots
   description: Toggles the speed boots on and off.
   components:
-  - type: Action
-    itemIconStyle: BigItem
   - type: InstantAction
+    itemIconStyle: BigItem
     event: !type:ToggleActionEvent
 
 - type: entity
