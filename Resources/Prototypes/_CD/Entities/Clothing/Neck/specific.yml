@@ -8,9 +8,9 @@
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
   - type: Sprite
-    sprite: _Harmony/Clothing/Neck/mantles/rainbowmantle.rsi
+    sprite: _CD/Clothing/Neck/Mantles/rainbowmantle.rsi
   - type: Clothing
-    sprite: _Harmony/Clothing/Neck/mantles/rainbowmantle.rsi
+    sprite: _CD/Clothing/Neck/Mantles/rainbowmantle.rsi
   - type: ChameleonClothing
     slot: [NECK]
     default: ClothingNeckMantleRainbow
