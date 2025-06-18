@@ -1,5 +1,4 @@
 ﻿using Content.Shared.Actions;
-using Content.Shared.Actions.Components;
 using Content.Shared.Implants;
 using Content.Shared.Mindshield.Components;
 using Content.Shared.Tag;
@@ -47,7 +46,7 @@ public sealed class SharedFakeMindShieldSystem : EntitySystem
             if (!_tag.HasTag(action, FakeMindShieldImplantTag))
                 continue;
 
-            if (!TryComp<ActionComponent>(action, out var actionComp))
+            if (!TryComp<InstantActionComponent>(action, out var actionComp))
                 continue;
 
             actionFound = true;
