@@ -4,10 +4,10 @@
   name: station-ai-icon-alien
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_alien
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_alien_dead
 
 - type: stationAiCustomization
@@ -16,10 +16,10 @@
   name: station-ai-icon-thinking
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_thinking
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_thinking_dead
 
 - type: stationAiCustomization
@@ -28,10 +28,10 @@
   name: station-ai-icon-database
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_database
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_database_dead
 
 - type: stationAiCustomization
@@ -40,7 +40,7 @@
   name: station-ai-icon-firewall
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_firewall
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -52,7 +52,7 @@
   name: station-ai-icon-fuzzy
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_fuzzy
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -64,10 +64,10 @@
   name: station-ai-icon-gentoo
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_gentoo
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_gentoo_dead
 
 - type: stationAiCustomization
@@ -76,10 +76,10 @@
   name: station-ai-icon-glitchman
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_glitchman
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_glitchman_dead
 
 - type: stationAiCustomization
@@ -88,10 +88,10 @@
   name: station-ai-icon-goon
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_goon
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_goon_dead
 
 - type: stationAiCustomization
@@ -100,10 +100,10 @@
   name: station-ai-icon-hades
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_hades
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_hades_dead
 
 - type: stationAiCustomization
@@ -112,7 +112,7 @@
   name: station-ai-icon-helios
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_helios
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -124,7 +124,7 @@
   name: station-ai-icon-inverted
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_inverted
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -136,7 +136,7 @@
   name: station-ai-icon-matrix
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_matrix
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -148,10 +148,10 @@
   name: station-ai-icon-monochrome
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_monochrome
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_monochrome_dead
 
 - type: stationAiCustomization
@@ -160,10 +160,10 @@
   name: station-ai-icon-murica
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_murica
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_murica_dead
 
 - type: stationAiCustomization
@@ -172,7 +172,7 @@
   name: station-ai-icon-nanotrasen
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_nanotrasen
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -184,7 +184,7 @@
   name: station-ai-icon-not-malf
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_not_malf
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -196,7 +196,7 @@
   name: station-ai-icon-president
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_president
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -208,10 +208,10 @@
   name: station-ai-icon-rainbow
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_rainbow
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_rainbow_dead
 
 - type: stationAiCustomization
@@ -220,7 +220,7 @@
   name: station-ai-icon-red
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_red
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -232,10 +232,10 @@
   name: station-ai-icon-red-october
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_red_october
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_red_october_dead
 
 - type: stationAiCustomization
@@ -244,10 +244,10 @@
   name: station-ai-icon-static
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_static
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_static_dead
 
 - type: stationAiCustomization
@@ -256,7 +256,7 @@
   name: station-ai-icon-meow
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_meow
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -268,7 +268,7 @@
   name: station-ai-icon-text
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_text
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -280,7 +280,7 @@
   name: station-ai-icon-too-deep
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_too_deep
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -292,7 +292,7 @@
   name: station-ai-icon-triumvirate
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_triumvirate
     Dead:
       sprite: Mobs/Silicon/station_ai.rsi
@@ -304,10 +304,10 @@
   name: station-ai-icon-weird
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_weird
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_weird_dead
 
 - type: stationAiCustomization
@@ -316,8 +316,8 @@
   name: station-ai-icon-evil-dot
   layerData:
     Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_evil_dot
     Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
+      sprite: _CD/Mobs/Silicon/AI/ai_screens.rsi
       state: ai_evil_dot_dead
