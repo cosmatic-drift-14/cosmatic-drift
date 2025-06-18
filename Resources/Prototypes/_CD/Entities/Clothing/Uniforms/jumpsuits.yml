@@ -406,6 +406,26 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos.rsi 
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitEngineeringEVA
+  name: EVA engineer jumpsuit
+  description: A cream-white jumpsuit with high visibility markings. The markings are usually covered by a hardsuit.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_eva.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_eva.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
 # Suits
 
 - type: entity
