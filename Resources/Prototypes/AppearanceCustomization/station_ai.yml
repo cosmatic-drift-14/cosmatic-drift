@@ -11,7 +11,7 @@
   - StationAiIconDorf
   - StationAiIconHeartline
   - StationAiIconSmiley
-  # Umbra changes from here
+  # CD changes from here
   - StationAiIconAlien
   - StationAiIconThinking
   - StationAiIconDatabase
@@ -39,7 +39,7 @@
   - StationAiIconTriumvirate
   - StationAiIconWeird
   - StationAiIconEvilDot
-  # end of Umbra changes
+  # end of CD changes
 
 - type: stationAiCustomizationGroup
   id: StationAiHolograms
