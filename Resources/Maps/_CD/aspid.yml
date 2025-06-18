@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 260.2.0
+  engineVersion: 261.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/13/2025 13:17:13
+  time: 06/18/2025 18:03:07
   entityCount: 19460
 maps:
 - 6526
@@ -8487,9 +8487,7 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
@@ -43161,18 +43159,6 @@ entities:
     components:
     - type: Transform
       pos: 36.56873,-16.396769
-      parent: 1
-- proto: CapacitorStockPart
-  entities:
-  - uid: 6544
-    components:
-    - type: Transform
-      pos: 22.399736,-23.44135
-      parent: 1
-  - uid: 13453
-    components:
-    - type: Transform
-      pos: -46.782776,46.69757
       parent: 1
 - proto: CarbonDioxideCanister
   entities:
@@ -92705,18 +92691,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -31.946367,53.820393
       parent: 1
-- proto: MatterBinStockPart
-  entities:
-  - uid: 13454
-    components:
-    - type: Transform
-      pos: -46.41361,46.78272
-      parent: 1
-  - uid: 19076
-    components:
-    - type: Transform
-      pos: -39.32864,25.182978
-      parent: 1
 - proto: MedicalBed
   entities:
   - uid: 3705
@@ -92826,6 +92800,28 @@ entities:
     components:
     - type: Transform
       pos: 2.32372,33.73134
+      parent: 1
+- proto: MicroManipulatorStockPart
+  entities:
+  - uid: 6544
+    components:
+    - type: Transform
+      pos: 22.399736,-23.44135
+      parent: 1
+  - uid: 13453
+    components:
+    - type: Transform
+      pos: -46.782776,46.69757
+      parent: 1
+  - uid: 13454
+    components:
+    - type: Transform
+      pos: -46.41361,46.78272
+      parent: 1
+  - uid: 19076
+    components:
+    - type: Transform
+      pos: -39.32864,25.182978
       parent: 1
 - proto: MicrophoneInstrument
   entities:
