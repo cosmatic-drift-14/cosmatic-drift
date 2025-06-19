@@ -116,8 +116,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -127,8 +136,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -138,8 +156,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -149,5 +176,14 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
