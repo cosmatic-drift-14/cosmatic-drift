@@ -12,6 +12,9 @@
     ClothingUniformJumpsuitEngineeringHazardModern: 3 # CD
     ClothingUniformJumpsuitEngineeringCasual: 3 # CD
     ClothingUniformJumpsuitEngineeringPants: 3 # CD
+    ClothingUniformJumpsuitEngineeringEVA: 3 # CD
+    ClothingUniformJumpsuitEngineeringMechanic: 3 # CD
+    ClothingUniformJumpskirtEngineeringMechanic: 3 # CD
     ClothingShoesColorBlack: 3
     ClothingOuterVestHazard: 3
     ClothingShoesBootsWork: 3

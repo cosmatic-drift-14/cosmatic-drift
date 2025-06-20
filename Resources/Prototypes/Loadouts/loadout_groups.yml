@@ -797,6 +797,9 @@
   - StationEngineerHazardsuitModern # CD
   - StationEngineerCasualsuit # CD
   - StationEngineerPants # CD
+  - StationEngineerJumpsuitEVA # CD
+  - StationEngineerJumpsuitMechanic # CD
+  - StationEngineerJumpskirtMechanic # CD
   # - SeniorEngineerJumpsuit
   # - SeniorEngineerJumpskirt
 
