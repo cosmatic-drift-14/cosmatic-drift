@@ -35,3 +35,14 @@
   id: TechnicalAssistantPDA
   equipment:
     id: TechnicalAssistantPDA
+
+# Glasses
+- type: loadout
+  id: ClothingEyesGlassesMeson
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
+- type: loadout
+  id: ClothingEyesGlassesMesonPrescription
+  equipment:
+    eyes: ClothingEyesGlassesMesonPrescription
