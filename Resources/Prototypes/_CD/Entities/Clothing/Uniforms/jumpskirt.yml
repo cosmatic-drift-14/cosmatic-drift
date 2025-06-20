@@ -187,3 +187,23 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtEngineeringMechanic
+  name: mechanical engineer jumpskirt
+  description: A yellow jumpskirt with a set of overalls attached, You can't tell if its durathread or denim.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
