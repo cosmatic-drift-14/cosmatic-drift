@@ -76,6 +76,14 @@
   - StationEngineerHazardsuit
   - StationEngineerPants
 
+- type: loadoutGroup
+  id: EngineeringEyewear
+  name: loadout-group-engineering-goggles
+  minLimit: 1
+  loadouts:
+  - ClothingEyesGlassesMeson
+  - ClothingEyesGlassesMesonPrescription
+
 # Science
 - type: loadoutGroup
   id: SeniorResearcherJumpsuit

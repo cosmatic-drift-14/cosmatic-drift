@@ -9,3 +9,15 @@
     sprite: _CD/Clothing/Eyes/Glasses/aviators.rsi
   - type: Clothing
     sprite: _CD/Clothing/Eyes/Glasses/aviators.rsi
+
+- type: entity
+  parent: ClothingEyesGlassesMeson
+  id: ClothingEyesGlassesMesonPrescription
+  name: prescription engineering goggles #less confusion
+  description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/mesonprescription.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/mesonprescription.rsi
+    - type: VisionCorrection
