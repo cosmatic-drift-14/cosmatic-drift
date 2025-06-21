@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text.Json.Serialization;
 using Robust.Shared.Serialization;
@@ -196,8 +197,12 @@ public sealed partial class PlayerProvidedCharacterRecords
         return true;
     }
 
-    private static string ClampString(string str, int maxLen)
+    [Pure]
+    private static string ClampString(string? str, int maxLen)
     {
+        // When importing old characters these values may be null
+        if (str == null)
+            return "";
         if (str.Length > maxLen)
         {
             return str[..maxLen];
@@ -226,6 +231,15 @@ public sealed partial class PlayerProvidedCharacterRecords
         Allergies = ClampString(Allergies, TextMedLen);
         DrugAllergies = ClampString(DrugAllergies, TextMedLen);
         PostmortemInstructions = ClampString(PostmortemInstructions, TextMedLen);
+
+        // When importing old CD characters these may be null
+        // ReSharper disable block NullCoalescingConditionIsAlwaysNotNullAccordingToAPIContract
+        {
+            EmploymentEntries ??= [];
+            MedicalEntries ??= [];
+            SecurityEntries ??= [];
+            AdminEntries ??= [];
+        }
 
         EnsureValidEntries(EmploymentEntries);
         EnsureValidEntries(MedicalEntries);
