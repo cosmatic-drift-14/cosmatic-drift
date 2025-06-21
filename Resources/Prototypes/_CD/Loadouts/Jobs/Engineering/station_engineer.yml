@@ -1,27 +1,27 @@
 # Jumpsuit
 - type: loadout
   id: StationEngineerCasualsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringCasual
 
 - type: loadout
   id: StationEngineerPants
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringPants
 
 - type: loadout
   id: StationEngineerJumpsuitModern
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringModern
 
 - type: loadout
   id: StationEngineerHazardsuitModern
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringHazardModern
 
 - type: loadout
   id: StationEngineerJumpskirtModern
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpskirtEngineeringModern
 
 # OuterClothing

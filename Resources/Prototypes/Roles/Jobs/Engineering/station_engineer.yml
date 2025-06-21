@@ -19,6 +19,7 @@
 - type: startingGear
   id: StationEngineerGear
   equipment:
+#    eyes: ClothingEyesGlassesMeson # CD
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
   #storage:

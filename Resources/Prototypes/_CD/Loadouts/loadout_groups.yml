@@ -75,7 +75,7 @@
   - StationEngineerCasualsuit
   - StationEngineerHazardsuit
   - StationEngineerPants
-    
+
 - type: loadoutGroup
   id: EngineeringEyewear
   name: loadout-group-engineering-goggles

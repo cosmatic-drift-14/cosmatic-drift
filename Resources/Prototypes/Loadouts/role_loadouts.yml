@@ -256,7 +256,7 @@
   groups:
   - GroupTankHarness
   - ChiefEngineerHead
-  - EngineeringEyewear
+  - EngineeringEyewear # CD
   - ChiefEngineerJumpsuit
   - StationEngineerBackpack
   - ChiefEngineerNeck
@@ -281,7 +281,7 @@
   groups:
   - GroupTankHarness
   - StationEngineerHead
-  - EngineeringEyewear
+  - EngineeringEyewear # CD
   - StationEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
@@ -295,7 +295,7 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
-  - EngineeringEyewear
+  - EngineeringEyewear # CD
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
