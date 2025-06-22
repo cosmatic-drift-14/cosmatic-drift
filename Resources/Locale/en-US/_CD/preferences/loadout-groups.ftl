@@ -14,6 +14,7 @@ loadout-group-salvage-specialist-jumpsuit = Salvage Specialist jumpsuit
 
 # Engineering
 loadout-group-senior-engineer-jumpsuit = Senior Engineer jumpsuit
+loadout-group-engineering-goggles = Engineering Goggles
 
 # Science
 loadout-group-senior-researcher-jumpsuit = Senior Researcher jumpsuit
