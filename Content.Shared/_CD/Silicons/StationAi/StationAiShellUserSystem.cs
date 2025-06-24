@@ -39,7 +39,7 @@ public sealed class StationAiShellUserSystem : EntitySystem
         if (!TryComp<StationAiHeldComponent>(ent.Owner, out var held)) // Check that the user is an AI
             return;
 
-        if (!_stationAiSystem.TryGetStationAiCore((ent.Owner, held), out var core)) // And check that they have a core
+        if (!_stationAiSystem.TryGetCore(ent.Owner, out var core)) // And check that they have a core
             return;
 
         // Now, select a shell
@@ -59,20 +59,24 @@ public sealed class StationAiShellUserSystem : EntitySystem
         }
 
         // Anything below this would be the "on possess" button being pressed
-        if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind) || mind.Session == null) // Then get the AI's mind
+        if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind)) // Then get the AI's mind
             return;
 
         if (!ent.Comp.SelectedBrain.HasValue || !ent.Comp.SelectedShell.HasValue ||
             !TryComp<StationAiShellBrainComponent>(ent.Comp.SelectedBrain.Value, out var shellBrain)) // Get the brain of the shell
             return;
 
+        if (core.Comp == null)
+            return;
+
         shellBrain.ActiveCore = ent.Owner;
         _mind.TransferTo(mindId, ent.Comp.SelectedShell, mind: mind);
         _actions.AddAction(ent.Comp.SelectedShell.Value, ref ent.Comp.ActionEntity, ent.Comp.ActionPrototype);
 
+
         // Put the eye at the core
-        if(core.Value.Comp.RemoteEntity.HasValue)
-            _xforms.DropNextTo(core.Value.Comp.RemoteEntity.Value, core.Value.Owner);
+        if(core.Comp.RemoteEntity.HasValue)
+            _xforms.DropNextTo(core.Comp.RemoteEntity.Value, core.Owner);
 
         // Set the chassis' name to the AI's
         var metaData = MetaData(ent.Owner);
@@ -81,7 +85,7 @@ public sealed class StationAiShellUserSystem : EntitySystem
 
     private void OnExitShell(Entity<BorgChassisComponent> ent, ref AiExitShellEvent args)
     {
-        if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind) || mind.Session == null) // First get our brain
+        if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind)) // First get our brain
             return;
 
         if (!TryComp<StationAiShellBrainComponent>(ent.Comp.BrainEntity, out var shellBrain))
@@ -91,15 +95,18 @@ public sealed class StationAiShellUserSystem : EntitySystem
         if (!brainUid.HasValue || !TryComp<StationAiHeldComponent>(brainUid, out var held)) // Check that the user is an AI
             return;
 
-        if (!_stationAiSystem.TryGetStationAiCore((brainUid.Value, held), out var core)) // And check that they have a core
+        if (!_stationAiSystem.TryGetCore(brainUid.Value, out var core)) // And check that they have a core
+            return;
+
+        if (core.Comp == null)
             return;
 
         _mind.TransferTo(mindId, brainUid, mind: mind);
-        _stationAiSystem.SetupEye(core.Value);
-        _stationAiSystem.AttachEye(core.Value);
+        _stationAiSystem.SetupEye(core!);
+        _stationAiSystem.AttachEye(core!);
 
-        if(core.Value.Comp.RemoteEntity.HasValue)
-            _xforms.DropNextTo(core.Value.Comp.RemoteEntity.Value, ent.Owner);
+        if(core.Comp.RemoteEntity.HasValue)
+            _xforms.DropNextTo(core.Comp.RemoteEntity.Value, ent.Owner);
     }
 
 }
