@@ -76,6 +76,7 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Relic",
             "dm01-entryway",
+            "Exo",
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini" // CD Map
