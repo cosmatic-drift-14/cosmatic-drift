@@ -22,3 +22,15 @@
     - ForensicPad
     - ForensicPad
     - LogProbeCartridge
+    - BoxTapeRecorder
+
+- type: chameleonOutfit
+  id: PrivateInvestigatorChameleonOutfit
+  job: PrivateInvestigator
+  equipment:
+    head: ClothingHeadHatFedoraBrown
+    eyes: ClothingEyesGlassesSunglasses
+    mask: ClothingMaskBreath
+    outerClothing: ClothingOuterCoatJensen
+    gloves: ClothingHandsGlovesColorBlack
+    shoes: ClothingShoesBootsJack

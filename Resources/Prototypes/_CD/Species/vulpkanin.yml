@@ -8,9 +8,9 @@
   markingLimits: MobVulpkaninMarkingLimits
   dollPrototype: MobVulpkaninDummy
   skinColoration: Hues
-  maleFirstNames: names_vulpkanin_male
-  femaleFirstNames: names_vulpkanin_female
-  lastNames: names_vulpkanin_last
+  maleFirstNames: NamesVulpkaninMale
+  femaleFirstNames: NamesVulpkaninFemale
+  lastNames: NamesVulpkaninLast
 
 - type: speciesBaseSprites
   id: MobVulpkaninSprites
@@ -50,10 +50,10 @@
       points: 1
       required: false
     Legs:
-      points: 1
+      points: 3 # CD
       required: false
     Arms:
-      points: 1
+      points: 3 # CD
       required: false
     Snout:
       points: 1
@@ -63,7 +63,7 @@
       required: true
       defaultMarkings: [ VulpEar ]
     Overlay:
-      points: 2
+      points: 6
       required: false
 
 - type: humanoidBaseSprite

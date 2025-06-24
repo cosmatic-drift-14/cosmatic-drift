@@ -29,3 +29,6 @@
   contrabandInventory:
     ClothingUniformJumpskirtOfLife: 1
     ClothingUniformJumpsuitMaintSurgeon: 1 # CD
+    ToyFigurineMedicalDoctor: 1
+    ToyFigurineParamedic: 1
+    ToyFigurineChiefMedicalOfficer: 1

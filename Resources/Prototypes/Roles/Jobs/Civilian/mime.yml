@@ -13,6 +13,7 @@
   - !type:AddComponentSpecial
     components:
     - type: MimePowers
+      preventWriting: false # CD, allows Mimes to write!!
     - type: FrenchAccent
 
 - type: startingGear
@@ -20,9 +21,8 @@
   equipment:
     gloves: ClothingHandsGlovesColorWhite
     shoes: ClothingShoesColorWhite
-    pocket1: CrayonMime
-    pocket2: Paper
     id: MimePDA
+    pocket1: CrayonMime
     ears: ClothingHeadsetService
   storage:
     back:
@@ -40,3 +40,12 @@
       sprite: Structures/Walls/solid.rsi
       state: full
     event: !type:InvisibleWallActionEvent
+
+- type: chameleonOutfit
+  id: MimeChameleonOutfit
+  job: Mime
+  equipment:
+    head: ClothingHeadHatMimesoft
+    eyes: ClothingEyesGlassesCheapSunglasses
+    neck: ClothingNeckScarfStripedZebra
+    outerClothing: ClothingOuterWinterMime

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Orginal by aleksh (discord) taken from Wizard's Den 14 at https://github.com/space-wizards/space-station-14/commit/445ed9e9d5aabb67d97360c38656ebf1ea79e75c, then editted by cephalo222 (discord) for Cosmatic Drift",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pebble",
+      "directions": 4
+    },
+    {
+      "name": "pebble_dead"
+    }
+  ]
+}

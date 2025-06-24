@@ -16,7 +16,7 @@
   storage:
     back:
     - CDDogtags
-    
+
 - type: loadout
   id: PlushieVox
   storage:
@@ -76,3 +76,15 @@
   storage:
     back:
     - MedCrutchesForearm
+
+- type: loadout
+  id: GoldRing
+  storage:
+    back:
+    - GoldRing
+
+- type: loadout
+  id: SilverRing
+  storage:
+    back:
+    - SilverRing

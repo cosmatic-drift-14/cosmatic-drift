@@ -7,7 +7,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Administration.Commands;
 
-[AdminCommand(AdminFlags.AdminWho)]
+[AnyCommand] // CD change from admin only to unrestricted.
 public sealed class AdminWhoCommand : IConsoleCommand
 {
     public string Command => "adminwho";
@@ -33,19 +33,17 @@ public sealed class AdminWhoCommand : IConsoleCommand
         var first = true;
         foreach (var admin in adminMgr.ActiveAdmins)
         {
-            if (!first)
-                sb.Append('\n');
-            first = false;
-
             var adminData = adminMgr.GetAdminData(admin)!;
             DebugTools.AssertNotNull(adminData);
 
             if (adminData.Stealth && !seeStealth)
                 continue;
 
+            if (!first)
+                sb.Append('\n');
+            first = false;
+
             sb.Append(admin.Name);
-            if (adminData.Title is { } title)
-                sb.Append($": [{title}]");
 
             if (adminData.Stealth)
                 sb.Append(" (S)");
@@ -54,6 +52,9 @@ public sealed class AdminWhoCommand : IConsoleCommand
             {
                 if (afk.IsAfk(admin))
                     sb.Append(" [AFK]");
+
+                if (adminData.Title is { } title) // CD change to move titles to admin only.
+                    sb.Append($": [{title}]");
             }
         }
 

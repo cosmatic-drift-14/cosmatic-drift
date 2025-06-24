@@ -68,10 +68,21 @@
   loadouts:
   - SeniorEngineerJumpsuit
   - SeniorEngineerJumpskirt
+  - SeniorEngineerJumpsuitModern
+  - SeniorEngineerJumpskirtModern
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerCasualsuit
   - StationEngineerHazardsuit
+  - StationEngineerPants
+
+- type: loadoutGroup
+  id: EngineeringEyewear
+  name: loadout-group-engineering-goggles
+  minLimit: 1
+  loadouts:
+  - ClothingEyesGlassesMeson
+  - ClothingEyesGlassesMesonPrescription
 
 # Science
 - type: loadoutGroup
@@ -97,15 +108,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
 
-- type: loadoutGroup
-  id: ScientistTitles
-  name: loadout-group-scientist-id
-  loadouts:
-  - ScientistPDA
-  - RoboticistPDA
-
 # Security
-
 - type: loadoutGroup
   id: SeniorOfficerHead
   name: loadout-group-security-head
@@ -115,6 +118,7 @@
   - SecurityVeteranBeret
   - SecurityBeret
   - SecurityHat
+  - TrooperHat
 
 - type: loadoutGroup
   id: SeniorOfficerJumpsuit
@@ -128,6 +132,7 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
+  - TrooperUniform
 
 - type: loadoutGroup
   id: SecurityGlassesOrHud

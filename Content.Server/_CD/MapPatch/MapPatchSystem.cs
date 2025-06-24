@@ -12,7 +12,7 @@ using Content.Server.GameTicking;
 using Content.Shared.Administration;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
-using Robust.Server.Maps;
+using Robust.Shared.EntitySerialization;
 using Robust.Shared.Map;
 using Robust.Shared.Utility;
 
@@ -42,7 +42,9 @@ public sealed partial class MapPatchSystem : EntitySystem
     // HACK: Exists because otherwise we can't possibly know what the map offset is after loading it.
     // The world would be better if i had more foresight years ago when writing the current map loading code.
     // Only valid between PreGameMapLoad (exclusive) and PostGameMapLoad (inclusive).
-    private MapLoadOptions _iWroteABadTwoYearsAgo = default!;
+    // Map got refactored, this is my jank, weird way of redoing this.. hopefully.
+    private Angle _iWroteABadTwoYearsAgo = default!;
+    private Vector2 _mapOffset = Vector2.Zero;
 
     /// <summary>
     ///     The current patch set, containing patches added by the user for quick printout.
@@ -82,7 +84,8 @@ public sealed partial class MapPatchSystem : EntitySystem
 
     private void OnPreMapLoad(PreGameMapLoad ev)
     {
-        _iWroteABadTwoYearsAgo = ev.Options;
+        _iWroteABadTwoYearsAgo = ev.Rotation;
+        _mapOffset = ev.Offset;
     }
 
     private void OnPostMapLoad(PostGameMapLoad ev)
@@ -130,7 +133,7 @@ public sealed partial class MapPatchSystem : EntitySystem
 
     private void ApplySpawnPatch(MapPatchEvArgs mapLoadEv, CDSpawnEntityMapPatch patch)
     {
-        var worldCoords = new MapCoordinates(Vector2.Transform(patch.WorldPosition, mapLoadEv.MapLoadOptions.TransformMatrix), mapLoadEv.Map);
+        var worldCoords = new MapCoordinates(Vector2.Transform(patch.WorldPosition, Matrix3Helpers.CreateTransform(_mapOffset, mapLoadEv.rot)), mapLoadEv.Map);
 
         // Spawn isn't quite nice enough here, so to make sure we attach properly to any grids, we find it ourselves.
         if (!_mapMan.TryFindGridAt(worldCoords, out var grid, out var gridComp))
@@ -145,24 +148,24 @@ public sealed partial class MapPatchSystem : EntitySystem
         var coords = new EntityCoordinates(grid, gridLocal);
         Log.Debug($"Spawning {patch.Id} at {coords}/{worldCoords}");
         var ent = SpawnAtPosition(patch.Id, coords);
-        _xform.SetWorldRotation(ent, patch.WorldRotation + _iWroteABadTwoYearsAgo.Rotation);
+        _xform.SetWorldRotation(ent, patch.WorldRotation + _iWroteABadTwoYearsAgo);
     }
 }
 
 public struct MapPatchEvArgs
 {
     public MapId Map;
-    public MapLoadOptions MapLoadOptions;
+    public Angle rot;
 
-    public MapPatchEvArgs(PostGameMapLoad fromEv, MapLoadOptions mapLoadOptions)
+    public MapPatchEvArgs(PostGameMapLoad fromEv, Angle rotation)
     {
         Map = fromEv.Map;
-        MapLoadOptions = mapLoadOptions; //ough.
+        rot = rotation;
     }
 
     public MapPatchEvArgs(MapId map)
     {
         Map = map;
-        MapLoadOptions = new();
+        rot = 0;
     }
 }

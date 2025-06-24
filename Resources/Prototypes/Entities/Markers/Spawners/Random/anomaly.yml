@@ -22,14 +22,15 @@
     - AnomalyFlora
     - AnomalyShadow
     - AnomalyTech
-    # - AnomalySanta #Remove in 2025 CD: Removed now
-    rareChance: 0.05 # These should be suitably rare and anomalies spawn all the time
+    #- AnomalySanta 
+    rareChance: 0.05 # CD Change: These should be suitably rare
     rarePrototypes:
     - RandomAnomalyInjectorSpawner
     offset: 0.15 # not to put it higher. The anomaly sychnronizer looks for anomalies within this radius, and if the radius is higher, the anomaly can be attracted from a neighboring tile.
 
 - type: entity
   id: RandomRockAnomalySpawner
+  name: random rock anomaly spawner
   parent: MarkerBase
   components:
   - type: Sprite
@@ -40,14 +41,18 @@
   - type: RandomSpawner
     prototypes:
     - AnomalyRockIron
+    - AnomalyRockCoal
     - AnomalyRockSilver
+    - AnomalyRockGold
     - AnomalyRockQuartz
     - AnomalyRockUranium
+    - AnomalyRockBananium
     chance: 1
     offset: 0.15
 
 - type: entity
   id: RandomAnomalyInjectorSpawner
+  name: random anomaly injector spawner
   parent: MarkerBase
   components:
   - type: Sprite
@@ -67,6 +72,5 @@
     - AnomalyTrapGravity
     - AnomalyTrapTech
     - AnomalyTrapRock
-    - AnomalyTrapSanta # Remove in 2025
+    #- AnomalyTrapSanta
     chance: 1
-  

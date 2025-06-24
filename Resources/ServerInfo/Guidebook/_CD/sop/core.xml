@@ -5,6 +5,28 @@
 
   The standard procedures followed on any uniform NT station. The Captain can edit and make additions to their station's general operation procedures (excluding sections tagged with NE: non-editable) whenever they please as long as a copy of the changes is forwarded to each station bound fax machine. Anyone in the station's sector is required to follow this document and their related work SOP.
 
+
+  ## Alert Procedures
+  
+  A list of the generalized procedures of each alert level. If a secondary alert level is called while on a prominent primary alert level, use common sense and assume the primary alert level is still active unless stated otherwise.\n
+  
+  Primary Alert Levels
+  - [color=green]Green[/color]: Default, safe, no pressing matters.
+  - [color=blue]Blue[/color]: There is an unknown threat that is being looked into, security may search staff at their discretion.
+  - [color=#cd7f32]Bronze[/color]: There is a known non-humanoid threat, security may equip longarms at their discretion.
+  - [color=#ffbf00]Amber[/color]: There is a known humanoid threat, security may search staff and equip longarms at their discretion.
+  - [color=red]Red[/color]: There is a major threat to the safety of all staff, security should equip longarms and all non-authorities should seek shelter.
+  - [color=#bf002c]Omega[/color]: There is an extreme threat that has heavily damaged the authorities' operational abilities, non-authorities should seek shelter or equip armaments.
+  - [color=darkred]Delta[/color]: The entire station is at threat of imminent destruction, all crew should evacuate as soon as possible.
+  
+  Secondary Alert Levels
+  - [color=violet]Violet[/color]: There is a medical threat on the station, crew should distance, equip PPE, and listen to medical staff.
+  - [color=yellow]Yellow[/color]: There is an engineering hazard on the station, crew should avoid the threat and listen to engineering staff.
+  
+  Central Command Alert Levels
+  - [color=pink]Gamma[/color]: There are direct Central Command assets on board to handle an emergency, assume red alert procedure unless stated otherwise.
+
+
   ## Visitation and Docking
 
   Ships or persons entering an NT Sector are automatically subject to that sector's active SOP and NT Law. Upon entry ships may ask permission to dock at NT stations or be authorized by Central Command, this also covers coming in close proximity with the station (50m). The Captain is encouraged to allow friendly ships to dock and engage with the crew but has the choice to turn them away.

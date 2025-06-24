@@ -24,7 +24,7 @@ marking-VulpEarWolf = Vulpkanin Wolf
 
 marking-VulpEarFennec-fennec = Fennec ears (base)
 marking-VulpEarFennec-fennec-inner = Fennec ears (inner)
-marking-VulpEarFennec = Vulpkanin Fennec
+marking-VulpEarFennec = Vulpkanin Fennec (No Wag)
 
 marking-VulpEarFox-fox = Fox ears
 marking-VulpEarFox = Vulpkanin Fox
@@ -104,11 +104,11 @@ marking-VulpTailTip = Vulpkanin (tip)
 
 marking-VulpTailAlt-vulp_alt = Vulpkanin tail (base)
 marking-VulpTailAlt-vulp_alt-fade = Vulpkanin tail (fade)
-marking-VulpTailAlt = Vulpkanin (alt)
+marking-VulpTailAlt = Vulpkanin (alt, No Wag)
 
 marking-VulpTailAltTip-vulp_alt = Vulpkanin tail (base)
 marking-VulpTailAltTip-vulp_alt-tip = Vulpkanin tail (tip)
-marking-VulpTailAltTip = Vulpkanin (alt, tip)
+marking-VulpTailAltTip = Vulpkanin (alt, tip, No Wag)
 
 marking-VulpTailLong-long = Long tail (base)
 marking-VulpTailLong-long-tip = Long tail (tip)
@@ -130,13 +130,13 @@ marking-VulpTailCoyote = Vulpkanin Coyote
 
 marking-VulpTailHusky-husky-inner = Husky tail (inner)
 marking-VulpTailHusky-husky-outer = Husky tail (outer)
-marking-VulpTailHusky = Vulpkanin Husky
+marking-VulpTailHusky = Vulpkanin Husky (No Wag)
 
 marking-VulpTailHuskyAlt-husky = Husky tail
-marking-VulpTailHuskyAlt = Vulpkanin Husky (alt)
+marking-VulpTailHuskyAlt = Vulpkanin Husky (alt, No Wag)
 
 marking-VulpTailFox2-fox2 = Fox tail
-marking-VulpTailFox2 = Vulpkanin Fox 2
+marking-VulpTailFox2 = Vulpkanin Fox 2 (No Wag)
 
 marking-VulpTailFox3-fox3 = Fox tail (base)
 marking-VulpTailFox3-fox3-tip = Fox tail (tip)
@@ -146,12 +146,12 @@ marking-VulpTailFennec-fennec = Fennec tail
 marking-VulpTailFennec = Vulpkanin Fennec
 
 marking-VulpTailOtie-otie = Otie tail
-marking-VulpTailOtie = Vulpkanin Otie
+marking-VulpTailOtie = Vulpkanin Otie (No Wag)
 
 marking-VulpTailFluffy-fluffy = Fluffy tail
-marking-VulpTailFluffy = Vulpkanin Fluffy
+marking-VulpTailFluffy = Vulpkanin Fluffy (No Wag)
 
-marking-VulpTailDalmation = Dalmation
+marking-VulpTailDalmation = Dalmation (No Wag)
 
 marking-VulpTailCorgi = Corgi
 

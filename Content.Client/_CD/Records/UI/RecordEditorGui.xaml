@@ -61,6 +61,7 @@
                      <cdrecords:RecordEditorEntrySelector Name="EmploymentEntrySelector"/>
                      <cdrecords:RecordEditorEntrySelector Name="MedicalEntrySelector"/>
                      <cdrecords:RecordEditorEntrySelector Name="SecurityEntrySelector"/>
+                     <cdrecords:RecordEditorEntrySelector Name="AdminEntrySelector"/>
                  </TabContainer>
              </BoxContainer>
          </ScrollContainer>

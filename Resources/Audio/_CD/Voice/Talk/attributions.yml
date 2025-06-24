@@ -7,3 +7,8 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "pug.ogg (Renamed to vulp.ogg), pug_ask.ogg (Renamed to vulp_ask.ogg, pug_exclaim.ogg (Renamed to vulp_exclaim.ogg) all taken from: https://github.com/goonstation/goonstation/commit/da7c8965c4552ca53af367e6c83a83da2affe790"
   source: "https://github.com/DeltaV-Station/Delta-v/commit/65d35d0b3c20aa4e8a0e749a4de8392e53051e86"
+
+- files: ["moth.ogg, moth_ask.ogg, moth_exclaim.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "sfx_humanoid_saturn_hawkchat1.ogg (Renamed to moth.ogg), sfx_humanoid_saturn_hawkchat3b (Renamed to moth_ask.ogg), sfx_humanoid_saturn_hawkchat3 (Renamed to moth_exclaim.ogg) all taken from https://github.com/CyanSkyKnight/Cyans-Free-Stuff/tree/main/Bug%20Sounds "
+  source: "https://github.com/CyanSkyKnight/Cyans-Free-Stuff/tree/main/Bug%20Sounds"  

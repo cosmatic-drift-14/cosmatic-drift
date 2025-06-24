@@ -24,6 +24,7 @@ using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Enums;
+using Robust.Shared.Player;
 
 namespace Content.Server._CD.CryoSleep;
 
@@ -41,6 +42,7 @@ public sealed class CryoSleepSystem : EntitySystem
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly LostAndFoundSystem _lostAndFound = default!;
     [Dependency] private readonly MindSystem _mind = default!;
+    [Dependency] private readonly ISharedPlayerManager _player = default!;
     [Dependency] private readonly SharedJobSystem _jobs = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly StationJobsSystem _stationJobs = default!;
@@ -89,10 +91,11 @@ public sealed class CryoSleepSystem : EntitySystem
         if (IsOccupied(ent) && !force)
             return;
 
-        if (_mind.TryGetMind(toInsert.Value, out var mind, out var mindComp))
+        var run = _mind.TryGetMind(toInsert.Value, out var mind, out var mindComp);
+        _player.TryGetSessionById(mindComp?.UserId, out var session);
+        if(run)
         {
-            var session = mindComp.Session;
-            if (session != null && session.Status == SessionStatus.Disconnected)
+            if (session?.Status == SessionStatus.Disconnected)
             {
                 InsertBody(ent, toInsert.Value);
                 return;
@@ -101,9 +104,9 @@ public sealed class CryoSleepSystem : EntitySystem
 
         var success = _container.Insert(toInsert.Value, ent.Comp.BodyContainer);
 
-        if (success && mindComp?.Session != null)
+        if (success && _player.TryGetSessionById(mindComp?.UserId, out var updSession))
         {
-            _eui.OpenEui(new CryoSleepEui(mind, this), mindComp.Session);
+            _eui.OpenEui(new CryoSleepEui(mind, this), updSession);
         }
     }
 
@@ -121,9 +124,12 @@ public sealed class CryoSleepSystem : EntitySystem
         if (body == null)
             return;
 
+        if (!_player.TryGetSessionById(mind?.UserId, out var session))
+            return;
+
         _adminLog.Add(LogType.Action,
             LogImpact.Low,
-            $"Player {mind.Session} playing {ToPrettyString(body.Value)} entered cryosleep.");
+            $"Player {session} playing {ToPrettyString(body.Value)} entered cryosleep.");
 
         // Record items
         var foundItems = new List<LostItemData>();

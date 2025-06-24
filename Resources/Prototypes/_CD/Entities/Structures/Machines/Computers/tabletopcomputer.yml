@@ -355,27 +355,6 @@
       sprite: Structures/Machines/computers.rsi
       state: generic_keys
 
-# Cargo Shuttle Computer
-- type: entity
-  parent: [ BaseStructureComputerTabletop, ComputerCargoShuttle ]
-  id: ComputerTabletopCargoShuttle
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "computerLayerBody" ]
-      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
-      state: computer_tabletop
-    - map: [ "computerLayerKeyboard" ]
-      sprite: _CD/Structures/Machines/Computers/tabletopcomputer.rsi
-      state: generic_keyboard_tabletop
-    - map: [ "computerLayerScreen" ]
-      sprite: Structures/Machines/computers.rsi
-      state: supply
-    - map: [ "computerLayerKeys" ]
-      sprite: Structures/Machines/computers.rsi
-      state: tech_key
-
 # Cargo Request Computer
 - type: entity
   parent: [ BaseStructureComputerTabletop, ComputerCargoOrders ]

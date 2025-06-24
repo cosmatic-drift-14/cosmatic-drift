@@ -22,8 +22,16 @@ your character, major surgeries, prescriptions, and any psychological evaluation
 Security Entries should include any major arrests/incidents your character has
 had in their past or while working with NanoTrasen. Do not log minor incidents.
 
+## Admin Entries
+
+Admin Entries should include any major information that you want to let game admins know about
+but otherwise wouldn't fit in other entry categories due to classification,
+privacy concerns, lack of relevance, or a multitude of other reasons. These entries will
+not be visible to anyone other than you and the admin team.
+
 ## Accessing Records
-You can access the records of your crewmates in game from their respective consoles.
+You can access the records of your crewmates in game from their respective consoles apart from
+admin entries.
 
 <Box>
 <GuideEntityEmbed Entity="ComputerMedicalRecords" Caption="Medical"/>

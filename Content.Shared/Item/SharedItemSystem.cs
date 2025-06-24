@@ -141,7 +141,7 @@ public abstract class SharedItemSystem : EntitySystem
     {
         // show at end of message generally
         args.PushMarkup(Loc.GetString("item-component-on-examine-size",
-            ("size", component.Size)), priority: -1);
+            ("size", component.Size)), priority: -2);
     }
 
     /// <summary>

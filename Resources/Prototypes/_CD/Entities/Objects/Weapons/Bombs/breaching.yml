@@ -1,0 +1,66 @@
+﻿- type: entity
+  parent: BasePlasticExplosive
+  id: BreachingCharge
+  name: breaching charge
+  description: A hefty explosive used to quickly dispatch walls or airlocks.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Weapons/Bombs/breaching.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: Item
+    size: 30
+  - type: MultiHandedItem
+  - type: Sticky
+    stickDelay: 8
+    unstickDelay: 3
+    stickPopupStart: comp-sticky-start-stick-bomb
+    stickPopupSuccess: comp-sticky-success-stick-bomb
+    unstickPopupStart: comp-sticky-start-unstick-bomb
+    unstickPopupSuccess: comp-sticky-success-unstick-bomb
+    blacklist: # can't stick it to other items
+      components:
+      - Item
+      - Body
+  - type: OnUseTimerTrigger
+    delay: 3
+    initialBeepDelay: 2.2
+    beepInterval: 0.3
+    beepSound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+      params:
+        volume: 4
+        pitch: 1.8
+    startOnStick: true
+    canToggleStartOnStick: true
+  - type: TimerStartOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Timer
+  - type: Explosive #Powerful explosion in an extremely small radius. Doesn't break underplating.
+    explosionType: DemolitionCharge
+    totalIntensity: 20
+    intensitySlope: 2.5
+    maxIntensity: 30
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger
+
+- type: entity
+  parent: BreachingCharge
+  id: FlashingBreachingCharge
+  name: flash breaching charge
+  description: A hefty explosive used to quickly dispatch walls or airlocks while also delivering a blinding flash.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Weapons/Bombs/flashbreaching.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: FlashOnTrigger
+    range: 7
+  - type: SoundOnTrigger
+    sound:
+      path: "/Audio/Effects/flash_bang.ogg"

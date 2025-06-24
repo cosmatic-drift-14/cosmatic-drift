@@ -5,3 +5,14 @@
   worldRotation: 1.5707963267948966 rad
   worldPosition: -11.228987,-4.914821
   id: ComputerStationRecords
+- !type:CDSpawnEntityMapPatch
+  worldRotation: 1.5707963267948966 rad
+  worldPosition: -16.228987,-3.9148211
+  id: ComputerJobSlots
+- !type:CDSpawnEntityMapPatch
+  worldRotation: 1.5707963267948966 rad
+  worldPosition: -62.22899,28.085178
+  id: ComputerShuttleSalvage
+- !type:CDSpawnEntityMapPatch
+  worldPosition: 5.7710133,-53.91482
+  id: SpawnMobPebble

@@ -7,7 +7,7 @@
     - to: empty
       steps:
       - tag: EmptyPacket
-        name: an empty packet
+        name: cd-construction-graph-an-empty-packet
         doAfter: 1
   - node: empty
     entity: EmptyPacket

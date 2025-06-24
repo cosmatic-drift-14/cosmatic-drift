@@ -1,0 +1,11 @@
+# Atmos Overalls
+- type: entity
+  parent: ClothingOuterWinterCoat # Its not a winter coat but okay
+  id: ClothingOuterOverallsAtmos 
+  name: atmospherics overalls
+  description: A set of heavy overalls worn by atmospheric technicians.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Misc/atmos_overalls.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Misc/atmos_overalls.rsi

@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text.Json.Serialization;
 using Robust.Shared.Serialization;
@@ -54,6 +55,8 @@ public sealed partial class PlayerProvidedCharacterRecords
     public List<RecordEntry> SecurityEntries { get; private set; }
     [DataField, JsonIgnore]
     public List<RecordEntry> EmploymentEntries { get; private set; }
+    [DataField, JsonIgnore]
+    public List<RecordEntry> AdminEntries { get; private set; }
 
     [DataDefinition]
     [Serializable, NetSerializable]
@@ -100,7 +103,10 @@ public sealed partial class PlayerProvidedCharacterRecords
         string identifyingFeatures,
         string allergies, string drugAllergies,
         string postmortemInstructions,
-        List<RecordEntry> medicalEntries, List<RecordEntry> securityEntries, List<RecordEntry> employmentEntries)
+        List<RecordEntry> medicalEntries,
+        List<RecordEntry> securityEntries,
+        List<RecordEntry> employmentEntries,
+        List<RecordEntry> adminEntries)
     {
         HasWorkAuthorization = hasWorkAuthorization;
         Height = height;
@@ -113,6 +119,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         MedicalEntries = medicalEntries;
         SecurityEntries = securityEntries;
         EmploymentEntries = employmentEntries;
+        AdminEntries = adminEntries;
     }
 
     public PlayerProvidedCharacterRecords(PlayerProvidedCharacterRecords other)
@@ -128,6 +135,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         MedicalEntries = other.MedicalEntries.Select(x => new RecordEntry(x)).ToList();
         SecurityEntries = other.SecurityEntries.Select(x => new RecordEntry(x)).ToList();
         EmploymentEntries = other.EmploymentEntries.Select(x => new RecordEntry(x)).ToList();
+        AdminEntries = other.AdminEntries.Select(x => new RecordEntry(x)).ToList();
     }
 
     public static PlayerProvidedCharacterRecords DefaultRecords()
@@ -142,7 +150,8 @@ public sealed partial class PlayerProvidedCharacterRecords
             postmortemInstructions: "Return home",
             medicalEntries: new List<RecordEntry>(),
             securityEntries: new List<RecordEntry>(),
-            employmentEntries: new List<RecordEntry>()
+            employmentEntries: new List<RecordEntry>(),
+            adminEntries: new List<RecordEntry>()
         );
     }
 
@@ -165,6 +174,8 @@ public sealed partial class PlayerProvidedCharacterRecords
             return false;
         if (EmploymentEntries.Count != other.EmploymentEntries.Count)
             return false;
+        if (AdminEntries.Count != other.AdminEntries.Count)
+            return false;
         if (MedicalEntries.Where((t, i) => !t.MemberwiseEquals(other.MedicalEntries[i])).Any())
         {
             return false;
@@ -178,11 +189,20 @@ public sealed partial class PlayerProvidedCharacterRecords
             return false;
         }
 
+        if (AdminEntries.Where((t, i) => !t.MemberwiseEquals(other.AdminEntries[i])).Any())
+        {
+            return false;
+        }
+
         return true;
     }
 
-    private static string ClampString(string str, int maxLen)
+    [Pure]
+    private static string ClampString(string? str, int maxLen)
     {
+        // When importing old characters these values may be null
+        if (str == null)
+            return "";
         if (str.Length > maxLen)
         {
             return str[..maxLen];
@@ -212,9 +232,19 @@ public sealed partial class PlayerProvidedCharacterRecords
         DrugAllergies = ClampString(DrugAllergies, TextMedLen);
         PostmortemInstructions = ClampString(PostmortemInstructions, TextMedLen);
 
+        // When importing old CD characters these may be null
+        // ReSharper disable block NullCoalescingConditionIsAlwaysNotNullAccordingToAPIContract
+        {
+            EmploymentEntries ??= [];
+            MedicalEntries ??= [];
+            SecurityEntries ??= [];
+            AdminEntries ??= [];
+        }
+
         EnsureValidEntries(EmploymentEntries);
         EnsureValidEntries(MedicalEntries);
         EnsureValidEntries(SecurityEntries);
+        EnsureValidEntries(AdminEntries);
     }
     public PlayerProvidedCharacterRecords WithHeight(int height)
     {
@@ -260,9 +290,14 @@ public sealed partial class PlayerProvidedCharacterRecords
     {
         return new(this) { SecurityEntries = entries};
     }
+
+    public PlayerProvidedCharacterRecords WithAdminEntries(List<RecordEntry> entries)
+    {
+        return new (this) { AdminEntries = entries };
+    }
 }
 
 public enum CharacterRecordType : byte
 {
-    Employment, Medical, Security
+    Employment, Medical, Security, Admin,
 }

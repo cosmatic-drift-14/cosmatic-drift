@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: NamesRodentiaMale
+  values:
+    prefix: names-rodentia-male-
+    count: 167
+
+- type: localizedDataset
+  id: NamesRodentiaFemale
+  values:
+    prefix: names-rodentia-female-
+    count: 159
+
+- type: localizedDataset
+  id: NamesRodentiaLast
+  values:
+    prefix: names-rodentia-last-
+    count: 87

@@ -155,8 +155,8 @@ figurines-nukie-commander-1 = GET DAT FUKKEN DISK!
 figurines-footsoldier-1 = I'm an evil boy. Less boy every day, more evil every day.
 figurines-footsoldier-2 = Who will you choose? Them or us? Us or them?
 
-figurines-wizard-1 = Ei Nath!
-figurines-wizard-2 = Wehgardium Leviosa!
+figurines-wizard-1 = Ei Nath!!
+figurines-wizard-2 = Real wizards support trans rights.
 figurines-wizard-3 = Skidaddle skadoodle!
 figurines-wizard-4 = FIREBALL!
 figurines-wizard-5 = IT'S WIZARD TIME!

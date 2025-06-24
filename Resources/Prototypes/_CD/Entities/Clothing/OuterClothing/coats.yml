@@ -184,6 +184,24 @@
   id: ClothingOuterCoatBlueHiVisOpened
   name: EMT jacket
 
+# Engineering jacket
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
+  id: ClothingOuterCoatEngi
+  name: engineering jacket
+  description: A comfortable yellow jacket for less-extreme chills.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/engi_jacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/engi_jacket.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatEngi]
+  id: ClothingOuterCoatEngiOpened
+  name: engineering jacket
+
 # Forensic jacket
 
 - type: entity
@@ -240,6 +258,39 @@
     sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitRed
+  name: red suit jacket
+  description: A fancy red suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/red.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/red.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitPurple
+  name: purple suit jacket
+  description: A fancy purple suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/purple.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/purple.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitBurgundy
+  name: burgundy suit jacket
+  description: A fancy burgundy suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/burgundy.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/burgundy.rsi
 
 # Labcoats
 

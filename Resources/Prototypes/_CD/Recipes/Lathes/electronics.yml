@@ -1,7 +1,8 @@
 - type: latheRecipe
   id: StationRecordsComputerCircuitboard
   result: StationRecordsComputerCircuitboard
-  category: Circuitry
+  categories: 
+  - Circuitry
   completetime: 4
   materials:
      Steel: 100
@@ -10,7 +11,8 @@
 - type: latheRecipe
   id: MedicalRecordsComputerCircuitboard
   result: MedicalRecordsComputerCircuitboard
-  category: Circuitry
+  categories: 
+  - Circuitry
   completetime: 4
   materials:
      Steel: 100
@@ -19,7 +21,8 @@
 - type: latheRecipe
   id: CriminalRecordsComputerCircuitboard
   result: CriminalRecordsComputerCircuitboard
-  category: Circuitry
+  categories: 
+  - Circuitry
   completetime: 4
   materials:
      Steel: 100
