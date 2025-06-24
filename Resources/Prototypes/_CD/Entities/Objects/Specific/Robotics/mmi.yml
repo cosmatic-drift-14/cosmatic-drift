@@ -5,10 +5,9 @@
   description: An artificial brain capable of spontaneous neural activity.
   components:
     - type: Sprite
-      sprite: Objects/Specific/Robotics/mmi.rsi
+      sprite: _CD/Objects/Devices/boris.rsi
       layers:
-      - state: posibrain
-        map: ["base"]
+      - state: boris
     - type: Input
       context: human
     - type: BlockMovement
@@ -47,7 +46,7 @@
       whitelist:
         components:
         - SecretStash
-        
+
 # Borgs
 - type: entity
   id: PlayerBorgBoris
