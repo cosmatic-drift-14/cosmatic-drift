@@ -85,11 +85,12 @@
   - type: Sprite
     sprite: Clothing/Back/Specific/petbag.rsi
   - type: Storage
-    grid:
-    - 1,0,2,0
-    - 0,1,2,3
-    - 6,0,7,0
-    - 6,1,8,3
+    capacity: 100
+    # grid:
+    # - 1,0,2,0
+    # - 0,1,2,3
+    # - 6,0,7,0
+    # - 6,1,8,3
   - type: Tag
     tags:
     - WhitelistChameleon

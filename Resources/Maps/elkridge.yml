@@ -10843,7 +10843,7 @@ entities:
     components:
     - type: Transform
       parent: 2102
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 2102
   - uid: 15056
@@ -10852,7 +10852,7 @@ entities:
     components:
     - type: Transform
       parent: 6149
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 6149
   - uid: 15092
@@ -10861,7 +10861,7 @@ entities:
     components:
     - type: Transform
       parent: 6152
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 6152
   - uid: 15172
@@ -10870,7 +10870,7 @@ entities:
     components:
     - type: Transform
       parent: 15171
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 15171
   - uid: 15233
@@ -10879,7 +10879,7 @@ entities:
     components:
     - type: Transform
       parent: 6187
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 6187
   - uid: 18034
@@ -10888,7 +10888,7 @@ entities:
     components:
     - type: Transform
       parent: 16950
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 16950
 - proto: ActionToggleLight
@@ -10899,7 +10899,7 @@ entities:
     components:
     - type: Transform
       parent: 18262
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 18262
 - proto: AirAlarm

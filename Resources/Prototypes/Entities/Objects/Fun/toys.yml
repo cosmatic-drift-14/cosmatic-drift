@@ -67,7 +67,7 @@
     slots:
     - HEAD
   - type: Item
-    size: Tiny
+    size: 1
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Items/Toys/quack.ogg
@@ -199,7 +199,7 @@
     sprite: Objects/Fun/toy_ian.rsi
     state: icon
   - type: Item
-    size: Tiny
+    size: 1
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Items/Toys/ian.ogg
@@ -576,7 +576,7 @@
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
   - type: Item
-    size: Small
+    size: 5
     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
   - type: UseDelay
     delay: 1.0
@@ -708,7 +708,7 @@
   - type: StaminaDamageOnHit
     damage: 8
   - type: Item
-    size: Small
+    size: 5
     sprite: Objects/Fun/rubber_hammer.rsi
   - type: Appearance
   - type: DisarmMalus

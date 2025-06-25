@@ -65,7 +65,7 @@
     wideAnimationRotation: -135
     attackRate: 10
   - type: Item
-    size: Ginormous
+    size: 9999
     sprite: Objects/Weapons/Melee/Throngler-in-hand.rsi
   - type: FoodSequenceElement
     entries:
@@ -126,7 +126,7 @@
     state: icon
     noRot: true
   - type: Item
-    size: Normal
+    size: 5
   - type: Construction
     graph: PlushieGhostRevenant
     node: plushie
@@ -144,7 +144,7 @@
     sprite: Objects/Fun/Plushies/bee.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 5
     sprite: Objects/Fun/Plushies/bee.rsi
   - type: Extractable
     grindableSolutionName: bee
@@ -685,7 +685,7 @@
     animation: WeaponArcBite
   - type: Item
     heldPrefix: blue
-    storedRotation: -90
+    # storedRotation: -90
   - type: FoodSequenceElement
     entries:
       CottonBurger: BlueSharkPlushie
@@ -745,7 +745,7 @@
     sprite: Objects/Fun/Plushies/ratvar.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 5
     sprite: Objects/Fun/Plushies/ratvar.rsi
   - type: FoodSequenceElement
     entries:
@@ -761,7 +761,7 @@
     sprite: Objects/Fun/Plushies/narsie.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 5
     sprite: Objects/Fun/Plushies/narsie.rsi
   - type: FoodSequenceElement
     entries:
@@ -779,7 +779,7 @@
   - type: Item
     sprite: Objects/Fun/Plushies/carp.rsi
     heldPrefix: carpplush
-    storedRotation: -90
+    # storedRotation: -90
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Effects/bite.ogg
@@ -1034,7 +1034,7 @@
     sprite: Objects/Fun/Plushies/xeno.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 5
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Weapons/Xeno/alien_spitacid.ogg

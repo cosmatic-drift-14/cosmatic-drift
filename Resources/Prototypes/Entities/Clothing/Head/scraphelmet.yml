@@ -11,7 +11,7 @@
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
     state: construction-1
   - type: Item
-    size: Normal
+    size: 20
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
   - type: Construction
     graph: scraphelmet
@@ -27,7 +27,7 @@
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
     state: construction-2
   - type: Item
-    size: Normal
+    size: 20
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
   - type: Construction
     graph: scraphelmet
@@ -43,7 +43,7 @@
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
     state: construction-3
   - type: Item
-    size: Normal
+    size: 20
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
   - type: Construction
     graph: scraphelmet
@@ -59,7 +59,7 @@
   - type: Sprite
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
   - type: Item
-    size: Normal
+    size: 20
   - type: Clothing
     sprite: Clothing/Head/Helmets/scrap_helmet.rsi
     equipSound: /Audio/Effects/metal_scrape2.ogg

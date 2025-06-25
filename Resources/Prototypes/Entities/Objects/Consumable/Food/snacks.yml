@@ -532,7 +532,7 @@
   - type: Item
     sprite: Objects/Consumable/Food/candy.rsi
     heldPrefix: swirl_lollipop
-    size: Small
+    size: 3
   - type: Tag
     tags:
     - FoodSnack

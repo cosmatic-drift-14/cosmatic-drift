@@ -11,7 +11,7 @@
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
     state: construction-1
   - type: Item
-    size: Ginormous
+    size: 9999
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
   - type: Construction
     graph: scraparmor
@@ -27,7 +27,7 @@
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
     state: construction-2
   - type: Item
-    size: Ginormous
+    size: 9999
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
   - type: Construction
     graph: scraparmor
@@ -43,7 +43,7 @@
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
     state: construction-3
   - type: Item
-    size: Ginormous
+    size: 9999
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
   - type: Construction
     graph: scraparmor
@@ -59,7 +59,7 @@
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
   - type: Item
-    size: Ginormous
+    size: 9999
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/scrap_armor.rsi
     equipSound: /Audio/Effects/metal_scrape2.ogg
