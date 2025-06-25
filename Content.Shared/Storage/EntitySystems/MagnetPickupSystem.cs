@@ -1,4 +1,3 @@
-using Content.Server.Storage.Components;
 using Content.Shared.Hands;
 using Content.Shared.Inventory;
 using Content.Shared.Storage.Components;

@@ -1020,7 +1020,7 @@ public abstract class SharedActionsSystem : EntitySystem
     /// Marks the action as temporary.
     /// Temporary actions get deleted upon being removed from an entity.
     /// </summary>
-    public void SetTemporary(Entity<ActionComponent?> ent, bool temporary)
+    public void SetTemporary(Entity<InstantActionComponent?> ent, bool temporary)
     {
         if (!Resolve(ent.Owner, ref ent.Comp, false))
             return;

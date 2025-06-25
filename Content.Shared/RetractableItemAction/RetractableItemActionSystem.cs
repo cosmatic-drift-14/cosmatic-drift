@@ -40,10 +40,11 @@ public sealed class RetractableItemActionSystem : EntitySystem
         if (_hands.GetActiveHand(args.Performer) is not { } userHand)
             return;
 
-        if (_actions.GetAction(ent.Owner) is not { } action)
+
+        if (!TryComp<InstantActionComponent>(ent.Owner, out var action))
             return;
 
-        if (action.Comp.AttachedEntity == null)
+        if (action.AttachedEntity == null)
             return;
 
         if (ent.Comp.ActionItemUid == null)
@@ -61,12 +62,12 @@ public sealed class RetractableItemActionSystem : EntitySystem
             RemComp<UnremoveableComponent>(ent.Comp.ActionItemUid.Value);
             var container = _containers.GetContainer(ent, RetractableItemActionComponent.ContainerId);
             _containers.Insert(ent.Comp.ActionItemUid.Value, container);
-            _audio.PlayPredicted(ent.Comp.RetractSounds, action.Comp.AttachedEntity.Value, action.Comp.AttachedEntity.Value);
+            _audio.PlayPredicted(ent.Comp.RetractSounds, action.AttachedEntity.Value, action.AttachedEntity.Value);
         }
         else
         {
             _hands.TryForcePickup(args.Performer, ent.Comp.ActionItemUid.Value, userHand, checkActionBlocker: false);
-            _audio.PlayPredicted(ent.Comp.SummonSounds, action.Comp.AttachedEntity.Value, action.Comp.AttachedEntity.Value);
+            _audio.PlayPredicted(ent.Comp.SummonSounds, action.AttachedEntity.Value, action.AttachedEntity.Value);
             EnsureComp<UnremoveableComponent>(ent.Comp.ActionItemUid.Value);
         }
 
@@ -75,10 +76,10 @@ public sealed class RetractableItemActionSystem : EntitySystem
 
     private void OnActionSummonedShutdown(Entity<ActionRetractableItemComponent> ent, ref ComponentShutdown args)
     {
-        if (_actions.GetAction(ent.Comp.SummoningAction) is not { } action)
+        if (!TryComp<InstantActionComponent>(ent.Owner, out var action))
             return;
 
-        if (!TryComp<RetractableItemActionComponent>(action, out var retract) || retract.ActionItemUid != ent.Owner)
+        if (!TryComp<RetractableItemActionComponent>(action.AttachedEntity, out var retract) || retract.ActionItemUid != ent.Owner)
             return;
 
         // If the item is somehow destroyed, re-add it to the action.

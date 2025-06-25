@@ -26,6 +26,7 @@ namespace Content.Client.Actions
         [Dependency] private readonly SharedChargesSystem _sharedCharges = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IResourceManager _resources = default!;
+        [Dependency] private readonly ISerializationManager _serialization = default!;
         [Dependency] private readonly MetaDataSystem _metaData = default!;
 
         public event Action<EntityUid>? OnActionAdded;

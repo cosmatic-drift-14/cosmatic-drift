@@ -1,6 +1,5 @@
 ﻿using Content.Server.Administration;
 using Content.Shared.Actions;
-using Content.Shared.Actions.Components;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 
@@ -39,15 +38,15 @@ public sealed class RemoveActionCommand : LocalizedEntityCommands
             return;
         }
 
-        if (_actions.GetAction(targetActionEntity) is not { } ent)
+        if (!EntityManager.TryGetComponent<InstantActionComponent>(targetActionEntity, out var action))
         {
             shell.WriteError(Loc.GetString("cmd-rmaction-not-an-action"));
             return;
         }
 
-        _actions.SetTemporary(ent.Owner, true);
+        _actions.SetTemporary((targetActionEntity.Value, action), true);
 
-        _actions.RemoveAction(ent.Owner);
+        _actions.RemoveAction(targetActionEntity);
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
@@ -73,7 +72,7 @@ public sealed class RemoveActionCommand : LocalizedEntityCommands
             foreach (var action in actions)
             {
                 var hint = Loc.GetString("cmd-rmaction-action-info", ("action", action));
-                options.Add(new CompletionOption(action.Owner.ToString(), hint));
+                options.Add(new CompletionOption(action.ToString(), hint));
             }
 
             return CompletionResult.FromHintOptions(options, Loc.GetString("cmd-rmaction-action-completion"));
