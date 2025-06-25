@@ -11,7 +11,7 @@ using Robust.Shared.Network;
 
 namespace Content.Shared._CD.Silicons.StationAi;
 
-public sealed class StationAiShellUserSystem : EntitySystem
+public abstract class SharedStationAiShellUserSystem : EntitySystem
 {
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedStationAiSystem _stationAiSystem = default!;
@@ -81,6 +81,9 @@ public sealed class StationAiShellUserSystem : EntitySystem
         // Set the chassis' name to the AI's
         var metaData = MetaData(ent.Owner);
         _metaData.SetEntityName(ent.Comp.SelectedShell.Value, metaData.EntityName);
+
+        // Add AI radio channels to the chassis
+        AddChannels(ent.Comp.SelectedShell.Value, ent!);
     }
 
     private void OnExitShell(Entity<BorgChassisComponent> ent, ref AiExitShellEvent args)
@@ -98,6 +101,9 @@ public sealed class StationAiShellUserSystem : EntitySystem
         if (!_stationAiSystem.TryGetCore(brainUid.Value, out var core)) // And check that they have a core
             return;
 
+        if (!TryComp<StationAiShellUserComponent>(brainUid, out var shellUser))
+            return;
+
         if (core.Comp == null)
             return;
 
@@ -105,8 +111,22 @@ public sealed class StationAiShellUserSystem : EntitySystem
         _stationAiSystem.SetupEye(core!);
         _stationAiSystem.AttachEye(core!);
 
+        var test = (brainUid, shellUser);
+
+        // TODO: make this not obsolete and maybe figure out how to go without nullable suppression
+        RemoveChannels(ent!, held.Owner);
+        _actions.RemoveAction(shellUser.ActionEntity);
+
         if(core.Comp.RemoteEntity.HasValue)
             _xforms.DropNextTo(core.Comp.RemoteEntity.Value, ent.Owner);
+    }
+
+    public virtual void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent?> shellUser)
+    {
+    }
+
+    public virtual void RemoveChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiHeldComponent?> held)
+    {
     }
 
 }

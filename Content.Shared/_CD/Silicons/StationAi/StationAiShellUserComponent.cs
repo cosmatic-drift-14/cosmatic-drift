@@ -1,3 +1,4 @@
+using Content.Shared.Radio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -30,6 +31,16 @@ public sealed partial class StationAiShellUserComponent : Component
     /// </summary>
     [ViewVariables]
     public EntityUid? SelectedBrain;
+
+
+    /// <summary>
+    ///
+    /// </summary>
+    [ViewVariables]
+    public HashSet<ProtoId<RadioChannelPrototype>> ActiveAddedChannels = new();
+
+    [ViewVariables]
+    public HashSet<ProtoId<RadioChannelPrototype>> TransmitterAddedChannels = new();
 }
 
 [Serializable, NetSerializable]
