@@ -32,10 +32,6 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         SubscribeLocalEvent<StationAiShellUserComponent, IonStormLawsEvent>(OnIonStormLaws);
     }
 
-    private void OnIonStormLaws(Entity<StationAiShellUserComponent> ent, ref IonStormLawsEvent args)
-    {
-        ChangeShellLaws(ent, args.Lawset);
-    }
 
     private void OnOpenUi(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)
     {
@@ -121,13 +117,18 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
 
         var test = (brainUid, shellUser);
 
-        // TODO: make this not obsolete and maybe figure out how to go without nullable suppression
-        RemoveChannels(ent!, held.Owner);
+        // TODO: figure out how to go without nullable suppression
+        RemoveChannels(ent!, brainUid.Value);
         _actions.RemoveAction(shellUser.ActionEntity);
         AddComp<IonStormTargetComponent>(ent);
 
         if(core.Comp.RemoteEntity.HasValue)
             _xforms.DropNextTo(core.Comp.RemoteEntity.Value, ent.Owner);
+    }
+
+    private void OnIonStormLaws(Entity<StationAiShellUserComponent> ent, ref IonStormLawsEvent args)
+    {
+        ChangeShellLaws(ent, args.Lawset);
     }
 
     public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)
