@@ -3,6 +3,8 @@ using Content.Shared.Actions;
 using Content.Shared.Mind;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Silicons.Borgs.Components;
+using Content.Shared.Silicons.Laws;
+using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Silicons.StationAi;
 using Microsoft.VisualBasic.CompilerServices;
 using Robust.Shared.Containers;
@@ -20,13 +22,19 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
 
-
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<StationAiShellUserComponent, AiEnterShellEvent>(OnEnterShell);
         SubscribeLocalEvent<BorgChassisComponent, AiExitShellEvent>(OnExitShell);
+
+        SubscribeLocalEvent<StationAiShellUserComponent, IonStormLawsEvent>(OnIonStormLaws);
+    }
+
+    private void OnIonStormLaws(Entity<StationAiShellUserComponent> ent, ref IonStormLawsEvent args)
+    {
+        ChangeShellLaws(ent, args.Lawset);
     }
 
     private void OnOpenUi(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)
@@ -72,7 +80,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         shellBrain.ActiveCore = ent.Owner;
         _mind.TransferTo(mindId, ent.Comp.SelectedShell, mind: mind);
         _actions.AddAction(ent.Comp.SelectedShell.Value, ref ent.Comp.ActionEntity, ent.Comp.ActionPrototype);
-
+        RemCompDeferred<IonStormTargetComponent>(ent.Comp.SelectedShell.Value);
 
         // Put the eye at the core
         if(core.Comp.RemoteEntity.HasValue)
@@ -116,16 +124,21 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         // TODO: make this not obsolete and maybe figure out how to go without nullable suppression
         RemoveChannels(ent!, held.Owner);
         _actions.RemoveAction(shellUser.ActionEntity);
+        AddComp<IonStormTargetComponent>(ent);
 
         if(core.Comp.RemoteEntity.HasValue)
             _xforms.DropNextTo(core.Comp.RemoteEntity.Value, ent.Owner);
     }
 
-    public virtual void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent?> shellUser)
+    public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)
     {
     }
 
-    public virtual void RemoveChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiHeldComponent?> held)
+    protected virtual void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent?> shellUser)
+    {
+    }
+
+    protected virtual void RemoveChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiHeldComponent?> held)
     {
     }
 

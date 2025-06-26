@@ -1,7 +1,10 @@
 using Content.Server.Radio.Components;
+using Content.Server.Silicons.Laws;
 using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.Radio;
 using Content.Shared.Silicons.Borgs.Components;
+using Content.Shared.Silicons.Laws;
+using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Silicons.StationAi;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
 
@@ -9,10 +12,12 @@ namespace Content.Server._CD.Silicons.StationAi;
 
 public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
 {
+    [Dependency] private readonly SiliconLawSystem _laws = default!;
+
     /// <summary>
     /// Adds the AI's existing radio channels to the chassis upon taking control
     /// </summary>
-    public override void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent?> shellUser)
+    protected override void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent?> shellUser)
     {
         if (shellUser.Comp == null)
             return;
@@ -40,11 +45,10 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
         }
     }
 
-
     /// <summary>
     /// Removes all added channels from the chassis upon exiting and returning to the normal AI state
     /// </summary>
-    public override void RemoveChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiHeldComponent?> held)
+    protected override void RemoveChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiHeldComponent?> held)
     {
         if (!TryComp<StationAiShellUserComponent>(held, out var shellUser))
             return;
@@ -66,5 +70,16 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
             intrinsicRadioTransmitter.Channels.Remove(channel);
         }
         shellUser.TransmitterAddedChannels.Clear();
+    }
+
+    public override void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)
+    {
+        if (!TryComp<StationAiShellUserComponent>(entity, out var shellUser))
+            return;
+
+        if (shellUser.SelectedShell == null)
+            return;
+
+        _laws.SetLaws(lawset.Laws, shellUser.SelectedShell.Value);
     }
 }

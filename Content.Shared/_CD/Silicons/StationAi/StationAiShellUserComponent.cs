@@ -1,4 +1,5 @@
 using Content.Shared.Radio;
+using Content.Shared.Silicons.Laws;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -32,13 +33,23 @@ public sealed partial class StationAiShellUserComponent : Component
     [ViewVariables]
     public EntityUid? SelectedBrain;
 
+    /// <summary>
+    /// The current lawset of the AI controlling the shell
+    /// </summary>
+    [ViewVariables]
+    public SiliconLawset? ControllingAiLaws;
 
     /// <summary>
-    ///
+    /// The radio channels added by controlling a shell to the ActiveRadioComponent
+    /// Used to keep track of all the channels not inherent to a shell
     /// </summary>
     [ViewVariables]
     public HashSet<ProtoId<RadioChannelPrototype>> ActiveAddedChannels = new();
 
+    /// <summary>
+    /// The radio channels added by controlling a shell to the IntrinsicRadioTransmitterComponent
+    /// Used to keep track of all the channels not inherent to a shell
+    /// </summary>
     [ViewVariables]
     public HashSet<ProtoId<RadioChannelPrototype>> TransmitterAddedChannels = new();
 }
