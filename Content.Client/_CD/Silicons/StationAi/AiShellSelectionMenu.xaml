@@ -5,7 +5,7 @@
     Title="Select Shell" MinSize="425 272">
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal">
-            <Label Text="{Loc admin-player-actions-reason}" MinWidth="100" />
+            <Label Text="borg (LOC LATER)" MinWidth="100" />
             <Control MinWidth="50" />
             <LineEdit Name="ReasonLine" MinWidth="100" HorizontalExpand="True" />
         </BoxContainer>
