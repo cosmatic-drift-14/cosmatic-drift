@@ -89,7 +89,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         _metaData.SetEntityName(ent.Comp.SelectedShell.Value, metaData.EntityName);
 
         // Add AI radio channels to the chassis
-        AddChannels(ent.Comp.SelectedShell.Value, ent!);
+        AddChannels(ent.Comp.SelectedShell.Value, ent.Owner);
     }
 
     private void OnExitShell(Entity<BorgChassisComponent> ent, ref AiExitShellEvent args)
@@ -110,19 +110,18 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         if (!TryComp<StationAiShellUserComponent>(brainUid, out var shellUser))
             return;
 
-        if (core.Comp == null)
-            return;
-
         _mind.TransferTo(mindId, brainUid, mind: mind);
         _stationAiSystem.SetupEye(core!);
         _stationAiSystem.AttachEye(core!);
 
         var test = (brainUid, shellUser);
 
-        // TODO: figure out how to go without nullable suppression
-        RemoveChannels(ent!, brainUid.Value);
+        RemoveChannels(ent.Owner, brainUid.Value);
         _actions.RemoveAction(shellUser.ActionEntity);
         AddComp<IonStormTargetComponent>(ent);
+
+        if (core.Comp == null)
+            return;
 
         if(core.Comp.RemoteEntity.HasValue)
             _xforms.DropNextTo(core.Comp.RemoteEntity.Value, ent.Owner);
