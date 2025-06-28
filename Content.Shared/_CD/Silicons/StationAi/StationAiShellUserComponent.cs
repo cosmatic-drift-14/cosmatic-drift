@@ -1,4 +1,5 @@
 using Content.Shared.Radio;
+using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.Laws;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -52,6 +53,13 @@ public sealed partial class StationAiShellUserComponent : Component
     /// </summary>
     [ViewVariables]
     public HashSet<ProtoId<RadioChannelPrototype>> TransmitterAddedChannels = new();
+
+    /// <summary>
+    /// All the shells that is available for this AI to control
+    /// Updated whenever a BORIS module is inserted or ejected from a chassis
+    /// </summary>
+    [ViewVariables]
+    public List<Entity<BorgChassisComponent>> ControllableShells = new();
 }
 
 [Serializable, NetSerializable]

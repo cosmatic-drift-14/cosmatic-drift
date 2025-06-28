@@ -72,6 +72,26 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
         shellUser.TransmitterAddedChannels.Clear();
     }
 
+    /// <summary>
+    /// Add a shell to an AI's list of controllable shells
+    ///  </summary>
+    /// <param name="shellUser">The AI that is capable of controlling shells</param>
+    /// <param name="shell">The shell to be made available to the controlling AI</param>
+    public void AddToAvailableShells(StationAiShellUserComponent shellUser, Entity<BorgChassisComponent> shell)
+    {
+        shellUser.ControllableShells.Add(shell);
+    }
+
+    /// <summary>
+    /// Remove a shell from an AI's list of controllable shells
+    /// </summary>
+    /// <param name="shellUser">The AI that is capable of controlling shells</param>
+    /// <param name="shell">The shell to be made available to the controlling AI</param>
+    public void RemoveFromAvailableShells(StationAiShellUserComponent shellUser, Entity<BorgChassisComponent> shell)
+    {
+        shellUser.ControllableShells.Remove(shell);
+    }
+
     public override void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)
     {
         if (!TryComp<StationAiShellUserComponent>(entity, out var shellUser))

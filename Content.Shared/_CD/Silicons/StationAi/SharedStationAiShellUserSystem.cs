@@ -28,7 +28,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<StationAiShellUserComponent, AiEnterShellEvent>(OnOpenUi);
+        SubscribeLocalEvent<StationAiShellUserComponent, AiEnterShellEvent>(OnEnterShell);
         SubscribeLocalEvent<BorgChassisComponent, AiExitShellEvent>(OnExitShell);
 
         SubscribeLocalEvent<StationAiShellUserComponent, IonStormLawsEvent>(OnIonStormLaws);
