@@ -22,22 +22,22 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
-    [Dependency] private readonly SharedUserInterfaceSystem _userInterface = default!;
+    [Dependency] protected readonly SharedUserInterfaceSystem UserInterface = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<StationAiShellUserComponent, AiEnterShellEvent>(OnEnterShell);
+        SubscribeLocalEvent<StationAiShellUserComponent, AiEnterShellEvent>(OnOpenUi);
         SubscribeLocalEvent<BorgChassisComponent, AiExitShellEvent>(OnExitShell);
 
         SubscribeLocalEvent<StationAiShellUserComponent, IonStormLawsEvent>(OnIonStormLaws);
     }
 
-
     private void OnOpenUi(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)
     {
-        _userInterface.TryOpenUi(args.Performer, ShellUiKey.Key, ent);
+        UserInterface.TryToggleUi(args.Performer, ShellUiKey.Key, ent);
+
     }
 
     private void OnEnterShell(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)

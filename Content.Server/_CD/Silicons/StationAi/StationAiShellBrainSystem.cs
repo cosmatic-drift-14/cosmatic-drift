@@ -35,6 +35,7 @@ public sealed class StationAiShellBrainSystem : SharedStationAiShellBrainSystem
         //if (!TryComp<StationAiShellUserComponent>(ent.Comp.ActiveCore, out var shellUser))
         //    return;
 
+        Name(ent);
         Log.Debug("    PASS - BORIS EXIT DETECTED");
     }
 

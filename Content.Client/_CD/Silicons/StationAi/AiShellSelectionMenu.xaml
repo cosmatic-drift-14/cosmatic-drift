@@ -2,23 +2,22 @@
     xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client._CD.Silicons.StationAi"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-    Title="Select Shell" MinSize="425 272">
+    Title="Select Shell"
+    MinSize="240 480">
     <BoxContainer Orientation="Vertical">
-        <BoxContainer Orientation="Horizontal">
-            <Label Text="borg (LOC LATER)" MinWidth="100" />
-            <Control MinWidth="50" />
-            <LineEdit Name="ReasonLine" MinWidth="100" HorizontalExpand="True" />
-        </BoxContainer>
-        <controls:ListContainer
-            Name="ShellsList"
-            HorizontalAlignment="Left"
+        <ScrollContainer
+            HorizontalAlignment="Stretch"
+            HScrollEnabled="False"
             VerticalExpand="True"
             Visible="True"
-            Toggle="True"
-            Group="True"
-            SetWidth="192" />
+            MinWidth="200">
+            <BoxContainer
+                Name="ShellsList"
+                Orientation="Vertical">
+                <!-- Populate with C# -->
+                </BoxContainer>
+        </ScrollContainer>
         <BoxContainer Orientation="Horizontal">
-            <Button Name="RefreshListButton" Text="Jump" Disabled="True"/>
             <Button Name="JumpToShellButton" Text="Jump" Disabled="True"/>
             <Button Name="SelectShellButton" Text="Select" Disabled="True"/>
         </BoxContainer>
