@@ -66,9 +66,21 @@ public sealed partial class StationAiShellUserComponent : Component
 [Serializable, NetSerializable]
 public sealed class JumpToShellMessage : BoundUserInterfaceMessage
 {
+    public readonly NetEntity? Shell;
+
+    public JumpToShellMessage(NetEntity? shell)
+    {
+        Shell = shell;
+    }
 }
 
 [Serializable, NetSerializable]
 public sealed class EnterShellMessage : BoundUserInterfaceMessage
 {
+    public readonly NetEntity? Shell;
+
+    public EnterShellMessage(NetEntity? shell)
+    {
+        Shell = shell;
+    }
 }

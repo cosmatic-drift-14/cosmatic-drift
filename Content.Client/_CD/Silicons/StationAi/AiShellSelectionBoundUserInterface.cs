@@ -25,14 +25,14 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
         }
     }
 
-    private void OnJumpToShell()
+    private void OnJumpToShell(NetEntity? uid)
     {
-        SendMessage(new JumpToShellMessage());
+        SendPredictedMessage(new JumpToShellMessage(uid));
     }
 
-    private void OnEnterShell()
+    private void OnEnterShell(NetEntity? uid)
     {
-        SendMessage(new EnterShellMessage());
+        SendPredictedMessage(new EnterShellMessage(uid));
     }
 
     public void Refresh(Entity<StationAiShellUserComponent> ent)
