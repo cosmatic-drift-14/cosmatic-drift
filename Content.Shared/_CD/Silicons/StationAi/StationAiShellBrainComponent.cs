@@ -16,7 +16,7 @@ public sealed partial class StationAiShellBrainComponent : Component
     public bool Active;
 
     /// <summary>
-    /// The core which is possessing this brain
+    /// The core which owns and is possessing this brain
     /// </summary>
     [ViewVariables]
     public EntityUid? ActiveCore;
