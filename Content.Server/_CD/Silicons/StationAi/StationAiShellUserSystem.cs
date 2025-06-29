@@ -80,6 +80,7 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
     public void AddToAvailableShells(StationAiShellUserComponent shellUser, Entity<BorgChassisComponent> shell)
     {
         shellUser.ControllableShells.Add(shell);
+        Dirty<StationAiShellUserComponent?>(shellUser.Owner);
     }
 
     /// <summary>
@@ -90,6 +91,8 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
     public void RemoveFromAvailableShells(StationAiShellUserComponent shellUser, Entity<BorgChassisComponent> shell)
     {
         shellUser.ControllableShells.Remove(shell);
+        Dirty<StationAiShellUserComponent?>(shellUser.Owner);
+
     }
 
     public override void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)

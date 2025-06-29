@@ -10,7 +10,7 @@ namespace Content.Shared._CD.Silicons.StationAi;
 /// <summary>
 /// Given to an AI core to allow it to take over shells
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]
 public sealed partial class StationAiShellUserComponent : Component
 {
     [DataField]
@@ -59,7 +59,8 @@ public sealed partial class StationAiShellUserComponent : Component
     /// Updated whenever a BORIS module is inserted or ejected from a chassis
     /// </summary>
     [ViewVariables]
-    public List<Entity<BorgChassisComponent>> ControllableShells = new();
+    [AutoNetworkedField]
+    public List<EntityUid> ControllableShells = new();
 }
 
 [Serializable, NetSerializable]

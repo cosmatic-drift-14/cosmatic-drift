@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Content.Shared._CD.Silicons.StationAi;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
@@ -17,6 +18,11 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
 
         _window.JumpToShell += OnJumpToShell;
         _window.EnterShell += OnEnterShell;
+
+        if (EntMan.TryGetComponent(Owner, out StationAiShellUserComponent? component))
+        {
+            Refresh((Owner, component));
+        }
     }
 
     private void OnJumpToShell()
@@ -27,5 +33,13 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
     private void OnEnterShell()
     {
         SendMessage(new EnterShellMessage());
+    }
+
+    public void Refresh(Entity<StationAiShellUserComponent> ent)
+    {
+        if(_window == null)
+            return;
+
+        _window.Populate(ent.Comp.ControllableShells);
     }
 }
