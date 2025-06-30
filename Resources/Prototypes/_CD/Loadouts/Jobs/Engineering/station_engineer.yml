@@ -15,7 +15,7 @@
     jumpsuit: ClothingUniformJumpsuitEngineeringModern
 
 - type: loadout
-  id: StationEngineerHazardsuitModern
+  id: StationEngineerJumpsuitModern
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringHazardModern
 
