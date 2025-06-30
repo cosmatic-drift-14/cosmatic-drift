@@ -25,6 +25,7 @@
     ClothingOuterCoatEngi: 2 # CD
     ClothingOuterCoatYellowHiVis: 3 # CD
     ClothingOuterCoatOrangeHiVis: 3 # CD
+    ClothingMaskBandEngi: 3 # CD
     ClothingNeckScarfStripedOrange: 3
     ClothingShoesBootsWinterEngi: 2
   contrabandInventory:
