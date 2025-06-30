@@ -15,7 +15,7 @@
     jumpsuit: ClothingUniformJumpsuitEngineeringModern
 
 - type: loadout
-  id: StationEngineerJumpsuitModern
+  id: StationEngineerHazardsuitModern
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringHazardModern
 
@@ -30,7 +30,7 @@
     jumpsuit: ClothingUniformJumpsuitEngineeringEVA
 
 - type: loadout
-  id: StationEngineerHazardsuitMechanic
+  id: StationEngineerJumpsuitMechanic
   equipment: 
     jumpsuit: ClothingUniformJumpsuitEngineeringMechanic
 
