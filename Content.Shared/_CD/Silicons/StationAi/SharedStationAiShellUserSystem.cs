@@ -73,12 +73,8 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         if (!_stationAiSystem.TryGetCore(ent.Owner, out var core)) // And check that they have a core
             return;
 
-
         // Now, select a shell
         if (_net.IsClient)
-            return;
-
-        if (args.Shell == null)
             return;
 
         var shellEnt = _entity.GetEntity(args.Shell); // Manual conversion to EntityUid because of UI bullshit (doesn't automatically convert and can't send uids over the network)
@@ -92,7 +88,6 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
 
         ent.Comp.SelectedShell = shellEnt;
         ent.Comp.SelectedBrain = chassis.BrainEntity;
-
 
         // Anything below this would be the "on possess" button being pressed
         if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind)) // Then get the AI's mind
@@ -121,6 +116,8 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
 
         // Add AI radio channels to the chassis
         AddChannels(ent.Comp.SelectedShell.Value, ent.Owner);
+
+        Dirty(ent); // icky networking
     }
 
     private void OnExitShell(Entity<BorgChassisComponent> ent, ref AiExitShellEvent args)

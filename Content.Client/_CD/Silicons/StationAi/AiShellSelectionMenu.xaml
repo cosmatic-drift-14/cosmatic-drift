@@ -3,7 +3,7 @@
     xmlns:cc="clr-namespace:Content.Client._CD.Silicons.StationAi"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     Title="Select Shell"
-    MinSize="240 480">
+    MinSize="240 360">
     <BoxContainer Orientation="Vertical">
         <ItemList
             Name="ShellsList"

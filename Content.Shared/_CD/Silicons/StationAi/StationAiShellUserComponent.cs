@@ -26,6 +26,7 @@ public sealed partial class StationAiShellUserComponent : Component
     /// The selected shell's EntityUid
     /// </summary>
     [DataField]
+    [AutoNetworkedField]
     public EntityUid? SelectedShell;
 
     /// <summary>

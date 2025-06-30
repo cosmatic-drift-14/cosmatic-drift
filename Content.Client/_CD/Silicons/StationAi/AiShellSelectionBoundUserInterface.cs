@@ -40,6 +40,6 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
         if(_window == null)
             return;
 
-        _window.Populate(ent.Comp.ControllableShells);
+        _window.Populate(ent);
     }
 }
