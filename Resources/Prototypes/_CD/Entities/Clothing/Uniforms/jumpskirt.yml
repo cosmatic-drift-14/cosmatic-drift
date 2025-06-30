@@ -120,6 +120,8 @@
     - state: icon
     - state: icon-unshaded
       shader: unshaded
+    - state: icon-unshaded
+      shader: shaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
     clothingVisuals:
@@ -127,6 +129,9 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -140,6 +145,8 @@
     - state: icon
     - state: icon-unshaded
       shader: unshaded
+    - state: icon-unshaded
+      shader: shaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
     clothingVisuals:
@@ -147,6 +154,9 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -160,6 +170,8 @@
     - state: icon
     - state: icon-unshaded
       shader: unshaded
+    - state: icon-unshaded
+      shader: shaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
     clothingVisuals:
@@ -167,6 +179,9 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -180,6 +195,8 @@
     - state: icon
     - state: icon-unshaded
       shader: unshaded
+    - state: icon-unshaded
+      shader: shaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
     clothingVisuals:
@@ -187,6 +204,9 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -200,6 +220,8 @@
     - state: icon
     - state: icon-unshaded
       shader: unshaded
+    - state: icon-unshaded
+      shader: shaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
     clothingVisuals:
@@ -207,3 +229,5 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
