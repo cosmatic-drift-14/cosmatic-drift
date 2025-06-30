@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: ActionSmite
   name: Smite
   description: Instantly gibs a target.

@@ -28,6 +28,10 @@
     delay: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - Backpack
 
 - type: entity
   parent: ClothingBackpack
@@ -271,6 +275,12 @@
     sprite: Clothing/Back/Backpacks/syndicate.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
+  # - type: Storage
+    # grid:
+    # - 0,0,7,3
+    # - 8,1,8,3
+  - type: StaticPrice
+    price: 1000
 
 #Special
 - type: entity
