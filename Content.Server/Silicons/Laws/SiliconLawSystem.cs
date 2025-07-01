@@ -307,7 +307,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         {
             SetLaws(lawset, update, provider.LawUploadSound);
 
-            // CD changes - Shell law updating, kill whenever you can actually subscribe to laws being updated
+            // CD changes - Shell law updating; change in the future whenever you can actually subscribe to laws being updated
             _shellUser.ChangeShellLaws(update, GetLawset(provider.Laws));
         }
     }

@@ -6,6 +6,7 @@ using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Silicons.StationAi;
+using Robust.Shared.Audio;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
 
 namespace Content.Server._CD.Silicons.StationAi;
@@ -92,14 +93,21 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
 
     }
 
-    public override void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)
+    public override void ChangeShellLaws(EntityUid entity, SiliconLawset lawset, SoundSpecifier? cue = null)
     {
+        // Checks
         if (!TryComp<StationAiShellUserComponent>(entity, out var shellUser))
             return;
 
         if (shellUser.SelectedShell == null)
             return;
 
-        _laws.SetLaws(lawset.Laws, shellUser.SelectedShell.Value);
+        // Fallback for when a sound cue isn't provided but the entity has a lawprovider component
+        if (cue == null && TryComp<SiliconLawProviderComponent>(entity, out var comp))
+        {
+            cue = comp.LawUploadSound;
+        }
+
+        _laws.SetLaws(lawset.Laws, shellUser.SelectedShell.Value, cue);
     }
 }

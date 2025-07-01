@@ -7,6 +7,7 @@ using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Silicons.StationAi;
 using Microsoft.VisualBasic.CompilerServices;
+using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
@@ -162,7 +163,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         ChangeShellLaws(ent, args.Lawset);
     }
 
-    public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset lawset)
+    public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset lawset, SoundSpecifier? cue = null)
     {
     }
 
