@@ -27,7 +27,7 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
 
     private void OnJumpToShell(NetEntity? uid)
     {
-        SendPredictedMessage(new JumpToShellMessage(uid));
+        SendMessage(new JumpToShellMessage(uid));
     }
 
     private void OnEnterShell(NetEntity? uid)

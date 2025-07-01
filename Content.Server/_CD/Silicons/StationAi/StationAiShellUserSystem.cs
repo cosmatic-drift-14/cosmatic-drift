@@ -17,11 +17,8 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
     /// <summary>
     /// Adds the AI's existing radio channels to the chassis upon taking control
     /// </summary>
-    protected override void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent?> shellUser)
+    protected override void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent> shellUser)
     {
-        if (shellUser.Comp == null)
-            return;
-
         if (!TryComp(shellUser, out ActiveRadioComponent? shellUserRadio))
             return;
 

@@ -115,7 +115,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         _metaData.SetEntityName(ent.Comp.SelectedShell.Value, metaData.EntityName);
 
         // Add AI radio channels to the chassis
-        AddChannels(ent.Comp.SelectedShell.Value, ent.Owner);
+        AddChannels(ent.Comp.SelectedShell.Value, ent);
 
         Dirty(ent); // icky networking
     }
@@ -167,7 +167,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     }
 
     protected virtual void AddChannels(Entity<BorgChassisComponent?> chassis,
-        Entity<StationAiShellUserComponent?> shellUser)
+        Entity<StationAiShellUserComponent> shellUser)
     {
     }
 
