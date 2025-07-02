@@ -18,6 +18,7 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
 
         _window.JumpToShell += OnJumpToShell;
         _window.EnterShell += OnEnterShell;
+        _window.SelectShell += OnSelectShell;
 
         if (EntMan.TryGetComponent(Owner, out StationAiShellUserComponent? component))
         {
@@ -25,14 +26,19 @@ public sealed class AiShellSelectionBoundUserInterface : BoundUserInterface
         }
     }
 
-    private void OnJumpToShell(NetEntity? uid)
+    private void OnSelectShell(NetEntity? netEntity)
     {
-        SendMessage(new JumpToShellMessage(uid));
+        SendMessage(new SelectShellMessage(netEntity));
     }
 
-    private void OnEnterShell(NetEntity? uid)
+    private void OnJumpToShell(NetEntity? netEntity)
     {
-        SendPredictedMessage(new EnterShellMessage(uid));
+        SendMessage(new JumpToShellMessage(netEntity));
+    }
+
+    private void OnEnterShell(NetEntity? netEntity)
+    {
+        SendPredictedMessage(new EnterShellMessage(netEntity));
     }
 
     public void Refresh(Entity<StationAiShellUserComponent> ent)
