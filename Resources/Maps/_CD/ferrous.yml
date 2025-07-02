@@ -37717,7 +37717,7 @@ entities:
   - uid: 1857
     components:
     - type: MetaData
-      desc: A big hat for a bigger man.
+      desc: A big hat for an even bigger man.
     - type: Transform
       pos: -19.471275,29.48484
       parent: 2
