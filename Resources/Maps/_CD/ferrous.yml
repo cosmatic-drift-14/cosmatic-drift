@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 261.2.0
+  engineVersion: 262.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/18/2025 18:03:12
+  time: 06/25/2025 22:30:18
   entityCount: 14699
 maps:
 - 1
@@ -94837,7 +94837,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 51.5,31.5
       parent: 2
-- proto: WeaponEnergyTurretStation
+- proto: WeaponEnergyTurretSecurity
   entities:
   - uid: 13635
     components:
