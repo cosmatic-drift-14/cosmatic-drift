@@ -22,7 +22,7 @@ public abstract class SharedStationAiShellBrainSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<StationAiShellBrainComponent, EntGotInsertedIntoContainerMessage>(OnShellInsert);
-        SubscribeLocalEvent<StationAiShellBrainComponent, EntGotRemovedFromContainerMessage>(OnShellExit);
+        SubscribeLocalEvent<StationAiShellBrainComponent, EntGotRemovedFromContainerMessage>(OnShellEject);
     }
 
     protected virtual void OnShellInsert(Entity<StationAiShellBrainComponent> ent, ref EntGotInsertedIntoContainerMessage args)
@@ -35,22 +35,18 @@ public abstract class SharedStationAiShellBrainSystem : EntitySystem
         Log.Debug("    PASS - BORIS INSERT DETECTED");
     }
 
-    protected virtual void OnShellExit(Entity<StationAiShellBrainComponent> ent, ref EntGotRemovedFromContainerMessage args)
+    protected virtual void OnShellEject(Entity<StationAiShellBrainComponent> ent, ref EntGotRemovedFromContainerMessage args)
     {
         if (!TryComp<BorgChassisComponent>(args.Container.Owner, out var chassis))
             return;
 
         ent.Comp.ContainingShell = null;
-
         Log.Debug("    PASS - BORIS EXIT DETECTED");
     }
 
     // TODO: fix this up and make sure it uses localization, probably will make things a ton easier
     public void SetShellName(Entity<StationAiShellBrainComponent> shellBrain)
     {
-        if (shellBrain.Comp == null)
-            return;
-
         var shell = shellBrain.Comp.ContainingShell;
 
         if (!TryComp<BorgChassisComponent>(shell, out var chassis))

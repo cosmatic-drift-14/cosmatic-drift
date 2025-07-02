@@ -104,19 +104,13 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
             return;
 
         shellBrain.ActiveCore = ent.Owner;
+        _stationAiSystem.SwitchRemoteEntityMode(core, false);
         _mind.TransferTo(mindId, ent.Comp.SelectedShell, mind: mind);
         _actions.AddAction(ent.Comp.SelectedShell.Value, ref ent.Comp.ActionEntity, ent.Comp.ActionPrototype);
         RemCompDeferred<IonStormTargetComponent>(ent.Comp.SelectedShell.Value);
 
-        // Put the eye at the core
-        if (core.Comp.RemoteEntity.HasValue)
-            _xforms.DropNextTo(core.Comp.RemoteEntity.Value, core.Owner);
-
         // Set the chassis' name to the AI's
         _shellBrain.SetShellName((ent.Comp.SelectedBrain.Value, shellBrain));
-
-        // var metaData = MetaData(ent.Owner);
-        // _metaData.SetEntityName(ent.Comp.SelectedShell.Value, metaData.EntityName);
 
         // Add AI radio channels to the chassis
         AddChannels(ent.Comp.SelectedShell.Value, ent);
@@ -143,11 +137,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         if (!TryComp<StationAiShellUserComponent>(brainUid, out var shellUser))
             return;
 
-        _mind.TransferTo(mindId, brainUid, mind: mind);
-        _stationAiSystem.SetupEye(core!);
-        _stationAiSystem.AttachEye(core!);
-
-        var test = (brainUid, shellUser);
+        ExitShell(ent.Comp.BrainEntity.Value, mind: (mindId, mind));
 
         RemoveChannels(ent.Owner, brainUid.Value);
         _actions.RemoveAction(shellUser.ActionEntity);
@@ -159,6 +149,43 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
 
         if (core.Comp.RemoteEntity.HasValue)
             _xforms.DropNextTo(core.Comp.RemoteEntity.Value, ent.Owner);
+    }
+
+    /// <summary>
+    /// The method to call when we want to exit the given shell
+    /// Configures the AI's eye for us
+    /// </summary>
+    /// <param name="shellBrain"></param>
+    /// <param name="mind">Mind that we want to transfer. Use if </param>
+    /// <param name="core"></param>
+    public void ExitShell(Entity<StationAiShellBrainComponent?> shellBrain, Entity<MindComponent?> mind = default)
+    {
+        if (!Resolve(shellBrain, ref shellBrain.Comp))
+            return;
+
+        // Try to get the mind of the brain if no other minds were passed in
+        // Useful for when the mind isn't inside the shell
+        if (mind == default && !_mind.TryGetMind(shellBrain, out mind.Owner, out mind.Comp) ||
+            !Resolve(mind, ref mind.Comp))
+            return;
+
+        // Ensure that we have a core with a mind to go to
+        if (!shellBrain.Comp.ActiveCore.HasValue)
+            return;
+
+        if(!_stationAiSystem.TryGetCore(shellBrain.Comp.ActiveCore.Value, out var core) ||
+           core.Comp == null)
+            return;
+
+        // _stationAiSystem.SetupEye(core!); // Use the brain's coordinates for when the shell gets destroyed or otherwise removed
+        // _stationAiSystem.AttachEye(core!);
+
+        _stationAiSystem.SwitchRemoteEntityMode(core, true);
+        _mind.TransferTo(mind, shellBrain.Comp.ActiveCore.Value, mind: mind.Comp);
+        if (core.Comp.RemoteEntity.HasValue)
+            _xforms.SetCoordinates(core.Comp.RemoteEntity.Value, Transform(shellBrain).Coordinates);
+
+        shellBrain.Comp.ActiveCore = null;
     }
 
     private void OnIonStormLaws(Entity<StationAiShellUserComponent> ent, ref IonStormLawsEvent args)

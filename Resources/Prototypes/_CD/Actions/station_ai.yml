@@ -18,6 +18,8 @@
   description: Exits your active shell and returns you to your core.
   components:
   - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
     priority: -6
     itemIconStyle: BigAction
     icon:
