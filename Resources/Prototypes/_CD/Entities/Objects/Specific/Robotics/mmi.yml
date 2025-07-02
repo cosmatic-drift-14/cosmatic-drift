@@ -57,5 +57,5 @@
     containers:
       borg_brain:
         - AIShellBrain
-  - type: RandomMetadata
+  - type: RandomMetadata # overriding parent component so spawned prototypes have the correct name
     nameSegments: null

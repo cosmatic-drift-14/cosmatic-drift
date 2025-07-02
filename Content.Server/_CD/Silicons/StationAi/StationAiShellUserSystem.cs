@@ -1,19 +1,26 @@
 using Content.Server.Radio.Components;
 using Content.Server.Silicons.Laws;
 using Content.Shared._CD.Silicons.StationAi;
-using Content.Shared.Radio;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Silicons.StationAi;
 using Robust.Shared.Audio;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
 
 namespace Content.Server._CD.Silicons.StationAi;
 
 public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
 {
     [Dependency] private readonly SiliconLawSystem _laws = default!;
+    [Dependency] private readonly StationAiShellBrainSystem _shellBrain = default!;
+
+    protected override void OnEnterShell(Entity<StationAiShellUserComponent> ent, ref EnterShellMessage args)
+    {
+        base.OnEnterShell(ent, ref args);
+
+        if (ent.Comp.SelectedBrain != null)
+            _shellBrain.SetShellName(ent.Comp.SelectedBrain.Value);
+    }
 
     /// <summary>
     /// Adds the AI's existing radio channels to the chassis upon taking control
@@ -75,9 +82,9 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
     ///  </summary>
     /// <param name="shellUser">The AI that is capable of controlling shells</param>
     /// <param name="shell">The shell to be made available to the controlling AI</param>
-    public void AddToAvailableShells(StationAiShellUserComponent shellUser, Entity<BorgChassisComponent> shell)
+    public void AddToAvailableShells(Entity<StationAiShellUserComponent> shellUser, Entity<BorgChassisComponent> shell)
     {
-        shellUser.ControllableShells.Add(shell);
+        shellUser.Comp.ControllableShells.Add(shell);
         Dirty<StationAiShellUserComponent?>(shellUser.Owner);
     }
 
@@ -86,15 +93,18 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
     /// </summary>
     /// <param name="shellUser">The AI that is capable of controlling shells</param>
     /// <param name="shell">The shell to be made available to the controlling AI</param>
-    public void RemoveFromAvailableShells(StationAiShellUserComponent shellUser, Entity<BorgChassisComponent> shell)
+    public void RemoveFromAvailableShells(Entity<StationAiShellUserComponent> shellUser, Entity<BorgChassisComponent> shell)
     {
-        shellUser.ControllableShells.Remove(shell);
+        shellUser.Comp.ControllableShells.Remove(shell);
         Dirty<StationAiShellUserComponent?>(shellUser.Owner);
 
     }
 
+    /// <inheritdoc />
     public override void ChangeShellLaws(EntityUid entity, SiliconLawset? lawset, SoundSpecifier? cue = null)
     {
+        base.ChangeShellLaws(entity, lawset, cue);
+
         // Checks
         if (!TryComp<StationAiShellUserComponent>(entity, out var shellUser))
             return;

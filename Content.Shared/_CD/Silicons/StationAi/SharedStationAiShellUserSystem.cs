@@ -25,24 +25,47 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
     [Dependency] protected readonly SharedUserInterfaceSystem UserInterface = default!;
     [Dependency] private readonly EntityManager _entity = default!;
-    [Dependency] private readonly SharedStationAiShellBrainSystem _shellBrain = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<StationAiShellUserComponent, AiEnterShellEvent>(OnOpenUi);
+        SubscribeLocalEvent<BorgChassisComponent, AiExitShellEvent>(OnExitShell);
+
+        SubscribeLocalEvent<StationAiShellUserComponent, IonStormLawsEvent>(OnIonStormLaws);
 
         Subs.BuiEvents<StationAiShellUserComponent>(ShellUiKey.Key,
             subs =>
             {
-                subs.Event<EnterShellMessage>(OnEnterShell);
                 subs.Event<JumpToShellMessage>(OnJumpToShell);
+                subs.Event<EnterShellMessage>(OnEnterShell);
+                subs.Event<SelectShellMessage>(OnSelectShell);
             });
 
-        SubscribeLocalEvent<BorgChassisComponent, AiExitShellEvent>(OnExitShell);
+    }
 
-        SubscribeLocalEvent<StationAiShellUserComponent, IonStormLawsEvent>(OnIonStormLaws);
+    private void OnOpenUi(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)
+    {
+        UserInterface.TryToggleUi(args.Performer, ShellUiKey.Key, ent);
+    }
+
+    private void OnSelectShell(EntityUid uid, StationAiShellUserComponent component, SelectShellMessage args)
+    {
+        if (_net.IsClient)
+            return;
+
+        var shellEnt = _entity.GetEntity(args.Shell); // Manual conversion to EntityUid because of UI bullshit (doesn't automatically convert and can't send uids over the network)
+        if (!TryComp<BorgChassisComponent>(shellEnt, out var chassis))
+            return;
+
+        // Make sure the selected chassis has a brain, and it's a BORIS module
+        if (!chassis.BrainEntity.HasValue &&
+            !HasComp<StationAiShellBrainComponent>(chassis.BrainEntity))
+            return;
+
+        component.SelectedShell = shellEnt;
+        component.SelectedBrain = chassis.BrainEntity;
     }
 
     private void OnJumpToShell(EntityUid uid, StationAiShellUserComponent component, JumpToShellMessage args)
@@ -62,43 +85,18 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         Log.Debug($"Jumped to shell {uid}");
     }
 
-    private void OnOpenUi(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)
+
+    protected virtual void OnEnterShell(Entity<StationAiShellUserComponent> ent, ref EnterShellMessage args)
     {
-        UserInterface.TryToggleUi(args.Performer, ShellUiKey.Key, ent);
-    }
-
-    private void OnEnterShell(Entity<StationAiShellUserComponent> ent, ref EnterShellMessage args)
-    {
-        if (!TryComp<StationAiHeldComponent>(ent.Owner, out var held)) // Check that the user is an AI
+        if (!_stationAiSystem.TryGetCore(ent, out var core)) // Check that the user is an AI with a core
             return;
 
-        if (!_stationAiSystem.TryGetCore(ent.Owner, out var core)) // And check that they have a core
-            return;
-
-        // Now, select a shell
-        if (_net.IsClient)
-            return;
-
-        var shellEnt = _entity.GetEntity(args.Shell); // Manual conversion to EntityUid because of UI bullshit (doesn't automatically convert and can't send uids over the network)
-        if (!TryComp<BorgChassisComponent>(shellEnt, out var chassis))
-            return;
-
-        // First make sure the selected chassis has a brain, and it's a BORIS module
-        if (!chassis.BrainEntity.HasValue &&
-            !HasComp<StationAiShellBrainComponent>(chassis.BrainEntity))
-            return;
-
-        ent.Comp.SelectedShell = shellEnt;
-        ent.Comp.SelectedBrain = chassis.BrainEntity;
-
-        // Anything below this would be the "on possess" button being pressed
-        // TODO: that
         if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind)) // Then get the AI's mind
             return;
 
         if (!ent.Comp.SelectedBrain.HasValue || !ent.Comp.SelectedShell.HasValue ||
             !TryComp<StationAiShellBrainComponent>(ent.Comp.SelectedBrain.Value,
-                out var shellBrain)) // Get the brain of the shell
+                out var shellBrain))
             return;
 
         if (core.Comp == null)
@@ -112,9 +110,6 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
 
         _stationAiSystem.SwitchRemoteEntityMode(core, false);
         _mind.TransferTo(mindId, ent.Comp.SelectedShell, mind: mind);
-
-        // Set the chassis' name to the AI's
-        _shellBrain.SetShellName((ent.Comp.SelectedBrain.Value, shellBrain));
 
         // Add AI radio channels to the chassis
         AddChannels(ent.Comp.SelectedShell.Value, ent);
@@ -181,9 +176,6 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
            core.Comp == null)
             return;
 
-        // _stationAiSystem.SetupEye(core!); // Use the brain's coordinates for when the shell gets destroyed or otherwise removed
-        // _stationAiSystem.AttachEye(core!);
-
         _stationAiSystem.SwitchRemoteEntityMode(core, true);
         _mind.TransferTo(mind, shellBrain.Comp.ActiveCore.Value, mind: mind.Comp);
         if (core.Comp.RemoteEntity.HasValue)
@@ -197,12 +189,18 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         ChangeShellLaws(ent, args.Lawset);
     }
 
+    /// <summary>
+    /// Changes the laws of the given shell user's shell
+    /// Will only change the laws of the currently selected shell, not all shells it has listed
+    /// </summary>
+    /// <param name="entity">The entity of the shell user</param>
+    /// <param name="lawset">The lawset we want to change to</param>
+    /// <param name="cue">A provided sound cue to play when we want to change the laws. Tries to get a sound from the shell user entity if not provided</param>
     public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset? lawset, SoundSpecifier? cue = null)
     {
     }
 
-    protected virtual void AddChannels(Entity<BorgChassisComponent?> chassis,
-        Entity<StationAiShellUserComponent> shellUser)
+    protected virtual void AddChannels(Entity<BorgChassisComponent?> chassis, Entity<StationAiShellUserComponent> shellUser)
     {
     }
 
@@ -217,10 +215,4 @@ public sealed partial class AiEnterShellEvent : InstantActionEvent
 
 public sealed partial class AiExitShellEvent : InstantActionEvent
 {
-}
-
-[Serializable, NetSerializable]
-public enum ShellUiKey : byte
-{
-    Key
 }

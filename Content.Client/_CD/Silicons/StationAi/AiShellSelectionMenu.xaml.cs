@@ -13,6 +13,7 @@ public sealed partial class AiShellSelectionMenu : DefaultWindow
 {
     public Action<NetEntity?>? JumpToShell;
     public Action<NetEntity?>? EnterShell;
+    public Action<NetEntity?>? SelectShell;
 
     [Dependency] private readonly IEntityManager _ent = default!;
 
@@ -52,6 +53,7 @@ public sealed partial class AiShellSelectionMenu : DefaultWindow
                 JumpToShellButton.Disabled = false;
                 SelectShellButton.Disabled = false;
                 _selected = args.Metadata as NetEntity?;
+                SelectShell?.Invoke(netShell);
             };
 
             item.OnDeselected += _ =>
