@@ -93,13 +93,16 @@ public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
 
     }
 
-    public override void ChangeShellLaws(EntityUid entity, SiliconLawset lawset, SoundSpecifier? cue = null)
+    public override void ChangeShellLaws(EntityUid entity, SiliconLawset? lawset, SoundSpecifier? cue = null)
     {
         // Checks
         if (!TryComp<StationAiShellUserComponent>(entity, out var shellUser))
             return;
 
         if (shellUser.SelectedShell == null)
+            return;
+
+        if (lawset == null)
             return;
 
         // Fallback for when a sound cue isn't provided but the entity has a lawprovider component

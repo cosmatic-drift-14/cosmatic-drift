@@ -92,6 +92,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         ent.Comp.SelectedBrain = chassis.BrainEntity;
 
         // Anything below this would be the "on possess" button being pressed
+        // TODO: that
         if (!_mind.TryGetMind(ent.Owner, out var mindId, out var mind)) // Then get the AI's mind
             return;
 
@@ -104,10 +105,13 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
             return;
 
         shellBrain.ActiveCore = ent.Owner;
-        _stationAiSystem.SwitchRemoteEntityMode(core, false);
-        _mind.TransferTo(mindId, ent.Comp.SelectedShell, mind: mind);
+        if(TryComp<SiliconLawProviderComponent>(ent.Owner, out var lawProvider))
+            ChangeShellLaws(ent.Owner, lawProvider.Lawset);
         _actions.AddAction(ent.Comp.SelectedShell.Value, ref ent.Comp.ActionEntity, ent.Comp.ActionPrototype);
         RemCompDeferred<IonStormTargetComponent>(ent.Comp.SelectedShell.Value);
+
+        _stationAiSystem.SwitchRemoteEntityMode(core, false);
+        _mind.TransferTo(mindId, ent.Comp.SelectedShell, mind: mind);
 
         // Set the chassis' name to the AI's
         _shellBrain.SetShellName((ent.Comp.SelectedBrain.Value, shellBrain));
@@ -137,12 +141,12 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         if (!TryComp<StationAiShellUserComponent>(brainUid, out var shellUser))
             return;
 
-        ExitShell(ent.Comp.BrainEntity.Value, mind: (mindId, mind));
-
-        RemoveChannels(ent.Owner, brainUid.Value);
         _actions.RemoveAction(shellUser.ActionEntity);
-        shellUser.ActionEntity = null;
+        RemoveChannels(ent.Owner, brainUid.Value);
         AddComp<IonStormTargetComponent>(ent);
+
+        shellUser.ActionEntity = null;
+        ExitShell(ent.Comp.BrainEntity.Value, mind: (mindId, mind));
 
         if (core.Comp == null)
             return;
@@ -193,7 +197,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
         ChangeShellLaws(ent, args.Lawset);
     }
 
-    public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset lawset, SoundSpecifier? cue = null)
+    public virtual void ChangeShellLaws(EntityUid entity, SiliconLawset? lawset, SoundSpecifier? cue = null)
     {
     }
 
