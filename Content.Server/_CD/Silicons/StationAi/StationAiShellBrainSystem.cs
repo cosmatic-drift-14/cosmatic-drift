@@ -38,7 +38,7 @@ public sealed class StationAiShellBrainSystem : SharedStationAiShellBrainSystem
         }
 
         ent.Comp.ContainingShell = args.Container.Owner;
-        SetShellName(ent);
+        SetShellName(ent.Owner);
         Log.Debug("    PASS - BORIS INSERT DETECTED");
     }
 

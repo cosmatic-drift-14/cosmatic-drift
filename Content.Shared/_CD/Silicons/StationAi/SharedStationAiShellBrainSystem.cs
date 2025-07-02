@@ -31,7 +31,7 @@ public abstract class SharedStationAiShellBrainSystem : EntitySystem
             return;
 
         ent.Comp.ContainingShell = args.Container.Owner;
-        SetShellName(ent);
+        SetShellName(ent.Owner);
         Log.Debug("    PASS - BORIS INSERT DETECTED");
     }
 
@@ -45,8 +45,11 @@ public abstract class SharedStationAiShellBrainSystem : EntitySystem
     }
 
     // TODO: fix this up and make sure it uses localization, probably will make things a ton easier
-    public void SetShellName(Entity<StationAiShellBrainComponent> shellBrain)
+    public void SetShellName(Entity<StationAiShellBrainComponent?> shellBrain)
     {
+        if (!Resolve(shellBrain, ref shellBrain.Comp))
+            return;
+
         var shell = shellBrain.Comp.ContainingShell;
 
         if (!TryComp<BorgChassisComponent>(shell, out var chassis))
@@ -62,10 +65,13 @@ public abstract class SharedStationAiShellBrainSystem : EntitySystem
 
             _prototype.TryIndex(switchable.SelectedBorgType, out var borgProto);
 
-            formattedName = $"{nameModifier?.BaseName ?? "NOT-FOUND"} {borgProto?.ID.ToUpperInvariant() ?? "Default"} Shell";
+            var borgTypeLoc = Loc.GetString($"borg-type-{borgProto?.ID ?? "default"}-name");
+            formattedName = Loc.GetString("shell-name-format",
+                ("name", nameModifier?.BaseName ?? Loc.GetString("shell-ai-name-not-found")),
+                ("shellType", borgTypeLoc));
         }
         else
-            formattedName = "Empty Default Shell";
+            formattedName = Loc.GetString("empty-shell");
 
         if (shellBrain.Comp.ContainingShell != null)
             MetaDataSystem.SetEntityName(shellBrain.Comp.ContainingShell.Value, formattedName);
