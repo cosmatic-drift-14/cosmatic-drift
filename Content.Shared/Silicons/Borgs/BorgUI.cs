@@ -15,10 +15,13 @@ public sealed class BorgBuiState : BoundUserInterfaceState
 
     public bool HasBattery;
 
-    public BorgBuiState(float chargePercent, bool hasBattery)
+    public bool HasBoris;
+
+    public BorgBuiState(float chargePercent, bool hasBattery, bool hasBoris)
     {
         ChargePercent = chargePercent;
         HasBattery = hasBattery;
+        HasBoris = hasBoris;
     }
 }
 
