@@ -1,5 +1,6 @@
 using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.Silicons.Borgs.Components;
+using Robust.Server.Containers;
 using Robust.Shared.Containers;
 
 namespace Content.Server._CD.Silicons.StationAi;
@@ -7,6 +8,22 @@ namespace Content.Server._CD.Silicons.StationAi;
 public sealed class StationAiShellBrainSystem : SharedStationAiShellBrainSystem
 {
     [Dependency] private readonly StationAiShellUserSystem _shelluser = default!;
+    [Dependency] private readonly ContainerSystem _container = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<StationAiShellBrainComponent, MapInitEvent>(OnMapInit);
+    }
+
+    private void OnMapInit(Entity<StationAiShellBrainComponent> ent, ref MapInitEvent args)
+    {
+        if (!_container.TryGetContainingContainer(ent.Owner, out var container))
+            return;
+
+        MetaDataSystem.SetEntityName(container.Owner, "HELLO WORLD:");
+    }
 
     protected override void OnShellInsert(Entity<StationAiShellBrainComponent> ent, ref EntGotInsertedIntoContainerMessage args)
     {
@@ -18,6 +35,8 @@ public sealed class StationAiShellBrainSystem : SharedStationAiShellBrainSystem
                 _shelluser.AddToAvailableShells(shellUser, args.Container.Owner!);
         }
 
+        ent.Comp.ContainingShell = args.Container.Owner;
+        SetShellName(ent);
         Log.Debug("    PASS - BORIS INSERT DETECTED");
     }
 

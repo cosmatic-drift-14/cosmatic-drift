@@ -57,3 +57,5 @@
     containers:
       borg_brain:
         - AIShellBrain
+  - type: RandomMetadata
+    nameSegments: null

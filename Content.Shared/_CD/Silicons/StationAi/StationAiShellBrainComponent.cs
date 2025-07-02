@@ -12,12 +12,15 @@ public sealed partial class StationAiShellBrainComponent : Component
     /// <summary>
     /// If this brain is currently possessed
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public bool Active;
 
     /// <summary>
     /// The core which owns and is possessing this brain
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public EntityUid? ActiveCore;
+
+    [DataField]
+    public EntityUid? ContainingShell;
 }

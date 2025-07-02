@@ -25,6 +25,7 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
     [Dependency] protected readonly SharedUserInterfaceSystem UserInterface = default!;
     [Dependency] private readonly EntityManager _entity = default!;
+    [Dependency] private readonly SharedStationAiShellBrainSystem _shellBrain = default!;
 
     public override void Initialize()
     {
@@ -112,8 +113,10 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
             _xforms.DropNextTo(core.Comp.RemoteEntity.Value, core.Owner);
 
         // Set the chassis' name to the AI's
-        var metaData = MetaData(ent.Owner);
-        _metaData.SetEntityName(ent.Comp.SelectedShell.Value, metaData.EntityName);
+        _shellBrain.SetShellName((ent.Comp.SelectedBrain.Value, shellBrain));
+
+        // var metaData = MetaData(ent.Owner);
+        // _metaData.SetEntityName(ent.Comp.SelectedShell.Value, metaData.EntityName);
 
         // Add AI radio channels to the chassis
         AddChannels(ent.Comp.SelectedShell.Value, ent);
