@@ -37717,7 +37717,8 @@ entities:
   - uid: 1857
     components:
     - type: MetaData
-      desc: A big hat for an even bigger man.
+      desc: It's sunburnt leather must've been ridden into a sunset.
+      name: well worn security hat
     - type: Transform
       pos: -19.471275,29.48484
       parent: 2
@@ -44053,8 +44054,8 @@ entities:
   - uid: 15012
     components:
     - type: MetaData
-      desc: Awarded to NT's most kind, cunning, and robust Heads of Security. Must be for someone else.
-      name: Golden Trophy
+      desc: In remembrance of NT's most kind, cunning, and caring Heads of Security. It was polished recently.
+      name: Head of Security's Service Trophy
     - type: Transform
       pos: -20,27
       parent: 2
@@ -80958,7 +80959,7 @@ entities:
       pos: -34.5,-28.5
       parent: 2
     - type: SurveillanceCamera
-      id: Gravity Generator
+      id: '[Engineering] Gravity Generator'
   - uid: 10246
     components:
     - type: Transform
@@ -80973,14 +80974,14 @@ entities:
       pos: -18.5,-23.5
       parent: 2
     - type: SurveillanceCamera
-      id: Central Engineering Hallway
+      id: '[Engineering] Central Hallway'
   - uid: 10262
     components:
     - type: Transform
       pos: -9.5,-19.5
       parent: 2
     - type: SurveillanceCamera
-      id: Engineering Lobby
+      id: '[Engineering] Lobby'
   - uid: 10273
     components:
     - type: Transform
@@ -80988,7 +80989,7 @@ entities:
       pos: -9.5,-22.5
       parent: 2
     - type: SurveillanceCamera
-      id: Engineering Front Desk
+      id: '[Engineering] Front Desk'
   - uid: 10274
     components:
     - type: Transform
@@ -80996,7 +80997,7 @@ entities:
       pos: -18.5,-25.5
       parent: 2
     - type: SurveillanceCamera
-      id: AME Core
+      id: '[Engineering] AME Core'
   - uid: 10279
     components:
     - type: Transform
@@ -81004,7 +81005,7 @@ entities:
       pos: -29.5,-22.5
       parent: 2
     - type: SurveillanceCamera
-      id: Engineering Left Hall
+      id: '[Engineering] Left Hall'
   - uid: 10290
     components:
     - type: Transform
@@ -81012,7 +81013,7 @@ entities:
       pos: -23.5,-26.5
       parent: 2
     - type: SurveillanceCamera
-      id: SMES Bank
+      id: '[Engineering] SMES Bank'
   - uid: 10964
     components:
     - type: Transform
@@ -81020,7 +81021,7 @@ entities:
       pos: 26.5,8.5
       parent: 2
     - type: SurveillanceCamera
-      id: Tech Vault
+      id: '[Engineering] Tech Vault'
   - uid: 12075
     components:
     - type: Transform
@@ -81059,7 +81060,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos South
+      id: '[Atmos] South'
   - uid: 14921
     components:
     - type: Transform
@@ -81262,7 +81263,7 @@ entities:
       pos: -38.5,32.5
       parent: 2
     - type: SurveillanceCamera
-      id: Medical Storage
+      id: '[Medical] Storage'
   - uid: 11250
     components:
     - type: Transform
@@ -81270,7 +81271,7 @@ entities:
       pos: -37.5,29.5
       parent: 2
     - type: SurveillanceCamera
-      id: Medical Shuttle Hallway
+      id: '[Medical] Shuttle Hallway'
   - uid: 11297
     components:
     - type: Transform
