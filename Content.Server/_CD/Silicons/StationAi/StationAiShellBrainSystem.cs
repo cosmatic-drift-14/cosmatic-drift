@@ -1,6 +1,7 @@
 using Content.Server.Mind;
 using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.NameModifier.Components;
+using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Server.Containers;
 using Robust.Shared.Containers;
@@ -20,6 +21,17 @@ public sealed class StationAiShellBrainSystem : EntitySystem
 
         SubscribeLocalEvent<StationAiShellBrainComponent, EntGotInsertedIntoContainerMessage>(OnShellInsert);
         SubscribeLocalEvent<StationAiShellBrainComponent, EntGotRemovedFromContainerMessage>(OnShellEject);
+
+        Subs.BuiEvents<StationAiShellBrainHolderComponent>(BorgSwitchableTypeUiKey.SelectBorgType,
+            subs =>
+            {
+                subs.Event<BorgSelectTypeMessage>(OnSelectShellType);
+            });
+    }
+
+    private void OnSelectShellType(EntityUid uid, StationAiShellBrainHolderComponent component, BorgSelectTypeMessage args)
+    {
+        SetShellName(component.Brain, args.Prototype);
     }
 
     private void OnShellInsert(Entity<StationAiShellBrainComponent> ent, ref EntGotInsertedIntoContainerMessage args)
@@ -33,9 +45,10 @@ public sealed class StationAiShellBrainSystem : EntitySystem
             _shelluser.AddToAvailableShells((uid, comp), args.Container.Owner!);
         }
 
-        _shelluser.ExitShell(ent.Owner);
         ent.Comp.ContainingShell = args.Container.Owner;
         SetShellName(ent.Owner);
+        var brainHolderComp = AddComp<StationAiShellBrainHolderComponent>(ent.Comp.ContainingShell.Value);
+        brainHolderComp.Brain = ent;
         Log.Debug("    PASS - BORIS INSERT DETECTED");
     }
 
@@ -50,6 +63,9 @@ public sealed class StationAiShellBrainSystem : EntitySystem
             _shelluser.RemoveFromAvailableShells((uid, comp), args.Container.Owner!);
         }
 
+        _shelluser.ExitShell(ent.Owner);
+        if (ent.Comp.ContainingShell != null)
+            RemCompDeferred<StationAiShellBrainHolderComponent>(ent.Comp.ContainingShell.Value);
         Name(ent);
         Log.Debug("    PASS - BORIS EXIT DETECTED");
     }
@@ -58,7 +74,8 @@ public sealed class StationAiShellBrainSystem : EntitySystem
     /// Automatically sets the name of the given brain's shell to the appropriate format
     /// </summary>
     /// <param name="shellBrain">The brain of the shell we want to set the name of</param>
-    public void SetShellName(Entity<StationAiShellBrainComponent?> shellBrain)
+    /// <param name="borgProtoId">The protoId of the borg type for our name. Primarily used for setting our name on borg type selection</param>
+    public void SetShellName(Entity<StationAiShellBrainComponent?> shellBrain, ProtoId<BorgTypePrototype>? borgProtoId = null)
     {
         if (!Resolve(shellBrain, ref shellBrain.Comp))
             return;
@@ -73,7 +90,9 @@ public sealed class StationAiShellBrainSystem : EntitySystem
         }
         else
         {
-            _prototype.TryIndex(switchable.SelectedBorgType, out var borgProto);
+            borgProtoId ??= switchable.SelectedBorgType;
+            _prototype.TryIndex(borgProtoId, out var borgProto);
+
             var borgTypeLoc = Loc.GetString($"borg-type-{borgProto?.ID ?? "default"}-name");
 
             var aiName = TryComp<NameModifierComponent>(shellBrain.Comp.ActiveCore.Value, out var nameModifier)

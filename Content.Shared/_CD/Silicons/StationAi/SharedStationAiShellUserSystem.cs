@@ -42,7 +42,6 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
                 subs.Event<EnterShellMessage>(OnEnterShell);
                 subs.Event<SelectShellMessage>(OnSelectShell);
             });
-
     }
 
     private void OnOpenUi(Entity<StationAiShellUserComponent> ent, ref AiEnterShellEvent args)
