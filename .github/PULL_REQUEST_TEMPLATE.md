@@ -20,6 +20,6 @@ If you're unsure whether your PR will require media, ask a maintainer.
 
 **Changelog**
 <!--
-We do not have the bot upstream uses to automatically create changelogs. Simply write a summery of your changes to be
-listed in #progress-reports. If you would like to be credited as something other then you github username please include the name that you would like to be credited as.
+We do not have the bot upstream uses to automatically create changelogs. Simply write a summary of your changes to be
+listed in #progress-reports. If you would like to be credited as something other then your Github username please include the name that you would like to be credited as.
 -->
