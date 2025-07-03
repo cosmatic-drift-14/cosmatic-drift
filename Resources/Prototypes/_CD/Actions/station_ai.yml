@@ -26,3 +26,13 @@
       sprite: Interface/Actions/actions_ai.rsi
       state: ai_core
     event: !type:AiExitShellEvent
+
+# entity just for guidebook use, should not be able to be spawned in through normal or even admin means
+- type: entity
+  id: ActionEnterShellGuidebookProp
+  description: Allows you to possess a shell. Guidebook specifix entity.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    state: ai_core
