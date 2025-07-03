@@ -20,6 +20,7 @@
   groups:
   - GroupTankHarness
   - StationEngineerHead
+  - EngineeringEyewear
   - SeniorEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing

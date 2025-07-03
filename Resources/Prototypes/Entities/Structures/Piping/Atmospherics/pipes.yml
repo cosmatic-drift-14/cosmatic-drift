@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
-  id: GasPipeBase
   parent: BaseItem
-  name: pipe
+  id: GasPipeSansLayers
+  name: gas pipe
   description: Holds gas.
   placement:
     mode: SnapgridCenter
@@ -18,7 +18,6 @@
     damageModifierSet: Metallic
   - type: SubFloorHide
   - type: CollideOnAnchor
-  - type: PipeAppearance
   - type: Anchorable
   - type: Rotatable
   - type: Destructible
@@ -51,6 +50,7 @@
     drawdepth: ThinPipe
     visible: false
   - type: Appearance
+  - type: PipeAppearance
   - type: PipeColorVisuals
   - type: NodeContainer
   # - type: PipeRestrictOverlap
@@ -66,12 +66,26 @@
   - type: StaticPrice
     price: 30
 
+- type: entity
+  abstract: true
+  parent: GasPipeSansLayers
+  id: GasPipeBase
+  components:
+  - type: AtmosPipeLayers
+    spriteLayersRsiPaths:
+      enum.PipeVisualLayers.Pipe:
+        Primary: Structures/Piping/Atmospherics/pipe.rsi
+        Secondary: Structures/Piping/Atmospherics/pipe_alt1.rsi
+        Tertiary: Structures/Piping/Atmospherics/pipe_alt2.rsi
+
 #Note: The PipeDirection of the PipeNode should be the south-facing version, because the entity starts at an angle of 0 (south)
 
 - type: entity
   parent: GasPipeBase
   id: GasPipeHalf
   suffix: Half
+  placement:
+    mode: AlignAtmosPipeLayers
   components:
   - type: NodeContainer
     nodes:
@@ -81,11 +95,21 @@
         pipeDirection: South
   - type: Sprite
     layers:
-      - state: pipeHalf
-        map: [ "enum.PipeVisualLayers.Pipe" ]
+    - state: pipeHalf
+      map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasPipeHalf
+      Secondary: GasPipeHalfAlt1
+      Tertiary: GasPipeHalfAlt2
   - type: Construction
     graph: GasPipe
     node: half
+  - type: Item
+    size: 5
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/pipe.rsi
+    #   state: storageHalf
   - type: GuideHelp
     guides:
     - Pipes
@@ -95,6 +119,8 @@
   parent: GasPipeBase
   id: GasPipeStraight
   suffix: Straight
+  placement:
+    mode: AlignAtmosPipeLayers
   components:
   - type: NodeContainer
     nodes:
@@ -104,13 +130,23 @@
         pipeDirection: Longitudinal
   - type: Sprite
     layers:
-      - state: pipeStraight
-        map: [ "enum.PipeVisualLayers.Pipe" ]
+    - state: pipeStraight
+      map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasPipeStraight
+      Secondary: GasPipeStraightAlt1
+      Tertiary: GasPipeStraightAlt2
   - type: Construction
     graph: GasPipe
     node: straight
   - type: Item
     size: 10
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/pipe.rsi
+    #   state: storageStraight
+    # shape:
+    # - 0,0,0,2
   - type: MeleeWeapon
     attackRate: 1
     damage:
@@ -127,6 +163,8 @@
   parent: GasPipeBase
   id: GasPipeBend
   suffix: Bend
+  placement:
+    mode: AlignAtmosPipeLayers
   components:
   - type: NodeContainer
     nodes:
@@ -138,11 +176,23 @@
     layers:
       - state: pipeBend
         map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasPipeBend
+      Secondary: GasPipeBendAlt1
+      Tertiary: GasPipeBendAlt2
   - type: Construction
     graph: GasPipe
     node: bend
   - type: Item
     size: 10
+    # shape:
+    # - 0,0,1,0
+    # - 1,1,1,1
+    # heldPrefix: Bend
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/pipe.rsi
+    #   state: storageBend
   - type: MeleeWeapon
     wideAnimationRotation: 180
     attackRate: 1
@@ -163,6 +213,8 @@
 - type: entity
   parent: GasPipeBase
   id: GasPipeTJunction
+  placement:
+    mode: AlignAtmosPipeLayers
   suffix: TJunction
   components:
   - type: NodeContainer
@@ -175,6 +227,11 @@
     layers:
       - state: pipeTJunction
         map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasPipeTJunction
+      Secondary: GasPipeTJunctionAlt1
+      Tertiary: GasPipeTJunctionAlt2
   - type: Construction
     graph: GasPipe
     node: tjunction
@@ -198,6 +255,8 @@
   parent: GasPipeBase
   id: GasPipeFourway
   suffix: Fourway
+  placement:
+    mode: AlignAtmosPipeLayers
   components:
   - type: Transform
     noRot: true
@@ -211,12 +270,20 @@
     layers:
       - state: pipeFourway
         map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasPipeFourway
+      Secondary: GasPipeFourwayAlt1
+      Tertiary: GasPipeFourwayAlt2
   - type: Construction
     graph: GasPipe
     node: fourway
   - type: Item
     size: 10
     heldPrefix: Fourway
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/pipe.rsi
+    #   state: storageFourway
   - type: MeleeWeapon
     wideAnimationRotation: 90
     attackRate: 0.75
@@ -243,9 +310,13 @@
     layers:
       - state: pipeBroken
         map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    numberOfPipeLayers: 1
   - type: Construction
     graph: GasPipe
     node: broken
+  - type: Item
+    size: 5
   - type: Destructible
     thresholds: # override parent to avoid recursive destruction
     - trigger:
@@ -258,3 +329,74 @@
     guides:
     - Pipes
     - PipeNetworks
+
+- type: entity
+  parent: GasPipeSansLayers
+  id: GasPipeManifold
+  name: gas pipe manifold
+  description: Allows gas pipes of different configurations to be connected together.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Structures/Piping/Atmospherics/manifold.rsi
+    layers:
+    - state: pipeManifold
+      map: [ "enum.PipeVisualLayers.Pipe" ]
+  - type: AtmosPipeLayers
+    pipeLayersLocked: true
+  - type: PipeAppearance
+    sprite:
+    - { sprite: Structures/Piping/Atmospherics/manifold.rsi, state: pipeConnector }
+    - { sprite: Structures/Piping/Atmospherics/manifold.rsi, state: pipeConnector_alt1 }
+    - { sprite: Structures/Piping/Atmospherics/manifold.rsi, state: pipeConnector_alt2 }
+  - type: Construction
+    graph: GasPipe
+    node: manifold
+  - type: Item
+    size: 10
+    # shape:
+    # - 0,0,1,0
+    # storedSprite:
+    #   sprite: Structures/Piping/Atmospherics/manifold.rsi
+    #   state: storageManifold
+  - type: NodeContainer
+    nodes:
+      south0:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: South
+        pipeLayer: 0
+      south1:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: South
+        pipeLayer: 1
+      south2:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: South
+        pipeLayer: 2
+      north0:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: North
+        pipeLayer: 0
+      north1:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: North
+        pipeLayer: 1
+      north2:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: North
+        pipeLayer: 2
+  - type: GasPipeManifold
+  - type: AtmosMonitoringConsoleDevice
+    navMapBlip: GasPipeManifold
+    showAbsentConnections: false
+  - type: AtmosDevice
+  - type: Tag
+    tags:
+    - Unstackable

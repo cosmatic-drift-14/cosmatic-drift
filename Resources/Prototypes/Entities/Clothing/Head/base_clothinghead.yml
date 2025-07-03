@@ -58,7 +58,10 @@
     equippedPrefix: off
   - type: Item
     heldPrefix: off
-  - type: ToggleableLightVisuals
+    size: 5
+  - type: ToggleableVisuals
+    spriteLayer: light
+  - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     radius: 3
@@ -203,7 +206,9 @@
       map: [ "light" ]
   - type: Clothing
     equippedPrefix: off
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
+    spriteLayer: light
+  - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     radius: 3
