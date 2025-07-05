@@ -15,6 +15,13 @@
       "directions": 4
     },
     {
+      "name": "icon-unshaded"
+    },
+    {
+      "name": "equipped-INNERCLOTHING-unshaded",
+      "directions": 4
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },

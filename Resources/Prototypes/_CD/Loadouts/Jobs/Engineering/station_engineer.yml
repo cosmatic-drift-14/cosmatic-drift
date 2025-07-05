@@ -24,6 +24,21 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtEngineeringModern
 
+- type: loadout
+  id: StationEngineerJumpsuitEVA
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringEVA
+
+- type: loadout
+  id: StationEngineerJumpsuitMechanic
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringMechanic
+
+- type: loadout
+  id: StationEngineerJumpskirtMechanic
+  equipment: 
+    jumpsuit: ClothingUniformJumpskirtEngineeringMechanic
+
 # OuterClothing
 - type: loadout
   id: StationEngineerJacket
