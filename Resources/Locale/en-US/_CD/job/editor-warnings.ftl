@@ -1,1 +1,1 @@
-cd-department-limit-rule-warning = A single character cannot work in more then two departments plus a service "side job".
+cd-department-limit-rule-warning = A single character cannot work in more than two departments plus a Service department "side job".

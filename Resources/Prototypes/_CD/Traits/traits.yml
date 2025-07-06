@@ -34,7 +34,7 @@
   cost: 1
   components:
   - type: LightweightDrunk
-    boozeStrengthMultiplier: 0.5
+    boozeStrengthMultiplier: 0.75
 
 - type: trait
   id: HideFromRoundEndScreen
