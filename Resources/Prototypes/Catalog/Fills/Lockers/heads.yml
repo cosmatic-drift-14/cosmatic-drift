@@ -18,7 +18,7 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: AstroNavCartridge
-    - id: ClothingHandsKnuckleDustersQM
+    # - id: ClothingHandsKnuckleDustersQM # CD: Remove these
     - id: MailTeleporterMachineCircuitboard
     #CD Addions
     - id: BookSOPCargo
