@@ -48,4 +48,4 @@
     mask: ClothingMaskBreath
     outerClothing: ClothingOuterWinterQM
     neck: ClothingNeckCloakQm
-    gloves: ClothingHandsKnuckleDustersQM
+    # gloves: ClothingHandsKnuckleDustersQM # CD: Remove these
