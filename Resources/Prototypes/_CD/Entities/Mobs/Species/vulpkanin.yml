@@ -75,6 +75,8 @@
         sprite: _CD/Mobs/Customization/Vulpkanin/masking_helpers.rsi
         state: female_full
         visible: false
+      - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+      - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]

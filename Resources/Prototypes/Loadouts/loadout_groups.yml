@@ -209,6 +209,7 @@
   - GreyJumpskirt
   - AncientJumpsuit
   - RainbowJumpsuit
+  - RainbowJumpskirt
 
 - type: loadoutGroup
   id: PassengerFace
@@ -556,6 +557,7 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
+  - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -734,6 +736,9 @@
   loadouts:
   - ChiefEngineerJumpsuit
   - ChiefEngineerJumpskirt
+  - ChiefEngineerJumpsuitModern # CD Drip 4
+  - ChiefEngineerJumpskirtModern # CD Drip 4
+  - ChiefEngineerJumpsuitFormal # CD Drip 4
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
 
@@ -751,6 +756,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - StationEngineerJacket # CD
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -786,8 +792,14 @@
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerHazardsuit
+  - StationEngineerJumpsuitModern # CD
+  - StationEngineerJumpskirtModern # CD
+  - StationEngineerHazardsuitModern # CD
   - StationEngineerCasualsuit # CD
   - StationEngineerPants # CD
+  - StationEngineerJumpsuitEVA # CD
+  - StationEngineerJumpsuitMechanic # CD
+  - StationEngineerJumpskirtMechanic # CD
   # - SeniorEngineerJumpsuit
   # - SeniorEngineerJumpskirt
 
@@ -828,6 +840,8 @@
   loadouts:
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
+  - AtmosphericTechnicianJumpsuitModern # CD
+  - AtmosphericTechnicianJumpskirtModern # CD
   - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
 
@@ -837,6 +851,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  - AtmosphericTechnicianOveralls # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -1381,6 +1396,7 @@
   loadouts:
   - MedicalHud
   - MedicalEyePatchHud
+  - MedicalVisorHud #CD Addition
   - Glasses
   - GlassesJamjar
   - GlassesJensen

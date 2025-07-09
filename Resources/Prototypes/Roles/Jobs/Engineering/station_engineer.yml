@@ -19,9 +19,20 @@
 - type: startingGear
   id: StationEngineerGear
   equipment:
-    eyes: ClothingEyesGlassesMeson
+#    eyes: ClothingEyesGlassesMeson # CD
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
   #storage:
     #back:
     #- Stuff
+
+- type: chameleonOutfit
+  id: StationEngineerChameleonOutfit
+  job: StationEngineer
+  equipment:
+    head: ClothingHeadHatHardhatYellow
+    mask: ClothingMaskBreath
+    neck: ClothingNeckScarfStripedOrange
+    outerClothing: ClothingOuterWinterEngi
+    gloves: ClothingHandsGlovesColorYellow
+    shoes: ClothingShoesBootsMag

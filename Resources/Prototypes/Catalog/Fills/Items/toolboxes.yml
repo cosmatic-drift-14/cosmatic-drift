@@ -128,9 +128,16 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingBeltUtilityEngineering
-      - id: ClothingHandsGlovesCombat
-      - id: ClothingMaskGasSyndicate
+    - id: Crowbar
+    - id: Wrench
+    - id: Screwdriver
+    - id: Wirecutter
+    - id: Welder
+    - id: Multitool
+    - id: ClothingHandsGlovesCombat
+    - id: ClothingMaskGasSyndicate
+  - type: StaticPrice
+    price: 1000
 
 - type: entity
   id: ToolboxGoldFilled

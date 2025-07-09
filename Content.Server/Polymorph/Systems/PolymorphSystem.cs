@@ -2,7 +2,6 @@ using Content.Server.Actions;
 using Content.Server.Humanoid;
 using Content.Server.Inventory;
 using Content.Server.Mind.Commands;
-using Content.Shared.Nutrition;
 using Content.Server.Polymorph.Components;
 using Content.Shared.Actions;
 using Content.Shared.Buckle;
@@ -20,7 +19,6 @@ using Content.Shared.Popups;
 using Robust.Server.Audio;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
-using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
@@ -29,7 +27,6 @@ namespace Content.Server.Polymorph.Systems;
 
 public sealed partial class PolymorphSystem : EntitySystem
 {
-    [Dependency] private readonly IComponentFactory _compFact = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
@@ -214,7 +211,7 @@ public sealed partial class PolymorphSystem : EntitySystem
 
         MakeSentientCommand.MakeSentient(child, EntityManager);
 
-        var polymorphedComp = _compFact.GetComponent<PolymorphedEntityComponent>();
+        var polymorphedComp = Factory.GetComponent<PolymorphedEntityComponent>();
         polymorphedComp.Parent = uid;
         polymorphedComp.Configuration = configuration;
         AddComp(child, polymorphedComp);

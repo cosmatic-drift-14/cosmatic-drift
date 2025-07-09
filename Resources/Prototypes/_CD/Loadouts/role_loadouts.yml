@@ -20,6 +20,7 @@
   groups:
   - GroupTankHarness
   - StationEngineerHead
+  - EngineeringEyewear
   - SeniorEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
@@ -72,7 +73,7 @@
   - MedicalBackpack
   - SeniorPhysicianOuterClothing
   - MedicalShoes
-  - Glasses
+  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical

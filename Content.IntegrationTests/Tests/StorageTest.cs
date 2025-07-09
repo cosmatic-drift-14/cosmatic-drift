@@ -76,7 +76,7 @@ namespace Content.IntegrationTests.Tests
 
             var protoMan = server.ResolveDependency<IPrototypeManager>();
             var compFact = server.ResolveDependency<IComponentFactory>();
-            var id = compFact.GetComponentName(typeof(StorageFillComponent));
+            var id = compFact.GetComponentName<StorageFillComponent>();
 
             await Assert.MultipleAsync(async () =>
             {

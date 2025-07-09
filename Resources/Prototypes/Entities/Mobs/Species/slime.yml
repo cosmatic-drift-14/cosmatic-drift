@@ -16,7 +16,6 @@
   - type: Storage
     capacity: 25
     clickInsert: false
-    openOnActivate: false
     storageInsertSound:
       path: /Audio/Voice/Slime/slime_squish.ogg
   - type: ContainerContainer

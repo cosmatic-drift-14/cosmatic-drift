@@ -36,7 +36,7 @@ public static class CDModel
     }
     public enum DbRecordEntryType : byte
     {
-         Medical = 0, Security = 1, Employment = 2
+         Medical = 0, Security = 1, Employment = 2, Admin = 3,
     }
 
     [Table("cd_character_record_entries"), Index(nameof(Id))]

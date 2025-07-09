@@ -29,6 +29,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
     [UISystemDependency] private readonly ClientInventorySystem _inventorySystem = default!;
     [UISystemDependency] private readonly HandsSystem _handsSystem = default!;
     [UISystemDependency] private readonly ContainerSystem _container = default!;
+    [UISystemDependency] private readonly SpriteSystem _sprite = default!;
 
     private EntityUid? _playerUid;
     private InventorySlotsComponent? _playerInventory;
@@ -177,7 +178,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
     {
         if (_inventoryHotbar == null)
         {
-            Logger.Warning("Tried to toggle inventory bar when none are assigned");
+            Log.Warning("Tried to toggle inventory bar when none are assigned");
             return;
         }
 

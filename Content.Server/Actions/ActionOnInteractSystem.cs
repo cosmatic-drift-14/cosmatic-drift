@@ -14,9 +14,9 @@ namespace Content.Server.Actions;
 public sealed class ActionOnInteractSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedChargesSystem _charges = default!;
 
     public override void Initialize()

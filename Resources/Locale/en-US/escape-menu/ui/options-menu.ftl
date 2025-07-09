@@ -49,6 +49,9 @@ ui-options-misc-label = Misc
 ui-options-interface-label = Interface
 
 
+ui-options-auto-fill-highlights = Auto-fill the highlights with the character's information
+ui-options-highlights-color = Highlighs color:
+ui-options-highlights-color-example = This is an highlighted text!
 ui-options-show-held-item = Show held item next to cursor
 ui-options-show-combat-mode-indicators = Show combat mode indicators with cursor
 # ui-options-opaque-storage-window = Opaque storage window
@@ -151,6 +154,7 @@ ui-options-function-alt-activate-item-in-world = Alternative activate item in wo
 ui-options-function-drop = Drop item
 ui-options-function-examine-entity = Examine
 ui-options-function-swap-hands = Swap hands
+ui-options-function-swap-hands-reverse = Swap hands (other direction)
 
 ui-options-function-smart-equip-backpack = Smart-equip to backpack
 ui-options-function-smart-equip-belt = Smart-equip to belt

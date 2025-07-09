@@ -82,7 +82,6 @@
   id: ClothingNeckBandCargo
   name: cargo bandana
 
-
 - type: entity
   parent: ClothingMaskDepartBandanaBase
   id: ClothingMaskBandSec
@@ -98,3 +97,19 @@
   parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandSec ]
   id: ClothingNeckBandSec
   name: security bandana
+
+- type: entity
+  parent: ClothingMaskDepartBandanaBase
+  id: ClothingMaskBandEngi
+  name: engineering bandana
+  description: An engineering-coloured bandana to cover your face.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Mask/engineering_bandana.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Mask/engineering_bandana.rsi
+
+- type: entity
+  parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandEngi ]
+  id: ClothingNeckBandEngi
+  name: engineering bandana

@@ -1,12 +1,12 @@
 # Jumpsuit
 - type: loadout
   id: MedicalCasualsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformDoctorCasual
 
 - type: loadout
   id: MedicalTechnician
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformMedicalTechnician
 
 - type: loadout
@@ -61,9 +61,9 @@
     back: ClothingBackpackDuffelGenetics
 
 # OuterClothing
-- type: loadout 
+- type: loadout
   id: ModernLabCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatStylishLab
 
 - type: loadout
@@ -71,14 +71,14 @@
   equipment:
     outerClothing: ClothingOuterWinterViro
 
-- type: loadout 
+- type: loadout
   id: ViroCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatLabViro
 
-- type: loadout 
+- type: loadout
   id: ModernViroCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatLabStylishViro
 
 - type: loadout
@@ -86,9 +86,9 @@
   equipment:
     outerClothing: ClothingOuterWinterGen
 
-- type: loadout 
+- type: loadout
   id: GeneCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatLabGene
 
 # ID
@@ -96,3 +96,9 @@
   id: MedicalInternPDA
   equipment:
     id: MedicalInternPDA
+
+# Eyewear
+- type: loadout
+  id: MedicalVisorHud
+  equipment:
+    eyes: ClothingEyesHudMedicalVisor
