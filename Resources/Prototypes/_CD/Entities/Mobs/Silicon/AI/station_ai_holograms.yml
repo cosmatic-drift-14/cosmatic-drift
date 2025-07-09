@@ -1,0 +1,89 @@
+- type: stationAiCustomization
+  id: StationAiHologramAlien
+  name: station-ai-hologram-alien
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_alien
+
+- type: stationAiCustomization
+  id: StationAiHologramBees
+  name: station-ai-hologram-bees
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_bees
+
+- type: stationAiCustomization
+  id: StationAiHologramBigMoth
+  name: station-ai-hologram-big-moth
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_big_moth
+
+- type: stationAiCustomization
+  id: StationAiHologramGhost
+  name: station-ai-hologram-ghost
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_ghost
+
+- type: stationAiCustomization
+  id: StationAiHologramHorror
+  name: station-ai-hologram-horror
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_horror
+
+- type: stationAiCustomization
+  id: StationAiHologramLeaves
+  name: station-ai-hologram-leaves
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_leaves
+
+- type: stationAiCustomization
+  id: StationAiHologramNarsie
+  name: station-ai-hologram-narsie
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_narsie
+
+- type: stationAiCustomization
+  id: StationAiHologramRatvar
+  name: station-ai-hologram-ratvar
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_ratvar
+
+- type: stationAiCustomization
+  id: StationAiHologramSemi
+  name: station-ai-hologram-semi
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_semi
+
+- type: stationAiCustomization
+  id: StationAiHologramCy
+  name: station-ai-hologram-cy
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: _CD/Mobs/Silicon/AI/holograms.rsi
+      state: ai_cy
