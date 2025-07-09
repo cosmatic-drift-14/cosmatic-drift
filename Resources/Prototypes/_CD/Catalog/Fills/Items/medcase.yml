@@ -6,8 +6,10 @@
   - type: StorageFill
     contents:
       - id: Gauze1
-      - id: EmergencyMedipen
         amount: 2
+      - id: OintmentAdvanced1
+      - id: BrutepackAdvanced1
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcaseBurnFilled
@@ -94,6 +96,6 @@
   - type: StorageFill
     contents:
       - id: Tourniquet
-      - id: BruteAutoInjector
+      - id: AntiPoisonMedipen
       - id: AirlossAutoInjector
       - id: EmergencyMedipen
