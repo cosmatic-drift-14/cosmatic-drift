@@ -8,7 +8,7 @@
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     state: civdef
   - type: Storage
-    capacity: 8
+    capacity: 7
     whitelist:
       tags:
         - Brutepack
@@ -50,7 +50,7 @@
   id: MedcaseRadiation
   components:
   - type: Sprite
-    state: burnrad
+    state: rad
   - type: Item
     heldPrefix: burnrad
 
@@ -111,7 +111,7 @@
   - type: Item
     heldPrefix: combat
   - type: Storage
-    capacity: 15
+    capacity: 17
 
 - type: entity
   name: rapid application medcase
@@ -123,7 +123,5 @@
     state: rapidapp
   - type: Item
     heldPrefix: rapidapp
-    size: 10
   - type: Storage
     capacity: 19
-

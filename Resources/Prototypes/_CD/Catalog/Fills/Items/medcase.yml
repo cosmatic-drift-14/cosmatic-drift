@@ -5,8 +5,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: PillCanisterTricordrazine
+      - id: Gauze1
       - id: EmergencyMedipen
+        amount: 2
 
 - type: entity
   id: MedcaseBurnFilled
@@ -15,8 +16,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: PillCanisterKelotane
+      - id: PillKelotane
       - id: BurnAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcaseRadiationFilled
@@ -25,8 +27,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: PillCanisterPotassiumIodide
+      - id: PillPotassiumIodide
       - id: RadAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcasePoisonFilled
@@ -35,8 +38,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: PillCanisterCharcoal
+      - id: PillCharcoal
       - id: AntiPoisonMedipen
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcaseAsphyxiationFilled
@@ -45,8 +49,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: PillCanisterDexalin
-      - id: SpaceMedipen
+      - id: PillDexalin
+      - id: AirlossAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcaseBruteFilled
@@ -57,6 +62,7 @@
     contents:
       - id: PillCanisterStubantazine
       - id: BruteAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcaseBleedFilled
@@ -66,9 +72,7 @@
   - type: StorageFill
     contents:
       - id: Tourniquet
-      - id: PillIron
-      - id: PillCopper
-      - id: PillDexalin
+      - id: EmergencyMedipen
 
 - type: entity
   id: MedcaseCombatFilled
@@ -78,8 +82,8 @@
   - type: StorageFill
     contents:
       - id: Tourniquet
-      - id: BrutepackAdvanced1
-        amount: 2
+      - id: PillStubantazine
+      - id: PunctAutoInjector
       - id: EmergencyMedipen
 
 - type: entity
@@ -90,6 +94,6 @@
   - type: StorageFill
     contents:
       - id: Tourniquet
-      - id: EmergencyMedipen
+      - id: BruteAutoInjector
       - id: AirlossAutoInjector
-      - id: SpaceMedipen
+      - id: EmergencyMedipen
