@@ -1,0 +1,95 @@
+- type: entity
+  id: MedcaseFilled
+  suffix: Filled
+  parent: Medcase
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterTricordrazine
+      - id: EmergencyMedipen
+
+- type: entity
+  id: MedcaseBurnFilled
+  suffix: Filled
+  parent: MedcaseBurn
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterKelotane
+      - id: BurnAutoInjector
+
+- type: entity
+  id: MedcaseRadiationFilled
+  suffix: Filled
+  parent: MedcaseRadiation
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterPotassiumIodide
+      - id: RadAutoInjector
+
+- type: entity
+  id: MedcasePoisonFilled
+  suffix: Filled
+  parent: MedcasePoison
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterCharcoal
+      - id: AntiPoisonMedipen
+
+- type: entity
+  id: MedcaseAsphyxiationFilled
+  suffix: Filled
+  parent: MedcaseAsphyxiation
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterDexalin
+      - id: SpaceMedipen
+
+- type: entity
+  id: MedcaseBruteFilled
+  suffix: Filled
+  parent: MedcaseBrute
+  components:
+  - type: StorageFill
+    contents:
+      - id: PillCanisterStubantazine
+      - id: BruteAutoInjector
+
+- type: entity
+  id: MedcaseBleedFilled
+  suffix: Filled
+  parent: MedcaseBleed
+  components:
+  - type: StorageFill
+    contents:
+      - id: Tourniquet
+      - id: PillIron
+      - id: PillCopper
+      - id: PillDexalin
+
+- type: entity
+  id: MedcaseCombatFilled
+  suffix: Filled
+  parent: MedcaseCombat
+  components:
+  - type: StorageFill
+    contents:
+      - id: Tourniquet
+      - id: BrutepackAdvanced1
+        amount: 2
+      - id: EmergencyMedipen
+
+- type: entity
+  id: MedcaseRapidFilled
+  suffix: Filled
+  parent: MedcaseRapid
+  components:
+  - type: StorageFill
+    contents:
+      - id: Tourniquet
+      - id: EmergencyMedipen
+      - id: AirlossAutoInjector
+      - id: SpaceMedipen
