@@ -116,8 +116,18 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -127,8 +137,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -138,8 +157,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -149,5 +177,34 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtEngineeringMechanic
+  name: mechanical engineer jumpskirt
+  description: A yellow jumpskirt with a set of overalls attached, You can't tell if its durathread or denim.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded

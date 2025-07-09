@@ -337,8 +337,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/ce.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/ce.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
@@ -359,8 +368,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/senior_engineer.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/senior_engineer.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
@@ -370,8 +388,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
@@ -381,8 +408,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_hazard.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_hazard.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
@@ -392,8 +428,17 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos_hazard.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos_hazard.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
@@ -403,8 +448,57 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos.rsi 
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/atmos.rsi 
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitEngineeringEVA
+  name: EVA engineer jumpsuit
+  description: A cream-white jumpsuit with high visibility markings. The markings are usually covered by a hardsuit.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_eva.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_eva.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitEngineeringMechanic
+  name: mechanical engineer jumpsuit
+  description: A yellow jumpsuit with a set of overalls attached, You can't tell if its durathread or denim.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_mechanic.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/engineering_mechanic.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 # Suits
 

@@ -12,16 +12,21 @@
     ClothingUniformJumpsuitEngineeringHazardModern: 3 # CD
     ClothingUniformJumpsuitEngineeringCasual: 3 # CD
     ClothingUniformJumpsuitEngineeringPants: 3 # CD
+    ClothingUniformJumpsuitEngineeringEVA: 3 # CD
+    ClothingUniformJumpsuitEngineeringMechanic: 3 # CD
+    ClothingUniformJumpskirtEngineeringMechanic: 3 # CD
     ClothingShoesColorBlack: 3
     ClothingOuterVestHazard: 3
     ClothingShoesBootsWork: 3
     ClothingHeadHatHardhatYellow: 3
     ClothingHeadHatHardhatOrange: 3
     ClothingHeadsetEngineering: 3
+    ClothingHeadHatEngisoft: 3 # CD
     ClothingOuterWinterEngi: 2
     ClothingOuterCoatEngi: 2 # CD
     ClothingOuterCoatYellowHiVis: 3 # CD
     ClothingOuterCoatOrangeHiVis: 3 # CD
+    ClothingMaskBandEngi: 3 # CD
     ClothingNeckScarfStripedOrange: 3
     ClothingShoesBootsWinterEngi: 2
   contrabandInventory:
