@@ -51,6 +51,16 @@
   - StationAiHologramFace
   - StationAiHologramCat
   - StationAiHologramDog
+  # CD holograms below
+  - StationAiHologramAlien
+  - StationAiHologramBees
+  - StationAiHologramBigMoth
+  - StationAiHologramGhost
+  - StationAiHologramHorror
+  - StationAiHologramLeaves
+  - StationAiHologramSemi
+  - StationAiHologramCy
+  # end of CD holograms
 
 # Iconography
 - type: stationAiCustomization
