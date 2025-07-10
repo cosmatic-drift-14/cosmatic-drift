@@ -239,8 +239,8 @@ namespace Content.Server.Database
         Task<Round> GetRound(int id);
         Task AddRoundPlayers(int id, params Guid[] playerIds);
 
-        Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds);
-        Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth);
+        Task AddNewAdvancedRound(Server server, int roundid, string map);
+        Task RetrieveMapQueue(Queue<string> mapCache, int cacheDepth);
 
         #endregion
 
@@ -733,13 +733,13 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.AddRoundPlayers(id, playerIds));
         }
 
-        public Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds)
+        public Task AddNewAdvancedRound(Server server, int roundid, string map)
         {
             DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.AddNewAdvancedRound(server, roundid, map, playerIds));
+            return RunDbCommand(() => _db.AddNewAdvancedRound(server, roundid, map));
         }
 
-        public Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
+        public Task RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.RetrieveMapQueue(mapCache, cacheDepth));

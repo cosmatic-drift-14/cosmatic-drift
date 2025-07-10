@@ -875,18 +875,13 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         }
 
         // CD Additions
-        public async Task<int> AddNewAdvancedRound(Server server, int roundid, string map, params Guid[] playerIds)
+        public async Task AddNewAdvancedRound(Server server, int roundid, string map)
         {
             await using var db = await GetDb();
-
-            var players = await db.DbContext.Player
-                .Where(player => playerIds.Contains(player.UserId))
-                .ToListAsync();
 
             var advRound = new CDModel.AdvancedRound
             {
                 StartDate = DateTime.UtcNow,
-                Players = players,
                 RoundId = roundid,
                 ServerId = server.Id,
                 Map = map,
@@ -895,11 +890,9 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             db.DbContext.AdvancedRound.Add(advRound);
 
             await db.DbContext.SaveChangesAsync();
-
-            return advRound.Id;
         }
 
-        public async Task<string[]> RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
+        public async Task RetrieveMapQueue(Queue<string> mapCache, int cacheDepth)
         {
             await using var db = await GetDb();
 
@@ -914,8 +907,6 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             {
                 mapCache.Enqueue(map);
             }
-
-            return maps;
         }
         // END CD Additions
 

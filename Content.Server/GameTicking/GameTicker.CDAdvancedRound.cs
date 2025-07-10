@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Content.Shared._CD.CCVars;
+using Content.Shared.GameTicking;
 
 namespace Content.Server.GameTicking;
 
-public sealed partial class GameTicker
+public sealed partial class GameTicker : SharedGameTicker
 {
     private static int _cacheDepth;
 
@@ -13,15 +14,14 @@ public sealed partial class GameTicker
     private void IncrementAdvancedRoundNumber()
     {
         _cacheDepth = _cfg.GetCVar(CDCCVars.MapvoteCacheDepth);
-        //var mapName = ;
 
         var task = Task.Run(async () =>
         {
             var server = await _dbEntryManager.ServerEntity;
+            var map = _gameMapManager.GetSelectedMap()!.ID;
 
-            await _db.AddNewAdvancedRound(server, RoundId, _gameMapManager.GetSelectedMap()!.ID);
-
-            UpdateMapQueue(_gameMapManager.GetSelectedMap()!.ID);
+            await _db.AddNewAdvancedRound(server, RoundId, map);
+            UpdateMapQueue(map);
         });
     }
 
@@ -32,11 +32,14 @@ public sealed partial class GameTicker
             if (MapCache.Count < _cacheDepth)
             {
                 await _db.RetrieveMapQueue(MapCache, _cacheDepth);
-                return;
             }
-
-            MapCache.Dequeue();
-            MapCache.Enqueue(mapName);
+            else
+            {
+                MapCache.Dequeue();
+                MapCache.Enqueue(mapName);
+            }
         });
+
+
     }
 }

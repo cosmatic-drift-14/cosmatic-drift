@@ -16,12 +16,12 @@ public static class CDModel
     /// </summary>
     public sealed class AdvancedRound
     {
-        [Key] public int Id { get; set; }
-        [ForeignKey("Server")] public int ServerId { get; set; }
-        [ForeignKey("Round")] public int RoundId { get; set; }
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+        public int ServerId { get; set; }
+        public int RoundId { get; set; }
         public string Map { get; set; } = null!;
         public DateTime? StartDate { get; set; }
-
     }
 
     /// <summary>
