@@ -8,3 +8,93 @@
     contents:
       - id: MedicalTrackingImplanter
         amount: 5
+
+- type: entity
+  id: CrateMedicalMedcaseCivDef
+  parent: CrateTTESecure
+  name: civil defence medcases
+  description: Contains a couple civil defence medcases. Unfortunately, they don't come with instructions.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseFilled
+        amount: 4
+
+- type: entity
+  id: CrateMedicalMedcaseCombat
+  parent: CrateTTESecure
+  name: combat medcases
+  description: Contains three combat medcases, designed for application while in a a hostile engagement
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseCombatFilled
+        amount: 3
+
+- type: entity
+  id: CrateMedicalMedcaseRapidApp
+  parent: CrateTTESecure
+  name: rapid application medcases
+  description: Contains three rapid application medcases, made specifically for ETU teams and other emergency medical technicians.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseRapidFilled
+        amount: 3
+
+- type: entity
+  id: CrateMedicalMedcaseBruteBleed
+  parent: CrateTTESecure
+  name: brute medcases
+  description: Contains two pairs of brute medcases for both blunt wounds, and bleeding.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseBruteFilled
+        amount: 2
+      - id: MedcaseBleedFilled
+        amount: 2
+
+- type: entity
+  id: CrateMedicalMedcaseRad
+  parent: CrateTTESecure
+  name: radiation medcases
+  description: Contains three radiation medcases, typically given to hazardous reactor operators.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseRadiationFilled
+        amount: 3
+
+- type: entity
+  id: CrateMedicalMedcaseBurn
+  parent: CrateTTESecure
+  name: burn medcases
+  description: Contains two burn medcases, ironically reported to be more effective for frostbite.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseBurnFilled
+        amount: 2
+
+- type: entity
+  id: CrateMedicalMedcasePoison
+  parent: CrateTTESecure
+  name: poison medcases
+  description: Contains a two poison medcases.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcasePoisonFilled
+        amount: 2
+
+- type: entity
+  id: CrateMedicalMedcaseAsphyx
+  parent: CrateTTESecure
+  name: asphyxiation medcases
+  description: Contains a two asphyxiation medcases, good for both anemia and hypoxia.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedcaseAsphyxiationFilled
+        amount: 2
