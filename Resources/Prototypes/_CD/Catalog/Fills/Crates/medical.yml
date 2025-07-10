@@ -13,7 +13,7 @@
   id: CrateMedicalMedcaseCivDef
   parent: CrateTTESecure
   name: civil defence medcases
-  description: Contains a couple civil defence medcases. Unfortunately, they don't come with instructions.
+  description: Contains a couple civil defence medcases. Unfortunately, they don't come with instructions. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -24,7 +24,7 @@
   id: CrateMedicalMedcaseCombat
   parent: CrateTTESecure
   name: combat medcases
-  description: Contains three combat medcases, designed for application while in a a hostile engagement
+  description: Contains three combat medcases, designed for application while in a a hostile engagement. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -35,7 +35,7 @@
   id: CrateMedicalMedcaseRapidApp
   parent: CrateTTESecure
   name: rapid application medcases
-  description: Contains three rapid application medcases, made specifically for ETU teams and other emergency medical technicians.
+  description: Contains three rapid application medcases, made specifically for ETU teams and other emergency medical technicians. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -46,7 +46,7 @@
   id: CrateMedicalMedcaseBruteBleed
   parent: CrateTTESecure
   name: brute medcases
-  description: Contains two pairs of brute medcases for both blunt wounds, and bleeding.
+  description: Contains two pairs of brute medcases for both blunt wounds, and bleeding. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -59,7 +59,7 @@
   id: CrateMedicalMedcaseRad
   parent: CrateTTESecure
   name: radiation medcases
-  description: Contains three radiation medcases, typically given to hazardous reactor operators.
+  description: Contains three radiation medcases, typically given to hazardous reactor operators. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -70,7 +70,7 @@
   id: CrateMedicalMedcaseBurn
   parent: CrateTTESecure
   name: burn medcases
-  description: Contains two burn medcases, ironically reported to be more effective for frostbite.
+  description: Contains two burn medcases, ironically reported to be more effective for frostbite. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -81,7 +81,7 @@
   id: CrateMedicalMedcasePoison
   parent: CrateTTESecure
   name: poison medcases
-  description: Contains a two poison medcases.
+  description: Contains a two poison medcases for treating toxic shock. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
@@ -92,7 +92,7 @@
   id: CrateMedicalMedcaseAsphyx
   parent: CrateTTESecure
   name: asphyxiation medcases
-  description: Contains a two asphyxiation medcases, good for both anemia and hypoxia.
+  description: Contains a two asphyxiation medcases, good for both anemia and hypoxia. Requires Medical access to open.
   components:
   - type: StorageFill
     contents:
