@@ -57,23 +57,9 @@
 # Eyes
 
 - type: marking
-  id: ArachnidEyesDefault
-  bodyPart: Eyes
-  markingCategory: Eyes
-  speciesRestriction: [ Arachnid ]
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-  sprites:
-  - sprite: _CD/Mobs/Species/Arachnid/parts.rsi
-    state: eyes
-
-- type: marking
   id: ArachnidEyesJumper
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: Head
   speciesRestriction: [ Arachnid ]
   coloring:
     default:
@@ -92,7 +78,7 @@
 - type: marking
   id: ArachnidEyesJumperGlowing
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: Head
   speciesRestriction: [ Arachnid ]
   coloring:
     default:
@@ -112,7 +98,7 @@
 - type: marking
   id: ArachnidEyesRound
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: Head
   speciesRestriction: [ Arachnid ]
   coloring:
     default:
@@ -131,7 +117,7 @@
 - type: marking
   id: ArachnidEyesRoundGlowing
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: Head
   speciesRestriction: [ Arachnid ]
   coloring:
     default:
@@ -151,7 +137,7 @@
 - type: marking
   id: SpiderEyesMulti
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: Head
   speciesRestriction: [ Arachnid ]
   coloring:
     default:
@@ -170,7 +156,7 @@
 - type: marking
   id: SpiderGlowEyes
   bodyPart: Eyes
-  markingCategory: Eyes
+  markingCategory: Head
   speciesRestriction: [ Arachnid ]
   forcedColoring: true
   coloring:
@@ -237,116 +223,6 @@
 # UndergarmentBottom
 
 # UndergarmentTop
-
-- type: marking
-  id: UndergarmentTopBinderA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type: null
-      fallbackColor: '#FFFFFF'
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: binder
-
-- type: marking
-  id: UndergarmentTopTanktopA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type: null
-      fallbackColor: '#FFFFFF'
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: tanktop
-
-- type: marking
-  id: UndershirtBraSportsA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: sports
-
-- type: marking
-  id: UndershirtBraStraplessA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: strapless
-
-- type: marking
-  id: UndershirtDefaultA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: undershirt
-
-- type: marking
-  id: UndershirtGrossSleevelessA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: grosssleeveless
-
-- type: marking
-  id: UndershirtNanotrasenA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: nanotrasen
-
-- type: marking
-  id: UndershirtRolledA
-  bodyPart: UndergarmentTop
-  markingCategory: UndergarmentTop
-  speciesRestriction: [ Arachnid ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _CD/Mobs/Customization/Humanoid/undergarmenttop.rsi
-    state: rolledundershirt
 
 # LFoot
 

@@ -85,31 +85,21 @@ marking-ArachnidLLegSegments-segments2 = Shin
 
 # UndergarmentBottom
 
+marking-UndergarmentBottomBoxers = Boxers
+
+marking-UndergarmentBottomBriefs = Briefs
+
+marking-UndergarmentBottomSatin = Satin
+
 # UndergarmentTop
 
-marking-UndergarmentTopBinderA = Binder
-marking-UndergarmentTopBinderA-binder = Binder
+marking-UndergarmentTopBinder = Binder
 
-marking-UndergarmentTopTanktopA = Tanktop
-marking-UndergarmentTopTanktopA-tanktop = Tanktop
+marking-UndergarmentTopBra = Classic Bra
 
-marking-UndershirtBraSportsA = Bra (Sports)
-marking-UndershirtBraSportsA-sports = Bra
+marking-UndergarmentTopSportsbra = Sports Bra
 
-marking-UndershirtBraStraplessA = Bra (Strapless)
-marking-UndershirtBraStraplessA-strapless = Bra
-
-marking-UndershirtDefaultA = Undershirt
-marking-UndershirtDefaultA-undershirt = Undershirt
-
-marking-UndershirtGrossSleevelessA = Tanktop (Gross)
-marking-UndershirtGrossSleevelessA-grosssleeveless = Tanktop
-
-marking-UndershirtNanotrasenA = Undershirt (Nanotrasen)
-marking-UndershirtNanotrasenA-nanotrasen = Undershirt
-
-marking-UndershirtRolledA = Undershirt (Cropped)
-marking-UndershirtRolledA-rolledundershirt = Undershirt
+marking-UndergarmentTopTanktop = Tanktop
 
 # LFoot
 
