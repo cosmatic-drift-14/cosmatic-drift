@@ -862,16 +862,6 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [ Moth ]
-  layering:
-    pyr_neck: TailBehindBackpack
-    pyr_wing_behind: TailBehind
-    pyr_wing_front: TailBehindBackpack
-    pyr_inner_behind: TailBehind
-    pyr_inner_front: TailBehindBackpack
-    pyr_stripes_front: TailBehindBackpack
-  colorLinks:
-    pyr_wing_behind: pyr_wing_front
-    pyr_inner_behind: pyr_inner_front
   sprites:
   - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
     state: pyr_neck
