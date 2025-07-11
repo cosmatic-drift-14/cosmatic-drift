@@ -88,3 +88,27 @@
   storage:
     back:
     - SilverRing
+
+- type: loadout
+  id: AntiqueCoinPlatinum
+  storage:
+    back:
+    - AntiqueCoinPlatinum
+
+- type: loadout
+  id: AntiqueCoinGold
+  storage:
+    back:
+    - AntiqueCoinGold
+
+- type: loadout
+  id: AntiqueCoinSilver
+  storage:
+    back:
+    - AntiqueCoinSilver
+
+- type: loadout
+  id: AntiqueCoinCopper
+  storage:
+    back:
+    - AntiqueCoinCopper

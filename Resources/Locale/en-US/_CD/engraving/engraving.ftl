@@ -8,3 +8,5 @@ engraving-dogtags-succeed = You successfully engrave the dogtags with your messa
 engraving-ring-no-message = The ring doesn't seem to have any kind of engraving.
 engraving-ring-has-message = The ring is engraved with a message that reads:{" "}
 engraving-ring-succeed = You successfully engrave the ring with your message.
+
+engraving-coin-succeed = You engrave the coin.
