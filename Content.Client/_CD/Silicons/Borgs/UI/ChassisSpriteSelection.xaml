@@ -1,0 +1,26 @@
+<Control xmlns="https://spacestation14.io"
+         xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
+    <BoxContainer Name="MainContainer"
+                  Orientation="Vertical"
+                  SeparationOverride="4">
+        <controls:StripeBack>
+            <Label Text="{Loc 'borg-select-subtype-flavour-text'}"
+                   StyleClasses="LabelSubText"
+                   HorizontalAlignment="Center"
+                   Margin="0 12"/>
+        </controls:StripeBack>
+        <BoxContainer Name="OptionsContainer"
+                      Orientation="Horizontal"
+                      SeparationOverride="4">
+            <Button>
+                <Label Margin="8" Text="hhes" />
+            </Button>
+            <Button>
+                <Label Margin="8" Text="hhes" />
+            </Button>
+            <Button>
+                <Label Margin="8" Text="hhes" />
+            </Button>
+        </BoxContainer>
+    </BoxContainer>
+</Control>
