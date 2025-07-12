@@ -1,12 +1,12 @@
 - type: entity
   parent: BaseItem
-  id: AntiqueCoinPlatinum
-  name: antique coin
-  description: A reminder of an era long forgotten.
+  id: AntiqueCoin
+  name: coin
+  description: An antique coin from a time long forgotten.
   components:
   - type: Sprite
     sprite: _CD/Objects/Misc/antique_coins.rsi
-    state: antiquecoin_platinum
+    state: antiquecoin
   - type: Item
     size: 1
   - type: DamageOtherOnHit
@@ -14,26 +14,26 @@
       types:
         Blunt: 1
   - type: Engraveable
-    noEngravingText: ""
+    noEngravingText: "engraving-coin-no-message"
     engraveSuccessMessage: "engraving-coin-succeed"
-    hasEngravingText: ""
+    hasEngravingText: "engraving-coin-has-message"
 
 - type: entity
-  parent: AntiqueCoinPlatinum
+  parent: AntiqueCoin
   id: AntiqueCoinGold
   components:
   - type: Sprite
     state: antiquecoin_gold
 
 - type: entity
-  parent: AntiqueCoinPlatinum
+  parent: AntiqueCoin
   id: AntiqueCoinSilver
   components:
   - type: Sprite
     state: antiquecoin_silver
 
 - type: entity
-  parent: AntiqueCoinPlatinum
+  parent: AntiqueCoin
   id: AntiqueCoinCopper
   components:
   - type: Sprite

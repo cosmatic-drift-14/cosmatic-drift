@@ -90,10 +90,10 @@
     - SilverRing
 
 - type: loadout
-  id: AntiqueCoinPlatinum
+  id: AntiqueCoin
   storage:
     back:
-    - AntiqueCoinPlatinum
+    - AntiqueCoin
 
 - type: loadout
   id: AntiqueCoinGold
