@@ -273,9 +273,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         var player = _playerUid;
 
         if (!control.MouseIsHovering ||
-            _playerInventory == null ||
-            !_entities.TryGetComponent<HandsComponent>(player, out var hands) ||
-            hands.ActiveHandEntity is not { } held ||
+            player == null ||
+            !_handsSystem.TryGetActiveItem(player.Value, out var held) ||
             !_entities.TryGetComponent(held, out SpriteComponent? sprite) ||
             !_inventorySystem.TryGetSlotContainer(player.Value, control.SlotName, out var container, out var slotDef))
         {
@@ -286,11 +285,30 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         // Set green / red overlay at 50% transparency
         var hoverEntity = _entities.SpawnEntity("hoverentity", MapCoordinates.Nullspace);
         var hoverSprite = _entities.GetComponent<SpriteComponent>(hoverEntity);
-        var fits = _inventorySystem.CanEquip(player.Value, held, control.SlotName, out _, slotDef) &&
-                   _container.CanInsert(held, container);
+        var fits = _inventorySystem.CanEquip(player.Value, held.Value, control.SlotName, out _, slotDef) &&
+                   _container.CanInsert(held.Value, container);
 
-        hoverSprite.CopyFrom(sprite);
-        hoverSprite.Color = fits ? new Color(0, 255, 0, 127) : new Color(255, 0, 0, 127);
+        if (!fits && _entities.TryGetComponent<StorageComponent>(container.ContainedEntity, out var storage))
+        {
+            fits = _entities.System<StorageSystem>().CanInsert(container.ContainedEntity.Value, held.Value, out _, storage);
+        }
+        else if (!fits && _entities.TryGetComponent<ItemSlotsComponent>(container.ContainedEntity, out var itemSlots))
+        {
+            var itemSlotsSys = _entities.System<ItemSlotsSystem>();
+            foreach (var slot in itemSlots.Slots.Values)
+            {
+                if (!slot.InsertOnInteract)
+                    continue;
+
+                if (!itemSlotsSys.CanInsert(container.ContainedEntity.Value, held.Value, null, slot))
+                    continue;
+                fits = true;
+                break;
+            }
+        }
+
+        _sprite.CopySprite((held.Value, sprite), (hoverEntity, hoverSprite));
+        _sprite.SetColor((hoverEntity, hoverSprite), fits ? new Color(0, 255, 0, 127) : new Color(255, 0, 0, 127));
 
         control.HoverSpriteView.SetEntity(hoverEntity);
     }
