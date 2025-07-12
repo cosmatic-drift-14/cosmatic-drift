@@ -19,13 +19,13 @@ public sealed class SiliconLawEui : BaseEui
     private ISawmill _sawmill = default!;
     private EntityUid _target;
 
-    public SiliconLawEui(SiliconLawSystem siliconLawSystem, EntityManager entityManager, IAdminManager manager, SharedStationAiShellUserSystem shellUser) // CD - ai shells modification
+    public SiliconLawEui(SiliconLawSystem siliconLawSystem, EntityManager entityManager, IAdminManager manager)
     {
         _siliconLawSystem = siliconLawSystem;
         _adminManager = manager;
         _entityManager = entityManager;
         _sawmill = Logger.GetSawmill("silicon-law-eui");
-        _shellUser = shellUser; // CD - ai shells modification
+        _shellUser = _entityManager.System<SharedStationAiShellUserSystem>(); // CD - ai shells modification
     }
 
     public override EuiStateBase GetNewState()

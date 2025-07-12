@@ -15,13 +15,13 @@ public sealed class BorgBuiState : BoundUserInterfaceState
 
     public bool HasBattery;
 
-    public bool HasBoris;
+    public bool HasBoris; // CD - ai shells change
 
-    public BorgBuiState(float chargePercent, bool hasBattery, bool hasBoris)
+    public BorgBuiState(float chargePercent, bool hasBattery, bool hasBoris) // CD boris change
     {
         ChargePercent = chargePercent;
         HasBattery = hasBattery;
-        HasBoris = hasBoris;
+        HasBoris = hasBoris;// CD - ai shells change
     }
 }
 

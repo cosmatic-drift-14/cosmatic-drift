@@ -49,7 +49,6 @@ public sealed class StationAiShellBrainSystem : EntitySystem
         SetShellName(ent.Owner);
         var brainHolderComp = AddComp<StationAiShellBrainHolderComponent>(ent.Comp.ContainingShell.Value);
         brainHolderComp.Brain = ent;
-        Log.Debug("    PASS - BORIS INSERT DETECTED");
     }
 
     private void OnShellEject(Entity<StationAiShellBrainComponent> ent, ref EntGotRemovedFromContainerMessage args)
@@ -67,7 +66,6 @@ public sealed class StationAiShellBrainSystem : EntitySystem
         if (ent.Comp.ContainingShell != null)
             RemCompDeferred<StationAiShellBrainHolderComponent>(ent.Comp.ContainingShell.Value);
         Name(ent);
-        Log.Debug("    PASS - BORIS EXIT DETECTED");
     }
 
     /// <summary>
@@ -86,7 +84,7 @@ public sealed class StationAiShellBrainSystem : EntitySystem
         string formattedName;
         if (shellBrain.Comp.ActiveCore == null)
         {
-            formattedName = Loc.GetString("empty-shell");
+            formattedName = Loc.GetString("cd-ai-shell-brain-empty");
         }
         else
         {

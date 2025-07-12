@@ -36,7 +36,6 @@ using Robust.Shared.Timing;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Utility;
 using System.Linq;
-using Content.Shared._CD.Silicons.StationAi;
 using static Content.Shared.Configurable.ConfigurationComponent;
 
 namespace Content.Server.Administration.Systems
@@ -68,7 +67,6 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly AdminFrozenSystem _freeze = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SiliconLawSystem _siliconLawSystem = default!;
-        [Dependency] private readonly SharedStationAiShellUserSystem _shelluser = default!; // CD - ai shells modification
 
         private readonly Dictionary<ICommonSession, List<EditSolutionsEui>> _openSolutionUis = new();
 
@@ -381,7 +379,7 @@ namespace Content.Server.Administration.Systems
                         Category = VerbCategory.Admin,
                         Act = () =>
                         {
-                            var ui = new SiliconLawEui(_siliconLawSystem, EntityManager, _adminManager, _shelluser); // CD - ai shells modification
+                            var ui = new SiliconLawEui(_siliconLawSystem, EntityManager, _adminManager);
                             if (!_playerManager.TryGetSessionByEntity(args.User, out var session))
                             {
                                 return;

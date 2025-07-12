@@ -1,7 +1,7 @@
 # AI shells
-empty-shell = Empty Default Shell
+cd-ai-shell-brain-empty = Empty Default Shell
 borg-type-default-name = Default
 shell-ai-name-not-found = UNKNOWN
 shell-name-format = {$name} {$shellType} Shell
 
-guide-enty-ai-shells = AI Shells
+guide-entry-ai-shells = AI Shells
