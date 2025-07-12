@@ -18,6 +18,7 @@
   id: MobVoxSprites
   sprites:
     Head: MobVoxHead
+    HeadSide: MobHumanoidAnyMarking # CD
     Snout: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
@@ -46,20 +47,23 @@
       points: 1
       required: false
     Head:
-      points: 1
-      required: true
+      points: 2 # CD
+      required: false # CD
+    HeadSide: # CD
+      points: 2
+      required: false
     Snout:
       points: 1
-      required: true
-      defaultMarkings: [ VoxBeak ]
+      required: false # CD
+      #defaultMarkings: [ VoxBeak ]
     Arms:
-      points: 4
-      required: true
-      defaultMarkings: [ VoxLArmScales, VoxRArmScales, VoxRHandScales, VoxLHandScales ]
+      points: 6 # CD
+      required: false # CD
+      #defaultMarkings: [ VoxLArmScales, VoxRArmScales, VoxRHandScales, VoxLHandScales ]
     Legs:
-      points: 4
-      required: true
-      defaultMarkings: [ VoxLLegScales, VoxRLegScales, VoxRFootScales, VoxLFootScales ]
+      points: 6 # CD
+      required: false # CD
+      #defaultMarkings: [ VoxLLegScales, VoxRLegScales, VoxRFootScales, VoxLFootScales ]
     UndergarmentTop:
       points: 1
       required: false
@@ -67,12 +71,15 @@
       points: 1
       required: false
     Chest:
-      points: 1
+      points: 2 # CD
+      required: false
+    Overlay: # CD
+      points: 4
       required: false
     Tail:
       points: 1
-      required: true
-      defaultMarkings: [ VoxTail ]
+      required: false # CD
+      #defaultMarkings: [ VoxTail ]
 
 - type: humanoidBaseSprite
   id: MobVoxEyes
