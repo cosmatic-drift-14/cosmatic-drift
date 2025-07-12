@@ -89,16 +89,16 @@ public sealed class RetractableItemActionSystem : EntitySystem
 
     private void OnItemHandcuffed(Entity<ActionRetractableItemComponent> ent, ref HeldRelayedEvent<TargetHandcuffedEvent> args)
     {
-        if (_actions.GetAction(ent.Comp.SummoningAction) is not { } action)
+        if (!TryComp<InstantActionComponent>(ent.Comp.SummoningAction, out var action))
             return;
 
-        if (action.Comp.AttachedEntity == null)
+        if (action.AttachedEntity == null)
             return;
 
-        if (_hands.GetActiveHand(action.Comp.AttachedEntity.Value) is not { })
+        if (_hands.GetActiveHand(action.AttachedEntity.Value) is not { })
             return;
 
-        RetractRetractableItem(action.Comp.AttachedEntity.Value, ent, action.Owner);
+        RetractRetractableItem(action.AttachedEntity.Value, ent, action.Owner);
     }
 
     private void PopulateActionItem(Entity<RetractableItemActionComponent?> ent)
