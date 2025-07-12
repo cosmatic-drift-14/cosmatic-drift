@@ -67,6 +67,10 @@
   - MedCrutchesForearm # CD
   - GoldRing # CD
   - SilverRing # CD
+  - AntiqueCoin # CD
+  - AntiqueCoinGold # CD
+  - AntiqueCoinSilver # CD
+  - AntiqueCoinCopper # CD
 
 - type: loadoutGroup
   id: Glasses
