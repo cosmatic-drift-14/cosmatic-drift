@@ -16,3 +16,6 @@
     - neck
   - type: Appearance
   - type: Engraveable
+    noEngravingText: "engraving-dogtags-no-message"
+    engraveSuccessMessage: "engraving-dogtags-succeed"
+    hasEngravingText: "engraving-dogtags-has-message"
