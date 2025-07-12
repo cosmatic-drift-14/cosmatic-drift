@@ -87,6 +87,7 @@ public sealed partial class BorgMenu : FancyWindow
     {
         EjectBatteryButton.Disabled = !state.HasBattery;
         ChargeBar.Value = state.ChargePercent;
+        BorgNameEditContainer.Visible = !state.HasBoris; // CD - ai shells change
         ChargeLabel.Text = Loc.GetString("borg-ui-charge-label",
             ("charge", (int) MathF.Round(state.ChargePercent * 100)));
 
