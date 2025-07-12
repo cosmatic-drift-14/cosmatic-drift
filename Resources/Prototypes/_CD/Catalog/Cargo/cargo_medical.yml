@@ -7,3 +7,83 @@
   cost: 2500
   category: cargoproduct-category-name-medical
   group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseCivDef
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: civdef
+  product: CrateMedicalMedcaseCivDef
+  cost: 4000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseCombat
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: combat
+  product: CrateMedicalMedcaseCombat
+  cost: 7500
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseRapidApp
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: rapidapp
+  product: CrateMedicalMedcaseRapidApp
+  cost: 8000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseBruteBleed
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: brute
+  product: CrateMedicalMedcaseBruteBleed
+  cost: 6000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseRad
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: brute
+  product: CrateMedicalMedcaseRad
+  cost: 5250
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseBurn
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: brute
+  product: CrateMedicalMedcaseBurn
+  cost: 4000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcasePoison
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: poison
+  product: CrateMedicalMedcasePoison
+  cost: 4000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalMedcaseAsphyx
+  icon:
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: asphyx
+  product: CrateMedicalMedcaseAsphyx
+  cost: 4000
+  category: cargoproduct-category-name-medical
+  group: market
