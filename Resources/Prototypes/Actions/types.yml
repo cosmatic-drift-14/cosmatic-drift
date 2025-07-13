@@ -212,6 +212,7 @@
     event: !type:ToggleClothingEvent
 
 - type: entity
+  parent: BaseMentalAction
   id: ActionCombatModeToggle
   name: "[color=red]Combat Mode[/color]"
   description: Enter combat mode
@@ -349,12 +350,12 @@
   name: Wagging Tail
   description: Start or stop wagging your tail.
   components:
-    - type: InstantAction
-      icon: { sprite: Mobs/Customization/reptilian_parts.rsi, state: tail_smooth_behind }
-      iconOn: { sprite: Mobs/Customization/reptilian_parts.rsi, state: tail_smooth_behind }
-      itemIconStyle: NoItem
-      useDelay: 1 # emote spam
-      event: !type:ToggleActionEvent
+  - type: InstantAction
+    icon: { sprite: Mobs/Customization/reptilian_parts.rsi, state: tail_smooth_behind }
+    iconOn: { sprite: Mobs/Customization/reptilian_parts.rsi, state: tail_smooth_behind }
+    itemIconStyle: NoItem
+    useDelay: 1 # emote spam
+    checkCanInteract: false
 
 - type: entity
   id: FakeMindShieldToggleAction
