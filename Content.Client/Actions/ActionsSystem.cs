@@ -271,7 +271,7 @@ namespace Content.Client.Actions
             }
             else
             {
-                var request = new RequestPerformActionEvent(GetNetEntity(action));
+                var request = new RequestPerformActionEvent(GetNetEntity(actionId));
                 RaisePredictiveEvent(request);
             }
         }
