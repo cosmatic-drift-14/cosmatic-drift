@@ -46,6 +46,9 @@
       whitelist:
         components:
         - SecretStash
+    - type: GuideHelp
+      guides:
+        - AIShells
 
 # Borgs
 - type: entity

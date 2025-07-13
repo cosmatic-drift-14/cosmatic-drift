@@ -30,7 +30,7 @@
 
   This comes at a few downsides.
   - Inside of a shell, you are no longer capable of accessing your non-shell actions unless you exit the shell to do so.
-  - Your vision is now bound by the vision of your shell, as is your movement
+  - Your vision is now bound by the vision of your shell, as is your movement.
   - You will not inherently be made aware of holopad calls coming your way.
 
 </Document>
