@@ -62,7 +62,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: PillCanisterStubantazine
+      - id: PillStubantazine
       - id: BruteAutoInjector
       - id: EmergencyMedipen
 
