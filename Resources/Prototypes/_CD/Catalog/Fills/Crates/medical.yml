@@ -11,7 +11,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseCivDef
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: civil defence medcases
   description: Contains a couple civil defence medcases. Unfortunately, they don't come with instructions. Requires Medical access to open.
   components:
@@ -22,7 +22,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseCombat
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: combat medcases
   description: Contains three combat medcases, designed for application while in a a hostile engagement. Requires Medical access to open.
   components:
@@ -33,7 +33,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseRapidApp
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: rapid application medcases
   description: Contains three rapid application medcases, made specifically for ETU teams and other emergency medical technicians. Requires Medical access to open.
   components:
@@ -44,7 +44,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseBruteBleed
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: brute medcases
   description: Contains two pairs of brute medcases for both blunt wounds, and bleeding. Requires Medical access to open.
   components:
@@ -57,7 +57,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseRad
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: radiation medcases
   description: Contains three radiation medcases, typically given to hazardous reactor operators. Requires Medical access to open.
   components:
@@ -68,7 +68,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseBurn
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: burn medcases
   description: Contains two burn medcases, ironically reported to be more effective for frostbite. Requires Medical access to open.
   components:
@@ -79,7 +79,7 @@
 
 - type: entity
   id: CrateMedicalMedcasePoison
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: poison medcases
   description: Contains a two poison medcases for treating toxic shock. Requires Medical access to open.
   components:
@@ -90,7 +90,7 @@
 
 - type: entity
   id: CrateMedicalMedcaseAsphyx
-  parent: CrateTTESecure
+  parent: CrateMedicalSecure
   name: asphyxiation medcases
   description: Contains a two asphyxiation medcases, good for both anemia and hypoxia. Requires Medical access to open.
   components:
