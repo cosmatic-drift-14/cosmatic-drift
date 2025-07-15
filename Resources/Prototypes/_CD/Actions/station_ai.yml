@@ -1,0 +1,38 @@
+﻿# Actions
+- type: entity
+  id: ActionEnterShell
+  name: AI Shell
+  description: Allows you to possess a shell.
+  components:
+  - type: InstantAction
+    priority: -6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: ai_core
+    event: !type:AiEnterShellEvent
+
+- type: entity
+  id: ActionExitShell
+  name: Exit Shell
+  description: Exits your active shell and returns you to your core.
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
+    priority: -6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: ai_core
+    event: !type:AiExitShellEvent
+
+# entity just for guidebook use, should not be able to be spawned in through normal or even admin means
+- type: entity
+  id: ActionEnterShellGuidebookProp
+  description: Allows you to possess a shell. Guidebook specifix entity.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    state: ai_core
