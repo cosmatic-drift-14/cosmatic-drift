@@ -1,0 +1,94 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+    "copyright": "Inspiration & Shape taken from https://github.com/Bubberstation/Bubberstation/commit/40e56053fd0c4cf80f7ecf6c7e12f2817d73836f, Sprites by Github KittenColony / Discord kittencolony (297865728374210561)",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+		{
+			"name": "asphyx"
+		},
+		{
+      "name": "asphyx-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "asphyx-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "bleed"
+		},
+		{
+			"name": "brute"
+		},
+		{
+      "name": "brutebleed-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "brutebleed-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "burn"
+		},
+		{
+			"name": "rad"
+		},
+		{
+      "name": "burnrad-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "burnrad-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "civdef"
+		},
+		{
+      "name": "civdef-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "civdef-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "combat"
+		},
+		{
+      "name": "combat-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "combat-inhand-left",
+      "directions": 4
+    },
+    {
+			"name": "poison"
+		},
+		{
+      "name": "poison-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "poison-inhand-left",
+      "directions": 4
+    },
+    {
+			"name": "rapidapp"
+		},
+		{
+      "name": "rapidapp-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "rapidapp-inhand-left",
+      "directions": 4
+    }
+	]
+}
