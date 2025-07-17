@@ -67,6 +67,8 @@
   - MedCrutchesForearm # CD
   - GoldRing # CD
   - SilverRing # CD
+  - SpaceCash10 # CD
+  - SpaceCash100 # CD
 
 - type: loadoutGroup
   id: Glasses
