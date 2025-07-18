@@ -273,10 +273,9 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         var player = _playerUid;
 
         if (!control.MouseIsHovering ||
-            _playerInventory == null ||
-            !_entities.TryGetComponent<HandsComponent>(player, out var hands) ||
-            hands.ActiveHandEntity is not { } held ||
-            !_entities.TryGetComponent(held, out SpriteComponent? sprite) ||
+            player == null ||
+            !_handsSystem.TryGetActiveItem(player.Value, out var held) ||
+            !_entities.TryGetComponent(held.Value, out SpriteComponent? sprite) ||
             !_inventorySystem.TryGetSlotContainer(player.Value, control.SlotName, out var container, out var slotDef))
         {
             control.ClearHover();
@@ -286,8 +285,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         // Set green / red overlay at 50% transparency
         var hoverEntity = _entities.SpawnEntity("hoverentity", MapCoordinates.Nullspace);
         var hoverSprite = _entities.GetComponent<SpriteComponent>(hoverEntity);
-        var fits = _inventorySystem.CanEquip(player.Value, held, control.SlotName, out _, slotDef) &&
-                   _container.CanInsert(held, container);
+        var fits = _inventorySystem.CanEquip(player.Value, held.Value, control.SlotName, out _, slotDef) &&
+                   _container.CanInsert(held.Value, container);
 
         hoverSprite.CopyFrom(sprite);
         hoverSprite.Color = fits ? new Color(0, 255, 0, 127) : new Color(255, 0, 0, 127);

@@ -148,13 +148,13 @@ public sealed class CryoSleepSystem : EntitySystem
         // Get held items
         foreach (var hand in _hands.EnumerateHands(body.Value))
         {
-            if (hand.HeldEntity == null)
+            if (!_hands.TryGetHeldItem(body.Value, hand, out var heldEntity))
                 continue;
 
             foundItems.Add(new LostItemData(
-                hand.Name,
-                MetaData(hand.HeldEntity.Value).EntityName,
-                GetNetEntity(hand.HeldEntity.Value)
+                hand,
+                MetaData(heldEntity.Value).EntityName,
+                GetNetEntity(heldEntity.Value)
             ));
         }
 
