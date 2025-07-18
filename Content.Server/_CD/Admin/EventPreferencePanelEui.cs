@@ -14,7 +14,7 @@ public sealed class EventPreferencesPanelEui : BaseEui
 
     private readonly HumanoidCharacterProfile _playerPref;
     private readonly LocatedPlayerData _targetPlayer;
-    private readonly List<AntagPrototype> _visibleAntagPrototypes;
+    private readonly List<ProtoId<AntagPrototype>> _visibleAntagPrototypes;
 
     public EventPreferencesPanelEui(LocatedPlayerData player, HumanoidCharacterProfile pref)
     {
@@ -22,7 +22,7 @@ public sealed class EventPreferencesPanelEui : BaseEui
         _targetPlayer = player;
         _playerPref = pref;
 
-        var visibleAntagPrototypes = new List<AntagPrototype>();
+        var visibleAntagPrototypes = new List<ProtoId<AntagPrototype>>();
         foreach (var antagPrototype in _proto.EnumeratePrototypes<AntagPrototype>())
         {
             if(antagPrototype.VisiblePreference)
