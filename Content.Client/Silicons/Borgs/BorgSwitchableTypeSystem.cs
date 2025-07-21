@@ -1,4 +1,5 @@
-﻿using Content.Shared.Movement.Components;
+﻿using Content.Shared._CD.Silicons.Borgs;
+using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
@@ -32,12 +33,21 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
     private void AfterStateHandler(Entity<BorgSwitchableTypeComponent> ent, ref AfterAutoHandleStateEvent args)
     {
         UpdateEntityAppearance(ent);
+
+        // CD - event for subtype system, always runs at end of borg type code
+        var ev = new AfterBorgTypeSelectEvent(ent);
+        RaiseLocalEvent(ent, ref ev);
     }
 
     protected override void UpdateEntityAppearance(
         Entity<BorgSwitchableTypeComponent> entity,
         BorgTypePrototype prototype)
     {
+        // CD - added checks to stop sprite state errors
+        if (!TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) ||
+            subtype.BorgSubtype != null)
+            return;
+
         if (TryComp(entity, out SpriteComponent? sprite))
         {
             _sprite.LayerSetRsiState((entity, sprite), BorgVisualLayers.Body, prototype.SpriteBodyState);

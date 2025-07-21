@@ -9,18 +9,9 @@
                    HorizontalAlignment="Center"
                    Margin="0 12"/>
         </controls:StripeBack>
+
         <BoxContainer Name="OptionsContainer"
                       Orientation="Horizontal"
-                      SeparationOverride="4">
-            <Button>
-                <Label Margin="8" Text="hhes" />
-            </Button>
-            <Button>
-                <Label Margin="8" Text="hhes" />
-            </Button>
-            <Button>
-                <Label Margin="8" Text="hhes" />
-            </Button>
-        </BoxContainer>
+                      SeparationOverride="4"/>
     </BoxContainer>
 </Control>
