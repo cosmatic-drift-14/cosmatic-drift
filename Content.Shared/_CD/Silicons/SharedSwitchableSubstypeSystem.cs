@@ -1,3 +1,5 @@
+using Robust.Shared.Prototypes;
+
 namespace Content.Shared._CD.Silicons;
 
 /// <summary>
@@ -6,9 +8,33 @@ namespace Content.Shared._CD.Silicons;
 /// </summary>
 public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
 {
-    /// <inheritdoc/>
     public override void Initialize()
     {
-
+        SubscribeLocalEvent<BorgSwitchableSubtypeComponent, BorgSubtypeSelectEvent>(OnSubtypeSelectEvent);
     }
+
+    private void OnSubtypeSelectEvent(Entity<BorgSwitchableSubtypeComponent> ent, ref BorgSubtypeSelectEvent args)
+    {
+        throw new NotImplementedException();
+    }
+
+    protected virtual void UpdateEntityAppearance(Entity<BorgSwitchableSubtypeComponent> entity1,
+        BorgSubtypePrototype borgSubtypePrototype)
+    {
+        throw new NotImplementedException();
+    }
+
+    protected virtual void SelectBorgSubtype(Entity<BorgSwitchableSubtypeComponent> ent,
+        ProtoId<BorgSubtypePrototype> borgType)
+    {
+        throw new NotImplementedException();
+    }
+}
+
+[ByRefEvent]
+public sealed class BorgSubtypeSelectEvent : EntityEventArgs
+{
+    public EntityUid ChassisEntity;
+
+    public ProtoId<BorgSubtypePrototype> BorgSubtypeId = "generic";
 }
