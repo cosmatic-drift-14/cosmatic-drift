@@ -4,6 +4,7 @@ using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 using Robust.Shared.Utility;
 
 namespace Content.Shared._CD.Silicons.Borgs;
@@ -12,10 +13,18 @@ namespace Content.Shared._CD.Silicons.Borgs;
 /// Information relating to a borg's subtype. Should be mostly cosmetic.
 /// </summary>
 [Prototype]
-public sealed class BorgSubtypePrototype : IPrototype
+public sealed class BorgSubtypePrototype : IPrototype, IInheritingPrototype
 {
     [ValidatePrototypeId<SoundCollectionPrototype>]
     private static readonly ProtoId<SoundCollectionPrototype> DefaultFootsteps = new("FootstepBorg");
+
+    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<BorgSubtypePrototype>))]
+    public string[]? Parents { get; }
+
+    [ViewVariables]
+    [NeverPushInheritance]
+    [AbstractDataField]
+    public bool Abstract { get; }
 
     [IdDataField]
     public required string ID { get; set; }

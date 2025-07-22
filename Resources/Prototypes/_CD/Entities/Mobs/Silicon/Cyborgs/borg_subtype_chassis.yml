@@ -18,4 +18,4 @@
   - type: BorgSwitchableType
     selectedBorgType: medical
   - type: BorgSwitchableSubtype
-    borgSubtype: qualifiedDoctor
+    borgSubtype: qualified-doctor

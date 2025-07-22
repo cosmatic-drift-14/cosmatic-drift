@@ -1,59 +1,16 @@
 - type: borgSubtype
+  parent: baseMiningSubtype
   id: spidermin
 
-  parentType: mining
-
-  # Description
   dummyPrototype: BorgChassisSpidermin
 
-  # Visuals
   inventoryTemplateId: borgDutch
   spritePath: _CD/Mobs/Silicon/Borg/Mining/spidermin.rsi
-  layerData:
-  - state: miner
-    map: ["enum.BorgVisualLayers.Body", "movement"]
-  - state: miner_e
-    map: [ "enum.BorgVisualLayers.Light" ]
-    shader: unshaded
-    visible: false
-  - state: miner_l
-    shader: unshaded
-    map: [ "light","enum.BorgVisualLayers.LightStatus" ]
-    visible: false
-
-  spriteBodyState: miner
-  spriteHasMindState: miner_e
-  spriteNoMindState: miner_e
-
-  # Sounds
-  footstepCollection:
-    collection: FootstepHoverBorg
-
-  # Components
-  addComponents:
-  - type: Item
 
 - type: borgSubtype
-  id: qualifiedDoctor
+  parent: baseMedicalSubtype
+  id: qualified-doctor
 
-  parentType: medical
-
-  # Description
   dummyPrototype: BorgChassisQualifiedDoctor
 
-  # Visuals
   spritePath: _CD/Mobs/Silicon/Borg/Medical/qualified_doctor.rsi
-  layerData:
-  - state: medical
-    map: ["enum.BorgVisualLayers.Body", "movement"]
-  - state: medical_e
-    map: [ "enum.BorgVisualLayers.Light" ]
-    shader: unshaded
-    visible: false
-  - state: medical_l
-    shader: unshaded
-    map: [ "light","enum.BorgVisualLayers.LightStatus" ]
-    visible: false
-
-  spriteHasMindState: medical_e
-  spriteNoMindState: medical_e
