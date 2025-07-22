@@ -51,11 +51,15 @@ public sealed class BorgSubtypePrototype : IPrototype
     [DataField]
     public required PrototypeLayerData[] LayerData;
 
+
     [DataField]
     public required string SpriteHasMindState;
 
     [DataField]
     public required string SpriteNoMindState;
+
+    [DataField]
+    public string? SpriteBodyState;
 
     [DataField]
     public Vector2? Offset;
@@ -73,4 +77,10 @@ public sealed class BorgSubtypePrototype : IPrototype
     /// </summary>
     [DataField]
     public SoundSpecifier FootstepCollection { get; set; } = new SoundCollectionSpecifier(DefaultFootsteps);
+
+    /// <summary>
+    /// <inheritdoc cref="BorgTypePrototype.SpriteBodyMovementState"/>
+    /// </summary>
+    [DataField]
+    public string? SpriteBodyMovementState { get; set; }
 }

@@ -2,10 +2,14 @@ using System.Linq;
 using Content.Client.Silicons.Borgs;
 using Content.Shared._CD.Silicons;
 using Content.Shared._CD.Silicons.Borgs;
+using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Serialization.TypeSerializers.Implementations;
+using Robust.Shared.Utility;
 
 namespace Content.Client._CD.Silicons.Borgs;
 
@@ -17,9 +21,26 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
     [Dependency] private readonly SpriteSystem _sprite = default!;
     [Dependency] private readonly BorgSystem _borg = default!;
     [Dependency] private readonly AppearanceSystem _appearance = default!;
+    [Dependency] private readonly IResourceCache _resourceCache = default!;
+    [Dependency] private readonly FixtureSystem _fixture = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<BorgSwitchableSubtypeComponent, ComponentStartup>(OnComponentStartup);
+    }
+
+    private void OnComponentStartup(Entity<BorgSwitchableSubtypeComponent> ent, ref ComponentStartup args)
+    {
+        SelectBorgSubtype(ent);
+    }
 
     protected override void UpdateEntityAppearance(Entity<BorgSwitchableSubtypeComponent> entity, BorgSubtypePrototype borgSubtypePrototype)
     {
+        // LOT of copy pasted code from BorgSwitchableTypeSystem, but is probably necessary unless the upstream code
+        // is refactored
+
         // get our required components
         var (owner, _) = entity;
         if (!TryComp<SpriteComponent>(entity, out var chassisSprite))
@@ -53,6 +74,25 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
                 // Queue update so state changes apply.
                 _appearance.QueueUpdate(entity, appearance);
             }
+        }
+
+        if (borgSubtypePrototype.SpriteBodyMovementState is { } movementState)
+        {
+            var spriteMovement = EnsureComp<SpriteMovementComponent>(entity);
+            spriteMovement.NoMovementLayers.Clear();
+            spriteMovement.NoMovementLayers["movement"] = new PrototypeLayerData
+            {
+                State = borgSubtypePrototype.SpriteBodyState,
+            };
+            spriteMovement.MovementLayers.Clear();
+            spriteMovement.MovementLayers["movement"] = new PrototypeLayerData
+            {
+                State = movementState,
+            };
+        }
+        else
+        {
+            RemComp<SpriteMovementComponent>(entity);
         }
 
         base.UpdateEntityAppearance(entity, borgSubtypePrototype);

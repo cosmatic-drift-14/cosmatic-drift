@@ -1,10 +1,10 @@
-- type: borgSubtype#
+- type: borgSubtype
   id: spidermin
 
   parentType: mining
 
   # Description
-  dummyPrototype: BorgChassisGeneric
+  dummyPrototype: BorgChassisSpidermin
 
   # Visuals
   inventoryTemplateId: borgDutch
@@ -21,6 +21,7 @@
     map: [ "light","enum.BorgVisualLayers.LightStatus" ]
     visible: false
 
+  spriteBodyState: miner
   spriteHasMindState: miner_e
   spriteNoMindState: miner_e
 
@@ -38,7 +39,7 @@
   parentType: medical
 
   # Description
-  dummyPrototype: BorgChassisGeneric
+  dummyPrototype: BorgChassisQualifiedDoctor
 
   # Visuals
   spritePath: _CD/Mobs/Silicon/Borg/Medical/qualified_doctor.rsi
