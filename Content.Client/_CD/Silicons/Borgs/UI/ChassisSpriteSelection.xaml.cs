@@ -33,6 +33,8 @@ public sealed partial class ChassisSpriteSelection : Control
 
     public void Update(BorgTypePrototype borgTypePrototype)
     {
+        MainContainer.Visible = true;
+
         OptionsContainer.RemoveAllChildren();
 
         var buttonGroup = new ButtonGroup();
@@ -47,8 +49,9 @@ public sealed partial class ChassisSpriteSelection : Control
 
             var button = new Button
             {
-                ToolTip = subtypePrototype.ID,
+                ToolTip = Loc.GetString($"cd-borg-{borgTypePrototype.ID}-subtype-{subtypePrototype.ID}-name"),
                 Group = buttonGroup,
+                MinHeight = 32,
             };
 
             button.OnPressed += _ =>
@@ -73,6 +76,7 @@ public sealed partial class ChassisSpriteSelection : Control
         {
             ToolTip = "default",
             Group = group,
+            MinHeight = 32,
         };
 
         button.OnPressed += _ =>

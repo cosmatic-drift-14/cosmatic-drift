@@ -10,13 +10,4 @@ public sealed class BorgSelectSubtypeMessage(ProtoId<BorgSubtypePrototype>? subt
 }
 
 [ByRefEvent]
-public record struct AfterBorgTypeSelectEvent(EntityUid ChassisEntity);
-
-
-// [ByRefEvent]
-// public sealed class BorgSubtypeSelectEvent : EntityEventArgs
-// {
-//     public EntityUid ChassisEntity;
-//
-//     public ProtoId<BorgSubtypePrototype> BorgSubtypeId = "generic";
-// }
+public record struct AfterBorgTypeSelectEvent;

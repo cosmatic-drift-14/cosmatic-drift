@@ -2,16 +2,22 @@
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
     <BoxContainer Name="MainContainer"
                   Orientation="Vertical"
-                  SeparationOverride="4">
+                  SeparationOverride="4"
+                  Visible="False">
         <controls:StripeBack>
-            <Label Text="{Loc 'borg-select-subtype-flavour-text'}"
+            <Label Text="{Loc 'cd-borg-select-subtype-flavour-text'}"
                    StyleClasses="LabelSubText"
                    HorizontalAlignment="Center"
                    Margin="0 12"/>
         </controls:StripeBack>
+            <ScrollContainer Name="OptionsScrollContainer"
+                             HScrollEnabled="True"
+                             VScrollEnabled="False"
+                             MinHeight="96">
+                <BoxContainer Name="OptionsContainer"
+                              Orientation="Horizontal"
+                              SeparationOverride="4"/>
+            </ScrollContainer>
 
-        <BoxContainer Name="OptionsContainer"
-                      Orientation="Horizontal"
-                      SeparationOverride="4"/>
     </BoxContainer>
 </Control>

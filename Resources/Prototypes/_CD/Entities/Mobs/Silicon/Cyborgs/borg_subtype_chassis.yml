@@ -1,8 +1,8 @@
+# Actual entity prototypes used for UI visuals and admin spawning
 - type: entity
   id: BorgChassisSpidermin
   parent: BorgChassisSelectable
   name: spidermin cyborg
-  suffix: subtype picked
   components:
   - type: BorgSwitchableType
     selectedBorgType: mining
@@ -13,9 +13,8 @@
   id: BorgChassisQualifiedDoctor
   parent: BorgChassisSelectable
   name: qualified doctor cyborg
-  suffix: subtype picked
   components:
   - type: BorgSwitchableType
     selectedBorgType: medical
   - type: BorgSwitchableSubtype
-    borgSubtype: qualifiedDoctor
+    borgSubtype: qualified-doctor

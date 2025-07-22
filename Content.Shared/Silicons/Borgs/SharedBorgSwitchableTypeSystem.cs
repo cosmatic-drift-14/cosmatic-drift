@@ -100,7 +100,7 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
         UpdateEntityAppearance(ent);
 
         // CD - event for subtype system, always runs at end of borg type code
-        var ev = new AfterBorgTypeSelectEvent(ent);
+        var ev = new AfterBorgTypeSelectEvent();
         RaiseLocalEvent(ent, ref ev);
     }
 
