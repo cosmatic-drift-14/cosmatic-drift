@@ -36,6 +36,8 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
             var layerData = borgSubtypePrototype.LayerData[i];
 
             layerData.RsiPath = borgSubtypePrototype.SpritePath?.ToString();
+            if(borgSubtypePrototype.Offset != null)
+                layerData.Offset = borgSubtypePrototype.Offset;
             _sprite.AddLayer((owner, chassisSprite), layerData, i);
         }
 

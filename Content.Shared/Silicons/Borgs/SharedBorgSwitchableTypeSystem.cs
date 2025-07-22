@@ -98,6 +98,10 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
         _userInterface.CloseUi((ent.Owner, null), BorgSwitchableTypeUiKey.SelectBorgType);
 
         UpdateEntityAppearance(ent);
+
+        // CD - event for subtype system, always runs at end of borg type code
+        var ev = new AfterBorgTypeSelectEvent(ent);
+        RaiseLocalEvent(ent, ref ev);
     }
 
     protected void UpdateEntityAppearance(Entity<BorgSwitchableTypeComponent> entity)

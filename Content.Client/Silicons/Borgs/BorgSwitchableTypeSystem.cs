@@ -33,10 +33,6 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
     private void AfterStateHandler(Entity<BorgSwitchableTypeComponent> ent, ref AfterAutoHandleStateEvent args)
     {
         UpdateEntityAppearance(ent);
-
-        // CD - event for subtype system, always runs at end of borg type code
-        var ev = new AfterBorgTypeSelectEvent(ent);
-        RaiseLocalEvent(ent, ref ev);
     }
 
     protected override void UpdateEntityAppearance(

@@ -1,3 +1,6 @@
+using System.Numerics;
+using Content.Shared.Inventory;
+using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
@@ -17,6 +20,11 @@ public sealed class BorgSubtypePrototype : IPrototype
     [IdDataField]
     public required string ID { get; set; }
 
+    /// <summary>
+    /// <inheritdoc cref="BorgTypePrototype.InventoryTemplateId"/>
+    /// </summary>
+    [DataField]
+    public ProtoId<InventoryTemplatePrototype> InventoryTemplateId= "borgShort";
 
     /// <summary>
     /// The parent borg type of this subtype.
@@ -24,6 +32,11 @@ public sealed class BorgSubtypePrototype : IPrototype
     [DataField]
     public required string ParentType;
 
+    /// <summary>
+    /// <inheritdoc cref="BorgTypePrototype.AddComponents"/>
+    /// </summary>
+    [DataField]
+    public ComponentRegistry? AddComponents;
 
     /// <summary>
     /// Sprite path that the prototype's layer data will reference.
@@ -40,8 +53,12 @@ public sealed class BorgSubtypePrototype : IPrototype
 
     [DataField]
     public required string SpriteHasMindState;
+
     [DataField]
     public required string SpriteNoMindState;
+
+    [DataField]
+    public Vector2? Offset;
 
     [DataField]
     public required EntProtoId DummyPrototype;
@@ -56,5 +73,4 @@ public sealed class BorgSubtypePrototype : IPrototype
     /// </summary>
     [DataField]
     public SoundSpecifier FootstepCollection { get; set; } = new SoundCollectionSpecifier(DefaultFootsteps);
-
 }
