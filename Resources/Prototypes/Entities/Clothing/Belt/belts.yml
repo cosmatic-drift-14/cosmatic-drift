@@ -224,6 +224,7 @@
         - WetFloorSign
         - HolosignProjector
         - Plunger
+        - WireBrush
       components:
         - LightReplacer
         - SmokeOnTrigger

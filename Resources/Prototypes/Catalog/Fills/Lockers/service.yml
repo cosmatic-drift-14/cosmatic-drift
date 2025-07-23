@@ -84,6 +84,8 @@
         amount: 2
       - id: Plunger
         amount: 2
+      - id: WireBrush
+        amount: 2
       #CD Addions
       - id: BookSOPService
         prob: 0.2
