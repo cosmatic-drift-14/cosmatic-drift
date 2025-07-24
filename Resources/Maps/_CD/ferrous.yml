@@ -4,8 +4,8 @@ meta:
   engineVersion: 262.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/19/2025 01:48:47
-  entityCount: 15543
+  time: 07/24/2025 04:16:47
+  entityCount: 15542
 maps:
 - 1
 grids:
@@ -11363,7 +11363,7 @@ entities:
       parent: 2
 - proto: AirlockServiceLocked
   entities:
-  - uid: 10812
+  - uid: 5106
     components:
     - type: Transform
       pos: -24.5,19.5
@@ -72621,7 +72621,7 @@ entities:
   - uid: 8029
     components:
     - type: Transform
-      pos: -27.5,21.5
+      pos: -27.5,18.5
       parent: 2
 - proto: LockerMime
   entities:
@@ -73484,13 +73484,6 @@ entities:
     - type: Transform
       pos: -31.5,32.5
       parent: 2
-- proto: MedicalScanner
-  entities:
-  - uid: 6769
-    components:
-    - type: Transform
-      pos: -27.5,18.5
-      parent: 2
 - proto: MedicalTechFab
   entities:
   - uid: 8057
@@ -73835,10 +73828,10 @@ entities:
     - type: Transform
       pos: -28.5,11.5
       parent: 2
-  - uid: 5106
+  - uid: 6769
     components:
     - type: Transform
-      pos: -28.5,21.5
+      pos: -27.5,20.5
       parent: 2
 - proto: OreBag
   entities:
