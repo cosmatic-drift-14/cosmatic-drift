@@ -279,6 +279,7 @@
   - type: FireVisuals
     alternateState: Standing
   - type: LayEmote # CD Change, laying down emote
+  - type: StunVisuals
 
 - type: entity
   save: false
