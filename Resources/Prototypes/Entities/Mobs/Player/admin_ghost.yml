@@ -121,6 +121,9 @@
   - type: CriminalRecordsConsole
   - type: JobSlotsConsole # _CD
     debug: true
+  - type: BypassInteractionChecks
+  - type: ExplosionResistance
+    damageCoefficient: 0
 
 - type: entity
   id: ActionAGhostShowSolar
