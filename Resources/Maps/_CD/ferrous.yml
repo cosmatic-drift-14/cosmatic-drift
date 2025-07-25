@@ -4,8 +4,8 @@ meta:
   engineVersion: 262.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/24/2025 04:16:47
-  entityCount: 15542
+  time: 07/25/2025 17:13:44
+  entityCount: 15574
 maps:
 - 1
 grids:
@@ -9596,6 +9596,9 @@ entities:
     - type: Transform
       pos: -16.5,-45.5
       parent: 2
+    - type: DeviceList
+      devices:
+      - 15557
   - uid: 14420
     components:
     - type: Transform
@@ -9672,6 +9675,20 @@ entities:
       - 15437
       - 15442
       - 15441
+  - uid: 15568
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -10.5,42.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 1287
+      - 15569
+      - 1521
+      - 2025
+      - 14414
+      - 15572
 - proto: AirAlarmElectronics
   entities:
   - uid: 13677
@@ -9987,18 +10004,6 @@ entities:
     - type: Transform
       pos: -15.5,36.5
       parent: 2
-- proto: AirlockEngineering
-  entities:
-  - uid: 11739
-    components:
-    - type: Transform
-      pos: 14.5,-27.5
-      parent: 2
-  - uid: 14231
-    components:
-    - type: Transform
-      pos: 10.5,-25.5
-      parent: 2
 - proto: AirlockEngineeringGlassLocked
   entities:
   - uid: 18
@@ -10107,6 +10112,16 @@ entities:
     components:
     - type: Transform
       pos: -20.5,36.5
+      parent: 2
+  - uid: 4348
+    components:
+    - type: Transform
+      pos: 10.5,-25.5
+      parent: 2
+  - uid: 6295
+    components:
+    - type: Transform
+      pos: 14.5,-27.5
       parent: 2
   - uid: 8796
     components:
@@ -12039,6 +12054,30 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 15502
+  - uid: 15557
+    components:
+    - type: Transform
+      pos: -12.5,-48.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 14416
+  - uid: 15569
+    components:
+    - type: Transform
+      pos: -7.5,40.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 15568
+  - uid: 15572
+    components:
+    - type: Transform
+      pos: -22.5,40.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 15568
 - proto: AlertsComputerCircuitboard
   entities:
   - uid: 11595
@@ -28076,6 +28115,11 @@ entities:
     - type: Transform
       pos: -5.5,31.5
       parent: 2
+  - uid: 14231
+    components:
+    - type: Transform
+      pos: -21.5,-48.5
+      parent: 2
   - uid: 14566
     components:
     - type: Transform
@@ -28470,6 +28514,71 @@ entities:
     components:
     - type: Transform
       pos: -34.5,-40.5
+      parent: 2
+  - uid: 15544
+    components:
+    - type: Transform
+      pos: -20.5,-48.5
+      parent: 2
+  - uid: 15545
+    components:
+    - type: Transform
+      pos: -20.5,-47.5
+      parent: 2
+  - uid: 15546
+    components:
+    - type: Transform
+      pos: -20.5,-46.5
+      parent: 2
+  - uid: 15547
+    components:
+    - type: Transform
+      pos: -20.5,-45.5
+      parent: 2
+  - uid: 15548
+    components:
+    - type: Transform
+      pos: -20.5,-44.5
+      parent: 2
+  - uid: 15549
+    components:
+    - type: Transform
+      pos: -20.5,-42.5
+      parent: 2
+  - uid: 15550
+    components:
+    - type: Transform
+      pos: -20.5,-41.5
+      parent: 2
+  - uid: 15551
+    components:
+    - type: Transform
+      pos: -20.5,-40.5
+      parent: 2
+  - uid: 15552
+    components:
+    - type: Transform
+      pos: -20.5,-39.5
+      parent: 2
+  - uid: 15553
+    components:
+    - type: Transform
+      pos: -20.5,-38.5
+      parent: 2
+  - uid: 15554
+    components:
+    - type: Transform
+      pos: -20.5,-37.5
+      parent: 2
+  - uid: 15555
+    components:
+    - type: Transform
+      pos: -20.5,-36.5
+      parent: 2
+  - uid: 15556
+    components:
+    - type: Transform
+      pos: -20.5,-43.5
       parent: 2
 - proto: CableHVStack
   entities:
@@ -38803,6 +38912,18 @@ entities:
     - type: Transform
       pos: 20.42419,-25.562262
       parent: 2
+- proto: ClothingNeckGayPin
+  entities:
+  - uid: 15570
+    components:
+    - type: Transform
+      pos: -5.266262,-45.697414
+      parent: 2
+  - uid: 15571
+    components:
+    - type: Transform
+      pos: -5.985012,-45.68179
+      parent: 2
 - proto: ClothingNeckLawyerbadge
   entities:
   - uid: 3681
@@ -46051,6 +46172,9 @@ entities:
     - type: Transform
       pos: -6.5,38.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 15568
   - uid: 1521
     components:
     - type: Transform
@@ -46059,6 +46183,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 4184
+      - 15568
   - uid: 1974
     components:
     - type: Transform
@@ -46075,6 +46200,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 4184
+      - 15568
   - uid: 2472
     components:
     - type: Transform
@@ -46325,6 +46451,9 @@ entities:
     - type: Transform
       pos: -25.5,38.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 15568
   - uid: 14472
     components:
     - type: Transform
@@ -47838,6 +47967,13 @@ entities:
     - type: Transform
       pos: -31.56417,-24.285074
       parent: 2
+- proto: FoodBoxDonkpocketMoth
+  entities:
+  - uid: 15573
+    components:
+    - type: Transform
+      pos: -3.5788288,-27.230963
+      parent: 2
 - proto: FoodBreadGarlicSlice
   entities:
   - uid: 10536
@@ -47901,6 +48037,13 @@ entities:
     components:
     - type: Transform
       pos: -9.418614,-9.386021
+      parent: 2
+  - uid: 11739
+    components:
+    - type: MetaData
+      desc: No holes in this donut in case a suspicious looking pole shows up. it cost 25,000 spessos
+    - type: Transform
+      pos: -52.580475,-10.733393
       parent: 2
 - proto: FoodDonutPlain
   entities:
@@ -72298,6 +72441,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -13.5,-50.5
       parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        4269:
+        - - Pressed
+          - Toggle
+        4961:
+        - - Pressed
+          - Toggle
+        3834:
+        - - Pressed
+          - Toggle
 - proto: LockerAtmosphericsFilledHardsuit
   entities:
   - uid: 10298
@@ -73314,6 +73468,7 @@ entities:
   - uid: 15510
     components:
     - type: MetaData
+      desc: you feel the need to call a bone scientist
       name: rat bones
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -74606,6 +74761,11 @@ entities:
     - type: CollisionWake
       enabled: False
     - type: Conveyed
+  - uid: 15567
+    components:
+    - type: Transform
+      pos: -5.3020487,-45.511803
+      parent: 2
 - proto: PlushieLizardInversed
   entities:
   - uid: 12154
@@ -74624,6 +74784,11 @@ entities:
     components:
     - type: Transform
       pos: -3.1478014,-27.317661
+      parent: 2
+  - uid: 15564
+    components:
+    - type: Transform
+      pos: -5.8801737,-45.511803
       parent: 2
 - proto: PlushieMoth
   entities:
@@ -79705,18 +79870,6 @@ entities:
     - type: Transform
       pos: 26.560272,10.530422
       parent: 2
-- proto: SalvageHumanCorpseSpawner
-  entities:
-  - uid: 6295
-    components:
-    - type: Transform
-      pos: -7.5,43.5
-      parent: 2
-  - uid: 10367
-    components:
-    - type: Transform
-      pos: -6.5,44.5
-      parent: 2
 - proto: SalvageMagnet
   entities:
   - uid: 15139
@@ -79921,6 +80074,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -1.9884584,-21.857685
       parent: 2
+  - uid: 10367
+    components:
+    - type: Transform
+      pos: -6.528285,44.289852
+      parent: 2
+  - uid: 10589
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -8.20016,45.180477
+      parent: 2
   - uid: 11125
     components:
     - type: Transform
@@ -79961,6 +80125,50 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 5.5873604,-26.162167
+      parent: 2
+- proto: ShardGlassClockwork
+  entities:
+  - uid: 10812
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -28.725927,37.338837
+      parent: 2
+  - uid: 15558
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -7.8765354,43.68161
+      parent: 2
+  - uid: 15559
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.616084,33.183186
+      parent: 2
+  - uid: 15562
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -17.431496,47.518353
+      parent: 2
+  - uid: 15563
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -6.867731,45.715073
+      parent: 2
+  - uid: 15565
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -11.851936,43.51717
+      parent: 2
+  - uid: 15566
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -5.7446184,41.03478
       parent: 2
 - proto: ShardGlassPlasma
   entities:
@@ -82244,12 +82452,12 @@ entities:
     - type: Transform
       pos: 23.5,22.5
       parent: 2
-- proto: SpawnMobGorilla
+- proto: SpawnMobHonkBot
   entities:
-  - uid: 4348
+  - uid: 15560
     components:
     - type: Transform
-      pos: -6.5,45.5
+      pos: -7.5,44.5
       parent: 2
 - proto: SpawnMobMonkeyPunpun
   entities:
@@ -82293,6 +82501,13 @@ entities:
     components:
     - type: Transform
       pos: -47.5,-11.5
+      parent: 2
+- proto: SpawnMobSlug
+  entities:
+  - uid: 15561
+    components:
+    - type: Transform
+      pos: -42.5,-17.5
       parent: 2
 - proto: SpawnMobSmile
   entities:
@@ -85053,11 +85268,6 @@ entities:
     - type: Transform
       pos: -9.5,-9.5
       parent: 2
-  - uid: 10589
-    components:
-    - type: Transform
-      pos: 14.5,-8.5
-      parent: 2
   - uid: 10590
     components:
     - type: Transform
@@ -85092,6 +85302,11 @@ entities:
     components:
     - type: Transform
       pos: 14.5,-7.5
+      parent: 2
+  - uid: 15574
+    components:
+    - type: Transform
+      pos: 14.5,-8.5
       parent: 2
 - proto: TableFrame
   entities:
