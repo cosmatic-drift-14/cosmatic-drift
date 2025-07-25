@@ -28,3 +28,25 @@
   - type: ClothingBlockSlotsOnEquip
     blockedSlots:
     - "outerClothing"
+
+- type: entity
+  parent: ClothingBeltMedical
+  id: ClothingBeltParamedicKit
+  name: field surgeon kit
+  description: A small fabric bag, designed to hold supplies for stabilising critical patients.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Kits/field_treatment.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Kits/field_treatment.rsi
+
+- type: entity
+  parent: ClothingBeltMedical
+  id: ClothingBeltMedicalKit
+  name: medical trauma kit
+  description: A small fabric bag, similar to old surgical kits.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Kits/medical_trauma.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Kits/medical_trauma.rsi
