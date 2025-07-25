@@ -1,10 +1,10 @@
 - type: entity
-  parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtWeddingdress
+  parent: ClothingOuterBase
+  id: ClothingUniformDressWedding
   name: wedding dress
   description: A fine white wedding dress.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Uniforms/Jumpskirt/wedding.rsi
+    sprite: _CD/Clothing/OuterClothing/Misc/weddingdress.rsi
   - type: Clothing
-    sprite: _CD/Clothing/Uniforms/Jumpskirt/wedding.rsi
+    sprite: _CD/Clothing/OuterClothing/Misc/weddingdress.rsi
