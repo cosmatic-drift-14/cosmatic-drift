@@ -110,7 +110,7 @@
     sprite: Clothing/Back/Specific/harmpack.rsi
     state: icon
   - type: Item
-    size: Ginormous
+    size: 9999
   - type: Clothing
     slots: BACK
   - type: ExtraHandsEquipment

@@ -58,7 +58,7 @@
     - !type:AllSelector
       rolls: 2
       children:
-      - id: DrinkMilkCarton"
+      - id: DrinkMilkCarton
       # really, milk should go in the fridge. Unfortunately saltern only has freezers.
       # yes, I'm using this as an excuse to not have to do extra work.
       - id: ReagentContainerFlour

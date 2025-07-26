@@ -12,4 +12,4 @@
     graph: MoproachShoes
     node: shoes
   - type: Item
-    size: Tiny
+    size: 5
