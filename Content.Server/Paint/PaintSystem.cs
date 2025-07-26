@@ -93,7 +93,7 @@ public sealed class PaintSystem : SharedPaintSystem
             return false;
         }
 
-        if (HasComp<PaintedComponent>(target) || HasComp<RandomSpriteComponent>(target))
+        if (HasComp<CDPaintedComponent>(target) || HasComp<RandomSpriteComponent>(target))
         {
             _popup.PopupEntity(Loc.GetString("paint-failure-painted", ("target", target)), user, user, PopupType.Medium);
             return false;
@@ -124,7 +124,7 @@ public sealed class PaintSystem : SharedPaintSystem
 
         if (TryPaint(entity, target))
         {
-            EnsureComp<PaintedComponent>(target, out PaintedComponent? paint);
+            EnsureComp<CDPaintedComponent>(target, out CDPaintedComponent? paint);
             EnsureComp<AppearanceComponent>(target);
 
             paint.Color = entity.Comp.Color; // set the target color to the color specified in the spray paint yml.
@@ -140,7 +140,7 @@ public sealed class PaintSystem : SharedPaintSystem
                         if (!_inventory.TryGetSlotEntity(target, slot.Name, out var slotEnt))
                             continue;
 
-                        if (HasComp<PaintedComponent>(slotEnt.Value) || _whitelistSystem.IsWhitelistPass(entity.Comp.Blacklist, slotEnt.Value)
+                        if (HasComp<CDPaintedComponent>(slotEnt.Value) || _whitelistSystem.IsWhitelistPass(entity.Comp.Blacklist, slotEnt.Value)
                                                                      || HasComp<RandomSpriteComponent>(slotEnt.Value) ||
                                                                      HasComp<HumanoidAppearanceComponent>(
                                                                          slotEnt.Value))
@@ -148,7 +148,7 @@ public sealed class PaintSystem : SharedPaintSystem
                             continue;
                         }
 
-                        EnsureComp<PaintedComponent>(slotEnt.Value, out PaintedComponent? slotpaint);
+                        EnsureComp<CDPaintedComponent>(slotEnt.Value, out CDPaintedComponent? slotpaint);
                         EnsureComp<AppearanceComponent>(slotEnt.Value);
                         slotpaint.Color = entity.Comp.Color;
                         _appearanceSystem.SetData(slotEnt.Value, PaintVisuals.Painted, true);
