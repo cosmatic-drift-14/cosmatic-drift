@@ -356,6 +356,7 @@
     itemIconStyle: NoItem
     useDelay: 1 # emote spam
     checkCanInteract: false
+    event: !type:ToggleActionEvent {}
 
 - type: entity
   id: FakeMindShieldToggleAction
