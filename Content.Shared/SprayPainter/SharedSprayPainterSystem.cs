@@ -196,7 +196,7 @@ public abstract class SharedSprayPainterSystem : EntitySystem
             return;
         }
 
-        RemComp<PaintedComponent>(ent);
+        RemComp<CDPaintedComponent>(ent);
 
         if (!targetGroup.Styles.TryGetValue(selectedStyle, out var proto))
         {
