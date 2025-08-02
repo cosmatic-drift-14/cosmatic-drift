@@ -168,6 +168,7 @@
     - state: icon-unlit
       shader: unshaded
   - type: Storage
+    capacity: 9999
     # maxItemSize: Huge
     # grid:
     # - 0,0,19,9
