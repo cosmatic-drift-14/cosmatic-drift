@@ -23,11 +23,6 @@ public sealed class AllergySystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
-
-        SubscribeLocalEvent<AllergyComponent, ComponentInit>(OnAllergyInit);
-
-        SubscribeLocalEvent<AllergyComponent, ApplyMetabolicMultiplierEvent>(OnApplyMetabolicMultiplier);
-
         SubscribeLocalEvent<AllergyComponent, ReactionEntityEvent>(OnReaction);
     }
 
@@ -36,28 +31,6 @@ public sealed class AllergySystem : EntitySystem
         var allergies = args.Profile.CDAllergies;
         if (allergies is { Count: > 0 })
             AddComp(args.Mob, new AllergyComponent { Reagents = allergies });
-    }
-
-    private void OnAllergyInit(EntityUid uid, AllergyComponent component, ComponentInit args)
-    {
-        component.NextUpdate = _gameTiming.CurTime + component.UpdateInterval;
-    }
-
-    // straight up copypasted from MetabolizerSystem
-    private void OnApplyMetabolicMultiplier(
-        Entity<AllergyComponent> ent,
-        ref ApplyMetabolicMultiplierEvent args)
-    {
-        // TODO REFACTOR THIS
-        // This will slowly drift over time due to floating point errors.
-        // Instead, raise an event with the base rates and allow modifiers to get applied to it.
-        if (args.Apply)
-        {
-            ent.Comp.UpdateInterval *= args.Multiplier;
-            return;
-        }
-
-        ent.Comp.UpdateInterval /= args.Multiplier;
     }
 
     private void OnReaction(EntityUid uid, AllergyComponent allergy, ref ReactionEntityEvent args)
@@ -79,13 +52,13 @@ public sealed class AllergySystem : EntitySystem
     {
         base.Update(frameTime);
 
-        var query = EntityQueryEnumerator<AllergyComponent, BloodstreamComponent>();
-        while (query.MoveNext(out var uid, out var allergy, out var bloodstream))
+        var query = EntityQueryEnumerator<AllergyComponent, MetabolizerComponent, BloodstreamComponent>();
+        while (query.MoveNext(out var uid, out var allergy, out var metabolizer, out var bloodstream))
         {
             if (_gameTiming.CurTime < allergy.NextUpdate)
                 continue;
 
-            allergy.NextUpdate += allergy.UpdateInterval;
+            allergy.NextUpdate += metabolizer.UpdateInterval;
 
             if (allergy.Reagents.Count == 0)
                 continue;

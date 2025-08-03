@@ -24,12 +24,6 @@ public sealed partial class AllergyComponent : Component
     public Dictionary<string, FixedPoint2> Reagents = new();
 
     /// <summary>
-    /// How often to metabolize reagents.
-    /// </summary>
-    [DataField]
-    public TimeSpan UpdateInterval = TimeSpan.FromSeconds(1);
-
-    /// <summary>
     /// The reagent to generate on exposure to allergens.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
