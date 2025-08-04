@@ -390,8 +390,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         _nanoChat.AddMessage((recipient, recipient.Comp), senderNumber.Value, message with { DeliveryFailed = false });
 
 
-        if (_nanoChat.GetCurrentChat((recipient, recipient.Comp)) != senderNumber)
-            HandleUnreadNotification(recipient, message);
+        HandleUnreadNotification(recipient, message, senderNumber.Value);
 
         var msgEv = new NanoChatMessageReceivedEvent(recipient);
         RaiseLocalEvent(ref msgEv);
@@ -401,7 +400,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
     /// <summary>
     ///     Handles unread message notifications and updates unread status.
     /// </summary>
-    private void HandleUnreadNotification(Entity<NanoChatCardComponent> recipient, NanoChatMessage message)
+    private void HandleUnreadNotification(Entity<NanoChatCardComponent> recipient, NanoChatMessage message, uint senderNumber)
     {
         // Get sender name from contacts or fall back to number
         var recipients = _nanoChat.GetRecipients((recipient, recipient.Comp));
@@ -409,7 +408,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
             ? existingRecipient.Name
             : $"#{message.SenderId:D4}";
 
-        if (!recipient.Comp.Recipients[message.SenderId].HasUnread && !recipient.Comp.NotificationsMuted)
+        if (!recipient.Comp.NotificationsMuted)
         {
             var pdaQuery = EntityQueryEnumerator<PdaComponent>();
             while (pdaQuery.MoveNext(out var pdaUid, out var pdaComp))
@@ -425,9 +424,12 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         }
 
         // Update unread status
-        _nanoChat.SetRecipient((recipient, recipient.Comp),
-            message.SenderId,
-            existingRecipient with { HasUnread = true });
+        if (_nanoChat.GetCurrentChat((recipient, recipient.Comp)) != senderNumber)
+        {
+            _nanoChat.SetRecipient((recipient, recipient.Comp),
+                message.SenderId,
+                existingRecipient with { HasUnread = true });
+        }
     }
 
     /// <summary>
