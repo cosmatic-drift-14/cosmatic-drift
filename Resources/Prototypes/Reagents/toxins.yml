@@ -371,6 +371,7 @@
       - !type:HealthChange
         probability: 0.1
         damage:
+          # CD: Nerf for allergies
           types:
             Blunt: 1
             Poison: 1
@@ -385,6 +386,7 @@
             Airloss: 2
           types:
             Poison: 2
+      # CD: Alergies
       - !type:Emote
         conditions:
         - !type:ReagentThreshold
@@ -399,6 +401,7 @@
         emote: Gasp
         force: true
         probability: 0.1
+      # end CD
       - !type:PopupMessage
         type: Local
         messages: [ "histamine-effect-light-itchiness" ]
