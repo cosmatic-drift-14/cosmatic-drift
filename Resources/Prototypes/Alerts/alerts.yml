@@ -27,6 +27,7 @@
     - alertType: Rooted
     - alertType: Pacified
     - alertType: Stealthy
+    - alertType: ToggleInteraction # CD
 
 - type: entity
   id: AlertSpriteView
