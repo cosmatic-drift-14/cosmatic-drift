@@ -1,6 +1,5 @@
 using Content.Client.Atmos.Components;
 using Robust.Client.GameObjects;
-using Content.Client.UserInterface.Systems.Storage.Controls;
 using Content.Shared.Atmos.Piping;
 using Content.Shared.Hands;
 using Content.Shared.Atmos.Components;

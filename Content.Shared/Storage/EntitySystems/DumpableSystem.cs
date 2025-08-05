@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared.Disposal.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Placeable;
@@ -137,37 +138,21 @@ public sealed class DumpableSystem : EntitySystem
 
         var dumpQueue = new Queue<EntityUid>(storage.Container.ContainedEntities);
 
-        var evt = new DumpEvent(dumpQueue, args.Args.User, false, false);
-        RaiseLocalEvent(target, ref evt);
+        var evt = new DumpEvent(dumpQueue, user, false, false);
+        if (target.HasValue)
+            RaiseLocalEvent(target.Value, ref evt);
 
-        if (target.HasValue && HasComp<DisposalUnitComponent>(target))
-        {
-            dumped = true;
-
-            foreach (var entity in dumpQueue)
-            {
-                _disposalUnitSystem.DoInsertDisposalUnit(target.Value, entity, user);
-            }
-        }
-        else if (HasComp<PlaceableSurfaceComponent>(target))
-        {
-            dumped = true;
-
-            var (targetPos, targetRot) = _transformSystem.GetWorldPositionRotation(target.Value);
-
-            foreach (var entity in dumpQueue)
-            {
-                _transformSystem.SetWorldPositionRotation(entity, targetPos + _random.NextVector2Box() / 4, targetRot);
-            }
-        }
-        else
+        if (!evt.Handled)
         {
             var targetPos = _transformSystem.GetWorldPosition(uid);
 
             foreach (var entity in dumpQueue)
             {
                 var transform = Transform(entity);
-                _transformSystem.SetWorldPositionRotation(entity, targetPos + _random.NextVector2Box() / 4, _random.NextAngle(), transform);
+                _transformSystem.SetWorldPositionRotation(entity,
+                    targetPos + _random.NextVector2Box() / 4,
+                    _random.NextAngle(),
+                    transform);
             }
 
             return;

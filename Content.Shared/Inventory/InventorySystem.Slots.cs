@@ -52,9 +52,20 @@ public partial class InventorySystem : EntitySystem
         return false;
     }
 
-    private void OnInit(Entity<InventoryComponent> ent, ref ComponentInit args)
+    protected virtual void OnInit(EntityUid uid, InventoryComponent component, ComponentInit args)
     {
-        UpdateInventoryTemplate(ent);
+        if (!_prototypeManager.TryIndex(component.TemplateId, out InventoryTemplatePrototype? invTemplate))
+            return;
+
+        component.Slots = invTemplate.Slots;
+        component.Containers = new ContainerSlot[component.Slots.Length];
+        for (var i = 0; i < component.Containers.Length; i++)
+        {
+            var slot = component.Slots[i];
+            var container = _containerSystem.EnsureContainer<ContainerSlot>(uid, slot.Name);
+            container.OccludesLight = false;
+            component.Containers[i] = container;
+        }
     }
 
     // private void AfterAutoState(Entity<InventoryComponent> ent, ref AfterAutoHandleStateEvent args) // GRIDINV
@@ -204,11 +215,12 @@ public partial class InventorySystem : EntitySystem
     /// <param name="newTemplate">The ID of the new inventory template prototype.</param>
     public void SetTemplateId(Entity<InventoryComponent> ent, ProtoId<InventoryTemplatePrototype> newTemplate)
     {
-        if (ent.Comp.TemplateId == newTemplate)
-            return;
+        var newPrototype = _prototypeManager.Index(newTemplate);
+
+        if (!newPrototype.Slots.Select(x => x.Name).SequenceEqual(ent.Comp.Slots.Select(x => x.Name)))
+            throw new ArgumentException("Incompatible inventory template!");
 
         ent.Comp.TemplateId = newTemplate;
-        UpdateInventoryTemplate(ent);
         Dirty(ent);
     }
 
