@@ -16,7 +16,7 @@ public sealed class PipeColorVisualizerSystem : VisualizerSystem<PipeColorVisual
         base.Initialize();
 
         SubscribeLocalEvent<PipeColorVisualsComponent, GetInhandVisualsEvent>(OnGetVisuals);
-        SubscribeLocalEvent<PipeColorVisualsComponent, BeforeRenderInGridEvent>(OnDrawInGrid);
+        // SubscribeLocalEvent<PipeColorVisualsComponent, BeforeRenderInGridEvent>(OnDrawInGrid); This should be reverted in the next merge regardless, and is unnecessary here.
     }
 
     /// <summary>
@@ -31,14 +31,14 @@ public sealed class PipeColorVisualizerSystem : VisualizerSystem<PipeColorVisual
         }
     }
 
-    /// <summary>
-    ///     This method is used to change the pipe's color in a container grid.
-    /// </summary>
-    private void OnDrawInGrid(Entity<PipeColorVisualsComponent> item, ref BeforeRenderInGridEvent args)
-    {
-        if (TryComp(item.Owner, out AtmosPipeColorComponent? pipeColor))
-            args.Color = pipeColor.Color;
-    }
+    // /// <summary>
+    // ///     This method is used to change the pipe's color in a container grid.
+    // /// </summary>
+    // private void OnDrawInGrid(Entity<PipeColorVisualsComponent> item, ref BeforeRenderInGridEvent args)
+    // {
+    //     if (TryComp(item.Owner, out AtmosPipeColorComponent? pipeColor))
+    //         args.Color = pipeColor.Color;
+    // }
 
     protected override void OnAppearanceChange(EntityUid uid, PipeColorVisualsComponent component, ref AppearanceChangeEvent args)
     {
