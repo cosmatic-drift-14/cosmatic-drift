@@ -3908,3 +3908,83 @@
   id: 8799
   time: '2025-07-22T19:34:39.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/38731
+- author: treytipton
+  changes:
+  - message: Made NukeOps elimination announcement less wordy.
+    type: Tweak
+  id: 8800
+  time: '2025-07-23T02:58:07.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/39158
+- author: lzk228
+  changes:
+  - message: The customvote command results now show the title the command had.
+    type: Tweak
+  id: 8801
+  time: '2025-07-23T14:15:30.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/39137
+- author: FairlySadPanda
+  changes:
+  - message: Almost every instrument has been updated to a new soundfont (GeneralUser-GS),
+      unifying all operating systems and massively improving the sound of certain
+      instruments.
+    type: Add
+  id: 8802
+  time: '2025-07-23T15:51:53.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/39142
+- author: slarticodefast
+  changes:
+  - message: Enabled the "showrot", "showvel" and "showangvel" commands for debug
+      permissions.
+    type: Tweak
+  - message: Fixed the "showplayervelocity" command permissions.
+    type: Tweak
+  id: 8803
+  time: '2025-07-23T18:06:32.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/39167
+- author: Lokachop
+  changes:
+  - message: The engineering & chief engineer's hardsuit now properly glow in the
+      dark
+    type: Fix
+  id: 8804
+  time: '2025-07-24T03:04:29.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/39153
+- author: K-Dynamic
+  changes:
+  - message: Cold slowdowns are now less impactful.
+    type: Tweak
+  id: 8805
+  time: '2025-07-24T09:44:55.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/36316
+- author: B-Kirill
+  changes:
+  - message: The AI eye now has a postscript with the name of AI itself.
+    type: Add
+  id: 8806
+  time: '2025-07-24T11:24:19.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/39177
+- author: SlamBamActionman
+  changes:
+  - message: Potassium-water explosion damage scaling has been tweaked to be less
+      potent.
+    type: Tweak
+  id: 8807
+  time: '2025-07-25T16:04:27.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/37924
+- author: SlamBamActionman
+  changes:
+  - message: Chemistry foam and smoke reactions now trigger after regular mix reactions.
+    type: Tweak
+  - message: Foam, smoke and explosion reactions no longer transfer the reagents'
+      energies to the container.
+    type: Tweak
+  id: 8808
+  time: '2025-07-25T16:33:44.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/37915
+- author: Quantum-cross
+  changes:
+  - message: Fixed pinpointer arrow not being centered properly.
+    type: Fix
+  id: 8809
+  time: '2025-07-25T19:46:42.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/38657
