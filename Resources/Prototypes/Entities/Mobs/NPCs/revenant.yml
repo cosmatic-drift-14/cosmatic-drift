@@ -79,9 +79,6 @@
     nameFormat: name-format-revenant
   - type: Speech
     speechVerb: Ghost
-  - type: Tag
-    tags:
-      - NoPaint
   - type: Reactive
     groups:
       Acidic: [Touch]
@@ -89,3 +86,4 @@
     tags:
     - SlowImmune
     - KnockdownImmune
+    - NoPaint
