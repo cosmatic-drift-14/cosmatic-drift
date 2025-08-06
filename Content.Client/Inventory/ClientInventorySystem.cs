@@ -112,6 +112,23 @@ namespace Content.Client.Inventory
 
         private void OnPlayerAttached(EntityUid uid, InventorySlotsComponent component, LocalPlayerAttachedEvent args)
         {
+            if (TryGetSlots(uid, out var definitions))
+            {
+                foreach (var definition in definitions)
+                {
+                    if (!TryGetSlotContainer(uid, definition.Name, out var container, out _))
+                        continue;
+
+                    if (!component.SlotData.TryGetValue(definition.Name, out var data))
+                    {
+                        data = new SlotData(definition);
+                        component.SlotData[definition.Name] = data;
+                    }
+
+                    data.Container = container;
+                }
+            }
+            
             OnLinkInventorySlots?.Invoke(uid, component);
         }
 
