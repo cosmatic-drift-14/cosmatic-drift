@@ -9,8 +9,8 @@ Allowed Departments|Type of Gear|Examples|Exceptions
 \[[color=#b18644]Salvage[/color]\]|Seismic charges||
 \[[color=#b18644]Salvage[/color]\]|Fulton devices.|Fulton beacons, and fultons|
 \[[color=#c96dbf]Science[/color]\]|Experimental technology.|Quantum spin inverters, speed boots, and blue-space backpacks|
-\[[color=#c96dbf]Science[/color]/[color=#f39f27]Engineering[/color]]|Advanced production fabricators.|Protolathes.|
-\[[color=#c96dbf]Science[/color]\]|Scientific production fabricators.|Circuit imprinters, and exosuit fabricators.|
+\[[color=#c96dbf]Science[/color]\]|Scientific production fabricators.|Protolathes, circuit imprinters, and exosuit fabricators.|
+\[[color=#c96dbf]Science[/color]/[color=#cd0000]Security[color]\]|H.A.R.M.P.A.C.K.s.||
 \[[color=#cd0000]Security[/color]\]|Advanced flashing technology.|Flashbangs, and mounted auto flashers|
 \[[color=#cd0000]Security[/color]\]|Combat knives||
 \[[color=#cd0000]Security[/color]\]|Riot control grenades.|Tear gas, and stingers|
