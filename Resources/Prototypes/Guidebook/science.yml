@@ -55,3 +55,5 @@
   id: Cyborgs
   name: guide-entry-cyborgs
   text: "/ServerInfo/Guidebook/Science/Cyborgs.xml"
+  children: # CD additions
+  - AIShells

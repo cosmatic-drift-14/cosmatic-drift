@@ -272,7 +272,7 @@ namespace Content.Client.Actions
             else
             {
                 var request = new RequestPerformActionEvent(GetNetEntity(actionId));
-                EntityManager.RaisePredictiveEvent(request);
+                RaisePredictiveEvent(request);
             }
         }
 

@@ -40,6 +40,10 @@
     - ActionJumpToCore
     - ActionSurvCameraLights
     - ActionAIViewLaws
+# CD-exclusive action
+    - ActionEnterShell
+  - type: StationAiShellUser # CD-exclusive component
+    actionPrototype: ActionExitShell
   - type: UserInterface
     interfaces:
       enum.RadarConsoleUiKey.Key:
@@ -52,6 +56,8 @@
         type: SiliconLawBoundUserInterface
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
+      enum.ShellUiKey.Key: # CD-exclusive interface
+        type: AiShellSelectionBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.RadarConsoleUiKey.Key:
@@ -194,6 +200,7 @@
         acts: [ "Destruction" ]
   - type: ApcPowerReceiver
     powerLoad: 1000
+    needsPower: false
   - type: StationAiCore
   - type: StationAiVision
   - type: InteractionOutline
@@ -222,7 +229,6 @@
     listeningRange: 0
     speakerVolume: Speak
     unlistedNumber: true
-    requiresPower: false
   - type: Holopad
   - type: StationAiWhitelist
   - type: UserInterface

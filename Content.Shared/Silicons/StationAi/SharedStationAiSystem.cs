@@ -69,7 +69,6 @@ public abstract partial class SharedStationAiSystem : EntitySystem
     private EntityQuery<BroadphaseComponent> _broadphaseQuery;
     private EntityQuery<MapGridComponent> _gridQuery;
 
-    [ValidatePrototypeId<EntityPrototype>]
     private static readonly EntProtoId DefaultAi = "StationAiBrain";
 
     private const float MaxVisionMultiplier = 5f;
@@ -122,6 +121,8 @@ public abstract partial class SharedStationAiSystem : EntitySystem
                 Category = VerbCategory.Debug,
                 Act = () =>
                 {
+                    if (_net.IsClient)
+                        return;
                     var brain = SpawnInContainerOrDrop(DefaultAi, ent.Owner, StationAiCoreComponent.Container);
                     _mind.ControlMob(user, brain);
                 },
@@ -394,7 +395,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
             _eye.SetDrawFov(user.Value, !isRemote);
     }
 
-    private bool SetupEye(Entity<StationAiCoreComponent> ent, EntityCoordinates? coords = null)
+    public bool SetupEye(Entity<StationAiCoreComponent> ent, EntityCoordinates? coords = null) // CD: Made Public
     {
         if (_net.IsClient)
             return false;
@@ -419,7 +420,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
         return true;
     }
 
-    private void ClearEye(Entity<StationAiCoreComponent> ent)
+    public void ClearEye(Entity<StationAiCoreComponent> ent) // CD: Made public
     {
         if (_net.IsClient)
             return;
@@ -429,7 +430,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
         Dirty(ent);
     }
 
-    private void AttachEye(Entity<StationAiCoreComponent> ent)
+    public void AttachEye(Entity<StationAiCoreComponent> ent) // CD: Made Public
     {
         if (ent.Comp.RemoteEntity == null)
             return;
@@ -450,6 +451,9 @@ public abstract partial class SharedStationAiSystem : EntitySystem
         }
 
         _mover.SetRelay(user, ent.Comp.RemoteEntity.Value);
+
+        var eyeName = Loc.GetString("station-ai-eye-name", ("name", Name(user)));
+        _metadata.SetEntityName(ent.Comp.RemoteEntity.Value, eyeName);
     }
 
     private EntityUid? GetInsertedAI(Entity<StationAiCoreComponent> ent)

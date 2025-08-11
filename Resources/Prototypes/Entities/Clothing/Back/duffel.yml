@@ -112,12 +112,13 @@
   name: mime duffel bag
   description: A large duffel bag for holding... mime... stuff.
   components:
-    - type: Sprite
-      sprite: Clothing/Back/Duffels/mime.rsi
-      storageOpenSound:
-        collection: null
-      storageInsertSound:
-        collection: null
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/mime.rsi
+  - type: Storage
+    storageOpenSound:
+      collection: null
+    storageInsertSound:
+      collection: null
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -169,12 +170,20 @@
       damageCoefficient: 0.1
 
 - type: entity
-  parent: ClothingBackpackDuffelSyndicate
+  parent: [ ClothingBackpackDuffelSyndicate, BaseSyndicateContraband ]
   id: ClothingBackpackDuffelSyndicateBundle
   abstract: true
   components:
     - type: Tag
       tags: [] # ignore "WhitelistChameleon" tag
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelBundle
+  abstract: true
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicate

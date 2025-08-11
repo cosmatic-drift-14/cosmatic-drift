@@ -2,6 +2,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Client._CD.Humanoid;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -39,6 +40,8 @@ using Direction = Robust.Shared.Maths.Direction;
 // CD: Records editor imports
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 
 namespace Content.Client.Lobby.UI
 {
@@ -114,8 +117,10 @@ namespace Content.Client.Lobby.UI
         // CD: Record editor
         private readonly RecordEditorGui _recordsTab;
 
-        [ValidatePrototypeId<GuideEntryPrototype>]
-        private const string DefaultSpeciesGuidebook = "Species";
+        // CD: Allergies editor
+        private readonly AllergyPicker _allergiesTab;
+
+        private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
@@ -288,6 +293,7 @@ namespace Content.Client.Lobby.UI
             };
 
             RgbSkinColorContainer.AddChild(_rgbSkinColorSelector = new ColorSelectorSliders());
+            _rgbSkinColorSelector.SelectorType = ColorSelectorSliders.ColorSelectorType.Hsv; // defaults color selector to HSV
             _rgbSkinColorSelector.OnColorChanged += _ =>
             {
                 OnSkinColorOnValueChanged();
@@ -474,6 +480,10 @@ namespace Content.Client.Lobby.UI
             #endregion Markings
 
             #region CosmaticRecords
+
+            _allergiesTab = new AllergyPicker(UpdateAllergies);
+            TabContainer.AddChild(_allergiesTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-allergies-tab"));
 
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
             TabContainer.AddChild(_recordsTab);
@@ -850,6 +860,7 @@ namespace Content.Client.Lobby.UI
 
             // CD: our controls
             UpdateHeightControls();
+            UpdateCDAllergies();
             _recordsTab.Update(profile);
 
             RefreshAntags();
@@ -895,9 +906,9 @@ namespace Content.Client.Lobby.UI
             var species = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
             var page = DefaultSpeciesGuidebook;
             if (_prototypeManager.HasIndex<GuideEntryPrototype>(species))
-                page = species;
+                page = new ProtoId<GuideEntryPrototype>(species.Id); // Gross. See above todo comment.
 
-            if (_prototypeManager.TryIndex<GuideEntryPrototype>(DefaultSpeciesGuidebook, out var guideRoot))
+            if (_prototypeManager.TryIndex(DefaultSpeciesGuidebook, out var guideRoot))
             {
                 var dict = new Dictionary<ProtoId<GuideEntryPrototype>, GuideEntry>();
                 dict.Add(DefaultSpeciesGuidebook, guideRoot);
@@ -1159,6 +1170,14 @@ namespace Content.Client.Lobby.UI
                 return;
             Profile = Profile.WithCDCharacterRecords(records);
             IsDirty = true;
+        }
+
+        // CD: Allergies editor
+        private void UpdateAllergies(Dictionary<ReagentPrototype, FixedPoint2> allergies)
+        {
+            Profile = Profile?.WithCDAllergies(allergies.Select(allergy => (allergy.Key.ID, allergy.Value))
+                .ToDictionary());
+            SetDirty();
         }
 
         private void OnFlavorTextChange(string content)
@@ -1561,6 +1580,23 @@ namespace Content.Client.Lobby.UI
             CDCustomSpeciesName.Editable = true;
         }
 
+        private void UpdateCDAllergies()
+        {
+            if (Profile == null)
+            {
+                return;
+            }
+
+            var allergies = new Dictionary<ReagentPrototype, FixedPoint2>();
+            foreach (var entry in (Dictionary<string, FixedPoint2>) Profile.CDAllergies)
+            {
+                if (!_prototypeManager.TryIndex(entry.Key, out ReagentPrototype? reagent))
+                    continue;
+                allergies.Add(reagent, entry.Value);
+            }
+            _allergiesTab.SetData(allergies);
+        }
+
         private void UpdateSpawnPriorityControls()
         {
             if (Profile == null)
@@ -1577,17 +1613,13 @@ namespace Content.Client.Lobby.UI
             {
                 return;
             }
-            var hairMarking = Profile.Appearance.HairStyleId switch
-            {
-                HairStyles.DefaultHairStyle => new List<Marking>(),
-                _ => new() { new(Profile.Appearance.HairStyleId, new List<Color>() { Profile.Appearance.HairColor }) },
-            };
+            var hairMarking = Profile.Appearance.HairStyleId == HairStyles.DefaultHairStyle
+                ? new List<Marking>()
+                : new() { new(Profile.Appearance.HairStyleId, new List<Color>() { Profile.Appearance.HairColor }) };
 
-            var facialHairMarking = Profile.Appearance.FacialHairStyleId switch
-            {
-                HairStyles.DefaultFacialHairStyle => new List<Marking>(),
-                _ => new() { new(Profile.Appearance.FacialHairStyleId, new List<Color>() { Profile.Appearance.FacialHairColor }) },
-            };
+            var facialHairMarking = Profile.Appearance.FacialHairStyleId == HairStyles.DefaultFacialHairStyle
+                ? new List<Marking>()
+                : new() { new(Profile.Appearance.FacialHairStyleId, new List<Color>() { Profile.Appearance.FacialHairColor }) };
 
             HairStylePicker.UpdateData(
                 hairMarking,

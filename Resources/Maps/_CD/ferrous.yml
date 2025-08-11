@@ -4,8 +4,13 @@ meta:
   engineVersion: 262.0.0
   forkId: ""
   forkVersion: ""
+<<<<<<< HEAD
   time: 07/25/2025 17:13:44
   entityCount: 15574
+=======
+  time: 07/13/2025 21:17:01
+  entityCount: 15538
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 maps:
 - 1
 grids:
@@ -9596,9 +9601,12 @@ entities:
     - type: Transform
       pos: -16.5,-45.5
       parent: 2
+<<<<<<< HEAD
     - type: DeviceList
       devices:
       - 15557
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 14420
     components:
     - type: Transform
@@ -9675,6 +9683,7 @@ entities:
       - 15437
       - 15442
       - 15441
+<<<<<<< HEAD
   - uid: 15568
     components:
     - type: Transform
@@ -9689,6 +9698,8 @@ entities:
       - 2025
       - 14414
       - 15572
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: AirAlarmElectronics
   entities:
   - uid: 13677
@@ -11378,7 +11389,11 @@ entities:
       parent: 2
 - proto: AirlockServiceLocked
   entities:
+<<<<<<< HEAD
   - uid: 5106
+=======
+  - uid: 10812
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
     components:
     - type: Transform
       pos: -24.5,19.5
@@ -12054,6 +12069,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 15502
+<<<<<<< HEAD
   - uid: 15557
     components:
     - type: Transform
@@ -12078,6 +12094,8 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 15568
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: AlertsComputerCircuitboard
   entities:
   - uid: 11595
@@ -28515,6 +28533,7 @@ entities:
     - type: Transform
       pos: -34.5,-40.5
       parent: 2
+<<<<<<< HEAD
   - uid: 15544
     components:
     - type: Transform
@@ -28580,6 +28599,8 @@ entities:
     - type: Transform
       pos: -20.5,-43.5
       parent: 2
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: CableHVStack
   entities:
   - uid: 13654
@@ -49883,6 +49904,7 @@ entities:
     - type: Transform
       pos: -14.5,-54.5
       parent: 2
+<<<<<<< HEAD
   - uid: 15541
     components:
     - type: Transform
@@ -49891,6 +49913,8 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: GasPipeBendAlt1
   entities:
   - uid: 14855
@@ -50100,6 +50124,7 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+<<<<<<< HEAD
 - proto: GasPipeSensorDistribution
   entities:
   - uid: 6744
@@ -50107,6 +50132,8 @@ entities:
     - type: Transform
       pos: -2.5,-32.5
       parent: 2
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: GasPipeSensorTEGCold
   entities:
   - uid: 150
@@ -51739,6 +51766,15 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+<<<<<<< HEAD
+=======
+  - uid: 4928
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -11.5,-36.5
+      parent: 2
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 4962
     components:
     - type: Transform
@@ -60404,6 +60440,8 @@ entities:
       pos: -7.5,-41.5
       parent: 2
   - uid: 10204
+<<<<<<< HEAD
+=======
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -60411,6 +60449,18 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#947507FF'
+  - uid: 10310
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -13.5,-46.5
+      parent: 2
+<<<<<<< HEAD
+    - type: AtmosPipeColor
+      color: '#947507FF'
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 10312
     components:
     - type: Transform
@@ -62564,6 +62614,7 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+<<<<<<< HEAD
   - uid: 15181
     components:
     - type: Transform
@@ -62572,6 +62623,8 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 15389
     components:
     - type: Transform
@@ -62619,6 +62672,7 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+<<<<<<< HEAD
   - uid: 15536
     components:
     - type: Transform
@@ -62643,6 +62697,8 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: GasPipeStraightAlt1
   entities:
   - uid: 15438
@@ -71071,10 +71127,20 @@ entities:
       parent: 2
 - proto: GunpetInstrument
   entities:
+<<<<<<< HEAD
   - uid: 10310
     components:
     - type: Transform
       pos: 29.520054,22.668993
+=======
+  - uid: 13163
+    components:
+    - type: MetaData
+      desc: 'A robust gun chambered in .45 HONK. Following its success in trials, the Colt pistol was formally adopted by the clown Army on March 29, 2084, when it was designated "Clown of 2084", later changed in 2085 to "clown 2084", and then "C1984" in the late-2080s. '
+      name: C1984
+    - type: Transform
+      pos: 28.56137,21.65286
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
       parent: 2
 - proto: GunSafeDisabler
   entities:
@@ -72441,6 +72507,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -13.5,-50.5
       parent: 2
+<<<<<<< HEAD
     - type: DeviceLinkSource
       linkedPorts:
         4269:
@@ -72452,6 +72519,8 @@ entities:
         3834:
         - - Pressed
           - Toggle
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: LockerAtmosphericsFilledHardsuit
   entities:
   - uid: 10298
@@ -73123,6 +73192,7 @@ entities:
       parent: 2
 - proto: MagazineMagnumEmpty
   entities:
+<<<<<<< HEAD
   - uid: 8520
     components:
     - type: Transform
@@ -73133,6 +73203,23 @@ entities:
   - uid: 1245
     components:
     - type: Transform
+=======
+  - uid: 7850
+    components:
+    - type: MetaData
+      name: pistol magazine (.45 HONK any)
+    - type: Transform
+      pos: 28.43637,21.37161
+      parent: 2
+    missingComponents:
+    - BallisticAmmoProvider
+    - ContainerContainer
+- proto: MagazinePistolSubMachineGun
+  entities:
+  - uid: 1245
+    components:
+    - type: Transform
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
       pos: -10.456647,29.27473
       parent: 2
   - uid: 9639
@@ -73468,7 +73555,10 @@ entities:
   - uid: 15510
     components:
     - type: MetaData
+<<<<<<< HEAD
       desc: you feel the need to call a bone scientist
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
       name: rat bones
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -74785,11 +74875,14 @@ entities:
     - type: Transform
       pos: -3.1478014,-27.317661
       parent: 2
+<<<<<<< HEAD
   - uid: 15564
     components:
     - type: Transform
       pos: -5.8801737,-45.511803
       parent: 2
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: PlushieMoth
   entities:
   - uid: 14911
@@ -79878,6 +79971,16 @@ entities:
       pos: -51.5,-25.5
       parent: 2
 - proto: Saw
+<<<<<<< HEAD
+=======
+  entities:
+  - uid: 10346
+    components:
+    - type: Transform
+      pos: -4.5,-5.5
+      parent: 2
+- proto: ScalpelLaser
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   entities:
   - uid: 10346
     components:
@@ -79890,6 +79993,14 @@ entities:
     components:
     - type: Transform
       pos: -29.5,22.5
+      parent: 2
+- proto: ScrapCanister1
+  entities:
+  - uid: 15167
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -8.679549,8.5
       parent: 2
 - proto: ScrapCanister1
   entities:
@@ -80289,6 +80400,35 @@ entities:
     - type: Transform
       pos: -31.548552,15.685257
       parent: 2
+  - uid: 15509
+    components:
+    - type: Transform
+      pos: -31.548552,15.685257
+      parent: 2
+- proto: Sheetifier
+  entities:
+  - uid: 4591
+    components:
+    - type: Transform
+      pos: -11.5,-0.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+  - uid: 10324
+    components:
+    - type: Transform
+      pos: -9.5,-25.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: SheetPlasma
   entities:
   - uid: 1160
@@ -80360,6 +80500,14 @@ entities:
       parent: 2
 - proto: SheetPlastic10
   entities:
+<<<<<<< HEAD
+=======
+  - uid: 3657
+    components:
+    - type: Transform
+      pos: -24.359837,0.64914525
+      parent: 2
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 9811
     components:
     - type: Transform
@@ -80495,6 +80643,14 @@ entities:
     - type: Transform
       pos: -12.315756,21.512093
       parent: 2
+<<<<<<< HEAD
+=======
+  - uid: 3656
+    components:
+    - type: Transform
+      pos: -24.7074,0.6776227
+      parent: 2
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 13661
     components:
     - type: Transform
@@ -81206,6 +81362,7 @@ entities:
         14251:
         - - Pressed
           - Toggle
+<<<<<<< HEAD
   - uid: 14490
     components:
     - type: Transform
@@ -81217,6 +81374,8 @@ entities:
         6771:
         - - Pressed
           - DoorBolt
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: SignalControlledValve
   entities:
   - uid: 9624
@@ -82587,6 +82746,7 @@ entities:
       parent: 2
 - proto: SpiderWeb
   entities:
+<<<<<<< HEAD
   - uid: 4499
     components:
     - type: Transform
@@ -82597,6 +82757,8 @@ entities:
     - type: Transform
       pos: 0.5,11.5
       parent: 2
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 14502
     components:
     - type: Transform
@@ -85566,6 +85728,16 @@ entities:
       pos: -3.5,-27.5
       parent: 2
   - uid: 15219
+<<<<<<< HEAD
+=======
+    components:
+    - type: Transform
+      pos: -34.5,-49.5
+      parent: 2
+- proto: TableReinforcedGlass
+  entities:
+  - uid: 6110
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
     components:
     - type: Transform
       pos: -34.5,-49.5
@@ -90849,6 +91021,24 @@ entities:
       pos: -59.5,11.5
       parent: 2
   - uid: 7849
+<<<<<<< HEAD
+=======
+    components:
+    - type: Transform
+      pos: 48.5,31.5
+      parent: 2
+  - uid: 7924
+    components:
+    - type: Transform
+      pos: -17.5,-53.5
+      parent: 2
+  - uid: 7927
+    components:
+    - type: Transform
+      pos: -9.5,-51.5
+      parent: 2
+  - uid: 7992
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
     components:
     - type: Transform
       pos: 48.5,31.5
@@ -91458,11 +91648,14 @@ entities:
     - type: Transform
       pos: 49.5,31.5
       parent: 2
+<<<<<<< HEAD
   - uid: 10324
     components:
     - type: Transform
       pos: 28.5,22.5
       parent: 2
+=======
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 10325
     components:
     - type: Transform
@@ -99425,14 +99618,20 @@ entities:
       parent: 2
     - type: DeviceNetwork
       deviceLists:
+<<<<<<< HEAD
       - 13745
   - uid: 13635
+=======
+      - 15181
+  - uid: 9196
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
     components:
     - type: Transform
       pos: 51.5,27.5
       parent: 2
     - type: DeviceNetwork
       deviceLists:
+<<<<<<< HEAD
       - 13745
   - uid: 13636
     components:
@@ -99444,11 +99643,15 @@ entities:
       - 13745
 - proto: WeaponEnergyTurretAIControlPanel
   entities:
+=======
+      - 15181
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
   - uid: 13745
     components:
     - type: Transform
       pos: 49.5,31.5
       parent: 2
+<<<<<<< HEAD
     - type: DeviceList
       devices:
       - 13635
@@ -99458,13 +99661,48 @@ entities:
 - proto: WeaponEnergyTurretCommandControlPanel
   entities:
   - uid: 1780
+=======
+    - type: DeviceNetwork
+      deviceLists:
+      - 15181
+  - uid: 13752
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
+    components:
+    - type: Transform
+      pos: 24.5,19.5
+      parent: 2
+<<<<<<< HEAD
+    - type: DeviceList
+      devices:
+      - 13752
+=======
+    - type: DeviceNetwork
+      deviceLists:
+      - 15181
+- proto: WeaponEnergyTurretAIControlPanel
+  entities:
+  - uid: 15181
+    components:
+    - type: Transform
+      pos: 49.5,31.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 13752
+      - 9196
+      - 8520
+      - 13745
+- proto: WeaponEnergyTurretCommandControlPanel
+  entities:
+  - uid: 1780
     components:
     - type: Transform
       pos: 24.5,19.5
       parent: 2
     - type: DeviceList
       devices:
-      - 13752
+      - 13635
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
 - proto: WeaponEnergyTurretSecurity
   entities:
   - uid: 2086
@@ -99475,7 +99713,11 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 1781
+<<<<<<< HEAD
   - uid: 13752
+=======
+  - uid: 13635
+>>>>>>> b17992dc8f5134125c880a85d66d12e2e36c1522
     components:
     - type: Transform
       pos: 30.5,16.5

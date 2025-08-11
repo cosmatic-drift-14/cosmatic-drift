@@ -45,8 +45,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [Dependency] private readonly SharedCustomSpeciesNameSystem _cdSpeciesName = default!;
 
-    [ValidatePrototypeId<SpeciesPrototype>]
-    public const string DefaultSpecies = "Human";
+    public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
 
     public override void Initialize()
     {

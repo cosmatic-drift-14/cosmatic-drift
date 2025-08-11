@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.UserInterface;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -104,7 +105,13 @@ public sealed partial class BorgSystem
             chargePercent = battery.CurrentCharge / battery.MaxCharge;
         }
 
-        var state = new BorgBuiState(chargePercent, hasBattery);
+        // CD - ai shell changes
+        // Check if the borg has a boris module so we can disable manual renaming
+        var hasBoris = component.BrainEntity != null &&
+                        TryComp<StationAiShellBrainComponent>(component.BrainEntity.Value, out _);
+
+        var state = new BorgBuiState(chargePercent, hasBattery, hasBoris);
+        // end of CD changes
         _ui.SetUiState(uid, BorgUiKey.Key, state);
     }
 }

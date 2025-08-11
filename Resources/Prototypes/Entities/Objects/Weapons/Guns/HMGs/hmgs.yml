@@ -7,6 +7,12 @@
   components:
   - type: Sprite
   - type: Item
+    size: 9999
+  - type: MultiHandedItem
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
   - type: Gun
     fireRate: 20
     selectedMode: FullAuto
