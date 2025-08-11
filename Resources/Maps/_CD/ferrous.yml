@@ -38765,7 +38765,7 @@ entities:
   - uid: 1857
     components:
     - type: MetaData
-      desc: It's sunburnt leather must've been ridden into a sunset.
+      desc: Its sunburnt leather must've been ridden into a sunset.
       name: well worn security hat
     - type: Transform
       pos: -19.471275,29.48484
