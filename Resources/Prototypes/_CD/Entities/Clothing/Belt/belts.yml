@@ -50,3 +50,14 @@
     sprite: _CD/Clothing/Belt/Kits/medical_trauma.rsi
   - type: Clothing
     sprite: _CD/Clothing/Belt/Kits/medical_trauma.rsi
+
+- type: entity
+  parent: ClothingBeltUtility
+  id: ClothingBeltUtilityHarness
+  name: utility harness
+  description: A utility harness that sits on the shoulders rather then the waist.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Harnesses/tool_webbing.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Harnesses/tool_webbing.rsi
