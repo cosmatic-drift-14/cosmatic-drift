@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Paint;
 
-public sealed class PaintedVisualizerSystem : VisualizerSystem<PaintedComponent>
+public sealed class PaintedVisualizerSystem : VisualizerSystem<CDPaintedComponent>
 {
     /// <summary>
     /// Visualizer for Paint which applies a shader and colors the entity.
@@ -22,12 +22,12 @@ public sealed class PaintedVisualizerSystem : VisualizerSystem<PaintedComponent>
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PaintedComponent, HeldVisualsUpdatedEvent>(OnHeldVisualsUpdated);
-        SubscribeLocalEvent<PaintedComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<PaintedComponent, EquipmentVisualsUpdatedEvent>(OnEquipmentVisualsUpdated);
+        SubscribeLocalEvent<CDPaintedComponent, HeldVisualsUpdatedEvent>(OnHeldVisualsUpdated);
+        SubscribeLocalEvent<CDPaintedComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<CDPaintedComponent, EquipmentVisualsUpdatedEvent>(OnEquipmentVisualsUpdated);
     }
 
-    protected override void OnAppearanceChange(EntityUid uid, PaintedComponent component, ref AppearanceChangeEvent args)
+    protected override void OnAppearanceChange(EntityUid uid, CDPaintedComponent component, ref AppearanceChangeEvent args)
     {
         var shader = _protoMan.Index<ShaderPrototype>(component.ShaderName).Instance();
 
@@ -53,7 +53,7 @@ public sealed class PaintedVisualizerSystem : VisualizerSystem<PaintedComponent>
         }
     }
 
-    private void OnHeldVisualsUpdated(EntityUid uid, PaintedComponent component, HeldVisualsUpdatedEvent args)
+    private void OnHeldVisualsUpdated(EntityUid uid, CDPaintedComponent component, HeldVisualsUpdatedEvent args)
     {
         if (args.RevealedLayers.Count == 0)
             return;
@@ -71,7 +71,7 @@ public sealed class PaintedVisualizerSystem : VisualizerSystem<PaintedComponent>
         }
     }
 
-    private void OnEquipmentVisualsUpdated(EntityUid uid, PaintedComponent component, EquipmentVisualsUpdatedEvent args)
+    private void OnEquipmentVisualsUpdated(EntityUid uid, CDPaintedComponent component, EquipmentVisualsUpdatedEvent args)
     {
         if (args.RevealedLayers.Count == 0)
             return;
@@ -89,7 +89,7 @@ public sealed class PaintedVisualizerSystem : VisualizerSystem<PaintedComponent>
         }
     }
 
-    private void OnShutdown(EntityUid uid, PaintedComponent component, ref ComponentShutdown args)
+    private void OnShutdown(EntityUid uid, CDPaintedComponent component, ref ComponentShutdown args)
     {
         if (!TryComp(uid, out SpriteComponent? sprite))
             return;

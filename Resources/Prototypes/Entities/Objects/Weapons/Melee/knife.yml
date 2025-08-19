@@ -39,10 +39,9 @@
     - KitchenKnife
   - type: Sprite
     sprite: Objects/Weapons/Melee/kitchen_knife.rsi
-    size: 2
     state: icon
   - type: Item
-    size: 10
+    size: 2
     sprite: Objects/Weapons/Melee/kitchen_knife.rsi
   - type: GuideHelp
     guides:
@@ -61,7 +60,6 @@
     - Cleaver
   - type: Sprite
     sprite: Objects/Weapons/Melee/cleaver.rsi
-    size: 4
     state: butch
   - type: MeleeWeapon
     wideAnimationRotation: -115
@@ -70,7 +68,7 @@
       types:
         Slash: 13
   - type: Item
-    size: 10
+    size: 4
     sprite: Objects/Weapons/Melee/cleaver.rsi
   - type: GuideHelp
     guides:
@@ -89,7 +87,6 @@
     - Knife
   - type: Sprite
     sprite: Objects/Weapons/Melee/combat_knife.rsi
-    size: 2
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -106,12 +103,27 @@
       types:
         Slash: 10
   - type: Item
-    size: 10
+    size: 2
     sprite: Objects/Weapons/Melee/combat_knife.rsi
   - type: DisarmMalus
     malus: 0.225
   - type: ThrowingAngle
     angle: 225
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.4,-0.2
+          - -0.2,-0.4
+          - 0.4,0.2
+          - 0.2,0.4
+        density: 20 # derived from base_item
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
 
 - type: entity
   name: survival knife
@@ -121,10 +133,9 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/survival_knife.rsi
-    size: 2
     state: icon
   - type: Item
-    size: 10
+    size: 2
     sprite: Objects/Weapons/Melee/survival_knife.rsi
 
 - type: entity
@@ -135,7 +146,6 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
-    size: 2
     state: icon
   - type: MeleeWeapon
     attackRate: 1.0
@@ -143,7 +153,7 @@
       types:
         Slash: 15
   - type: Item
-    size: 10
+    size: 2
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
     # storedSprite: null
 
@@ -307,3 +317,18 @@
     angle: 225
   - type: StaticPrice
     price: 500 # 2000 for a set of 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.475,-0.225
+          - -0.225,-0.475
+          - 0.525,0.275
+          - 0.275,0.525
+        density: 20 # derived from base_item
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2

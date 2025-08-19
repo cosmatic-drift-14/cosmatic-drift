@@ -894,9 +894,6 @@
   id: MagazineShotgun
 
 - type: Tag
-  id: MagazineMagnumSubMachineGun
-
-- type: Tag
   id: MagazinePistolSubMachineGun
 
 - type: Tag
@@ -1156,6 +1153,9 @@
 
 - type: Tag
   id: ReinforcedGlassShard
+
+- type: Tag
+  id: RemoteSignaller
 
 - type: Tag
   id: ReptilianFood
@@ -1483,6 +1483,9 @@
 
 - type: Tag
   id: Wine
+
+- type: Tag
+  id: WireBrush
 
 - type: Tag
   id: Wirecutter

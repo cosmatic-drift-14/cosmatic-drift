@@ -1,5 +1,6 @@
 using Content.Server.Administration.Managers;
 using Content.Server.EUI;
+using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.Administration;
 using Content.Shared.Eui;
 using Content.Shared.Silicons.Laws;
@@ -12,6 +13,7 @@ public sealed class SiliconLawEui : BaseEui
     private readonly SiliconLawSystem _siliconLawSystem;
     private readonly EntityManager _entityManager;
     private readonly IAdminManager _adminManager;
+    private readonly SharedStationAiShellUserSystem _shellUser; // CD - ai shells modification
 
     private List<SiliconLaw> _laws = new();
     private ISawmill _sawmill = default!;
@@ -23,6 +25,7 @@ public sealed class SiliconLawEui : BaseEui
         _adminManager = manager;
         _entityManager = entityManager;
         _sawmill = Logger.GetSawmill("silicon-law-eui");
+        _shellUser = _entityManager.System<SharedStationAiShellUserSystem>(); // CD - ai shells modification
     }
 
     public override EuiStateBase GetNewState()
@@ -53,7 +56,10 @@ public sealed class SiliconLawEui : BaseEui
 
         var player = _entityManager.GetEntity(message.Target);
         if (_entityManager.TryGetComponent<SiliconLawProviderComponent>(player, out var playerProviderComp))
+        {
             _siliconLawSystem.SetLaws(message.Laws, player, playerProviderComp.LawUploadSound);
+            _shellUser.ChangeShellLaws(player, playerProviderComp.Lawset, playerProviderComp.LawUploadSound); // CD - ai shells modification
+        }
     }
 
     private bool IsAllowed()

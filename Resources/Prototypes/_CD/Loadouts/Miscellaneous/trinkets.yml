@@ -88,3 +88,17 @@
   storage:
     back:
     - SilverRing
+
+- type: loadout
+  id: SpaceCash10
+  storage:
+    back:
+    - SpaceCash10
+  groupBy: "money"
+
+- type: loadout
+  id: SpaceCash100
+  storage:
+    back:
+    - SpaceCash100
+  groupBy: "money"

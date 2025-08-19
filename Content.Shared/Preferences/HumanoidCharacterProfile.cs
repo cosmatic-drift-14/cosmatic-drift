@@ -18,6 +18,7 @@ using Robust.Shared.Utility;
 
 // CD: Imports
 using Content.Shared._CD.Records;
+using Content.Shared.FixedPoint;
 
 namespace Content.Shared.Preferences
 {
@@ -136,6 +137,9 @@ namespace Content.Shared.Preferences
         [DataField("cosmaticDriftCustomSpeciesName")]
         public string? CDCustomSpeciesName = null;
 
+        [DataField("cosmaticDriftAllergies")]
+        public Dictionary<string, FixedPoint2> CDAllergies = new();
+
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -152,7 +156,8 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
             PlayerProvidedCharacterRecords? cdCharacterRecords,
-            string? cdCustomSpeciesName)
+            string? cdCustomSpeciesName,
+            Dictionary<string, FixedPoint2> cdAllergies)
         {
             Name = name;
             FlavorText = flavortext;
@@ -170,6 +175,7 @@ namespace Content.Shared.Preferences
             _loadouts = loadouts;
             CDCharacterRecords = cdCharacterRecords;
             CDCustomSpeciesName = cdCustomSpeciesName;
+            CDAllergies = cdAllergies;
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -203,7 +209,8 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
                 other.CDCharacterRecords,
-                other.CDCustomSpeciesName)
+                other.CDCustomSpeciesName,
+                other.CDAllergies)
         {
         }
 
@@ -221,8 +228,10 @@ namespace Content.Shared.Preferences
         /// </summary>
         /// <param name="species">The species to use in this default profile. The default species is <see cref="SharedHumanoidAppearanceSystem.DefaultSpecies"/>.</param>
         /// <returns>Humanoid character profile with default settings.</returns>
-        public static HumanoidCharacterProfile DefaultWithSpecies(string species = SharedHumanoidAppearanceSystem.DefaultSpecies)
+        public static HumanoidCharacterProfile DefaultWithSpecies(string? species = null)
         {
+            species ??= SharedHumanoidAppearanceSystem.DefaultSpecies;
+
             return new()
             {
                 Species = species,
@@ -244,8 +253,10 @@ namespace Content.Shared.Preferences
             return RandomWithSpecies(species);
         }
 
-        public static HumanoidCharacterProfile RandomWithSpecies(string species = SharedHumanoidAppearanceSystem.DefaultSpecies)
+        public static HumanoidCharacterProfile RandomWithSpecies(string? species = null)
         {
+            species ??= SharedHumanoidAppearanceSystem.DefaultSpecies;
+
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
 
@@ -484,6 +495,11 @@ namespace Content.Shared.Preferences
             return new HumanoidCharacterProfile(this) { CDCustomSpeciesName = customSpeciesName };
         }
 
+        public HumanoidCharacterProfile WithCDAllergies(Dictionary<string, FixedPoint2> allergies)
+        {
+            return new HumanoidCharacterProfile(this) { CDAllergies = allergies };
+        }
+
         public string Summary =>
             Loc.GetString(
                 "humanoid-character-profile-summary",
@@ -511,6 +527,7 @@ namespace Content.Shared.Preferences
             if (CDCharacterRecords != null && other.CDCharacterRecords != null &&
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
             if (CDCustomSpeciesName != other.CDCustomSpeciesName) return false;
+            if (!CDAllergies.SequenceEqual(other.CDAllergies)) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
