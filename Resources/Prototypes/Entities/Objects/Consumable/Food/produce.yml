@@ -2694,6 +2694,7 @@
   - type: Item
     sprite: Objects/Specific/Hydroponics/cherry.rsi
     heldPrefix: pit
+    size: 1
   - type: Tag
     tags:
     - Recyclable
