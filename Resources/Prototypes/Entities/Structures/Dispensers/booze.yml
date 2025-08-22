@@ -30,17 +30,23 @@
   suffix: Filled
   parent: BoozeDispenserEmpty
   components:
-  - type: StorageFill
-    contents:
-    - id: DrinkAleBottleFullGrowler
-    - id: DrinkBeerGrowler
-    - id: DrinkCoffeeLiqueurBottleFull
-    - id: DrinkCognacBottleFull
-    - id: DrinkGinBottleFull
-    - id: DrinkMeadJug
-    - id: DrinkRumBottleFull
-    - id: DrinkTequilaBottleFull
-    - id: DrinkVermouthBottleFull
-    - id: DrinkVodkaBottleFull
-    - id: DrinkWhiskeyBottleFull
-    - id: DrinkWineBottleFull
+  - type: ReagentDispenser
+    storageWhitelist:
+      tags:
+      - DrinkBottle
+ # CD: listinv
+    pack: BoozeDispenserInventory
+ # - type: StorageFill
+ #   contents:
+ #   - id: DrinkAleBottleFullGrowler
+ #   - id: DrinkBeerGrowler
+ #   - id: DrinkCoffeeLiqueurBottleFull
+ #   - id: DrinkCognacBottleFull
+ #   - id: DrinkGinBottleFull
+ #   - id: DrinkMeadJug
+ #   - id: DrinkRumBottleFull
+ #   - id: DrinkTequilaBottleFull
+ #   - id: DrinkVermouthBottleFull
+ #   - id: DrinkVodkaBottleFull
+ #   - id: DrinkWhiskeyBottleFull
+ #   - id: DrinkWineBottleFull
