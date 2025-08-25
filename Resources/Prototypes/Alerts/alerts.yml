@@ -27,6 +27,7 @@
     - alertType: Rooted
     - alertType: Pacified
     - alertType: Stealthy
+    - alertType: ToggleInteraction # CD
 
 - type: entity
   id: AlertSpriteView
@@ -145,6 +146,15 @@
     state: stunbaton_off
   name: alerts-stunned-name
   description: alerts-stunned-desc
+
+- type: alert
+  id: Knockdown
+  clickEvent: !type:KnockedDownAlertEvent
+  icons:
+  - sprite: /Textures/Interface/Alerts/stunnable.rsi
+    state: knocked-down
+  name: alerts-knockdown-name
+  description: alerts-knockdown-desc
 
 - type: alert
   id: Handcuffed

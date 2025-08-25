@@ -5,6 +5,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Storage # CD: Needed for listinv
   - type: Transform
     anchored: true
     noRot: true
@@ -70,6 +71,7 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       beakerSlot: !type:ContainerSlot
+      storagebase: !type:Container
   - type: StaticPrice
     price: 1000
   - type: WiresPanel
