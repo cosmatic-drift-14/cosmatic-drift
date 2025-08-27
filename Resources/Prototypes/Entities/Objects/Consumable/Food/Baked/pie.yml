@@ -160,7 +160,7 @@
       payloadSlot:
         whitelist:
           components:
-          - OnUseTimerTrigger
+          - TimerTrigger
         insertSound:
           path: /Audio/Weapons/Guns/Empty/empty.ogg
         ejectSound:
