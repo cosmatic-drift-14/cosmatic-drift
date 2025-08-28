@@ -132,7 +132,7 @@
   - type: Item
     size: 30
     # heldPrefix: cloth
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
@@ -203,7 +203,7 @@
   - type: Construction
     graph: Durathread
     node: MaterialDurathread
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
@@ -445,7 +445,7 @@
     - state: cotton_3
       map: ["base"]
   - type: Appearance
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
@@ -507,7 +507,7 @@
     - state: pyrotton_3
       map: ["base"]
   - type: Appearance
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
@@ -569,7 +569,7 @@
   - type: FlavorProfile
     flavors:
       - banana
-  - type: Food
+  - type: Edible
     trash:
     - TrashBananiumPeel
   - type: BadFood
@@ -628,7 +628,7 @@
     size: 50
     sprite: Objects/Materials/silk.rsi
     heldPrefix: silk
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
@@ -779,7 +779,7 @@
   - type: Item
     size: 30
     heldPrefix: bones
-  - type: Food
+  - type: Edible
   - type: BadFood
   - type: SolutionContainerManager
     solutions:
