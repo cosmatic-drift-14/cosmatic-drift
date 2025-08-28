@@ -1,4 +1,29 @@
 - type: entity
+  abstract: true
+  parent: BaseAction
+  id: BaseEntitySpellAction
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 90
+  - type: TargetAction
+    interactOnMiss: false
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - MobState
+    canTargetSelf: false
+
+- type: entity
+  abstract: true
+  parent: BaseEntitySpellAction
+  id: BaseSmiteAction
+  components:
+  - type: Magic
+    requiresClothes: true
+
+- type: entity
+  parent: BaseSmiteAction
   id: ActionSmite
   name: Smite
   description: Instantly gibs a target.
