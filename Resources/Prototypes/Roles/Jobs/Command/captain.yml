@@ -24,8 +24,8 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    # shoes: ClothingShoesBootsLaceup | CD, removed due to loadout addtion.
-    eyes: ClothingEyesGlassesSunglasses
+    # shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
     gloves: ClothingHandsGlovesCaptain
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
