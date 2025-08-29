@@ -212,6 +212,7 @@ public sealed class ItemToggleSystem : EntitySystem
             }
 
             return false;
+        }
 
         Deactivate((uid, comp), predicted, user, showPopup);
         return true;

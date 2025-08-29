@@ -3,6 +3,7 @@ using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Radio;
 using Content.Shared.Roles;
+using Content.Shared.Station.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
@@ -33,7 +34,7 @@ public sealed partial class NotifyDepartmentSpecial : JobSpecial
             // can be improved whenever the radio refactor takes place.
             if (!entMan.TryGetComponent<StationDataComponent>(station, out var stationInfo))
                 continue;
-            var probablyStationGridOrCloseEnough = stationManager.GetLargestGrid(stationInfo);
+            var probablyStationGridOrCloseEnough = stationManager.GetLargestGrid((station, stationInfo));
             if (probablyStationGridOrCloseEnough == null)
                 continue;
             radio.SendRadioMessage(station, Loc.GetString(NotifyTextKey), channel, probablyStationGridOrCloseEnough.Value);

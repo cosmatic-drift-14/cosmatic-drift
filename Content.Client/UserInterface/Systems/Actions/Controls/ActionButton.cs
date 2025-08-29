@@ -3,8 +3,7 @@ using Content.Client.Actions;
 using Content.Client.Actions.UI;
 using Content.Client.Cooldown;
 using Content.Client.Stylesheets;
-using Content.Shared.Actions.Components;
-using Content.Shared.Charges.Systems;
+using Content.Shared.Actions;
 using Content.Shared.Examine;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -211,12 +210,12 @@ public sealed class ActionButton : Control, IEntityControl
         //         chargesText.AddText(Loc.GetString($"{Environment.NewLine}Time Til Recharge: {chargeTimeRemaining}"));
         //     }
         // }
-        
+
         if (_player.LocalEntity is null)
             return null;
 
-        var ev = new ExaminedEvent(desc, Action.Value, _player.LocalEntity.Value, true, !desc.IsEmpty);
-        _entities.EventBus.RaiseLocalEvent(Action.Value.Owner, ev);
+        var ev = new ExaminedEvent(desc, ActionId.Value, _player.LocalEntity.Value, true, !desc.IsEmpty);
+        _entities.EventBus.RaiseLocalEvent(ActionId.Value, ev);
         var newDesc = ev.GetTotalMessage();
 
         return new ActionAlertTooltip(name, newDesc);

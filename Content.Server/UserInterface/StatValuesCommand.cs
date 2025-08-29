@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Linq;
+using System.Net.Mime;
 using Content.Server.Administration;
 using Content.Server.Cargo.Systems;
 using Content.Server.EUI;
@@ -152,10 +153,13 @@ public sealed class StatValuesCommand : IConsoleCommand
             if (!itemQuery.TryGetComponent(entity, out var itemComp))
                 continue;
 
+            string itemSize = "" + itemComp.Size; // CD: This is truly, truly awful, but the only way I could get this to work as calling ToString() runs an error.
+
             values.Add(new[]
             {
                 id,
-                $"{itemSystem.GetItemSizeLocale(itemComp.Size)}",
+                // $"{itemSystem.GetItemSizeLocale(itemComp.Size)}",
+                itemSize,
             });
         }
 
