@@ -306,6 +306,7 @@ public sealed class LockSystem : EntitySystem
 
         AlternativeVerb verb = new()
         {
+            Disabled = !CanToggleLock(uid, args.User),
             Act = component.Locked
                 ? () => TryUnlock(uid, args.User, component)
                 : () => TryLock(uid, args.User, component),
