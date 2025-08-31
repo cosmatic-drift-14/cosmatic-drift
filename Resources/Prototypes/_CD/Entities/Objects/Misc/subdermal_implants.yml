@@ -8,5 +8,5 @@
     - type: TriggerOnMobstateChange
       mobState:
       - Dead
-    - type: Rattle
-      radioChannel: "Medical"
+    - type: RattleOnTrigger
+      targetUser: true

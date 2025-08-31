@@ -8,7 +8,7 @@
     sprite: Objects/Weapons/Melee/offset_canes/standard.rsi
     state: icon
   - type: Item
-    size: Normal
+    size: 25
     sprite: Objects/Weapons/Melee/offset_canes/standard.rsi
 #  - type: RandomSprite # Ideally I'd rather these be their own selectable item instead of randomly picked.
 #    available:

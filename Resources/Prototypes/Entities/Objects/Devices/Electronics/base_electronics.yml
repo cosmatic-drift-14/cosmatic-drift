@@ -6,7 +6,7 @@
   suffix: Electronics
   components:
   - type: Item
-    storedRotation: -90
+    # storedRotation: -90
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: generic

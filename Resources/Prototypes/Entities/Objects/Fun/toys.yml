@@ -797,12 +797,13 @@
     graph: CardSword
     node: cardSword
   - type: Item
-    size: Normal
-    storedSprite:
-      state: icon
-      sprite: Objects/Fun/card_sword.rsi
-    shape:
-    - 0,0,1,3
+    size: 15
+    # size: Normal
+    # storedSprite:
+    #   state: icon
+    #   sprite: Objects/Fun/card_sword.rsi
+    # shape:
+    # - 0,0,1,3
 
 - type: entity
   parent: BaseItem

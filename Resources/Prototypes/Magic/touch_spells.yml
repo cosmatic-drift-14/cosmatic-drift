@@ -3,10 +3,10 @@
   parent: BaseAction
   id: BaseEntitySpellAction
   components:
-  - type: Action
+  - type: InstantAction
     itemIconStyle: BigAction
     useDelay: 90
-  - type: TargetAction
+  - type: WorldTargetAction
     interactOnMiss: false
   - type: EntityTargetAction
     whitelist:

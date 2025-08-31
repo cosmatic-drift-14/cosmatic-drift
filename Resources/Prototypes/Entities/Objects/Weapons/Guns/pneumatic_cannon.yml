@@ -132,7 +132,7 @@
     autoRechargeRate: 1
   - type: AmmoCounter
   - type: Item
-    size: Normal
+    size: 50
         
 - type: entity
   name: syringe gun
@@ -178,7 +178,7 @@
   - type: PneumaticCannon
     throwItems: false
 
-# doesn't need gas, extra capacity
+# doesn't need gas, extra capacity  
 - type: entity
   parent: WeaponImprovisedPneumaticCannonGun
   id: WeaponImprovisedPneumaticCannonAdmeme

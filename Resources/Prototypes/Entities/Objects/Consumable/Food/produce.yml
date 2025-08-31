@@ -2770,7 +2770,7 @@
     sprite: Objects/Specific/Hydroponics/bloonion.rsi
     state: produce
   - type: Item
-    size: Small
+    size: 5
     sprite: Objects/Specific/Hydroponics/bloonion.rsi
     heldPrefix: produce
   - type: Produce

@@ -6860,7 +6860,7 @@ entities:
     components:
     - type: Transform
       parent: 13842
-    - type: Action
+    - type: InstantAction # CD
       originalIconColor: '#FFFFFFFF'
       container: 13842
   - uid: 6619
@@ -6869,7 +6869,7 @@ entities:
     components:
     - type: Transform
       parent: 13901
-    - type: Action
+    - type: InstantAction # CD
       originalIconColor: '#FFFFFFFF'
       container: 13901
 - proto: ActionToggleInternals
@@ -6998,7 +6998,7 @@ entities:
     components:
     - type: Transform
       parent: 10499
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 10499
   - uid: 5672
@@ -7019,7 +7019,7 @@ entities:
     components:
     - type: Transform
       parent: 15343
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 15343
   - uid: 8005

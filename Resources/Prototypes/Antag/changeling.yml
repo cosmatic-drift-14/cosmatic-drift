@@ -16,11 +16,11 @@
   name: "[color=red]Devour[/color]"
   description: Consume the essence of your victims and subsume their identity and mind into your own.
   components:
-  - type: Action
+  - type: InstantAction
     icon: { sprite : Interface/Actions/changeling.rsi, state: "devour" }
     iconOn: { sprite : Interface/Actions/changeling.rsi, state: "devour_on" }
     priority: 1
-  - type: TargetAction
+  - type: WorldTargetAction
   - type: EntityTargetAction
     event: !type:ChangelingDevourActionEvent
 
@@ -29,7 +29,6 @@
   name: "[color=red]Transform[/color]"
   description: Transform and assume the identities of those you have devoured.
   components:
-  - type: Action
-    icon: { sprite : Interface/Actions/changeling.rsi, state: "transform" }
   - type: InstantAction
+    icon: { sprite : Interface/Actions/changeling.rsi, state: "transform" }
     event: !type:ChangelingTransformActionEvent
