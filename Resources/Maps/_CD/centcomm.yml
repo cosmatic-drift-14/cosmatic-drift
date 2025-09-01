@@ -52699,13 +52699,6 @@ entities:
     - type: Transform
       pos: -11.5,29.5
       parent: 2
-- proto: SoapBorg
-  entities:
-  - uid: 3814
-    components:
-    - type: Transform
-      pos: 37.437637,-10.4820175
-      parent: 2
 - proto: SodaDispenser
   entities:
   - uid: 1476
