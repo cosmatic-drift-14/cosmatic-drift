@@ -82,7 +82,8 @@ namespace Content.IntegrationTests.Tests
             "Exo",
             "Ferrous", // CD Map
             "Aspid", // CD Map
-            "Gemini" // CD Map
+            "Gemini", // CD Map
+            "CDCentComm" // CD Map
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
