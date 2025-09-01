@@ -35,13 +35,15 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
-            "Dart"
+            "Dart",
+			"CDCentComm" // CD Map
         };
 
         private static readonly string[] Grids =
         {
             "/Maps/centcomm.yml",
             AdminTestArenaSystem.ArenaMapPath
+            "/Maps/_CD/centcomm.yml" // CD Map.
         };
 
         private static readonly string[] DoNotMapWhitelist =
@@ -54,7 +56,8 @@ namespace Content.IntegrationTests.Tests
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
             "/Maps/Misc/terminal.yml", // CD Arrivals.
-            "/Maps/_CD/gemini.yml" // CD Map.
+            "/Maps/_CD/gemini.yml", // CD Map.
+            "/Maps/_CD/centcomm.yml" // CD Map.
         };
 
         private static readonly string[] GameMaps =
