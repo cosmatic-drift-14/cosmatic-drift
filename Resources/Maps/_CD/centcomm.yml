@@ -28862,8 +28862,6 @@ entities:
       pos: 35.5,31.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 9016
       - 9017
@@ -28875,8 +28873,6 @@ entities:
       pos: 35.5,32.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 9016
       - 9017
@@ -28888,8 +28884,6 @@ entities:
       pos: 35.5,33.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 9016
       - 9017
