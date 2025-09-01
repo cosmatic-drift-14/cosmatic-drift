@@ -122,6 +122,7 @@
     event: !type:ActivateImplantEvent
 
 - type: entity
+  parent: BaseImplantAction
   id: ActionActivateFreedomImplant
   name: Break Free
   description: Activating your freedom implant will free you from any hand restraints
@@ -135,7 +136,6 @@
     icon:
       sprite: Actions/Implants/implants.rsi
       state: freedom
-    event: !type:UseFreedomImplantEvent
 
 - type: entity
   id: ActionOpenUplinkImplant
@@ -168,6 +168,7 @@
     event: !type:ActivateImplantEvent
 
 - type: entity
+  parent: BaseImplantAction
   id: ActionActivateScramImplant
   name: SCRAM!
   description: Randomly teleports you within a large distance.
@@ -182,9 +183,9 @@
     icon:
       sprite: Structures/Specific/anomaly.rsi
       state: anom4
-    event: !type:UseScramImplantEvent
 
 - type: entity
+  parent: BaseImplantAction
   id: ActionActivateDnaScramblerImplant
   name: Scramble DNA
   description:  Randomly changes your name and appearance.
@@ -199,7 +200,6 @@
     icon:
       sprite: Clothing/OuterClothing/Hardsuits/lingspacesuit.rsi
       state: icon
-    event: !type:UseDnaScramblerImplantEvent
 
 - type: entity
   id: ActionToggleSuitPiece
@@ -394,11 +394,11 @@
   components:
   - type: InstantAction
     useDelay: 8
-    icon: 
+    icon:
       sprite: Interface/Actions/jump.rsi
       state: icon
     event: !type:GravityJumpEvent {}
-    
+
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleRootable

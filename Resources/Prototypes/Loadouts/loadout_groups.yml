@@ -44,6 +44,12 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
+  - OffsetCane
+  - OffsetCaneWood
+  - OffsetCaneClown
+  - OffsetCaneMime
+  - OffsetCaneNT
+  - Cane
   - TowelColorBlack
   - TowelColorDarkBlue
   - TowelColorDarkGreen
@@ -63,7 +69,6 @@
   - CDDogtags # CD
   - LunchboxBlue # CD
   - LunchboxYellow # CD
-  - Cane # CD
   - MedCrutchesForearm # CD
   - GoldRing # CD
   - SilverRing # CD

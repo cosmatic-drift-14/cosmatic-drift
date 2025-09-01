@@ -8,8 +8,9 @@
     itemIconStyle: BigAction
     whitelist:
       components:
-      - Body
-      - MindContainer
+      - MobState
+      - PAI # intended to mindswap pAIs and AIs
+      - StationAiCore
     canTargetSelf: false
     interactOnMiss: false
     sound: !type:SoundPathSpecifier

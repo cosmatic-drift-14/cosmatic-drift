@@ -47,9 +47,6 @@
     - state: cardboard_3
       map: ["base"]
   - type: Appearance
-  - type: Item
-    size: 30
-    # heldPrefix: cardboard
   - type: Extractable
     grindableSolutionName: cardboard
   - type: SolutionContainerManager
@@ -58,6 +55,16 @@
         reagents:
         - ReagentId: Cellulose
           Quantity: 6
+  - type: Item
+    size: 30
+    heldPrefix: cardboard
+  - type: FloorTile
+    outputs:
+    - Plating
+  - type: SpawnAfterInteract #Nuke after convert to FloorTile
+    prototype: CarpetCard
+    doAfter: 0.5
+    removeOnInteract: true
 
 - type: entity
   parent: MaterialCardboard
@@ -132,7 +139,7 @@
   - type: Item
     size: 30
     # heldPrefix: cloth
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
@@ -149,6 +156,7 @@
       - ClothMade
       - Gauze
       - RawMaterial
+      - ConstructionMaterial
   - type: Construction
     graph: WebObjects # not sure if I should either keep this here or just make another prototype. Will keep it here just in case.
     node: cloth
@@ -203,7 +211,7 @@
   - type: Construction
     graph: Durathread
     node: MaterialDurathread
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
@@ -216,6 +224,7 @@
     tags:
       - ClothMade
       - RawMaterial
+      - ConstructionMaterial
   - type: Item
     heldPrefix: durathread
 
@@ -267,6 +276,7 @@
     tags:
     - Wooden
     - RawMaterial
+    - ConstructionMaterial
   - type: Extractable
     grindableSolutionName: wood
   - type: SolutionContainerManager
@@ -445,7 +455,7 @@
     - state: cotton_3
       map: ["base"]
   - type: Appearance
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
@@ -507,7 +517,7 @@
     - state: pyrotton_3
       map: ["base"]
   - type: Appearance
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
@@ -569,7 +579,7 @@
   - type: FlavorProfile
     flavors:
       - banana
-  - type: Food
+  - type: Edible
     trash:
     - TrashBananiumPeel
   - type: BadFood
@@ -628,7 +638,7 @@
     size: 50
     sprite: Objects/Materials/silk.rsi
     heldPrefix: silk
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
@@ -779,7 +789,7 @@
   - type: Item
     size: 30
     heldPrefix: bones
-  - type: Food
+  - type: Edible
   - type: BadFood
   - type: SolutionContainerManager
     solutions:
