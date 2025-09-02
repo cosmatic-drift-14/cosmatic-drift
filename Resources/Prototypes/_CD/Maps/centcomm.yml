@@ -12,4 +12,4 @@
           mapNameTemplate: '{0} Central Command {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'TG'
+            prefixCreator: '14'
