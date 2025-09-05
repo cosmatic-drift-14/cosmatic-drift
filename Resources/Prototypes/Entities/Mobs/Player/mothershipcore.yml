@@ -213,12 +213,11 @@
   name: Xenoborgs Control Console
   description: View the Xenoborgs Control Console
   components:
-  - type: Action
+  - type: InstantAction
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-basic-module }
     iconOn: Interface/Actions/actions_borg.rsi/xenoborg-basic-module.png
     keywords: [ "Mothership Core", "console", "interface" ]
     priority: -6
-  - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.RoboticsConsoleUiKey.Key }
 
 - type: entity
@@ -227,10 +226,9 @@
   name: Xenoborgs Camera Monitor
   description: View the Xenoborgs Camera Monitor
   components:
-  - type: Action
+  - type: InstantAction
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module }
     iconOn: Interface/Actions/actions_borg.rsi/xenoborg-eye-module.png
     keywords: [ "Mothership Core", "console", "interface" ]
     priority: -6
-  - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.SurveillanceCameraMonitorUiKey.Key }

@@ -64,7 +64,7 @@
   - type: Item
     sprite: Objects/Specific/Medical/implanter.rsi
     heldPrefix: implanter
-    size: Small
+    size: 3
   - type: Appearance
   - type: GenericVisualizer
     visuals:
