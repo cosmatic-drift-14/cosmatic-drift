@@ -51,7 +51,7 @@ public sealed class LockSystem : EntitySystem
         SubscribeLocalEvent<LockedWiresPanelComponent, LockToggleAttemptEvent>(OnLockToggleAttempt);
         SubscribeLocalEvent<LockedWiresPanelComponent, AttemptChangePanelEvent>(OnAttemptChangePanel);
         SubscribeLocalEvent<LockedAnchorableComponent, UnanchorAttemptEvent>(OnUnanchorAttempt);
-        SubscribeLocalEvent<LockedStorageComponent, StorageInteractAttemptEvent>(OnStorageInteractAttempt);
+        // SubscribeLocalEvent<LockedStorageComponent, StorageInteractAttemptEvent>(OnStorageInteractAttempt);
 
         SubscribeLocalEvent<UIRequiresLockComponent, ActivatableUIOpenAttemptEvent>(OnUIOpenAttempt);
         SubscribeLocalEvent<UIRequiresLockComponent, LockToggledEvent>(LockToggled);
@@ -357,11 +357,11 @@ public sealed class LockSystem : EntitySystem
     }
 
 
-    private void OnStorageInteractAttempt(Entity<LockedStorageComponent> ent, ref StorageInteractAttemptEvent args)
-    {
-        if (IsLocked(ent.Owner))
-            args.Cancelled = true;
-    }
+    // private void OnStorageInteractAttempt(Entity<LockedStorageComponent> ent, ref StorageInteractAttemptEvent args)
+    // {
+    //     if (IsLocked(ent.Owner))
+    //         args.Cancelled = true;
+    // }
 
 
     private void OnLockToggleAttempt(Entity<LockedWiresPanelComponent> ent, ref LockToggleAttemptEvent args)

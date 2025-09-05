@@ -12,6 +12,8 @@ public sealed class StorageImplantSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly INetManager _net = default!;
 
+    public const string BaseStorageId = "storagebase";
+
     public override void Initialize()
     {
         base.Initialize();
@@ -24,7 +26,7 @@ public sealed class StorageImplantSystem : EntitySystem
         if (_net.IsClient)
             return; // TODO: RandomPredicted and DropNextToPredicted
 
-        if (!_container.TryGetContainer(ent.Owner, StorageComponent.ContainerId, out var storageImplant))
+        if (!_container.TryGetContainer(ent.Owner, BaseStorageId, out var storageImplant))
             return;
 
         var contained = storageImplant.ContainedEntities.ToArray();
