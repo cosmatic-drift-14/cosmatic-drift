@@ -1,6 +1,5 @@
 using Content.Client.UserInterface.Systems.Actions;
 using Content.Client.UserInterface.Systems.Admin;
-using Content.Client.UserInterface.Systems.BugReport;
 using Content.Client.UserInterface.Systems.Bwoink;
 using Content.Client.UserInterface.Systems.Character;
 using Content.Client.UserInterface.Systems.Crafting;
@@ -27,7 +26,6 @@ public sealed class GameTopMenuBarUIController : UIController
     [Dependency] private readonly SandboxUIController _sandbox = default!;
     [Dependency] private readonly GuidebookUIController _guidebook = default!;
     [Dependency] private readonly EmotesUIController _emotes = default!;
-    [Dependency] private readonly BugReportUIController _bug = default!;
 
     private GameTopMenuBar? GameTopMenuBar => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>();
 
@@ -52,7 +50,6 @@ public sealed class GameTopMenuBarUIController : UIController
         _action.UnloadButton();
         _sandbox.UnloadButton();
         _emotes.UnloadButton();
-        _bug.UnloadButton();
     }
 
     public void LoadButtons()
@@ -67,6 +64,5 @@ public sealed class GameTopMenuBarUIController : UIController
         _action.LoadButton();
         _sandbox.LoadButton();
         _emotes.LoadButton();
-        _bug.LoadButton();
     }
 }
