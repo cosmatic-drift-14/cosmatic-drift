@@ -61,3 +61,10 @@
   id: ClothingEyesGlassesMesonPrescription
   equipment:
     eyes: ClothingEyesGlassesMesonPrescription
+
+# Back
+
+- type: loadout
+  id: EngineeringCarrybag
+  equipment:
+    back: ClothingBackpackCarrybagEngineering
