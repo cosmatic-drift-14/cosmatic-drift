@@ -103,6 +103,7 @@ public abstract class SharedRootableSystem : EntitySystem
 
         entity.Comp.Rooted = !entity.Comp.Rooted;
         _movementSpeedModifier.RefreshMovementSpeedModifiers(entity);
+        _gravity.RefreshWeightless(entity.Owner);
         Dirty(entity);
 
         if (entity.Comp.Rooted)
@@ -118,7 +119,6 @@ public abstract class SharedRootableSystem : EntitySystem
         {
             _alerts.ClearAlert(entity, entity.Comp.RootedAlert);
         }
-
         _audio.PlayPredicted(entity.Comp.RootSound, entity.Owner.ToCoordinates(), entity);
 
         return true;
