@@ -1,0 +1,89 @@
+# Limbs that spawn when gibbed should get descriptions.
+- type: entity
+  abstract: true
+  parent: [ BasePart ]
+  id: PartFoxfolk
+  name: foxfolk body part
+  components:
+  - type: Sprite
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+
+- type: entity
+  parent: [ PartFoxfolk, BaseTorso ]
+  id: TorsoFoxfolk
+  name: foxfolk torso
+  components:
+  - type: Sprite
+    state: "torso_m"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseHead ]
+  id: HeadFoxfolk
+  name: foxfolk head
+  components:
+  - type: Sprite
+    state: "head_m"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseLeftArm ]
+  id: LeftArmFoxfolk
+  name: left foxfolk arm
+  components:
+  - type: Sprite
+    state: "l_arm"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseRightArm ]
+  id: RightArmFoxfolk
+  name: right foxfolk arm
+  components:
+  - type: Sprite
+    state: "r_arm"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseLeftHand ]
+  id: LeftHandFoxfolk
+  name: left foxfolk hand
+  components:
+  - type: Sprite
+    state: "l_hand"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseRightHand ]
+  id: RightHandFoxfolk
+  name: right foxfolk hand
+  components:
+  - type: Sprite
+    state: "r_hand"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseLeftLeg ]
+  id: LeftLegFoxfolk
+  name: left foxfolk leg
+  components:
+  - type: Sprite
+    state: "l_leg"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseRightLeg ]
+  id: RightLegFoxfolk
+  name: right foxfolk leg
+  components:
+  - type: Sprite
+    state: "r_leg"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseLeftFoot ]
+  id: LeftFootFoxfolk
+  name: left foxfolk foot
+  components:
+  - type: Sprite
+    state: "l_foot"
+
+- type: entity
+  parent: [ PartFoxfolk, BaseRightFoot ]
+  id: RightFootFoxfolk
+  name: right foxfolk foot
+  components:
+  - type: Sprite
+    state: "r_foot"

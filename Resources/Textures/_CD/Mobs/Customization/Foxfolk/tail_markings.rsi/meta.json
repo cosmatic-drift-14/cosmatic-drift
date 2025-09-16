@@ -1,45 +1,45 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/DeltaV-Station/Delta-v/commit/65d35d0b3c20aa4e8a0e749a4de8392e53051e86, tail-wag-icon and corgi and dalmation created by PursuitInAshes based off of 'vulp'. Fluffy created by Skarletto (Github).",
+    "copyright": "Taken from https://github.com/DeltaV-Station/Delta-v/commit/65d35d0b3c20aa4e8a0e749a4de8392e53051e86, tail-wag-icon and corgi and dalmation created by PursuitInAshes based off of 'foxfolk'. Fluffy created by Skarletto (Github).",
     "size": {"x": 32, "y": 32},
     "states": [
         {
-            "name": "vulp",
+            "name": "foxfolk",
             "directions": 4
         },
         {
-            "name": "vulp-tip",
+            "name": "foxfolk-tip",
             "directions": 4
         },
         {
-            "name": "vulp-fade",
+            "name": "foxfolk-fade",
             "directions": 4
         },
         {
-            "name": "vulp_alt",
+            "name": "foxfolk_alt",
             "directions": 4
         },
         {
-            "name": "vulp_alt-fade",
+            "name": "foxfolk_alt-fade",
             "directions": 4
         },
         {
-            "name": "vulp_alt-tip",
+            "name": "foxfolk_alt-tip",
             "directions": 4
         },
         {
-            "name": "vulp_wag",
+            "name": "foxfolk_wag",
             "directions": 4,
             "delays": [[0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]]
         },
         {
-            "name": "vulp_wag-fade",
+            "name": "foxfolk_wag-fade",
             "directions": 4,
             "delays": [[0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]]
         },
         {
-            "name": "vulp_wag-tip",
+            "name": "foxfolk_wag-tip",
             "directions": 4,
             "delays": [[0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]]
         },

@@ -8,19 +8,19 @@
     },
     "states": [
         {
-            "name": "vulp",
+            "name": "foxfolk",
             "directions": 4
         },
         {
-            "name": "vulp-inner",
+            "name": "foxfolk-inner",
             "directions": 4
         },
         {
-            "name": "vulp-fade",
+            "name": "foxfolk-fade",
             "directions": 4
         },
         {
-            "name": "vulp-sharp",
+            "name": "foxfolk-sharp",
             "directions": 4
         },
         {

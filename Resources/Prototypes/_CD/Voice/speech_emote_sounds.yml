@@ -19,9 +19,9 @@
     Laugh:
       path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
 
-# Vulp Sounds
+# Foxfolk Sounds
 - type: emoteSounds
-  id: MaleVulpkanin
+  id: MaleFoxfolk
   params:
     variation: 0.125
   sounds:
@@ -38,18 +38,18 @@
     Scream:
       collection: MaleScreams
     Growl:
-      collection: VulpkaninGrowls
+      collection: FoxfolkGrowls
     Snarl:
-      collection: VulpkaninSnarls
+      collection: FoxfolkSnarls
     Bark:
-      collection: VulpkaninBarks
+      collection: FoxfolkBarks
     Whine:
-      collection: VulpkaninWhines
+      collection: FoxfolkWhines
     Howl:
-      collection: VulpkaninHowls
+      collection: FoxfolkHowls
 
 - type: emoteSounds
-  id: FemaleVulpkanin
+  id: FemaleFoxfolk
   params:
     variation: 0.125
   sounds:
@@ -66,15 +66,15 @@
     Scream:
       collection: FemaleScreams
     Growl:
-      collection: VulpkaninGrowls
+      collection: FoxfolkGrowls
     Snarl:
-      collection: VulpkaninSnarls
+      collection: FoxfolkSnarls
     Bark:
-      collection: VulpkaninBarks
+      collection: FoxfolkBarks
     Whine:
-      collection: VulpkaninWhines
+      collection: FoxfolkWhines
     Howl:
-      collection: VulpkaninHowls
+      collection: FoxfolkHowls
 
 - type: emoteSounds
   id: MaleRodentia

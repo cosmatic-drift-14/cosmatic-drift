@@ -1,5 +1,5 @@
 ## Species Names
 
 species-name-avali = Avali
-species-name-vulpkanin = Vulpkanin
+species-name-foxfolk = Foxfolk
 species-name-rodentia = Rodentia

@@ -1,36 +1,36 @@
 - type: entity
   save: false
-  name: Urist McVulp
+  name: Urist McFoxfolk
   parent: BaseMobSpeciesOrganic
-  id: BaseMobVulpkanin
+  id: BaseMobFoxfolk
   abstract: true
   components:
   - type: HumanoidAppearance
-    species: Vulpkanin
+    species: Foxfolk
   - type: Hunger
-  - type: Inventory # Allows vulps to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
-    speciesId: vulpkanin
+  - type: Inventory # Allows foxfolks to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
+    speciesId: foxfolk
   - type: Thirst
   - type: Icon
-    sprite: _CD/Mobs/Species/Vulpkanin/parts.rsi
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
     state: full
   - type: Body
-    prototype: Vulpkanin
+    prototype: Foxfolk
     requiredLegs: 2
   - type: Speech
-    speechSounds: Vulpkanin
-    speechVerb: Vulpkanin
+    speechSounds: Foxfolk
+    speechVerb: Foxfolk
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
   - type: TypingIndicator
-    proto: vulpkanin
+    proto: foxfolk
   - type: Vocal
     sounds:
-      Male: MaleVulpkanin
-      Female: FemaleVulpkanin
-      Unsexed: MaleVulpkanin
+      Male: MaleFoxfolk
+      Female: FemaleFoxfolk
+      Unsexed: MaleFoxfolk
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Vulpkanin
+    damageModifierSet: Foxfolk
   - type: MeleeWeapon
     hidden: true
     soundHit:
@@ -41,7 +41,7 @@
       types:
         Blunt: 2
         Slash: 3
-  - type: Temperature # These are moth values, but do make sense for Vulpkanin. The heat damage per second might be high, but we can tune it if there are issues.
+  - type: Temperature # These are moth values, but do make sense for Foxfolk. The heat damage per second might be high, but we can tune it if there are issues.
     heatDamageThreshold: 320
     coldDamageThreshold: 230
     currentTemperature: 310.15
@@ -53,7 +53,7 @@
       types:
         Heat : 3 #per second, scales with temperature & other constants
   - type: Wagging
-    action: ActionToggleVulpakinWagging
+    action: ActionToggleFoxfolkakinWagging
   - type: Sprite # Drawlayers. Top to bottom in order I believe.
     netsync: false
     noRot: true
@@ -72,7 +72,7 @@
         state: l_leg
       - shader: StencilMask
         map: [ "enum.HumanoidVisualLayers.StencilMask" ]
-        sprite: _CD/Mobs/Customization/Vulpkanin/masking_helpers.rsi
+        sprite: _CD/Mobs/Customization/Foxfolk/masking_helpers.rsi
         state: female_full
         visible: false
       - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
@@ -107,15 +107,15 @@
       - map: [ "pocket2" ]
       - map: [ "clownedon" ]
         sprite: "_CD/Effects/creampie.rsi"
-        state: "creampie_vulpkanin"
+        state: "creampie_foxfolk"
         visible: false
 
 - type: entity
   parent: BaseSpeciesDummy
-  name: Vulpkanin Dummy
-  id: MobVulpkaninDummy
+  name: Foxfolk Dummy
+  id: MobFoxfolkDummy
   categories: [ HideSpawnMenu ]
-  description: A dummy vulpkanin meant to be used in character setup.
+  description: A dummy foxfolk meant to be used in character setup.
   components:
   - type: HumanoidAppearance
-    species: Vulpkanin
+    species: Foxfolk

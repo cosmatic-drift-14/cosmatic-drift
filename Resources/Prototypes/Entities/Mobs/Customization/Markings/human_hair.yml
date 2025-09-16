@@ -2,7 +2,7 @@
   id: HumanHairAfro
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: afro
@@ -10,7 +10,7 @@
   id: HumanHairAfro2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: afro2
@@ -25,7 +25,7 @@
   id: HumanHairBigafro
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bigafro
@@ -33,7 +33,7 @@
   id: HumanHairAntenna
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: antenna
@@ -41,7 +41,7 @@
   id: HumanHairBalding
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: e
@@ -49,7 +49,7 @@
   id: HumanHairBedhead
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bedhead
@@ -57,7 +57,7 @@
   id: HumanHairBedheadv2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bedheadv2
@@ -65,7 +65,7 @@
   id: HumanHairBedheadv3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bedheadv3
@@ -87,7 +87,7 @@
   id: HumanHairLongBedhead
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: long_bedhead
@@ -102,7 +102,7 @@
   id: HumanHairFloorlengthBedhead
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: floorlength_bedhead
@@ -110,7 +110,7 @@
   id: HumanHairBeehive
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: beehive
@@ -118,7 +118,7 @@
   id: HumanHairBeehivev2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: beehivev2
@@ -126,7 +126,7 @@
   id: HumanHairBob
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bob
@@ -134,7 +134,7 @@
   id: HumanHairBob2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bob2
@@ -142,7 +142,7 @@
   id: HumanHairBobcut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bobcut
@@ -150,7 +150,7 @@
   id: HumanHairBob4
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bob4
@@ -165,7 +165,7 @@
   id: HumanHairBobcurl
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bobcurl
@@ -173,7 +173,7 @@
   id: HumanHairBoddicker
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: boddicker
@@ -181,7 +181,7 @@
   id: HumanHairBowlcut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bowlcut
@@ -189,7 +189,7 @@
   id: HumanHairBowlcut2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bowlcut2
@@ -197,7 +197,7 @@
   id: HumanHairBraid
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: braid
@@ -205,7 +205,7 @@
   id: HumanHairBraided
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: braided
@@ -213,7 +213,7 @@
   id: HumanHairBraidfront
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: braidfront
@@ -221,7 +221,7 @@
   id: HumanHairBraid2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: braid2
@@ -229,7 +229,7 @@
   id: HumanHairHbraid
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: hbraid
@@ -237,7 +237,7 @@
   id: HumanHairShortbraid
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shortbraid
@@ -245,7 +245,7 @@
   id: HumanHairBraidtail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: braidtail
@@ -253,7 +253,7 @@
   id: HumanHairBun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bun
@@ -261,7 +261,7 @@
   id: HumanHairBunhead2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bunhead2
@@ -269,7 +269,7 @@
   id: HumanHairBun3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bun3
@@ -277,7 +277,7 @@
   id: HumanHairLargebun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: largebun
@@ -285,7 +285,7 @@
   id: HumanHairManbun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: manbun
@@ -293,7 +293,7 @@
   id: HumanHairTightbun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: tightbun
@@ -301,7 +301,7 @@
   id: HumanHairBusiness
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: business
@@ -309,7 +309,7 @@
   id: HumanHairBusiness2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: business2
@@ -317,7 +317,7 @@
   id: HumanHairBusiness3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: business3
@@ -325,7 +325,7 @@
   id: HumanHairBusiness4
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: business4
@@ -333,7 +333,7 @@
   id: HumanHairBuzzcut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: buzzcut
@@ -341,7 +341,7 @@
   id: HumanHairCia
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: cia
@@ -349,7 +349,7 @@
   id: HumanHairClassicAfro
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classicafro
@@ -357,7 +357,7 @@
   id: HumanHairClassicBigAfro
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classicbigafro
@@ -372,7 +372,7 @@
   id: HumanHairClassicCia
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classiccia
@@ -387,7 +387,7 @@
   id: HumanHairClassicFloorlengthBedhead
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classicfloorlength_bedhead
@@ -395,7 +395,7 @@
   id: HumanHairClassicModern
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classicmodern
@@ -403,7 +403,7 @@
   id: HumanHairClassicMulder
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classicmulder
@@ -411,7 +411,7 @@
   id: HumanHairClassicWisp
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: classicwisp
@@ -419,7 +419,7 @@
   id: HumanHairCoffeehouse
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: coffeehouse
@@ -427,7 +427,7 @@
   id: HumanHairCombover
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: combover
@@ -435,7 +435,7 @@
   id: HumanHairCornrows
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: cornrows
@@ -443,7 +443,7 @@
   id: HumanHairCornrows2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: cornrows2
@@ -451,7 +451,7 @@
   id: HumanHairCornrowbun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: cornrowbun
@@ -459,7 +459,7 @@
   id: HumanHairCornrowbraid
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: cornrowbraid
@@ -467,7 +467,7 @@
   id: HumanHairCornrowtail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: cornrowtail
@@ -475,7 +475,7 @@
   id: HumanHairCrewcut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: crewcut
@@ -490,7 +490,7 @@
   id: HumanHairCurls
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: curls
@@ -498,7 +498,7 @@
   id: HumanHairC
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: c
@@ -506,7 +506,7 @@
   id: HumanHairDandypompadour
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: dandypompadour
@@ -514,7 +514,7 @@
   id: HumanHairDevilock
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: devilock
@@ -522,7 +522,7 @@
   id: HumanHairDoublebun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: doublebun
@@ -537,7 +537,7 @@
   id: HumanHairDreads
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: dreads
@@ -545,7 +545,7 @@
   id: HumanHairDrillruru
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: drillruru
@@ -553,7 +553,7 @@
   id: HumanHairDrillhairextended
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: drillhairextended
@@ -561,7 +561,7 @@
   id: HumanHairEmo
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: emo
@@ -569,7 +569,7 @@
   id: HumanHairEmofringe
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: emofringe
@@ -577,7 +577,7 @@
   id: HumanHairNofade
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: nofade
@@ -585,7 +585,7 @@
   id: HumanHairHighfade
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: highfade
@@ -593,7 +593,7 @@
   id: HumanHairMedfade
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: medfade
@@ -601,7 +601,7 @@
   id: HumanHairLowfade
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: lowfade
@@ -609,7 +609,7 @@
   id: HumanHairBaldfade
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: baldfade
@@ -617,7 +617,7 @@
   id: HumanHairFeather
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: feather
@@ -625,7 +625,7 @@
   id: HumanHairFather
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: father
@@ -633,7 +633,7 @@
   id: HumanHairSargeant
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: sargeant
@@ -641,7 +641,7 @@
   id: HumanHairFlair
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: flair
@@ -649,7 +649,7 @@
   id: HumanHairBigflattop
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bigflattop
@@ -657,7 +657,7 @@
   id: HumanHairFlow
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: f
@@ -665,7 +665,7 @@
   id: HumanHairGelled
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: gelled
@@ -673,7 +673,7 @@
   id: HumanHairGentle
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: gentle
@@ -681,7 +681,7 @@
   id: HumanHairHalfbang
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: halfbang
@@ -689,7 +689,7 @@
   id: HumanHairHalfbang2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: halfbang2
@@ -697,7 +697,7 @@
   id: HumanHairHalfshaved
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: halfshaved
@@ -705,7 +705,7 @@
   id: HumanHairHedgehog
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: hedgehog
@@ -713,7 +713,7 @@
   id: HumanHairHimecut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: himecut
@@ -721,7 +721,7 @@
   id: HumanHairHimecut2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: himecut2
@@ -729,7 +729,7 @@
   id: HumanHairShorthime
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shorthime
@@ -737,7 +737,7 @@
   id: HumanHairHimeup
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: himeup
@@ -745,7 +745,7 @@
   id: HumanHairHitop
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: hitop
@@ -753,7 +753,7 @@
   id: HumanHairJade
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: jade
@@ -761,7 +761,7 @@
   id: HumanHairJensen
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: jensen
@@ -769,7 +769,7 @@
   id: HumanHairJoestar
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: joestar
@@ -777,7 +777,7 @@
   id: HumanHairKeanu
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: keanu
@@ -785,7 +785,7 @@
   id: HumanHairKusanagi
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: kusanagi
@@ -793,7 +793,7 @@
   id: HumanHairLong
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: long
@@ -801,7 +801,7 @@
   id: HumanHairLong2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: long2
@@ -809,7 +809,7 @@
   id: HumanHairLong3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: long3
@@ -824,7 +824,7 @@
   id: HumanHairLongovereye
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longovereye
@@ -832,7 +832,7 @@
   id: HumanHairLbangs
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: lbangs
@@ -840,7 +840,7 @@
   id: HumanHairLongemo
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longemo
@@ -848,7 +848,7 @@
   id: HumanHairLongfringe
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longfringe
@@ -856,7 +856,7 @@
   id: HumanHairLongsidepart
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longsidepart
@@ -864,7 +864,7 @@
   id: HumanHairMegaeyebrows
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: megaeyebrows
@@ -872,7 +872,7 @@
   id: HumanHairMessy
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: messy
@@ -880,7 +880,7 @@
   id: HumanHairModern
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: modern
@@ -888,7 +888,7 @@
   id: HumanHairMohawk
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: d
@@ -896,7 +896,7 @@
   id: HumanHairNitori
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: nitori
@@ -904,7 +904,7 @@
   id: HumanHairReversemohawk
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: reversemohawk
@@ -912,7 +912,7 @@
   id: HumanHairUnshavenMohawk
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: unshaven_mohawk
@@ -920,7 +920,7 @@
   id: HumanHairMulder
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: mulder
@@ -928,7 +928,7 @@
   id: HumanHairOdango
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: odango
@@ -936,7 +936,7 @@
   id: HumanHairOmbre
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ombre
@@ -944,7 +944,7 @@
   id: HumanHairOneshoulder
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: oneshoulder
@@ -952,7 +952,7 @@
   id: HumanHairShortovereye
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shortovereye
@@ -960,7 +960,7 @@
   id: HumanHairOxton
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: oxton
@@ -968,7 +968,7 @@
   id: HumanHairParted
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: parted
@@ -976,7 +976,7 @@
   id: HumanHairPart
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: part
@@ -984,7 +984,7 @@
   id: HumanHairKagami
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: kagami
@@ -992,7 +992,7 @@
   id: HumanHairPigtails
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: pigtails
@@ -1000,7 +1000,7 @@
   id: HumanHairPigtails2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: pigtails2
@@ -1008,7 +1008,7 @@
   id: HumanHairPixie
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: pixie
@@ -1016,7 +1016,7 @@
   id: HumanHairPompadour
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: pompadour
@@ -1024,7 +1024,7 @@
   id: HumanHairBigpompadour
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bigpompadour
@@ -1032,7 +1032,7 @@
   id: HumanHairPonytail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail
@@ -1040,7 +1040,7 @@
   id: HumanHairPonytail2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail2
@@ -1048,7 +1048,7 @@
   id: HumanHairPonytail3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail3
@@ -1056,7 +1056,7 @@
   id: HumanHairPonytail4
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail4
@@ -1064,7 +1064,7 @@
   id: HumanHairPonytail5
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail5
@@ -1072,7 +1072,7 @@
   id: HumanHairPonytail6
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail6
@@ -1080,7 +1080,7 @@
   id: HumanHairPonytail7
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail7
@@ -1088,7 +1088,7 @@
   id: HumanHairHighponytail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: highponytail
@@ -1096,7 +1096,7 @@
   id: HumanHairStail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: stail
@@ -1104,7 +1104,7 @@
   id: HumanHairLongstraightponytail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longstraightponytail
@@ -1112,7 +1112,7 @@
   id: HumanHairCountry
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: country
@@ -1120,7 +1120,7 @@
   id: HumanHairFringetail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: fringetail
@@ -1128,7 +1128,7 @@
   id: HumanHairSidetail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: sidetail
@@ -1136,7 +1136,7 @@
   id: HumanHairSidetail2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: sidetail2
@@ -1144,7 +1144,7 @@
   id: HumanHairSidetail3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: sidetail3
@@ -1152,7 +1152,7 @@
   id: HumanHairSidetail4
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: sidetail4
@@ -1160,7 +1160,7 @@
   id: HumanHairSpikyponytail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: spikyponytail
@@ -1168,7 +1168,7 @@
   id: HumanHairPoofy
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: poofy
@@ -1176,7 +1176,7 @@
   id: HumanHairQuiff
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: quiff
@@ -1184,7 +1184,7 @@
   id: HumanHairRonin
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: ronin
@@ -1192,7 +1192,7 @@
   id: HumanHairShaved
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shaved
@@ -1200,7 +1200,7 @@
   id: HumanHairShavedpart
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shavedpart
@@ -1208,7 +1208,7 @@
   id: HumanHairShortbangs
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shortbangs
@@ -1216,7 +1216,7 @@
   id: HumanHairA
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: a
@@ -1224,7 +1224,7 @@
   id: HumanHairShorthair2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shorthair2
@@ -1232,7 +1232,7 @@
   id: HumanHairShorthair3
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shorthair3
@@ -1240,7 +1240,7 @@
   id: HumanHairD
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: d
@@ -1248,7 +1248,7 @@
   id: HumanHairE
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: e
@@ -1256,7 +1256,7 @@
   id: HumanHairF
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: f
@@ -1264,7 +1264,7 @@
   id: HumanHairShorthairg
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: shorthairg
@@ -1272,7 +1272,7 @@
   id: HumanHair80s
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: 80s
@@ -1280,7 +1280,7 @@
   id: HumanHairRosa
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: rosa
@@ -1288,7 +1288,7 @@
   id: HumanHairB
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: b
@@ -1296,7 +1296,7 @@
   id: HumanHairSidecut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: sidecut
@@ -1304,7 +1304,7 @@
   id: HumanHairSkinhead
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: skinhead
@@ -1312,7 +1312,7 @@
   id: HumanHairProtagonist
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: protagonist
@@ -1320,7 +1320,7 @@
   id: HumanHairSpikey
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: spikey
@@ -1328,7 +1328,7 @@
   id: HumanHairSpiky
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: spiky
@@ -1336,7 +1336,7 @@
   id: HumanHairSpiky2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: spiky2
@@ -1351,7 +1351,7 @@
   id: HumanHairSwept
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: swept
@@ -1359,7 +1359,7 @@
   id: HumanHairSwept2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: swept2
@@ -1374,7 +1374,7 @@
   id: HumanHairThinning
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: thinning
@@ -1382,7 +1382,7 @@
   id: HumanHairThinningfront
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: thinningfront
@@ -1390,7 +1390,7 @@
   id: HumanHairThinningrear
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: thinningrear
@@ -1398,7 +1398,7 @@
   id: HumanHairTopknot
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: topknot
@@ -1406,7 +1406,7 @@
   id: HumanHairTressshoulder
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: tressshoulder
@@ -1414,7 +1414,7 @@
   id: HumanHairTrimmed
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: trimmed
@@ -1422,7 +1422,7 @@
   id: HumanHairTrimflat
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: trimflat
@@ -1430,7 +1430,7 @@
   id: HumanHairTwintail
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: twintail
@@ -1445,7 +1445,7 @@
   id: HumanHairUndercut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: undercut
@@ -1453,7 +1453,7 @@
   id: HumanHairUndercutleft
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: undercutleft
@@ -1461,7 +1461,7 @@
   id: HumanHairUndercutright
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: undercutright
@@ -1469,7 +1469,7 @@
   id: HumanHairUnkept
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: unkept
@@ -1477,7 +1477,7 @@
   id: HumanHairUpdo
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: updo
@@ -1485,7 +1485,7 @@
   id: HumanHairVlong
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: vlong
@@ -1493,7 +1493,7 @@
   id: HumanHairLongest
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longest
@@ -1501,7 +1501,7 @@
   id: HumanHairLongest2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: longest2
@@ -1509,7 +1509,7 @@
   id: HumanHairVeryshortovereyealternate
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: veryshortovereyealternate
@@ -1517,7 +1517,7 @@
   id: HumanHairVlongfringe
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: vlongfringe
@@ -1525,7 +1525,7 @@
   id: HumanHairVolaju
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: volaju
@@ -1533,7 +1533,7 @@
   id: HumanHairWisp
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: wisp
