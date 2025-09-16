@@ -31,6 +31,9 @@ public sealed class SynthStormRule : StationEventSystem<SynthStormRuleComponent>
             validSynths.Add(ent);
         }
 
+        if (validSynths.Count == 0)
+            return;
+
         var chosen = RobustRandom.Pick(validSynths);
         if (!TryComp<ActorComponent>(chosen, out var actor))
             return; // This should never happen, so it's fine
