@@ -33,8 +33,8 @@
       head-vox:
       - state: equipped-head-light-vox
         shader: unshaded
-      head-vulpkanin:
-      - state: equipped-head-light-vulpkanin
+      head-foxfolk:
+      - state: equipped-head-light-foxfolk
       head-dog:
       - state: equipped-head-light-dog
         shader: unshaded
@@ -48,9 +48,9 @@
       - state: equipped-head-vox
       - state: equipped-head-unshaded-vox
         shader: unshaded
-      head-vulpkanin:
-      - state: equipped-head-vulpkanin
-      - state: equipped-head-unshaded-vulpkanin
+      head-foxfolk:
+      - state: equipped-head-foxfolk
+      - state: equipped-head-unshaded-foxfolk
       head-dog:
       - state: equipped-head-dog
       - state: equipped-head-unshaded-dog
@@ -152,8 +152,8 @@
       head-vox:
       - state: equipped-head-light-vox
         shader: unshaded
-      head-vulpkanin:
-      - state: equipped-head-light-vulpkanin
+      head-foxfolk:
+      - state: equipped-head-light-foxfolk
       head-dog:
       - state: equipped-head-light-dog
         shader: unshaded
@@ -167,9 +167,9 @@
       - state: equipped-head-vox
       - state: equipped-head-unshaded-vox
         shader: unshaded
-      head-vulpkanin:
-      - state: equipped-head-vulpkanin
-      - state: equipped-head-unshaded-vulpkanin
+      head-foxfolk:
+      - state: equipped-head-foxfolk
+      - state: equipped-head-unshaded-foxfolk
       head-dog:
       - state: equipped-head-dog
       - state: equipped-head-unshaded-dog

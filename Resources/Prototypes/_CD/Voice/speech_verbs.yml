@@ -1,11 +1,11 @@
 - type: speechVerb
-  id: Vulpkanin
-  name: chat-speech-verb-vulpkanin
+  id: Foxfolk
+  name: chat-speech-verb-foxfolk
   speechVerbStrings:
-  - chat-speech-verb-vulpkanin-1
-  - chat-speech-verb-vulpkanin-2
-  - chat-speech-verb-vulpkanin-3
-  - chat-speech-verb-vulpkanin-4
+  - chat-speech-verb-foxfolk-1
+  - chat-speech-verb-foxfolk-2
+  - chat-speech-verb-foxfolk-3
+  - chat-speech-verb-foxfolk-4
   
 - type: speechVerb
   id: Rodentia

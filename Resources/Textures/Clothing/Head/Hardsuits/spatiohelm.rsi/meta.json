@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Original by Emisse, modified by EmoGarbage404. Vox states by Flareguy for SS14. Dog states modified from base states by Sparlight (GitHub). | vulpkanin version made by Floofers",
+    "copyright": "Original by Emisse, modified by EmoGarbage404. Vox states by Flareguy for SS14. Dog states modified from base states by Sparlight (GitHub). | foxfolk version made by Floofers",
 
     "size": {
         "x": 32,
@@ -57,15 +57,15 @@
             "directions": 4
         },
         {
-          "name": "equipped-head-vulpkanin",
+          "name": "equipped-head-foxfolk",
           "directions": 4
         },
         {
-          "name": "equipped-head-light-vulpkanin",
+          "name": "equipped-head-light-foxfolk",
           "directions": 4
         },
         {
-          "name": "equipped-head-unshaded-vulpkanin",
+          "name": "equipped-head-unshaded-foxfolk",
           "directions": 4
         }
     ]

@@ -1,17 +1,17 @@
 ﻿- type: body
-  id: Vulpkanin
-  name: vulpkanin
+  id: Foxfolk
+  name: foxfolk
   root: torso
   slots:
     head:
-      part: HeadVulpkanin
+      part: HeadFoxfolk
       connections:
       - torso
       organs:
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
     torso:
-      part: TorsoVulpkanin
+      part: TorsoFoxfolk
       connections:
       - right arm
       - left arm
@@ -24,26 +24,26 @@
         liver: OrganAnimalLiver
         kidneys: OrganHumanKidneys
     right arm:
-      part: RightArmVulpkanin
+      part: RightArmFoxfolk
       connections:
       - right hand
     left arm:
-      part: LeftArmVulpkanin
+      part: LeftArmFoxfolk
       connections:
       - left hand
     right hand:
-      part: RightHandVulpkanin
+      part: RightHandFoxfolk
     left hand:
-      part: LeftHandVulpkanin
+      part: LeftHandFoxfolk
     right leg:
-      part: RightLegVulpkanin
+      part: RightLegFoxfolk
       connections:
       - right foot
     left leg:
-      part: LeftLegVulpkanin
+      part: LeftLegFoxfolk
       connections:
       - left foot
     right foot:
-      part: RightFootVulpkanin
+      part: RightFootFoxfolk
     left foot:
-      part: LeftFootVulpkanin
+      part: LeftFootFoxfolk

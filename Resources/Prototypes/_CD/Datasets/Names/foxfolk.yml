@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: NamesFoxfolkMale
+  values:
+    prefix: names-foxfolk-male-
+    count: 345
+
+- type: localizedDataset
+  id: NamesFoxfolkFemale
+  values:
+    prefix: names-foxfolk-female-
+    count: 345
+
+- type: localizedDataset
+  id: NamesFoxfolkLast
+  values:
+    prefix: names-foxfolk-last-
+    count: 252

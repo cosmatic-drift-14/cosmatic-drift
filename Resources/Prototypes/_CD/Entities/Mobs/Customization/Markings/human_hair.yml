@@ -2,7 +2,7 @@
   id: HumanHairBerlyTwintails
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: _CD/Mobs/Customization/human_hair.rsi
       state: berlytwintails
@@ -11,7 +11,7 @@
   id: HumanHairShortheart
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Vulpkanin] # CD: add Vulps, Reptilians, and Moths
+  speciesRestriction: [Human, Dwarf, SlimePerson, Reptilian, Moth, Foxfolk] # CD: add Foxfolks, Reptilians, and Moths
   sprites:
     - sprite: _CD/Mobs/Customization/human_hair.rsi
       state: shortheart
