@@ -565,6 +565,60 @@
 
 # Hair
 
+- type: marking
+  id: MothHairHighPonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/hair.rsi
+    state: highponytail
+
+- type: marking
+  id: MothHairShortCut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/hair.rsi
+    state: shortcut
+
+- type: marking
+  id: MothHairShortMessy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/hair.rsi
+    state: shortmessy
+
+- type: marking
+  id: MothHairSidePonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/hair.rsi
+    state: sideponytail
+
+- type: marking
+  id: MothHairSideSwept
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/hair.rsi
+    state: sideswept
+
+- type: marking
+  id: MothHairTuft
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/hair.rsi
+    state: tuft
+
 # HeadSide
 
 - type: marking
