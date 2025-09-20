@@ -60,6 +60,11 @@
   equipment:
     back: ClothingBackpackDuffelGenetics
 
+- type: loadout
+  id: MedicalCarrybag
+  equipment:
+    back: ClothingBackpackCarrybagMedical
+
 # OuterClothing
 - type: loadout
   id: ModernLabCoat

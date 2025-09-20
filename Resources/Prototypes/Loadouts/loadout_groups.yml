@@ -828,6 +828,7 @@
   - StationEngineerBackpack
   - StationEngineerSatchel
   - StationEngineerDuffel
+  - EngineeringCarrybag # CD
 
 - type: loadoutGroup
   id: StationEngineerOuterClothing
@@ -878,6 +879,7 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianSatchel
   - AtmosphericTechnicianDuffel
+  - EngineeringCarrybag # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
@@ -1301,6 +1303,8 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  - MedicalCarrybag # CD
+  - ParamedicCarrybag # CD
 
 - type: loadoutGroup
   id: MedicalShoes
