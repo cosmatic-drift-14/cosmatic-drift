@@ -115,9 +115,11 @@
   minLimit: 0
   loadouts:
   - SecurityHelmet
+  - SecurityNewHelmet
   - SecurityVeteranBeret
   - SecurityBeret
   - SecurityHat
+  - SecurityNewSoft
   - TrooperHat
 
 - type: loadoutGroup
@@ -128,6 +130,9 @@
   - SeniorOfficerJumpskirt
   - SeniorOfficerCasualsuit
   - SeniorOfficerCasualskirt
+  - SecurityModernsuit
+  - SecurityCasualSummer
+  - SecurityCasualWinter
   - SecurityJumpsuit
   - SecurityJumpskirt
   - SecurityJumpsuitGrey

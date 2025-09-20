@@ -21,14 +21,58 @@
     jumpsuit: ClothingUniformJumpskirtSecurtyCasual
 
 - type: loadout
+  id: SecurityModernsuit
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitSecurityModern
+
+- type: loadout
+  id: SecurityCasualSummer
+  equipment: 
+    jumpsuit: ClothingUniformSecurtyCasualSummer
+
+- type: loadout
+  id: SecurityCasualWinter
+  equipment: 
+    jumpsuit: ClothingUniformCasualWinterNavy
+
+#Belt
+- type: loadout
   id: SecurityPlateCarrier
   equipment:
     belt: ClothingBeltSecurityPlateCarrierFilled
 
+#Outerwear
 - type: loadout
   id: SecurityGreatcoat
   equipment:
     outerClothing: ClothingOuterCoatSecGreatcoat
+
+- type: loadout
+  id: SecurityFieldjacket
+  equipment:
+    outerClothing: ClothingOuterCoatSecurityFieldjacket
+
+- type: loadout
+  id: SecurityNewVest
+  equipment:
+    outerClothing: ClothingOuterArmorBasicNewSec
+
+#Shoes
+- type: loadout
+  id: SecuritySneakers
+  equipment:
+    shoes: ClothingShoesSecSneakers
+
+#Head
+- type: loadout
+  id: SecurityNewHelmet
+  equipment:
+    head: ClothingHeadHelmetNewsec
+
+- type: loadout
+  id: SecurityNewSoft
+  equipment:
+    head: ClothingHeadHatNewSecsoft
 
 # PDA
 - type: loadout
