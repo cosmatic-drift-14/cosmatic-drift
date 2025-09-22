@@ -117,7 +117,7 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
             }
 
             // Make sure any name tagged as ours gets highlighted only when others say it.
-            keyword = StartAtSign.Replace(keyword, "(?<=(?<=/name.*)|(?<=,.*\"\".*))");
+            keyword = Regex.Replace(keyword, "^@", @"(?<=(?<=,.*"".*)|(?<!\[Name].*))");
 
             _highlights.Add(keyword);
         }
