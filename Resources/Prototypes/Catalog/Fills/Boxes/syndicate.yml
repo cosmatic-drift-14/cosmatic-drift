@@ -73,6 +73,7 @@
     - 0,0,3,3
     maxItemSize: Normal
   - type: Item
+    size: Huge
     shape:
     - 0,0,3,3
   - type: Sprite
