@@ -10,14 +10,6 @@
         maxVol: 20
   - type: FitsInDispenser
     solution: drink
-  - type: DrawableSolution
-    solution: drink
-  - type: RefillableSolution
-    solution: drink
-  - type: DrainableSolution
-    solution: drink
-  - type: ExaminableSolution
-    solution: drink
   - type: SolutionTransfer
     canChangeTransferAmount: true
     maxTransferAmount: 10
