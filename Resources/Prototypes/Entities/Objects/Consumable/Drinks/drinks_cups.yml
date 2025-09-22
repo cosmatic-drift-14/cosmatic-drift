@@ -50,6 +50,9 @@
     fillBaseName: icon-
   - type: StaticPrice
     price: 10
+  - type: Tag
+    tags:
+    - DrinkCup
 
 ## Misc Cups
 
@@ -65,7 +68,7 @@
     price: 125
 
 - type: entity
-  parent: [DrinkBaseCup, DrinkBasePorcelain]
+  parent: DrinkBaseMug
   id: DrinkTeacupEmpty
   name: teacup
   description: A plain white porcelain teacup.
@@ -79,10 +82,8 @@
     - state: icon-0
     - map: ["enum.SolutionContainerLayers.Fill"]
       state: icon-4
-  - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 4
-    fillBaseName: icon-
 
 - type: entity
   parent: [ DrinkBase, DrinkBaseGlass ]
@@ -117,6 +118,7 @@
   - type: Tag
     tags:
     - DrinkGlass
+    - Recyclable
 
 - type: entity
   parent: [DrinkBase, DrinkBaseCardboard]
