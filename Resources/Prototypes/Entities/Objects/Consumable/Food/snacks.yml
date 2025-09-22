@@ -6,7 +6,6 @@
   id: FoodSnackBase
   abstract: true
   components:
-  - type: Edible
   - type: Tag
     tags:
       - FoodSnack
@@ -481,7 +480,6 @@
       - ReptilianFood
   - type: Sprite
     state: nutribrick-open
-  - type: Edible
   - type: SolutionContainerManager
     solutions:
       food:
@@ -528,7 +526,6 @@
   - type: Item
     heldPrefix: mre-brownie-open
     storedOffset: -1,-1
-  - type: Edible
   - type: SolutionContainerManager
     solutions:
       food:
