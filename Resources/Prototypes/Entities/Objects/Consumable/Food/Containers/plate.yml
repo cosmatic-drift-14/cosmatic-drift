@@ -126,7 +126,7 @@
 # Plastic Plate
 
 - type: entity
-  name: plastic plate
+  name: large plastic plate
   parent: BaseItem
   id: FoodPlatePlastic
   description: A large blue plastic plate, excellent for a birthday cake.
@@ -148,7 +148,7 @@
     - Trash
 
 - type: entity
-  name: plastic plate
+  name: small plastic plate
   parent: BaseItem
   id: FoodPlateSmallPlastic
   description: A blue plastic plate, excellent for slices of birthday cake.
@@ -201,6 +201,10 @@
     state: muffin-tin
   - type: Item
     size: 1
+    # size: Tiny
+    # shape:
+    # - 0,0,0,0
+    # storedOffset: 0,-2
   - type: Tag
     tags:
     - Trash
