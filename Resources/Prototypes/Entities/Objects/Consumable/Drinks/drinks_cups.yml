@@ -41,8 +41,8 @@
     sprite: Objects/Consumable/Drinks/mug.rsi
     layers:
       - state: icon-0
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: icon-3
+      - state: icon-3
+        map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
@@ -68,7 +68,7 @@
     price: 125
 
 - type: entity
-  parent: DrinkBaseMug
+  parent: [DrinkBaseCup, DrinkBaseMaterialPorcelain]
   id: DrinkTeacupEmpty
   name: teacup
   description: A plain white porcelain teacup.
@@ -82,6 +82,7 @@
     - state: icon-0
     - map: ["enum.SolutionContainerLayers.Fill"]
       state: icon-4
+  - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 4
 
@@ -129,7 +130,7 @@
     - state: icon-1
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
-  - type: SolutionContainerVisuals # TODO this doesn't work
+  - type: SolutionContainerVisuals
     maxFillLevels: 1
     fillBaseName: icon-
   - type: Tag
@@ -137,6 +138,7 @@
     - Trash
     - DrinkCup
     - WhitelistChameleon
+  - type: Appearance
   - type: TrashOnSolutionEmpty
     solution: drink
   - type: Clothing
@@ -361,6 +363,7 @@
   - type: TrashOnSolutionEmpty
     solution: drink
 
+# TODO this needs fill levels
 - type: entity
   parent: [DrinkBaseCup, DrinkBaseMaterialPlastic]
   id: DrinkLean
