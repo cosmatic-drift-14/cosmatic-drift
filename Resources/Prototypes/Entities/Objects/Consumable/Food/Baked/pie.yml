@@ -6,6 +6,9 @@
   id: FoodPieBase
   abstract: true
   components:
+  # - type: Item
+  #   shape:
+  #   - 0,0,1,0
   - type: FlavorProfile
     flavors:
       - sweet
