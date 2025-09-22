@@ -679,7 +679,6 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianHead
-  - SeniorCourierBeret
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit

@@ -118,23 +118,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatBeretCargo
-  name: cargo beret
-  description: A beret in cargo colors. Fancy!
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beret_cargo.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beret_cargo.rsi
-  - type: Tag
-    tags:
-    - ClothMade
-    - Recyclable
-    - HamsterWearable
-    - WhitelistChameleon
-
-- type: entity
-  parent: ClothingHeadBase
   id: ClothingHeadHatBeretEngineering
   name: engineering beret
   description: A beret with the engineering department's insignia. For engineers that are more inclined towards style than safety.
@@ -1547,5 +1530,7 @@
       path: /Audio/Items/flashlight_off.ogg
   - type: Tag
     tags:
-    - PetWearable
-    - CorgiWearable
+    - HamsterWearable
+    - ClothMade
+    - Recyclable
+    - WhitelistChameleon
