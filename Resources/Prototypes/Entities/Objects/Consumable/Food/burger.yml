@@ -35,6 +35,7 @@
   components:
   - type: Item
     size: 10 #patch until there is an adequate resizing system in place
+    # size: Normal #patch until there is an adequate resizing system in place
   - type: Food
   - type: Sprite
     drawdepth: Mobs
@@ -108,6 +109,8 @@
           Quantity: 3
   - type: Item
     sprite: Objects/Consumable/Food/burger.rsi
+    shape:
+    - 0,0,1,0
 
 # Custom Burger Example
 
@@ -217,6 +220,8 @@
   id: FoodBurgerBear
   description: Best served rawr.
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - bun
@@ -244,6 +249,11 @@
   id: FoodBurgerBig
   description: Forget the Big Mac. THIS is the future!
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedOffset: 0,3
   - type: FlavorProfile
     flavors: # What bun?
       - meaty
@@ -273,6 +283,8 @@
   id: FoodBurgerBrain
   description: A strange looking burger. It looks almost sentient.
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - bun
@@ -301,6 +313,8 @@
   id: FoodBurgerCat
   description: Finally those cats and catpeople are worth something!
   components:
+  - type: Item
+    storedOffset: -1,1
   - type: Sprite
     state: cat
   - type: FlavorProfile
@@ -396,6 +410,8 @@
   id: FoodBurgerClown
   description: This tastes funny...
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - bun
@@ -475,6 +491,11 @@
   id: FoodBurgerCrazy
   description: This looks like the sort of food that a demented clown in a trenchcoat would make.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedOffset: -2,0
   - type: FlavorProfile
     flavors:
       - bun
@@ -508,6 +529,8 @@
   id: FoodBurgerDuck
   description: A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - bun
@@ -534,6 +557,8 @@
   id: FoodBurgerEmpowered
   description: It's shockingly good, if you live off of electricity that is.
   components:
+  - type: Item
+    storedOffset: -2,1
   - type: Sprite
     state: empowered
   - type: FlavorProfile
@@ -557,6 +582,8 @@
   id: FoodBurgerCarp
   description: Almost like a carp is yelling somewhere...
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - bun
@@ -574,6 +601,11 @@
   id: FoodBurgerFive
   description: HOT! HOT! HOT!
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - meaty
@@ -607,6 +639,11 @@
   id: FoodBurgerGhost
   description: Too spooky!
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedOffset: 0,3
   - type: FlavorProfile
     flavors:
       - bun
@@ -661,6 +698,8 @@
   id: FoodBurgerMcguffin
   description: A cheap and greasy imitation of an eggs Benedict.
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - muffin
@@ -830,6 +869,8 @@
   id: FoodBurgerSoy
   description: After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
   components:
+  - type: Item
+    storedOffset: 0,1
   - type: FlavorProfile
     flavors:
       - bun
@@ -853,6 +894,11 @@
   id: FoodBurgerSpell
   description: This is absolutely Ei Nath.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedOffset: -1,2
   - type: FlavorProfile
     flavors:
       - bun
@@ -878,6 +924,11 @@
   id: FoodBurgerSuper
   description: This is a mountain of a burger. FOOD!
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedOffset: 0,4
   - type: FlavorProfile
     flavors: # What bun?
       - meaty
@@ -964,6 +1015,9 @@
   id: FoodBurgerMothRoach
   description: The last lamp it saw was the one inside the microwave.
   components:
+  - type: Item
+    shape:
+    - 0,0,0,1
   - type: FlavorProfile
     flavors:
       - bun
