@@ -18,6 +18,7 @@
     - Human
     - Moth
     - Reptilian
+    - Vulpkanin
     - Avali #CD additions start
     - Foxfolk 
     - Rodentia #CD additions end
@@ -78,6 +79,7 @@
     - Dwarf
     - Human
     - Reptilian
+    - Vulpkanin
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth
