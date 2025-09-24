@@ -12,6 +12,7 @@
     quickEquip: false
     slots:
     - belt
+    - back
   - type: Item
     size: 300
   - type: Storage
@@ -26,3 +27,7 @@
       - Document
       - Paper
   - type: Dumpable
+  - type: Tag
+    tags:
+    - ScurretWearable
+    - CorgiWearable

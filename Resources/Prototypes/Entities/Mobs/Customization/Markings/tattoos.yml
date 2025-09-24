@@ -113,8 +113,8 @@
 - type: marking
   id: TattooEyeRight
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Rodentia, Foxfolk] # CD: Add Foxfolks.
+  markingCategory: [Head]
+  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Vulpkanin,  Rodentia, Foxfolk] # CD: Add Rodentia and Foxfolk
   coloring:
     default:
       type:
@@ -128,7 +128,7 @@
   id: TattooEyeLeft
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Rodentia, Foxfolk] # CD: Add Foxfolks.
+  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Vulpkanin, Rodentia, Foxfolk]
   coloring:
     default:
       type:

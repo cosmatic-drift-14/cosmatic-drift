@@ -68,6 +68,10 @@
   name: combat bakery kit
   description: A kit of clandestine baked weapons.
   components:
+  - type: Storage
+    capacity: 80
+  - type: Item
+    size: 80
   - type: Sprite
     layers:
       - state: box_of_doom
