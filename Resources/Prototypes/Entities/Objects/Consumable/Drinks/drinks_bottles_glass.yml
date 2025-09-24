@@ -7,7 +7,7 @@
   suffix: Full
   components:
   - type: Item
-    size: Normal
+    size: 5
   - type: Openable
     sound:
       collection: bottleOpenSounds
@@ -64,7 +64,7 @@
       drink:
         maxVol: 50
   - type: Item
-    size: Small
+    size: 5
   - type: Sprite
     sprite: Objects/Consumable/Drinks/beer.rsi # fallback
   - type: FitsInDispenser

@@ -1691,7 +1691,6 @@ entities:
     - type: Stack
       count: 2
     - type: Item
-      size: Small
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage

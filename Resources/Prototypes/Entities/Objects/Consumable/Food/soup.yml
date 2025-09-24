@@ -8,7 +8,7 @@
   - type: Item
     # shape:
     # - 0,0,1,0
-    # storedOffset: 0,-3
+    # #storedOffset: 0,-3
   - type: Edible
     trash:
     - FoodBowlBig
@@ -565,8 +565,7 @@
   description: It's evil, don't touch it!
   components:
   - type: Item
-    size: Normal
-    storedOffset: 0,-3
+    size: 10
   - type: FlavorProfile
     flavors:
       - mushroom
@@ -1194,10 +1193,7 @@
   description: A gastronomic curiosity of ethereal origin.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: 0,2
+    size: 10
   - type: FlavorProfile
     flavors:
       - mushrooms

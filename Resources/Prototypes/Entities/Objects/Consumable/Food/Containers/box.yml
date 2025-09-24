@@ -133,7 +133,7 @@
     # size: Normal
     # shape:
     # - 0,0,2,1
-    # storedOffset: 0,-6
+    # #storedOffset: 0,-6
   - type: StorageFill
     contents:
     - id: FoodEgg
@@ -226,7 +226,7 @@
     heldPrefix: box
     # shape:
     # - 0,0,2,1
-    # storedOffset: 0,-6
+    # #storedOffset: 0,-6
   - type: Appearance
   - type: EntityStorageVisuals
     stateDoorOpen: box-open
@@ -373,7 +373,7 @@
     # size: Normal
     # shape:
     # - 0,0,2,1
-    # storedOffset: -1,1
+    # #storedOffset: -1,1
   - type: StorageFill
     contents:
     - id: FoodDonkpocket
@@ -525,8 +525,9 @@
   - type: Item
     sprite: Objects/Storage/Happyhonk/clown.rsi
     heldPrefix: box
+    size: 40
   - type: Storage
-    capacity: 30
+    capacity: 40
   - type: Tag
     tags:
     - Trash

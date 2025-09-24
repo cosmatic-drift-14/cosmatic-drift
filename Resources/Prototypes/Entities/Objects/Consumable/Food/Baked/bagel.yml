@@ -8,7 +8,7 @@
   description: A delicious bagel.
   components:
   - type: Item
-    size: Tiny
+    size: 1
   - type: FlavorProfile
     flavors:
       - bread

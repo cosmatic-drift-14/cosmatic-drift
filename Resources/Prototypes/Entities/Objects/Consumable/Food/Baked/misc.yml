@@ -648,8 +648,7 @@
   description: A pan of brownies.
   components:
   - type: Item
-    size: Normal
-    storedOffset: 0,-3
+    size: 10
   - type: FlavorProfile
     flavors:
       - sweet
@@ -704,8 +703,7 @@
   description: A pan of "special" brownies.
   components:
   - type: Item
-    size: Normal
-    storedOffset: 0,-3
+    size: 10
   - type: FlavorProfile
     flavors:
       - sweet
@@ -789,11 +787,7 @@
   description: Buttery, flaky goodness.
   components:
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    - 0,1,0,1
-    storedOffset: -2,-4
+    size: 3
   - type: FlavorProfile
     flavors:
       - bread
@@ -823,10 +817,7 @@
   description: Buttery, flaky, fibery goodness.
   components:
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    - 0,1,0,1
+    size: 3
   - type: FlavorProfile
     flavors:
     - bread
@@ -860,9 +851,7 @@
   description: Bread and cheese toasted with butter, perfect for a chilly day in space.
   components:
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
+    size: 5
   - type: FlavorProfile
     flavors:
       - cheesy

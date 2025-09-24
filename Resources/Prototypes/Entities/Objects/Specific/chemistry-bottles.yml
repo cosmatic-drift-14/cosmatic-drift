@@ -615,20 +615,20 @@
         - ReagentId: Mannitol
           Quantity: 30
 
-- type: entity
-  id: ChemistryBottleNecrosol
-  suffix: necrosol
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-necrosol
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Necrosol
-          Quantity: 30
+# - type: entity
+#   id: ChemistryBottleNecrosol
+#   suffix: necrosol
+#   parent: BaseChemistryBottleFilled
+#   components:
+#   - type: Label
+#     currentLabel: reagent-name-necrosol
+#   - type: SolutionContainerManager
+#     solutions:
+#       drink:
+#         maxVol: 30
+#         reagents:
+#         - ReagentId: Necrosol
+#           Quantity: 30
 
 - type: entity
   id: ChemistryBottleOculine
@@ -660,20 +660,20 @@
         - ReagentId: Omnizine
           Quantity: 30
 
-- type: entity
-  id: ChemistryBottleOpporozidone
-  suffix: opporozidone
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-opporozidone
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Opporozidone
-          Quantity: 30
+# - type: entity
+#   id: ChemistryBottleOpporozidone
+#   suffix: opporozidone
+#   parent: BaseChemistryBottleFilled
+#   components:
+#   - type: Label
+#     currentLabel: reagent-opporozidone
+#   - type: SolutionContainerManager
+#     solutions:
+#       drink:
+#         maxVol: 30
+#         reagents:
+#         - ReagentId: Opporozidone
+#           Quantity: 30
 
 - type: entity
   id: ChemistryBottlePhalanximine
@@ -1441,10 +1441,10 @@
     - id: ChemistryBottleLeporazine
     - id: ChemistryBottleLipozine
     - id: ChemistryBottleMannitol
-    - id: ChemistryBottleNecrosol
+    # - id: ChemistryBottleNecrosol
     - id: ChemistryBottleOculine
     - id: ChemistryBottleOmnizine
-    - id: ChemistryBottleOpporozidone
+    # - id: ChemistryBottleOpporozidone
     - id: ChemistryBottlePhalanximine
     - id: ChemistryBottlePolypyryliumOligomers
     - id: ChemistryBottlePotassiumIodide

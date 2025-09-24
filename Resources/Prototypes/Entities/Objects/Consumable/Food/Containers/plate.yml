@@ -18,7 +18,7 @@
   - type: Item
     # shape:
     # - 0,0,1,0
-    # storedOffset: 0,-6
+    # #storedOffset: 0,-6
     inhandVisuals:
       left:
       - state: plate-inhand-left
@@ -86,7 +86,7 @@
     sprite: Objects/Consumable/Food/plates.rsi
     state: plate-small
   - type: Item
-    # storedOffset: 0,-3
+    # #storedOffset: 0,-3
     inhandVisuals:
       left:
       - state: plate-inhand-left
@@ -137,7 +137,7 @@
   - type: Item
     # shape:
     # - 0,0,1,0
-    # storedOffset: 0,-6
+    # #storedOffset: 0,-6
     inhandVisuals:
       left:
       - state: plate-plastic-inhand-left
@@ -159,7 +159,7 @@
   - type: Item
     # shape:
     # - 0,0,1,0
-    # storedOffset: 0,-3
+    # #storedOffset: 0,-3
     inhandVisuals:
       left:
       - state: plate-plastic-inhand-left
@@ -204,7 +204,7 @@
     # size: Tiny
     # shape:
     # - 0,0,0,0
-    # storedOffset: 0,-2
+    # #storedOffset: 0,-2
   - type: Tag
     tags:
     - Trash

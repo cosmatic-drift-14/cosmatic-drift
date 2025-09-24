@@ -99,7 +99,7 @@
       drink:
         maxVol: 5 # One sip at a time. No rushing at the water cooler
   - type: Item
-    size: Tiny
+    size: 3
   - type: Sprite
     sprite: Objects/Consumable/Drinks/water_cup.rsi
     layers:

@@ -8,9 +8,7 @@
   description: A thin rod of metal used to skewer just about anything and cook it.
   components:
   - type: Item
-    shape:
-    - 0,0,1,0
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: Sprite
     sprite: Objects/Consumable/Food/skewer.rsi
     state:

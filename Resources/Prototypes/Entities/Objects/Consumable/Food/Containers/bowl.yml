@@ -9,7 +9,7 @@
   # - type: Item
   #   shape:
   #   - 0,0,1,0
-  #   storedOffset: 0,-3
+  #   #storedOffset: 0,-3
   - type: SolutionContainerManager
     solutions:
       food:
@@ -73,9 +73,7 @@
   description: A simple bowl, broken and useless.
   components:
   - type: Item
-    shape:
-    - 0,0,1,0
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: Sprite
     sprite: Objects/Consumable/Food/bowl.rsi
     state: bowl-trash

@@ -476,7 +476,7 @@
     sound:
       path: /Audio/Effects/Footsteps/bounce.ogg
   - type: Item
-    size: Small
+    size: 1
     sprite: Objects/Fun/Balls/tennisball.rsi
   - type: EmitSoundOnUse
     sound:

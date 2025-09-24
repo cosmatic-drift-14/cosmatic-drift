@@ -84,7 +84,7 @@
   description: Just a nice can of ripe peaches swimming in their own juices.
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/peaches.rsi
   - type: FlavorProfile
@@ -104,7 +104,7 @@
   name: tinned peaches
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/peaches.rsi
 
@@ -139,7 +139,7 @@
   name: maintenance peaches
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/maint_peaches.rsi
 
@@ -150,7 +150,7 @@
   description: Musical fruit in a slightly less musical container.
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/beans.rsi
   - type: FlavorProfile
@@ -168,7 +168,7 @@
   name: tin of beans
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/beans.rsi
 
@@ -181,9 +181,7 @@
   description: A standard issue tin of meat with a convenient pull tab.
   components:
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 5
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/meat.rsi
   # the convenient pull tab
@@ -207,8 +205,6 @@
   name: tinned meat
   components:
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 5
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/meat.rsi

@@ -29,7 +29,7 @@
   description: A plain dish of noodles, this needs more ingredients.
   components:
   - type: Item
-    storedOffset: 0,-4
+    #storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
       - pasta
@@ -44,7 +44,7 @@
   description: Spaghetti and crushed tomatoes. Just like your abusive father used to make!
   components:
   - type: Item
-    storedOffset: 0,-4
+    #storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
       - pasta
@@ -70,9 +70,7 @@
   description: You probably shouldn't try this, you always hear people talking about how bad it is...
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
+    size: 10
   - type: Edible
     trash:
     - FoodPlateSmall
@@ -98,7 +96,7 @@
   description: Now that's a nice-a meatball!
   components:
   - type: Item
-    storedOffset: 0,-4
+    #storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
       - pasta
@@ -126,7 +124,7 @@
   description: A lawyer's favourite.
   components:
   - type: Item
-    storedOffset: 0,-4
+    #storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
       - pasta
@@ -178,7 +176,7 @@
   description: Noodles covered in savory butter. Simple and slippery, but delicious.
   components:
   - type: Item
-    storedOffset: 0,-4
+    #storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
       - pasta

@@ -111,7 +111,7 @@
     heldPrefix: chocolatebar
     size: 3
     # size: Tiny
-    # storedOffset: 1,-1
+    # #storedOffset: 1,-1
   - type: Tag
     tags:
       - FoodSnack
@@ -135,7 +135,7 @@
     state: chocolatebar-open
   - type: Item
     heldPrefix: chocolatebar-open
-    storedOffset: 1,-2
+    #storedOffset: 1,-2
   - type: Tag
     tags:
       - FoodSnack
@@ -162,7 +162,7 @@
     state: energybar
   - type: Item
     heldPrefix: energybar
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
   - type: SpawnItemsOnUse
     items:
       - id: FoodPacketEnergyTrash
@@ -186,7 +186,7 @@
     state: energybar-open
   - type: Item
     heldPrefix: energybar-open
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
 
 - type: entity
   parent: FoodSnackBase
@@ -202,7 +202,7 @@
     state: pistachio
   - type: Item
     heldPrefix: pistachio
-    storedOffset: 1,0
+    #storedOffset: 1,0
   - type: Edible
     trash:
     - FoodPacketPistachioTrash
@@ -263,7 +263,7 @@
     state: semki
   - type: Item
     heldPrefix: semki
-    storedOffset: 1,0
+    #storedOffset: 1,0
   - type: Edible
     trash:
     - FoodPacketSemkiTrash
@@ -331,7 +331,7 @@
     - FoodPacketCupRamenTrash
   - type: Item
     heldPrefix: ramen
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
 
 - type: entity
   parent: DrinkRamen
@@ -364,7 +364,7 @@
     state: chinese1
   - type: Item
     heldPrefix: chinese1
-    storedOffset: 1,-2
+    #storedOffset: 1,-2
   - type: SolutionContainerManager
     solutions:
       food:
@@ -393,7 +393,7 @@
     state: chinese2
   - type: Item
     heldPrefix: chinese2
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: SolutionContainerManager
     solutions:
       food:
@@ -431,7 +431,7 @@
     sprite: Objects/Consumable/Food/snacks.rsi
     heldPrefix: cookie_fortune
     size: 1
-    # storedOffset: 1,-1
+    # #storedOffset: 1,-1
     # size: Tiny
   - type: Edible
     trash:
@@ -446,7 +446,7 @@
   - type: Item
     size: 5
     # size: Small
-    # storedOffset: -1,0
+    # #storedOffset: -1,0
     heldPrefix: nutribrick
   - type: Tag
     tags:
@@ -473,7 +473,7 @@
   - type: Item
     size: 5
     # size: Small
-    # storedOffset: -1,0
+    # #storedOffset: -1,0
     heldPrefix: nutribrick-open
   - type: Tag
     tags:
@@ -499,8 +499,7 @@
     state: mre-brownie
   - type: Item
     heldPrefix: mre-brownie
-    size: Tiny
-    storedOffset: -1,-1
+    size: 5
   - type: Tag
     tags:
       - FoodSnack
@@ -525,7 +524,7 @@
     state: mre-brownie-open
   - type: Item
     heldPrefix: mre-brownie-open
-    storedOffset: -1,-1
+    #storedOffset: -1,-1
   - type: SolutionContainerManager
     solutions:
       food:
@@ -550,8 +549,8 @@
     heldPrefix: swirl_lollipop
     size: 3
     # size: Small
-    # storedRotation: -45
-    # storedOffset: 0,-1
+    #storedRotation: -45
+    # #storedOffset: 0,-1
   - type: Tag
     tags:
     - FoodSnack

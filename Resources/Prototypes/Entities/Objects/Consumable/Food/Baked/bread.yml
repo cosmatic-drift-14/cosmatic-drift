@@ -7,7 +7,7 @@
   id: FoodBreadBase
   components:
   - type: Item
-    size: Normal
+    size: 10
   - type: FlavorProfile
     flavors:
       - bread
@@ -669,9 +669,7 @@
     equippedPrefix: baguette
     quickEquip: false
   - type: Item
-    shape:
-    - 0,0,0,3
-    storedRotation: -45
+    #storedRotation: -45
     inhandVisuals:
       left:
       - state: baguette-inhand-left
@@ -703,9 +701,7 @@
   - type: Clothing
     equippedPrefix: baguette-cotton
   - type: Item
-    shape:
-    - 0,0,0,3
-    storedRotation: -45
+    #storedRotation: -45
     inhandVisuals:
       left:
       - state: baguette-cotton-inhand-left

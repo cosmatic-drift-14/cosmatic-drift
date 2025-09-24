@@ -9,7 +9,7 @@
       drink:
         maxVol: 5
   - type: Item
-    size: Tiny
+    size: 3
   - type: Sprite
     sprite: Objects/Consumable/Drinks/shotglass.rsi
     layers:
@@ -91,10 +91,9 @@
     - state: 6pack6
       map: ["6pack6"]
   - type: Item
-    size: Normal
+    size: 6
   - type: Storage
-    grid:
-    - 0,0,2,3
+    capacity: 30
     whitelist:
       tags:
       - Cola

@@ -32,7 +32,7 @@
   description: Totally baked.
   components:
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
       - cheesy
@@ -48,7 +48,7 @@
   description: AKA, French Fries, Freedom Fries, etc.
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
       - potatoes
@@ -64,7 +64,7 @@
   description: Fries. Covered in cheese. Duh.
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
       - potatoes
@@ -81,7 +81,7 @@
   description: Tasty fries from fresh carrots.
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
       - carrots
@@ -107,7 +107,7 @@
   description: Chips from Space Mexico.
   components:
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: Edible
     trash:
     - FoodPlateSmall
@@ -134,7 +134,7 @@
   description: The delicious combination of nachos and melting cheese.
   components:
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: Edible
     trash:
     - FoodPlateSmall
@@ -162,7 +162,7 @@
   description: That's some dangerously spicy nachos.
   components:
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: Edible
     trash:
     - FoodPlateSmall
@@ -193,7 +193,7 @@
   description: It's wafer thin.
   components:
   - type: Item
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
       - minty
@@ -216,7 +216,7 @@
   description: The only good recipe for eggplant.
   components:
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
       - eggplant
@@ -244,7 +244,7 @@
   description: Made with roasted sweet potatoes!
   components:
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
       - sweet
@@ -260,7 +260,7 @@
   description: A grifftastic sandwich that burns your tongue and then leaves it numb!
   components:
   - type: Item
-    storedOffset: 3,-7
+    #storedOffset: 3,-7
   - type: FlavorProfile
     flavors:
       - fishy
@@ -294,7 +294,7 @@
   description: Now you can feel like a real tourist vacationing in Ireland.
   components:
   - type: Item
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
       - meaty
@@ -322,10 +322,7 @@
   description: Because eating bear wasn't manly enough.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: -1,4
+    size: 5 
   - type: FlavorProfile
     flavors:
       - meaty
@@ -353,9 +350,7 @@
   description: A tiny sausage wrapped in a flakey, buttery roll. Free this pig from its blanket prison by eating it.
   components:
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 3
   - type: FlavorProfile
     flavors:
       - meaty
@@ -383,7 +378,7 @@
   description: BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
   components:
   - type: Item
-    storedOffset: 0,-4
+    #storedOffset: 0,-4
   - type: Edible
     trash:
     - FoodKebabSkewer
@@ -443,7 +438,7 @@
   description: Cheesy.
   components:
   - type: Item
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
       - egg
@@ -469,7 +464,7 @@
   description: A fried egg, with a touch of salt and pepper.
   components:
   - type: Item
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
       - egg
@@ -500,9 +495,7 @@
   description: The king of Jungle Thick.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
+    size: 5
   - type: FlavorProfile
     flavors:
       - milk
@@ -518,8 +511,6 @@
   description: This should refresh your memory.
   components:
   - type: Item
-    shape:
-    - 0,0,0,1
   - type: FlavorProfile
     flavors:
       - memoryleek
@@ -543,10 +534,7 @@
   description: Jesus christ.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: 0,-2
+    size: 5
   - type: Sprite
     state: saltysweet
   - type: SolutionContainerManager
@@ -569,7 +557,7 @@
   description: A classic dipping sauce that you can't go wrong with.
   components:
     - type: Item
-      storedOffset: 0,-6
+      #storedOffset: 0,-6
     - type: FlavorProfile
       flavors:
         - cheesy
@@ -609,7 +597,7 @@
   description: Viva La Mexico!
   components:
     - type: Item
-      storedOffset: -1,0
+      #storedOffset: -1,0
     - type: FlavorProfile
       flavors:
         - meaty
@@ -640,7 +628,7 @@
   description: The only salad where you can eat the bowl.
   components:
   - type: Item
-    storedOffset: 0,-3
+    #storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
       - fruity
@@ -673,7 +661,7 @@
   description: Buttery.
   components:
   - type: Item
-    storedOffset: 0,-5
+    #storedOffset: 0,-5
   - type: Edible
     trash:
     - FoodPlate

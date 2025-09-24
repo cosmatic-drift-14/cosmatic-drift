@@ -29,7 +29,7 @@
       drink:
         maxVol: 50
   - type: Item
-    size: Small
+    size: 5
 
 - type: entity
   abstract: true

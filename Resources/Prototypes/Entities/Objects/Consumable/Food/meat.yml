@@ -112,7 +112,7 @@
     tags:
     - Meat
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -137,7 +137,7 @@
     count: 3
     slice: FoodMeatCutlet
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -172,7 +172,7 @@
       - ReagentId: CarpoToxin
         Quantity: 5
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -209,7 +209,7 @@
     node: start
     defaultTarget: bacon
   - type: Item
-    storedOffset: -1,0
+    #storedOffset: -1,0
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -240,7 +240,7 @@
     node: start
     defaultTarget: filet migrawr
   - type: Item
-    storedOffset: -1,2
+    #storedOffset: -1,2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -273,7 +273,7 @@
     node: start
     defaultTarget: cooked penguin
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -306,7 +306,7 @@
     node: start
     defaultTarget: cooked chicken
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -337,7 +337,7 @@
     node: start
     defaultTarget: cooked duck
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -382,7 +382,7 @@
   description: A pile of raw crab meat.
   components:
   - type: Item
-    storedOffset: -1,2
+    #storedOffset: -1,2
   - type: FlavorProfile
     flavors:
       - crabby
@@ -424,7 +424,7 @@
     node: start
     defaultTarget: goliath steak
   - type: Item
-    storedOffset: -1,0
+    #storedOffset: -1,0
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -465,7 +465,7 @@
     node: start
     defaultTarget: dragon steak
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: dragon-inhand-left
@@ -492,7 +492,7 @@
     count: 3
     slice: FoodMeatCutlet
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -523,7 +523,7 @@
     node: start
     defaultTarget: lizard steak
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -566,7 +566,7 @@
         - ReagentId: Fat
           Quantity: 4
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: rotten-inhand-left
@@ -593,7 +593,7 @@
     count: 3
     slice: FoodMeatSpiderCutlet
   - type: Item
-    storedOffset: 0,2
+    #storedOffset: 0,2
     heldPrefix: spider
 
 - type: entity
@@ -613,9 +613,10 @@
         - ReagentId: Fat
           Quantity: 3
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
+    size: 10
+    # size: 10
+    # shape:
+    # - 0,0,1,1
     inhandVisuals:
       left:
       - state: snake-inhand-left
@@ -642,9 +643,9 @@
         - ReagentId: UncookedAnimalProteins
           Quantity: 1
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 5
+    # shape:
+    # - 0,0,0,0
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -674,7 +675,7 @@
         - ReagentId: Toxin
           Quantity: 2
   - type: Item
-    storedOffset: -1,3
+    #storedOffset: -1,3
     inhandVisuals:
       left:
       - state: snake-inhand-left
@@ -708,7 +709,7 @@
     count: 3
     slice: FoodMeatXenoCutlet
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -766,7 +767,7 @@
   - type: StaticPrice
     price: 100
   - type: Item
-    storedOffset: 0,-2
+    #storedOffset: 0,-2
     inhandVisuals:
       left:
       - state: tomato-inhand-left
@@ -780,7 +781,7 @@
   description: A large tube of salami. Best not to ask what went into it.
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
   - type: Tag
     tags:
     - Raw
@@ -808,7 +809,7 @@
   description: A delicious, round piece of meat clown. How horrifying.
   components:
   - type: Item
-    storedOffset: 0,3
+    #storedOffset: 0,3
   - type: FlavorProfile
     flavors:
       - meaty
@@ -829,10 +830,10 @@
   description: A raw ball of meat. Meat ball.
   components:
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,2
+    size: 2
+    # shape:
+    # - 0,0,0,0
+    # #storedOffset: -1,2
   - type: Tag
     tags:
     - Raw
@@ -864,9 +865,7 @@
     node: start
     defaultTarget: cooked meat patty
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     heldPrefix: generic-pink
 
 - type: entity
@@ -890,7 +889,7 @@
   - type: Sprite
     state: slime
   - type: Item
-    storedOffset: -1,2
+    #storedOffset: -1,2
     inhandVisuals:
       left:
       - state: slime-inhand-left
@@ -917,7 +916,7 @@
         - ReagentId: Water
           Quantity: 4 #It makes saline if you add salt!
   - type: Item
-    storedOffset: -1,-3
+    #storedOffset: -1,-3
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -956,9 +955,7 @@
     tags:
     - Meat
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
+    size: 10
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -974,7 +971,7 @@
   description: It's a real panacea. But at what cost?
   components:
   - type: Item
-    size: Tiny
+    size: 2
   - type: Extractable
     grindableSolutionName: food
   - type: FlavorProfile
@@ -1034,7 +1031,7 @@
       Burger: MeatSteak
       Taco: MeatSteak
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1076,7 +1073,7 @@
       Burger: MeatBacon
       Taco: MeatBacon
   - type: Item
-    storedOffset: -1,0
+    #storedOffset: -1,0
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1118,7 +1115,7 @@
       Burger: MeatBearBurger
       Taco: MeatBear
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     heldPrefix: meatball
 
 - type: entity
@@ -1153,7 +1150,7 @@
       Burger: MeatPenguinBurger
       Taco: MeatPenguin
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1194,7 +1191,7 @@
       Burger: MeatChicken
       Taco: MeatChicken
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1275,7 +1272,7 @@
       Burger: MeatDuck
       Taco: MeatDuck
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1316,7 +1313,7 @@
       Burger: MeatCrabBurger
       Taco: MeatCrab
   - type: Item
-    storedOffset: -1,2
+    #storedOffset: -1,2
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1353,7 +1350,7 @@
       Burger: MeatGoliathBurger
       Taco: MeatGoliath
   - type: Item
-    storedOffset: -1,0
+    #storedOffset: -1,0
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1433,7 +1430,7 @@
       Burger: MeatLizardBurger
       Taco: MeatLizard
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1466,7 +1463,7 @@
       Burger: MeatSpiderBurger
       Taco: MeatSpider
   - type: Item
-    storedOffset: -1,-1
+    #storedOffset: -1,-1
     inhandVisuals:
       left:
       - state: snake-inhand-left
@@ -1503,10 +1500,8 @@
     graph: MeatMeatballCooked
     node: meatball cooked
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,2
+    size: 2
+    #storedOffset: -1,2
     heldPrefix: meatball
 
 - type: entity
@@ -1538,9 +1533,7 @@
       Burger: MeatPatty
       Taco: MeatPatty
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     heldPrefix: meatball
 
 - type: entity
@@ -1572,7 +1565,7 @@
       Burger: MeatSnail
       Taco: MeatSnail
   - type: Item
-    storedOffset: -1,-3
+    #storedOffset: -1,-3
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1610,9 +1603,7 @@
     graph: AnomalyMeatSteak
     node: anomaly steak
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
+    size: 10
     inhandVisuals:
       left:
       - state: plain-cooked-inhand-left
@@ -1654,7 +1645,7 @@
       Burger: DragonSteak
       Taco: DragonSteak
   - type: Item
-    storedOffset: 0,-1
+    #storedOffset: 0,-1
     inhandVisuals:
       left:
       - state: dragon-cooked-inhand-left
@@ -1691,9 +1682,7 @@
     node: start
     defaultTarget: cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1729,9 +1718,7 @@
     node: start
     defaultTarget: bear cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1767,9 +1754,7 @@
     node: start
     defaultTarget: penguin cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1805,9 +1790,7 @@
     node: start
     defaultTarget: chicken cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1841,9 +1824,7 @@
     node: start
     defaultTarget: duck cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1880,9 +1861,7 @@
     node: start
     defaultTarget: lizard cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1917,9 +1896,7 @@
     node: start
     defaultTarget: spider cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1956,9 +1933,7 @@
     node: start
     defaultTarget: xeno cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -1974,10 +1949,8 @@
   description: A cutlet from a slab of tomato.
   components:
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,0
+    size: 2
+    #storedOffset: -1,0
   - type: Tag
     tags:
     - Cutlet
@@ -1995,10 +1968,8 @@
   description: A slice of cured salami.
   components:
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,0
+    size: 2
+    #storedOffset: -1,0
   - type: Tag
     tags:
     - Raw
@@ -2042,9 +2013,7 @@
     node: start
     defaultTarget: dragon cutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
+    size: 2
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2084,10 +2053,8 @@
       Burger: MeatCutlet
       Taco: MeatCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2128,10 +2095,8 @@
       Burger: BearCutletBurger
       Taco: BearCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2170,10 +2135,8 @@
       Burger: PenguinCutletBurger
       Taco: PenguinCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2212,10 +2175,8 @@
       Burger: ChickenCutlet
       Taco: ChickenCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2254,10 +2215,8 @@
       Burger: DuckCutlet
       Taco: DuckCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2297,10 +2256,8 @@
       Burger: LizardCutletBurger
       Taco: LizardCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2338,10 +2295,8 @@
       Burger: SpiderCutletBurger
       Taco: SpiderCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,0
+    size: 2
+    #storedOffset: -1,0
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2379,10 +2334,8 @@
       Burger: XenoCutlet
       Taco: XenoCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left
@@ -2422,10 +2375,8 @@
       Burger: DragonCutlet
       Taco: DragonCutlet
   - type: Item
-    size: Tiny
-    shape:
-    - 0,0,0,0
-    storedOffset: -1,1
+    size: 2
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: generic-pink-inhand-left

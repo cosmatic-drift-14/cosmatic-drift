@@ -33,7 +33,7 @@
   description: It's time to start building the burger tower.
   components:
   - type: Item
-    # size: Normal #patch until there is an adequate resizing system in place
+    size: 10 #patch until there is an adequate resizing system in place
   - type: Sprite
     drawdepth: Mobs
     noRot: true
@@ -105,8 +105,6 @@
           Quantity: 3
   - type: Item
     sprite: Objects/Consumable/Food/burger.rsi
-    shape:
-    - 0,0,1,0
 
 # Custom Burger Example
 
@@ -269,7 +267,7 @@
   description: Best served rawr.
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: bear-inhand-left
@@ -303,10 +301,8 @@
   description: Forget the Big Mac. THIS is the future!
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: 0,3
+    size: 10
+    #storedOffset: 0,3
     inhandVisuals:
       left:
       - state: burger-big-inhand-left
@@ -342,7 +338,7 @@
   description: A strange looking burger. It looks almost sentient.
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: brain-inhand-left
@@ -377,7 +373,7 @@
   description: Finally those cats and catpeople are worth something!
   components:
   - type: Item
-    storedOffset: -1,1
+    #storedOffset: -1,1
     inhandVisuals:
       left:
       - state: cat-inhand-left
@@ -501,7 +497,7 @@
   description: This tastes funny...
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: clown-inhand-left
@@ -607,10 +603,7 @@
   description: This looks like the sort of food that a demented clown in a trenchcoat would make.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: -2,0
+    size: 10
     inhandVisuals:
       left:
       - state: crazy-inhand-left
@@ -650,7 +643,7 @@
   description: A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: bun-inhand-left
@@ -691,7 +684,7 @@
   description: It's shockingly good, if you live off of electricity that is.
   components:
   - type: Item
-    storedOffset: -2,1
+    #storedOffset: -2,1
     inhandVisuals:
       left:
       - state: plasma-inhand-left
@@ -721,7 +714,7 @@
   description: Almost like a carp is yelling somewhere...
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: bun-inhand-left
@@ -753,10 +746,8 @@
   description: HOT! HOT! HOT!
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: 0,1
+    size: 10
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: plain-inhand-left
@@ -796,10 +787,7 @@
   description: Too spooky!
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: 0,3
+    size: 10
     inhandVisuals:
       left:
       - state: alpha-bun-inhand-left
@@ -876,7 +864,7 @@
   description: A cheap and greasy imitation of an eggs Benedict.
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: bun-inhand-left
@@ -1111,7 +1099,7 @@
   description: After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
   components:
   - type: Item
-    storedOffset: 0,1
+    #storedOffset: 0,1
     inhandVisuals:
       left:
       - state: bun-inhand-left
@@ -1149,10 +1137,7 @@
   description: This is absolutely Ei Nath.
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: -1,2
+    size: 10
     inhandVisuals:
       left:
       - state: spell-inhand-left
@@ -1184,10 +1169,7 @@
   description: This is a mountain of a burger. FOOD!
   components:
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedOffset: 0,4
+    size: 10
     inhandVisuals:
       left:
       - state: burger-super-inhand-left
@@ -1308,8 +1290,6 @@
   description: The last lamp it saw was the one inside the microwave.
   components:
   - type: Item
-    shape:
-    - 0,0,0,1
     inhandVisuals:
       left:
       - state: mothroach-inhand-left
