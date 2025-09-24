@@ -68,6 +68,7 @@
 - type: entity
   id: ActionRgbLight
   components:
+  - type: TargetAction
   - type: EntityTargetAction
     whitelist: { components: [ PointLight ] }
     sound: /Audio/Magic/blink.ogg
