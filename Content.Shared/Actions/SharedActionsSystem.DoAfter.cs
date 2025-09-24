@@ -44,19 +44,17 @@ public abstract partial class SharedActionsSystem
 
     private void OnActionDoAfter(Entity<DoAfterArgsComponent> ent, ref ActionDoAfterEvent args)
     {
-        if (!_actionQuery.TryComp(ent, out var actionComp))
+        if (!TryGetActionData(ent.Owner, out var actionComp))
             return;
 
         var performer = GetEntity(args.Performer);
-        var action = (ent, actionComp);
 
         // If this doafter is on repeat and was cancelled, start use delay as expected
         if (args.Cancelled && ent.Comp.Repeat)
         {
-            SetUseDelay(action, args.OriginalUseDelay);
-            RemoveCooldown(action);
-            StartUseDelay(action);
-            UpdateAction(action);
+            SetUseDelay(ent.Owner, args.OriginalUseDelay);
+            StartUseDelay(ent.Owner);
+            UpdateAction(ent.Owner);
             return;
         }
 
@@ -65,7 +63,7 @@ public abstract partial class SharedActionsSystem
         // Set the use delay to 0 so this can repeat properly
         if (ent.Comp.Repeat)
         {
-            SetUseDelay(action, TimeSpan.Zero);
+            SetUseDelay(ent.Owner, TimeSpan.Zero);
         }
 
         if (args.Cancelled)
