@@ -129,12 +129,11 @@ public sealed partial class PolymorphSystem : EntitySystem
 
     private void OnBeforeFullySliced(Entity<PolymorphedEntityComponent> ent, ref BeforeFullySlicedEvent args)
     {
-        var (_, comp) = ent;
-        if (comp.Configuration.RevertOnEat)
-        {
-            args.Cancel();
-            Revert((ent, ent));
-        }
+        if (ent.Comp.Reverted || !ent.Comp.Configuration.RevertOnEat)
+            return;
+
+        args.Cancel();
+        Revert((ent, ent));
     }
 
     /// <summary>
@@ -143,14 +142,17 @@ public sealed partial class PolymorphSystem : EntitySystem
     /// </summary>
     private void OnDestruction(Entity<PolymorphedEntityComponent> ent, ref DestructionEventArgs args)
     {
-        if (ent.Comp.Configuration.RevertOnDeath)
-        {
-            Revert((ent, ent));
-        }
+        if (ent.Comp.Reverted || !ent.Comp.Configuration.RevertOnDeath)
+            return;
+
+        Revert((ent, ent));
     }
 
     private void OnPolymorphedTerminating(Entity<PolymorphedEntityComponent> ent, ref EntityTerminatingEvent args)
     {
+        if (ent.Comp.Reverted)
+            return;
+
         if (ent.Comp.Configuration.RevertOnDelete)
             Revert(ent.AsNullable());
 
@@ -299,8 +301,6 @@ public sealed partial class PolymorphSystem : EntitySystem
         if (component.Parent is not { } parent)
             return null;
 
-        // Clear our reference to the original entity
-        component.Parent = null;
         if (Deleted(parent))
             return null;
 
@@ -316,6 +316,8 @@ public sealed partial class PolymorphSystem : EntitySystem
 
         _transform.SetParent(parent, parentXform, uidXform.ParentUid);
         _transform.SetCoordinates(parent, parentXform, uidXform.Coordinates, uidXform.LocalRotation);
+
+        component.Reverted = true;
 
         if (component.Configuration.TransferDamage &&
             TryComp<DamageableComponent>(parent, out var damageParent) &&
