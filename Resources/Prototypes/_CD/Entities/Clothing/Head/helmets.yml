@@ -33,3 +33,38 @@
     - HidesHair
   - type: IngestionBlocker
   - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingHeadHelmetArmoredBase
+  id: ClothingHeadHelmetArmoredBaseFoldable
+  abstract: true
+  components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: unfold-verb-clothing-layer
+    foldVerbText: fold-verb-clothing-layer
+  - type: FoldableClothing
+    foldedEquippedPrefix: folded
+
+- type: entity
+  parent: [ClothingHeadHelmetArmoredBaseFoldable, BaseSecurityContraband]
+  id: ClothingHeadHelmetNewsec
+  name: high-cut helmet
+  description: An updated version of the Security helmet. Features a retractable visor.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Helmets/newsec_helmet.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Helmets/newsec_helmet.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - SecurityHelmet
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+
+- type: entity
+  parent: [ClothingHeadHelmetArmoredBaseFoldable, ClothingHeadHelmetNewsec]
+  id: ClothingHeadHelmetNewsecFolded
+  name: high-cut helmet
