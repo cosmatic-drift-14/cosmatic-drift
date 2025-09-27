@@ -16,6 +16,7 @@
     - FoodFrozenPopsicleNicotineTrashStick
   - type: FlavorProfile
     flavors:
+      - cold
       - terrible
   - type: SolutionContainerManager
     solutions:
@@ -41,6 +42,7 @@
     - FoodFrozenPopsicleNicotineTrashStick
   - type: FlavorProfile
     flavors:
+      - cold
       - terrible
       - spicy
   - type: SolutionContainerManager
@@ -70,18 +72,19 @@
   - type: FlavorProfile
     flavors:
       - paintthinner
-      - bitter
+      - cold
+      - terrible
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 30
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: THC
-          Quantity: 20
-        - ReagentId: Blissifylovene 
           Quantity: 2
+        - ReagentId: THC
+          Quantity: 20 # a joint has 20 thc
+        - ReagentId: Blissifylovene 
+          Quantity: 3
           
 # Packaged ice-cream
 # Look, if I had an unpackaged popsicle fall out a vending machine I wouldn't touch that with a mile long stick. Or maybe I would, as long as it didn't crack.
