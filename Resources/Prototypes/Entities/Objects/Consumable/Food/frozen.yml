@@ -59,7 +59,7 @@
 - type: entity
   parent: FoodFrozenBase
   id: FoodFrozenCornuto
-  name: strawberry ice-cream sandwich
+  name: cornuto # CD. misnamed as the strawberry ice-cream sandwich. I guess nobody ever put this item anywhere? Free contrib role upstream I suppose.
   description: A Neapolitan vanilla and chocolate ice-cream cone. It menaces with a sprinkling of caramelized nuts.
   components:
   - type: Item
