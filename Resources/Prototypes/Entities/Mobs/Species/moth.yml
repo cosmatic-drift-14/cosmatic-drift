@@ -9,6 +9,7 @@
     species: Moth
     hideLayersOnEquip:
     - HeadTop
+    - Hair
   - type: Hunger
   - type: Thirst
   - type: Icon
