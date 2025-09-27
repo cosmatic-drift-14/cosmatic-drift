@@ -76,11 +76,11 @@
         maxVol: 30
         reagents:
         - ReagentId: Nutriment
-          Quantity: 5
+          Quantity: 3
         - ReagentId: THC
-          Quantity: 15
+          Quantity: 20
         - ReagentId: Blissifylovene 
-          Quantity: 5.3 # yes this overdoses you
+          Quantity: 2
           
 # Packaged ice-cream
 # Look, if I had an unpackaged popsicle fall out a vending machine I wouldn't touch that with a mile long stick. Or maybe I would, as long as it didn't crack.
@@ -121,7 +121,7 @@
   parent: BaseItem
   id: FoodFrozenPopsicleNicotineLegendPackaged
   name: legendsicle
-  description: A mostly unmarked popsicle. It has a green and pink sticker and the words "i am legend" scrawled on it with black marker.
+  description: A mostly unmarked popsicle. It has a green and yellow sticker and the words "i am legend" scrawled on it with black marker.
   components:
   - type: Sprite
     sprite: _CD/Objects/Consumable/Food/frozen.rsi
