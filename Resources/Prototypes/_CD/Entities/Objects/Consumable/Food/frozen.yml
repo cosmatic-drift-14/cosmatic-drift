@@ -1,5 +1,6 @@
 # Smokesicles
 # They're supposed to be smoking alternatives for vox. You teeeeeechnically shouldn't be able to light a cigarette in an environment without oxygen.
+# Not technically meant to be food so not adding them to random food spawner
 
 - type: entity
   name: smokesicle
