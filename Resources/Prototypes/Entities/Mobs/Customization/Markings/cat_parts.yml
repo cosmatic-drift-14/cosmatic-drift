@@ -1,7 +1,7 @@
 - type: marking
   id: CatEars
-  bodyPart: HeadTop
-  markingCategory: HeadTop
+  bodyPart: HeadTop # CD: Consistency
+  markingCategory: HeadTop # CD
   speciesRestriction: [Human]
   coloring:
     default:
