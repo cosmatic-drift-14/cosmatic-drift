@@ -28,14 +28,6 @@
       "directions": 4
     },
     {
-      "name": "basic_inner",
-      "directions": 4
-    },
-    {
-      "name": "basic_outer",
-      "directions": 4
-    },
-    {
       "name": "curled_inner",
       "directions": 4
     },

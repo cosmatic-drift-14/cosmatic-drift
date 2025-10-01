@@ -1,17 +1,6 @@
 # Cat Ears
 
 - type: marking
-  id: FelinidEarsBasic
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
-  sprites:
-  - sprite: _CD/Mobs/Customization/cat_parts.rsi
-    state: basic_outer
-  - sprite: _CD/Mobs/Customization/cat_parts.rsi
-    state: basic_inner
-
-- type: marking
   id: FelinidEarsCurled
   bodyPart: HeadTop
   markingCategory: HeadTop
@@ -39,8 +28,8 @@
   markingCategory: HeadTop
   speciesRestriction: [Human]
   sprites:
-  - sprite: _CD/Mobs/Customization/cat_parts.rsi
-    state: basic_outer
+  - sprite: Mobs/Customization/cat_parts.rsi
+    state: ears_cat_outer
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: fuzzy_inner
 
