@@ -18,7 +18,7 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockIceCream
-  name: Ice-cream restock box
+  name: ice-cream restock box
   description: A box full of ice-cream and near-liquid nitrogen.
   components:
   - type: VendingMachineRestock
