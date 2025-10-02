@@ -11,7 +11,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockIceCreamFilled
-  name: Ice-Cream restock crate
+  name: Ice-cream restock crate
   description: Contains a restock box for I Scream Ice-Cream.
   components:
   - type: StorageFill
