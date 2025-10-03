@@ -453,7 +453,7 @@
   id: FoxfolkBellyCrest
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [ Foxfolk, Human ]
+  speciesRestriction: [ Foxfolk ]
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/body_markings.rsi
       state: belly_crest
@@ -462,7 +462,7 @@
   id: FoxfolkBellyFull
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [ Foxfolk, Human ]
+  speciesRestriction: [ Foxfolk ]
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/body_markings.rsi
       state: belly_full
@@ -471,7 +471,7 @@
   id: FoxfolkBellyFox
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [ Foxfolk, Human ]
+  speciesRestriction: [ Foxfolk ]
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/body_markings.rsi
       state: belly_fox
