@@ -214,11 +214,19 @@
     sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+    slots:
+    - outerClothing
+    - suitStorage
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatDetectiveForensic]
   id: ClothingOuterCoatDetectiveForensicOpened
   name: forensic jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
 
 # Field jacket
 
