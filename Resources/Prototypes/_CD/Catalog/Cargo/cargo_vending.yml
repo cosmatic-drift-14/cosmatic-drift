@@ -15,3 +15,13 @@
   cost: 6000
   category: cargoproduct-category-name-service
   group: market
+
+- type: cargoProduct
+  id: CrateVendingMachineRestockIceCream
+  icon:
+    sprite: _CD/Objects/Specific/Service/vending_machine_restock.rsi
+    state: base
+  product: CrateVendingMachineRestockIceCreamFilled
+  cost: 1200
+  category: cargoproduct-category-name-service
+  group: market
