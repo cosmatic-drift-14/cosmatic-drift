@@ -119,6 +119,28 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformSecurtyCasualSummer
+  name: summer security fatigues
+  description: A white shirt and pants. Discrete and Clean.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/summer_security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/summer_security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCasualWinterNavy
+  name: navy turtleneck
+  description: A blue turtleneck and pants. Exceptionally warm and comfortable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/winter_security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/winter_security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformHoSSeniorCasual
   name: casual senior fatigues
   description: A red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
@@ -231,6 +253,19 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_black.rsi
 
 # Non-casual drip below
+
+# Security garments
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSecurityModern
+  name: navy security jumpsuit
+  description: A dark navy jumpsuit with red accents. A new take on Security's jumpsuit.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/security.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/security.rsi
 
 # Medical garments
 - type: entity
