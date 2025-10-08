@@ -18,6 +18,7 @@ using Content.Server.Speech.Components;
 using Content.Server.Spreader;
 using Content.Server.Temperature.Components;
 using Content.Server.Temperature.Systems;
+using Content.Server.Traits.Assorted;
 using Content.Server.Zombies;
 using Content.Shared._CD.EntityEffects.Effects;
 using Content.Shared.Atmos;
