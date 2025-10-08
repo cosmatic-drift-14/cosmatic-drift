@@ -10030,7 +10030,7 @@ entities:
     components:
     - type: Transform
       parent: 4309
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 4309
   - uid: 23594
@@ -10039,7 +10039,7 @@ entities:
     components:
     - type: Transform
       parent: 23345
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 23345
 - proto: ActionToggleLight
@@ -10050,7 +10050,7 @@ entities:
     components:
     - type: Transform
       parent: 9170
-    - type: Action
+    - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 9170
 - proto: AirAlarm
@@ -25564,8 +25564,8 @@ entities:
     - type: Transform
       pos: -55.51698,-77.4413
       parent: 2
-    - type: Item
-      size: Huge
+    # - type: Item
+    #   size: Huge
     missingComponents:
     - Blueprint
     - StaticPrice
@@ -131779,8 +131779,8 @@ entities:
     - type: MeleeWeapon
       attackRate: 10
       autoAttack: True
-    - type: Item
-      size: Huge
+    # - type: Item
+    #   size: Huge
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
@@ -144263,8 +144263,8 @@ entities:
     - type: Transform
       pos: -15.441118,17.515356
       parent: 2
-    - type: Item
-      size: Huge
+    # - type: Item
+    #   size: Huge
     - type: Contraband
       allowedJobs: []
       allowedDepartments:
