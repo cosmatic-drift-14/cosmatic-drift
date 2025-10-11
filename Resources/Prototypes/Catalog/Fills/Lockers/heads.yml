@@ -302,6 +302,7 @@
     - id: ProtolatheMachineCircuitboard
     - id: ResearchComputerCircuitboard
     - id: CargoRequestScienceComputerCircuitboard
+    - id: StationAiFixerCircuitboard
     - id: RubberStampRd
     #CD Addions
     - id: BookSOPScience
