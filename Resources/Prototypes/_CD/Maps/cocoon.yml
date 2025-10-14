@@ -14,6 +14,3 @@
             prefixCreator: '14'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
-        - type: StationJobs
-          availableJobs:
-          Passenger: [ -1, -1 ]
