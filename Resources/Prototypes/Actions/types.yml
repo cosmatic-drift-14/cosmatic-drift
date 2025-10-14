@@ -7,6 +7,14 @@
   components:
   - type: InstantAction
 
+# base proto for an action that requires a DoAfter
+- type: entity
+  abstract: true
+  parent: BaseAction
+  id: BaseDoAfterAction
+  components:
+  - type: DoAfterArgs
+
 # an action that is done all in le head and cant be prevented by any means
 - type: entity
   abstract: true
@@ -122,6 +130,7 @@
     event: !type:ActivateImplantEvent
 
 - type: entity
+  parent: BaseImplantAction
   id: ActionActivateFreedomImplant
   name: Break Free
   description: Activating your freedom implant will free you from any hand restraints
@@ -135,7 +144,6 @@
     icon:
       sprite: Actions/Implants/implants.rsi
       state: freedom
-    event: !type:UseFreedomImplantEvent
 
 - type: entity
   id: ActionOpenUplinkImplant
@@ -168,6 +176,7 @@
     event: !type:ActivateImplantEvent
 
 - type: entity
+  parent: BaseImplantAction
   id: ActionActivateScramImplant
   name: SCRAM!
   description: Randomly teleports you within a large distance.
@@ -182,9 +191,9 @@
     icon:
       sprite: Structures/Specific/anomaly.rsi
       state: anom4
-    event: !type:UseScramImplantEvent
 
 - type: entity
+  parent: BaseImplantAction
   id: ActionActivateDnaScramblerImplant
   name: Scramble DNA
   description:  Randomly changes your name and appearance.
@@ -199,7 +208,6 @@
     icon:
       sprite: Clothing/OuterClothing/Hardsuits/lingspacesuit.rsi
       state: icon
-    event: !type:UseDnaScramblerImplantEvent
 
 - type: entity
   id: ActionToggleSuitPiece
@@ -261,7 +269,7 @@
   components:
   - type: InstantAction
     icon: { sprite: Objects/Weapons/Melee/shields.rsi, state: teleriot-icon }
-    iconOn: Objects/Weapons/Melee/shields.rsi/teleriot-on.png
+    iconOn: { sprite: Objects/Weapons/Melee/shields.rsi, state: teleriot-on }
     event: !type:ToggleActionEvent
 
 - type: entity
@@ -368,6 +376,7 @@
     iconOn: { sprite: Interface/Actions/actions_fakemindshield.rsi, state: icon-on }
     itemIconStyle: NoItem
     useDelay: 1
+    raiseOnUser: true
     event: !type:FakeMindShieldToggleEvent
   - type: Tag
     tags:
@@ -386,6 +395,17 @@
     itemIconStyle: BigAction
     event: !type:ToggleActionEvent
 
+#  TODO: Add back once we have animated tails again. Were removed due to the sprite rework, causing all of them to not fit anymore.
+# - type: entity
+#   parent: ActionToggleWagging
+#   id: ActionToggleWaggingVulpkanin
+#   components:
+#   - type: Action
+#     icon: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
+#     iconOn: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
+#     itemIconStyle: NoItem
+#     useDelay: 1 # Prevents Emote Spam
+
 - type: entity
   parent: BaseAction
   id: ActionGravityJump
@@ -394,11 +414,24 @@
   components:
   - type: InstantAction
     useDelay: 8
-    icon: 
+    icon:
       sprite: Interface/Actions/jump.rsi
       state: icon
     event: !type:GravityJumpEvent {}
-    
+
+- type: entity
+  parent: BaseAction
+  id: ActionVulpkaninGravityJump
+  name: Leap
+  description: Use your agile legs to leap a short distance. Be careful not to bump into anything!
+  components:
+  - type: InstantAction
+    useDelay: 12
+    icon:
+      sprite: Interface/Actions/jump.rsi
+      state: icon
+    event: !type:GravityJumpEvent {}
+
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleRootable

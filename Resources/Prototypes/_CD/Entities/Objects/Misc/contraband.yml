@@ -31,7 +31,7 @@
     defaultTarget: bakeWrapped
 
 - type: entity
-  parent: [BaseItem, BaseMinorContraband]
+  parent: [BaseItem, BaseMajorContraband]
   id: WrappedBakePackage
   name: sealed narcotic packet
   description: Worth a pretty penny, the powder inside looks chalky.

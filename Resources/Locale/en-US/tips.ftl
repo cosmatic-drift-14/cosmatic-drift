@@ -46,8 +46,8 @@ tips-dataset-29 = As a ghost, you can use the Verb Menu to orbit around and foll
 # tips-dataset-43 = As a Nuclear Operative, remember that stealth is an option. It'll be hard for the captain to fight back if he gets caught off guard by what he thinks is just a regular passenger!
 # tips-dataset-44 = As an antagonist, be mindful of the power of destroying telecommunications. It'll be a lot harder for people to call you out if they can't do so effectively!
 
-tips-dataset-30 = Upon entering cryosleep your items will be transferred to the lost and found locker in the HoP's office
-tips-dataset-31 = It is possible to return to arrivals using the arrivals shuttle. This can be used for easy access to cryosleep pods
+tips-dataset-30 = Upon entering cryosleep, your items will be transferred to the lost and found locker in the HoP's office.
+tips-dataset-31 = It is possible to return to arrivals using the arrivals shuttle. This can be used for easy access to cryosleep pods.
 tips-dataset-32 = Everyone is permitted to commit minor crimes. However, it is strongly reccomended that you ask over ahelp before doing so.
 tips-dataset-33 = Do not be afraid to ahelp. The worst the admins can say is no. The admins regularly grant requests such as minor items or events.
 tips-dataset-34 = Character records are a great place to include information about your characters backstory.

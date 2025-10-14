@@ -52,6 +52,14 @@
     {
       "name": "up-equipped-HELMET-vulpkanin",
       "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-foxfolk",
+      "directions": 4
+    },
+    {
+      "name": "up-equipped-HELMET-foxfolk",
+      "directions": 4
     }
   ]
 }

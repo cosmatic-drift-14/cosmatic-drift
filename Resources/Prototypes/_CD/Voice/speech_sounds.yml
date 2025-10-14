@@ -1,11 +1,11 @@
 - type: speechSounds
-  id: Vulpkanin
+  id: Foxfolk
   saySound:
-    path: /Audio/_CD/Voice/Talk/vulp.ogg
+    path: /Audio/_CD/Voice/Talk/foxfolk.ogg
   askSound:
-    path: /Audio/_CD/Voice/Talk/vulp_ask.ogg
+    path: /Audio/_CD/Voice/Talk/foxfolk_ask.ogg
   exclaimSound:
-    path: /Audio/_CD/Voice/Talk/vulp_exclaim.ogg
+    path: /Audio/_CD/Voice/Talk/foxfolk_exclaim.ogg
 
 - type: speechSounds
   id: MaleAvali

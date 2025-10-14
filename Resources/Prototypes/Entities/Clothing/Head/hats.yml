@@ -562,10 +562,6 @@
     - state: icon-nobeard
       map: [ "foldedLayer" ]
       visible: true
-  - type: Tag
-    tags:
-    - PetWearable
-    - CorgiWearable
 
 - type: entity
   parent: ClothingHeadBase

@@ -46,6 +46,9 @@
   - type: Item
     sprite: Objects/Consumable/Food/Baked/donut.rsi
     size: 6
+    # size: Normal
+    # shape:
+    # - 0,0,2,1
     heldPrefix: box
   - type: StorageFill
     contents:
@@ -127,6 +130,10 @@
   - type: Item
     sprite: Objects/Consumable/Food/egg.rsi
     size: 12
+    # size: Normal
+    # shape:
+    # - 0,0,2,1
+    # #storedOffset: 0,-6
   - type: StorageFill
     contents:
     - id: FoodEgg
@@ -217,6 +224,9 @@
   - type: Item
     sprite: Objects/Consumable/Food/Baked/pizza.rsi
     heldPrefix: box
+    # shape:
+    # - 0,0,2,1
+    # #storedOffset: 0,-6
   - type: Appearance
   - type: EntityStorageVisuals
     stateDoorOpen: box-open
@@ -360,6 +370,10 @@
   - type: Item
     sprite: Objects/Consumable/Food/Baked/donkpocket.rsi
     size: 7
+    # size: Normal
+    # shape:
+    # - 0,0,2,1
+    # #storedOffset: -1,1
   - type: StorageFill
     contents:
     - id: FoodDonkpocket
@@ -511,8 +525,9 @@
   - type: Item
     sprite: Objects/Storage/Happyhonk/clown.rsi
     heldPrefix: box
+    size: 40
   - type: Storage
-    capacity: 30
+    capacity: 40
   - type: Tag
     tags:
     - Trash
@@ -708,8 +723,6 @@
   components:
   - type: StorageFill
     contents:
-      - id: FoodBurgerCrazy
-        orGroup: Burgers
       - id: FoodBurgerCheese
         orGroup: Burgers
       - id: DrinkColaCan
@@ -872,6 +885,9 @@
       - ClothMade
   - type: Item
     size: 30
+    # size: Normal
+    # shape:
+    # - 0,0,1,1
   - type: StorageFill
     contents:
     - id: MaterialCloth10

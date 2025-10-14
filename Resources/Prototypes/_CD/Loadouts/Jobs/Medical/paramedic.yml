@@ -42,3 +42,8 @@
   id: BlueHighvisBomber
   equipment: 
     outerClothing: ClothingOuterCoatBlueHiVis
+
+- type: loadout
+  id: ParamedicCarrybag
+  equipment:
+    back: ClothingBackpackCarrybagParamedic

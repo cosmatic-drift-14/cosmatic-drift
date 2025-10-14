@@ -11,6 +11,9 @@
       size: 1
     - type: Stack
       count: 1
+    - type: Tag
+      tags:
+      - ConstructionMaterial
 
 - type: entity
   id: MicroManipulatorStockPart
