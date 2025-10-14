@@ -34,7 +34,7 @@
   id: Rust
   minTemp: 423
   reactants:
-    TranexamicAcid:
+    SulfuricAcid:
       amount: 2
     Breakout:
       amount: 1
@@ -48,7 +48,7 @@
   reactants:
     Rust:
       amount: 1
-    Ultravasculine:
+    Diethylamine:
       amount: 2
     Diphenylmethylamine:
       amount: 2

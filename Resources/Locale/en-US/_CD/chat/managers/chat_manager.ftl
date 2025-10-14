@@ -1,8 +1,8 @@
-chat-speech-verb-vulpkanin-1 = rawrs
-chat-speech-verb-vulpkanin-2 = barks
-chat-speech-verb-vulpkanin-3 = rurs
-chat-speech-verb-vulpkanin-4 = yaps
-chat-speech-verb-vulpkanin = Vulpkanin
+chat-speech-verb-foxfolk-1 = rawrs
+chat-speech-verb-foxfolk-2 = barks
+chat-speech-verb-foxfolk-3 = rurs
+chat-speech-verb-foxfolk-4 = yaps
+chat-speech-verb-foxfolk = Foxfolk
 
 chat-speech-verb-rodentia-1 = squeaks
 chat-speech-verb-rodentia-2 = pieps

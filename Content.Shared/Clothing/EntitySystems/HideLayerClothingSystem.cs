@@ -69,6 +69,11 @@ public sealed class HideLayerClothingSystem : EntitySystem
             if (!hideable.Contains(layer))
                 continue;
 
+            // CD: Skip hiding tails because it makes less sense compared to leaving the tails exposed
+            //     Done like this to avoid 2 billion merge conflicts when wizden adds more hardsuit sprites
+            if (layer == HumanoidVisualLayers.Tail)
+                continue;
+
             // Only update this layer if we are currently equipped to the relevant slot.
             if (validSlots.HasFlag(inSlot))
                 _humanoid.SetLayerVisibility(user!, layer, !hideLayers, inSlot, ref dirty);
@@ -82,6 +87,10 @@ public sealed class HideLayerClothingSystem : EntitySystem
         {
             foreach (var layer in slots)
             {
+                // CD: See above. If it does not exist you can probably remove this.
+                if (layer == HumanoidVisualLayers.Tail)
+                    continue;
+
                 if (hideable.Contains(layer))
                     _humanoid.SetLayerVisibility(user!, layer, !hideLayers, inSlot, ref dirty);
             }

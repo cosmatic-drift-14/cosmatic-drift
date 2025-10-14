@@ -44,6 +44,12 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
+  - OffsetCane
+  - OffsetCaneWood
+  - OffsetCaneClown
+  - OffsetCaneMime
+  - OffsetCaneNT
+  - Cane
   - TowelColorBlack
   - TowelColorDarkBlue
   - TowelColorDarkGreen
@@ -63,7 +69,6 @@
   - CDDogtags # CD
   - LunchboxBlue # CD
   - LunchboxYellow # CD
-  - Cane # CD
   - MedCrutchesForearm # CD
   - GoldRing # CD
   - SilverRing # CD
@@ -713,6 +718,13 @@
   - SteelWorkboots # CD
 
 - type: loadoutGroup
+  id: CargoTechnicianID
+  name: loadout-group-cargo-technician-id
+  loadouts:
+  - CargoTechnicianPDA
+  - SeniorCourierPDA
+
+- type: loadoutGroup
   id: SalvageSpecialistBackpack
   name: loadout-group-salvage-specialist-backpack
   loadouts:
@@ -823,6 +835,7 @@
   - StationEngineerBackpack
   - StationEngineerSatchel
   - StationEngineerDuffel
+  - EngineeringCarrybag # CD
 
 - type: loadoutGroup
   id: StationEngineerOuterClothing
@@ -873,6 +886,7 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianSatchel
   - AtmosphericTechnicianDuffel
+  - EngineeringCarrybag # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
@@ -1296,6 +1310,8 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  - MedicalCarrybag # CD
+  - ParamedicCarrybag # CD
 
 - type: loadoutGroup
   id: MedicalShoes

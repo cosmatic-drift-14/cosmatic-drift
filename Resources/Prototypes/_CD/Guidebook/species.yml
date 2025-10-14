@@ -4,9 +4,9 @@
   text: "/ServerInfo/Guidebook/_CD/Mobs/Avali.xml"
 
 - type: guideEntry
-  id: Vulpkanin
-  name: species-name-vulpkanin
-  text: "/ServerInfo/Guidebook/_CD/Mobs/Vulpkanin.xml"
+  id: Foxfolk
+  name: species-name-foxfolk
+  text: "/ServerInfo/Guidebook/_CD/Mobs/Foxfolk.xml"
   
 - type: guideEntry
   id: Rodentia

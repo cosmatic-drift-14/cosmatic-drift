@@ -32,6 +32,6 @@ public abstract class SharedInteractionToggleSystem : EntitySystem
 
     private void OnCompInit(Entity<InteractionToggleableComponent> entity, ref ComponentInit args)
     {
-        _alertsSystem.ShowAlert(entity, entity.Comp.ToggleAlertProtoId, 0);
+        _alertsSystem.ShowAlert(entity.Owner, entity.Comp.ToggleAlertProtoId, 0);
     }
 }

@@ -21,6 +21,6 @@
         solution: drink
         reagent:
           ReagentId: Bake
-        quantity: 30
+        quantity: 10
   - node: bakeWrapped
     entity: WrappedBakePackage
