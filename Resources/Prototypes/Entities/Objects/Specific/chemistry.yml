@@ -422,6 +422,9 @@
       injector:
         maxVol: 5
   - type: Injector
+    delay: 2
+    delayPerVolume: 0
+    movementThreshold: 0.5
     transferAmounts:
     - 1
     - 2
@@ -507,6 +510,11 @@
   - type: Injector
     delay: 2.5
     injectOnly: false
+    transferAmounts:
+    - 1
+    - 5
+    - 10
+    - 15
   - type: SolutionContainerVisuals
     maxFillLevels: 2
     fillBaseName: syringe
@@ -519,7 +527,7 @@
   id: SyringeCryostasis
   parent: BaseSyringe
   name: cryostasis syringe
-  description: A syringe used to contain chemicals or solutions without reactions. 
+  description: A syringe used to contain chemicals or solutions without reactions.
   components:
   - type: Sprite
     layers:
@@ -600,7 +608,7 @@
   name: pill canister
   id: PillCanister
   parent: BaseStorageItem
-  description: Holds up to 9 pills.
+  description: Holds up to 10 pills.
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/pills_canister.rsi
@@ -611,7 +619,7 @@
     tags:
       - PillCanister
   - type: Storage
-    capacity: 9
+    capacity: 10
     quickInsert: true
     areaInsert: true
     areaInsertRadius: 1

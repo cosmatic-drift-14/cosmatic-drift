@@ -33,7 +33,7 @@
   result: Dropper
   completetime: 2
   materials:
-    Glass: 200
+    Glass: 150
     Plastic: 100
 
 - type: latheRecipe
@@ -70,7 +70,7 @@
   result: PillCanister
   completetime: 2
   materials:
-    Plastic: 100
+    Plastic: 20
 
 - type: latheRecipe
   id: ChemistryEmptyBottle01
