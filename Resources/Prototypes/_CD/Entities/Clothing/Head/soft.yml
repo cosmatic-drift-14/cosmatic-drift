@@ -31,7 +31,7 @@
   parent: ClothingHeadHeadHatBaseFlippable
   id: ClothingHeadHatNewSecsoft
   name: security cap
-  description: "It's a black baseball hat  with a holoreflective badge on the front."
+  description: "It's a black baseball hat with a holoreflective badge on the front."
   components:
   - type: Sprite
     sprite: _CD/Clothing/Head/Soft/secsoft.rsi
