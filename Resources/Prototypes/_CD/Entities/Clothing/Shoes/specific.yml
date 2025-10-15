@@ -22,3 +22,14 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepSkates
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesSecSneakers
+  name: security sneakers
+  description: A pair of black shoes, they're comfortable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Shoes/Specific/secsneakers.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Shoes/Specific/secsneakers.rsi

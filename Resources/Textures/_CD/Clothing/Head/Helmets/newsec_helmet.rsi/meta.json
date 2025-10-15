@@ -11,22 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "icon-open"
-    },
-    {
-      "name": "equipped-OUTERCLOTHING",
-      "directions": 4
-    },
-    {
-      "name": "open-equipped-OUTERCLOTHING",
-      "directions": 4
-    },
-    {
-      "name": "equipped-SUITSTORAGE",
-      "directions": 4
-    },
-    {
-      "name": "open-equipped-SUITSTORAGE",
+      "name": "equipped-HELMET",
       "directions": 4
     },
     {
@@ -37,12 +22,19 @@
       "name": "inhand-right",
       "directions": 4
     },
+	{
+      "name": "icon-folded"
+    },
     {
-      "name": "open-inhand-left",
+      "name": "folded-equipped-HELMET",
       "directions": 4
     },
     {
-      "name": "open-inhand-right",
+      "name": "folded-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "folded-inhand-right",
       "directions": 4
     }
   ]
