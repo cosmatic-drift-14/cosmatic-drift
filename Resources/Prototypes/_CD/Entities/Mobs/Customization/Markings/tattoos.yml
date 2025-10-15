@@ -1,0 +1,139 @@
+- type: marking
+  id: TattooGlowingEyeRight
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Human, Reptilian, Dwarf, Rodentia, Foxfolk]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_r
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeLeft
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Human, Reptilian, Dwarf, Rodentia, Foxfolk]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_l
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeMothRight
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_moth_r
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeMothLeft
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_moth_l
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeVulpkaninRight
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Vulpkanin]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_vulpkanin_r
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeVulpkaninLeft
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Vulpkanin]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_vulpkanin_l
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeAvaliRight
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _CD/Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_avali_r
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeAvaliLeft
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _CD/Mobs/Customization/tattoos.rsi
+    state: tattoo_eye_avali_l
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyesDiona
+  bodyPart: Eyes
+  markingCategory: Chest
+  speciesRestriction: [Diona]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/eyes.rsi
+    state: diona
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyesArachnid
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Arachnid]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Species/Arachnid/parts.rsi
+    state: eyes
+  shader: unshaded
