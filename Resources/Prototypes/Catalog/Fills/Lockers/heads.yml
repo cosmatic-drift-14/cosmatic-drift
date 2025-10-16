@@ -4,22 +4,14 @@
     children:
     - id: BoxEncryptionKeyCargo
     - id: BoxFolderQmClipboard
-    - id: CargoBountyComputerCircuitboard
-    - id: CargoRequestComputerCircuitboard
-    - id: CargoSaleComputerCircuitboard
-    - id: CargoShuttleConsoleCircuitboard
-    - id: SalvageMagnetMachineCircuitboard
-    - id: SalvageJobBoardComputerCircuitboard
+    - id: BoxQMCircuitboards
+    - id: BoxQMStamps
     - id: CigPackGreen
       prob: 0.50
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
-    - id: RubberStampApproved
-    - id: RubberStampDenied
-    - id: RubberStampQm
     - id: AstroNavCartridge
     # - id: ClothingHandsKnuckleDustersQM # CD: Remove these
-    - id: MailTeleporterMachineCircuitboard
     #CD Addions
     - id: BookSOPCargo
     - id: BookSOPCommand
@@ -47,7 +39,7 @@
     - id: ClothingBeltSheathFilled
     - id: ClothingHeadsetAltCommand
     - id: ClothingOuterArmorCaptainCarapace
-    - id: CommsComputerCircuitboard
+    - id: BoxCaptainCircuitboards
     - id: DoorRemoteCustom
     - id: MedalCase
     - id: NukeDisk
@@ -130,6 +122,8 @@
     - id: BoxEncryptionKeyPassenger
     - id: BoxEncryptionKeyService
     - id: BoxHeadset
+    - id: BoxHoPCircuitboards
+    - id: BoxHoPStamps
     - id: BoxID
     - id: BoxPDA
     - id: CigarGoldCase
@@ -142,12 +136,6 @@
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService
     - id: HoPIDCard
-    - id: IDComputerCircuitboard
-    - id: FundingAllocationComputerCircuitboard
-    - id: CargoRequestServiceComputerCircuitboard
-    - id: RubberStampApproved
-    - id: RubberStampDenied
-    - id: RubberStampHop
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
     #CD Addions
@@ -179,7 +167,7 @@
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
     - id: DoorRemoteEngineering
-    - id: CargoRequestEngineeringComputerCircuitboard
+    - id: BoxCECircuitboards
     - id: RCD
     - id: RCDAmmo
     - id: RubberStampCE
@@ -242,8 +230,7 @@
     - id: DoorRemoteMedical
     - id: HandheldCrewMonitor
     - id: Hypospray
-    - id: MedicalTechFabCircuitboard
-    - id: CargoRequestMedicalComputerCircuitboard
+    - id: BoxCMOCircuitboards
     - id: MedkitFilled
     - id: RubberStampCMO
     - id: MedTekCartridge
@@ -294,15 +281,11 @@
     children:
     - id: Intellicard
     - id: BoxEncryptionKeyScience
-    - id: CircuitImprinterMachineCircuitboard
+    - id: BoxRDCircuitboards
     - id: ClothingBeltUtilityFilled
     - id: ClothingHeadsetAltScience
     - id: DoorRemoteResearch
     - id: HandTeleporter
-    - id: ProtolatheMachineCircuitboard
-    - id: ResearchComputerCircuitboard
-    - id: CargoRequestScienceComputerCircuitboard
-    - id: StationAiFixerCircuitboard
     - id: RubberStampRd
     #CD Addions
     - id: BookSOPScience
@@ -363,8 +346,7 @@
     - id: DoorRemoteSecurity
     - id: HoloprojectorSecurity
     - id: RubberStampHos
-    - id: SecurityTechFabCircuitboard
-    - id: CargoRequestSecurityComputerCircuitboard
+    - id: BoxHoSCircuitboards
     - id: WeaponDisabler
     - id: WeaponTaser
     - id: WantedListCartridge
