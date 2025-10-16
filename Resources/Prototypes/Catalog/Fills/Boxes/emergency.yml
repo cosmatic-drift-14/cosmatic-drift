@@ -202,6 +202,7 @@
     # - id: DrinkWaterBottleFull
   - type: Tag
     tags:
+    - BoxCardboard
     - BoxHug
 
 - type: entity

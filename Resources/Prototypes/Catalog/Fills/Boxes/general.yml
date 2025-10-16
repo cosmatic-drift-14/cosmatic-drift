@@ -414,7 +414,9 @@
       - state: box
       - state: candle
   - type: Storage
-    whitelist:
+    # grid:
+    # - 0,0,5,3
+    whitelist: # TODO cardboard boxes shouldn't have whitelisting
       tags:
       - Candle
   - type: StorageFill

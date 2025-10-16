@@ -532,6 +532,7 @@
     tags:
     - Trash
     - HappyHonk
+    - BoxCardboard
   - type: StorageFill
     contents:
       - id: ToyMouse
@@ -704,7 +705,8 @@
   - type: Tag
     tags:
     - Trash
-    - CluwneHappyHonk
+    - CluwneHappyHonk # BAD: Intentional removal of parent tag
+    - BoxCardboard
   - type: Sprite
     sprite: Objects/Storage/Happyhonk/cluwne.rsi
     state: box
@@ -879,8 +881,10 @@
     sprite: Objects/Consumable/Food/ingredients.rsi
     state: cloth-box
   - type: Storage
-    capacity: 30
-    whitelist:
+    # grid:
+    # - 0,0,1,1
+    # maxItemSize: Normal
+    whitelist: # TODO BoxCardboard shouldn't have whitelisted storage
       tags:
       - ClothMade
   - type: Item

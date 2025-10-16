@@ -262,7 +262,7 @@
   - type: Storage
     # grid:
     # - 0,0,5,3
-    whitelist:
+    whitelist: # Redundant
       tags:
       - Document
   - type: ItemMapper
