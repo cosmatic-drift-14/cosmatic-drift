@@ -12,6 +12,8 @@
     ClothingHeadBandBotany: 3
     ClothingHeadsetService: 2
     ClothingOuterWinterHydro: 2
+    ClothingNeckerchiefBlue: 3 #CD
+    ClothingNeckerchiefGreen: 3 #CD
   contrabandInventory:
     ToyFigurineBotanist: 1
 

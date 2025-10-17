@@ -18,5 +18,6 @@
     ClothingOuterOverallsAtmos: 2 # CD
     ClothingOuterWinterAtmos: 2
     ClothingNeckScarfStripedLightBlue: 3
+    ClothingNeckerchiefLightBlue: 3 #CD
   contrabandInventory:
     ToyFigurineAtmosTech: 1

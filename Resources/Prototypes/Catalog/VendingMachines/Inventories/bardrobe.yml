@@ -18,5 +18,7 @@
     ClothingBeltBandolier: 2
     ClothingEyesGlassesAviator: 2
     ClothingEyesGlassesSunglasses: 2
+    ClothingNeckerchiefBlack: 3 #CD
+    ClothingNeckerchiefWhite: 3 #CD
   contrabandInventory:
     ToyFigurineBartender: 1
