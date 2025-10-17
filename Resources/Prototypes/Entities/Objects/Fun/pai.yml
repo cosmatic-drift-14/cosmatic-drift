@@ -64,9 +64,6 @@
     - Binary # CD
   - type: DoAfter
   - type: Actions
-  - type: ActionGrant
-    actions:
-    - ActionPAIOpenShop
   - type: Store
     categories:
     - PAIAbilities
@@ -197,10 +194,15 @@
     node: potatoai
 
 - type: entity
-  parent: ActionIntrinsicStore
+  parent: BaseMentalAction
   id: ActionPAIOpenShop
   name: Software Catalog
   description: Install new software to assist your owner.
+  components:
+  - type: Action
+    icon: Interface/Actions/shop.png
+  - type: InstantAction
+    event: !type:PAIShopActionEvent
 
 - type: entity
   id: ActionPAIMassScanner

@@ -16,4 +16,3 @@ job-supervisors-science = Scientists, the Senior Researcher, and the Research Di
 
 job-supervisors-hire = whoever hires you
 job-supervisors-everyone = absolutely everyone
-job-supervisors-nobody = nobody

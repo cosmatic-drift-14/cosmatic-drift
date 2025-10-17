@@ -454,13 +454,3 @@
     icon: { sprite: Actions/Implants/implants.rsi, state: chameleon }
     itemIconStyle: BigAction
     event: !type:ChameleonControllerOpenMenuEvent
-
-- type: entity
-  parent: BaseMentalAction
-  id: ActionIntrinsicStore
-  name: Store
-  description: Opens the store
-  components:
-  - type: InstantAction
-    icon: Interface/Actions/shop.png
-    event: !type:IntrinsicStoreActionEvent
