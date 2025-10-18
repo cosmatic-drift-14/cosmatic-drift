@@ -1,4 +1,17 @@
 - type: entity
+  parent: [ClothingHeadsetSecurity, BaseCommandContraband]
+  id: ClothingHeadsetHoS
+  name: hos headset
+  description: A headset used by the HoS.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+
+- type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetLongRange
   name: long range headset

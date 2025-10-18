@@ -32,7 +32,7 @@
   equipment:
     id: CEPDA
 #    eyes: ClothingEyesGlassesMeson # CD
-    ears: ClothingHeadsetCE
+    # ears: ClothingHeadsetCE #CD: Loadouts
     belt: ClothingBeltUtilityEngineering
   storage:
     back:

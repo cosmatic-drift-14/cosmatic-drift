@@ -3,6 +3,7 @@
   id: JobCaptain
   groups:
   - CaptainHead
+  - CommandHeadset #CD
   - CaptainNeck
   - CaptainJumpsuit
   - CaptainBackpack
@@ -17,6 +18,7 @@
   groups:
   - GroupTankHarness
   - HoPHead
+  - CommandHeadset #CD
   - HoPNeck
   - HoPJumpsuit
   - HoPBackpack
@@ -216,6 +218,7 @@
   groups:
   - GroupTankHarness
   - QuartermasterHead
+  - QuartermasterHeadset #CD
   - QuartermasterNeck
   - QuartermasterJumpsuit
   - CargoTechnicianBackpack
@@ -260,6 +263,7 @@
   groups:
   - GroupTankHarness
   - ChiefEngineerHead
+  - ChiefEngineerHeadset #CD
   - EngineeringEyewear # CD
   - ChiefEngineerJumpsuit
   - StationEngineerBackpack
@@ -314,6 +318,7 @@
   groups:
   - GroupTankHarness
   - ResearchDirectorHead
+  - ResearchDirectorHeadset #CD
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
   - ScientistBackpack
@@ -358,6 +363,7 @@
   id: JobHeadOfSecurity
   groups:
   - HeadofSecurityHead
+  - HeadofSecurityHeadset #CD
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack
@@ -432,6 +438,7 @@
   groups:
   - GroupTankHarness
   - ChiefMedicalOfficerHead
+  - ChiefMedicalOfficerHeadset #CD
   - MedicalMask
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves

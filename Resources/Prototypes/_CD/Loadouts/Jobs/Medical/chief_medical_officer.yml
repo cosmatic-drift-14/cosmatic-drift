@@ -9,3 +9,14 @@
   id: ChiefMedicalOfficerFormalsuit
   equipment: 
     jumpsuit: ClothingUniformCMOFormal
+
+# Headset
+- type: loadout
+  id: ChiefMedicalOfficerHeadset
+  equipment:
+    ears: ClothingHeadsetCMO
+
+- type: loadout
+  id: ChiefMedicalOfficerHeadsetAlt
+  equipment:
+    ears: ClothingHeadsetAltMedical

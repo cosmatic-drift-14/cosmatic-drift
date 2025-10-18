@@ -30,7 +30,7 @@
   id: ResearchDirectorGear
   equipment:
     id: RnDPDA
-    ears: ClothingHeadsetRD
+    # ears: ClothingHeadsetRD #CD: Loadouts
   storage:
     back:
     - Flash
