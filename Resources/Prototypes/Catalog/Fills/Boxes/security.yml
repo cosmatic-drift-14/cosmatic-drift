@@ -140,8 +140,9 @@
   description: A box of explosive detonators and triggers.
   components:
   - type: Item
-    shape:
-    - 0,0,1,1
+    size: 30
+    # shape:
+    # - 0,0,1,1
   - type: StorageFill
     contents:
     - id: EmptyDetonator

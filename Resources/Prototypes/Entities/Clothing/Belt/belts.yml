@@ -46,9 +46,7 @@
       visible: false
   - type: Clothing
   - type: Storage
-    grid:
-    - 0,0,7,3
-    maxItemSize: Small
+    capacity: 60
     whitelist:
       tags:
       - Arrow
@@ -92,8 +90,7 @@
   - type: Clothing
     sprite: Clothing/Belt/wand.rsi
   - type: Storage
-    grid:
-    - 0,0,15,1
+    capacity: 150
     whitelist:
       tags:
       - WizardWand
@@ -196,3 +193,5 @@
     sprite: Clothing/Belt/militarywebbingmed.rsi
   - type: Clothing
     sprite: Clothing/Belt/militarywebbingmed.rsi
+  - type: Storage
+    capacity: 100

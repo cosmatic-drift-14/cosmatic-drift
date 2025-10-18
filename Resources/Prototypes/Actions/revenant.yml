@@ -4,9 +4,8 @@
   name: Shop
   description: Opens the ability shop.
   components:
-  - type: Action
-    icon: Interface/Actions/shop.png
   - type: InstantAction
+    icon: Interface/Actions/shop.png
     event: !type:RevenantShopActionEvent
 
 - type: entity

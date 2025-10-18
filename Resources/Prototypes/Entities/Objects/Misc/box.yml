@@ -40,9 +40,8 @@
     maxFillLevels: 3
     fillBaseName: tote
   - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,5,2
+    # maxItemSize: Small
+    capacity: 60
     whitelist:
       components:
       - MachineBoard

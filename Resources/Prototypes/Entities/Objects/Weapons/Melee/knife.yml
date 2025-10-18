@@ -354,7 +354,7 @@
       useSound:
         path: /Audio/Items/Culinary/chop.ogg
   - type: Item
-    size: Tiny
+    size: 2
     sprite: Objects/Weapons/Melee/utility_knife.rsi
   - type: ItemToggle
     soundActivate:

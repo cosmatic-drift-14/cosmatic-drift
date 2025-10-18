@@ -1008,8 +1008,7 @@
     sprite: Objects/Consumable/Food/Baked/bread.rsi
     state: batard
   - type: Item
-    size: Small
-    storedOffset: -1,0
+    size: 5
     heldPrefix: batard
   - type: Tag
     tags:
@@ -1041,8 +1040,7 @@
     tags:
     - ClothMade
   - type: Item
-    size: Small
-    storedOffset: -1,0
+    size: 1
     heldPrefix: batard-cotton
   - type: SolutionContainerManager
     solutions:

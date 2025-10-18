@@ -199,9 +199,8 @@
   name: Software Catalog
   description: Install new software to assist your owner.
   components:
-  - type: Action
-    icon: Interface/Actions/shop.png
   - type: InstantAction
+    icon: Interface/Actions/shop.png
     event: !type:PAIShopActionEvent
 
 - type: entity

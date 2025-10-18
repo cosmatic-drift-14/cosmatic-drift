@@ -21,17 +21,18 @@
   description: A box filled with QM's Stamps. Stamped of course.
   components:
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,1
+    size: 10
+    # shape:
+    # - 0,0,1,1
   - type: StorageFill
     contents:
       - id: RubberStampApproved
       - id: RubberStampDenied
       - id: RubberStampQm
   - type: Storage
-    grid:
-    - 0,0,1,1
+    capacity: 10
+    # grid:
+    # - 0,0,1,1
     whitelist:
       components:
       - Stamp
@@ -59,17 +60,18 @@
   description: A box filled with HoP's Stamps. Stamped of course.
   components:
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,1
+    size: 10
+    # shape:
+    # - 0,0,1,1
   - type: StorageFill
     contents:
       - id: RubberStampApproved
       - id: RubberStampDenied
       - id: RubberStampHop
   - type: Storage
-    grid:
-    - 0,0,1,1
+    capacity: 10
+    # grid:
+    # - 0,0,1,1
     whitelist:
       components:
       - Stamp
