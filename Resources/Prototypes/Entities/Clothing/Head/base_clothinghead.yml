@@ -8,7 +8,9 @@
     - HEAD
   - type: Sprite
     state: icon
-  - type: Food
+  - type: Item
+    size: 5
+  - type: Edible
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
