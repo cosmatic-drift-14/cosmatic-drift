@@ -5,7 +5,7 @@
   components:
   - type: Loadout
     prototypes:
-      - HoPGear
+      # - HoPGear #CD: Why does HoP appear here but no other heads of staff are in their own departments?
       - ClownGear
       - MimeGear
       - JanitorGear
@@ -15,6 +15,41 @@
       - ChefGear
       - ChaplainGear
       - PassengerGear
+      - PrivateInvestigatorGear #CD
+      - PrisonerGear #CD
+      - VisitorClown #CD
+      - VisitorMime #CD
+      - VisitorMimeAlt #CD
+      - VisitorJanitor #CD
+      - VisitorJanitorAlt #CD
+      - VisitorServiceWorker #CD
+      - VisitorServiceWorkerAlt #CD
+      - VisitorMusicianRelaxedAltF #CD
+      - VisitorMusicianMariachi #CD
+      - VisitorBotanist #CD
+      - VisitorBotanistAlt #CD
+      - VisitorChef #CD
+      - VisitorChefAlt #CD
+      - VisitorChaplain #CD
+      - VisitorChaplainAlt #CD
+      - BartenderGear #CD
+      - VisitorBartender #CD
+      - VisitorBartenderAlt #CD
+      - LawyerGear #CD
+      - VisitorLawyerAltD #CD
+      - VisitorLawyerAltE #CD
+      - LibrarianGear #CD
+      - VisitorLibrarian #CD
+      - VisitorLibrarianAlt #CD
+      - BoxerGear #CD
+      - VisitorBoxer #CD
+      - VisitorBoxerAlt #CD
+      - ReporterGear #CD
+      - VisitorReporter #CD
+      - VisitorReporterAlt #CD
+      - ZookeeperGear #CD
+      - VisitorZookeeper #CD
+      - VisitorZookeeperAlt #CD
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -26,6 +61,13 @@
     - TechnicalAssistantGear
     - AtmosphericTechnicianGear
     - StationEngineerGear
+    - SeniorEngineerGear #CD
+    - VisitorTechnicalAssistant #CD
+    - VisitorTechnicalAssistantAlt #CD
+    - VisitorAtmosTech #CD
+    - VisitorAtmosTechAlt #CD
+    - VisitorEngineer #CD
+    - VisitorEngineerAlt #CD
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -36,6 +78,10 @@
     prototypes:
     - CargoTechGear
     - SalvageSpecialistGear
+    - VisitorCargoTech #CD
+    - VisitorCargoTechAlt #CD
+    - VisitorSalvageSpecialist #CD
+    - VisitorSalvageSpecialistAlt #CD
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -48,6 +94,26 @@
     - PsychologistGear
     - ChemistGear
     - DoctorGear
+    - SeniorPhysicianGear #CD
+    - VisitorMedicalIntern #CD
+    - VisitorMedicalInternAlt #CD
+    - VisitorPsychologist #CD
+    - VisitorPsychologistAlt #CD
+    - VisitorChemist #CD
+    - VisitorChemistAlt #CD
+    - VisitorMedicalDoctor #CD
+    - VisitorMedicalDoctorAlt #CD
+    - VisitorScrubsBlue #CD
+    - VisitorScrubsGreen #CD
+    - VisitorScrubsPurple #CD
+    - VisitorVirologist #CD
+    - VisitorVirologistAlt #CD
+    - VisitorGeneticist #CD
+    - VisitorGeneticistAlt #CD
+    - ParamedicGear #CD
+    - VisitorParamedic #CD
+    - VisitorParamedicAlt #CD
+    - VisitorDentist #CD
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -58,6 +124,11 @@
     prototypes:
     - ResearchAssistantGear
     - ScientistGear
+    - SeniorResearcherGear #CD
+    - VisitorResearchAssistant #CD
+    - VisitorResearchAssistantAlt #CD
+    - VisitorScientist #CD
+    - VisitorScientistAlt #CD
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -70,6 +141,15 @@
     - SecurityOfficerGear
     - DetectiveGear
     - WardenGear
+    - SeniorOfficerGear #CD
+    - VisitorSecurityCadet #CD
+    - VisitorSecurityCadetAlt #CD
+    - VisitorSecurityOfficer #CD
+    - VisitorSecurityOfficerAlt #CD
+    - VisitorDetective #CD
+    - VisitorDetectiveAlt #CD
+    - VisitorWarden #CD
+    - VisitorWardenAlt #CD
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -86,3 +166,18 @@
     - CMOGear
     - ChiefEngineerGear
     - QuartermasterGear
+    - VisitorHOP #CD
+    - VisitorHOPAlt #CD
+    - VisitorLawyerCentcom #CD
+    - VisitorCaptain #CD
+    - VisitorCaptainAlt #CD
+    - VisitorHOS #CD
+    - VisitorHOSAlt #CD
+    - VisitorRD #CD
+    - VisitorRDAlt #CD
+    - VisitorCMO #CD
+    - VisitorCMOAlt #CD
+    - VisitorCE #CD
+    - VisitorCEAlt #CD
+    - VisitorQM #CD
+    - VisitorQMAlt #CD
