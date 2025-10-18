@@ -1,4 +1,5 @@
 # Command
+loadout-group-command-headset = Command headset
 loadout-group-formal-shoes = Formal Shoes
 
 # Civilian
@@ -10,21 +11,26 @@ loadout-group-private-investigator-glasses = Private Investigator glasses
 loadout-group-passenger-id = Passenger ID
 
 # Cargo
+loadout-group-quartermaster-headset = Quartermaster headset
 loadout-group-salvage-specialist-jumpsuit = Salvage Specialist jumpsuit
 
 # Engineering
+loadout-group-chief-engineer-headset = Chief Engineer headset
 loadout-group-senior-engineer-jumpsuit = Senior Engineer jumpsuit
 loadout-group-engineering-goggles = Engineering Goggles
 
 # Science
+loadout-group-research-director-headset = Research Director headset
 loadout-group-senior-researcher-jumpsuit = Senior Researcher jumpsuit
 loadout-group-senior-researcher-outerclothing = Senior Researcher outer clothing
 
 # Security
+loadout-group-head-of-security-headset = Head of Security headset
 loadout-group-senior-officer-jumpsuit = Senior Officer jumpsuit
 loadout-group-security-glasses-or-hud = Security Glasses
 
 # Medical
+loadout-group-chief-medical-officer-headset = Chief Medical Officer Headset
 loadout-group-senior-physician-head = Senior Physician head
 loadout-group-senior-physician-jumpsuit = Senior Physician jumpsuit
 loadout-group-senior-physician-outerclothing = Senior Physician outer clothing
