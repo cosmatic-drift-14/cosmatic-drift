@@ -1,0 +1,27 @@
+- type: marking
+  id: TattooGlowingEyeVoxRight
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Vox]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/vox_tattoos.rsi
+    state: tattoo_eye_vox_r
+  shader: unshaded
+
+- type: marking
+  id: TattooGlowingEyeVoxLeft
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Vox]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Customization/vox_tattoos.rsi
+    state: tattoo_eye_vox_l
+  shader: unshaded

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/cosmatic-drift-14/cosmatic-drift/pull/189/commits/1ba3f72116c8b39357aefb366487831b766667f3.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tattoo_eye_avali_r",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_eye_avali_l",
+      "directions": 4
+    }
+  ]
+}
