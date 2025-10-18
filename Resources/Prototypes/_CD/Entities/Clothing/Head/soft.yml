@@ -26,3 +26,32 @@
     - Recyclable
     - HamsterWearable
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: ClothingHeadHatNewSecsoft
+  name: security cap
+  description: "It's a black baseball hat with a holoreflective badge on the front."
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Soft/secsoft.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Soft/secsoft.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatNewSecsoft]
+  id: ClothingHeadHatNewSecsoftFlipped
+  name: security cap
+  components:
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+    - WhitelistChameleon

@@ -1064,6 +1064,7 @@
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
   - SecurityGreatcoat # CD
+  - SecurityFieldjacket # CD
 
 - type: loadoutGroup
   id: WardenHead
@@ -1089,6 +1090,7 @@
   - WardenCoat
   - WardenArmoredWinterCoat
   - SecurityGreatcoat # CD
+  - SecurityFieldjacket # CD
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1096,8 +1098,10 @@
   minLimit: 0
   loadouts:
   - SecurityHelmet
+  - SecurityNewHelmet # CD
   - SecurityBeret
   - SecurityHat
+  - SecurityNewSoft # CD
   - TrooperHat
 
 - type: loadoutGroup
@@ -1108,6 +1112,9 @@
   - SecurityJumpskirt
   - SecurityCasualsuit # CD
   - SecurityCasualskirt # CD
+  - SecurityModernsuit # CD
+  - SecurityCasualSummer # CD
+  - SecurityCasualWinter # CD
   # - SeniorOfficerJumpsuit
   # - SeniorOfficerJumpskirt
   - SecurityJumpsuitGrey
@@ -1136,8 +1143,10 @@
   loadouts:
   - ArmorVest
   - ArmorVestSlim
+  - SecurityNewVest # CD
   - SecurityOfficerWintercoat
   - SecurityGreatcoat # CD
+  - SecurityFieldjacket # CD
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1145,6 +1154,7 @@
   loadouts:
   - CombatBoots #CD change from JackBoots to CombatBoots
   - SecurityWinterBoots
+  - SecuritySneakers # CD
 
 - type: loadoutGroup
   id: SecurityPDA

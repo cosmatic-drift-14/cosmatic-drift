@@ -8,8 +8,9 @@
     ClothingShoesBootsJack: 3
     ClothingHeadHatBeretSecurity: 3
     ClothingHeadHatSecsoft: 3
+    ClothingHeadHatNewSecsoft: 3 # CD
     ClothingHeadBandRed: 3
-    ClothingMaskBandSec : 3 # CD
+    ClothingMaskBandSec: 3 # CD
     ClothingMaskNeckGaiterRed: 3
     ClothingHandsGlovesColorBlack: 3
     ClothingHandsGlovesFingerless: 3
@@ -19,16 +20,23 @@
     ClothingUniformJumpsuitSecBlue: 3
     ClothingUniformSecurtyCasual: 3 # CD
     ClothingUniformJumpskirtSecurtyCasual: 3 # CD
+    ClothingUniformSecurtyCasualSummer: 3 # CD
+    ClothingUniformCasualWinterNavy: 3 # CD
+    ClothingUniformJumpsuitSecurityModern: 3 # CD
     ClothingHeadsetSecurity: 3
     ClothingOuterWinterSec: 2
     ClothingOuterArmorBasic: 2
     ClothingNeckScarfStripedRed: 3
     ClothingOuterArmorBasicSlim: 2
+    ClothingOuterArmorBasicNewSec: 2 # CD
     ClothingOuterCoatSecGreatcoat : 2 # CD
+    ClothingOuterCoatSecurityFieldjacket: 2 # CD
     ClothingEyesBlindfold: 1
     ClothingShoesBootsCombat: 1
+    ClothingShoesSecSneakers: 2 # CD
     ClothingShoesBootsWinterSec: 2
     ClothingHeadHelmetJustice: 1
+    ClothingHeadHelmetNewsec: 2 # CD
     ClothingNeckerchiefRed: 3 #CD
   contrabandInventory:
     ClothingMaskClownSecurity: 1
