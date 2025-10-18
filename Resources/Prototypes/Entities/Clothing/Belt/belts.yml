@@ -193,5 +193,7 @@
     sprite: Clothing/Belt/militarywebbingmed.rsi
   - type: Clothing
     sprite: Clothing/Belt/militarywebbingmed.rsi
+  - type: Item
+    size: 100
   - type: Storage
     capacity: 100
