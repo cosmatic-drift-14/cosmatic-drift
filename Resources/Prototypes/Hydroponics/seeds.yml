@@ -1294,7 +1294,7 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-    Desoxyephedrine: #CD: Moved Desox back to ambrosia
+    Desoxyephedrine: #CD: Moved Desox back to ambrosia from glasstle.
       Min: 1
       Max: 10
       PotencyDivisor: 10
@@ -1332,7 +1332,7 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-    Desoxyephedrine: #CD: Moved Desox back to ambrosia
+    Desoxyephedrine: #CD: Moved Desox back to ambrosia from glasstle.
       Min: 1
       Max: 10
       PotencyDivisor: 10
@@ -1382,7 +1382,7 @@
       Min: 1
       Max: 25
       PotencyDivisor: 4
-    # Desoxyephedrine: # meff!! #CD: Moved Desox back to ambrosia
+    # Desoxyephedrine: # meff!! #CD: Moved Desox back to ambrosia from glasstle.
       # Min: 1
       # Max: 10
       # PotencyDivisor: 10
