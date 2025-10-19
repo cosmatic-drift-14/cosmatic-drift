@@ -33,7 +33,7 @@
   id: CMOGear
   equipment:
     id: CMOPDA
-    ears: ClothingHeadsetCMO
+    # ears: ClothingHeadsetCMO #CD: Loadouts
     belt: ClothingBeltMedicalFilled
   storage:
     back:

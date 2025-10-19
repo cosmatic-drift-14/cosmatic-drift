@@ -3,3 +3,14 @@
   id: HeadofSecuritySheriffHat
   equipment: 
     head: ClothingHeadHatHossheriffhat
+
+# Headset
+- type: loadout
+  id: HeadofSecurityHeadset
+  equipment:
+    ears: ClothingHeadsetHoS
+
+- type: loadout
+  id: HeadofSecurityHeadsetAlt
+  equipment:
+    ears: ClothingHeadsetAltSecurity

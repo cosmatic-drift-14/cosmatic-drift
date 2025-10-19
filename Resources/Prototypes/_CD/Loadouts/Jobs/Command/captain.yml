@@ -1,0 +1,10 @@
+# Headset
+- type: loadout
+  id: CommandHeadset
+  equipment:
+    ears: ClothingHeadsetCommand
+
+- type: loadout
+  id: CommandHeadsetAlt
+  equipment:
+    ears: ClothingHeadsetAltCommand
