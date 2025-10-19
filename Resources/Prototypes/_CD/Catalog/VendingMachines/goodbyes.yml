@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: IceCreamGoodbyes
+  values:
+    prefix: thankyou-icecream-
+    count: 6
