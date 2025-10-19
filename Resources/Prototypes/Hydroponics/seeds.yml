@@ -1294,6 +1294,10 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
+    Desoxyephedrine: #CD: Moved Desox back to ambrosia
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
     Vitamin:
       Min: 1
       Max: 2
@@ -1328,6 +1332,10 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
+    Desoxyephedrine: #CD: Moved Desox back to ambrosia
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
 
 - type: seed
   id: galaxythistle
@@ -1374,10 +1382,10 @@
       Min: 1
       Max: 25
       PotencyDivisor: 4
-    Desoxyephedrine: # meff!!
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+    # Desoxyephedrine: # meff!! #CD: Moved Desox back to ambrosia
+      # Min: 1
+      # Max: 10
+      # PotencyDivisor: 10
 
 - type: seed
   id: flyAmanita
