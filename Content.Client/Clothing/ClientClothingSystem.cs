@@ -167,12 +167,18 @@ public sealed class ClientClothingSystem : ClothingSystem
 
         // CD: Shitcode W (hide lizard hardsuit sprites)
         //     Done like this to avoid 2 billion merge conflicts when wizden adds more hardsuit sprites
-        if (!(slot == "OUTERSLOT" && speciesId == "reptilian"))
+        if (!(correctedSlot == "OUTERCLOTHING" && speciesId == "reptilian"))
+        {
             // species specific
             if (speciesId != null && rsi.TryGetState($"{state}-{speciesId}", out _))
                 state = $"{state}-{speciesId}";
             else if (!rsi.TryGetState(state, out _))
                 return false;
+        }
+        else if (!rsi.TryGetState(state, out _))
+        {
+            return false;
+        }
 
         var layer = new PrototypeLayerData();
         layer.RsiPath = rsi.Path.ToString();
