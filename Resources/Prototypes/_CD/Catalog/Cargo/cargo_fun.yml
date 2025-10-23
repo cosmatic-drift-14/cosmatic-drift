@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: FunSprayPaintsConsistent
+  icon:
+    sprite: Objects/Fun/spraycans.rsi
+    state: rainbow_cap
+  product: CrateFunSprayPaintsConsistent
+  cost: 1600
+  category: Fun
+  group: market
