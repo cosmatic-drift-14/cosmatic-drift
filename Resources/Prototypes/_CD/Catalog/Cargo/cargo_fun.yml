@@ -4,6 +4,6 @@
     sprite: Objects/Fun/spraycans.rsi
     state: rainbow_cap
   product: CrateFunSprayPaintsConsistent
-  cost: 1600
+  cost: 2000
   category: Fun
   group: market
