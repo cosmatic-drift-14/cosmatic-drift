@@ -214,11 +214,69 @@
     sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+    slots:
+    - outerClothing
+    - suitStorage
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatDetectiveForensic]
   id: ClothingOuterCoatDetectiveForensicOpened
   name: forensic jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
+
+# Field jacket
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatSecurityFieldjacket
+  name: security field jacket
+  description: A comfortable black field jacket with a red armband.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_fieldjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_fieldjacket.rsi
+    slots:
+    - outerClothing
+    - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatSecurityFieldjacket]
+  id: ClothingOuterCoatSecurityFieldjacketOpen
+  name: security field jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatFieldjacket
+  name: field jacket
+  description: A comfortable black field jacket.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/fieldjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/fieldjacket.rsi
+    slots:
+    - outerClothing
+    - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatFieldjacket]
+  id: ClothingOuterCoatFieldjacketOpen
+  name: field jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
 
 # Greatcoat
 

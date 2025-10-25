@@ -1,4 +1,5 @@
 - type: entity
+  parent: BaseAction
   id: ActionRevenantShop
   name: Shop
   description: Opens the ability shop.

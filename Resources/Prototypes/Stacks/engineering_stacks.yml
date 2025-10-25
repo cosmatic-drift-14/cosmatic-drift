@@ -4,11 +4,9 @@
   name: stack-inflatable-wall
   spawn: InflatableWallStack1
   maxCount: 10
-  itemSize: 1
 
 - type: stack
   id: InflatableDoor
   name: stack-inflatable-door
   spawn: InflatableDoorStack1
   maxCount: 4
-  itemSize: 1

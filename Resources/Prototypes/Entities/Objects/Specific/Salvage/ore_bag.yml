@@ -14,9 +14,9 @@
     slots:
     - belt
   - type: Item
-    size: 241
+    size: 301 #CD change from 241 to 301
   - type: Storage
-    capacity: 240
+    capacity: 300 #CD change from 240 to 300
     quickInsert: true
     areaInsert: true
     whitelist:
@@ -32,4 +32,4 @@
   description: A large ore bag built into the frame of a mining cyborg.
   components:
     - type: Storage
-      capacity: 300
+      capacity: 450 #CD change from 300 to 450

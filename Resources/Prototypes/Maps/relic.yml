@@ -62,10 +62,8 @@
             Detective: [ 1, 1 ]
             SecurityCadet: [ 2, 2 ]
             Lawyer: [ 1, 1 ]
-            #supply
-            Quartermaster: [ 1, 1 ]
-            CargoTechnician: [ 2, 2 ]
-            #civilian
-            Passenger: [ -1, -1 ]
-            #silicon
+            #supply (0)
+            #civilian (0+)
+            Passenger: [ -1, -1 ] #infinite, not counted
+            #silicon (1)
             StationAi: [ 1, 1 ]

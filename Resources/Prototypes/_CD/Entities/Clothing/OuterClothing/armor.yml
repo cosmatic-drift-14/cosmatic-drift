@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorBasicNewSec
+  name: armor vest
+  suffix: newsec
+  description: A modern Type I armored vest that provides decent protection against most types of damage.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Armor/security_new.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/security_new.rsi

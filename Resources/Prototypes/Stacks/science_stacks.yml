@@ -3,7 +3,6 @@
   name: stack-artifact-fragment
   spawn: ArtifactFragment1
   maxCount: 30
-  itemSize: 5
 
 
 - type: stack

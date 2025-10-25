@@ -24,7 +24,7 @@
   id: ClothingBeltStorageBase
   components:
   - type: Storage
-    capacity: 40
+    capacity: 45
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
