@@ -1,0 +1,17 @@
+- type: gameMap
+  id: Cocoon
+  mapName: 'Cocoon Xeno'
+  mapPath: /Maps/_CD/cocoon.yml
+  minPlayers: 25 #CD change
+  maxPlayers: 55 #CD change
+  stations:
+    Cocoon:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} "Cocoon" Biotechnical Facility {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
