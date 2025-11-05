@@ -5,12 +5,14 @@
   name: stack-pancake
   spawn: FoodBakedPancake
   maxCount: 9
+  itemSize: 1
 
 - type: stack
   id: PancakeBb
   name: stack-blueberry-pancake
   spawn: FoodBakedPancakeBb
   maxCount: 9
+  itemSize: 1
 
 - type: stack
   id: PancakeCc
@@ -27,6 +29,7 @@
   icon: { sprite: Objects/Consumable/Food/Baked/pizza.rsi, state: box }
   spawn: FoodBoxPizza
   maxCount: 30
+  itemSize: 1
 
 # Smokeables
 
@@ -36,6 +39,7 @@
   icon: { sprite: /Textures/Objects/Consumable/Smokeables/Cigarettes/paper.rsi, state: cigpaper }
   spawn: PaperRolling
   maxCount: 5
+  itemSize: 1
 
 - type: stack
   id: CigaretteFilter
@@ -43,6 +47,7 @@
   icon: { sprite: /Textures/Objects/Consumable/Smokeables/Cigarettes/paper.rsi, state: cigfilter }
   spawn: CigaretteFilter
   maxCount: 5
+  itemSize: 1
 
 - type: stack
   id: GroundTobacco
@@ -50,6 +55,7 @@
   icon: { sprite: /Textures/Objects/Misc/reagent_fillings.rsi, state: powderpile }
   spawn: GroundTobacco
   maxCount: 5
+  itemSize: 1
 
 - type: stack
   id: GroundCannabis
@@ -71,6 +77,7 @@
   icon: { sprite: /Textures/Objects/Specific/Hydroponics/tobacco.rsi, state: dried }
   spawn: LeavesTobaccoDried
   maxCount: 5
+  itemSize: 1
 
 - type: stack
   id: LeavesCannabisDried
@@ -78,6 +85,7 @@
   icon: { sprite: /Textures/Objects/Specific/Hydroponics/tobacco.rsi, state: dried }
   spawn: LeavesCannabisDried
   maxCount: 5
+  itemSize: 1
 
 - type: stack
   id: LeavesCannabisRainbowDried
