@@ -842,6 +842,7 @@
   - type: Tag
     tags:
     - HighRiskItem
+    - Sidearm
   - type: StealTarget
     stealGroup: WeaponEnergyMagnum
   - type: Gun
