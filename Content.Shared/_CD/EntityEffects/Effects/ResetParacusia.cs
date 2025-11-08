@@ -7,11 +7,11 @@ namespace Content.Shared._CD.EntityEffects.Effects;
 
 
 [UsedImplicitly]
-public sealed partial class ResetParacusia : EventEntityEffect<ResetParacusia>
+public sealed partial class ResetParacusia : EntityEffectBase<ResetParacusia>
 {
     [DataField("TimerReset")]
     public int TimerReset = 600;
 
-    protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
+     public override string? EntityEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
         => Loc.GetString("reagent-effect-guidebook-reset-paracusia", ("chance", Probability));
 }

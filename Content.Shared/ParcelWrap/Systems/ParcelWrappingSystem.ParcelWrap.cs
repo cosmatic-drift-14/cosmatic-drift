@@ -142,37 +142,37 @@ public sealed partial class ParcelWrappingSystem
             //     _item.SetShape(spawned, shape, item);
 
             // If the target's in a container, try to put the parcel in its place in the container.
-            if (_container.TryGetContainingContainer((target, null, null), out var containerOfTarget))
-            {
-                _container.Remove(target, containerOfTarget);
-                _container.InsertOrDrop((spawned, null, null), containerOfTarget);
-            }
-
-            // Insert the target into the parcel.
-            var parcel = EnsureComp<WrappedParcelComponent>(spawned);
-            if (!_container.Insert(target, parcel.Contents))
-            {
-                DebugTools.Assert(
-                    $"Failed to insert target entity into newly spawned parcel. target={PrettyPrint.PrintUserFacing(target)}");
-                QueueDel(spawned);
-            }
+            // if (_container.TryGetContainingContainer((target, null, null), out var containerOfTarget))
+            // {
+            //     _container.Remove(target, containerOfTarget);
+            //     _container.InsertOrDrop((spawned, null, null), containerOfTarget);
+            // }
+            //
+            // // Insert the target into the parcel.
+            // var parcel = EnsureComp<WrappedParcelComponent>(spawned);
+            // if (!_container.Insert(target, parcel.Contents))
+            // {
+            //     DebugTools.Assert(
+            //         $"Failed to insert target entity into newly spawned parcel. target={PrettyPrint.PrintUserFacing(target)}");
+            //     QueueDel(spawned);
+            // }
         }
 
         _transform.SetLocalRotation(spawned, targetTransform.LocalRotation);
 
         // If the target is in a container, try to put the parcel in its place in the container.
-        if (_container.TryGetContainingContainer((target, null, null), out var containerOfTarget))
+        if (_container.TryGetContainingContainer((target, null, null), out var containerTarget))
         {
-            _container.Remove(target, containerOfTarget);
-            _container.InsertOrDrop((spawned, null, null), containerOfTarget);
+            _container.Remove(target, containerTarget);
+            _container.InsertOrDrop((spawned, null, null), containerTarget);
         }
 
         // Insert the target into the parcel.
-        var parcel = EnsureComp<WrappedParcelComponent>(spawned);
-        parcel.CanSelfUnwrap = wrapper.Comp.CanSelfUnwrap;
-        Dirty(spawned, parcel);
+        var parcelTwo = EnsureComp<WrappedParcelComponent>(spawned);
+        parcelTwo.CanSelfUnwrap = wrapper.Comp.CanSelfUnwrap;
+        Dirty(spawned, parcelTwo);
 
-        if (!_container.Insert(target, parcel.Contents))
+        if (!_container.Insert(target, parcelTwo.Contents))
         {
             DebugTools.Assert(
                 $"Failed to insert target entity into newly spawned parcel. target={PrettyPrint.PrintUserFacing(target)}");
