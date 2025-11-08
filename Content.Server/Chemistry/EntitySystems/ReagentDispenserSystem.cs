@@ -138,8 +138,11 @@ namespace Content.Server.Chemistry.EntitySystems
                 _openable.SetOpen(storedContainer.Value, true);
                 _solutionTransferSystem.Transfer(reagentDispenser,
                         storedContainer.Value, src.Value,
+                _openable.SetOpen(storedContainer, true);
+                _solutionTransferSystem.Transfer(new SolutionTransferData(reagentDispenser,
+                        storedContainer, src.Value,
                         outputContainer.Value, dst.Value,
-                        (int)reagentDispenser.Comp.DispenseAmount);
+                        (int)reagentDispenser.Comp.DispenseAmount));
             }
 
             UpdateUiState(reagentDispenser);
