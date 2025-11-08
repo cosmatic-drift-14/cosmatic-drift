@@ -85,6 +85,9 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: BalloonPopper
+  - type: Tag #Cosmatic Drift Syringe Gun Change
+    tags:
+    - SyringeGunAmmo
 
 - type: entity
   parent: Dart
@@ -94,7 +97,7 @@
     sprite: Objects/Fun/Darts/dart_blue.rsi
   - type: Item
     sprite: Objects/Fun/Darts/dart_blue.rsi
-     
+
 - type: entity
   parent: Dart
   id: DartPurple
@@ -103,7 +106,7 @@
     sprite: Objects/Fun/Darts/dart_purple.rsi
   - type: Item
     sprite: Objects/Fun/Darts/dart_purple.rsi
-     
+
 - type: entity
   parent: Dart
   id: DartYellow
