@@ -362,33 +362,33 @@
         - !type:ReagentCondition
           reagent: Tranquinase
           min: 16.5
-      # - !type:GenericStatusEffect
-      #   conditions:
-      #   - !type:ReagentCondition
-      #     reagent: Tranquinase
-      #     min: 20.0
-      #   key: ForcedSleep
-      #   component: ForcedSleeping
-      #   type: Add
-      #   probability: 0.1
-      # - !type:HealthChange # poisons you if you take way too much
-      #   conditions:
-      #   - !type:ReagentCondition
-      #     reagent: Tranquinase
-      #     min: 30
-      #   damage:
-      #     types:
-      #       Poison: 1
-      # - !type:PopupMessage
-      #   type: Local
-      #   visualType: Small
-      #   messages:
-      #     [ "reagent-effect-anxietymed-fade" ] # A decent chance to notify the player when their meds run out, but could happen silently.
-      #   probability: 0.32
-      #   conditions:
-      #     - !type:ReagentCondition
-      #       reagent: Tranquinase
-      #       max: 0.1
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Tranquinase
+          min: 20.0
+        key: ForcedSleep
+        component: ForcedSleeping
+        type: Add
+        probability: 0.1
+      - !type:HealthChange # poisons you if you take way too much
+        conditions:
+        - !type:ReagentCondition
+          reagent: Tranquinase
+          min: 30
+        damage:
+          types:
+            Poison: 1
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages:
+          [ "reagent-effect-anxietymed-fade" ] # A decent chance to notify the player when their meds run out, but could happen silently.
+        probability: 0.32
+        conditions:
+          - !type:ReagentCondition
+            reagent: Tranquinase
+            max: 0.1
 
 - type: reagent
   id: Equilibrazine
