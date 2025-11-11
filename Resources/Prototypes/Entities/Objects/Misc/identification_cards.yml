@@ -247,21 +247,21 @@
   - type: PresetIdCard
     job: AtmosphericTechnician
 
-- type: entity
-  parent: EngineeringIDCard
-  id: SeniorEngineerIDCard
-  name: senior engineer ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: default
-    - state: stripe_top
-      color: *color-engineering-top
-    - state: stripe_bottom
-      color: *color-engineering-bottom
-    - sprite: *icon-rsi
-      offset: *icon-offset
-      state: SeniorEngineer
+# - type: entity # CD - Disabled for unique cards found in our namespace
+#   parent: EngineeringIDCard
+#   id: SeniorEngineerIDCard
+#   name: senior engineer ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: default
+#     - state: stripe_top
+#       color: *color-engineering-top
+#     - state: stripe_bottom
+#       color: *color-engineering-bottom
+#     - sprite: *icon-rsi
+#       offset: *icon-offset
+#       state: SeniorEngineer
 
 #Medical
 
@@ -355,21 +355,21 @@
   - type: PresetIdCard
     job: Psychologist
 
-- type: entity
-  parent: MedicalIDCard
-  id: SeniorPhysicianIDCard
-  name: senior physician ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: default
-    - state: stripe_top
-      color: *color-medical-top
-    - state: stripe_bottom
-      color: *color-medical-bottom
-    - sprite: *icon-rsi
-      offset: *icon-offset
-      state: SeniorPhysician
+# - type: entity # CD - Disabled for unique cards found in our namespace
+#   parent: MedicalIDCard
+#   id: SeniorPhysicianIDCard
+#   name: senior physician ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: default
+#     - state: stripe_top
+#       color: *color-medical-top
+#     - state: stripe_bottom
+#       color: *color-medical-bottom
+#     - sprite: *icon-rsi
+#       offset: *icon-offset
+#       state: SeniorPhysician
 
 #Science
 
@@ -409,21 +409,21 @@
   - type: PresetIdCard
     job: Scientist
 
-- type: entity
-  parent: ResearchIDCard
-  id: SeniorResearcherIDCard
-  name: senior researcher ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: default
-    - state: stripe_top
-      color: *color-science-top
-    - state: stripe_bottom
-      color: *color-science-bottom
-    - sprite: *icon-rsi
-      offset: *icon-offset
-      state: SeniorResearcher
+# - type: entity # CD - Disabled for unique cards found in our namespace
+#   parent: ResearchIDCard
+#   id: SeniorResearcherIDCard
+#   name: senior researcher ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: default
+#     - state: stripe_top
+#       color: *color-science-top
+#     - state: stripe_bottom
+#       color: *color-science-bottom
+#     - sprite: *icon-rsi
+#       offset: *icon-offset
+#       state: SeniorResearcher
 
 #Security
 
@@ -515,21 +515,21 @@
       offset: *icon-offset
       state: Brigmedic
 
-- type: entity
-  parent: SecurityIDCard
-  id: SeniorOfficerIDCard
-  name: senior officer ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: default
-    - state: stripe_top
-      color: *color-security-top
-    - state: stripe_bottom
-      color: *color-security-bottom
-    - sprite: *icon-rsi
-      offset: *icon-offset
-      state: SeniorOfficer
+# - type: entity # CD - Disabled for unique cards found in our namespace
+#   parent: SecurityIDCard
+#   id: SeniorOfficerIDCard
+#   name: senior officer ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: default
+#     - state: stripe_top
+#       color: *color-security-top
+#     - state: stripe_bottom
+#       color: *color-security-bottom
+#     - sprite: *icon-rsi
+#       offset: *icon-offset
+#       state: SeniorOfficer
 
 #Service
 

@@ -71,7 +71,7 @@
   - type: Sprite
     sprite: Mobs/Species/Vox/organs.rsi
   - type: Item
-    size: Small
+    size: 5
     heldPrefix: eyeballs
 
 - type: entity
@@ -83,7 +83,7 @@
   - type: Sprite
     sprite: Mobs/Species/Vox/organs.rsi
   - type: Item
-    size: Small
+    size: 5
 
 - type: entity
   id: OrganVoxTongueB
@@ -94,4 +94,4 @@
   - type: Sprite
     sprite: Mobs/Species/Vox/organs.rsi
   - type: Item
-    size: Small
+    size: 5

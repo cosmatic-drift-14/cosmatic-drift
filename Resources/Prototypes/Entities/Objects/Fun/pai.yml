@@ -201,10 +201,6 @@
   id: ActionPAIOpenShop
   name: Software Catalog
   description: Install new software to assist your owner.
-  components:
-  - type: InstantAction
-    icon: Interface/Actions/shop.png
-    event: !type:PAIShopActionEvent
 
 - type: entity
   id: ActionPAIMassScanner

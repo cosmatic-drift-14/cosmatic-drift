@@ -3,7 +3,7 @@
   name: Mind Swap
   description: Exchange bodies with another person!
   components:
-  - type: Action
+  - type: InstantAction
     useDelay: 180
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/staff_animation.ogg

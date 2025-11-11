@@ -163,7 +163,12 @@ figurines-wizard-5 = IT'S WIZARD TIME!
 
 figurines-space-dragon-1 = Fish will consume the station.
 
-# figurines-queen
+figurines-queen-1 = Our domain must grow.
+figurines-queen-2 = The hive hungers.
+figurines-queen-3 = We consume all.
+figurines-queen-4 = We are the apex.
+figurines-queen-5 = You're just biomass.
+figurines-queen-6 = We must evolve.
 
 figurines-rat-king-1 = Gimme some food, capiche?
 figurines-rat-king-2 = Fugeddaboutit.

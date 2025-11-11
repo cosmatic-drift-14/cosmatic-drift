@@ -38,7 +38,7 @@
     sprite: Objects/Fun/crayons.rsi
   - type: Item
     sprite: Objects/Fun/crayons.rsi
-    size: Tiny
+    size: 1
   - type: Tag
     tags:
     - Recyclable

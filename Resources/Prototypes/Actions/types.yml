@@ -461,7 +461,6 @@
   name: Store
   description: Opens the store
   components:
-  - type: Action
-    icon: Interface/Actions/shop.png
   - type: InstantAction
+    icon: Interface/Actions/shop.png
     event: !type:IntrinsicStoreActionEvent
