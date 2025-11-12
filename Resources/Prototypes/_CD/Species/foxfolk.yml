@@ -46,25 +46,25 @@
       points: 1
       required: true
       defaultMarkings: [ FoxfolkTailAlt ]
-    Head:
-      points: 1
-      required: false
-    Legs:
-      points: 3 # CD
-      required: false
-    Arms:
-      points: 3 # CD
-      required: false
-    Snout:
-      points: 1
-      required: false
+    # Head:
+      # points: 1
+      # required: false
+    # Legs:
+      # points: 3
+      # required: false
+    # Arms:
+      # points: 3
+      # required: false
+    # Snout:
+      # points: 1
+      # required: false
     HeadTop:
       points: 1
       required: true
       defaultMarkings: [ FoxfolkEar ]
-    Overlay:
-      points: 6
-      required: false
+    # Overlay:
+      # points: 6
+      # required: false
 
 - type: humanoidBaseSprite
   id: MobFoxfolkHead
