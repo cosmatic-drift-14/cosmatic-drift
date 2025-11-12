@@ -576,6 +576,7 @@
     slots:
     - Belt
   - type: Gun
+    fireRate: 0.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser.ogg
   - type: ProjectileBatteryAmmoProvider
@@ -841,6 +842,7 @@
   - type: Tag
     tags:
     - HighRiskItem
+    - Sidearm
   - type: StealTarget
     stealGroup: WeaponEnergyMagnum
   - type: Gun
