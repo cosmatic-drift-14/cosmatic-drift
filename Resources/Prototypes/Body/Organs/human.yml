@@ -6,7 +6,7 @@
   - type: Sprite
     sprite: Mobs/Species/Human/organs.rsi
   - type: Organ
-  - type: Food
+  - type: Edible
   - type: Extractable
     grindableSolutionName: organ
   - type: SolutionContainerManager
@@ -73,7 +73,7 @@
       Taco: Brain
   - type: Item
     heldPrefix: brain
-  
+
 - type: entity
   id: OrganHumanEyes
   parent: BaseHumanOrgan
