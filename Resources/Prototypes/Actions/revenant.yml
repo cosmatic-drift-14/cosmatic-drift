@@ -1,12 +1,8 @@
 - type: entity
-  parent: BaseAction
+  parent: ActionIntrinsicStore
   id: ActionRevenantShop
   name: Shop
   description: Opens the ability shop.
-  components:
-  - type: InstantAction
-    icon: Interface/Actions/shop.png
-    event: !type:RevenantShopActionEvent
 
 - type: entity
   id: ActionRevenantDefile

@@ -19,14 +19,16 @@
           - "reagent-effect-antidepressant-mild3"
           - "reagent-effect-antidepressant-mild4"
         probability: 0.035
-      - !type:ChemVomit
+      - !type:Vomit
         probability: 0.1
         conditions:
-          - !type:ReagentThreshold # fairly safe overdose, safe to take with alcohol
+          - !type:ReagentCondition # fairly safe overdose, safe to take with alcohol
+            reagent: Serenitol
             min: 22.5
       - !type:HealthChange
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Serenitol
             min: 22.5
         damage:
           types:
@@ -38,7 +40,8 @@
           - "reagent-effect-antidepressant-fade" # A decent chance to notify the player when their meds run out, but could happen silently.
         probability: 0.4
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Serenitol
             max: 0.1
 
 - type: reagent
@@ -63,11 +66,13 @@
           - "reagent-effect-antidepressant-normal4"
         probability: 0.045
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Neurozenium
             max: 15.1
       - !type:HealthChange
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Neurozenium
             min: 15.1
         damage:
           types:
@@ -80,18 +85,19 @@
           - "reagent-effect-antidepressant-normaloverdose2"
         probability: 0.15
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Neurozenium
           min: 15.1
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
         reagent: Neurozenium
         amount: 0.15
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Serenitol # Purges Serenitol if dosage is too high.
           min: 10
         reagent: Serenitol
@@ -103,7 +109,8 @@
           - "reagent-effect-antidepressant-fade" # A decent chance to notify the player when their meds run out, but could happen silently.
         probability: 0.4
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Neurozenium
             max: 0.1
 
 - type: reagent
@@ -128,11 +135,13 @@
           - "reagent-effect-antidepressant-strong4"
         probability: 0.055
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Neurozenium
             max: 5.1
       - !type:HealthChange
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Neurozenium
             min: 5.1
         damage:
           types:
@@ -152,58 +161,60 @@
           - "reagent-effect-antidepressant-strongoverdose9"
         probability: 0.15
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Neurozenium
           min: 5.1
       - !type:Emote
         emote: Scream # makes you screna sometimes
         showInChat: true
         probability: 0.05
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Neurozenium
           min: 5.1
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Neurozenium
           min: 5.1
         key: SeeingRainbows # hallucinations set in after 40 seconds, meaning ~0.40u overdose untreated.
         component: SeeingRainbows
         type: Add
         time: 1.1
-        refresh: false
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
         reagent: Blissifylovene
         amount: 0.15
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Serenitol # Purges Serenitol if dosage is too high.
           min: 10
         reagent: Serenitol
         amount: -7.5
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Neurozenium # Purges Neurozenium if dosage is too high
           min: 10
         reagent: Neurozenium
         amount: -7.5
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Addictine
           max: 10 # maximum addiction severity for this reagent
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Blissifylovene
           min: 1.5
         reagent: Addictine
         amount: 0.1
       - !type:HealthChange
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
             reagent: Neurozenium # Conflicts with any remaining Neurozenium
             min: 0.1
         damage:
@@ -211,32 +222,29 @@
             Poison: 0.5
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Tranquinase # conflicts with many other meds
           min: 2.0
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
         probability: 0.4
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Soretizone # conflicts with many other meds
           min: 3.0
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
         probability: 0.3
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Agonolexyne # conflicts with many other meds
           min: 0.25
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
         probability: 0.3
       - !type:PopupMessage
@@ -246,7 +254,8 @@
           - "reagent-effect-antidepressant-fade" # A decent chance to notify the player when their meds run out, but could happen silently.
         probability: 0.2
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Neurozenium
             max: 0.1
 
 
@@ -274,7 +283,8 @@
         probability: 0.035
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Calmafluxine
           min: 30
         reagent: Calmafluxine
         amount: -1.2
@@ -285,7 +295,8 @@
           - "reagent-effect-anxietymed-fade" # A decent chance to notify the player when their meds run out, but could happen silently.
         probability: 0.35
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Calmafluxine
             max: 0.1
 
 - type: reagent
@@ -303,62 +314,67 @@
       - !type:PopupMessage
         type: Local
         visualType: Large
-        messages:
-          - "reagent-effect-anxietymed-normal1"
-          - "reagent-effect-anxietymed-normal2"
-          - "reagent-effect-anxietymed-normal3"
-          - "reagent-effect-anxietymed-normal4"
-          - "reagent-effect-anxietymed-normal5"
+        messages: [
+          "reagent-effect-anxietymed-normal1",
+          "reagent-effect-anxietymed-normal2",
+          "reagent-effect-anxietymed-normal3",
+          "reagent-effect-anxietymed-normal4",
+          "reagent-effect-anxietymed-normal5"]
         probability: 0.04
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Tranquinase
           max: 16.5
       - !type:PopupMessage
         type: Local
         visualType: LargeCaution
-        messages:
-          - "reagent-effect-anxietymed-normaloverdose1" # overdose makes you tired and forgetful
-          - "reagent-effect-anxietymed-normaloverdose2"
-          - "reagent-effect-anxietymed-normaloverdose3"
-          - "reagent-effect-anxietymed-normaloverdose4"
-          - "reagent-effect-anxietymed-normaloverdose5"
-          - "reagent-effect-anxietymed-normaloverdose6"
+        messages: [
+          "reagent-effect-anxietymed-normaloverdose1", # overdose makes you tired and forgetful
+          "reagent-effect-anxietymed-normaloverdose2",
+          "reagent-effect-anxietymed-normaloverdose3",
+          "reagent-effect-anxietymed-normaloverdose4",
+          "reagent-effect-anxietymed-normaloverdose5",
+          "reagent-effect-anxietymed-normaloverdose6" ]
         probability: 0.06
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Tranquinase
           min: 16.5
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Tranquinase
           min: 16.5
         emote: Yawn
         showInChat: true
         probability: 0.02
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
         reagent: Tranquinase
         amount: 0.1
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         walkSpeedModifier: 0.8
         sprintSpeedModifier: 0.8
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Tranquinase
           min: 16.5
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Tranquinase
           min: 20.0
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
         probability: 0.1
       - !type:HealthChange # poisons you if you take way too much
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Tranquinase
           min: 30
         damage:
           types:
@@ -367,10 +383,11 @@
         type: Local
         visualType: Small
         messages:
-          - "reagent-effect-anxietymed-fade" # A decent chance to notify the player when their meds run out, but could happen silently.
+          [ "reagent-effect-anxietymed-fade" ] # A decent chance to notify the player when their meds run out, but could happen silently.
         probability: 0.32
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Tranquinase
             max: 0.1
 
 - type: reagent
@@ -388,46 +405,51 @@
       - !type:PopupMessage
         type: Local
         visualType: Large
-        messages:
-          - "reagent-effect-anxietymed-strong1"
-          - "reagent-effect-anxietymed-strong2"
-          - "reagent-effect-anxietymed-strong3"
-          - "reagent-effect-anxietymed-strong4"
-          - "reagent-effect-anxietymed-strong5"
-          - "reagent-effect-anxietymed-strong6"
-          - "reagent-effect-anxietymed-strong7"
+        messages: [
+          "reagent-effect-anxietymed-strong1",
+          "reagent-effect-anxietymed-strong2",
+          "reagent-effect-anxietymed-strong3",
+          "reagent-effect-anxietymed-strong4",
+          "reagent-effect-anxietymed-strong5",
+          "reagent-effect-anxietymed-strong6",
+          "reagent-effect-anxietymed-strong7" ]
         probability: 0.04
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Equilibrazine
           max: 6.7
       - !type:HealthChange # poisons you on OD
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Equilibrazine
           min: 6.7
         damage:
           types:
             Poison: 0.07
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Equilibrazine
           min: 6.7
         reagent: Histamine # causes allergy-like reaction on OD
         amount: 0.25
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         walkSpeedModifier: 0.55
         sprintSpeedModifier: 0.55
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Serenitol # wildly incompatable with antidepressants
           min: 5
-      - !type:Paralyze
+      - !type:ModifyParalysis
+        time: 2
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Neurozenium # wildly incompatable with antidepressants
           min: 5
-      - !type:Paralyze
+      - !type:ModifyParalysis
+        time: 2
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Blissifylovene # wildly incompatable with antidepressants
           min: 3
       - !type:AdjustReagent
@@ -443,10 +465,11 @@
         type: Local
         visualType: Small
         messages:
-          - "reagent-effect-anxietymed-fade" # A decent chance to notify the player when their meds run out, but could happen silently.
+          [ "reagent-effect-anxietymed-fade" ] # A decent chance to notify the player when their meds run out, but could happen silently.
         probability: 0.2
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Equilibrazine
             max: 0.1
 
 - type: reagent
@@ -464,45 +487,45 @@
       - !type:PopupMessage
         type: Local
         visualType: LargeCaution
-        messages:
-          - "reagent-effect-medaddiction-1"
-          - "reagent-effect-medaddiction-2"
-          - "reagent-effect-medaddiction-3"
-          - "reagent-effect-medaddiction-4"
-          - "reagent-effect-medaddiction-5"
-          - "reagent-effect-medaddiction-6"
-          - "reagent-effect-medaddiction-7"
-          - "reagent-effect-medaddiction-8"
+        messages: [
+          "reagent-effect-medaddiction-1",
+          "reagent-effect-medaddiction-2",
+          "reagent-effect-medaddiction-3",
+          "reagent-effect-medaddiction-4",
+          "reagent-effect-medaddiction-5",
+          "reagent-effect-medaddiction-6",
+          "reagent-effect-medaddiction-7",
+          "reagent-effect-medaddiction-8" ]
         probability: 0.08
         conditions:
-        - !type:ReagentThreshold # the following ten chemicals are addictive, and thus will counteract cravings.
+        - !type:ReagentCondition # the following ten chemicals are addictive, and thus will counteract cravings.
           reagent: Blissifylovene
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Soretizone
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Agonolexyne
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Cortexene
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Dynamoxine
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: MindleafTea
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Breakout
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Rust
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Bake
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Grit
           max: 0.01
       - !type:AdjustReagent
@@ -511,40 +534,41 @@
       - !type:AdjustReagent
         reagent: Ipecac # purges bloodstream cleaners
         amount: -10.0
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         walkSpeedModifier: 0.95
         sprintSpeedModifier: 0.7
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Addictine
           max: 1.0 # it gets worse before the addiction ends.
-        - !type:ReagentThreshold # the following ten chemicals are addictive, and thus will counteract cravings.
+        - !type:ReagentCondition # the following ten chemicals are addictive, and thus will counteract cravings.
           reagent: Blissifylovene
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Soretizone
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Agonolexyne
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Cortexene
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Dynamoxine
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: MindleafTea
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Breakout
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Rust
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Bake
           max: 0.01
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Grit
           max: 0.01
 
@@ -569,26 +593,28 @@
           - "reagent-effect-painkiller-mild3"
           - "reagent-effect-painkiller-mild4"
         probability: 0.08
-      - !type:ChemVomit
+      - !type:Vomit
         probability: 0.4
         conditions:
-          - !type:ReagentThreshold # makes you vomit if you OD
+          - !type:ReagentCondition # makes you vomit if you OD
+            reagent: Stubantazine
             min: 14
       - !type:SatiateHunger # causes digestion inefficiency during overdose
         factor: -1.2
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Stubantazine
             min: 14
-      - !type:ChemVomit
+      - !type:Vomit
         probability: 0.8
         conditions:
-          - !type:ReagentThreshold # alcohol causes vomiting
+          - !type:ReagentCondition # alcohol causes vomiting
             reagent: Ethanol
             min: 2
       - !type:SatiateHunger # causes digestion inefficiency if you drink alcohol
         factor: -2.0
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
             reagent: Ethanol
             min: 2
       - !type:PopupMessage
@@ -598,7 +624,8 @@
           - "reagent-effect-painkiller-fade" # A decent chance to notify the player when their meds run out
         probability: 0.35
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Stubantazine
             max: 0.2
 
 - type: reagent
@@ -625,35 +652,35 @@
       - !type:GenericStatusEffect
         probability: 0.1
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Soretizone
           min: 14.5 # overdose knocks you out
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
       - !type:GenericStatusEffect
         probability: 0.08
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Stubantazine
           min: 5 # taking with other painkillers will knock you out
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Ethanol # lots of alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 20
         reagent: Soretizone
         amount: 0.03
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Addictine
           max: 5 # maximum addiction severity for this reagent
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Soretizone
           min: 9
         reagent: Addictine # add
         amount: 0.2
@@ -664,7 +691,8 @@
           - "reagent-effect-painkiller-fade" # A decent chance to notify the player when their meds run out
         probability: 0.4
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Soretizone
             max: 0.1
 
 - type: reagent
@@ -693,46 +721,47 @@
       - !type:GenericStatusEffect
         probability: 0.1
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Stubantazine
           min: 4 # taking with other painkillers will knock you out
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
       - !type:GenericStatusEffect
         probability: 0.15
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Soretizone
           min: 2 # taking with other painkillers will knock you out
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
         reagent: Agonolexyne
         amount: 0.04
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Addictine
           max: 25 # maximum addiction severity for this reagent
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Agonolexyne
           min: 0.25
         reagent: Addictine
         amount: 0.25
       - !type:Drunk # OD causes drunkeness
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Agonolexyne
             min: 5
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Agonolexyne
           min: 5.5
         damage:
           types:
@@ -744,7 +773,8 @@
           - "reagent-effect-painkiller-fade" # A decent chance to notify the player when their meds run out
         probability: 0.5
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Agonolexyne
             max: 0.1
 
 - type: reagent
@@ -770,7 +800,8 @@
           - "reagent-effect-antipsych-normal5"
         probability: 0.085
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Saprodipine
           max: 10.1
       - !type:PopupMessage
         type: Local
@@ -784,27 +815,30 @@
           - "reagent-effect-anxietymed-normaloverdose6"
         probability: 0.06
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Saprodipine
           min: 10.1
       - !type:ResetParacusia
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Saprodipine
           min: 10
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         probability: 0.3
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Saprodipine
           min: 10.1 # Slight overdose slows you down a bit
         walkSpeedModifier: 0.85
         sprintSpeedModifier: 0.75
       - !type:GenericStatusEffect
         probability: 0.1
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Saprodipine
           min: 20 # taking far too much has a chance to knock you out
         key: ForcedSleep
         component: ForcedSleeping
-        refresh: false
         type: Add
       - !type:PopupMessage
         type: Local
@@ -813,7 +847,8 @@
           - "reagent-effect-antipsych-fade" # A decent chance to notify the player when their meds run out
         probability: 0.5
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Saprodipine
             max: 0.1
 
 - type: reagent
@@ -839,14 +874,16 @@
         probability: 0.085
       - !type:HealthChange # poisons you on OD
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Cortexene
           min: 6
         damage:
           types:
             Poison: 1.0
-      - !type:Paralyze
+      - !type:ModifyParalysis
+        time: 2
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Saprodipine # wildly incompatible with antipsychotic medications.
           min: 5
       - !type:AdjustReagent
@@ -854,21 +891,23 @@
         amount: -0.2
       - !type:Drunk # OD causes drunkeness
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Cortexene
             min: 5
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Ethanol # Alcohol makes it really easy to overdose by increasing your body's absorption of the medicine.
           min: 1
         reagent: Cortexene
         amount: 0.02
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Addictine
           max: 10 # maximum addiction severity for this reagent. A moderate amount of addictiveness.
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Cortexene
           min: 4
         reagent: Addictine
         amount: 0.25
@@ -879,5 +918,6 @@
           - "reagent-effect-anti-amnesia-fade" # A decent chance to notify the player when their meds run out
         probability: 0.5
         conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: Cortexene
             max: 0.1
