@@ -43,3 +43,36 @@
     contents:
     - id: PillHappiness
       amount: 7
+
+- type: entity
+  name: pill
+  suffix: Stubantazine 6u
+  parent: Pill
+  id: PillStubantazine
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill9
+  - type: Label
+    currentLabel: Stubantazine 6u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Stubantazine
+          Quantity: 6
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterStubantazine
+  suffix: Stubantazine 6u, 4
+  components:
+  - type: Label
+    currentLabel: Stubantazine 6u - 5 Minutes
+  - type: StorageFill
+    contents:
+    - id: PillStubantazine
+      amount: 4

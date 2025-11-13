@@ -1,0 +1,127 @@
+- type: entity
+  name: civil defence medcase
+  description: A TTE medcase. This one is for untrained crew to stabilise someone.
+  parent: BaseStorageItem
+  id: Medcase
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    state: civdef
+  - type: Storage
+    capacity: 7
+    whitelist:
+      tags:
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - PillCanister
+      components:
+        - Hypospray
+        - Pill
+        - Healing
+  - type: Item
+    size: 5
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    heldPrefix: civdef
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 50
+  - type: Tag
+    tags:
+    - Medkit
+    - Medcase
+
+- type: entity
+  name: burn medcase
+  description: A TTE medcase. This one is for stabilising burns.
+  parent: Medcase
+  id: MedcaseBurn
+  components:
+  - type: Sprite
+    state: burn
+  - type: Item
+    heldPrefix: burnrad
+
+- type: entity
+  name: radiation medcase
+  description: A TTE medcase. This one is for treating radiation sickness.
+  parent: Medcase
+  id: MedcaseRadiation
+  components:
+  - type: Sprite
+    state: rad
+  - type: Item
+    heldPrefix: burnrad
+
+- type: entity
+  name: poison medcase
+  description: A TTE medcase. This one is for neutralize toxins.
+  parent: Medcase
+  id: MedcasePoison
+  components:
+  - type: Sprite
+    state: poison
+  - type: Item
+    heldPrefix: poison
+
+- type: entity
+  name: asphyxiation medcase
+  description: A TTE medcase. This one is for treating asphyxiation.
+  parent: Medcase
+  id: MedcaseAsphyxiation
+  components:
+  - type: Sprite
+    state: asphyx
+  - type: Item
+    heldPrefix: asphyx
+
+- type: entity
+  name: brute medcase
+  description: A TTE medcase. This one is for stabilising physical trauma.
+  parent: Medcase
+  id: MedcaseBrute
+  components:
+  - type: Sprite
+    state: brute
+  - type: Item
+    heldPrefix: brutebleed
+
+- type: entity
+  name: bleed medcase
+  description: A TTE medcase. This one is for stabilising bleeding wounds.
+  parent: Medcase
+  id: MedcaseBleed
+  components:
+  - type: Sprite
+    state: bleed
+  - type: Item
+    heldPrefix: brutebleed
+  - type: Storage
+    capacity: 13
+
+- type: entity
+  name: combat medcase
+  description: A TTE medcase. This one is for stabilising someone under fire.
+  parent: Medcase
+  id: MedcaseCombat
+  components:
+  - type: Sprite
+    state: combat
+  - type: Item
+    heldPrefix: combat
+  - type: Storage
+    capacity: 17
+
+- type: entity
+  name: rapid application medcase
+  description: A TTE medcase. This one is designed for Emergency Trauma Units, it seems bigger then it needs to be.
+  parent: Medcase
+  id: MedcaseRapid
+  components:
+  - type: Sprite
+    state: rapidapp
+  - type: Item
+    heldPrefix: rapidapp
+  - type: Storage
+    capacity: 19
