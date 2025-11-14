@@ -61,12 +61,20 @@ public sealed partial class BorgSystem
 
         if (_actions.AddAction(chassis, ref component.ModuleSwapActionEntity, out var action, component.ModuleSwapActionId, uid))
         {
-            if(TryComp<BorgModuleIconComponent>(uid, out var moduleIconComp))
-            {
-                action.Icon = moduleIconComp.Icon;
-            };
-            action.EntityIcon = uid;
-            Dirty(component.ModuleSwapActionEntity.Value, action);
+            var actEnt = (component.ModuleSwapActionEntity.Value, action);
+            _actions.SetEntityIcon(actEnt, uid);
+            if (TryComp<BorgModuleIconComponent>(uid, out var moduleIconComp))
+                _actions.SetIcon(actEnt, moduleIconComp.Icon);
+
+            /// Set a custom name and description on the action. The borg module action prototypes are shared across
+            /// all modules. Extract localized names, then populate variables with the info from the module itself.
+            var moduleName = Name(uid);
+            var actionMetaData = MetaData(component.ModuleSwapActionEntity.Value);
+
+            var instanceName = Loc.GetString("borg-module-action-name", ("moduleName", moduleName));
+            _metaData.SetEntityName(component.ModuleSwapActionEntity.Value, instanceName, actionMetaData);
+            var instanceDesc = Loc.GetString("borg-module-action-description", ("moduleName", moduleName));
+            _metaData.SetEntityDescription(component.ModuleSwapActionEntity.Value, instanceDesc, actionMetaData);
         }
 
         if (!TryComp(chassis, out BorgChassisComponent? chassisComp))
