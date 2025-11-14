@@ -19,6 +19,52 @@
     qualities:
     - Slicing
 
+#Shortswords
+- type: entity
+  name: cutlass
+  parent: [ BaseSword, BaseMajorContraband ]
+  id: Cutlass
+  description: A wickedly curved blade, often seen in the hands of space pirates.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/cutlass.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 16
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Melee/cutlass.rsi
+    shape:
+    - 0,0,0,2
+  - type: DisarmMalus
+
+- type: entity
+  name: machete
+  parent: [ BaseSword, BaseMajorContraband ]
+  id: Machete
+  description: A large, vicious looking blade.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/machete.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 15
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Melee/machete.rsi
+    shape:
+    - 0,0,0,2
+  - type: DisarmMalus
+
+#Longswords
 - type: entity
   name: captain's sabre
   parent: [ BaseSword, BaseCommandContraband ]
@@ -58,9 +104,6 @@
   id: Katana
   description: Ancient craftwork made with not so ancient plasteel.
   components:
-  - type: Tag
-    tags:
-    - Katana
   - type: Sprite
     sprite: Objects/Weapons/Melee/katana.rsi
   - type: MeleeWeapon

@@ -1077,9 +1077,6 @@
       collection: packetOpenSounds
   - type: TrashOnSolutionEmpty
     solution: drink
-  - type: Tag
-    tags:
-    - DrinkSpaceGlue
 
 - type: entity
   parent: DrinkBase
