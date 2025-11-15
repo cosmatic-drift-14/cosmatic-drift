@@ -121,6 +121,10 @@
     <ColorBox><Box>Security glasses, and security HUDs</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
     <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Breaching explosives.</Box></ColorBox>
+    <ColorBox><Box>Explosive cord, detonator caps, and breaching charges.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
     <ColorBox><Box>Ballistic and laser firearms.</Box></ColorBox>
     <ColorBox><Box>Handguns, rifles, laser guns, and shotguns.</Box></ColorBox>
     <ColorBox><Box>[color=#134975]Captain's[/color] laser pistol. [color=#9fed58]Bartender's[/color] shotgun.</Box></ColorBox>
@@ -136,6 +140,18 @@
     <ColorBox><Box>Cooking knives.</Box></ColorBox>
     <ColorBox><Box>Kitchen knives, and butcher cleavers</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[Contextual\]</Box></ColorBox>
+    <ColorBox><Box>Departmental or job clothes.</Box></ColorBox>
+    <ColorBox><Box>Wearable equipment showing department or job insignia.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[Contextual\]</Box></ColorBox>
+    <ColorBox><Box>Departmental or job access.</Box></ColorBox>
+    <ColorBox><Box>ID cards with department or Head of Staff access.</Box></ColorBox>
+    <ColorBox><Box>[color=#9fed58]Lawyer's[/color] brig access. [color=#134975]Command's[/color] brig access.</Box></ColorBox>
+    <ColorBox><Box>\[Contextual\]</Box></ColorBox>
+    <ColorBox><Box>Departmental encryption keys.</Box></ColorBox>
+    <ColorBox><Box>Radio encryption keys belonging to certain departments.</Box></ColorBox>
+    <ColorBox><Box>[color=#9fed58]Lawyer's[/color] security key.</Box></ColorBox>
     <ColorBox><Box>\[None\]</Box></ColorBox>
     <ColorBox><Box>Improvised deadly weaponry.</Box></ColorBox>
     <ColorBox><Box>Baseball bats, shivs, and spears</Box></ColorBox>
@@ -145,11 +161,11 @@
     <ColorBox><Box>Swords, and non-departmental knives.</Box></ColorBox>
     <ColorBox><Box>[color=#134975]Captain's[/color] sabre.</Box></ColorBox>
     <ColorBox><Box>\[None\]</Box></ColorBox>
-    <ColorBox><Box>Non-mining explosives.</Box></ColorBox>
+    <ColorBox><Box>Other explosives.</Box></ColorBox>
     <ColorBox><Box>IEDs, mines, grenades, and C4</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
-    <ColorBox><Box>\[[color=#134975]NT[/color]/[color=#009100]CC[/color]/[color=134975]ERT[/color]\]</Box></ColorBox>
-    <ColorBox><Box>Any NT, CC, or ERT branded gear.</Box></ColorBox>
+    <ColorBox><Box>\[[color=#009100]CC[/color]/[color=134975]ERT[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Any CC or ERT branded gear.</Box></ColorBox>
     <ColorBox><Box>Uniforms, vests, backpacks, and headgear</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
   </Table>
