@@ -68,7 +68,10 @@
 
   ## Restricted Gear
 
-  Restricted Gear are types of equipment that have been restricted to a certain job or department in any active facility. Restricted gear can be used outside of the already allowed exceptions with a permit signed off by any of the relevant Heads of Staff, Authorized Department 2IC, or Captain. If an allowed department is listed as none, that means absolutely no one may use the gear without a permit from the Head of Security.
+  Restricted Equipment are types of gear or machinery that have been restricted to a certain job or department in any active facility. Restricted gear can be used outside of the already allowed exceptions with a permit signed off by any of the relevant Heads of Staff, Authorized Department 2IC, or Captain.
+  
+  - If an allowed department is listed as none, that means absolutely no one may use the gear without a permit from the Head of Security or Captain.
+  - If an allowed department is listed as contextual, that means that the department it belongs to is dependent on the specific gear in question. If it is not clear what department a potentially contextual item belongs to, then it shouldn't be considered restricted.
 
   [textlink="List of Restricted Items" link="CDRestricted"]
 
