@@ -111,6 +111,7 @@ namespace Content.IntegrationTests.Tests
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini", // CD Map
+            "Cocoon" // CD Map
             "CDCentComm" // CD Map
         };
 
