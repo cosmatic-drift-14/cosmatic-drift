@@ -5,6 +5,7 @@
   description: A robust bag for salvage specialists and miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
   components:
   - type: MagnetPickup
+    range: 1.5 #CD change from 1 to 1.5
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag.rsi
     state: icon
