@@ -47,7 +47,6 @@
     - id: BreachingCharge
     - id: NetworkConfigurator
     - id: Binoculars
-    - id: WeaponEnergyShotgun
     #CD Addions
     - id: BookSOPSecurity
       prob: 0.2

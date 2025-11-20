@@ -48,6 +48,9 @@
   name: vehicle skeleton keys
   description: Unlock any vehicle.
   components:
+  - type: Sprite
+    sprite: Objects/Vehicles/atv.rsi
+    state: keys
   - type: Tag
     tags:
     - VehicleKey
