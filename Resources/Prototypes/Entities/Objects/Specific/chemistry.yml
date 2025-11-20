@@ -423,8 +423,8 @@
         maxVol: 5
   - type: Injector
     delay: 2
-    delayPerVolume: 0
-    movementThreshold: 0.5
+    delayPerVolume: 0.5
+    movementThreshold: 0.4
     transferAmounts:
     - 1
     - 2
