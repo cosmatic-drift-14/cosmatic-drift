@@ -100,7 +100,6 @@
   - type: StationEvent
     weight: 1 #CD change from 2 to 1, if it happens too much we can flat out disable it.
     startAnnouncement: null # It should be silent.
-    weight: 5 # lower because weird freelance roles
     maxOccurrences: 2
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml
