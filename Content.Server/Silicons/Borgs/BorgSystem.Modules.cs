@@ -62,9 +62,9 @@ public sealed partial class BorgSystem
         if (_actions.AddAction(chassis, ref component.ModuleSwapActionEntity, out var action, component.ModuleSwapActionId, uid))
         {
             var actEnt = (component.ModuleSwapActionEntity.Value, action);
-            _actions.SetEntityIcon(actEnt, uid);
+            _actions.SetEntityIcon(actEnt.Value, uid);
             if (TryComp<BorgModuleIconComponent>(uid, out var moduleIconComp))
-                _actions.SetIcon(actEnt, moduleIconComp.Icon);
+                action.Icon = moduleIconComp.Icon;
 
             /// Set a custom name and description on the action. The borg module action prototypes are shared across
             /// all modules. Extract localized names, then populate variables with the info from the module itself.

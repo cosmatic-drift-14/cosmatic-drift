@@ -512,7 +512,7 @@
       catchSuccessSound:
         path: /Audio/Effects/Footsteps/bounce.ogg
     - type: Item
-      size: Normal
+      size: 24
       sprite: Objects/Fun/Balls/beach_ball.rsi
     - type: TileFrictionModifier
       modifier: 0.05

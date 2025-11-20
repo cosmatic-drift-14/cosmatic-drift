@@ -11,7 +11,7 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: Normal
+    size: 15
   - type: Utensil
     types:
       - Knife
@@ -35,11 +35,11 @@
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Item
-    storedSprite:
-      state: storage
-      sprite: Objects/Weapons/Melee/cutlass.rsi
-    shape:
-    - 0,0,0,2
+    # storedSprite:
+    #   state: storage
+    #   sprite: Objects/Weapons/Melee/cutlass.rsi
+    # shape:
+    # - 0,0,0,2
   - type: DisarmMalus
 
 - type: entity
@@ -57,11 +57,11 @@
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Item
-    storedSprite:
-      state: storage
-      sprite: Objects/Weapons/Melee/machete.rsi
-    shape:
-    - 0,0,0,2
+    # storedSprite:
+    #   state: storage
+    #   sprite: Objects/Weapons/Melee/machete.rsi
+    # shape:
+    # - 0,0,0,2
   - type: DisarmMalus
 
 #Longswords

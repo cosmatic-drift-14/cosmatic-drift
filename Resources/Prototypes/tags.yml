@@ -42,6 +42,9 @@
 - type: Tag
   id: ArtifactFragment # Storage whitelist: OreBag. CargoBounty: BountyArtifactFragment. ConstructionGraph: Artifact
 
+- type: Tag
+  id: ATVKeys # CD: Used for ATV's Keys
+
 ## B ##
 
 - type: Tag
@@ -982,6 +985,9 @@
   id: NinjaBombingTargetBlocker # Ninjas will not target this warp point
 
 - type: Tag
+  id: NoConsoleSound # Blacklist on BaseComputer, StationMap. Tagged entity will not make sound when opening the UI.
+
+- type: Tag
   id: NoPaint
 
 - type: Tag
@@ -1245,6 +1251,9 @@
   id: SecurityHelmet # ConstructionGraph: HelmetJustice
 
 - type: Tag
+  id: SecwayKeys # CD: Used for secway's keys.
+
+- type: Tag
   id: Sheet # MaterialStorage whitelist for many machines and lathes. Storage whitelist: MaterialBag
 
 - type: Tag
@@ -1267,6 +1276,9 @@
 
 - type: Tag
   id: SiliconEmotes # Whitelisted and blacklisted in various EmotePrototypes to create a silicon emote group.
+
+- type: Tag
+  id: SkeletonMotorcycleKeys # CD: Used for vehicles
 
 - type: Tag
   id: Skewer # Food sequence key
@@ -1364,6 +1376,9 @@
 
 - type: Tag
   id: Syndicate # FTLDestination whitelist in nukieplanet.yml. Tag exists on ComputerShuttleSyndie and infiltrator.yml
+
+- type: Tag
+  id: SyndicateSegwayKeys # CD: Used for vehicle keys
 
 - type: Tag
   id: Syringe # Storage whitelist: ClothingBeltPlant, ChemBag, SmartFridge. CargoBounty: BountySyringe
