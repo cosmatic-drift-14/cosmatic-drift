@@ -62,7 +62,7 @@ public sealed partial class BorgSystem
         if (_actions.AddAction(chassis, ref component.ModuleSwapActionEntity, out var action, component.ModuleSwapActionId, uid))
         {
             var actEnt = (component.ModuleSwapActionEntity.Value, action);
-            _actions.SetEntityIcon(actEnt.Value, uid);
+            _actions.SetEntityIcon(actEnt.Value, uid, action); // CD Shitcode: Pass though action to fix error. Refactor just a week away
             if (TryComp<BorgModuleIconComponent>(uid, out var moduleIconComp))
                 action.Icon = moduleIconComp.Icon;
 
