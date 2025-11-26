@@ -381,7 +381,7 @@
   id: VehicleSecwayStealObjective
   components:
   - type: NotJobRequirement
-    job: SecurityOfficer
+    jobs: [ SecurityOfficer ]
   - type: StealCondition
     stealGroup: VehicleSecway
   - type: Objective

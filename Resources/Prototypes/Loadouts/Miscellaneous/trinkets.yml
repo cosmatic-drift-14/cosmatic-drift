@@ -362,7 +362,7 @@
 
 - type: loadout
   id: TowelColorRed
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect  - remove playtime requirements
   #   requirement:
   #     !type:DepartmentTimeRequirement
@@ -374,7 +374,7 @@
   groupBy: "towels"
 
 - type: loadout
-  # id: TowelColorOrange
+  id: TowelColorOrange
   # effects:
   # - !type:JobRequirementLoadoutEffect  - remove playtime requirements
   #   requirement:
@@ -414,7 +414,7 @@
 
 - type: loadout
   id: TowelColorDarkGreen
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
   #   requirement:
   #     !type:RoleTimeRequirement
@@ -427,7 +427,7 @@
 
 - type: loadout
   id: TowelColorGreen
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
   #   requirement:
   #     !type:DepartmentTimeRequirement
