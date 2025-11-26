@@ -1,0 +1,311 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefBlack
+  name: black neckerchief
+  description: A black colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#353535"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#353535"
+      right:
+      - state: inhand-right
+        color: "#353535"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#353535"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefBlue
+  name: blue neckerchief
+  description: A blue colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#0053EE"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#0053EE"
+      right:
+      - state: inhand-right
+        color: "#0053EE"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#0053EE"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefBrown
+  name: brown neckerchief
+  description: A brown colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#B18644"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#B18644"
+      right:
+      - state: inhand-right
+        color: "#B18644"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#B18644"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefDarkRed
+  name: dark red neckerchief
+  description: A dark red colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#8B2400"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#8B2400"
+      right:
+      - state: inhand-right
+        color: "#8B2400"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#8B2400"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefGreen
+  name: green neckerchief
+  description: A green colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#639137"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#639137"
+      right:
+      - state: inhand-right
+        color: "#639137"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#639137"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefLightBlue
+  name: light blue neckerchief
+  description: A light blue colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#00C7FE"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#00C7FE"
+      right:
+      - state: inhand-right
+        color: "#00C7FE"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#00C7FE"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefOrange
+  name: orange neckerchief
+  description: An orange colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#FF6618"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#FF6618"
+      right:
+      - state: inhand-right
+        color: "#FF6618"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#FF6618"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefPurple
+  name: purple neckerchief
+  description: A purple colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#C469F1"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#C469F1"
+      right:
+      - state: inhand-right
+        color: "#C469F1"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#C469F1"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefRed
+  name: red neckerchief
+  description: A red colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#C12D30"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#C12D30"
+      right:
+      - state: inhand-right
+        color: "#C12D30"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#C12D30"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefSkyBlue
+  name: sky blue neckerchief
+  description: A sky blue colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#6EABD1"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#6EABD1"
+      right:
+      - state: inhand-right
+        color: "#6EABD1"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#6EABD1"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefWhite
+  name: white neckerchief
+  description: A white colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#ffffff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#ffffff"
+      right:
+      - state: inhand-right
+        color: "#ffffff"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#ffffff"
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckerchiefYellow
+  name: yellow neckerchief
+  description: A yellow colored neckerchief to be worn around the neck loosely.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    layers:
+    - state: icon
+      color: "#F39F27"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#F39F27"
+      right:
+      - state: inhand-right
+        color: "#F39F27"
+  - type: Clothing
+    sprite: _CD/Clothing/Neck/neckerchief.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+        color: "#F39F27"
