@@ -1,4 +1,5 @@
-﻿using Content.Shared.Movement.Components;
+﻿using Content.Shared._CD.Silicons.Borgs;
+using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
@@ -38,6 +39,11 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
         Entity<BorgSwitchableTypeComponent> entity,
         BorgTypePrototype prototype)
     {
+        // CD - added checks to stop sprite state errors
+        if (!TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) ||
+            subtype.BorgSubtype != null)
+            return;
+
         if (TryComp(entity, out SpriteComponent? sprite))
         {
             _sprite.LayerSetRsiState((entity, sprite), BorgVisualLayers.Body, prototype.SpriteBodyState);
@@ -56,25 +62,6 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
                 // Queue update so state changes apply.
                 _appearance.QueueUpdate(entity, appearance);
             }
-        }
-
-        if (prototype.SpriteBodyMovementState is { } movementState)
-        {
-            var spriteMovement = EnsureComp<SpriteMovementComponent>(entity);
-            spriteMovement.NoMovementLayers.Clear();
-            spriteMovement.NoMovementLayers["movement"] = new PrototypeLayerData
-            {
-                State = prototype.SpriteBodyState,
-            };
-            spriteMovement.MovementLayers.Clear();
-            spriteMovement.MovementLayers["movement"] = new PrototypeLayerData
-            {
-                State = movementState,
-            };
-        }
-        else
-        {
-            RemComp<SpriteMovementComponent>(entity);
         }
 
         base.UpdateEntityAppearance(entity, prototype);

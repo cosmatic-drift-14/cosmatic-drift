@@ -87,7 +87,7 @@ public sealed class PaintSystem : SharedPaintSystem
 
     private bool CanPaintEntity(Entity<PaintComponent> can, EntityUid target, EntityUid user)
     {
-        if (!_openable.IsOpen(target))
+        if (_openable.IsClosed(target))
         {
             _popup.PopupEntity(Loc.GetString("paint-closed", ("used", can)), user, user, PopupType.Medium);
             return false;

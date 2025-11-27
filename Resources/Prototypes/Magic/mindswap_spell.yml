@@ -3,6 +3,13 @@
   name: Mind Swap
   description: Exchange bodies with another person!
   components:
+  - type: InstantAction
+    useDelay: 180
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/staff_animation.ogg
+    icon:
+      sprite: Mobs/Species/Human/organs.rsi
+      state: brain
   - type: EntityTargetAction
     useDelay: 300
     itemIconStyle: BigAction

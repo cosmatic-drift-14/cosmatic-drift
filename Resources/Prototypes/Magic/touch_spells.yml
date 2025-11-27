@@ -106,4 +106,4 @@
   - type: SpeakOnAction
     sentence: action-speech-spell-slip
   - type: Magic
-    requiresClothes: true
+    requiresClothes: false

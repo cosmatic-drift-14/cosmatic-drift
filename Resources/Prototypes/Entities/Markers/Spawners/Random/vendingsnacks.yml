@@ -19,4 +19,5 @@
       - VendingMachineSnackTeal
       - VendingMachineChang
       - VendingMachineDonut
+      - VendingMachineIceCream #CD
     chance: 1
