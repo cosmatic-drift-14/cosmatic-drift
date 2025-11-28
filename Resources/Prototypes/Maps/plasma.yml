@@ -30,14 +30,14 @@
             Quartermaster: [ 1, 1 ]
             #service - 18-21
             Bartender: [ 2, 2 ]
-            Botanist: [ 2, 3 ]
+            Botanist: [ 3, 3 ] #CD change from 2-3 to 3-3
             Chef: [ 2, 2 ]
             Janitor: [ 3, 3 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            Reporter: [ 2, 3 ]
-            Clown: [ 1, 2 ] # This might be fun
+            Reporter: [ 3, 3 ] #CD change from 2-3 to 3-3
+            Clown: [ 2, 2 ] # This might be fun #CD change from 1-2 to 2-2
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             #engineering
@@ -57,14 +57,14 @@
             Scientist: [ 5, 5 ] #CD change from 4-4 to 5-5.
             # ResearchAssistant: [ 2, 2 ] #CD disabled.
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 4 ]
+            Borg: [ 4, 4 ] #CD change from 2-4 to 4-4
             #security
             SeniorOfficer: [ 1, 1 ] #CD role
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ] #CD change from 6-8 to 4-4.
-            Detective: [ 1, 2 ]
+            Detective: [ 2, 2 ] #CD change from 1-2 to 2-2
             # SecurityCadet: [ 2, 2 ] #CD disabled.
-            Lawyer: [ 1, 2 ]
+            Lawyer: [ 2, 2 ] #CD change from 1-2 to 2-2
             #supply - 7
             SalvageSpecialist: [ 4, 4 ]
             CargoTechnician: [ 3, 3 ] #CD change from 4-6 to 3-3
