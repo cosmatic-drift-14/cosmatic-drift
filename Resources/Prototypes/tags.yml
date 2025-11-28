@@ -979,7 +979,7 @@
 
 - type: Tag
   id: Mouse # CargoBounty: BountyMouse
- 
+
 - type: Tag
   id: Multitool # Storage whitelist: BaseClothingBeltEngineering. ItemMapper: BaseClothingBeltEngineering. ConstructionGraph: LogicGate
 
@@ -995,6 +995,9 @@
 
 - type: Tag
   id: NoPaint
+
+- type: Tag
+  id: NotGhostnadoWarpable # Prevents the entity from being selected via "Warp to most followed" ghost warp
 
 - type: Tag
   id: NozzleBackTank # Used by WeaponSprayNozzle to find a tagged entity for supplying ammo.
