@@ -6,7 +6,7 @@
   name: cotton bun
   description: A cotton hamburger bun. Soft, round and convenient to hold.
   components:
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: Sprite
     sprite: Objects/Consumable/Food/cottonburger.rsi
@@ -42,8 +42,8 @@
   description: It's time for moths to experience the burger tower.
   components:
   - type: Item
-    size: 15 #patch until there is an adequate resizing system in place # CD: Could do this but idc frankly
-  - type: Food
+    size: 15 #patch until there is an adequate resizing system in place
+  - type: Edible
     requiresSpecialDigestion: true
   - type: Sprite
     drawdepth: Mobs
@@ -84,7 +84,7 @@
   name: cotton top bun
   description: The perfect finish for your fibrous burger tower.
   components:
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
   - type: Sprite
     sprite: Objects/Consumable/Food/cottonburger.rsi

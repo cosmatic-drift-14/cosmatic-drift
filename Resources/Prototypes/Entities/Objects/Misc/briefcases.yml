@@ -8,9 +8,6 @@
     size: 80
   - type: Storage
     capacity: 80
-  - type: Tag
-    tags:
-    - Briefcase
   - type: MeleeWeapon
     damage:
       types:

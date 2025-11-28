@@ -450,6 +450,7 @@
     contents:
       - id: SnapPopBox
       - id: CrazyGlue
+      - id: CrazyLube
       - id: PlasticBanana
       - id: FunnyPaint
         orGroup: Paint

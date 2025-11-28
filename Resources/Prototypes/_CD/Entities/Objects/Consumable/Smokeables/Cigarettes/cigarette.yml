@@ -23,7 +23,7 @@
   description: Sugar sticks designed to look like a roll of nicotine and tobacco.
   components:
   - type: Appearance
-  - type: Food
+  - type: Edible
   - type: Tag
     tags:
       - FoodSnack
