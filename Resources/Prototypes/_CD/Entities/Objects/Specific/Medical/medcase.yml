@@ -7,23 +7,18 @@
   - type: Sprite
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     state: civdef
-  - type: Storage
-    capacity: 7
-    whitelist:
-      tags:
-        - Brutepack
-        - Bloodpack
-        - Gauze
-        - Ointment
-        - PillCanister
-      components:
-        - Hypospray
-        - Pill
-        - Healing
   - type: Item
     size: 5
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     heldPrefix: civdef
+  - type: SpawnItemsOnUse
+    items:
+      - id: Gauze5
+      - id: OintmentAdvanced1
+      - id: BrutepackAdvanced1
+      - id: EmergencyMedipen
+    sound:
+      path: /Audio/Items/Medical/ointment_begin.ogg
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
@@ -42,6 +37,11 @@
     state: burn
   - type: Item
     heldPrefix: burnrad
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillKelotane
+      - id: BurnAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: radiation medcase
@@ -53,6 +53,11 @@
     state: rad
   - type: Item
     heldPrefix: burnrad
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillPotassiumIodide
+      - id: RadAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: poison medcase
@@ -64,6 +69,11 @@
     state: poison
   - type: Item
     heldPrefix: poison
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillCharcoal
+      - id: AntiPoisonMedipen
+      - id: EmergencyMedipen
 
 - type: entity
   name: asphyxiation medcase
@@ -75,6 +85,11 @@
     state: asphyx
   - type: Item
     heldPrefix: asphyx
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillDexalin
+      - id: AirlossAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: brute medcase
@@ -86,6 +101,11 @@
     state: brute
   - type: Item
     heldPrefix: brutebleed
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillStubantazine
+      - id: BruteAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: bleed medcase
@@ -97,8 +117,10 @@
     state: bleed
   - type: Item
     heldPrefix: brutebleed
-  - type: Storage
-    capacity: 13
+  - type: SpawnItemsOnUse
+    items:
+      - id: Tourniquet
+      - id: EmergencyMedipen
 
 - type: entity
   name: combat medcase
@@ -110,8 +132,12 @@
     state: combat
   - type: Item
     heldPrefix: combat
-  - type: Storage
-    capacity: 17
+  - type: SpawnItemsOnUse
+    items:
+      - id: Tourniquet
+      - id: PillStubantazine
+      - id: PunctAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: rapid application medcase
@@ -123,5 +149,9 @@
     state: rapidapp
   - type: Item
     heldPrefix: rapidapp
-  - type: Storage
-    capacity: 19
+  - type: SpawnItemsOnUse
+    items:
+      - id: Tourniquet
+      - id: AntiPoisonMedipen
+      - id: AirlossAutoInjector
+      - id: EmergencyMedipen
