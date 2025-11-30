@@ -13,7 +13,7 @@
     heldPrefix: civdef
   - type: SpawnItemsOnUse
     items:
-      - id: Gauze5
+      - id: Gauze1
       - id: OintmentAdvanced1
       - id: BrutepackAdvanced1
       - id: EmergencyMedipen
