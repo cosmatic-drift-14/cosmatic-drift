@@ -36,5 +36,8 @@ public sealed class BorgSwitchableSubstypeSystem : SharedBorgSwitchableSubtypeSy
         {
             _inventorySystem.SetTemplateId((ent.Owner, inventory), borgSubtype.InventoryTemplateId);
         }
+
+        Dirty(ent);
+        base.SelectBorgSubtype(ent);
     }
 }
