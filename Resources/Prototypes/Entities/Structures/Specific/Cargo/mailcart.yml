@@ -12,10 +12,11 @@
         - state: mailcart_base
     - type: InteractionOutline
     - type: Storage
-      grid:
-      - 0,0,15,7
+      capacity: 1000
+      # grid:
+      # - 0,0,15,7
       quickInsert: true
-      maxItemSize: Huge
+      # maxItemSize: Huge
       whitelist:
         components:
         - Delivery

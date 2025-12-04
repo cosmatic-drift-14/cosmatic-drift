@@ -1227,7 +1227,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/party_red.rsi
   - type: Item
-    storedRotation: 0
+    # storedRotation: 0
   - type: Tag
     tags:
     - PetWearable

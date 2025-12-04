@@ -13,4 +13,4 @@
     slots:
     - Neck
   - type: Item
-    storedRotation: -90
+    # storedRotation: -90

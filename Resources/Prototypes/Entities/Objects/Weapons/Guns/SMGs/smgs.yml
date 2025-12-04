@@ -290,7 +290,7 @@
   suffix: Gun
   components:
   - type: Item
-    size: Ginormous
+    size: 150
     inhandVisuals:
       left:
         - sprite: Objects/Storage/Briefcases/briefcase_brown.rsi

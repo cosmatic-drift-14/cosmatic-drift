@@ -136,8 +136,9 @@
   - type: MagnetPickup
   - type: Dumpable
   - type: Storage
-    grid:
-    - 0,0,7,3
+    capacity: 9999
+    # grid:
+    # - 0,0,7,3
     quickInsert: true
     areaInsert: true
     whitelist:
