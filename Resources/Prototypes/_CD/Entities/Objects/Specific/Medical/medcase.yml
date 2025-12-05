@@ -46,13 +46,11 @@
 - type: entity
   name: radiation medcase
   description: A TTE medcase. This one is for treating radiation sickness.
-  parent: Medcase
+  parent: MedcaseBurn
   id: MedcaseRadiation
   components:
   - type: Sprite
     state: rad
-  - type: Item
-    heldPrefix: burnrad
   - type: SpawnItemsOnUse
     items:
       - id: PillPotassiumIodide
@@ -110,13 +108,11 @@
 - type: entity
   name: bleed medcase
   description: A TTE medcase. This one is for stabilising bleeding wounds.
-  parent: Medcase
+  parent: MedcaseBrute
   id: MedcaseBleed
   components:
   - type: Sprite
     state: bleed
-  - type: Item
-    heldPrefix: brutebleed
   - type: SpawnItemsOnUse
     items:
       - id: Tourniquet
