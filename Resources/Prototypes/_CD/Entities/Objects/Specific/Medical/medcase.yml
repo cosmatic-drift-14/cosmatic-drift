@@ -1,7 +1,7 @@
 - type: entity
   name: civil defence medcase
   description: A TTE medcase. This one is for untrained crew to stabilise someone.
-  parent: BaseStorageItem
+  parent: BaseItem
   id: Medcase
   components:
   - type: Sprite
