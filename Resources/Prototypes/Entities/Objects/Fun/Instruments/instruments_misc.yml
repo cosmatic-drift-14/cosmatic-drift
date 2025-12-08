@@ -56,6 +56,7 @@
     program: 124
   - type: Item
     size: 10
+    # storedRotation: -90
   - type: Prayable
     sentMessage: prayer-popup-notify-centcom-sent
     notificationPrefix: prayer-chat-notify-centcom
