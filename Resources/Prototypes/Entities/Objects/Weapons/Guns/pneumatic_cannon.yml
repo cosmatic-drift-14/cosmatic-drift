@@ -132,7 +132,7 @@
   - type: AmmoCounter
   - type: Item
     size: 50
-        
+
 - type: entity
   name: syringe gun
   parent: BaseStorageItem
@@ -144,7 +144,7 @@
     layers:
     - state: syringe_gun
   - type: Storage
-    capacity: 20
+    capacity: 18
     whitelist:
       tags:
       - SyringeGunAmmo
@@ -177,7 +177,7 @@
   - type: PneumaticCannon
     throwItems: false
 
-# doesn't need gas, extra capacity  
+# doesn't need gas, extra capacity
 - type: entity
   parent: WeaponImprovisedPneumaticCannonGun
   id: WeaponImprovisedPneumaticCannonAdmeme
