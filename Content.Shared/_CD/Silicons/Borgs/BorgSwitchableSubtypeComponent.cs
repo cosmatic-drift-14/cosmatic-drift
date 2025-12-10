@@ -7,7 +7,7 @@ namespace Content.Shared._CD.Silicons.Borgs;
 /// Component given to borgs that should be able to select subtypes inside of the borg type selection menu.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-[AutoGenerateComponentState]
+[AutoGenerateComponentState(true)]
 public sealed partial class BorgSwitchableSubtypeComponent : Component
 {
     /// <summary>
