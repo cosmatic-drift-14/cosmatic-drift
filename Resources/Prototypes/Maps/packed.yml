@@ -22,9 +22,9 @@
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 1 ]
-            Botanist: [ 1, 2 ]
+            Botanist: [ 2, 2 ] #CD change from 1-2 to 2-2
             Chef: [ 1, 1 ]
-            Janitor: [ 1, 2 ]
+            Janitor: [ 2, 2 ] #CD change from 1-2 to 2-2
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
