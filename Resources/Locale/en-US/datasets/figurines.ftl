@@ -163,7 +163,12 @@ figurines-wizard-5 = IT'S WIZARD TIME!
 
 figurines-space-dragon-1 = Fish will consume the station.
 
-# figurines-queen
+figurines-queen-1 = Our domain must grow.
+figurines-queen-2 = The hive hungers.
+figurines-queen-3 = We consume all.
+figurines-queen-4 = We are the apex.
+figurines-queen-5 = You're just biomass.
+figurines-queen-6 = We must evolve.
 
 figurines-rat-king-1 = Gimme some food, capiche?
 figurines-rat-king-2 = Fugeddaboutit.
@@ -192,3 +197,27 @@ figurines-hamlet-5 = Pip!
 figurines-hamlet-6 = Fwiep!
 figurines-hamlet-7 = Heep!
 figurines-hamlet-8 = NOT THE MICROWAVE!
+
+figurines-thief-1 = You don't have a warrant!
+figurines-thief-2 = This is just a normal beacon!
+figurines-thief-3 = Theres nothing suspicious about this satchel at all, officer.
+figurines-thief-4 = I have NO idea where your pet is...
+figurines-thief-5 = Huh, I didn't know that wall could open up...
+
+figurines-skeleton-1 = ACK ACK!
+figurines-skeleton-2 = Ugh, that locker was cramped!
+figurines-skeleton-3 = You're going to have a bad time.
+figurines-skeleton-4 = Got any milk?
+figurines-skeleton-5 = I have a bone to pick with you!
+
+figurines-owlman-1 = No need to fear, Owlman is here!
+figurines-owlman-2 = Owl be seeing you later!
+figurines-owlman-3 = HOOT!!
+figurines-owlman-4 = What do you call an owl magician, HOO-DINI!
+figurines-owlman-5 = Don't worry citizen, I'll save the day!
+
+figurines-griffin-1 = MUHAHAHAHA, I am so evil!!
+figurines-griffin-2 = The second I see Owlman, they are so dead!!
+figurines-griffin-3 = How do us Griffins deal with stress? We wing it!
+figurines-griffin-4 = My name isn't Gilda!!
+figurines-griffin-5 = Being a criminal mastermind, isn't easy.

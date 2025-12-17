@@ -111,11 +111,6 @@
         - ReagentId: Plasma
           Quantity: 10
         canReact: false
-  - type: Tag # Redundant
-    tags:
-    - Sheet
-    - NoPaint
-    - ConstructionMaterial
 
 - type: entity
   parent: SheetPlasma

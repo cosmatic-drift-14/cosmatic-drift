@@ -37,15 +37,15 @@
     FacialHair:
       points: 1
       required: false
-    Chest:
-      points: 4 # CD
-      required: false
-    Legs:
-      points: 6 # CD
-      required: false
-    Arms:
-      points: 6 # CD
-      required: false
+    # Chest: #CD Disable several point limits.
+      # points: 4 # CD
+      # required: false
+    # Legs:
+      # points: 6 # CD
+      # required: false
+    # Arms:
+      # points: 6 # CD
+      # required: false
 
 - type: humanoidBaseSprite
   id: MobSlimeMarkingFollowSkin

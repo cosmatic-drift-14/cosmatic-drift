@@ -45,16 +45,16 @@
     FacialHair:
       points: 1
       required: false
-    Head:
-      points: 1
-      required: true
+    # Head: #CD Disable several point limits.
+      # points: 4
+      # required: true
     Snout:
       points: 1
       required: true
       defaultMarkings: [ VoxBeak ]
-    SnoutCover:
-      points: 1
-      required: false
+    # SnoutCover:
+      # points: 1
+      # required: false
     Arms:
       points: 4
       required: true
@@ -69,9 +69,9 @@
     UndergarmentBottom:
       points: 1
       required: false
-    Chest:
-      points: 1
-      required: false
+    # Chest:
+      # points: 1
+      # required: false
     Tail:
       points: 1
       required: true

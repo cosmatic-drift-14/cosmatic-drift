@@ -33,7 +33,13 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idseniorengineer
+    - state: stripe_top
+      color: &color-engineering-top "#ffa62b"
+    - state: stripe_bottom
+      color: &color-engineering-bottom "#bc5b00"
+    - sprite: &icon-rsi Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625
+      state: SeniorEngineer
   - type: PresetIdCard
     job: SeniorEngineer
 
@@ -45,7 +51,13 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idseniorresearcher
+    - state: stripe_top
+      color: &color-science-top "#a53aaa"
+    - state: stripe_bottom
+      color: &color-science-bottom "#652368"
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: SeniorResearcher
   - type: PresetIdCard
     job: SeniorResearcher
 
@@ -57,7 +69,13 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idseniorphysician
+    - state: stripe_top
+      color: &color-medical-top "#68aed6"
+    - state: stripe_bottom
+      color: &color-medical-bottom "#325f7a"
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: SeniorPhysician
   - type: PresetIdCard
     job: SeniorPhysician
 
@@ -69,6 +87,12 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idseniorofficer
+    - state: stripe_top
+      color: &color-security-top "#cb0000"
+    - state: stripe_bottom
+      color: &color-security-bottom "#830000"
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: SeniorOfficer
   - type: PresetIdCard
     job: SeniorOfficer

@@ -2,6 +2,7 @@ using Content.Shared.Actions;
 using Content.Shared.CombatMode;
 using Content.Shared.Damage;
 using Content.Shared.CD.Storage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Standing;

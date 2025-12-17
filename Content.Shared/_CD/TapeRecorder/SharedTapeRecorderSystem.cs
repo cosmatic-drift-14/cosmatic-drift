@@ -8,6 +8,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Labels.Components;
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Toggleable;
 using Content.Shared.UserInterface;
 using Content.Shared.Whitelist;
