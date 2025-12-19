@@ -30,13 +30,6 @@ public sealed class BorgSetNameBuiMessage(string name) : BoundUserInterfaceMessa
     /// The new name.
     /// </summary>
     public string Name = name;
-
-    public bool HasBoris; // CD - ai shells change
-
-    public BorgBuiState(float chargePercent, bool hasBattery, bool hasBoris) // CD boris change
-    {
-        HasBoris = hasBoris;// CD - ai shells change
-    }
 }
 
 /// <summary>

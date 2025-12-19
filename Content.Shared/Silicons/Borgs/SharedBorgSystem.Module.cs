@@ -84,9 +84,9 @@ public abstract partial class SharedBorgSystem
         {
             Dirty(module); // for ModuleSwapActionEntity after the action has been spawned
             var actEnt = (module.Comp.ModuleSwapActionEntity.Value, action);
-            _actions.SetEntityIcon(actEnt, module.Owner);
+            _actions.SetEntityIcon(actEnt.Value, module, action);
             if (TryComp<BorgModuleIconComponent>(module, out var moduleIconComp))
-                _actions.SetIcon(actEnt, moduleIconComp.Icon);
+                action.Icon = moduleIconComp.Icon;
 
             /// Set a custom name and description on the action. The borg module action prototypes are shared across
             /// all modules. Extract localized names, then populate variables with the info from the module itself.
