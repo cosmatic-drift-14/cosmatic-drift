@@ -40,3 +40,9 @@
   - type: InstantAction
     icon: { sprite : Interface/Actions/changeling.rsi, state: "transform" }
     event: !type:ChangelingTransformActionEvent
+
+- type: entity
+  parent: ActionIntrinsicStore
+  id: ActionChangelingStore
+  name: DNA Store
+  description: Opens the ability store.
