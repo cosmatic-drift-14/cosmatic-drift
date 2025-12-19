@@ -102,12 +102,12 @@ namespace Content.IntegrationTests.Tests
             "Saltern",
             "Reach",
             "Oasis",
-            "Amber",
             "Plasma",
             "Elkridge",
             "Relic",
             "dm01-entryway",
             "Exo",
+            "Snowball",
             "Ferrous", // CD Map
             "Aspid", // CD Map
             "Gemini", // CD Map
