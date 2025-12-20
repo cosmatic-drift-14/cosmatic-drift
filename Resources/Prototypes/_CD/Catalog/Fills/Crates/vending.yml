@@ -18,4 +18,4 @@
   - type: EntityTableContainerFill
     containers:
       entity_storage:
-        id: VendingMachineRestockQuickThreads
+        id: VendingMachineRestockIceCream
