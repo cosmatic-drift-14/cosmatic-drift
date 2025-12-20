@@ -392,7 +392,7 @@
   - type: Sprite
     noRot: true
   - type: Item
-    size: Small
+    size: 5
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Effects/balloon_hits.ogg

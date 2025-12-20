@@ -259,9 +259,8 @@
   name: Spray water!
   description: Spray water towards your enemies.
   components:
-  - type: Action
-    icon: { sprite: Clothing/Neck/Misc/pins.rsi, state: flower }
   - type: InstantAction
+    icon: { sprite: Clothing/Neck/Misc/pins.rsi, state: flower }
     event: !type:SprayLiquidEvent
 
 - type: entity

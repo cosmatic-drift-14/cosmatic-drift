@@ -4,9 +4,10 @@
   name: QuickThreads restock crate
   description: Contains a restock box for the QuickThreads.
   components:
-  - type: StorageFill
-    contents:
-      - id: VendingMachineRestockQuickThreads
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: VendingMachineRestockQuickThreads
       
 - type: entity
   parent: CratePlastic
@@ -14,6 +15,7 @@
   name: Ice-Cream restock crate
   description: Contains a restock box for I Scream Ice-Cream.
   components:
-  - type: StorageFill
-    contents:
-      - id: VendingMachineRestockIceCream
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: VendingMachineRestockQuickThreads

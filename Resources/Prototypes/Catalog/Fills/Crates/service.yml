@@ -110,12 +110,10 @@
           children:
           - id: CigCartonPurple 
             weight: 0.33
-          - id: CigCarton3
         - !type:GroupSelector # CD: Added CigCartonCandy
           children:
-          - id: CigCartonPurple 
+          - id: CigCartonCandy 
             weight: 0.33 
-          - id: CigCarton3
         - !type:GroupSelector
           children:
           - id: CigarGoldCase

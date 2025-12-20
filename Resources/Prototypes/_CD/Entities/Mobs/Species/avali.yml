@@ -49,7 +49,10 @@
         sprite: Mobs/Effects/brute_damage.rsi
         color: "#7a8bf2"
   - type: Bloodstream
-    bloodReagent: AmmoniaBlood
+    bloodReagents:
+      reagents:
+      - ReagentId: Ammonia
+        Quantity: 1
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg

@@ -202,16 +202,16 @@
       - state: box_olive
       - state: writing
 
-- type: entity
-  parent: BoxHug
-  id: BoxHugHealing
-  suffix: Medical
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase:
-        id: Brutepack
-        amount: 3
+# - type: entity CD: For some reason this causes constant errors. I don't get it, I'm just commenting it out.
+#   parent: BoxHug
+#   id: BoxHugHealing
+#   suffix: Medical
+#   components:
+#   - type: EntityTableContainerFill
+#     containers:
+#       storagebase:
+#         id: Brutepack
+#         amount: 3
 
 - type: entity
   name: inflatable wall box

@@ -149,7 +149,7 @@
         - id: Flare
         - id: FoodSnackNutribrick
         # - id: DrinkWaterBottleFull
-    - type: Sprite
+  - type: Sprite
     layers:
     - state: internals
     - state: emergencytank
