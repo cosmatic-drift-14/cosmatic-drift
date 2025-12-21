@@ -48,9 +48,10 @@
   - type: Storage
     capacity: 30
     areaInsert: true
-  - type: StorageFill
-    contents:
-      - id: SnapPop
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: SnapPop
         amount: 5
   - type: Dumpable
 

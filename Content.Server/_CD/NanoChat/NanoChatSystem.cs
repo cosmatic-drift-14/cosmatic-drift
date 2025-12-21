@@ -6,6 +6,7 @@ using Content.Server.NameIdentifier;
 using Content.Shared.Database;
 using Content.Shared._CD.CartridgeLoader.Cartridges;
 using Content.Shared._CD.NanoChat;
+using Content.Shared.Kitchen;
 using Content.Shared.NameIdentifier;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;

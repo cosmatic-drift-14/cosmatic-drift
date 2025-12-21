@@ -254,6 +254,17 @@
     event: !type:VoiceMaskSetNameEvent
 
 - type: entity
+  parent: BaseAction
+  id: ActionShootWater
+  name: Spray water!
+  description: Spray water towards your enemies.
+  components:
+  - type: InstantAction
+    icon: { sprite: Clothing/Neck/Misc/pins.rsi, state: flower }
+    event: !type:SprayLiquidEvent
+
+- type: entity
+  parent: BaseAction
   id: ActionVendingThrow
   name: Dispense Item
   description: Randomly dispense an item from your stock.

@@ -2,7 +2,6 @@
   id: DefaultMapPool
   maps:
   - Aspid
-  - Amber
   - Bagel
   - Box
   - Elkridge
@@ -14,4 +13,5 @@
   - Plasma
   - Reach
   - Ferrous
-  # - Exo |CD derotate
+  # - Exo # CD Derotate
+  - Snowball

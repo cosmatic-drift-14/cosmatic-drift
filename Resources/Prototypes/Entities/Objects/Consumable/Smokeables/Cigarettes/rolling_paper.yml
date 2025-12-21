@@ -10,9 +10,10 @@
       - RollingPaper
       - CigFilter
     capacity: 20
-  - type: StorageFill
-    contents:
-      - id: PaperRolling
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PaperRolling
         amount: 4
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/paper.rsi
@@ -32,12 +33,14 @@
       - RollingPaper
       - CigFilter
     capacity: 32
-  - type: StorageFill
-    contents:
-      - id: PaperRolling
-        amount: 2
-      - id: CigaretteFilter
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: PaperRolling
+          amount: 2
+        - id: CigaretteFilter
+          amount: 2
 
 - type: entity
   id: PaperRolling
