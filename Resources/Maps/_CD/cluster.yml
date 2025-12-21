@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/19/2025 20:48:50
-  entityCount: 12869
+  time: 12/21/2025 01:38:00
+  entityCount: 12862
 maps:
 - 12281
 grids:
@@ -8004,7 +8004,7 @@ entities:
   - uid: 12404
     components:
     - type: Transform
-      pos: -9.729915,-30.052383
+      pos: -9.657105,-28.704659
       parent: 1
 - proto: BananaSeeds
   entities:
@@ -23113,23 +23113,21 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -35.5,9.5
       parent: 1
-  - uid: 2016
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -36.5,9.5
-      parent: 1
   - uid: 2017
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -33.5,9.5
       parent: 1
-  - uid: 2018
+  - uid: 7786
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -32.5,9.5
+      parent: 1
+  - uid: 7789
+    components:
+    - type: Transform
+      pos: -36.5,9.5
       parent: 1
 - proto: CarpetBlue
   entities:
@@ -26843,17 +26841,29 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 25.5,27.5
       parent: 1
+  - uid: 2016
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -36.5,7.5
+      parent: 1
+  - uid: 2018
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -37.5,6.5
+      parent: 1
   - uid: 3449
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -37.5,5.5
+      pos: -31.5,7.5
       parent: 1
   - uid: 3450
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -37.5,6.5
+      pos: -32.5,7.5
       parent: 1
   - uid: 3451
     components:
@@ -26871,73 +26881,61 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -36.5,5.5
+      pos: -31.5,5.5
       parent: 1
   - uid: 3454
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -36.5,6.5
+      pos: -32.5,5.5
       parent: 1
   - uid: 3455
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -36.5,7.5
+      pos: -32.5,8.5
       parent: 1
   - uid: 3456
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -36.5,8.5
+      pos: -32.5,6.5
       parent: 1
   - uid: 3457
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -32.5,8.5
+      pos: -31.5,8.5
       parent: 1
   - uid: 3458
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -32.5,7.5
+      pos: -31.5,6.5
       parent: 1
   - uid: 3459
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -32.5,6.5
+      pos: -36.5,8.5
       parent: 1
   - uid: 3460
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -32.5,5.5
+      pos: -36.5,6.5
       parent: 1
   - uid: 3461
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -31.5,8.5
+      pos: -36.5,5.5
       parent: 1
   - uid: 3462
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -31.5,7.5
-      parent: 1
-  - uid: 3463
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -31.5,6.5
-      parent: 1
-  - uid: 3464
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -31.5,5.5
+      pos: -37.5,5.5
       parent: 1
   - uid: 3465
     components:
@@ -28231,7 +28229,7 @@ entities:
   - uid: 7791
     components:
     - type: Transform
-      pos: -9.479882,-29.613472
+      pos: -9.657105,-28.345284
       parent: 1
 - proto: ClothingBeltChampion
   entities:
@@ -28474,13 +28472,6 @@ entities:
     - type: Transform
       pos: -24.502247,-20.155039
       parent: 1
-- proto: ClothingMaskClown
-  entities:
-  - uid: 7790
-    components:
-    - type: Transform
-      pos: -9.354882,-29.035347
-      parent: 1
 - proto: ClothingMaskGasSecurity
   entities:
   - uid: 9321
@@ -28659,7 +28650,7 @@ entities:
   - uid: 8274
     components:
     - type: Transform
-      pos: -9.689836,-28.97975
+      pos: -9.282105,-28.501534
       parent: 1
 - proto: ComfyChair
   entities:
@@ -29475,19 +29466,19 @@ entities:
   - uid: 6041
     components:
     - type: Transform
-      pos: -9.510162,-31.109522
+      pos: -13.57898,-28.579659
       parent: 1
 - proto: CrayonMime
   entities:
   - uid: 7787
     components:
     - type: Transform
-      pos: -13.70612,-29.090147
+      pos: -13.668983,-28.216642
       parent: 1
   - uid: 7788
     components:
     - type: Transform
-      pos: -13.596745,-29.121397
+      pos: -13.590858,-28.247892
       parent: 1
 - proto: Crematorium
   entities:
@@ -29615,6 +29606,13 @@ entities:
     components:
     - type: Transform
       pos: -11.479882,-31.566597
+      parent: 1
+- proto: DefaultStationBeaconAICore
+  entities:
+  - uid: 3463
+    components:
+    - type: Transform
+      pos: -6.5,52.5
       parent: 1
 - proto: DefaultStationBeaconAME
   entities:
@@ -37151,26 +37149,12 @@ entities:
     - type: Transform
       pos: -36.085228,11.652148
       parent: 1
-- proto: FoodBurgerMime
-  entities:
-  - uid: 7785
-    components:
-    - type: Transform
-      pos: -13.67487,-28.683897
-      parent: 1
 - proto: FoodBurgerRobot
   entities:
   - uid: 12427
     components:
     - type: Transform
       pos: -12.540917,-11.312796
-      parent: 1
-- proto: FoodCakeClown
-  entities:
-  - uid: 7789
-    components:
-    - type: Transform
-      pos: -9.479882,-28.394722
       parent: 1
 - proto: FoodCakeSuppermatterSlice
   entities:
@@ -37222,53 +37206,39 @@ entities:
     - type: Transform
       pos: -13.495724,52.499588
       parent: 1
-- proto: FoodFrozenSnowconeClown
-  entities:
-  - uid: 7792
-    components:
-    - type: Transform
-      pos: -9.261132,-30.191597
-      parent: 1
-- proto: FoodFrozenSnowconeMime
-  entities:
-  - uid: 7784
-    components:
-    - type: Transform
-      pos: -13.67487,-29.449522
-      parent: 1
 - proto: FoodMeatClown
   entities:
   - uid: 7793
     components:
     - type: Transform
-      pos: -9.698632,-30.535347
+      pos: -9.500855,-29.189034
       parent: 1
 - proto: FoodPieBananaCream
   entities:
-  - uid: 7794
+  - uid: 3464
     components:
     - type: Transform
-      pos: -9.370507,-31.394722
+      pos: -9.500855,-29.548409
       parent: 1
-  - uid: 7795
+  - uid: 7702
     components:
     - type: Transform
-      pos: -9.370507,-31.394722
+      pos: -9.500855,-29.548409
       parent: 1
-  - uid: 7796
+  - uid: 7706
     components:
     - type: Transform
-      pos: -9.370507,-31.394722
+      pos: -9.500855,-29.548409
       parent: 1
-  - uid: 7797
+  - uid: 7707
     components:
     - type: Transform
-      pos: -9.370507,-31.394722
+      pos: -9.48523,-29.548409
       parent: 1
-  - uid: 7798
+  - uid: 7783
     components:
     - type: Transform
-      pos: -9.370507,-31.394722
+      pos: -9.48523,-29.548409
       parent: 1
 - proto: FoodPoppy
   entities:
@@ -37276,13 +37246,6 @@ entities:
     components:
     - type: Transform
       pos: -3.6820545,23.685793
-      parent: 1
-- proto: FoodTartMime
-  entities:
-  - uid: 7783
-    components:
-    - type: Transform
-      pos: -13.20612,-28.277647
       parent: 1
 - proto: Fork
   entities:
@@ -57469,6 +57432,13 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+- proto: LockerClown
+  entities:
+  - uid: 7785
+    components:
+    - type: Transform
+      pos: -9.5,-31.5
+      parent: 1
 - proto: LockerDetectiveFilled
   entities:
   - uid: 5356
@@ -57630,6 +57600,13 @@ entities:
     components:
     - type: Transform
       pos: -18.5,11.5
+      parent: 1
+- proto: LockerMime
+  entities:
+  - uid: 7784
+    components:
+    - type: Transform
+      pos: -13.5,-29.5
       parent: 1
 - proto: LockerParamedicFilled
   entities:
@@ -59671,7 +59648,7 @@ entities:
   - uid: 12436
     components:
     - type: Transform
-      pos: -13.198837,-28.688225
+      pos: -13.094605,-28.345284
       parent: 1
 - proto: PenCap
   entities:
@@ -66136,13 +66113,6 @@ entities:
     - type: Transform
       pos: -5.6314917,46.532814
       parent: 1
-- proto: RubberStampMime
-  entities:
-  - uid: 7786
-    components:
-    - type: Transform
-      pos: -13.33112,-29.043272
-      parent: 1
 - proto: SalvageMagnet
   entities:
   - uid: 4597
@@ -71378,11 +71348,6 @@ entities:
     - type: Transform
       pos: -13.5,-28.5
       parent: 1
-  - uid: 7702
-    components:
-    - type: Transform
-      pos: -13.5,-29.5
-      parent: 1
   - uid: 7703
     components:
     - type: Transform
@@ -71397,16 +71362,6 @@ entities:
     components:
     - type: Transform
       pos: -11.5,-31.5
-      parent: 1
-  - uid: 7706
-    components:
-    - type: Transform
-      pos: -9.5,-31.5
-      parent: 1
-  - uid: 7707
-    components:
-    - type: Transform
-      pos: -9.5,-30.5
       parent: 1
   - uid: 7708
     components:
@@ -72761,12 +72716,12 @@ entities:
   - uid: 7799
     components:
     - type: Transform
-      pos: -9.558007,-30.972847
+      pos: -9.719605,-29.407784
       parent: 1
   - uid: 7800
     components:
     - type: Transform
-      pos: -9.354882,-30.879097
+      pos: -9.219605,-29.345284
       parent: 1
 - proto: TurnstileGenpopEnter
   entities:
