@@ -1,0 +1,21 @@
+﻿<DefaultWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client._CD.Silicons.StationAi"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    Title="Select Shell"
+    MinSize="240 360">
+    <BoxContainer Orientation="Vertical">
+        <ItemList
+            Name="ShellsList"
+            HorizontalAlignment="Stretch"
+            VerticalExpand="True"
+            Visible="True"
+            MinWidth="200">
+            <!-- Populate with C# -->
+        </ItemList>
+        <BoxContainer Orientation="Horizontal">
+            <Button Name="JumpToShellButton" Text="Jump" Disabled="True" />
+            <Button Name="SelectShellButton" Text="Select" Disabled="True" />
+        </BoxContainer>
+    </BoxContainer>
+</DefaultWindow>
