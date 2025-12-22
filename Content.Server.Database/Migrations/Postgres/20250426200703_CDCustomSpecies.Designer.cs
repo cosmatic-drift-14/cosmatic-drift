@@ -5,6 +5,7 @@ using System.Text.Json;
 using Content.Server.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using NpgsqlTypes;
@@ -14,9 +15,11 @@ using NpgsqlTypes;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    partial class PostgresServerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250426200703_CDCustomSpecies")]
+    partial class CDCustomSpecies
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -610,29 +613,6 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.ToTable("cdprofile", (string)null);
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterAllergy", b =>
-                {
-                    b.Property<int>("CDProfileId")
-                        .HasColumnType("integer")
-                        .HasColumnName("cdprofile_id");
-
-                    b.Property<string>("Allergen")
-                        .HasColumnType("text")
-                        .HasColumnName("allergen");
-
-                    b.Property<int>("Intensity")
-                        .HasColumnType("integer")
-                        .HasColumnName("intensity");
-
-                    b.HasKey("CDProfileId", "Allergen")
-                        .HasName("PK_cd_character_allergies");
-
-                    b.HasIndex("CDProfileId", "Allergen")
-                        .HasDatabaseName("IX_cd_character_allergies_cdprofile_id_allergen");
-
-                    b.ToTable("cd_character_allergies", (string)null);
-                });
-
             modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
                 {
                     b.Property<int>("Id")
@@ -894,11 +874,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("admin_ooc_color");
-
-                    b.PrimitiveCollection<string[]>("ConstructionFavorites")
-                        .IsRequired()
-                        .HasColumnType("text[]")
-                        .HasColumnName("construction_favorites");
 
                     b.Property<int>("SelectedCharacterSlot")
                         .HasColumnType("integer")
@@ -1771,18 +1746,6 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Navigation("Profile");
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CDModel+CharacterAllergy", b =>
-                {
-                    b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
-                        .WithMany("CharacterAllergies")
-                        .HasForeignKey("CDProfileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cd_character_allergies_cdprofile_cdprofile_id");
-
-                    b.Navigation("CDProfile");
-                });
-
             modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
                 {
                     b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
@@ -2156,8 +2119,6 @@ namespace Content.Server.Database.Migrations.Postgres
 
             modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
                 {
-                    b.Navigation("CharacterAllergies");
-
                     b.Navigation("CharacterRecordEntries");
                 });
 
