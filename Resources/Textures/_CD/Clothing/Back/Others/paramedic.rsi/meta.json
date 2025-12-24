@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Modified from https://github.com/Bubberstation/Bubberstation/commit/40e56053fd0c4cf80f7ecf6c7e12f2817d73836f by Github KittenColony / Discord kittencolony (297865728374210561), icon modified from https://github.com/cosmatic-drift-14/cosmatic-drift/pull/736/commits/e0bea35d25594ce3a35bc04e00feb01e23859ee9 by Nairod (Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

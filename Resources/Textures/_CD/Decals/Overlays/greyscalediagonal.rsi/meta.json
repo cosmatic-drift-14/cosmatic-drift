@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "LS-BS (Taken from https://github.com/new-frontiers-14/frontier-station-14/pull/591/files aswell as the minor adjustments from https://github.com/new-frontiers-14/frontier-station-14/pull/669/files)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+	{
+    "name": "minitile_diagonal"
+  },
+  {
+    "name": "minitile_diagonal_90"
+  },
+  {
+    "name": "minitile_diagonal_180"
+  },
+  {
+    "name": "minitile_diagonal_270"
+  },
+  {
+    "name": "tilediagonal"
+  },
+  {
+    "name": "tilediagonal_flipped"
+  },
+  {
+    "name": "tilediagonal_corner"
+  },
+  {
+    "name": "tilediagonal_corner_90"
+  },
+  {
+    "name": "tilediagonal_corner_180"
+  },
+  {
+    "name": "tilediagonal_corner_270"
+  }
+  ]
+}

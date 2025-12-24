@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Rodentia sprites made by portfiend, Foxfolk0-2 made by PursuitinAshes (Github) based off of https://github.com/space-wizards/space-station-14/pull/24994",
+    "states": [
+        {
+            "name": "rodentia0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "rodentia1"
+        },
+        {
+            "name": "rodentia2"
+        },
+        {
+            "name": "foxfolk0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "foxfolk1"
+        },
+        {
+            "name": "foxfolk2"
+        }
+    ]
+}

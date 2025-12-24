@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Based on cosmatic-drift/Resources/Textures/_CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi by Github KittenColony / Discord kittencolony (297865728374210561), recolored by Boaz1111(github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-INNERCLOTHING",
+      "directions": 4
+    },
+	{
+      "name": "folded-icon"
+    },
+    {
+      "name": "folded-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/Bubberstation/Bubberstation/commit/e9e0683c6e34512c125cef1a4c69976258ebfdce and adjusted by Github KittenColony / Discord kittencolony (297865728374210561)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tail_snaketail",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakestripe_primary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakestripe_secondary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakestripealt_primary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakestripealt_secondary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakedual_primary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakedual_secondary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakeunder_primary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snakeunder_secondary",
+      "directions": 4
+    },
+    {
+      "name": "tail_snaketail_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakestripe_primary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakestripe_secondary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakestripealt_primary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakestripealt_secondary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakedual_primary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakedual_secondary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakeunder_primary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "tail_snakeunder_secondary_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ],
+        [
+          0.45,
+          0.45,
+          0.45
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "crypt_blue.png is from Objects/Devices/encryption_keys.rsi by DSC@300074782328750080 (Created for Space Station 14).  hailing_label.png is by dffdff2423 (github) for cosmatic drift.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {"name": "crypt_blue"},
+      {"name": "hailing_label"}
+  ]
+}
