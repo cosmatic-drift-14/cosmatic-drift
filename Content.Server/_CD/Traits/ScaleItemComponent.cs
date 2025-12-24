@@ -1,4 +1,5 @@
-﻿using Robust.Shared.GameStates;
+﻿using Content.Shared.Item;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Traits;
 
@@ -13,7 +14,7 @@ public sealed partial class ScaleItemComponent : Component
     /// What item size the person should be mkmade
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField]
-    public int Size = 120;
+    public ProtoId<ItemSizePrototype> Size = "Huge";
 
     /// <summary>
     /// The maximum scale their player can be set to for this component to itemize them
