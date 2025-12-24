@@ -23,6 +23,11 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
+// CD: imports
+using Content.Server._CD.Records;
+using Content.Shared._CD.Records;
+using Content.Shared.FixedPoint;
+
 namespace Content.Server.Database
 {
     public abstract class ServerDbBase
@@ -48,6 +53,14 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                // CD: Store CD info
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
+                // END CD
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -99,6 +112,10 @@ namespace Content.Server.Database
             }
 
             var oldProfile = db.DbContext.Profile
+                .Include(p => p.CDProfile) // CD: Store CD info
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                .Include(p => p.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -234,6 +251,19 @@ namespace Content.Server.Database
                 }
             }
 
+            // CD: get character records or create default records
+            var cdRecords = profile.CDProfile?.CharacterRecords != null
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
+                : PlayerProvidedCharacterRecords.DefaultRecords();
+
+            var cdAllergies = profile.CDProfile?.CharacterAllergies != null
+                ? profile.CDProfile.CharacterAllergies
+                    .Select(allergy => (allergy.Allergen, FixedPoint2.FromCents(allergy.Intensity)))
+                    .ToDictionary()
+                : new();
+
+            // END CD
+
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -262,6 +292,7 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
+                profile.CDProfile?.Height ?? 1.0f,
                 profile.Age,
                 sex,
                 gender,
@@ -280,7 +311,10 @@ namespace Content.Server.Database
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
-                loadouts
+                loadouts,
+                cdRecords,
+                profile.CDProfile?.CustomSpeciesName,
+                cdAllergies
             );
         }
 
@@ -330,6 +364,29 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait {TraitName = t})
             );
+
+            // CD: CD Character Data
+            profile.CDProfile ??= new CDModel.CDProfile();
+            profile.CDProfile.Height = humanoid.CDHeight;
+            // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
+            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
+            if (humanoid.CDCharacterRecords != null)
+            {
+                profile.CDProfile.CharacterRecordEntries.Clear();
+                profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
+            }
+
+            profile.CDProfile.CustomSpeciesName = humanoid.CDCustomSpeciesName;
+
+            profile.CDProfile.CharacterAllergies.Clear();
+            profile.CDProfile.CharacterAllergies.AddRange(humanoid.CDAllergies.Select(entry =>
+                new CDModel.CharacterAllergy
+                {
+                    Allergen = entry.Key,
+                    Intensity = entry.Value.Value,
+                }));
+
+            // END CD
 
             profile.Loadouts.Clear();
 

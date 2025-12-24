@@ -1,6 +1,8 @@
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Client._CD.Humanoid;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -34,6 +36,12 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+
+// CD: Records editor imports
+using Content.Client._CD.Records.UI;
+using Content.Shared._CD.Records;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 
 namespace Content.Client.Lobby.UI
 {
@@ -102,6 +110,15 @@ namespace Content.Client.Lobby.UI
         private ColorSelectorSliders _rgbSkinColorSelector;
 
         private bool _isDirty;
+
+        // CD: Height
+        private float _defaultHeight = 1f;
+
+        // CD: Record editor
+        private readonly RecordEditorGui _recordsTab;
+
+        // CD: Allergies editor
+        private readonly AllergyPicker _allergiesTab;
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
@@ -230,6 +247,43 @@ namespace Content.Client.Lobby.UI
                 UpdateHairPickers();
                 OnSkinColorOnValueChanged();
             };
+
+            #endregion Species
+
+            #region CDHeight
+
+            CDHeight.OnTextChanged += args =>
+            {
+                if (Profile is null || !float.TryParse(args.Text, out var newHeight))
+                    return;
+
+                var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+                newHeight = MathF.Round(Math.Clamp(newHeight, prototype.MinHeight, prototype.MaxHeight), 2);
+
+                // The percentage between the start and end numbers, aka "inverse lerp"
+                var sliderPercent = (newHeight - prototype.MinHeight) /
+                                    (prototype.MaxHeight - prototype.MinHeight);
+                CDHeightSlider.Value = sliderPercent;
+
+                SetProfileHeight(newHeight);
+            };
+
+            CDHeightReset.OnPressed += _ =>
+            {
+                CDHeight.SetText(_defaultHeight.ToString(CultureInfo.InvariantCulture), true);
+            };
+
+            CDHeightSlider.OnValueChanged += _ =>
+            {
+                if (Profile is null)
+                    return;
+                var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+                var newHeight = MathF.Round(MathHelper.Lerp(prototype.MinHeight, prototype.MaxHeight, CDHeightSlider.Value), 2);
+                CDHeight.Text = newHeight.ToString(CultureInfo.InvariantCulture);
+                SetProfileHeight(newHeight);
+            };
+
+            #endregion CDHeight
 
             #region Skin
 
@@ -425,6 +479,40 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
+            #region CosmaticRecords
+
+            _allergiesTab = new AllergyPicker(UpdateAllergies);
+            TabContainer.AddChild(_allergiesTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-allergies-tab"));
+
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords);
+            TabContainer.AddChild(_recordsTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+
+            CDCustomSpeciesNameCheck.OnToggled += args =>
+            {
+                CDCustomSpeciesName.Editable = args.Pressed;
+                if (args.Pressed)
+                    Profile = Profile?.WithCDCustomSpeciesName(CDCustomSpeciesName.Text == "" ? null : CDCustomSpeciesName.Text);
+                else
+                    Profile = Profile?.WithCDCustomSpeciesName(null);
+
+                SetDirty();
+            };
+
+            CDCustomSpeciesName.OnTextChanged += args =>
+            {
+                Profile = Profile?.WithCDCustomSpeciesName(args.Text);
+                SetDirty();
+            };
+
+            SpeciesButton.OnItemSelected += args =>
+            {
+                CDCustomSpeciesName.PlaceHolder = Loc.GetString(_species[args.Id].Name);
+            };
+
+            #endregion CosmaticRecords
+
             RefreshFlavorText();
 
             #region Dummy
@@ -441,8 +529,6 @@ namespace Content.Client.Lobby.UI
             };
 
             #endregion Dummy
-
-            #endregion Left
 
             ShowClothes.OnToggled += args =>
             {
@@ -645,6 +731,9 @@ namespace Content.Client.Lobby.UI
                 if (!antag.SetPreference)
                     continue;
 
+                if (!antag.VisiblePreference) // CD change
+                    continue;
+
                 var antagContainer = new BoxContainer()
                 {
                     Orientation = LayoutOrientation.Horizontal,
@@ -772,6 +861,11 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
 
+            // CD: our controls
+            UpdateHeightControls();
+            UpdateCDAllergies();
+            _recordsTab.Update(profile);
+
             RefreshAntags();
             RefreshJobs();
             RefreshLoadouts();
@@ -779,6 +873,10 @@ namespace Content.Client.Lobby.UI
             RefreshTraits();
             RefreshFlavorText();
             ReloadPreview();
+
+            // CD: UpdateCustomSpecies
+            // Needs to run after RefreshSpecies
+            UpdateCDCustomSpecies();
 
             if (Profile != null)
             {
@@ -1068,6 +1166,23 @@ namespace Content.Client.Lobby.UI
             UpdateJobPriorities();
         }
 
+        // CD: Records editor
+        private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
+        {
+            if (Profile is null)
+                return;
+            Profile = Profile.WithCDCharacterRecords(records);
+            IsDirty = true;
+        }
+
+        // CD: Allergies editor
+        private void UpdateAllergies(Dictionary<ReagentPrototype, FixedPoint2> allergies)
+        {
+            Profile = Profile?.WithCDAllergies(allergies.Select(allergy => (allergy.Key.ID, allergy.Value))
+                .ToDictionary());
+            SetDirty();
+        }
+
         private void OnFlavorTextChange(string content)
         {
             if (Profile is null)
@@ -1210,6 +1325,13 @@ namespace Content.Client.Lobby.UI
                 return;
 
             _entManager.System<MetaDataSystem>().SetEntityName(PreviewDummy, newName);
+        }
+
+        private void SetProfileHeight(float height)
+        {
+            Profile = Profile?.WithHeight(height);
+            SetDirty();
+            ReloadProfilePreview();
         }
 
         private void SetSpawnPriority(SpawnPriorityPreference newSpawnPriority)
@@ -1373,6 +1495,64 @@ namespace Content.Client.Lobby.UI
             PronounsButton.SelectId((int) Profile.Gender);
         }
 
+        private void UpdateHeightControls()
+        {
+            if (Profile == null)
+            {
+                return;
+            }
+
+            var species = _species.Find(x => x.ID == Profile.Species);
+            if (species != null)
+                _defaultHeight = species.DefaultHeight;
+
+            var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+            var sliderPercent = (Profile.CDHeight - prototype.MinHeight) /
+                                (prototype.MaxHeight - prototype.MinHeight);
+            CDHeightSlider.Value = sliderPercent;
+            CDHeight.Text = Profile.CDHeight.ToString(CultureInfo.InvariantCulture);
+        }
+
+        private void UpdateCDCustomSpecies()
+        {
+            if (Profile == null)
+            {
+                CDCustomSpeciesName.Text = "";
+                CDCustomSpeciesName.Editable = false;
+                CDCustomSpeciesNameCheck.Pressed = false;
+                return;
+            }
+            CDCustomSpeciesName.PlaceHolder = Loc.GetString(_species[SpeciesButton.SelectedId].Name);
+
+            if (Profile.CDCustomSpeciesName == null)
+            {
+                CDCustomSpeciesNameCheck.Pressed = false;
+                CDCustomSpeciesName.Text = "";
+                CDCustomSpeciesName.Editable = false;
+                return;
+            }
+            CDCustomSpeciesName.Text = Profile.CDCustomSpeciesName;
+            CDCustomSpeciesNameCheck.Pressed = true;
+            CDCustomSpeciesName.Editable = true;
+        }
+
+        private void UpdateCDAllergies()
+        {
+            if (Profile == null)
+            {
+                return;
+            }
+
+            var allergies = new Dictionary<ReagentPrototype, FixedPoint2>();
+            foreach (var entry in (Dictionary<string, FixedPoint2>) Profile.CDAllergies)
+            {
+                if (!_prototypeManager.TryIndex(entry.Key, out ReagentPrototype? reagent))
+                    continue;
+                allergies.Add(reagent, entry.Value);
+            }
+            _allergiesTab.SetData(allergies);
+        }
+
         private void UpdateSpawnPriorityControls()
         {
             if (Profile == null)
@@ -1511,6 +1691,9 @@ namespace Content.Client.Lobby.UI
             var name = HumanoidCharacterProfile.GetName(Profile.Species, Profile.Gender);
             SetName(name);
             UpdateNameEdit();
+
+            // CD: Update record editor
+            _recordsTab.Update(Profile);
         }
 
         private async void ExportImage()

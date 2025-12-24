@@ -1,3 +1,4 @@
+using Content.Server._CD.Body.Systems;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
@@ -9,7 +10,7 @@ namespace Content.Server._CD.Body.Components;
 /// Causes an allergic reaction when exposed to a reagent.
 /// </summary>
 [RegisterComponent]
-// TODO: cdrebase [Access(typeof(AllergySystem))]
+[Access(typeof(AllergySystem))]
 [AutoGenerateComponentPause]
 public sealed partial class AllergyComponent : Component
 {

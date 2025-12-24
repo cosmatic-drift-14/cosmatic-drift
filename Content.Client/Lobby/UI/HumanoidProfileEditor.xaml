@@ -61,11 +61,29 @@
                                                    ToolTip="{Loc 'humanoid-profile-editor-guidebook-button-tooltip'}"/>
                                     <OptionButton Name="SpeciesButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
+                                <!-- CD: Custom Species Name -->
+                                <BoxContainer HorizontalExpand="True">
+                                    <Label Text="{Loc 'cd-humanoid-profile-editor-custom-species-label'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <CheckBox Name="CDCustomSpeciesNameCheck" />
+                                    <LineEdit Name="CDCustomSpeciesName"
+                                              MinWidth="250"
+                                              HorizontalAlignment="Right"
+                                              Editable="False"/>
+                                </BoxContainer>
                                 <!-- Age -->
                                 <BoxContainer HorizontalExpand="True">
                                     <Label Text="{Loc 'humanoid-profile-editor-age-label'}" />
                                     <Control HorizontalExpand="True"/>
                                     <LineEdit Name="AgeEdit" MinSize="40 0" HorizontalAlignment="Right" />
+                                </BoxContainer>
+                                <!-- CD Height -->
+                                <BoxContainer HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-height-label'}" />
+                                    <Control HorizontalExpand="True" />
+                                    <Slider Name="CDHeightSlider" HorizontalAlignment="Right" SetWidth="300" MinValue="0.0" MaxValue="1.0"/>
+                                    <LineEdit HorizontalAlignment="Right" Name="CDHeight" MinSize="60 0" Text="1.0" />
+                                    <Button Name="CDHeightReset" Text="{Loc 'humanoid-profile-editor-reset-height-button'}" HorizontalAlignment="Right"/>
                                 </BoxContainer>
                                 <!-- Sex -->
                                 <BoxContainer HorizontalExpand="True">
@@ -113,6 +131,7 @@
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical">
                     <!-- Jobs -->
+                    <Label Name="CDDepartmentLimitRuleWarning" Text="{Loc 'cd-department-limit-rule-warning'}" FontColorOverride="red"/>
                     <OptionButton Name="PreferenceUnavailableButton" />
                     <ScrollContainer VerticalExpand="True">
                         <BoxContainer Name="JobList" Orientation="Vertical" />

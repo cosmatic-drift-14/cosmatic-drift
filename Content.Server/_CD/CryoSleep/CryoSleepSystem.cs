@@ -6,8 +6,7 @@ using Content.Server.Hands.Systems;
 using Content.Server.Mind;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
-// using Content.Server._CD.Records;
-using Content.Server.StationRecords;
+using Content.Server._CD.Records;
 using Content.Server.StationRecords.Systems;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Climbing.Systems;
@@ -31,7 +30,7 @@ namespace Content.Server._CD.CryoSleep;
 public sealed class CryoSleepSystem : EntitySystem
 {
     [Dependency] private readonly ActionBlockerSystem _blocker = default!;
-    // [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
+    [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly ClimbSystem _climb = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
@@ -170,11 +169,10 @@ public sealed class CryoSleepSystem : EntitySystem
         }
 
         // Remove records
-        // TODO: cdrebase
-        // if (TryComp<CharacterRecordKeyStorageComponent>(body, out var recordKey))
-        // {
-        //     _characterRecords.DeleteAllRecords(body.Value, recordKey);
-        // }
+        if (TryComp<CharacterRecordKeyStorageComponent>(body, out var recordKey))
+        {
+            _characterRecords.DeleteAllRecords(body.Value, recordKey);
+        }
 
         // Ensure nullspace map exists
         EnsurePausedMap();

@@ -10,6 +10,9 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
+// CD imports
+using System.Numerics;
+
 namespace Content.Client.Humanoid;
 
 public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
@@ -50,6 +53,13 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 
         var humanoidAppearance = entity.Comp1;
         var sprite = entity.Comp2;
+
+        // BEGIN CD
+        var speciesPrototype = _prototypeManager.Index(humanoidAppearance.Species);
+        var height = Math.Clamp(MathF.Round(humanoidAppearance.Height, 1), speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // should NOT be locked, at all
+
+        _sprite.SetScale((entity.Owner, sprite), new Vector2(speciesPrototype.ScaleHeight ? height : 1f, height));
+        // END CD
 
         sprite[_sprite.LayerMapReserve((entity.Owner, sprite), HumanoidVisualLayers.Eyes)].Color = humanoidAppearance.EyeColor;
     }
@@ -223,6 +233,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.Species = profile.Species;
         humanoid.SkinColor = profile.Appearance.SkinColor;
         humanoid.EyeColor = profile.Appearance.EyeColor;
+        humanoid.Height = profile.CDHeight; // CD
 
         UpdateSprite((uid, humanoid, Comp<SpriteComponent>(uid)));
     }

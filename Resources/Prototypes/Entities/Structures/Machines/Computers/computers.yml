@@ -361,6 +361,16 @@
     color: "#1f8c28"
   - type: Computer
     board: MedicalRecordsComputerCircuitboard
+  # BEGIN CD
+  - type: CharacterRecordConsole
+    consoleType: Medical
+  - type: UserInterface
+    interfaces:
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
+  # END CD
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -369,14 +379,29 @@
   description: This can be used to check criminal records. Only security can modify them.
   components:
   - type: CriminalRecordsConsole
+    # BEGIN CD
+    # We need to have both a CriminalRecordsConsole and CharacterRecordConsole
+    # component to be able to set wanted status.
   - type: UserInterface
     interfaces:
-      enum.CriminalRecordsConsoleKey.Key:
-        type: CriminalRecordsConsoleBoundUserInterface
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.CriminalRecordsConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key
+  - type: CharacterRecordConsole
+    consoleType: Security
+  # Wizden UI
+  #- type: UserInterface
+  #  interfaces:
+  #    enum.CriminalRecordsConsoleKey.Key:
+  #      type: CriminalRecordsConsoleBoundUserInterface
+  #    enum.WiresUiKey.Key:
+  #      type: WiresBoundUserInterface
+  #- type: ActivatableUI
+  #  key: enum.CriminalRecordsConsoleKey.Key
+  # END CD
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -407,15 +432,28 @@
   name: station records computer
   description: This can be used to check station records.
   components:
-  - type: GeneralStationRecordConsole
+  # BEGIN CD
+  # Wizden UI
+  #- type: GeneralStationRecordConsole
+  #- type: UserInterface
+  #  interfaces:
+  #      enum.GeneralStationRecordConsoleKey.Key:
+  #        type: GeneralStationRecordConsoleBoundUserInterface
+  #      enum.WiresUiKey.Key:
+  #        type: WiresBoundUserInterface
+  #- type: ActivatableUI
+  #  key: enum.GeneralStationRecordConsoleKey.Key
   - type: UserInterface
     interfaces:
-        enum.GeneralStationRecordConsoleKey.Key:
-          type: GeneralStationRecordConsoleBoundUserInterface
-        enum.WiresUiKey.Key:
-          type: WiresBoundUserInterface
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.GeneralStationRecordConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key
+  - type: CharacterRecordConsole
+    consoleType: Employment
+  # END CD
   - type: PointLight
     radius: 1.5
     energy: 4.0

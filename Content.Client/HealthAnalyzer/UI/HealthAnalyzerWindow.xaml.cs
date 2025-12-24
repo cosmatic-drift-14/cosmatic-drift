@@ -20,6 +20,8 @@ using Robust.Client.ResourceManagement;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
+using Content.Client._CD.Species;
+
 namespace Content.Client.HealthAnalyzer.UI
 {
     [GenerateTypedNameReferences]
@@ -29,6 +31,7 @@ namespace Content.Client.HealthAnalyzer.UI
         private readonly SpriteSystem _spriteSystem;
         private readonly IPrototypeManager _prototypes;
         private readonly IResourceCache _cache;
+        private readonly CustomSpeciesNameSystem _cdCustomSpecies;
 
         public HealthAnalyzerWindow()
         {
@@ -39,6 +42,8 @@ namespace Content.Client.HealthAnalyzer.UI
             _spriteSystem = _entityManager.System<SpriteSystem>();
             _prototypes = dependencies.Resolve<IPrototypeManager>();
             _cache = dependencies.Resolve<IResourceCache>();
+
+            _cdCustomSpecies = _entityManager.System<CustomSpeciesNameSystem>();
         }
 
         public void Populate(HealthAnalyzerScannedUserMessage msg)
@@ -80,7 +85,7 @@ namespace Content.Client.HealthAnalyzer.UI
             SpeciesLabel.Text =
                 _entityManager.TryGetComponent<HumanoidAppearanceComponent>(target.Value,
                     out var humanoidAppearanceComponent)
-                    ? Loc.GetString(_prototypes.Index<SpeciesPrototype>(humanoidAppearanceComponent.Species).Name)
+                    ? _cdCustomSpecies.GetSpeciesName(new Entity<HumanoidAppearanceComponent>(target.Value, humanoidAppearanceComponent))
                     : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
             // Basic Diagnostic
