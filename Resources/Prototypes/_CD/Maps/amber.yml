@@ -1,0 +1,65 @@
+- type: gameMap
+  id: Amber
+  mapName: 'Amber'
+  mapPath: /Maps/_CD/amber.yml
+  minPlayers: 5
+  maxPlayers: 25
+  stations:
+    Amber:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Amber Station {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14-SB'
+      - type: StationEmergencyShuttle
+        emergencyShuttlePath: /Maps/Shuttles/emergency_amber.yml
+      - type: StationJobs
+        availableJobs:
+          #service
+          Captain: [ 1, 1 ]
+          HeadOfPersonnel: [ 1, 1 ]
+          Bartender: [ 1, 1 ]
+          Botanist: [ 3, 3 ]
+          Chef: [ 2, 2 ]
+          Janitor: [ 2, 2 ]
+          Chaplain: [ 1, 1 ]
+          Librarian: [ 1, 1 ]
+          ServiceWorker: [ 3, 3 ]
+          Reporter: [ 1, 1 ]
+          #engineering
+          ChiefEngineer: [ 1, 1 ]
+          SeniorEngineer: [ 1, 1 ]
+          AtmosphericTechnician: [ 2, 2 ]
+          StationEngineer: [ 4, 4 ]
+          #medical
+          ChiefMedicalOfficer: [ 1, 1 ]
+          SeniorPhysician: [ 1, 1 ]
+          Chemist: [ 2, 2 ]
+          MedicalDoctor: [ 2, 2 ]
+          Paramedic: [ 2, 2 ]
+          Psychologist: [ 1, 1 ]
+          #science
+          ResearchDirector: [ 1, 1 ]
+          SeniorResearcher: [ 1, 1 ]
+          Scientist: [ 3, 3 ]
+          #security
+          HeadOfSecurity: [ 1, 1 ]
+          Warden: [ 1, 1 ]
+          SeniorOfficer: [ 1, 1 ]
+          SecurityOfficer: [ 4, 4 ]
+          Detective: [ 1, 1 ]
+          Lawyer: [ 1, 1 ]
+          #supply
+          Quartermaster: [ 1, 1 ]
+          SalvageSpecialist: [ 3, 3 ]
+          CargoTechnician: [ 3, 3 ]
+          #civilian
+          Passenger: [ -1, -1 ]
+          Clown: [ 1, 1 ]
+          Mime: [ 1, 1 ]
+          Musician: [ 1, 1 ]
+          #silicon
+          StationAi: [ 1, 1 ]
+          Borg: [ 2, 2 ]
