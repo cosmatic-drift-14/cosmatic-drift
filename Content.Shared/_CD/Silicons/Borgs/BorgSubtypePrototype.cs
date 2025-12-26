@@ -15,7 +15,6 @@ namespace Content.Shared._CD.Silicons.Borgs;
 [Prototype]
 public sealed class BorgSubtypePrototype : IPrototype, IInheritingPrototype
 {
-    [DataField]
     private static readonly ProtoId<SoundCollectionPrototype> DefaultFootsteps = new("FootstepBorg");
 
     [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<BorgSubtypePrototype>))]

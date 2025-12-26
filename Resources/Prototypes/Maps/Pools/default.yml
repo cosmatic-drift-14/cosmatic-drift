@@ -2,7 +2,6 @@
   id: DefaultMapPool
   maps:
   - Aspid
-  - Amber
   - Bagel
   - Box
   - Elkridge
@@ -10,9 +9,10 @@
   - Gemini
   - Marathon
   - Oasis
+  - Omega #CD addition
   - Packed
   - Plasma
   - Reach
   - Ferrous
-  - Cocoon
-  # - Exo |CD derotate
+  # - Exo # CD Derotate
+  - Snowball

@@ -116,7 +116,7 @@ public sealed class LockSystem : EntitySystem
         if (!lockComp.ShowExamine)
             return;
 
-        args.PushText(Loc.GetString(lockComp.Locked
+        args.PushMarkup(Loc.GetString(lockComp.Locked
                 ? "lock-comp-on-examined-is-locked"
                 : "lock-comp-on-examined-is-unlocked",
             ("entityName", Identity.Name(uid, EntityManager))));
@@ -476,6 +476,10 @@ public sealed class LockSystem : EntitySystem
             return;
 
         args.Cancel();
+
+        if (args.Silent)
+            return;
+
         if (lockComp.Locked && component.Popup != null)
         {
             _sharedPopupSystem.PopupClient(Loc.GetString(component.Popup), uid, args.User);

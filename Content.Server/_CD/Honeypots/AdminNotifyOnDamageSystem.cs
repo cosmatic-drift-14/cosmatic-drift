@@ -1,5 +1,6 @@
 using Content.Server.Chat.Managers;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Robust.Server.GameObjects;
 
 namespace Content.Server._CD.Honeypots;

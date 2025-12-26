@@ -20,9 +20,9 @@
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
-            Bartender: [ 1, 2 ]
+            Bartender: [ 2, 2 ]
             Botanist: [ 2, 2 ]
-            Chef: [ 1, 2 ]
+            Chef: [ 2, 2 ]
             Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
@@ -32,12 +32,12 @@
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
             SeniorEngineer: [ 1, 1 ] #CD Role
-            StationEngineer: [ 3, 4 ]
+            StationEngineer: [ 4, 4 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD Role
             Paramedic: [ 1, 1 ]
-            Chemist: [ 1, 2 ]
+            Chemist: [ 2, 2 ]
             MedicalDoctor: [ 4, 4 ]
             Psychologist: [ 1, 1 ]
             #science
@@ -52,8 +52,8 @@
             SecurityOfficer: [ 4, 4 ]
             #supply
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 4 ]
-            CargoTechnician: [ 2, 3 ]
+            SalvageSpecialist: [ 4, 4 ]
+            CargoTechnician: [ 3, 3 ]
             #civillian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]

@@ -70,14 +70,14 @@
   result: PillCanister
   completetime: 2
   materials:
-    Plastic: 100
+    Plastic: 50
 
 - type: latheRecipe
   id: ChemistryEmptyBottle01
   result: ChemistryEmptyBottle01
   completetime: 2
   materials:
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: Vape
@@ -95,7 +95,7 @@
   result: BaseChemistryEmptyVial
   completetime: 2
   materials:
-    Glass: 50
+    Glass: 100
     Wood: 20
 
 - type: latheRecipe
