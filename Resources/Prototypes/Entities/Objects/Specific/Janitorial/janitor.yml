@@ -37,7 +37,6 @@
   - type: Item
     size: 15
     sprite: Objects/Specific/Janitorial/mop.rsi
-    # storedRotation: 45
   - type: Absorbent
     useAbsorberSolution: true
   - type: SolutionContainerManager
