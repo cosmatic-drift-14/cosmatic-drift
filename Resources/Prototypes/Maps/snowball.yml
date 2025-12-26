@@ -2,8 +2,9 @@
   id: Snowball
   mapName: 'Snowball Station'
   mapPath: /Maps/snowball.yml
-  minPlayers: 15
-  maxPlayers: 50
+  minPlayers: 5
+  maxPlayers: 25
+  patchfile: /CDMapPatches/snowball.yml #CD apply map patch
   stations:
     Snowball:
       stationProto: StandardNanotrasenStation
@@ -16,7 +17,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_rod.yml
         - type: StationJobs
-          availableJobs: # 49 roundstart jobs without interns,  75 total jobs including interns
+          availableJobs: # 55 roundstart jobs
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -25,35 +26,39 @@
             ChiefEngineer: [ 1, 1 ]
             ResearchDirector: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
-            #service (10 - 13)
-            Bartender: [ 1, 2 ]
+            #service (12 - 12)
+            Bartender: [ 1, 1 ] #CD change from 1-2 to 1-1
             Botanist: [ 2, 2 ]
-            Chef: [ 2, 3 ]
-            Janitor: [ 1, 2 ]
+            Chef: [ 3, 3 ] #CD change from 2-3 to 3-3
+            Janitor: [ 2, 2 ] #CD change from 1-2 to 2-2
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            #engineering (5 - 7)
+            #engineering (7 - 7)
+            SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 2, 2 ]
-            StationEngineer: [ 3, 5 ]
-            TechnicalAssistant: [ 3, 3 ] #intern, not counted
-            #medical (6 - 8)
+            StationEngineer: [ 4, 4 ] #CD change from 3-5 to 4-4
+            # TechnicalAssistant: [ 3, 3 ] #CD disabled
+            #medical (8 - 8)
+            SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 5 ]
-            MedicalIntern: [ 3, 3 ] #intern, not counted
+            MedicalDoctor: [ 4, 4 ] #CD change from 3-5 to 4-4
+            # MedicalIntern: [ 3, 3 ] #CD disabled
             Paramedic: [ 1, 1 ]
-            #science (3 - 5)
-            Scientist: [ 3, 5 ]
-            ResearchAssistant: [ 3, 3 ] #intern, not counted
-            #security (6 - 8)
+            #science (4 - 4)
+            SeniorResearcher: [ 1, 1 ] #CD role
+            Scientist: [ 3, 3 ] #CD change from 3-5 to 3-3
+            # ResearchAssistant: [ 3, 3 ] #CD disabled
+            #security (8 - 8)
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 3, 5 ]
+            SeniorOfficer: [ 1, 1 ] #CD role
+            SecurityOfficer: [ 4, 4 ] #CD change from 3-5 to 4-4
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 4, 4 ] #intern, not counted
+            # SecurityCadet: [ 4, 4 ] #CD disabled
             Lawyer: [ 1, 1 ]
-            #supply (6-8)
+            #supply (6-6)
             SalvageSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 3, 5 ]
+            CargoTechnician: [ 3, 3 ] #CD change from 3-5 to 3-3
             #civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]
