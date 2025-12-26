@@ -17,7 +17,6 @@
   roles:
   - Bartender
   - Botanist
-  - Boxer
   - Chaplain
   - Chef
   - Clown
@@ -30,7 +29,6 @@
   - Passenger
   - Reporter
   - Visitor
-  - Zookeeper
   - ServiceWorker
   - Prisoner # Custom role
   - PrivateInvestigator # Custom role
@@ -145,9 +143,7 @@
   color: "#9FED58"
   weight: 10
   roles:
-  - Boxer
   - Reporter
-  - Zookeeper
   # CD: Psychologist is not station specific
   # - Psychologist
   primary: false
