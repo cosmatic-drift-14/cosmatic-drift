@@ -1,0 +1,12 @@
+# Rodentia Mouth Storage
+- type: entity
+  id: ActionOpenMouthStorage
+  name: Open cheek storage
+  description: Allows you to store items in your cheeks.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    priority: -10
+    icon: _CD/Interface/Actions/mouthStorageOpen.png
+  - type: InstantAction
+    event: !type:OpenStorageImplantEvent
