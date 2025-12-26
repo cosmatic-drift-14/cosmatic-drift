@@ -6,6 +6,8 @@ using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
+using Content.Shared._CD.Silicons.Borgs;
+
 namespace Content.Shared.Silicons.Borgs;
 
 /// <summary>
@@ -96,6 +98,10 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
         _userInterface.CloseUi((ent.Owner, null), BorgSwitchableTypeUiKey.SelectBorgType);
 
         UpdateEntityAppearance(ent);
+
+        // CD - event for subtype system, always runs at end of borg type code
+        var ev = new AfterBorgTypeSelectEvent();
+        RaiseLocalEvent(ent, ref ev);
     }
 
     protected void UpdateEntityAppearance(Entity<BorgSwitchableTypeComponent> entity)

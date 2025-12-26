@@ -1,0 +1,16 @@
+- type: borgSubtype
+  parent: baseMiningSubtype
+  id: spidermin
+
+  dummyPrototype: BorgChassisSpidermin
+
+  inventoryTemplateId: borgDutch
+  spritePath: _CD/Mobs/Silicon/Borg/Mining/spidermin.rsi
+
+- type: borgSubtype
+  parent: baseMedicalSubtype
+  id: qualified-doctor
+
+  dummyPrototype: BorgChassisQualifiedDoctor
+
+  spritePath: _CD/Mobs/Silicon/Borg/Medical/qualified_doctor.rsi

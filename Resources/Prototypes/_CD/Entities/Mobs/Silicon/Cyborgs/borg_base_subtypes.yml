@@ -1,0 +1,62 @@
+# Base mining subtype
+- type: borgSubtype
+  abstract: true
+  id: baseMiningSubtype
+
+  parentType: mining
+
+  # Entity prototype for preview in selection menu
+  dummyPrototype: BorgChassisMining
+
+  # Visuals
+  inventoryTemplateId: borgShort
+  layerData:
+  - state: miner
+    map: ["enum.BorgVisualLayers.Body", "movement"]
+  - state: miner_e
+    map: [ "enum.BorgVisualLayers.Light" ]
+    shader: unshaded
+    visible: false
+  - state: miner_l
+    shader: unshaded
+    map: [ "light","enum.BorgVisualLayers.LightStatus" ]
+    visible: false
+
+  spriteBodyState: miner
+  spriteHasMindState: miner_e
+  spriteNoMindState: miner_e
+
+  # Audio
+  footstepCollection:
+    collection: FootstepBorg
+
+# Base medical subtype
+- type: borgSubtype
+  abstract: true
+  id: baseMedicalSubtype
+
+  parentType: medical
+
+  # Description
+  dummyPrototype: BorgChassisMedical
+
+  # Visuals
+  layerData:
+  - state: medical
+    map: ["enum.BorgVisualLayers.Body", "movement"]
+  - state: medical_e
+    map: [ "enum.BorgVisualLayers.Light" ]
+    shader: unshaded
+    visible: false
+  - state: medical_l
+    shader: unshaded
+    map: [ "light","enum.BorgVisualLayers.LightStatus" ]
+    visible: false
+
+  spriteBodyState: medical
+  spriteHasMindState: medical_e
+  spriteNoMindState: medical_e
+
+  # Audio
+  footstepCollection:
+    collection: FootstepBorg
