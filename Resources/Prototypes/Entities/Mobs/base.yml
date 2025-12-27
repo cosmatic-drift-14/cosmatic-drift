@@ -54,6 +54,9 @@
   - type: MobMover
   - type: MovementSpeedModifier
   - type: LagCompensation
+  - type: Tag
+    tags:
+    - NoPaint
 
 - type: entity
   save: false

@@ -25,6 +25,11 @@
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
+  # BEGIN CD
+  - type: Tag
+    tags:
+    - NoPaint
+  # END CD
 
 - type: entity
   id: HoloFan

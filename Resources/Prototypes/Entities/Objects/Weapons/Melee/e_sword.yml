@@ -72,6 +72,11 @@
   - type: Reflect
   - type: IgnitionSource
     temperature: 700
+  # BEGIN CD
+  - type: Tag
+    tags:
+      - NoPaint
+  # END CD
 
 - type: entity
   name: energy sword
@@ -235,6 +240,7 @@
   - type: Tag
     tags:
     - Write
+    - NoPaint # CD
 
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]

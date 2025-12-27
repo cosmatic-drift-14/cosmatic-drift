@@ -97,6 +97,9 @@
     guides:
     - Botany
     - Chemicals
+  - type: Tag
+    tags:
+    - NoPaint
 
 - type: entity
   parent: hydroponicsTray

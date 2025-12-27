@@ -68,6 +68,7 @@
   - type: CleansForensics
   - type: Residue
     residueAdjective: residue-slippery
+  - type: CDPaintCanPaintRemover # CD: Spray paint
 
 - type: entity
   parent: BaseSoap
