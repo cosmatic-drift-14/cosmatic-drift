@@ -12,7 +12,7 @@ namespace Content.Shared.Strip.Components
         ///     The strip delay for hands.
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField("handDelay")]
-        public TimeSpan HandStripDelay = TimeSpan.FromSeconds(4f);
+        public TimeSpan HandStripDelay = TimeSpan.FromSeconds(2f); // CD: Decreased HandStripDelay for easier transfer of items as it's not needed for antag balancing
     }
 
     [NetSerializable, Serializable]

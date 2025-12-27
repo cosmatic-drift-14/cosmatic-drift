@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Chat.Managers;
 using Content.Server.Station.Systems;
+using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
 using Content.Shared.Emag.Systems;
@@ -32,6 +33,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly EmagSystem _emag = default!;
+    [Dependency] private readonly SharedStationAiShellUserSystem _shellUser = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -304,6 +306,9 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         while (query.MoveNext(out var update))
         {
             SetLaws(lawset.Laws, update, provider.LawUploadSound);
+
+            // CD changes - Shell law updating; change in the future whenever you can actually subscribe to laws being updated
+            _shellUser.ChangeShellLaws(update, GetLawset(provider.Laws));
         }
     }
 }

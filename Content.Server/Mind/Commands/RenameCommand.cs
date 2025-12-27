@@ -6,6 +6,9 @@ using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 
+// CD: imports
+using Content.Server._CD.Records;
+
 namespace Content.Server.Mind.Commands;
 
 [AdminCommand(AdminFlags.VarEdit)]
@@ -37,6 +40,13 @@ public sealed class RenameCommand : LocalizedEntityCommands
             return;
 
         _metaSystem.SetEntityName(entityUid.Value, name);
+
+        // CD: records
+        if (_entManager.TrySystem<CharacterRecordsSystem>(out var cdRecordsSys)
+            && _entManager.TryGetComponent<CharacterRecordKeyStorageComponent>(entityUid.Value, out var cdCRecords))
+        {
+            cdRecordsSys.QueryRecords(cdCRecords.Key.Station)[cdCRecords.Key.Index].Name = name;
+        }
     }
 
     private bool TryParseUid(string str, IConsoleShell shell,

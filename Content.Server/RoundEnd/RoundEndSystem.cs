@@ -22,6 +22,9 @@ using Content.Shared.DeviceNetwork.Components;
 using Content.Shared.Station.Components;
 using Timer = Robust.Shared.Timing.Timer;
 
+// CD imports
+using Content.Server._CD.RoundEnd;
+
 namespace Content.Server.RoundEnd
 {
     /// <summary>
@@ -42,6 +45,8 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StationSystem _stationSystem = default!;
 
+        [Dependency] private readonly ShuttleVoteSystem _cdShuttleVoteSystem = default!;
+
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 
         /// <summary>
@@ -56,12 +61,14 @@ namespace Content.Server.RoundEnd
         public TimeSpan? ExpectedShuttleLength => ExpectedCountdownEnd - LastCountdownStart;
         public TimeSpan? ShuttleTimeLeft => ExpectedCountdownEnd - _gameTiming.CurTime;
 
+        private TimeSpan _lastShuttleVoteRoundTime = TimeSpan.Zero;
         /// <summary>
         /// If the shuttle can't be recalled. if set to true, the station wont be able to recall
         /// </summary>
         public bool CantRecall = false;
 
-        public TimeSpan AutoCallStartTime;
+        // CD: not needed
+        // public TimeSpan AutoCallStartTime;
         private bool _autoCalledBefore = false;
 
         public override void Initialize()
@@ -73,7 +80,8 @@ namespace Content.Server.RoundEnd
 
         private void SetAutoCallTime()
         {
-            AutoCallStartTime = _gameTiming.CurTime;
+            // CD: not needed
+            // AutoCallStartTime = _gameTiming.CurTime;
         }
 
         private void Reset()
@@ -380,19 +388,19 @@ namespace Content.Server.RoundEnd
 
         public override void Update(float frameTime)
         {
+            // CD: fairly large changes to this logic
             // Check if we should auto-call.
             int mins = _autoCalledBefore ? _cfg.GetCVar(CCVars.EmergencyShuttleAutoCallExtensionTime)
-                                        : _cfg.GetCVar(CCVars.EmergencyShuttleAutoCallTime);
-            if (mins != 0 && _gameTiming.CurTime - AutoCallStartTime > TimeSpan.FromMinutes(mins))
+                                         : _cfg.GetCVar(CCVars.EmergencyShuttleAutoCallTime);
+            if (mins != 0 && _gameTicker.RoundDuration() - _lastShuttleVoteRoundTime > TimeSpan.FromMinutes(mins))
             {
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
-                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                    // CD: reuse this code for our shuttle vote because this would have needed to be disabled anyway
+                    _cdShuttleVoteSystem.RunRestartVote();
                     _autoCalledBefore = true;
+                    _lastShuttleVoteRoundTime = _gameTicker.RoundDuration();
                 }
-
-                // Always reset auto-call in case of a recall.
-                SetAutoCallTime();
             }
         }
     }

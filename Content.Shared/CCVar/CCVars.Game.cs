@@ -352,9 +352,10 @@ public sealed partial class CCVars
     /// <summary>
     ///     The time in seconds that the server should wait before restarting the round.
     ///     Defaults to 2 minutes.
+    ///     CD: Change from 2 to 10
     /// </summary>
     public static readonly CVarDef<float> RoundRestartTime =
-        CVarDef.Create("game.round_restart_time", 120f, CVar.SERVERONLY);
+        CVarDef.Create("game.round_restart_time", 600f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The prototype to use for secret weights.

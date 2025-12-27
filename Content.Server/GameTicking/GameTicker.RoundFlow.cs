@@ -25,6 +25,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 
+using Content.Server._CD.Traits;
+
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
@@ -559,8 +561,20 @@ namespace Content.Server.GameTicking
 
                 if (TryGetEntity(mind.OriginalOwnedEntity, out var entity) && pvsOverride)
                 {
+                    // CD: Redact player characters
+                    if (HasComp<HideFromRoundEndScreenComponent>(entity))
+                        continue;
                     _pvsOverride.AddGlobalOverride(entity.Value);
                 }
+
+                // CD: Redact observers
+                if (_playerManager.TryGetSessionById(mind.UserId, out var session))
+                {
+                    var profile = GetPlayerProfile(session);
+                    if (profile.TraitPreferences.Contains(HideFromRoundEndScreenComponent.TraitName))
+                        continue;
+                }
+                // end CD
 
                 var roles = _roles.MindGetAllRoleInfo(mindId);
 

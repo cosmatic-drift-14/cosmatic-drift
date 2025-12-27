@@ -271,7 +271,8 @@ namespace Content.Server.Voting.Managers
                 Title = Loc.GetString("ui-vote-map-title"),
                 Duration = alone
                     ? TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerAlone))
-                    : TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerMap))
+                    : TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerMap)),
+                DisplayVotes = false, // CD change
             };
 
             if (alone)

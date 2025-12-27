@@ -7,6 +7,8 @@ using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Shared.Network;
+// CD
+using Content.Server._CD.Connection.Whitelist;
 
 namespace Content.Server.Connection;
 
@@ -85,6 +87,10 @@ public sealed partial class ConnectionManager
                 case ConditionNotesPlaytimeRange conditionNotesPlaytimeRange:
                     matched = CheckConditionNotesPlaytimeRange(conditionNotesPlaytimeRange, cacheRemarks, cachePlaytime);
                     denyMessage = Loc.GetString("whitelist-notes");
+                    break;
+                case ConditionWhitelistSlots conditionWhitelistSlots: // CD
+                    matched = await CheckConditionWhitelistSlots(conditionWhitelistSlots, data);
+                    denyMessage = Loc.GetString("whitelist-openslots-full", ("openslots", conditionWhitelistSlots.MaximumPlayers));
                     break;
                 default:
                     throw new NotImplementedException($"Whitelist condition {condition.GetType().Name} not implemented");
@@ -215,6 +221,23 @@ public sealed partial class ConnectionManager
 
         // No matches
         return false;
+    }
+
+    // CD.
+    private async Task<bool> CheckConditionWhitelistSlots(ConditionWhitelistSlots conditionWhitelistSlots, NetUserData data)
+    {
+        var connectedPlayers = _plyMgr.Sessions;
+        var whitelistedPlayers = connectedPlayers.Length;
+        // Track how many whitelisted players there are.
+        // Yes, this is slow and bad for perf, but also the much easier way of doing it with this system
+        // Should only be running on non-whitelisted players anyways, thus performance impact is lowered
+        foreach(var player in connectedPlayers)
+        {
+            if (await _db.GetWhitelistStatusAsync(player.UserId) == false)
+                whitelistedPlayers--;
+        }
+
+        return (_plyMgr.PlayerCount - whitelistedPlayers) < conditionWhitelistSlots.MaximumPlayers;
     }
 
     #endregion

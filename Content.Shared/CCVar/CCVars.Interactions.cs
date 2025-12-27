@@ -27,7 +27,7 @@ public sealed partial class CCVars
     ///     Maximum number of interactions that a player can perform within <see cref="InteractionRateLimitCount"/> seconds
     /// </summary>
     public static readonly CVarDef<int> InteractionRateLimitCount =
-        CVarDef.Create("interaction.rate_limit_count", 5, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("interaction.rate_limit_count", 10, CVar.SERVER | CVar.REPLICATED); // CD: Change to 10 because 5 is way too low
 
     /// <seealso cref="InteractionRateLimitCount"/>
     public static readonly CVarDef<float> InteractionRateLimitPeriod =

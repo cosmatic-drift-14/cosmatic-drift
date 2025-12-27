@@ -30,9 +30,10 @@ public sealed partial class CCVars
 
     /// <summary>
     ///     Sets the maximum length for flavor text (character descriptions).
+    ///     CD: Set to 1024
     /// </summary>
     public static readonly CVarDef<int> MaxFlavorTextLength =
-        CVarDef.Create("ic.flavor_text_length", 512, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.flavor_text_length", 1024, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     Sets the maximum character length of a job on an ID.

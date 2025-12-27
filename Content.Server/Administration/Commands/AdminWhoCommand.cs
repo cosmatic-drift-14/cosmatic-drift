@@ -7,7 +7,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Administration.Commands;
 
-[AdminCommand(AdminFlags.AdminWho)]
+[AnyCommand] // CD change from admin only to unrestricted.
 public sealed class AdminWhoCommand : LocalizedCommands
 {
     [Dependency] private readonly IAfkManager _afkManager = default!;
@@ -42,8 +42,6 @@ public sealed class AdminWhoCommand : LocalizedCommands
             first = false;
 
             sb.Append(admin.Name);
-            if (adminData.Title is { } title)
-                sb.Append($": [{title}]");
 
             if (adminData.Stealth)
                 sb.Append(" (S)");
@@ -52,6 +50,9 @@ public sealed class AdminWhoCommand : LocalizedCommands
             {
                 if (_afkManager.IsAfk(admin))
                     sb.Append(" [AFK]");
+
+                if (adminData.Title is { } title) // CD change to move titles to admin only.
+                    sb.Append($": [{title}]");
             }
         }
 

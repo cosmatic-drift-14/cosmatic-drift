@@ -1,5 +1,6 @@
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
+using Content.Shared._CD.Silicons.StationAi;
 using Content.Shared.CCVar;
 using Content.Shared.NameIdentifier;
 using Content.Shared.NameModifier.EntitySystems;
@@ -96,6 +97,20 @@ public sealed partial class BorgMenu : FancyWindow
         ChargeBar.Value = chargeFraction;
         ChargeLabel.Text = Loc.GetString("borg-ui-charge-label",
             ("charge", (int)MathF.Round(chargeFraction * 100)));
+
+        // CD - AI Shell Changes below here
+        var hasBoris = false;
+        if (!_entity.TryGetComponent(Entity, out BorgChassisComponent? chassis))
+        {
+            hasBoris = false;
+        }
+        else
+        {
+            hasBoris = chassis.BrainEntity != null &&
+                       _entity.TryGetComponent<StationAiShellBrainComponent>(chassis.BrainEntity.Value, out _);
+        }
+
+        BorgNameEditContainer.Visible = hasBoris; // CD - ai shells change
     }
 
     public void UpdateBatteryButton()
