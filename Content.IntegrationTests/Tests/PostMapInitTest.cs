@@ -108,6 +108,7 @@ namespace Content.IntegrationTests.Tests
             "Exo",
             "Snowball",
             "Ferrous", // CD Map
+            "Cocoon" // CD Map
             "Aspid", // CD Map
             "Gemini", // CD Map
             "Omega", // CD Map
