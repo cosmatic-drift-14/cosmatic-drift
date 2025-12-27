@@ -90,15 +90,14 @@ public sealed partial class MapPatchSystem : EntitySystem
 
     private void OnPostMapLoad(PostGameMapLoad ev)
     {
-        return; // TODO: cdrebase
-        // if (ev.GameMap.Patchfile is not { } patchfile)
-            // return;
+        if (ev.GameMap.Patchfile is not { } patchfile)
+            return;
 
-        // Log.Info($"Applying patches to {ev.GameMap.ID} from {patchfile}.");
-        //
-        // var args = new MapPatchEvArgs(ev, _iWroteABadTwoYearsAgo);
-        //
-        // ApplyPatchToMap(args, patchfile);
+        Log.Info($"Applying patches to {ev.GameMap.ID} from {patchfile}.");
+
+        var args = new MapPatchEvArgs(ev, _iWroteABadTwoYearsAgo);
+
+        ApplyPatchToMap(args, patchfile);
     }
 
     /// <summary>

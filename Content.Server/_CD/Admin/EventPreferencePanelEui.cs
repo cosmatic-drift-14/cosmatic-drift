@@ -25,9 +25,8 @@ public sealed class EventPreferencesPanelEui : BaseEui
         var visibleAntagPrototypes = new List<ProtoId<AntagPrototype>>();
         foreach (var antagPrototype in _proto.EnumeratePrototypes<AntagPrototype>())
         {
-            // TODO: cdrebase
-            // if(antagPrototype.VisiblePreference)
-            //     visibleAntagPrototypes.Add(antagPrototype);
+            if(antagPrototype.VisiblePreference)
+                visibleAntagPrototypes.Add(antagPrototype);
         }
 
         _visibleAntagPrototypes = visibleAntagPrototypes;
