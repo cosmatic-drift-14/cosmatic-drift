@@ -26,6 +26,7 @@
         children:
         - id: ClothingUniformJumpsuitChiefEngineerTurtle
         - id: ClothingUniformJumpskirtChiefEngineerTurtle
+        - id: ClothingUniformJumpsuitChiefEngineerFormal # CD Drip 4
         - id: ClothingHeadHatBeretEngineering
         - id: ClothingOuterWinterCE
         - id: ClothingNeckCloakCe
@@ -42,6 +43,7 @@
         - id: ClothingOuterCoatLabCmo
         - id: ClothingUniformJumpsuitCMOTurtle
         - id: ClothingUniformJumpskirtCMOTurtle
+        - id: ClothingUniformCMOFormal # CD
         - id: ClothingHeadHatBeretCmo
         - id: ClothingHeadMirror
         - id: ClothingEyesGlasses
@@ -80,6 +82,7 @@
         - id: ClothingUniformJumpsuitHosFormal
         - id: ClothingOuterWinterHoS
         - id: ClothingNeckCloakHos
+        - id: ClothingHeadHatHossheriffhat #CD
 
 - type: entity
   id: DresserQuarterMasterFilled

@@ -21,6 +21,8 @@
     BoxCandleSmall: 2
     Urn: 5
     Bible: 1
+    SilverRing: 2 # CD
+    RingBox: 2 # CD
   contrabandInventory:
     FoodBakedBunHotX: 2
     DrinkWineBottleFull: 1

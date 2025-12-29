@@ -50,6 +50,7 @@
     SyringeIpecac: 1
     ClothingEyesHudMedical: 2
     ClothingEyesEyepatchHudMedical: 2
+    ClothingEyesHudMedicalVisor: 2
   contrabandInventory:
     PillCanisterRandom: 3
     PillSpaceDrugs: 3

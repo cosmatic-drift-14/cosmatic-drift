@@ -10,6 +10,9 @@
     ClothingUniformJumpsuitDetectiveGrey: 2
     ClothingUniformJumpskirtDetectiveGrey: 2
     ClothingOuterVestDetective: 2
+    ClothingUniformDetectiveCasual: 2
+    ClothingUniformJumpskirtDetectiveCasual: 2
+    ClothingOuterCoatDetectiveForensic: 2
     ClothingNeckTieDet: 2
     ClothingHeadHatFedoraGrey: 2
     ClothingHandsGlovesColorBlack: 2

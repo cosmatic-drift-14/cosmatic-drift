@@ -11,7 +11,12 @@
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
     - id: AstroNavCartridge
-    - id: ClothingHandsKnuckleDustersQM
+    # - id: ClothingHandsKnuckleDustersQM # CD: Remove these
+    #CD Addions
+    - id: BookSOPCargo
+    - id: BookSOPCommand
+      prob: 0.3
+    - id: SalvageShuttleConsoleCircuitboard
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -49,6 +54,9 @@
       conditions:
       - !type:PlayerCountCondition
         max: 15
+    #CD Addions
+    - id: BookSOPGeneral
+    - id: BookSOPCommand
 
 # No laser table + Laser table
 - type: entityTable
@@ -130,6 +138,10 @@
     - id: HoPIDCard
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
+    #CD Addions
+    - id: BookSOPService
+    - id: BookSOPCommand
+      prob: 0.3
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -160,6 +172,10 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    #CD Addions
+    - id: BookSOPEngineering
+    - id: BookSOPCommand
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -216,6 +232,10 @@
     - id: MedkitFilled
     - id: RubberStampCMO
     - id: MedTekCartridge
+    #CD Addions
+    - id: BookSOPMedical
+    - id: BookSOPCommand
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -265,6 +285,10 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
+    #CD Addions
+    - id: BookSOPScience
+    - id: BookSOPCommand
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -325,6 +349,10 @@
     - id: WeaponTaser
     - id: WantedListCartridge
     - id: DrinkHosFlask
+    #CD Addions
+    - id: BookSOPSecurity
+    - id: BookSOPCommand
+      prob: 0.3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

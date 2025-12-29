@@ -159,6 +159,9 @@
     - id: RCD
     - id: RCDAmmo
     - id: AirGrenade
+    #CD Addions
+    - id: BookSOPEngineering
+      prob: 0.2
 
 - type: entityTable
   id: FillAtmosphericsHardsuit
@@ -202,6 +205,9 @@
     - id: RCD
     - id: RCDAmmo
     - id: MetalFoamGrenade
+    #CD Addions
+    - id: BookSOPEngineering
+      prob: 0.2
 
 - type: entityTable
   id: FillEngineerHardsuit
@@ -227,11 +233,11 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterSuitRad
-      amount: 2
+      amount: !type:ConstantNumberSelector
+        value: 2
     - id: GeigerCounter
-      amount: 2
-    - id: PillCanisterPotassiumIodide
-      prob: 0.75
+      amount: !type:ConstantNumberSelector
+        value: 2
 
 - type: entity
   parent: LockerEvacRepair

@@ -4,12 +4,19 @@
     ClothingBackpackDuffelMedical: 4
     ClothingBackpackMedical: 4
     ClothingBackpackSatchelMedical: 4
+    ClothingBackpackCarrybagMedical: 4 # CD
+    ClothingBackpackCarrybagParamedic: 4 # CD
     ClothingUniformJumpsuitMedicalDoctor: 4
     ClothingUniformJumpskirtMedicalDoctor: 4
+    ClothingUniformDoctorCasual: 4 # CD
+    ClothingUniformMedicalTechnician: 4 # CD
     ClothingBeltMedical: 4
+    ClothingBeltMedicalKit: 4 # CD
+    ClothingBeltParamedicKit: 4 # CD
     ClothingHeadHatBeretMedic: 4
     ClothingHeadNurseHat: 4
     ClothingOuterCoatLab: 4
+    ClothingOuterCoatStylishLab: 4
     ClothingShoesColorWhite: 4
     ClothingHandsGlovesLatex: 4
     ClothingHandsGlovesNitrile: 2
@@ -25,6 +32,7 @@
     ClothingShoesBootsWinterMed: 2
   contrabandInventory:
     ClothingUniformJumpskirtOfLife: 1
+    ClothingUniformJumpsuitMaintSurgeon: 1 # CD
     ToyFigurineMedicalDoctor: 1
     ToyFigurineParamedic: 1
     ToyFigurineChiefMedicalOfficer: 1

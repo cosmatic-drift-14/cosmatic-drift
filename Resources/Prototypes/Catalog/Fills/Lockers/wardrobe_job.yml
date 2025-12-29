@@ -222,6 +222,8 @@
       prob: 0.15
     - id: ClothingHandsGlovesLeather
       prob: 0.5
+    - id: ClothingUniformJumpskirtCargoLight # CD
+    - id: ClothingUniformJumpsuitCargoLight # CD
 
 - type: entity
   id: WardrobeMedicalDoctorFilled

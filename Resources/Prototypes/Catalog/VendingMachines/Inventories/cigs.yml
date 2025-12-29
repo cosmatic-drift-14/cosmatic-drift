@@ -5,6 +5,8 @@
     CigPackRed: 2
     CigPackBlue: 2
     CigPackBlack: 2
+    CigPackPurple: 2 # _CD 
+    CigPackCandy: 2 # _CD
     CigPackMixed: 2
     CigarCase: 1
     SmokingPipeFilledTobacco: 1
@@ -12,9 +14,11 @@
     Matchbox: 5
     PackPaperRollingFilters: 3
     CheapLighter: 4
-    Lighter: 2
+    Lighter: 3
     FlippoLighter: 2
-  contrabandInventory:
+  contrabandInventory: # _CD
+    CigPackDarkGreen: 2 # _CD
+    CigPackUnmarked: 4 # _CD
     GroundTobacco: 3
     CigarGold: 2
     Igniter: 1

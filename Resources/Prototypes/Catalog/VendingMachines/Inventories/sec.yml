@@ -20,10 +20,12 @@
     RiotLaserShield: 2
     RiotBulletShield: 2
     RadioHandheldSecurity: 5
+    ClothingBeltSecurityPlateCarrier: 3 #CD
     Bola: 6
   # security officers need to follow a diet regimen!
   contrabandInventory:
     WeaponMeleeNeedle: 2
     FoodDonutHomer: 12
     FoodBoxDonut: 2
+    SecurityStimpack: 4 # _CD
     #box evidence

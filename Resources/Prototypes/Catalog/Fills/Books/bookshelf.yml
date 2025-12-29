@@ -81,6 +81,15 @@
     - id: BookSpaceEncyclopedia
     - id: BookSpaceLaw
     - id: BookTheBookOfControl
+    #CD Addions
+    - id: BookSOPCommand
+    - id: BookSOPSecurity
+    - id: BookSOPEngineering
+    - id: BookSOPMedical
+    - id: BookSOPScience
+    - id: BookSOPCargo
+    - id: BookSOPService
+    - id: BookSOPGeneral
 
 - type: entityTable
   id: RandomBookTable

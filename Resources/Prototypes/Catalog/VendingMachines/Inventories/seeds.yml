@@ -39,6 +39,7 @@
     WheatSeeds: 5
     WatermelonSeeds: 5
   contrabandInventory:
+    MindleafSeeds: 1 # _CD
     TobaccoSeeds: 2
     FoodSnackSemki: 2
     FlyAmanitaSeeds: 1

@@ -7,6 +7,7 @@
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
     ClothingRandomSpawner: 8
+    ClothingOuterCoatRandom: 8 # CD
     ClothingUniformRandomShorts: 4
     ClothingHeadHatBeret: 4
     ClothingHeadBandBlack: 2
@@ -43,6 +44,16 @@
     ClothingUniformJumpskirtColorDarkGreen: 2
     ClothingUniformJumpsuitColorTeal: 2
     ClothingUniformJumpskirtColorTeal: 2
+    # CD Below
+    ClothingUniformJumpsuitColorLightBrown: 2
+    ClothingUniformJumpskirtColorLightBrown: 2
+    ClothingUniformJumpsuitColorBrown: 2
+    ClothingUniformJumpskirtColorBrown: 2
+    ClothingUniformJumpsuitColorMaroon: 2
+    ClothingUniformJumpskirtColorMaroon: 2
+    ClothingUniformJumpsuitColorDarkPurple: 2
+    ClothingUniformJumpskirtColorDarkPurple: 2
+    # End CD
     ClothingUniformJumpsuitHawaiBlack: 2
     ClothingUniformJumpsuitHawaiBlue: 2
     ClothingUniformJumpsuitHawaiRed: 2

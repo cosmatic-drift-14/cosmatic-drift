@@ -21,6 +21,7 @@
     FoodCheese: 1
     FoodMeat: 6
   contrabandInventory:
+    PillCanisterHappiness: 2 # _CD 14 Happiness Pills 
     EggBoxBroken: 1
     FoodBoxDonkpocket: 1
     FoodFrozenSandwich: 2

@@ -25,6 +25,10 @@
       children:
       - id: BoxBeanbag
       - id: RagItem
+        amount: 2
+      #CD Addions
+      - id: BookSOPService
+        prob: 0.2
 
 #- type: entity
 #  id: LockerFormalFilled
@@ -64,6 +68,9 @@
       children:
       - id: FoodCondimentPacketSalt
       - id: FoodCondimentPacketPepper
+    #CD Addions
+    - id: BookSOPService
+      prob: 0.2
 
 - type: entity
   id: ClosetJanitorFilled
@@ -94,6 +101,10 @@
       - id: FlashlightLantern
       - id: Plunger
       - id: WireBrush
+        amount: 2
+      #CD Addions
+      - id: BookSOPService
+        prob: 0.2
 
 - type: entity
   id: ClosetLegalFilled

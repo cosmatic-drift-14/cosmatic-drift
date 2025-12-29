@@ -100,12 +100,12 @@
         - !type:GroupSelector
           children:
           - id: CigCartonGreen
-            weight: 0.50
+            weight: 0.33 # CD lower odds
           - id: CigCartonRed
         - !type:GroupSelector
           children:
           - id: CigCartonBlue
-            weight: 0.50
+            weight: 0.33 # CD lower odds
           - id: CigCartonBlack
         - !type:GroupSelector
           children:
@@ -114,6 +114,14 @@
           - id: CigarCase
         - id: Matchbox
           amount: 2
+        - !type:GroupSelector # CD: Added CigCartonPurple
+          children:
+          - id: CigCartonPurple
+            weight: 0.33
+        - !type:GroupSelector # CD: Added CigCartonCandy
+          children:
+          - id: CigCartonCandy
+            weight: 0.33
 
 - type: entity
   parent: CrateGenericSteel

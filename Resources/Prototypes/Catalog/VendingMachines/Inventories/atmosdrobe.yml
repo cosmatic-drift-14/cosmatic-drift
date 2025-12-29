@@ -5,12 +5,17 @@
     ClothingBackpackSatchelAtmospherics: 2
     ClothingBackpackAtmospherics: 2
     ClothingUniformJumpsuitAtmos: 3
+    ClothingUniformJumpsuitAtmosModern: 3 # CD
     ClothingUniformJumpskirtAtmos: 3
+    ClothingUniformJumpskirtAtmosModern: 3 # CD
     ClothingUniformJumpsuitAtmosCasual: 3
+    ClothingUniformJumpsuitAtmosHazard: 3 # CD
+    ClothingUniformJumpsuitEngineeringPants: 3 # CD
     ClothingShoesColorWhite: 3
     ClothingHeadsetEngineering: 2
     ClothingHeadHelmetFire: 2
     ClothingOuterSuitFire: 2
+    ClothingOuterOverallsAtmos: 2 # CD
     ClothingOuterWinterAtmos: 2
     ClothingNeckScarfStripedLightBlue: 3
   contrabandInventory:
