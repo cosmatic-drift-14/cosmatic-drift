@@ -1,5 +1,6 @@
-﻿- type: entity
+- type: entity
   parent: BaseGameRule
+  abstract: true # CD: We don't use this
   id: DynamicRule
   components:
   - type: GameRule
@@ -20,93 +21,94 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
-        - id: Nukeops
-          weight: 25
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
-        - id: Revolutionary
-          weight: 5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-        - id: Zombie
-          weight: 5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
-        - id: Wizard
-          weight: 5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 10
-      # Roundstart Minor Rules
-      - !type:GroupSelector
-        conditions:
-        - !type:RoundDurationCondition
-          max: 1
-        children:
-        - id: Thief
-          prob: 0.5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-      # Midround rules
-      - !type:GroupSelector
-        conditions:
-        - !type:RoundDurationCondition
-          min: 300 # minimum 5 minutes
-        children:
-        - id: SleeperAgents
-          weight: 15
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:RoundDurationCondition
-            min: 900 # 15 minutes
-        - id: DragonSpawn
-          weight: 15
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:RoundDurationCondition
-            min: 900 # 15 minutes
-        - id: NinjaSpawn
-          weight: 20
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:RoundDurationCondition
-            min: 900 # 15 minutes
-        - id: ParadoxCloneSpawn
-          weight: 25
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-            max: 2
-          - !type:RoundDurationCondition
-            min: 600 # 10 minutes
-        - id: ZombieOutbreak
-          weight: 2.5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
-          - !type:RoundDurationCondition
-            min: 2700 # 45 minutes
-        - id: LoneOpsSpawn
-          weight: 5
-          conditions:
-          - !type:HasBudgetCondition
-          - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
-          - !type:RoundDurationCondition
-            min: 2100 # 35 minutes
+        # CD: We don't use this at all
+        #- id: Nukeops
+        #  weight: 25
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:PlayerCountCondition
+        #    min: 20
+        #- id: Revolutionary
+        #  weight: 5
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #- id: Zombie
+        #  weight: 5
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:PlayerCountCondition
+        #    min: 20
+        #- id: Wizard
+        #  weight: 5
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:PlayerCountCondition
+        #    min: 10
+      # #Roundstart Minor Rules
+      - #!type:GroupSelector
+        #conditions:
+        #- !type:RoundDurationCondition
+        #  max: 1
+        #children:
+        #- id: Thief
+        #  prob: 0.5
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+      # #Midround rules
+      - #!type:GroupSelector
+        #conditions:
+        #- !type:RoundDurationCondition
+        #  min: 300 # minimum 5 minutes
+        #children:
+        #- id: SleeperAgents
+        #  weight: 15
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:RoundDurationCondition
+        #    min: 900 # 15 minutes
+        #- id: DragonSpawn
+        #  weight: 15
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:RoundDurationCondition
+        #    min: 900 # 15 minutes
+        #- id: NinjaSpawn
+        #  weight: 20
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:RoundDurationCondition
+        #    min: 900 # 15 minutes
+        #- id: ParadoxCloneSpawn
+        #  weight: 25
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #    max: 2
+        #  - !type:RoundDurationCondition
+        #    min: 600 # 10 minutes
+        #- id: ZombieOutbreak
+        #  weight: 2.5
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:PlayerCountCondition
+        #    min: 20
+        #  - !type:RoundDurationCondition
+        #    min: 2700 # 45 minutes
+        #- id: LoneOpsSpawn
+        #  weight: 5
+        #  conditions:
+        #  - !type:HasBudgetCondition
+        #  - !type:MaxRuleOccurenceCondition
+        #  - !type:PlayerCountCondition
+        #    min: 20
+        #  - !type:RoundDurationCondition
+        #    min: 2100 # 35 minutes

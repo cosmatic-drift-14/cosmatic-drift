@@ -17,11 +17,13 @@
     - state: clipboard_over
   - type: Item
     sprite: _CD/Objects/Misc/ledger.rsi
-    size: 10
+    size: Small
   - type: Clothing
     sprite: _CD/Objects/Misc/ledger.rsi
   - type: Storage
-    capacity: 60
+    maxItemSize: Normal
+    grid:
+    - 0,0,8,1
     whitelist:
       tags:
         - Document

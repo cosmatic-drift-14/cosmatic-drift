@@ -5,7 +5,7 @@
   suffix: DEBUG
   components:
   - type: Item
-    size: 10
+    size: Large
   - type: Tag
   - type: Sprite
     sprite: _CD/Objects/Misc/GarmentBags/debug.rsi

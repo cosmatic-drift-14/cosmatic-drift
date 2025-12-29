@@ -18,7 +18,7 @@
     soundHit:
       collection: GenericHit
   - type: Item
-    size: 15
+    size: Normal
   - type: Construction
     graph: Bokken
     node: bokken

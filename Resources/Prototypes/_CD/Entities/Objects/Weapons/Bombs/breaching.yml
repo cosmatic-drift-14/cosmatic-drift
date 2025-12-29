@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BasePlasticExplosive
   id: BreachingCharge
   name: breaching charge
@@ -11,7 +11,7 @@
     - state: icon
       map: ["base"]
   - type: Item
-    size: 30
+    size: Huge
   - type: MultiHandedItem
   - type: Sticky
     stickDelay: 8

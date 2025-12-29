@@ -9,10 +9,6 @@
     state: icon
   - type: Clothing
     sprite: _CD/Clothing/Belt/halfapron.rsi
-  - type: Item
-    size: 30
-  - type: Storage
-    capacity: 20
 
 # Reverts the sprite changes in: https://github.com/space-wizards/space-station-14/pull/29441/files.
 - type: entity

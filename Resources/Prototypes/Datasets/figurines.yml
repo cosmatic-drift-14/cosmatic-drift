@@ -286,3 +286,15 @@
   values:
     prefix: figurines-griffin-
     count: 5
+
+- type: localizedDataset
+  id: FigurinesAI
+  values:
+    prefix: figurines-AI-
+    count: 7
+
+- type: localizedDataset
+  id: FigurinesMechGeneric
+  values:
+    prefix: figurines-mech-generic-
+    count: 4

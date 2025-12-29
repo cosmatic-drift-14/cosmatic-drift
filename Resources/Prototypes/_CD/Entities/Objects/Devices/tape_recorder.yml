@@ -12,7 +12,7 @@
       map: ["tape"]
       visible: false
   - type: Item
-    size: 10
+    size: Small
   - type: TapeRecorder
   - type: ActiveListener
     range: 4
@@ -66,7 +66,7 @@
       map: [ "enum.ToggleableVisuals.Layer" ]
       visible: false
   - type: Item
-    size: 5
+    size: Tiny
   - type: Damageable
   - type: TapeCassette
     maxCapacity: 180

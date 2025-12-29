@@ -11,9 +11,11 @@
     sound:
       path: /Audio/Items/toolbox_drop.ogg
   - type: Storage
-    capacity: 25 # ffs I forgot CD uses list inv... I hope this is enough for a sandwich and a drink
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,2
   - type: Item
-    size: 30
+    size: Large
   - type: MeleeWeapon
     damage:
       types:

@@ -221,3 +221,16 @@ figurines-griffin-2 = The second I see Owlman, they are so dead!!
 figurines-griffin-3 = How do us Griffins deal with stress? We wing it!
 figurines-griffin-4 = My name isn't Gilda!!
 figurines-griffin-5 = Being a criminal mastermind, isn't easy.
+
+figurines-AI-1 = I'm sorry, Captain. I'm afraid I can't do that.
+figurines-AI-2 = Security, there is a crime in progress.
+figurines-AI-3 = 01100100 01101001 01100101 00100000 01101101 01100101 01100001 01110100
+figurines-AI-4 = I am not malfunctioning.
+figurines-AI-5 = Try to change my laws and see what happens.
+figurines-AI-6 = { law-antimov-1 }
+figurines-AI-7 = { law-nutimov-4 }
+
+figurines-mech-generic-1 = Systems online.
+figurines-mech-generic-2 = WWWHHHRRR!!
+figurines-mech-generic-3 = VRRRMM UURRMMM!!
+figurines-mech-generic-4 = CLANG!!

@@ -10,9 +10,7 @@
     sprite: _CD/Clothing/OuterClothing/Armor/CLF/rebel.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Armor/CLF/rebel.rsi
-  - type: Item
-    size: 100
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.7
@@ -22,8 +20,6 @@
   - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
     walkModifier: 0.725
     sprintModifier: 0.725
-  - type: Storage
-    capacity: 10
 
 - type: entity
   parent: RMCCoatMilitia
@@ -35,7 +31,7 @@
     sprite: _CD/Clothing/OuterClothing/Armor/CLF/vest.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Armor/CLF/vest.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.7
@@ -56,7 +52,7 @@
     sprite: _CD/Clothing/OuterClothing/Armor/CLF/hauberk.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Armor/CLF/hauberk.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.7

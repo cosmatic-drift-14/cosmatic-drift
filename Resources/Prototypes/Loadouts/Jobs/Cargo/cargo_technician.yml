@@ -69,10 +69,11 @@
   equipment:
     id: CargoPDA
 
-- type: loadout
-  id: SeniorCourierPDA
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorCargo
-  equipment:
-    id: SeniorCourierPDA
+# CD: no
+#- type: loadout
+#  id: SeniorCourierPDA
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: SeniorCargo
+#  equipment:
+#    id: SeniorCourierPDA

@@ -6,8 +6,6 @@
   components:
   - type: Sprite
     state: icon # default state used by most inheritors
-  - type: Item
-    size: 150
   - type: Clothing
     equipSound:
       path: /Audio/Items/belt_equip.ogg
@@ -23,7 +21,8 @@
     unequipDelay: 2
   - type: Storage
     maxItemSize: Small
-    capacity: 15
+    grid:
+    - 0,0,1,2
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -108,7 +107,6 @@
     maxCharge: 600 #lights drain 3/s but recharge of 2 makes this 1/s. Therefore 600 is 10 minutes of light.
     startingCharge: 600
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 2 #recharge of 2 makes total drain 1w / s so max charge is 1:1 with time. Time to fully charge should be 5 minutes. Having recharge gives light an extended flicker period which gives you some warning to return to light area.
 
 # SPP armors
@@ -130,8 +128,6 @@
   - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
     walkModifier: 0.666
     sprintModifier: 0.666
-  - type: Storage
-    capacity: 15
 
 - type: entity
   parent: RMCArmorSPP
@@ -151,8 +147,6 @@
   - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
     walkModifier: 0.725
     sprintModifier: 0.725
-  - type: Storage
-    capacity: 10
 
 - type: entity
   parent: RMCArmorSPP
@@ -172,8 +166,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.62
     sprintModifier: 0.62
-  - type: Storage
-    capacity: 20
 
     # SPP coats
 - type: entity
@@ -189,8 +181,6 @@
   - type: ExplosionResistance
     damageCoefficient: 0
     worn: false
-  - type: Storage
-    capacity: 10
 
 - type: entity
   parent: RMCCoatSPP
@@ -202,5 +192,3 @@
     sprite: _CD/Clothing/OuterClothing/Armor/SPP/senior.rsi
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Armor/SPP/senior.rsi
-  - type: Storage
-    capacity: 10
