@@ -480,8 +480,9 @@
         tableId: UnknownShuttlesFriendlyTable
       - !type:NestedSelector
         tableId: UnknownShuttlesFreelanceTable
-      - !type:NestedSelector
-        tableId: UnknownShuttlesHostileTable
+      # CD: Disabled
+      #- !type:NestedSelector
+      #  tableId: UnknownShuttlesHostileTable
 
 - type: entity
   id: BasicStationEventScheduler

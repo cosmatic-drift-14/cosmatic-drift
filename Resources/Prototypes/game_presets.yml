@@ -12,20 +12,21 @@
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: KesslerSyndrome
-  alias:
-    - kessler
-    - junk
-    - meteorhell
-  name: kessler-syndrome-title
-  showInVote: false # secret
-  description: kessler-syndrome-description
-  rules:
-    - KesslerSyndromeScheduler
-    - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# CD: Disabled
+#- type: gamePreset
+#  id: KesslerSyndrome
+#  alias:
+#    - kessler
+#    - junk
+#    - meteorhell
+#  name: kessler-syndrome-title
+#  showInVote: false # secret
+#  description: kessler-syndrome-description
+#  rules:
+#    - KesslerSyndromeScheduler
+#    - RampingStationEventScheduler
+#    - SpaceTrafficControlEventScheduler
+#    - BasicRoundstartVariation
 
 - type: gamePreset
   id: AllAtOnce
@@ -41,7 +42,7 @@
     - Zombie
     - Wizard
     - Xenoborgs
-    - KesslerSyndromeScheduler
+#    - KesslerSyndromeScheduler CD: Disabled
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
@@ -64,7 +65,7 @@
     - Wizard
     - Xenoborgs
     - BasicStationEventScheduler
-    - KesslerSyndromeScheduler
+    # - KesslerSyndromeScheduler CD: Disabled
     - MeteorSwarmMildScheduler
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
@@ -263,6 +264,6 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - KesslerSyndromeScheduler
+  #  - KesslerSyndromeScheduler CD: Disabled
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation

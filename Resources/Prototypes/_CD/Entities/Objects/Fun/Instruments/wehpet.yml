@@ -1,4 +1,4 @@
-﻿# CD: Weh-pet entry
+# CD: Weh-pet entry
 - type: entity
   parent: BaseHandheldInstrument
   id: WehpetInstrument
@@ -12,7 +12,7 @@
     sprite: _CD/Objects/Fun/Instruments/wehpet.rsi
     state: icon
   - type: Item
-    size: 15
+    size: Normal
     sprite: _CD/Objects/Fun/Instruments/wehpet.rsi
     # storedRotation: -90
   - type: Tag

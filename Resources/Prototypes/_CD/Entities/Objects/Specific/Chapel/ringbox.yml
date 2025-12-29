@@ -16,4 +16,5 @@
     price: 50
   - type: Appearance
   - type: Storage # No restrictions on purpose. If someone wants to propose with a clown horn let them!
-    capacity: 5
+    grid:
+      - 0,0,2,1

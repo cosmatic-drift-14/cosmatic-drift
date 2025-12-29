@@ -829,7 +829,7 @@
   name: loadout-group-cargo-technician-id
   loadouts:
   - CargoTechnicianPDA
-  - SeniorCourierPDA
+  # - SeniorCourierPDA CD disabled
 
 - type: loadoutGroup
   id: CargoTechnicianJobTrinkets

@@ -20,7 +20,6 @@
   recipes:
   - HandheldCrewMonitor
   - MedCrutchesForearm
-  - VehicleWheelchairFolded
 
 - type: latheRecipePack
   id: CDSecfabStatic

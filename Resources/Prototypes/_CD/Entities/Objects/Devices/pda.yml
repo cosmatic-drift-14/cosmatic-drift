@@ -41,6 +41,7 @@
        !type:String
        pda-privateinvestigator
   - type: Icon
+    sprite: _CD/Objects/Devices/pda.rsi
     state: pda-privateinvestigator
 
 # Senior Roles

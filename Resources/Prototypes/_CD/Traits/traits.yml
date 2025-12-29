@@ -14,7 +14,6 @@
   components:
     - type: ScaleItem
       maxScale: 0.85
-      size: 120
 
 - type: trait
   id: VeryLightweightDrunk
