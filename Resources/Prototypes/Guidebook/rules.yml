@@ -1,379 +1,224 @@
-﻿# Only one of those rulesets will appear on the server at any given time.
-# They all have a priority of 10 so they appear 2nd by default (after priority 0 and before priority 20)
+# CD: This entire file has been changed
 
 - type: guideEntry # Default for forks and stuff. Should not be listed anywhere if the server is using a custom ruleset.
   id: DefaultRuleset
   name: guide-entry-rules
   ruleEntry: true
-  priority: 10
   text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
 
 - type: guideEntry
-  id: CoreRuleset
-  name: guide-entry-rules-core-only
+  id: CosmaticDriftRules
+  name: guide-entry-rules-cd
   ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/WizDenCoreOnlyRules.xml"
+  priority: 0
+  text: "/ServerInfo/Guidebook/ServerRules/CosmaticDriftRules.xml"
 
 - type: guideEntry
-  id: StandardRuleset
-  name: guide-entry-rules-lrp
+  id: ZeroTolerancePolicies
+  name: guide-entry-rules-1-0
   ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/WizDenLRPRules.xml"
-
-- type: guideEntry
-  id: MRPRuleset
-  name: guide-entry-rules-mrp
-  ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/WizDenMRPRules.xml"
-
-- type: guideEntry
-  id: RoleTypes
-  name: guide-entry-rules-role-types
-  ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/RoleTypes.xml"
-
-- type: guideEntry
-  id: CoreRules
-  name: guide-entry-rules-core
-  ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC0.xml"
+  priority: 30
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-0.xml"
   children:
-  - RuleC1
-  - RuleC2
-  - RuleC3
-  - RuleC4
-  - RuleC5
-  - RuleC6
-  - RuleC7
-  - RuleC8
-  - RuleC9
-  - RuleC10
-  - RuleC11
-  - RuleC12
-  - RuleC13
-  - RuleC14
+  - Rule1_1
+  - Rule1_2
+  - Rule1_3
+  - Rule1_4
+  - Rule1_5
+  - Rule1_6
 
 - type: guideEntry
-  id: RuleC1
-  name: guide-entry-rules-c1
+  id: Rule1_1
+  name: guide-entry-rules-1-1
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC1Admins.xml"
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-1.xml"
 
 - type: guideEntry
-  id: RuleC2
-  name: guide-entry-rules-c2
+  id: Rule1_2
+  name: guide-entry-rules-1-2
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC2DBAD.xml"
+  priority: 2
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-2.xml"
 
 - type: guideEntry
-  id: RuleC3
-  name: guide-entry-rules-c3
+  id: Rule1_3
+  name: guide-entry-rules-1-3
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC3NoHate.xml"
+  priority: 3
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-3.xml"
 
 - type: guideEntry
-  id: RuleC4
-  name: guide-entry-rules-c4
+  id: Rule1_4
+  name: guide-entry-rules-1-4
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC4NoERP.xml"
+  priority: 4
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-4.xml"
 
 - type: guideEntry
-  id: RuleC5
-  name: guide-entry-rules-c5
+  id: Rule1_5
+  name: guide-entry-rules-1-5
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC5Metacomms.xml"
+  priority: 5
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-5.xml"
 
 - type: guideEntry
-  id: RuleC6
-  name: guide-entry-rules-c6
+  id: Rule1_6
+  name: guide-entry-rules-1-6
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC6BanEvasion.xml"
+  priority: 6
+  text: "/ServerInfo/Guidebook/ServerRules/ZeroTolerancePolicies/Rule1-6.xml"
 
 - type: guideEntry
-  id: RuleC7
-  name: guide-entry-rules-c7
+  id: GeneralEtiquette
+  name: guide-entry-rules-2-0
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC7EnglishOnly.xml"
-
-- type: guideEntry
-  id: RuleC8
-  name: guide-entry-rules-c8
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC8Exploits.xml"
-
-- type: guideEntry
-  id: RuleC9
-  name: guide-entry-rules-c9
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC9Multikey.xml"
-
-- type: guideEntry
-  id: RuleC10
-  name: guide-entry-rules-c10
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC10AHelp.xml"
-
-- type: guideEntry
-  id: RuleC11
-  name: guide-entry-rules-c11
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC11AhelpThreats.xml"
-
-- type: guideEntry
-  id: RuleC12
-  name: guide-entry-rules-c12
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC12MinAge.xml"
-
-- type: guideEntry
-  id: RuleC13
-  name: guide-entry-rules-c13
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC13CharacterNames.xml"
-
-- type: guideEntry
-  id: RuleC14
-  name: guide-entry-rules-c14
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC14ICinOOC.xml"
-
-- type: guideEntry
-  id: RoleplayRules
-  name: guide-entry-rules-roleplay
-  ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR0.xml"
+  priority: 40
+  text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-0.xml"
   children:
-  - RuleR1
-  - RuleR2
-  - RuleR3
-  - RuleR4
-  - RuleR5
-  - RuleR6
-  - RuleR7
-  - RuleR8
-  - RuleR9
-  - RuleR10
-  - RuleR11
-  - RuleR12
-  - RuleR13
-  - RuleR14
-  - RuleR15
+  - Rule2_1
+  - Rule2_2
+  - Rule2_3
+  - Rule2_4
+  - Rule2_5
 
 - type: guideEntry
-  id: RuleR1
-  name: guide-entry-rules-r1
+  id: Rule2_1
+  name: guide-entry-rules-2-1
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR1Silicons.xml"
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-1.xml"
 
 - type: guideEntry
-  id: RuleR2
-  name: guide-entry-rules-r2
+  id: Rule2_2
+  name: guide-entry-rules-2-2
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR2Familiars.xml"
+  priority: 2
+  text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-2.xml"
 
 - type: guideEntry
-  id: RuleR3
-  name: guide-entry-rules-r3
+  id: Rule2_3
+  name: guide-entry-rules-2-3
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR3NormalRP.xml"
+  priority: 3
+  text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-3.xml"
 
 - type: guideEntry
-  id: RuleR4
-  name: guide-entry-rules-r4
+  id: Rule2_4
+  name: guide-entry-rules-2-4
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR4Metashield.xml"
+  priority: 4
+  text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-4.xml"
 
 - type: guideEntry
-  id: RuleR5
-  name: guide-entry-rules-r5
+  id: Rule2_5
+  name: guide-entry-rules-2-5
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR5Arrivals.xml"
+  priority: 5
+  text: "/ServerInfo/Guidebook/ServerRules/GeneralEtiquette/Rule2-5.xml"
 
 - type: guideEntry
-  id: RuleR6
-  name: guide-entry-rules-r6
+  id: RoleplayExpectations
+  name: guide-entry-rules-3-0
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR6SelfAntag.xml"
-
-- type: guideEntry
-  id: RuleR7
-  name: guide-entry-rules-r7
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR7RoundStalling.xml"
-
-- type: guideEntry
-  id: RuleR8
-  name: guide-entry-rules-r8
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR8NoFriendlyAntag.xml"
-
-- type: guideEntry
-  id: RuleR9
-  name: guide-entry-rules-r9
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR9MassSabotage.xml"
-
-- type: guideEntry
-  id: RuleR10
-  name: guide-entry-rules-r10
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR10Subordination.xml"
-
-- type: guideEntry
-  id: RuleR11
-  name: guide-entry-rules-r11
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR11Escalation.xml"
+  priority: 50
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-0.xml"
   children:
-  - RuleR11-1
-  - RuleR11-2
+  - Rule3_1
+  - Rule3_2
+  - Rule3_3
+  - Rule3_4
+  - Rule3_5
+  - Rule3_6
+  - Rule3_7
+  - Rule3_8
 
 - type: guideEntry
-  id: RuleR11-1
-  name: guide-entry-rules-r11-1
+  id: Rule3_1
+  name: guide-entry-rules-3-1
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR11-1AnimalEscalation.xml"
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-1.xml"
 
 - type: guideEntry
-  id: RuleR11-2
-  name: guide-entry-rules-r11-2
+  id: Rule3_2
+  name: guide-entry-rules-3-2
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR11-2ConflictTypes.xml"
+  priority: 2
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-2.xml"
 
 - type: guideEntry
-  id: RuleR12
-  name: guide-entry-rules-r12
+  id: Rule3_3
+  name: guide-entry-rules-3-3
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR12RoleAbandonment.xml"
+  priority: 3
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-3.xml"
 
 - type: guideEntry
-  id: RuleR13
-  name: guide-entry-rules-r13
+  id: Rule3_4
+  name: guide-entry-rules-3-4
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR13PerformRole.xml"
+  priority: 4
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-4.xml"
 
 - type: guideEntry
-  id: RuleR14
-  name: guide-entry-rules-r14
+  id: Rule3_5
+  name: guide-entry-rules-3-5
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR14SecComStandard.xml"
+  priority: 5
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-5.xml"
 
 - type: guideEntry
-  id: RuleR15
-  name: guide-entry-rules-r15
+  id: Rule3_6
+  name: guide-entry-rules-3-6
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RoleplayRules/RuleR15SpaceLaw.xml"
+  priority: 6
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-6.xml"
 
 - type: guideEntry
-  id: SiliconRules
-  name: guide-entry-rules-silicon
+  id: Rule3_7
+  name: guide-entry-rules-3-7
   ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS0.xml"
-  children:
-  - RuleS1
-  - RuleS2
-  - RuleS3
-  - RuleS4
-  - RuleS5
-  - RuleS6
-  - RuleS7
-  - RuleS8
-  - RuleS9
-  - RuleS10
+  priority: 7
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-7.xml"
 
 - type: guideEntry
-  id: RuleS1
-  name: guide-entry-rules-s1
+  id: Rule3_8
+  name: guide-entry-rules-3-8
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS1Laws.xml"
+  priority: 8
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-8.xml"
 
 - type: guideEntry
-  id: RuleS2
-  name: guide-entry-rules-s2
+  id: Rule3_9
+  name: guide-entry-rules-3-9
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS2LawPriority.xml"
+  priority: 9
+  text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-9.xml"
 
 - type: guideEntry
-  id: RuleS3
-  name: guide-entry-rules-s3
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS3LawRedefinition.xml"
+  id: SpaceLaw
+  name: guide-entry-rules-space-law
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/CDSpaceLaw.xml"
 
-- type: guideEntry
-  id: RuleS4
-  name: guide-entry-rules-s4
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS4RequestChanges.xml"
-
-- type: guideEntry
-  id: RuleS5
-  name: guide-entry-rules-s5
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS5FreeSilicon.xml"
-
-- type: guideEntry
-  id: RuleS6
-  name: guide-entry-rules-s6
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS6UnreasonableOrders.xml"
-
-- type: guideEntry
-  id: RuleS7
-  name: guide-entry-rules-s7
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS7Consistency.xml"
-
-- type: guideEntry
-  id: RuleS8
-  name: guide-entry-rules-s8
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS8DefaultCrewDefinition.xml"
-
-- type: guideEntry
-  id: RuleS9
-  name: guide-entry-rules-s9
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS9DefaultHarmDefinition.xml"
-
-- type: guideEntry
-  id: RuleS10
-  name: guide-entry-rules-s10
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/SiliconRules/RuleS10OrderConflicts.xml"
-
-
-- type: guideEntry
-  id: MRPRules
-  name: guide-entry-rules-mrp-m0
-  ruleEntry: true
-  priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/MRPRules/RuleM0.xml"
-  children:
-  - RuleM1
-
-- type: guideEntry
-  id: RuleM1
-  name: guide-entry-rules-m1
-  ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/MRPRules/RuleM1DoNotPowergame.xml"
-
-# Ban-Related Guide Entries are used as hyperlinks in certain Ruleset Guide Entry explanations.
+# CD: Remove pending rework
+#- type: guideEntry
+#  id: SpaceLawCrimeList
+#  name: guide-entry-rules-sl-crime-list
+#  priority: 5
+#  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SLCrimeList.xml"
 
 - type: guideEntry
   id: BanTypes
   name: guide-entry-rules-ban-types
   ruleEntry: true
+  priority: 90
   text: "/ServerInfo/Guidebook/ServerRules/BanTypes.xml"
 
 - type: guideEntry
   id: BanDurations
   name: guide-entry-rules-ban-durations
   ruleEntry: true
+  priority: 100
   text: "/ServerInfo/Guidebook/ServerRules/BanDurations.xml"

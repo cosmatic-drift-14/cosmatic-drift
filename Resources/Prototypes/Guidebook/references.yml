@@ -1,7 +1,6 @@
 - type: guideEntry
   id: References
   name: guide-entry-references
-  priority: 30
   text: "/ServerInfo/Guidebook/References.xml"
   children:
   - Chemicals
