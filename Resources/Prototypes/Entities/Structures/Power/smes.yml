@@ -39,7 +39,7 @@
       # This disables prediction for this battery.
       netsync: false
       startingCharge: 0
-      maxCharge: 8000000
+      maxCharge: 16000000 # CD: Buffed from 8MW
     - type: ExaminableBattery
     - type: NodeContainer
       examinable: true
@@ -121,11 +121,11 @@
 - type: entity
   parent: BaseSMES
   id: SMESBasic
-  suffix: Basic, 8MJ
+  suffix: Basic, 16MJ # CD: Buffed from 8 MJ
   components:
   - type: Battery
-    maxCharge: 8000000
-    startingCharge: 8000000
+    maxCharge: 16000000
+    startingCharge: 16000000
 
 - type: entity
   parent: SMESBasic
@@ -162,8 +162,8 @@
   - type: Machine
     board: SMESAdvancedMachineCircuitboard
   - type: Battery
-    maxCharge: 16000000
-    startingCharge: 16000000
+    maxCharge: 24000000 # CD: Changed from 16 to 24
+    startingCharge: 24000000
   - type: PowerMonitoringDevice
     group: SMES
     sourceNode: input

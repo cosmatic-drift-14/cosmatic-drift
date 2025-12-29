@@ -82,7 +82,9 @@
   description: It's a snappy jumpsuit with a sturdy set of overalls. It's very dirty.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/salvage.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage.rsi # CD drip 2
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage.rsi # CD drip 2
 
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband, ClothingUniformFoldableBase]
@@ -258,9 +260,9 @@
   description: It's a turtleneck worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/cmo_turtle.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmoturtle.rsi # CD
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/cmo_turtle.rsi
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmoturtle.rsi # CD
 
 - type: entity
   parent: ClothingUniformBase
@@ -518,9 +520,9 @@
   description: A sharp turtleneck made for the hardy work environment of supply.
   components:
     - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/qmturtle.rsi
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/qmturtle.rsi # CD drip 2
     - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/qmturtle.rsi
+      sprite: _CD/Clothing/Uniforms/Jumpsuit/qmturtle.rsi # CD drip 2
 
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]

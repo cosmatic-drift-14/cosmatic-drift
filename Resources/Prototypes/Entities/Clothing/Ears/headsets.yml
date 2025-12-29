@@ -101,6 +101,7 @@
     containers:
       key_slots:
       - EncryptionKeyStationMaster
+      - EncryptionKeyHailing # CD
   - type: Sprite
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing

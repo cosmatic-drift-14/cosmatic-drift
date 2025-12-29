@@ -133,6 +133,7 @@
     - ServiceStatic
     - PowerCellsStatic
     - ElectronicsStatic
+    - CDAutolatheStatic
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
@@ -254,6 +255,7 @@
     - CargoBoardsStatic
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
+    - CDBoardsStatic
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards
@@ -386,6 +388,7 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    - CDSecfabStatic
     dynamicPacks:
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
@@ -467,6 +470,7 @@
     - MedicalClothingStatic
     - EmptyMedkitsStatic
     - SurgeryStatic
+    - CDMedfabStatic
     dynamicPacks:
     - Chemistry
   - type: Machine
@@ -512,6 +516,7 @@
     - Scarves
     - Carpets
     - Bedsheets
+    - CDUniformPrinterStatic
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm

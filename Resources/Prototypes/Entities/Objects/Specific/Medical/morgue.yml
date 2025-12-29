@@ -149,8 +149,8 @@
           reagents:
             - ReagentId: Ash
               Quantity: 25
-            - ReagentId: Necrosol
-              Quantity: 25
+            # - ReagentId: Necrosol # CD Change: removed necrosol
+            #   Quantity: 25
     - type: GuideHelp
       guides:
       - MinorAntagonists

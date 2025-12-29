@@ -138,12 +138,12 @@
       - PosterLegit50thAnniversaryVintageReprint
       - PosterLegitFruitBowl
       - PosterLegitPDAAd
-      - PosterLegitEnlist
+      # - PosterLegitEnlist # CD: LRP poster
       - PosterLegitNanomichiAd
       - PosterLegit12Gauge
       - PosterLegitHighClassMartini
       - PosterLegitTheOwl
-      - PosterLegitNoERP
+      # - PosterLegitNoERP # CD: Disable LRP poster
       - PosterLegitCarbonDioxide
       - PosterLegitDickGumshue
       - PosterLegitThereIsNoGasGiant

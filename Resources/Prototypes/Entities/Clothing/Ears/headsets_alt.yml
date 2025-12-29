@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: ClothingHeadset
   id: ClothingHeadsetAlt
@@ -50,6 +50,7 @@
     containers:
       key_slots:
       - EncryptionKeyStationMaster
+      - EncryptionKeyHailing
   - type: Sprite
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing

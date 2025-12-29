@@ -60,6 +60,10 @@
       enum.GeneralStationRecordConsoleKey.Key:
       # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        type: JobSlotsConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -72,8 +76,13 @@
         toggleAction: ActionAGhostShowCargo
       enum.CrewMonitoringUIKey.Key:
         toggleAction: ActionAGhostShowCrewMonitoring
-      enum.GeneralStationRecordConsoleKey.Key:
-        toggleAction: ActionAGhostShowStationRecords
+      # Disable wizden records
+      #enum.GeneralStationRecordConsoleKey.Key:
+      #  toggleAction: ActionAGhostShowStationRecords
+      enum.CharacterRecordConsoleKey.Key:
+        toggleAction: ActionAGhostShowCharacterRecords
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        toggleAction: ActionAGhostShowJobSlotsConsole
   - type: SolarControlConsole # look ma i AM the computer!
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
@@ -106,9 +115,16 @@
     templateId: aghost
   - type: Loadout
     prototypes: [ MobAghostGear ]
+  - type: CharacterRecordConsole
+    consoleType: Admin
+    # Needed for security records console functionality
+  - type: CriminalRecordsConsole
+  - type: JobSlotsConsole # _CD
+    debug: true
   - type: BypassInteractionChecks
   - type: ExplosionResistance
     damageCoefficient: 0
+  - type: InteractionToggleable # CD
 
 - type: entity
   abstract: true
@@ -194,3 +210,30 @@
     priority: -7
   - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }
+
+- type: entity
+  id: ActionAGhostShowCharacterRecords
+  name: Character Records Interface
+  description: View all of the character records
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
+    iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
+    keywords: [ "AI", "console", "interface" ]
+    priority: -10
+    event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
+
+# _CD - Job slots
+- type: entity
+  id: ActionAGhostShowJobSlotsConsole
+  name: Job Slots Interface
+  description: View and adjust job slots
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
+    iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
+    keywords: [ "AI", "console", "interface" ]
+    priority: -10
+    event: !type:ToggleIntrinsicUIEvent { key: enum.JobSlotsConsoleUiKey.Key }

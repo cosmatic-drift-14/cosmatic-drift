@@ -151,7 +151,7 @@
   description: A large duffel bag for stealing cargo's precious loot.
   components:
     - type: Sprite
-      sprite: Clothing/Back/Duffels/cargo.rsi
+      sprite: _CD/Clothing/Back/Duffels/cargo.rsi
 
 - type: entity
   parent: ClothingBackpackDuffel

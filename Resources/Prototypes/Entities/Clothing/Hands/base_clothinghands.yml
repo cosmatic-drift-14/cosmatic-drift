@@ -72,6 +72,10 @@
   - type: Tag
     tags:
     - Ring
+  - type: Engraveable #Start CD changes
+    noEngravingText: "engraving-ring-no-message"
+    engraveSuccessMessage: "engraving-ring-succeed"
+    hasEngravingText: "engraving-ring-has-message" # End CD changes
 
 - type: entity
   abstract: true

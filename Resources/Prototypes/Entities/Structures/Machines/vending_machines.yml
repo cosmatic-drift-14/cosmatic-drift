@@ -1689,7 +1689,7 @@
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/cargodrobe.rsi
+    sprite: _CD/Structures/Machines/VendingMachines/cargodrobe.rsi # CD drip 2
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]

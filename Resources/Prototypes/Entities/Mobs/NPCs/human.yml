@@ -68,6 +68,8 @@
   name: syndicate shuttle pilot
   parent: MobSyndicateFootsoldier
   id: MobSyndicateFootsoldierPilot
+  components:
+  - type: Unrevivable # CD
 
 - type: entity
   parent: BaseMobHuman
@@ -88,6 +90,7 @@
         Blunt: 19
   - type: Inventory
     templateId: corpse
+  - type: Unrevivable  # CD
 
 - type: entity
   parent: MobHuman
