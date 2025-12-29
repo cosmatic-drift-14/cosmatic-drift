@@ -20,6 +20,19 @@
   name: private investigator PDA
   description: Smells like smoke and alchohol.
   components:
+  - type: Sprite
+    sprite: _CD/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-privateinvestigator"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: PrivateInvestigatorIDCard
   - type: Appearance

@@ -34,6 +34,9 @@
     },
     {
       "name": "pda-offduty"
+    },
+    {
+      "name": "pda-privateinvestigator"
     }
   ]
 }
