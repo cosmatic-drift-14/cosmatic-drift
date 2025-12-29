@@ -414,10 +414,10 @@ ClothingBeltSuspenders: ClothingBeltSuspendersRed
 # 2024-08-19
 ClothingNeckShockCollar: ClothingBackpackElectropack
 
-# 2024-08-22
-ComputerShuttleSalvage: null
-SalvageShuttleConsoleCircuitboard: null
-SalvageShuttleCircuitboardStealObjective: null
+# 2024-08-22 CD - Reverted
+# ComputerShuttleSalvage: null
+# SalvageShuttleConsoleCircuitboard: null
+# SalvageShuttleCircuitboardStealObjective: null
 
 # 2024-08-28
 ClothingBackpackDuffelSyndicateCostumeCentcom: null
@@ -759,3 +759,12 @@ SpawnPointBoxer: null
 FigureSpawner: MechFigurineSpawner50
 ToySpawner: PlushieSpawner50
 SpacemenFigureSpawner: SpacemenFigurineSpawner90
+
+# 2024-01-23 CD Change, replacing upstream cryopods with our own
+CryogenicSleepUnit: MachineCryoSleepPod
+CryogenicSleepUnitSpawner: MachineCryoSleepPod
+CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
+
+#2024-01-01 CD: LRP posters
+PosterLegitNoERP: null
+PosterLegitEnlist: null
