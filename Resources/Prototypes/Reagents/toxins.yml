@@ -146,10 +146,10 @@
         ignoreResistances: false
         damage:
           types:
-            Caustic: 0.5
+            Caustic: 2.5 # Having a beaker of acid thrown at your face will definitely hurt a lot. Be careful when slipping in puddles too, silly.
       - !type:Emote
         emote: Scream
-        probability: 0.3
+        probability: 0.9 # Good luck NOT screaming.
   metabolisms:
     Poison:
       metabolismRate : 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
@@ -206,10 +206,10 @@
         ignoreResistances: false
         damage:
           types:
-            Caustic: 0.3
+            Caustic: 2
       - !type:Emote
         emote: Scream
-        probability: 0.2
+        probability: 0.8
   metabolisms:
     Poison:
       metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
@@ -368,9 +368,11 @@
       - !type:HealthChange
         probability: 0.1
         damage:
-          groups:
-            Brute: 2
-      # todo: cough, sneeze
+          # CD: Nerf for allergies
+          types:
+            Blunt: 1
+            Poison: 1
+      # todo: sneeze
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -382,6 +384,24 @@
             Airloss: 2
           types:
             Poison: 2
+      # CD: Alergies
+      - !type:Emote
+        conditions:
+        - !type:ReagentCondition
+          reagent: Histamine
+          max: 45
+        emote: Cough
+        force: true
+        probability: 0.1
+      - !type:Emote
+        conditions:
+        - !type:ReagentCondition
+          reagent: Histamine
+          min: 45
+        emote: Gasp
+        force: true
+        probability: 0.1
+      # end CD
       - !type:PopupMessage
         type: Local
         messages: [ "histamine-effect-light-itchiness" ]
