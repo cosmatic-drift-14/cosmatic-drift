@@ -20,12 +20,12 @@ public sealed class MouthStorageSystem : SharedMouthStorageSystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<MouthStorageComponent, ComponentInit>(OnMouthStorageInit);
+        SubscribeLocalEvent<MouthStorageComponent, ComponentStartup>(OnMouthStorageStartup);
         SubscribeLocalEvent<MouthStorageComponent, AccentGetEvent>(OnAccent);
         SubscribeLocalEvent<MouthStorageComponent, IngestionAttemptEvent>(OnIngestAttempt);
     }
 
-    private void OnMouthStorageInit(EntityUid uid, MouthStorageComponent component, ComponentInit args)
+    private void OnMouthStorageStartup(EntityUid uid, MouthStorageComponent component, ComponentStartup args)
     {
         if (string.IsNullOrWhiteSpace(component.MouthProto))
             return;
