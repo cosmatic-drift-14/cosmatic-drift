@@ -9,7 +9,7 @@
     state: civdef
   - type: Storage
     grid:
-    - 0,0,1,1
+    - 0,0,2,2
     maxItemSize: Small
     whitelist:
       tags:
@@ -24,6 +24,8 @@
         - Healing
   - type: Item
     size: Normal
+    shape:
+    - 0,0,2,2
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     heldPrefix: civdef
   - type: PhysicalComposition

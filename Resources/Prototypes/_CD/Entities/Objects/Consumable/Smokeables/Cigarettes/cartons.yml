@@ -10,9 +10,10 @@
       - state: closed
   - type: Item
     sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Cartons/purple.rsi
-  - type: StorageFill
-    contents:
-      - id: CigPackPurple
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: CigPackPurple
         amount: 5
 
 - type: entity
@@ -27,7 +28,8 @@
       - state: closed
   - type: Item
     sprite: _CD/Objects/Consumable/Smokeables/Cigarettes/Cartons/pink.rsi
-  - type: StorageFill
-    contents:
-      - id: CigPackCandy
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: CigPackCandy
         amount: 5
