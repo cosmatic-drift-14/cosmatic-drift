@@ -1,0 +1,36 @@
+- type: job
+  id: PrivateInvestigator
+  name: job-name-private-investigator
+  description: job-description-private-investigator
+  playTimeTracker: JobPrivateInvestigator
+  startingGear: PrivateInvestigatorGear
+  icon: "JobIconPrivateInvestigator"
+  supervisors: job-supervisors-hop
+  access:
+  - Maintenance
+  - Service
+
+- type: startingGear
+  id: PrivateInvestigatorGear
+  equipment:
+    id: PrivateInvestigatorPDA
+    ears: ClothingHeadsetService
+  storage:
+    back:
+    - ForensicScanner
+    - ForensicPad
+    - ForensicPad
+    - ForensicPad
+    - LogProbeCartridge
+    - BoxTapeRecorder
+
+- type: chameleonOutfit
+  id: PrivateInvestigatorChameleonOutfit
+  job: PrivateInvestigator
+  equipment:
+    head: ClothingHeadHatFedoraBrown
+    eyes: ClothingEyesGlassesSunglasses
+    mask: ClothingMaskBreath
+    outerClothing: ClothingOuterCoatJensen
+    gloves: ClothingHandsGlovesColorBlack
+    shoes: ClothingShoesBootsJack

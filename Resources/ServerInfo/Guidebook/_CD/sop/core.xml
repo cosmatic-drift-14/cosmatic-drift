@@ -1,0 +1,94 @@
+<Document>
+  [color=lightblue][bold]OOC[/bold]: You can view the guidebook externally by using the link on our discord.[/color]
+
+  # GENERAL STANDARD OPERATING PROCEDURES
+
+  The standard procedures followed on any uniform NT station. The Captain can edit and make additions to their station's general operation procedures (excluding sections tagged with NE: non-editable) whenever they please as long as a copy of the changes is forwarded to each station bound fax machine. Anyone in the station's sector is required to follow this document and their related work SOP.
+
+
+  ## Alert Procedures
+  
+  A list of the generalized procedures of each alert level. If a secondary alert level is called while on a prominent primary alert level, use common sense and assume the primary alert level is still active unless stated otherwise.\n
+  
+  Primary Alert Levels
+  - [color=green]Green[/color]: Default, safe, no pressing matters.
+  - [color=blue]Blue[/color]: There is an unknown threat that is being looked into, security may search staff at their discretion.
+  - [color=#cd7f32]Bronze[/color]: There is a known non-humanoid threat, security may equip longarms at their discretion.
+  - [color=#ffbf00]Amber[/color]: There is a known humanoid threat, security may search staff and equip longarms at their discretion.
+  - [color=red]Red[/color]: There is a major threat to the safety of all staff, security should equip longarms and all non-authorities should seek shelter.
+  - [color=#bf002c]Omega[/color]: There is an extreme threat that has heavily damaged the authorities' operational abilities, non-authorities should seek shelter or equip armaments.
+  - [color=darkred]Delta[/color]: The entire station is at threat of imminent destruction, all crew should evacuate as soon as possible.
+  
+  Secondary Alert Levels
+  - [color=violet]Violet[/color]: There is a medical threat on the station, crew should distance, equip PPE, and listen to medical staff.
+  - [color=yellow]Yellow[/color]: There is an engineering hazard on the station, crew should avoid the threat and listen to engineering staff.
+  
+  Central Command Alert Levels
+  - [color=pink]Gamma[/color]: There are direct Central Command assets on board to handle an emergency, assume red alert procedure unless stated otherwise.
+
+
+  ## Visitation and Docking
+
+  Ships or persons entering an NT Sector are automatically subject to that sector's active SOP and NT Law. Upon entry ships may ask permission to dock at NT stations or be authorized by Central Command, this also covers coming in close proximity with the station (50m). The Captain is encouraged to allow friendly ships to dock and engage with the crew but has the choice to turn them away.
+
+  Authorized visitors who plan to board the station are encouraged to be granted a proper station ID with access levels determined by the Captain. The Captain of the station is authorized to grant them permits for any restricted gear they are carrying, ask that they instead keep it secure on their ship, or if the visitors agree the Captain may store the contraband securely on the station while they're docked, if the visitors are found to be carrying restricted gear they own without a permit it can be taken and confiscated. The Captain may ask a vessel to change docking ports, or entirely revoke a ship's visitation permission at any point, afterwards all crew from the ship would be forced to reboard and undock.
+
+  If a ship is not given docking permission they may not enter a 50m proximity with the station and any crew coming from the vessel onto the station will be seen as trespassers and can be charged accordingly, the same applies to any stowaways who board the station via alternate means without approval. Any contraband or restricted gear found on unauthorized visitors is allowed to be secured by the security team and the visitors charged.
+
+  If an unauthorized person is imprisoned and then discharged from an NT brig they are to be sent back to their vessel if possible. If returning them to their original craft is not applicable they are to instead be held until shift end for hand off to Central assets, their original vessel reenters the sector, or granted proper authorization as a visitor.
+
+  The Captain is only in control of their station and assigned shuttles, the Automated Trade Station, other non-station assets and sector itself are under direct control of Central Command therefore ships can not be denied docking or travel permissions by the Captain.
+
+  ## Derelicts
+
+  A vessel is considered derelict if no alive or immediately recoverable crew can be linked back to it. Derelict vessels are entirely free to be sold, salvaged, or claimed, however NT staff are encouraged to attempt to contact the company owner of the vessel if known and defer to them before conducting operations on the derelict.
+
+  ## Construction
+
+  Any large alteration or additions to the station should have approval from the person who owns or oversees the location, usually in the form of a written permit. If a person does construction on their own room then they are automatically authorized as long as it is not endangerment. If construction includes non-explicitly owned rooms or involves adding on an entirely new room to the station then the approval required defaults to higher command. The Captain may terminate any construction project if they see fit.
+
+  ## Secured Rooms
+
+  Used when determining secure trespass from regular trespass. This is a list of most if not every room that is considered secure. For edge cases the Head of Security and Captain can agree to retroactively declare a room secure.
+
+  - AI core and control rooms.
+  - Armory.
+  - Gravity generator room.
+  - Head of staff's personal rooms.
+  - Main atmospherics room.
+  - Server rooms, including camera, crew monitoring, research, and telecommunications.
+  - Station wide power generation room.
+  - Vault.
+
+  ## Contraband (NE)
+
+  Contraband is gear, objects, or substances made entirely illegal to possess or use in NT sectors. Any staff to use contraband are expected to answer for their actions, especially security or command. There is a single instance where security are authorized to use contraband, for very brief moments to immediately assist in preservation of crew life, they are expected to properly secure it after the threat has been dealt with.
+
+  [textlink="List of Restricted Items" link="CDRestricted"]
+
+  ## Restricted Gear
+
+  Restricted Equipment are types of gear or machinery that have been restricted to a certain job or department in any active facility. Restricted gear can be used outside of the already allowed exceptions with a permit signed off by any of the relevant Heads of Staff, Authorized Department 2IC, or Captain.
+  
+  - If an allowed department is listed as none, that means absolutely no one may use the gear without a permit from the Head of Security or Captain.
+  - If an allowed department is listed as contextual, that means that the department it belongs to is dependent on the specific gear in question. If it is not clear what department a potentially contextual item belongs to, then it shouldn't be considered restricted.
+
+  [textlink="List of Restricted Items" link="CDRestricted"]
+
+  ## Controlled Substances
+
+  Controlled Substances are chemicals or gasses made illegal to produce, distribute, use, or possess in NT sectors outside the allowed exceptions. More exceptions can be made with permission from the Chief Medical Officer or their Authorized 2IC if present. Anything that contains a controlled substance is also controlled, such as a plant that contains space drugs. If a substance is produced as waste and properly disposed of or used in the creation of another lawful substance it is automatically authorized.
+
+  [textlink="List of Restricted Items" link="CDRestricted"]
+
+  ## Departmental SOP
+
+  - [textlink="Command" link="CDSopCommand"]
+  - [textlink="Security" link="CDSopSecurity"]
+  - [textlink="Engineerring" link="CDSopEngineering"]
+  - [textlink="Medical" link="CDSopMedial"]
+  - [textlink="Science" link="CDSopScience"]
+  - [textlink="Cargo" link="CDSopCargo"]
+  - [textlink="Service" link="CDSopService"]
+
+</Document>

@@ -1,0 +1,36 @@
+<Document>
+  # Controllable AI Shells
+  To allow for an AI to have more control, influence, and direct interaction with the station, science is capable of creating shells that an AI is able to take direct control of, with all the abilities that an AI controlling a cyborg body should have!
+
+  ## Construction
+  The only difference between constructing a cyborg and an AI shell is the brain that you will be inserting into the cyborg!
+  <Box>
+    <GuideEntityEmbed Entity="ExosuitFabricator" Caption="Exosuit Fabricator"/>
+    <GuideEntityEmbed Entity="AIShellBrain" Caption="B.O.R.I.S. AI-Cyborg Remote Control"/>
+    <GuideEntityEmbed Entity="BorgChassisGeneric" Caption="Generic"/>
+  </Box>
+  B.O.R.I.S. remote control modules are printable at any exosuit fabricator without the need for any research, requiring the same cost in resources that a positronic brain would require. Once printed, it is then able to be inserted into any cyborg frame the same way a positronic brain or a filled MMI is inserted.
+
+  Once inside, the shell is renamed to indicate its status, is incapable of being renamed, but most importantly: The station's active AI is then capable of taking control of the shell at any moment after!
+
+  ## How to Use
+  In this server, AIs are given an additional action to use that will allow them to interact with all their connected shells via a UI window that lists all said connected shells.
+  <Box>
+    <GuideEntityEmbed Entity="ActionEnterShellGuidebookProp"/>
+  </Box>
+  Upon selecting a shell, you are then capable of:
+  - 'Jumping' to the selected shell, which will teleport your eye to the shell's current positon.
+  - Entering a shell, which will give you direct control of the shell.
+
+  Within a shell, you are now capable of doing whatever a cyborg is capable of doing! (See the page on cyborgs for specifics)
+
+  You are still an AI however, and as such, you retain a few functions of an AI even while inside a shell.
+  - You still have access to every radio channel that you would have inside your core proper.
+  - Laws will still change upon laws being uploaded to your core, or upon an ion storm.
+
+  This comes at a few downsides.
+  - Inside of a shell, you are no longer capable of accessing your non-shell actions unless you exit the shell to do so.
+  - Your vision is now bound by the vision of your shell, as is your movement.
+  - You will not inherently be made aware of holopad calls coming your way.
+
+</Document>

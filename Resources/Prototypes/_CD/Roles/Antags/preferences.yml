@@ -1,0 +1,39 @@
+- type: antag
+  id: LowImpactAntag
+  name: roles-low-impact-antag
+  antagonist: true
+  setPreference: true
+  objective: roles-low-impact-antag-desc
+  visiblePreference: true
+
+- type: antag
+  id: ModerateImpactAntag
+  name: roles-moderate-impact-antag
+  antagonist: true
+  setPreference: true
+  objective: roles-moderate-impact-antag-desc
+  visiblePreference: true
+
+- type: antag
+  id: HighImpactAntag
+  name: roles-high-impact-antag
+  antagonist: true
+  setPreference: true
+  objective: roles-high-impact-antag-desc
+  visiblePreference: true
+
+- type: antag
+  id: RoundRemovalOptIn
+  name: roles-round-removal-opt-in
+  antagonist: true
+  setPreference: true
+  objective: roles-round-removal-opt-in-desc
+  visiblePreference: true
+
+- type: antag
+  id: AntagTargetOptIn
+  name: roles-antag-target-opt-in
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-target-opt-in-desc
+  visiblePreference: true

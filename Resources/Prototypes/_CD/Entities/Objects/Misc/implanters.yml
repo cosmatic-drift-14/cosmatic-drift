@@ -1,0 +1,7 @@
+- type: entity
+  id: MedicalTrackingImplanter
+  suffix: medical tracking
+  parent: BaseImplantOnlyImplanter
+  components:
+    - type: Implanter
+      implant: MedicalTrackingImplant

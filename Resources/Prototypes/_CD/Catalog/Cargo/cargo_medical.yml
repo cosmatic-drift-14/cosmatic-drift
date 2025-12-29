@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MedicalTrackingImplant
+  icon:
+    sprite: Objects/Specific/Medical/implanter.rsi
+    state: implanter0
+  product: CrateMedicalTrackingImplants
+  cost: 2500
+  category: cargoproduct-category-name-medical
+  group: market

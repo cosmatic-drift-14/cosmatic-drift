@@ -1,0 +1,455 @@
+# CowboyDuster
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCowboyDuster
+  name: brown duster
+  description: A brown duster, covered in sand.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
+
+# Military Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatMilitaryCoat
+  name: military jacket
+  description: A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
+
+# Harmony Jacket
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHarmony
+  name: harmony jacket
+  description: A black leather coat designed by the small Harmony company.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
+
+# Europan Coats
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCoatEuropanVet
+  name: submarine jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+
+- type: entity
+  parent: ClothingOuterCoatEuropanVet
+  id: ClothingOuterCoatEuropanCoalition
+  name: nautical jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a navigator's compass.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/coalitioncoat.rsi
+
+- type: entity
+  parent: ClothingOuterCoatEuropanVet
+  id: ClothingOuterCoatEuropanSeparatist
+  name: independence jacket
+  description: A heavy leather jacket, winterized and waterproofed for harsh underwater environments. Emblazoned on the shoulders is a raised fist.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Europa/separatistcoat.rsi
+
+# Cargo Gorka
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
+  id: ClothingOuterCoatCargoBomber
+  name: cargo gorka
+  description: A heavy canvas gorka for cold shifts in Cargo.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/cargo_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoBomber]
+  id: ClothingOuterCoatCargoBomberOpened
+  name: cargo gorka
+
+# Foreman Coat
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
+  id: ClothingOuterCoatCargoForeman
+  name: foreman jacket
+  description: A comfortable padded leather jacket for a logistics foreman
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/foreman_coat.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCargoForeman ]
+  id: ClothingOuterCoatCargoForemanOpened
+  name: foreman jacket
+
+# CentComm Coats
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentCommOfficer
+  name: CentComm officer's coat
+  description: A comfortable green coat worn by CentComm officers. The armour has been removed in favour of more pocket space.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/central_officer.rsi
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatCentCommOverseer
+  name: CentComm overseer jacket
+  description: A leather jacket worn by Overseers who prefer a more rugged style.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/central_overseer.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/central_overseer.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatCentCommOverseer ]
+  id: ClothingOuterCoatCentCommOverseerOpened
+  name: CentComm overseer jacket
+
+# High-Vis jackets
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatYellowHiVis
+  name: emergency jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatYellowHiVis]
+  id: ClothingOuterCoatYellowHiVisOpened
+  name: emergency jacket
+
+- type: entity
+  parent: ClothingOuterCoatYellowHiVis
+  id: ClothingOuterCoatOrangeHiVis
+  name: hazard jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon orange.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatOrangeHiVis]
+  id: ClothingOuterCoatOrangeHiVisOpened
+  name: hazard jacket
+
+- type: entity
+  parent: ClothingOuterCoatYellowHiVis
+  id: ClothingOuterCoatBlueHiVis
+  name: EMT jacket
+  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon blue.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]
+  id: ClothingOuterCoatBlueHiVisOpened
+  name: EMT jacket
+
+# Engineering jacket
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat ]
+  id: ClothingOuterCoatEngi
+  name: engineering jacket
+  description: A comfortable yellow jacket for less-extreme chills.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/engi_jacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/engi_jacket.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatEngi]
+  id: ClothingOuterCoatEngiOpened
+  name: engineering jacket
+
+# Forensic jacket
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatDetectiveForensic
+  name: forensic jacket
+  description: A sturdy black windbreaker with a red armband and collar.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/forensic_coat.rsi
+    slots:
+    - outerClothing
+    - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatDetectiveForensic]
+  id: ClothingOuterCoatDetectiveForensicOpened
+  name: forensic jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
+
+# Field jacket
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatSecurityFieldjacket
+  name: security field jacket
+  description: A comfortable black field jacket with a red armband.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_fieldjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_fieldjacket.rsi
+    slots:
+    - outerClothing
+    - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatSecurityFieldjacket]
+  id: ClothingOuterCoatSecurityFieldjacketOpen
+  name: security field jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatFieldjacket
+  name: field jacket
+  description: A comfortable black field jacket.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/fieldjacket.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/fieldjacket.rsi
+    slots:
+    - outerClothing
+    - suitStorage
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatFieldjacket]
+  id: ClothingOuterCoatFieldjacketOpen
+  name: field jacket
+  components:
+    - type: Clothing
+      slots:
+      - outerClothing
+      - suitStorage
+
+# Greatcoat
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: ClothingOuterCoatSecGreatcoat
+  name: security greatcoat
+  description: An exceptionally heavy wool greatcoat, the sleeves are dyed red to help distinguish the wearer as Security staff.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_greatcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/sec_greatcoat.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatSecGreatcoat]
+  id: ClothingOuterCoatSecGreatcoatOpened
+  name: security greatcoat
+
+# Suit Jackets
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitBlue
+  name: blue suit jacket
+  description: A fancy blue suit jacket.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Suits/blue.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitRed
+  name: red suit jacket
+  description: A fancy red suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/red.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/red.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitPurple
+  name: purple suit jacket
+  description: A fancy purple suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/purple.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/purple.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSuitBurgundy
+  name: burgundy suit jacket
+  description: A fancy burgundy suit jacket.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/burgundy.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/OuterClothing/Coats/Suits/burgundy.rsi
+
+# Labcoats
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatStylishLab
+  name: modern lab coat
+  description: A sleak suit that protects against minor chemical spills.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLab]
+  id: ClothingOuterCoatStylishLabOpened
+  name: modern lab coat
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatStylishLabChem
+  name: modern chemist lab coat
+  description: A sleak suit that protects against minor chemical spills. It has orange stripes on the shoulders
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_chem.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabChem]
+  id: ClothingOuterCoatStylishLabChemOpened
+  name: modern chemist lab coat
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatStylishLabCMO
+  name: chief medical officer's modern lab coat
+  description: Custom made sleek blue lab coat for the Chief Medical Officer, offers improved protection against chemical spills and minor cuts.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_cmo.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.95
+        Caustic: 0.65
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatStylishLabCMO ]
+  id: ClothingOuterCoatStylishLabCMOOpened
+  name: chief medical officer's modern lab coat
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatLabStylishSeniorPhysician
+  name: modern senior physician lab coat
+  description: A sleak suit that protects against minor chemical spills. Has light blue sleeves and an orange waist trim.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_physician.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishSeniorPhysician ]
+  id: ClothingOuterCoatLabStylishSeniorPhysicianOpened
+  name: modern senior physician lab coat
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatLabStylishViro
+  name: modern virologist lab coat
+  description: A suit that protects against bacteria and viruses. Has an green stripe on the shoulder.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_viro.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Coats/Labcoats/labcoat_viro.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabStylishViro ]
+  id: ClothingOuterCoatLabStylishViroOpened
+  name: modern virologist lab coat

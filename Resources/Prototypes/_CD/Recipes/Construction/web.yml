@@ -1,0 +1,15 @@
+- type: construction
+  id: WebNest
+  graph: WebStructuresCD
+  startNode: start
+  targetNode: nest
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - SpiderCraft
+  conditions:
+    - !type:TileNotBlocked

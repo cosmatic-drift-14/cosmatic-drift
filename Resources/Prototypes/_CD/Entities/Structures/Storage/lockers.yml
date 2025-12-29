@@ -1,0 +1,28 @@
+- type: entity
+  parent: BaseMachine
+  id: LockerLostAndFound
+  name: lost and found locker
+  description: A secure locker for storing items from cryosleeping crew members.
+  components:
+  - type: LostAndFound
+  - type: ActivatableUI
+    key: enum.LostAndFoundUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LostAndFoundUiKey.Key:
+        type: LostAndFoundBoundUserInterface
+  - type: ActivatableUIRequiresAccess
+  - type: AccessReader
+    access: [ [ "HeadOfPersonnel" ] ]
+  - type: Appearance
+  - type: Sprite
+    sprite: _CD/Structures/lostandfound-closet.rsi
+    layers:
+    - state: lostandfound
+    - state: lostandfound_door
+    - state: locked
+      shader: unshaded
+  - type: GuideHelp
+    guides: [Cryosleep]
+  - type: Destructible
+    thresholds: []

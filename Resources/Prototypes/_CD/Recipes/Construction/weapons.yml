@@ -1,0 +1,7 @@
+- type: construction
+  id: Bokken
+  graph: Bokken
+  startNode: start
+  targetNode: bokken
+  category: construction-category-weapons
+  objectType: Item

@@ -1,0 +1,39 @@
+- type: loadout
+  id: CargoTechnicianPants
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoPants
+
+- type: loadout
+  id: CargoTechnicianJumpsuitLight
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoLight
+
+- type: loadout
+  id: CargoTechnicianJumpskirtLight
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCargoLight
+
+- type: loadout
+  id: CargoTechnicianJumpsuitDark
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoDark
+
+- type: loadout
+  id: CargoTechnicianJumpskirtDark
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCargoDark
+
+- type: loadout
+  id: CargoTechnicianOveralls
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoOveralls
+
+- type: loadout
+  id: CargoBomber
+  equipment: 
+    outerClothing: ClothingOuterCoatCargoBomber
+
+- type: loadout
+  id: SteelWorkboots
+  equipment:
+    shoes: ClothingShoesBootsSteel

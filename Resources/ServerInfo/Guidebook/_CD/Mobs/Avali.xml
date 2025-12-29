@@ -1,0 +1,13 @@
+<Document>
+  # Avali
+
+  <Box>
+    <GuideEntityEmbed Entity="MobAvali" Caption=""/>
+  </Box>
+
+  Adapted to live in cold envinronments, their bodies are capable of handling extremely cold temperatures. Their temperature range is
+  [color=#12ABE8] approximately -50C to 36C[/color]. Additionally, due to their traditionally smaller stature [color=#ffa500]
+  they are 5% less dense than the average species[/color] meaning they are slightly more susceptible to being shoved over
+  and its more difficult for them to pull objects.
+
+</Document>

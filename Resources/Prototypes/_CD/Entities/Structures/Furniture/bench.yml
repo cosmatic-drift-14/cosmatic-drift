@@ -1,0 +1,186 @@
+# Base benches
+- type: entity
+  abstract: true
+  parent: SeatBase
+  id: BenchBaseMiddle
+  name: bench
+  suffix: Middle
+  description: Multiple seats spanning a single object. Truly a marvel of science.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    state: middle
+  - type: Physics
+    bodyType: Static
+
+# Park benches
+- type: entity
+  parent: BenchBaseMiddle
+  id: BenchParkMiddle
+  name: park bench
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Bench/parkbench_wooden.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchParkMiddle
+
+- type: entity
+  parent: BenchParkMiddle
+  id: BenchParkLeft
+  suffix: Right
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Bench
+    node: BenchParkLeft
+
+- type: entity
+  parent: BenchParkMiddle
+  id: BenchParkRight
+  suffix: Left
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Bench
+    node: BenchParkRight
+
+# Bamboo benches
+- type: entity
+  parent: BenchBaseMiddle
+  id: BenchParkBambooMiddle
+  name: park bench
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Bench/parkbench_bamboo.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchParkBambooMiddle
+
+- type: entity
+  parent: BenchParkBambooMiddle
+  id: BenchParkBambooLeft
+  suffix: Right
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Bench
+    node: BenchParkBambooLeft
+
+- type: entity
+  parent: BenchParkBambooMiddle
+  id: BenchParkBambooRight
+  suffix: Left
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Bench
+    node: BenchParkBambooRight
+
+# Pews
+- type: entity
+  parent: BenchBaseMiddle
+  id: BenchPewMiddle
+  name: pew
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Bench/pew.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchPewMiddle
+
+- type: entity
+  parent: BenchPewMiddle
+  id: BenchPewLeft
+  suffix: Left
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Bench
+    node: BenchPewLeft
+
+- type: entity
+  parent: BenchPewMiddle
+  id: BenchPewRight
+  suffix: Right
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Bench
+    node: BenchPewRight
+
+# Steel benches
+- type: entity
+  parent: BenchBaseMiddle
+  id: BenchSteelMiddle
+  name: steel bench
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Bench/steel_bench.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchSteelMiddle
+
+- type: entity
+  parent: BenchSteelMiddle
+  id: BenchSteelLeft
+  suffix: Left
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Bench
+    node: BenchSteelLeft
+
+- type: entity
+  parent: BenchSteelMiddle
+  id: BenchSteelRight
+  suffix: Right
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Bench
+    node: BenchSteelRight
+
+# White steel benches
+- type: entity
+  parent: BenchBaseMiddle
+  id: BenchSteelWhiteMiddle
+  name: white steel bench
+  components:
+  - type: Sprite
+    sprite: _CD/Structures/Furniture/Bench/steel_bench_white.rsi
+  - type: Construction
+    graph: Bench
+    node: BenchSteelWhiteMiddle
+
+- type: entity
+  parent: BenchSteelWhiteMiddle
+  id: BenchSteelWhiteLeft
+  suffix: Left
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction
+    graph: Bench
+    node: BenchSteelWhiteLeft
+
+- type: entity
+  parent: BenchSteelWhiteMiddle
+  id: BenchSteelWhiteRight
+  suffix: Right
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction
+    graph: Bench
+    node: BenchSteelWhiteRight

@@ -1,0 +1,10 @@
+﻿- type: playerConnectionWhitelist
+  id: cdWhitelist # Whitelist that gives two non-whitelist slots
+  conditions:
+    - !type:ConditionManualWhitelistMembership
+      action: Allow # Allow connection if matched
+    - !type:ConditionWhitelistSlots
+      maximumPlayers: 2
+      action: Allow
+    - !type:ConditionAlwaysMatch # Condition that always matches
+      action: Deny # Deny connection if matched

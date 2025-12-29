@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "copyright": "Originally from tgstation, resprited for CD by PursuitInAshes",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+        {
+          "name": "lostandfound"
+        },
+        {
+          "name": "lostandfound_door"
+        },
+        {
+          "name": "lostandfound_open"
+        },
+        {
+            "name": "locked"
+        },
+        {
+            "name": "unlocked"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+﻿- type: typingIndicator
+  id: rodentia
+  spritePath: /Textures/_CD/Effects/speech.rsi
+  typingState: rodentia0
+  idleState: rodentia1
+  offset: 0, 0.2 # 0625
+
+- type: typingIndicator
+  id: foxfolk
+  spritePath: /Textures/_CD/Effects/speech.rsi
+  typingState: foxfolk0
+  idleState: foxfolk1
+  offset: -0.05, 0.2

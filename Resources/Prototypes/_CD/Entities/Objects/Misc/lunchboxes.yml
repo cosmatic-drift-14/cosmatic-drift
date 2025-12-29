@@ -1,0 +1,53 @@
+- type: entity
+  abstract: true
+  parent: BaseStorageItem
+  id: LunchboxBase
+  components:
+  - type: Sprite
+    layers:
+    - map: [ base ]
+      state: icon
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  - type: Storage
+    capacity: 25 # ffs I forgot CD uses list inv... I hope this is enough for a sandwich and a drink
+  - type: Item
+    size: 30
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 3
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Appearance
+
+- type: entity
+  parent: LunchboxBase
+  id: LunchboxBlue
+  name: blue lunchbox
+  description: A blue lunch box, it smells less of food and more like metal.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/Lunchboxes/lunchbox_blue.rsi
+    state: icon
+  - type: Item
+    sprite: _CD/Objects/Misc/Lunchboxes/lunchbox_blue.rsi
+
+- type: entity
+  parent: LunchboxBase
+  id: LunchboxYellow
+  name: yellow lunchbox
+  description: A yellow lunch box, you can tell your food will be shockingly good. # i'm so sorry for this pun
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/Lunchboxes/lunchbox_yellow.rsi
+    state: icon
+  - type: Item
+    sprite: _CD/Objects/Misc/Lunchboxes/lunchbox_yellow.rsi

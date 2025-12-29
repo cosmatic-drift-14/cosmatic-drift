@@ -1,0 +1,17 @@
+- type: speechVerb
+  id: Foxfolk
+  name: chat-speech-verb-foxfolk
+  speechVerbStrings:
+  - chat-speech-verb-foxfolk-1
+  - chat-speech-verb-foxfolk-2
+  - chat-speech-verb-foxfolk-3
+  - chat-speech-verb-foxfolk-4
+  
+- type: speechVerb
+  id: Rodentia
+  name: chat-speech-verb-name-rodentia
+  speechVerbStrings:
+  - chat-speech-verb-rodentia-1
+  - chat-speech-verb-rodentia-2
+  - chat-speech-verb-rodentia-3
+  - chat-speech-verb-rodentia-4

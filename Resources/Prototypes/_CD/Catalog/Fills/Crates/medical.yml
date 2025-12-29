@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateMedicalTrackingImplants
+  parent: CrateMedicalSecure
+  name: medical tracking implants
+  description: Contains a handful of medical tracking implanters. Good for people who perish alone often.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedicalTrackingImplanter
+        amount: 5

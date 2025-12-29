@@ -1,0 +1,151 @@
+- type: species
+  id: Foxfolk
+  name: species-name-foxfolk
+  roundStart: true
+  prototype: MobFoxfolk
+  sprites: MobFoxfolkSprites
+  defaultSkinTone: "#985629"
+  markingLimits: MobFoxfolkMarkingLimits
+  dollPrototype: MobFoxfolkDummy
+  skinColoration: Hues
+  maleFirstNames: NamesFoxfolkMale
+  femaleFirstNames: NamesFoxfolkFemale
+  lastNames: NamesFoxfolkLast
+
+- type: speciesBaseSprites
+  id: MobFoxfolkSprites
+  sprites:
+    Head: MobFoxfolkHead
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobFoxfolkTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobHumanoidEyes
+    LArm: MobFoxfolkLArm
+    RArm: MobFoxfolkRArm
+    LHand: MobFoxfolkLHand
+    RHand: MobFoxfolkRHand
+    LLeg: MobFoxfolkLLeg
+    RLeg: MobFoxfolkRLeg
+    LFoot: MobFoxfolkLFoot
+    RFoot: MobFoxfolkRFoot
+
+- type: markingPoints
+  id: MobFoxfolkMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ FoxfolkTailAlt ]
+    # Head:
+      # points: 1
+      # required: false
+    # Legs:
+      # points: 3
+      # required: false
+    # Arms:
+      # points: 3
+      # required: false
+    # Snout:
+      # points: 1
+      # required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ FoxfolkEar ]
+    # Overlay:
+      # points: 6
+      # required: false
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkHead
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkHeadMale
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkHeadFemale
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkTorso
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkTorsoMale
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkTorsoFemale
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkLLeg
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkLHand
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkLArm
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkLFoot
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkRLeg
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkRHand
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkRArm
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobFoxfolkRFoot
+  baseSprite:
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: r_foot

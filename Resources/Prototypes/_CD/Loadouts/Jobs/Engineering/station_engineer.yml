@@ -1,0 +1,70 @@
+# Jumpsuit
+- type: loadout
+  id: StationEngineerCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringCasual
+
+- type: loadout
+  id: StationEngineerPants
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringPants
+
+- type: loadout
+  id: StationEngineerJumpsuitModern
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringModern
+
+- type: loadout
+  id: StationEngineerHazardsuitModern
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringHazardModern
+
+- type: loadout
+  id: StationEngineerJumpskirtModern
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtEngineeringModern
+
+- type: loadout
+  id: StationEngineerJumpsuitEVA
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringEVA
+
+- type: loadout
+  id: StationEngineerJumpsuitMechanic
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringMechanic
+
+- type: loadout
+  id: StationEngineerJumpskirtMechanic
+  equipment: 
+    jumpsuit: ClothingUniformJumpskirtEngineeringMechanic
+
+# OuterClothing
+- type: loadout
+  id: StationEngineerJacket
+  equipment:
+    outerClothing: ClothingOuterCoatEngi
+
+# ID
+- type: loadout
+  id: TechnicalAssistantPDA
+  equipment:
+    id: TechnicalAssistantPDA
+
+# Glasses
+- type: loadout
+  id: ClothingEyesGlassesMeson
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
+- type: loadout
+  id: ClothingEyesGlassesMesonPrescription
+  equipment:
+    eyes: ClothingEyesGlassesMesonPrescription
+
+# Back
+
+- type: loadout
+  id: EngineeringCarrybag
+  equipment:
+    back: ClothingBackpackCarrybagEngineering

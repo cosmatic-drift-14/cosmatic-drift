@@ -1,0 +1,15 @@
+# Foxfolk Tail Wagging
+- type: entity
+  parent: BaseToggleAction
+  id: ActionToggleFoxfolkakinWagging
+  name: action-name-toggle-wagging
+  description: action-description-toggle-wagging
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    priority: -10
+    icon: { sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi, state: tail-wag-icon }
+    iconOn: { sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi, state: tail-wag-icon }
+    useDelay: 1 # Prevents Emote Spam
+    checkCanInteract: false

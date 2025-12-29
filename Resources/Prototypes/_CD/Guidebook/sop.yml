@@ -1,0 +1,62 @@
+- type: guideEntry
+  id: CDICPolicy
+  name: guide-entry-rules-ic
+  text: "/ServerInfo/Guidebook/_CD/ic-policy.xml"
+  children:
+  - CDSop
+  - SpaceLaw
+
+- type: guideEntry
+  id: CDSop
+  name: guide-entry-rules-sop-core
+  text: "/ServerInfo/Guidebook/_CD/sop/core.xml"
+  children:
+  - CDRestricted
+  - CDSopCommand
+  - CDSopSecurity
+  - CDSopEngineering
+  - CDSopMedical
+  - CDSopScience
+  - CDSopCargo
+  - CDSopService
+
+- type: guideEntry
+  id: CDSopCommand
+  name: guide-entry-rules-sop-command
+  text: "/ServerInfo/Guidebook/_CD/sop/command.xml"
+
+- type: guideEntry
+  id: CDSopSecurity
+  name: guide-entry-rules-sop-sec
+  text: "/ServerInfo/Guidebook/_CD/sop/security.xml"
+
+- type: guideEntry
+  id: CDSopEngineering
+  name: guide-entry-rules-sop-engi
+  text: "/ServerInfo/Guidebook/_CD/sop/engi.xml"
+
+- type: guideEntry
+  id: CDSopMedical
+  name: guide-entry-rules-sop-med
+  text: "/ServerInfo/Guidebook/_CD/sop/med.xml"
+
+- type: guideEntry
+  id: CDSopScience
+  name: guide-entry-rules-sop-sci
+  text: "/ServerInfo/Guidebook/_CD/sop/sci.xml"
+
+- type: guideEntry
+  id: CDSopCargo
+  name: guide-entry-rules-sop-cargo
+  text: "/ServerInfo/Guidebook/_CD/sop/cargo.xml"
+
+- type: guideEntry
+  id: CDSopService
+  name: guide-entry-rules-sop-service
+  text: "/ServerInfo/Guidebook/_CD/sop/service.xml"
+
+- type: guideEntry
+  id: CDRestricted
+  name: guide-entry-rules-sop-restricted
+  priority: 99
+  text: "/ServerInfo/Guidebook/_CD/sop/restricted.xml"

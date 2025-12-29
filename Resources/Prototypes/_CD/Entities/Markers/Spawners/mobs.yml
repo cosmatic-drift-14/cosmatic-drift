@@ -1,0 +1,13 @@
+- type: entity
+  name: Pebble Spawner
+  id: SpawnMobPebble
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: pebble
+        sprite: _CD/Mobs/Pets/pebble.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobPebble

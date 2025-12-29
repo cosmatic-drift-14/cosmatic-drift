@@ -1,0 +1,78 @@
+- type: entity
+  abstract: true
+  parent: Pill
+  id: CDPill # to avoid having to add more sprites to non-namespace
+  name: pill
+  description: It's not a suppository.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Chemistry/pills.rsi
+    state: pill
+  - type: Item
+    sprite: _CD/Objects/Specific/Chemistry/pills.rsi
+
+- type: entity
+  parent: CDPill
+  id: PillHappiness
+  name: pill
+  suffix: Happiness 10u
+  components:
+  - type: Pill
+    pillType: 1
+  - type: Sprite
+    state: pill1
+  - type: Label
+    currentLabel: Happiness
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Happiness
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: PillCanisterHappiness
+  name: pill canister
+  suffix: Happiness 7
+  components:
+  - type: Label
+    currentLabel: Happiness
+  - type: StorageFill
+    contents:
+    - id: PillHappiness
+      amount: 7
+
+- type: entity
+  name: pill
+  suffix: Stubantazine 6u
+  parent: Pill
+  id: PillStubantazine
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill9
+  - type: Label
+    currentLabel: Stubantazine 6u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Stubantazine
+          Quantity: 6
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterStubantazine
+  suffix: Stubantazine 6u, 4
+  components:
+  - type: Label
+    currentLabel: Stubantazine 6u - 5 Minutes
+  - type: StorageFill
+    contents:
+    - id: PillStubantazine
+      amount: 4

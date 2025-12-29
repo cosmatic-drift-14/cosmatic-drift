@@ -6,7 +6,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 1h
+      time: 3600 # 1 hour
 
 # Flowers
 - type: loadout
@@ -336,12 +336,12 @@
 
 - type: loadout
   id: TowelColorGray
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobPassenger
-      time: 100h
+#  effects: # _CD - remove playtime requirements
+#  - !type:JobRequirementLoadoutEffect
+#    requirement:
+#      !type:RoleTimeRequirement
+#      role: JobPassenger
+#      time: 360000 # 100hr
   storage:
     back:
     - TowelColorGray
@@ -349,12 +349,12 @@
 
 - type: loadout
   id: TowelColorBlack
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobChaplain
-      time: 100h
+#  effects: # _CD - remove playtime requirements
+#  - !type:JobRequirementLoadoutEffect
+#    requirement:
+#      !type:RoleTimeRequirement
+#      role: JobChaplain
+#      time: 360000 # 100hr
   storage:
     back:
     - TowelColorBlack
@@ -362,12 +362,12 @@
 
 - type: loadout
   id: TowelColorRed
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Security
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect  - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Security
+  #     time: 100h
   storage:
     back:
     - TowelColorRed
@@ -375,12 +375,12 @@
 
 - type: loadout
   id: TowelColorOrange
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect  - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Engineering
+  #     time: 100h
   storage:
     back:
     - TowelColorOrange
@@ -388,12 +388,12 @@
 
 - type: loadout
   id: TowelColorLightBrown
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Cargo
+  #     time: 100h
   storage:
     back:
     - TowelColorLightBrown
@@ -401,12 +401,12 @@
 
 - type: loadout
   id: TowelColorYellow
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobClown
-      time: 100h
+#  effects: # _CD - remove playtime requirements
+#  - !type:JobRequirementLoadoutEffect
+#    requirement:
+#      !type:RoleTimeRequirement
+#      role: JobClown
+#      time: 360000 # 100hr
   storage:
     back:
     - TowelColorYellow
@@ -414,12 +414,12 @@
 
 - type: loadout
   id: TowelColorDarkGreen
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobLibrarian
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:RoleTimeRequirement
+  #     role: JobLibrarian
+  #     time: 100h
   storage:
     back:
     - TowelColorDarkGreen
@@ -427,12 +427,12 @@
 
 - type: loadout
   id: TowelColorGreen
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Civilian
+  #     time: 100h
   storage:
     back:
     - TowelColorGreen
@@ -440,12 +440,12 @@
 
 - type: loadout
   id: TowelColorLightBlue
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Medical
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Medical
+  #     time: 100h
   storage:
     back:
     - TowelColorLightBlue
@@ -453,12 +453,12 @@
 
 - type: loadout
   id: TowelColorDarkBlue
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Command
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Command
+  #     time: 100h
   storage:
     back:
     - TowelColorDarkBlue
@@ -466,12 +466,12 @@
 
 - type: loadout
   id: TowelColorPurple
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Science
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Science
+  #     time: 100h
   storage:
     back:
     - TowelColorPurple
@@ -479,12 +479,12 @@
 
 - type: loadout
   id: TowelColorMaroon
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobLawyer
-      time: 100h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:RoleTimeRequirement
+  #     role: JobLawyer
+  #     time: 100h
   storage:
     back:
     - TowelColorMaroon
@@ -492,12 +492,12 @@
 
 - type: loadout
   id: TowelColorMime
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobMime
-      time: 100h
+#  effects:
+#  - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+#    requirement:
+#      !type:RoleTimeRequirement
+#      role: JobMime
+#      time: 360000 # 100hr
   storage:
     back:
     - TowelColorMime
@@ -505,11 +505,11 @@
 
 - type: loadout
   id: TowelColorSilver
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 500h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:OverallPlaytimeRequirement
+  #     time: 500h
   storage:
     back:
     - TowelColorSilver
@@ -517,11 +517,11 @@
 
 - type: loadout
   id: TowelColorGold
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 1000h
+  # effects:
+  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
+  #   requirement:
+  #     !type:OverallPlaytimeRequirement
+  #     time: 1000h
   storage:
     back:
     - TowelColorGold

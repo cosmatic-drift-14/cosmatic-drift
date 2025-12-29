@@ -1,0 +1,14 @@
+# Recipies
+- type: latheRecipe
+  parent: BaseRoboticsRecipe
+  id: AIShellBrain
+  result: AIShellBrain
+  completetime: 3
+  icon:
+    sprite: _CD/Objects/Devices/boris.rsi
+    state: boris
+  materials:
+    Steel: 1000
+    Glass: 200
+    Plastic: 500
+    Gold: 200

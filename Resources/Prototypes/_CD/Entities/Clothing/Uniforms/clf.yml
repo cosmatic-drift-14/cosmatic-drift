@@ -1,0 +1,11 @@
+# "Civilian"
+- type: entity
+  parent: ClothingUniformBase
+  id: RMCJumpsuitCivilian
+  name: gray utility uniform
+  description: A worn gray jumpsuit - standard issue for civilian support personnel.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/CLF/civilian.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/CLF/civilian.rsi

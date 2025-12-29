@@ -3,10 +3,12 @@
   id: JobCaptain
   groups:
   - CaptainHead
+  - CommandHeadset #CD
   - CaptainNeck
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - FormalShoes # CD
   - Survival
   - Trinkets
   - CaptainJobTrinkets
@@ -17,10 +19,12 @@
   groups:
   - GroupTankHarness
   - HoPHead
+  - CommandHeadset #CD
   - HoPNeck
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -50,6 +54,7 @@
   - PassengerGloves
   - PassengerOuterClothing
   - PassengerShoes
+  - PassengerTitles #CD titles
   - Glasses
   - Survival
   - Trinkets
@@ -64,6 +69,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -76,6 +82,7 @@
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -103,6 +110,7 @@
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -116,6 +124,7 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -207,6 +216,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -220,6 +230,7 @@
   groups:
   - GroupTankHarness
   - QuartermasterHead
+  - QuartermasterHeadset #CD
   - QuartermasterNeck
   - QuartermasterJumpsuit
   - CargoTechnicianBackpack
@@ -251,6 +262,7 @@
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
+  - SalvageSpecialistJumpsuit # CD
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
@@ -266,6 +278,8 @@
   groups:
   - GroupTankHarness
   - ChiefEngineerHead
+  - ChiefEngineerHeadset #CD
+  - EngineeringEyewear # CD
   - ChiefEngineerJumpsuit
   - StationEngineerBackpack
   - ChiefEngineerNeck
@@ -292,6 +306,7 @@
   groups:
   - GroupTankHarness
   - StationEngineerHead
+  - EngineeringEyewear # CD
   - StationEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
@@ -306,6 +321,7 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
+  - EngineeringEyewear # CD
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
@@ -321,6 +337,7 @@
   groups:
   - GroupTankHarness
   - ResearchDirectorHead
+  - ResearchDirectorHeadset #CD
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
   - ScientistBackpack
@@ -368,12 +385,14 @@
   id: JobHeadOfSecurity
   groups:
   - HeadofSecurityHead
+  - HeadofSecurityHeadset #CD
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack
   - SecurityBelt
   - HeadofSecurityOuterClothing
   - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
   - HeadofSecurityJobTrinkets
@@ -388,6 +407,7 @@
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
   - WardenJobTrinkets
@@ -403,6 +423,7 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
+  - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
   - SecurityJobTrinkets
@@ -417,6 +438,7 @@
   - SecurityBackpack
   - DetectiveOuterClothing
   - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
   - DetectiveJobTrinkets
@@ -427,6 +449,7 @@
   groups:
   - SecurityCadetJumpsuit
   - SecurityBackpack
+  - SecurityGlassesOrHud # CD Addition
   - SurvivalSecurity
   - Trinkets
   - SecurityCadetJobTrinkets
@@ -438,6 +461,7 @@
   groups:
   - GroupTankHarness
   - ChiefMedicalOfficerHead
+  - ChiefMedicalOfficerHeadset #CD
   - MedicalMask
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
@@ -459,7 +483,7 @@
   - MedicalMask
   - MedicalDoctorJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalSpecializationBackpack # CD change from MedicalBackpack
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
@@ -501,8 +525,11 @@
   groups:
   - GroupTankHarness
   - ParamedicHead
-  - MedicalMask
+  # CD: ETU Gear
+  - ParamedicMask
   - ParamedicJumpsuit
+  # CD: ETU Gear
+  - ParamedicGloves
   - MedicalGloves
   - MedicalBackpack
   - ParamedicOuterClothing
@@ -514,6 +541,17 @@
   - GroupSpeciesBreathToolMedical
 
 # Wildcards
+- type: roleLoadout
+  id: JobZookeeper
+  groups:
+  - GroupTankHarness
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - ZookeeperJobTrinkets
+  - GroupSpeciesBreathTool
+
 - type: roleLoadout
   id: JobReporter
   groups:
@@ -532,10 +570,24 @@
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
   - PsychologistJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobBoxer
+  groups:
+  - GroupTankHarness
+  - BoxerJumpsuit
+  - BoxerGloves
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - BoxerJobTrinkets
   - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
@@ -596,11 +648,6 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
-
-- type: roleLoadout
-  id: RoleSurvivalMilitaryDouble
-  groups:
-  - SurvivalMilitaryDouble
 
 - type: roleLoadout
   id: RoleSurvivalNukie

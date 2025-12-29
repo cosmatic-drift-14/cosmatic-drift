@@ -1,22 +1,22 @@
-# Senior times
-- type: loadoutEffectGroup
-  id: SeniorEngineering
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobAtmosphericTechnician
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobStationEngineer
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 60h
+# # Senior times (CD: Disabled timers)
+# - type: loadoutEffectGroup
+#   id: SeniorEngineering
+#   effects:
+#   - !type:JobRequirementLoadoutEffect
+#     requirement:
+#       !type:RoleTimeRequirement
+#       role: JobAtmosphericTechnician
+#       time: 21600 #6 hrs
+#   - !type:JobRequirementLoadoutEffect
+#     requirement:
+#       !type:RoleTimeRequirement
+#       role: JobStationEngineer
+#       time: 21600 #6 hrs
+#   - !type:JobRequirementLoadoutEffect
+#     requirement:
+#       !type:DepartmentTimeRequirement
+#       department: Engineering
+#       time: 216000 # 60 hrs
 
 # Head
 - type: startingGear
@@ -42,9 +42,9 @@
 - type: loadout
   id: SeniorEngineerBeret
   startingGear: EngineeringBeret
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorEngineering
+  # effects:
+  # - !type:GroupLoadoutEffect
+  #   proto: SeniorEngineering
 
 # Jumpsuit
 - type: loadout
@@ -62,21 +62,21 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringHazard
 
-- type: loadout
-  id: SeniorEngineerJumpsuit
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorEngineering
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorEngineer
+# - type: loadout
+#   id: SeniorEngineerJumpsuit
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorEngineering
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitSeniorEngineer
 
-- type: loadout
-  id: SeniorEngineerJumpskirt
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorEngineering
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSeniorEngineer
+# - type: loadout
+#   id: SeniorEngineerJumpskirt
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorEngineering
+#   equipment:
+#     jumpsuit: ClothingUniformJumpskirtSeniorEngineer
 
 # Back
 - type: loadout
@@ -116,16 +116,16 @@
   equipment:
     shoes: ClothingShoesBootsWinterEngi
 
-# ID
+# ID (Senior IDs disable for CD)
 - type: loadout
   id: StationEngineerPDA
   equipment:
     id: EngineerPDA
 
-- type: loadout
-  id: SeniorEngineerPDA
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorEngineering
-  equipment:
-    id: SeniorEngineerPDA
+# - type: loadout
+#   id: SeniorEngineerPDA
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorEngineering
+#   equipment:
+#     id: SeniorEngineerPDA

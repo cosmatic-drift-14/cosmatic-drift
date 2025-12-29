@@ -1,0 +1,70 @@
+- type: entity
+  parent: ClothingHeadLightBase
+  id: ClothingHeadHelmetETUPointman
+  name: ETU pointman helmet
+  description: An Emergency Trauma Unit Pointman's Helmet. Featuring a built-in flashlight. It won't stop anything
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Helmets/etu_pointman.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Helmets/etu_pointman.rsi
+  - type: PointLight
+    color: "#ceffff"
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: ClothingHeadLightBase
+  id: ClothingHeadHelmetETUPilot
+  name: ETU pilot helmet
+  suffix: DEBUG
+  description: An Emergency Trauma Unit Pilot's Helmet. Featuring a built-in mask and a flashlight. Protects against good ideas.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Helmets/etu_pilot.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Helmets/etu_pilot.rsi
+  - type: PointLight
+    color: "#ceffff"
+  - type: Tag
+    tags:
+    - HidesHair
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingHeadHelmetArmoredBase
+  id: ClothingHeadHelmetArmoredBaseFoldable
+  abstract: true
+  components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: unfold-verb-clothing-layer
+    foldVerbText: fold-verb-clothing-layer
+  - type: FoldableClothing
+    foldedEquippedPrefix: folded
+
+- type: entity
+  parent: [ClothingHeadHelmetArmoredBaseFoldable, BaseSecurityContraband]
+  id: ClothingHeadHelmetNewsec
+  name: high-cut helmet
+  description: An updated version of the Security helmet. Features a retractable visor.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Helmets/newsec_helmet.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Helmets/newsec_helmet.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - SecurityHelmet
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+
+- type: entity
+  parent: [ClothingHeadHelmetArmoredBaseFoldable, ClothingHeadHelmetNewsec]
+  id: ClothingHeadHelmetNewsecFolded
+  name: high-cut helmet

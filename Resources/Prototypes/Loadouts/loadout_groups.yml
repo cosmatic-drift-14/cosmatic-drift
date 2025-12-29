@@ -10,6 +10,14 @@
   - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
+  - PlushieVox # CD
+  - PlushieArachind # CD
+  - PlushieDiona # CD
+  - PlushieHuman # CD
+  - PlushieMoth # CD
+  - PlushieSharkBlue # CD
+  - PlushieSharkPink # CD
+  - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
   - ThreeCandles
   - Lighter
   - CigPackGreen
@@ -60,6 +68,16 @@
   - TowelColorMaroon
   - TowelColorMime
   - TowelColorSilver
+  - TowelColorWhite
+  - TowelColorYellow
+  - CDDogtags # CD
+  - LunchboxBlue # CD
+  - LunchboxYellow # CD
+  - MedCrutchesForearm # CD
+  - GoldRing # CD
+  - SilverRing # CD
+  - SpaceCash10 # CD
+  - SpaceCash100 # CD
   - TowelColorGold
 
 - type: loadoutGroup
@@ -727,6 +745,7 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
+  - QuartermasterForemansuit # CD
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -742,6 +761,8 @@
   minLimit: 0
   loadouts:
   - QuartermasterWintercoat
+  - CargoBomber # CD
+  - ForemanCoat # CD
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -749,6 +770,8 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: QuartermasterJobTrinkets
@@ -768,8 +791,14 @@
   id: CargoTechnicianJumpsuit
   name: loadout-group-cargo-technician-jumpsuit
   loadouts:
-  - CargoTechnicianJumpsuit
-  - CargoTechnicianJumpskirt
+#  - CargoTechnicianJumpsuit
+#  - CargoTechnicianJumpskirt
+  - CargoTechnicianPants # CD
+  - CargoTechnicianJumpsuitLight # CD
+  - CargoTechnicianJumpskirtLight # CD
+  - CargoTechnicianJumpsuitDark # CD
+  - CargoTechnicianJumpskirtDark # CD
+  - CargoTechnicianOveralls # CD
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -785,6 +814,7 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
+  - CargoBomber # CD
 
 - type: loadoutGroup
   id: CargoTechnicianShoes
@@ -792,6 +822,7 @@
   loadouts:
   - BlackShoes
   - CargoWinterBoots
+  - SteelWorkboots # CD
 
 - type: loadoutGroup
   id: CargoTechnicianID
@@ -851,6 +882,9 @@
   loadouts:
   - ChiefEngineerJumpsuit
   - ChiefEngineerJumpskirt
+  - ChiefEngineerJumpsuitModern # CD Drip 4
+  - ChiefEngineerJumpskirtModern # CD Drip 4
+  - ChiefEngineerJumpsuitFormal # CD Drip 4
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
 
@@ -868,6 +902,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - StationEngineerJacket # CD
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -875,6 +910,9 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - WorkBoots # CD
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ChiefEngineerJobTrinkets
@@ -914,8 +952,16 @@
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerHazardsuit
-  - SeniorEngineerJumpsuit
-  - SeniorEngineerJumpskirt
+  - StationEngineerJumpsuitModern # CD
+  - StationEngineerJumpskirtModern # CD
+  - StationEngineerHazardsuitModern # CD
+  - StationEngineerCasualsuit # CD
+  - StationEngineerPants # CD
+  - StationEngineerJumpsuitEVA # CD
+  - StationEngineerJumpsuitMechanic # CD
+  - StationEngineerJumpskirtMechanic # CD
+  # - SeniorEngineerJumpsuit
+  # - SeniorEngineerJumpskirt
 
 - type: loadoutGroup
   id: StationEngineerBackpack
@@ -924,6 +970,7 @@
   - StationEngineerBackpack
   - StationEngineerSatchel
   - StationEngineerDuffel
+  - EngineeringCarrybag # CD
 
 - type: loadoutGroup
   id: StationEngineerOuterClothing
@@ -945,7 +992,8 @@
   name: loadout-group-station-engineer-id
   loadouts:
   - StationEngineerPDA
-  - SeniorEngineerPDA
+  - TechnicalAssistantPDA #CD addition
+  # - SeniorEngineerPDA
 
 - type: loadoutGroup
   id: StationEngineerJobTrinkets
@@ -960,6 +1008,9 @@
   loadouts:
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
+  - AtmosphericTechnicianJumpsuitModern # CD
+  - AtmosphericTechnicianJumpskirtModern # CD
+  - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
 
 - type: loadoutGroup
@@ -968,6 +1019,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  - AtmosphericTechnicianOveralls # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -976,6 +1028,7 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianSatchel
   - AtmosphericTechnicianDuffel
+  - EngineeringCarrybag # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
@@ -1038,6 +1091,8 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ResearchDirectorJobTrinkets
@@ -1070,8 +1125,8 @@
   - ScientistJumpskirt
   - RoboticistJumpsuit
   - RoboticistJumpskirt
-  - SeniorResearcherJumpsuit
-  - SeniorResearcherJumpskirt
+  # - SeniorResearcherJumpsuit
+  # - SeniorResearcherJumpskirt
 
 - type: loadoutGroup
   id: ScientistBackpack
@@ -1087,11 +1142,12 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - ScienceLabCoat
   - ScienceWintercoat
   - RoboticistLabCoat
   - RoboticistWintercoat
-  - SeniorResearcherLabCoat
+  # - SeniorResearcherLabCoat
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1115,7 +1171,9 @@
   name: loadout-group-scientist-id
   loadouts:
   - ScientistPDA
-  - SeniorResearcherPDA
+  - ResearchAssistantPDA #CD addition
+  - RoboticistPDA #CD addition
+  # - SeniorResearcherPDA
 
 - type: loadoutGroup
   id: ScientistJobTrinkets
@@ -1146,6 +1204,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - HeadofSecuritySheriffHat #CD
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1153,6 +1212,8 @@
   loadouts:
   - HeadofSecurityJumpsuit
   - HeadofSecurityJumpskirt
+  - SeniorOfficerCasualsuit # CD
+  - SeniorOfficerCasualskirt # CD
   - HeadofSecurityTurtleneck
   - HeadofSecurityTurtleneckSkirt
   - HeadofSecurityFormalSuit
@@ -1172,6 +1233,8 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - SecurityGreatcoat # CD
+  - SecurityFieldjacket # CD
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
@@ -1195,6 +1258,8 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  - WardenCasualsuit # CD
+  - WardenCasualskirt # CD
 
 - type: loadoutGroup
   id: WardenOuterClothing
@@ -1202,6 +1267,8 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - SecurityGreatcoat # CD
+  - SecurityFieldjacket # CD
 
 - type: loadoutGroup
   id: WardenJobTrinkets
@@ -1217,8 +1284,10 @@
   minLimit: 0
   loadouts:
   - SecurityHelmet
+  - SecurityNewHelmet # CD
   - SecurityBeret
   - SecurityHat
+  - SecurityNewSoft # CD
   - TrooperHat
 
 - type: loadoutGroup
@@ -1227,10 +1296,15 @@
   loadouts:
   - SecurityJumpsuit
   - SecurityJumpskirt
+  - SecurityCasualsuit # CD
+  - SecurityCasualskirt # CD
+  - SecurityModernsuit # CD
+  - SecurityCasualSummer # CD
+  - SecurityCasualWinter # CD
+  # - SeniorOfficerJumpsuit
+  # - SeniorOfficerJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
-  - SeniorOfficerJumpsuit
-  - SeniorOfficerJumpskirt
   - TrooperUniform
 
 - type: loadoutGroup
@@ -1247,6 +1321,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - SecurityPlateCarrier #CD
 
 - type: loadoutGroup
   id: SecurityOuterClothing
@@ -1254,21 +1329,26 @@
   loadouts:
   - ArmorVest
   - ArmorVestSlim
+  - SecurityNewVest # CD
   - SecurityOfficerWintercoat
+  - SecurityGreatcoat # CD
+  - SecurityFieldjacket # CD
 
 - type: loadoutGroup
   id: SecurityShoes
   name: loadout-group-security-shoes
   loadouts:
-  - JackBoots
+  - CombatBoots #CD change from JackBoots to CombatBoots
   - SecurityWinterBoots
+  - SecuritySneakers # CD
 
 - type: loadoutGroup
   id: SecurityPDA
   name: loadout-group-security-id
   loadouts:
   - SecurityPDA
-  - SeniorOfficerPDA
+  - SecurityCadetPDA #CD addition
+  # - SeniorOfficerPDA
 
 - type: loadoutGroup
   id: SecurityJobTrinkets
@@ -1299,6 +1379,8 @@
   loadouts:
   - DetectiveJumpsuit
   - DetectiveJumpskirt
+  - DetectiveJumpsuitCasual # CD
+  - DetectiveJumpskirtCasual # CD
   - NoirJumpsuit
   - NoirJumpskirt
 
@@ -1309,6 +1391,7 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - ForensicJacket # CD
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
@@ -1359,6 +1442,7 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
+  - ChiefMedicalOfficerFormalsuit # CD
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -1366,6 +1450,7 @@
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerLabCoat
+  - ChiefMedicalOfficerModernLabCoat # CD
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
@@ -1382,6 +1467,8 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerJobTrinkets
@@ -1396,7 +1483,7 @@
   minLimit: 0
   loadouts:
   - MedicalBeret
-  - SeniorPhysicianBeret
+  # - SeniorPhysicianBeret
   - MedicalHeadMirror
   - BlueSurgeryCap
   - GreenSurgeryCap
@@ -1409,11 +1496,16 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
-  - SeniorPhysicianJumpsuit
-  - SeniorPhysicianJumpskirt
+  - MedicalCasualsuit # CD
+  # - SeniorPhysicianJumpsuit
+  # - SeniorPhysicianJumpskirt
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - ViroJumpsuit # CD
+  - ViroJumpskirt # CD
+  - GeneJumpsuit # CD
+  - GeneJumpskirt # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1421,8 +1513,14 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - MedicalDoctorWintercoat
-  - SeniorPhysicianLabCoat
+  # - SeniorPhysicianLabCoat
+  - ViroCoat # CD
+  - ModernViroCoat # CD
+  - ViroWintercoat # CD
+  - GeneCoat # CD
+  - GeneWintercoat # CD
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1431,6 +1529,8 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  - MedicalCarrybag # CD
+  - ParamedicCarrybag # CD
 
 - type: loadoutGroup
   id: MedicalShoes
@@ -1444,7 +1544,8 @@
   name: loadout-group-medical-doctor-id
   loadouts:
   - MedicalDoctorPDA
-  - SeniorPhysicianPDA
+  - MedicalInternPDA #CD addition
+  # - SeniorPhysicianPDA
 
 - type: loadoutGroup
   id: MedicalGloves
@@ -1488,6 +1589,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
+  - ChemistCasualsuit # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -1495,7 +1597,9 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - ModernLabCoat # CD
   - ChemistLabCoat
+  - ChemistModernLabCoat # CD
   - ChemistWintercoat
 
 - type: loadoutGroup
@@ -1519,6 +1623,8 @@
   minLimit: 0
   loadouts:
   - ParamedicHead
+  # CD: ETU Loadout
+  - HeadHelmetETUPointman
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
@@ -1526,6 +1632,10 @@
   loadouts:
   - ParamedicJumpsuit
   - ParamedicJumpskirt
+  - ParamedicCasualsuit # CD
+  - ParamedicCasualskirt # CD
+  # CD: ETU Loadout
+  - JumpsuitETUFlightsuit
 
 - type: loadoutGroup
   id: ParamedicOuterClothing
@@ -1534,6 +1644,9 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  - BlueHighvisBomber # CD
+  # CD: ETU Loadout
+  # - BeltHarnessETU
 
 - type: loadoutGroup
   id: ParamedicShoes
@@ -1542,6 +1655,8 @@
   - BlueShoes
   - WhiteShoes
   - MedicalWinterBoots
+  # CD: ETU Loadout
+  - ShoesColorSlate
 
 - type: loadoutGroup
   id: ParamedicJobTrinkets
@@ -1557,6 +1672,7 @@
   loadouts:
   - MedicalHud
   - MedicalEyePatchHud
+  - MedicalVisorHud #CD Addition
   - Glasses
   - GlassesJamjar
   - GlassesJensen
@@ -1592,6 +1708,7 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistCasualJumpsuit # CD
 
 - type: loadoutGroup
   id: PsychologistJobTrinkets
@@ -1599,6 +1716,36 @@
   minLimit: 0
   loadouts:
   - LizardPlushiePsychologist
+
+- type: loadoutGroup
+  id: BoxerJumpsuit
+  name: loadout-group-boxer-jumpsuit
+  loadouts:
+  - BoxerShorts
+  - BoxerShortsWithTop
+
+- type: loadoutGroup
+  id: BoxerGloves
+  name: loadout-group-boxer-gloves
+  loadouts:
+  - RedBoxingGloves
+  - BlueBoxingGloves
+  - GreenBoxingGloves
+  - YellowBoxingGloves
+
+- type: loadoutGroup
+  id: BoxerJobTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LizardPlushieBoxer
+
+- type: loadoutGroup
+  id: ZookeeperJobTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LizardPlushieZookeeper
 
 # Other
 - type: loadoutGroup
@@ -1610,15 +1757,6 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
-
-- type: loadoutGroup
-  id: SurvivalMilitaryDouble
-  name: loadout-group-survival-military
-  minLimit: 2
-  hidden: true
-  loadouts:
-  - EmergencyNitrogenMilitaryDouble
-  - EmergencyOxygenMilitaryDouble
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

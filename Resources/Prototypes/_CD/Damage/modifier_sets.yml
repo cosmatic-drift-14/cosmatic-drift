@@ -1,0 +1,4 @@
+- type: damageModifierSet
+  id: Foxfolk
+  coefficients:
+    Heat: 1.15

@@ -1,0 +1,144 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBoaterhat
+  name: boater hat
+  description: A boater hat, for a lazy day on the river.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/boaterhat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/boaterhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatAnimalHeadslimeYellow
+  name: yellow headslime hat
+  description: A yellow, sticky headslime, you put it on your head.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimeyellow.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimeyellow.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatAnimalHeadslimeLightgreen
+  name: lime headslime hat
+  description: A light green, sticky headslime, you put it on your head.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimelightgreen.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimelightgreen.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatAnimalHeadslimePurple
+  name: purple headslime hat
+  description: A purple, sticky headslime, you put it on your head.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimepurple.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Animals/headslimepurple.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSecurityVet
+  name: senior officer's beret
+  description: A black beret with a silver rank emblem. For officers that are more inclined towards style than safety.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_secvet.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_secvet.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+
+# Reverts a portion of https://github.com/space-wizards/space-station-14/pull/29082.
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHossheriffhat
+  name: head of security's sheriff hat
+  description: "There's a new sheriff in station."
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/hossheriffhat.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/hossheriffhat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+
+# Cowboy hat spam follows.
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyDerbyBlack
+  name: black derby hat
+  description: A black cowboy hat in the derby style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_black.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyDerbyBrown
+  name: brown derby hat
+  description: A brown cowboy hat in the derby style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_brown.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_brown.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyDerbyWhite
+  name: white derby hat
+  description: A white cowboy hat in the derby style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_white.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/derby_white.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyGamblerBlack
+  name: black gambler hat
+  description: A black cowboy hat in the gambler style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_black.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyGamblerBrown
+  name: brown gambler hat
+  description: A brown cowboy hat in the gambler style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_brown.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_brown.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCowboyGamblerWhite
+  name: white gambler hat
+  description: A white cowboy hat in the gambler style
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_white.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/Cowboy/gambler_white.rsi

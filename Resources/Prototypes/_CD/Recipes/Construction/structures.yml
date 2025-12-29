@@ -1,0 +1,40 @@
+- type: construction
+  id: BorderedWindow
+  graph: BorderedWindow
+  startNode: start
+  targetNode: borderedWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  id: BorderedReinforcedWindow
+  graph: BorderedWindow
+  startNode: start
+  targetNode: borderedReinforcedWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  id: BorderedWindowDiagonal
+  graph: BorderedWindowDiagonal
+  startNode: start
+  targetNode: borderedWindowDiagonal
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter

@@ -1,0 +1,33 @@
+
+Allowed Departments|Type of Gear|Examples|Exceptions
+\[[color=#1b6475]Command[/color]/[color=#cd0000]Security[/color]/[color=#c96dbf]Science[/color]\]|Handheld flashing technology||
+\[[color=#1b6475]Command[/color]/[color=#f39f27]Engineering[color]\]|Fire axes||
+\[[color=#f39f27]Engineering[color]\]|Engineering goggles||
+\[[color=#f39f27]Engineering[color]\]|Rapid Construction Devices||
+\[[color=#f39f27]Engineering[color]\]|Jaws of life||
+\[[color=#b18644]Salvage[/color]\]|Standard salvage weaponry.|Crusher weapons, PKAs, and survival knives|
+\[[color=#b18644]Salvage[/color]\]|Seismic charges||
+\[[color=#b18644]Salvage[/color]\]|Fulton devices.|Fulton beacons, and fultons|
+\[[color=#c96dbf]Science[/color]\]|Experimental technology.|Quantum spin inverters, speed boots, and blue-space backpacks|
+\[[color=#c96dbf]Science[/color]\]|Scientific production fabricators.|Protolathes, circuit imprinters, and exosuit fabricators.|
+\[[color=#c96dbf]Science[/color]/[color=#cd0000]Security[color]\]|H.A.R.M.P.A.C.K.s.||
+\[[color=#cd0000]Security[/color]\]|Advanced flashing technology.|Flashbangs, and mounted auto flashers|
+\[[color=#cd0000]Security[/color]\]|Combat knives||
+\[[color=#cd0000]Security[/color]\]|Riot control grenades.|Tear gas, and stingers|
+\[[color=#cd0000]Security[/color]\]|Restraining gear.|Handcuffs, zip ties, bolas, and improvised restraints|
+\[[color=#cd0000]Security[/color]\]|Chest rigs and protective armor.|Security webbing, helmets, and armored vests.|[color=#134975]Captain's[/color] carapace. [color=#9fed58]Bartender's[/color] vest.
+\[[color=#cd0000]Security[/color]\]|Physical shields.|Riot, telescopic, and improvised shields|
+\[[color=#cd0000]Security[/color]\]|Stun technology.|Disablers, stun batons, and disabler SMGs.|[color=#134975]Captain's[/color] disabler. Head of Personnel's disabler.
+\[[color=#cd0000]Security[/color]\]|Security heads-up displays.|Security glasses, and security HUDs|
+\[[color=#cd0000]Security[/color]\]|Breaching explosives.|Explosive cord, detonator caps, and breaching charges.|
+\[[color=#cd0000]Security[/color]\]|Ballistic and laser firearms.|Handguns, rifles, laser guns, and shotguns.|[color=#134975]Captain's[/color] laser pistol. [color=#9fed58]Bartender's[/color] shotgun.
+\[[color=#cd0000]Security[/color]\]|Firearm and ammunition fabricators.|Security techfabs, and ammo techfabs.|
+\[[color=#cd0000]Security[/color]/Service: Bar\]|Beanbag shotgun shells||
+\[Service: Kitchen\]|Cooking knives.|Kitchen knives, and butcher cleavers|
+\[Contextual\]|Departmental or job clothes.|Wearable equipment showing department or job insignia.|
+\[Contextual\]|Departmental or job access.|ID cards with department or Head of Staff access.|[color=#9fed58]Lawyer's[/color] brig access. [color=#134975]Command's[/color] brig access.
+\[Contextual\]|Departmental encryption keys.|Radio encryption keys belonging to certain departments.|[color=#9fed58]Lawyer's[/color] security key.
+\[None\]|Improvised deadly weaponry.|Baseball bats, shivs, and spears|
+\[None\]|Other bladed objects.|Swords, and non-departmental knives.|[color=#134975]Captain's[/color] sabre.
+\[None\]|Other explosives.|IEDs, mines, grenades, and C4|
+\[[color=#009100]CC[/color]/[color=134975]ERT[/color]\]|Any CC or ERT branded gear.|Uniforms, vests, backpacks, and headgear|

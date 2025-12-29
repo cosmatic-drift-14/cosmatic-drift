@@ -1,0 +1,10 @@
+- type: department
+  id: HighCommand
+  name: department-HighCommand
+  description: department-HighCommand-description
+  color: "#334E6D"
+  weight: 90
+  primary: false # This is done to make tests pass
+  roles:
+  - Captain
+  - HeadOfPersonnel

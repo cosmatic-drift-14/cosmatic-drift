@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseItem
+  id: MedCrutchesForearm
+  name: forearm crutches
+  description: A pair of forearm crutches.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Medical/crutches.rsi
+    state: icon
+  - type: Wieldable
+  - type: Item
+    size: 15

@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackCarrybagEngineering
+  name: engineering carrybag
+  description: A smaller dufflebag for the daily grind of station life.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Back/Others/engineering.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackCarrybagMedical
+  name: medical carrybag
+  description: A smaller dufflebag for use in a sterile environment.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Back/Others/medical.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackCarrybagParamedic
+  name: paramedic carrybag
+  description: A smaller dufflebag for carrying emergency medical supplies.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Back/Others/paramedic.rsi

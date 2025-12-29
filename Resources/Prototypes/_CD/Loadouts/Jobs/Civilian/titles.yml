@@ -1,0 +1,9 @@
+- type: loadout
+  id: PassengerPDA
+  equipment: 
+    id: PassengerPDA
+
+- type: loadout
+  id: OffDutyPDA
+  equipment: 
+    id: OffDutyPDA

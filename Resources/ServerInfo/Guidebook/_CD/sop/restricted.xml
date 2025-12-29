@@ -1,0 +1,219 @@
+
+<Document>
+  # List of Restricted Items
+
+  [color=lightblue][bold]OOC[/bold]: It is strongly recommended to increase the size of your guidebook window when viewing this page.[/color]
+
+  ## Contraband (NE)
+
+  <Table Columns="2">
+    <ColorBox Color="#660000"><Box>Type of Contraband</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Examples</Box></ColorBox>
+    <ColorBox><Box>Hostile corporation branded objects.</Box></ColorBox>
+    <ColorBox><Box>Generally anything that carries a Syndicate, Cybersun, Gorlax, Spider Clan, or blood-red branding.</Box></ColorBox>
+    <ColorBox><Box>Hijacked NT technology.</Box></ColorBox>
+    <ColorBox><Box>Anything made by Nanotrasen that has been modified to function differently.</Box></ColorBox>
+    <ColorBox><Box>Illegal weaponry.</Box></ColorBox>
+    <ColorBox><Box>C-20rs, Cobras, China-Lakes, Gloves of the North Star, Vipers, Bulldogs, L6 SAWs, and Pythons.</Box></ColorBox>
+    <ColorBox><Box>Syndicate made explosives.</Box></ColorBox>
+    <ColorBox><Box>Minibombs, hardbombs, whitehole grenades, and grenade penguins.</Box></ColorBox>
+    <ColorBox><Box>Syndicate made armor.</Box></ColorBox>
+    <ColorBox><Box>Web vests.</Box></ColorBox>
+    <ColorBox><Box>Weaponized energy technology.</Box></ColorBox>
+    <ColorBox><Box>Energy blades, and energy shields.</Box></ColorBox>
+    <ColorBox><Box>Deception equipment.</Box></ColorBox>
+    <ColorBox><Box>Unrestricted chameleon technology, and voice synthesizers.</Box></ColorBox>
+    <ColorBox><Box>Thieving technology.</Box></ColorBox>
+    <ColorBox><Box>Thieving gloves.</Box></ColorBox>
+    <ColorBox><Box>Hacking and tamper technology.</Box></ColorBox>
+    <ColorBox><Box>EMAGs, power sinks, and radio jammers.</Box></ColorBox>
+    <ColorBox><Box>Invisibility technology.</Box></ColorBox>
+    <ColorBox><Box>Anything that turns itself or another thing invisible.</Box></ColorBox>
+    <ColorBox><Box>Electromagnetic pulse technology.</Box></ColorBox>
+    <ColorBox><Box>Anything that causes an EMP.</Box></ColorBox>
+    <ColorBox><Box>Illegal implants.</Box></ColorBox>
+    <ColorBox><Box>Holoparasites, scram implants, and freedom implants.</Box></ColorBox>
+    <ColorBox><Box>Syndicate made chemicals.</Box></ColorBox>
+    <ColorBox><Box>Nocturine, Lexorin, Hyperzine, and Tazinide.</Box></ColorBox>
+  </Table>
+
+  ## Restricted Gear
+
+  <Table Columns="4">
+    <ColorBox Color="#783f04"><Box>Allowed Departments</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Type of Gear</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#783f04"><Box>Exceptions</Box></ColorBox>
+    <ColorBox><Box>\[[color=#1b6475]Command[/color]/[color=#cd0000]Security[/color]/[color=#c96dbf]Science[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Handheld flashing technology</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#1b6475]Command[/color]/[color=#f39f27]Engineering[color]\]</Box></ColorBox>
+    <ColorBox><Box>Fire axes</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#f39f27]Engineering[color]\]</Box></ColorBox>
+    <ColorBox><Box>Engineering goggles</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#f39f27]Engineering[color]\]</Box></ColorBox>
+    <ColorBox><Box>Rapid Construction Devices</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#f39f27]Engineering[color]\]</Box></ColorBox>
+    <ColorBox><Box>Jaws of life</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#b18644]Salvage[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Standard salvage weaponry.</Box></ColorBox>
+    <ColorBox><Box>Crusher weapons, PKAs, and survival knives</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#b18644]Salvage[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Seismic charges</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#b18644]Salvage[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Fulton devices.</Box></ColorBox>
+    <ColorBox><Box>Fulton beacons, and fultons</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#c96dbf]Science[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Experimental technology.</Box></ColorBox>
+    <ColorBox><Box>Quantum spin inverters, speed boots, and blue-space backpacks</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#c96dbf]Science[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Scientific production fabricators.</Box></ColorBox>
+    <ColorBox><Box>Protolathes, circuit imprinters, and exosuit fabricators.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#c96dbf]Science[/color]/[color=#cd0000]Security[color]\]</Box></ColorBox>
+    <ColorBox><Box>H.A.R.M.P.A.C.K.s.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Advanced flashing technology.</Box></ColorBox>
+    <ColorBox><Box>Flashbangs, and mounted auto flashers</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Combat knives</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Riot control grenades.</Box></ColorBox>
+    <ColorBox><Box>Tear gas, and stingers</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Restraining gear.</Box></ColorBox>
+    <ColorBox><Box>Handcuffs, zip ties, bolas, and improvised restraints</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Chest rigs and protective armor.</Box></ColorBox>
+    <ColorBox><Box>Security webbing, helmets, and armored vests.</Box></ColorBox>
+    <ColorBox><Box>[color=#134975]Captain's[/color] carapace. [color=#9fed58]Bartender's[/color] vest.</Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Physical shields.</Box></ColorBox>
+    <ColorBox><Box>Riot, telescopic, and improvised shields</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Stun technology.</Box></ColorBox>
+    <ColorBox><Box>Disablers, stun batons, and disabler SMGs.</Box></ColorBox>
+    <ColorBox><Box>[color=#134975]Captain's[/color] disabler. Head of Personnel's disabler.</Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Security heads-up displays.</Box></ColorBox>
+    <ColorBox><Box>Security glasses, and security HUDs</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Breaching explosives.</Box></ColorBox>
+    <ColorBox><Box>Explosive cord, detonator caps, and breaching charges.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Ballistic and laser firearms.</Box></ColorBox>
+    <ColorBox><Box>Handguns, rifles, laser guns, and shotguns.</Box></ColorBox>
+    <ColorBox><Box>[color=#134975]Captain's[/color] laser pistol. [color=#9fed58]Bartender's[/color] shotgun.</Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Firearm and ammunition fabricators.</Box></ColorBox>
+    <ColorBox><Box>Security techfabs, and ammo techfabs.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#cd0000]Security[/color]/Service: Bar\]</Box></ColorBox>
+    <ColorBox><Box>Beanbag shotgun shells</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[Service: Kitchen\]</Box></ColorBox>
+    <ColorBox><Box>Cooking knives.</Box></ColorBox>
+    <ColorBox><Box>Kitchen knives, and butcher cleavers</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[Contextual\]</Box></ColorBox>
+    <ColorBox><Box>Departmental or job clothes.</Box></ColorBox>
+    <ColorBox><Box>Wearable equipment showing department or job insignia.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[Contextual\]</Box></ColorBox>
+    <ColorBox><Box>Departmental or job access.</Box></ColorBox>
+    <ColorBox><Box>ID cards with department or Head of Staff access.</Box></ColorBox>
+    <ColorBox><Box>[color=#9fed58]Lawyer's[/color] brig access. [color=#134975]Command's[/color] brig access.</Box></ColorBox>
+    <ColorBox><Box>\[Contextual\]</Box></ColorBox>
+    <ColorBox><Box>Departmental encryption keys.</Box></ColorBox>
+    <ColorBox><Box>Radio encryption keys belonging to certain departments.</Box></ColorBox>
+    <ColorBox><Box>[color=#9fed58]Lawyer's[/color] security key.</Box></ColorBox>
+    <ColorBox><Box>\[None\]</Box></ColorBox>
+    <ColorBox><Box>Improvised deadly weaponry.</Box></ColorBox>
+    <ColorBox><Box>Baseball bats, shivs, and spears</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[None\]</Box></ColorBox>
+    <ColorBox><Box>Other bladed objects.</Box></ColorBox>
+    <ColorBox><Box>Swords, and non-departmental knives.</Box></ColorBox>
+    <ColorBox><Box>[color=#134975]Captain's[/color] sabre.</Box></ColorBox>
+    <ColorBox><Box>\[None\]</Box></ColorBox>
+    <ColorBox><Box>Other explosives.</Box></ColorBox>
+    <ColorBox><Box>IEDs, mines, grenades, and C4</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>\[[color=#009100]CC[/color]/[color=134975]ERT[/color]\]</Box></ColorBox>
+    <ColorBox><Box>Any CC or ERT branded gear.</Box></ColorBox>
+    <ColorBox><Box>Uniforms, vests, backpacks, and headgear</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+  </Table>
+
+  ## Controlled Substances
+
+  <Table Columns="3">
+    <ColorBox Color="#4c1130"><Box>Type of Substance</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Examples</Box></ColorBox>
+    <ColorBox Color="#4c1130"><Box>Exceptions</Box></ColorBox>
+    <ColorBox><Box>High-grade painkillers.</Box></ColorBox>
+    <ColorBox><Box>Soretizone, and Agonolexyne.</Box></ColorBox>
+    <ColorBox><Box>Medical prescriptions.</Box></ColorBox>
+    <ColorBox><Box>High-grade antidepressants.</Box></ColorBox>
+    <ColorBox><Box>Neurozenium, and Blissifylovene.</Box></ColorBox>
+    <ColorBox><Box>Medical prescriptions.</Box></ColorBox>
+    <ColorBox><Box>High-grade anxiety medication.</Box></ColorBox>
+    <ColorBox><Box>Tranquiase, and Equilibrazine</Box></ColorBox>
+    <ColorBox><Box>Medical prescriptions.</Box></ColorBox>
+    <ColorBox><Box>Vomit inducers.</Box></ColorBox>
+    <ColorBox><Box>Ipecac.</Box></ColorBox>
+    <ColorBox><Box>Medical operations.</Box></ColorBox>
+    <ColorBox><Box>Sedatives.</Box></ColorBox>
+    <ColorBox><Box>Pax, Chloral Hydrate, and Nitrous Oxide.</Box></ColorBox>
+    <ColorBox><Box>Medical operations.</Box></ColorBox>
+    <ColorBox><Box>Sensory inhibitors.</Box></ColorBox>
+    <ColorBox><Box>Mute toxin, and Norepinephric Acid</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>Psychedelics.</Box></ColorBox>
+    <ColorBox><Box>Space Mirage, Happiness, and Mindbreaker.</Box></ColorBox>
+    <ColorBox><Box>THC.</Box></ColorBox>
+    <ColorBox><Box>Stimulants.</Box></ColorBox>
+    <ColorBox><Box>Desoxyephedrine</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>Unstable lazarus chemicals.</Box></ColorBox>
+    <ColorBox><Box>Romerol.</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>Genetic mutatives.</Box></ColorBox>
+    <ColorBox><Box>Unstable Mutagen.</Box></ColorBox>
+    <ColorBox><Box>Botanical operations.</Box></ColorBox>
+    <ColorBox><Box>Hazardous toxins.</Box></ColorBox>
+    <ColorBox><Box>Amatoxin, Heartbreaker, Licoxide, and many more</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box>Pyrotechnics.</Box></ColorBox>
+    <ColorBox><Box>Napalm, CLF3, and Thermite.</Box></ColorBox>
+    <ColorBox><Box>Welding fuel.</Box></ColorBox>
+    <ColorBox><Box>Dangerous gasses.</Box></ColorBox>
+    <ColorBox><Box>Frezon, plasma, and tritium.</Box></ColorBox>
+    <ColorBox><Box>Atmospheric operations. Research operations.</Box></ColorBox>
+  </Table>
+</Document>

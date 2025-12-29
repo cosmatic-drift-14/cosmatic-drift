@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefMedicalOfficer
-      time: 20h
+      time: 72000 #20 hrs
 
 # Jumpsuit
 - type: loadout
@@ -50,9 +50,10 @@
   id: ChiefMedicalOfficerMantle
   equipment:
     neck: ClothingNeckMantleCMO
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MasterCMO
+#CD redaction
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: MasterCMO
 
 - type: startingGear
   id: ChiefMedicalOfficerMantle

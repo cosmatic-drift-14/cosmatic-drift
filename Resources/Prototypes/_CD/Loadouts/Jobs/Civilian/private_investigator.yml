@@ -1,0 +1,48 @@
+# Outerclothing
+- type: loadout
+  id: JensonCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatJensen
+
+- type: loadout
+  id: InspectorCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatDetectiveLoadout
+
+- type: loadout
+  id: TrenchCoat
+  equipment: 
+    outerClothing: ClothingOuterCoatTrench
+
+# Gloves
+- type: loadout
+  id: BlackGloves
+  equipment: 
+    gloves: ClothingHandsGlovesColorBlack
+
+# Shoes
+- type: loadout
+  id: Jackboots
+  equipment: 
+    shoes: ClothingShoesBootsJack
+
+- type: loadout
+  id: LaceupShoes
+  equipment: 
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: LeatherShoes
+  equipment: 
+    shoes: ClothingShoesLeather
+
+# Glasses
+- type: loadout
+  id: Sunglasses
+  equipment: 
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: loadout
+  id: Aviators
+  equipment: 
+    eyes: ClothingEyesGlassesAviator

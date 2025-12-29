@@ -1,0 +1,7 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPrivateInvestigator
+  icon:
+    sprite: /Textures/_CD/Interface/Misc/job_icons.rsi
+    state: PrivateInvestigator
+  jobName: job-name-prisoner

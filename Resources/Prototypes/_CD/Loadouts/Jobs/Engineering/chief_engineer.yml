@@ -1,0 +1,26 @@
+# Jumpsuit
+- type: loadout
+  id: ChiefEngineerJumpsuitModern
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerModern
+
+- type: loadout
+  id: ChiefEngineerJumpskirtModern
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtChiefEngineerModern
+
+- type: loadout
+  id: ChiefEngineerJumpsuitFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerFormal
+
+# Headset
+- type: loadout
+  id: ChiefEngineerHeadset
+  equipment:
+    ears: ClothingHeadsetCE
+
+- type: loadout
+  id: ChiefEngineerHeadsetAlt
+  equipment:
+    ears: ClothingHeadsetAltEngineering

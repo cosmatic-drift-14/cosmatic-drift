@@ -1,0 +1,63 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltHalfApron
+  name: half-apron
+  description: A half-apron worn around the waist, designed for both servants and bodyguards without exposing which is which.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/halfapron.rsi
+    state: icon
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/halfapron.rsi
+  - type: Item
+    size: 30
+  - type: Storage
+    capacity: 20
+
+# Reverts the sprite changes in: https://github.com/space-wizards/space-station-14/pull/29441/files.
+- type: entity
+  parent: [ ClothingBeltSecurity, ClothingOuterArmorBasic ] # same armor but cant be equiped at the same time
+  id: ClothingBeltSecurityPlateCarrier
+  name: security plate carrier
+  description: Unique and versatile plate carrier, designed to hold security gear.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
+  - type: ClothingBlockSlotsOnEquip
+    blockedSlots:
+    - "outerClothing"
+
+- type: entity
+  parent: ClothingBeltMedical
+  id: ClothingBeltParamedicKit
+  name: field surgeon kit
+  description: A small fabric bag, designed to hold supplies for stabilising critical patients.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Kits/field_treatment.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Kits/field_treatment.rsi
+
+- type: entity
+  parent: ClothingBeltMedical
+  id: ClothingBeltMedicalKit
+  name: medical trauma kit
+  description: A small fabric bag, similar to old surgical kits.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Kits/medical_trauma.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Kits/medical_trauma.rsi
+
+- type: entity
+  parent: ClothingBeltUtility
+  id: ClothingBeltUtilityHarness
+  name: utility harness
+  description: A utility harness that sits on the shoulders rather then the waist.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/Harnesses/tool_webbing.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/Harnesses/tool_webbing.rsi

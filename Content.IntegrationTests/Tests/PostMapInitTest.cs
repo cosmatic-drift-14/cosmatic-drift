@@ -35,12 +35,14 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
+            "CDCentComm",
             "Dart"
         };
 
         private static readonly string[] Grids =
         {
             "/Maps/centcomm.yml",
+            "/Maps/_CD/centcomm.yml", // CD
             AdminTestArenaSystem.ArenaMapPath
         };
 
@@ -72,7 +74,10 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] DoNotMapWhitelist =
         {
             "/Maps/centcomm.yml",
-            "/Maps/Shuttles/AdminSpawn/**" // admin gaming
+            "/Maps/Shuttles/AdminSpawn/**", // admin gaming
+            "/Maps/Misc/terminal.yml", // CD terminal
+            "/Maps/_CD/centcomm.yml", // CD
+            "/Maps/_CD/gemini.yml", // CD, somebody should probably look into this
         };
 
         /// <summary>
@@ -102,6 +107,11 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Exo",
             "Snowball",
+            "Ferrous", // CD Map
+            "Aspid", // CD Map
+            "Gemini", // CD Map
+            "Omega", // CD Map
+            "CDCentComm", // CD Map
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";

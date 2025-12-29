@@ -1,0 +1,88 @@
+- type: entity
+  abstract: true
+  parent: BasePart
+  id: PartRodentia
+  name: rodentia body part
+  components:
+  - type: Sprite
+    sprite: _CD/Mobs/Species/Rodentia/parts.rsi
+
+- type: entity
+  parent: [ PartRodentia, BaseTorso ]
+  id: TorsoRodentia
+  name: rodentia torso
+  components:
+  - type: Sprite
+    state: "torso_m"
+
+- type: entity
+  parent: [ PartRodentia, BaseHead ]
+  id: HeadRodentia
+  name: rodentia head
+  components:
+  - type: Sprite
+    state: "head_m"
+
+- type: entity
+  parent: [ PartRodentia, BaseLeftArm ]
+  id: LeftArmRodentia
+  name: left rodentia arm
+  components:
+  - type: Sprite
+    state: "l_arm"
+
+- type: entity
+  parent: [ PartRodentia, BaseRightArm ]
+  id: RightArmRodentia
+  name: right rodentia arm
+  components:
+  - type: Sprite
+    state: "r_arm"
+
+- type: entity
+  parent: [ PartRodentia, BaseLeftHand ]
+  id: LeftHandRodentia
+  name: left rodentia hand
+  components:
+  - type: Sprite
+    state: "l_hand"
+
+- type: entity
+  parent: [ PartRodentia, BaseRightHand ]
+  id: RightHandRodentia
+  name: right rodentia hand
+  components:
+  - type: Sprite
+    state: "r_hand"
+
+- type: entity
+  parent: [ PartRodentia, BaseLeftLeg ]
+  id: LeftLegRodentia
+  name: left rodentia leg
+  components:
+  - type: Sprite
+    state: "l_leg"
+
+- type: entity
+  parent: [ PartRodentia, BaseRightLeg ]
+  id: RightLegRodentia
+  name: right rodentia leg
+  components:
+  - type: Sprite
+    state: "r_leg"
+
+- type: entity
+  parent: [ PartRodentia, BaseLeftFoot ]
+  id: LeftFootRodentia
+  name: left rodentia foot
+  components:
+  - type: Sprite
+    state: "l_foot"
+
+- type: entity
+  parent: [ PartRodentia, BaseRightFoot ]
+  id: RightFootRodentia
+  name: right rodentia foot
+  components:
+  - type: Sprite
+    state: "r_foot"

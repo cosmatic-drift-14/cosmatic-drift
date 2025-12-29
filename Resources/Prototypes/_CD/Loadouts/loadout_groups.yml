@@ -1,0 +1,273 @@
+# Command
+- type: loadoutGroup
+  id: CommandHeadset
+  name: loadout-group-command-headset
+  loadouts:
+  - CommandHeadset
+  - CommandHeadsetAlt
+
+- type: loadoutGroup
+  id: FormalShoes
+  name: loadout-group-formal-shoes
+  loadouts:
+  - LeatherShoes
+  - LaceupShoes
+  - BrownShoes
+  - BlackShoes
+
+# Civilian
+- type: loadoutGroup
+  id: PrivateInvestigatorOuterClothing
+  name: loadout-group-private-investigator-outerclothing
+  minLimit: 0
+  loadouts:
+  - JensonCoat
+  - BartenderVest
+  - InspectorCoat
+  - TrenchCoat
+
+- type: loadoutGroup
+  id: PrivateInvestigatorGloves
+  name: loadout-group-private-investigator-gloves
+  minLimit: 0
+  loadouts:
+  - BlackGloves
+  - LatexGloves
+
+- type: loadoutGroup
+  id: PrivateInvestigatorShoes
+  name: loadout-group-private-investigator-shoes
+  loadouts:
+  - Jackboots
+  - BlackShoes
+  - LaceupShoes
+  - BrownShoes
+  - LeatherShoes
+
+- type: loadoutGroup
+  id: PrivateInvestigatorGlasses
+  name: loadout-group-private-investigator-glasses
+  minLimit: 0
+  loadouts:
+  - Sunglasses
+  - Glasses
+  - Aviators
+
+- type: loadoutGroup
+  id: PassengerTitles
+  name: loadout-group-passenger-id
+  loadouts:
+  - PassengerPDA
+  - OffDutyPDA
+
+# Cargo
+- type: loadoutGroup
+  id: QuartermasterHeadset
+  name: loadout-group-quartermaster-headset
+  loadouts:
+  - QuartermasterHeadset
+  - QuartermasterHeadsetAlt
+
+- type: loadoutGroup
+  id: SalvageSpecialistJumpsuit
+  name: loadout-group-salvage-specialist-jumpsuit
+  loadouts:
+  - SalvageSpecialistJumpsuit
+  - SalvageSpecialistJumpsuitOperator
+
+# Engineering
+- type: loadoutGroup
+  id: ChiefEngineerHeadset
+  name: loadout-group-chief-engineer-headset
+  loadouts:
+  - ChiefEngineerHeadset
+  - ChiefEngineerHeadsetAlt
+
+- type: loadoutGroup
+  id: SeniorEngineerJumpsuit
+  name: loadout-group-senior-engineer-jumpsuit
+  loadouts:
+  - SeniorEngineerJumpsuit
+  - SeniorEngineerJumpskirt
+  - SeniorEngineerJumpsuitModern
+  - SeniorEngineerJumpskirtModern
+  - StationEngineerJumpsuit
+  - StationEngineerJumpskirt
+  - StationEngineerCasualsuit
+  - StationEngineerHazardsuit
+  - StationEngineerPants
+
+- type: loadoutGroup
+  id: EngineeringEyewear
+  name: loadout-group-engineering-goggles
+  minLimit: 1
+  loadouts:
+  - ClothingEyesGlassesMeson
+  - ClothingEyesGlassesMesonPrescription
+
+# Science
+- type: loadoutGroup
+  id: ResearchDirectorHeadset
+  name: loadout-group-research-director-headset
+  loadouts:
+  - ResearchDirectorHeadset
+  - ResearchDirectorHeadsetAlt
+
+- type: loadoutGroup
+  id: SeniorResearcherJumpsuit
+  name: loadout-group-senior-researcher-jumpsuit
+  loadouts:
+  - SeniorResearcherJumpsuit
+  - SeniorResearcherJumpskirt
+  - ScientistJumpsuit
+  - ScientistJumpskirt
+  - RoboticistJumpsuit
+  - RoboticistJumpskirt
+
+- type: loadoutGroup
+  id: SeniorResearcherOuterClothing
+  name: loadout-group-senior-researcher-outerclothing
+  minLimit: 0
+  loadouts:
+  - SeniorResearcherLabCoat
+  - RegularLabCoat
+  - ScienceLabCoat
+  - ScienceWintercoat
+  - RoboticistLabCoat
+  - RoboticistWintercoat
+
+# Security
+- type: loadoutGroup
+  id: HeadofSecurityHeadset
+  name: loadout-group-head-of-security-headset
+  loadouts:
+  - HeadofSecurityHeadset
+  - HeadofSecurityHeadsetAlt
+
+- type: loadoutGroup
+  id: SeniorOfficerHead
+  name: loadout-group-security-head
+  minLimit: 0
+  loadouts:
+  - SecurityHelmet
+  - SecurityNewHelmet
+  - SecurityVeteranBeret
+  - SecurityBeret
+  - SecurityHat
+  - SecurityNewSoft
+  - TrooperHat
+
+- type: loadoutGroup
+  id: SeniorOfficerJumpsuit
+  name: loadout-group-senior-officer-jumpsuit
+  loadouts:
+  - SeniorOfficerJumpsuit
+  - SeniorOfficerJumpskirt
+  - SeniorOfficerCasualsuit
+  - SeniorOfficerCasualskirt
+  - SecurityModernsuit
+  - SecurityCasualSummer
+  - SecurityCasualWinter
+  - SecurityJumpsuit
+  - SecurityJumpskirt
+  - SecurityJumpsuitGrey
+  - SecurityJumpskirtGrey
+  - TrooperUniform
+
+- type: loadoutGroup
+  id: SecurityGlassesOrHud
+  name: loadout-group-security-glasses-or-hud
+  loadouts:
+  - EyesGlassesSecurity
+  - EyesHudSecurity
+
+# Medical
+- type: loadoutGroup
+  id: ChiefMedicalOfficerHeadset
+  name: loadout-group-chief-medical-officer-headset
+  loadouts:
+  - ChiefMedicalOfficerHeadset
+  - ChiefMedicalOfficerHeadsetAlt
+
+- type: loadoutGroup
+  id: SeniorPhysicianHead
+  name: loadout-group-senior-physician-head
+  minLimit: 0
+  loadouts:
+  - SeniorPhysicianBeret
+  - MedicalBeret
+  - BlueSurgeryCap
+  - GreenSurgeryCap
+  - PurpleSurgeryCap
+  - NurseHat
+
+- type: loadoutGroup
+  id: SeniorPhysicianJumpsuit
+  name: loadout-group-senior-physician-jumpsuit
+  loadouts:
+  - SeniorPhysicianJumpsuit
+  - SeniorPhysicianJumpskirt
+  - SeniorPhysicianFormalsuit
+  - MedicalDoctorJumpsuit
+  - MedicalDoctorJumpskirt
+  - MedicalBlueScrubs
+  - MedicalGreenScrubs
+  - MedicalPurpleScrubs
+
+- type: loadoutGroup
+  id: SeniorPhysicianOuterClothing
+  name: loadout-group-senior-physician-outerclothing
+  minLimit: 0
+  loadouts:
+  - SeniorPhysicianLabCoat
+  - SeniorPhysicianModernLabCoat
+  - RegularLabCoat
+  - ModernLabCoat
+  - MedicalDoctorWintercoat
+
+- type: loadoutGroup
+  id: MedicalSpecializationBackpack
+  name: loadout-group-medical-doctor-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+  - MedicalCarrybag
+  - ViroBackpack
+  - ViroSatchel
+  - ViroDuffel
+  - GeneBackpack
+  - GeneSatchel
+  - GeneDuffel
+
+- type: loadoutGroup
+  id: ParamedicGloves
+  name: loadout-group-medical-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+  - GlovesETUGauntlet
+
+- type: loadoutGroup
+  id: ParamedicMask
+  name: loadout-group-medical-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+  - MaskGasETUSterile
+
+# Wildcards
+- type: loadoutGroup
+  id: PrisonerJumpsuit
+  name: loadout-group-prisoner-jumpsuit
+  loadouts:
+  - PrisonerJumpsuit
+  - PrisonerJumpskirt
+
+- type: loadoutGroup
+  id: PrisonerFun
+  name: cd-loadout-group-prisoner-fun
+  minLimit: 0
+  loadouts:
+  - Emag

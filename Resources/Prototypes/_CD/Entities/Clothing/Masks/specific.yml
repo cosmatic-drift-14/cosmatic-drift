@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskCensor
+  name: identity-obfuscation tech
+  description: A piece of technology capable of projecting an obfuscating field to cover an individual's face up. Comes with a built in voice modulator.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Mask/censor.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Mask/censor.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: HideLayerClothing
+    slots:
+    - Snout

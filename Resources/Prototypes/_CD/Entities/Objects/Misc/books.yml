@@ -1,0 +1,167 @@
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPGeneral
+  name: General Operating Procedure
+  description: The standard procedures followed on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#cccccc"
+    - state: decor_wingette_circle
+      color: "#cccccc"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#cccccc"
+  - type: GuideHelp
+    guides:
+    - CDSop
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPCommand
+  name: Command Operating Procedure
+  description: The standard procedures followed by command staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#1b67a5"
+    - state: decor_wingette_circle
+      color: "#1b67a5"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#1b67a5"
+  - type: GuideHelp
+    guides:
+    - CDSopCommand
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPSecurity
+  name: Security Operating Procedure
+  description: The standard procedures followed by security staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#cb0000"
+    - state: decor_wingette_circle
+      color: "#cb0000"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#cb0000"
+  - type: GuideHelp
+    guides:
+    - CDSopSecurity
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPEngineering
+  name: Engineering Operating Procedure
+  description: The standard procedures followed by engineering staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#f39f27"
+    - state: decor_wingette_circle
+      color: "#f39f27"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#f39f27"
+  - type: GuideHelp
+    guides:
+    - CDSopEngineering
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPMedical
+  name: Medical Operating Procedure
+  description: The standard procedures followed by medical staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#5b97bc"
+    - state: decor_wingette_circle
+      color: "#5b97bc"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#5b97bc"
+  - type: GuideHelp
+    guides:
+    - CDSopMedical
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPScience
+  name: Science Operating Procedure
+  description: The standard procedures followed by science staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#ee82ee"
+    - state: decor_wingette_circle
+      color: "#ee82ee"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#ee82ee"
+  - type: GuideHelp
+    guides:
+    - CDSopScience
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPCargo
+  name: Cargo Operating Procedure
+  description: The standard procedures followed by cargo staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#b18644"
+    - state: decor_wingette_circle
+      color: "#b18644"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#b18644"
+  - type: GuideHelp
+    guides:
+    - CDSopCargo
+
+- type: entity
+  parent: BaseGuidebook
+  id: BookSOPService
+  name: Service Operating Procedure
+  description: The standard procedures followed by service staff on any uniform NT station.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#9fed58"
+    - state: decor_wingette_circle
+      color: "#9fed58"
+    - state: decor_wingette
+      color: "#434343"
+    - state: icon_letter_N
+      color: "#9fed58"
+  - type: GuideHelp
+    guides:
+    - CDSopService

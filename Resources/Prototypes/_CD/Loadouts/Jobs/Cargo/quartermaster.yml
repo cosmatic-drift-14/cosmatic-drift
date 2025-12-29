@@ -1,0 +1,22 @@
+# Jumpsuit
+- type: loadout
+  id: QuartermasterForemansuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitForeman
+
+# OuterClothing
+- type: loadout
+  id: ForemanCoat
+  equipment:
+    outerClothing: ClothingOuterCoatCargoForeman
+
+# Headset
+- type: loadout
+  id: QuartermasterHeadset
+  equipment:
+    ears: ClothingHeadsetQM
+
+- type: loadout
+  id: QuartermasterHeadsetAlt
+  equipment:
+    ears: ClothingHeadsetAltCargo

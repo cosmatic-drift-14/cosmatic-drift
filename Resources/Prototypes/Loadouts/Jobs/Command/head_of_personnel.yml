@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobHeadOfPersonnel
-      time: 20h
+      time: 72000 #20 hrs
 
 # Professional HoP Time
 - type: loadoutEffectGroup
@@ -16,7 +16,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobHeadOfPersonnel
-      time: 15h # special reward for HoP mains
+      time: 54000 #15 hrs, special reward for HoP mains
 
 # Jumpsuit
 - type: loadout
@@ -45,9 +45,10 @@
   id: HoPMantle
   equipment:
     neck: ClothingNeckMantleHOP
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MasterHoP
+#CD redaction
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: MasterHoP
 
 - type: startingGear
   id: HoPMantle

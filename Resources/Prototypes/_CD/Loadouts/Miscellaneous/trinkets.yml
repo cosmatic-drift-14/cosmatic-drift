@@ -1,0 +1,98 @@
+# Lunchboxes
+- type: loadout
+  id: LunchboxBlue
+  storage:
+    back:
+    - LunchboxBlue
+
+- type: loadout
+  id: LunchboxYellow
+  storage:
+    back:
+    - LunchboxYellow
+
+- type: loadout
+  id: CDDogtags
+  storage:
+    back:
+    - CDDogtags
+
+- type: loadout
+  id: PlushieVox
+  storage:
+    back:
+    - PlushieVox
+
+- type: loadout
+  id: PlushieArachind
+  storage:
+    back:
+    - PlushieArachind
+
+- type: loadout
+  id: PlushieDiona
+  storage:
+    back:
+    - PlushieDiona
+
+- type: loadout
+  id: PlushieHuman
+  storage:
+    back:
+    - PlushieHuman
+
+- type: loadout
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+
+- type: loadout
+  id: PlushieSharkBlue
+  storage:
+    back:
+    - PlushieSharkBlue
+
+- type: loadout
+  id: PlushieSharkPink
+  storage:
+    back:
+    - PlushieSharkPink
+
+- type: loadout
+  id: PlushieSharkGrey
+  storage:
+    back:
+    - PlushieSharkGrey
+
+- type: loadout
+  id: MedCrutchesForearm
+  storage:
+    back:
+    - MedCrutchesForearm
+
+- type: loadout
+  id: GoldRing
+  storage:
+    back:
+    - GoldRing
+
+- type: loadout
+  id: SilverRing
+  storage:
+    back:
+    - SilverRing
+
+- type: loadout
+  id: SpaceCash10
+  storage:
+    back:
+    - SpaceCash10
+  groupBy: "money"
+
+- type: loadout
+  id: SpaceCash100
+  storage:
+    back:
+    - SpaceCash100
+  groupBy: "money"

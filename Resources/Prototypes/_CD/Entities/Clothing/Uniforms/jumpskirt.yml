@@ -1,0 +1,210 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtStylizedMaid
+  name: stylized maid dress
+  description: Maid for servants of the wealthy, its made of an expensive material.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/stylized_maid.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/stylized_maid.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtAcademia
+  name: academia dress
+  description: A plaid dress for the fashionable student.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/academia_dress.rsi
+
+# Casual
+
+# Militant
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSecurtyCasual
+  name: casual security fatigues
+  description: A red shirt with a black undershirt and skirt. Comfortable while on patrol.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtHoSSeniorCasual
+  name: casual senior fatigues
+  description: A red shirt with a black undershirt and skirt. Includes gold insignias denoting a respected member of Security.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/senior_security_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/senior_security_casual.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtWardenCasual
+  name: casual warden fatigues
+  description: A red shirt with a black undershirt and skirt. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/warden_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/warden_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtDetectiveCasual
+  name: casual detective fatigues
+  description: A white shirt with a red collar and black skirt. Comfortable, modern and stylish.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/detective_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/detective_casual.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtParamedicCasual
+  name: casual paramedic uniform
+  description: A mineral green shirt worn over a sterile-white shirt with black skirt. On the left upper corner there is an outline of a cross bleached into the fabric.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/paramedic_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/Casual/paramedic_casual.rsi
+
+# cargo variants
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCargoLight
+  name: cargo tech jumpskirt
+  description: A sturdy jumpskirt, issued to members of the Cargo department.
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_light.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_light.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCargoDark
+  name: cargo tech jumpskirt
+  description: A sturdy jumpskirt, issued to members of the Cargo department.
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_dark.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/cargotech_dark.rsi
+
+# Non-casual drip below
+
+# Engineering Garments
+
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtChiefEngineerModern
+  name: chief engineer's jumpskirt
+  description: It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of Chief Engineer.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/ce.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSeniorEngineerModern
+  name: senior engineer jumpskirt
+  description: A sign of skill and prestige within the engineering department.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/senior_engineer.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtEngineeringModern
+  name: engineering jumpskirt
+  description: If this suit was non-conductive, maybe engineers would actually do their damn job.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtAtmosModern
+  name: atmospheric technician jumpskirt
+  description: I am at work. I can't leave work. Work is breathing. I am testing air quality.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/atmos.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtEngineeringMechanic
+  name: mechanical engineer jumpskirt
+  description: A yellow jumpskirt with a set of overalls attached, You can't tell if its durathread or denim.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpskirt/engineering_mechanic.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded

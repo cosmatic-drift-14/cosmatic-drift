@@ -1,0 +1,67 @@
+- type: gameMap
+  id: Ferrous
+  mapName: 'Ferrous'
+  mapPath: /Maps/_CD/ferrous.yml
+  minPlayers: 15
+  maxPlayers: 35
+  stations:
+    Ferrous:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Ferrous {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
+        - type: StationJobs
+          availableJobs:
+            #High Command
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            #Security
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ] #CD Role
+            Detective: [ 1, 1 ]
+            SecurityOfficer: [ 4, 4 ]
+            #Service
+            Bartender: [ 2, 2 ]
+            Botanist: [ 3, 3 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 2, 2 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            Lawyer: [ 2, 2 ]
+            ServiceWorker: [ 2, 2 ]
+            #Engineering
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            SeniorEngineer: [ 1, 1 ] #CD Role
+            StationEngineer: [ 4, 4 ]
+            #Medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ] #CD Role
+            Chemist: [ 2, 2 ]
+            Paramedic: [ 1, 1 ]
+            MedicalDoctor: [ 4, 4 ]
+            Psychologist: [ 1, 1 ]
+            #Science
+            ResearchDirector: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ] #CD Role
+            Scientist: [ 4, 4 ]
+            Borg: [ 2, 2 ]
+            #Supply
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 3, 3 ]
+            CargoTechnician: [ 2, 2 ]
+            #Civillian
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 2, 2 ]
+            PrivateInvestigator: [ 1, 1] #CD Role
+            #misc
+            Prisoner: [ 1, 1 ] #CD Role
+            StationAi: [ 1, 1 ]

@@ -1,0 +1,15 @@
+- type: construction
+  id: wrappedBakePackage
+  graph: WrappedBakePackage
+  startNode: start
+  targetNode: bakeWrapped
+  category: construction-category-misc
+  objectType: Item
+
+- type: construction
+  id: FoldSmugglerPackage
+  graph: FoldSmugglerPackage
+  startNode: start
+  targetNode: emptyPacket
+  category: construction-category-misc
+  objectType: Item

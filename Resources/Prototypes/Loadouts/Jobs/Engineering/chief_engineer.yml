@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefEngineer
-      time: 20h
+      time: 72000 #20 hrs
 
 # Jumpsuit
 - type: loadout
@@ -49,9 +49,10 @@
   id: ChiefEngineerMantle
   equipment:
     neck: ClothingNeckMantleCE
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MasterCE
+#CD redaction
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: MasterCE
 
 - type: startingGear
   id: ChiefEngineerMantle

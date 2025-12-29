@@ -1,17 +1,17 @@
-# Senior Time
-- type: loadoutEffectGroup
-  id: SeniorOfficer
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobWarden
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Security
-      time: 60h
+# # Senior Time (CD: Disabled)
+# - type: loadoutEffectGroup
+#   id: SeniorOfficer
+#   effects:
+#   - !type:JobRequirementLoadoutEffect
+#     requirement:
+#       !type:RoleTimeRequirement
+#       role: JobWarden
+#       time: 21600 #6 hrs
+#   - !type:JobRequirementLoadoutEffect
+#     requirement:
+#       !type:DepartmentTimeRequirement
+#       department: Security
+#       time: 216000 # 60 hrs
 
 # Head
 - type: loadout
@@ -57,24 +57,24 @@
 
 - type: loadout
   id: TrooperUniform
-  equipment:
+  equipment: 
     jumpsuit: ClothingUniformSecurityTrooper
 
-- type: loadout
-  id: SeniorOfficerJumpsuit
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorOfficer
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+# - type: loadout
+#   id: SeniorOfficerJumpsuit
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorOfficer
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
 
-- type: loadout
-  id: SeniorOfficerJumpskirt
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorOfficer
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+# - type: loadout
+#   id: SeniorOfficerJumpskirt
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorOfficer
+#   equipment:
+#     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
 
 # Back
 - type: loadout
@@ -141,10 +141,10 @@
   equipment:
     id: SecurityPDA
 
-- type: loadout
-  id: SeniorOfficerPDA
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorOfficer
-  equipment:
-    id: SeniorOfficerPDA
+# - type: loadout
+#   id: SeniorOfficerPDA
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorOfficer
+#   equipment:
+#     id: SeniorOfficerPDA
