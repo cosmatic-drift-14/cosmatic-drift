@@ -1,6 +1,6 @@
 #Misc outfit startingGear definitions.
 
-#Skeleton Biker - Just a skeleton now
+#Skeleton Biker
 - type: startingGear
   id: SkeletonBiker
   equipment:
@@ -13,9 +13,8 @@
     shoes: ClothingShoesBootsJack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
-  storage:
-    back:
-    - BoxSurvival
+    pocket1: VehicleSkeletonMotorcycle
+    pocket2: VehicleKeySkeletonMotorcycle
 
 # Syndicate Operative Outfit - Civilian
 - type: startingGear
@@ -27,6 +26,11 @@
     gloves: ClothingHandsGlovesColorBlack
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
+  # CD: This is gear set used for the syndicate shuttle people so we give them a hailing headset.
+  storage:
+    back:
+    - ClothingHeadsetLongRange
+  # END CD
 
 # Syndicate Footsoldier Gear - No Headset
 - type: startingGear

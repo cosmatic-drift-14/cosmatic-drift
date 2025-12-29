@@ -3,10 +3,6 @@
   name: job-name-chef
   description: job-description-chef
   playTimeTracker: JobChef
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 0.5h
   startingGear: ChefGear
   icon: "JobIconChef"
   supervisors: job-supervisors-hop
@@ -21,7 +17,7 @@
 - type: startingGear
   id: ChefGear
   equipment:
-    shoes: ClothingShoesChef
+    shoes: ClothingShoesColorBlack
     id: ChefPDA
     ears: ClothingHeadsetService
     belt: ClothingBeltChefFilled

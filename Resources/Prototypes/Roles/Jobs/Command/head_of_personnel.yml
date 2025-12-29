@@ -4,21 +4,8 @@
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 2.5h
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 2.5h
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 2.5h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 2.5h
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 2.5h
+    - !type:OverallPlaytimeRequirement
+      time: 14400 #4 hrs
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
@@ -61,10 +48,10 @@
 - type: startingGear
   id: HoPGear
   equipment:
-    shoes: ClothingShoesColorBrown
+    # shoes: ClothingShoesColorBrown | CD, removed due to loadout addtion.
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand #CD: Loadouts
     belt: BoxFolderClipboardThreePapers
     eyes: ClothingEyesHudCommand
   storage:

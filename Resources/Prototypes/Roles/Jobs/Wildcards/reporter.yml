@@ -16,9 +16,11 @@
     shoes: ClothingShoesColorWhite
     id: ReporterPDA
     ears: ClothingHeadsetService
-  #storage:
-    #back:
-    #- Stuff
+  storage:
+    back:
+    - TapeRecorder # CD Change
+    - CassetteTape # CD Change
+    - CassetteTape # CD Change
 
 - type: chameleonOutfit
   id: ReporterChameleonOutfit

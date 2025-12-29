@@ -4,12 +4,8 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 5h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"
@@ -32,7 +28,7 @@
 - type: startingGear
   id: WardenGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    # eyes: ClothingEyesGlassesSecurity  CD: Secglasses selector fix
     id: WardenPDA
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58

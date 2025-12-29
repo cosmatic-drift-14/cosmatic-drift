@@ -3,10 +3,6 @@
   name: job-name-serviceworker
   description: job-description-serviceworker
   playTimeTracker: JobServiceWorker
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: Civilian
-    time: 0.5h
   startingGear: ServiceWorkerGear
   icon: "JobIconServiceWorker"
   supervisors: job-supervisors-service
@@ -21,7 +17,7 @@
 - type: startingGear
   id: ServiceWorkerGear
   equipment:
-    shoes: ClothingShoesColorBlack
+    # shoes: ClothingShoesColorBlack | CD, removed due to loadout addtion.
     id: ServiceWorkerPDA
     ears: ClothingHeadsetService
   #storage:

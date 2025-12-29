@@ -1,20 +1,22 @@
 # No idea why it's in sci but we ball.
-# Why is this one file?
 - type: job
   id: StationAi
   name: job-name-station-ai
   description: job-description-station-ai
   playTimeTracker: JobStationAi
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 5h
-  weight: 10
+    - !type:OverallPlaytimeRequirement
+      time: 21600 #6 hrs
   canBeAntag: false
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain
-  jobPreviewEntity: PlayerStationAiPreview
+  # CD: Skip records
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: SkipLoadingCharacterRecords
+  # end CD
   applyTraits: false
 
 - type: job
@@ -24,9 +26,15 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10h
+      time: 7200 #2 hrs
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd
   jobEntity: PlayerBorgBattery
+  # CD: Skip records
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: SkipLoadingCharacterRecords
+  # end CD
   applyTraits: false

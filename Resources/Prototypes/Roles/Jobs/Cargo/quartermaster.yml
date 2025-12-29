@@ -4,15 +4,8 @@
   description: job-description-qm
   playTimeTracker: JobQuartermaster
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 5h
-    - !type:RoleTimeRequirement
-      role: JobSalvageSpecialist
-      time: 2.5h
-    - !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 14400 #4 hrs
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
@@ -38,7 +31,7 @@
   id: QuartermasterGear
   equipment:
     id: QuartermasterPDA
-    ears: ClothingHeadsetQM
+    # ears: ClothingHeadsetQM #CD: Loadouts
     belt: BoxFolderClipboardThreePapers
     pocket1: AppraisalTool
   storage:
@@ -55,4 +48,4 @@
     mask: ClothingMaskBreath
     outerClothing: ClothingOuterWinterQM
     neck: ClothingNeckCloakQm
-    gloves: ClothingHandsKnuckleDustersQM
+    # gloves: ClothingHandsKnuckleDustersQM # CD: Remove these

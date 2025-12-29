@@ -4,18 +4,8 @@
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobWarden
-      time: 1h
-    - !type:RoleTimeRequirement
-      role: JobDetective
-      time: 1h # knowing how to use the tools is important
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 5h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 14400 #4 hrs
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
@@ -31,8 +21,6 @@
   - External
   - Detective
   - Cryogenics
-  - GenpopEnter
-  - GenpopLeave
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -43,10 +31,10 @@
 - type: startingGear
   id: HoSGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    # eyes: ClothingEyesGlassesSecurity  CD: Secglasses selector fix
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
-    ears: ClothingHeadsetAltSecurity
+    # ears: ClothingHeadsetAltSecurity #CD: Loadouts
     pocket1: WeaponPistolMk58
   storage:
     back:

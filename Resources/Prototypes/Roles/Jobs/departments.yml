@@ -17,6 +17,7 @@
   roles:
   - Bartender
   - Botanist
+  - Boxer
   - Chaplain
   - Chef
   - Clown
@@ -29,7 +30,10 @@
   - Passenger
   - Reporter
   - Visitor
+  - Zookeeper
   - ServiceWorker
+  - Prisoner # Custom role
+  - PrivateInvestigator # Custom role
 
 - type: department
   id: CentralCommand
@@ -82,8 +86,9 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
+  - SeniorEngineer #CD Role
   - StationEngineer
-  - TechnicalAssistant
+# - TechnicalAssistant |CD Disabled
 
 - type: department
   id: Medical
@@ -94,9 +99,10 @@
   - Chemist
   - ChiefMedicalOfficer
   - MedicalDoctor
-  - MedicalIntern
+# - MedicalIntern |CD Disabled
   - Psychologist
   - Paramedic
+  - SeniorPhysician #CD Role
 
 - type: department
   id: Security
@@ -106,8 +112,9 @@
   weight: 20
   roles:
   - HeadOfSecurity
-  - SecurityCadet
+# - SecurityCadet |CD Disabled
   - SecurityOfficer
+  - SeniorOfficer #CD Role
   - Detective
   - Warden
 
@@ -118,8 +125,9 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
+  - SeniorResearcher #CD Role
   - Scientist
-  - ResearchAssistant
+# - ResearchAssistant |CD Disabled
 
 - type: department
   id: Silicon
@@ -137,6 +145,9 @@
   color: "#9FED58"
   weight: 10
   roles:
+  - Boxer
   - Reporter
-  - Psychologist
+  - Zookeeper
+  # CD: Psychologist is not station specific
+  # - Psychologist
   primary: false

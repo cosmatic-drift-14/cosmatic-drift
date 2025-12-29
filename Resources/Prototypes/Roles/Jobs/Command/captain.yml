@@ -4,21 +4,8 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 4h
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 4h
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 4h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 4h
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 4h
+    - !type:OverallPlaytimeRequirement
+      time: 21600 #6 hrs
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
@@ -37,11 +24,11 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    shoes: ClothingShoesBootsLaceup
+    # shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesCommand
     gloves: ClothingHandsGlovesCaptain
     id: CaptainPDA
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand #CD: Loadouts
   storage:
     back:
     - Flash

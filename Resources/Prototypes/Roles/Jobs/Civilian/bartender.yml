@@ -3,10 +3,6 @@
   name: job-name-bartender
   description: job-description-bartender
   playTimeTracker: JobBartender
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 0.5h
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
@@ -21,7 +17,7 @@
 - type: startingGear
   id: BartenderGear
   equipment:
-    shoes: ClothingShoesColorBlack
+    # shoes: ClothingShoesColorBlack | CD, removed due to loadout addtion.
     id: BartenderPDA
     ears: ClothingHeadsetService
   #storage:

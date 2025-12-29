@@ -3,16 +3,13 @@
   name: job-name-paramedic
   description: job-description-paramedic
   playTimeTracker: JobParamedic
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: Medical
-    time: 2.5h
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
   access:
   - Medical
   - Maintenance
+  - External
   extendedAccess:
   - Chemistry
 
