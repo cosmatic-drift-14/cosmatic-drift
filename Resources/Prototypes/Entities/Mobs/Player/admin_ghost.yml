@@ -217,11 +217,12 @@
   description: View all of the character records
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
     iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
     keywords: [ "AI", "console", "interface" ]
     priority: -10
+  - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
 
 # _CD - Job slots
@@ -231,9 +232,10 @@
   description: View and adjust job slots
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
     iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
     keywords: [ "AI", "console", "interface" ]
     priority: -10
+  - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.JobSlotsConsoleUiKey.Key }

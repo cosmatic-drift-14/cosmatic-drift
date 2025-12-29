@@ -8,7 +8,9 @@
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     state: civdef
   - type: Storage
-    capacity: 7
+    grid:
+    - 0,0,1,1
+    maxItemSize: Small
     whitelist:
       tags:
         - Brutepack
@@ -17,11 +19,11 @@
         - Ointment
         - PillCanister
       components:
-        - Hypospray
+        - Injector # means these cases can store syringes now too
         - Pill
         - Healing
   - type: Item
-    size: 5
+    size: Normal
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     heldPrefix: civdef
   - type: PhysicalComposition
@@ -98,7 +100,8 @@
   - type: Item
     heldPrefix: brutebleed
   - type: Storage
-    capacity: 13
+    grid:
+    - 0,0,2,1
 
 - type: entity
   name: combat medcase
@@ -111,7 +114,8 @@
   - type: Item
     heldPrefix: combat
   - type: Storage
-    capacity: 17
+    grid:
+    - 0,0,2,1
 
 - type: entity
   name: rapid application medcase
@@ -124,4 +128,5 @@
   - type: Item
     heldPrefix: rapidapp
   - type: Storage
-    capacity: 19
+    grid:
+    - 0,0,3,1
