@@ -1,14 +1,20 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+  - Amber #CD addition
+  - Aspid
+  - Cluster #CD map
   - Bagel
   - Box
   - Elkridge
   - Fland
+  - Gemini
   - Marathon
   - Oasis
+  - Omega #CD addition
   - Packed
   - Plasma
   - Reach
-  - Exo
+  - Ferrous
+  # - Exo # CD Derotate
   - Snowball

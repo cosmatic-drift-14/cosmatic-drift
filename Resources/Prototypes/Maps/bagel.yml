@@ -2,8 +2,9 @@
   id: Bagel
   mapName: 'Bagel Station'
   mapPath: /Maps/bagel.yml
-  minPlayers: 35
-  maxPlayers: 80
+  minPlayers: 25 #CD change
+  maxPlayers: 55 #CD change
+  patchfile: /CDMapPatches/bagel.yml # CD Edit: Apply map patch
   stations:
     Bagel:
       stationProto: StandardNanotrasenStation
@@ -19,47 +20,53 @@
           availableJobs: # 60 jobs total w/o latejoins & interns, 77 jobs total w/ latejoins & interns
             #command (7)
             Captain: [ 1, 1 ]
+            #service
             HeadOfPersonnel: [ 1, 1 ]
-            HeadOfSecurity: [ 1, 1 ]
-            ChiefMedicalOfficer: [ 1, 1 ]
-            ChiefEngineer: [ 1, 1 ]
-            ResearchDirector: [ 1, 1 ]
-            Quartermaster: [ 1, 1 ]
-            #service (13 - 14)
-            Bartender: [ 1, 2 ]
+            Bartender: [ 2, 2 ] #CD change from 1-2 to 2-2
             Botanist: [ 2, 2 ]
             Chef: [ 2, 2 ]
             Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            Reporter: [ 2, 2 ]
-            #engineering (7)
+            #engineering
+            ChiefEngineer: [ 1, 1 ]
+            SeniorEngineer: [ 1, 1 ] #CD Role
             AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ] #intern, not counted
-            #medical (6)
-            Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 3 ]
+            StationEngineer: [ 4, 4 ] #CD change from 3-3 to 4-4.
+            # TechnicalAssistant: [ 2, 2 ] #CD disabled.
+            #medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ] #CD Role
+            Chemist: [ 2, 2 ] #CD change from 3 to 2.
+            MedicalDoctor: [ 4, 4 ] #CD change from 3-3 to 4-4.
             Paramedic: [ 1, 1 ]
-            MedicalIntern: [ 4, 4 ] #intern, not counted
-            #science (5)
-            Scientist: [ 5, 5 ]
-            ResearchAssistant: [ 4, 4 ] #intern, not counted
-            #security (10)
+            # MedicalIntern: [ 2, 2 ] #CD disabled.
+            #science
+            ResearchDirector: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ] #CD Role
+            Scientist: [ 5, 5 ] #CD change from 4-4 to 5-5.
+            # ResearchAssistant: [ 2, 2 ] #CD disabled.
+            #security
+            HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 6, 6 ]
+            SeniorOfficer: [ 1, 1 ] #CD Role
+            SecurityOfficer: [ 4, 4 ] #CD change from 3-3 to 4-4.
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 4, 4 ] #intern, not counted
+            # SecurityCadet: [ 2, 2 ] #CD disabled.
             Lawyer: [ 2, 2 ]
-            #supply (6)
+            #supply
+            Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
-            #civilian (3+)
-            Passenger: [ -1, -1 ] #infinite, not counted
+            #civilian
+            Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            #silicon (3)
+            Reporter: [ 2, 2 ]
+            #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
+            #misc
+            Prisoner: [ 1, 1 ] #CD Role

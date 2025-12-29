@@ -2,8 +2,9 @@
   id: Plasma
   mapName: 'Plasma'
   mapPath: /Maps/plasma.yml
-  minPlayers: 30
-  maxPlayers: 80
+  minPlayers: 15 #CD change from 30 to 15
+  maxPlayers: 35 #CD change from 80 to 35
+  patchfile: /CDMapPatches/plasma.yml #CD apply map patch
   stations:
     Plasma:
       stationProto: StandardNanotrasenStation
@@ -18,8 +19,8 @@
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_plasma.yml
         - type: StationJobs
-          availableJobs: # 66 jobs total w/o latejoins & interns, 91 jobs total w/ latejoins & interns
-            #command (7)
+          availableJobs: #Total of 69 jobs roundstart, max of 76 inc. latejoins and trainees.
+            #command - 7
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             ChiefEngineer: [ 1, 1 ]
@@ -27,42 +28,45 @@
             ResearchDirector: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
-            #service (15 - 17)
+            #service - 18-21
             Bartender: [ 2, 2 ]
-            Botanist: [ 2, 3 ]
+            Botanist: [ 3, 3 ] #CD change from 2-3 to 3-3
             Chef: [ 2, 2 ]
             Janitor: [ 3, 3 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            Reporter: [ 2, 3 ]
-            #engineering (8)
+            Reporter: [ 3, 3 ] #CD change from 2-3 to 3-3
+            Clown: [ 2, 2 ] # This might be fun #CD change from 1-2 to 2-2
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            #engineering
+            SeniorEngineer: [ 1, 1 ] #CD role
             AtmosphericTechnician: [ 4, 4 ]
-            StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ] #intern, not counted
-            #medical (9)
+            StationEngineer: [ 5, 5 ] #CD change from 4-4 to 5-5.
+            # TechnicalAssistant: [ 2, 2 ] #CD disabled.
+            #medical
+            SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 4, 4 ]
             Paramedic: [ 2, 2 ]
-            MedicalIntern: [ 4, 4 ] #intern, not counted
+            # MedicalIntern: [ 2, 2 ] #CD disabled.
             Psychologist: [ 1, 1 ]
-            #science (4)
-            Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 4, 4 ] #intern, not counted
-            #security (9 - 11)
-            Warden: [ 1, 1 ]
-            SecurityOfficer: [ 6, 8 ]
-            Detective: [ 1, 2 ] #good cop, bad cop
-            SecurityCadet: [ 4, 4 ] #intern, not counted
-            Lawyer: [ 1, 2 ]
-            #supply (8 - 10)
-            SalvageSpecialist: [ 4, 4 ] #the salvagers yearn for the mines
-            CargoTechnician: [ 4, 6 ]
-            #civilian (3 - 4+)
-            Passenger: [ -1, -1 ]  #infinite, the tiders yearn for the mines
-            Clown: [ 1, 2 ] # this might be fun!
-            Mime: [ 1, 1 ]
-            Musician: [ 1, 1 ]
-            #silicon (3 - 5)
-            Borg: [ 2, 4 ]
+            #science
+            SeniorResearcher: [ 1, 1 ] #CD role
+            Scientist: [ 5, 5 ] #CD change from 4-4 to 5-5.
+            # ResearchAssistant: [ 2, 2 ] #CD disabled.
             StationAi: [ 1, 1 ]
+            Borg: [ 4, 4 ] #CD change from 2-4 to 4-4
+            #security
+            SeniorOfficer: [ 1, 1 ] #CD role
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 4, 4 ] #CD change from 6-8 to 4-4.
+            Detective: [ 2, 2 ] #CD change from 1-2 to 2-2
+            # SecurityCadet: [ 2, 2 ] #CD disabled.
+            Lawyer: [ 2, 2 ] #CD change from 1-2 to 2-2
+            #supply - 7
+            SalvageSpecialist: [ 4, 4 ]
+            CargoTechnician: [ 3, 3 ] #CD change from 4-6 to 3-3
+            #civilian
+            Passenger: [ -1, -1 ]

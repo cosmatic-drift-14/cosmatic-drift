@@ -18,6 +18,7 @@
   mapName: Dev
   mapPath: /Maps/Test/dev_map.yml
   minPlayers: 0
+  patchfile: /CDMapPatches/dev_map.yml # CD Edit: Patch the dev map with our stuff.
   stations:
     Dev:
       stationProto: StandardNanotrasenStation
