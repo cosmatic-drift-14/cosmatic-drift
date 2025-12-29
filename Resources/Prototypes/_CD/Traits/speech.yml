@@ -7,8 +7,8 @@
   category: SpeechTraits
   cost: 1
   components:
-    - type: MobsterAccent 
-    
+    - type: MobsterAccent
+
 - type: trait
   id: RussianAccent
   name: trait-russian-name
@@ -17,4 +17,22 @@
   cost: 1
   components:
   - type: RussianAccent
-  
+
+- type: trait
+  id: ReptillianAccent
+  name: trait-reptile-accent-name
+  description: trait-reptile-accent-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: LizardAccent
+
+- type: trait
+  id: DwarvenAccent
+  name: trait-dwarf-accent-name
+  description: trait-dwarf-accent-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: ReplacementAccent
+    accent: dwarf
