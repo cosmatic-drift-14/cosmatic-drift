@@ -7,10 +7,10 @@
   packetPrototype: WheatSeeds
   productPrototypes:
     - WheatBushel
-  mutationPrototypes:
-    - meatwheat
   lifespan: 25
   maturation: 6
+  mutationPrototypes:
+    - meatwheat
   production: 3
   yield: 3
   potency: 5
@@ -596,7 +596,7 @@
   mutationPrototypes:
     - killerTomato
   harvestRepeat: Repeat
-  lifespan: 60
+  lifespan: 25
   maturation: 8
   production: 6
   yield: 2
@@ -1294,6 +1294,10 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
+    Desoxyephedrine: #CD: Moved Desox back to ambrosia from glasstle.
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
     Vitamin:
       Min: 1
       Max: 2
@@ -1328,6 +1332,10 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
+    Desoxyephedrine: #CD: Moved Desox back to ambrosia from glasstle.
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
 
 - type: seed
   id: galaxythistle
@@ -1374,10 +1382,10 @@
       Min: 1
       Max: 25
       PotencyDivisor: 4
-    Desoxyephedrine: # meff!!
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+    # Desoxyephedrine: # meff!! #CD: Moved Desox back to ambrosia from glasstle.
+      # Min: 1
+      # Max: 10
+      # PotencyDivisor: 10
 
 - type: seed
   id: flyAmanita
