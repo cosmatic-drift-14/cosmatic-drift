@@ -219,57 +219,57 @@
   - type: DynamicRuleCost
     cost: 75
 
-# - type: entity
-#   parent: BaseGameRule
-#   id: NinjaSpawn
-#   components:
-#   - type: StationEvent
-#     weight: 6
-#     duration: null
-#     earliestStart: 30
-#     reoccurrenceDelay: 20
-#     minimumPlayers: 30
-#   - type: SpaceSpawnRule
-#   - type: AntagLoadProfileRule
-#   - type: AntagObjectives
-#     objectives:
-#     - StealResearchObjective
-#     - DoorjackObjective
-#     - SpiderChargeObjective
-#     - TerrorObjective
-#     - MassArrestObjective
-#     - NinjaSurviveObjective
-#   - type: AntagSelection
-#     agentName: ninja-round-end-agent-name
-#     definitions:
-#     - spawnerPrototype: SpawnPointGhostSpaceNinja
-#       min: 1
-#       max: 1
-#       pickPlayer: false
-#       startingGear: SpaceNinjaGear
-#       roleLoadout:
-#       - RoleSurvivalEVA
-#       briefing:
-#         text: ninja-role-greeting
-#         color: Green
-#         sound: /Audio/Misc/ninja_greeting.ogg
-#       components:
-#       - type: SpaceNinja
-#       - type: NpcFactionMember
-#         factions:
-#         - Syndicate
-#       - type: AutoImplant
-#         implants:
-#         - DeathAcidifierImplant
-#       - type: RandomMetadata
-#         nameSegments:
-#         - NamesNinjaTitle
-#         - NamesNinja
-#         nameFormat: name-format-ninja
-#       mindRoles:
-#       - MindRoleNinja
-#   - type: DynamicRuleCost
-#     cost: 75
+- type: entity
+  parent: BaseGameRule
+  id: NinjaSpawn
+  components:
+  - type: StationEvent
+    weight: 6
+    duration: null
+    earliestStart: 30
+    reoccurrenceDelay: 20
+    minimumPlayers: 30
+  - type: SpaceSpawnRule
+  - type: AntagLoadProfileRule
+  - type: AntagObjectives
+    objectives:
+    - StealResearchObjective
+    - DoorjackObjective
+    - SpiderChargeObjective
+    - TerrorObjective
+    - MassArrestObjective
+    - NinjaSurviveObjective
+  - type: AntagSelection
+    agentName: ninja-round-end-agent-name
+    definitions:
+    - spawnerPrototype: SpawnPointGhostSpaceNinja
+      min: 1
+      max: 1
+      pickPlayer: false
+      startingGear: SpaceNinjaGear
+      roleLoadout:
+      - RoleSurvivalEVA
+      briefing:
+        text: ninja-role-greeting
+        color: Green
+        sound: /Audio/Misc/ninja_greeting.ogg
+      components:
+      - type: SpaceNinja
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: AutoImplant
+        implants:
+        - DeathAcidifierImplant
+      - type: RandomMetadata
+        nameSegments:
+        - NamesNinjaTitle
+        - NamesNinja
+        nameFormat: name-format-ninja
+      mindRoles:
+      - MindRoleNinja
+  - type: DynamicRuleCost
+    cost: 75
 
 - type: entity
   parent: BaseGameRule

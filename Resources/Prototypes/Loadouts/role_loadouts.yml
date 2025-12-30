@@ -650,6 +650,11 @@
   - GroupTankHarness
 
 - type: roleLoadout
+  id: RoleSurvivalMilitaryDouble
+  groups:
+  - SurvivalMilitaryDouble
+
+- type: roleLoadout
   id: RoleSurvivalNukie
   groups:
   - SurvivalSyndicate
@@ -666,3 +671,12 @@
   id: RoleSurvivalSpaceNinja
   groups:
   - GroupEVATank
+
+- type: loadoutGroup
+  id: SurvivalMilitaryDouble
+  name: loadout-group-survival-military
+  minLimit: 2
+  hidden: true
+  loadouts:
+  - EmergencyNitrogenMilitaryDouble
+  - EmergencyOxygenMilitaryDouble

@@ -42,10 +42,11 @@
         Blunt: 2
         Slash: 3
   - type: Temperature # These are moth values, but do make sense for Foxfolk. The heat damage per second might be high, but we can tune it if there are issues.
+    specificHeat: 46
+    currentTemperature: 310.15
+  - type: TemperatureDamage
     heatDamageThreshold: 320
     coldDamageThreshold: 230
-    currentTemperature: 310.15
-    specificHeat: 46
     coldDamage:
       types:
         Cold : 0.05 #per second, scales with temperature & other constants
