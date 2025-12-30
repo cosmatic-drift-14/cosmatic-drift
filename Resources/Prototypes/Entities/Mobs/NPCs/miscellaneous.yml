@@ -132,7 +132,7 @@
   - type: ReplacementAccent
     accent: tomatoKiller
   - type: Item
-    size: 80
+    size: 140
   - type: MultiHandedItem
   - type: NpcFactionMember
     factions:
