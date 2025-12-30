@@ -3968,7 +3968,7 @@ entities:
     components:
     - type: Transform
       parent: 1687
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 1687
   - uid: 1162
@@ -3977,7 +3977,7 @@ entities:
     components:
     - type: Transform
       parent: 1688
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 1688
 - proto: ActionToggleInternals
@@ -3988,7 +3988,7 @@ entities:
     components:
     - type: Transform
       parent: 3669
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 3669
 - proto: ActionToggleJetpack
@@ -3999,7 +3999,7 @@ entities:
     components:
     - type: Transform
       parent: 3669
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 3669
 - proto: ActionToggleLight
@@ -4010,7 +4010,7 @@ entities:
     components:
     - type: Transform
       parent: 4448
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 4448
 - proto: AirAlarm

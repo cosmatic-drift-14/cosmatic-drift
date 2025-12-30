@@ -108,3 +108,4 @@
     price: 150
   - type: FloatingVisuals
   - type: Puller # CD: Is cute
+    needsHands: false

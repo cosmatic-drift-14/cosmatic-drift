@@ -4819,17 +4819,19 @@ entities:
 - proto: ActionToggleBlock
   entities:
   - uid: 12052
+    mapInit: true
+    paused: true
     components:
     - type: Transform
       parent: 7935
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 7935
   - uid: 13922
     components:
     - type: Transform
       parent: 13921
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 13921
 - proto: ActionToggleInternals
@@ -4838,14 +4840,14 @@ entities:
     components:
     - type: Transform
       parent: 13680
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 13680
   - uid: 13919
     components:
     - type: Transform
       parent: 13917
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 13917
 - proto: ActionToggleJetpack
@@ -4854,14 +4856,14 @@ entities:
     components:
     - type: Transform
       parent: 13680
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 13680
   - uid: 13918
     components:
     - type: Transform
       parent: 13917
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 13917
 - proto: ActionToggleLight
@@ -4870,7 +4872,7 @@ entities:
     components:
     - type: Transform
       parent: 12120
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 12120
   - uid: 6735
@@ -4879,7 +4881,7 @@ entities:
     components:
     - type: Transform
       parent: 2502
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 2502
   - uid: 6736
@@ -4888,27 +4890,27 @@ entities:
     components:
     - type: Transform
       parent: 2535
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 2535
   - uid: 8328
     components:
     - type: Transform
       parent: 6409
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 6409
   - uid: 8638
     components:
     - type: Transform
       parent: 1481
-    - type: InstantAction
+    - type: Action
       container: 1481
   - uid: 9825
     components:
     - type: Transform
       parent: 10704
-    - type: InstantAction
+    - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 10704
 - proto: AirAlarm
