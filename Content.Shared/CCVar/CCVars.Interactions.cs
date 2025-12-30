@@ -44,7 +44,7 @@ public sealed partial class CCVars
     ///     Whether or not the storage UI is static and bound to the hotbar, or unbound and allowed to be dragged anywhere.
     /// </summary>
     public static readonly CVarDef<bool> StaticStorageUI =
-        CVarDef.Create("control.static_storage_ui", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("control.static_storage_ui", false, CVar.CLIENTONLY | CVar.ARCHIVE); // CD: Multiple storage windows
 
     /// <summary>
     ///     Whether or not the storage window uses a transparent or opaque sprite.
@@ -56,14 +56,14 @@ public sealed partial class CCVars
     /// Whether or not the storage window has a title of the entity name.
     /// </summary>
     public static readonly CVarDef<bool> StorageWindowTitle =
-        CVarDef.Create("control.storage_window_title", false, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("control.storage_window_title", true, CVar.CLIENTONLY | CVar.ARCHIVE); // CD: Multiple storage windows
 
     /// <summary>
     /// How many storage windows are allowed to be open at once.
     /// Recommended that you utilise this in conjunction with <see cref="StaticStorageUI"/>
     /// </summary>
     public static readonly CVarDef<int> StorageLimit =
-        CVarDef.Create("control.storage_limit", 1, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("control.storage_limit", 99, CVar.REPLICATED | CVar.SERVER); // CD: Multiple storage windows
 
     /// <summary>
     /// Whether or not storage can be opened recursively.
