@@ -480,6 +480,6 @@
   parent: ActionChangeVoiceMask
   id: ActionChangeVoiceMaskImplant
   components:
-  - type: Action
+  - type: InstantAction
     icon: { sprite: Interface/Actions/voice-mask.rsi, state: icon }
     itemIconStyle: BigAction

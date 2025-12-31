@@ -9,8 +9,8 @@
   components:
   - type: Sprite
     sprite: Objects/Fun/mech_figurines.rsi
-  - type: SpeakOnTrigger
-    pack: FigurinesMechGeneric
+  # - type: SpeakOnTrigger # CD: Figurine lines are a pain and I honestly don't want to deal with porting all of them
+  #   pack: FigurinesMechGeneric
 
 #Ripley APLU
 - type: entity

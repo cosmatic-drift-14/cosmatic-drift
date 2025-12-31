@@ -626,5 +626,5 @@
       head:
       - state: equipped-HELMET
         offset: "0, 0.06"
-  - type: SpeakOnTrigger
-    pack: FigurinesAI
+  # - type: SpeakOnTrigger # CD: Figurine lines are a pain and I honestly don't want to deal with porting all of them
+  #   pack: FigurinesAI

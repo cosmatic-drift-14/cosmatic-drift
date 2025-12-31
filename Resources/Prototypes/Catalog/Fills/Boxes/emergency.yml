@@ -330,9 +330,9 @@
     - id: ClothingMaskBreath
     - id: DoubleEmergencyOxygenTankFilled
     - id: EmergencyMedipen
-    - id: Flare
+    # - id: Flare
     - id: FoodSnackNutribrick
-    - id: DrinkWaterBottleFull
+    # - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
     - state: internals
@@ -348,9 +348,9 @@
     - id: ClothingMaskBreath
     - id: DoubleEmergencyNitrogenTankFilled
     - id: EmergencyMedipen
-    - id: Flare
+    # - id: Flare
     - id: FoodSnackNutribrick
-    - id: DrinkWaterBottleFull
+    # - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
     - state: internals
