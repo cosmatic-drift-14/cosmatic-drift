@@ -61,7 +61,10 @@
     sprite: Objects/Fun/Instruments/microphone.rsi
   - type: Item
     size: 5
-    # storedRotation: -45
+    # storedSprite:
+    #   state: storage
+    #   sprite: Objects/Fun/Instruments/microphone.rsi
+
 
 - type: entity
   parent: BasePercussionInstrument

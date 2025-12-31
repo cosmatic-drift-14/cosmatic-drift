@@ -132,7 +132,7 @@
   - type: ReplacementAccent
     accent: tomatoKiller
   - type: Item
-    size: 80
+    size: 140
   - type: MultiHandedItem
   - type: NpcFactionMember
     factions:
@@ -151,12 +151,10 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
   - type: Bloodstream
-    bloodReagents:
+    bloodReferenceSolution:
       reagents:
       - ReagentId: JuiceTomato
-        Quantity: 1
-    bloodMaxVolume: 50
-    chemicalMaxVolume: 30
+        Quantity: 50
   - type: DamageStateVisuals
     states:
       Alive:
