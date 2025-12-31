@@ -40,8 +40,8 @@ public sealed class AllergySystem : EntitySystem
         if (!TryComp(uid, out BloodstreamComponent? bloodstream))
             return;
         if (!_solutionContainerSystem.ResolveSolution(uid,
-                bloodstream.ChemicalSolutionName,
-                ref bloodstream.ChemicalSolution,
+                bloodstream.BloodSolutionName,
+                ref bloodstream.BloodSolution,
                 out var solution))
             return;
         var quantity = args.ReagentQuantity.Quantity;
@@ -64,8 +64,8 @@ public sealed class AllergySystem : EntitySystem
                 continue;
 
             if (!_solutionContainerSystem.ResolveSolution(uid,
-                    bloodstream.ChemicalSolutionName,
-                    ref bloodstream.ChemicalSolution,
+                    bloodstream.BloodSolutionName,
+                    ref bloodstream.BloodSolution,
                     out var chemstream))
                 continue;
 

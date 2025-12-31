@@ -1,6 +1,6 @@
 ﻿using Robust.Shared.Utility;
 
-namespace Content.Server.Maps;
+namespace Content.Shared.Maps;
 
 public sealed partial class GameMapPrototype
 {
