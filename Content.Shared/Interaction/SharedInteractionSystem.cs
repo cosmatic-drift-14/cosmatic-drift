@@ -1059,7 +1059,7 @@ namespace Content.Shared.Interaction
             DoContactInteraction(user, target, interactUsingEvent);
             // Contact interactions are currently only used for forensics, so we don't raise used -> target
             if (interactUsingEvent.Handled || userInteractUsingEvent.Handled)
-                return true;
+                return;
 
             if (InteractDoAfter(user, used, target, clickLocation, canReach: true, checkDeletion: false))
                 return;
