@@ -8,7 +8,9 @@
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     state: civdef
   - type: Item
-    size: 5
+    size: Small
+    sprite: _CD/Objects/Specific/Medical/medcase.rsi
+    heldPrefix: civdef
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     heldPrefix: civdef
   - type: SpawnItemsOnUse
