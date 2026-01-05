@@ -1,4 +1,8 @@
 # Space Station 14 Code of Conduct
+```
+This file is residual from our upstream. We do not have a formal code of conduct.
+Please excersize common decency/and or follow our discord rules.
+```
 
 Space Station 14's staff and community is made up volunteers from all over the world, working on every aspect of the project - including development, teaching, and hosting integral tools.
 
