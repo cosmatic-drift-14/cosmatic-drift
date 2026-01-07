@@ -117,7 +117,6 @@ namespace Content.IntegrationTests.Tests
             "Amber", // CD Map
             "Cluster", // CD Map
         };
-        };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
 
