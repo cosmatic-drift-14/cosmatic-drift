@@ -109,11 +109,14 @@ namespace Content.IntegrationTests.Tests
             "Exo",
             "Snowball",
             "Ferrous", // CD Map
-            "Cocoon", // CD Map
+            "Cocoon", //CD Map
             "Aspid", // CD Map
             "Gemini", // CD Map
             "Omega", // CD Map
-            "CDCentComm" // CD Map
+            "CDCentComm", // CD Map
+            "Amber", // CD Map
+            "Cluster", // CD Map
+        };
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
