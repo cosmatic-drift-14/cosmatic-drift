@@ -460,9 +460,10 @@ namespace Content.IntegrationTests.Tests
                         // Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
                     // }
 
-                    // NOTE: This test is disabled as we use CentCom spawners anyways, with a general fallback one
-                    // There still won't be spawners mapped, but as long as a fallback spawners exists it won't ever matter
-                    // Test all availableJobs have spawnPoints
+                
+                // CD NOTE: This if statement is disabled as the test below (checking for a latejoin spawn) is also disabled
+                // This is because our arrivals works as a fallback for roles who don't have a latejoin spawn point,
+                // And anyone should be spawning there anyways.
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
                     // var comp = entManager.GetComponent<StationJobsComponent>(station);
                     // var jobs = new HashSet<ProtoId<JobPrototype>>(comp.SetupAvailableJobs.Keys);
