@@ -442,7 +442,7 @@ namespace Content.IntegrationTests.Tests
                         $"Unable to dock {shuttlePath} to {mapProto}");
                 }
                 mapSystem.DeleteMap(shuttleMap);
-                
+
                 // CD NOTE: This if statement is disabled as the test below (checking for a latejoin spawn) is also disabled
                 // This is because our arrivals works as a fallback for roles who don't have a latejoin spawn point,
                 // And anyone should be spawning there anyways.
