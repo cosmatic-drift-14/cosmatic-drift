@@ -138,7 +138,7 @@ ghost-role-information-holoclown-description = Listen to your owner. Utilize you
 ghost-role-information-ifrit-name = Ifrit
 ghost-role-information-ifrit-description = Listen to your owner. Don't tank damage. Punch people hard.
 
-ghost-role-information-space-dragon-name = Space Dragon
+ghost-role-information-space-dragon-name = Space Dragon # CD: Updated role description
 ghost-role-information-space-dragon-description = You're here for your own goals and reasons. Kill and conquer, engage in diplomacy, or anything in between.
 ghost-role-information-space-dragon-rules = You are a [color=yellow][bold]Free Agent[/bold][/color] alongside all your summoned carp.
 ghost-role-information-space-dragon-summoned-carp-rules = You are a [color=yellow][bold]Free Agent[/bold][/color] with your dragon and its allies.
