@@ -180,7 +180,7 @@
           nodeGroupID: Teg
 
     - type: AtmosUnsafeUnanchor
-    - type: PipeRestrictOverlap
+    # - type: PipeRestrictOverlap # CD: Reverted pipe stacking removal
     - type: TegCirculator
     - type: StealTarget
       stealGroup: Teg
