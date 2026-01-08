@@ -542,7 +542,7 @@
   - type: PipeColorVisuals
   - type: Rotatable
   - type: GasRecycler
-  - type: PipeRestrictOverlap
+  # - type: PipeRestrictOverlap # CD: Reverted pipe stacking removal
   - type: NodeContainer
     nodes:
       inlet:

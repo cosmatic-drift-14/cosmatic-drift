@@ -53,7 +53,7 @@
   - type: PipeAppearance
   - type: PipeColorVisuals
   - type: NodeContainer
-  - type: PipeRestrictOverlap
+  # - type: PipeRestrictOverlap # CD: Reverted pipe stacking removal
   - type: AtmosUnsafeUnanchor
   - type: AtmosPipeColor
   - type: AtmosMonitoringConsoleDevice
