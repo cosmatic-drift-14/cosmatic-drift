@@ -58,6 +58,74 @@
     - HamsterWearable
     - WhitelistChameleon
 
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretCaptain
+  name: captain's beret
+  description: A dark blue beret with a star insignia. It has a commanding presence.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_captain.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_captain.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretHop
+  name: head of personnel's beret
+  description: A light blue beret with a red symbol. Show's corgis who's in charge.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_hop.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_hop.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretRd
+  name: research director's beret
+  description: A deep purple beret with the science department's insignia.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_rd.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_rd.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretCe
+  name: chief engineer's beret
+  description: An orange beret with a light blue emblem of the engineering department. Holds reign over air and metal.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_ce.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_ce.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
 # Reverts a portion of https://github.com/space-wizards/space-station-14/pull/29082.
 - type: entity
   parent: ClothingHeadBase
