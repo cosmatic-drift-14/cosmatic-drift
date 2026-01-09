@@ -126,6 +126,108 @@
     - Recyclable
     - WhitelistChameleon
 
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretAtmos
+  name: atmospherics beret
+  description: A bright blue beret with an atmospherics insignia. The color fills your head with frezon thoughts.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_atmos.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_atmos.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretCargo
+  name: cargo beret
+  description: A brown beret made specifically for the cargo department.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_cargo.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_cargo.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretChem
+  name: chemistry beret
+  description: A white beret with an orange flask symbol. It yearns to see its user make illegal chemicals.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_chem.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_chem.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretParamedic
+  name: chemistry beret
+  description: A navy blue beret with a cross symbol. You hope you don't have to see this worn outside of a hospital.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_paramedic.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_paramedic.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretRobotics
+  name: chemistry beret
+  description: A black beret with a red trim. The style is impeccable.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_robotics.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_robotics.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSecnavy
+  name: chemistry beret
+  description: A navy blue beret with the security symbol. For officers that are more inclined towards style than safety.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_secnavy.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_secnavy.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
 # Reverts a portion of https://github.com/space-wizards/space-station-14/pull/29082.
 - type: entity
   parent: ClothingHeadBase
