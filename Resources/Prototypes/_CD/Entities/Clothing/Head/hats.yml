@@ -96,7 +96,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretRd
   name: research director's beret
-  description: A deep purple beret with the science department's insignia.
+  description: A deep purple beret with the science department's insignia. Nothing could go wrong.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Head/Hats/beret_rd.rsi
@@ -164,7 +164,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretChem
   name: chemistry beret
-  description: A white beret with an orange flask symbol. It yearns to see its user make illegal chemicals.
+  description: A white beret with an orange flask symbol. It yearns to make dubious chemicals.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Head/Hats/beret_chem.rsi
