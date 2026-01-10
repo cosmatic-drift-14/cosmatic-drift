@@ -1,38 +1,38 @@
 #Eyes
 - type: loadout
   id: EyesGlassesSecurity
-  equipment: 
+  equipment:
     eyes: ClothingEyesGlassesSecurity
 
 - type: loadout
   id: EyesHudSecurity
-  equipment: 
+  equipment:
     eyes: ClothingEyesHudSecurity
 
 #Jumpsuit
 - type: loadout
   id: SecurityCasualsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformSecurtyCasual
 
 - type: loadout
   id: SecurityCasualskirt
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpskirtSecurtyCasual
 
 - type: loadout
   id: SecurityModernsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpsuitSecurityModern
 
 - type: loadout
   id: SecurityCasualSummer
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformSecurtyCasualSummer
 
 - type: loadout
   id: SecurityCasualWinter
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformCasualWinterNavy
 
 #Belt
@@ -73,6 +73,11 @@
   id: SecurityNewSoft
   equipment:
     head: ClothingHeadHatNewSecsoft
+
+- type: loadout
+  id: SecurityNavyBeret
+  equipment:
+    head: ClothingHeadHatBeretSecnavy
 
 # PDA
 - type: loadout

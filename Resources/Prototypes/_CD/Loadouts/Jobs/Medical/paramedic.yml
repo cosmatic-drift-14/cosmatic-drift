@@ -1,49 +1,55 @@
 - type: loadout
   id: JumpsuitETUFlightsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpsuitETUFlightsuit
 
 - type: loadout
   id: ParamedicCasualsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformParamedicCasual
 
 - type: loadout
   id: ParamedicCasualskirt
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformJumpskirtParamedicCasual
 
 - type: loadout
   id: GlovesETUGauntlet
-  equipment: 
+  equipment:
     gloves: ClothingHandsGlovesETUGauntlet
 
 - type: loadout
   id: MaskGasETUSterile
-  equipment: 
+  equipment:
     mask: ClothingMaskGasETUSterile
 
 - type: loadout
   id: HeadHelmetETUPointman
-  equipment: 
+  equipment:
     head: ClothingHeadHelmetETUPointman
 
 - type: loadout
   id: BeltHarnessETU
-  equipment: 
+  equipment:
     outerClothing: ClothingBeltHarnessETU
 
 - type: loadout
   id: ShoesColorSlate
-  equipment: 
+  equipment:
     shoes: ClothingShoesColorSlate
 
 - type: loadout
   id: BlueHighvisBomber
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatBlueHiVis
 
 - type: loadout
   id: ParamedicCarrybag
   equipment:
     back: ClothingBackpackCarrybagParamedic
+
+# Head
+- type: loadout
+  id: ParamedicBeret
+  equipment:
+    head: ClothingHeadHatBeretParamedic

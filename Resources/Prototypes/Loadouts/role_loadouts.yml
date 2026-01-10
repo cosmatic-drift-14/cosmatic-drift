@@ -262,6 +262,7 @@
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
+  - SalvageSpecialistHead # CD
   - SalvageSpecialistJumpsuit # CD
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
@@ -320,6 +321,7 @@
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
+  - AtmosphericTechnicianHead # CD
   - GroupTankHarness
   - EngineeringEyewear # CD
   - AtmosphericTechnicianJumpsuit
@@ -509,6 +511,7 @@
   id: JobChemist
   groups:
   - GroupTankHarness
+  - ChemistHead # CD
   - MedicalMask
   - ChemistJumpsuit
   - MedicalGloves

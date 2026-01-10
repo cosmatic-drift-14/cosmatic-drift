@@ -140,6 +140,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - CaptainBeret # CD
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -187,6 +188,7 @@
   minLimit: 0
   loadouts:
   - HoPHead
+  - HoPBeret # CD
 
 - type: loadoutGroup
   id: HoPJumpsuit
@@ -786,6 +788,7 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianHead
+  - CargoBeret # CD
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
@@ -874,7 +877,8 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerHead
-  - ChiefEngineerBeret
+  #- ChiefEngineerBeret # CD removed in place of exclusive beret
+  - ChiefEngineerExclusiveBeret # CD
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
@@ -1060,7 +1064,8 @@
   name: loadout-group-research-director-head
   minLimit: 0
   loadouts:
-  - ResearchDirectorBeret
+#  - ResearchDirectorBeret CD removed in place of exclusive beret
+  - ResearchDirectorExclusiveBeret
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -1109,6 +1114,7 @@
   - RoboticistCap
   - SkullBandana
   - ScientificBeret
+  - RoboticsBeret # CD
 
 - type: loadoutGroup
   id: ScientistNeck
@@ -1286,6 +1292,7 @@
   - SecurityHelmet
   - SecurityNewHelmet # CD
   - SecurityBeret
+  - SecurityNavyBeret # CD
   - SecurityHat
   - SecurityNewSoft # CD
   - TrooperHat
@@ -1623,6 +1630,7 @@
   minLimit: 0
   loadouts:
   - ParamedicHead
+  - ParamedicBeret # CD
   # CD: ETU Loadout
   - HeadHelmetETUPointman
 
