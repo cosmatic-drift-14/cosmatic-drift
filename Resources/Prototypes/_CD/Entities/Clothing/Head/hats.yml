@@ -180,7 +180,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretParamedic
-  name: chemistry beret
+  name: paramedic beret
   description: A navy blue beret with a cross symbol. You hope you don't have to see this worn outside of a hospital.
   components:
   - type: Sprite
@@ -197,7 +197,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretRobotics
-  name: chemistry beret
+  name: robotics beret
   description: A black beret with a red trim. The style is impeccable.
   components:
   - type: Sprite
@@ -214,13 +214,30 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretSecnavy
-  name: chemistry beret
+  name: security navy beret
   description: A navy blue beret with the security symbol. For officers that are more inclined towards style than safety.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Head/Hats/beret_secnavy.rsi
   - type: Clothing
     sprite: _CD/Clothing/Head/Hats/beret_secnavy.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - Recyclable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretCc
+  name: central command beret
+  description: A pompous green beret issued to the one person you do not want to see on station.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Head/Hats/beret_cc.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Head/Hats/beret_cc.rsi
   - type: Tag
     tags:
     - ClothMade
