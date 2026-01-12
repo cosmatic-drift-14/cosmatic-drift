@@ -1,3 +1,5 @@
+using Content.Shared.Chemistry.Components;
+
 namespace Content.Server._CD.Traits;
 
 /// <summary>
@@ -11,4 +13,7 @@ public sealed partial class SynthComponent : Component
     /// </summary>
     [DataField]
     public float AlertChance = 0.3f;
+
+    [DataField]
+    public Solution BloodReferenceSolution = new([new("SynthBlood", 300)]);
 }
