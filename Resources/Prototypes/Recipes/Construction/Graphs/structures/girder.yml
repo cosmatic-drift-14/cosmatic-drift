@@ -74,6 +74,7 @@
             - !type:EntityAnchored {}
           steps:
             - material: Silver
+              amount: 2
               doAfter: 2 
             - tool: Welding # CD: Require welding for walls, shorten doafters
               doAfter: 4
@@ -109,6 +110,8 @@
           conditions:
             - !type:EntityAnchored {}
           steps:
+            - material: Gold
+              amount: 2
               doAfter: 2
             - tool: Welding # CD: Require welding for walls, shorten doafters
               doAfter: 4
