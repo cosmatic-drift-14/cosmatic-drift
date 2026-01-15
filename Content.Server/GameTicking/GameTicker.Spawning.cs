@@ -8,6 +8,7 @@ using Content.Server.Ghost;
 using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
+using Content.Shared._CD.Silicons;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
@@ -356,6 +357,11 @@ namespace Content.Server.GameTicking
             var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(station, jobId, character);
             DebugTools.AssertNotNull(mobMaybe);
             mob = mobMaybe!.Value;
+
+            // Cd - raise event before we add the mind to the mob entity
+            var cdPlayerEntSpawnEv = new CdPlayerSpawnBeforeMindEvent();
+            RaiseLocalEvent(mob, cdPlayerEntSpawnEv);
+            // CD end
 
             _mind.TransferTo(newMind, mob);
 
