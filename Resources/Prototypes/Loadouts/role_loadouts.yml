@@ -36,6 +36,10 @@
   id: JobBorg
   nameDataset: NamesBorg
   canCustomizeName: true
+  # CD
+  groups:
+  - CyborgBrain
+  # CD end
 
 - type: roleLoadout
   id: JobStationAi
