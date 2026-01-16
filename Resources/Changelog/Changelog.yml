@@ -1,66 +1,4 @@
 ﻿Entries:
-- author: Flareguy
-  changes:
-  - message: Updated moth displacement maps to fix missing pixels, among other various
-      issues.
-    type: Fix
-  id: 8841
-  time: '2025-08-09T21:52:06.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/39174
-- author: Princess-Cheeseballs
-  changes:
-  - message: Mobs such as borgs, dragons, etc can no longer crawl.
-    type: Tweak
-  id: 8842
-  time: '2025-08-10T17:49:29.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/39084
-- author: beck-thompson
-  changes:
-  - message: Various syndicate items can now be "locked" with your voice to hide their
-      true identity. The items are, all chameleon clothing, voice masks, no slips,
-      agent IDs, cane swords, and e daggers.
-    type: Add
-  - message: e dagger now has a slightly longer activation cool down (1s -> 1.5s).
-    type: Tweak
-  - message: Voice triggered items now properly display the trigger text when examined.
-    type: Fix
-  id: 8843
-  time: '2025-08-10T18:10:13.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/39310
-- author: jessicamaybe
-  changes:
-  - message: 'Added a rare Hamlet variant: Fragile Hamlet'
-    type: Add
-  id: 8844
-  time: '2025-08-10T22:20:26.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/39531
-- author: perryprog
-  changes:
-  - message: "Diona\_nymphs that reform inside of a locker will no longer be invisible."
-    type: Fix
-  id: 8845
-  time: '2025-08-11T11:00:12.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/39505
-- author: Samuka
-  changes:
-  - message: The Robotics Console now correctly displays the brain installed information
-      if the borg has a empty MMI
-    type: Fix
-  - message: The Robotics Console now shows the borg physical integrity
-    type: Tweak
-  - message: Changed the colors for the battery display in the robotics console so
-      it easier to read the percentage
-    type: Tweak
-  id: 8846
-  time: '2025-08-11T18:57:39.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/38023
-- author: metalgearsloth
-  changes:
-  - message: Inserting lights now plays an insert animation.
-    type: Add
-  id: 8847
-  time: '2025-08-11T21:06:28.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/36541
 - author: sowelipililimute
   changes:
   - message: Borg modules can now have hands!
@@ -3123,13 +3061,6 @@
   id: 9240
   time: '2025-12-01T05:47:46.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/41489
-- author: TheShuEd
-  changes:
-  - message: Santa anomaly & santa anomaly infections is back!
-    type: Add
-  id: 9241
-  time: '2025-12-01T11:01:51.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/41654
 - author: Spessmann
   changes:
   - message: Added a new station, Snowball, a round and icy lowpop station.
@@ -3727,13 +3658,6 @@
   id: 9317
   time: '2025-12-18T21:08:51.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/33157
-- author: Fildrance
-  changes:
-  - message: reroll feature for RnD research console
-    type: Add
-  id: 9318
-  time: '2025-12-18T21:22:45.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/32931
 - author: Hitlinemoss
   changes:
   - message: Small cardboard boxes have been added (2x2 instead of 3x3), and can be
@@ -3802,14 +3726,6 @@
   id: 9324
   time: '2025-12-21T20:33:07.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/41932
-- author: SlamBamActionman
-  changes:
-  - message: 'EXPERIMENTAL: Changed the name of the "LOOC" chat channel to "Help"
-      to reflect its primary usage.'
-    type: Tweak
-  id: 9325
-  time: '2025-12-22T00:46:26.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/41933
 - author: MilonPL
   changes:
   - message: Fixed beaker solutions duplicating whenever it's thrown.
@@ -3943,3 +3859,53 @@
   id: 9341
   time: '2025-12-29T10:59:18.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/42114
+- author: 0-Anon
+  changes:
+  - message: Rat creatures will now restore bloodlevel when exposed to ammonia gas.
+    type: Tweak
+  id: 9342
+  time: '2025-12-29T22:49:25.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/42167
+- author: OnyxTheBrave
+  changes:
+  - message: The Chemmaster 4000 can now switch between making pills from the internal
+      buffer or from an inserted beaker.
+    type: Tweak
+  id: 9343
+  time: '2025-12-30T21:52:19.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/40121
+- author: jessicamaybe
+  changes:
+  - message: Moved borg module remove button to the left side
+    type: Tweak
+  id: 9344
+  time: '2025-12-30T23:26:26.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/42119
+- author: TheFotY
+  changes:
+  - message: Paper can now be extinguished (e.g. fire extinguisher)
+    type: Fix
+  id: 9345
+  time: '2025-12-31T00:23:19.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/42142
+- author: YoungThugSS14
+  changes:
+  - message: Ninjas now spawn with a custom satchel.
+    type: Add
+  id: 9346
+  time: '2025-12-31T01:37:36.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/42112
+- author: kontakt
+  changes:
+  - message: Fixed broken FTL links for implanters and medibot.
+    type: Fix
+  id: 9347
+  time: '2025-12-31T01:52:22.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/42181
+- author: Princess-Cheeseballs
+  changes:
+  - message: You can now spill the contents out of hyposprays and jet injectors
+    type: Tweak
+  id: 9348
+  time: '2026-01-01T05:42:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/42158
