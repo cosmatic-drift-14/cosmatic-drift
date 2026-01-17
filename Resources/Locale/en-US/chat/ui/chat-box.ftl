@@ -10,8 +10,7 @@ hud-chatbox-select-channel-Dead = Dead
 hud-chatbox-select-channel-Emotes = Emotes
 hud-chatbox-select-channel-Local = Local
 hud-chatbox-select-channel-Whisper = Whisper
-# CD: Reverted name to LOOC
-hud-chatbox-select-channel-LOOC = LOOC 
+hud-chatbox-select-channel-LOOC = LOOC
 hud-chatbox-select-channel-OOC = OOC
 hud-chatbox-select-channel-Damage = Damage
 hud-chatbox-select-channel-Visual = Actions
@@ -24,7 +23,6 @@ hud-chatbox-channel-Dead = Dead
 hud-chatbox-channel-Emotes = Emotes
 hud-chatbox-channel-Local = Local
 hud-chatbox-channel-Whisper = Whisper
-# CD: Reverted name to LOOC
 hud-chatbox-channel-LOOC = LOOC
 hud-chatbox-channel-OOC = OOC
 hud-chatbox-channel-Radio = Radio
