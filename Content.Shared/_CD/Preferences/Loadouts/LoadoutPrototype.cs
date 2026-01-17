@@ -5,5 +5,6 @@ namespace Content.Shared.Preferences.Loadouts;
 
 public sealed partial class LoadoutPrototype
 {
-    public EntProtoId Brain { get; set; } = new();
+    [DataField]
+    public EntProtoId? Brain { get; set; } = new();
 }
