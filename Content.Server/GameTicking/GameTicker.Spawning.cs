@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
+using Content.Server._CD.Silicons;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
 using Content.Server.GameTicking.Events;
@@ -359,7 +360,7 @@ namespace Content.Server.GameTicking
             mob = mobMaybe!.Value;
 
             // Cd - raise event before we add the mind to the mob entity
-            var cdPlayerEntSpawnEv = new CdPlayerSpawnBeforeMindEvent();
+            var cdPlayerEntSpawnEv = new CdPlayerSpawnBeforeMindEvent(player, character, jobId);
             RaiseLocalEvent(mob, cdPlayerEntSpawnEv);
             // CD end
 
