@@ -62,3 +62,75 @@
         - AIShellBrain
   - type: RandomMetadata # overriding parent component so spawned prototypes have the correct name
     nameSegments: null
+
+- type: entity
+  parent: BaseItem
+  id: CircuitBrain
+  name: circuit-based brain
+  description: An artificial brain capable of neural activity. Designed from the ground up to be made completely of circuitry.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Robotics/circuit_brain.rsi
+    layers:
+    - state: circuit
+      map: ["base"]
+  - type: Input
+    context: human
+  - type: ToggleableGhostRole
+    examineTextMindPresent: positronic-brain-installed
+    examineTextMindSearching: positronic-brain-still-searching
+    examineTextNoMind: positronic-brain-off
+    beginSearchingText: positronic-brain-searching
+    roleName: circuit-brain-role-name
+    roleDescription: positronic-brain-role-description
+    roleRules: ghost-role-information-silicon-rules
+    mindRoles:
+    - MindRoleGhostRoleSilicon
+    wipeVerbText: positronic-brain-wipe-device-verb-text
+    wipeVerbPopup: positronic-brain-wiped-device
+    stopSearchVerbText: positronic-brain-stop-searching-verb-text
+    stopSearchVerbPopup: positronic-brain-stopped-searching
+    job: Borg
+  - type: BlockMovement
+  - type: Examiner
+  - type: BorgBrain
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+  - type: NameIdentifier
+    group: PositronicBrain
+  - type: DoAfter
+  - type: Actions
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechSounds: Pai
+  - type: Alerts
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: Appearance
+  - type: Tag
+    tags:
+    - CannotSuicide
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableGhostRoleVisuals.Status:
+        base:
+          Off: { state: circuit }
+          Searching: { state: circuit-searching }
+          On: { state: circuit-occupied }
+  - type: GuideHelp
+    guides:
+    - Cyborgs
+    - Robotics
+  - type: ChangeVoiceInContainer
+    whitelist:
+      components:
+      - SecretStash

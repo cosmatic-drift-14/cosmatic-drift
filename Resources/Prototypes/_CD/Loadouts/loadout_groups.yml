@@ -266,6 +266,7 @@
   loadouts:
   - MMIFilled
   - PositronicBrain
+  - CircuitBrain
 
 # Wildcards
 - type: loadoutGroup
