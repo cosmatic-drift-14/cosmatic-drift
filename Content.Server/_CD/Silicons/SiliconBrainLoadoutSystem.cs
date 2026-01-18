@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Content.Server.GameTicking;
 using Content.Server.Players;
 using Content.Server.Preferences.Managers;
@@ -6,6 +7,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
+using Content.Shared.Roles;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Station;
 using Robust.Shared.Containers;
@@ -25,6 +27,8 @@ public sealed class SiliconBrainLoadoutSystem : EntitySystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
 
+    private ProtoId<LoadoutGroupPrototype> CyborgBrainLoadoutPrototype => "CyborgBrain";
+
     public override void Initialize()
     {
         base.Initialize();
@@ -36,10 +40,15 @@ public sealed class SiliconBrainLoadoutSystem : EntitySystem
     {
         // surely there's a better way of doing this
         var jobLoadoutId = LoadoutSystem.GetJobPrototype(args.JobId);
-        var loadoutProto = args
+        var selectedLoadouts = args
             .Character
             .GetLoadoutOrDefault(jobLoadoutId, args.Player, args.Character.Species, EntityManager, _proto)
-            .SelectedLoadouts["CyborgBrain"][0].Prototype;
+            .SelectedLoadouts[CyborgBrainLoadoutPrototype];
+
+        Debug.Assert(selectedLoadouts.Count == 1);
+
+        var loadoutProto = selectedLoadouts[0].Prototype;
+
 
 
         if (!_container.TryGetContainer(ent, ent.Comp.BrainContainerId, out var container) ||
@@ -59,9 +68,4 @@ public sealed class SiliconBrainLoadoutSystem : EntitySystem
 /// <summary>
 /// Event that raises right before the mind is added to the player entity while spawning on station.
 /// </summary>
-public sealed class CdPlayerSpawnBeforeMindEvent(ICommonSession player, HumanoidCharacterProfile character, string jobId) : EntityEventArgs
-{
-    public ICommonSession Player { get; } = player;
-    public HumanoidCharacterProfile Character { get; } = character;
-    public string JobId { get; } = jobId;
-}
+public sealed record CdPlayerSpawnBeforeMindEvent(ICommonSession Player, HumanoidCharacterProfile Character, ProtoId<JobPrototype> JobId);
