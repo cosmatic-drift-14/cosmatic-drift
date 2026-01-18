@@ -22,7 +22,7 @@
     containers:
       entity_storage:
         id: AmeJar
-        amount: 3
+        amount: 2 #CD change from 3 to 2
 
 - type: entity
   parent: CrateEngineeringSecure
