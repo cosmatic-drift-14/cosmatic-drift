@@ -16,7 +16,7 @@
   parent: CrateEngineeringSecure
   id: CrateEngineeringAMEJar
   name: antimatter containment jar crate
-  description: 3 antimatter jars, for fuelling an antimatter reactor.
+  description: 2 antimatter jars, for fuelling an antimatter reactor. #CD change from 3 to 2
   components:
   - type: EntityTableContainerFill
     containers:
