@@ -18,8 +18,7 @@ public sealed class SynthSystem : EntitySystem
     {
         if (TryComp<TypingIndicatorComponent>(uid, out var indicator))
         {
-            // TODO: cdrebase
-            //indicator.TypingIndicatorPrototype = "robot";
+            indicator.TypingIndicatorPrototype = "robot";
             Dirty(uid, indicator);
         }
 
