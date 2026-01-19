@@ -474,6 +474,7 @@ namespace Content.IntegrationTests.Tests
                 //         .Select(x => x.Job.Value);
                 //
                 //     jobs.ExceptWith(spawnPoints);
+                //
                 //     Assert.That(jobs, Is.Empty, $"There is no spawnpoints for {string.Join(", ", jobs)} on {mapProto}.");
                 // }
 
