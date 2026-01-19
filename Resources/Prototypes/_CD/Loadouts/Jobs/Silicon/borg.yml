@@ -1,0 +1,14 @@
+- type: loadout
+  id: MMIFilled
+  dummyEntity: MMIFilled
+  brain: MMIFilled
+
+- type: loadout
+  id: PositronicBrain
+  dummyEntity: PositronicBrain
+  brain: PositronicBrain
+
+- type: loadout
+  id: CircuitBrain
+  dummyEntity: CircuitBrain
+  brain: CircuitBrain
