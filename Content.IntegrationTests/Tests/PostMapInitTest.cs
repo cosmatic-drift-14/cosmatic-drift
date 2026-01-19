@@ -440,7 +440,6 @@ namespace Content.IntegrationTests.Tests
                             targetGrid.Value),
                         $"Unable to dock {shuttlePath} to {mapProto}");
                 }
-                
                 mapSystem.DeleteMap(shuttleMap);
 
                 // CD NOTE: This if statement is disabled as the test below (checking for a latejoin spawn) is also disabled
