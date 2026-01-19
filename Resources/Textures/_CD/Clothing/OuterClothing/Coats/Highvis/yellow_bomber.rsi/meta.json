@@ -22,6 +22,20 @@
       "directions": 4
     },
     {
+      "name": "icon-unshaded"
+    },
+    {
+      "name": "icon-open-unshaded"
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-unshaded",
+      "directions": 4
+    },
+    {
+      "name": "open-equipped-OUTERCLOTHING-unshaded",
+      "directions": 4
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },

@@ -44,6 +44,11 @@
     outerClothing: ClothingOuterCoatBlueHiVis
 
 - type: loadout
+  id: BlueHighvisPants
+  equipment: 
+    outerClothing: ClothingUniformJumpsuitBlueHiviz
+
+- type: loadout
   id: ParamedicCarrybag
   equipment:
     back: ClothingBackpackCarrybagParamedic
