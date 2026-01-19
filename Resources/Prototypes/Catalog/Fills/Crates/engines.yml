@@ -16,13 +16,13 @@
   parent: CrateEngineeringSecure
   id: CrateEngineeringAMEJar
   name: antimatter containment jar crate
-  description: 3 antimatter jars, for fuelling an antimatter reactor.
+  description: 2 antimatter jars, for fuelling an antimatter reactor. #CD change from 3 to 2
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage:
         id: AmeJar
-        amount: 3
+        amount: 2 #CD change from 3 to 2
 
 - type: entity
   parent: CrateEngineeringSecure
