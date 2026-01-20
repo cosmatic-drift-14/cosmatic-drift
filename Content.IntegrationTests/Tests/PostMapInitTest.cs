@@ -77,7 +77,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/AdminSpawn/**", // admin gaming
             "/Maps/Misc/terminal.yml", // CD Arrivals.
-            "/Maps/_CD/gemini.yml", // CD Map.
+            "/Maps/_CD/gemini.yml", // CD Map, someone should look into this
             "/Maps/_CD/centcomm.yml" // CD Map.
         };
 
