@@ -11,7 +11,35 @@
   - StationAiIconDorf
   - StationAiIconHeartline
   - StationAiIconSmiley
-
+  # CD changes from here
+  - StationAiIconAlien
+  - StationAiIconThinking
+  - StationAiIconDatabase
+  - StationAiIconFirewall
+  - StationAiIconFuzzy
+  - StationAiIconGentoo
+  - StationAiIconGlitchman
+  - StationAiIconGoon
+  - StationAiIconHades
+  - StationAiIconHelios
+  - StationAiIconInverted
+  - StationAiIconMatrix
+  - StationAiIconMonochrome
+  - StationAiIconMurica
+  - StationAiIconNanoTrasen
+  - StationAiIconNotMalf
+  - StationAiIconPresident
+  - StationAiIconRainbow
+  - StationAiIconRed
+  - StationAiIconRedOctober
+  - StationAiIconStatic
+  - StationAiIconMeow
+  - StationAiIconText
+  - StationAiIconTooDeep
+  - StationAiIconTriumvirate
+  - StationAiIconWeird
+  - StationAiIconEvilDot
+  # end of CD changes
 - type: stationAiCustomizationGroup
   id: StationAiHolograms
   name: station-ai-customization-hologram
@@ -22,6 +50,18 @@
   - StationAiHologramFace
   - StationAiHologramCat
   - StationAiHologramDog
+  # CD holograms below
+  - StationAiHologramAlien
+  - StationAiHologramBees
+  - StationAiHologramBigMoth
+  - StationAiHologramGhost
+  - StationAiHologramHorror
+  - StationAiHologramLeaves
+  - StationAiHologramNarsie
+  - StationAiHologramRatvar
+  - StationAiHologramSemi
+  - StationAiHologramCy
+  # end of CD holograms
 
 # Iconography
 - type: stationAiCustomization
