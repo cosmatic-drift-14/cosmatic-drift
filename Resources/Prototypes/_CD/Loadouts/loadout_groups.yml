@@ -257,6 +257,17 @@
   - SterileMask
   - MaskGasETUSterile
 
+# Silicon
+- type: loadoutGroup
+  id: CyborgBrain
+  name: loadout-group-cyborg-brain
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - MMIFilled
+  - PositronicBrain
+  - CircuitBrain
+
 # Wildcards
 - type: loadoutGroup
   id: PrisonerJumpsuit

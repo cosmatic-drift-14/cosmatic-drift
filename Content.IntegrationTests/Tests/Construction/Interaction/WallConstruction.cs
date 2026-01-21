@@ -17,6 +17,7 @@ public sealed class WallConstruction : InteractionTest
         ClientAssertPrototype(Girder, Target);
         await InteractUsing(Steel, 2);
         Assert.That(HandSys.GetActiveItem((SEntMan.GetEntity(Player), Hands)), Is.Null);
+        await Interact(Weld); // CD: Require welding to finish building walls
         AssertPrototype(WallSolid);
     }
 

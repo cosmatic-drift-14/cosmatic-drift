@@ -35,6 +35,9 @@ loadout-group-senior-physician-head = Senior Physician head
 loadout-group-senior-physician-jumpsuit = Senior Physician jumpsuit
 loadout-group-senior-physician-outerclothing = Senior Physician outer clothing
 
+# Silicon
+loadout-group-cyborg-brain = Cyborg Brain
+
 # Wildcards
 loadout-group-prisoner-jumpsuit = Prisoner jumpsuit
 cd-loadout-group-prisoner-fun = Prisoner Accessories
