@@ -155,6 +155,7 @@
   - type: GuideHelp
     guides:
     - ShuttleCraft
+  - type: StationAiWhitelist # CD
 
 - type: entity
   parent: BaseComputerShuttle
