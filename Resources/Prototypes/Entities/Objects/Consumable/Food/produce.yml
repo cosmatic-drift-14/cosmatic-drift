@@ -187,6 +187,8 @@
     tags:
     - Vegetable
     - Ruminant
+  - type: Topping
+    solution: food
 
 - type: entity
   name: tower-cap log
@@ -369,6 +371,8 @@
     entries:
       Burger: Banana
       Taco: Banana
+  - type: Topping
+    solution: food
 
 - type: entity
   name: mimana
@@ -416,6 +420,8 @@
     entries:
       Burger: Mimana
       Taco: Mimana
+  - type: Topping
+    solution: food
 
 - type: entity
   parent: BaseItem
@@ -581,6 +587,8 @@
     entries:
       Burger: CarrotBurger
       Taco: Carrot
+  - type: Topping
+    solution: food
 
 - type: entity
   name: cabbage
@@ -613,6 +621,8 @@
     entries:
       Burger: CabbageBurger
       Taco: Cabbage
+  - type: Topping
+    solution: food
 
 - type: entity
   name: garlic
@@ -645,6 +655,8 @@
     entries:
       Burger: GarlicBurger
       Taco: Garlic
+  - type: Topping
+    solution: food
 
 - type: entity
   name: lemon
@@ -683,6 +695,8 @@
     entries:
       Burger: Lemon
       Taco: Lemon
+  - type: Topping
+    solution: food
 
 - type: entity
   name: lemoon
@@ -720,6 +734,8 @@
     entries:
       Burger: Lemoon
       Taco: Lemoon
+  - type: Topping
+    solution: food
 
 - type: entity
   name: lime
@@ -749,6 +765,8 @@
     entries:
       Burger: Lime
       Taco: Lime
+  - type: Topping
+    solution: food
 
 - type: entity
   name: orange
@@ -777,6 +795,8 @@
     entries:
       Burger: Orange
       Taco: Orange
+  - type: Topping
+    solution: food
 
 - type: entity
   name: extradimensional orange
@@ -820,6 +840,8 @@
     entries:
       Burger: ExtradimensionalOrangeBurger
       Taco: ExtradimensionalOrange
+  - type: Topping
+    solution: food
 
 - type: entity
   name: pineapple
@@ -858,6 +880,8 @@
   - type: Tag
     tags:
     - Fruit
+  - type: Topping
+    solution: food
 
 - type: entity
   name: potato
@@ -896,6 +920,8 @@
     entries:
       Burger: Potato
       Taco: Potato
+  - type: Topping
+    solution: food
 
 
 - type: entity
@@ -959,6 +985,8 @@
       Skewer: TomatoSkewer
       Burger: Tomato
       Taco: Tomato
+  - type: Topping
+    solution: food
 
 - type: entity
   name: blue tomato
@@ -1010,6 +1038,8 @@
     entries:
       Burger: BlueTomato
       Taco: BlueTomato
+  - type: Topping
+    solution: food
 
 - type: entity
   name: blood tomato
@@ -1060,6 +1090,8 @@
       Skewer: TomatoSkewer
       Burger: BloodTomato
       Taco: BloodTomato
+  - type: Topping
+    solution: food
 
 - type: entity
   name: eggplant
@@ -1089,6 +1121,8 @@
     tags:
     - Fruit
     - Vegetable
+  - type: Topping
+    solution: food
 
 - type: entity
   name: apple
@@ -1126,6 +1160,8 @@
     entries:
       Burger: Apple
       Taco: Apple
+  - type: Topping
+    solution: food
 
 - type: entity
   name: golden apple
@@ -1168,6 +1204,8 @@
     entries:
       Burger: GoldenApple
       Taco: GoldenApple
+  - type: Topping
+    solution: food
 
 - type: entity
   name: cocoa pod
@@ -1201,6 +1239,8 @@
   - type: Tag
     tags:
     - Fruit
+  - type: Topping
+    solution: food
 
 - type: entity
   name: ear of corn
@@ -1303,6 +1343,8 @@
   - type: Tag
     tags:
     - Vegetable
+  - type: Topping
+    solution: food
 
 - type: entity
   name: red onion
@@ -1336,6 +1378,8 @@
   - type: Tag
     tags:
     - Vegetable
+  - type: Topping
+    solution: food
 
 - type: entity
   name: chanterelle cluster
@@ -1359,6 +1403,8 @@
     tags:
     - Vegetable
     - Mushroom
+  - type: Topping
+    solution: food
 
 # Slices
 
@@ -1381,6 +1427,8 @@
   - type: Tag
     tags:
     - Slice
+  - type: Topping
+    solution: food
 
 - type: entity
   name: pineapple slice
@@ -1503,6 +1551,8 @@
       Taco: ChiliPepper
       Burger: ChiliPepper
       Skewer: ChiliPepperSkewer
+  - type: Topping
+    solution: food
 
 - type: entity
   name: chilly pepper
@@ -1536,6 +1586,8 @@
       Taco: ChillyPepper
       Burger: ChillyPepper
       Skewer: ChillyPepperSkewer
+  - type: Topping
+    solution: food
 
 - type: entity
   name: aloe
@@ -1673,6 +1725,8 @@
   - type: Tag
     tags:
     - Mushroom
+  - type: Topping
+    solution: food
 
 - type: entity
   name: ambrosia vulgaris
@@ -1899,6 +1953,8 @@
   - type: Tag
     tags:
     - Mushroom
+  - type: Topping
+    solution: food
 
 - type: entity
   name: gatfruit
@@ -2040,6 +2096,8 @@
     entries:
       Taco: Soybeans
       Burger: SoybeansBurger
+  - type: Topping
+    solution: food
 
 - type: entity
   name: spaceman's trumpet
@@ -2074,6 +2132,8 @@
     entries:
       Taco: SpacemansTrumpet
       Burger: SpacemansTrumpetBurger
+  - type: Topping
+    solution: food
 
 - type: entity
   name: koibean
@@ -2106,6 +2166,8 @@
     entries:
       Taco: Koibean
       Burger: KoibeanBurger
+  - type: Topping
+    solution: food
 
 - type: entity
   name: watermelon
@@ -2345,6 +2407,8 @@
   - type: Tag
     tags:
     - Fruit
+  - type: Topping
+    solution: food
 
 - type: entity
   name: berries
@@ -2382,6 +2446,8 @@
     entries:
       Taco: Berries
       Burger: BerriesBurger
+  - type: Topping
+    solution: food
 
 - type: entity
   name: bungo fruit
@@ -2424,6 +2490,8 @@
     entries:
       Taco: Bungo
       Burger: Bungo
+  - type: Topping
+    solution: food
 
 - type: entity
   name: bungo pit
@@ -2452,6 +2520,8 @@
     seedId: bungo
   - type: SpaceGarbage
   - type: BadFood
+  - type: Topping
+    solution: food
 
 - type: entity
   parent: FoodProduceBase
@@ -2484,6 +2554,8 @@
     entries:
       Taco: Pea
       Burger: Pea
+  - type: Topping
+    solution: food
 
 - type: entity
   parent: FoodProduceBase
@@ -2518,6 +2590,8 @@
     entries:
       Taco: WorldPea
       Burger: WorldPeaBurger
+  - type: Topping
+    solution: food
 
 - type: entity
   name: pumpkin
@@ -2651,6 +2725,8 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: CottonBol
+  - type: Topping
+    solution: food
 
 - type: entity
   name: pyrotton boll
@@ -2687,6 +2763,8 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: PyrottonBol
+  - type: Topping
+    solution: food
 
 - type: entity
   name: cherry
@@ -2729,6 +2807,8 @@
     entries:
       Taco: Cherry
       Burger: Cherry
+  - type: Topping
+    solution: food
 
 - type: entity
   name: cherry pit
@@ -2759,6 +2839,8 @@
     seedId: cherry
   - type: SpaceGarbage
   - type: BadFood
+  - type: Topping
+    solution: food
 
 - type: entity
   name: anomaly berry
@@ -2797,6 +2879,8 @@
     entries:
       Taco: AnomalyBerry
       Burger: AnomalyBerryBurger
+  - type: Topping
+    solution: food
 
 - type: entity
   name: bloonion bulb
@@ -2872,3 +2956,5 @@
         - MobMask
         layer:
         - MobLayer
+  - type: Topping
+    solution: food
