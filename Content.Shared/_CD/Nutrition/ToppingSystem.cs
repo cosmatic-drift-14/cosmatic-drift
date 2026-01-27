@@ -141,19 +141,16 @@ public sealed partial class ToppingSystem : EntitySystem
             Text = Loc.GetString(_addToppingVerb),
             Act = () =>
             {
-                Log.Debug("aa");
                 if (!_solution.TryGetSolution(ent.Owner, ent.Comp.Solution, out var toppableSolution))
                 {
                     return;
                 }
 
-                Log.Debug("bb");
                 if (!_solution.TryGetSolution(toppingEntity.Owner, toppingEntity.Comp.Solution, out var toppingSolution))
                 {
                     return;
                 }
 
-                Log.Debug("zz");
                 FixedPoint2 portionSize = 0;
                 if (topping.PortionSize == null)
                     portionSize = toppingSolution.Value.Comp.Solution.Volume;
