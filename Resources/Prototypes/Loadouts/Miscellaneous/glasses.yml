@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobLibrarian
-      time: 3600 # 1 hour of being the biggest nerd on the station
+      time: 0 # _CD - remove playtime requirements
 
 - type: loadoutEffectGroup
   id: JensenTimer
@@ -15,7 +15,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Cargo
-      time: 36000 #10 hours of being a space trucker
+      time: 0 # _CD - remove playtime requirements
 
 # Basic options
 # Glasses

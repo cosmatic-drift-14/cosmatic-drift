@@ -42,27 +42,27 @@
 # Rainbow
 - type: loadout
   id: RainbowJumpsuit
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: GreyTider
+  # effects: # _CD - remove playtime requirements
+  # - !type:GroupLoadoutEffect
+  #   proto: GreyTider
   equipment:
     jumpsuit: ClothingUniformColorRainbow
 
 # Rainbow Jumpskirt
 - type: loadout
   id: RainbowJumpskirt
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: GreyTider
+  # effects: # _CD - remove playtime requirements
+  # - !type:GroupLoadoutEffect
+  #   proto: GreyTider
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorRainbow
 
 # Ancient
 - type: loadout
   id: AncientJumpsuit
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: GreyTider
+  # effects: # _CD - remove playtime requirements
+  # - !type:GroupLoadoutEffect
+  #   proto: GreyTider
   equipment:
     jumpsuit: ClothingUniformJumpsuitAncient
 
@@ -71,9 +71,9 @@
   id: Mantle
   equipment:
     neck: ClothingNeckMantle
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MasterGrey
+  # effects: # _CD - remove playtime requirements
+  # - !type:GroupLoadoutEffect
+  #   proto: MasterGrey
 
 - type: startingGear
   id: Mantle
@@ -99,9 +99,9 @@
 # Gloves
 - type: loadout
   id: PassengerGloves
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: GreyTider
+  # effects: # _CD - remove playtime requirements
+  # - !type:GroupLoadoutEffect
+  #   proto: GreyTider
   equipment:
     gloves: ClothingHandsGlovesFingerlessInsulated
 
