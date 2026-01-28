@@ -1,6 +1,7 @@
 - type: vendingMachineInventory
   id: ChemDrobeInventory
   startingInventory:
+    ClothingHeadHatBeretChem: 2 # CD
     ClothingUniformJumpsuitChemistry: 2
     ClothingUniformJumpskirtChemistry: 2
     ClothingUniformChemistCasual: 2 # CD

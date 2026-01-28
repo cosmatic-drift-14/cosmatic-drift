@@ -1,3 +1,10 @@
+# Head
+- type: loadout
+  id: CargoBeret
+  equipment:
+    head: ClothingHeadHatBeretCargo
+
+# Jumpsuits
 - type: loadout
   id: CargoTechnicianPants
   equipment:
@@ -30,7 +37,7 @@
 
 - type: loadout
   id: CargoBomber
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatCargoBomber
 
 - type: loadout
