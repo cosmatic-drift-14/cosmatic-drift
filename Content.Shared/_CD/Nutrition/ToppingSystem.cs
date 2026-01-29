@@ -76,26 +76,20 @@ public sealed partial class ToppingSystem : EntitySystem
             allToppingsSubmerged = string.Join(", ", ent.Comp.Submerged.GetRange(0, ent.Comp.Submerged.Count - 1));
         }
 
-
-        var format = "";
-        if (ent.Comp.Toppings.Count == 0 && ent.Comp.Submerged.Count == 0)
+        var format = (ent.Comp.Toppings.Count, ent.Comp.Submerged.Count) switch
+        {
+            (0, 1) => "one-submerged",
+            (0, >1) => "many-submerged",
+            (1, 0) => "one-topping",
+            (1, 1) => "one-topping-one-submerged",
+            (1, >1) => "one-topping-many-submerged",
+            (>1, 0) => "many-topping",
+            (>1, 1) => "many-topping-one-submerged",
+            (>1, >1) => "many-topping-many-submerged",
+            _ => "",
+        };
+        if (format == "")
             return;
-        if (ent.Comp.Toppings.Count == 0 && ent.Comp.Submerged.Count == 1)
-            format = "one-submerged";
-        else if (ent.Comp.Toppings.Count == 0 && ent.Comp.Submerged.Count > 1)
-            format = "many-submerged";
-        else if (ent.Comp.Toppings.Count == 1 && ent.Comp.Submerged.Count == 0)
-            format = "one-topping";
-        else if (ent.Comp.Toppings.Count == 1 && ent.Comp.Submerged.Count == 1)
-            format = "one-topping-one-submerged";
-        else if (ent.Comp.Toppings.Count == 1 && ent.Comp.Submerged.Count > 1)
-            format = "one-topping-many-submerged";
-        else if (ent.Comp.Toppings.Count > 1 && ent.Comp.Submerged.Count == 0)
-            format = "many-topping";
-        else if (ent.Comp.Toppings.Count > 1 && ent.Comp.Submerged.Count == 1)
-            format = "many-topping-one-submerged";
-        else if (ent.Comp.Toppings.Count > 1 && ent.Comp.Submerged.Count > 1)
-            format = "many-topping-many-submerged";
 
         args.PushMarkup(Loc.GetString("topping-examine",
             ("listTopping", allToppings),
