@@ -27,13 +27,13 @@ public sealed partial class ToppableComponent : Component
     /// <summary>
     /// Sound to be played during topping insertion
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public SoundSpecifier? InsertionSound;
 
     /// <summary>
     /// ID of solution container to add topping solution to
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public string Solution = "default";
 }
 

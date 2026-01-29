@@ -187,7 +187,7 @@
     tags:
     - Vegetable
     - Ruminant
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -371,7 +371,7 @@
     entries:
       Burger: Banana
       Taco: Banana
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -420,7 +420,7 @@
     entries:
       Burger: Mimana
       Taco: Mimana
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -587,7 +587,7 @@
     entries:
       Burger: CarrotBurger
       Taco: Carrot
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -621,7 +621,7 @@
     entries:
       Burger: CabbageBurger
       Taco: Cabbage
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -655,7 +655,7 @@
     entries:
       Burger: GarlicBurger
       Taco: Garlic
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -695,7 +695,7 @@
     entries:
       Burger: Lemon
       Taco: Lemon
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -734,7 +734,7 @@
     entries:
       Burger: Lemoon
       Taco: Lemoon
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -765,7 +765,7 @@
     entries:
       Burger: Lime
       Taco: Lime
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -795,7 +795,7 @@
     entries:
       Burger: Orange
       Taco: Orange
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -840,7 +840,7 @@
     entries:
       Burger: ExtradimensionalOrangeBurger
       Taco: ExtradimensionalOrange
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -880,7 +880,7 @@
   - type: Tag
     tags:
     - Fruit
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -920,7 +920,7 @@
     entries:
       Burger: Potato
       Taco: Potato
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 
@@ -985,7 +985,7 @@
       Skewer: TomatoSkewer
       Burger: Tomato
       Taco: Tomato
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1038,7 +1038,7 @@
     entries:
       Burger: BlueTomato
       Taco: BlueTomato
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1090,7 +1090,7 @@
       Skewer: TomatoSkewer
       Burger: BloodTomato
       Taco: BloodTomato
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1121,7 +1121,7 @@
     tags:
     - Fruit
     - Vegetable
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1160,7 +1160,7 @@
     entries:
       Burger: Apple
       Taco: Apple
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1204,7 +1204,7 @@
     entries:
       Burger: GoldenApple
       Taco: GoldenApple
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1239,7 +1239,7 @@
   - type: Tag
     tags:
     - Fruit
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1343,7 +1343,7 @@
   - type: Tag
     tags:
     - Vegetable
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1378,7 +1378,7 @@
   - type: Tag
     tags:
     - Vegetable
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1403,7 +1403,7 @@
     tags:
     - Vegetable
     - Mushroom
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 # Slices
@@ -1427,7 +1427,7 @@
   - type: Tag
     tags:
     - Slice
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1551,7 +1551,7 @@
       Taco: ChiliPepper
       Burger: ChiliPepper
       Skewer: ChiliPepperSkewer
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1586,7 +1586,7 @@
       Taco: ChillyPepper
       Burger: ChillyPepper
       Skewer: ChillyPepperSkewer
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1725,7 +1725,7 @@
   - type: Tag
     tags:
     - Mushroom
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -1953,7 +1953,7 @@
   - type: Tag
     tags:
     - Mushroom
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2096,7 +2096,7 @@
     entries:
       Taco: Soybeans
       Burger: SoybeansBurger
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2132,7 +2132,7 @@
     entries:
       Taco: SpacemansTrumpet
       Burger: SpacemansTrumpetBurger
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2166,7 +2166,7 @@
     entries:
       Taco: Koibean
       Burger: KoibeanBurger
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2407,7 +2407,7 @@
   - type: Tag
     tags:
     - Fruit
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2446,7 +2446,7 @@
     entries:
       Taco: Berries
       Burger: BerriesBurger
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2490,7 +2490,7 @@
     entries:
       Taco: Bungo
       Burger: Bungo
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2520,7 +2520,7 @@
     seedId: bungo
   - type: SpaceGarbage
   - type: BadFood
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2554,7 +2554,7 @@
     entries:
       Taco: Pea
       Burger: Pea
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2590,7 +2590,7 @@
     entries:
       Taco: WorldPea
       Burger: WorldPeaBurger
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2725,7 +2725,7 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: CottonBol
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2763,7 +2763,7 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: PyrottonBol
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2807,7 +2807,7 @@
     entries:
       Taco: Cherry
       Burger: Cherry
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2839,7 +2839,7 @@
     seedId: cherry
   - type: SpaceGarbage
   - type: BadFood
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2879,7 +2879,7 @@
     entries:
       Taco: AnomalyBerry
       Burger: AnomalyBerryBurger
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food
 
 - type: entity
@@ -2956,5 +2956,5 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Topping
+  - type: Topping # CD Addition
     solution: food

@@ -20,10 +20,7 @@ public sealed partial class ToppingSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private static LocId _addToppingVerb = "topping-verb-add-topping";
-    private static LocId _portionTooSmall = "topping-verb-portion-too-small";
-    private static LocId _noSpace = "topping-verb-no-space";
-    private static LocId _examineTopping = "topping-examine";
+    private static LocId _examineTopping =;
 
     public override void Initialize()
     {
@@ -100,7 +97,13 @@ public sealed partial class ToppingSystem : EntitySystem
         else if (ent.Comp.Toppings.Count > 1 && ent.Comp.Submerged.Count > 1)
             format = "many-topping-many-submerged";
 
-        args.PushMarkup(Loc.GetString(_examineTopping, ("listTopping", allToppings), ("lastTopping", lastTopping), ("listSubmerged", allToppingsSubmerged), ("lastSubmerged", lastToppingSubmerged), ("format", format)));
+        args.PushMarkup(Loc.GetString("topping-examine",
+            ("listTopping", allToppings),
+            ("lastTopping", lastTopping),
+            ("listSubmerged", allToppingsSubmerged),
+            ("lastSubmerged", lastToppingSubmerged),
+            ("format", format)
+        ));
     }
 
     private void OnIngested(Entity<ToppableComponent> ent, ref IngestedEvent args)
@@ -138,7 +141,7 @@ public sealed partial class ToppingSystem : EntitySystem
 
         var addToppingVerb = new ActivationVerb
         {
-            Text = Loc.GetString(_addToppingVerb),
+            Text = Loc.GetString( "topping-verb-add-topping"),
             Act = () =>
             {
                 if (!_solution.TryGetSolution(ent.Owner, ent.Comp.Solution, out var toppableSolution))
@@ -159,19 +162,19 @@ public sealed partial class ToppingSystem : EntitySystem
 
                 if (toppingSolution.Value.Comp.Solution.Volume < portionSize)
                 {
-                    _popup.PopupPredicted(Loc.GetString(_portionTooSmall), user, user);
+                    _popup.PopupPredicted(Loc.GetString("topping-verb-portion-too-small"), user, user);
                     return;
                 }
 
                 if (toppableSolution.Value.Comp.Solution.AvailableVolume < portionSize)
                 {
-                    _popup.PopupPredicted(Loc.GetString(_noSpace), user, user);
+                    _popup.PopupPredicted(Loc.GetString("topping-verb-no-space"), user, user);
                     return;
                 }
 
                 if (ent.Comp.Toppings.Count + ent.Comp.Submerged.Count >= ent.Comp.MaxToppings)
                 {
-                    _popup.PopupPredicted(Loc.GetString(_noSpace), user, user);
+                    _popup.PopupPredicted(Loc.GetString("topping-verb-no-space"), user, user);
                     return;
                 }
 
