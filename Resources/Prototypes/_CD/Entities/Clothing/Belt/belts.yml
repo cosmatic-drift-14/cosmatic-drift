@@ -10,8 +10,6 @@
   - type: Clothing
     sprite: _CD/Clothing/Belt/halfapron.rsi
 
-
-    
 # Reverts the sprite changes in: https://github.com/space-wizards/space-station-14/pull/29441/files.
 - type: entity
   parent: [ ClothingBeltSecurity] [ClothingOuterArmorBase, BaseSecurityContraband] #pulled from detective vest.
