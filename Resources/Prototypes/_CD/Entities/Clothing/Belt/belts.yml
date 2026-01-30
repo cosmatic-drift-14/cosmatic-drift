@@ -10,9 +10,11 @@
   - type: Clothing
     sprite: _CD/Clothing/Belt/halfapron.rsi
 
+
+    
 # Reverts the sprite changes in: https://github.com/space-wizards/space-station-14/pull/29441/files.
 - type: entity
-  parent: [ ClothingBeltSecurity] # Testing fix.
+  parent: [ ClothingBeltSecurity] [ClothingOuterArmorBase, BaseSecurityContraband] #pulled from detective vest.
   id: ClothingBeltSecurityPlateCarrier
   name: security plate carrier
   description: Unique and versatile plate carrier, designed to hold security gear.
@@ -21,9 +23,20 @@
     sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
   - type: Clothing
     sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
+  - type: Armor #pulled from the normal vest & defined here?
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
   - type: ClothingBlockSlotsOnEquip
     blockedSlots:
     - "outerClothing"
+#note to self if fails removing down to just clothing belt security should fix it
+#lines 25-34 are to be removed as well if failure.
 
 - type: entity
   parent: ClothingBeltMedical
