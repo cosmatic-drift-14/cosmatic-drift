@@ -59,7 +59,6 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         ChassisSpriteSelection.SubtypeSelected += () =>
         {
             ConfirmTypeButton.Disabled = false;
-            ConfirmedBorgSubtype?.Invoke(ChassisSpriteSelection.SubtypePrototype);
         };
     }
 
