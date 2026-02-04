@@ -1,11 +1,17 @@
+# Head
+- type: loadout
+  id: ChemistryBeret
+  equipment:
+    head: ClothingHeadHatBeretChem
+
 # OuterClothing
-- type: loadout 
+- type: loadout
   id: ChemistModernLabCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatStylishLabChem
 
 # Uniform
 - type: loadout
   id: ChemistCasualsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformChemistCasual

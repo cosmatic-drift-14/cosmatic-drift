@@ -1,3 +1,9 @@
+# Head
+- type: loadout
+  id: ChiefEngineerExclusiveBeret
+  equipment:
+    head: ClothingHeadHatBeretCe
+
 # Jumpsuit
 - type: loadout
   id: ChiefEngineerJumpsuitModern

@@ -69,6 +69,14 @@
   - QuartermasterHeadsetAlt
 
 - type: loadoutGroup
+  id: SalvageSpecialistHead
+  name: loadout-group-salva-specialist-head
+  minLimit: 0
+  loadouts:
+  - CargoTechnicianHead
+  - CargoBeret
+
+- type: loadoutGroup
   id: SalvageSpecialistJumpsuit
   name: loadout-group-salvage-specialist-jumpsuit
   loadouts:
@@ -104,6 +112,17 @@
   loadouts:
   - ClothingEyesGlassesMeson
   - ClothingEyesGlassesMesonPrescription
+
+- type: loadoutGroup
+  id: AtmosphericTechnicianHead
+  name: loadout-group-atmospheric-technician-head
+  minLimit: 0
+  loadouts:
+  - StationEngineerHardhatYellow
+  - StationEngineerHardhatOrange
+  - StationEngineerHardhatRed
+  - SeniorEngineerBeret
+  - AtmosphericBeret
 
 # Science
 - type: loadoutGroup
@@ -153,6 +172,7 @@
   - SecurityNewHelmet
   - SecurityVeteranBeret
   - SecurityBeret
+  - SecurityNavyBeret
   - SecurityHat
   - SecurityNewSoft
   - TrooperHat
@@ -188,6 +208,13 @@
   loadouts:
   - ChiefMedicalOfficerHeadset
   - ChiefMedicalOfficerHeadsetAlt
+
+- type: loadoutGroup
+  id: ChemistHead
+  name: loadout-group-chemist-head
+  loadouts:
+  - MedicalBeret
+  - ChemistryBeret
 
 - type: loadoutGroup
   id: SeniorPhysicianHead
