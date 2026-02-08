@@ -20,8 +20,6 @@ public sealed partial class ToppingSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private static LocId _examineTopping =;
-
     public override void Initialize()
     {
         base.Initialize();
