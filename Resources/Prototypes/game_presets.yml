@@ -163,7 +163,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false #CD change to false.
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
