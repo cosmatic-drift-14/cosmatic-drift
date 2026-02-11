@@ -131,7 +131,7 @@
   description: There are exposed wires and damaged "warranty void if removed" stickers.
   components:
     - type: Pda
-      id: ResearchIDCard
+      id: RoboticistIDCard
     - type: Appearance
       appearanceDataInit:
        enum.PdaVisuals.PdaType:
