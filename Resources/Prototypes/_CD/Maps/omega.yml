@@ -3,7 +3,7 @@
   mapName: 'Omega'
   mapPath: /Maps/_CD/omega.yml
   minPlayers: 5
-  maxPlayers: 25
+  maxPlayers: 15
   stations:
     Omega:
       stationProto: StandardNanotrasenStation
@@ -41,7 +41,7 @@
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]        
-            Scientist: [ 4, 4 ]
+            Scientist: [ 3, 3 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]

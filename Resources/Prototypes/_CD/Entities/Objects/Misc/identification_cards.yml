@@ -1,29 +1,3 @@
-- type: entity
-  parent: IDCardStandard
-  id: CDPrisonerIDCard
-  name: prisoner ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: orange
-    - sprite: _CD/Objects/Misc/id_cards.rsi
-      state: prisoner
-  - type: PresetIdCard
-    job: Prisoner
-
-- type: entity
-  parent: IDCardStandard
-  id: PrivateInvestigatorIDCard
-  name: private investigator ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: default
-    - sprite: _CD/Objects/Misc/id_cards.rsi
-      state: privateinvestigator
-  - type: PresetIdCard
-    job: PrivateInvestigator
-
 # Senior Roles
 - type: entity
   parent: IDCardStandard
@@ -96,3 +70,57 @@
       state: SeniorOfficer
   - type: PresetIdCard
     job: SeniorOfficer
+
+#Science
+
+- type: entity
+  parent: IDCardStandard
+  id: RoboticistIDCard
+  name: roboticist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: stripe_top
+      color: *color-science-top
+    - state: stripe_bottom
+      color: *color-science-bottom
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: Roboticist
+  - type: PresetIdCard
+    job: Scientist
+
+#Misc
+
+- type: entity
+  parent: IDCardStandard
+  id: CDPrisonerIDCard
+  name: prisoner ID card
+  suffix: Job
+  components:
+  - type: Sprite
+    layers:
+    - state: orange
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: Prisoner
+  - type: Item
+    heldPrefix: orange
+  - type: PresetIdCard
+    job: Prisoner
+
+- type: entity
+  parent: IDCardStandard
+  id: PrivateInvestigatorIDCard
+  name: private investigator ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: default
+    - sprite: &CD-icon-rsi _CD/Interface/Misc/job_icons.rsi
+      offset: *icon-offset
+      state: PrivateInvestigator
+  - type: PresetIdCard
+    job: PrivateInvestigator
