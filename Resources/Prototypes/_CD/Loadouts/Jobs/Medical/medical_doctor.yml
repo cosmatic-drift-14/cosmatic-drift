@@ -29,6 +29,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtGenetics
 
+- type: loadout
+  id: MedicalSlacks
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSlacksMedical
+
 # Back
 - type: loadout
   id: ViroBackpack

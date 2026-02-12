@@ -302,6 +302,7 @@
   - BartenderJumpsuit
   - BartenderJumpskirt
   - BartenderJumpsuitPurple
+  - ServiceSlacks # CD
 
 - type: loadoutGroup
   id: BartenderOuterClothing
@@ -347,6 +348,7 @@
   loadouts:
   - ChefJumpsuit
   - ChefJumpskirt
+  - ServiceSlacks
 
 - type: loadoutGroup
   id: ChefOuterClothing
@@ -746,6 +748,7 @@
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
   - QuartermasterForemansuit # CD
+  - CargoSlacks # CD
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -799,6 +802,7 @@
   - CargoTechnicianJumpsuitDark # CD
   - CargoTechnicianJumpskirtDark # CD
   - CargoTechnicianOveralls # CD
+  - CargoSlacks # CD
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -887,6 +891,7 @@
   - ChiefEngineerJumpsuitFormal # CD Drip 4
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
+  - EngineeringSlacks # CD
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -960,6 +965,7 @@
   - StationEngineerJumpsuitEVA # CD
   - StationEngineerJumpsuitMechanic # CD
   - StationEngineerJumpskirtMechanic # CD
+  - EngineeringSlacks
   # - SeniorEngineerJumpsuit
   # - SeniorEngineerJumpskirt
 
@@ -1012,6 +1018,7 @@
   - AtmosphericTechnicianJumpskirtModern # CD
   - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
+  - EngineeringSlacks
 
 - type: loadoutGroup
   id: AtmosphericTechnicianOuterClothing
@@ -1076,6 +1083,7 @@
   loadouts:
   - ResearchDirectorJumpsuit
   - ResearchDirectorJumpskirt
+  - ScienceSlacks
 
 - type: loadoutGroup
   id: ResearchDirectorOuterClothing
@@ -1125,6 +1133,7 @@
   - ScientistJumpskirt
   - RoboticistJumpsuit
   - RoboticistJumpskirt
+  - ScienceSlacks # CD
   # - SeniorResearcherJumpsuit
   # - SeniorResearcherJumpskirt
 
@@ -1443,6 +1452,7 @@
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
   - ChiefMedicalOfficerFormalsuit # CD
+  - MedicalSlacks
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -1506,6 +1516,7 @@
   - ViroJumpskirt # CD
   - GeneJumpsuit # CD
   - GeneJumpskirt # CD
+  - MedicalSlacks
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1590,6 +1601,7 @@
   - ChemistJumpsuit
   - ChemistJumpskirt
   - ChemistCasualsuit # CD
+  - MedicalSlacks
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -1635,6 +1647,7 @@
   - ParamedicCasualsuit # CD
   - ParamedicCasualskirt # CD
   - BlueHighvisPants # CD
+  - MedicalSlacks # CD
   # CD: ETU Loadout
   - JumpsuitETUFlightsuit
 

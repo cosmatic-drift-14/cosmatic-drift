@@ -581,6 +581,75 @@
     - type: Clothing
       sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/burgundy.rsi
 
+# Slacks
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksGeneric
+  name: white button-down
+  description: A polite white button-down shirt with black slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/generic.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/generic.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksCargo
+  name: tan button-down
+  description: A polite tan button-down shirt with brown slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/cargo.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/cargo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksEngineering
+  name: yellow button-down
+  description: A polite yellow button-down shirt with grey slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/engineering.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/engineering.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksMedical
+  name: blue button-down
+  description: A polite blue button-down shirt with black slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/medical.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/medical.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksScience
+  name: purple button-down
+  description: A polite purple button-down shirt with black slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/science.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/science.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksService
+  name: white button-down
+  description: A polite white button-down shirt with green slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/service.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/service.rsi
+
+
 # Turtlenecks
 
 - type: entity
