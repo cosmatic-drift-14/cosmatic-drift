@@ -252,6 +252,17 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_black.rsi
 
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] # CD foldable
+  id: ClothingUniformJumpsuitJeansLightblue
+  name: bleached jeans
+  description: Bleached jeans, shirt optional.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_lightblue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/jeans_lightblue.rsi
+
 # Non-casual drip below
 
 # Security garments
