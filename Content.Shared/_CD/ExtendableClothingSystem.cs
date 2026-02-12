@@ -55,7 +55,7 @@ public sealed class ExtendableClothingSystem : EntitySystem
         var container = _container.GetContainer(ent, ExtendableClothingComponent.EquipmentContainerId);
         foreach (var equipment in container.ContainedEntities)
         {
-            DebugTools.Assert(!equipment.IsValid());
+            DebugTools.Assert(equipment.IsValid());
             if (!TryComp<ExtendedEquipmentComponent>(equipment, out var comp))
                 return;
 
