@@ -660,6 +660,16 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/service.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSlacksBlack
+  name: black button-down
+  description: A polite black button-down shirt with black slacks.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/black.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Slacks/black.rsi
 
 # Turtlenecks
 
