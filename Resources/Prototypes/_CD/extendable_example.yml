@@ -2,7 +2,7 @@
   parent: ClothingHeadPropellerHat
   id: DebugClothingHeadPropellerHatExtendable
   name: death squad's propeller hat
-  suffix: DEBUG, EXAMPLE
+  suffix: DEBUG
   description: You're the bestest and most deadly boy.
   components:
   - type: Clothing
