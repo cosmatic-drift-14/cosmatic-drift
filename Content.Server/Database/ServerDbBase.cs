@@ -232,7 +232,7 @@ namespace Content.Server.Database
             {
                 return document.Deserialize<TValue>();
             }
-            catch (JsonException exception)
+            catch (JsonException)
             {
                 return null;
             }
