@@ -440,12 +440,9 @@
 
 - type: loadout
   id: TowelColorLightBlue
-  # effects:
-  # - !type:JobRequirementLoadoutEffect # _CD - remove playtime requirements
-  #   requirement:
-  #     !type:DepartmentTimeRequirement
-  #     department: Medical
-  #     time: 100h
+  # effects: # CD: Remove playtime requirement
+  # - !type:GroupLoadoutEffect
+  #   proto: MedicalExpertTimer
   storage:
     back:
     - TowelColorLightBlue
