@@ -12,6 +12,8 @@
     - id: DoorRemoteCargo
     - id: AstroNavCartridge
     # - id: ClothingHandsKnuckleDustersQM # CD: Remove these
+    - id: PlushieLizardJobQuartermaster
+      prob: 0.02
     #CD Addions
     - id: BookSOPCargo
     - id: BookSOPCommand
@@ -54,6 +56,8 @@
       conditions:
       - !type:PlayerCountCondition
         max: 15
+    - id: PlushieLizardJobCaptain
+      prob: 0.02
     #CD Addions
     - id: BookSOPGeneral
     - id: BookSOPCommand
@@ -138,6 +142,8 @@
     - id: HoPIDCard
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
+    - id: PlushieLizardJobHeadofpersonnel
+      prob: 0.02
     #CD Addions
     - id: BookSOPService
     - id: BookSOPCommand
@@ -172,6 +178,8 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    - id: PlushieLizardJobChiefengineer
+      prob: 0.02
     #CD Addions
     - id: BookSOPEngineering
     - id: BookSOPCommand
@@ -230,6 +238,8 @@
     - id: DoorRemoteMedical
     - id: BoxEncryptionKeyMedical
     - id: BoxCMOCircuitboards
+    - id: PlushieLizardJobChiefmedicalofficer
+      prob: 0.02
     #CD Addions
     - id: BookSOPMedical
     - id: BookSOPCommand
@@ -283,6 +293,8 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
+    - id: PlushieLizardJobResearchdirector
+      prob: 0.02
     #CD Addions
     - id: BookSOPScience
     - id: BookSOPCommand
@@ -347,6 +359,8 @@
     - id: WeaponTaser
     - id: WantedListCartridge
     - id: DrinkHosFlask
+    - id: PlushieLizardJobHeadofsecurity
+      prob: 0.02
     #CD Addions
     - id: BookSOPSecurity
     - id: BookSOPCommand

@@ -26,6 +26,10 @@
       - id: BoxBeanbag
       - id: RagItem
         amount: 2
+    - id: PlushieLizardJobBartender
+      prob: 0.02
+    - id: PlushieLizardJobServiceworker
+      prob: 0.02
       #CD Addions
       - id: BookSOPService
         prob: 0.2
@@ -68,6 +72,10 @@
       children:
       - id: FoodCondimentPacketSalt
       - id: FoodCondimentPacketPepper
+    - id: PlushieLizardJobChef
+      prob: 0.02
+    - id: PlushieLizardJobServiceworker
+      prob: 0.02
     #CD Addions
     - id: BookSOPService
       prob: 0.2
@@ -101,6 +109,8 @@
       - id: FlashlightLantern
       - id: Plunger
       - id: WireBrush
+      - id: PlushieLizardJobJanitor
+        prob: 0.02
         amount: 2
       #CD Addions
       - id: BookSOPService
@@ -123,6 +133,8 @@
     - id: BriefcaseBrownFilled
       prob: 0.80
     - id: ClothingOuterRobesJudge
+    - id: PlushieLizardJobLawyer
+      prob: 0.02
 
 - type: entity
   id: LockerBotanistFilled
@@ -151,6 +163,10 @@
     - id: ClothingUniformOveralls
     - id: ClothingHeadHatTrucker
       prob: 0.1
+    - id: PlushieLizardJobBotanist
+      prob: 0.02
+    - id: PlushieLizardJobServiceworker
+      prob: 0.02
 
 - type: entity
   id: LockerBotanistLoot
