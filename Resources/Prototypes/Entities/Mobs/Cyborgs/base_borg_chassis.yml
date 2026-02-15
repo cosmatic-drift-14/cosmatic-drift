@@ -248,6 +248,7 @@
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
   - type: BorgSwitchableSubtype
   - type: BypassLock
+    openWiresPanel: true
   - type: BypassLockRequiresMobState
     requiredMobState:
     - Critical
