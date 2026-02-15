@@ -50,6 +50,11 @@
   - type: ResearchClient
   - type: TechnologyDatabase
   - type: StationAiWhitelist # CD
+  - type: ApcPowerReceiver
+    powerLoad: 150
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 1000
 
 # a lathe that can be sped up with space lube / slowed down with glue
 - type: entity
