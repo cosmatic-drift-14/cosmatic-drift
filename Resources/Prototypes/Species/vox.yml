@@ -5,7 +5,7 @@
   prototype: MobVox
   sprites: MobVoxSprites
   markingLimits: MobVoxMarkingLimits
-  dollPrototype: MobVoxDummy
+  dollPrototype: AppearanceVox
   skinColoration: Hues # CD: From VoxFeathers
   defaultSkinTone: "#6c741d"
   maleFirstNames: NamesVox
