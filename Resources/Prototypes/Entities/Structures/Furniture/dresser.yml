@@ -31,8 +31,8 @@
         acts: [ "Destruction" ]
   - type: Storage
     grid:
-    - 0,0,8,3 # CD: We had to make this larger
-    maxItemSize: Normal
+    - 0,0,8,4 # CD: We had to make this larger
+    maxItemSize: Large
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
