@@ -85,6 +85,10 @@ namespace Content.Server.Database
                 .Property(log => log.Markings)
                 .HasConversion(jsonByteArrayConverter);
 
+            modelBuilder.Entity<Profile>()
+                .Property(log => log.OrganMarkings)
+                .HasConversion(jsonByteArrayConverter);
+
             // CD: Store Records
             modelBuilder.Entity<CDModel.CDProfile>()
                 .Property(log => log.CharacterRecords)
