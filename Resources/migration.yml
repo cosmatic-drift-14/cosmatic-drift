@@ -768,3 +768,7 @@ CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
 #2024-01-01 CD: LRP posters
 PosterLegitNoERP: null
 PosterLegitEnlist: null
+
+# 2026-01-07
+HandheldHealthAnalyzerUnpowered: HandheldHealthAnalyzer
+HandheldHealthAnalyzerEmpty: HandheldHealthAnalyzer
