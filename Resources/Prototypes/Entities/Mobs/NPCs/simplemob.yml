@@ -110,3 +110,5 @@
   - type: FloatingVisuals
   - type: Puller # CD: Is cute
     needsHands: false
+  - type: GhostOnMove
+    mustBeDead: true
