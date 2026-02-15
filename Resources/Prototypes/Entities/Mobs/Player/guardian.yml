@@ -112,6 +112,8 @@
       tags:
         - CannotSuicide
         - NoPaint # CD
+        - StunImmune
+        - SlowImmune
 
 # From the uplink injector
 - type: entity
