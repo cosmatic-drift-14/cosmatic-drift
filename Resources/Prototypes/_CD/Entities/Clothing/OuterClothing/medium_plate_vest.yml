@@ -1,23 +1,15 @@
 - type: entity
-  parent: [ClothingOuterBaseMedium] #pulled from detective vest.
+  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing, BaseSecurityContraband] #pulled from detective vest.
   id: mediumplatevest
   name: medium plate vest
   description: your not supposed to be here.
   components:
   - type: Sprite
-    sprite: _CD/Clothing/Belt/medium_plate_vest.rsi
-  - type: clothing
-    sprite: _CD/Clothing/Belt/medium_plate_vest.rsi
+    sprite: _CD/Clothing/OuterClothing/Armor/mediumplatevest.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/OuterClothing/Armor/mediumplatevest.rsi
 
-#  - type: Armor #pulled from the normal vest & defined here?
-#    modifiers:
-#      coefficients:
-#        Blunt: 0.70
-#        Slash: 0.70
-#        Piercing: 0.70
-#        Heat: 0.80
-#  - type: ExplosionResistance
-#    damageCoefficient: 0.90
+
 
 
 # AllowSuitStorageClothing, BaseSecurityContraband
