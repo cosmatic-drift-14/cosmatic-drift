@@ -6,8 +6,6 @@
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Armor/mediumplatevest.rsi
-  - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Armor/mediumplatevest.rsi
 
 
 
