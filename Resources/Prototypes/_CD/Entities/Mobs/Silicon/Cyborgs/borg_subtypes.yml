@@ -7,6 +7,10 @@
   inventoryTemplateId: borgDutch
   spritePath: _CD/Mobs/Silicon/Borg/Mining/spidermin.rsi
 
+  footstepCollection:
+    collection: FootstepThud
+
+
 - type: borgSubtype
   parent: baseMedicalSubtype
   id: qualified-doctor

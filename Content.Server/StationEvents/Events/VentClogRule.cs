@@ -42,8 +42,8 @@ public sealed class VentClogRule : StationEventSystem<VentClogRuleComponent>
             if (!RobustRandom.Prob(0.33f))
                 continue;
 
-            var pickAny = RobustRandom.Prob(0.05f);
-            var reagent = RobustRandom.Pick(pickAny ? allReagents : component.SafeishVentChemicals);
+            // var pickAny = RobustRandom.Prob(0.05f); CD: Disable picking any reagent
+            var reagent = RobustRandom.Pick(component.SafeishVentChemicals); // CD: Disable picking any reagent
 
             var weak = component.WeakReagents.Contains(reagent);
             var quantity = weak ? component.WeakReagentQuantity : component.ReagentQuantity;

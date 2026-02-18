@@ -276,12 +276,12 @@
 
 - type: loadout
   id: OffsetCaneClown
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobClown
-      time: 3600 # 1hr
+  # effects: # _CD - remove playtime requirements
+  # - !type:JobRequirementLoadoutEffect
+  #   requirement:
+  #     !type:RoleTimeRequirement
+  #     role: JobClown
+  #     time: 3600 # 1hr
   storage:
     back:
     - OffsetCaneClown
@@ -289,12 +289,12 @@
 
 - type: loadout
   id: OffsetCaneMime
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobMime
-      time: 3600 # 1hr
+  # effects: # _CD - remove playtime requirements
+  # - !type:JobRequirementLoadoutEffect
+  #   requirement:
+  #     !type:RoleTimeRequirement
+  #     role: JobMime
+  #     time: 3600 # 1hr
   storage:
     back:
     - OffsetCaneMime
@@ -302,12 +302,12 @@
 
 - type: loadout
   id: OffsetCaneNT
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Command
-      time: 18000 # 5hr
+  # effects: # _CD - remove playtime requirements
+  # - !type:JobRequirementLoadoutEffect
+  #   requirement:
+  #     !type:DepartmentTimeRequirement
+  #     department: Command
+  #     time: 18000 # 5hr
   storage:
     back:
     - OffsetCaneNT
@@ -315,12 +315,12 @@
 
 - type: loadout
   id: Cane
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobLibrarian
-      time: 3600 # 1hr same as Jamjar.
+  # effects: # _CD - remove playtime requirements
+  # - !type:JobRequirementLoadoutEffect
+  #   requirement:
+  #     !type:RoleTimeRequirement
+  #     role: JobLibrarian
+  #     time: 3600 # 1hr same as Jamjar.
   storage:
     back:
     - Cane

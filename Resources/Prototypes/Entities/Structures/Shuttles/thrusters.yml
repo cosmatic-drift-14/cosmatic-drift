@@ -58,6 +58,7 @@
     - type: GuideHelp
       guides:
       - ShuttleCraft
+    - type: StationAiWhitelist # CD
   placement:
     mode: SnapgridCenter
 
