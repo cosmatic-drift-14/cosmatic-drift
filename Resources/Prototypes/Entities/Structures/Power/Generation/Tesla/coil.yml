@@ -94,7 +94,7 @@
     thresholds:
       - trigger: # Excess damage, don't spawn entities
           !type:DamageTrigger
-          damage: 400
+          damage: 800 #CD change from 400 to 800
         behaviors:
           - !type:PlaySoundBehavior
             sound:
@@ -103,7 +103,7 @@
             acts: ["Destruction"]
       - trigger:
           !type:DamageTrigger
-          damage: 225
+          damage: 450 #CD change from 225 to 450
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
