@@ -25,6 +25,24 @@
   - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
     state: head_ledvisor_tertiary
 
+- type: marking
+  id: LizardHeadLEDVisorGlow
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [ Reptilian ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#808080"
+  sprites:
+  - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
+    state: head_ledvisor_primary
+  - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
+    state: head_ledvisor_secondary
+  - sprite: _CD/Mobs/Customization/reptilian_parts.rsi
+    state: head_ledvisor_tertiary
+  shaders: ["unshaded","default","unshaded"]
 # Snake Tails
 
 - type: marking

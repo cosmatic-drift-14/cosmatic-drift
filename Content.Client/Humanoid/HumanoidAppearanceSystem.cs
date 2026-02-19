@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Content.Client.DisplacementMap;
 using Content.Shared.CCVar;
 using Content.Shared.Humanoid;
@@ -386,6 +387,15 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                 // use spriteComponent's layersetshader function to set the layer's shader to that which is specified.
                 sprite.LayerSetShader(layerId, markingPrototype.Shader);
             }
+            // end CD Addition//
+
+            if (markingPrototype.Shaders != null && markingPrototype.Shaders.Count >= j)
+            {
+                string? layerShader = markingPrototype.Shaders[j];
+                if (layerShader != "default")
+                    sprite.LayerSetShader(layerId, layerShader);
+            }
+
             // end CD Addition
             _sprite.LayerSetVisible((entity.Owner, sprite), layerId, visible);
 

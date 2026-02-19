@@ -6,6 +6,11 @@ marking-LizardHeadLEDVisor-head_ledvisor_primary = Visor
 marking-LizardHeadLEDVisor-head_ledvisor_secondary = Trim
 marking-LizardHeadLEDVisor-head_ledvisor_tertiary = LED
 
+marking-LizardHeadLEDVisorGlow = LED Visor (Glowing)
+marking-LizardHeadLEDVisorGlow-head_ledvisor_primary = Visor
+marking-LizardHeadLEDVisorGlow-head_ledvisor_secondary = Trim
+marking-LizardHeadLEDVisorGlow-head_ledvisor_tertiary = LED
+
 marking-LizardTailSnake = Snake Tail
 marking-LizardTailSnake-tail_snaketail = Tone
 
