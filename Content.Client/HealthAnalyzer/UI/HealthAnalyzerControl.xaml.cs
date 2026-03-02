@@ -86,7 +86,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         SpeciesLabel.Text =
             _entityManager.TryGetComponent<HumanoidProfileComponent>(target.Value,
                 out var humanoidComponent)
-                ? _cdCustomSpecies.GetSpeciesName(new Entity<HumanoidAppearanceComponent>(target.Value, humanoidAppearanceComponent))
+                ? _cdCustomSpecies.GetSpeciesName(new Entity<HumanoidProfileComponent>(target.Value, humanoidComponent))
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
         // Basic Diagnostic

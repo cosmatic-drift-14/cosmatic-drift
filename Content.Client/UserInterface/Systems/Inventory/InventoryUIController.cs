@@ -202,7 +202,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
             if (!_inventoryHotbar.TryGetButton(key, out var slot))
             {
                 slot = CreateSlotButton(data);
-                _inventoryHotbar.AddButton(slot);
+                _inventoryHotbar.TryAddButton(slot);
             }
 
             var showStorage = _entities.HasComponent<StorageComponent>(data.HeldEntity);

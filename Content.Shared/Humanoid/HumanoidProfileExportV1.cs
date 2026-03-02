@@ -1,4 +1,6 @@
 using System.Numerics;
+using Content.Shared._CD.Records;
+using Content.Shared.FixedPoint;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
@@ -79,9 +81,21 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public PreferenceUnavailableMode PreferenceUnavailable;
 
+    [DataField("cosmaticDriftCharacterHeight")]
+    public float CDHeight = 1f;
+
+    [DataField("cosmaticDriftCharacterRecords")]
+    public PlayerProvidedCharacterRecords? CDCharacterRecords;
+
+    [DataField("cosmaticDriftCustomSpeciesName")]
+    public string? CDCustomSpeciesName = null;
+
+    [DataField("cosmaticDriftAllergies")]
+    public Dictionary<string, FixedPoint2> CDAllergies = new();
+
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
+        return new(Name, FlavorText, Species, CDHeight, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, CDCharacterRecords, CDCustomSpeciesName, CDAllergies);
     }
 }
 

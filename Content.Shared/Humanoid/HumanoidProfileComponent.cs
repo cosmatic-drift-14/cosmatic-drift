@@ -24,4 +24,15 @@ public sealed partial class HumanoidProfileComponent : Component
 
     [DataField, AutoNetworkedField]
     public ProtoId<SpeciesPrototype> Species = HumanoidCharacterProfile.DefaultSpecies;
+
+    // BEGIN CD
+
+    /// <summary>
+    ///     The height of this humanoid.
+    ///     Not sure if this is the right place, but it makes migration easy and should work
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float Height = 1f;
+
+    // END CD
 }

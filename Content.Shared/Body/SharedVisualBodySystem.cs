@@ -4,6 +4,8 @@ using Content.Shared.Humanoid;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Numerics; // CD
+using Content.Shared.Sprite; // CD
 
 namespace Content.Shared.Body;
 
@@ -12,6 +14,7 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly MarkingManager _marking = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private readonly SharedScaleVisualsSystem _scaleVisuals = default!; // CD Height
 
     public override void Initialize()
     {
@@ -21,6 +24,7 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
         SubscribeLocalEvent<VisualOrganMarkingsComponent, BodyRelayedEvent<OrganCopyAppearanceEvent>>(OnMarkingsOrganCopyAppearance);
         SubscribeLocalEvent<VisualOrganComponent, BodyRelayedEvent<ApplyOrganProfileDataEvent>>(OnVisualOrganApplyProfile);
         SubscribeLocalEvent<VisualOrganMarkingsComponent, BodyRelayedEvent<ApplyOrganMarkingsEvent>>(OnMarkingsOrganApplyMarkings);
+        SubscribeLocalEvent<HumanoidProfileComponent, ApplyOrganProfileDataEvent>(OnApplyOrganProfileData); // CD Height
 
         InitializeModifiers();
         InitializeInitial();
@@ -119,6 +123,22 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
 
         SetOrganMarkings(ent, other.Markings);
     }
+
+    // BEGIN CD
+    private void OnApplyOrganProfileData(Entity<HumanoidProfileComponent> entity, ref ApplyOrganProfileDataEvent args)
+    {
+        var speciesPrototype = _prototype.Index(entity.Comp.Species);
+        if (args.Base == null)
+            return;
+
+        var height = Math.Clamp(MathF.Round(args.Base.Value.Height, 2), speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
+
+        _scaleVisuals.SetSpriteScale(
+            entity.Owner,
+            new Vector2(speciesPrototype.ScaleHeight ? height : 1f, height)
+        );
+    }
+    // END CD
 
     private void OnVisualOrganApplyProfile(Entity<VisualOrganComponent> ent, ref BodyRelayedEvent<ApplyOrganProfileDataEvent> args)
     {

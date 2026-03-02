@@ -1,11 +1,11 @@
 # Head
-- type: loadout
-  id: SeniorPhysicianBeret
-  # effects: CD: Disabled the loadout timer
-  # - !type:GroupLoadoutEffect
-  #   proto: SeniorPhysician
-  equipment:
-    head: ClothingHeadHatBeretSeniorPhysician
+# - type: loadout
+#   id: SeniorPhysicianBeret CD: Disabled the senior beret
+#   effects: 
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorPhysician
+#   equipment:
+#     head: ClothingHeadHatBeretSeniorPhysician
 
 - type: loadout
   id: MedicalHeadMirror
