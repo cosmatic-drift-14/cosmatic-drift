@@ -348,7 +348,7 @@
   loadouts:
   - ChefJumpsuit
   - ChefJumpskirt
-  - ServiceSlacks
+  - ServiceSlacks # CD
 
 - type: loadoutGroup
   id: ChefOuterClothing
@@ -965,7 +965,7 @@
   - StationEngineerJumpsuitEVA # CD
   - StationEngineerJumpsuitMechanic # CD
   - StationEngineerJumpskirtMechanic # CD
-  - EngineeringSlacks
+  - EngineeringSlacks # CD
   # - SeniorEngineerJumpsuit
   # - SeniorEngineerJumpskirt
 
@@ -1018,7 +1018,7 @@
   - AtmosphericTechnicianJumpskirtModern # CD
   - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
-  - EngineeringSlacks
+  - EngineeringSlacks # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianOuterClothing
@@ -1083,7 +1083,7 @@
   loadouts:
   - ResearchDirectorJumpsuit
   - ResearchDirectorJumpskirt
-  - ScienceSlacks
+  - ScienceSlacks # CD
 
 - type: loadoutGroup
   id: ResearchDirectorOuterClothing
@@ -1452,7 +1452,7 @@
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
   - ChiefMedicalOfficerFormalsuit # CD
-  - MedicalSlacks
+  - MedicalSlacks # CD
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -1516,7 +1516,7 @@
   - ViroJumpskirt # CD
   - GeneJumpsuit # CD
   - GeneJumpskirt # CD
-  - MedicalSlacks
+  - MedicalSlacks # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1601,7 +1601,7 @@
   - ChemistJumpsuit
   - ChemistJumpskirt
   - ChemistCasualsuit # CD
-  - MedicalSlacks
+  - MedicalSlacks # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
