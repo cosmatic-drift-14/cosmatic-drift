@@ -11,7 +11,7 @@ public sealed partial class BasicStationEventSchedulerComponent : Component
     /// How long the the scheduler waits to begin starting rules.
     /// </summary>
     [DataField]
-    public float MinimumTimeUntilFirstEvent = 200;
+    public float MinimumTimeUntilFirstEvent = 480; // CD change from 200 to 480.
 
     /// <summary>
     /// How much additional time it may take for a GameRule to first start.

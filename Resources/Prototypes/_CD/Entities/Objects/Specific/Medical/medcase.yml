@@ -1,33 +1,24 @@
 - type: entity
   name: civil defence medcase
   description: A TTE medcase. This one is for untrained crew to stabilise someone.
-  parent: BaseStorageItem
+  parent: BaseItem
   id: Medcase
   components:
   - type: Sprite
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     state: civdef
-  - type: Storage
-    grid:
-    - 0,0,2,2
-    maxItemSize: Small
-    whitelist:
-      tags:
-        - Brutepack
-        - Bloodpack
-        - Gauze
-        - Ointment
-        - PillCanister
-      components:
-        - Injector # means these cases can store syringes now too
-        - Pill
-        - Healing
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,2,2
+    size: Small
     sprite: _CD/Objects/Specific/Medical/medcase.rsi
     heldPrefix: civdef
+  - type: SpawnItemsOnUse
+    items:
+      - id: Gauze1
+      - id: OintmentAdvanced1
+      - id: BrutepackAdvanced1
+      - id: EmergencyMedipen
+    sound:
+      path: /Audio/Items/Medical/ointment_begin.ogg
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
@@ -46,17 +37,25 @@
     state: burn
   - type: Item
     heldPrefix: burnrad
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillKelotane
+      - id: BurnAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: radiation medcase
   description: A TTE medcase. This one is for treating radiation sickness.
-  parent: Medcase
+  parent: MedcaseBurn
   id: MedcaseRadiation
   components:
   - type: Sprite
     state: rad
-  - type: Item
-    heldPrefix: burnrad
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillPotassiumIodide
+      - id: RadAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: poison medcase
@@ -68,6 +67,11 @@
     state: poison
   - type: Item
     heldPrefix: poison
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillCharcoal
+      - id: AntiPoisonMedipen
+      - id: EmergencyMedipen
 
 - type: entity
   name: asphyxiation medcase
@@ -79,6 +83,11 @@
     state: asphyx
   - type: Item
     heldPrefix: asphyx
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillDexalin
+      - id: AirlossAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: brute medcase
@@ -90,20 +99,24 @@
     state: brute
   - type: Item
     heldPrefix: brutebleed
+  - type: SpawnItemsOnUse
+    items:
+      - id: PillStubantazine
+      - id: BruteAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: bleed medcase
   description: A TTE medcase. This one is for stabilising bleeding wounds.
-  parent: Medcase
+  parent: MedcaseBrute
   id: MedcaseBleed
   components:
   - type: Sprite
     state: bleed
-  - type: Item
-    heldPrefix: brutebleed
-  - type: Storage
-    grid:
-    - 0,0,2,1
+  - type: SpawnItemsOnUse
+    items:
+      - id: Tourniquet
+      - id: EmergencyMedipen
 
 - type: entity
   name: combat medcase
@@ -115,9 +128,12 @@
     state: combat
   - type: Item
     heldPrefix: combat
-  - type: Storage
-    grid:
-    - 0,0,2,1
+  - type: SpawnItemsOnUse
+    items:
+      - id: Tourniquet
+      - id: PillStubantazine
+      - id: PunctAutoInjector
+      - id: EmergencyMedipen
 
 - type: entity
   name: rapid application medcase
@@ -129,6 +145,9 @@
     state: rapidapp
   - type: Item
     heldPrefix: rapidapp
-  - type: Storage
-    grid:
-    - 0,0,3,1
+  - type: SpawnItemsOnUse
+    items:
+      - id: Tourniquet
+      - id: AntiPoisonMedipen
+      - id: AirlossAutoInjector
+      - id: EmergencyMedipen
