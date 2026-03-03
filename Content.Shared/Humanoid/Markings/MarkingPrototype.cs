@@ -46,6 +46,9 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("shader")]
         public string? Shader { get; private set; } = null;
 
+        [DataField("shaders")]
+        public List<string>? Shaders { get; private set; } = null;
+
         public Marking AsMarking()
         {
             return new Marking(ID, Sprites.Count);
