@@ -11,7 +11,7 @@
   boilingPoint: 212.0
   meltingPoint: 170.0
   metabolisms:
-    Narcotic:
+    Bloodstream:
       metabolismRate: 0.5
       effects:
       - !type:MovementSpeedModifier
@@ -94,22 +94,19 @@
         key: Adrenaline # combat stim
         component: IgnoreSlowOnDamage
         time: 3 # slightly worse then Epi
-    Medicine:
-      metabolismRate: 1.0
-      effects:
-        - !type:ResetNarcolepsy
-        - !type:SatiateHunger
-          factor: 0.75
-        - !type:SatiateThirst
-          factor: 0.75
-        - !type:HealthChange
-          conditions:
-          - !type:TotalDamageCondition
-            min: 65
-          damage:
-            groups:
-              Burn: -0.4
-              Brute: -0.4
+      - !type:ResetNarcolepsy
+      - !type:SatiateHunger
+        factor: 0.75
+      - !type:SatiateThirst
+        factor: 0.75
+      - !type:HealthChange
+        conditions:
+        - !type:TotalDamageCondition
+          min: 65
+        damage:
+          groups:
+            Burn: -0.4
+            Brute: -0.4
 
 # Organic
 
@@ -131,7 +128,7 @@
   - !type:PlantAdjustHealth
     amount: -2.5
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -163,11 +160,11 @@
   color: "#8E4E00"
   recognizable: true
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.04 # Technically a narcotic, it takes a while for the body to process the toxins.
       effects:
       - !type:PopupMessage
@@ -221,7 +218,7 @@
   color: "#C8FFC8"
   physicalDesc: reagent-physical-desc-coarse
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate: 0.1
       effects:
       - !type:MovementSpeedModifier
@@ -303,7 +300,7 @@
   color: "#FFFFB4"
   physicalDesc: reagent-physical-desc-oily
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate: 0.1
       effects:
       - !type:MovementSpeedModifier
@@ -368,7 +365,7 @@
   color: "#FFFFE6"
   physicalDesc: reagent-physical-desc-powdery
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.1
       effects:
       - !type:PopupMessage
@@ -424,7 +421,7 @@
   color: "#64FF7D"
   physicalDesc: reagent-physical-desc-volatile
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate: 0.5
       effects:
       - !type:HealthChange

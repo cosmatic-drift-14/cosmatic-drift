@@ -108,9 +108,6 @@
   - type: Icon
     sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
     state: full
-  - type: Body
-    prototype: Foxfolk
-    requiredLegs: 2
   - type: Speech
     speechSounds: Foxfolk
     speechVerb: Foxfolk

@@ -108,8 +108,6 @@
   - type: Icon
     sprite: _CD/Mobs/Species/Rodentia/parts.rsi
     state: full
-  - type: Body
-    prototype: Rodentia
   - type: Speech
     speechVerb: Rodentia
     speechSounds: Squeak

@@ -4,7 +4,7 @@
 - type: marking
   id: UndergarmentBottomBoxers
   bodyPart: UndergarmentBottom
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null
@@ -16,7 +16,7 @@
 - type: marking
   id: UndergarmentBottomBriefs
   bodyPart: UndergarmentBottom
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null
@@ -28,7 +28,7 @@
 - type: marking
   id: UndergarmentBottomSatin
   bodyPart: UndergarmentBottom
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null
@@ -40,7 +40,7 @@
 - type: marking
   id: UndergarmentTopBra
   bodyPart: UndergarmentTop
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null
@@ -52,7 +52,7 @@
 - type: marking
   id: UndergarmentTopSportsbra
   bodyPart: UndergarmentTop
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null
@@ -64,7 +64,7 @@
 - type: marking
   id: UndergarmentTopBinder
   bodyPart: UndergarmentTop
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null
@@ -76,7 +76,7 @@
 - type: marking
   id: UndergarmentTopTanktop
   bodyPart: UndergarmentTop
-  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson, Foxfolk] # CD: Add Foxfolks.
+  groupWhitelist: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, Slime, Foxfolk] # CD: Add Foxfolks.
   coloring:
     default:
       type: null

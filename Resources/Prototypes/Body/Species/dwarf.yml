@@ -1,3 +1,8 @@
+- type: markingsGroup # CD: Added this markinggroup. I believe it needs to exist for exclusive markings
+  parent: Human
+  id: Dwarf
+  onlyGroupWhitelisted: true
+
 - type: entity
   parent: AppearanceHuman
   id: AppearanceDwarf

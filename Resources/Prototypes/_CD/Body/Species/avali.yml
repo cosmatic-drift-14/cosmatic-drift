@@ -78,7 +78,7 @@
       FootLeft: OrganAvaliFootLeft
       FootRight: OrganAvaliFootRight
       Brain: OrganHumanBrain
-      Eyes: OrganHumanEyes
+      Eyes: OrganAvaliEyes
       Tongue: OrganHumanTongue
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
@@ -106,9 +106,6 @@
   - type: Icon
     sprite: _CD/Mobs/Species/Avali/parts.rsi
     state: full
-  - type: Body
-    prototype: Avali
-    requiredLegs: 2
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -217,6 +214,10 @@
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganAvaliExternal ]
   id: OrganAvaliTorso
+
+- type: entity
+  parent: [ OrganAvaliVisual, OrganBaseEyes, OrganAvaliInternal ]
+  id: OrganAvaliEyes
 
 - type: entity
   parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganAvaliExternal ]

@@ -468,7 +468,6 @@
   - Glasses
   - Survival
   - Trinkets
-  - ZookeeperJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -506,7 +505,6 @@
   - Glasses
   - Survival
   - Trinkets
-  - BoxerJobTrinkets
   - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs

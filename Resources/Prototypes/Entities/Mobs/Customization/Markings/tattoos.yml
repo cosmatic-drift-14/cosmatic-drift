@@ -105,7 +105,7 @@
 - type: marking
   id: TattooEyeRight
   bodyPart: Eyes
-  groupWhitelist: [Human, SlimePerson, Reptilian, Dwarf, Rodentia, Foxfolk] # CD: Add foxfolk & more
+  groupWhitelist: [Human, Slime, Reptilian, Dwarf, Rodentia, Foxfolk] # CD: Add foxfolk & more
   coloring:
     default:
       type:
@@ -118,7 +118,7 @@
 - type: marking
   id: TattooEyeLeft
   bodyPart: Eyes
-  groupWhitelist: [Human, SlimePerson, Reptilian, Dwarf, Rodentia, Foxfolk] # CD: Add folkfolk & more
+  groupWhitelist: [Human, Slime, Reptilian, Dwarf, Rodentia, Foxfolk] # CD: Add folkfolk & more
   coloring:
     default:
       type:

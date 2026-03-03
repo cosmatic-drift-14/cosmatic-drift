@@ -241,15 +241,6 @@
   - GeneDuffel
 
 - type: loadoutGroup
-  id: ParamedicGloves
-  name: loadout-group-medical-gloves
-  minLimit: 0
-  loadouts:
-  - LatexGloves
-  - NitrileGloves
-  - GlovesETUGauntlet
-
-- type: loadoutGroup
   id: ParamedicMask
   name: loadout-group-medical-mask
   minLimit: 0

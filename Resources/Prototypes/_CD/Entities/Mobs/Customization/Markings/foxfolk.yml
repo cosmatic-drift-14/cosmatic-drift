@@ -731,7 +731,7 @@
 - type: marking
   id: FoxfolkTailAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: foxfolk_wag
@@ -741,7 +741,7 @@
 - type: marking
   id: FoxfolkTailTipAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: foxfolk_wag
@@ -751,7 +751,7 @@
 - type: marking
   id: FoxfolkTailFoxAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: fox_wag
@@ -761,7 +761,7 @@
 - type: marking
   id: FoxfolkTailFoxTipAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: fox_wag
@@ -771,7 +771,7 @@
 - type: marking
   id: FoxfolkTailBushyAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: bushfluff_wag
@@ -779,7 +779,7 @@
 - type: marking
   id: FoxfolkTailCoyoteAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: coyote_wag
@@ -787,7 +787,7 @@
 - type: marking
   id: FoxfolkTailCorgiAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: corgi_wag
@@ -795,7 +795,7 @@
 - type: marking
   id: FoxfolkTailDalmatianAnimated
   bodyPart: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
     - sprite: _CD/Mobs/Customization/Foxfolk/tail_markings.rsi
       state: dalmatian_wag

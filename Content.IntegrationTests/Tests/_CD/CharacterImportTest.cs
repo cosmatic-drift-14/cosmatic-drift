@@ -1,14 +1,14 @@
-using System.Diagnostics.Contracts;
-using System.IO;
-using Content.Client.Humanoid;
-using Content.Shared.Preferences;
-using Robust.Shared.GameObjects;
-
-namespace Content.IntegrationTests.Tests._CD;
-
-[TestFixture]
-public sealed class CharacterImportTest
-{
+// using System.Diagnostics.Contracts;
+// using System.IO;
+// using Content.Client.Humanoid;
+// using Content.Shared.Preferences;
+// using Robust.Shared.GameObjects;
+//
+// namespace Content.IntegrationTests.Tests._CD;
+//
+// [TestFixture]
+// public sealed class CharacterImportTest
+// {
     // Disabled because it seems to be flaky -aquif Jun 26 2025
     //[Test]
     //public static async Task RoundTrip()
@@ -176,4 +176,4 @@ public sealed class CharacterImportTest
     //     forkId: wizards
     //     ...
     //     """;
-}
+// }
