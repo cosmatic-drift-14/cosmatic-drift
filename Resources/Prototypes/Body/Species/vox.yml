@@ -10,16 +10,16 @@
       limit: 1
       onlyGroupWhitelisted: true
       required: false
-    enum.HumanoidVisualLayers.Head:
-      limit: 4
-      required: false
+    # enum.HumanoidVisualLayers.Head: #CD Disable several point limits.
+    #   limit: 4
+    #   required: false
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: true
       default: [ VoxBeak ]
-    enum.HumanoidVisualLayers.SnoutCover:
-      limit: 1
-      required: false
+    # enum.HumanoidVisualLayers.SnoutCover:
+    #   limit: 1
+    #   required: false
     enum.HumanoidVisualLayers.LArm:
       limit: 2
       required: false

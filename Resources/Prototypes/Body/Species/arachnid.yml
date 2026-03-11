@@ -13,25 +13,25 @@
       limit: 1
       required: true
       default: [ ArachnidAppendagesDefault ]
-    enum.HumanoidVisualLayers.Chest:
-      limit: 2
-      required: false
+    # enum.HumanoidVisualLayers.Chest: #CD Disable several point limits.
+    #   limit: 2
+    #   required: false
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
       required: true
       default: [ ArachnidCheliceraeDownwards ]
-    enum.HumanoidVisualLayers.LArm:
-      limit: 1
-      required: false
-    enum.HumanoidVisualLayers.RArm:
-      limit: 1
-      required: false
-    enum.HumanoidVisualLayers.LLeg:
-      limit: 1
-      required: false
-    enum.HumanoidVisualLayers.RLeg:
-      limit: 1
-      required: false
+    # enum.HumanoidVisualLayers.LArm:
+    #   limit: 1
+    #   required: false
+    # enum.HumanoidVisualLayers.RArm:
+    #   limit: 1
+    #   required: false
+    # enum.HumanoidVisualLayers.LLeg:
+    #   limit: 1
+    #   required: false
+    # enum.HumanoidVisualLayers.RLeg:
+    #   limit: 1
+    #   required: false
 
 - type: entity
   parent: BaseSpeciesAppearance
