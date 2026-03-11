@@ -13,11 +13,13 @@ loadout-group-passenger-id = Passenger ID
 # Cargo
 loadout-group-quartermaster-headset = Quartermaster headset
 loadout-group-salvage-specialist-jumpsuit = Salvage Specialist jumpsuit
+loadout-group-salva-specialist-head = Salvage Specialist head
 
 # Engineering
 loadout-group-chief-engineer-headset = Chief Engineer headset
 loadout-group-senior-engineer-jumpsuit = Senior Engineer jumpsuit
 loadout-group-engineering-goggles = Engineering Goggles
+loadout-group-atmospheric-technician-head = Atmospheric Technician head
 
 # Science
 loadout-group-research-director-headset = Research Director headset
@@ -34,6 +36,7 @@ loadout-group-chief-medical-officer-headset = Chief Medical Officer Headset
 loadout-group-senior-physician-head = Senior Physician head
 loadout-group-senior-physician-jumpsuit = Senior Physician jumpsuit
 loadout-group-senior-physician-outerclothing = Senior Physician outer clothing
+loadout-group-chemist-head = Chemist head
 
 # Wildcards
 loadout-group-prisoner-jumpsuit = Prisoner jumpsuit
