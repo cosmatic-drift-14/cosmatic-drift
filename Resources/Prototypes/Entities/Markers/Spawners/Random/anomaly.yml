@@ -22,7 +22,7 @@
     - AnomalyFlora
     - AnomalyShadow
     - AnomalyTech
-    #- AnomalySanta
+    #- AnomalySanta # CD: Please keep these disabled or rework them
     rareChance: 0.05 # CD Change: These should be suitably rare
     rarePrototypes:
     - RandomAnomalyInjectorSpawner

@@ -99,7 +99,7 @@ public sealed class PaintCanSystem : EntitySystem
         }
 
         if (_whitelistSystem.IsWhitelistPass(can.Comp.Blacklist, target)
-            || HasComp<HumanoidAppearanceComponent>(target)
+            || HasComp<HumanoidProfileComponent>(target)
             || HasComp<SubFloorHideComponent>(target)
             || HasComp<StackComponent>(target))
         {
@@ -144,7 +144,7 @@ public sealed class PaintCanSystem : EntitySystem
 
                         if (HasComp<CDPaintCanPaintedComponent>(slotEnt.Value) || _whitelistSystem.IsWhitelistPass(entity.Comp.Blacklist, slotEnt.Value)
                                                                      || HasComp<RandomSpriteComponent>(slotEnt.Value) ||
-                                                                     HasComp<HumanoidAppearanceComponent>(
+                                                                     HasComp<HumanoidProfileComponent>(
                                                                          slotEnt.Value))
                         {
                             continue;
@@ -175,7 +175,7 @@ public sealed class PaintCanSystem : EntitySystem
 
     private bool TryPaint(Entity<PaintCanComponent> reagent, EntityUid target)
     {
-        if (HasComp<HumanoidAppearanceComponent>(target) || HasComp<SubFloorHideComponent>(target))
+        if (HasComp<HumanoidProfileComponent>(target) || HasComp<SubFloorHideComponent>(target))
             return false;
 
         if (_solutionContainer.TryGetSolution(reagent.Owner, reagent.Comp.Solution, out _, out var solution))

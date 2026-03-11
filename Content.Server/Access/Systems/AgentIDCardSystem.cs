@@ -29,6 +29,7 @@ namespace Content.Server.Access.Systems
         [Dependency] private readonly ChameleonClothingSystem _chameleon = default!;
         [Dependency] private readonly ChameleonControllerSystem _chamController = default!;
         [Dependency] private readonly LockSystem _lock = default!;
+        [Dependency] private readonly SharedJobStatusSystem _jobStatus = default!;
 
         public override void Initialize()
         {
@@ -202,6 +203,8 @@ namespace Content.Server.Access.Systems
 
             if (TryFindJobProtoFromIcon(jobIcon, out var job))
                 _cardSystem.TryChangeJobDepartment(uid, job, idCard);
+
+            _jobStatus.UpdateStatus(Transform(uid).ParentUid);
         }
 
         private bool TryFindJobProtoFromIcon(JobIconPrototype jobIcon, [NotNullWhen(true)] out JobPrototype? job)
