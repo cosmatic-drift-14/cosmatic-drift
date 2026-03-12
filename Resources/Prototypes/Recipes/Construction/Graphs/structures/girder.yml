@@ -39,6 +39,8 @@
             - material: Steel
               amount: 2
               doAfter: 2
+            - tool: Welding # CD: Require welding for walls
+              doAfter: 2
 
         - to: reinforcedGirder
           completed:
@@ -60,8 +62,9 @@
           steps:
             - material: Uranium
               amount: 2
-            - tool: Welding
-              doAfter: 10
+              doAfter: 2
+            - tool: Welding # CD: Require welding for walls, shorten doafters
+              doAfter: 4
 
         - to: silverWall
           completed:
@@ -72,8 +75,9 @@
           steps:
             - material: Silver
               amount: 2
-            - tool: Welding
-              doAfter: 20
+              doAfter: 2 
+            - tool: Welding # CD: Require welding for walls, shorten doafters
+              doAfter: 4
 
         - to: plasticWall
           completed:
@@ -95,8 +99,9 @@
           steps:
             - material: Plasma
               amount: 2
-            - tool: Welding
-              doAfter: 20
+              doAfter: 2
+            - tool: Welding # CD: Require welding for walls, shorten doafters
+              doAfter: 4
 
         - to: goldWall
           completed:
@@ -107,8 +112,9 @@
           steps:
             - material: Gold
               amount: 2
-            - tool: Welding
-              doAfter: 20
+              doAfter: 2
+            - tool: Welding # CD: Require welding for walls, shorten doafters
+              doAfter: 4
 
         - to: bananiumWall
           completed:
@@ -121,7 +127,7 @@
               amount: 2
               doAfter: 2
             - tool: Welding
-              doAfter: 20
+              doAfter: 4 # CD: Require welding for walls, shorten doafters
 
         - to: meatWall
           completed:
@@ -265,6 +271,8 @@
             - material: Plasteel
               amount: 2
               doAfter: 1
+            - tool: Welding # CD: Require welding for walls, shorten doafters
+              doAfter: 2
 
         - to: shuttleWall
           completed:

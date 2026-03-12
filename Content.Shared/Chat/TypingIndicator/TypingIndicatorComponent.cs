@@ -8,7 +8,7 @@ namespace Content.Shared.Chat.TypingIndicator;
 ///     Added automatically when player poses entity.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedTypingIndicatorSystem))]
+// [Access(typeof(SharedTypingIndicatorSystem))] // CD: Allows other systems to access this, for SynthComponent
 public sealed partial class TypingIndicatorComponent : Component
 {
     /// <summary>

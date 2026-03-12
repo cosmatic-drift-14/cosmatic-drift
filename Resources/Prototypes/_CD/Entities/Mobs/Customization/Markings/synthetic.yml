@@ -1,8 +1,7 @@
 - type: marking
   id: SyntheticScreen
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [ Human ]
+  groupWhitelist: [ Human ]
   coloring:
     default:
       type:
@@ -15,8 +14,7 @@
 - type: marking
   id: SyntheticAntennaLeft
   bodyPart: Head
-  markingCategory: HeadSide
-  speciesRestriction: [ Human ]
+  groupWhitelist: [ Human ]
   coloring:
     default:
       type:
@@ -29,8 +27,7 @@
 - type: marking
   id: SyntheticAntennaRight
   bodyPart: Head
-  markingCategory: HeadSide
-  speciesRestriction: [ Human ]
+  groupWhitelist: [ Human ]
   coloring:
     default:
       type:
@@ -46,8 +43,7 @@
 - type: marking
   id: LizardTailSynth
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/tails.rsi
     state: tail_synthliz
@@ -55,8 +51,7 @@
 - type: marking
   id: LizardTailSynthAnimated
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/tails.rsi
     state: tail_synthliz_wagging
@@ -66,8 +61,7 @@
 - type: marking
   id: LizardSnoutSynth
   bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/snouts.rsi
     state: synthsnout_eyes
@@ -85,8 +79,7 @@
 - type: marking
   id: LizardSnoutSynthAlt
   bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/altsnouts.rsi
     state: alt_synthsnout_eyes
@@ -104,8 +97,7 @@
 - type: marking
   id: SyntheticHornCurl
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_curl
@@ -113,8 +105,7 @@
 - type: marking
   id: SyntheticHornShort
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_short
@@ -122,8 +113,7 @@
 - type: marking
   id: SyntheticHornSlash
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_slash
@@ -131,8 +121,7 @@
 - type: marking
   id: SyntheticHornSharp
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_sharp
@@ -140,8 +129,7 @@
 - type: marking
   id: SyntheticHornTwin
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_twin
@@ -149,8 +137,7 @@
 - type: marking
   id: SyntheticHornThick
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_thick
@@ -160,8 +147,7 @@
 - type: marking
   id: SyntheticHornSharpLight
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_sharp
@@ -171,8 +157,7 @@
 - type: marking
   id: SyntheticHornTwinLight
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_twin
@@ -182,8 +167,7 @@
 - type: marking
   id: SyntheticHornThickLight
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/antennas.rsi
     state: horn_antenna_thick
@@ -195,8 +179,7 @@
 - type: marking
   id: SyntheticBodyScute
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/body_markings.rsi
     state: body_scute
@@ -204,8 +187,7 @@
 - type: marking
   id: SyntheticBodyPlate
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/body_markings.rsi
     state: body_plate
@@ -215,8 +197,7 @@
 - type: marking
   id: SyntheticBodyPecs
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/body_markings.rsi
     state: body_pecs_primary
@@ -226,8 +207,7 @@
 - type: marking
   id: SyntheticBodyLights
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Reptilian ]
+  groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _CD/Mobs/Customization/Synthliz/body_markings.rsi
     state: body_lights_primary

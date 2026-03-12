@@ -3,8 +3,7 @@
 - type: marking
   id: FelinidEarsCurled
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: curled_outer
@@ -14,8 +13,7 @@
 - type: marking
   id: FelinidEarsDroopy
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: droopy_outer
@@ -25,8 +23,7 @@
 - type: marking
   id: FelinidEarsFuzzy
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: Mobs/Customization/cat_parts.rsi
     state: ears_cat_outer
@@ -36,8 +33,7 @@
 - type: marking
   id: FelinidEarsStubby
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: stubby_outer
@@ -47,8 +43,7 @@
 - type: marking
   id: FelinidEarsTall
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: tall_outer
@@ -60,8 +55,7 @@
 - type: marking
   id: FelinidEarsTorn
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: torn_outer
@@ -71,8 +65,7 @@
 - type: marking
   id: FelinidEarsWide
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: wide_outer
@@ -84,8 +77,7 @@
 - type: marking
   id: FelinidTailBasic
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: basic_tail_tip
@@ -97,8 +89,7 @@
 - type: marking
   id: FelinidTailBasicWithBow
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: basic_tail_tip
@@ -112,8 +103,7 @@
 - type: marking
   id: FelinidTailBasicWithBell
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: basic_tail_tip
@@ -127,8 +117,7 @@
 - type: marking
   id: FelinidTailBasicWithBowAndBell
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
   - sprite: _CD/Mobs/Customization/cat_parts.rsi
     state: basic_tail_tip
@@ -144,8 +133,7 @@
 - type: marking
   id: FelinidTiger
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
     - sprite: _CD/Mobs/Customization/cat_parts.rsi
       state: m_tail_tiger_primary
@@ -157,8 +145,7 @@
 - type: marking
   id: FelinidLeopard
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
     - sprite: _CD/Mobs/Customization/cat_parts.rsi
       state: m_tail_leopard_primary
@@ -168,8 +155,7 @@
 - type: marking
   id: FelinidCatBig
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sprites:
     - sprite: _CD/Mobs/Customization/cat_parts.rsi
       state: m_tail_catbig_primary

@@ -8,8 +8,7 @@
   rules:
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    # - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
 # CD: Disabled
@@ -65,12 +64,11 @@
 #     - Wizard
 #     - Xenoborgs
 #     - BasicStationEventScheduler
-#     # - KesslerSyndromeScheduler CD: Disabled
+#     - KesslerSyndromeScheduler
 #     - MeteorSwarmMildScheduler
 #     - MeteorSwarmScheduler
 #     - RampingStationEventScheduler
 #     - SpaceTrafficControlEventScheduler
-#     - SpaceTrafficControlFriendlyEventScheduler
 #     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -84,7 +82,7 @@
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -96,7 +94,6 @@
   showInVote: false #4boring4vote
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 # - type: gamePreset
@@ -152,7 +149,7 @@
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -163,7 +160,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false #CD change to false.
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
@@ -181,7 +178,7 @@
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -199,7 +196,7 @@
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -215,7 +212,7 @@
   - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 # - type: gamePreset
@@ -249,7 +246,7 @@
   - Zombie
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 # - type: gamePreset

@@ -140,12 +140,21 @@
   parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
   id: ClothingOuterCoatYellowHiVis
   name: emergency jacket
-  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon yellow.
+  description: A somewhat heavy jacket made of a thick fabric. This one is safety-yellow.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/yellow_bomber.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatYellowHiVis]
@@ -156,12 +165,21 @@
   parent: ClothingOuterCoatYellowHiVis
   id: ClothingOuterCoatOrangeHiVis
   name: hazard jacket
-  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon orange.
+  description: A somewhat heavy jacket made of a thick fabric. This one is safety-orange.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/orange_bomber.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatOrangeHiVis]
@@ -172,12 +190,21 @@
   parent: ClothingOuterCoatYellowHiVis
   id: ClothingOuterCoatBlueHiVis
   name: EMT jacket
-  description: A somewhat heavy jacket made of fluorescent fabric. This one is neon blue.
+  description: A somewhat heavy jacket made of a thick fabric. This one is medical-blue.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Highvis/blue_bomber.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatBlueHiVis]

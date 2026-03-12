@@ -5,6 +5,10 @@
   category: Quirks
   components:
     - type: Synth
+      bloodReferenceSolution:
+        reagents:
+        - ReagentId: SynthBlood
+          Quantity: 300
 
 - type: trait
   id: ScaleItem

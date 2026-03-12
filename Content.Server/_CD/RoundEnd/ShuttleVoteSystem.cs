@@ -70,7 +70,7 @@ public sealed class ShuttleVoteSystem : EntitySystem
                     console.CanShuttle = false;
                 }
 
-                _roundEndSystem.RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                _roundEndSystem.RequestRoundEnd(null, null, false, "round-end-system-shuttle-auto-called-announcement");
             }
             else
             {

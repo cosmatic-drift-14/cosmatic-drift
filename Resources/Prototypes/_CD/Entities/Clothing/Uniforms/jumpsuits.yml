@@ -593,3 +593,65 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/centcomm_turtle.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/centcomm_turtle.rsi
+
+# Hi-Viz pants
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitYellowHiviz
+  name: emergency pants
+  description: A bulky set of pants made of a thick fabric. This one is safety-yellow.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Highviz/yellow_pants.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Highviz/yellow_pants.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitOrangeHiviz
+  name: hazard pants
+  description: A bulky set of pants made of a thick fabric. This one is safety-orange.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Highviz/orange_pants.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Highviz/orange_pants.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueHiviz
+  name: EMT pants
+  description: A bulky set of pants made of a thick fabric. This one is medical-blue.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Highviz/blue_pants.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Highviz/blue_pants.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded

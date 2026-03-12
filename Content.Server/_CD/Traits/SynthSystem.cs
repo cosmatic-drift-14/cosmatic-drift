@@ -18,12 +18,11 @@ public sealed class SynthSystem : EntitySystem
     {
         if (TryComp<TypingIndicatorComponent>(uid, out var indicator))
         {
-            // TODO: cdrebase
-            //indicator.TypingIndicatorPrototype = "robot";
+            indicator.TypingIndicatorPrototype = "robot";
             Dirty(uid, indicator);
         }
 
         // Give them synth blood. Ion storm notif is handled in that system
-        _bloodstream.ChangeBloodReagent(uid, "SynthBlood");
+        _bloodstream.ChangeBloodReagents(uid, component.BloodReferenceSolution);
     }
 }

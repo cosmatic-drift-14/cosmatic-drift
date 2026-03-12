@@ -1,8 +1,7 @@
 - type: marking
   id: TattooGlowingEyeRight
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Human, Reptilian, Dwarf, Rodentia, Foxfolk]
+  groupWhitelist: [Human, Reptilian, Dwarf, Rodentia, Foxfolk]
   coloring:
     default:
       type:
@@ -15,8 +14,7 @@
 - type: marking
   id: TattooGlowingEyeLeft
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Human, Reptilian, Dwarf, Rodentia, Foxfolk]
+  groupWhitelist: [Human, Reptilian, Dwarf, Rodentia, Foxfolk]
   coloring:
     default:
       type:
@@ -29,8 +27,7 @@
 - type: marking
   id: TattooGlowingEyeMothRight
   bodyPart: Eyes
-  markingCategory: Overlay
-  speciesRestriction: [Moth]
+  groupWhitelist: [Moth]
   coloring:
     default:
       type:
@@ -43,8 +40,7 @@
 - type: marking
   id: TattooGlowingEyeMothLeft
   bodyPart: Eyes
-  markingCategory: Overlay
-  speciesRestriction: [Moth]
+  groupWhitelist: [Moth]
   coloring:
     default:
       type:
@@ -57,8 +53,7 @@
 - type: marking
   id: TattooGlowingEyeVulpkaninRight
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Vulpkanin]
+  groupWhitelist: [Vulpkanin]
   coloring:
     default:
       type:
@@ -71,8 +66,7 @@
 - type: marking
   id: TattooGlowingEyeVulpkaninLeft
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Vulpkanin]
+  groupWhitelist: [Vulpkanin]
   coloring:
     default:
       type:
@@ -85,8 +79,7 @@
 - type: marking
   id: TattooGlowingEyeAvaliRight
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Avali]
+  groupWhitelist: [Avali]
   coloring:
     default:
       type:
@@ -99,8 +92,7 @@
 - type: marking
   id: TattooGlowingEyeAvaliLeft
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Avali]
+  groupWhitelist: [Avali]
   coloring:
     default:
       type:
@@ -113,8 +105,7 @@
 - type: marking
   id: TattooGlowingEyesDiona
   bodyPart: Eyes
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -127,8 +118,7 @@
 - type: marking
   id: TattooGlowingEyesArachnid
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Arachnid]
+  groupWhitelist: [Arachnid]
   coloring:
     default:
       type:

@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using YamlDotNet.RepresentationModel;
 using Content.Server.Administration.Systems;
 using Content.Server.GameTicking;
+using Content.Server.Maps;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Server.Spawners.Components;
@@ -35,15 +36,15 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
-            "CDCentComm",
-            "Dart"
+            "Dart",
+			"CDCentComm" // CD Map
         };
 
         private static readonly string[] Grids =
         {
             "/Maps/centcomm.yml",
-            "/Maps/_CD/centcomm.yml", // CD
-            AdminTestArenaSystem.ArenaMapPath
+            AdminTestArenaSystem.ArenaMapPath,
+            "/Maps/_CD/centcomm.yml" // CD Map.
         };
 
         /// <summary>
@@ -75,9 +76,9 @@ namespace Content.IntegrationTests.Tests
         {
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/AdminSpawn/**", // admin gaming
-            "/Maps/Misc/terminal.yml", // CD terminal
-            "/Maps/_CD/centcomm.yml", // CD
-            "/Maps/_CD/gemini.yml", // CD, somebody should probably look into this
+            "/Maps/Misc/terminal.yml", // CD Arrivals.
+            "/Maps/_CD/gemini.yml", // CD Map, someone should probably look into this
+            "/Maps/_CD/centcomm.yml" // CD Map.
         };
 
         /// <summary>
@@ -108,6 +109,7 @@ namespace Content.IntegrationTests.Tests
             "Exo",
             "Snowball",
             "Ferrous", // CD Map
+            "Cocoon", //CD Map
             "Aspid", // CD Map
             "Gemini", // CD Map
             "Omega", // CD Map

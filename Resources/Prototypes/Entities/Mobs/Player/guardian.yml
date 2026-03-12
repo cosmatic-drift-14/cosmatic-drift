@@ -112,6 +112,8 @@
       tags:
         - CannotSuicide
         - NoPaint # CD
+        - StunImmune
+        - SlowImmune
 
 # From the uplink injector
 - type: entity
@@ -223,8 +225,6 @@
           map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
           color: "#8adaff"
           shader: unshaded
-    - type: Body
-      prototype: Primate
     - type: Tag
       tags:
         - CannotSuicide
@@ -233,16 +233,11 @@
     - type: Inventory
       templateId: holoclown
     - type: Hands
+      activeHandId: Hand
+      hands:
+        Hand:
+          location: Left
     - type: ComplexInteraction
-    - type: Clumsy
-      gunShootFailDamage:
-        types:
-          Blunt: 5
-          Piercing: 4
-          Heat: 3
-      catchingFailDamage:
-        types:
-          Blunt: 1
     - type: MeleeWeapon
       angle: 30
       animation: WeaponArcFist
@@ -257,9 +252,6 @@
     - type: RandomMetadata
       nameSegments:
       - NamesClown
-    - type: NpcFactionMember
-      factions:
-        - Syndicate
     - type: HTN
       rootTask:
         task: SimpleHumanoidHostileCompound

@@ -34,7 +34,6 @@
   equipment:
     id: CMOPDA
     # ears: ClothingHeadsetCMO #CD: Loadouts
-    belt: ClothingBeltMedicalFilled
   storage:
     back:
     - Flash

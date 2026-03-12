@@ -20,7 +20,7 @@ public sealed class ScaleItemSystem : EntitySystem
     private void OnComponentInit(EntityUid uid, ScaleItemComponent comp, ComponentInit args)
     {
         // Ensure they have a humanoidappearancecomponent, and thus, a scale
-        if (!TryComp<HumanoidAppearanceComponent>(uid, out var humanoid))
+        if (!TryComp<HumanoidProfileComponent>(uid, out var humanoid))
             return;
 
         // Then check if the minscale / maxscale exist and have values
