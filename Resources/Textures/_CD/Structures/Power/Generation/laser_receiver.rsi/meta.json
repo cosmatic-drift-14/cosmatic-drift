@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/eb197ceb4aacad9f4dc99ed3d506c9b7afeb3484 with minor edits done by Nairod (Github) for CD14.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+	{
+	"name": "receiver_on",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+		  0.3,
+		  0.3
+        ]
+      ]
+    },
+    {
+      "name": "receiver_off"
+    }
+  ]
+}
