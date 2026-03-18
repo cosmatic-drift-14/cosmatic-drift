@@ -15,4 +15,5 @@ JobSeniorResearcher = Senior Researcher
 
 # Titles
 cd-job-title-roboticist = Roboticist
+cd-job-title-courier = Courier
 cd-job-title-offduty = Off-Duty Staff

@@ -37,3 +37,9 @@
   id: SteelWorkboots
   equipment:
     shoes: ClothingShoesBootsSteel
+
+# ID
+- type: loadout
+  id: CourierPDA
+  equipment: 
+    id: CourierPDA
