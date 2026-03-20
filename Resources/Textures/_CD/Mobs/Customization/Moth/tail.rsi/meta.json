@@ -213,6 +213,10 @@
         {
             "name": "membral_secondary",
             "directions": 4
+        },
+        {
+            "name": "mothabdomen",
+            "directions": 4
         }
     ]
 }
