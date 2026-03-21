@@ -838,4 +838,12 @@
   - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
     state: pyr_stripes_front
 
+- type: marking
+  id: MothAbdomen
+  bodyPart: Tail
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/tail.rsi
+    state: mothabdomen
+
 # RArmExtension

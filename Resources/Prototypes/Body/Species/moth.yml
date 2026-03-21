@@ -10,7 +10,7 @@
       limit: 0
       required: false
     enum.HumanoidVisualLayers.Tail:
-      limit: 1
+      limit: 2 # CD: To facilitate abdomen
       required: true
       default: [ MothWingsDefault ]
     # enum.HumanoidVisualLayers.Chest: #CD Disable several point limits.
