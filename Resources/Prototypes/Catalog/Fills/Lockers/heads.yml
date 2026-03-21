@@ -61,6 +61,7 @@
     #CD Addions
     - id: BookSOPGeneral
     - id: BookSOPCommand
+    - id: BookSpaceLaw
 
 # No laser table + Laser table
 - type: entityTable

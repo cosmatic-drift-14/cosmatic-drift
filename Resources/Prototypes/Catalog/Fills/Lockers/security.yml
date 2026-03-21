@@ -186,6 +186,8 @@
     - id: BoxTapeRecorder
     - id: BookSOPSecurity
       prob: 0.2
+    - id: BookSpaceLaw
+      prob: 0.2
 
 - type: entity
   id: ClosetBombFilled

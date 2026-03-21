@@ -329,7 +329,6 @@
     - Chemicals
     - Chemist
 
-# CD: Link to our space law
 - type: entity
   id: BookAILawCompendium
   parent: BaseGuidebook
@@ -352,19 +351,19 @@
 - type: entity
   id: BookSpaceLaw
   parent: BaseGuidebook
-  name: laws and regulations # CD: Name Change
-  description: A set of Nanotrasen guidelines for keeping law and order on their space stations.
+  name: NT Law # CD: Name Change
+  description: A set of Nanotrasen guidelines for keeping law and order on their facilities. #CD description change
   components:
   - type: Sprite
     layers:
     - state: paper
     - state: cover_strong
-      color: "#87011c"
+      color: "#005aa0" #CD color change
     - state: icon_law
       color: "#f7d61a"
   - type: GuideHelp
     guides:
-    - SpaceLaw
+    - CDLaw #CD link change
 
 - type: entity
   parent: BookBase
