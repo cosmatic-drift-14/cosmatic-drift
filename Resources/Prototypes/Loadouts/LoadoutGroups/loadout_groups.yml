@@ -789,6 +789,7 @@
   name: loadout-group-cargo-technician-id
   loadouts:
   - CargoTechnicianPDA
+  - CourierPDA #CD
   # - SeniorCourierPDA CD disabled
 
 #- type: loadoutGroup
