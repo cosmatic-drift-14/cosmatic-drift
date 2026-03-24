@@ -4,7 +4,7 @@
   text: "/ServerInfo/Guidebook/_CD/ic-policy.xml"
   children:
   - CDSop
-  - SpaceLaw
+  - CDLaw
 
 - type: guideEntry
   id: CDSop
@@ -60,3 +60,15 @@
   name: guide-entry-rules-sop-restricted
   priority: 99
   text: "/ServerInfo/Guidebook/_CD/sop/restricted.xml"
+
+- type: guideEntry
+  id: CDLaw
+  name: guide-entry-rules-law
+  text: "/ServerInfo/Guidebook/_CD/Law/law.xml"
+  children:
+  - CDCrimes
+
+- type: guideEntry
+  id: CDCrimes
+  name: guide-entry-rules-crimes
+  text: "/ServerInfo/Guidebook/_CD/Law/crimes.xml"
