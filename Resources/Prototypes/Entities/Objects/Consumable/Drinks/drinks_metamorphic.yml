@@ -22,6 +22,10 @@
       sprite: Objects/Consumable/Drinks/glass_clear.rsi
       state: icon
   - type: TransformableContainer
+  - type: Toppable
+    solution: drink
+    insertionSound: !type:SoundPathSpecifier
+      path: /Audio/Effects/waterswirl.ogg
 
 - type: entity
   parent: DrinkGlass

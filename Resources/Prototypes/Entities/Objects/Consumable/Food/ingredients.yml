@@ -435,6 +435,8 @@
   - type: Tag
     tags:
     - Slice
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   parent: FoodBakingBase
@@ -474,6 +476,8 @@
   - type: Tag
     tags:
     - Slice
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   parent: FoodBakingBase
@@ -556,6 +560,8 @@
           Quantity: 1.5
         - ReagentId: Fiber
           Quantity: 3.5
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   parent: FoodBakingBase
@@ -746,6 +752,8 @@
   - type: Tag
     tags:
     - Slice
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   name: stick of cannabis butter
@@ -818,6 +826,8 @@
       - state: cheesewedge-inhand-left
       right:
       - state: cheesewedge-inhand-right
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   parent: FoodBakingBase
@@ -874,6 +884,8 @@
   - type: Tag
     tags:
     - Slice
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   parent: FoodBakingBase
@@ -926,6 +938,8 @@
   - type: Tag
     tags:
     - Slice
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   name: burned mess
@@ -979,6 +993,8 @@
       reagents:
       - ReagentId: CocoaPowder
         Quantity: 2
+  - type: Topping # CD Addition
+    solution: food
 
 - type: entity
   parent: FoodBakingBase
