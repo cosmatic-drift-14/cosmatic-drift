@@ -4,6 +4,11 @@
     jumpsuit: ClothingUniformJumpsuitCargoPants
 
 - type: loadout
+  id: CargoSlacks
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSlacksCargo
+
+- type: loadout
   id: CargoTechnicianJumpsuitLight
   equipment:
     jumpsuit: ClothingUniformJumpsuitCargoLight

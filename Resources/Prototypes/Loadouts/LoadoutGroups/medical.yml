@@ -53,6 +53,7 @@
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
   - ChiefMedicalOfficerFormalsuit # CD
+  - MedicalSlacks # CD
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -117,6 +118,7 @@
   - ViroJumpskirt # CD
   - GeneJumpsuit # CD
   - GeneJumpskirt # CD
+  - MedicalSlacks # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -171,6 +173,7 @@
   - ChemistJumpsuit
   - ChemistJumpskirt
   - ChemistCasualsuit # CD
+  - MedicalSlacks # CD
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -217,6 +220,7 @@
   - ParamedicCasualsuit # CD
   - ParamedicCasualskirt # CD
   - BlueHighvisPants # CD
+  - MedicalSlacks # CD
   # CD: ETU Loadout
   - JumpsuitETUFlightsuit
 
