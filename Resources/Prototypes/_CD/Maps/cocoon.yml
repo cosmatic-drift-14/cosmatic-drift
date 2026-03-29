@@ -1,6 +1,6 @@
 - type: gameMap
   id: Cocoon
-  mapName: 'Cocoon Xeno'
+  mapName: 'Cocoon'
   mapPath: /Maps/_CD/cocoon.yml
   minPlayers: 15 #CD change
   maxPlayers: 35 #CD change
