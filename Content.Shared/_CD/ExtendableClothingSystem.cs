@@ -3,7 +3,9 @@ using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Inventory.VirtualItem;
+using Robust.Shared.GameStates;
 using Robust.Shared.Containers;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -23,11 +25,20 @@ public sealed class ExtendableClothingSystem : EntitySystem
         SubscribeLocalEvent<ExtendedEquipmentComponent, BeingUnequippedAttemptEvent>(OnSubequipmentAttemptUnequip);
 
         SubscribeLocalEvent<ExtendableClothingComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<ExtendableClothingComponent, EntityTerminatingEvent>(OnTerminating);
         SubscribeLocalEvent<ExtendableClothingComponent, BeingEquippedAttemptEvent>(OnAttemptEquip, after: new[] {typeof(SharedVirtualItemSystem)});
         SubscribeLocalEvent<ExtendableClothingComponent, GotEquippedEvent>(OnEquipped);
         SubscribeLocalEvent<ExtendableClothingComponent, GotUnequippedEvent>(OnUnequipped);
 
         SubscribeLocalEvent<ExtendableClothingComponent, ExaminedEvent>(OnExamined);
+    }
+
+    private void OnTerminating(Entity<ExtendableClothingComponent> ent, ref EntityTerminatingEvent args)
+    {
+        foreach (var equipped in ent.Comp.CurrentlyEquipped)
+        {
+            PredictedQueueDel(equipped);
+        }
     }
 
     private void OnExamined(Entity<ExtendableClothingComponent> ent, ref ExaminedEvent args)
@@ -92,11 +103,15 @@ public sealed class ExtendableClothingSystem : EntitySystem
     /// </summary
     private void OnUnequipped(Entity<ExtendableClothingComponent> ent, ref GotUnequippedEvent args)
     {
-        if (!_container.TryGetContainer(ent, ExtendableClothingComponent.EquipmentContainerId, out var container))
+        if (TerminatingOrDeleted(ent) ||
+            !_container.TryGetContainer(ent, ExtendableClothingComponent.EquipmentContainerId, out var container))
             return;
 
         foreach (var entityUid in ent.Comp.CurrentlyEquipped.ToList())
         {
+            if (!_container.CanInsert(entityUid, container))
+                continue;
+
             _container.Insert(entityUid, container, force: true);
             ent.Comp.CurrentlyEquipped.Remove(entityUid);
         }

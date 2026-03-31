@@ -1138,6 +1138,8 @@ namespace Content.Client.Lobby.UI
             _loadoutWindow.OnLoadoutPressed += (loadoutGroup, loadoutProto) =>
             {
                 roleLoadout.AddLoadout(loadoutGroup, loadoutProto, _prototypeManager);
+                roleLoadout.MultiSlotValidation(loadoutGroup, loadoutProto, _prototypeManager); // cd
+                roleLoadout.CheckLinkedSLots(loadoutGroup, loadoutProto, _prototypeManager); // cd
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
                 ReloadPreview();

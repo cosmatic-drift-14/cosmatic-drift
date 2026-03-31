@@ -162,7 +162,10 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             {
                 foreach (var protoId in groupProto.Loadouts)
                 {
-                    if (loadouts.Count >= groupProto.MinLimit)
+                    // CD edits
+                    var multiGroupCount = LinkedGroups.Values
+                        .Count(t => t.Item1 == groupProto);
+                    if (loadouts.Count + multiGroupCount >= groupProto.MinLimit)
                         break;
 
                     if (!protoManager.TryIndex(protoId, out var loadoutProto))
