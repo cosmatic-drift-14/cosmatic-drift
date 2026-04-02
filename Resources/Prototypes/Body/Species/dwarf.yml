@@ -67,6 +67,8 @@
       Male: UnisexDwarf
       Female: FemaleDwarf
       Unsexed: UnisexDwarf
+  - type: ReplacementAccent
+    accent: scottish
   - type: Speech
     speechSounds: Bass
 
