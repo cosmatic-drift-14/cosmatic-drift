@@ -107,7 +107,8 @@ namespace Content.IntegrationTests.Tests
             "Relic",
             "dm01-entryway",
             "Exo",
-            "Snowball",
+	          "Snowball",
+            "Serpentcrest",
             "Ferrous", // CD Map
             "Cocoon", //CD Map
             "Aspid", // CD Map
