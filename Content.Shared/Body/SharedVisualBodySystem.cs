@@ -9,6 +9,9 @@ using Content.Shared.Sprite; // CD
 
 namespace Content.Shared.Body;
 
+/// <summary>
+/// Class responsible for managing the appearance of an entity with <see cref="VisualBodyComponent" /> via its organs with <see cref="VisualOrganComponent" />
+/// </summary>
 public abstract partial class SharedVisualBodySystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
@@ -86,20 +89,6 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
     {
         ent.Comp.Markings = markings;
         Dirty(ent);
-    }
-
-    public void CopyAppearanceFrom(Entity<BodyComponent?> source, Entity<BodyComponent?> target)
-    {
-        if (!Resolve(source, ref source.Comp) || !Resolve(target, ref target.Comp))
-            return;
-
-        var sourceOrgans = _container.EnsureContainer<Container>(source, BodyComponent.ContainerID);
-
-        foreach (var sourceOrgan in sourceOrgans.ContainedEntities)
-        {
-            var evt = new OrganCopyAppearanceEvent(sourceOrgan);
-            RaiseLocalEvent(target, ref evt);
-        }
     }
 
     private void OnVisualOrganCopyAppearance(Entity<VisualOrganComponent> ent, ref BodyRelayedEvent<OrganCopyAppearanceEvent> args)
