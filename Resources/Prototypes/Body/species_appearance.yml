@@ -43,10 +43,10 @@
     - map: [ "back" ]
 #    - map: [ "neck" ] – Moved by CD. Wings fix
 
-    # Moved by CD. Stuff that goes in front of equipment exept neck equipment
+    # Moved by CD. Stuff that goes in front of equipment except neck equipment
     - map: [ "enum.HumanoidVisualLayers.Tail" ] # CD
 
-    # Moved by CD. Neck equipment (scafs, mantles, cloaks)
+    # Moved by CD. Neck equipment (scarfs, mantles, cloaks)
     - map: [ "neck" ] # CD
 
     # Stuff that goes in front of equipment
