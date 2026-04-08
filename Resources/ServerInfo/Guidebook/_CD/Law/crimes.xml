@@ -1,0 +1,446 @@
+
+<Document>
+  # Crime Reference Tables
+
+  [color=lightblue][bold]OOC[/bold]: It is strongly recommended to increase the size of your guidebook window when viewing this page.[/color]
+
+  ## Quick Reference Table
+
+  <Table Columns="6">
+    <ColorBox Color="#5b0f00"><Box>Code</Box></ColorBox>
+    <ColorBox Color="#5b0f00"><Box>XX-I</Box></ColorBox>
+    <ColorBox Color="#5b0f00"><Box>XX-II</Box></ColorBox>
+    <ColorBox Color="#5b0f00"><Box>XX-III</Box></ColorBox>
+    <ColorBox Color="#5b0f00"><Box>XX-IV</Box></ColorBox>
+    <ColorBox Color="#5b0f00"><Box>XX-V</Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>01-X</Box></ColorBox>
+    <ColorBox><Box>Endangerment</Box></ColorBox>
+    <ColorBox><Box>Mass Endangerment</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>02-X</Box></ColorBox>
+    <ColorBox><Box>Assault</Box></ColorBox>
+    <ColorBox><Box>Battery</Box></ColorBox>
+    <ColorBox><Box>Maiming</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>03-X</Box></ColorBox>
+    <ColorBox><Box>Manslaughter</Box></ColorBox>
+    <ColorBox><Box>Suicide</Box></ColorBox>
+    <ColorBox><Box>Murder</Box></ColorBox>
+    <ColorBox><Box>Mass Murder</Box></ColorBox>
+    <ColorBox><Box>Prevention of Revival</Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>04-X</Box></ColorBox>
+    <ColorBox><Box>Harassment</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>05-X</Box></ColorBox>
+    <ColorBox><Box>Disorderly Conduct</Box></ColorBox>
+    <ColorBox><Box>Mass Disturbance</Box></ColorBox>
+    <ColorBox><Box>Rioting</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>06-X</Box></ColorBox>
+    <ColorBox><Box>Obstruction</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>07-X</Box></ColorBox>
+    <ColorBox><Box>Vandalism</Box></ColorBox>
+    <ColorBox><Box>Tampering</Box></ColorBox>
+    <ColorBox><Box>Destruction of Property</Box></ColorBox>
+    <ColorBox><Box>Mass Destruction</Box></ColorBox>
+    <ColorBox><Box>Facility Destruction</Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>08-X</Box></ColorBox>
+    <ColorBox><Box>Theft</Box></ColorBox>
+    <ColorBox><Box>Grand Theft</Box></ColorBox>
+    <ColorBox><Box>Vessel Hijack</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>09-X</Box></ColorBox>
+    <ColorBox><Box>Neglect of Duty</Box></ColorBox>
+    <ColorBox><Box>Breach of Procedure</Box></ColorBox>
+    <ColorBox><Box>Abuse of Authority</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>10-X</Box></ColorBox>
+    <ColorBox><Box>Possession: Substances</Box></ColorBox>
+    <ColorBox><Box>Possession: Restricted</Box></ColorBox>
+    <ColorBox><Box>Possession: Contraband</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>11-X</Box></ColorBox>
+    <ColorBox><Box>Distribution: Substances</Box></ColorBox>
+    <ColorBox><Box>Distribution: Restricted</Box></ColorBox>
+    <ColorBox><Box>Distribution: Contraband</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>12-X</Box></ColorBox>
+    <ColorBox><Box>Failure to Comply</Box></ColorBox>
+    <ColorBox><Box>Resisting Arrest</Box></ColorBox>
+    <ColorBox><Box>Breach of Custody</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>13-X</Box></ColorBox>
+    <ColorBox><Box>Trespass</Box></ColorBox>
+    <ColorBox><Box>Secure trespass</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>14-X</Box></ColorBox>
+    <ColorBox><Box>Coercion</Box></ColorBox>
+    <ColorBox><Box>Unlawful Control</Box></ColorBox>
+    <ColorBox><Box>Hostage Taking</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>15-X</Box></ColorBox>
+    <ColorBox><Box>Animal Abuse</Box></ColorBox>
+    <ColorBox><Box>Animal Slaughter</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+	
+    <ColorBox Color="#5b0f00"><Box>16-X</Box></ColorBox>
+    <ColorBox><Box>Bribery</Box></ColorBox>
+    <ColorBox><Box>Fraud</Box></ColorBox>
+    <ColorBox><Box>Forgery</Box></ColorBox>
+    <ColorBox><Box>Impersonation</Box></ColorBox>
+    <ColorBox><Box></Box></ColorBox>
+  </Table>
+  \n
+  
+  ## Extended Reference Table
+
+  <Table Columns="4">
+    <ColorBox Color="#660000"><Box>Crime</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Description</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Max Sentencing (H:MM)</Box></ColorBox>
+    <ColorBox Color="#660000"><Box>Notes</Box></ColorBox>
+		
+    <ColorBox><Box>Endangerment</Box></ColorBox>
+    <ColorBox><Box>To recklessly put yourself or others in danger, either through direct action, or unreasonable failure to act.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Covers things such as self experimentation, failure to act as a security officer, and operating small scale machines without the proper knowledge.</Box></ColorBox>
+		
+    <ColorBox><Box>Mass Endangerment</Box></ColorBox>
+    <ColorBox><Box>To recklessly put yourself and/or several others in danger, either through direct action or unreasonable failure to act.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:18</Box></ColorBox>
+    <ColorBox><Box>Similar to Endangerment but for larger scale things like operating station infrastructure without proper knowledge.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+		
+    <ColorBox><Box>Assault</Box></ColorBox>
+    <ColorBox><Box>To threaten another person with physical harm or death.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Can be extended even to personal spats and sometimes jokes if the receiving party was seriously frightened for their life.</Box></ColorBox>
+		
+    <ColorBox><Box>Battery</Box></ColorBox>
+    <ColorBox><Box>To physically harm another person without the intent to kill.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:14</Box></ColorBox>
+    <ColorBox><Box>Intent is the difference between battery and attempted murder.</Box></ColorBox>
+		
+    <ColorBox><Box>Maiming</Box></ColorBox>
+    <ColorBox><Box>To physically harm someone to the extent of causing extended damage to their being or impairment to their function.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:24</Box></ColorBox>
+    <ColorBox><Box>Ranges from severely damaged digits to dismemberment.</Box></ColorBox>
+		
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+
+    <ColorBox><Box>Manslaughter</Box></ColorBox>
+    <ColorBox><Box>To cause another person's death without the intent to kill, either through direct action or unreasonable failure to act.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:20</Box></ColorBox>
+    <ColorBox><Box>Includes manslaughter in self-defense so long as the threat could have been reasonably neutralized without the loss of life.</Box></ColorBox>
+	
+    <ColorBox><Box>Suicide</Box></ColorBox>
+    <ColorBox><Box>To cause your own death with intent.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:34, Psychiatric Custody</Box></ColorBox>
+    <ColorBox><Box>A do not resuscitate order may also be preferable for repeated suicide while in custody.</Box></ColorBox>
+	
+    <ColorBox><Box>Murder</Box></ColorBox>
+    <ColorBox><Box>To cause another person's death with the intent to kill.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:46, Psychiatric Custody</Box></ColorBox>
+    <ColorBox><Box>The difference between attempted murder and complete murder is if the victim ends up medically deceased and requires defibrillation for recovery.</Box></ColorBox>
+	
+    <ColorBox><Box>Mass Murder</Box></ColorBox>
+    <ColorBox><Box>To cause three or more people's deaths with the intent to kill.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 2:00, Permanent/Psychiatric Custody</Box></ColorBox>
+    <ColorBox><Box>Intention still matters.</Box></ColorBox>
+	
+    <ColorBox><Box>Prevention of Revival</Box></ColorBox>
+    <ColorBox><Box>To render a corpse unrevivable through most standard means, either through direct action or unreasonable failure to act.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 2:30, Permanent/Psychiatric Custody, Execution</Box></ColorBox>
+    <ColorBox><Box>Things such as ashing, gibbing, spacing, and rotting. Even covers accidental cases, however obviously with a much lighter sentence.</Box></ColorBox>
+		
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+		
+    <ColorBox><Box>Harassment</Box></ColorBox>
+    <ColorBox><Box>To continuously interact with and bother another specific person after requests for you to stop.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Does not cover someone performing their required duty in a polite manner.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+		
+    <ColorBox><Box>Disorderly Conduct</Box></ColorBox>
+    <ColorBox><Box>To conduct one's self poorly to the extent of disturbing others.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:06</Box></ColorBox>
+    <ColorBox><Box>The catch all for most small scale hooliganism. Covers things such as public nudity, needless insults, and inciting other criminal activity.</Box></ColorBox>
+		
+    <ColorBox><Box>Mass Disturbance</Box></ColorBox>
+    <ColorBox><Box>To conduct one's self poorly to the extent of disturbing a significant number of others, such as a room full.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:12</Box></ColorBox>
+    <ColorBox><Box>Ranges from misuse of communication channels to bomb threats.</Box></ColorBox>
+		
+    <ColorBox><Box>Rioting</Box></ColorBox>
+    <ColorBox><Box>To take part in a large group of people causing mass disturbance or other disruptive activity.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:18</Box></ColorBox>
+    <ColorBox><Box>Leaders of a riot can be charged with any crime they may have incited during their leadership.</Box></ColorBox>
+		
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Obstruction</Box></ColorBox>
+    <ColorBox><Box>To prevent others from performing their duties through the use of physical blockades or refusing to move out of their way.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Covers things such as making hallways difficult to traverse and getting overly close during a security arrest.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Vandalism</Box></ColorBox>
+    <ColorBox><Box>To deface or minorly damage property.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:06</Box></ColorBox>
+    <ColorBox><Box>For things that are easy to clean or repair like graffiti and small amounts of damage to windows.</Box></ColorBox>
+	
+    <ColorBox><Box>Tampering</Box></ColorBox>
+    <ColorBox><Box>To alter, bypass, or damage a machine or device's function.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:10</Box></ColorBox>
+    <ColorBox><Box>For things such as hacking vending machines, airlocks, telecommunication servers, and access cards.</Box></ColorBox>
+	
+    <ColorBox><Box>Destruction of Property</Box></ColorBox>
+    <ColorBox><Box>To completely destroy or cause a piece of property to be non-functional.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:14</Box></ColorBox>
+    <ColorBox><Box>For things that aren't so easy to clean or repair like breaking down walls.</Box></ColorBox>
+	
+    <ColorBox><Box>Mass Destruction</Box></ColorBox>
+    <ColorBox><Box>To cause destruction on a mass scale, rendering an entire area non-functional.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:30</Box></ColorBox>
+    <ColorBox><Box>For things that disable an entire area like damaging critical power, atmospheric, and hull structure.</Box></ColorBox>
+	
+    <ColorBox><Box>Facility Destruction</Box></ColorBox>
+    <ColorBox><Box>To cause the destruction or inhabitability of an entire facility or vessel.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 2:00, Permanent Custody</Box></ColorBox>
+    <ColorBox><Box>Be it intentional like attempting to use nuclear weaponry or accidental like failing to contain a singularity.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Theft</Box></ColorBox>
+    <ColorBox><Box>To intentionally take an item that does not belong to you.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Items such as tools, access cards, and apparel.</Box></ColorBox>
+	
+    <ColorBox><Box>Grand Theft</Box></ColorBox>
+    <ColorBox><Box>To intentionally take an item that does not belong to you and is virtually irreplaceable.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:16</Box></ColorBox>
+    <ColorBox><Box>Items such as door remotes, irreplaceable machines, and very personal belongings.</Box></ColorBox>
+	
+    <ColorBox><Box>Vessel Hijack</Box></ColorBox>
+    <ColorBox><Box>To intentionally take control and attempt to steal a shuttle, ship, or vessel that does not belong to you.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:28</Box></ColorBox>
+    <ColorBox><Box>Doesn't include vessels classified as derelict under Standard Operating Procedure.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Neglect of Duty</Box></ColorBox>
+    <ColorBox><Box>To fail to perform your job or duty to an unreasonable degree.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Covers things such as failing to respond to an urgent job related matter. It may sometimes be better to seek demotion from their Head of Staff. </Box></ColorBox>
+	
+    <ColorBox><Box>Breach of Procedure</Box></ColorBox>
+    <ColorBox><Box>To violate the facility's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:12</Box></ColorBox>
+    <ColorBox><Box>Violating any measure of SOP that you're supposed to follow. It may sometimes be better to seek demotion from their Head of Staff. </Box></ColorBox>
+	
+    <ColorBox><Box>Abuse of Authority</Box></ColorBox>
+    <ColorBox><Box>To use your position of authority in order to engage in fraudulent behaviors, either unlawfully punishing others or covering up criminal activity.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:36</Box></ColorBox>
+    <ColorBox><Box>Includes things such as taking bribes, planting evidence, or using unlawful force. It may sometimes be better to seek demotion from their Head of Staff.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Possession: Substances</Box></ColorBox>
+    <ColorBox><Box>To unlawfully use or possess substances that are controlled under the sector's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:06</Box></ColorBox>
+    <ColorBox><Box>Covers anything under the Controlled Substances category in Standard Operating Procedure.</Box></ColorBox>
+	
+    <ColorBox><Box>Possession: Restricted</Box></ColorBox>
+    <ColorBox><Box>To unlawfully use or possess equipment or weaponry that is restricted under the sector's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:10</Box></ColorBox>
+    <ColorBox><Box>Covers anything under the Restricted Equipment category in Standard Operating Procedure.</Box></ColorBox>
+	
+    <ColorBox><Box>Possession: Contraband</Box></ColorBox>
+    <ColorBox><Box>To unlawfully use or possess items or substances that are listed as contraband under the sector's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:14</Box></ColorBox>
+    <ColorBox><Box>Covers anything under the Contraband category in Standard Operating Procedure.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Distribution: Substances</Box></ColorBox>
+    <ColorBox><Box>To unlawfully produce or give out substances that are controlled under the sector's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:12</Box></ColorBox>
+    <ColorBox><Box>Covers anything under the Controlled Substances category in Standard Operating Procedure.</Box></ColorBox>
+	
+    <ColorBox><Box>Distribution: Restricted</Box></ColorBox>
+    <ColorBox><Box>To unlawfully produce or give out equipment or weaponry that is restricted under the sector's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:16</Box></ColorBox>
+    <ColorBox><Box>Covers anything under the Restricted Equipment category in Standard Operating Procedure.</Box></ColorBox>
+	
+    <ColorBox><Box>Distribution: Contraband</Box></ColorBox>
+    <ColorBox><Box>To unlawfully produce or give out items or substances that are listed as contraband under the sector's active Standard Operating Procedures.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:20</Box></ColorBox>
+    <ColorBox><Box>Covers anything under the Contraband category in Standard Operating Procedure.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Failure to Comply</Box></ColorBox>
+    <ColorBox><Box>To refuse or fail to follow lawful orders given to you by a relevant authority.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Includes any station authority, be it security or command, giving lawful and reasonable orders.</Box></ColorBox>
+	
+    <ColorBox><Box>Resisting Arrest</Box></ColorBox>
+    <ColorBox><Box>To attempt to flee or physically fight against a lawful arrest while outside the brig.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:12</Box></ColorBox>
+    <ColorBox><Box>This does not apply to people who had no reasonable way to know they were under arrest or were wanted by security.</Box></ColorBox>
+	
+    <ColorBox><Box>Breach of Custody</Box></ColorBox>
+    <ColorBox><Box>To attempt to escape custody while inside the brig.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:26, Permanent Custody, Deportation</Box></ColorBox>
+    <ColorBox><Box>This includes attempting to break someone else out of custody.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Trespass</Box></ColorBox>
+    <ColorBox><Box>To enter an area you're not authorized to be in without permission.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:06</Box></ColorBox>
+    <ColorBox><Box>Permission is important, being invited into an area is not a crime.</Box></ColorBox>
+	
+    <ColorBox><Box>Secure Trespass</Box></ColorBox>
+    <ColorBox><Box>To enter a secure area you're not authorized to be in without permission.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:12</Box></ColorBox>
+    <ColorBox><Box>What is defined as a secure area is handled by the Secured Rooms section in Standard Operating Procedure.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Coercion</Box></ColorBox>
+    <ColorBox><Box>To threaten someone with violence or harm to get them to act in your interest.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:14</Box></ColorBox>
+    <ColorBox><Box>Akin to assault but with the intent to get the victim to do something in your favor.</Box></ColorBox>
+	
+    <ColorBox><Box>Unlawful Control</Box></ColorBox>
+    <ColorBox><Box>To unlawfully restrain, confine, or cause someone to be unable to refuse your demands without the use of threats or violence.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:18</Box></ColorBox>
+    <ColorBox><Box>Includes things like unlawful arrests, mind control, and tampering with synthetics so that they must follow your orders.</Box></ColorBox>
+	
+    <ColorBox><Box>Hostage Taking</Box></ColorBox>
+    <ColorBox><Box>To unlawfully restrain or confine someone and threaten their well being to get others to follow your demands.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:46, Psychiatric Custody</Box></ColorBox>
+    <ColorBox><Box>The difference between Unlawful Control and Hostage Taking is that hostages are used to get others to comply with your demands.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Animal Abuse</Box></ColorBox>
+    <ColorBox><Box>To needlessly act cruel towards, endanger, harm, or torture animals considered as pets.</Box></ColorBox>
+    <ColorBox><Box>Confinement 0:10</Box></ColorBox>
+    <ColorBox><Box>Livestock, varmint, and animals that are hostile to humanoids are typically recognized as non-pets, however the Captain has the final say over this.</Box></ColorBox>
+	
+    <ColorBox><Box>Animal Slaughter</Box></ColorBox>
+    <ColorBox><Box>To needlessly kill animals considered as pets.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:14, Psychiatric Custody</Box></ColorBox>
+    <ColorBox><Box>Similar to animal abuse but covers intentional killing.</Box></ColorBox>
+	
+	<ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+    <ColorBox><Box>\n</Box></ColorBox>
+	
+    <ColorBox><Box>Bribery</Box></ColorBox>
+    <ColorBox><Box>To use currency or other forms of payment to get an authority to act unlawfully.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:08</Box></ColorBox>
+    <ColorBox><Box>Includes things such as attempting to bribe authorities to ignore crimes and using bribes to get a lesser punishment.</Box></ColorBox>
+	
+    <ColorBox><Box>Fraud</Box></ColorBox>
+    <ColorBox><Box>To intentionally misrepresent another person's actions.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:12</Box></ColorBox>
+    <ColorBox><Box>For things such as lying about someone's role in a crime, be it written or verbal.</Box></ColorBox>
+	
+    <ColorBox><Box>Forgery</Box></ColorBox>
+    <ColorBox><Box>To fabricate a person's signature, an official stamp, or a document.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:20</Box></ColorBox>
+    <ColorBox><Box>Intention does not matter for forgery.</Box></ColorBox>
+	
+    <ColorBox><Box>Impersonation</Box></ColorBox>
+    <ColorBox><Box>To intentionally fake your appearance or voice to represent someone or something you are not to cause confusion or to further personal interests.</Box></ColorBox>
+    <ColorBox><Box>Confinement: 0:26</Box></ColorBox>
+    <ColorBox><Box>Does not cover playful impersonation, as long as they don't create genuine confusion.</Box></ColorBox>
+	
+  </Table>
+
+</Document>

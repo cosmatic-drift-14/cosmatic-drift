@@ -91,6 +91,26 @@
   - type: PresetIdCard
     job: Scientist
 
+#Cargo
+
+- type: entity
+  parent: IDCardStandard
+  id: CourierIDCard
+  name: courier ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: stripe_top
+      color: &color-supply-top "#b18644"
+    - state: stripe_bottom
+      color: &color-supply-bottom "#5b4523"
+    - sprite: &CD-icon-rsi _CD/Interface/Misc/job_icons.rsi
+      offset: *icon-offset
+      state: Courier
+  - type: PresetIdCard
+    job: CargoTechnician
+
 #Misc
 
 - type: entity
@@ -119,7 +139,7 @@
     layers:
     - state: default
     - state: default
-    - sprite: &CD-icon-rsi _CD/Interface/Misc/job_icons.rsi
+    - sprite: *CD-icon-rsi
       offset: *icon-offset
       state: PrivateInvestigator
   - type: PresetIdCard

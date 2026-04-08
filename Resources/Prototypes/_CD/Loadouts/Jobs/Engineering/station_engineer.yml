@@ -39,6 +39,11 @@
   equipment: 
     jumpsuit: ClothingUniformJumpskirtEngineeringMechanic
 
+- type: loadout
+  id: EngineeringSlacks
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSlacksEngineering
+
 # OuterClothing
 - type: loadout
   id: StationEngineerJacket

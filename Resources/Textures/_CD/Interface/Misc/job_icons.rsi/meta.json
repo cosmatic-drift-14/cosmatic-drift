@@ -1,13 +1,16 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi",
+    "copyright": "PrivateInvestigator taken from SS14 at https://github.com/space-wizards/space-station-14/pull/24739/changes/2ff8540ecfc60b89051ab5c86442e4540a84b557, Courier taken from Nyanotrasen at https://github.com/Nyanotrasen/Nyanotrasen/pull/21/changes/fd22ebb82d9313717db05aee3d4c7186ccea58ed.",
 
     "size": {
         "x": 8,
         "y": 8
     },
     "states": [
+        {
+            "name": "Courier"
+        },
         {
             "name": "PrivateInvestigator"
         }

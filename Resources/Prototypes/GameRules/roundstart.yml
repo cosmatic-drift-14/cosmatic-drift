@@ -472,17 +472,10 @@
     - !type:NestedSelector
       tableId: SpicyPestEventsTable
 
-- type: entityTable
-  id: SpaceTrafficControlTable
-  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
-    children:
-      - !type:NestedSelector
-        tableId: UnknownShuttlesFriendlyTable
-      - !type:NestedSelector
-        tableId: UnknownShuttlesFreelanceTable
-      # CD: Disabled
-      #- !type:NestedSelector
-      #  tableId: UnknownShuttlesHostileTable
+# - type: entityTable CD: We had the hostile table disabled, so until they're re-added we need this whole thing disabled
+#   id: SpaceTrafficControlTable
+  # table: !type:NestedSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+  #   tableId: UnknownShuttlesHostileTable
 
 - type: entity
   id: BasicStationEventScheduler
@@ -508,29 +501,19 @@
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable
 
-- type: entity
-  id: SpaceTrafficControlEventScheduler # iff we make a selector for EntityTables that can respect StationEventComp restrictions, or somehow impliment them otherwise in said tables,
-  parent: BaseGameRule                  # we can remerge this with the other schedulers, but it will silently fail due to that limitation without a separate scheduler to balance atm.
-  components:
-  - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 2700 # 45 mins #shows up like half way through shift.
-    minMaxEventTiming:
-      min: 1800 # 30 mins #CD change from 1200 to 1800
-      max: 7200 # 120 mins # you probably arent getting a second visitor shuttle in one round, but it is possible.
-    scheduledGameRules: !type:NestedSelector
-      tableId: SpaceTrafficControlTable
-
-- type: entity
-  id: SpaceTrafficControlFriendlyEventScheduler
-  parent: BaseGameRule
-  components:
-  - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 mins
-    minMaxEventTiming:
-      min: 1800 # 30 mins #CD change from 600 to 1800
-      max: 3600 # 60 mins #CD change from 1800 to 3600
-    scheduledGameRules: !type:NestedSelector
-      tableId: UnknownShuttlesFriendlyTable
+# - type: entity
+#   id: SpaceTrafficControlEventScheduler # iff we make a selector for EntityTables that can respect StationEventComp restrictions, or somehow impliment them otherwise in said tables,
+#   parent: BaseGameRule                  # we can remerge this with the other schedulers, but it will silently fail due to that limitation without a separate scheduler to balance atm.
+#   components:
+#   - type: BasicStationEventScheduler
+#     minimumTimeUntilFirstEvent: 2700 # 45 mins #shows up like half way through shift.
+#     maximumSpanUntilFirstEvent: 900 # At longest takes an hour to show up.
+#     minMaxEventTiming:
+#       min: 1200 # 20 mins
+#       max: 7200 # 120 mins # you probably arent getting a second visitor shuttle in one round, but it is possible.
+#     scheduledGameRules: !type:NestedSelector
+#       prob: 0.05 # Only 1 in 20 rounds...
+#       tableId: SpaceTrafficControlTable
 
 # variation passes
 - type: entity

@@ -7,7 +7,7 @@
   flavor: medicine
   color: "#ebbce9"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.03
       effects:
       - !type:PopupMessage
@@ -53,7 +53,7 @@
   flavor: metallic
   color: "#382f6b"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.02
       effects:
       - !type:PopupMessage
@@ -122,7 +122,7 @@
   flavor: bitter
   color: "#f2ff00"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage
@@ -268,7 +268,7 @@
   flavor: bitter
   color: "#634e3a"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.03
       effects:
       - !type:PopupMessage
@@ -308,7 +308,7 @@
   flavor: sweet
   color: "#2e3b52"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.02
       effects:
       - !type:PopupMessage
@@ -399,7 +399,7 @@
   flavor: metallic
   color: "#291816"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage
@@ -481,7 +481,7 @@
   color: "#d9d9d9"
   physicalDesc: reagent-physical-desc-refreshing
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage
@@ -581,7 +581,7 @@
   flavor: sour
   color: "#6bb3b5"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.02
       effects:
       - !type:PopupMessage
@@ -637,7 +637,7 @@
   flavor: tingly
   color: "#2e2c2c"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage
@@ -704,7 +704,7 @@
   flavor: nothing
   color: "#ffc7c7"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage
@@ -786,7 +786,7 @@
   flavor: medicine
   color: "#45B1A7"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage
@@ -860,7 +860,7 @@
   flavor: medicine
   color: "#FAE0BA"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate : 0.01
       effects:
       - !type:PopupMessage

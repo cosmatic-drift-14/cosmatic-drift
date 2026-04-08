@@ -12,6 +12,8 @@
     - id: DoorRemoteCargo
     - id: AstroNavCartridge
     # - id: ClothingHandsKnuckleDustersQM # CD: Remove these
+    - id: PlushieLizardJobQuartermaster
+      prob: 0.02
     #CD Addions
     - id: BookSOPCargo
     - id: BookSOPCommand
@@ -50,13 +52,16 @@
     - id: SpaceCash1000
     - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
-    - id: HeadSkeleton # A skull to accompany your skeleton crew
+    - id: OrganSkeletonPersonHead # A skull to accompany your skeleton crew
       conditions:
       - !type:PlayerCountCondition
         max: 15
+    - id: PlushieLizardJobCaptain
+      prob: 0.02
     #CD Addions
     - id: BookSOPGeneral
     - id: BookSOPCommand
+    - id: BookSpaceLaw
 
 # No laser table + Laser table
 - type: entityTable
@@ -138,6 +143,8 @@
     - id: HoPIDCard
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
+    - id: PlushieLizardJobHeadofpersonnel
+      prob: 0.02
     #CD Addions
     - id: BookSOPService
     - id: BookSOPCommand
@@ -172,6 +179,8 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    - id: PlushieLizardJobChiefengineer
+      prob: 0.02
     #CD Addions
     - id: BookSOPEngineering
     - id: BookSOPCommand
@@ -219,19 +228,19 @@
   id: LockerFillChiefMedicalOfficerNoHardsuit
   table: !type:AllSelector
     children:
-    - id: BoxEncryptionKeyMedical
-    - id: ClothingBackpackDuffelSurgeryFilled
     - id: ClothingEyesHudMedical
-    - id: ClothingHandsGlovesNitrile
-    - id: ClothingHeadsetAltMedical
-    - id: ClothingMaskSterile
-    - id: DoorRemoteMedical
+    - id: ClothingBeltMedicalFilled
     - id: HandheldCrewMonitor
     - id: Hypospray
-    - id: BoxCMOCircuitboards
-    - id: MedkitFilled
-    - id: RubberStampCMO
     - id: MedTekCartridge
+    # Standard command gear
+    - id: RubberStampCMO
+    - id: ClothingHeadsetAltMedical
+    - id: DoorRemoteMedical
+    - id: BoxEncryptionKeyMedical
+    - id: BoxCMOCircuitboards
+    - id: PlushieLizardJobChiefmedicalofficer
+      prob: 0.02
     #CD Addions
     - id: BookSOPMedical
     - id: BookSOPCommand
@@ -285,6 +294,8 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
+    - id: PlushieLizardJobResearchdirector
+      prob: 0.02
     #CD Addions
     - id: BookSOPScience
     - id: BookSOPCommand
@@ -349,6 +360,8 @@
     - id: WeaponTaser
     - id: WantedListCartridge
     - id: DrinkHosFlask
+    - id: PlushieLizardJobHeadofsecurity
+      prob: 0.02
     #CD Addions
     - id: BookSOPSecurity
     - id: BookSOPCommand

@@ -1,0 +1,228 @@
+- type: markingsGroup
+  parent: Undergarments
+  id: Foxfolk
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Hair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ FoxfolkTailAlt ]
+    # enum.HumanoidVisualLayers.Chest:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.Snout:
+    #   limit: 0
+    #   required: false
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: true
+      default: [ FoxfolkEar ]
+    # enum.HumanoidVisualLayers.HeadSide:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.LArm:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.RArm:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.LHand:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.RHand:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.LLeg:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.RLeg:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.LFoot:
+    #   limit: 0
+    #   required: false
+    # enum.HumanoidVisualLayers.RFoot:
+    #   limit: 0
+    #   required: false
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceFoxfolk
+  name: foxfolk appearance
+  components:
+  - type: Inventory
+    speciesId: foxfolk
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+  - type: InitialBody
+    organs:
+      Torso: OrganFoxfolkTorso
+      Head: OrganFoxfolkHead
+      ArmLeft: OrganFoxfolkArmLeft
+      ArmRight: OrganFoxfolkArmRight
+      HandRight: OrganFoxfolkHandRight
+      HandLeft: OrganFoxfolkHandLeft
+      LegLeft: OrganFoxfolkLegLeft
+      LegRight: OrganFoxfolkLegRight
+      FootLeft: OrganFoxfolkFootLeft
+      FootRight: OrganFoxfolkFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganAnimalLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: Foxfolk
+
+- type: entity
+  save: false
+  name: Urist McFoxfolk
+  parent: 
+  - AppearanceFoxfolk
+  - BaseSpeciesMobOrganic
+  id: BaseMobFoxfolk
+  abstract: true
+  components:
+  - type: HumanoidProfile
+    species: Foxfolk
+  - type: Hunger
+  - type: Inventory # Allows foxfolks to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
+    speciesId: foxfolk
+  - type: Thirst
+  - type: Icon
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+    state: full
+  - type: Speech
+    speechSounds: Foxfolk
+    speechVerb: Foxfolk
+    allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
+  - type: TypingIndicator
+    proto: foxfolk
+  - type: Vocal
+    sounds:
+      Male: MaleFoxfolk
+      Female: FemaleFoxfolk
+      Unsexed: MaleFoxfolk
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Foxfolk
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage: #For reference, lizards do five slash.
+      types:
+        Blunt: 2
+        Slash: 3
+  - type: Temperature # These are moth values, but do make sense for Foxfolk. The heat damage per second might be high, but we can tune it if there are issues.
+    specificHeat: 46
+    currentTemperature: 310.15
+  - type: TemperatureDamage
+    heatDamageThreshold: 320
+    coldDamageThreshold: 230
+    coldDamage:
+      types:
+        Cold : 0.05 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 3 #per second, scales with temperature & other constants
+  - type: Wagging
+    action: ActionToggleFoxfolkakinWagging
+
+- type: entity
+  parent: OrganBase
+  id: OrganFoxfolk
+  abstract: true
+  suffix: Foxfolk
+
+- type: entity
+  parent: OrganFoxfolk
+  id: OrganFoxfolkInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+
+- type: entity
+  id: OrganFoxfolkVisual
+  abstract: true
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Foxfolk
+
+- type: entity
+  parent: [ OrganFoxfolk, OrganFoxfolkVisual ]
+  id: OrganFoxfolkExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganFoxfolkExternal ]
+  id: OrganFoxfolkTorso
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganFoxfolkExternal ]
+  id: OrganFoxfolkHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.HeadTop
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganFoxfolkExternal ]
+  id: OrganFoxfolkArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganFoxfolkExternal ]
+  id: OrganFoxfolkArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganFoxfolkExternal ]
+  id: OrganFoxfolkHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganFoxfolkExternal ]
+  id: OrganFoxfolkHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganFoxfolkExternal ]
+  id: OrganFoxfolkLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganFoxfolkExternal ]
+  id: OrganFoxfolkLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganFoxfolkExternal ]
+  id: OrganFoxfolkFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganFoxfolkExternal ]
+  id: OrganFoxfolkFootRight
+
+# DONE TO HERE
+# DELETED EVERYTHING UNDER THIS

@@ -8,6 +8,8 @@
 
   The head of a department may authorize one of their staff members, typically their Senior, to act on their behalf in selected ways under chosen conditions. This system is officially known as departmental Second In Commands and is a largely free system for Heads of Staff to adjust to fit their liking. The only required step is that the command member fills out a form stating the chosen second in command, what authorizations they share, and under what circumstances, then sends it to the fax of their Captain. If no form is filled out and a department's head enters an unrecoverable state, it is assumed that the department's Senior is the 2IC and is automatically authorized field promotion to their respective Head of Staff position, The Captain may veto this if they see fit.
 
+  There is also a default stand-in procedure for when someone is attempting to enact an operating procedure that requires a specific Head of Staff that is not present. In these cases the senior of the department will function as a stand-in for the absent Head of Staff, if there is no senior then the most applicable staff member of that department will suffice. For example, if the Captain is attempting to change the AI's lawset, and there is no RD, then the SR will function as a stand-in, then a scientist if there is no SR.
+  
 
   ## Command Succession (NE)
 
@@ -38,7 +40,18 @@
 
   ## Staff Demotions (NE)
 
-  To get any demotion to stick as a Head of Staff, you must send a stamped fax to your station's Central Oversight office very clearly explaining that it's a demotion record, who's being demoted, from what positions, and for how long. Failure to do so or deviation may result in the demotion not being properly processed and applied for future shifts.
+  There exists two types of ways to remove someone from their position, Relief of Duty and Standard Demotion. Both demotion types are fairly the same; they both require the relevant Head of Staff or Captain to sign off on, but differ in duration and procedure. These should only be performed if the person is neglecting their duty, refusing to follow a superior's reasonable orders, abusing their position's authority/gear/access, or is a threat to their own department's operations or staff wellbeing.
+
+  - Relief of Duty: The temporary removal of a person from their position, lasting the duration of a shift at maximum. For Relief of Duty cases it is not a requirement that Central Command is notified.
+
+  - Standard Demotion: The extended removal of a person from their position, lasting 3 weeks (OOCly) at maximum. For demotions to stick you must send a stamped fax to your station's Central Oversight office very clearly explaining that it's a demotion record, who's being demoted, from what positions, and for how long (OOCly). Failure to do so or deviation may result in the demotion not being properly processed and applied for future shifts.
+
+  Once a demotion has been processed, all the demoted personnel's job equipment and access is to be removed, replaced with standard gear if applicable, and returned to their department.
+
+
+  ## Staff Promotions (NE)
+
+  Any onboard personnel may be promoted or hired into a department by either the relevant Head of Staff or Captain. The Head of Personnel should be the one processing promotions and hirings if possible, otherwise it defaults to the Captain and then the relevant Head of Staff. These promotions do not represent NT's views as a whole however may be used as a token of good will when speaking to Central Command for a real and lasting promotion.
 
 
   ## Station Binding
@@ -50,6 +63,11 @@
   - Chief Engineers conducting repairs on nearby vessels.
   - Chief Medical Officers performing rescue operations.
   - Quartermasters going to the ATS.
+
+
+  ## Required Implants
+
+  Any officially hired command member must always be implanted with a mindshield during shifts unless it must be removed for medical operations. Acting Heads of Staff or command members hired by the Captain may be given an exception at the discretion of the Captain.
 
 
   ## Uniform

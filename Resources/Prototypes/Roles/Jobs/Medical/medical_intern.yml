@@ -17,11 +17,7 @@
     shoes: ClothingShoesColorWhite
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
-    belt: ClothingBeltMedicalFilled
     pocket2: BookMedicalReferenceBook
-  #storage:
-    #back:
-    #- Stuff
 
 - type: chameleonOutfit
   id: MedicalInternChameleonOutfit

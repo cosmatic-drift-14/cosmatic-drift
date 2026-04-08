@@ -59,12 +59,12 @@
       - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
         state: lamp-off
   - type: Appearance
-  - type: ToggleableLightVisuals
-    spriteLayer: light
-    clothingVisuals:
-      outerClothing:
-      - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
-        state: lamp-on
+  # - type: ToggleableLightVisuals
+  #   spriteLayer: light
+  #   clothingVisuals:
+  #     outerClothing:
+  #     - sprite: _CD/Clothing/OuterClothing/Armor/armor_overlays.rsi
+  #       state: lamp-on
   - type: PointLight
     enabled: false
     radius: 3.5
