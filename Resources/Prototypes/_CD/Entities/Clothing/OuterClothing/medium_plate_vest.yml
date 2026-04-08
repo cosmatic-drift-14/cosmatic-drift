@@ -1,13 +1,18 @@
 - type: entity
-  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing, BaseSecurityContraband] #pulled from detective vest.
+  parent: [AllowSuitStorageClothing, BaseSecurityContraband, ClothingOuterBaseMedium]
   id: mediumplatevest
   name: medium plate vest
+  categories: [ HideSpawnMenu ]
   description: your not supposed to be here.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Armor/mediumplatevest.rsi
-
-
-
-
-# AllowSuitStorageClothing, BaseSecurityContraband
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
