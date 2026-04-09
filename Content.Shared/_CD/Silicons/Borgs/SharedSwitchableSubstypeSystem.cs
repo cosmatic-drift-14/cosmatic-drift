@@ -21,7 +21,7 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
     {
         SubscribeLocalEvent<BorgSwitchableSubtypeComponent, MapInitEvent>(OnMapInit); // make sure that our subtype is selected first
         SubscribeLocalEvent<BorgSwitchableSubtypeComponent, AfterBorgTypeSelectEvent>(OnBorgTypeSelect);
-        SubscribeLocalEvent<BorgSwitchableSubtypeComponent, TypeTryingToUpdateVisualsEvent>(OnBorgTypeUpdatingVisuals);
+        SubscribeLocalEvent<BorgSwitchableSubtypeComponent, BorgTypeUpdateVisualsOverrideEvent>(OnBorgTypeUpdatingVisuals);
 
         Subs.BuiEvents<BorgSwitchableTypeComponent>(BorgSwitchableTypeUiKey.SelectBorgType,
             sub =>
@@ -32,7 +32,7 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
         base.Initialize();
     }
 
-    private void OnBorgTypeUpdatingVisuals(Entity<BorgSwitchableSubtypeComponent> ent, ref TypeTryingToUpdateVisualsEvent args)
+    private void OnBorgTypeUpdatingVisuals(Entity<BorgSwitchableSubtypeComponent> ent, ref BorgTypeUpdateVisualsOverrideEvent args)
     {
         if (!ent.Comp.BorgSubtype.HasValue)
             return;

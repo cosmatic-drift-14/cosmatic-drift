@@ -13,4 +13,4 @@ public sealed class BorgSelectSubtypeMessage(ProtoId<EntityPrototype>? subtype) 
 public record struct AfterBorgTypeSelectEvent;
 
 [ByRefEvent]
-public record struct TypeTryingToUpdateVisualsEvent;
+public record struct BorgTypeUpdateVisualsOverrideEvent;

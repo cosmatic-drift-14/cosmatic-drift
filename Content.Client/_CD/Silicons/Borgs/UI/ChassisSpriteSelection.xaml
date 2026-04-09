@@ -10,14 +10,14 @@
                    HorizontalAlignment="Center"
                    Margin="0 12"/>
         </controls:StripeBack>
-        <ScrollContainer Name="OptionsScrollContainer"
-                         HScrollEnabled="True"
-                         VScrollEnabled="False"
-                         MinHeight="96">
-            <BoxContainer Name="OptionsContainer"
-                          Orientation="Horizontal"
-                          SeparationOverride="4"/>
-        </ScrollContainer>
+            <ScrollContainer Name="OptionsScrollContainer"
+                             HScrollEnabled="True"
+                             VScrollEnabled="False"
+                             MinHeight="96">
+                <BoxContainer Name="OptionsContainer"
+                              Orientation="Horizontal"
+                              SeparationOverride="4"/>
+            </ScrollContainer>
 
     </BoxContainer>
 </Control>

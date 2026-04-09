@@ -3,8 +3,6 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
-using Robust.Client.ResourceManagement;
-using Robust.Shared.Serialization.TypeSerializers.Implementations;
 using Robust.Shared.Timing;
 
 namespace Content.Client.Silicons.Borgs;
@@ -43,14 +41,14 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
         Entity<BorgSwitchableTypeComponent> entity,
         BorgTypePrototype prototype)
     {
-        // AL - added checks to stop sprite state errors
+        // CD - added checks to stop sprite state errors
         if (!_timing.IsFirstTimePredicted)
             return;
 
-        if (TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) &&
+        if (!TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) ||
             subtype.BorgSubtype != null)
         {
-            var ev = new TypeTryingToUpdateVisualsEvent();
+            var ev = new BorgTypeUpdateVisualsOverrideEvent();
             RaiseLocalEvent(entity, ref ev);
             return;
         }
