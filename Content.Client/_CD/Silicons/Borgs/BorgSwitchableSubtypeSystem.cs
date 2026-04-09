@@ -1,15 +1,10 @@
 using System.Linq;
 using Content.Client.Silicons.Borgs;
-using Content.Shared._CD.Silicons;
 using Content.Shared._CD.Silicons.Borgs;
 using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
-using Robust.Client.Graphics;
-using Robust.Client.ResourceManagement;
-using Robust.Shared.Physics.Systems;
-using Robust.Shared.Serialization.TypeSerializers.Implementations;
-using Robust.Shared.Utility;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client._CD.Silicons.Borgs;
 
@@ -21,8 +16,6 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
     [Dependency] private readonly SpriteSystem _sprite = default!;
     [Dependency] private readonly BorgSystem _borg = default!;
     [Dependency] private readonly AppearanceSystem _appearance = default!;
-    [Dependency] private readonly IResourceCache _resourceCache = default!;
-    [Dependency] private readonly FixtureSystem _fixture = default!;
 
     public override void Initialize()
     {
@@ -42,10 +35,13 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
         SelectBorgSubtype(ent);
     }
 
-    protected override void UpdateEntityAppearance(Entity<BorgSwitchableSubtypeComponent> entity, BorgSubtypePrototype borgSubtypePrototype)
+    protected override void UpdateEntityAppearance(Entity<BorgSwitchableSubtypeComponent> entity, EntityPrototype borgSubtypePrototype)
     {
         // LOT of copy pasted code from BorgSwitchableTypeSystem, but is probably necessary unless the upstream code
         // is refactored
+
+        if (!borgSubtypePrototype.TryGetComponent<BorgSubtypeDefinitionComponent>(out var borgSubtype, ComponentFactory))
+            return;
 
         // get our required components
         var (owner, _) = entity;
@@ -58,13 +54,13 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
             _sprite.RemoveLayer((entity, chassisSprite), i);
         }
 
-        for (int i = 0; i < borgSubtypePrototype.LayerData.Length; i++)
+        for (int i = 0; i < borgSubtype.LayerData.Length; i++)
         {
-            var layerData = borgSubtypePrototype.LayerData[i];
+            var layerData = borgSubtype.LayerData[i];
 
-            layerData.RsiPath = borgSubtypePrototype.SpritePath?.ToString();
-            if(borgSubtypePrototype.Offset != null)
-                layerData.Offset = borgSubtypePrototype.Offset;
+            layerData.RsiPath = borgSubtype.SpritePath?.ToString();
+            if (borgSubtype.Offset != null)
+                layerData.Offset = borgSubtype.Offset;
             _sprite.AddLayer((owner, chassisSprite), layerData, i);
         }
 
@@ -72,8 +68,8 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
         {
             _borg.SetMindStates(
                 (entity.Owner, chassis),
-                borgSubtypePrototype.SpriteHasMindState,
-                borgSubtypePrototype.SpriteNoMindState);
+                borgSubtype.SpriteHasMindState,
+                borgSubtype.SpriteNoMindState);
 
             if (TryComp(entity, out AppearanceComponent? appearance))
             {
@@ -82,13 +78,13 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
             }
         }
 
-        if (borgSubtypePrototype.SpriteBodyMovementState is { } movementState)
+        if (borgSubtype.SpriteBodyMovementState is { } movementState)
         {
             var spriteMovement = EnsureComp<SpriteMovementComponent>(entity);
             spriteMovement.NoMovementLayers.Clear();
             spriteMovement.NoMovementLayers["movement"] = new PrototypeLayerData
             {
-                State = borgSubtypePrototype.SpriteBodyState,
+                State = borgSubtype.SpriteBodyState,
             };
             spriteMovement.MovementLayers.Clear();
             spriteMovement.MovementLayers["movement"] = new PrototypeLayerData

@@ -15,11 +15,13 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
 {
     [Dependency] private readonly InteractionPopupSystem _interactionPopup = default!;
     [Dependency] protected readonly IPrototypeManager Prototypes = default!;
+    [Dependency] protected readonly IComponentFactory ComponentFactory = default!;
 
     public override void Initialize()
     {
         SubscribeLocalEvent<BorgSwitchableSubtypeComponent, MapInitEvent>(OnMapInit); // make sure that our subtype is selected first
         SubscribeLocalEvent<BorgSwitchableSubtypeComponent, AfterBorgTypeSelectEvent>(OnBorgTypeSelect);
+        SubscribeLocalEvent<BorgSwitchableSubtypeComponent, TypeTryingToUpdateVisualsEvent>(OnBorgTypeUpdatingVisuals);
 
         Subs.BuiEvents<BorgSwitchableTypeComponent>(BorgSwitchableTypeUiKey.SelectBorgType,
             sub =>
@@ -28,6 +30,15 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
             });
 
         base.Initialize();
+    }
+
+    private void OnBorgTypeUpdatingVisuals(Entity<BorgSwitchableSubtypeComponent> ent, ref TypeTryingToUpdateVisualsEvent args)
+    {
+        if (!ent.Comp.BorgSubtype.HasValue)
+            return;
+
+        Dirty(ent);
+        SelectBorgSubtype(ent);
     }
 
     private void OnMapInit(Entity<BorgSwitchableSubtypeComponent> ent, ref MapInitEvent args)
@@ -43,7 +54,8 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
         if (!ent.Comp.BorgSubtype.HasValue)
             return;
 
-        SelectBorgSubtype(ent);
+        UpdateEntityAppearance(ent);
+        Dirty(ent);
     }
 
     protected virtual void SelectBorgSubtype(Entity<BorgSwitchableSubtypeComponent> ent)
@@ -56,21 +68,24 @@ public abstract class SharedBorgSwitchableSubtypeSystem : EntitySystem
         if (!Prototypes.TryIndex(entity.Comp.BorgSubtype, out var subtypePrototype))
             return;
 
-        UpdateEntityAppearance(entity,  subtypePrototype);
+        UpdateEntityAppearance(entity, subtypePrototype);
     }
 
     protected virtual void UpdateEntityAppearance(Entity<BorgSwitchableSubtypeComponent> entity,
-        BorgSubtypePrototype borgSubtypePrototype)
+        EntityPrototype borgSubtypePrototype)
     {
+        if (!borgSubtypePrototype.TryGetComponent<BorgSubtypeDefinitionComponent>(out var borgSubtype, ComponentFactory))
+            return;
+
         if (TryComp(entity, out InteractionPopupComponent? popup))
         {
-            _interactionPopup.SetInteractSuccessString((entity.Owner, popup), borgSubtypePrototype.PetSuccessString);
-            _interactionPopup.SetInteractFailureString((entity.Owner, popup), borgSubtypePrototype.PetFailureString);
+            _interactionPopup.SetInteractSuccessString((entity.Owner, popup), borgSubtype.PetSuccessString);
+            _interactionPopup.SetInteractFailureString((entity.Owner, popup), borgSubtype.PetFailureString);
         }
 
         if (TryComp(entity, out FootstepModifierComponent? footstepModifier))
         {
-            footstepModifier.FootstepSoundCollection = borgSubtypePrototype.FootstepCollection;
+            footstepModifier.FootstepSoundCollection = borgSubtype.FootstepCollection;
         }
     }
 
