@@ -10066,8 +10066,6 @@ entities:
     - type: AccessReader
       accessListsOriginal: []
     - type: DeviceNetwork
-      configurators:
-      - invalid
     - type: DeviceLinkSink
       invokeCounter: 1
     - type: DeviceLinkSource
@@ -12254,8 +12252,6 @@ entities:
       pos: 14.5,-16.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 3611
   - uid: 17195
@@ -72502,8 +72498,6 @@ entities:
       pos: 18.5,-16.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 3611
   - uid: 5175
@@ -73375,8 +73369,6 @@ entities:
       pos: 13.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 17191
       - 3611
@@ -98458,8 +98450,6 @@ entities:
     - type: AtmosPipeColor
       color: '#0055CCFF'
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 3611
   - uid: 15365
@@ -100402,8 +100392,6 @@ entities:
     - type: AtmosPipeColor
       color: '#990000FF'
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 3611
   - uid: 15363
