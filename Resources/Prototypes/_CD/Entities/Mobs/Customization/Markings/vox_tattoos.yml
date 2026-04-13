@@ -1,8 +1,7 @@
 - type: marking
   id: TattooGlowingEyeVoxRight
   bodyPart: Eyes
-  markingCategory: Overlay
-  speciesRestriction: [Vox]
+  groupWhitelist: [Vox]
   coloring:
     default:
       type:
@@ -15,8 +14,7 @@
 - type: marking
   id: TattooGlowingEyeVoxLeft
   bodyPart: Eyes
-  markingCategory: Overlay
-  speciesRestriction: [Vox]
+  groupWhitelist: [Vox]
   coloring:
     default:
       type:

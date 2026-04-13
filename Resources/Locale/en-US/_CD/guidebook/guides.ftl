@@ -1,3 +1,4 @@
+guide-entry-cryosleep = Cryosleep
 guide-entry-cd-records = Character Records
 guide-entry-rules-cd = Cosmatic Drift Rules
 
@@ -14,3 +15,5 @@ guide-entry-rules-sop-med = Medical
 guide-entry-rules-sop-sci = Science
 guide-entry-rules-sop-cargo = Cargo
 guide-entry-rules-sop-service = Service
+guide-entry-rules-law = NT Law
+guide-entry-rules-crimes = List of Crimes

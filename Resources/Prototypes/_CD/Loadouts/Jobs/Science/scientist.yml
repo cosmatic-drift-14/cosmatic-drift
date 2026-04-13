@@ -7,3 +7,8 @@
   id: RoboticistPDA
   equipment: 
     id: RoboticistPDA
+
+- type: loadout
+  id: ScienceSlacks
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSlacksScience

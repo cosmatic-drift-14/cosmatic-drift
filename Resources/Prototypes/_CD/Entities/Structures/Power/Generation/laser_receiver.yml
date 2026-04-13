@@ -1,0 +1,92 @@
+- type: entity
+  parent: BaseMachine
+  id: LaserReceiverOff
+  name: energy laser receiver
+  suffix: Off
+  description: The receiving point of a wildly expensive way of transmitting large amounts of power. Connects to a much larger array through station infrastructure. This one doesn't seem to be receiving much of anything right now.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.4,0.2,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: _CD/Structures/Power/Generation/laser_receiver.rsi
+    state: receiver_off
+    snapCardinals: true
+  - type: Anchorable
+    delay: 3
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ExplodeBehavior
+  - type: StaticPrice
+    price: 800
+
+- type: entity
+  parent: LaserReceiverOff
+  id: LaserReceiverOn
+  name: energy laser receiver
+  suffix: On
+  description: The receiving point of a wildly expensive way of transmitting large amounts of power. Connects to a much larger array through station infrastructure.
+  components:
+  - type: AmbientSound
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/engine_hum.ogg
+  - type: Sprite
+    state: receiver_on
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      output:
+        !type:CableDeviceNode
+        nodeGroupID: HVPower
+  - type: PowerMonitoringDevice
+    group: Generator
+    loadNode: output
+    sprite: _CD/Structures/Power/Generation/laser_receiver.rsi
+    state: receiver_off
+  - type: PowerSupplier
+    supplyRate: 800000
+    supplyRampRate: 20000
+    supplyRampTolerance: 2000
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 50
+    intensitySlope: 5
+    totalIntensity: 100
+  - type: Electrified
+    onHandInteract: false
+    onInteractUsing: false
+    onBump: false
+    requirePower: true
+    highVoltageNode: output

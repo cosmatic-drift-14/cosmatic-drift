@@ -36,6 +36,7 @@
     <ColorBox><Box>Syndicate made chemicals.</Box></ColorBox>
     <ColorBox><Box>Nocturine, Lexorin, Hyperzine, and Tazinide.</Box></ColorBox>
   </Table>
+  \n
 
   ## Restricted Gear
 
@@ -159,17 +160,18 @@
     <ColorBox><Box>\[None\]</Box></ColorBox>
     <ColorBox><Box>Other bladed objects.</Box></ColorBox>
     <ColorBox><Box>Swords, and non-departmental knives.</Box></ColorBox>
-    <ColorBox><Box>[color=#134975]Captain's[/color] sabre.</Box></ColorBox>
+    <ColorBox><Box>[color=#134975]Captain's[/color] sabre. Utility knives.</Box></ColorBox>
     <ColorBox><Box>\[None\]</Box></ColorBox>
     <ColorBox><Box>Other explosives.</Box></ColorBox>
     <ColorBox><Box>IEDs, mines, grenades, and C4</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
-    <ColorBox><Box>\[[color=#009100]CC[/color]/[color=134975]ERT[/color]\]</Box></ColorBox>
+    <ColorBox><Box>\[[color=#009100]CC[/color]/[color=#db7093]ERT[/color]\]</Box></ColorBox>
     <ColorBox><Box>Any CC or ERT branded gear.</Box></ColorBox>
     <ColorBox><Box>Uniforms, vests, backpacks, and headgear</Box></ColorBox>
     <ColorBox><Box></Box></ColorBox>
   </Table>
-
+  \n
+  
   ## Controlled Substances
 
   <Table Columns="3">

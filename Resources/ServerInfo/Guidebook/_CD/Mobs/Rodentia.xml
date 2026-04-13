@@ -2,7 +2,7 @@
   # Rodentia
 
   <Box>
-    <GuideEntityEmbed Entity="MobRodentiaDummy" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceRodentia" Caption=""/>
   </Box>
 
   Rodentia are able to store small items within their cheeks, but doing so makes their speech unintelligible. They [color=#ffa500]get hungry 33% faster[/color] due to their fast metabolism. 

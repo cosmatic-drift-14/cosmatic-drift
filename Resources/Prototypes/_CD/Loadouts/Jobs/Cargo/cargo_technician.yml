@@ -4,6 +4,11 @@
     jumpsuit: ClothingUniformJumpsuitCargoPants
 
 - type: loadout
+  id: CargoSlacks
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSlacksCargo
+
+- type: loadout
   id: CargoTechnicianJumpsuitLight
   equipment:
     jumpsuit: ClothingUniformJumpsuitCargoLight
@@ -37,3 +42,9 @@
   id: SteelWorkboots
   equipment:
     shoes: ClothingShoesBootsSteel
+
+# ID
+- type: loadout
+  id: CourierPDA
+  equipment: 
+    id: CourierPDA

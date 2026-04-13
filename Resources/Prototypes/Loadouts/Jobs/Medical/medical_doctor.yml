@@ -1,39 +1,7 @@
-# # Senior Time (CD: Disabled timers)
-# - type: loadoutEffectGroup
-#   id: SeniorPhysician
-#   effects:
-#   - !type:JobRequirementLoadoutEffect
-#     requirement:
-#       !type:RoleTimeRequirement
-#       role: JobChemist
-#       time: 21600 #6 hrs
-#   - !type:JobRequirementLoadoutEffect
-#     requirement:
-#       !type:RoleTimeRequirement
-#       role: JobMedicalDoctor
-#       time: 21600 #6 hrs
-#   - !type:JobRequirementLoadoutEffect
-#     requirement:
-#       !type:DepartmentTimeRequirement
-#       department: Medical
-#       time: 216000 # 60 hrs
-
-# Other Timers
-
-- type: loadoutEffectGroup
-  id: MedicalHeadMirrorTimer
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 108000 #30 hrs
-
 # Head
-
 # - type: loadout
-#   id: SeniorPhysicianBeret
-#   effects:
+#   id: SeniorPhysicianBeret CD: Disabled the senior beret
+#   effects: 
 #   - !type:GroupLoadoutEffect
 #     proto: SeniorPhysician
 #   equipment:
@@ -41,9 +9,9 @@
 
 - type: loadout
   id: MedicalHeadMirror
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MedicalHeadMirrorTimer
+  # effects: CD: Disabled the loadout timer
+  # - !type:GroupLoadoutEffect
+  #   proto: MedicalJourneymanTimer
   equipment:
     head: ClothingHeadMirror
 
@@ -83,7 +51,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
 
-# - type: loadout
+# - type: loadout CD: Disabled for senior roles
 #   id: SeniorPhysicianJumpsuit
 #   effects:
 #   - !type:GroupLoadoutEffect
@@ -136,7 +104,7 @@
   equipment:
     outerClothing: ClothingOuterWinterMed
 
-# - type: loadout
+# - type: loadout CD: Disabled for senior roles
 #   id: SeniorPhysicianLabCoat
 #   effects:
 #   - !type:GroupLoadoutEffect
@@ -156,7 +124,7 @@
   equipment:
     id: MedicalPDA
 
-# - type: loadout
+# - type: loadout CD: Disabled for senior roles
 #   id: SeniorPhysicianPDA
 #   effects:
 #   - !type:GroupLoadoutEffect
@@ -164,25 +132,8 @@
 #   equipment:
 #     id: SeniorPhysicianPDA
 
-# Gloves
-- type: loadout
-  id: NitrileGloves
-  equipment:
-    gloves: ClothingHandsGlovesNitrile
-
 #Masks
 - type: loadout
   id: SterileMask
   equipment:
     mask: ClothingMaskSterile
-
-#Eyewear
-- type: loadout
-  id: MedicalHud
-  equipment:
-    eyes: ClothingEyesHudMedical
-
-- type: loadout
-  id: MedicalEyePatchHud
-  equipment:
-    eyes: ClothingEyesEyepatchHudMedical

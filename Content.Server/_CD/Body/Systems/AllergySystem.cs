@@ -1,12 +1,14 @@
 using Content.Server._CD.Body.Components;
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
+using Content.Shared.Body;
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.FixedPoint;
 using Content.Shared.GameTicking;
+using Content.Shared.Metabolism;
 using Robust.Shared.Timing;
 
 namespace Content.Server._CD.Body.Systems;
@@ -69,10 +71,11 @@ public sealed class AllergySystem : EntitySystem
                 continue;
 
             var histamine = GetReaction(allergy, chemstream);
-            foreach (var lung in _bodySystem.GetBodyOrganEntityComps<LungComponent>(uid))
+            _bodySystem.TryGetOrgansWithComponent<LungComponent>((uid), out var organs);
+            foreach (var lung in organs)
             {
-                if (lung.Comp1.Solution != null)
-                    histamine += GetReaction(allergy, lung.Comp1.Solution!.Value.Comp.Solution);
+                if (lung.Comp.Solution != null)
+                    histamine += GetReaction(allergy, lung.Comp.Solution!.Value.Comp.Solution);
             }
             chemstream.AddReagent(allergy.ReactionReagent, histamine);
         }

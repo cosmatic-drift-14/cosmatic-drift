@@ -131,7 +131,7 @@
   description: There are exposed wires and damaged "warranty void if removed" stickers.
   components:
     - type: Pda
-      id: ResearchIDCard
+      id: RoboticistIDCard
     - type: Appearance
       appearanceDataInit:
        enum.PdaVisuals.PdaType:
@@ -145,6 +145,42 @@
     - type: RenameId
       value: cd-job-title-roboticist
       newIcon: "JobIconRoboticist" # Apparently this just exists in the game
+
+- type: entity
+  parent: BasePDA
+  id: CourierPDA
+  name: courier PDA
+  description: Looks like one of the edges have been chewed on by something.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-courier"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _CD/Objects/Devices/pda.rsi
+    state: pda-courier
+  - type: Pda
+    id: CourierIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-courier
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+    accentVColor: "#4d9be6"
+  - type: RenameId
+    value: cd-job-title-courier
+    newIcon: "JobIconCourier"
 
 - type: entity
   id: OffDutyPDA

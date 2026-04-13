@@ -36,6 +36,7 @@
       key_slots:
       - EncryptionKeyCentCom
       - EncryptionKeyStationMaster
+      - EncryptionKeyHailing #CD
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: Clothing

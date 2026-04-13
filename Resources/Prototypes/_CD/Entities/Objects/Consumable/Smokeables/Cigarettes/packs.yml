@@ -194,9 +194,9 @@
       Steel: 50
   - type: SpaceGarbage
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,4,1
+    size: Tiny
+    shape: # Same as upstream
+    - 0,0,0,1
   - type: Storage
     grid:
     - 0,0,4,1

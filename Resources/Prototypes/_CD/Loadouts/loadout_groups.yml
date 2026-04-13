@@ -96,6 +96,7 @@
   - StationEngineerCasualsuit
   - StationEngineerHazardsuit
   - StationEngineerPants
+  - EngineeringSlacks
 
 - type: loadoutGroup
   id: EngineeringEyewear
@@ -123,6 +124,7 @@
   - ScientistJumpskirt
   - RoboticistJumpsuit
   - RoboticistJumpskirt
+  - ScienceSlacks
 
 - type: loadoutGroup
   id: SeniorResearcherOuterClothing
@@ -213,6 +215,7 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - MedicalSlacks
 
 - type: loadoutGroup
   id: SeniorPhysicianOuterClothing
@@ -239,15 +242,6 @@
   - GeneBackpack
   - GeneSatchel
   - GeneDuffel
-
-- type: loadoutGroup
-  id: ParamedicGloves
-  name: loadout-group-medical-gloves
-  minLimit: 0
-  loadouts:
-  - LatexGloves
-  - NitrileGloves
-  - GlovesETUGauntlet
 
 - type: loadoutGroup
   id: ParamedicMask

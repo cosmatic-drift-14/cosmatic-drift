@@ -197,19 +197,6 @@
   text: "/ServerInfo/Guidebook/ServerRules/RoleplayExpectations/Rule3-9.xml"
 
 - type: guideEntry
-  id: SpaceLaw
-  name: guide-entry-rules-space-law
-  priority: 1
-  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/CDSpaceLaw.xml"
-
-# CD: Remove pending rework
-#- type: guideEntry
-#  id: SpaceLawCrimeList
-#  name: guide-entry-rules-sl-crime-list
-#  priority: 5
-#  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SLCrimeList.xml"
-
-- type: guideEntry
   id: BanTypes
   name: guide-entry-rules-ban-types
   ruleEntry: true
