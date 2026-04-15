@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Shared.Examine;
+using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Inventory.VirtualItem;
@@ -89,7 +90,8 @@ public sealed class ExtendableClothingSystem : EntitySystem
         {
             // already made sure the entities have the proper component in the attempt
             var comp = Comp<ExtendedEquipmentComponent>(equipment);
-            if(!_inventory.TryEquip(args.Equipee, args.Equipee, equipment, comp.Slot, force: true))
+            // TODO CD: make this silent only while in the lobby
+            if(!_inventory.TryEquip(args.Equipee, args.Equipee, equipment, comp.Slot, force: true, silent: true))
                 return;
 
             ent.Comp.CurrentlyEquipped.Add(equipment);

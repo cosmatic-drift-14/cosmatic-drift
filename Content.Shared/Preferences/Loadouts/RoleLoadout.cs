@@ -50,6 +50,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             weh.SelectedLoadouts.Add(selected.Key, new List<Loadout>(selected.Value));
         }
 
+        foreach (var linked in OccupiedGroups)
+        {
+            weh.OccupiedGroups.Add(linked);
+        }
+
         weh.EntityName = EntityName;
 
         return weh;
@@ -163,8 +168,10 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 foreach (var protoId in groupProto.Loadouts)
                 {
                     // CD edits
-                    var multiGroupCount = LinkedGroups.Values
-                        .Count(t => t.Item1 == groupProto);
+                    // reconnect issue: can confirm that reconnecting resets the role loadout. can confirm from tracing the code.
+                    // problem? 'OccupiedGroups' doesn't persist between disconnects and reconnects.
+                    // TODO CD: Fix this
+                    var multiGroupCount = OccupiedGroups.Count(t => t.Item1 == groupProto.ID);
                     if (loadouts.Count + multiGroupCount >= groupProto.MinLimit)
                         break;
 

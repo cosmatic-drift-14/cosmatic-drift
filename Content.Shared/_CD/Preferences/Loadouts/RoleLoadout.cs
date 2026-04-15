@@ -1,26 +1,28 @@
 using System.Linq;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Preferences.Loadouts;
 
 public sealed partial class RoleLoadout
 {
     [DataField]
-    public Dictionary<string, (ProtoId<LoadoutGroupPrototype>, ProtoId<LoadoutPrototype>)> LinkedGroups = new();
+    public Dictionary<string, (ProtoId<LoadoutGroupPrototype>, ProtoId<LoadoutPrototype>)> LinkedSlots = new();
+    [DataField]
+    public List<(ProtoId<LoadoutGroupPrototype>, ProtoId<LoadoutPrototype>)> OccupiedGroups = new();
 
     public void MultiSlotValidation(ProtoId<LoadoutGroupPrototype> selectedGroup,
         ProtoId<LoadoutPrototype> selectedLoadout,
         IPrototypeManager prototypeManager)
     {
         var slotsSet = prototypeManager.Index(selectedLoadout).AdditionalRequiredSlots?.ToHashSet();
-        var loadoutsToRemove = new List<(ProtoId<LoadoutGroupPrototype>, ProtoId<LoadoutPrototype>)>();
 
         if (slotsSet == null)
             return;
 
         foreach (var slot in slotsSet)
         {
-            LinkedGroups[slot] = (selectedGroup, selectedLoadout);
+            LinkedSlots[slot] = (selectedGroup, selectedLoadout);
         }
 
         foreach (var (groupProto, loadouts) in SelectedLoadouts)
@@ -39,13 +41,14 @@ public sealed partial class RoleLoadout
                         continue;
 
                     // remove the loadout
-                    loadoutsToRemove.Add((groupProto, loadout.Prototype));
+                    OccupiedGroups.Add((groupProto, loadout.Prototype));
                     slotsSet.Remove(slot);
+
                 }
             }
         }
 
-        foreach (var (group, loadout) in loadoutsToRemove)
+        foreach (var (group, loadout) in OccupiedGroups)
         {
             RemoveLoadout(group, loadout, prototypeManager);
         }
@@ -58,26 +61,26 @@ public sealed partial class RoleLoadout
         IPrototypeManager prototypeManager)
     {
 
-        if (LinkedGroups.Count == 0 || LinkedGroups.ContainsValue((selectedGroup, selectedLoadout)))
+        if (LinkedSlots.Count == 0 || LinkedSlots.ContainsValue((selectedGroup, selectedLoadout)))
             return;
 
         var slots = prototypeManager.Index(selectedLoadout).Equipment.Keys;
 
         foreach (var slot in slots)
         {
-            if (!LinkedGroups.TryGetValue(slot, out var loadoutPair))
+            if (!LinkedSlots.TryGetValue(slot, out var loadoutPair))
                 continue;
 
             var (group, loadout) = loadoutPair;
-            var slotsToRemove = LinkedGroups
-                .Where(l => l.Value == LinkedGroups[slot])
+            var slotsToRemove = LinkedSlots
+                .Where(l => l.Value == LinkedSlots[slot])
                 .ToDictionary()
                 .Keys
                 .ToList();
 
             foreach (var slotToRemove in slotsToRemove)
             {
-                LinkedGroups.Remove(slotToRemove);
+                LinkedSlots.Remove(slotToRemove);
             }
 
             RemoveLoadout(group, loadout, prototypeManager);
