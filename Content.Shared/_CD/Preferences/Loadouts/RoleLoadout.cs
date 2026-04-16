@@ -48,12 +48,20 @@ public sealed partial class RoleLoadout
             }
         }
 
+
+
         foreach (var (group, loadout) in OccupiedGroups)
         {
             RemoveLoadout(group, loadout, prototypeManager);
         }
+    }
 
-        return;
+    public void EnsureMultislotsAreValidated(LoadoutGroupPrototype groupProto, IPrototypeManager prototypeManager)
+    {
+        foreach (var loadoutProtoId in groupProto.Loadouts)
+        {
+            MultiSlotValidation(groupProto.ID, loadoutProtoId, prototypeManager);
+        }
     }
 
     public void CheckLinkedSLots(ProtoId<LoadoutGroupPrototype> selectedGroup,

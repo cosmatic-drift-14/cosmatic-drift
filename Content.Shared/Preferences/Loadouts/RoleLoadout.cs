@@ -160,6 +160,8 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 Apply(loadoutProto);
             }
 
+            EnsureMultislotsAreValidated(groupProto, protoManager); // CD addition: make sure our fields for multiple groups are instantiated before anything
+
             // Apply defaults if required
             // Technically it's possible for someone to game themselves into loadouts they shouldn't have
             // If you put invalid ones first but that's your fault for not using sensible defaults
@@ -167,13 +169,14 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             {
                 foreach (var protoId in groupProto.Loadouts)
                 {
-                    // CD edits
+                    // CD - multigroup loadouts
                     // reconnect issue: can confirm that reconnecting resets the role loadout. can confirm from tracing the code.
                     // problem? 'OccupiedGroups' doesn't persist between disconnects and reconnects.
                     // TODO CD: Fix this
                     var multiGroupCount = OccupiedGroups.Count(t => t.Item1 == groupProto.ID);
                     if (loadouts.Count + multiGroupCount >= groupProto.MinLimit)
                         break;
+                    // CD end
 
                     if (!protoManager.TryIndex(protoId, out var loadoutProto))
                         continue;
