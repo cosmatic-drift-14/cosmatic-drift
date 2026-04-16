@@ -170,13 +170,9 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 foreach (var protoId in groupProto.Loadouts)
                 {
                     // CD - multigroup loadouts
-                    // reconnect issue: can confirm that reconnecting resets the role loadout. can confirm from tracing the code.
-                    // problem? 'OccupiedGroups' doesn't persist between disconnects and reconnects.
-                    // TODO CD: Fix this
                     var multiGroupCount = OccupiedGroups.Count(t => t.Item1 == groupProto.ID);
-                    if (loadouts.Count + multiGroupCount >= groupProto.MinLimit)
+                    if (loadouts.Count + multiGroupCount >= groupProto.MinLimit) // CD changes end
                         break;
-                    // CD end
 
                     if (!protoManager.TryIndex(protoId, out var loadoutProto))
                         continue;

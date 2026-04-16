@@ -12,7 +12,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared._CD;
 
-public sealed class ExtendableClothingSystem : EntitySystem
+public abstract partial class SharedExtendableClothingSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
@@ -90,8 +90,12 @@ public sealed class ExtendableClothingSystem : EntitySystem
         {
             // already made sure the entities have the proper component in the attempt
             var comp = Comp<ExtendedEquipmentComponent>(equipment);
-            // TODO CD: make this silent only while in the lobby
-            if(!_inventory.TryEquip(args.Equipee, args.Equipee, equipment, comp.Slot, force: true, silent: true))
+            if(!_inventory.TryEquip(args.Equipee,
+                   args.Equipee,
+                   equipment,
+                   comp.Slot,
+                   force: true,
+                   silent: IsPlayerInLobby()))
                 return;
 
             ent.Comp.CurrentlyEquipped.Add(equipment);
@@ -151,5 +155,10 @@ public sealed class ExtendableClothingSystem : EntitySystem
             comp.ParentEquipment = ent;
             Dirty(equipmentUid.Value, comp);
         }
+    }
+
+    protected virtual bool IsPlayerInLobby()
+    {
+        return false;
     }
 }
