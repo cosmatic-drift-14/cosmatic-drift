@@ -39,10 +39,6 @@
   id: CaptainCap
   equipment:
     head: ClothingHeadHatCapcap
-  additionalRequiredSlots: # TODO CD REVERT AFTER DONE
-  - jumpsuit
-  - back
-  - mask
 
 # Neck
 - type: loadout
