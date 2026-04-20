@@ -34,26 +34,26 @@
             SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ]
+            # TechnicalAssistant: [ 4, 4 ] #CD disabled.
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ]
             Chemist: [ 3, 3 ]
             MedicalDoctor: [ 5, 5 ]
             Paramedic: [ 2, 2 ]
-            MedicalIntern: [ 4, 4 ]
+            # MedicalIntern: [ 4, 4 ] #CD disabled.
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]        
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 6, 6 ]
+            # ResearchAssistant: [ 6, 6 ] #CD disabled.
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
             SecurityOfficer: [ 7, 7 ]
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 6, 6 ]
+            # SecurityCadet: [ 6, 6 ] #CD disabled.
             Lawyer: [ 2, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]
