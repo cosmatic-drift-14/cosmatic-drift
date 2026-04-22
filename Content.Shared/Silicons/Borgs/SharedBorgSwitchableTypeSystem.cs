@@ -1,3 +1,4 @@
+using Content.Shared._CD.Silicons.Borgs;
 using Content.Shared.Actions;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
@@ -5,8 +6,6 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-
-using Content.Shared._CD.Silicons.Borgs;
 
 namespace Content.Shared.Silicons.Borgs;
 
@@ -99,7 +98,7 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
 
         UpdateEntityAppearance(ent);
 
-        // CD - event for subtype system, always runs at end of borg type code
+        // AL - event for subtype system, always runs at end of borg type code
         var ev = new AfterBorgTypeSelectEvent();
         RaiseLocalEvent(ent, ref ev);
     }
@@ -125,25 +124,6 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
         if (TryComp(entity, out FootstepModifierComponent? footstepModifier))
         {
             footstepModifier.FootstepSoundCollection = prototype.FootstepCollection;
-        }
-
-        if (prototype.SpriteBodyMovementState is { } movementState)
-        {
-            var spriteMovement = EnsureComp<SpriteMovementComponent>(entity);
-            spriteMovement.NoMovementLayers.Clear();
-            spriteMovement.NoMovementLayers["movement"] = new PrototypeLayerData
-            {
-                State = prototype.SpriteBodyState,
-            };
-            spriteMovement.MovementLayers.Clear();
-            spriteMovement.MovementLayers["movement"] = new PrototypeLayerData
-            {
-                State = movementState,
-            };
-        }
-        else
-        {
-            RemComp<SpriteMovementComponent>(entity);
         }
     }
 }

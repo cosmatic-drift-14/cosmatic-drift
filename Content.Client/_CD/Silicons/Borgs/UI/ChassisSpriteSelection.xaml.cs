@@ -17,13 +17,14 @@ namespace Content.Client._CD.Silicons.Borgs.UI;
 [GenerateTypedNameReferences]
 public sealed partial class ChassisSpriteSelection : Control
 {
-    [Dependency] private readonly IPrototypeManager _proto = default!;
-    [Dependency] private readonly IResourceCache _resource = default!;
+    [Dependency] private readonly IComponentFactory _componentFactory = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
 
-    public BorgSubtypePrototype? SubtypePrototype;
+    public EntityPrototype? SubtypePrototype;
     public event Action? SubtypeSelected;
 
-    public const int PrototypeViewSize = 2;
+    private const int PrototypeViewSize = 2;
+    private static readonly ProtoId<EntityCategoryPrototype> _borgSubtypeCategory = "BorgSubtype";
 
     public ChassisSpriteSelection()
     {
@@ -41,26 +42,29 @@ public sealed partial class ChassisSpriteSelection : Control
         List<Button> buttons = new List<Button>();
         buttons.Add(CreateDefaultSubtypeButton(borgTypePrototype, buttonGroup));
 
-        foreach (var subtypePrototype in _proto.EnumeratePrototypes<BorgSubtypePrototype>())
+        foreach (var entProto in _prototype.Categories.GetValueRefOrNullRef(_borgSubtypeCategory))
         {
+            if (!entProto.TryGetComponent<Shared._CD.Silicons.Borgs.BorgSubtypeDefinitionComponent>(out var subtype, _componentFactory))
+                continue;
+
             // Only add subtypes of the current selected 'main' borg type (engineering, medical, etc.)
-            if(subtypePrototype.ParentType != borgTypePrototype.ID)
+            if (subtype.ParentType != borgTypePrototype.ID)
                 continue;
 
             var button = new Button
             {
-                ToolTip = Loc.GetString($"cd-borg-{borgTypePrototype.ID}-subtype-{subtypePrototype.ID}-name"),
+                ToolTip = Loc.GetString($"cd-borg-{borgTypePrototype.ID}-subtype-{entProto.Name.Replace(' ', '-').ToLower()}-name"),
                 Group = buttonGroup,
                 MinHeight = 32,
             };
 
             button.OnPressed += _ =>
             {
-                SubtypePrototype = subtypePrototype;
+                SubtypePrototype = entProto;
                 SubtypeSelected?.Invoke();
             };
 
-            button.AddChild(CreateEntityPrototypeView(subtypePrototype.DummyPrototype));
+            button.AddChild(CreateEntityPrototypeView(subtype.DummyPrototype));
             buttons.Add(button);
         }
 
