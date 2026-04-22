@@ -16,7 +16,8 @@
     ClothingHandsGlovesLatex: 1
     ClothingShoesColorWhite: 1
     # CD
-    ClothingUniformChemistCasual: 2 
+    ClothingHeadHatBeretChem: 2 # CD
+    ClothingUniformChemistCasual: 2
     ClothingOuterCoatStylishLabChem: 2
   contrabandInventory:
     ToyFigurineChemist: 1

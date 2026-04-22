@@ -6,6 +6,7 @@
     ClothingEyesEyepatchHudMedical: 2
     # Optional Clothing
     ClothingHeadHatBeretMedic: 2
+    ClothingHeadHatBeretParamedic: 2 # CD
     ClothingHeadNurseHat: 2
     ClothingHeadHatParamedicsoft: 1
     ClothingHeadHatSurgcapGreen: 2
@@ -25,12 +26,12 @@
     ClothingUniformJumpskirtParamedic: 1
     ClothingOuterCoatLab: 2
     # CD
-    ClothingBackpackCarrybagMedical: 4 
-    ClothingBackpackCarrybagParamedic: 4 
-    ClothingUniformDoctorCasual: 4 
-    ClothingUniformMedicalTechnician: 4 
-    ClothingBeltMedicalKit: 4 
-    ClothingBeltParamedicKit: 4 
+    ClothingBackpackCarrybagMedical: 4
+    ClothingBackpackCarrybagParamedic: 4
+    ClothingUniformDoctorCasual: 4
+    ClothingUniformMedicalTechnician: 4
+    ClothingBeltMedicalKit: 4
+    ClothingBeltParamedicKit: 4
     ClothingOuterWinterMed: 2
     ClothingOuterCoatParamedicWB: 1
     ClothingOuterWinterPara: 1
