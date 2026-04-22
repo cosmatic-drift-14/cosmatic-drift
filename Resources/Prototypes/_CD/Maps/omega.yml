@@ -2,7 +2,7 @@
   id: Omega
   mapName: 'Omega'
   mapPath: /Maps/_CD/omega.yml
-  minPlayers: 5
+  minPlayers: 0
   maxPlayers: 15
   stations:
     Omega:
