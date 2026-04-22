@@ -8,3 +8,19 @@
   id: CommandHeadsetAlt
   equipment:
     ears: ClothingHeadsetAltCommand
+
+# Glasses
+- type: loadout
+  id: CommandGlasses
+  equipment:
+    eyes: ClothingEyesGlassesCommand
+
+- type: loadout
+  id: CommandGlassesPrescription
+  equipment:
+    eyes: ClothingEyesGlassesCommandPrescription
+
+- type: loadout
+  id: CommandHud
+  equipment:
+    eyes: ClothingEyesHudCommand
