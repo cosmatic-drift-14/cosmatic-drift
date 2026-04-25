@@ -6,6 +6,9 @@
   startingGear: ClownGear
   icon: "JobIconClown"
   supervisors: job-supervisors-hop
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
   access:
   - Theatre
   - Maintenance
