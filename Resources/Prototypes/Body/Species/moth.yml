@@ -20,7 +20,7 @@
       limit: 1
       required: true
       default: [ MothAntennasDefault ]
-    # enum.HumanoidVisualLayers.Snout: 
+    # enum.HumanoidVisualLayers.Snout:
     #   limit: 1
     #   required: false
     # enum.HumanoidVisualLayers.LArm:
@@ -49,7 +49,7 @@
     #   required: false
 
 - type: entity
-  parent: BaseSpeciesAppearance
+  parent: [LayersMoth, BaseSpeciesAppearance] # CD. BaseSpeciesAppearance in the original
   id: AppearanceMoth
   name: moth appearance
   components:
@@ -243,6 +243,7 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.Hair # CD: Moth hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganMothExternal ]
