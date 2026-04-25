@@ -49,7 +49,7 @@
     #   required: false
 
 - type: entity
-  parent: [LayersMoth, BaseSpeciesAppearance] # CD. BaseSpeciesAppearance in the original
+  parent: [LayersMoth, BaseSpeciesAppearance] # CD: Added LayersMoth as temporary fix of moth wings layering
   id: AppearanceMoth
   name: moth appearance
   components:
