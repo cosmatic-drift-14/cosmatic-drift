@@ -219,6 +219,7 @@
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
+    - enum.HumanoidVisualLayers.Hair # CD: Lizard hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganReptilianExternal ]

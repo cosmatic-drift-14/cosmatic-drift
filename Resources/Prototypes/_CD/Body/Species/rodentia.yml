@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McRat
-  parent: 
+  parent:
   - AppearanceRodentia
   - BaseSpeciesMobOrganic
   id: BaseMobRodentia
@@ -181,6 +181,7 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.Hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganRodentiaExternal ]

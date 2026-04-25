@@ -20,7 +20,7 @@
       limit: 1
       required: true
       default: [ MothAntennasDefault ]
-    # enum.HumanoidVisualLayers.Snout: 
+    # enum.HumanoidVisualLayers.Snout:
     #   limit: 1
     #   required: false
     # enum.HumanoidVisualLayers.LArm:
