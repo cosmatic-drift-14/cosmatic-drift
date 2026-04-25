@@ -14,3 +14,14 @@
   id: ForensicJacket
   equipment:
     outerClothing: ClothingOuterCoatDetectiveForensic
+
+# Glasses
+- type: loadout
+  id: GlassesNoir
+  equipment: 
+    eyes: ClothingEyesGlassesNoir
+
+- type: loadout
+  id: GlassesNoirPrescription
+  equipment: 
+    eyes: ClothingEyesGlassesNoirPrescription

@@ -9,6 +9,7 @@
   - CaptainBackpack
   - CaptainOuterClothing
   - FormalShoes # CD
+  - CommandGlasses # CD
   - Survival
   - Trinkets
   #- CaptainJobTrinkets
@@ -25,7 +26,7 @@
   - HoPBackpack
   - HoPOuterClothing
   - FormalShoes # CD
-  - Glasses
+  - CommandGlasses #CD change from Glasses to CommandGlasses.
   - Survival
   - Trinkets
   #- HoPJobTrinkets
@@ -74,7 +75,7 @@
   - CommonBackpack
   - BartenderOuterClothing
   - FormalShoes # CD
-  - Glasses
+  - BartenderGlasses #CD change from Glasses to BartenderGlasses.
   - Survival
   - Trinkets
   - BartenderJobTrinkets
@@ -221,7 +222,7 @@
   - CommonBackpack
   - MusicianOuterClothing
   - FormalShoes # CD
-  - Glasses
+  - MusicianGlasses #CD change from Glasses to MusicianGlasses.
   - Survival
   - Trinkets
   #- MusicianJobTrinkets
@@ -325,11 +326,11 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
-  - EngineeringEyewear # CD
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
   - AtmosphericTechnicianShoes
+  - AtmosphericTechnicianGlasses #CD
   - SurvivalExtended
   - Trinkets
   #- AtmosphericTechnicianJobTrinkets
@@ -366,7 +367,7 @@
   - ScientistGloves
   - ScientistShoes
   - ScientistPDA
-  - Glasses
+  - ScientistGlasses #CD change from Glasses to ScientistGlasses.
   - Survival
   - Trinkets
   #- ScientistJobTrinkets
@@ -442,7 +443,7 @@
   - SecurityBackpack
   - DetectiveOuterClothing
   - SecurityShoes
-  - SecurityGlassesOrHud # CD Addition
+  - DetectiveGlasses #CD
   - SurvivalSecurity
   - Trinkets
   - DetectiveJobTrinkets
