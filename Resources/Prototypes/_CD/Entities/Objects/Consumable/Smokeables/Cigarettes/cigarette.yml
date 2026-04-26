@@ -16,28 +16,28 @@
             Quantity: 5
 
 - type: entity
-  parent: [ Cigarette, FoodBase ]
+  parent: Cigarette
   id: CigaretteCandy
   name: cigarette
   suffix: candy
   description: Sugar sticks designed to look like a roll of nicotine and tobacco.
   components:
-  - type: Appearance
   - type: Edible
   - type: Tag
     tags:
       - FoodSnack
+      - Cigarette
+      - Trash
   - type: FlavorProfile
     flavors:
       - sweet
-  - type: Sprite
-    sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
-    state: unlit-icon
-  - type: Clothing
-    sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
-    slots: [ mask ]
   - type: SolutionContainerManager
     solutions:
+      smokable:
+        maxVol: 20
+        reagents:
+          - ReagentId: Sugar
+            Quantity: 10
       food:
         maxVol: 10
         reagents:
