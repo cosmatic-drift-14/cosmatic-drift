@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McFoxfolk
-  parent:
+  parent: 
   - AppearanceFoxfolk
   - BaseSpeciesMobOrganic
   id: BaseMobFoxfolk
@@ -191,7 +191,6 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
-    - enum.HumanoidVisualLayers.Hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganFoxfolkExternal ]
