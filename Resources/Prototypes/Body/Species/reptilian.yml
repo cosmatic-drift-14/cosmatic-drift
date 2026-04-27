@@ -4,7 +4,7 @@
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 1 # CD: lizard hair
+      limit: 1 # CD: Lizard hair
       required: false
     enum.HumanoidVisualLayers.FacialHair:
       limit: 0
@@ -13,7 +13,7 @@
       limit: 2 # CD: Allow multiple, for wings
       required: true
       default: [ LizardTailSmooth ]
-    # enum.HumanoidVisualLayers.Chest: #CD Disable several point limits.
+    # enum.HumanoidVisualLayers.Chest: #CD: Disable several point limits.
     #   limit: 3
     #   required: false
     enum.HumanoidVisualLayers.Snout:
@@ -219,6 +219,7 @@
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
+    - enum.HumanoidVisualLayers.Hair # CD: Lizard hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganReptilianExternal ]
