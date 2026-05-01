@@ -146,8 +146,8 @@
       path: /Audio/Voice/Vox/shriek1.ogg
     Laugh:
       path: /Audio/Voice/Vox/vox_laugh.ogg
-    Sneeze:
-      path: /Audio/Voice/Vox/vox_sneeze.ogg
+#    Sneeze: – Will be added soon
+#      path: /Audio/Voice/Vox/vox_sneeze.ogg
     Cough:
       path: /Audio/Voice/Vox/vox_cough.ogg
     Sigh:
@@ -181,8 +181,8 @@
       path: /Audio/Voice/Diona/diona_scream.ogg
     Laugh:
       collection: DionaLaugh
-    Sneeze:
-      collection: DionaSneeze
+#    Sneeze: – Will be added soon
+#      collection: DionaSneeze
     Chirp:
       path: /Audio/Animals/nymph_chirp.ogg
     Honk: # Added, cause no parent general female/male sounds prototype for male/femaly diona's
@@ -254,8 +254,8 @@
   params:
     variation: 0.125
   sounds:
-    Sneeze:
-      collection: VulpkaninSneeze
+#    Sneeze: – Will be added soon
+#      collection: VulpkaninSneeze
 #    Yawn: – Will be added soon
 #      collection: VulpkaninYawns
     Scream:

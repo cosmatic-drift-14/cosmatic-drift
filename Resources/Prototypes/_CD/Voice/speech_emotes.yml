@@ -3,19 +3,38 @@
   name: chat-emote-name-call
   category: Vocal
   available: false
-  icon: _CD/Interface/Emotes/peep.png
+  icon: _CD/Interface/Emotes/peep.png # Sprite taken from RMC
   whitelist:
     components:
-      - Vocal
+    - Vocal
   blacklist:
     components:
     - BorgChassis
   chatMessages: ["chat-emote-msg-call"]
   chatTriggers:
-   - call
-   - calls
-   - calling
-   - called
+    - call
+    - calls
+    - calling
+    - called
+
+- type: emote # From MoffStation for Avali
+  id: Hiss
+  name: chat-emote-name-hiss
+  category: Vocal
+  available: false
+  icon: { sprite: Mobs/Animals/snake.rsi, state: icon } # Just snake
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-hiss"]
+  chatTriggers:
+    - hiss
+    - hisses
+    - hissing
+    - hissed
 
 - type: emote # From Starlight
   id: Scree
@@ -31,10 +50,10 @@
     - BorgChassis
   chatMessages: ["chat-emote-msg-scree"]
   chatTriggers:
-   - scree
-   - screes
-   - screeing
-   - screed
+    - scree
+    - screes
+    - screeing
+    - screed
 
 - type: emote # From Starlight
   id: Squawk
@@ -44,16 +63,16 @@
   icon: _CD/Interface/Emotes/peep.png
   whitelist:
     components:
-      - Vocal
+    - Vocal
   blacklist:
     components:
     - BorgChassis
   chatMessages: ["chat-emote-msg-squawk"]
   chatTriggers:
-   - squawk
-   - squawks
-   - squawking
-   - squawked
+    - squawk
+    - squawks
+    - squawking
+    - squawked
 
 - type: emote # From Goob
   id: Trill
@@ -63,7 +82,7 @@
   icon: _CD/Interface/Emotes/peep.png
   whitelist:
     components:
-      - Vocal
+    - Vocal
   blacklist:
     components:
     - BorgChassis
@@ -82,7 +101,7 @@
   icon: _CD/Interface/Emotes/peep.png
   whitelist:
     components:
-      - Vocal
+    - Vocal
   blacklist:
     components:
     - BorgChassis
@@ -101,13 +120,13 @@
   icon: _CD/Interface/Emotes/peep.png
   whitelist:
     components:
-      - Vocal
+    - Vocal
   blacklist:
     components:
     - BorgChassis
   chatMessages: ["chat-emote-msg-wurble"]
   chatTriggers:
-   - wurble
-   - wurbles
-   - wurbling
-   - wurblbed
+    - wurble
+    - wurbles
+    - wurbling
+    - wurblbed
