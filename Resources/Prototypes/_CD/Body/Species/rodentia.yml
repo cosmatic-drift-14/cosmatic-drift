@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McRat
-  parent: 
+  parent:
   - AppearanceRodentia
   - BaseSpeciesMobOrganic
   id: BaseMobRodentia
@@ -129,9 +129,9 @@
     proto: rodentia
   - type: Vocal
     sounds:
-      Male: MaleRodentia
-      Female: FemaleRodentia
-      Unsexed: MaleRodentia
+      Male: CDMaleRodentia
+      Female: CDFemaleRodentia
+      Unsexed: CDMaleRodentia
   - type: MouthStorage
     mouthProto: CheekStorage
     openStorageAction: ActionOpenMouthStorage

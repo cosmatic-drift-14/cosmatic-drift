@@ -1,88 +1,35 @@
-# Avali Sounds
-- type: emoteSounds
-  id: MaleAvali
-  params:
-    variation: 0.125
-  sounds:
-    Scream:
-      path: /Audio/_CD/Voice/Avali/avali_scream.ogg
-    Laugh:
-      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
+## How it works?
+## We have base Unisex sounds, which are same for all. Base Male and Female sounds (actually human), which are using for each sex. And base unique for each species sounds.
+## Than we just using complects of parents to make proto for each specie and sex
 
+# Universal stuff. Replacing original emoteSounds
 - type: emoteSounds
-  id: FemaleAvali
-  params:
-    variation: 0.125
+  id: CDUnisexSounds
   sounds:
-    Scream:
-      path: /Audio/_CD/Voice/Avali/avali_scream.ogg
-    Laugh:
-      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
-
-# Foxfolk Sounds
-- type: emoteSounds
-  id: MaleFoxfolk
-  params:
-    variation: 0.125
-  sounds:
-    Laugh:
-      collection: MaleLaugh
-    Sneeze:
-      collection: MaleSneezes
-    Cough:
-      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
     Whistle:
       collection: Whistles
-    Sigh:
-      collection: MaleSigh
+    Snore:
+      collection: Snores
+
+- type: emoteSounds
+  id: CDMaleSounds
+  params:
+    variation: 0.125
+  sounds:
     Scream:
       collection: MaleScreams
-    Growl:
-      collection: FoxfolkGrowls
-    Snarl:
-      collection: FoxfolkSnarls
-    Bark:
-      collection: FoxfolkBarks
-    Whine:
-      collection: FoxfolkWhines
-    Howl:
-      collection: FoxfolkHowls
-
-- type: emoteSounds
-  id: FemaleFoxfolk
-  params:
-    variation: 0.125
-  sounds:
-    Laugh:
-      collection: FemaleLaugh
-    Sneeze:
-      collection: FemaleSneezes
-    Cough:
-      collection: FemaleCoughs
-    Whistle:
-      collection: Whistles
-    Sigh:
-      collection: FemaleSigh
-    Scream:
-      collection: FemaleScreams
-    Growl:
-      collection: FoxfolkGrowls
-    Snarl:
-      collection: FoxfolkSnarls
-    Bark:
-      collection: FoxfolkBarks
-    Whine:
-      collection: FoxfolkWhines
-    Howl:
-      collection: FoxfolkHowls
-
-- type: emoteSounds
-  id: MaleRodentia
-  params:
-    variation: 0.125
-  sounds:
-    Scream:
-      path: /Audio/Animals/mouse_squeak.ogg
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -91,24 +38,24 @@
       collection: MaleCoughs
     Yawn:
       collection: MaleYawn
-    Snore:
-      collection: Snores
     Sigh:
       collection: MaleSigh
     Crying:
       collection: MaleCry
-    Whistle:
-      collection: Whistles
-    Squeak:
-      path: /Audio/Animals/mouse_squeak.ogg
+    Honk:
+      collection: BikeHorn
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
 
 - type: emoteSounds
-  id: FemaleRodentia
+  id: CDFemaleSounds
   params:
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Animals/mouse_squeak.ogg
+      collection: FemaleScreams
     Laugh:
       collection: FemaleLaugh
     Sneeze:
@@ -117,13 +64,286 @@
       collection: FemaleCoughs
     Yawn:
       collection: FemaleYawn
-    Snore:
-      collection: Snores
+    Honk:
+      collection: CluwneHorn
     Sigh:
       collection: FemaleSigh
     Crying:
       collection: FemaleCry
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+
+# Species
+## Human
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDMaleSounds]
+  id: CDMaleHuman
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDFemaleSounds]
+  id: CDFemaleHuman
+
+## Dwarfs. Actually as human, but with other params
+- type: emoteSounds
+  parent: [CDMaleHuman]
+  id: CDMaleDwarf
+  params:
+    variation: 0.125
+    pitch: 0.75
+
+- type: emoteSounds
+  parent: [CDFemaleHuman]
+  id: CDFemaleDwarf
+  params:
+    variation: 0.125
+    pitch: 0.75
+
+## Reptilians
+- type: emoteSounds
+  id: CDUnisexReptilian
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+#    Laugh: – Temporarily deleted, will return soon
+#      path: /Audio/Animals/lizard_happy.ogg
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexReptilian, CDMaleSounds]
+  id: CDMaleReptilian
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexReptilian, CDFemaleSounds]
+  id: CDFemaleReptilian
+
+# Slime
+- type: emoteSounds
+  id: CDUnisexSlime
+  params:
+    variation: 0.125
+  sounds:
+    Squish:
+      collection: Squishes
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexSlime, CDMaleSounds]
+  id: CDMaleSlime
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexSlime, CDFemaleSounds]
+  id: CDFemaleSlime
+
+## Vox
+- type: emoteSounds
+  id: CDUnisexVox
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Vox/shriek1.ogg
+    Laugh:
+      path: /Audio/Voice/Vox/vox_laugh.ogg
+#    Sneeze: – Will be added soon
+#      path: /Audio/Voice/Vox/vox_sneeze.ogg
+    Cough:
+      path: /Audio/Voice/Vox/vox_cough.ogg
+    Sigh:
+      path: /Audio/Voice/Vox/vox_sigh.ogg
+    Click:
+      path: /Audio/Voice/Vox/vox_click.ogg
+    Chitter:
+      path: /Audio/Voice/Vox/vox_chitter.ogg
+    Crying:
+      path: /Audio/Voice/Vox/vox_cry.ogg
+    Gasp:
+      path: /Audio/Effects/Gasp/vox_gasp.ogg
+    DefaultDeathgasp:
+      path: /Audio/Effects/Gasp/vox_DeathGasp.ogg
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexVox, CDMaleSounds]
+  id: CDMaleVox
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexVox, CDFemaleSounds]
+  id: CDFemaleVox
+
+## Diona
+- type: emoteSounds
+  id: CDUnisexDiona
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Diona/diona_scream.ogg
+    Laugh:
+      collection: DionaLaugh
+#    Sneeze: – Will be added soon
+#      collection: DionaSneeze
+    Chirp:
+      path: /Audio/Animals/nymph_chirp.ogg
+    Honk: # Added, cause no parent general female/male sounds prototype for male/femaly diona's
+      collection: BikeHorn
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, UnisexDiona] # No male sounds, cause this is trees
+  id: CDMaleDiona
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, UnisexDiona] # No female sounds, cause this is trees
+  id: CDFemaleDiona
+
+## Arachnid
+- type: emoteSounds
+  id: CDUnisexArachnid
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Arachnid/arachnid_scream.ogg
+    Laugh:
+      path: /Audio/Voice/Arachnid/arachnid_laugh.ogg
+    Chitter:
+      path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
+    Click:
+      path: /Audio/Voice/Arachnid/arachnid_click.ogg
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, UnisexArachnid, CDMaleSounds]
+  id: CDMaleArachnid
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, UnisexArachnid, CDFemaleSounds]
+  id: CDFemaleArachnid
+
+## Moth
+- type: emoteSounds
+  id: CDUnisexMoth
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Moth/moth_scream.ogg
+    Laugh:
+      path: /Audio/Voice/Moth/moth_laugh.ogg
+    Chitter:
+      path: /Audio/Voice/Moth/moth_chitter.ogg
+    Squeak:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+    DefaultDeathgasp:
+      collection: MothDeathGasp
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexMoth, CDMaleSounds]
+  id: CDMaleMoth
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexMoth, CDFemaleSounds]
+  id: CDFemaleMoth
+
+## Vulpkanin (Foxfolk using them too)
+- type: emoteSounds
+  id: CDUnisexVulpkanin
+  params:
+    variation: 0.125
+  sounds:
+#    Sneeze: – Will be added soon
+#      collection: VulpkaninSneeze
+#    Yawn: – Will be added soon
+#      collection: VulpkaninYawns
+    Scream:
+      collection: VulpkaninScreams
+    Growl:
+      collection: VulpkaninGrowls
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Crying:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexVulpkanin, CDMaleSounds]
+  id: CDMaleVulpkanin
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexVulpkanin, CDFemaleSounds]
+  id: CDFemaleVulpkanin
+
+# CD Species
+## Avali
+- type: emoteSounds
+  id: CDUnisexAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_CD/Voice/Avali/avali_scream.ogg
+    Laugh:
+      path: /Audio/_CD/Voice/Avali/avali_laugh.ogg
+    Cough:
+      path: /Audio/_CD/Voice/Avali/avali_cough.ogg
+    Yawn:
+      path: /Audio/_CD/Voice/Avali/avali_yawn.ogg
+    Crying:
+      path: /Audio/_CD/Voice/Avali/avali_cry.ogg
     Whistle:
-      collection: Whistles
+      path: /Audio/_CD/Voice/Avali/avali_whistle.ogg
+    Call:
+      collection: CDAvaliCall
+    Chirp:
+      collection: CDAvaliChirp
+    Hiss:
+      path: /Audio/_CD/Voice/Avali/avali_hiss.ogg
+    Scree:
+      collection: CDAvaliScree
+    Squawk:
+      path: /Audio/_CD/Voice/Avali/avali_squawk.ogg
+    Trill:
+      path: /Audio/_CD/Voice/Avali/avali_trill.ogg
+    Warble:
+      path: /Audio/_CD/Voice/Avali/avali_warble.ogg
+    Wurble:
+      path: /Audio/_CD/Voice/Avali/avali_wurble.ogg
+    Gasp:
+      path: /Audio/_CD/Voice/Avali/avali_gasp.ogg
+    DefaultDeathgasp:
+      path: /Audio/_CD/Voice/Avali/avali_deathgasp.ogg
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexAvali, CDMaleSounds]
+  id: CDMaleAvali
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexAvali, CDFemaleSounds]
+  id: CDFemaleAvali
+
+## Rodentia
+- type: emoteSounds
+  id: CDUnisexRodentia
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Animals/mouse_squeak.ogg
     Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexRodentia, CDMaleSounds]
+  id: CDMaleRodentia
+
+- type: emoteSounds
+  parent: [CDUnisexSounds, CDUnisexRodentia, CDFemaleSounds]
+  id: CDFemaleRodentia

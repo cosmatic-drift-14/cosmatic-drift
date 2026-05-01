@@ -107,11 +107,11 @@
     allowedEmotes: ['Squish']
   - type: TypingIndicator
     proto: slime
-  - type: Vocal
+  - type: Vocal # CD: More sound emotes
     sounds:
-      Male: MaleSlime
-      Female: FemaleSlime
-      Unsexed: MaleSlime
+      Male: CDMaleSlime
+      Female: CDFemaleSlime
+      Unsexed: CDMaleSlime
   - type: Damageable
     damageModifierSet: Slime
   - type: PassiveDamage # Around 8 damage a minute healed

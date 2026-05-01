@@ -7,3 +7,53 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "Made by @randomposter. with sounds taken from Steam 'Avali sounds' mod / Starbound. Made by Steam user: https://steamcommunity.com/id/Nefuki with permission."
   source: "https://discord.com/channels/1168210010233376858/1168217282988757116/1316157844281884752"
+
+- files: ["avali_cry"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Ported from MoffStation, https://github.com/moff-station/moff-station-14/pull/295. Voice made by @lillian_industries (Discord) and edited by Huaqas (Discord)."
+  source: https://discord.com/channels/1322447119252062260/1380861162362503371/1381604298735095921
+
+- files: ["avali_gasp"]
+  license: "CC0-1.0"
+  copyright: "Ported from MoffStation, https://github.com/moff-station/moff-station-14/pull/894. From Freesound.org, edited by @lillian_industries (Discord)"
+  source: https://freesound.org/people/uwesoundboiz/sounds/109840/
+
+- files: ["avali_hiss"]
+  license: "CC0-1.0"
+  copyright: "Ported from MoffStation, https://github.com/moff-station/moff-station-14/pull/894. From Freesound.org, edited by @lillian_industries (Discord)"
+  source: https://freesound.org/people/designerschoice/sounds/805091/
+
+- files: ["avali_yawn"]
+  license: "CC0-1.0"
+  copyright: "Ported from MoffStation, https://github.com/moff-station/moff-station-14/pull/894. Renamed from avali_yawn.ogg. Taken from Freesound.org, edited by @lillian_industries (Discord)"
+  source: https://freesound.org/people/designerschoice/sounds/805091/
+
+- files: ["avali_cough"]
+  license: "CC0-1.0"
+  copyright: "Ported from MoffStation, https://github.com/moff-station/moff-station-14/pull/894. From Freesound.org, edited by @lillian_industries (Discord)"
+  source: https://freesound.org/people/Vrymaa/sounds/737756/
+
+- files: ["avali_deathgasp"]
+  license: "CC-BY-3.0"
+  copyright: "Ported from MoffStation, https://github.com/moff-station/moff-station-14/pull/894. From Freesound.org, edited by @lillian_industries (Discord)"
+  source: https://freesound.org/people/xpoki/sounds/432735/
+
+- files: ["avali_chirp_1, avali_chirp_2, avali_chirp_3, avali_chirp_4, avali_chirp_5"]
+  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. Bird Chirps by whiskeyecho, Taken from https://freesound.org/"
+  license: "CC0-1.0"
+  source: https://freesound.org/s/727256/
+
+- files: ["avali_call_1, avali_call_2, avali_squawk, avali_whistle, avali_scree_1, avali_scree_2"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. Taken from public wildlife sound library xeno-canto.org"
+  source: "https://xeno-canto.org"
+
+- files: ["avali_whistle"]
+  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. CanaryArtie-3.wav by ReadeOnly, Taken from https://freesound.org/"
+  license: "CC0-1.0"
+  source: https://freesound.org/s/85403/
+
+- files: ["avali_trill, avali_warble, avali_wurble"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Ported from GoobStation, https://github.com/Goob-Station/Goob-Station/pull/2898. Taken from 'FD-NewBay' - Other places link to freesound.org. warble.ogg converted to mono by @deltanedas (github)"
+  source: https://github.com/RepoStash/FD-NewBay/tree/dev-sierra/mods/_fd/resomi_fd/sound
