@@ -1,0 +1,4 @@
+- files: ["peep.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Made by Vermidia, with sprites from https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b, https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b, https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b and https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b"
+  source: "https://github.com/RMC-14/RMC-14/blob/master/Resources/Textures/_RMC14/Actions/species_emotes.rsi/peep.png"

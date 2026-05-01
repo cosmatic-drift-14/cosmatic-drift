@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McFoxfolk
-  parent: 
+  parent:
   - AppearanceFoxfolk
   - BaseSpeciesMobOrganic
   id: BaseMobFoxfolk
@@ -109,19 +109,19 @@
     sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
     state: full
   - type: Speech
-    speechSounds: Foxfolk
-    speechVerb: Foxfolk
+    speechSounds: Vulpkanin
+    speechVerb: Vulpkanin
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
   - type: TypingIndicator
     proto: foxfolk
   - type: Vocal
     sounds:
-      Male: MaleFoxfolk
-      Female: FemaleFoxfolk
-      Unsexed: MaleFoxfolk
+      Male: CDMaleVulpkanin
+      Female: CDFemaleVulpkanin
+      Unsexed: CDMaleVulpkanin
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Foxfolk
+    damageModifierSet: Vulpkanin
   - type: MeleeWeapon
     hidden: true
     soundHit:
@@ -145,7 +145,7 @@
       types:
         Heat : 3 #per second, scales with temperature & other constants
   - type: Wagging
-    action: ActionToggleFoxfolkakinWagging
+    action: ActionToggleWaggingFoxfolk # Replace it with ActionToggleWaggingVulpkanin, when https://github.com/space-wizards/space-station-14/pull/42843 will be merged to CD build
 
 - type: entity
   parent: OrganBase

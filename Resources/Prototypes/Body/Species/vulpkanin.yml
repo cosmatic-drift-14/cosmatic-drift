@@ -151,11 +151,11 @@
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
-  - type: Vocal
+  - type: Vocal # CD: More sound emotes
     sounds:
-      Male: MaleVulpkanin
-      Female: FemaleVulpkanin
-      Unsexed: MaleVulpkanin
+      Male: CDMaleVulpkanin
+      Female: CDFemaleVulpkanin
+      Unsexed: CDMaleVulpkanin
   - type: Damageable
     damageModifierSet: Vulpkanin
   - type: MeleeWeapon

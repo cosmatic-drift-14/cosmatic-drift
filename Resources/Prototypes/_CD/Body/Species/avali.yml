@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McRaptor
-  parent: 
+  parent:
   - AppearanceAvali
   - BaseSpeciesMobOrganic
   id: BaseMobAvali
@@ -114,6 +114,9 @@
   - type: Speech
     speechVerb: Parrot # RMC did it right.
     speechSounds: MaleAvali
+    allowedEmotes: [ 'Call', 'Chirp', 'Hiss', 'Scree', 'Squawk', 'Trill', 'Warble', 'Wurble' ]
+  - type: TypingIndicator
+    proto: avali
   - type: Fixtures
     fixtures:
       fix1:
@@ -128,9 +131,9 @@
         - MobLayer
   - type: Vocal
     sounds:
-      Male: MaleAvali
-      Female: FemaleAvali
-      Unsexed: MaleAvali
+      Male: CDMaleAvali
+      Female: CDFemaleAvali
+      Unsexed: CDMaleAvali
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Moth # PLACEHOLDER for now :3

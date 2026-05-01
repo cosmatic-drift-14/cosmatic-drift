@@ -20,7 +20,7 @@
       limit: 1
       required: true
       default: [ MothAntennasDefault ]
-    # enum.HumanoidVisualLayers.Snout: 
+    # enum.HumanoidVisualLayers.Snout:
     #   limit: 1
     #   required: false
     # enum.HumanoidVisualLayers.LArm:
@@ -161,11 +161,11 @@
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
   - type: MothAccent
-  - type: Vocal
+  - type: Vocal # CD: More sound emotes
     sounds:
-      Male: UnisexMoth
-      Female: UnisexMoth
-      Unsexed: UnisexMoth
+      Male: CDMaleMoth
+      Female: CDFemaleMoth
+      Unsexed: CDMaleMoth
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 1.5 # Move around more easily in space.
     baseWeightlessFriction: 1

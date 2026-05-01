@@ -131,11 +131,11 @@
     allowedEmotes: ['Thump']
   - type: TypingIndicator
     proto: lizard
-  - type: Vocal
+  - type: Vocal # CD: More sound emotes
     sounds:
-      Male: MaleReptilian
-      Female: FemaleReptilian
-      Unsexed: MaleReptilian
+      Male: CDMaleReptilian
+      Female: CDFemaleReptilian
+      Unsexed: CDMaleReptilian
   - type: BodyEmotes
     soundsId: ReptilianBodyEmotes
   - type: Damageable
