@@ -186,7 +186,7 @@ namespace Content.Server.Preferences.Managers
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
-                profile.Species,
+                species,
                 profile.CDProfile?.Height ?? 1.0f,
                 profile.Age,
                 sex,
