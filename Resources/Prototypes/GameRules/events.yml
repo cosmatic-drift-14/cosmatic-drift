@@ -464,8 +464,6 @@
     earliestStart: 20
     minimumPlayers: 15
     weight: 2 # CD: Nerf from 5 to 2
-    duration: 60
-    weight: 5
     duration: 5
     maxDuration: 20
   - type: VentHordeRule

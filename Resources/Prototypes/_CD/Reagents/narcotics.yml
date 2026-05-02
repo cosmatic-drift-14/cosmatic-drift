@@ -100,9 +100,10 @@
       - !type:SatiateThirst
         factor: 0.75
       - !type:EvenHealthChange
-        conditions:
-        - !type:TotalDamageCondition
-          min: 65
+        # This got removed and I can't be bothered to figure out the replacement for something that is basically never used
+        #conditions:
+        #- !type:TotalDamageCondition
+        #  min: 65
         damage:
           Burn: -0.4
           Brute: -0.4

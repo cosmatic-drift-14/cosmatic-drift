@@ -1,4 +1,4 @@
-using System.Diagnostics.CodeAnalysis;D
+using System.Diagnostics.CodeAnalysis;
 using Content.Shared._CD.NanoChat; // CD
 using Content.Server.Access.Components;
 using Content.Server.Clothing.Systems;
