@@ -1,3 +1,4 @@
+using System.Globalization;
 using Content.Client._CD.Humanoid;
 using Content.Client.Humanoid;
 using Content.Client.Message;
@@ -21,9 +22,12 @@ using Direction = Robust.Shared.Maths.Direction;
 
 // CD: Records editor imports
 using Content.Client._CD.Records.UI;
+using Content.Client.Players.PlayTimeTracking;
+using Content.Client.Sprite;
 using Content.Shared._CD.Records;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
+using Content.Shared.Humanoid.Prototypes;
 
 namespace Content.Client.Lobby.UI
 {

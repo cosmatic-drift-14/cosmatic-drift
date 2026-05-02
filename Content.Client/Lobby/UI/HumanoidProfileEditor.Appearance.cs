@@ -1,5 +1,8 @@
+using System.Globalization;
 using System.Linq;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
@@ -328,7 +331,7 @@ public sealed partial class HumanoidProfileEditor
         }
 
         var allergies = new Dictionary<ReagentPrototype, FixedPoint2>();
-        foreach (var entry in (Dictionary<string, FixedPoint2>) Profile.CDAllergies)
+        foreach (var entry in Profile.CDAllergies)
         {
             if (!_prototypeManager.TryIndex(entry.Key, out ReagentPrototype? reagent))
                 continue;
@@ -336,4 +339,32 @@ public sealed partial class HumanoidProfileEditor
         }
         _allergiesTab.SetData(allergies);
     }
+
+
+    // CD: Height
+    private void SetProfileHeight(float height)
+    {
+        Profile = Profile?.WithHeight(height);
+        SetDirty();
+        ReloadProfilePreview();
+    }
+
+    private void UpdateHeightControls()
+    {
+        if (Profile == null)
+        {
+            return;
+        }
+
+        var species = _species.Find(x => x.ID == Profile.Species);
+        if (species != null)
+            _defaultHeight = species.DefaultHeight;
+
+        var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+        var sliderPercent = (Profile.CDHeight - prototype.MinHeight) /
+                            (prototype.MaxHeight - prototype.MinHeight);
+        CDHeightSlider.Value = sliderPercent;
+        CDHeight.Text = Profile.CDHeight.ToString(CultureInfo.InvariantCulture);
+    }
+
 }

@@ -1,3 +1,7 @@
+using System.Linq;
+using Content.Shared._CD.Records;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Utility;
 
