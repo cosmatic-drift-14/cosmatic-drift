@@ -99,7 +99,7 @@
         factor: 0.75
       - !type:SatiateThirst
         factor: 0.75
-      - !type:HealthChange
+      - !type:EvenHealthChange
         conditions:
         - !type:TotalDamageCondition
           min: 65
