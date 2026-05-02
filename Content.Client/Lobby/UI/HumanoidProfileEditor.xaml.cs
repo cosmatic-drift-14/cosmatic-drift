@@ -24,9 +24,6 @@ using Direction = Robust.Shared.Maths.Direction;
 using Content.Client._CD.Records.UI;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
-using Content.Shared._CD.Records;
-using Content.Shared.Chemistry.Reagent;
-using Content.Shared.FixedPoint;
 using Content.Shared.Humanoid.Prototypes;
 
 namespace Content.Client.Lobby.UI
