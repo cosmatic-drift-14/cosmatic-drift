@@ -115,6 +115,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - CaptainBeret # CD
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -161,6 +162,7 @@
   minLimit: 0
   loadouts:
   - HoPHead
+  - HoPBeret # CD
 
 - type: loadoutGroup
   id: HoPJumpsuit
@@ -749,6 +751,7 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianHead
+  - CargoBeret # CD
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
@@ -837,7 +840,8 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerHead
-  - ChiefEngineerBeret
+  #- ChiefEngineerBeret # CD removed in place of exclusive beret
+  - ChiefEngineerExclusiveBeret # CD
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
@@ -1022,7 +1026,8 @@
   name: loadout-group-research-director-head
   minLimit: 0
   loadouts:
-  - ResearchDirectorBeret
+#  - ResearchDirectorBeret CD removed in place of exclusive beret
+  - ResearchDirectorExclusiveBeret
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -1071,6 +1076,7 @@
   - RoboticistCap
   - SkullBandana
   - ScientificBeret
+  - RoboticsBeret # CD
 
 - type: loadoutGroup
   id: ScientistNeck
@@ -1202,6 +1208,7 @@
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
+  - LizardPlushieHeadofSecurity
   - SecStar
 
 - type: loadoutGroup
@@ -1235,6 +1242,7 @@
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
+  - LizardPlushieWarden
   - SecStar
 
 - type: loadoutGroup
@@ -1245,6 +1253,7 @@
   - SecurityHelmet
   - SecurityNewHelmet # CD
   - SecurityBeret
+  - SecurityNavyBeret # CD
   - SecurityHat
   - SecurityNewSoft # CD
   - TrooperHat
@@ -1314,6 +1323,7 @@
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
+  - LizardPlushieSecurity
   - SecStar
 
 - type: loadoutGroup
@@ -1356,6 +1366,7 @@
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
+  - LizardPlushieDetective
   - SecStar
 
 - type: loadoutGroup

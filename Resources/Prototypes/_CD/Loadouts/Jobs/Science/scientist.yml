@@ -1,3 +1,10 @@
+# Head
+- type: loadout
+  id: RoboticsBeret
+  equipment:
+    head: ClothingHeadHatBeretRobotics
+
+# PDA
 - type: loadout
   id: ResearchAssistantPDA
   equipment:
@@ -5,7 +12,7 @@
 
 - type: loadout
   id: RoboticistPDA
-  equipment: 
+  equipment:
     id: RoboticistPDA
 
 - type: loadout
