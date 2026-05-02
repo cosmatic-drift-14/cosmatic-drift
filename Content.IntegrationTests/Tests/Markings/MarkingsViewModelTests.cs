@@ -92,7 +92,8 @@ public sealed class MarkingsViewModelTests
         Assert.That(Model.SelectedMarkings(Torso, HumanoidVisualLayers.Chest)!, Has.Count.EqualTo(2));
         Assert.That(Model.SelectedMarkings(Torso, HumanoidVisualLayers.Chest)![1].MarkingId, Is.EqualTo(MothChestDeathhead));
 
-        Assert.That(Model.TrySelectMarking(Torso, HumanoidVisualLayers.Chest, MothChestFan), Is.False);
+        // CD: we fuck with marking limits a ton so this line wont work as expected on wizden
+        // Assert.That(Model.TrySelectMarking(Torso, HumanoidVisualLayers.Chest, MothChestFan), Is.False);
         Assert.That(Model.TrySelectMarking(Head, HumanoidVisualLayers.HeadTop, LizardHornsCurled), Is.False);
 
         Model.EnforceLimits = false;
