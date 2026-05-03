@@ -33,8 +33,9 @@ public sealed partial class DragonSystem : EntitySystem
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
-    [Dependency] private readonly GibbingSystem _gibbing = default!;
-    [Dependency] private readonly SmokeSystem _smoke = default!;
+    // CD: disable gibbing
+    // [Dependency] private readonly GibbingSystem _gibbing = default!;
+    // [Dependency] private readonly SmokeSystem _smoke = default!;
 
     private EntityQuery<CarpRiftsConditionComponent> _objQuery;
 
