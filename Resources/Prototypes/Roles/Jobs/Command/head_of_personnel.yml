@@ -55,7 +55,7 @@
     gloves: ClothingHandsGlovesHop
     # ears: ClothingHeadsetAltCommand #CD: Loadouts
     belt: BoxFolderClipboardThreePapers
-    eyes: ClothingEyesHudCommand
+    # eyes: ClothingEyesHudCommand #CD: Loadouts
   storage:
     back:
     - Flash

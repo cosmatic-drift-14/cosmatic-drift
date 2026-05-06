@@ -67,6 +67,21 @@
   equipment:
     eyes: ClothingEyesGlassesMesonPrescription
 
+- type: loadout
+  id: DiagnosticGlassesPrescription
+  equipment:
+    eyes: ClothingEyesHudDiagnosticPrescription
+
+- type: loadout
+  id: DiagnosticHud
+  equipment:
+    eyes: ClothingEyesHudDiagnostic
+
+- type: loadout
+  id: DiagnosticHudPatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudDiag
+
 # Back
 
 - type: loadout

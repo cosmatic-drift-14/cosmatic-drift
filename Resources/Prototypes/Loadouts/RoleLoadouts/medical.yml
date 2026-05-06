@@ -12,6 +12,7 @@
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
+  - MedicalGlasses #CD
   - SurvivalMedical
   - Trinkets
 #  - ChiefMedicalOfficerJobTrinkets
@@ -28,6 +29,7 @@
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
+  - MedicalGlasses #CD
   - SurvivalMedical
   - Trinkets
 #  - MedicalDoctorJobTrinkets
@@ -54,7 +56,7 @@
   - ChemistBackpack
   - ChemistOuterClothing
   - MedicalShoes
-  - Glasses
+  - ChemistGlasses #CD change from Glasses to ChemistGlasses.
   - SurvivalMedical
   - Trinkets
 #  - ChemistJobTrinkets
@@ -72,6 +74,7 @@
   - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
+  - MedicalGlasses #CD
   - SurvivalMedical
   - Trinkets
 #  - ParamedicJobTrinkets
