@@ -19,3 +19,14 @@
   id: AtmosphericTechnicianOveralls
   equipment:
     outerClothing: ClothingOuterOverallsAtmos
+
+# Glasses
+- type: loadout
+  id: ThermalGoggles
+  equipment: 
+    eyes: ClothingEyesGlassesThermal
+
+- type: loadout
+  id: ThermalGogglesPrescription
+  equipment: 
+    eyes: ClothingEyesGlassesThermalPrescription

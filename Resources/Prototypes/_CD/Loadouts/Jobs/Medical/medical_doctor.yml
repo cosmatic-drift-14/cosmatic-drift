@@ -112,3 +112,18 @@
   id: MedicalVisorHud
   equipment:
     eyes: ClothingEyesHudMedicalVisor
+
+- type: loadout
+  id: MedicalVisorHudPrescription
+  equipment:
+    eyes: ClothingEyesHudMedicalVisorPrescription
+
+- type: loadout
+  id: MedicalHud
+  equipment:
+    eyes: ClothingEyesHudMedical
+
+- type: loadout
+  id: MedicalHudPatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudMedical

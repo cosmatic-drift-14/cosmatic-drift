@@ -2,8 +2,8 @@
   id: Packed
   mapName: 'Packed'
   mapPath: /Maps/packed.yml
-  minPlayers: 5
-  maxPlayers: 25 #CD change
+  minPlayers: 0 #CD change from 7 to 0.
+  maxPlayers: 15 #CD change from 35 to 15.
   patchfile: /CDMapPatches/packed.yml # CD Edit: Apply map patch
   stations:
     Packed:

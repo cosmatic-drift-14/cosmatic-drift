@@ -15,6 +15,18 @@
   - BrownShoes
   - BlackShoes
 
+- type: loadoutGroup
+  id: CommandGlasses
+  name: loadout-group-command-glasses
+  minLimit: 0
+  loadouts:
+  - CommandGlasses
+  - CommandGlassesPrescription
+  - CommandHud
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
 # Civilian
 - type: loadoutGroup
   id: PrivateInvestigatorOuterClothing
@@ -50,6 +62,7 @@
   minLimit: 0
   loadouts:
   - Sunglasses
+  - SunglassesPrescription
   - Glasses
   - Aviators
 
@@ -59,6 +72,32 @@
   loadouts:
   - PassengerPDA
   - OffDutyPDA
+
+- type: loadoutGroup
+  id: BartenderGlasses
+  name: loadout-group-bartender-glasses
+  minLimit: 0
+  loadouts:
+  - BartenderGlasses
+  - BartenderGlassesPrescription
+  - BartenderHudPatch
+  - Sunglasses
+  - SunglassesPrescription
+  - Aviators
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: MusicianGlasses
+  name: loadout-group-musician-glasses
+  minLimit: 0
+  loadouts:
+  - Sunglasses
+  - SunglassesPrescription
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
 
 # Cargo
 - type: loadoutGroup
@@ -101,10 +140,30 @@
 - type: loadoutGroup
   id: EngineeringEyewear
   name: loadout-group-engineering-goggles
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - ClothingEyesGlassesMeson
   - ClothingEyesGlassesMesonPrescription
+  - DiagnosticGlassesPrescription
+  - DiagnosticHud
+  - DiagnosticHudPatch
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: AtmosphericTechnicianGlasses
+  name: loadout-group-atmospheric-technician-glasses
+  minLimit: 0
+  loadouts:
+  - ThermalGoggles
+  - ThermalGogglesPrescription
+  - ClothingEyesGlassesMeson
+  - ClothingEyesGlassesMesonPrescription
+  - DiagnosticGlassesPrescription
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
 
 # Science
 - type: loadoutGroup
@@ -137,6 +196,18 @@
   - ScienceWintercoat
   - RoboticistLabCoat
   - RoboticistWintercoat
+
+- type: loadoutGroup
+  id: ScientistGlasses
+  name: loadout-group-scientist-glasses
+  minLimit: 0
+  loadouts:
+  - DiagnosticGlassesPrescription
+  - DiagnosticHud
+  - DiagnosticHudPatch
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
 
 # Security
 - type: loadoutGroup
@@ -179,9 +250,34 @@
 - type: loadoutGroup
   id: SecurityGlassesOrHud
   name: loadout-group-security-glasses-or-hud
+  minLimit: 0
   loadouts:
   - EyesGlassesSecurity
+  - EyesGlassesSecurityPrescription
   - EyesHudSecurity
+  - SecurityHudPatch
+  - Sunglasses
+  - SunglassesPrescription
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: DetectiveGlasses
+  name: loadout-group-detective-glasses
+  minLimit: 0
+  loadouts:
+  - GlassesNoir
+  - GlassesNoirPrescription
+  - EyesGlassesSecurity
+  - EyesGlassesSecurityPrescription
+  - EyesHudSecurity
+  - SecurityHudPatch
+  - Sunglasses
+  - SunglassesPrescription
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
 
 # Medical
 - type: loadoutGroup
@@ -242,6 +338,30 @@
   - GeneBackpack
   - GeneSatchel
   - GeneDuffel
+
+- type: loadoutGroup
+  id: MedicalGlasses
+  name: loadout-group-medical-glasses
+  minLimit: 0
+  loadouts:
+  - MedicalVisorHud
+  - MedicalVisorHudPrescription
+  - MedicalHud
+  - MedicalHudPatch
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: ChemistGlasses
+  name: loadout-group-chemist-glasses
+  minLimit: 0
+  loadouts:
+  - ChemistGoggles
+  - ChemistGogglesPrescription
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
 
 - type: loadoutGroup
   id: ParamedicMask
