@@ -1,28 +1,25 @@
-using Content.Server._CD.Species;
-using Content.Server.StationRecords.Systems;
+using Content.Shared._CD.Species;
+using Content.Shared.Forensics.Components;
+using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
-using Content.Shared._CD.Records;
-using Content.Shared._CD.Species;
-using Content.Shared.Forensics.Components;
-using Content.Shared.GameTicking;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._CD.Records;
+namespace Content.Shared._CD.Records;
 
 public sealed class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly StationRecordsSystem _records = default!;
+    [Dependency] private readonly SharedStationRecordsSystem _records = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(StationRecordsSystem), typeof(CustomSpeciesNameSystem)]);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(SharedStationRecordsSystem), typeof(SharedCustomSpeciesNameSystem)]);
     }
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
@@ -119,7 +116,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         var key = recordsDb.CreateNewKey();
         recordsDb.Records.Add(key, records);
         var playerKey = new CharacterRecordKey { Station = station, Index = key };
-        AddComp(player, new CharacterRecordKeyStorageComponent(playerKey));
+        AddComp(player, new Shared.CharacterRecordKeyStorageComponent(playerKey));
 
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
@@ -130,7 +127,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         CharacterRecordType ty,
         int idx,
         CharacterRecordsComponent? recordsDb = null,
-        CharacterRecordKeyStorageComponent? key = null)
+        Shared.CharacterRecordKeyStorageComponent? key = null)
     {
         if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
@@ -163,7 +160,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         EntityUid station,
         EntityUid player,
         CharacterRecordsComponent? recordsDb = null,
-        CharacterRecordKeyStorageComponent? key = null)
+        Shared.CharacterRecordKeyStorageComponent? key = null)
     {
         if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
@@ -178,7 +175,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
-    public void DeleteAllRecords(EntityUid player, CharacterRecordKeyStorageComponent? key = null)
+    public void DeleteAllRecords(EntityUid player, Shared.CharacterRecordKeyStorageComponent? key = null)
     {
         if (!Resolve(player, ref key))
             return;
@@ -198,5 +195,3 @@ public sealed class CharacterRecordsSystem : EntitySystem
             : recordsDb.Records;
     }
 }
-
-public sealed class CharacterRecordsModifiedEvent : EntityEventArgs;

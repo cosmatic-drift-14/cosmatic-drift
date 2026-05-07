@@ -36,6 +36,7 @@ using Robust.Shared.Prototypes;
 
 // CD: imports
 using Content.Server._CD.Records;
+using Content.Shared._CD.Records;
 
 namespace Content.Server.Administration.Systems;
 
