@@ -1,17 +1,11 @@
-using System.Runtime.InteropServices;
 using Content.Shared.Actions;
 using Content.Shared.Mind;
-using Content.Shared.Movement.Systems;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Silicons.StationAi;
-using Microsoft.VisualBasic.CompilerServices;
 using Robust.Shared.Audio;
-using Robust.Shared.Containers;
-using Robust.Shared.Map;
 using Robust.Shared.Network;
-using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Silicons.StationAi;
 
@@ -20,7 +14,6 @@ public abstract class SharedStationAiShellUserSystem : EntitySystem
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedStationAiSystem _stationAiSystem = default!;
     [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
     [Dependency] protected readonly SharedUserInterfaceSystem UserInterface = default!;

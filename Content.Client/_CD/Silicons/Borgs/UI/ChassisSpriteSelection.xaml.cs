@@ -24,7 +24,7 @@ public sealed partial class ChassisSpriteSelection : Control
     public event Action? SubtypeSelected;
 
     private const int PrototypeViewSize = 2;
-    private static readonly ProtoId<EntityCategoryPrototype> _borgSubtypeCategory = "BorgSubtype";
+    private static readonly ProtoId<EntityCategoryPrototype> BorgSubtypeCategory = "BorgSubtype";
 
     public ChassisSpriteSelection()
     {
@@ -42,9 +42,9 @@ public sealed partial class ChassisSpriteSelection : Control
         List<Button> buttons = new List<Button>();
         buttons.Add(CreateDefaultSubtypeButton(borgTypePrototype, buttonGroup));
 
-        foreach (var entProto in _prototype.Categories.GetValueRefOrNullRef(_borgSubtypeCategory))
+        foreach (var entProto in _prototype.Categories.GetValueRefOrNullRef(BorgSubtypeCategory))
         {
-            if (!entProto.TryGetComponent<Shared._CD.Silicons.Borgs.BorgSubtypeDefinitionComponent>(out var subtype, _componentFactory))
+            if (!entProto.TryGetComponent<BorgSubtypeDefinitionComponent>(out var subtype, _componentFactory))
                 continue;
 
             // Only add subtypes of the current selected 'main' borg type (engineering, medical, etc.)

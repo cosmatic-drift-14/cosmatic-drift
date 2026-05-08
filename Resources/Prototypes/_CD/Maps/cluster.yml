@@ -2,7 +2,7 @@
   id: Cluster
   mapName: 'Cluster'
   mapPath: /Maps/_CD/cluster.yml
-  minPlayers: 5 #CD change
+  minPlayers: 0 #CD change
   maxPlayers: 15 #CD change
   stations:
     Cluster:
