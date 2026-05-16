@@ -90,8 +90,8 @@ public abstract partial class SharedExtendableClothingSystem : EntitySystem
         {
             // already made sure the entities have the proper component in the attempt
             var comp = Comp<ExtendedEquipmentComponent>(equipment);
-            if(!_inventory.TryEquip(args.Equipee,
-                   args.Equipee,
+            if(!_inventory.TryEquip(args.EquipTarget,
+                   args.EquipTarget,
                    equipment,
                    comp.Slot,
                    force: true,
