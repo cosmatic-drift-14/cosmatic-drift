@@ -17,7 +17,7 @@
 - type: startingGear
   id: MusicianGear
   equipment:
-    eyes: ClothingEyesGlassesSunglasses
+    # eyes: ClothingEyesGlassesSunglasses #CD: Loadouts
     # shoes: ClothingShoesBootsLaceup | CD, removed due to loadout addtion.
     id: MusicianPDA
     ears: ClothingHeadsetService

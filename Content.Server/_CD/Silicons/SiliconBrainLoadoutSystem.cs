@@ -1,17 +1,10 @@
 using System.Diagnostics;
-using Content.Server.GameTicking;
-using Content.Server.Players;
-using Content.Server.Preferences.Managers;
 using Content.Shared.Clothing;
-using Content.Shared.GameTicking;
-using Content.Shared.Mind;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Silicons.Borgs.Components;
-using Content.Shared.Station;
 using Robust.Shared.Containers;
-using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
@@ -20,11 +13,6 @@ namespace Content.Server._CD.Silicons;
 public sealed class SiliconBrainLoadoutSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly SharedStationSpawningSystem _station = default!;
-    [Dependency] private readonly LoadoutSystem _loadout = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!;
-    [Dependency] private readonly PlayerSystem _player = default!;
-    [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
 
     private ProtoId<LoadoutGroupPrototype> CyborgBrainLoadoutPrototype => "CyborgBrain";

@@ -7,7 +7,7 @@ namespace Content.Shared._CD;
 /// with the <see cref="ExtendableClothingComponent"/> component.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(ExtendableClothingSystem))]
+[Access(typeof(SharedExtendableClothingSystem))]
 public sealed partial class ExtendedEquipmentComponent : Component
 {
     /// <summary>

@@ -49,7 +49,7 @@
     #   required: false
 
 - type: entity
-  parent: BaseSpeciesAppearance
+  parent: [LayersMoth, BaseSpeciesAppearance] # CD: Added LayersMoth as temporary fix of moth wings layering
   id: AppearanceMoth
   name: moth appearance
   components:
@@ -145,7 +145,7 @@
     accent: zombieMoth
   - type: Speech
     speechVerb: Moth
-    allowedEmotes: ['Chitter', 'Squeak']
+    allowedEmotes: ['Chitter', 'Squeak', 'Flap']
   - type: TypingIndicator
     proto: moth
   - type: Bloodstream
@@ -166,6 +166,8 @@
       Male: UnisexMoth
       Female: UnisexMoth
       Unsexed: UnisexMoth
+  - type: BodyEmotes
+    soundsId: MothBodyEmotes
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 1.5 # Move around more easily in space.
     baseWeightlessFriction: 1
@@ -243,6 +245,7 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.Hair # CD: Moth hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganMothExternal ]

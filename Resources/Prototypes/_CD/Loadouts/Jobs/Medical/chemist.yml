@@ -9,3 +9,14 @@
   id: ChemistCasualsuit
   equipment: 
     jumpsuit: ClothingUniformChemistCasual
+
+# Glasses
+- type: loadout
+  id: ChemistGoggles
+  equipment:
+    eyes: ClothingEyesGlassesChemical
+
+- type: loadout
+  id: ChemistGogglesPrescription
+  equipment:
+    eyes: ClothingEyesGlassesChemicalPrescription
