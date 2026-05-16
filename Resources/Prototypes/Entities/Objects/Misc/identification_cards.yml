@@ -211,7 +211,7 @@
       offset: *icon-offset
       state: TechnicalAssistant
   - type: PresetIdCard
-    job: TechnicalAssistant
+    job: StationEngineer #CD
 
 - type: entity
   parent: IDCardStandard
@@ -284,7 +284,7 @@
       offset: *icon-offset
       state: MedicalIntern
   - type: PresetIdCard
-    job: MedicalIntern
+    job: MedicalDoctor #CD
 
 - type: entity
   parent: IDCardStandard
@@ -393,7 +393,7 @@
       offset: *icon-offset
       state: ResearchAssistant
   - type: PresetIdCard
-    job: ResearchAssistant
+    job: Scientist #CD
 
 - type: entity
   parent: IDCardStandard
@@ -448,7 +448,7 @@
       offset: *icon-offset
       state: SecurityCadet
   - type: PresetIdCard
-    job: SecurityCadet
+    job: SecurityOfficer #CD
 
 - type: entity
   parent: IDCardStandard

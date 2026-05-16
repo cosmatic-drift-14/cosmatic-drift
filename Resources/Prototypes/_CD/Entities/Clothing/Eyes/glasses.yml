@@ -21,3 +21,75 @@
     - type: Clothing
       sprite: _CD/Clothing/Eyes/Glasses/mesonprescription.rsi
     - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesGlassesSunglasses
+  id: ClothingEyesGlassesSunglassesPrescription
+  name: prescription sun glasses
+  description: A pair of black sunglasses. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/sunglasses_prescirption.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/sunglasses_prescirption.rsi
+    - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesGlassesSecurity
+  id: ClothingEyesGlassesSecurityPrescription
+  name: prescription security glasses
+  description: Upgraded sunglasses that provide flash immunity and a security HUD. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/sec_glasses_prescription.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/sec_glasses_prescription.rsi
+    - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesGlassesCommand
+  id: ClothingEyesGlassesCommandPrescription
+  name: prescription administration glasses
+  description: Upgraded sunglasses that provide flash immunity and show ID card status. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/command_glasses_prescription.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/command_glasses_prescription.rsi
+    - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesGlassesThermal
+  id: ClothingEyesGlassesThermalPrescription
+  name: prescription optical thermal scanner
+  description: Thermals in the shape of glasses. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/thermal_prescription.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/thermal_prescription.rsi
+    - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesGlassesChemical
+  id: ClothingEyesGlassesChemicalPrescription
+  name: prescription chemical analysis goggles
+  description: Goggles that can scan the chemical composition of a solution. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/science_prescription.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/science_prescription.rsi
+    - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesGlassesNoir
+  id: ClothingEyesGlassesNoirPrescription
+  name: prescription noir-tech glasses
+  description: A pair of glasses that simulate what the world looked like before the invention of color. These ones are fitted with prescription lenses.
+  components:
+    - type: Sprite
+      sprite: _CD/Clothing/Eyes/Glasses/noir_prescription.rsi
+    - type: Clothing
+      sprite: _CD/Clothing/Eyes/Glasses/noir_prescription.rsi
+    - type: VisionCorrection

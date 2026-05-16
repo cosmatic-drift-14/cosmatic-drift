@@ -3,6 +3,7 @@
   name: job-name-technical-assistant
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
+  setPreference: false #CD
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 7200 #2 hrs

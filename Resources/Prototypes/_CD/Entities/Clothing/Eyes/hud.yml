@@ -11,3 +11,39 @@
   - type: Tag
     tags:
     - HudMedical
+
+- type: entity
+  parent: ClothingEyesHudMedicalVisor
+  id: ClothingEyesHudMedicalVisorPrescription
+  name: prescription medical visor
+  description: A full-vision medical hud, allowing for more visible information diagnostics. These ones are fitted with prescription lenses.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Eyes/Hud/med_visor_prescription.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Eyes/Hud/med_visor_prescription.rsi
+  - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesHudDiagnostic
+  id: ClothingEyesHudDiagnosticPrescription
+  name: prescription diagnostic glasses
+  description: A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Made out of see-borg-ium. These ones are fitted with prescription lenses.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Eyes/Hud/diagnostic_glasses_prescription.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Eyes/Hud/diagnostic_glasses_prescription.rsi
+  - type: VisionCorrection
+
+- type: entity
+  parent: ClothingEyesHudBeer
+  id: ClothingEyesHudBeerPrescription
+  name: prescription beer goggles
+  description: A pair of sunHud outfitted with apparatus to scan reagents, as well as providing an innate understanding of liquid viscosity while in motion. These ones are fitted with prescription lenses.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Eyes/Hud/beer_goggles_prescription.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Eyes/Hud/beer_goggles_prescription.rsi
+  - type: VisionCorrection
