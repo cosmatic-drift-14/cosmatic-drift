@@ -50,6 +50,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             weh.SelectedLoadouts.Add(selected.Key, new List<Loadout>(selected.Value));
         }
 
+        foreach (var linked in OccupiedGroups)
+        {
+            weh.OccupiedGroups.Add(linked);
+        }
+
         weh.EntityName = EntityName;
 
         return weh;
@@ -155,6 +160,8 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 Apply(loadoutProto);
             }
 
+            EnsureMultislotsAreValidated(groupProto, protoManager); // CD addition: make sure our fields for multiple groups are instantiated before anything
+
             // Apply defaults if required
             // Technically it's possible for someone to game themselves into loadouts they shouldn't have
             // If you put invalid ones first but that's your fault for not using sensible defaults
@@ -162,7 +169,9 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             {
                 foreach (var protoId in groupProto.Loadouts)
                 {
-                    if (loadouts.Count >= groupProto.MinLimit)
+                    // CD - multigroup loadouts
+                    var multiGroupCount = OccupiedGroups.Count(t => t.Item1 == groupProto.ID);
+                    if (loadouts.Count + multiGroupCount >= groupProto.MinLimit) // CD changes end
                         break;
 
                     if (!protoManager.TryIndex(protoId, out var loadoutProto))
