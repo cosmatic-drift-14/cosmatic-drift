@@ -136,7 +136,7 @@
 - type: entity
   id: CigPackGreen
   parent: CigPackBase
-  name: Spessman's Smokes packet
+  name: Spaceport packet # CD tweak - Reference to 'Newport' brand Menthol cigarettes, matching sprite.
   description: A label on the packaging reads, Wouldn't a slow death make a change?
   components:
   - type: Sprite
