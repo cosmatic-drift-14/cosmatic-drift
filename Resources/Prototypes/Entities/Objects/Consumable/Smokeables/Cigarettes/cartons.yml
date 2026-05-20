@@ -1,7 +1,7 @@
 - type: entity
   id: CigCartonGreen
   parent: [ BoxCardboard, BaseBagOpenClose ]
-  name: Spaceport carton
+  name: Spaceport carton # CD tweak - Reference to 'Newport' brand Menthol cigarettes, matching sprite.
   description: "A carton containing 6 packets of Spaceports."
   components:
   - type: Sprite
