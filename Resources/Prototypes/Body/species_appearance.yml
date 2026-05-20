@@ -37,9 +37,9 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
-    - map: [ "belt" ]
     - map: [ "id" ]
     - map: [ "outerClothing" ]
+    - map: [ "belt" ] #CD change from above id to below outerClothing
     - map: [ "back" ]
     - map: [ "neck" ]
     - map: [ "suitstorage" ]
