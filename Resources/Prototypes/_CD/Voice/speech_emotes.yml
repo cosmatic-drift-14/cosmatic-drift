@@ -17,7 +17,7 @@
     - calling
     - called
 
-- type: emote # From MoffStation for Avali
+- type: emote # From MoffStation for Avali and from RMC14 for Reptilians
   id: Hiss
   name: chat-emote-name-hiss
   category: Vocal
@@ -35,6 +35,50 @@
     - hisses
     - hissing
     - hissed
+
+- type: emote # From RMC14 for Reptilians
+  id: Purr
+  name: chat-emote-name-purr
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/purr.png # Sprite taken from RMC
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-purr"]
+  chatTriggers:
+    - purr
+    - purrs
+    - purring
+    - purred
+
+- type: emote # From RMC14 for Reptilians
+  id: Rattle
+  name: chat-emote-name-rattle
+  category: Hands
+  available: false
+  icon: _CD/Interface/Emotes/snarl.png # Sprite taken from RMC
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-rattle"]
+  chatTriggers:
+    - rattle
+    - rattles
+    - rattling
+    - rattled
+    - rattle tail
+    - rattles tail
+    - rattles their tail
+    - rattles her tail
+    - rattles his tail
+    - rattles its tail
 
 - type: emote # From Starlight
   id: Scree
@@ -117,7 +161,7 @@
   name: chat-emote-name-wurble
   category: Vocal
   available: false
-  icon: _CD/Interface/Emotes/peep.png
+  icon: _CD/Interface/Emotes/purr.png
   whitelist:
     components:
     - Vocal

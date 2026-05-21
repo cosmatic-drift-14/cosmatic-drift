@@ -2,6 +2,7 @@
 ## We have base Unisex sounds, which are same for all. Base Male and Female sounds (actually human), which are using for each sex. And base unique for each species sounds.
 ## Than we just using complects of parents to make proto for each specie and sex
 
+# Vocal sounds
 # Universal stuff. Replacing original emoteSounds
 - type: emoteSounds
   id: CDUnisexSounds
@@ -108,8 +109,12 @@
   sounds:
     Scream:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
-#    Laugh: – Temporarily deleted, will return soon
-#      path: /Audio/Animals/lizard_happy.ogg
+    Laugh:
+      path: /Audio/Animals/lizard_happy.ogg
+    Hiss:
+      collection: ReptilianHisses
+    Purr:
+      path: /Audio/_CD/Voice//Reptilian/lizard_purr.ogg
 
 - type: emoteSounds
   parent: [CDUnisexSounds, CDUnisexReptilian, CDMaleSounds]
@@ -146,8 +151,8 @@
       path: /Audio/Voice/Vox/shriek1.ogg
     Laugh:
       path: /Audio/Voice/Vox/vox_laugh.ogg
-#    Sneeze: – Will be added soon
-#      path: /Audio/Voice/Vox/vox_sneeze.ogg
+    Sneeze:
+      path: /Audio/Voice/Vox/vox_sneeze.ogg
     Cough:
       path: /Audio/Voice/Vox/vox_cough.ogg
     Sigh:
@@ -181,8 +186,8 @@
       path: /Audio/Voice/Diona/diona_scream.ogg
     Laugh:
       collection: DionaLaugh
-#    Sneeze: – Will be added soon
-#      collection: DionaSneeze
+    Sneeze:
+      collection: DionaSneeze
     Chirp:
       path: /Audio/Animals/nymph_chirp.ogg
     Honk: # Added, cause no parent general female/male sounds prototype for male/femaly diona's
@@ -254,10 +259,10 @@
   params:
     variation: 0.125
   sounds:
-#    Sneeze: – Will be added soon
-#      collection: VulpkaninSneeze
-#    Yawn: – Will be added soon
-#      collection: VulpkaninYawns
+    Sneeze:
+      collection: VulpkaninSneeze
+    Yawn:
+      collection: VulpkaninYawns
     Scream:
       collection: VulpkaninScreams
     Growl:
@@ -347,3 +352,14 @@
 - type: emoteSounds
   parent: [CDUnisexSounds, CDUnisexRodentia, CDFemaleSounds]
   id: CDFemaleRodentia
+
+# Body emotes
+## Reptilian
+- type: emoteSounds
+  parent: ReptilianBodyEmotes
+  id: CDReptilianBodyEmotes
+  sounds:
+    Rattle:
+      path: /Audio/_CD/Voice/Reptilian/lizard_rattle.ogg
+      params:
+        variation: 0.125

@@ -128,7 +128,7 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
-    allowedEmotes: ['Thump']
+    allowedEmotes: ['Thump', 'Hiss', 'Purr', 'Rattle'] # CD: Added Hiss, Purr and Rattle
   - type: TypingIndicator
     proto: lizard
   - type: Vocal # CD: More sound emotes
@@ -137,7 +137,7 @@
       Female: CDFemaleReptilian
       Unsexed: CDMaleReptilian
   - type: BodyEmotes
-    soundsId: ReptilianBodyEmotes
+    soundsId: CDReptilianBodyEmotes # CD: More sound emotes
   - type: Damageable
     damageModifierSet: Scale
   - type: MeleeWeapon
