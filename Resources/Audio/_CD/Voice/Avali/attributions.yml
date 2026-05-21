@@ -39,8 +39,8 @@
   source: https://freesound.org/people/xpoki/sounds/432735/
 
 - files: ["avali_chirp_1, avali_chirp_2, avali_chirp_3, avali_chirp_4, avali_chirp_5"]
-  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. Bird Chirps by whiskeyecho, Taken from https://freesound.org/"
   license: "CC0-1.0"
+  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. Bird Chirps by whiskeyecho, Taken from https://freesound.org/"
   source: https://freesound.org/s/727256/
 
 - files: ["avali_call_1, avali_call_2, avali_squawk, avali_whistle, avali_scree_1, avali_scree_2"]
@@ -49,8 +49,8 @@
   source: "https://xeno-canto.org"
 
 - files: ["avali_whistle"]
-  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. CanaryArtie-3.wav by ReadeOnly, Taken from https://freesound.org/"
   license: "CC0-1.0"
+  copyright: "Ported from Starlight and renamed, https://github.com/ss14Starlight/space-station-14/tree/starlight-dev/Resources/Audio/_Starlight/Voice/Resomi. CanaryArtie-3.wav by ReadeOnly, Taken from https://freesound.org/"
   source: https://freesound.org/s/85403/
 
 - files: ["avali_trill, avali_warble, avali_wurble"]
