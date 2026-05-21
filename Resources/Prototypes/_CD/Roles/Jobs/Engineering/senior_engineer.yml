@@ -19,7 +19,6 @@
   id: SeniorEngineerGear
   equipment:
     id: SeniorEngineerPDA
-    eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
 
