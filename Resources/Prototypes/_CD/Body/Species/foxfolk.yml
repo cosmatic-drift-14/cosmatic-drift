@@ -145,7 +145,7 @@
       types:
         Heat : 3 #per second, scales with temperature & other constants
   - type: Wagging
-    action: ActionToggleWaggingFoxfolk # Replace it with ActionToggleWaggingVulpkanin, when https://github.com/space-wizards/space-station-14/pull/42843 will be merged to CD build
+    action: ActionToggleWaggingVulpkanin
 
 - type: entity
   parent: OrganBase
