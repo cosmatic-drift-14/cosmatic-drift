@@ -1,0 +1,154 @@
+- type: decal
+  abstract: true
+  parent: CDDecalBase
+  id: CDDecalBloodBase
+  tags: ["station", "markings"]
+
+# Blood
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor1
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor2
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor3
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor4
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor5
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor5
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor6
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor6
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodFloor7
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood_floor.rsi
+    state: mfloor7
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_1
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_2
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_3
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_4
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail5
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_5
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail6
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_6
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail7
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_7
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodTrail8
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: tracks_8
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodSplatter1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: splatter1
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodSplatter2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: splatter2
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodSplatter3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: splatter3
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodSplatter4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: splatter4
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodSplatter5
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: splatter5
+
+- type: decal
+  parent: CDDecalBloodBase
+  id: CDDecalBloodSplatter6
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/blood.rsi
+    state: splatter6
