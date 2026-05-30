@@ -1,7 +1,7 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.2.1
   forkId: ""
   forkVersion: ""
   time: 04/12/2026 22:07:15
@@ -62824,7 +62824,6 @@ entities:
   - uid: 16464
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 0.5,1.5
       parent: 2
     - type: TechnologyDatabase
@@ -108669,12 +108668,12 @@ entities:
           restitution: 0
           friction: 0.4
     - type: EntityStorage
-      removedMasks: 20
       air:
         volume: 200
         immutable: False
         temperature: 293.14673
         moles: {}
+      removedMasks: 20
       open: True
     - type: PlaceableSurface
       isPlaceable: True

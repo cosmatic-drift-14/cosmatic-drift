@@ -151,6 +151,8 @@
               Quantity: 25
             # - ReagentId: Necrosol # CD Change: removed necrosol
             #   Quantity: 25
+            - ReagentId: Arcryox
+              Quantity: 25
     - type: GuideHelp
       guides:
       - MinorAntagonists
