@@ -54,6 +54,7 @@
 - type: entity
   parent: BaseSpeciesAppearance
   id: AppearanceReptilian
+  categories: [ HideSpawnMenu ]
   name: reptilian appearance
   components:
   - type: Inventory
@@ -131,6 +132,10 @@
     allowedEmotes: ['Thump', 'Hiss', 'Purr', 'Rattle'] # CD: Added Hiss, Purr and Rattle
   - type: TypingIndicator
     proto: lizard
+  - type: CreamPied
+    sprite:
+      sprite: Effects/creampie.rsi
+      state: creampie_lizard
   - type: Vocal # CD: More sound emotes
     sounds:
       Male: CDMaleReptilian
