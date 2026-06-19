@@ -1,0 +1,306 @@
+- type: decal
+  abstract: true
+  parent: CDDecalBase
+  id: CDDecalHybrisaBase
+  tags: ["station", "markings"]
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningWest
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: W
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningEast
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: E
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningNorth
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: NORTH
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningSouth
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: S
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningNorthEast
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: NE-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningNorthWest
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: NW-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningSouthEast
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: SE-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningSouthWest
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: SW-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningWest
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_W
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningEast
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_E
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningNorth
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_N
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningSouth
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_S
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningNorthEast
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_NE-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningNorthWest
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_NW-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningSouthEast
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_SE-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaRedWarningSouthWest
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: red_SW-out
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_1
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_2
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_3
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_4
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash5
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_5
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash6
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_6
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash7
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_7
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash8
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_8
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash9
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_9
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash10
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_10
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash11
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_11
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash12
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_12
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash13
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_13
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash14
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_14
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash15
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_15
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash16
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_16
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaTrash17
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: trash_17
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngled
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngled2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled2
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngled3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled3
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngled4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled4
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngledCorner
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled_corner
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngledCorner2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled_corner2
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngledCorner3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled_corner3
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWarningStripesAngledCorner4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: warningstripes_angled_corner4
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWorkerSign1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: workers_decal1
+
+- type: decal
+  parent: CDDecalHybrisaBase
+  id: CDDecalHybrisaWorkerSign2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/hybrisa.rsi
+    state: workers_decal2
