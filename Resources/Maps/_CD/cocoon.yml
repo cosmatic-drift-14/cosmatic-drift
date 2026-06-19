@@ -116314,10 +116314,6 @@ entities:
     - type: Transform
       pos: 33.5,2.5
       parent: 2
-    - type: PoweredLight
-      isBlinking: True
-      lastGhostBlink: 13744.5195888
-    - type: Timer
   - uid: 17330
     components:
     - type: Transform
