@@ -6,7 +6,6 @@
     mode: SnapgridCenter
   components:
   - type: Transform
-    noRot: true
   - type: SpriteFade
   - type: Clickable
   - type: Sprite
@@ -14,7 +13,6 @@
     drawdepth: Overdoors
     state: container_blank
     offset: "0, 0.5"
-    noRot: true
   - type: Physics
     bodyType: Static
   - type: Storage
