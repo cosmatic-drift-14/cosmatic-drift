@@ -52,6 +52,7 @@
     guides:
     - AtmosphericAlertsComputer
     - DeviceMonitoringAndControl
+  - type: AmbientMusicMarkerEngineering
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -333,6 +334,7 @@
         type: PowerMonitoringConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
+  - type: AmbientMusicMarkerEngineering
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -358,6 +360,7 @@
     color: "#1f8c28"
   - type: Computer
     board: MedicalRecordsComputerCircuitboard
+  - type: AmbientMusicMarkerMedical
   # BEGIN CD
   - type: CharacterRecordConsole
     consoleType: Medical
@@ -496,6 +499,7 @@
     receiveFrequencyId: CrewMonitor
   - type: WirelessNetworkConnection
     range: 1200
+  - type: AmbientMusicMarkerMedical
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -976,6 +980,7 @@
     color: "#c9c042"
   - type: AccessReader
     access: [["Engineering"]]
+  - type: AmbientMusicMarkerEngineering
 
 - type: entity
   id: ComputerCargoOrdersMedical
@@ -999,7 +1004,7 @@
     account: Medical
     announcementChannel: Medical
     removeLimitAccess: [ "ChiefMedicalOfficer" ]
-    mode: PrintSlip # CD: Print slips
+    mode: SendToPrimary
   - type: ActiveRadio
     channels:
     - Medical
@@ -1032,7 +1037,7 @@
     account: Science
     announcementChannel: Science
     removeLimitAccess: [ "ResearchDirector" ]
-    mode: PrintSlip # CD: Print slips
+    mode: SendToPrimary
   - type: ActiveRadio
     channels:
     - Science
@@ -1065,7 +1070,7 @@
     account: Security
     announcementChannel: Security
     removeLimitAccess: [ "HeadOfSecurity" ]
-    mode: PrintSlip # CD: Print slips
+    mode: SendToPrimary
   - type: ActiveRadio
     channels:
     - Security
@@ -1098,7 +1103,7 @@
     account: Service
     announcementChannel: Service
     removeLimitAccess: [ "HeadOfPersonnel" ]
-    mode: PrintSlip # CD: Print slips
+    mode: SendToPrimary
   - type: ActiveRadio
     channels:
     - Service

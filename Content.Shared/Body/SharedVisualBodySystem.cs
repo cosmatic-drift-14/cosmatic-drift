@@ -14,9 +14,10 @@ namespace Content.Shared.Body;
 /// </summary>
 public abstract partial class SharedVisualBodySystem : EntitySystem
 {
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly MarkingManager _marking = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private MarkingManager _marking = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+
     [Dependency] private readonly SharedScaleVisualsSystem _scaleVisuals = default!; // CD Height
 
     public override void Initialize()
