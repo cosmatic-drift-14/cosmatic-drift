@@ -8,7 +8,7 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 21600 #6 hrs
-  canBeAntag: false
+  weight: 10
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain
@@ -28,7 +28,6 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 7200 #2 hrs
-  canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd
   jobEntity: PlayerBorgBattery
