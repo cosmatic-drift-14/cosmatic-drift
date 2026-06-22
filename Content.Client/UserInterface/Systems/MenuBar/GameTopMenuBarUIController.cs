@@ -26,7 +26,7 @@ public sealed partial class GameTopMenuBarUIController : UIController
     [Dependency] private GuidebookUIController _guidebook = default!;
     [Dependency] private EmotesUIController _emotes = default!;
 
-    [Dependency] private readonly InventoryUIController _inventory = default!; // CD - why isnt this sorted istg
+    [Dependency] private InventoryUIController _inventory = default!; // CD - why isnt this sorted istg
 
     private GameTopMenuBar? GameTopMenuBar => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>();
 

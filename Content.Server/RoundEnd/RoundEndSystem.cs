@@ -45,7 +45,7 @@ namespace Content.Server.RoundEnd
         [Dependency] private SharedAudioSystem _audio = default!;
         [Dependency] private StationSystem _stationSystem = default!;
 
-        [Dependency] private readonly ShuttleVoteSystem _cdShuttleVoteSystem = default!;
+        [Dependency] private ShuttleVoteSystem _cdShuttleVoteSystem = default!;
 
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 

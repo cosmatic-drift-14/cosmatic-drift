@@ -18,7 +18,7 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
     [Dependency] private MarkingManager _marking = default!;
     [Dependency] private SharedContainerSystem _container = default!;
 
-    [Dependency] private readonly SharedScaleVisualsSystem _scaleVisuals = default!; // CD Height
+    [Dependency] private SharedScaleVisualsSystem _scaleVisuals = default!; // CD Height
 
     public override void Initialize()
     {

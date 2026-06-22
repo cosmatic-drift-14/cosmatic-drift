@@ -3,9 +3,9 @@ using Content.Shared.Interaction.Events;
 
 namespace Content.Shared._CD.Admin.Aghost;
 
-public abstract class SharedInteractionToggleSystem : EntitySystem
+public abstract partial class SharedInteractionToggleSystem : EntitySystem
 {
-    [Dependency] private readonly AlertsSystem _alertsSystem = default!;
+    [Dependency] private AlertsSystem _alertsSystem = default!;
 
     public override void Initialize()
     {

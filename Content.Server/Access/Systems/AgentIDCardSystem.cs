@@ -32,7 +32,7 @@ namespace Content.Server.Access.Systems
         [Dependency] private LockSystem _lock = default!;
         [Dependency] private SharedJobStatusSystem _jobStatus = default!;
 
-        [Dependency] private readonly SharedNanoChatSystem _nanoChat = default!; // CD
+        [Dependency] private SharedNanoChatSystem _nanoChat = default!; // CD
 
         public override void Initialize()
         {

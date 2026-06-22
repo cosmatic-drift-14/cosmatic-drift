@@ -10,7 +10,7 @@ namespace Content.Client._CD.Ghostrespawn;
 [GenerateTypedNameReferences]
 public sealed partial class GhostRespawnRulesWindow : FancyWindow
 {
-    [Dependency] private readonly IConsoleHost _consoleHost = default!;
+    [Dependency] private IConsoleHost _consoleHost = default!;
 
     private readonly RichTextLabel _rulesLabel = new() { Margin = new Thickness(5, 5, 5, 5) };
 

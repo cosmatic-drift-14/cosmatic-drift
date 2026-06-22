@@ -60,7 +60,7 @@ public sealed partial class AdminSystem : EntitySystem
     [Dependency] private TransformSystem _transform = default!;
 
     // CD: for erasing records on erase ban
-    [Dependency] private readonly CharacterRecordsSystem _cdRecords = default!;
+    [Dependency] private CharacterRecordsSystem _cdRecords = default!;
 
     private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
 

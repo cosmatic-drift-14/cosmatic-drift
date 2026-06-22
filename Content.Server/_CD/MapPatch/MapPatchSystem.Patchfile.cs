@@ -18,9 +18,9 @@ namespace Content.Server._CD.MapPatch;
 
 public sealed partial class MapPatchSystem
 {
-    [Dependency] private readonly IResourceManager _res = default!;
-    [Dependency] private readonly ISerializationManager _serialization = default!;
-    [Dependency] private readonly IRuntimeLog _runtime = default!;
+    [Dependency] private IResourceManager _res = default!;
+    [Dependency] private ISerializationManager _serialization = default!;
+    [Dependency] private IRuntimeLog _runtime = default!;
 
     /// <summary>
     ///     Attempt to load a patchfile, and provide a list of patches to make to the map.

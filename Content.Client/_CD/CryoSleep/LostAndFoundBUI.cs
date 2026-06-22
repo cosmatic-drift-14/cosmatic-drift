@@ -3,10 +3,10 @@ using Robust.Client.Player;
 
 namespace Content.Client._CD.CryoSleep;
 
-public sealed class LostAndFoundBoundUserInterface : BoundUserInterface
+public sealed partial class LostAndFoundBoundUserInterface : BoundUserInterface
 {
-    [Dependency] private readonly IEntityManager _entManager = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private IEntityManager _entManager = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
 
     private LostAndFoundWindow? _window;
 

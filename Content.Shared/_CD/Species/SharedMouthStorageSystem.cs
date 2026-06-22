@@ -8,9 +8,9 @@ using Content.Shared.Storage.EntitySystems;
 
 namespace Content.Shared._CD.Species;
 
-public abstract class SharedMouthStorageSystem : EntitySystem
+public abstract partial class SharedMouthStorageSystem : EntitySystem
 {
-    [Dependency] private readonly DumpableSystem _dumpableSystem = default!;
+    [Dependency] private DumpableSystem _dumpableSystem = default!;
 
     public override void Initialize()
     {
