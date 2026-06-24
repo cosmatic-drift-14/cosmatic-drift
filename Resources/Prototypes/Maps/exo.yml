@@ -43,6 +43,7 @@
             MedicalDoctor: [ 4, 4 ]
             # MedicalIntern: [ 3, 3 ] #CD disabled.
             Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD addition.
@@ -52,9 +53,9 @@
             HeadOfSecurity: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ] #CD addition.
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 4, 4 ]
+            SecurityOfficer: [ 5, 5 ]
             Detective: [ 1, 1 ]
-            # SecurityCadet: [ 4, 4 ] #CD disabled.
+            # SecurityCadet: [ 3, 3 ] #CD disabled.
             Lawyer: [ 2, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]

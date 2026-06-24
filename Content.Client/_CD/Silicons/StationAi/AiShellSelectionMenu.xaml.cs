@@ -15,7 +15,7 @@ public sealed partial class AiShellSelectionMenu : DefaultWindow
     public Action<NetEntity?>? EnterShell;
     public Action<NetEntity?>? SelectShell;
 
-    [Dependency] private readonly IEntityManager _ent = default!;
+    [Dependency] private IEntityManager _ent = default!;
 
     private NetEntity? _selected;
 

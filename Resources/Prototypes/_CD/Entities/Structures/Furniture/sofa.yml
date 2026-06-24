@@ -52,8 +52,9 @@
     canCollide: False
   - type: Pullable
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
   - type: Destructible #Might want to move this to the parent instead, testing required.
     thresholds:
     - trigger:
@@ -123,8 +124,9 @@
     canCollide: False
   - type: Pullable
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
   - type: Destructible #May be adviseable to move to a parent.
     thresholds:
     - trigger:

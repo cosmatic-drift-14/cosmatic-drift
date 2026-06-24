@@ -10,10 +10,10 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Silicons;
 
-public sealed class SiliconBrainLoadoutSystem : EntitySystem
+public sealed partial class SiliconBrainLoadoutSystem : EntitySystem
 {
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     private ProtoId<LoadoutGroupPrototype> CyborgBrainLoadoutPrototype => "CyborgBrain";
 
