@@ -17,7 +17,7 @@ namespace Content.Client._CD.Silicons.Borgs.UI;
 [GenerateTypedNameReferences]
 public sealed partial class ChassisSpriteSelection : Control
 {
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     public BorgSubtypePrototype? SubtypePrototype;
     public event Action? SubtypeSelected;

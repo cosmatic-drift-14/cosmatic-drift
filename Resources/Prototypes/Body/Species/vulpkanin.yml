@@ -159,7 +159,10 @@
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
-  - type: Vocal # CD: More sound emotes
+
+  - type: TypingIndicator
+    proto: vulpkanin
+  - type: Vocal
     sounds:
       Male: CDMaleVulpkanin
       Female: CDFemaleVulpkanin
@@ -204,14 +207,14 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: SulfurBlood
-        Quantity: 300
+        Quantity: 600
   - type: CreamPied
     sprite:
       sprite: Effects/creampie.rsi
       state: creampie_vulpkanin
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganVulpkanin
   abstract: true
   suffix: vulpkanin

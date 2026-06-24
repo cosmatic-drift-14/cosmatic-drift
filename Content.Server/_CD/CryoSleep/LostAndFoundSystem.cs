@@ -6,12 +6,12 @@ using System.Linq;
 
 namespace Content.Server._CD.CryoSleep;
 
-public sealed class LostAndFoundSystem : EntitySystem
+public sealed partial class LostAndFoundSystem : EntitySystem
 {
-    [Dependency] private readonly HandsSystem _hands = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
-    [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private HandsSystem _hands = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private TransformSystem _transform = default!;
+    [Dependency] private UserInterfaceSystem _ui = default!;
 
     private const string LostFoundContainer = "lost_found_storage";
 

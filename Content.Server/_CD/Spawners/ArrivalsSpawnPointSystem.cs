@@ -7,11 +7,11 @@ using Robust.Shared.Random;
 
 namespace Content.Server._CD.Spawners;
 
-public sealed class ArrivalsSpawnPointSystem : EntitySystem
+public sealed partial class ArrivalsSpawnPointSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IMapManager _mapManager = default!;
 
     public override void Initialize()
     {

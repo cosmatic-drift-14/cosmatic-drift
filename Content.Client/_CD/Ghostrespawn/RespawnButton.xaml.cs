@@ -7,11 +7,11 @@ using Robust.Shared.Timing;
 
 namespace Content.Client._CD.Ghostrespawn;
 
-public sealed class RespawnButton : Button
+public sealed partial class RespawnButton : Button
 {
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly IEntityManager _entMan = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
+    [Dependency] private IConfigurationManager _cfg = default!;
+    [Dependency] private IEntityManager _entMan = default!;
 
     private GhostSystem? _ghost;
 
