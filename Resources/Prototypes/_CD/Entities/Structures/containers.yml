@@ -39,6 +39,7 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable
   - type: Destructible
     thresholds:
     - trigger:
