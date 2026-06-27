@@ -17,8 +17,8 @@ namespace Content.Client._CD.Silicons.Borgs.UI;
 [GenerateTypedNameReferences]
 public sealed partial class ChassisSpriteSelection : Control
 {
-    [Dependency] private readonly IComponentFactory _componentFactory = default!;
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private IComponentFactory _componentFactory = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
 
     public EntityPrototype? SubtypePrototype;
     public event Action? SubtypeSelected;
