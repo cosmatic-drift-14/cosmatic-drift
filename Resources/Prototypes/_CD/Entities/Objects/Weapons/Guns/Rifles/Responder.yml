@@ -1,0 +1,70 @@
+- type: entity
+  name: Responder
+  parent: [BaseWeaponRifle, BaseCentcommContraband]
+  id: WeaponRifleResponder
+  description: |-
+    A rare and expensive firearm used by specialised teams in SolGov and Nanotressen.
+    Comes inbuilt with an underbarrel Flashlight, It doesn't work.
+    Made by a small subsidary of a non-nanotressen company specalising in complicated firearms, localized within the Cosmetic Sector.
+    Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Weapons/Guns/Rifles/Responder.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/Responder.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -20 # -20 Default
+    maxAngle: -40 # -30 Defualt
+  - type: Gun
+    minAngle: 21 # 21 Default
+    maxAngle: 42 # 32 Default
+    fireRate: 4
+    burstFireRate: 8
+    selectedMode: Burst
+    availableModes:
+      - FullAuto
+      - Burst
+      - SemiAuto
+    shotsPerBurst: 3
+    burstCooldown: 0.350
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 1500 #x3 times lecter
