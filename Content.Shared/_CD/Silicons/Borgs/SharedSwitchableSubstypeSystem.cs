@@ -13,9 +13,9 @@ namespace Content.Shared._CD.Silicons.Borgs;
 /// </summary>
 public abstract partial class SharedBorgSwitchableSubtypeSystem : EntitySystem
 {
-    [Dependency] private readonly InteractionPopupSystem _interactionPopup = default!;
-    [Dependency] protected readonly IPrototypeManager Prototypes = default!;
-    [Dependency] protected readonly IComponentFactory ComponentFactory = default!;
+    [Dependency] private InteractionPopupSystem _interactionPopup = default!;
+    [Dependency] protected IPrototypeManager Prototypes = default!;
+    [Dependency] protected IComponentFactory ComponentFactory = default!;
 
     public override void Initialize()
     {
