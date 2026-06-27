@@ -49,8 +49,9 @@
     #   required: false
 
 - type: entity
-  parent: BaseSpeciesAppearance
+  parent: [LayersMoth, BaseSpeciesAppearance] # CD: Added LayersMoth as temporary fix of moth wings layering
   id: AppearanceMoth
+  categories: [ HideSpawnMenu ]
   name: moth appearance
   components:
   - type: Inventory
@@ -148,11 +149,15 @@
     allowedEmotes: ['Chitter', 'Squeak', 'Flap']
   - type: TypingIndicator
     proto: moth
+  - type: CreamPied
+    sprite:
+      sprite: Effects/creampie.rsi
+      state: creampie_moth
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
       - ReagentId: InsectBlood
-        Quantity: 300
+        Quantity: 600
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -195,7 +200,7 @@
       250: 0.7
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganMoth
   abstract: true
   suffix: Moth
@@ -245,6 +250,7 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.Hair # CD: Moth hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganMothExternal ]

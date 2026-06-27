@@ -3,9 +3,9 @@ using Content.Shared.Chat.TypingIndicator;
 
 namespace Content.Server._CD.Traits;
 
-public sealed class SynthSystem : EntitySystem
+public sealed partial class SynthSystem : EntitySystem
 {
-    [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
+    [Dependency] private BloodstreamSystem _bloodstream = default!;
 
     public override void Initialize()
     {

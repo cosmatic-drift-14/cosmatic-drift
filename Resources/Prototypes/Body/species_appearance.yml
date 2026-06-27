@@ -37,9 +37,9 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
-    - map: [ "belt" ]
     - map: [ "id" ]
     - map: [ "outerClothing" ]
+    - map: [ "belt" ] #CD change from above id to below outerClothing
     - map: [ "back" ]
     - map: [ "neck" ]
     - map: [ "suitstorage" ]
@@ -64,11 +64,6 @@
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
-      visible: false
-
-    - map: [ "clownedon" ] # Dynamically generated
-      sprite: "Effects/creampie.rsi"
-      state: "creampie_human"
       visible: false
 
 - type: entity
