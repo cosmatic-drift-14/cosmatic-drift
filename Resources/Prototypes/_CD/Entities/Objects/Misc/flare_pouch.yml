@@ -1,0 +1,468 @@
+- type: entity
+  parent: BaseItem
+  id: PouchMarkingFlareBase
+  name: marking flare pouch
+  suffix: Empty
+  description: A small pouch designed to carry up to 16 marking flares.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Storage/flare_pouch.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers: #Terrible idea.
+      flare_slot1: !type:ContainerSlot
+      flare_slot2: !type:ContainerSlot
+      flare_slot3: !type:ContainerSlot
+      flare_slot4: !type:ContainerSlot
+      flare_slot5: !type:ContainerSlot
+      flare_slot6: !type:ContainerSlot
+      flare_slot7: !type:ContainerSlot
+      flare_slot8: !type:ContainerSlot
+      flare_slot9: !type:ContainerSlot
+      flare_slot10: !type:ContainerSlot
+      flare_slot11: !type:ContainerSlot
+      flare_slot12: !type:ContainerSlot
+      flare_slot13: !type:ContainerSlot
+      flare_slot14: !type:ContainerSlot
+      flare_slot15: !type:ContainerSlot
+      flare_slot16: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      flare_slot1:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot2:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot3:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot4:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot5:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot6:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot7:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot8:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot9:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot10:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot11:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot12:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot13:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot14:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot15:
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot16:
+        whitelist:
+          tags:
+          - MarkingFlare
+
+- type: entity
+  parent: PouchMarkingFlareBase
+  id: PouchMarkingFlareBlue
+  suffix: Blue
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+      - state: overlay
+        color: "#6574EE"
+  - type: ItemSlots
+    slots:
+      flare_slot1:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot2:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot3:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot4:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot5:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot6:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot7:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot8:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot9:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot10:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot11:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot12:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot13:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot14:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot15:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot16:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - MarkingFlare
+
+- type: entity
+  parent: PouchMarkingFlareBase
+  id: PouchMarkingFlareGreen
+  suffix: Green
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+      - state: overlay
+        color: "#65EE67"
+  - type: ItemSlots
+    slots:
+      flare_slot1:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot2:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot3:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot4:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot5:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot6:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot7:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot8:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot9:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot10:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot11:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot12:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot13:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot14:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot15:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot16:
+        startingItem: MarkingFlareGreen
+        whitelist:
+          tags:
+          - MarkingFlare
+
+- type: entity
+  parent: PouchMarkingFlareBase
+  id: PouchMarkingFlareRed
+  suffix: Red
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+      - state: overlay
+        color: "#EE6965"
+  - type: ItemSlots
+    slots:
+      flare_slot1:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot2:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot3:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot4:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot5:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot6:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot7:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot8:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot9:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot10:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot11:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot12:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot13:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot14:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot15:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot16:
+        startingItem: MarkingFlareRed
+        whitelist:
+          tags:
+          - MarkingFlare
+
+- type: entity
+  parent: PouchMarkingFlareBase
+  id: PouchMarkingFlareYellow
+  suffix: Yellow
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+      - state: overlay
+        color: "#E9EE65"
+  - type: ItemSlots
+    slots:
+      flare_slot1:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot2:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot3:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot4:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot5:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot6:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot7:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot8:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot9:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot10:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot11:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot12:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot13:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot14:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot15:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare
+      flare_slot16:
+        startingItem: MarkingFlareYellow
+        whitelist:
+          tags:
+          - MarkingFlare

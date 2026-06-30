@@ -8,7 +8,7 @@
   - type: ExpendableLight
     glowDuration: 3600
   - type: Sprite
-    sprite: _CD/Objects/Misc/flare.rsi
+    sprite: _CD/Objects/Misc/marking_flare.rsi
     layers:
       - map: [ enum.ExpendableLightVisualLayers.Base ]
         state: flare_base
@@ -34,6 +34,11 @@
         maxDuration: 15.0
         startValue: 2.0
         endValue: 1.2
+  - type: Tag
+    tags:
+    - Flare
+    - MarkingFlare
+    - Trash
 
 - type: entity
   parent: MarkingFlareBase
@@ -41,7 +46,7 @@
   name: blue marking flare
   components:
   - type: Sprite
-    sprite: _CD/Objects/Misc/flare.rsi
+    sprite: _CD/Objects/Misc/marking_flare.rsi
     layers:
       - map: [ enum.ExpendableLightVisualLayers.Base ]
         state: flare_base
@@ -62,7 +67,7 @@
   name: green marking flare
   components:
   - type: Sprite
-    sprite: _CD/Objects/Misc/flare.rsi
+    sprite: _CD/Objects/Misc/marking_flare.rsi
     layers:
       - map: [ enum.ExpendableLightVisualLayers.Base ]
         state: flare_base
@@ -83,7 +88,7 @@
   name: red marking flare
   components:
   - type: Sprite
-    sprite: _CD/Objects/Misc/flare.rsi
+    sprite: _CD/Objects/Misc/marking_flare.rsi
     layers:
       - map: [ enum.ExpendableLightVisualLayers.Base ]
         state: flare_base
@@ -104,7 +109,7 @@
   name: yellow marking flare
   components:
   - type: Sprite
-    sprite: _CD/Objects/Misc/flare.rsi
+    sprite: _CD/Objects/Misc/marking_flare.rsi
     layers:
       - map: [ enum.ExpendableLightVisualLayers.Base ]
         state: flare_base

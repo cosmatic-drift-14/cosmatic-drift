@@ -1,0 +1,14 @@
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateMarkingFlare
+  name: marking flare crate
+  description: Contains 4 pouches of 16 colored marking flares.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: PouchMarkingFlareBlue
+        - id: PouchMarkingFlareGreen
+        - id: PouchMarkingFlareRed
+        - id: PouchMarkingFlareYellow
