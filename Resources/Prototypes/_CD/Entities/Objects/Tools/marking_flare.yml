@@ -1,21 +1,18 @@
 ﻿- type: entity
+  abstract: true
   parent: Flare
   id: MarkingFlareBase
   name: marking flare
-  description: A flare that produces a very bright light for a short while. Point the flame away from yourself.
+  description: A flare that produces a small light for around an hour. Primarily used for pathfinding.
   components:
   - type: ExpendableLight
     glowDuration: 3600
-    fadeOutDuration: 15
-    iconStateOn: flare_unlit
-    iconStateSpent: flare_spent
-    turnOnBehaviourID: turn_on
-    fadeOutBehaviourID: fade_out
   - type: Sprite
-    sprite: Objects/Misc/flare.rsi
+    sprite: _CD/Objects/Misc/flare.rsi
     layers:
       - map: [ enum.ExpendableLightVisualLayers.Base ]
         state: flare_base
+        color: "#FFFFFF"
       - map: [ enum.ExpendableLightVisualLayers.Glow ]
         state: flare_burn
         color: "#FFFFFF"
@@ -23,38 +20,101 @@
         shader: unshaded
       - map: [ enum.ExpendableLightVisualLayers.Overlay ]
         state: flare_unlit
-        color: "#FF0000"
-  - type: Icon
-    sprite: Objects/Misc/flare.rsi
-    state: icon
-  - type: Item
-    sprite: Objects/Misc/flare.rsi
-    heldPrefix: unlit
-    size: Tiny
   - type: PointLight
-    enabled: false
-    color: "#FF8080"
-    radius: 1.0
-    energy: 9.0
-    netsync: false
+    color: "#FFFFFF"
   - type: LightBehaviour
     behaviours:
       - !type:FadeBehaviour # have the radius start small and get larger as it starts to burn
         id: turn_on
-        maxDuration: 30.0
+        maxDuration: 25.0
         startValue: 1.5
-        endValue: 3.0
-      - !type:RandomizeBehaviour # weaker flicker as it fades out
-        id: fade_out
-        interpolate: Nearest
-        minDuration: 0.001
-        maxDuration: 0.001
-        startValue: 4.0
-        endValue: 8.0
-        property: Energy
-        isLooped: true
+        endValue: 2.0
       - !type:FadeBehaviour # fade out radius as it burns out
         id: fade_out
         maxDuration: 15.0
-        startValue: 3.0
+        startValue: 2.0
         endValue: 1.2
+
+- type: entity
+  parent: MarkingFlareBase
+  id: MarkingFlareBlue
+  name: blue marking flare
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/flare.rsi
+    layers:
+      - map: [ enum.ExpendableLightVisualLayers.Base ]
+        state: flare_base
+        color: "#6574EE"
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: flare_burn
+        color: "#6574EE"
+        visible: false
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: flare_unlit
+  - type: PointLight
+    color: "#6574EE"
+
+- type: entity
+  parent: MarkingFlareBase
+  id: MarkingFlareGreen
+  name: green marking flare
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/flare.rsi
+    layers:
+      - map: [ enum.ExpendableLightVisualLayers.Base ]
+        state: flare_base
+        color: "#65EE67"
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: flare_burn
+        color: "#65EE67"
+        visible: false
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: flare_unlit
+  - type: PointLight
+    color: "#65EE67"
+
+- type: entity
+  parent: MarkingFlareBase
+  id: MarkingFlareRed
+  name: red marking flare
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/flare.rsi
+    layers:
+      - map: [ enum.ExpendableLightVisualLayers.Base ]
+        state: flare_base
+        color: "#EE6965"
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: flare_burn
+        color: "#EE6965"
+        visible: false
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: flare_unlit
+  - type: PointLight
+    color: "#EE6965"
+
+- type: entity
+  parent: MarkingFlareBase
+  id: MarkingFlareYellow
+  name: yellow marking flare
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/flare.rsi
+    layers:
+      - map: [ enum.ExpendableLightVisualLayers.Base ]
+        state: flare_base
+        color: "#E9EE65"
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: flare_burn
+        color: "#E9EE65"
+        visible: false
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: flare_unlit
+  - type: PointLight
+    color: "#E9EE65"

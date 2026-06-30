@@ -1,0 +1,112 @@
+- type: entity
+  parent: BaseItem
+  id: PouchMarkingFlare
+  name: marking flare pouch
+  description: Does stuff
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/green.rsi
+    state: closed
+  - type: Item
+    sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/green.rsi
+    size: Small
+  - type: ContainerContainer
+    containers: #Terrible idea.
+      flare_slot1: !type:ContainerSlot
+      flare_slot2: !type:ContainerSlot
+      flare_slot3: !type:ContainerSlot
+      flare_slot4: !type:ContainerSlot
+      flare_slot5: !type:ContainerSlot
+      flare_slot6: !type:ContainerSlot
+      flare_slot7: !type:ContainerSlot
+      flare_slot8: !type:ContainerSlot
+      flare_slot9: !type:ContainerSlot
+      flare_slot10: !type:ContainerSlot
+      flare_slot11: !type:ContainerSlot
+      flare_slot12: !type:ContainerSlot
+      flare_slot13: !type:ContainerSlot
+      flare_slot14: !type:ContainerSlot
+      flare_slot15: !type:ContainerSlot
+      flare_slot16: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      flare_slot1:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot2:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot3:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot4:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot5:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot6:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot7:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot8:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot9:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot10:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot11:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot12:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot13:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot14:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot15:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
+      flare_slot16:
+        startingItem: MarkingFlareBlue
+        whitelist:
+          tags:
+          - Flare
