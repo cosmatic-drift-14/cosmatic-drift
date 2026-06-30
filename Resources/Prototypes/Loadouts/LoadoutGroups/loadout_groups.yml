@@ -1350,6 +1350,7 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - SecurityOfficerWintercoat
   - ForensicJacket # CD
 
 - type: loadoutGroup

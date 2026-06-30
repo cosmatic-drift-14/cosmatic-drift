@@ -14,9 +14,9 @@ namespace Content.Shared._CD;
 
 public abstract partial class SharedExtendableClothingSystem : EntitySystem
 {
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     /// <inheritdoc/>
     public override void Initialize()

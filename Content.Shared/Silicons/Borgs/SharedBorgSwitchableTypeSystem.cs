@@ -1,3 +1,4 @@
+using Content.Shared._CD.Silicons.Borgs;
 using Content.Shared.Actions;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
@@ -6,22 +7,20 @@ using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
-using Content.Shared._CD.Silicons.Borgs;
-
 namespace Content.Shared.Silicons.Borgs;
 
 /// <summary>
 /// Implements borg type switching.
 /// </summary>
 /// <seealso cref="BorgSwitchableTypeComponent"/>
-public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
+public abstract partial class SharedBorgSwitchableTypeSystem : EntitySystem
 {
     // TODO: Allow borgs to be reset to default configuration.
 
-    [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
-    [Dependency] private readonly SharedUserInterfaceSystem _userInterface = default!;
-    [Dependency] protected readonly IPrototypeManager Prototypes = default!;
-    [Dependency] private readonly InteractionPopupSystem _interactionPopup = default!;
+    [Dependency] private SharedActionsSystem _actionsSystem = default!;
+    [Dependency] private SharedUserInterfaceSystem _userInterface = default!;
+    [Dependency] protected IPrototypeManager Prototypes = default!;
+    [Dependency] private InteractionPopupSystem _interactionPopup = default!;
 
     public static readonly EntProtoId ActionId = "ActionSelectBorgType";
 
@@ -99,7 +98,7 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
 
         UpdateEntityAppearance(ent);
 
-        // CD - event for subtype system, always runs at end of borg type code
+        // AL - event for subtype system, always runs at end of borg type code
         var ev = new AfterBorgTypeSelectEvent();
         RaiseLocalEvent(ent, ref ev);
     }
@@ -125,25 +124,6 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
         if (TryComp(entity, out FootstepModifierComponent? footstepModifier))
         {
             footstepModifier.FootstepSoundCollection = prototype.FootstepCollection;
-        }
-
-        if (prototype.SpriteBodyMovementState is { } movementState)
-        {
-            var spriteMovement = EnsureComp<SpriteMovementComponent>(entity);
-            spriteMovement.NoMovementLayers.Clear();
-            spriteMovement.NoMovementLayers["movement"] = new PrototypeLayerData
-            {
-                State = prototype.SpriteBodyState,
-            };
-            spriteMovement.MovementLayers.Clear();
-            spriteMovement.MovementLayers["movement"] = new PrototypeLayerData
-            {
-                State = movementState,
-            };
-        }
-        else
-        {
-            RemComp<SpriteMovementComponent>(entity);
         }
     }
 }

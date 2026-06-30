@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McRaptor
-  parent: 
+  parent:
   - AppearanceAvali
   - BaseSpeciesMobOrganic
   id: BaseMobAvali
@@ -107,7 +107,6 @@
     sprite: _CD/Mobs/Species/Avali/parts.rsi
     state: full
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeatChicken
       amount: 3
@@ -132,8 +131,9 @@
       Female: FemaleAvali
       Unsexed: MaleAvali
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Moth # PLACEHOLDER for now :3
+  - type: Injurable
+    damageContainer: Biological
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:

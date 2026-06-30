@@ -11,8 +11,8 @@ namespace Content.Client._CD.JobSlotsConsole;
 [GenerateTypedNameReferences]
 public sealed partial class JobRow : BoxContainer
 {
-    [Dependency] private readonly IPrototypeManager _protoManager = default!;
-    [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
+    [Dependency] private IPrototypeManager _protoManager = default!;
+    [Dependency] private IEntitySystemManager _entitySystem = default!;
 
     public event Action<JobSlotAdjustment>? OnAdjustPressed;
     public string JobName { get; }

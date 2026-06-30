@@ -10,12 +10,12 @@ using Robust.Shared.Console;
 namespace Content.Server._CD.Admin.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
-public sealed class EventPreferencesCommand : LocalizedCommands
+public sealed partial class EventPreferencesCommand : LocalizedCommands
 {
-    [Dependency] private readonly IPlayerLocator _locator = default!;
-    [Dependency] private readonly IServerPreferencesManager _pref = default!;
-    [Dependency] private readonly EuiManager _eui = default!;
-    [Dependency] private readonly IPlayerManager _players = default!;
+    [Dependency] private IPlayerLocator _locator = default!;
+    [Dependency] private IServerPreferencesManager _pref = default!;
+    [Dependency] private EuiManager _eui = default!;
+    [Dependency] private IPlayerManager _players = default!;
     public override string Command => "eventpreferences";
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
