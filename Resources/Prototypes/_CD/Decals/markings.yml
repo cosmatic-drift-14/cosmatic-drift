@@ -1,0 +1,116 @@
+- type: decal
+  id: CMDecalArrow
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: arrow
+
+- type: decal
+  id: CMDecalCargo
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: cargo
+
+- type: decal
+  id: CMDecalStriped0
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_0
+
+- type: decal
+  id: CMDecalStriped1
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_1
+
+- type: decal
+  id: CMDecalStriped2
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_2
+
+- type: decal
+  id: CMDecalStriped3
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_3
+
+- type: decal
+  id: CMDecalStripedCorner0
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_corner_0
+
+- type: decal
+  id: CMDecalStripedCorner1
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_corner_1
+
+- type: decal
+  id: CMDecalStripedCorner2
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_corner_2
+
+- type: decal
+  id: CMDecalStripedCorner3
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: striped_corner_3
+
+- type: decal
+  id: CDDecalCargoArrow2
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: cargo_arrow2
+
+- type: decal
+  id: CDDecalDoorWarning
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: door_warning
+
+- type: decal
+  id: CDDecalDoorWarning2
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/markings.rsi
+    state: door_warning2

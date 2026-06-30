@@ -3,6 +3,7 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
+using Robust.Shared.Timing;
 
 namespace Content.Client.Silicons.Borgs;
 
@@ -11,11 +12,12 @@ namespace Content.Client.Silicons.Borgs;
 /// </summary>
 /// <seealso cref="SharedBorgSwitchableTypeSystem"/>
 /// <seealso cref="BorgSwitchableTypeComponent"/>
-public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
+public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
 {
-    [Dependency] private readonly BorgSystem _borgSystem = default!;
-    [Dependency] private readonly AppearanceSystem _appearance = default!;
-    [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private BorgSystem _borgSystem = default!;
+    [Dependency] private AppearanceSystem _appearance = default!;
+    [Dependency] private SpriteSystem _sprite = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -40,9 +42,16 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
         BorgTypePrototype prototype)
     {
         // CD - added checks to stop sprite state errors
+        if (!_timing.IsFirstTimePredicted)
+            return;
+
         if (!TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) ||
             subtype.BorgSubtype != null)
+        {
+            var ev = new BorgTypeUpdateVisualsOverrideEvent();
+            RaiseLocalEvent(entity, ref ev);
             return;
+        }
 
         if (TryComp(entity, out SpriteComponent? sprite))
         {

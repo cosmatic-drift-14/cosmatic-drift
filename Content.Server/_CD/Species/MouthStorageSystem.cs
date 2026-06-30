@@ -10,11 +10,11 @@ using Robust.Shared.Map;
 
 namespace Content.Server._CD.Species;
 
-public sealed class MouthStorageSystem : SharedMouthStorageSystem
+public sealed partial class MouthStorageSystem : SharedMouthStorageSystem
 {
-    [Dependency] private readonly ReplacementAccentSystem _replacement = default!;
-    [Dependency] private readonly ContainerSystem _containerSystem = default!;
-    [Dependency] private readonly ActionsSystem _actionsSystem = default!;
+    [Dependency] private ReplacementAccentSystem _replacement = default!;
+    [Dependency] private ContainerSystem _containerSystem = default!;
+    [Dependency] private ActionsSystem _actionsSystem = default!;
 
     public override void Initialize()
     {

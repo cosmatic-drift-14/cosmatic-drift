@@ -27,27 +27,27 @@ using Robust.Shared.Player;
 
 namespace Content.Server._CD.CryoSleep;
 
-public sealed class CryoSleepSystem : EntitySystem
+public sealed partial class CryoSleepSystem : EntitySystem
 {
-    [Dependency] private readonly ActionBlockerSystem _blocker = default!;
-    [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly ClimbSystem _climb = default!;
-    [Dependency] private readonly ContainerSystem _container = default!;
-    [Dependency] private readonly EuiManager _eui = default!;
-    [Dependency] private readonly GhostSystem _ghost = default!;
-    [Dependency] private readonly HandsSystem _hands = default!;
-    [Dependency] private readonly IAdminLogManager _adminLog = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly LostAndFoundSystem _lostAndFound = default!;
-    [Dependency] private readonly MindSystem _mind = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
-    [Dependency] private readonly SharedJobSystem _jobs = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly StationJobsSystem _stationJobs = default!;
-    [Dependency] private readonly StationRecordsSystem _records = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
+    [Dependency] private ActionBlockerSystem _blocker = default!;
+    [Dependency] private CharacterRecordsSystem _characterRecords = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private ClimbSystem _climb = default!;
+    [Dependency] private ContainerSystem _container = default!;
+    [Dependency] private EuiManager _eui = default!;
+    [Dependency] private GhostSystem _ghost = default!;
+    [Dependency] private HandsSystem _hands = default!;
+    [Dependency] private IAdminLogManager _adminLog = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private LostAndFoundSystem _lostAndFound = default!;
+    [Dependency] private MindSystem _mind = default!;
+    [Dependency] private ISharedPlayerManager _player = default!;
+    [Dependency] private SharedJobSystem _jobs = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private StationJobsSystem _stationJobs = default!;
+    [Dependency] private StationRecordsSystem _records = default!;
+    [Dependency] private StationSystem _station = default!;
+    [Dependency] private TransformSystem _transform = default!;
 
     private EntityUid? _pausedMap;
 

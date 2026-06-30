@@ -8,19 +8,19 @@
     },
     "states": [
         {
-            "name": "medical",
+            "name": "borg",
             "directions": 4
         },
         {
-            "name": "medical_e",
+            "name": "borg_e",
             "directions": 4
         },
         {
-            "name": "medical_e_r",
+            "name": "borg_e_r",
             "directions": 4
         },
         {
-            "name": "medical_l",
+            "name": "borg_l",
             "directions": 4
         }
     ]

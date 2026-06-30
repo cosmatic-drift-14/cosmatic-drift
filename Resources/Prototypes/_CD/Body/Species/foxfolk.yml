@@ -93,7 +93,7 @@
 - type: entity
   save: false
   name: Urist McFoxfolk
-  parent: 
+  parent:
   - AppearanceFoxfolk
   - BaseSpeciesMobOrganic
   id: BaseMobFoxfolk
@@ -120,8 +120,9 @@
       Female: FemaleFoxfolk
       Unsexed: MaleFoxfolk
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Foxfolk
+  - type: Injurable
+    damageContainer: Biological
   - type: MeleeWeapon
     hidden: true
     soundHit:

@@ -1,0 +1,64 @@
+- type: decal
+  id: CDScorch1
+  parent: CDDecalBase
+  tags: ["CDScorch"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch1
+    
+- type: decal
+  id: CDScorch2
+  parent: CDDecalBase
+  tags: ["CDScorch"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch2
+    
+- type: decal
+  id: CDScorch3
+  parent: CDDecalBase
+  tags: ["CDScorch"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch3
+    
+- type: decal
+  id: CDScorch4
+  parent: CDDecalBase
+  tags: ["CDScorch"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch4
+    
+- type: decal
+  id: CDScorchSmall1
+  parent: CDDecalBase
+  tags: ["CDScorchSmall"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch_small1
+    
+- type: decal
+  id: CDScorchSmall2
+  parent: CDDecalBase
+  tags: ["CDScorchSmall"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch_small2
+    
+- type: decal
+  id: CDScorchSmall3
+  parent: CDDecalBase
+  tags: ["CDScorchSmall"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/scorch.rsi
+    state: scorch_small3
+    
+    
