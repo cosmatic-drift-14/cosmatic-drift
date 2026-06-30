@@ -3,7 +3,7 @@
   id: mediumplatevest
   name: medium plate vest
   categories: [ HideSpawnMenu ]
-  description: your not supposed to be here.
+  description: A plate vest carried within the plate carrier; provides roughly the same protection as wearing a standard issue security vest.
   components:
   - type: Sprite
     sprite: _CD/Clothing/OuterClothing/Armor/mediumplatevest.rsi
