@@ -1,12 +1,21 @@
+# PUT YOUR TAGS IN ALPHABETICAL ORDER
+# ALSO DOCUMENT WHAT THEY DO
+
+## E ##
 - type: Tag
   id: EmptyPacket
 
-# Tag used for pride mantles.
+## M ##
 - type: Tag
-  id: WhitelistChameleonPrideMantle
+  id: MarkingFlare #Storage whitelist: marking flare pouch
 
 - type: Tag
   id: Medcase
 
+## N ##
 - type: Tag
   id: NoPaint
+
+## W ##
+- type: Tag
+  id: WhitelistChameleonPrideMantle #Tag used for pride mantles.
