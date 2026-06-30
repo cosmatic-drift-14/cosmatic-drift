@@ -1,0 +1,7 @@
+# Ported from RMC14
+- type: soundCollection
+  id: ReptilianHisses
+  files:
+  - /Audio/_CD/Voice/Reptilian/lizard_hiss_1.ogg
+  - /Audio/_CD/Voice/Reptilian/lizard_hiss_2.ogg
+  - /Audio/_CD/Voice/Reptilian/lizard_hiss_3.ogg

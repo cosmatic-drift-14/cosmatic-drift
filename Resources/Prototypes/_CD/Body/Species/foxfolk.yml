@@ -109,16 +109,16 @@
     sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
     state: full
   - type: Speech
-    speechSounds: Foxfolk
-    speechVerb: Foxfolk
+    speechSounds: Vulpkanin
+    speechVerb: Vulpkanin
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
   - type: TypingIndicator
     proto: foxfolk
   - type: Vocal
     sounds:
-      Male: MaleFoxfolk
-      Female: FemaleFoxfolk
-      Unsexed: MaleFoxfolk
+      Male: CDMaleVulpkanin
+      Female: CDFemaleVulpkanin
+      Unsexed: CDMaleVulpkanin
   - type: Damageable
     damageModifierSet: Foxfolk
   - type: Injurable
@@ -146,7 +146,7 @@
       types:
         Heat : 3 #per second, scales with temperature & other constants
   - type: Wagging
-    action: ActionToggleFoxfolkakinWagging
+    action: ActionToggleWaggingVulpkanin
 
 - type: entity
   parent: OrganBase
