@@ -120,7 +120,7 @@
       Female: CDFemaleVulpkanin
       Unsexed: CDMaleVulpkanin
   - type: Damageable
-    damageModifierSet: Foxfolk
+    damageModifierSet: Vulpkanin
   - type: Injurable
     damageContainer: Biological
   - type: MeleeWeapon
