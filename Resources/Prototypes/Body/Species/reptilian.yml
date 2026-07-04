@@ -128,20 +128,20 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
-    allowedEmotes: ['Thump']
+    allowedEmotes: ['Thump', 'Hiss', 'Purr', 'Rattle'] # CD: Added Hiss, Purr and Rattle
   - type: TypingIndicator
     proto: lizard
   - type: CreamPied
     sprite:
       sprite: Effects/creampie.rsi
       state: creampie_lizard
-  - type: Vocal
+  - type: Vocal # CD: More sound emotes
     sounds:
-      Male: MaleReptilian
-      Female: FemaleReptilian
-      Unsexed: MaleReptilian
+      Male: CDMaleReptilian
+      Female: CDFemaleReptilian
+      Unsexed: CDMaleReptilian
   - type: BodyEmotes
-    soundsId: ReptilianBodyEmotes
+    soundsId: CDReptilianBodyEmotes # CD: More sound emotes
   - type: Damageable
     damageModifierSet: Scale
   - type: MeleeWeapon

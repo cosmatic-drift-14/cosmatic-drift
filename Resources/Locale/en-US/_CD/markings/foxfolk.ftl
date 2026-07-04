@@ -112,7 +112,7 @@ marking-FoxfolkTailAltTip = Foxfolk (alt, tip, No Wag)
 
 marking-FoxfolkTailLong-long = Long tail (base)
 marking-FoxfolkTailLong-long-tip = Long tail (tip)
-marking-FoxfolkTailLong = Foxfolk Long
+marking-FoxfolkTailLong = Foxfolk Long (No Wag)
 
 marking-FoxfolkTailFox-fox = Fox tail (base)
 marking-FoxfolkTailFox-fox-fade = Fox tail (fade)
@@ -140,7 +140,7 @@ marking-FoxfolkTailFox2 = Foxfolk Fox 2 (No Wag)
 
 marking-FoxfolkTailFox3-fox3 = Fox tail (base)
 marking-FoxfolkTailFox3-fox3-tip = Fox tail (tip)
-marking-FoxfolkTailFox3 = Foxfolk Fox 3
+marking-FoxfolkTailFox3 = Foxfolk Fox 3 (No Wag)
 
 marking-FoxfolkTailFennec-fennec = Fennec tail
 marking-FoxfolkTailFennec = Foxfolk Fennec
