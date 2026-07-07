@@ -1,3 +1,4 @@
+# TODO CD: condense down the slot spam through an eventual upstream merge or with our own solution
 - type: entity
   parent: BaseItem
   id: PouchMarkingFlareBase
