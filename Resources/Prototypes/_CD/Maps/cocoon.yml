@@ -12,11 +12,11 @@
           mapNameTemplate: '{0} Cocoon Xenobiology Centre {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'PC-14'   #Map Lore Shenanagans :)
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_CD/Shuttles/emergency_dunali.yml
         - type: StationJobs
-          availableJobs:
+          availableJobs:  #69 Total jobs
             #High Command
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
