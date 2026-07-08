@@ -4,8 +4,9 @@
   id: WeaponRifleResponder
   description: |-
     A rare and expensive firearm used by specialised teams in SolGov and Nanotressen.
-    Comes inbuilt with an underbarrel Flashlight, It doesn't work.
-    Made by a small subsidary of a non-nanotressen company specalising in complicated firearms, localized within the Cosmetic Sector.
+    Comes inbuilt with an underbarrel flashlight, it hasn't worked in a while.
+    Made by a small subsidary of a non-Nanotressen company specalising in complicated firearms, localized within the Cosmetic Sector.
+    Rumors that you can disassemble the firearm and create a clock are refuted by both Nanotressen and the company.
     Uses .30 rifle ammo.
   components:
   - type: Sprite
@@ -67,4 +68,12 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
-    price: 1500 #x3 times lecter
+    price: 1250 #x2.5 times lecter
+#  - type: UnpoweredFlashlight                        #[Disabled because of how jarring it is, I'll play with this later and fix it]
+#  - type: PointLight
+#    enabled: false
+#    mask: /Textures/Effects/LightMasks/cone.png      #[Shooting the Firearm Forces this Effect on the lighting that shooting creates]
+#    autoRot: true
+#    radius: 12
+#    netsync: true  #Requirement for the light to not die when shooting
+
