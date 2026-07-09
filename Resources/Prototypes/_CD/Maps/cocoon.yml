@@ -16,7 +16,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_CD/Shuttles/emergency_dunali.yml
         - type: StationJobs
-          availableJobs:  #69 Total jobs
+          availableJobs:  #70 Total jobs
             #High Command
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -61,7 +61,7 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Reporter: [ 1, 1 ]
+            Reporter: [ 2, 2 ]
             PrivateInvestigator: [ 1, 1] #CD Role
             #misc
             Prisoner: [ 1, 1 ] #CD Role
