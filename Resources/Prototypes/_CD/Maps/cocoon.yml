@@ -9,10 +9,10 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Cocoon Xenobiology Centre {1}'
+          mapNameTemplate: '{0} Cocoon Xenobiolgy Centre {1}'
           nameGenerator:
-          type:NanotrasenNameGenerator
-          prefixCreator: 'PC-14' #Map Lore
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'PC-14'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_CD/Shuttles/emergency_dunali.yml
         - type: StationJobs
