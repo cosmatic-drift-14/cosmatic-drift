@@ -2,8 +2,8 @@
   id: Cocoon
   mapName: 'Cocoon'
   mapPath: /Maps/_CD/cocoon.yml
-  minPlayers: 15 #CD change
-  maxPlayers: 35 #CD change
+  minPlayers: 20 #CD change
+  maxPlayers: 60 #CD change
   stations:
     Cocoon:
       stationProto: StandardNanotrasenStation
@@ -11,12 +11,12 @@
         - type: StationNameSetup
           mapNameTemplate: '{0} Cocoon Xenobiology Centre {1}'
           nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+          type:NanotrasenNameGenerator
+          prefixCreator: 'PC-14' #Map Lore
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_CD/Shuttles/emergency_dunali.yml
         - type: StationJobs
-          availableJobs:
+          availableJobs:  #69 Total jobs
             #High Command
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
