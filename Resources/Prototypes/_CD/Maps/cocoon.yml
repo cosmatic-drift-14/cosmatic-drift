@@ -2,7 +2,7 @@
   id: Cocoon
   mapName: 'Cocoon'
   mapPath: /Maps/_CD/cocoon.yml
-  minPlayers: 20 #CD change
+  minPlayers: 15 #CD change
   maxPlayers: 60 #CD change
   stations:
     Cocoon:
