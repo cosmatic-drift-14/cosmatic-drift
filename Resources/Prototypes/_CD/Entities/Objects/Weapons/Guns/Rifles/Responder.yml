@@ -4,7 +4,6 @@
   id: WeaponRifleResponder
   description: |-
     A rare and expensive firearm used by specialised teams in SolGov and Nanotressen.
-    Comes inbuilt with an underbarrel flashlight, it hasn't worked in a while.
     Made by a small subsidary of a non-Nanotressen company specalising in complicated firearms, localized within the Cosmetic Sector.
     Rumors that you can disassemble the firearm and create a clock are refuted by both Nanotressen and the company.
     Uses .30 rifle ammo.
@@ -28,7 +27,7 @@
     maxAngle: 42 # 32 Default
     fireRate: 4
     burstFireRate: 8
-    selectedMode: Burst
+    selectedMode: FullAuto
     availableModes:
       - FullAuto
       - Burst
