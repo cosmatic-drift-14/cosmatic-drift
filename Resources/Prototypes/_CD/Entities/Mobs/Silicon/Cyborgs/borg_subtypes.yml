@@ -1,20 +1,27 @@
-- type: borgSubtype
-  parent: baseMiningSubtype
-  id: spidermin
+# mining
+- type: entity
+  parent: BorgMiningSubtypeBase
+  id: MiningSpiderSubtype
+  name: spider miner
+  description: "Spider frame for a mining chassis."
+  components:
+  - type: BorgSubtypeDefinition
+    dummyPrototype: BorgChassisSpidermin
 
-  dummyPrototype: BorgChassisSpidermin
+    inventoryTemplateId: borgDutch
+    spritePath: _CD/Mobs/Silicon/Borg/Mining/spidermin.rsi
 
-  inventoryTemplateId: borgDutch
-  spritePath: _CD/Mobs/Silicon/Borg/Mining/spidermin.rsi
+    footstepCollection:
+      collection: FootstepThud
 
-  footstepCollection:
-    collection: FootstepThud
+# medical
+- type: entity
+  parent: BorgMedicalSubtypeBase
+  id: MedicalQualifiedDoctorSubtype
+  name: qualified doctor
+  description: "A board-certified cyborg for all your medical needs."
+  components:
+  - type: BorgSubtypeDefinition
+    dummyPrototype: BorgChassisQualifiedDoctor
 
-
-- type: borgSubtype
-  parent: baseMedicalSubtype
-  id: qualified-doctor
-
-  dummyPrototype: BorgChassisQualifiedDoctor
-
-  spritePath: _CD/Mobs/Silicon/Borg/Medical/qualified_doctor.rsi
+    spritePath: _CD/Mobs/Silicon/Borg/Medical/qualified_doctor.rsi

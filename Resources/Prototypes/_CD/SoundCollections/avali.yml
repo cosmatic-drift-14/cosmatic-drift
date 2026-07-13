@@ -1,0 +1,21 @@
+# All here from Starlight
+- type: soundCollection
+  id: CDAvaliCall
+  files:
+    - /Audio/_CD/Voice/Avali/avali_call_1.ogg
+    - /Audio/_CD/Voice/Avali/avali_call_2.ogg
+
+- type: soundCollection
+  id: CDAvaliChirp
+  files:
+    - /Audio/_CD/Voice/Avali/avali_chirp_1.ogg
+    - /Audio/_CD/Voice/Avali/avali_chirp_2.ogg
+    - /Audio/_CD/Voice/Avali/avali_chirp_3.ogg
+    - /Audio/_CD/Voice/Avali/avali_chirp_4.ogg
+    - /Audio/_CD/Voice/Avali/avali_chirp_5.ogg
+
+- type: soundCollection
+  id: CDAvaliScree
+  files:
+    - /Audio/_CD/Voice/Avali/avali_scree_1.ogg
+    - /Audio/_CD/Voice/Avali/avali_scree_2.ogg

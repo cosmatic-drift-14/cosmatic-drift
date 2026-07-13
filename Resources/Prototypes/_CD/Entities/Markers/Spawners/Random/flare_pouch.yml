@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseItem
+  id: PouchMarkingFlareRandom
+  name: marking flare pouch
+  suffix: Random
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Storage/flare_pouch.rsi
+    state: icon
+  - type: EntityTableSpawner
+    offset: 0
+    table: !type:GroupSelector
+      children:
+      - id: PouchMarkingFlareBlue
+      - id: PouchMarkingFlareGreen
+      - id: PouchMarkingFlareRed
+      - id: PouchMarkingFlareYellow

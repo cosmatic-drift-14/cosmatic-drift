@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Space Station 14 at commit https://github.com/space-wizards/space-station-14/commit/c3630b7301020c8417bd06572ca71356d0149f64 and edited by Nairod(Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "flare_base"
+    },
+    {
+      "name": "flare_spent"
+    },
+    {
+      "name": "flare_unlit"
+    },
+    {
+      "name": "flare_burn",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "lit-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "lit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "unlit-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "unlit-inhand-right",
+      "directions": 4
+    }
+  ]
+}

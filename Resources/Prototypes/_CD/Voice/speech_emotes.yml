@@ -1,0 +1,176 @@
+- type: emote # From Starlight
+  id: Call
+  name: chat-emote-name-call
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/peep.png # Sprite taken from RMC
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-call"]
+  chatTriggers:
+    - call
+    - calls
+    - calling
+    - called
+
+- type: emote # From MoffStation for Avali and from RMC14 for Reptilians
+  id: Hiss
+  name: chat-emote-name-hiss
+  category: Vocal
+  available: false
+  icon: { sprite: Mobs/Animals/snake.rsi, state: icon } # Just snake
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-hiss"]
+  chatTriggers:
+    - hiss
+    - hisses
+    - hissing
+    - hissed
+
+- type: emote # From RMC14 for Reptilians
+  id: Purr
+  name: chat-emote-name-purr
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/purr.png # Sprite taken from RMC
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-purr"]
+  chatTriggers:
+    - purr
+    - purrs
+    - purring
+    - purred
+
+- type: emote # From RMC14 for Reptilians
+  id: Rattle
+  name: chat-emote-name-rattle
+  category: Hands
+  available: false
+  icon: _CD/Interface/Emotes/snarl.png # Sprite taken from RMC
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-rattle"]
+  chatTriggers:
+    - rattle
+    - rattles
+    - rattling
+    - rattled
+    - rattle tail
+    - rattles tail
+    - rattles their tail
+    - rattles her tail
+    - rattles his tail
+    - rattles its tail
+
+- type: emote # From Starlight
+  id: Scree
+  name: chat-emote-name-scree
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/peep.png
+  whitelist:
+    components:
+      - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-scree"]
+  chatTriggers:
+    - scree
+    - screes
+    - screeing
+    - screed
+
+- type: emote # From Starlight
+  id: Squawk
+  name: chat-emote-name-squawk
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/peep.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-squawk"]
+  chatTriggers:
+    - squawk
+    - squawks
+    - squawking
+    - squawked
+
+- type: emote # From Goob
+  id: Trill
+  name: chat-emote-name-trill
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/peep.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-trill"]
+  chatTriggers:
+    - trill
+    - trills
+    - trilling
+    - trilled
+
+- type: emote # From Goob
+  id: Warble
+  name: chat-emote-name-warble
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/peep.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-warble"]
+  chatTriggers:
+    - warble
+    - warbles
+    - warbling
+    - warbled
+
+- type: emote # From Goob
+  id: Wurble
+  name: chat-emote-name-wurble
+  category: Vocal
+  available: false
+  icon: _CD/Interface/Emotes/purr.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-wurble"]
+  chatTriggers:
+    - wurble
+    - wurbles
+    - wurbling
+    - wurblbed
