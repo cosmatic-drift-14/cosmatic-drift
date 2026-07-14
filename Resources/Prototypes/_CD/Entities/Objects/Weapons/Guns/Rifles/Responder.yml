@@ -3,9 +3,9 @@
   parent: [BaseWeaponRifle, BaseCentcommContraband]
   id: WeaponRifleResponder
   description: |-
-    A rare and expensive firearm used by specialised teams in SolGov and Nanotressen.
-    Made by a small subsidary of a non-Nanotressen company specalising in complicated firearms, localized within the Cosmetic Sector.
-    Rumors that you can disassemble the firearm and create a clock are refuted by both Nanotressen and the company.
+    A rare firearm used by specialised teams in NanoTressen and by some local authorities in the Cosmatic Sector, also refered to as KT-338.
+    Made by a small subsidary of a non-NanoTressen company specalising in complicated firearms, localized within KT-338.
+    Rumors that you can disassemble the firearm and create a clock are refuted by both NanoTressen and the company.
     Uses .30 rifle ammo.
   components:
   - type: Sprite
@@ -16,18 +16,18 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/Responder.rsi
+    sprite: _CD/Objects/Weapons/Guns/Rifles/Responder.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -20 # -20 Default
-    maxAngle: -40 # -30 Defualt
+    minAngle: -25 # -20 Default
+    maxAngle: -45 # -30 Defualt
   - type: Gun
-    minAngle: 21 # 21 Default
-    maxAngle: 42 # 32 Default
+    minAngle: 26 # 21 Default
+    maxAngle: 47 # 32 Default
     fireRate: 4
     burstFireRate: 8
-    selectedMode: FullAuto
+    selectedMode: Burst
     availableModes:
       - FullAuto
       - Burst
