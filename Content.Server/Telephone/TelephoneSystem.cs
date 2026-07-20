@@ -21,6 +21,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using System.Linq;
+using Content.Shared._CD.Speech.Components;
 
 namespace Content.Server.Telephone;
 
@@ -448,6 +449,21 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
         {
             RemComp<ActiveListenerComponent>(entity);
         }
+
+        // CD - emote listening
+        if (!entity.Comp.ListenToEmotes)
+            return;
+
+        if (microphoneOn)
+        {
+            EnsureComp(entity, out CDActiveEmoteListenerComponent comp);
+            comp.Range = entity.Comp.ListeningRange;
+        }
+        else
+        {
+            RemComp<CDActiveEmoteListenerComponent>(entity);
+        }
+        // CD end
     }
 
     public void SetSpeakerForTelephone(Entity<TelephoneComponent> entity, Entity<SpeechComponent>? speaker)
