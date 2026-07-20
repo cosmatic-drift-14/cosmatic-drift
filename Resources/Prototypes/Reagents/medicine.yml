@@ -1331,9 +1331,11 @@
         conditions:
         - !type:TemperatureCondition
           max: 213.0
+        - !type:MobStateCondition
+          mobstate: Dead
         damage:
-          Brute: -3
-          Burn: -3
+          Brute: -4
+          Burn: -4
 
 - type: reagent
   id : Aloxadone
