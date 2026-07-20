@@ -13,6 +13,11 @@ public sealed partial class ListeningSystem
         PingEmoteListeners(ev.Source, ev.Action);
     }
 
+    /// <summary>
+    /// A copy of <see cref="PingListeners"/> instead of integrating into the original method for the
+    /// sake of maintaining.
+    /// </summary>
+    // Above might be unwise?
     public void PingEmoteListeners(EntityUid source, string action)
     {
         var sourceXform = Transform(source);

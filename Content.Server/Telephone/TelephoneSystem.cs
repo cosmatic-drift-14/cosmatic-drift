@@ -115,7 +115,7 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
             ("speaker", Name(speaker)));
 
         var range = args.TelephoneSource.Comp.LinkedTelephones.Count > 1 ? ChatTransmitRange.HideChat : ChatTransmitRange.GhostRangeLimit;
-        // CD modification -
+        // CD modification - add check for emote channel to properly send message; Local check uses original behaviour
         var volume = args.ChatMsg.Message.Channel switch
         {
             ChatChannel.Local => entity.Comp.SpeakerVolume == TelephoneVolume.Speak
@@ -123,7 +123,7 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
                 : InGameICChatType.Whisper,
             ChatChannel.Emotes => InGameICChatType.Emote,
         };
-
+        // end CD
         _chat.TrySendInGameICMessage(speaker, args.Message, volume, range, nameOverride: name, checkRadioPrefix: false);
     }
 
