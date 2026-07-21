@@ -118,10 +118,13 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
         // CD modification - add check for emote channel to properly send message; Local check uses original behaviour
         var volume = args.ChatMsg.Message.Channel switch
         {
-            ChatChannel.Local => entity.Comp.SpeakerVolume == TelephoneVolume.Speak
+            // originally this was hard coded to be one or the other without taking into consideration
+            // the chat type, now we only make that assumption if it is anything *but* emote (to appease the tests
+            // when not all cases are covered)
+            ChatChannel.Emotes => InGameICChatType.Emote,
+            _ => entity.Comp.SpeakerVolume == TelephoneVolume.Speak
                 ? InGameICChatType.Speak
                 : InGameICChatType.Whisper,
-            ChatChannel.Emotes => InGameICChatType.Emote,
         };
         // end CD
         _chat.TrySendInGameICMessage(speaker, args.Message, volume, range, nameOverride: name, checkRadioPrefix: false);
