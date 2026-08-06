@@ -570,19 +570,18 @@
 #   products:
 #     Opporozidone: 3
 
-# CD Change: removed necrosol
-#- type: reaction
-#  id: Arcryox
-#  minTemp: 370
-#  reactants:
-#    Lithium:
-#      amount: 1
-#    Tricordrazine:
-#      amount: 1
-#    Cryoxadone:
-#      amount: 1
-#  products:
-#    Arcryox: 3
+- type: reaction
+  id: Arcryox
+  minTemp: 370
+  reactants:
+    Lithium:
+      amount: 1
+    Tricordrazine:
+      amount: 1
+    Cryoxadone:
+      amount: 1
+  products:
+    Arcryox: 3
 
 - type: reaction
   id: Aloxadone
