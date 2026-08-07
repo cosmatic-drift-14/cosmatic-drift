@@ -6,7 +6,6 @@
     A rare firearm used by specialised teams in NanoTressen and by some local authorities in the Cosmatic Sector, also refered to as KT-338. As well as anyone else with enough money who can find one.
     Made by a small subsidary of a non-NanoTressen company specalising in complicated firearms, localized within KT-338.
     Rumors that you can disassemble the firearm and create a clock are refuted by both NanoTressen and the company.
-    With some advanced system that detects the hand its being held in, it swaps the side the casings are ejected from to avoid hitting the user with them
     Uses .30 rifle ammo.
   components:
   - type: Sprite
