@@ -1,6 +1,6 @@
 - type: entity
   name: Responder
-  parent: [BaseWeaponRifle, BaseCentcommContraband]
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleResponder
   description: |-
     A rare firearm used by specialised teams in NanoTressen and by some local authorities in the Cosmatic Sector, also refered to as KT-338. As well as anyone else with enough money who can find one.
