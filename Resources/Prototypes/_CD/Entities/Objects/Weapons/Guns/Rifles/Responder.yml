@@ -4,8 +4,8 @@
   id: WeaponRifleResponder
   description: |-
     A high quality and rare firearm used by almost anyone with enough money in KT-338.
-    Made by a small subsidary of a non-NanoTressen company specalising in complicated firearms, localized within KT-338.
-    Rumors that you can disassemble the firearm and create a clock are refuted by both NanoTressen and the company.
+    Made by a small subsidary of a non-NanoTressen company specalising in complicated firearms, localized within KT-338. Currently in field testing for more widespread adoption in Cosmatic Sectors ERT teams.
+    Rumors that you can disassemble the firearm and create a clock are refuted by the company.
     Uses .30 rifle ammo.
   components:
   - type: Sprite
