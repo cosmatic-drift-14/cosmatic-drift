@@ -34,6 +34,10 @@ public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeS
 
     private void AfterStateHandler(Entity<BorgSwitchableTypeComponent> ent, ref AfterAutoHandleStateEvent args)
     {
+        // CD - for RSI errors when selecting a shell
+        if (!_timing.IsFirstTimePredicted)
+            return;
+
         UpdateEntityAppearance(ent);
     }
 
@@ -42,9 +46,6 @@ public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeS
         BorgTypePrototype prototype)
     {
         // CD - added checks to stop sprite state errors
-        if (!_timing.IsFirstTimePredicted)
-            return;
-
         if (!TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) ||
             subtype.BorgSubtype != null)
         {
@@ -52,6 +53,7 @@ public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeS
             RaiseLocalEvent(entity, ref ev);
             return;
         }
+        // CD end
 
         if (TryComp(entity, out SpriteComponent? sprite))
         {
