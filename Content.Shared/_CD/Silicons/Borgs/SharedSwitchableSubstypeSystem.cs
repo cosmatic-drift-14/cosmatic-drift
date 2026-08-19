@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+using Content.Shared._CD.Prototypes;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Movement.Components;
@@ -16,6 +18,7 @@ public abstract partial class SharedBorgSwitchableSubtypeSystem : EntitySystem
     [Dependency] private InteractionPopupSystem _interactionPopup = default!;
     [Dependency] protected IPrototypeManager Prototypes = default!;
     [Dependency] protected IComponentFactory ComponentFactory = default!;
+    [Dependency] private SharedUserInterfaceSystem _userInterface = default!;
 
     public override void Initialize()
     {
@@ -96,5 +99,8 @@ public abstract partial class SharedBorgSwitchableSubtypeSystem : EntitySystem
 
         subtypeComp.BorgSubtype = args.Subtype;
         Dirty(uid, subtypeComp);
+
+        // closing borg ui moved here from type system
+        _userInterface.CloseUi((uid, null), BorgSwitchableTypeUiKey.SelectBorgType);
     }
 }

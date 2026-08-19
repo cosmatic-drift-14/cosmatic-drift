@@ -34,10 +34,6 @@ public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeS
 
     private void AfterStateHandler(Entity<BorgSwitchableTypeComponent> ent, ref AfterAutoHandleStateEvent args)
     {
-        // CD - for RSI errors when selecting a shell
-        if (!_timing.IsFirstTimePredicted)
-            return;
-
         UpdateEntityAppearance(ent);
     }
 
