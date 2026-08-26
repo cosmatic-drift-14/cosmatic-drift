@@ -94,7 +94,8 @@ public abstract partial class SharedBorgSwitchableTypeSystem : EntitySystem
         ent.Comp.SelectTypeAction = null;
         Dirty(ent);
 
-        _userInterface.CloseUi((ent.Owner, null), BorgSwitchableTypeUiKey.SelectBorgType);
+        // CD - we want to close it ourselves in subtype system, otherwise an event gets eaten
+        // _userInterface.CloseUi((ent.Owner, null), BorgSwitchableTypeUiKey.SelectBorgType);
 
         UpdateEntityAppearance(ent);
 
