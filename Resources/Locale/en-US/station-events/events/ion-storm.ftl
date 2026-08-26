@@ -100,5 +100,5 @@ ion-law-error-fallback-dataset-empty-or-not-found = SYSTEM RESTORE POINT FAILED
 ion-law-error-no-selector-selected = THE SELECTED RESOURCE WAS MOVED OR DELETED
 ion-law-error-no-bool-value = THIS SENTENCE IS FALSE
 
-#CD additions:
+# CD additions:
 ion-storm-law-dangerous-space = LEAVING THE STATION IS DANGEROUS BECAUSE OF {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)} IN NEARBY SPACE
