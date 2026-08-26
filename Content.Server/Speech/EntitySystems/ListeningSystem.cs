@@ -16,6 +16,7 @@ public sealed partial class ListeningSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<EntitySpokeEvent>(OnSpeak);
+        SubscribeLocalEvent<CDEntityEmotedEvent>(OnEmote); // CD
     }
 
     private void OnSpeak(EntitySpokeEvent ev)

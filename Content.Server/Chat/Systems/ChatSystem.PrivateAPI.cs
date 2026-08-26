@@ -207,6 +207,11 @@ public sealed partial class ChatSystem
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source} as {name}: {action}");
             else
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source}: {action}");
+
+        // CD - allow us to listen to any emotes
+        var ev = new CDEntityEmotedEvent(source, action);
+        RaiseLocalEvent(source, ref ev, true);
+        // end CD
     }
 
     // ReSharper disable once InconsistentNaming
