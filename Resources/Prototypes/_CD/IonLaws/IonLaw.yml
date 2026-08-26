@@ -1,0 +1,5 @@
+﻿- type: ionLaw
+  id: DangerousSpace
+  lawString: ion-storm-law-dangerous-space
+  selectorWeightAdjust:
+    RandomManifestFill: 0.15
