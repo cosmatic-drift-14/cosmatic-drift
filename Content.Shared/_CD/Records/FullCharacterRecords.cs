@@ -8,7 +8,7 @@ namespace Content.Shared._CD.Records;
 /// Contains the full records information, not just stuff that is in the database.
 /// </summary>
 [Serializable, NetSerializable]
-public sealed class FullCharacterRecords(
+public sealed partial class FullCharacterRecords(
     PlayerProvidedCharacterRecords pRecords,
     uint? stationRecordsKey,
     string name,
@@ -22,7 +22,7 @@ public sealed class FullCharacterRecords(
     string? dna,
     EntityUid? owner = null)
 {
-    [ViewVariables]
+    [DataField]
     public PlayerProvidedCharacterRecords PRecords = pRecords;
 
     /// <summary>
@@ -30,58 +30,58 @@ public sealed class FullCharacterRecords(
     ///
     /// Sadly, this has to be a uint because StationRecordsKey is not serializable
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public uint? StationRecordsKey = stationRecordsKey;
 
     /// <summary>
     ///     Name tied to this record.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public string Name = name;
 
     /// <summary>
     ///     Age of the person that this record represents.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public int Age = age;
 
     /// <summary>
     ///     Job title tied to this record.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public string JobTitle = jobTitle;
 
     /// <summary>
     ///     Job icon tied to this record.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public string JobIcon = jobIcon;
 
     /// <summary>
     ///     Species tied to this record.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public string Species = species;
 
     /// <summary>
     ///     Gender identity tied to this record.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public Gender Gender = gender;
 
     /// <summary>
     ///     Sex identity tied to this record.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     public Sex Sex = sex;
 
-    [ViewVariables]
+    [DataField]
     public string? Fingerprint = fingerprint;
 
     /// <summary>
     ///     DNA of the person.
     /// </summary>
-    [ViewVariables]
+    [DataField]
     // ReSharper disable once InconsistentNaming
     public string? DNA = dna;
 

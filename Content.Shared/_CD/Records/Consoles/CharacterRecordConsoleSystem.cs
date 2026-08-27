@@ -1,21 +1,17 @@
-using Content.Server.Station.Systems;
-using Content.Server.StationRecords.Systems;
-using Content.Server.StationRecords;
 using Content.Shared.CriminalRecords;
 using Content.Shared.Security;
+using Content.Shared.Station;
 using Content.Shared.StationRecords;
-using Content.Shared._CD.Records;
-using Robust.Server.GameObjects;
 
-namespace Content.Server._CD.Records.Consoles;
+namespace Content.Shared._CD.Records.Consoles;
 
 public sealed partial class CharacterRecordConsoleSystem : EntitySystem
 {
     [Dependency] private CharacterRecordsSystem _characterRecords = default!;
     [Dependency] private IEntityManager _entity = default!;
-    [Dependency] private StationRecordsSystem _records = default!;
-    [Dependency] private StationSystem _station = default!;
-    [Dependency] private UserInterfaceSystem _ui = default!;
+    [Dependency] private SharedStationRecordsSystem _records = default!;
+    [Dependency] private SharedStationSystem _station = default!;
+    [Dependency] private SharedUserInterfaceSystem _ui = default!;
 
     public override void Initialize()
     {
@@ -63,11 +59,13 @@ public sealed partial class CharacterRecordConsoleSystem : EntitySystem
         var names = new Dictionary<uint, CharacterRecordConsoleState.CharacterInfo>();
         foreach (var (i, r) in characterRecords)
         {
-            var netEnt = _entity.GetNetEntity(r.Owner!.Value);
             // Admins get additional info to make it easier to run commands
-            var nameJob = console.ConsoleType != RecordConsoleType.Admin
-                ? $"{r.Name} ({r.JobTitle})"
-                : $"{r.Name} ({netEnt}, {r.JobTitle}";
+            var shouldShowNetEntityId = _entity.TryGetNetEntity(r.Owner, out var netEnt) &&
+                                  console.ConsoleType == RecordConsoleType.Admin;
+
+            var nameJob = shouldShowNetEntityId
+                ? $"{r.Name} ({netEnt}, {r.JobTitle}"
+                : $"{r.Name} ({r.JobTitle})";
 
             // Apply any filter the user has set
             if (console.Filter != null)
@@ -141,6 +139,8 @@ public sealed partial class CharacterRecordConsoleSystem : EntitySystem
                 && IsFilterWithSomeCodeValue(record.Fingerprint, filterLowerCaseValue),
             StationRecordFilterType.DNA => record.DNA != null
                                                 && IsFilterWithSomeCodeValue(record.DNA, filterLowerCaseValue),
+            StationRecordFilterType.Job => IsFilterWithSomeCodeValue(record.JobTitle, filterLowerCaseValue),
+            StationRecordFilterType.Species => IsFilterWithSomeCodeValue(record.Species, filterLowerCaseValue),
             _ => throw new ArgumentOutOfRangeException(nameof(filter), "Invalid Character Record filter type"),
         };
     }

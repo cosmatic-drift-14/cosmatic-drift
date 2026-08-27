@@ -9,11 +9,11 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._CD.Records;
 
-public sealed class CharacterRecordsSystem : EntitySystem
+public sealed partial class CharacterRecordsSystem : EntitySystem
 {
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly SharedStationRecordsSystem _records = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private SharedStationRecordsSystem _records = default!;
 
     public override void Initialize()
     {
@@ -116,9 +116,10 @@ public sealed class CharacterRecordsSystem : EntitySystem
         var key = recordsDb.CreateNewKey();
         recordsDb.Records.Add(key, records);
         var playerKey = new CharacterRecordKey { Station = station, Index = key };
-        AddComp(player, new Shared.CharacterRecordKeyStorageComponent(playerKey));
+        AddComp(player, new CharacterRecordKeyStorageComponent(playerKey));
 
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
+        Dirty(station, recordsDb);
     }
 
     public void DelEntry(
@@ -127,7 +128,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         CharacterRecordType ty,
         int idx,
         CharacterRecordsComponent? recordsDb = null,
-        Shared.CharacterRecordKeyStorageComponent? key = null)
+        CharacterRecordKeyStorageComponent? key = null)
     {
         if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
@@ -160,7 +161,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         EntityUid station,
         EntityUid player,
         CharacterRecordsComponent? recordsDb = null,
-        Shared.CharacterRecordKeyStorageComponent? key = null)
+        CharacterRecordKeyStorageComponent? key = null)
     {
         if (!Resolve(station, ref recordsDb) || !Resolve(player, ref key))
             return;
@@ -175,7 +176,7 @@ public sealed class CharacterRecordsSystem : EntitySystem
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
     }
 
-    public void DeleteAllRecords(EntityUid player, Shared.CharacterRecordKeyStorageComponent? key = null)
+    public void DeleteAllRecords(EntityUid player, CharacterRecordKeyStorageComponent? key = null)
     {
         if (!Resolve(player, ref key))
             return;
