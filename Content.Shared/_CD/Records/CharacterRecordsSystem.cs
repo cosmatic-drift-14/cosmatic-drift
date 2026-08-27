@@ -5,19 +5,15 @@ using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
-using Content.Shared._CD.Records;
-using Content.Shared._CD.Species;
-using Content.Shared.Forensics.Components;
-using Content.Shared.GameTicking;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._CD.Records;
 
-public sealed partial class CharacterRecordsSystem : EntitySystem
+public sealed class CharacterRecordsSystem : EntitySystem
 {
-    [Dependency] private IPrototypeManager _prototype = default!;
-    [Dependency] private InventorySystem _inventory = default!;
-    [Dependency] private SharedStationRecordsSystem _records = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly SharedStationRecordsSystem _records = default!;
 
     public override void Initialize()
     {
@@ -199,5 +195,3 @@ public sealed partial class CharacterRecordsSystem : EntitySystem
             : recordsDb.Records;
     }
 }
-
-public sealed partial class CharacterRecordsModifiedEvent : EntityEventArgs;
