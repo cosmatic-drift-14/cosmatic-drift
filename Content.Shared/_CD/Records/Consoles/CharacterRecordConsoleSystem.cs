@@ -2,6 +2,7 @@ using Content.Shared.CriminalRecords;
 using Content.Shared.Security;
 using Content.Shared.Station;
 using Content.Shared.StationRecords;
+using Robust.Shared.Timing;
 
 namespace Content.Shared._CD.Records.Consoles;
 
@@ -12,6 +13,7 @@ public sealed partial class CharacterRecordConsoleSystem : EntitySystem
     [Dependency] private SharedStationRecordsSystem _records = default!;
     [Dependency] private SharedStationSystem _station = default!;
     [Dependency] private SharedUserInterfaceSystem _ui = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -60,11 +62,8 @@ public sealed partial class CharacterRecordConsoleSystem : EntitySystem
         foreach (var (i, r) in characterRecords)
         {
             // Admins get additional info to make it easier to run commands
-            var shouldShowNetEntityId = _entity.TryGetNetEntity(r.Owner, out var netEnt) &&
-                                  console.ConsoleType == RecordConsoleType.Admin;
-
-            var nameJob = shouldShowNetEntityId
-                ? $"{r.Name} ({netEnt}, {r.JobTitle}"
+            var nameJob = console.ConsoleType == RecordConsoleType.Admin
+                ? $"{r.Name} ({r.Owner}, {r.JobTitle})"
                 : $"{r.Name} ({r.JobTitle})";
 
             // Apply any filter the user has set

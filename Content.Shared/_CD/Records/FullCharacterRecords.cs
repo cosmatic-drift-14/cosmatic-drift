@@ -20,7 +20,7 @@ public sealed partial class FullCharacterRecords(
     Sex sex,
     string? fingerprint,
     string? dna,
-    EntityUid? owner = null)
+    NetEntity owner)
 {
     [DataField]
     public PlayerProvidedCharacterRecords PRecords = pRecords;
@@ -86,9 +86,8 @@ public sealed partial class FullCharacterRecords(
     public string? DNA = dna;
 
     /// <summary>
-    /// The entity that owns this record. Should always nonnull inside CharacterRecordsComponent. This field should not be accessed client side.
+    /// The entity that owns this record. Should always nonnull inside CharacterRecordsComponent.
     /// </summary>
-    [ViewVariables]
-    [NonSerialized]
-    public EntityUid? Owner = owner;
+    [DataField]
+    public NetEntity Owner = owner;
 }
