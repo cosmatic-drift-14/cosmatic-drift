@@ -27,7 +27,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     public event Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
-    private bool _filtersChanged;
+    // private bool _filtersChanged;
     private StationRecordFilterType _filterType;
 
     private RecordConsoleType? _type;
@@ -145,7 +145,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             if (args.Id == RecordEntryViewType.SelectedId)
                 return;
             RecordEntryViewType.SelectId(args.Id);
-            _filtersChanged = true;
+            // _filtersChanged = true;
             // This is a hack to get the server to send us another packet with the new entries
             OnFiltersChanged?.Invoke(_filterType, RecordFiltersValue.Text);
         };
@@ -350,19 +350,19 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 {
                     case RecordConsoleType.Employment:
                         SetEntries(cr.EmploymentEntries, true);
-                        _filtersChanged = false;
+                        // _filtersChanged = false;
                         break;
                     case RecordConsoleType.Medical:
                         SetEntries(cr.MedicalEntries, true);
-                        _filtersChanged = false;
+                        //_filtersChanged = false;
                         break;
                     case RecordConsoleType.Security:
                         SetEntries(cr.SecurityEntries, true);
-                        _filtersChanged = false;
+                        //_filtersChanged = false;
                         break;
                     case RecordConsoleType.Admin:
                         SetEntries(cr.AdminEntries, true);
-                        _filtersChanged = false;
+                        //_filtersChanged = false;
                         break;
                 }
                 break;
