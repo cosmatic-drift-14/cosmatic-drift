@@ -85,7 +85,7 @@ public sealed partial class CharacterRecordsSystem : EntitySystem
             sex: profile.Sex,
             fingerprint: fingerprintComponent?.Fingerprint,
             dna: dnaComponent?.DNA,
-            owner: player);
+            owner: GetNetEntity(player));
         AddRecord(args.Station, args.Mob, records);
     }
 
