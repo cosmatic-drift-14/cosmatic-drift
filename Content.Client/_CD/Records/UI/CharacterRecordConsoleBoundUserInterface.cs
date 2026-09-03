@@ -34,13 +34,13 @@ public sealed class CharacterRecordConsoleBoundUserInterface(EntityUid owner, En
         _window.OnClose += Close;
         _window.OnListingItemSelected += meta =>
         {
-            SendMessage(new CharacterRecordConsoleSelectMsg(meta?.CharacterRecordKey));
+            SendPredictedMessage(new CharacterRecordConsoleSelectMsg(meta?.CharacterRecordKey));
 
             // If we are a security records console, we also need to inform the criminal records
             // system of our state.
             if (_window.IsSecurity() && meta?.StationRecordKey != null)
             {
-                SendMessage(new SelectStationRecord(meta.Value.StationRecordKey.Value));
+                SendPredictedMessage(new SelectStationRecord(meta.Value.StationRecordKey.Value));
                 _window.SetSecurityStatusEnabled(true);
             }
             else
@@ -53,14 +53,14 @@ public sealed class CharacterRecordConsoleBoundUserInterface(EntityUid owner, En
 
         _window.OnFiltersChanged += (ty, txt) =>
         {
-            SendMessage(txt == null
+            SendPredictedMessage(txt == null
                 ? new CharacterRecordsConsoleFilterMsg(null)
                 : new CharacterRecordsConsoleFilterMsg(new StationRecordsFilter(ty, txt)));
         };
 
         _window.OnSetSecurityStatus += (status, reason) =>
         {
-            SendMessage(new CriminalRecordChangeStatus(status, reason));
+            SendPredictedMessage(new CriminalRecordChangeStatus(status, reason));
         };
 
         _window.OpenCentered();
