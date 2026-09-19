@@ -1,9 +1,6 @@
-﻿using Content.Shared._CD.Silicons.Borgs;
-using Content.Shared.Movement.Components;
-using Content.Shared.Silicons.Borgs;
+﻿using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
-using Robust.Shared.Timing;
 
 namespace Content.Client.Silicons.Borgs;
 
@@ -17,7 +14,6 @@ public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeS
     [Dependency] private BorgSystem _borgSystem = default!;
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private SpriteSystem _sprite = default!;
-    [Dependency] private IGameTiming _timing = default!;
 
     public override void Initialize()
     {
