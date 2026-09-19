@@ -1,4 +1,5 @@
-﻿using Content.Shared.Silicons.Borgs;
+﻿using Content.Shared._CD.Silicons.Borgs;
+using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
 
