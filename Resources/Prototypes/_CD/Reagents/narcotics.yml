@@ -422,7 +422,7 @@
   physicalDesc: reagent-physical-desc-volatile
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.5
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         conditions:
