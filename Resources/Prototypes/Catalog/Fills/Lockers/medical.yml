@@ -130,6 +130,8 @@
       - id: EmergencyRollerBedSpawnFolded
     - id: PlushieLizardJobParamedic
       prob: 0.02
+    #CD Addions
+    - id: HandheldCrewMonitor
 
 - type: entity
   parent: LockerParamedic
