@@ -1,7 +1,6 @@
-using Content.Shared._CD.Records;
 using Content.Shared.StationRecords;
 
-namespace Content.Server._CD.Records.Consoles;
+namespace Content.Shared._CD.Records.Consoles;
 
 [RegisterComponent]
 public sealed partial class CharacterRecordConsoleComponent : Component

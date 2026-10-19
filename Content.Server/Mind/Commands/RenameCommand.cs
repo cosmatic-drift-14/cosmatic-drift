@@ -8,6 +8,8 @@ using Robust.Shared.Console;
 
 // CD: imports
 using Content.Server._CD.Records;
+using Content.Shared;
+using Content.Shared._CD.Records;
 
 namespace Content.Server.Mind.Commands;
 

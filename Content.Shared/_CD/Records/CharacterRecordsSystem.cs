@@ -1,28 +1,25 @@
-using Content.Server._CD.Species;
-using Content.Server.StationRecords.Systems;
+using Content.Shared._CD.Species;
+using Content.Shared.Forensics.Components;
+using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
-using Content.Shared._CD.Records;
-using Content.Shared._CD.Species;
-using Content.Shared.Forensics.Components;
-using Content.Shared.GameTicking;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._CD.Records;
+namespace Content.Shared._CD.Records;
 
 public sealed partial class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private InventorySystem _inventory = default!;
-    [Dependency] private StationRecordsSystem _records = default!;
+    [Dependency] private SharedStationRecordsSystem _records = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(StationRecordsSystem), typeof(CustomSpeciesNameSystem)]);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [typeof(SharedStationRecordsSystem), typeof(SharedCustomSpeciesNameSystem)]);
     }
 
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
@@ -88,7 +85,7 @@ public sealed partial class CharacterRecordsSystem : EntitySystem
             sex: profile.Sex,
             fingerprint: fingerprintComponent?.Fingerprint,
             dna: dnaComponent?.DNA,
-            owner: player);
+            owner: GetNetEntity(player));
         AddRecord(args.Station, args.Mob, records);
     }
 
@@ -122,6 +119,7 @@ public sealed partial class CharacterRecordsSystem : EntitySystem
         AddComp(player, new CharacterRecordKeyStorageComponent(playerKey));
 
         RaiseLocalEvent(station, new CharacterRecordsModifiedEvent());
+        Dirty(station, recordsDb);
     }
 
     public void DelEntry(
@@ -198,5 +196,3 @@ public sealed partial class CharacterRecordsSystem : EntitySystem
             : recordsDb.Records;
     }
 }
-
-public sealed partial class CharacterRecordsModifiedEvent : EntityEventArgs;

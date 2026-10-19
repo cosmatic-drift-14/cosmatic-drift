@@ -1,18 +1,17 @@
-using Content.Shared._CD.Records;
+using Robust.Shared.GameStates;
 
-namespace Content.Server._CD.Records;
+namespace Content.Shared._CD.Records;
 
 /// <summary>
 /// The component on the station that stores records after the round starts.
 /// </summary>
-[RegisterComponent]
-[Access(typeof(CharacterRecordsSystem))]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class CharacterRecordsComponent : Component
 {
-    [ViewVariables(VVAccess.ReadOnly)]
+    [DataField, AutoNetworkedField]
     public Dictionary<uint, FullCharacterRecords> Records = new();
 
-    [ViewVariables(VVAccess.ReadOnly)]
+    [DataField, AutoNetworkedField]
     private uint _nextKey = 1;
 
     /// <summary>

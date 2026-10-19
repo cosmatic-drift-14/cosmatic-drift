@@ -1,10 +1,12 @@
-namespace Content.Server._CD.Records;
+using Content.Shared._CD.Records;
+using Robust.Shared.GameStates;
+
+namespace Content.Shared;
 
 /// <summary>
 /// Stores the key to the entities character records.
 /// </summary>
-[RegisterComponent]
-[Access(typeof(CharacterRecordsSystem))]
+[RegisterComponent, NetworkedComponent]
 public sealed partial class CharacterRecordKeyStorageComponent : Component
 {
     [ViewVariables(VVAccess.ReadOnly)]
