@@ -178,6 +178,7 @@
   - type: Tag
     tags:
     - HideContextMenu
+  - type: Emoting # CD
 
 ## Mapping prototypes
 # General

@@ -21,6 +21,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using System.Linq;
+using Content.Shared._CD.Speech.Components;
 
 namespace Content.Server.Telephone;
 
@@ -88,7 +89,7 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
         if (!_recentChatMessages.Add((args.Source, args.Message, entity)))
             return;
 
-        SendTelephoneMessage(args.Source, args.Message, entity);
+        SendTelephoneMessage(args.Source, args.Message, entity, args.ChatType); // Cd - added chat type
     }
 
     private void OnTelephoneMessageReceived(Entity<TelephoneComponent> entity, ref TelephoneMessageReceivedEvent args)
@@ -114,8 +115,18 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
             ("speaker", Name(speaker)));
 
         var range = args.TelephoneSource.Comp.LinkedTelephones.Count > 1 ? ChatTransmitRange.HideChat : ChatTransmitRange.GhostRangeLimit;
-        var volume = entity.Comp.SpeakerVolume == TelephoneVolume.Speak ? InGameICChatType.Speak : InGameICChatType.Whisper;
-
+        // CD modification - add check for emote channel to properly send message; Local check uses original behaviour
+        var volume = args.ChatMsg.Message.Channel switch
+        {
+            // originally this was hard coded to be one or the other without taking into consideration
+            // the chat type, now we only make that assumption if it is anything *but* emote (to appease the tests
+            // when not all cases are covered)
+            ChatChannel.Emotes => InGameICChatType.Emote,
+            _ => entity.Comp.SpeakerVolume == TelephoneVolume.Speak
+                ? InGameICChatType.Speak
+                : InGameICChatType.Whisper,
+        };
+        // end CD
         _chat.TrySendInGameICMessage(speaker, args.Message, volume, range, nameOverride: name, checkRadioPrefix: false);
     }
 
@@ -352,7 +363,8 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
         SetTelephoneMicrophoneState(entity, false);
     }
 
-    private void SendTelephoneMessage(EntityUid messageSource, string message, Entity<TelephoneComponent> source, bool escapeMarkup = true)
+    // CD - chat type parameter
+    private void SendTelephoneMessage(EntityUid messageSource, string message, Entity<TelephoneComponent> source, ChatChannel chatType = ChatChannel.Local, bool escapeMarkup = true)
     {
         // This method assumes that you've already checked that this
         // telephone is able to transmit messages and that it can
@@ -382,8 +394,7 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
             ("name", name),
             ("message", content));
 
-        var chat = new ChatMessage(
-            ChatChannel.Local,
+        var chat = new ChatMessage(chatType, // CD chat type modification
             message,
             wrappedMessage,
             NetEntity.Invalid,
@@ -441,6 +452,21 @@ public sealed partial class TelephoneSystem : SharedTelephoneSystem
         {
             RemComp<ActiveListenerComponent>(entity);
         }
+
+        // CD - emote listening
+        if (!entity.Comp.ListenToEmotes)
+            return;
+
+        if (microphoneOn)
+        {
+            EnsureComp(entity, out CDActiveEmoteListenerComponent comp);
+            comp.Range = entity.Comp.ListeningRange;
+        }
+        else
+        {
+            RemComp<CDActiveEmoteListenerComponent>(entity);
+        }
+        // CD end
     }
 
     public void SetSpeakerForTelephone(Entity<TelephoneComponent> entity, Entity<SpeechComponent>? speaker)

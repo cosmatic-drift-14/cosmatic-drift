@@ -317,6 +317,7 @@
     listeningRange: 0
     speakerVolume: Speak
     unlistedNumber: true
+    listenToEmotes: true # CD
   - type: Holopad
   - type: StationAiWhitelist
   - type: UserInterface
