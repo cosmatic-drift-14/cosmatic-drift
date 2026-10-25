@@ -5,9 +5,9 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared._CD.Clothing;
 
-public sealed class ClothingBlockSlotsOnEquipSystem : EntitySystem
+public sealed partial class ClothingBlockSlotsOnEquipSystem : EntitySystem
 {
-    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private InventorySystem _inventory = default!;
 
     public override void Initialize()
     {

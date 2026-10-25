@@ -87,15 +87,16 @@ public sealed partial class DragonSystem : EntitySystem
             if (!_mobState.IsDead(uid))
                 comp.RiftAccumulator += frameTime;
 
-            // CD: Disable deletion / gibbing
-            // if (comp.RiftAccumulator >= comp.RiftMaxAccumulator)
-            // {
-            //     Roar(uid, comp, Transform(uid).Coordinates);
-            //     var smoke = Spawn(comp.SmokePrototype, Transform(uid).Coordinates);
-            //     if (TryComp<SmokeComponent>(smoke, out var smokeComp))
-            //         _smoke.StartSmoke(smoke, comp.SmokeSolution, smokeComp.Duration, smokeComp.SpreadAmount, smokeComp);
-            //     _gibbing.Gib(uid);
-            // }
+            // CD: Disable deletion
+            // Gib it, naughty dragon!
+            //if (comp.RiftAccumulator >= comp.RiftMaxAccumulator)
+            //{
+            //    Roar(uid, comp, Transform(uid).Coordinates);
+            //    var smoke = Spawn(comp.SmokePrototype, Transform(uid).Coordinates);
+            //    if (TryComp<SmokeComponent>(smoke, out var smokeComp))
+            //        _smoke.StartSmoke(smoke, comp.SmokeSolution, smokeComp.Duration, smokeComp.SpreadAmount, smokeComp);
+            //    _gibbing.Gib(uid);
+            //}
         }
     }
 

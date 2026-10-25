@@ -11,13 +11,13 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.JobSlotsConsole;
 
-public sealed class JobSlotsConsoleSystem : EntitySystem
+public sealed partial class JobSlotsConsoleSystem : EntitySystem
 {
-    [Dependency] private readonly AccessReaderSystem _access = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly StationJobsSystem _jobs = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private AccessReaderSystem _access = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private StationJobsSystem _jobs = default!;
+    [Dependency] private StationSystem _station = default!;
+    [Dependency] private UserInterfaceSystem _ui = default!;
 
     // Keep track of consoles so we can update them
     private readonly Dictionary<EntityUid, HashSet<EntityUid>> _stationConsoles = new();

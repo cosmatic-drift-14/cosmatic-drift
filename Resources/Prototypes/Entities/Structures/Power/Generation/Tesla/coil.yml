@@ -93,7 +93,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 450 # CD change from 225 to 450
+        damage: 450 # CD change to 450
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

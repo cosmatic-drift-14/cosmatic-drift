@@ -1,0 +1,119 @@
+- type: decal
+  abstract: true
+  parent: CDDecalBase
+  id: CDDecalStrataBase
+  tags: ["station", "markings"]
+
+# Grime
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeA1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime1_1
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeA2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime1_2
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeA3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime1_3
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeA4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime1_4
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeB1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime2_1
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeB2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime2_2
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeB3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime2_3
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeB4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime2_4
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeC1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime3_1
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeC2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime3_2
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeC3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime3_3
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeC4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime3_4
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeD1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime4_1
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeD2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime4_2
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeD3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime4_3
+
+- type: decal
+  parent: CDDecalStrataBase
+  id: CDDecalStrataGrimeD4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/strata.rsi
+    state: grime4_4

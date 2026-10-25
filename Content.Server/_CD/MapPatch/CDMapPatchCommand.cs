@@ -14,9 +14,9 @@ using Robust.Shared.Map;
 namespace Content.Server._CD.MapPatch;
 
 [ToolshedCommand(Name = "cd_map_patch"), AdminCommand(AdminFlags.Mapping)]
-public sealed class CDMapPatchCommand : ToolshedCommand
+public sealed partial class CDMapPatchCommand : ToolshedCommand
 {
-    [Dependency] private readonly IResourceManager _res = default!;
+    [Dependency] private IResourceManager _res = default!;
     private MapPatchSystem? _mapPatch = default;
 
     [CommandImplementation("print")]

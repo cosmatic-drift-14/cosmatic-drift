@@ -8,9 +8,9 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Admin;
 
-public sealed class EventPreferencesPanelEui : BaseEui
+public sealed partial class EventPreferencesPanelEui : BaseEui
 {
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     private readonly HumanoidCharacterProfile _playerPref;
     private readonly LocatedPlayerData _targetPlayer;

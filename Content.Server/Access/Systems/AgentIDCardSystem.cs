@@ -21,6 +21,17 @@ public sealed partial class AgentIdCardSystem : SharedAgentIdCardSystem
     {
         if (!TryComp<IdCardComponent>(ent, out var idCardComp))
             return;
+            
+        [Dependency] private PopupSystem _popupSystem = default!;
+        [Dependency] private IdCardSystem _cardSystem = default!;
+        [Dependency] private UserInterfaceSystem _uiSystem = default!;
+        [Dependency] private IPrototypeManager _prototypeManager = default!;
+        [Dependency] private ChameleonClothingSystem _chameleon = default!;
+        [Dependency] private ChameleonControllerSystem _chamController = default!;
+        [Dependency] private LockSystem _lock = default!;
+        [Dependency] private SharedJobStatusSystem _jobStatus = default!;
+
+        [Dependency] private SharedNanoChatSystem _nanoChat = default!; // CD
 
         ProtoMan.Resolve(args.Args.ChameleonOutfit.Job, out var jobProto);
 

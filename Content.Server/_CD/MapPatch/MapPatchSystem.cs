@@ -24,12 +24,12 @@ namespace Content.Server._CD.MapPatch;
 /// </summary>
 public sealed partial class MapPatchSystem : EntitySystem
 {
-    [Dependency] private readonly IAdminManager _admin = default!;
-    [Dependency] private readonly IChatManager _chat = default!;
-    [Dependency] private readonly IMapManager _mapMan = default!;
+    [Dependency] private IAdminManager _admin = default!;
+    [Dependency] private IChatManager _chat = default!;
+    [Dependency] private IMapManager _mapMan = default!;
 
-    [Dependency] private readonly MapSystem _mapSys = default!;
-    [Dependency] private readonly TransformSystem _xform = default!;
+    [Dependency] private MapSystem _mapSys = default!;
+    [Dependency] private TransformSystem _xform = default!;
 
     /// <inheritdoc/>
     public override void Initialize()

@@ -11,8 +11,8 @@ namespace Content.Shared._CD.Silicons.Borgs;
 public sealed partial class BorgSwitchableSubtypeComponent : Component
 {
     /// <summary>
-    /// The <see cref="BorgSubtypePrototype"/> of this chassis.
+    /// The <see cref="BorgSubtypeDefinitionComponent"/> of this chassis.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public ProtoId<BorgSubtypePrototype>? BorgSubtype;
+    public ProtoId<EntityPrototype>? BorgSubtype;
 }

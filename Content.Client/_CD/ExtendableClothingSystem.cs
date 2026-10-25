@@ -8,7 +8,7 @@ namespace Content.Client._CD;
 
 public sealed partial class ExtendableClothingSystem : SharedExtendableClothingSystem
 {
-    [Dependency] private readonly IStateManager _stateManager = default!;
+    [Dependency] private IStateManager _stateManager = default!;
 
     protected override bool IsPlayerInLobby()
     {

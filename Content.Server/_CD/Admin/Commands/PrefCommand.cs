@@ -10,9 +10,9 @@ using Robust.Shared.Toolshed;
 namespace Content.Server._CD.Admin.Commands;
 
 [ToolshedCommand, AdminCommand(AdminFlags.Admin)]
-public sealed class PrefCommand : ToolshedCommand
+public sealed partial class PrefCommand : ToolshedCommand
 {
-    [Dependency] private readonly IServerPreferencesManager _pref = default!;
+    [Dependency] private IServerPreferencesManager _pref = default!;
 
     [CommandImplementation("has")]
     public bool Has(

@@ -13,7 +13,7 @@ namespace Content.Client._CD.JobSlotsConsole;
 [GenerateTypedNameReferences]
 public sealed partial class JobSlotsConsoleMenu : FancyWindow
 {
-    [Dependency] private readonly IPrototypeManager _protoManager = default!;
+    [Dependency] private IPrototypeManager _protoManager = default!;
 
     private readonly Dictionary<ProtoId<DepartmentPrototype>, List<JobRow>> _departmentRows = new();
     private readonly Dictionary<ProtoId<DepartmentPrototype>, Label> _departmentLabels = new();

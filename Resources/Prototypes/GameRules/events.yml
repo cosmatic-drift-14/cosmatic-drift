@@ -66,7 +66,6 @@
 #       children:
 #         - id: DerelictSyndicateAssaultCyborgSpawn
 
-# CD Change - Tripled most event times
 - type: entity
   abstract: true
   parent: BaseGameRule
@@ -75,6 +74,8 @@
   - type: AntagSelection
     selectionTime: Never
 
+
+# CD Change - Tripled most event times
 - type: entity
   id: BaseStationEvent
   parent: BaseGameRule
@@ -439,7 +440,8 @@
     earliestStart: 20
     minimumPlayers: 15
     weight: 2 # CD: Nerf from 5 to 2
-    duration: 60
+    duration: 5
+    maxDuration: 20
   - type: VentHordeRule
     table: !type:GroupSelector
       rolls: 4, 8
@@ -459,7 +461,8 @@
     earliestStart: 20
     minimumPlayers: 15
     weight: 1 # CD: Nerf from 5 to 1
-    duration: 60
+    duration: 5
+    maxDuration: 20
   - type: VentHordeRule
     table: !type:GroupSelector
       rolls: 4, 8
@@ -479,7 +482,8 @@
     earliestStart: 20
     minimumPlayers: 15
     weight: 2 # CD: Nerf from 5 to 2
-    duration: 60
+    duration: 5
+    maxDuration: 20
   - type: VentHordeRule
     table: !type:GroupSelector
       rolls: 4, 8
@@ -530,12 +534,11 @@
 #   parent: [ BaseAntagGhostRoleRule, BaseNukeopsRule ]
 #   id: LoneOpsSpawn
 #   components:
-#   - type: StationEvent
-#     earliestStart: 35
-#     weight: 5.5
-#     minimumPlayers: 20
-#     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end screen (not always "Neutral outcome!") and... ending the game if the station is nuked.
-#     occursDuringRoundEnd: false
+#   # - type: StationEvent
+#   #   earliestStart: 35
+#   #   weight: 5.5
+#   #   minimumPlayers: 20
+#   #   duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end screen (not always "Neutral outcome!") and... ending the game if the station is nuked.
 #   - type: RuleGrids
 #   - type: LoadMapRule
 #     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml

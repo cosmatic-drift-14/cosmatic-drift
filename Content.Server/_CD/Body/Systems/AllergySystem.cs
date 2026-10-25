@@ -13,11 +13,11 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._CD.Body.Systems;
 
-public sealed class AllergySystem : EntitySystem
+public sealed partial class AllergySystem : EntitySystem
 {
-    [Dependency] private readonly BodySystem _bodySystem = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
+    [Dependency] private BodySystem _bodySystem = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
+    [Dependency] private SharedSolutionContainerSystem _solutionContainerSystem = default!;
 
     public override void Initialize()
     {

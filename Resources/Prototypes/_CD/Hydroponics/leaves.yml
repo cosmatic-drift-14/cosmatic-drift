@@ -9,9 +9,8 @@
   - type: Produce
     seedId: mindleaf
   - type: Edible
-  - type: SolutionContainerManager
-    solutions:
-      food:
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: MindleafSap
           Quantity: 8

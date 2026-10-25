@@ -9,15 +9,15 @@ using Robust.Shared.Network;
 
 namespace Content.Shared._CD.Silicons.StationAi;
 
-public abstract class SharedStationAiShellUserSystem : EntitySystem
+public abstract partial class SharedStationAiShellUserSystem : EntitySystem
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
-    [Dependency] private readonly SharedStationAiSystem _stationAiSystem = default!;
-    [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!;
-    [Dependency] private readonly SharedTransformSystem _xforms = default!;
-    [Dependency] protected readonly SharedUserInterfaceSystem UserInterface = default!;
-    [Dependency] private readonly EntityManager _entity = default!;
+    [Dependency] private SharedActionsSystem _actions = default!;
+    [Dependency] private SharedStationAiSystem _stationAiSystem = default!;
+    [Dependency] private INetManager _net = default!;
+    [Dependency] private SharedMindSystem _mind = default!;
+    [Dependency] private SharedTransformSystem _xforms = default!;
+    [Dependency] protected SharedUserInterfaceSystem UserInterface = default!;
+    [Dependency] private EntityManager _entity = default!;
 
     public override void Initialize()
     {

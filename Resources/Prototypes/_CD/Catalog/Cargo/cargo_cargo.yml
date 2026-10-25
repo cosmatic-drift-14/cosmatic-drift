@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: CargoMarkingFlare
+  icon:
+    sprite: _CD/Objects/Storage/flare_pouch.rsi
+    state: icon
+  product: CrateMarkingFlare
+  cost: 900
+  category: cargoproduct-category-name-cargo
+  group: market

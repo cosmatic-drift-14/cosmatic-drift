@@ -15,7 +15,7 @@ namespace Content.Client._CD.Humanoid;
 [GenerateTypedNameReferences]
 public sealed partial class AllergyPicker : BoxContainer
 {
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
 
     private readonly Texture _textureWhite;
 

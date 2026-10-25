@@ -8,19 +8,19 @@
     },
     "states": [
         {
-            "name": "miner",
+            "name": "borg",
             "directions": 4
         },
         {
-            "name": "miner_e",
+            "name": "borg_e",
             "directions": 4
         },
         {
-            "name": "miner_e_r",
+            "name": "borg_e_r",
             "directions": 4
         },
         {
-            "name": "miner_l",
+            "name": "borg_l",
             "directions": 4
         }
     ]

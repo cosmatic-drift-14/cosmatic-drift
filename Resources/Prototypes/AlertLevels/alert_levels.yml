@@ -50,7 +50,7 @@
       announcement: alert-level-delta-announcement
       #selectable: false | CD commented out
       sound:
-        path: /Audio/Misc/delta_alt.ogg #CD change from delta to delta_alt
+        path: /Audio/_CD/Misc/delta_alt.ogg #CD change from delta to delta_alt
         params:
           volume: -1
       #disableSelection: true | CD commented out

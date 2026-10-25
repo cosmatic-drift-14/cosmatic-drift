@@ -355,7 +355,6 @@ namespace Content.Server.GameTicking
             var cdPlayerEntSpawnEv = new CdPlayerSpawnBeforeMindEvent(player, character, jobId);
             RaiseLocalEvent(mob, cdPlayerEntSpawnEv);
             // CD end
-            
             var newMind = _mind.CreateMind(data.UserId, Name(mob));
             _mind.SetUserId(newMind, data.UserId);
 

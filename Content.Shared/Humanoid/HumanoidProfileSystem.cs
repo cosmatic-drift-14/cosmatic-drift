@@ -10,8 +10,10 @@ namespace Content.Shared.Humanoid;
 
 public sealed partial class HumanoidProfileSystem : EntitySystem
 {
-    [Dependency] private readonly GrammarSystem _grammar = default!;
-    [Dependency] private readonly SharedCustomSpeciesNameSystem _cdSpeciesName = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private GrammarSystem _grammar = default!;
+
+    [Dependency] private SharedCustomSpeciesNameSystem _cdSpeciesName = default!;
 
     public override void Initialize()
     {

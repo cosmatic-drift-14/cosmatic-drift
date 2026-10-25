@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Rodentia sprites made by portfiend, Foxfolk0-2 made by PursuitinAshes (Github) based off of https://github.com/space-wizards/space-station-14/pull/24994",
+    "copyright": "Rodentia sprites made by portfiend, Foxfolk0-2 made by PursuitinAshes (Github) based off of https://github.com/space-wizards/space-station-14/pull/24994, Avali sprites by HITAroko, adapted and installed by 2Sensei2 and updated by Pgriha",
     "states": [
         {
             "name": "rodentia0",
@@ -40,6 +40,36 @@
         },
         {
             "name": "foxfolk2"
+        },
+        {
+            "name": "avali0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "avali1"
+        },
+        {
+            "name": "avali2"
+        },
+        {
+            "name": "avali3",
+            "delays": [
+                    [
+                        0.2,
+                        0.2,
+                        0.2,
+                        0.3,
+                        0.3,
+                        0.3
+                    ]
+                ]
         }
     ]
 }

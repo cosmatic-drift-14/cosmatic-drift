@@ -1,5 +1,4 @@
 ﻿using Content.Shared._CD.Silicons.Borgs;
-using Content.Shared.Movement.Components;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
@@ -42,7 +41,12 @@ public sealed partial class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeS
         // CD - added checks to stop sprite state errors
         if (!TryComp<BorgSwitchableSubtypeComponent>(entity, out var subtype) ||
             subtype.BorgSubtype != null)
+        {
+            var ev = new BorgTypeUpdateVisualsOverrideEvent();
+            RaiseLocalEvent(entity, ref ev);
             return;
+        }
+        // CD end
 
         if (TryComp(entity, out SpriteComponent? sprite))
         {

@@ -1,7 +1,5 @@
-using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
@@ -19,16 +17,16 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._CD.TapeRecorder;
 
-public abstract class SharedTapeRecorderSystem : EntitySystem
+public abstract partial class SharedTapeRecorderSystem : EntitySystem
 {
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly ItemSlotsSystem _slots = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
-    [Dependency] protected readonly IGameTiming Timing = default!;
-    [Dependency] protected readonly SharedAudioSystem Audio = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private ItemSlotsSystem _slots = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private SharedUserInterfaceSystem _ui = default!;
+    [Dependency] protected IGameTiming Timing = default!;
+    [Dependency] protected SharedAudioSystem Audio = default!;
 
     private const string SlotName = "cassette_tape";
 

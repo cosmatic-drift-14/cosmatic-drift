@@ -1649,6 +1649,8 @@
         Quantity: 3
       - ReagentId: Vitamin
         Quantity: 2
+      - ReagentId: Desoxyephedrine #CD: Moved Desox back to ambrosia from glasstle.
+        Quantity: 10
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/ambrosia_vulgaris.rsi
   - type: Item
@@ -1759,8 +1761,9 @@
       reagents:
       - ReagentId: Razorium
         Quantity: 20
-      # - ReagentId: Desoxyephedrine #CD: Moved Desox back to ambrosia from glasstle.
-      #   Quantity: 10
+      # CD: Moved back to ambrosia
+      #- ReagentId: Desoxyephedrine
+      #  Quantity: 10
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/glasstle.rsi
   - type: Produce

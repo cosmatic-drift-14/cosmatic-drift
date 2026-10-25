@@ -1338,10 +1338,12 @@
       - !type:EvenHealthChange
         conditions:
         - !type:TemperatureCondition
-          max: 273.15
+          max: 213.0
+        - !type:MobStateCondition #CD addition
+          mobstate: Dead
         damage:
-          Brute: -3
-          Burn: -3
+          Brute: -4 #CD change from -3 to -4
+          Burn: -4 #CD change from -3 to -4
 
 - type: reagent
   id : Aloxadone

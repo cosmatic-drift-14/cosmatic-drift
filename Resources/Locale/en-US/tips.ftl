@@ -62,7 +62,7 @@ tips-dataset-42 = You can take the arrivals shuttle back to the arrivals station
 tips-dataset-43 = Rounds are typically 3-4 hours long on Cosmatic Drift. Nobody will judge you if you need to leave in order sleep/eat/do something else in real life. Please try to use a cryosleep chamber if you do because it opens up your job slot.
 tips-dataset-44 = As an Engineer, you can always work on additional projects to pass the time! Exercise your creativity!
 
-# END CD
+# end CD
 
 tips-dataset-45 = You can examine your headset to see which radio channels you have available and how to speak in them.
 tips-dataset-46 = As a Salvage Specialist, always carry a GPS on you and take note of the station's coordinates in case your salvage is lost to space.

@@ -1,0 +1,92 @@
+- type: decal
+  id: CDDecalSiding1
+  parent: CDDecalBase
+  tags: ["station"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding1
+
+- type: decal
+  id: CDDecalSiding2
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding2
+
+- type: decal
+  id: CDDecalSiding4
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding4
+
+- type: decal
+  id: CDDecalSiding5
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding5
+
+- type: decal
+  id: CDDecalSiding6
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding6
+
+- type: decal
+  id: CDDecalSiding7
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding7
+
+- type: decal
+  id: CDDecalSiding8
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding8
+
+- type: decal
+  id: CDDecalSiding9
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding9
+
+- type: decal
+  id: CDDecalSiding10
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding10
+
+- type: decal
+  id: CDDecalSiding11
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding11
+
+- type: decal
+  id: CDDecalSiding13
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding13
+
+- type: decal
+  id: CDDecalSiding14
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding14
+
+- type: decal
+  id: CDDecalSiding15
+  parent: CDDecalSiding1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/siding.rsi
+    state: siding15

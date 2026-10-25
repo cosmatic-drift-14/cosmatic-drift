@@ -5,10 +5,10 @@ using Robust.Server.GameObjects;
 
 namespace Content.Server._CD.Honeypots;
 
-public sealed class AdminNotifyOnDamageSystem : EntitySystem
+public sealed partial class AdminNotifyOnDamageSystem : EntitySystem
 {
-    [Dependency] private readonly IChatManager _chat = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
+    [Dependency] private IChatManager _chat = default!;
+    [Dependency] private TransformSystem _transform = default!;
 
     public override void Initialize()
     {

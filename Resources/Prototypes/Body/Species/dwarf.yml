@@ -141,8 +141,11 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Vocal
-    emoteSounds: UnisexDwarf
+  - type: Vocal # CD: More sound emotes
+    sounds:
+      Male: CDMaleDwarf
+      Female: CDFemaleDwarf
+      Unsexed: CDMaleDwarf
   - type: ReplacementAccent
     accent: scottish
   - type: Speech

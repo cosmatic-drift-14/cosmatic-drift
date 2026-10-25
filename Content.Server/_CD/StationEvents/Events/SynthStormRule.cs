@@ -11,11 +11,11 @@ using Robust.Shared.Random;
 
 namespace Content.Server._CD.StationEvents.Events;
 
-public sealed class SynthStormRule : StationEventSystem<SynthStormRuleComponent>
+public sealed partial class SynthStormRule : StationEventSystem<SynthStormRuleComponent>
 {
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!;
-    [Dependency] private readonly SharedRoleSystem _roles = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedMindSystem _mind = default!;
+    [Dependency] private SharedRoleSystem _roles = default!;
 
     protected override void Started(EntityUid uid, SynthStormRuleComponent comp, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {

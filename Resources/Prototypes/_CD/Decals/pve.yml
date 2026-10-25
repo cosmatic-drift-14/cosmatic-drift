@@ -1,0 +1,53 @@
+- type: decal
+  id: CDDecalPVE1
+  parent: CDDecalBase
+  tags: ["station"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/pve.rsi
+    state: closed
+
+- type: decal
+  id: CDDecalPVE2
+  parent: CDDecalBase
+  tags: ["station"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/pve.rsi
+    state: closed2
+
+- type: decal
+  id: CDDecalPVEYellowSign
+  parent: CDDecalBase
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/pve.rsi
+    state: yellow_sign
+
+- type: decal
+  id: CDDecalSafety
+  parent: CDDecalBase
+  tags: ["station"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/pve.rsi
+    state: safety
+
+- type: decal
+  id: CDDecalSafety1
+  parent: CDDecalBase
+  tags: ["station"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/pve.rsi
+    state: safety1
+
+- type: decal
+  id: CDDecalSafety2
+  parent: CDDecalBase
+  tags: ["station"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/pve.rsi
+    state: safety2

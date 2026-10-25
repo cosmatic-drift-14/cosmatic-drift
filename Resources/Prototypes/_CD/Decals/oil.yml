@@ -1,0 +1,56 @@
+- type: decal
+  abstract: true
+  parent: CDDecalBase
+  id: CDDecalOilBase
+  tags: ["station", "markings"]
+
+# Oil
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor1
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor1
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor2
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor2
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor3
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor3
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor4
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor4
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor5
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor5
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor6
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor6
+
+- type: decal
+  parent: CDDecalOilBase
+  id: CDDecalOilFloor7
+  sprite:
+    sprite: _CD/Decals/Bunkerstation/oil_floor.rsi
+    state: mfloor7

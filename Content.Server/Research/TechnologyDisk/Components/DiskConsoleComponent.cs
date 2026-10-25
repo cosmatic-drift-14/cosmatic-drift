@@ -27,6 +27,6 @@ public sealed partial class DiskConsoleComponent : Component
     /// <summary>
     /// The sound made when printing occurs
     /// </summary>
-    [DataField]
+    [DataField("printSound")]
     public SoundSpecifier PrintSound = new SoundPathSpecifier("/Audio/Machines/printer.ogg", new AudioParams { Volume = -5, RolloffFactor = 3f}); // CD: Stop being so loud
 }

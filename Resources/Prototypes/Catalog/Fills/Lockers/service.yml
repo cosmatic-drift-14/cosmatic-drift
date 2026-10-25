@@ -109,11 +109,13 @@
       - id: SoapNT
       - id: FlashlightLantern
       - id: Plunger
-    - id: PlushieLizardJobJanitor
-      prob: 0.02
-    #CD Addions
-    - id: BookSOPService
-      prob: 0.2
+      - id: WireBrush
+      - id: PlushieLizardJobJanitor
+        prob: 0.02
+        amount: 2
+      #CD Addions
+      - id: BookSOPService
+        prob: 0.2
 
 - type: entity
   id: ClosetLegalFilled

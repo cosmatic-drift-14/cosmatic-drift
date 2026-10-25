@@ -11,7 +11,7 @@ namespace Content.Client._CD.Admin.UI;
 [GenerateTypedNameReferences]
 public sealed partial class EventPreferences : Control
 {
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     public EventPreferences()
     {

@@ -70,8 +70,43 @@
   name: premium cigar case
   description: "A case of premium Havanian cigars. You'll only see heads with these."
   components:
+  - type: Sprite
+    sprite: _CD/Objects/Consumable/Smokeables/Cigars/fancycase.rsi
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+    - state: cigar1
+      map: ["cigar1"]
+      visible: false
+    - state: cigar2
+      map: ["cigar2"]
+      visible: false
+    - state: cigar3
+      map: ["cigar3"]
+      visible: false
+    - state: cigar4
+      map: ["cigar4"]
+      visible: false
+    - state: cigar5
+      map: ["cigar5"]
+      visible: false
+  - type: Item
+    sprite: _CD/Objects/Consumable/Smokeables/Cigars/fancycase.rsi
+    storedRotation: 90
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: CigarGold
         amount: 8
+  - type: ItemCounter
+    count:
+      tags: [Cigar]
+    composite: true
+    layerStates:
+    - cigar1
+    - cigar2
+    - cigar3
+    - cigar4
+    - cigar5

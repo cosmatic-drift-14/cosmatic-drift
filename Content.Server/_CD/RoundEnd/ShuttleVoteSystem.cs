@@ -8,20 +8,24 @@ using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Dataset;
 using Robust.Shared.Configuration;
+using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
 namespace Content.Server._CD.RoundEnd;
 
-public sealed class ShuttleVoteSystem : EntitySystem
+public sealed partial class ShuttleVoteSystem : EntitySystem
 {
-    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly IVoteManager _voteManager = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
+    [Dependency] private IAdminLogManager _adminLogger = default!;
+    [Dependency] private IConfigurationManager _cfg = default!;
+    [Dependency] private IVoteManager _voteManager = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private RoundEndSystem _roundEndSystem = default!;
+
+    // used as part of the tempoary hack below
+    [Dependency] private INetManager _netMan = default!;
 
     private static readonly ProtoId<LocalizedDatasetPrototype> VoteUserDataset = "ShuttleVoteUserDataset";
 
@@ -30,6 +34,16 @@ public sealed class ShuttleVoteSystem : EntitySystem
     /// </summary>
     public void RunRestartVote()
     {
+        // HACK: Remove if https://github.com/space-wizards/RobustToolbox/pull/6603 is merged or if RT devs provide a better idea.
+        // The testing ICommonSession (DummySession. crashes when we create a vote. Since this happens on a timer it causes our tests
+        // to be flakey. This is disgusting but it works. We check NetManager since it is one of the easiest systems to test if we are in a
+        // testing environ.
+        //
+        // I am well aware this is a crime against humanity.
+        // -- aquif Fri May 29 08:56:16 PM CDT 2026
+        if (_netMan is not NetManager)
+            return;
+
         if (!_prototypeManager.TryIndex(VoteUserDataset, out var voteUsers))
             return;
 

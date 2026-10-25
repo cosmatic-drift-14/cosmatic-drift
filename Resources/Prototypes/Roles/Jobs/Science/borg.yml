@@ -1,4 +1,5 @@
 # No idea why it's in sci but we ball.
+# Why is this one file?
 - type: job
   id: StationAi
   name: job-name-station-ai
@@ -8,6 +9,7 @@
     - !type:OverallPlaytimeRequirement
       time: 21600 #6 hrs
   canBeAntag: false
+  weight: 10
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain

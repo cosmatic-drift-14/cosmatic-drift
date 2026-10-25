@@ -132,8 +132,11 @@
     speechVerb: Arachnid
     speechSounds: Arachnid
     allowedEmotes: ['Click', 'Chitter']
-  - type: Vocal
-    emoteSounds: UnisexArachnid
+  - type: Vocal # CD: More sound emotes
+    sounds:
+      Male: CDMaleArachnid
+      Female: CDFemaleArachnid
+      Unsexed: CDMaleArachnid
   - type: TypingIndicator
     proto: spider
   - type: CreamPied

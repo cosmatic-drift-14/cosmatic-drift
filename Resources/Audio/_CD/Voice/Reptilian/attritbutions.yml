@@ -1,0 +1,25 @@
+
+- files: ["lizard_hiss_1"]
+  license: "CC0-1.0"
+  copyright: "Ported from RMC14, https://github.com/RMC-14/RMC-14/pull/7553. Adapted from schreibsel on Freesound"
+  source: https://freesound.org/people/schreibsel/sounds/540162/
+
+- files: ["lizard_hiss_2"]
+  license: "CC0-1.0"
+  copyright: "Ported from RMC14, https://github.com/RMC-14/RMC-14/pull/7553. Adapted from xoiziox on Freesound"
+  source: https://freesound.org/people/xoiziox/sounds/553374/
+
+- files: ["lizard_hiss_3"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Ported from RMC14, https://github.com/RMC-14/RMC-14/pull/7553. hiss by Skyrat-SS13"
+  source: https://github.com/Skyrat-SS13/Skyrat-tg/blob/595b17aaeaaf9fec87550bf1f8242fa9bb8e1d92/modular_skyrat/modules/emotes/sound/voice/hiss
+
+- files: ["lizard_purr"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Ported from RMC14, https://github.com/RMC-14/RMC-14/pull/7553. raptor_purr by Citadel-Station-13"
+  source: https://github.com/BlackMajor/Citadel-Station-13/blob/c2b09cf3ee949e9454a10d8f8fa40296bf435428/modular_citadel/sound/voice/raptor_purr
+
+- files: ["lizard_rattle"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Ported from RMC14, https://github.com/RMC-14/RMC-14/pull/7553. rattle by Skyrat-SS13"
+  source: https://github.com/Skyrat-SS13/Skyrat-tg/blob/c45bc517706f5708c107fdcb018115a4a6b7320b/modular_skyrat/modules/emotes/sound/voice/rattle

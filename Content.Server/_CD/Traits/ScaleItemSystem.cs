@@ -6,9 +6,9 @@ namespace Content.Server._CD.Traits;
 /// <summary>
 /// Itemizes the player, with optional checks and alerting the player with a UI.
 /// </summary>
-public sealed class ScaleItemSystem : EntitySystem
+public sealed partial class ScaleItemSystem : EntitySystem
 {
-    [Dependency] private readonly SharedItemSystem _itemSystem = default!;
+    [Dependency] private SharedItemSystem _itemSystem = default!;
 
     public override void Initialize()
     {

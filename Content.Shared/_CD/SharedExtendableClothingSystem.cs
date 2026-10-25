@@ -14,9 +14,9 @@ namespace Content.Shared._CD;
 
 public abstract partial class SharedExtendableClothingSystem : EntitySystem
 {
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -90,8 +90,8 @@ public abstract partial class SharedExtendableClothingSystem : EntitySystem
         {
             // already made sure the entities have the proper component in the attempt
             var comp = Comp<ExtendedEquipmentComponent>(equipment);
-            if(!_inventory.TryEquip(args.Equipee,
-                   args.Equipee,
+            if(!_inventory.TryEquip(args.EquipTarget,
+                   args.EquipTarget,
                    equipment,
                    comp.Slot,
                    force: true,

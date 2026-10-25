@@ -9,12 +9,12 @@ namespace Content.Shared._CD.PaintCan;
 /// <summary>
 /// Removes paint from an entity.
 /// </summary>
-public sealed class PaintCanPaintRemoverSystem : EntitySystem
+public sealed partial class PaintCanPaintRemoverSystem : EntitySystem
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private SharedAppearanceSystem _appearanceSystem = default!;
 
     public override void Initialize()
     {
