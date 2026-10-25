@@ -8,6 +8,11 @@ is a good fit please ask a @Maintainer on discord before starting work -->
 facing breaking changes please note it very clearly. -->
 
 
+## Test plan
+<!--
+Describe how you tested the pull request, and how someone reviewing this PR can test it themselves.
+-->
+
 ## Media
 <!-- Attach media if the PR makes in-game changes.
 Small fixes/refactors are exempt. Media may be used in progress reports with credit.

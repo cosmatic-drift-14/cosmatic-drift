@@ -10,3 +10,10 @@
   maxHeight: 0.8
   scaleHeight: false
   scaleWidth: true
+  defaultSoundsBySex:
+  - UnisexDwarf
+  - FemaleDwarf
+  - UnisexDwarf
+  voices:
+  - UnisexDwarf
+  - FemaleDwarf
