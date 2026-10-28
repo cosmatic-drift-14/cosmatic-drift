@@ -5,11 +5,12 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 using Content.Shared._CD.CartridgeLoader.Cartridges;
+using Content.Shared.CartridgeLoader.Cartridges;
 
 namespace Content.Server.CartridgeLoader.Cartridges;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
-[Access(typeof(LogProbeCartridgeSystem))]
+// [Access(typeof(LogProbeCartridgeSystem))]
 public sealed partial class LogProbeCartridgeComponent : Component
 {
     /// <summary>

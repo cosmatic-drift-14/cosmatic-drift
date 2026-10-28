@@ -10,6 +10,7 @@ using Content.Shared.Popups;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
 using System.Text;
+using Content.Server.CartridgeLoader.Cartridges;
 using Robust.Shared.Audio;
 
 namespace Content.Shared.CartridgeLoader.Cartridges;
@@ -30,7 +31,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
     {
         base.Initialize();
 
-        InitializeNanoChat(); // CD
+        // InitializeNanoChat(); // CD: This should exist, disabled because moved to shared
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeRelayedEvent<AfterInteractEvent>>(AfterInteract);
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeMessageEvent>(OnMessage);
@@ -45,12 +46,13 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
             return;
 
         // CD begin - Add NanoChat card scanning
-        if (TryComp<NanoChatCardComponent>(target, out var nanoChatCard))
-        {
-            ScanNanoChatCard(ent, args, target, nanoChatCard);
-            args.InteractEvent.Handled = true;
-            return;
-        }
+        // CD: This should be readded at some point
+        // if (TryComp<NanoChatCardComponent>(target, out var nanoChatCard))
+        // {
+        //     ScanNanoChatCard(ent, args, target, nanoChatCard);
+        //     args.InteractEvent.Handled = true;
+        //     return;
+        // }
         // CD end
 
         if (!TryComp(target, out AccessReaderComponent? accessReaderComponent))
@@ -132,7 +134,8 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem
 
     private void UpdateUiState(Entity<LogProbeCartridgeComponent> ent, EntityUid loaderUid)
     {
-        var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // CD - NanoChat support
+        // var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // CD - NanoChat support
+        var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs);
         _cartridge.UpdateCartridgeUiState(loaderUid, state);
     }
 }

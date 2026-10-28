@@ -10,6 +10,9 @@ using Robust.Shared.Network;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using System.Text.RegularExpressions;
+using Content.Shared.Damage.Components;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 
 namespace Content.Shared.Disposal.Holder;
 
