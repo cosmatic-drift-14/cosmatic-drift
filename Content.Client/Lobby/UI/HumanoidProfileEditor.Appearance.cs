@@ -2,6 +2,8 @@ using System.Globalization;
 using System.Linq;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.Chat.Prototypes;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;

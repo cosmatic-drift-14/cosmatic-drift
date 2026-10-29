@@ -26,7 +26,7 @@ public sealed partial class MapPatchSystem : EntitySystem
 {
     [Dependency] private IAdminManager _admin = default!;
     [Dependency] private IChatManager _chat = default!;
-    [Dependency] private IMapManager _mapMan = default!;
+    [Dependency] private SharedMapSystem _mapMan = default!;
 
     [Dependency] private MapSystem _mapSys = default!;
     [Dependency] private TransformSystem _xform = default!;

@@ -358,6 +358,7 @@ namespace Content.Server.GameTicking
             RaiseLocalEvent(mob, cdPlayerEntSpawnEv);
             // CD end
             _playTimeTrackings.PlayerRolesChanged(player);
+            var newMind = Mind.CreateMind(data.UserId, Name(mob));
             Mind.TransferTo(newMind, mob);
 
             Role.MindAddJobRole(newMind, silent: silent, jobPrototype: jobId);

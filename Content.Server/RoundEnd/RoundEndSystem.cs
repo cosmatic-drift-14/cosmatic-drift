@@ -23,6 +23,7 @@ using Timer = Robust.Shared.Timing.Timer;
 
 // CD imports
 using Content.Server._CD.RoundEnd;
+using Content.Shared.RoundEnd;
 
 namespace Content.Server.RoundEnd
 {
@@ -392,7 +393,7 @@ namespace Content.Server.RoundEnd
                 {
                     // CD: reuse this code for our shuttle vote because this would have needed to be disabled anyway
                     _cdShuttleVoteSystem.RunRestartVote();
-                    
+
                     // RequestRoundEnd(checkCooldown: false, text: "round-end-system-shuttle-auto-called-announcement"); CD: Believe this should be disabled
                     _autoCalledBefore = true;
                     _lastShuttleVoteRoundTime = _gameTicker.RoundDuration();

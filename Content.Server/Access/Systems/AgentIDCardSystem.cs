@@ -1,11 +1,16 @@
 using Content.Server.Clothing.Systems;
 using Content.Server.Implants;
+using Content.Server.Popups;
+using Content.Shared._CD.NanoChat;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Implants;
 using Content.Shared.Inventory;
+using Content.Shared.Lock;
 using Content.Shared.PDA;
+using Robust.Server.GameObjects;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Access.Systems;
 
@@ -21,17 +26,6 @@ public sealed partial class AgentIdCardSystem : SharedAgentIdCardSystem
     {
         if (!TryComp<IdCardComponent>(ent, out var idCardComp))
             return;
-            
-        [Dependency] private PopupSystem _popupSystem = default!;
-        [Dependency] private IdCardSystem _cardSystem = default!;
-        [Dependency] private UserInterfaceSystem _uiSystem = default!;
-        [Dependency] private IPrototypeManager _prototypeManager = default!;
-        [Dependency] private ChameleonClothingSystem _chameleon = default!;
-        [Dependency] private ChameleonControllerSystem _chamController = default!;
-        [Dependency] private LockSystem _lock = default!;
-        [Dependency] private SharedJobStatusSystem _jobStatus = default!;
-
-        [Dependency] private SharedNanoChatSystem _nanoChat = default!; // CD
 
         ProtoMan.Resolve(args.Args.ChameleonOutfit.Job, out var jobProto);
 

@@ -39,8 +39,6 @@ public sealed partial class SiliconLawSystem : SharedSiliconLawSystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedStationAiShellUserSystem _shellUser = default!;
 
-    [Dependency] private SharedStationAiShellUserSystem _shellUser = default!; // CD
-
     private static readonly ProtoId<SiliconLawsetPrototype> DefaultCrewLawset = "Crewsimov";
 
     /// <inheritdoc/>

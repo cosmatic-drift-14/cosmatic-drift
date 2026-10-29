@@ -10,7 +10,9 @@ using Content.Shared.Database;
 using Content.Shared._CD.CartridgeLoader.Cartridges;
 using Content.Shared._CD.NanoChat;
 using Content.Shared.PDA;
+using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.Station.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -500,7 +502,6 @@ public sealed partial class NanoChatCartridgeSystem : EntitySystem
 
     private void OnUiReady(Entity<NanoChatCartridgeComponent> ent, ref CartridgeUiReadyEvent args)
     {
-        _cartridge.RegisterBackgroundProgram(args.Loader, ent);
         UpdateUI(ent, args.Loader);
     }
 
