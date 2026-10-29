@@ -1,3 +1,4 @@
+using Content.Shared._CD.Loadouts;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Forensics.Components;

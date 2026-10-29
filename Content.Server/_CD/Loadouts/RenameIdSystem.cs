@@ -1,5 +1,5 @@
 using Content.Server.Access.Systems;
-using Content.Server.GameTicking;
+using Content.Shared._CD.Loadouts;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.GameTicking;
@@ -11,7 +11,7 @@ using Content.Shared.StationRecords.Systems;
 
 namespace Content.Server._CD.Loadouts;
 
-public sealed partial class RenameIdSystem : EntitySystem
+public sealed partial class RenameIdSystem : SharedRenameIdSystem
 {
     [Dependency] private InventorySystem _inventorySystem = default!;
     [Dependency] private SharedIdCardSystem _idCardSystem = default!;
@@ -24,7 +24,6 @@ public sealed partial class RenameIdSystem : EntitySystem
         // We need to subscribe to both of these because RulePlayerJobsAssignedEvent only fires on round start and
         // messes up what we do in PlayerSpawnCompleteEvent
         SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnJobsAssigned, after: [ typeof(PresetIdCardSystem) ]);
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn, after: [ typeof(StationRecordsSystem) ]);
     }
 
     private void OnJobsAssigned(RulePlayerJobsAssignedEvent args)
@@ -42,25 +41,6 @@ public sealed partial class RenameIdSystem : EntitySystem
                 }
                 _idCardSystem.TryChangeJobTitle(id, Loc.GetString(rename.Value), card);
             }
-        }
-    }
-    private void OnPlayerSpawn(PlayerSpawnCompleteEvent args)
-    {
-        var player = args.Mob;
-        if (!_inventorySystem.TryGetSlotEntity(player, "id", out var pdaUid))
-            return;
-
-        if (TryComp<PdaComponent>(pdaUid, out var pda)
-            && TryComp<RenameIdComponent>(pdaUid, out var rename)
-            && pda.ContainedId is {} id
-            && TryComp<IdCardComponent>(id, out var card))
-        {
-            if (rename.NewIcon != null)
-            {
-                card.JobIcon = rename.NewIcon; // TryChangeJobTitle dirties the ID for us
-                FlushIdIconToRecords(id, rename.NewIcon);
-            }
-            _idCardSystem.TryChangeJobTitle(id, Loc.GetString(rename.Value), card);
         }
     }
 

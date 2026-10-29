@@ -1,4 +1,4 @@
-namespace Content.Server._CD.Loadouts;
+namespace Content.Shared._CD.Loadouts;
 
 /// <summary>
 /// Marker that should be attached to the PDA to rename the contained ID to the user's requested job. Used to implement custom tile loadouts.
