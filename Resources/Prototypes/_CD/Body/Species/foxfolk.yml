@@ -101,10 +101,8 @@
   components:
   - type: HumanoidProfile
     species: Foxfolk
-  - type: Hunger
   - type: Inventory # Allows foxfolks to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
     speciesId: foxfolk
-  - type: Thirst
   - type: Icon
     sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
     state: full

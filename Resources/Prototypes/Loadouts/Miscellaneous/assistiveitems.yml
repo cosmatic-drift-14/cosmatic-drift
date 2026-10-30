@@ -16,7 +16,7 @@
 
 - type: loadout
   id: OffsetCaneClown
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect # CD: Remove playtime requirements
   #   requirement:
   #     !type:RoleTimeRequirement
@@ -29,7 +29,7 @@
 
 - type: loadout
   id: OffsetCaneMime
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect
   #   requirement:
   #     !type:RoleTimeRequirement
@@ -42,7 +42,7 @@
 
 - type: loadout
   id: OffsetCaneNT
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect
   #   requirement:
   #     !type:DepartmentTimeRequirement
@@ -55,7 +55,7 @@
 
 - type: loadout
   id: Cane
-  effects:
+  # effects:
   # - !type:JobRequirementLoadoutEffect
   #   requirement:
   #     !type:RoleTimeRequirement

@@ -46,7 +46,6 @@
   - type: GuideHelp
     guides:
     - ShuttleCraft
-  - type: StationAiWhitelist # CD
 
 - type: entity
   id: Thruster

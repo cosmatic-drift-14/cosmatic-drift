@@ -101,8 +101,6 @@
   components:
   - type: HumanoidProfile
     species: Avali
-  - type: Hunger
-  - type: Thirst
   - type: Icon
     sprite: _CD/Mobs/Species/Avali/parts.rsi
     state: full

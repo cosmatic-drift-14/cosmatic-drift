@@ -15,7 +15,7 @@ public sealed partial class NotifyDepartmentSpecial : JobSpecial
     [DataField("notify_text", required: true)]
     public string NotifyTextKey { get; private set; } = string.Empty;
 
-    [DataField(required: true)]
+    [DataField("radio_channel", required: true)]
     public ProtoId<RadioChannelPrototype> RadioChannelKey { get; private set; } = string.Empty;
 
     public override void AfterEquip(EntityUid mob)

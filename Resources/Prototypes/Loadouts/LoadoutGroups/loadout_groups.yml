@@ -1473,14 +1473,14 @@
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
 
-- type: loadoutGroup
-  id: SurvivalMilitaryDouble # Survival box mostly used by ERT/deathsquad
-  name: loadout-group-survival-military
-  minLimit: 2
-  hidden: true
-  loadouts:
-  - EmergencyNitrogenMilitaryDouble
-  - EmergencyOxygenMilitaryDouble
+# - type: loadoutGroup # CD: Game won't build without this so I'm commenting it out
+#   id: SurvivalMilitaryDouble # Survival box mostly used by ERT/deathsquad
+#   name: loadout-group-survival-military
+#   minLimit: 2
+#   hidden: true
+#   loadouts:
+#   - EmergencyNitrogenMilitaryDouble
+#   - EmergencyOxygenMilitaryDouble
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
