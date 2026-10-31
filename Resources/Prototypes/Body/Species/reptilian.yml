@@ -136,10 +136,7 @@
       sprite: Effects/creampie.rsi
       state: creampie_lizard
   - type: Vocal # CD: More sound emotes
-    sounds:
-      Male: CDMaleReptilian
-      Female: CDFemaleReptilian
-      Unsexed: CDMaleReptilian
+    emoteSounds: CDMaleReptilian
   - type: BodyEmotes
     soundsId: CDReptilianBodyEmotes # CD: More sound emotes
   - type: Damageable

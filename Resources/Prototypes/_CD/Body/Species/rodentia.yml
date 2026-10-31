@@ -131,10 +131,7 @@
   - type: TypingIndicator
     proto: rodentia
   - type: Vocal
-    sounds:
-      Male: CDMaleRodentia
-      Female: CDFemaleRodentia
-      Unsexed: CDMaleRodentia
+    emoteSounds: CDMaleRodentia
   - type: MouthStorage
     mouthProto: CheekStorage
     openStorageAction: ActionOpenMouthStorage

@@ -163,10 +163,7 @@
   - type: TypingIndicator
     proto: vulpkanin
   - type: Vocal
-    sounds:
-      Male: CDMaleVulpkanin
-      Female: CDFemaleVulpkanin
-      Unsexed: CDMaleVulpkanin
+    emoteSounds: CDMaleVulpkanin
   - type: Damageable
     damageModifierSet: Vulpkanin
   - type: MeleeWeapon

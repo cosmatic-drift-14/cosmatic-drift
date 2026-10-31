@@ -142,10 +142,7 @@
         layer:
         - MobLayer
   - type: Vocal # CD: More sound emotes
-    sounds:
-      Male: CDMaleDwarf
-      Female: CDFemaleDwarf
-      Unsexed: CDMaleDwarf
+    emoteSounds: CDMaleDwarf
   - type: ReplacementAccent
     accent: scottish
   - type: Speech

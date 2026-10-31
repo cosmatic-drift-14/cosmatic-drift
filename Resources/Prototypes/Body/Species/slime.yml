@@ -110,10 +110,7 @@
   - type: TypingIndicator
     proto: slime
   - type: Vocal # CD: More sound emotes
-    sounds:
-      Male: CDMaleSlime
-      Female: CDFemaleSlime
-      Unsexed: CDMaleSlime
+    emoteSounds: CDMaleSlime
   - type: Damageable
     damageModifierSet: Slime
   - type: PassiveDamage # Around 8 damage a minute healed

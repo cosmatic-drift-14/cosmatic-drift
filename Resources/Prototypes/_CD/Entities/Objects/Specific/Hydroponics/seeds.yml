@@ -4,6 +4,6 @@
   id: MindleafSeeds
   components:
     - type: Seed
-      seedId: mindleaf
+      plantId: mindleaf
     - type: Sprite
       sprite: _CD/Objects/Specific/Hydroponics/mindleaf.rsi

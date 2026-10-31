@@ -155,10 +155,7 @@
     speechVerb: Plant
     allowedEmotes: ['Chirp']
   - type: Vocal # CD: More sound emotes
-    sounds:
-      Male: CDMaleDiona
-      Female: CDFemaleDiona
-      Unsexed: CDMaleDiona
+    emoteSounds: CDMaleDiona
   - type: TypingIndicator
     proto: diona
   - type: BodyEmotes

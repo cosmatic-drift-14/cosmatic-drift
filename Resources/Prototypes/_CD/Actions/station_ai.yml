@@ -7,9 +7,6 @@
   - type: Action
     priority: -6
     itemIconStyle: BigAction
-    icon:
-      sprite: Interface/Actions/actions_ai.rsi
-      state: ai_core
   - type: InstantAction
     event: !type:AiEnterShellEvent
 
@@ -23,9 +20,6 @@
     checkConsciousness: false
     priority: -6
     itemIconStyle: BigAction
-    icon:
-      sprite: Interface/Actions/actions_ai.rsi
-      state: ai_core
   - type: InstantAction
     event: !type:AiExitShellEvent
 

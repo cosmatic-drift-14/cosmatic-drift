@@ -167,10 +167,7 @@
         sprite: Mobs/Effects/burn_damage.rsi
   - type: MothAccent
   - type: Vocal # CD: More sound emotes
-    sounds:
-      Male: CDMaleMoth
-      Female: CDFemaleMoth
-      Unsexed: CDMaleMoth
+    emoteSounds: CDMaleMoth
   - type: BodyEmotes
     soundsId: MothBodyEmotes
   - type: MovementSpeedModifier

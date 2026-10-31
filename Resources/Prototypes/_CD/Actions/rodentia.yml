@@ -7,6 +7,6 @@
   - type: Action
     itemIconStyle: BigAction
     priority: -10
-    icon: _CD/Interface/Actions/mouthStorageOpen.png
+    # icon: _CD/Interface/Actions/mouthStorageOpen.png CD: Fix this later
   - type: InstantAction
     event: !type:OpenStorageImplantEvent

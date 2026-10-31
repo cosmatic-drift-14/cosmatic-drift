@@ -233,14 +233,13 @@
     event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }
 
 - type: entity
+  parent: BaseAGhostAction
   id: ActionAGhostShowCharacterRecords
   name: Character Records Interface
   description: View all of the character records
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
     keywords: [ "AI", "console", "interface" ]
     priority: -10
   - type: InstantAction
@@ -248,14 +247,13 @@
 
 # _CD - Job slots
 - type: entity
+  parent: BaseAGhostAction
   id: ActionAGhostShowJobSlotsConsole
   name: Job Slots Interface
   description: View and adjust job slots
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
     keywords: [ "AI", "console", "interface" ]
     priority: -10
   - type: InstantAction
