@@ -28,7 +28,7 @@ public sealed class ChangelingSlimeTests : InteractionTest
     [SidedDependency(Side.Server)] private SharedStorageSystem _sharedStorage = default!;
     [SidedDependency(Side.Server)] private SharedTransformSystem _transform = default!;
     [SidedDependency(Side.Server)] private SharedContainerSystem _container = default!;
-    [SidedDependency(Side.Server)] private SharedHandsSystem _hands = default!;
+    // [SidedDependency(Side.Server)] private SharedHandsSystem _hands = default!; CD: Disabled because of disabled test
 
     public override async Task DoSetup()
     {

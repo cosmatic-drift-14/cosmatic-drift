@@ -22,7 +22,6 @@ using Timer = Robust.Shared.Timing.Timer;
 
 // CD imports
 using Content.Server._CD.RoundEnd;
-using Content.Shared.RoundEnd;
 
 namespace Content.Server.RoundEnd
 {
