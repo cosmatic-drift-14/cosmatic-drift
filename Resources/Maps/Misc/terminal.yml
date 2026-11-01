@@ -43554,14 +43554,7 @@ entities:
     components:
     - type: Transform
       pos: 7.621773,27.698023
-      parent: 2
-- proto: LightReplacerEmpty
-  entities:
-  - uid: 7792
-    components:
-    - type: Transform
-      pos: 52.963375,-6.227824
-      parent: 2
+      parent: 2 
 - proto: LockerAtmosphericsFilledCosmetic
   entities:
   - uid: 985

@@ -132,7 +132,7 @@
 
 - type: tileAlias
   id: FloorPlasmaMarble
-  target: FloorMarble
+  target: FloorWhiteMarble
 
 - type: tileAlias
   id: FloorEighties

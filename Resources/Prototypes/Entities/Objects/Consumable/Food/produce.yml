@@ -1643,8 +1643,6 @@
         Quantity: 5
       - ReagentId: Kelotane
         Quantity: 5
-      - ReagentId: Desoxyephedrine #CD: Moved Desox back to ambrosia from glasstle.
-        Quantity: 10
       - ReagentId: Nutriment
         Quantity: 3
       - ReagentId: Vitamin

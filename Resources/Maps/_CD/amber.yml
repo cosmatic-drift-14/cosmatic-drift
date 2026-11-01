@@ -116530,13 +116530,6 @@ entities:
     - type: Transform
       pos: -30.366573,17.260607
       parent: 2
-- proto: LightReplacerEmpty
-  entities:
-  - uid: 9366
-    components:
-    - type: Transform
-      pos: -23.486662,22.634415
-      parent: 2
 - proto: LockableButtonArmory
   entities:
   - uid: 1671
