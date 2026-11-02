@@ -34,23 +34,23 @@
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 3, 3 ]
-            TechnicalAssistant: [ 2, 2 ]
+            # TechnicalAssistant: [ 2, 2 ] # CD disabled
             #medical 10
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
-            MedicalIntern: [ 2, 2 ]
+            # MedicalIntern: [ 2, 2 ] # CD disabled
             Paramedic: [ 1, 2 ]
             Psychologist: [1, 1]
             #science 6
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 3, 3 ]
-            ResearchAssistant: [ 2, 2 ]
+            # ResearchAssistant: [ 2, 2 ] # CD disabled
             #security 8-9
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ]
-            SecurityCadet: [ 2, 2 ]
+            # SecurityCadet: [ 2, 2 ] # CD disabled
             Lawyer: [ 1, 2 ]
             #supply 6
             Quartermaster: [ 1, 1 ]

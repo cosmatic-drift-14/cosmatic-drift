@@ -37,21 +37,21 @@
             # Engineering (7-9)
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 2, 2 ]
+            # CD TechnicalAssistant: [ 2, 2 ] # CD disabled
             # Medical (8-10)
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 4, 4 ]
             Paramedic: [ 1, 1 ]
-            MedicalIntern: [ 2, 2 ]
+            # CD MedicalIntern: [ 2, 2 ] # CD disabled
             Psychologist: [ 1, 1 ]
             # Science (4-6)
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 2, 2 ]
+            # CD ResearchAssistant: [ 2, 2 ] # CD disabled
             # Security (9-11)
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 5, 5 ]
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 2, 2 ]
+            # CD SecurityCadet: [ 2, 2 ] # CD disabled
             Lawyer: [ 2, 2 ]
             # Supply (6)
             SalvageSpecialist: [ 3, 3 ]

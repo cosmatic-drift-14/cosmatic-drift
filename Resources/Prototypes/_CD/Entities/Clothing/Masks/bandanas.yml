@@ -81,6 +81,9 @@
   parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandCargo ]
   id: ClothingNeckBandCargo
   name: cargo bandana
+  components:
+  - type: Clothing
+    equippedPrefix: up
 
 - type: entity
   parent: ClothingMaskDepartBandanaBase
@@ -97,6 +100,9 @@
   parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandSec ]
   id: ClothingNeckBandSec
   name: security bandana
+  components:
+  - type: Clothing
+    equippedPrefix: up
 
 - type: entity
   parent: ClothingMaskDepartBandanaBase
@@ -113,3 +119,6 @@
   parent: [ ClothingMaskDepartBandanaBaseDown, ClothingMaskBandEngi ]
   id: ClothingNeckBandEngi
   name: engineering bandana
+  components:
+  - type: Clothing
+    equippedPrefix: up
