@@ -1,0 +1,17 @@
+- type: entity
+  id: BaseStationAlertLevels
+  abstract: true
+  components:
+  - type: AlertLevel
+    availableAlertLevels:
+    - Blue
+    - DeltaNuke
+    - Epsilon
+    - Gamma
+    - Green
+    - Red
+    - Violet
+    - Yellow
+    - Amber # CD additions below
+    - Bronze
+    - Omega 

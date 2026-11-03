@@ -7,15 +7,16 @@
   components:
   - type: VendingMachine
     pack: QuickThreadsInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
+  - type: VendingMachineEject
+    soundVend: /Audio/Machines/circuitprinter.ogg
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+  - type: VendingMachineVisuals
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 5
-    soundVend: /Audio/Machines/circuitprinter.ogg
   - type: Speech
   - type: Sprite
     sprite: _CD/Structures/Machines/VendingMachines/quickthreads.rsi
@@ -40,13 +41,6 @@
   components:
   - type: VendingMachine
     pack: IceCreamInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    ejectState: eject-unshaded
-    denyState: deny-unshaded
     initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: IceCreamAds

@@ -22,7 +22,7 @@
   - type: Sprite
     state: pill1
   - type: Label
-    currentLabel: Happiness
+    localizedLabel: reagent-name-happiness
   - type: Solution
     solution:
       maxVol: 20
@@ -37,7 +37,7 @@
   suffix: Happiness 7
   components:
   - type: Label
-    currentLabel: Happiness
+    localizedLabel: reagent-name-happiness
   - type: StorageFill
     contents:
     - id: PillHappiness
@@ -54,7 +54,7 @@
   - type: Sprite
     state: pill9
   - type: Label
-    currentLabel: Stubantazine 6u
+    localizedLabel: reagent-name-stubantazine
   - type: Solution
     solution:
       maxVol: 20
@@ -69,7 +69,7 @@
   suffix: Stubantazine 6u, 4
   components:
   - type: Label
-    currentLabel: Stubantazine 6u - 5 Minutes
+    localizedLabel: reagent-name-stubantazine
   - type: StorageFill
     contents:
     - id: PillStubantazine

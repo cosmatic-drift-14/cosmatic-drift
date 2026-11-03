@@ -61,8 +61,7 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
         foreach (var (department, jobs) in jobsByDepartment.OrderBy(x => x.Key, DepartmentUIComparer.Instance))
         {
             var sortedJobs = jobs
-                .OrderByDescending(x => x.proto.RealDisplayWeight)
-                .ThenBy(x => x.proto.LocalizedName)
+                .OrderByDescending(x => x.proto.LocalizedName) // Changed as job weights were removed. This may need to be redone. We'll see.
                 .ToList();
 
             AddDepartmentSection(department, sortedJobs);

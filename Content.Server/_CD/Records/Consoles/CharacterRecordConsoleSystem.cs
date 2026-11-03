@@ -1,10 +1,12 @@
 using Content.Server.Station.Systems;
-using Content.Server.StationRecords.Systems;
 using Content.Server.StationRecords;
 using Content.Shared.CriminalRecords;
 using Content.Shared.Security;
 using Content.Shared.StationRecords;
 using Content.Shared._CD.Records;
+using Content.Shared.Station.Systems;
+using Content.Shared.StationRecords.Components;
+using Content.Shared.StationRecords.Systems;
 using Robust.Server.GameObjects;
 
 namespace Content.Server._CD.Records.Consoles;

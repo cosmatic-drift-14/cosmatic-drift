@@ -99,12 +99,12 @@
     - id: PosterLegit50thAnniversaryVintageReprint
     - id: PosterLegitFruitBowl
     - id: PosterLegitPDAAd
-    - id: PosterLegitEnlist
+    # - id: PosterLegitEnlist # CD: LRP poster
     - id: PosterLegitNanomichiAd
     - id: PosterLegit12Gauge
     - id: PosterLegitHighClassMartini
     - id: PosterLegitTheOwl
-    - id: PosterLegitNoERP
+    # - id: PosterLegitNoERP # CD: Disable LRP poster
     - id: PosterLegitCarbonDioxide
     - id: PosterLegitDickGumshue
     - id: PosterLegitThereIsNoGasGiant

@@ -3,6 +3,7 @@ using Content.Server.Speech.EntitySystems;
 using Content.Shared._CD.Species;
 using Content.Shared.Nutrition;
 using Content.Shared.Speech;
+using Content.Shared.Speech.EntitySystems;
 using Content.Shared.Storage;
 using Robust.Server.Containers;
 using Robust.Shared.Containers;

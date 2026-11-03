@@ -8,7 +8,6 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 21600 #6 hrs
-  weight: 10
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain

@@ -101,10 +101,8 @@
   components:
   - type: HumanoidProfile
     species: Foxfolk
-  - type: Hunger
   - type: Inventory # Allows foxfolks to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
     speciesId: foxfolk
-  - type: Thirst
   - type: Icon
     sprite: _CD/Mobs/Species/Foxfolk/parts.rsi
     state: full
@@ -115,10 +113,7 @@
   - type: TypingIndicator
     proto: foxfolk
   - type: Vocal
-    sounds:
-      Male: CDMaleVulpkanin
-      Female: CDFemaleVulpkanin
-      Unsexed: CDMaleVulpkanin
+    emoteSounds: CDMaleVulpkanin
   - type: Damageable
     damageModifierSet: Vulpkanin
   - type: Injurable
@@ -135,7 +130,7 @@
         Slash: 3
   - type: Temperature # These are moth values, but do make sense for Foxfolk. The heat damage per second might be high, but we can tune it if there are issues.
     specificHeat: 46
-    currentTemperature: 310.15
+    temperature: 310.15
   - type: TemperatureDamage
     heatDamageThreshold: 320
     coldDamageThreshold: 230

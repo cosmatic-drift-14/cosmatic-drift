@@ -23,10 +23,10 @@
             #command - 7
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
-            ChiefEngineer: [ 1, 1 ]
-            ChiefMedicalOfficer: [ 1, 1 ]
-            ResearchDirector: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
             #service - 18-21
             Bartender: [ 2, 2 ]

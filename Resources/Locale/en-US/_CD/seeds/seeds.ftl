@@ -1,2 +1,2 @@
 # Seeds
-seeds-mindleaf-display-name = Mindleaf
+seeds-mindleaf-name = Mindleaf

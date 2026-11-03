@@ -20,12 +20,12 @@
           path: /Maps/Shuttles/cargo_exo.yml
         - type: StationJobs
           availableJobs:
-            #service
+            #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 1 ] #CD change from 2-2 to 1-1.
             Botanist: [ 2, 2 ]
-            Chef: [ 2, 2 ]
+            Chef: [ 1, 1 ]
             Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
@@ -43,7 +43,6 @@
             MedicalDoctor: [ 4, 4 ]
             # MedicalIntern: [ 3, 3 ] #CD disabled.
             Paramedic: [ 1, 1 ]
-            Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ] #CD addition.
@@ -60,14 +59,13 @@
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 4, 4 ]
-            #civilian
-            Passenger: [ -1, -1 ]
+            CargoTechnician: [ 3, 3 ]
+            #civilian (2-3 + overflow)
+            Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Reporter: [ 2, 2 ]
-            #silicon
+            #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
             #misc

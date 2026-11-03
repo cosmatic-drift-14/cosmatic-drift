@@ -1,23 +1,25 @@
-- type: seed
+- type: entity
+  parent: BasePlant
   id: mindleaf
-  name: seeds-mindleaf-name
-  noun: seeds-noun-seeds
-  displayName: seeds-mindleaf-display-name
-  plantRsi: _CD/Objects/Specific/Hydroponics/mindleaf.rsi
-  packetPrototype: MindleafSeeds
-  productPrototypes:
-    - LeavesMindleaf
-  lifespan: 180
-  maturation: 12
-  production: 12
-  yield: 2
-  potency: 20
-  growthStages: 3
-  waterConsumption: 0.25
-  idealLight: 9
-  idealHeat: 303
-  chemicals:
-    MindleafSap:
-      Min: 1 
-      Max: 6
-      PotencyDivisor: 20
+  name: mindleaf
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Specific/Hydroponics/mindleaf.rsi
+  - type: PlantData
+    name: seeds-mindleaf-name
+    packetPrototype: MindleafSeeds
+    productPrototypes: [ LeavesMindleaf ]
+  - type: Plant
+    lifespan: 180
+    maturation: 12
+    production: 12
+    yield: 2
+    potency: 20
+  - type: PlantGrowth
+    waterConsumption: 0.25
+  - type: PlantChemicals
+    chemicals:
+      MindleafSap:
+        min: 1
+        max: 6
+        potencyDivisor: 20

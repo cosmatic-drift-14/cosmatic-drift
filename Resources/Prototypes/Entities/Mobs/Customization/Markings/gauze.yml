@@ -15,7 +15,7 @@
 - type: marking
   id: GauzeLefteyePad
   bodyPart: Eyes
-  groupWhitelist: [Dwarf, Human, Reptilian, Arachnid, Rodentia, Foxfolk] # CD: Rodentia, Foxfolks.
+  groupWhitelist: [Dwarf, Human, Reptilian, Vulpkanin, Arachnid, Rodentia, Foxfolk] # CD: Rodentia, Foxfolks.
   coloring:
     default:
       type:
@@ -41,7 +41,7 @@
 - type: marking
   id: GauzeRighteyePad
   bodyPart: Eyes
-  groupWhitelist: [Dwarf, Human, Reptilian, Arachnid, Rodentia, Foxfolk] # CD: Rodentia, Foxfolks.
+  groupWhitelist: [Dwarf, Human, Vulpkanin, Reptilian, Arachnid, Rodentia, Foxfolk] # CD: Rodentia, Foxfolks.
   coloring:
     default:
       type:

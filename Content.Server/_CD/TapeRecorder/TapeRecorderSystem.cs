@@ -2,13 +2,13 @@ using System.Text;
 using Content.Server.Chat.Systems;
 using Content.Server.Hands.Systems;
 using Content.Server.Speech;
-using Content.Server.Speech.Components;
 using Content.Shared.Chat;
 using Content.Shared.Paper;
 using Content.Shared.Speech;
 using Content.Shared._CD.TapeRecorder;
 using Content.Shared._CD.TapeRecorder.Components;
 using Content.Shared._CD.TapeRecorder.Events;
+using Content.Shared.Speech.Components;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.TapeRecorder;

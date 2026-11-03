@@ -95,9 +95,11 @@
         component: IgnoreSlowOnDamage
         time: 3 # slightly worse then Epi
       - !type:ResetNarcolepsy
-      - !type:SatiateHunger
+      - !type:Satiate
+        satiationType: Hunger
         factor: 0.75
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 0.75
       - !type:EvenHealthChange
         # This got removed and I can't be bothered to figure out the replacement for something that is basically never used
@@ -162,7 +164,8 @@
   metabolisms:
     Digestion:
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
     Bloodstream:
       metabolismRate : 0.04 # Technically a narcotic, it takes a while for the body to process the toxins.

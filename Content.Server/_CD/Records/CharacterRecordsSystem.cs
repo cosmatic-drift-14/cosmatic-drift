@@ -1,5 +1,4 @@
 using Content.Server._CD.Species;
-using Content.Server.StationRecords.Systems;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
@@ -8,6 +7,8 @@ using Content.Shared._CD.Records;
 using Content.Shared._CD.Species;
 using Content.Shared.Forensics.Components;
 using Content.Shared.GameTicking;
+using Content.Shared.StationRecords.Components;
+using Content.Shared.StationRecords.Systems;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;

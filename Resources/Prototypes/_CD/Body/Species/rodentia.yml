@@ -101,10 +101,13 @@
   components:
   - type: HumanoidProfile
     species: Rodentia
-  - type: Hunger
-    baseDecayRate: 0.0467 # 33% faster than usual
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: NormalSatiationHunger
+      Thirst:
+        prototype: NormalSatiationThirst
   - type: Inventory
-  - type: Thirst
   - type: Icon
     sprite: _CD/Mobs/Species/Rodentia/parts.rsi
     state: full
@@ -128,10 +131,7 @@
   - type: TypingIndicator
     proto: rodentia
   - type: Vocal
-    sounds:
-      Male: CDMaleRodentia
-      Female: CDFemaleRodentia
-      Unsexed: CDMaleRodentia
+    emoteSounds: CDMaleRodentia
   - type: MouthStorage
     mouthProto: CheekStorage
     openStorageAction: ActionOpenMouthStorage

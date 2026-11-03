@@ -1,4 +1,5 @@
 using Content.Server.Body.Systems;
+using Content.Shared.Body.Systems;
 using Content.Shared.Chat.TypingIndicator;
 
 namespace Content.Server._CD.Traits;

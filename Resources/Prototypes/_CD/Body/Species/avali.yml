@@ -101,8 +101,6 @@
   components:
   - type: HumanoidProfile
     species: Avali
-  - type: Hunger
-  - type: Thirst
   - type: Icon
     sprite: _CD/Mobs/Species/Avali/parts.rsi
     state: full
@@ -129,10 +127,7 @@
         layer:
         - MobLayer
   - type: Vocal
-    sounds:
-      Male: CDMaleAvali
-      Female: CDFemaleAvali
-      Unsexed: CDMaleAvali
+    emoteSounds: CDMaleAvali
   - type: Damageable
     damageModifierSet: Moth # PLACEHOLDER for now :3
   - type: Injurable
@@ -157,7 +152,7 @@
         Slash: 5
   - type: Temperature
     specificHeat: 48
-    currentTemperature: 296.15
+    temperature: 296.15
   - type: TemperatureDamage
     heatDamageThreshold: 310
     coldDamageThreshold: 223

@@ -136,10 +136,7 @@
       sprite: Effects/creampie.rsi
       state: creampie_lizard
   - type: Vocal # CD: More sound emotes
-    sounds:
-      Male: CDMaleReptilian
-      Female: CDFemaleReptilian
-      Unsexed: CDMaleReptilian
+    emoteSounds: CDMaleReptilian
   - type: BodyEmotes
     soundsId: CDReptilianBodyEmotes # CD: More sound emotes
   - type: Damageable
@@ -152,11 +149,8 @@
     damage:
       types:
         Slash: 5
-  - type: Temperature
-    currentTemperature: 310.15
-    specificHeat: 42
   - type: TemperatureDamage
-    heatDamageThreshold: 400
+    heatDamageThreshold: 321.15
     coldDamageThreshold: 285
     coldDamage:
       types:

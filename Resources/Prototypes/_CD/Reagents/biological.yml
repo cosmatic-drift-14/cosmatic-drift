@@ -10,11 +10,9 @@
   metabolisms:
     Digestion:
       effects:
-      - !type:SatiateThirst
-        factor: 1.5
-        conditions:
-          - !type:MetabolizerTypeCondition
-            type: [ Human ]
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 4
   footstepSound:
     collection: FootstepBlood
     params:

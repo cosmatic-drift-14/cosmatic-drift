@@ -90,7 +90,7 @@ public sealed partial class DisposalHolderComponent : Component, IGasMixtureHold
     {
         DamageDict = new()
         {
-            { "Blunt", 0.0 },
+            { "Blunt", 3.0 }, // CD
         }
     };
 
