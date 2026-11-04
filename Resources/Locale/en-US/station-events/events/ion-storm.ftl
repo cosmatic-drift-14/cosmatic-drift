@@ -17,7 +17,7 @@ ion-storm-x-and-y = {$x} AND {$y}
 # subjects can generally be threats or jobs or objects
 # thing is specified above it
 ion-storm-law-on-station = THERE ARE {ION-NUMBER-BASE($ion)} {ION-NUMBER-MOD($ion)} {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)} ON THE STATION
-ion-storm-law-call-shuttle = THE SHUTTLE MUST BE CALLED BECAUSE OF {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)} ON THE STATION
+# ion-storm-law-call-shuttle = THE SHUTTLE MUST BE CALLED BECAUSE OF {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)} ON THE STATION #CD: Disable
 ion-storm-law-crew-are = THE {ION-WHO($ion)} ARE NOW {ION-NUMBER-BASE($ion)} {ION-NUMBER-MOD($ion)} {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)}
 
 ion-storm-law-subjects-harmful = {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)} ARE HARMFUL TO THE CREW
@@ -99,3 +99,6 @@ ion-law-error-dataset-empty-or-not-found = THE FILE YOU ARE LOOKING FOR COULD NO
 ion-law-error-fallback-dataset-empty-or-not-found = SYSTEM RESTORE POINT FAILED
 ion-law-error-no-selector-selected = THE SELECTED RESOURCE WAS MOVED OR DELETED
 ion-law-error-no-bool-value = THIS SENTENCE IS FALSE
+
+# CD additions:
+ion-storm-law-dangerous-space = LEAVING THE STATION IS DANGEROUS BECAUSE OF {ION-ADJECTIVE($ion)} {ION-SUBJECT($ion)} IN NEARBY SPACE
